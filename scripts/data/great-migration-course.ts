@@ -148,10 +148,10 @@ That is roughly **+611%** in a single decade (Wikipedia, n.d.-a), and Detroit wa
           {
             prompt: "About how many African Americans left the South during the Great Migration?",
             options: [
-              "About six million",
-              "About six hundred thousand, nearly all in the decade after 1916",
-              "About twenty million, counting their children born in the North",
-              "About one and a half million, almost all after the Second World War",
+              "About six million, between roughly 1910 and 1970",
+              "About six hundred thousand",
+              "About twenty million",
+              "About one and a half million",
             ],
             correctIndex: 0,
             explanation:
@@ -162,7 +162,7 @@ That is roughly **+611%** in a single decade (Wikipedia, n.d.-a), and Detroit wa
             prompt: "What happened to the share of Black Americans living in the South across the Migration?",
             options: [
               "It fell from about 70 percent to about 40 percent by 1970",
-              "It fell from about 90 percent to about 53",
+              "It fell from about 90 percent before to about 53 percent after",
               "It held steady near 90 percent while the total population grew",
               "It rose, because Southern cities absorbed most of the movement",
             ],
@@ -175,8 +175,8 @@ That is roughly **+611%** in a single decade (Wikipedia, n.d.-a), and Detroit wa
             prompt: "How do historians split the Great Migration into two waves?",
             options: [
               "1865 to 1910, then 1910 to 1940, split by the First World War",
-              "1916 to 1929, then 1945 to 1960, split by the Great Depression",
-              "1910 to 1940, then 1940 to 1970",
+              "1916 to 1929, then 1945 to 1960",
+              "The First, 1910 to 1940; the Second, 1940 to 1970",
               "1910 to 1970 and 1970 onward, split by the return to the South",
             ],
             correctIndex: 2,
@@ -200,10 +200,10 @@ That is roughly **+611%** in a single decade (Wikipedia, n.d.-a), and Detroit wa
           {
             prompt: "Detroit's Black population went from 5,741 in 1910 to 40,838 in 1920. What does the course say about that figure?",
             options: [
-              "Detroit was not unusual",
-              "It was the largest increase any American city ever recorded",
-              "It was an outlier caused entirely by one employer's hiring drive",
-              "It reversed within the decade once the auto plants cut their shifts",
+              "Detroit was not unusual; many cities saw arrival on that scale",
+              "It was the largest increase any city ever recorded",
+              "It was caused entirely by one employer's hiring",
+              "It reversed within the decade",
             ],
             correctIndex: 0,
             explanation:
@@ -214,8 +214,8 @@ That is roughly **+611%** in a single decade (Wikipedia, n.d.-a), and Detroit wa
             prompt: "Which year do historians point to for the sharpest acceleration of the first wave?",
             options: [
               "1910, the year the Census Bureau uses to open the whole period",
-              "1916",
-              "1919, the summer of widespread violence across American cities",
+              "1916, driven by World War I labor demand",
+              "1919, the year of Red Summer",
               "1924, when the national-origin immigration quotas became law",
             ],
             correctIndex: 1,
@@ -228,7 +228,7 @@ That is roughly **+611%** in a single decade (Wikipedia, n.d.-a), and Detroit wa
             options: [
               "Segregated schooling that was separate and deliberately unequal",
               "Criminalizing unemployment, so a jobless man could be arrested",
-              "Disenfranchisement",
+              "Disenfranchisement, stripping most Black Southerners of the vote",
               "Trapping farming families in debt they could never quite pay off",
             ],
             correctIndex: 2,
@@ -252,9 +252,9 @@ That is roughly **+611%** in a single decade (Wikipedia, n.d.-a), and Detroit wa
           {
             prompt: "Which Supreme Court case upheld segregation until the mid-twentieth century?",
             options: [
-              "Dred Scott v. Sandford, decided before the Civil War began",
-              "Plessy v. Ferguson",
-              "Brown v. Board of Education, which came later and reversed course",
+              "Dred Scott v. Sandford",
+              "Plessy v. Ferguson, decided in 1896",
+              "Brown v. Board",
               "Shelley v. Kraemer, which concerned racially restrictive covenants",
             ],
             correctIndex: 1,
@@ -268,7 +268,7 @@ That is roughly **+611%** in a single decade (Wikipedia, n.d.-a), and Detroit wa
               "The summer the boll weevil destroyed the largest share of the crop",
               "The season the Chicago Defender ran its Great Northern Drive",
               "The 1919 wave of white-on-Black violence",
-              "The stretch of 1943 riots across the wartime defense-boom cities",
+              "The 1943 defense-boom riots",
             ],
             correctIndex: 2,
             explanation:
@@ -278,10 +278,10 @@ That is roughly **+611%** in a single decade (Wikipedia, n.d.-a), and Detroit wa
           {
             prompt: "What did the Chicago race riot of 1919 leave behind?",
             options: [
-              "A federal anti-lynching law passed the following congressional session",
+              "A federal anti-lynching law passed in the following session",
               "The immediate desegregation of the city's public transportation",
               "A collapse in Black migration into the city for the next ten years",
-              "38 dead and up to 2,000 homeless",
+              "38 dead, roughly 537 injured, and up to 2,000 left homeless",
             ],
             correctIndex: 3,
             explanation:
@@ -304,10 +304,10 @@ That is roughly **+611%** in a single decade (Wikipedia, n.d.-a), and Detroit wa
           {
             prompt: "What is the boll weevil, and what did it do?",
             options: [
-              "A fungus that rotted stored cotton bales before they could ship",
-              "A beetle that eats cotton",
-              "A drought cycle that struck the Delta counties through the 1910s",
-              "A cotton-picking machine that put sharecropping families out of work",
+              "A fungus that rotted stored cotton bales",
+              "A small beetle that eats cotton; it reached every US cotton region",
+              "A drought cycle in the Delta counties",
+              "A cotton-picking machine",
             ],
             correctIndex: 1,
             explanation:
@@ -318,8 +318,8 @@ That is roughly **+611%** in a single decade (Wikipedia, n.d.-a), and Detroit wa
             prompt: "For a sharecropping family living on credit against next year's harvest, what could a collapsing cotton crop mean?",
             options: [
               "A smaller share of the crop but a guaranteed federal price support",
-              "A year of debt relief, since the landowner absorbed the whole loss",
-              "Possibly no income at all",
+              "A year of debt relief",
+              "Possibly no income at all by the end of the year",
               "A move to a neighboring county where the weevil had not yet arrived",
             ],
             correctIndex: 2,
@@ -333,7 +333,7 @@ That is roughly **+611%** in a single decade (Wikipedia, n.d.-a), and Detroit wa
               "It grew, which is why Northern employers ignored Southern labor",
               "It shifted to the South, where wages were lower than in the North",
               "It was unchanged until the Second World War closed the Atlantic",
-              "It collapsed, then was capped by law",
+              "It collapsed during the war, then was capped by national-origin quotas",
             ],
             correctIndex: 3,
             explanation:
@@ -356,10 +356,10 @@ That is roughly **+611%** in a single decade (Wikipedia, n.d.-a), and Detroit wa
           {
             prompt: "How did Northern employers respond once they could no longer recruit in Europe?",
             options: [
-              "They raised wages until Northern white workers returned from the war",
-              "They recruited Black Southern labor",
-              "They moved their factories south to where the workforce already was",
-              "They mechanized, so the demand for migrants never really appeared",
+              "They raised wages until white workers returned from the war",
+              "They recruited Black Southern labor through the Black press and labor agents",
+              "They moved their factories south to the workforce",
+              "They mechanized, so demand for migrants never appeared",
             ],
             correctIndex: 1,
             explanation:
@@ -371,7 +371,7 @@ That is roughly **+611%** in a single decade (Wikipedia, n.d.-a), and Detroit wa
             options: [
               "Because Jim Crow laws were only enacted across the South after 1910",
               "Because the railroads reached the Mississippi Delta for the first time",
-              "Push and pull sharpened at once",
+              "Push and pull sharpened at once, and neither alone explains the timing",
               "Because the Chicago Defender did not begin publishing until 1915",
             ],
             correctIndex: 2,
@@ -527,10 +527,10 @@ Open this lesson's four cities on the [interactive map](/great-migration-map), [
           {
             prompt: "How many broad geographic streams do historians describe?",
             options: [
-              "Three",
-              "One, running straight up the Mississippi Valley to Chicago",
-              "Five, one for each of the major Northern gateway cities",
-              "Two, matching the first and second waves of the Migration",
+              "Three: to the Northeast, the Midwest, and the West",
+              "One, up the Mississippi Valley",
+              "Five, one per Northern gateway city",
+              "Two, matching the two waves",
             ],
             correctIndex: 0,
             explanation:
@@ -543,7 +543,7 @@ Open this lesson's four cities on the [interactive map](/great-migration-map), [
               "Mississippi Valley to Midwest, through Memphis toward Chicago",
               "Texas and Louisiana to the West, toward Los Angeles and Oakland",
               "Deep South to Gulf Coast, toward the New Orleans shipping trade",
-              "Southeast to Northeast",
+              "Southeast to Northeast, toward Baltimore, Philadelphia, and New York",
             ],
             correctIndex: 3,
             explanation:
@@ -553,10 +553,10 @@ Open this lesson's four cities on the [interactive map](/great-migration-map), [
           {
             prompt: "Which railroad anchored the Mississippi Valley to Midwest stream?",
             options: [
-              "The Illinois Central",
+              "The Illinois Central, Delta to Chicago",
               "The Pennsylvania Railroad, which ran the Southeast to Northeast line",
               "The Southern Pacific, which carried the Texas and Louisiana stream",
-              "The Baltimore and Ohio, which served the Washington gateway",
+              "The Baltimore and Ohio",
             ],
             correctIndex: 0,
             explanation:
@@ -579,10 +579,10 @@ Open this lesson's four cities on the [interactive map](/great-migration-map), [
           {
             prompt: "Which neighborhoods did the Mississippi Valley stream build?",
             options: [
-              "Harlem in upper Manhattan and Bedford-Stuyvesant across the river",
-              "Watts in Los Angeles and West Oakland across the bay from it",
-              "Bronzeville and Paradise Valley",
-              "Albina in Portland and the Central District in Seattle",
+              "Harlem and Bedford-Stuyvesant",
+              "Watts and West Oakland",
+              "Chicago's Bronzeville and Detroit's Paradise Valley",
+              "Albina and Seattle's Central District",
             ],
             correctIndex: 2,
             explanation:
@@ -595,7 +595,7 @@ Open this lesson's four cities on the [interactive map](/great-migration-map), [
               "The biggest purchase of their lives",
               "A cost the Northern employers covered in advance for new hires",
               "A round trip, since most planned to return after a single season",
-              "A minor expense next to the cost of housing once they arrived",
+              "A minor expense",
             ],
             correctIndex: 0,
             explanation:
@@ -606,7 +606,7 @@ Open this lesson's four cities on the [interactive map](/great-migration-map), [
             prompt: "Where does the name Bronzeville come from?",
             options: [
               "The bronze foundries that employed most of the neighborhood's men",
-              "A Chicago Defender editor coined it",
+              "A Defender editor, James J. Gentry, coined it in place of Black Belt",
               "A federal housing survey that graded the district's building stock",
               "The Illinois Central's own name for its South Side terminal district",
             ],
@@ -631,10 +631,10 @@ Open this lesson's four cities on the [interactive map](/great-migration-map), [
           {
             prompt: "The course reports Philadelphia's raw population figures but refuses one widely repeated statistic. Which one, and why?",
             options: [
-              "The 1920 population itself, because two sources disagree about it",
-              "The 1910 population, because the Census undercounted Black residents",
-              "The growth rate entirely, because the city annexed new wards in 1918",
-              "The 500 percent claim: the figures give 59",
+              "The 1920 population, because two sources disagree",
+              "The 1910 population, because of a Census undercount",
+              "The growth rate, because the city annexed wards in 1918",
+              "The 500 percent claim: the 1910 and 1920 figures give about 59 percent",
             ],
             correctIndex: 3,
             explanation:
@@ -645,7 +645,7 @@ Open this lesson's four cities on the [interactive map](/great-migration-map), [
             prompt: "What mistake does the lesson warn about with New York's 1910 to 1920 growth?",
             options: [
               "327,706 is the 1930 figure, not 1920",
-              "The figure counts the whole metropolitan area, not the city itself",
+              "It counts the metro area",
               "The two numbers come from different agencies using different methods",
               "The growth rate is stated per year when the source meant per decade",
             ],
@@ -657,7 +657,7 @@ Open this lesson's four cities on the [interactive map](/great-migration-map), [
           {
             prompt: "What was a kitchenette?",
             options: [
-              "A subdivided room with a shared bath",
+              "A subdivided room with a shared bath, rented at inflated prices",
               "A storefront converted into an independent migrant congregation",
               "A neighborhood corner store stocking Southern foods and produce",
               "A Saturday gathering where neighbors pooled money toward the rent",
@@ -683,10 +683,10 @@ Open this lesson's four cities on the [interactive map](/great-migration-map), [
           {
             prompt: "Which employer anchored Seattle's Black wartime defense workforce?",
             options: [
-              "Boeing, not Kaiser",
-              "Kaiser, which ran a shipyard on the Seattle waterfront through 1945",
-              "The Oregon Shipbuilding Corporation, which staffed from both cities",
-              "The Housing Authority of Portland, which recruited across the region",
+              "Boeing, not Kaiser, which had no Seattle shipyard",
+              "Kaiser, at a Seattle waterfront yard",
+              "The Oregon Shipbuilding Corporation",
+              "The Housing Authority of Portland",
             ],
             correctIndex: 0,
             explanation:
@@ -698,8 +698,8 @@ Open this lesson's four cities on the [interactive map](/great-migration-map), [
             options: [
               "James J. Gentry, in 1915, from the paper's South Side offices",
               "A. Philip Randolph, in 1925, alongside the porters' union",
-              "Robert S. Abbott, in 1905",
-              "Berry Gordy, in 1959, as a companion to his new record label",
+              "Robert S. Abbott, in May 1905",
+              "Berry Gordy, 1959",
             ],
             correctIndex: 2,
             explanation:
@@ -709,7 +709,7 @@ Open this lesson's four cities on the [interactive map](/great-migration-map), [
           {
             prompt: "What did the Defender achieve in 1917?",
             options: [
-              "A circulation of 100,000",
+              "A circulation of 100,000, up from about 16,000 weekly in 1915",
               "Its first daily edition, replacing the weekly it had run since 1905",
               "A federal court ruling protecting its distribution in the South",
               "The purchase of its own rail car to carry papers into the South",
@@ -735,10 +735,10 @@ Open this lesson's four cities on the [interactive map](/great-migration-map), [
           {
             prompt: "What was the Great Northern Drive?",
             options: [
-              "A promoted departure date: May 15, 1917",
-              "A federal program recruiting Southern labor for wartime industry",
-              "The Illinois Central's discounted fare for one-way northbound trips",
-              "A campaign urging Black Southerners to stay and organize in place",
+              "A Defender campaign promoting one departure date: May 15, 1917",
+              "A federal wartime labor program",
+              "A discounted one-way fare north",
+              "A campaign urging people to stay",
             ],
             correctIndex: 0,
             explanation:
@@ -748,7 +748,7 @@ Open this lesson's four cities on the [interactive map](/great-migration-map), [
           {
             prompt: "What does the lesson say a 1917 Defender front page makes visible at a glance?",
             options: [
-              "A newspaper that also functioned as a mutual-aid benevolent society",
+              "A mutual-aid society",
               "A publisher that also operated the rail routes carrying migrants",
               "A paper that reported the Migration but never took a side about it",
               "Reporting and recruiting, side by side",
@@ -908,10 +908,10 @@ Open this lesson's four cities on the [interactive map](/great-migration-map), [
           {
             prompt: "Which migration stream fed Harlem?",
             options: [
-              "Southeast to Northeast",
-              "Mississippi Valley to Midwest, the stream that built Bronzeville",
-              "Texas and Louisiana to the West, redirected east during the war",
-              "The Second Great Migration's Pacific Northwest defense-jobs thread",
+              "Southeast to Northeast, into upper Manhattan",
+              "Mississippi Valley to Midwest",
+              "Texas and Louisiana to the West",
+              "The Pacific Northwest thread",
             ],
             correctIndex: 0,
             explanation:
@@ -922,9 +922,9 @@ Open this lesson's four cities on the [interactive map](/great-migration-map), [
             prompt: "About what years does the Harlem Renaissance span?",
             options: [
               "About 1905 to 1917, ending when the United States entered the war",
-              "About 1918 to 1937",
+              "About 1918 to 1937, peaking in the 1920s",
               "About 1940 to 1970, matching the Second Great Migration exactly",
-              "About 1925 to 1929, the four years around Locke's anthology",
+              "About 1925 to 1929",
             ],
             correctIndex: 1,
             explanation:
@@ -936,7 +936,7 @@ Open this lesson's four cities on the [interactive map](/great-migration-map), [
             options: [
               "The Second World War drew its writers into defense industry work",
               "Redlining maps made the neighborhood impossible to get loans in",
-              "The Depression cut arts patronage",
+              "The Great Depression of the 1930s cut into arts patronage",
               "The Savoy Ballroom and the Cotton Club both closed in the 1930s",
             ],
             correctIndex: 2,
@@ -960,10 +960,10 @@ Open this lesson's four cities on the [interactive map](/great-migration-map), [
           {
             prompt: "Why does a Migration course teach the Harlem Renaissance at all?",
             options: [
-              "The Migration built its audience and density",
-              "Because most of its writers had personally migrated from the Deep South",
-              "Because its publishers were financed out of the Chicago Defender's profits",
-              "Because the movement organized the migration campaigns of the 1920s",
+              "The Migration built the dense audience and institutions it needed",
+              "Most of its writers had migrated from the Deep South",
+              "Defender profits financed its publishers",
+              "It organized the 1920s migration campaigns",
             ],
             correctIndex: 0,
             explanation:
@@ -973,7 +973,7 @@ Open this lesson's four cities on the [interactive map](/great-migration-map), [
           {
             prompt: "What was notorious about venues like the Cotton Club?",
             options: [
-              "They refused to book any performer who had migrated from the South",
+              "They barred migrant acts",
               "They restricted their Black patrons",
               "They paid Southern musicians a fraction of the Northern union scale",
               "They closed to the public whenever a Renaissance writer gave a reading",
@@ -999,7 +999,7 @@ Open this lesson's four cities on the [interactive map](/great-migration-map), [
           {
             prompt: "Why did Chicago blues become louder and amplified?",
             options: [
-              "It was built for noisy city clubs",
+              "It was built for noisy city clubs, so the instrument changed",
               "Because recording studios could not capture an acoustic guitar",
               "Because the union scale paid more for electrified instruments",
               "Because Chess Records required it as a condition of a contract",
@@ -1013,9 +1013,9 @@ Open this lesson's four cities on the [interactive map](/great-migration-map), [
             prompt: "Who is the best-known migrant-turned-star of Chicago blues?",
             options: [
               "Muddy Waters",
-              "Thomas A. Dorsey, who moved from Georgia to Chicago as a teenager",
-              "Louis Armstrong, who carried New Orleans jazz north to Chicago",
-              "Duke Ellington, who led the band at Harlem's Cotton Club",
+              "Thomas A. Dorsey",
+              "Louis Armstrong",
+              "Duke Ellington",
             ],
             correctIndex: 0,
             explanation:
@@ -1025,7 +1025,7 @@ Open this lesson's four cities on the [interactive map](/great-migration-map), [
           {
             prompt: "What did Thomas A. Dorsey do in Chicago?",
             options: [
-              "Founded the label that first recorded electric Chicago blues",
+              "Founded a blues label",
               "Popularized the term gospel music",
               "Organized the Brotherhood of Sleeping Car Porters in the 1920s",
               "Edited the Chicago Defender and coined the name Bronzeville",
@@ -1038,10 +1038,10 @@ Open this lesson's four cities on the [interactive map](/great-migration-map), [
           {
             prompt: "How is Motown connected to the Great Migration?",
             options: [
-              "Berry Gordy migrated from Georgia to Detroit during the second wave",
-              "Its first recordings were made in the Paradise Valley nightclubs",
-              "It grew out of Migration-built Black Detroit",
-              "It was funded by the auto companies that had recruited the migrants",
+              "Berry Gordy migrated from Georgia to Detroit",
+              "Its first recordings were made in nightclubs",
+              "It grew out of Migration-built Black Detroit, where Gordy started Tamla in 1959",
+              "The auto companies funded it",
             ],
             correctIndex: 2,
             explanation:
@@ -1051,7 +1051,7 @@ Open this lesson's four cities on the [interactive map](/great-migration-map), [
           {
             prompt: "What pattern repeats across blues, jazz, and gospel in this lesson?",
             options: [
-              "A Northern form travels south and is adopted by rural congregations",
+              "A Northern form moves south",
               "A folk style is preserved unchanged by musicians who refuse to adapt",
               "A commercial label invents a style and then markets it back southward",
               "Southern tradition, new city, transformed",
@@ -1077,7 +1077,7 @@ Open this lesson's four cities on the [interactive map](/great-migration-map), [
           {
             prompt: "What is a storefront church?",
             options: [
-              "A small congregation in a converted shop",
+              "A small, independent congregation in a converted retail space",
               "A congregation that funded itself by operating a neighborhood store",
               "A denomination organized by Northern churches to receive migrants",
               "A church building bought outright by a benevolent society's members",
@@ -1090,10 +1090,10 @@ Open this lesson's four cities on the [interactive map](/great-migration-map), [
           {
             prompt: "What did benevolent societies and burial associations do?",
             options: [
-              "Lobbied city governments to lift restrictions on where families could live",
-              "Paid for funerals and helped through crises",
-              "Bought rail tickets for Southern relatives who wanted to migrate north",
-              "Published the classified job listings the Chicago Defender ran weekly",
+              "Lobbied cities to lift housing restrictions",
+              "Paid for funerals, supported sick members, and helped through crises",
+              "Bought rail tickets for Southern relatives",
+              "Published the Defender's job listings",
             ],
             correctIndex: 1,
             explanation:
@@ -1104,7 +1104,7 @@ Open this lesson's four cities on the [interactive map](/great-migration-map), [
             prompt: "What is chain migration?",
             options: [
               "Whole congregations relocating together on a single arranged date",
-              "Migrants moving in stages, working in each city along the route",
+              "Migrants moving in stages",
               "One moves first, then sends for others",
               "Labor agents recruiting entire work crews out of a single county",
             ],
@@ -1129,10 +1129,10 @@ Open this lesson's four cities on the [interactive map](/great-migration-map), [
           {
             prompt: "Why does the lesson insist storefront churches were not lesser versions of established congregations?",
             options: [
-              "Because their buildings were larger than most Northern church buildings",
-              "Migrants rebuilt community on their own terms",
-              "Because established Northern congregations refused to admit any migrants",
-              "Because the same benevolent societies funded both kinds of congregation",
+              "Their buildings were larger",
+              "Migrants rebuilt community fast, on their own terms, with what they had",
+              "Northern churches refused all migrants",
+              "Benevolent societies funded both kinds",
             ],
             correctIndex: 1,
             explanation:
@@ -1142,7 +1142,7 @@ Open this lesson's four cities on the [interactive map](/great-migration-map), [
           {
             prompt: "What did migrants build when Northern grocers did not stock familiar ingredients?",
             options: [
-              "Black-owned corner stores",
+              "Black-owned corner stores stocking what the neighborhood wanted",
               "Cooperative farms on the edge of the city, worked by the community",
               "Mail-order arrangements with the plantations they had left behind",
               "Restaurants that imported produce directly from Southern counties",
@@ -1155,7 +1155,7 @@ Open this lesson's four cities on the [interactive map](/great-migration-map), [
           {
             prompt: "What was a rent party?",
             options: [
-              "A landlords' association meeting that set prices for the district",
+              "A landlords' meeting",
               "Neighbors pooling money for the rent",
               "A benevolent society's annual fundraiser for its burial fund",
               "A church social held to welcome newly arrived Southern families",
@@ -1181,10 +1181,10 @@ Open this lesson's four cities on the [interactive map](/great-migration-map), [
           {
             prompt: "Why were rents in Black neighborhoods high relative to income?",
             options: [
-              "Because the neighborhoods were newer and the buildings were better",
-              "Because Southern migrants were paid more than established residents",
-              "Housing discrimination, the color line",
-              "Because the city taxed those districts at a higher assessed rate",
+              "The buildings were newer and better",
+              "Migrants were paid more than residents",
+              "Housing discrimination: the color line left tenants few places to rent",
+              "The city taxed those districts higher",
             ],
             correctIndex: 2,
             explanation:
@@ -1194,10 +1194,10 @@ Open this lesson's four cities on the [interactive map](/great-migration-map), [
           {
             prompt: "What does the lesson say Sunday dinner did for many migrant families?",
             options: [
-              "Recreated the exact Southern menu using ingredients shipped north",
+              "Recreated the exact Southern menu",
               "Replaced the church service for families who had to work on Sundays",
-              "Introduced Northern neighbors to the food of the rural South",
-              "Kept a thread to a place left behind",
+              "Introduced neighbors to Southern food",
+              "Kept a thread to a place and a generation left behind",
             ],
             correctIndex: 3,
             explanation:
@@ -1207,7 +1207,7 @@ Open this lesson's four cities on the [interactive map](/great-migration-map), [
           {
             prompt: "Why does this lesson refuse to name a single specific dish, restaurant, or business?",
             options: [
-              "The details vary by family and city",
+              "The details vary enormously by family and city, so it stays general",
               "Because no primary sources from the period document any of them",
               "Because the course covers only music and politics, not everyday life",
               "Because naming one would slight the traditions of the other streams",
@@ -1312,10 +1312,10 @@ Open this lesson's four cities on the [interactive map](/great-migration-map), [
           {
             prompt: "What made the Black urban vote possible?",
             options: [
-              "No poll taxes or literacy tests",
-              "Federal legislation passed during the New Deal specifically to protect it",
-              "The Brotherhood of Sleeping Car Porters registering its own members",
-              "Northern states lowering the residency requirement for new arrivals",
+              "No poll taxes or literacy tests blocking them from registering",
+              "New Deal laws written to protect it",
+              "The porters' union registering members",
+              "Shorter residency requirements",
             ],
             correctIndex: 0,
             explanation:
@@ -1328,7 +1328,7 @@ Open this lesson's four cities on the [interactive map](/great-migration-map), [
               "The Democratic Party's civil rights legislation in the mid-1960s",
               "Roosevelt's New Deal in the 1930s",
               "The founding of the National Urban League's Northern chapters",
-              "The 1919 Red Summer and the violence that followed it in Chicago",
+              "The 1919 Red Summer",
             ],
             correctIndex: 1,
             explanation:
@@ -1338,7 +1338,7 @@ Open this lesson's four cities on the [interactive map](/great-migration-map), [
           {
             prompt: "What happened to Northern NAACP and Urban League chapters?",
             options: [
-              "They grew stronger and more assertive",
+              "They grew stronger and more assertive, freed from Southern repression",
               "They merged into a single organization to avoid duplicating work",
               "They shrank as their members joined industrial labor unions instead",
               "They relocated their headquarters back to the South after 1940",
@@ -1351,10 +1351,10 @@ Open this lesson's four cities on the [interactive map](/great-migration-map), [
           {
             prompt: "Who organized the Brotherhood of Sleeping Car Porters, and when?",
             options: [
-              "Elijah Muhammad, in 1923, after moving his family to Detroit",
-              "Robert S. Abbott, in 1917, from the Chicago Defender's offices",
-              "Quintard Taylor, in 1978, alongside the regional oral-history projects",
-              "A. Philip Randolph, in 1925",
+              "Elijah Muhammad, in 1923",
+              "Robert S. Abbott, in 1917",
+              "Quintard Taylor, in 1978",
+              "A. Philip Randolph, in 1925, from the Pullman porters",
             ],
             correctIndex: 3,
             explanation:
@@ -1364,7 +1364,7 @@ Open this lesson's four cities on the [interactive map](/great-migration-map), [
           {
             prompt: "Why does this lesson push back on citing Martin Luther King Jr. as a Great Migration figure?",
             options: [
-              "Because he was born after the First Great Migration had already ended",
+              "He was born after the first wave",
               "His family were established Atlanta clergy",
               "Because his organizing happened in the North rather than in the South",
               "Because the Migration's documented leaders were all labor organizers",
@@ -1390,7 +1390,7 @@ Open this lesson's four cities on the [interactive map](/great-migration-map), [
           {
             prompt: "What did the Home Owners' Loan Corporation produce between 1935 and 1940?",
             options: [
-              "Graded maps of 239 cities",
+              "Graded residential security maps of 239 US cities, from A down to D",
               "Federally financed housing projects for wartime defense workers",
               "A national register of restrictive covenants attached to property deeds",
               "Loan guarantees issued directly to first-time Black homebuyers",
@@ -1403,10 +1403,10 @@ Open this lesson's four cities on the [interactive map](/great-migration-map), [
           {
             prompt: "What did a D grade on an HOLC map mean, and what color was it?",
             options: [
-              "Declining, colored yellow, one step above the lowest possible grade",
-              "Definitely desirable, colored blue, the second-highest of four grades",
-              "Best, colored green, reserved for the newest suburban districts",
-              "Hazardous, colored red",
+              "Declining, colored yellow",
+              "Definitely desirable, colored blue",
+              "Best, colored green",
+              "Hazardous, colored red, which is where redlining gets its name",
             ],
             correctIndex: 3,
             explanation:
@@ -1418,8 +1418,8 @@ Open this lesson's four cities on the [interactive map](/great-migration-map), [
             options: [
               "The presence of Black residents",
               "The age of the housing stock and the rate of structural decay",
-              "The share of residents whose incomes fell below the city median",
-              "The distance from the nearest industrial employer or rail yard",
+              "Resident incomes",
+              "Distance to industry",
             ],
             correctIndex: 0,
             explanation:
@@ -1429,8 +1429,8 @@ Open this lesson's four cities on the [interactive map](/great-migration-map), [
           {
             prompt: "What was redlining's effect on the neighborhoods the Migration had just built?",
             options: [
-              "It funded their rebuilding under the wartime housing authorities",
-              "It locked in the segregation",
+              "It funded rebuilding",
+              "It locked in the segregation, for decades",
               "It ended within a decade, before the maps could affect any lending",
               "It applied only to new construction, leaving existing homes alone",
             ],
@@ -1442,10 +1442,10 @@ Open this lesson's four cities on the [interactive map](/great-migration-map), [
           {
             prompt: "Which neighborhoods from this course appear on real digitized HOLC maps graded hazardous?",
             options: [
-              "Bronzeville, Paradise Valley, Harlem",
-              "Vanport, Albina, and Seattle's Central District in the Northwest",
+              "Bronzeville, Paradise Valley, and Harlem",
+              "Vanport and Albina",
               "Atlanta, Dallas, Houston, and Charlotte, the return destinations",
-              "Watts and West Oakland, the two neighborhoods the West stream built",
+              "Watts and West Oakland",
             ],
             correctIndex: 0,
             explanation:
@@ -1457,7 +1457,7 @@ Open this lesson's four cities on the [interactive map](/great-migration-map), [
             options: [
               "A second wartime wave that carried migrants to the Pacific Northwest",
               "The movement of Black families out of the cities and into the suburbs",
-              "A return to the South since about 1970",
+              "A return to the South since about 1970, accelerating in the 1990s",
               "The arrival of Caribbean and African immigrants in the same cities",
             ],
             correctIndex: 2,

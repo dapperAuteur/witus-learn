@@ -142,10 +142,10 @@ export const REPORTER_READING_A_REPORT_COURSE: AuthoredCourse = {
           {
             prompt: "What three questions come before reading any figure in a report?",
             options: [
-              "Who published it, what they do, what it is for",
+              "Who published it, what that organization does all year, and what it is for",
               "How many pages, how many tables, and when it was released to the press",
               "Which agency funded it, which lobbyists cited it, and who benefits from it",
-              "What the headline finding is, who disputes it, and who has covered it already",
+              "What the headline finding is, who disputes it, and who has covered it",
             ],
             correctIndex: 0,
             explanation:
@@ -155,8 +155,8 @@ export const REPORTER_READING_A_REPORT_COURSE: AuthoredCourse = {
           {
             prompt: "Which document does this course work from?",
             options: [
-              "The 2025 Indiana Girl Report",
-              "The Annie E. Casey Foundation's national KIDS COUNT Data Book for 2025",
+              "The 2025 Indiana Girl Report, an 84-page profile of Indiana girls",
+              "The Annie E. Casey Foundation's national KIDS COUNT Data Book",
               "The National Survey of Children's Health indicator tables for 2023",
               "The Youth Risk Behavior Surveillance System's Indiana state report",
             ],
@@ -168,7 +168,7 @@ export const REPORTER_READING_A_REPORT_COURSE: AuthoredCourse = {
           {
             prompt: "How long has the Indiana Youth Institute been the state's KIDS COUNT partner?",
             options: [
-              "Over 30 years",
+              "Over 30 years, producing the annual Indiana KIDS COUNT Data Book",
               "Since 2018, when the Girl Scout Coalition of Indiana was formed",
               "Since 2023, the first year of the girl-specific data series",
               "Under 10 years, which is why the historical series begins in 2015",
@@ -181,7 +181,7 @@ export const REPORTER_READING_A_REPORT_COURSE: AuthoredCourse = {
           {
             prompt: "What does the report's page 3 tell a reporter about reuse?",
             options: [
-              "It may be copied and used if the source is cited",
+              "It may be copied, distributed, or otherwise used if the source is cited",
               "It may be quoted only with the publisher's prior written permission",
               "It may be reproduced in full by news organizations but not excerpted",
               "It may not be redistributed, since the underlying data are licensed",
@@ -194,7 +194,7 @@ export const REPORTER_READING_A_REPORT_COURSE: AuthoredCourse = {
           {
             prompt: "What does a report printing its own citation form tell you?",
             options: [
-              "It expects to be quoted",
+              "It expects to be quoted, and it has made reuse easy for readers",
               "It has been peer reviewed by the organizations named inside it",
               "Its figures have been independently verified before publication",
               "It may not be summarized without reproducing the citation verbatim",
@@ -207,7 +207,7 @@ export const REPORTER_READING_A_REPORT_COURSE: AuthoredCourse = {
           {
             prompt: "What error does provenance NOT license?",
             options: [
-              "Deciding the conclusion before checking",
+              "Deciding a report's conclusion from its publisher before checking",
               "Reading the methodology section before the executive summary",
               "Attributing a compiled figure to its original collection",
               "Asking who funded a report when the funding is disclosed",
@@ -220,7 +220,7 @@ export const REPORTER_READING_A_REPORT_COURSE: AuthoredCourse = {
           {
             prompt: "What kind of publisher does the lesson call the most common one a beat reporter meets?",
             options: [
-              "A data organization with a mission",
+              "A data organization with a mission, where both halves are true",
               "A government agency publishing a statutory compliance report",
               "A commercial research firm selling analysis to subscribers",
               "An academic center reporting the results of its own trials",
@@ -246,7 +246,7 @@ export const REPORTER_READING_A_REPORT_COURSE: AuthoredCourse = {
           {
             prompt: "What does the report say on page 82 about its own research?",
             options: [
-              "It does not design or implement primary research",
+              "It does not design or implement primary research, only secondary",
               "It conducts original surveys of Indiana households each spring",
               "It replicates national findings using Indiana administrative records",
               "It commissions primary research from university partners annually",
@@ -259,7 +259,7 @@ export const REPORTER_READING_A_REPORT_COURSE: AuthoredCourse = {
           {
             prompt: "What follows for attribution when a report is a secondary compilation?",
             options: [
-              "The figure belongs to its original collection",
+              "The original collection owns it, and the report is where you found it",
               "The compilation becomes the citable source once it has been published",
               "Both the compiler and the original owner must be named in every sentence",
               "The figure may be used without attribution because it is already public",
@@ -285,7 +285,7 @@ export const REPORTER_READING_A_REPORT_COURSE: AuthoredCourse = {
           {
             prompt: "What is a compilation genuinely good for?",
             options: [
-              "A finding aid",
+              "A finding aid showing what exists, in one place, with sources named",
               "Establishing the statistical significance of a difference between groups",
               "Settling a dispute about which of two agencies holds better data",
               "Replacing the original sources, which are usually harder to obtain",
@@ -298,10 +298,10 @@ export const REPORTER_READING_A_REPORT_COURSE: AuthoredCourse = {
           {
             prompt: "Where does a compilation's point of view live?",
             options: [
-              "In which indicators were selected",
+              "In which indicators were selected, since that choice is editorial",
               "In the wording of the individual table headings and chart labels",
               "In the order the four wellness domains appear in the document",
-              "In the endnote format, which controls how easily figures can be checked",
+              "In the endnote format, which controls how easily figures are checked",
             ],
             correctIndex: 0,
             explanation:
@@ -311,7 +311,7 @@ export const REPORTER_READING_A_REPORT_COURSE: AuthoredCourse = {
           {
             prompt: "Which five criteria does the report say it applies to data it includes?",
             options: [
-              "Reliable, recent, consistent, understandable, relevant",
+              "Reliable, recently available, consistent, understandable, relevant",
               "Peer reviewed, statewide, disaggregated, current, and free to reuse",
               "Federal, state, county, school district, and individual level",
               "Sampled, weighted, adjusted, benchmarked, and independently audited",
@@ -326,8 +326,8 @@ export const REPORTER_READING_A_REPORT_COURSE: AuthoredCourse = {
             options: [
               "Studies over 10 years old were used in certain circumstances",
               "Studies published before 2020 were excluded from every domain",
-              "Only peer-reviewed studies from the last five years were considered",
-              "Older studies were used only where a newer replication confirmed them",
+              "Only peer-reviewed studies from the last five years were used",
+              "Older studies were used only where a newer one confirmed them",
             ],
             correctIndex: 0,
             explanation:
@@ -350,9 +350,9 @@ export const REPORTER_READING_A_REPORT_COURSE: AuthoredCourse = {
           {
             prompt: "On which page does the worked example's limitations statement sit?",
             options: [
-              "27",
+              "27, under Addressing Limitations in Available Data",
               "82, inside the methodology and process section",
-              "3, in the front matter that explains how to read the report",
+              "3, in the front matter explaining how to read it",
               "75, at the head of the endnotes and citations",
             ],
             correctIndex: 0,
@@ -363,7 +363,7 @@ export const REPORTER_READING_A_REPORT_COURSE: AuthoredCourse = {
           {
             prompt: "Where do the endnotes, definitions, and methodology sit in the worked example?",
             options: [
-              "Pages 75, 78, and 82",
+              "Pages 75, 78, and 82, the last three sections of the document",
               "Pages 3, 4, and 6, in the front matter before the findings",
               "Pages 26, 27, and 29, at the start of the data section",
               "Distributed through the document at the end of each wellness domain",
@@ -376,10 +376,10 @@ export const REPORTER_READING_A_REPORT_COURSE: AuthoredCourse = {
           {
             prompt: "Which four Dimensions of Wellness does the Coalition use?",
             options: [
-              "Physical, academic, emotional, social",
+              "Physical, academic, emotional, and social wellness",
               "Family and community, health, economic well-being, education",
               "Safety, belonging, achievement, and independence",
-              "Mental, physical, financial, and civic",
+              "Mental, physical, financial, and civic wellness",
             ],
             correctIndex: 0,
             explanation:
@@ -390,9 +390,9 @@ export const REPORTER_READING_A_REPORT_COURSE: AuthoredCourse = {
             prompt: "Which four data domains does IYI track under KIDS COUNT?",
             options: [
               "Family and community, health, economic well-being, education",
-              "Physical, academic, emotional, and social wellness",
-              "Demographics, physical, emotional, and social",
-              "Poverty, housing, schooling, and health care access",
+              "Physical, academic, emotional, and social wellness dimensions",
+              "Demographics, physical, emotional, and social well-being",
+              "Poverty, housing, schooling, and access to health care services",
             ],
             correctIndex: 0,
             explanation:
@@ -402,7 +402,7 @@ export const REPORTER_READING_A_REPORT_COURSE: AuthoredCourse = {
           {
             prompt: "Why does a report running two taxonomies matter for trend reporting?",
             options: [
-              "A figure can move between headings between years",
+              "A figure can appear under different headings in different years",
               "It doubles the number of tables a reporter has to check for each claim",
               "It means the same figure is published twice with different rounding",
               "It prevents the publisher from disaggregating data by county",
@@ -418,7 +418,7 @@ export const REPORTER_READING_A_REPORT_COURSE: AuthoredCourse = {
               "Material on self-harm, abuse, racial trauma, violence, and death",
               "Estimates that have not been verified against the original collections",
               "Figures that may not be reproduced without the publisher's consent",
-              "County comparisons that are not statistically significant",
+              "County comparisons that have not been tested for significance",
             ],
             correctIndex: 0,
             explanation:
@@ -428,10 +428,10 @@ export const REPORTER_READING_A_REPORT_COURSE: AuthoredCourse = {
           {
             prompt: "What is a report map?",
             options: [
-              "A one-page note of where definitions, endnotes, methodology, and each table sit",
+              "A one-page note locating definitions, endnotes, methodology, and each table",
               "The contents page, annotated with the reporter's own page references",
               "A diagram of how the publisher's taxonomies intersect with one another",
-              "A list of every figure in the document, ranked by newsworthiness",
+              "A list of every figure in the document, ranked by how newsworthy it is",
             ],
             correctIndex: 0,
             explanation:
@@ -441,7 +441,7 @@ export const REPORTER_READING_A_REPORT_COURSE: AuthoredCourse = {
           {
             prompt: "On which page does the executive summary of the worked example begin?",
             options: [
-              "6",
+              "6, after the contents page and before the calls to action",
               "4, immediately after the front matter and the reuse terms",
               "8, following the coalition overview and its calls to action",
               "24, at the start of the data section on well-being",
@@ -467,7 +467,7 @@ export const REPORTER_READING_A_REPORT_COURSE: AuthoredCourse = {
           {
             prompt: "What is secondary research?",
             options: [
-              "Assembling and reporting data collected by others",
+              "Assembling and reporting data that others designed and collected",
               "Research conducted after a pilot study has established feasibility",
               "Analysis performed on a data set the researcher collected personally",
               "Any research that has not been published in a peer-reviewed journal",
@@ -480,10 +480,10 @@ export const REPORTER_READING_A_REPORT_COURSE: AuthoredCourse = {
           {
             prompt: "Which national entities does the report name among its sources?",
             options: [
-              "The CDC and the U.S. Census Bureau",
-              "The National Institutes of Health and the Department of Labor",
+              "The Centers for Disease Control and Prevention and the Census Bureau",
+              "The National Institutes of Health and the U.S. Department of Labor",
               "The Government Accountability Office and the Congressional Budget Office",
-              "The Federal Reserve and the Bureau of Economic Analysis",
+              "The Federal Reserve Board and the Bureau of Economic Analysis",
             ],
             correctIndex: 0,
             explanation:
@@ -493,7 +493,7 @@ export const REPORTER_READING_A_REPORT_COURSE: AuthoredCourse = {
           {
             prompt: "What is the attribution error the lesson names specifically?",
             options: [
-              "Saying a report found what it compiled",
+              "Writing that a report found a figure it compiled from another source",
               "Citing the report without giving the page number the figure appears on",
               "Naming the original collection without saying where you found the figure",
               "Quoting a summary sentence without identifying the executive summary",
@@ -506,7 +506,7 @@ export const REPORTER_READING_A_REPORT_COURSE: AuthoredCourse = {
           {
             prompt: "How long does the lesson say establishing publisher provenance takes?",
             options: [
-              "About ten minutes",
+              "About ten minutes, and it determines how you read everything after",
               "An afternoon, since funding disclosures usually require a records request",
               "A full day, because the organization's tax filings have to be retrieved",
               "As long as reading the report itself, which is why most reporters skip it",
@@ -519,7 +519,7 @@ export const REPORTER_READING_A_REPORT_COURSE: AuthoredCourse = {
           {
             prompt: "What does the lesson say about reading a report front to back?",
             options: [
-              "Read it in the order that answers questions instead",
+              "Stop doing it, and read in the order that answers questions instead",
               "It is the only way to avoid missing a caveat placed inside a domain section",
               "It is correct for a first pass and wrong for every pass afterward",
               "It works for compilations and fails only for primary research reports",
@@ -532,7 +532,7 @@ export const REPORTER_READING_A_REPORT_COURSE: AuthoredCourse = {
           {
             prompt: "What year and edition is the worked example?",
             options: [
-              "2025, first edition",
+              "2025, first edition, per the citation form printed on page 3",
               "2024, revised second edition",
               "2023, the first year girl-specific data were compiled",
               "2025, third edition, following annual updates since 2023",
@@ -545,7 +545,7 @@ export const REPORTER_READING_A_REPORT_COURSE: AuthoredCourse = {
           {
             prompt: "Who produced the worked example alongside the Indiana Youth Institute?",
             options: [
-              "The Girl Scout Coalition of Indiana",
+              "The Girl Scout Coalition of Indiana, with girl-centered expertise",
               "The Indiana Department of Education's office of research",
               "The Annie E. Casey Foundation's national KIDS COUNT staff",
               "The Indiana Women's Foundation and the state health department",
@@ -558,7 +558,7 @@ export const REPORTER_READING_A_REPORT_COURSE: AuthoredCourse = {
           {
             prompt: "What does the lesson say a data request endnote implies about the compiler?",
             options: [
-              "They obtained a custom extract from an agency",
+              "They obtained a custom extract from a state partner agency",
               "They were unable to locate a published source for the figure",
               "They ran their own survey and are describing it obliquely",
               "They purchased the data from a commercial provider",
@@ -571,7 +571,7 @@ export const REPORTER_READING_A_REPORT_COURSE: AuthoredCourse = {
           {
             prompt: "How many pages is the worked example?",
             options: [
-              "84",
+              "84, with the methodology and process section starting on 82",
               "27, of which the last page is the limitations statement",
               "About 200, which is why the contents page is load-bearing",
               "Roughly 40, split evenly between narrative and tables",
@@ -587,7 +587,7 @@ export const REPORTER_READING_A_REPORT_COURSE: AuthoredCourse = {
               "The publisher's account of what the report is meant to do",
               "The visual style guide governing how charts are drawn",
               "The statistical model used to weight the underlying estimates",
-              "The list of criteria applied when selecting which indicators to include",
+              "The criteria applied when selecting which indicators to include",
             ],
             correctIndex: 0,
             explanation:
@@ -597,7 +597,7 @@ export const REPORTER_READING_A_REPORT_COURSE: AuthoredCourse = {
           {
             prompt: "Why is knowing what a report is FOR not the same as dismissing it?",
             options: [
-              "None of the purposes is disqualifying",
+              "None of those purposes disqualifies a report from being used",
               "Because a stated purpose is legally binding on the publisher",
               "Because purpose affects only the summary, never the data section",
               "Because compilations have no purpose beyond assembling figures",
@@ -610,7 +610,7 @@ export const REPORTER_READING_A_REPORT_COURSE: AuthoredCourse = {
           {
             prompt: "What is the honest criticism to make of any compilation?",
             options: [
-              "Ask about the selection of indicators",
+              "Ask which indicators were selected, since that choice is editorial",
               "Point out that the publisher did not verify the underlying figures",
               "Note that compiled figures are always older than the cover date",
               "Argue that a mission-driven organization cannot report neutrally",
@@ -623,7 +623,7 @@ export const REPORTER_READING_A_REPORT_COURSE: AuthoredCourse = {
           {
             prompt: "Where does the report print the legend showing how its two taxonomies intersect?",
             options: [
-              "Page 27",
+              "Page 27, the same page as the limitations statement",
               "Page 4, alongside the table of contents",
               "Page 26, in the section about the IYI data domains",
               "Page 11, in the section about the Coalition dimensions",
@@ -636,7 +636,7 @@ export const REPORTER_READING_A_REPORT_COURSE: AuthoredCourse = {
           {
             prompt: "What does the lesson say about a report with no methodology section?",
             options: [
-              "Its absence is a fact about the report",
+              "Its absence is a fact about the report, best noticed early",
               "It should not be cited under any circumstances",
               "It is presumed to follow the standards of its sector",
               "It can be reconstructed from the endnotes with enough work",
@@ -649,7 +649,7 @@ export const REPORTER_READING_A_REPORT_COURSE: AuthoredCourse = {
           {
             prompt: "Which page carries the report's demographic figures?",
             options: [
-              "29",
+              "29, before physical wellness at 32",
               "26, with the IYI data domains",
               "32, at the start of physical wellness",
               "78, with the data definitions",
@@ -662,7 +662,7 @@ export const REPORTER_READING_A_REPORT_COURSE: AuthoredCourse = {
           {
             prompt: "What does the course say transfers from this document to any other?",
             options: [
-              "Everything in the method",
+              "The whole method, since the report was chosen for its honesty",
               "The four wellness domains, which most youth reports now use",
               "The specific page numbers, which are standard in compiled reports",
               "The Indiana figures, which are broadly representative nationally",
@@ -688,7 +688,7 @@ export const REPORTER_READING_A_REPORT_COURSE: AuthoredCourse = {
           {
             prompt: "What does the lesson call the fastest available map of which agencies collect what?",
             options: [
-              "A compilation with its sources named",
+              "A compilation with its sources named in one place",
               "A state agency's published records retention schedule",
               "The endnotes of an academic literature review",
               "A federal open data portal's indicator catalog",
@@ -701,7 +701,7 @@ export const REPORTER_READING_A_REPORT_COURSE: AuthoredCourse = {
           {
             prompt: "What should a reporter do with the content warning on page 3?",
             options: [
-              "Read it as a description of the subject matter",
+              "Read it as a description of the subject matter and the care it needs",
               "Reproduce it verbatim at the head of any story quoting the report",
               "Treat it as a legal disclaimer that limits reuse of the material",
               "Ignore it, since it addresses general readers rather than journalists",
@@ -727,7 +727,7 @@ export const REPORTER_READING_A_REPORT_COURSE: AuthoredCourse = {
           {
             prompt: "What is the practical test of whether you read a report or quoted it?",
             options: [
-              "Whether you can name the table behind each claim",
+              "Whether you can name the table that sits behind each claim",
               "Whether you read every page of the document from cover to cover",
               "Whether you contacted the publisher before publishing your story",
               "Whether your story is longer than the executive summary",
@@ -740,10 +740,10 @@ export const REPORTER_READING_A_REPORT_COURSE: AuthoredCourse = {
           {
             prompt: "What does going upstream frequently reveal about a compiled figure?",
             options: [
-              "It is older than the report's cover date",
+              "It is a year older than the report's cover date suggests",
               "It was transcribed incorrectly into the compiled table",
               "It has been superseded by a figure the publisher chose not to use",
-              "It cannot be reproduced without the original collection's permission",
+              "It cannot be reproduced without the original owner's permission",
             ],
             correctIndex: 0,
             explanation:
@@ -753,7 +753,7 @@ export const REPORTER_READING_A_REPORT_COURSE: AuthoredCourse = {
           {
             prompt: "Which is NOT one of the report's own five data-selection criteria?",
             options: [
-              "Independently audited",
+              "Independently audited by an outside reviewer",
               "Consistent over time, so trends can be shown",
               "Easily understandable to a general reader",
               "Recently available, rather than historical",
@@ -766,7 +766,7 @@ export const REPORTER_READING_A_REPORT_COURSE: AuthoredCourse = {
           {
             prompt: "What is the first thing on the reporter's reading order?",
             options: [
-              "The table of contents",
+              "The table of contents, which shows where everything else is",
               "The methodology, since it governs everything else in the document",
               "The endnotes, which name every source the report relies on",
               "The limitations statement, which sets the ceiling on every claim",
@@ -781,7 +781,7 @@ export const REPORTER_READING_A_REPORT_COURSE: AuthoredCourse = {
             options: [
               "It names the four categories every indicator is filed under",
               "It lists the agencies that supplied each figure in the document",
-              "It records which indicators changed definition since the prior edition",
+              "It records which indicators changed definition since last edition",
               "It provides the denominator for each of the four wellness domains",
             ],
             correctIndex: 0,
@@ -792,7 +792,7 @@ export const REPORTER_READING_A_REPORT_COURSE: AuthoredCourse = {
           {
             prompt: "Which two things does the lesson say are both true of a mission-driven data organization?",
             options: [
-              "It has a mission and it produces data",
+              "It has a mission and it produces data, both true at once",
               "It is funded publicly and it is accountable to a regulator",
               "It is independent of government and it is peer reviewed",
               "It collects primary data and it publishes secondary analysis",
@@ -805,7 +805,7 @@ export const REPORTER_READING_A_REPORT_COURSE: AuthoredCourse = {
           {
             prompt: "What does the lesson say about the placement of endnotes at the back of a report?",
             options: [
-              "It is normal layout, not concealment",
+              "It is normal layout for a report, not a sign of concealment",
               "It is a sign the publisher expects the document to go unchecked",
               "It is required by the citation standard compilations follow",
               "It indicates the endnotes were added after the findings were written",
@@ -945,7 +945,7 @@ export const REPORTER_READING_A_REPORT_COURSE: AuthoredCourse = {
           {
             prompt: "What does a summary do structurally?",
             options: [
-              "Compresses, selects, and converts figures into ratios",
+              "Compresses, selects, and converts figures into ratios that travel",
               "Reproduces the most significant tables in a smaller format",
               "States the methodology so a reader can judge the findings quickly",
               "Lists every indicator in the document with its source and year",
@@ -958,7 +958,7 @@ export const REPORTER_READING_A_REPORT_COURSE: AuthoredCourse = {
           {
             prompt: "How much qualitative work does page 7 report?",
             options: [
-              "91 listening sessions and feedback from 130 adults",
+              "91 listening sessions with girls and feedback from 130 adults",
               "A statewide survey of roughly 1,500 girls aged 6 to 17",
               "Twelve focus groups, one in each Girl Scout council service area",
               "Interviews with 130 girls and 91 youth-serving professionals",
@@ -971,10 +971,10 @@ export const REPORTER_READING_A_REPORT_COURSE: AuthoredCourse = {
           {
             prompt: "Which figure does page 7 give for Indiana children living in poverty?",
             options: [
-              "16 percent",
+              "16 percent, stated as one of the summary bullets on page 7",
               "24 percent, which the summary describes as nearly one in four",
-              "48.7 percent, matching the share of the youth population that is female",
-              "56.1 percent, matching the caregiver difficulty figure elsewhere in the report",
+              "48.7 percent, the share of the youth population that is female",
+              "56.1 percent, the caregiver difficulty figure on page 60",
             ],
             correctIndex: 0,
             explanation:
@@ -984,8 +984,8 @@ export const REPORTER_READING_A_REPORT_COURSE: AuthoredCourse = {
           {
             prompt: "What is the rule about repeating a summary sentence?",
             options: [
-              "Locate the table first",
-              "Attribute it to the report and move on, since the publisher stands behind it",
+              "Locate its table and name its source, year, population, and denominator",
+              "Attribute it to the report and move on, since the publisher backs it",
               "Paraphrase rather than quote, so the ratio is not reproduced exactly",
               "Wait for a second outlet to publish the same figure independently",
             ],
@@ -997,9 +997,9 @@ export const REPORTER_READING_A_REPORT_COURSE: AuthoredCourse = {
           {
             prompt: "What do you do when you cannot find the table behind a summary sentence?",
             options: [
-              "Treat that as the finding and ask the publisher",
+              "Treat the missing table as the finding and ask the publisher",
               "Publish the sentence with the report cited as the source",
-              "Drop the subject, since an untraceable figure cannot be reported at all",
+              "Drop the subject, since an untraceable figure cannot be reported",
               "Substitute a similar figure from a national source in its place",
             ],
             correctIndex: 0,
@@ -1010,10 +1010,10 @@ export const REPORTER_READING_A_REPORT_COURSE: AuthoredCourse = {
           {
             prompt: "Why is asking a publisher which table supports a sentence not adversarial?",
             options: [
-              "Reports routinely cite sources not reproduced in the layout",
-              "Because publishers are legally required to answer questions about their data",
-              "Because the answer determines whether the reporter may cite the document at all",
-              "Because the publisher must correct the summary if it cannot answer",
+              "Reports routinely draw sentences from sources not reproduced in the layout",
+              "Because publishers are legally required to answer questions on their data",
+              "Because the answer decides whether the reporter may cite the document",
+              "Because a publisher that cannot answer must then correct its summary",
             ],
             correctIndex: 0,
             explanation:
@@ -1024,8 +1024,8 @@ export const REPORTER_READING_A_REPORT_COURSE: AuthoredCourse = {
             prompt: "What are the six fields to record for every figure you intend to publish?",
             options: [
               "Page, source, year, population, denominator, whether you saw the table",
-              "Publisher, author, title, edition, page, and date of access",
-              "Indicator, domain, dimension, county, sex, and age range",
+              "Publisher, author, title, edition, page number, and date of access",
+              "Indicator, wellness domain, dimension, county, sex, and age range",
               "Sample size, margin of error, weighting, mode, response rate, and vintage",
             ],
             correctIndex: 0,
@@ -1036,8 +1036,8 @@ export const REPORTER_READING_A_REPORT_COURSE: AuthoredCourse = {
           {
             prompt: "Which sentence does lesson 6 chase to its table?",
             options: [
-              "That girls face bullying at twice the rate and cyberbullying at three times",
-              "That 16 percent of Indiana children live in poverty",
+              "That girls are bullied twice as often, and cyberbullied three times",
+              "That 16 percent of Indiana children live in poverty, as page 7 says",
               "That nearly one in four girls struggles to make or maintain friendships",
               "That 94.6 percent of female children had an adult mentor in 2023",
             ],
@@ -1049,7 +1049,7 @@ export const REPORTER_READING_A_REPORT_COURSE: AuthoredCourse = {
           {
             prompt: "Under which wellness domain does the report file bullying?",
             options: [
-              "Emotional",
+              "Emotional, with its narrative on 58 and charts on 59",
               "Social, alongside neighborhood safety and support systems",
               "Physical, alongside health insurance and provider ratios",
               "Academic, since the incidents are reported by schools",
@@ -1062,7 +1062,7 @@ export const REPORTER_READING_A_REPORT_COURSE: AuthoredCourse = {
           {
             prompt: "Which pages carry the bullying narrative and its charts?",
             options: [
-              "58 and 59",
+              "58 and 59, the narrative first and then the charts",
               "52 and 53, at the opening of the emotional wellness domain",
               "60 and 61, alongside the mental health and suicide figures",
               "75 and 76, where the supporting endnotes are listed",
@@ -1075,8 +1075,8 @@ export const REPORTER_READING_A_REPORT_COURSE: AuthoredCourse = {
           {
             prompt: "Which survey supplies the electronic-bullying series on page 59?",
             options: [
-              "The Youth Risk Behavior Survey",
-              "The National Survey of Children's Health, which supplies the other chart",
+              "The Youth Risk Behavior Survey, plotting both sexes from 2011",
+              "The National Survey of Children's Health, behind the other chart",
               "The Indiana Youth Survey, run annually by a state university",
               "The American Community Survey, which supplies the demographics",
             ],
@@ -1101,7 +1101,7 @@ export const REPORTER_READING_A_REPORT_COURSE: AuthoredCourse = {
           {
             prompt: "What ratio do the 2023 electronic-bullying figures produce?",
             options: [
-              "About 1.2",
+              "About 1.2, which is a real and reportable gap between them",
               "About 3.0, matching the summary's cyberbullying claim exactly",
               "About 2.0, matching the summary's general bullying claim",
               "About 0.8, meaning male students reported a higher rate",
@@ -1114,7 +1114,7 @@ export const REPORTER_READING_A_REPORT_COURSE: AuthoredCourse = {
           {
             prompt: "What is the correct conclusion when a summary ratio does not follow from the table you found?",
             options: [
-              "The sentence comes from somewhere else",
+              "The sentence comes from another source, measure, or population",
               "The report contains an error and the story should say so",
               "The chart was mislabeled and should be disregarded entirely",
               "The summary is a rounding of the same figures and may be used",
@@ -1127,9 +1127,9 @@ export const REPORTER_READING_A_REPORT_COURSE: AuthoredCourse = {
           {
             prompt: "What may you publish while waiting for the publisher's answer?",
             options: [
-              "The page 59 figures with their source and year",
+              "The page 59 figures, with their survey source and their year",
               "The summary ratio, attributed to the report rather than to a table",
-              "Nothing about bullying, since the discrepancy taints the whole section",
+              "Nothing about bullying, since the discrepancy taints the section",
               "Both figures, with a note that they appear to conflict",
             ],
             correctIndex: 0,
@@ -1141,9 +1141,9 @@ export const REPORTER_READING_A_REPORT_COURSE: AuthoredCourse = {
             prompt: "What would a reporter have published without the tracing step?",
             options: [
               "A ratio whose population, measure, and year they could not name",
-              "A figure with a margin of error they had not checked",
+              "A figure carrying a margin of error that they had not checked",
               "A county comparison that the publisher had warned against",
-              "A qualitative theme presented as a statewide share",
+              "A qualitative theme from listening sessions presented as a share",
             ],
             correctIndex: 0,
             explanation:
@@ -1166,7 +1166,7 @@ export const REPORTER_READING_A_REPORT_COURSE: AuthoredCourse = {
           {
             prompt: "What separates the tracing method from a gotcha?",
             options: [
-              "You ask the publisher rather than declare an error",
+              "You ask the publisher which table, rather than declare an error",
               "You publish the discrepancy first and seek comment afterward",
               "You compare the report against a competing publication",
               "You report only the figures that support the summary's framing",
@@ -1179,10 +1179,10 @@ export const REPORTER_READING_A_REPORT_COURSE: AuthoredCourse = {
           {
             prompt: "What denominator does page 29 supply?",
             options: [
-              "777,308 females under 18 in Indiana in 2023",
+              "777,308 females under 18 in 2023, 48.7 percent of that population",
               "818,763 females under 18, which is 51.3 percent of the total",
               "About 1.6 million school-age children across all Indiana counties",
-              "The number of girls who participated in the report's listening sessions",
+              "The number of girls who took part in the report's listening sessions",
             ],
             correctIndex: 0,
             explanation:
@@ -1192,7 +1192,7 @@ export const REPORTER_READING_A_REPORT_COURSE: AuthoredCourse = {
           {
             prompt: "Which source does page 29 cite for the population figures?",
             options: [
-              "The ACS five-year estimate, Table B01001",
+              "The Census Bureau's ACS five-year estimate, Table B01001",
               "The National Survey of Children's Health, indicator 1.9",
               "The Indiana Department of Education's October enrollment count",
               "The decennial census, adjusted to the report's publication year",
@@ -1205,7 +1205,7 @@ export const REPORTER_READING_A_REPORT_COURSE: AuthoredCourse = {
           {
             prompt: "What does a named ACS table give a reporter that the compiled figure does not?",
             options: [
-              "The margin of error",
+              "The margin of error that a five-year estimate always has",
               "Permission to reproduce the table in a published story",
               "County-level detail that the statewide figure aggregates away",
               "The response rate for the specific survey year cited",
@@ -1218,7 +1218,7 @@ export const REPORTER_READING_A_REPORT_COURSE: AuthoredCourse = {
           {
             prompt: "What share of female children aged 3 to 17 received mental health treatment in Indiana in 2023?",
             options: [
-              "11.2 percent",
+              "11.2 percent, below both male peers and the nation",
               "12.8 percent, which was the national average that year",
               "11.9 percent, which was the rate for male peers",
               "56.1 percent, which was the caregiver difficulty rate",
@@ -1231,9 +1231,9 @@ export const REPORTER_READING_A_REPORT_COURSE: AuthoredCourse = {
           {
             prompt: "Why is a lower treatment rate not automatically good news?",
             options: [
-              "It is consistent with less need and with less access",
+              "It is consistent with less need and equally with less access",
               "Because treatment rates are always understated in survey data",
-              "Because the national average is a poor comparison for a single state",
+              "Because the national average is a poor comparison for one state",
               "Because caregiver-reported figures cannot be compared across years",
             ],
             correctIndex: 0,
@@ -1244,10 +1244,10 @@ export const REPORTER_READING_A_REPORT_COURSE: AuthoredCourse = {
           {
             prompt: "What share of caregivers reported difficulty finding needed mental health care for female children in 2023?",
             options: [
-              "56.1 percent",
+              "56.1 percent, above the national and male rates",
               "49.9 percent, which was the national average",
               "54.9 percent, which was the rate for male children",
-              "11.2 percent, matching the treatment rate on the same page",
+              "11.2 percent, the same as the treatment rate",
             ],
             correctIndex: 0,
             explanation:
@@ -1257,9 +1257,9 @@ export const REPORTER_READING_A_REPORT_COURSE: AuthoredCourse = {
           {
             prompt: "Which way do the two page 60 figures point when read together?",
             options: [
-              "Toward access rather than need",
+              "Toward access rather than need: less treatment, more difficulty",
               "Toward need rather than access, since treatment rates track demand",
-              "Toward neither, since caregiver reports and treatment rates are unrelated",
+              "Toward neither, since caregiver reports and treatment are unrelated",
               "Toward a data error, since the two figures cannot both be true",
             ],
             correctIndex: 0,
@@ -1272,7 +1272,7 @@ export const REPORTER_READING_A_REPORT_COURSE: AuthoredCourse = {
             options: [
               "A second number that separates two explanations of the first",
               "A figure republished by a second source to confirm the first",
-              "A margin of error attached to a point estimate",
+              "A margin of error attached to a single point estimate",
               "A denominator supplied so a count can be read as a rate",
             ],
             correctIndex: 0,
@@ -1296,10 +1296,10 @@ export const REPORTER_READING_A_REPORT_COURSE: AuthoredCourse = {
           {
             prompt: "What does the report warn about county rankings?",
             options: [
-              "A ranking does not necessarily mean a county is doing well",
+              "A rank allows comparison but does not necessarily mean a county is doing well",
               "Rankings are recalculated annually and are not comparable across years",
               "Rankings are suppressed for counties below a population threshold",
-              "Rankings reflect only the four KIDS COUNT domains, not the wellness dimensions",
+              "Rankings reflect only the KIDS COUNT domains, not wellness dimensions",
             ],
             correctIndex: 0,
             explanation:
@@ -1309,7 +1309,7 @@ export const REPORTER_READING_A_REPORT_COURSE: AuthoredCourse = {
           {
             prompt: "What mistake does reporting an improved county rank as improved conditions make?",
             options: [
-              "It reads a relative position as an absolute change",
+              "It reads a relative position among counties as an absolute change",
               "It ignores the margin of error attached to the underlying estimate",
               "It compares a school-year figure against a calendar-year one",
               "It treats a suppressed cell as though it were a zero",
@@ -1322,7 +1322,7 @@ export const REPORTER_READING_A_REPORT_COURSE: AuthoredCourse = {
           {
             prompt: "What is a floating number?",
             options: [
-              "A percentage published without its denominator",
+              "A percentage published without the denominator it is a share of",
               "An estimate whose confidence interval crosses zero",
               "A figure that appears in the summary but not in any table",
               "A count that has been suppressed to protect confidentiality",
@@ -1335,7 +1335,7 @@ export const REPORTER_READING_A_REPORT_COURSE: AuthoredCourse = {
           {
             prompt: "What is the first step in tracing a summary sentence?",
             options: [
-              "Find the section it belongs to",
+              "Find the section it belongs to, using the contents page",
               "Email the publisher and ask which table supports it",
               "Search the endnotes for a source matching the claim",
               "Compare it against a national figure for the same measure",
@@ -1348,7 +1348,7 @@ export const REPORTER_READING_A_REPORT_COURSE: AuthoredCourse = {
           {
             prompt: "Why does the lesson say to read the charts rather than the prose?",
             options: [
-              "The prose can restate a figure from a source not shown",
+              "The prose can restate a figure from a source the page does not show",
               "The prose is written by a different author than the charts",
               "The charts carry margins of error that the prose omits",
               "The prose is drawn from the executive summary rather than the data",
@@ -1361,7 +1361,7 @@ export const REPORTER_READING_A_REPORT_COURSE: AuthoredCourse = {
           {
             prompt: "What does the report say about quantifying cyberbullying?",
             options: [
-              "Little evidence exists, because of issues in capturing data",
+              "Little evidence exists to quantify it, because of issues in capturing data",
               "It is measured precisely by the Youth Risk Behavior Survey each year",
               "It is tracked by the Department of Education's incident reporting system",
               "It cannot be measured at all and is therefore excluded from the report",
@@ -1374,7 +1374,7 @@ export const REPORTER_READING_A_REPORT_COURSE: AuthoredCourse = {
           {
             prompt: "What is an untraceable figure?",
             options: [
-              "A number whose underlying table you cannot locate",
+              "A number whose underlying table you cannot locate in the report",
               "A number the publisher has declined to explain when asked",
               "A number whose original collection has since been discontinued",
               "A number without a confidence interval attached to it",
@@ -1400,10 +1400,10 @@ export const REPORTER_READING_A_REPORT_COURSE: AuthoredCourse = {
           {
             prompt: "What does the lesson say a summary sentence gets quoted in?",
             options: [
-              "A hundred stories, verbatim",
+              "Verbatim, in something like a hundred stories",
               "The publisher's own press release and nowhere else",
-              "Academic literature reviews, which then re-cite the compilation",
-              "State legislative testimony, where it becomes a policy premise",
+              "Academic literature reviews, which re-cite it",
+              "State legislative testimony, as a policy premise",
             ],
             correctIndex: 0,
             explanation:
@@ -1413,8 +1413,8 @@ export const REPORTER_READING_A_REPORT_COURSE: AuthoredCourse = {
           {
             prompt: "What is the difference between compression and dishonesty in a summary?",
             options: [
-              "Compression is a genre, and it is not evidence",
-              "Compression is permitted only where the underlying table is reproduced",
+              "Compression is a different genre from data, and it is not evidence",
+              "Compression is allowed only where the underlying table is reproduced",
               "Compression applies to ratios but never to raw counts",
               "There is none, which is why summaries should not be quoted",
             ],
@@ -1439,7 +1439,7 @@ export const REPORTER_READING_A_REPORT_COURSE: AuthoredCourse = {
           {
             prompt: "Why do ratios and comparisons dominate an executive summary?",
             options: [
-              "They travel",
+              "They travel, which is why summaries convert figures",
               "They are more accurate than the underlying counts",
               "They are the only form a publisher may legally assert",
               "They compress better into a fixed page allowance",
@@ -1491,10 +1491,10 @@ export const REPORTER_READING_A_REPORT_COURSE: AuthoredCourse = {
           {
             prompt: "What does the lesson say a rank is?",
             options: [
-              "A relative position",
+              "A relative position, not a measure of conditions",
               "A weighted composite of the four KIDS COUNT domains",
               "An absolute measure normalized to the state average",
-              "A suppressed value published in ordinal form to protect confidentiality",
+              "A suppressed value published as an ordinal",
             ],
             correctIndex: 0,
             explanation:
@@ -1504,8 +1504,8 @@ export const REPORTER_READING_A_REPORT_COURSE: AuthoredCourse = {
           {
             prompt: "What kind of estimate is the report's population figure?",
             options: [
-              "A five-year estimate",
-              "A single-year administrative count from the state health department",
+              "A five-year estimate from the American Community Survey",
+              "A single-year count from the state health department",
               "A decennial census enumeration adjusted for undercount",
               "A projection based on birth registrations and migration",
             ],
@@ -1517,9 +1517,9 @@ export const REPORTER_READING_A_REPORT_COURSE: AuthoredCourse = {
           {
             prompt: "Where does lesson 6 say the summary's cyberbullying ratio might have come from?",
             options: [
-              "Another source, measure, or population",
-              "An arithmetic error in the compilation process",
-              "A prior edition of the same report",
+              "Another source, a different measure, or a different population",
+              "An arithmetic error made during the compilation process",
+              "A prior edition of the same report, carried forward",
               "A national figure applied to the state without adjustment",
             ],
             correctIndex: 0,
@@ -1530,10 +1530,10 @@ export const REPORTER_READING_A_REPORT_COURSE: AuthoredCourse = {
           {
             prompt: "What does the lesson call the discipline behind tracing, if not suspicion?",
             options: [
-              "A number you cannot trace is one you cannot defend",
+              "A number you cannot trace is a number you cannot defend",
               "A publisher who cannot answer is one you should not cite",
               "A summary that compresses is one that has been edited for effect",
-              "A figure without a margin of error is one that should not be published",
+              "A figure without a margin of error should not be published",
             ],
             correctIndex: 0,
             explanation:
@@ -1543,7 +1543,7 @@ export const REPORTER_READING_A_REPORT_COURSE: AuthoredCourse = {
           {
             prompt: "Which of these is a legitimate use of the page 59 figures?",
             options: [
-              "Reporting them with their survey and their year",
+              "Reporting them with their survey, their population, and their year",
               "Averaging them across the four survey years to produce a single rate",
               "Applying the female series to the whole under-18 population",
               "Presenting them as the source of the summary's cyberbullying ratio",
@@ -1556,8 +1556,8 @@ export const REPORTER_READING_A_REPORT_COURSE: AuthoredCourse = {
           {
             prompt: "What does the lesson say about a summary bullet you intend to lead a story with?",
             options: [
-              "Trace it first, or lead with something you can defend",
-              "Quote it verbatim, so the publisher rather than the reporter carries the claim",
+              "Trace it first, or lead instead with something you can defend",
+              "Quote it verbatim, so the publisher carries the claim instead",
               "Rewrite it in your own words, which removes the need to trace it",
               "Pair it with a competing figure so readers can judge for themselves",
             ],
@@ -1582,7 +1582,7 @@ export const REPORTER_READING_A_REPORT_COURSE: AuthoredCourse = {
           {
             prompt: "What did the report state about mental health treatment for male children in Indiana in 2023?",
             options: [
-              "11.9 percent received treatment or counseling",
+              "11.9 percent received mental health treatment or counseling",
               "12.8 percent received treatment, matching the national average",
               "9.8 percent of caregivers could not obtain needed care",
               "54.9 percent received treatment through a school-based provider",
@@ -1714,7 +1714,7 @@ export const REPORTER_READING_A_REPORT_COURSE: AuthoredCourse = {
           {
             prompt: "What age range does the report's inpatient discharge indicator cover?",
             options: [
-              "15 to 24",
+              "15 to 24, a different range from the indicator beside it",
               "Under 18, matching the emergency department indicator beside it",
               "6 to 17, matching the bullying and mentor indicators",
               "3 to 17, matching the mental health treatment indicator",
@@ -1727,10 +1727,10 @@ export const REPORTER_READING_A_REPORT_COURSE: AuthoredCourse = {
           {
             prompt: "What age range does the emergency department discharge indicator cover?",
             options: [
-              "Under 18",
+              "Under 18, unlike the inpatient indicator beside it",
               "15 to 24, matching the inpatient indicator beside it",
               "16 to 24, matching the status dropout measure",
-              "All ages, since emergency departments do not restrict by age",
+              "All ages, as emergency care has no age limit",
             ],
             correctIndex: 0,
             explanation:
@@ -1741,7 +1741,7 @@ export const REPORTER_READING_A_REPORT_COURSE: AuthoredCourse = {
             prompt: "Why is the inpatient and emergency department pairing a definitional trap?",
             options: [
               "They sit under one heading and cover different populations",
-              "They are drawn from the same agency but different collection years",
+              "They come from one agency but different collection years",
               "One counts people and the other counts visits",
               "One is suppressed at county level and the other is not",
             ],
@@ -1753,10 +1753,10 @@ export const REPORTER_READING_A_REPORT_COURSE: AuthoredCourse = {
           {
             prompt: "What does the report's free and reduced lunch figure measure?",
             options: [
-              "Participation",
-              "Eligibility, expressed as a share of the county student population",
-              "Applications submitted, whether approved or not",
-              "Meals served, divided by enrolled students",
+              "Participation, as a share of the county's student population",
+              "Eligibility, as a share of the county student population",
+              "Applications submitted, whether or not they were approved",
+              "Meals served each day, divided by enrolled students",
             ],
             correctIndex: 0,
             explanation:
@@ -1766,7 +1766,7 @@ export const REPORTER_READING_A_REPORT_COURSE: AuthoredCourse = {
           {
             prompt: "Why does the participation and eligibility gap vary between districts?",
             options: [
-              "Stigma, paperwork, and universal meal policies",
+              "Stigma, paperwork, and whether a school offers universal meals",
               "Because eligibility thresholds are set separately by each district",
               "Because the federal program uses different income tests by region",
               "Because participation is measured annually and eligibility monthly",
@@ -1792,7 +1792,7 @@ export const REPORTER_READING_A_REPORT_COURSE: AuthoredCourse = {
           {
             prompt: "What is a status dropout rate commonly confused with?",
             options: [
-              "A count of students who left this year",
+              "A count of the students who dropped out during this year",
               "A graduation rate measured against an expected cohort year",
               "An attendance rate measured against instructional days",
               "An enrollment count taken on a fixed date each October",
@@ -1818,9 +1818,9 @@ export const REPORTER_READING_A_REPORT_COURSE: AuthoredCourse = {
           {
             prompt: "What is the recommended school psychologist ratio the report cites?",
             options: [
-              "500 to 1",
+              "500 to 1, from the National Association of School Psychologists",
               "250 to 1, matching the counselor and social worker recommendations",
-              "750 to 1, matching the school nurse recommendation",
+              "750 to 1, matching the National Association of School Nurses",
               "1,000 to 1, reflecting the smaller number of practitioners",
             ],
             correctIndex: 0,
@@ -1831,9 +1831,9 @@ export const REPORTER_READING_A_REPORT_COURSE: AuthoredCourse = {
           {
             prompt: "What is the recommended school nurse ratio the report cites?",
             options: [
-              "750 to 1",
+              "750 to 1, from the National Association of School Nurses",
               "500 to 1, matching the school psychologist recommendation",
-              "250 to 1, matching the counselor recommendation",
+              "250 to 1, matching the school counselor recommendation",
               "1,500 to 1, reflecting shared coverage across buildings",
             ],
             correctIndex: 0,
@@ -1857,10 +1857,10 @@ export const REPORTER_READING_A_REPORT_COURSE: AuthoredCourse = {
           {
             prompt: "What three things do you write down before quoting an indicator?",
             options: [
-              "Age range, whether it counts people or events, and who set any threshold",
-              "Publisher, page number, and the year the report was released",
-              "Sample size, response rate, and the weighting method used",
-              "County, domain, and which wellness dimension it falls under",
+              "Age range, whether it counts people or events, and who set a threshold",
+              "Publisher, page number, and the year the edition was released",
+              "Sample size, response rate, and the weighting method the survey used",
+              "County, domain, and which wellness dimension the indicator falls under",
             ],
             correctIndex: 0,
             explanation:
@@ -1870,8 +1870,8 @@ export const REPORTER_READING_A_REPORT_COURSE: AuthoredCourse = {
           {
             prompt: "What is an endnote, in the terms this lesson uses?",
             options: [
-              "A promise that a source exists",
-              "A citation that has been verified by the publisher before printing",
+              "A promise that a source exists, which you must resolve",
+              "A citation the publisher verified before printing",
               "A legal attribution required by the original data owner",
               "A pointer to a table elsewhere in the same document",
             ],
@@ -1896,7 +1896,7 @@ export const REPORTER_READING_A_REPORT_COURSE: AuthoredCourse = {
           {
             prompt: "Which page do the worked example's endnotes begin on?",
             options: [
-              "75",
+              "75, three pages before the definitions",
               "78, immediately before the data definitions",
               "82, in the methodology and process section",
               "27, alongside the limitations statement",
@@ -1909,9 +1909,9 @@ export const REPORTER_READING_A_REPORT_COURSE: AuthoredCourse = {
           {
             prompt: "What are the three kinds of endnote the lesson distinguishes?",
             options: [
-              "Survey indicator, agency data request, journal article",
-              "Primary, secondary, and tertiary sources",
-              "Public, restricted, and proprietary data",
+              "Survey indicator, data request, journal article",
+              "Primary, secondary, and tertiary sources of data",
+              "Public, restricted, and proprietary data sets",
               "State, national, and international collections",
             ],
             correctIndex: 0,
@@ -1922,8 +1922,8 @@ export const REPORTER_READING_A_REPORT_COURSE: AuthoredCourse = {
           {
             prompt: "What does a survey indicator endnote resolve to?",
             options: [
-              "A published indicator page with its own sample and uncertainty",
-              "A custom extract held only by the compiler",
+              "A published page with its own sample and uncertainty",
+              "A custom extract the compiler holds and never published",
               "A press release summarizing the survey's findings",
               "A raw microdata file requiring a data use agreement",
             ],
@@ -1935,7 +1935,7 @@ export const REPORTER_READING_A_REPORT_COURSE: AuthoredCourse = {
           {
             prompt: "What does an endnote citing an agency data request resolve to?",
             options: [
-              "A custom extract that does not exist publicly",
+              "A custom extract that does not exist anywhere publicly",
               "A published table on the agency's open data portal",
               "A peer-reviewed article describing the same collection",
               "A statutory report the agency must file annually",
@@ -1948,9 +1948,9 @@ export const REPORTER_READING_A_REPORT_COURSE: AuthoredCourse = {
           {
             prompt: "How should the journal citation in the endnotes be treated?",
             options: [
-              "As an exercise rather than a verdict",
+              "As an exercise rather than a verdict, to be searched",
               "As confirmed, since the compiler presumably read the paper",
-              "As suspect, since compiled reports rarely cite journals accurately",
+              "As suspect, since compilers rarely cite journals accurately",
               "As unusable, since the endnote carries no DOI",
             ],
             correctIndex: 0,
@@ -1961,7 +1961,7 @@ export const REPORTER_READING_A_REPORT_COURSE: AuthoredCourse = {
           {
             prompt: "What do you gain when a journal citation resolves?",
             options: [
-              "A paper you can read and characterize yourself",
+              "A paper you can read and characterize for yourself",
               "Permission to quote the compiler's summary of it",
               "Confirmation that every other endnote is equally sound",
               "A DOI you can add to the compilation's own citation",
@@ -1974,9 +1974,9 @@ export const REPORTER_READING_A_REPORT_COURSE: AuthoredCourse = {
           {
             prompt: "What do you have when a journal citation does not resolve?",
             options: [
-              "A question for the publisher",
+              "A question for the publisher and a reason to hold off",
               "Proof that the report fabricated the source",
-              "Grounds to publish a correction on the publisher's behalf",
+              "Grounds to publish a correction for the publisher",
               "A reason to discard every figure in that domain",
             ],
             correctIndex: 0,
@@ -2013,7 +2013,7 @@ export const REPORTER_READING_A_REPORT_COURSE: AuthoredCourse = {
           {
             prompt: "What does the report warn about the timeframes its data cover?",
             options: [
-              "They differ, including calendar year, school year, and five-year estimates",
+              "They differ: calendar year, school year, and five-year estimates",
               "They are standardized to the calendar year throughout the document",
               "They are always the year printed on the cover of the report",
               "They are given only in the endnotes rather than in the tables",
@@ -2026,10 +2026,10 @@ export const REPORTER_READING_A_REPORT_COURSE: AuthoredCourse = {
           {
             prompt: "What span does a school-year figure cover, and how is it labeled?",
             options: [
-              "Roughly August to June, labeled by two years",
+              "Roughly August to June, labeled by both of its years",
               "January to December, labeled by the ending year",
               "September to August, labeled by the starting year only",
-              "A rolling twelve months, labeled by the month of collection",
+              "A rolling twelve months, labeled by collection month",
             ],
             correctIndex: 0,
             explanation:
@@ -2039,10 +2039,10 @@ export const REPORTER_READING_A_REPORT_COURSE: AuthoredCourse = {
           {
             prompt: "What is a five-year estimate?",
             options: [
-              "An average across five years of sampling",
-              "A projection five years forward from the most recent measurement",
+              "An average across five years of sampling, not one year",
+              "A projection five years forward from the latest measurement",
               "The most recent of five annual measurements, revised four times",
-              "A measurement taken once every five years",
+              "A single measurement taken once every five years",
             ],
             correctIndex: 0,
             explanation:
@@ -2052,7 +2052,7 @@ export const REPORTER_READING_A_REPORT_COURSE: AuthoredCourse = {
           {
             prompt: "What does the report say about small counts?",
             options: [
-              "Data suppression may be used to protect confidentiality",
+              "When numbers are small, suppression may protect confidentiality",
               "They are published with a wider confidence interval attached",
               "They are aggregated upward to the regional level automatically",
               "They are excluded from the document entirely without notice",
@@ -2104,10 +2104,10 @@ export const REPORTER_READING_A_REPORT_COURSE: AuthoredCourse = {
           {
             prompt: "What three clauses belong with every figure in a story?",
             options: [
-              "The year it describes, the collection, and whether it is an estimate",
+              "The year, the collection, and whether it is an estimate",
               "The publisher, the page, and the date you accessed the document",
               "The county, the age range, and the sex of the population",
-              "The domain, the dimension, and the endnote number",
+              "The wellness domain, the dimension, and the endnote number",
             ],
             correctIndex: 0,
             explanation:
@@ -2117,9 +2117,9 @@ export const REPORTER_READING_A_REPORT_COURSE: AuthoredCourse = {
           {
             prompt: "What does the report say about different surveys measuring the same indicator?",
             options: [
-              "They may use different definitions, so review the original methodology",
-              "They are reconciled by the compiler before publication",
-              "They are never used together within a single domain",
+              "They may define it differently, so review the source methodology",
+              "They are reconciled by the compiler before the report is published",
+              "They are never used together within a single wellness domain",
               "They produce comparable figures once weighted to the same population",
             ],
             correctIndex: 0,
@@ -2130,7 +2130,7 @@ export const REPORTER_READING_A_REPORT_COURSE: AuthoredCourse = {
           {
             prompt: "Why is almost nothing inside a 2025 report from 2025?",
             options: [
-              "Collections publish on their own lag",
+              "Each collection publishes on its own lag, so the data are older",
               "Because publishers deliberately withhold the most recent year",
               "Because the cover year refers to the edition rather than the data",
               "Because a five-year estimate cannot include the publication year",
@@ -2143,10 +2143,10 @@ export const REPORTER_READING_A_REPORT_COURSE: AuthoredCourse = {
           {
             prompt: "What is vintage, as this course uses the term?",
             options: [
-              "The year a figure actually describes",
-              "The year the report was published",
-              "The number of years a collection has been running",
-              "The interval between collection and publication",
+              "The year a figure actually describes, not the cover date",
+              "The year the report was published, as printed on the cover",
+              "The number of years a collection has been running so far",
+              "The interval between a collection and its publication",
             ],
             correctIndex: 0,
             explanation:
@@ -2156,8 +2156,8 @@ export const REPORTER_READING_A_REPORT_COURSE: AuthoredCourse = {
           {
             prompt: "Which section of a report is described as the part nobody reads?",
             options: [
-              "The definitions",
-              "The endnotes, which are consulted only when a figure is disputed",
+              "The definitions, where the report says what its words mean",
+              "The endnotes, consulted only when a figure is disputed",
               "The methodology, which most readers take on trust",
               "The limitations statement, which reads as a disclaimer",
             ],
@@ -2169,9 +2169,9 @@ export const REPORTER_READING_A_REPORT_COURSE: AuthoredCourse = {
           {
             prompt: "What does the report source its attendance definition to?",
             options: [
-              "Indiana Code",
+              "Indiana Code, so it is a statutory definition",
               "The National Center for Education Statistics",
-              "The Indiana Department of Health",
+              "The Indiana Department of Health's own guidance",
               "The American School Counselor Association",
             ],
             correctIndex: 0,
@@ -2183,9 +2183,9 @@ export const REPORTER_READING_A_REPORT_COURSE: AuthoredCourse = {
             prompt: "Which agency does the report source its status dropout definition to?",
             options: [
               "The National Center for Education Statistics",
-              "The Indiana Department of Education",
+              "The Indiana Department of Education's graduation office",
               "The Indiana Commission for Higher Education",
-              "The U.S. Census Bureau",
+              "The U.S. Census Bureau's Current Population Survey",
             ],
             correctIndex: 0,
             explanation:
@@ -2208,8 +2208,8 @@ export const REPORTER_READING_A_REPORT_COURSE: AuthoredCourse = {
           {
             prompt: "How long does the lesson say checking an indicator's definition takes?",
             options: [
-              "About a minute",
-              "An afternoon, since definitions are scattered through the document",
+              "About a minute, for age range, unit, and threshold",
+              "An afternoon, since definitions are scattered throughout",
               "A phone call to the publisher for each indicator used",
               "As long as reading the domain section it belongs to",
             ],
@@ -2247,9 +2247,9 @@ export const REPORTER_READING_A_REPORT_COURSE: AuthoredCourse = {
           {
             prompt: "What does the lesson say about assuming a citation is fabricated before checking?",
             options: [
-              "Do not assume either outcome before looking",
+              "Do not assume either outcome until you have searched for it",
               "Assume it is sound, since publishers verify their endnotes",
-              "Assume it is unreliable, since compiled endnotes are rarely checked",
+              "Assume it is unreliable, since compiled endnotes go unchecked",
               "Assume it is correct if the journal name is one you recognize",
             ],
             correctIndex: 0,
@@ -2260,7 +2260,7 @@ export const REPORTER_READING_A_REPORT_COURSE: AuthoredCourse = {
           {
             prompt: "Which of these is NOT a timeframe the report warns about?",
             options: [
-              "Rolling quarterly averages",
+              "Quarterly averages",
               "Calendar year",
               "School year",
               "Five-year estimates",
@@ -2273,7 +2273,7 @@ export const REPORTER_READING_A_REPORT_COURSE: AuthoredCourse = {
           {
             prompt: "What does the report tell readers to do about time periods?",
             options: [
-              "Check each indicator and data source",
+              "Check each indicator and data source for its time period",
               "Assume the cover year unless a table says otherwise",
               "Use the most recent year available across all indicators",
               "Contact the publisher for a schedule of collection dates",
@@ -2312,9 +2312,9 @@ export const REPORTER_READING_A_REPORT_COURSE: AuthoredCourse = {
           {
             prompt: "What does the lesson say a compiled table has no room for?",
             options: [
-              "Sample sizes and confidence intervals",
+              "Sample sizes and confidence intervals for each figure",
               "The name of the collection each figure came from",
-              "The year each figure describes",
+              "The year each figure describes, or its vintage",
               "The county-level breakdown of a statewide total",
             ],
             correctIndex: 0,
@@ -2325,7 +2325,7 @@ export const REPORTER_READING_A_REPORT_COURSE: AuthoredCourse = {
           {
             prompt: "What is the definitions section's role in a report, in one phrase?",
             options: [
-              "Where the report says what its words mean",
+              "Where the report says what its words and indicators mean",
               "Where the report lists the agencies it obtained data from",
               "Where the report states which figures are estimates",
               "Where the report records changes since the previous edition",
@@ -2377,7 +2377,7 @@ export const REPORTER_READING_A_REPORT_COURSE: AuthoredCourse = {
           {
             prompt: "What does the lesson call the sentence that ages badly?",
             options: [
-              "One that omits the year the figure describes",
+              "One that omits the year the figure actually describes",
               "One that names the collection but not the publisher",
               "One that reports a rate without its denominator",
               "One that quotes an executive summary rather than a table",
@@ -2390,7 +2390,7 @@ export const REPORTER_READING_A_REPORT_COURSE: AuthoredCourse = {
           {
             prompt: "What does the lesson say about a threshold printed in a definitions section?",
             options: [
-              "Find out whose it is",
+              "Find out whose it is before reporting a shortfall against it",
               "Treat it as a legal minimum unless the report says otherwise",
               "Ignore it, since thresholds are advisory and not measured",
               "Assume the publisher set it for the purposes of this report",
@@ -2403,8 +2403,8 @@ export const REPORTER_READING_A_REPORT_COURSE: AuthoredCourse = {
           {
             prompt: "Why does the vintage lesson say a 2025 cover date is not a scandal?",
             options: [
-              "Publication lag is normal for every collection",
-              "Because publishers may date a report to the year of its funding cycle",
+              "Publication lag is normal for every collection it draws on",
+              "Because publishers date a report to its funding cycle year",
               "Because a compilation is dated to its most recent indicator",
               "Because the cover year is only a marketing convention",
             ],
@@ -2529,9 +2529,9 @@ export const REPORTER_READING_A_REPORT_COURSE: AuthoredCourse = {
             prompt: "What is page 27 of the worked example headed?",
             options: [
               "Addressing Limitations in Available Data",
-              "Methodology and Process",
-              "About the Indiana Girl Report",
-              "Important Data Reminders",
+              "Methodology, Process, and Data Sources",
+              "About the Indiana Girl Report and Its Data",
+              "Important Data Reminders for Readers",
             ],
             correctIndex: 0,
             explanation:
@@ -2541,7 +2541,7 @@ export const REPORTER_READING_A_REPORT_COURSE: AuthoredCourse = {
           {
             prompt: "What does page 27 say about gender bias in the data?",
             options: [
-              "It is not yet possible to present data free from it",
+              "Despite efforts to limit it, bias-free data is not yet possible",
               "It has been eliminated by using gender-specific sources throughout",
               "It affects survey data but not administrative collections",
               "It is a national problem that does not apply to Indiana collections",
@@ -2554,7 +2554,7 @@ export const REPORTER_READING_A_REPORT_COURSE: AuthoredCourse = {
           {
             prompt: "What does page 27 say about gender data gaps beyond Indiana?",
             options: [
-              "Organizations around the world are working toward equitable standards",
+              "Organizations worldwide are working toward equitable standards",
               "They are unique to states without a dedicated youth data agency",
               "They have been resolved in national collections since 2020",
               "They apply only to indicators disaggregated below the state level",
@@ -2583,7 +2583,7 @@ export const REPORTER_READING_A_REPORT_COURSE: AuthoredCourse = {
               "A named uncertainty, a direction, and a quotable statement",
               "A correction, an apology, and a commitment to improve",
               "A margin of error, a sample size, and a response rate",
-              "A source, a year, and a population",
+              "A source, a year, and a population for each figure",
             ],
             correctIndex: 0,
             explanation:
@@ -2593,10 +2593,10 @@ export const REPORTER_READING_A_REPORT_COURSE: AuthoredCourse = {
           {
             prompt: "What follows for every table built on an undercounting collection?",
             options: [
-              "It inherits the undercount",
+              "It inherits the undercount from the collection it was built on",
               "Its margin of error widens while the estimate stays unbiased",
               "It must be republished once the collection is corrected",
-              "It becomes unusable and should not be cited",
+              "It becomes unusable and should not be cited at all",
             ],
             correctIndex: 0,
             explanation:
@@ -2606,10 +2606,10 @@ export const REPORTER_READING_A_REPORT_COURSE: AuthoredCourse = {
           {
             prompt: "What does the honest sentence look like, given a disclosed limitation?",
             options: [
-              "The best available measurement puts it at that rate, from a collection whose publisher says gaps remain",
-              "Girls experience the thing at that rate, attributed to the report",
-              "The rate is unknown because the data are biased",
-              "The rate is that figure, with a note that all data have limitations",
+              "The best available measure gives that rate, and its publisher says gaps remain",
+              "Girls experience the thing at that rate, attributed to the report as a whole",
+              "The rate is unknown, because the underlying data are biased by gender",
+              "The rate is that figure, with a note that all data have some limitations",
             ],
             correctIndex: 0,
             explanation:
@@ -2619,7 +2619,7 @@ export const REPORTER_READING_A_REPORT_COURSE: AuthoredCourse = {
           {
             prompt: "What is the symmetrical error page 27 forecloses?",
             options: [
-              "Using a disclosed limitation to dismiss the document",
+              "Using a disclosed limitation as grounds to dismiss the document",
               "Quoting the limitations statement without naming the publisher",
               "Reporting the limitation instead of the finding it qualifies",
               "Assuming the limitation applies to every indicator equally",
@@ -2632,7 +2632,7 @@ export const REPORTER_READING_A_REPORT_COURSE: AuthoredCourse = {
           {
             prompt: "What should a reporter do when a report contains no limitations section?",
             options: [
-              "Say so in the story",
+              "Say so in the story, since the absence is a fact about it",
               "Assume the publisher followed standard practice for its sector",
               "Reconstruct the limitations from the methodology section",
               "Decline to use the document until the publisher supplies one",
@@ -2645,10 +2645,10 @@ export const REPORTER_READING_A_REPORT_COURSE: AuthoredCourse = {
           {
             prompt: "Which three things should a reporter look for in every report from now on?",
             options: [
-              "A limitations section, a methodology section, and what was not measured",
-              "A denominator, a margin of error, and a response rate",
+              "A limitations section, a methodology, and what was not measured",
+              "A denominator, a margin of error, and a response rate for each",
               "An executive summary, a set of tables, and an endnote list",
-              "A publisher, a funder, and a named author",
+              "A publisher, a funder, and a named author for each section",
             ],
             correctIndex: 0,
             explanation:
@@ -2660,7 +2660,7 @@ export const REPORTER_READING_A_REPORT_COURSE: AuthoredCourse = {
             options: [
               "Compiled statewide data and qualitative listening sessions",
               "Primary survey research and secondary literature review",
-              "County rankings and statewide averages",
+              "County rankings and statewide averages for each domain",
               "Administrative records and peer-reviewed replication studies",
             ],
             correctIndex: 0,
@@ -2671,8 +2671,8 @@ export const REPORTER_READING_A_REPORT_COURSE: AuthoredCourse = {
           {
             prompt: "What does survey data with a sampling design support?",
             options: [
-              "Statements about shares of a population, within stated uncertainty",
-              "Statements about why a population behaves as it does",
+              "Statements about population shares, within stated uncertainty",
+              "Statements about why a population behaves the way that it does",
               "Statements about individuals within the sampled population",
               "Statements about what participants raised unprompted",
             ],
@@ -2684,10 +2684,10 @@ export const REPORTER_READING_A_REPORT_COURSE: AuthoredCourse = {
           {
             prompt: "What do listening sessions support?",
             options: [
-              "What participants raised, in what terms, with what intensity",
-              "The share of a population holding a given view",
-              "A trend across years in how a population feels",
-              "A comparison between two counties' experiences",
+              "What participants raised, in what terms, and how intensely",
+              "The share of a population that holds a given view",
+              "A trend across several years in how a population feels",
+              "A comparison between the experiences of two counties",
             ],
             correctIndex: 0,
             explanation:
@@ -2697,9 +2697,9 @@ export const REPORTER_READING_A_REPORT_COURSE: AuthoredCourse = {
           {
             prompt: "What is the first of the two symmetrical misreadings?",
             options: [
-              "Reporting a share from listening sessions",
+              "Reporting a population share from listening sessions",
               "Dismissing listening sessions because they are not a survey",
-              "Treating compiled data as primary research",
+              "Treating compiled data as primary research by the publisher",
               "Comparing qualitative themes across two editions of a report",
             ],
             correctIndex: 0,
@@ -2723,10 +2723,10 @@ export const REPORTER_READING_A_REPORT_COURSE: AuthoredCourse = {
           {
             prompt: "How is qualitative evidence attributed in one line?",
             options: [
-              "What participants said, how many sessions, with whom, and not representative",
+              "What was said, how many sessions, with whom, and not representative",
               "The theme, the publisher, and the year the sessions were held",
-              "The number of participants and the margin of error",
-              "The finding, attributed to the report as a whole",
+              "The number of participants and the margin of error around it",
+              "The finding, attributed to the report as a whole, with its page",
             ],
             correctIndex: 0,
             explanation:
@@ -2736,7 +2736,7 @@ export const REPORTER_READING_A_REPORT_COURSE: AuthoredCourse = {
           {
             prompt: "What does this track forbid when writing from a report about minors?",
             options: [
-              "Composite characters and quotations the young person did not give you",
+              "Composite characters, and quotes the young person did not give you",
               "Naming the report as the source of any figure about minors",
               "Reporting any figure disaggregated below the state level",
               "Quoting the report's content warning in a published story",
@@ -2762,7 +2762,7 @@ export const REPORTER_READING_A_REPORT_COURSE: AuthoredCourse = {
           {
             prompt: "What is the last check before writing from a report with two evidence types?",
             options: [
-              "Ask which type each sentence rests on",
+              "Ask which of the two evidence types each sentence rests on",
               "Ask whether the publisher has been contacted for comment",
               "Ask whether a competing outlet has already published",
               "Ask whether every figure has its margin of error attached",
@@ -2775,7 +2775,7 @@ export const REPORTER_READING_A_REPORT_COURSE: AuthoredCourse = {
           {
             prompt: "What does most same-day coverage of a report amount to?",
             options: [
-              "The executive summary rewritten",
+              "The executive summary rewritten in the outlet's own words",
               "A comparison of the report against the previous edition",
               "An interview with the publisher about the findings",
               "A county-by-county breakdown of the headline figure",
@@ -2788,9 +2788,9 @@ export const REPORTER_READING_A_REPORT_COURSE: AuthoredCourse = {
           {
             prompt: "What should a story lead with?",
             options: [
-              "A figure you traced to its table",
-              "The report's own headline finding, since that is what readers will hear elsewhere",
-              "The publisher's framing, since it is the most quotable material available",
+              "A figure you traced to its table, naming its source and year",
+              "The report's headline finding, since readers hear it elsewhere",
+              "The publisher's framing, since it is the most quotable material",
               "The largest number in the document, whatever its provenance",
             ],
             correctIndex: 0,
@@ -2804,7 +2804,7 @@ export const REPORTER_READING_A_REPORT_COURSE: AuthoredCourse = {
               "Who produced it, funding, its stated limits, and what it did not measure",
               "Reproducing the executive summary alongside the tables it draws on",
               "Interviewing the publisher about each of the four wellness domains",
-              "Comparing the document against the prior year's edition",
+              "Comparing the document against the prior year's edition of it",
             ],
             correctIndex: 0,
             explanation:
@@ -2814,8 +2814,8 @@ export const REPORTER_READING_A_REPORT_COURSE: AuthoredCourse = {
           {
             prompt: "Which of these is one of the four ways to get something not in the document?",
             options: [
-              "A county-level table the summary aggregated away",
-              "A second reading of the executive summary for a different angle",
+              "A county-level table that the summary aggregated away",
+              "A second reading of the summary for a different angle",
               "A quotation from the publisher's press release",
               "A comparison of two figures from different sections",
             ],
@@ -2827,7 +2827,7 @@ export const REPORTER_READING_A_REPORT_COURSE: AuthoredCourse = {
           {
             prompt: "What turns a rewrite into reporting?",
             options: [
-              "One thing that is not in the document",
+              "One thing not in the document, like an agency response",
               "A longer word count than the executive summary",
               "A second source confirming the report's headline figure",
               "A correction to something the report got wrong",
@@ -2853,7 +2853,7 @@ export const REPORTER_READING_A_REPORT_COURSE: AuthoredCourse = {
           {
             prompt: "Why publish the page numbers you used?",
             options: [
-              "So a reader can check you rather than trust you",
+              "So a reader can check the pages you used rather than trust you",
               "Because the publisher's reuse terms require page-level citation",
               "Because page numbers are the only stable identifier in a PDF",
               "Because it demonstrates how much of the document was read",
@@ -2866,7 +2866,7 @@ export const REPORTER_READING_A_REPORT_COURSE: AuthoredCourse = {
           {
             prompt: "What goes into the beat file alongside the document?",
             options: [
-              "The six fields, filled in",
+              "The six fields from lesson 5, filled in for each figure",
               "The publisher's contact details and press office hours",
               "A copy of the executive summary with the used sentences marked",
               "A list of every other outlet that covered the same report",
@@ -2879,7 +2879,7 @@ export const REPORTER_READING_A_REPORT_COURSE: AuthoredCourse = {
           {
             prompt: "What does this course hand off to the next one in the track?",
             options: [
-              "Interviewing the people in the report",
+              "Interviewing the people in the report, on deadline",
               "Filing records requests for the underlying extracts",
               "Verifying a claim within an hour of a deadline",
               "Choosing which shape a story should take",
@@ -2892,10 +2892,10 @@ export const REPORTER_READING_A_REPORT_COURSE: AuthoredCourse = {
           {
             prompt: "What is the relationship between the three courses so far in this track?",
             options: [
-              "Records got the document, this course got what it says, next comes the people",
-              "Each is independent and may be taken in any order",
+              "Records got the document, this one what it says, next the people",
+              "Each stands alone and may be taken in any order within the track",
               "The first two are prerequisites and the third is optional",
-              "Each covers the same skill at increasing depth",
+              "Each covers the same skill at increasing depth and difficulty",
             ],
             correctIndex: 0,
             explanation:
@@ -2905,10 +2905,10 @@ export const REPORTER_READING_A_REPORT_COURSE: AuthoredCourse = {
           {
             prompt: "What does the lesson call coverage that reproduces a summary's framing?",
             options: [
-              "A rewrite",
-              "An aggregation, since no original reporting is added",
-              "A syndication, since the material originates elsewhere",
-              "A briefing, since it informs without investigating",
+              "A rewrite, the summary in different words",
+              "An aggregation, since nothing original is added",
+              "A syndication, since it originates elsewhere",
+              "A briefing, since it informs without digging",
             ],
             correctIndex: 0,
             explanation:
@@ -2918,8 +2918,8 @@ export const REPORTER_READING_A_REPORT_COURSE: AuthoredCourse = {
           {
             prompt: "Why is page 27 not something a press release will hand you?",
             options: [
-              "It is not a finding",
-              "Because publishers are not permitted to quote their own limitations",
+              "It is not a finding, and press releases hand out findings",
+              "Because publishers may not quote their own limitations",
               "Because it appears after the executive summary in the document",
               "Because it concerns methodology rather than the report's subject",
             ],
@@ -2931,7 +2931,7 @@ export const REPORTER_READING_A_REPORT_COURSE: AuthoredCourse = {
           {
             prompt: "What does a named uncertainty differ from?",
             options: [
-              "A generic disclaimer",
+              "A generic disclaimer or boilerplate caveat",
               "A margin of error attached to an estimate",
               "A suppressed cell in a county table",
               "A definitional footnote in the appendix",
@@ -2957,10 +2957,10 @@ export const REPORTER_READING_A_REPORT_COURSE: AuthoredCourse = {
           {
             prompt: "Why does dismissing a document for disclosing a limitation make disclosure costly?",
             options: [
-              "It discourages the next publisher from disclosing",
+              "It discourages the next publisher from disclosing its limits",
               "It exposes the reporter to a complaint from the publisher",
               "It requires a correction once the publisher responds",
-              "It forfeits the reporter's access to the publisher's future reports",
+              "It forfeits the reporter's access to future reports",
             ],
             correctIndex: 0,
             explanation:
@@ -2970,10 +2970,10 @@ export const REPORTER_READING_A_REPORT_COURSE: AuthoredCourse = {
           {
             prompt: "What does the lesson say about the tradeoff in the honest sentence?",
             options: [
-              "Longer, harder to headline, and true",
+              "Longer and harder to headline, but true",
               "Shorter, more quotable, and defensible",
-              "Equally long, but attributed to the publisher rather than the reporter",
-              "Impossible to write without the publisher's cooperation",
+              "Equally long, but attributed to the publisher",
+              "Impossible to write without the publisher's help",
             ],
             correctIndex: 0,
             explanation:
@@ -2983,8 +2983,8 @@ export const REPORTER_READING_A_REPORT_COURSE: AuthoredCourse = {
           {
             prompt: "How many listening sessions and adult respondents does the qualitative lesson cite?",
             options: [
-              "91 sessions and 130 adults",
-              "130 sessions and 91 adults",
+              "91 listening sessions and feedback from 130 adults",
+              "130 listening sessions and feedback from 91 adults",
               "About 1,500 participants across both groups",
               "The report does not give a count for either",
             ],
@@ -3009,10 +3009,10 @@ export const REPORTER_READING_A_REPORT_COURSE: AuthoredCourse = {
           {
             prompt: "What is a representative sample, as the lesson defines it?",
             options: [
-              "One drawn so that shares generalize to a population",
+              "One drawn so that its shares generalize to a population",
               "One large enough to detect a difference between two groups",
               "One that includes participants from every county in a state",
-              "One recruited through an organization already serving the population",
+              "One recruited through an organization serving the population",
             ],
             correctIndex: 0,
             explanation:
@@ -3022,7 +3022,7 @@ export const REPORTER_READING_A_REPORT_COURSE: AuthoredCourse = {
           {
             prompt: "What should a reporter do if they want a person in a story about a report?",
             options: [
-              "Report one, with a consent process",
+              "Report one yourself, through a proper consent process",
               "Construct a composite from the report's session themes",
               "Quote an anonymous participant described in the document",
               "Use a hypothetical example clearly labeled as illustrative",
@@ -3048,10 +3048,10 @@ export const REPORTER_READING_A_REPORT_COURSE: AuthoredCourse = {
           {
             prompt: "What is the one extra thing, in the lesson's terms?",
             options: [
-              "A response, an upstream figure, a person, or a finer-grained table",
+              "An agency response, upstream figure, person, or finer table",
               "A second report covering the same subject in another state",
               "A quotation from the publisher explaining the methodology",
-              "A visualization the report did not produce itself",
+              "A visualization of the data the report did not produce",
             ],
             correctIndex: 0,
             explanation:
@@ -3061,7 +3061,7 @@ export const REPORTER_READING_A_REPORT_COURSE: AuthoredCourse = {
           {
             prompt: "What makes a report story useful after the news cycle?",
             options: [
-              "Published page numbers and a filled-in beat file",
+              "Published page numbers and a beat file with six fields",
               "A follow-up piece scheduled for the following week",
               "A link to the full document hosted on the outlet's site",
               "An interview with the publisher recorded for later use",
@@ -3074,7 +3074,7 @@ export const REPORTER_READING_A_REPORT_COURSE: AuthoredCourse = {
           {
             prompt: "What did plans/68 identify as the reason to build the track around this document?",
             options: [
-              "It documents its own limitations in its own voice",
+              "It documents its own limitations, in its own voice, on page 27",
               "It is the most recent statewide youth data compilation available",
               "It covers a subject the existing catalog has never addressed",
               "Its publisher agreed to let the course reproduce its tables",
@@ -3100,7 +3100,7 @@ export const REPORTER_READING_A_REPORT_COURSE: AuthoredCourse = {
           {
             prompt: "What does the lesson say most publishers do about limitations?",
             options: [
-              "State them defensively or not at all",
+              "State them as a defensive paragraph, or not at all",
               "Publish them as a separate technical appendix",
               "Quantify them as confidence intervals on each estimate",
               "Delegate them to the original collections they compiled from",
@@ -3126,7 +3126,7 @@ export const REPORTER_READING_A_REPORT_COURSE: AuthoredCourse = {
           {
             prompt: "What does the lesson say about the human specificity in a story?",
             options: [
-              "Most of it comes from the qualitative half",
+              "Most of it comes from the qualitative evidence",
               "It should be avoided in stories about minors entirely",
               "It comes from the largest figures in the document",
               "It is supplied by the publisher's own case studies",
@@ -3152,7 +3152,7 @@ export const REPORTER_READING_A_REPORT_COURSE: AuthoredCourse = {
           {
             prompt: "Why does the course say a traceable second-best number is better?",
             options: [
-              "It survives the first informed reader",
+              "It survives the first informed reader who asks",
               "It is more likely to be quoted by other outlets",
               "It is shorter and therefore easier to headline",
               "It avoids any need to contact the publisher",
@@ -3165,7 +3165,7 @@ export const REPORTER_READING_A_REPORT_COURSE: AuthoredCourse = {
           {
             prompt: "What does the beat file entry for a report enable eighteen months later?",
             options: [
-              "Answering a question about it in a minute",
+              "Answering a question about the report in a minute",
               "Republishing the story without rechecking the figures",
               "Establishing that the report has not been superseded",
               "Proving the publisher was contacted before publication",
@@ -3203,7 +3203,7 @@ export const REPORTER_READING_A_REPORT_COURSE: AuthoredCourse = {
           {
             prompt: "What does provenance tell you?",
             options: [
-              "What to check first",
+              "What to check first, not what the answer will turn out to be",
               "Whether the document can be trusted without further checking",
               "Which figures were independently verified before publication",
               "Whether the publisher will answer questions about its data",
@@ -3307,10 +3307,10 @@ export const REPORTER_READING_A_REPORT_COURSE: AuthoredCourse = {
           {
             prompt: "What are the six fields to record for a figure you intend to publish?",
             options: [
-              "Page, source, year, population, denominator, whether you saw the table",
+              "Page, source, year, population, denominator, table seen or not",
               "Publisher, author, title, edition, page, date accessed",
               "Sample, error, weighting, mode, response rate, vintage",
-              "Domain, dimension, indicator, county, sex, age",
+              "Domain, dimension, indicator, county, sex, and age range",
             ],
             correctIndex: 0,
             explanation:
@@ -3385,7 +3385,7 @@ export const REPORTER_READING_A_REPORT_COURSE: AuthoredCourse = {
           {
             prompt: "Why is a lower share of girls receiving mental health treatment ambiguous?",
             options: [
-              "It is consistent with less need and with less access",
+              "It is consistent with less need and equally with less access",
               "Because caregiver-reported figures cannot be compared across years",
               "Because the national average is a poor comparison for one state",
               "Because treatment rates are always understated in survey data",
@@ -3424,7 +3424,7 @@ export const REPORTER_READING_A_REPORT_COURSE: AuthoredCourse = {
           {
             prompt: "What is the definitional trap in the inpatient and emergency department indicators?",
             options: [
-              "Ages 15 to 24 against under 18",
+              "Ages 15 to 24 against under 18, under one heading",
               "One counts people and the other counts visits",
               "One is annual and the other is a five-year estimate",
               "One is state data and the other is national",
@@ -3440,7 +3440,7 @@ export const REPORTER_READING_A_REPORT_COURSE: AuthoredCourse = {
               "Participation as a share of the county student population",
               "Eligibility as a share of the county student population",
               "Applications submitted during the school year",
-              "Meals served divided by enrolled students",
+              "Meals served each day divided by enrolled students",
             ],
             correctIndex: 0,
             explanation:
@@ -3452,8 +3452,8 @@ export const REPORTER_READING_A_REPORT_COURSE: AuthoredCourse = {
             options: [
               "A snapshot of 16 to 24 year olds not in school without a diploma",
               "A count of students who left school during the reporting year",
-              "The share of a cohort failing to graduate on schedule",
-              "The proportion of enrolled students chronically absent",
+              "The share of an entering cohort failing to graduate on schedule",
+              "The proportion of enrolled students who are chronically absent",
             ],
             correctIndex: 0,
             explanation:
@@ -3478,8 +3478,8 @@ export const REPORTER_READING_A_REPORT_COURSE: AuthoredCourse = {
             options: [
               "Age range, people or events, and whose threshold",
               "Page, publisher, and year of publication",
-              "Sample size, error, and weighting",
-              "County, domain, and dimension",
+              "Sample size, margin of error, and weighting",
+              "County, wellness domain, and dimension",
             ],
             correctIndex: 0,
             explanation:
@@ -3489,9 +3489,9 @@ export const REPORTER_READING_A_REPORT_COURSE: AuthoredCourse = {
           {
             prompt: "What are the three kinds of endnote, and how does each resolve?",
             options: [
-              "Survey indicator to a published page, data request to a records request, journal to a paper",
+              "Survey to a published page, data request to a records request, journal to a paper",
               "Primary to a collection, secondary to a compilation, tertiary to a summary",
-              "Federal to an agency, state to a department, local to a district",
+              "Federal to an agency, state to a department, local to a school district",
               "Public to a portal, restricted to an agreement, proprietary to a purchase",
             ],
             correctIndex: 0,
@@ -3580,10 +3580,10 @@ export const REPORTER_READING_A_REPORT_COURSE: AuthoredCourse = {
           {
             prompt: "What three clauses go with every figure in a story?",
             options: [
-              "The year it describes, the collection, and whether it is an estimate",
-              "The publisher, the page, and the access date",
-              "The county, the age range, and the sex",
-              "The domain, the dimension, and the indicator",
+              "Its year, its collection, and whether it is an estimate",
+              "The publisher, the page, and the date you accessed it",
+              "The county, the age range, and the sex of the group",
+              "The domain, the dimension, and the indicator number",
             ],
             correctIndex: 0,
             explanation:
@@ -3593,7 +3593,7 @@ export const REPORTER_READING_A_REPORT_COURSE: AuthoredCourse = {
           {
             prompt: "What is page 27 headed, and what makes it rare?",
             options: [
-              "Addressing Limitations in Available Data, stated in the publisher's own voice",
+              "Addressing Limitations in Available Data, in the publisher's voice",
               "Methodology and Process, with every source individually verified",
               "Important Data Reminders, with warnings about comparability",
               "About the Indiana Girl Report, with the reuse terms printed",
@@ -3621,8 +3621,8 @@ export const REPORTER_READING_A_REPORT_COURSE: AuthoredCourse = {
             options: [
               "A named uncertainty, a direction, and a quotable statement",
               "A confidence interval, a sample size, and a response rate",
-              "A correction, an apology, and a revised figure",
-              "A denominator, a population, and a year",
+              "A correction, an apology, and a revised figure to cite",
+              "A denominator, a population, and a year for the figure",
             ],
             correctIndex: 0,
             explanation:
@@ -3633,8 +3633,8 @@ export const REPORTER_READING_A_REPORT_COURSE: AuthoredCourse = {
             prompt: "What should a reporter say about a report with no limitations section?",
             options: [
               "Say so in the story, because readers can weigh it",
-              "Nothing, since most reports omit one",
-              "Decline to cite the document at all",
+              "Nothing, since most reports leave the section out",
+              "Decline to cite the document in the story at all",
               "Reconstruct the limitations from the methodology",
             ],
             correctIndex: 0,
@@ -3660,8 +3660,8 @@ export const REPORTER_READING_A_REPORT_COURSE: AuthoredCourse = {
             options: [
               "Composite characters and quotations they did not give you",
               "Citing the report as the source of any figure about minors",
-              "Reporting county-level figures for young people",
-              "Quoting the report's content warning in a story",
+              "Reporting any county-level figures about young people",
+              "Quoting the report's content warning in a published story",
             ],
             correctIndex: 0,
             explanation:
@@ -3672,7 +3672,7 @@ export const REPORTER_READING_A_REPORT_COURSE: AuthoredCourse = {
             prompt: "What is a blended sentence, and why does it matter?",
             options: [
               "One resting silently on both evidence types, and the likeliest correction",
-              "One combining two figures from different collections, and a comparability error",
+              "One combining figures from two collections, and a comparability error",
               "One merging statements from several participants, and a fabrication",
               "One compressing a table into a ratio, and a summary artifact",
             ],
