@@ -70,12 +70,10 @@ const GRANDFATHERED: Record<string, number> = {
   "scripts/data/notes-made-by-mr-george-hunt-course.ts": 1.00,
   "scripts/data/photography-credit-course.ts": 1.00,
   "scripts/data/read-the-plan-and-the-code-course.ts": 1.00,
-  "scripts/data/reporter-public-records-course.ts": 0.96,
   "scripts/data/reporter-reading-a-report-course.ts": 0.78,
   "scripts/data/retirement-accounts-course.ts": 1.00,
   "scripts/data/she-took-the-seat-course.ts": 1.00,
   "scripts/data/shirley-graham-course.ts": 0.95,
-  "scripts/data/soul-train-the-business-course.ts": 1.00,
   "scripts/data/survival-course.ts": 1.00,
   "scripts/data/taxes-and-filing-course.ts": 1.00,
   "scripts/data/territories-course.ts": 0.97,
@@ -83,7 +81,6 @@ const GRANDFATHERED: Record<string, number> = {
   "scripts/data/the-mark-and-the-star-course.ts": 0.90,
   "scripts/data/the-match-course.ts": 0.97,
   "scripts/data/the-name-on-the-door-course.ts": 1.00,
-  "scripts/data/the-partner-and-the-prize-course.ts": 1.00,
   "scripts/data/the-river-and-the-watershed-course.ts": 0.85,
   "scripts/data/well-context-equity-course.ts": 1.00,
   "scripts/data/what-the-citation-records-course.ts": 1.00,
@@ -96,7 +93,6 @@ const GRANDFATHERED: Record<string, number> = {
   "scripts/data/whose-name-is-on-the-score-course.ts": 1.00,
   "scripts/data/whose-names-the-payroll-kept-course.ts": 1.00,
   "scripts/data/writing-poems-and-songs-course.ts": 1.00,
-  "scripts/data/written-by-himself-course.ts": 1.00,
 };
 
 function trackedFiles(): string[] {
