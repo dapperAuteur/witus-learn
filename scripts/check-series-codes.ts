@@ -89,6 +89,9 @@ for (const [series, arr] of bySeries) {
   for (const e of arr) {
     const pos = (e.seriesPosition ?? "").toUpperCase();
     const dup = seen.get(pos);
+    // The same course on a second school (a preview of a series' first course, which
+    // tests/seed-registry.test.ts allows) is one course, not two claiming its position.
+    if (dup === e.slug) continue;
     if (dup) violations.push(`series "${series}": ${dup} and ${e.slug} both claim position ${pos}`);
     else seen.set(pos, e.slug);
     if (pos === "00") starts++;
