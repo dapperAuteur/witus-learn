@@ -130,10 +130,10 @@ export const REPORTER_PUBLIC_RECORDS_COURSE: AuthoredCourse = {
           {
             prompt: "What does a public-records act govern?",
             options: [
-              "What an agency must hand over on request",
-              "When a governing body must deliberate in public and how much notice it owes",
-              "Which categories of official may speak to the press without prior approval",
-              "How long an agency must keep documents before they may lawfully be destroyed",
+              "What an agency must hand over on request, to anyone, usually regardless of who asks or why",
+              "When a body must deliberate in public and how much notice it owes",
+              "Which officials may speak to the press without prior approval",
+              "How long an agency must keep documents before destroying them",
             ],
             correctIndex: 0,
             explanation:
@@ -169,10 +169,10 @@ export const REPORTER_PUBLIC_RECORDS_COURSE: AuthoredCourse = {
           {
             prompt: "Why is attending a public meeting the beginning of records work?",
             options: [
-              "The meeting produces requestable records",
-              "Because a reporter present at the meeting has standing to request its recordings",
-              "Because attendance is a statutory precondition for requesting the body's documents",
-              "Because minutes are only released to people who attended the session they cover",
+              "The meeting produces agendas, packets, minutes, and contracts, all requestable",
+              "Attendees gain standing to request its recordings",
+              "Because attendance is a statutory precondition for requesting any of the body's documents",
+              "Minutes go only to people who attended the session",
             ],
             correctIndex: 0,
             explanation:
@@ -182,10 +182,10 @@ export const REPORTER_PUBLIC_RECORDS_COURSE: AuthoredCourse = {
           {
             prompt: "Which of these does records law reach that meetings law does not?",
             options: [
-              "Email and inspection reports",
-              "The deliberations of a body that has lawfully entered executive session",
-              "Advance notice of items a body intends to add to a future agenda",
-              "Statements officials make to reporters outside the meeting room",
+              "Email and inspection reports the agency created or received",
+              "Deliberations held in a lawful executive session",
+              "Advance notice of future agenda items",
+              "Officials' remarks to reporters outside the room",
             ],
             correctIndex: 0,
             explanation:
@@ -195,9 +195,9 @@ export const REPORTER_PUBLIC_RECORDS_COURSE: AuthoredCourse = {
           {
             prompt: "What adversary structure does records law have that meetings law mostly lacks?",
             options: [
-              "Review, redaction, charges, and refusal",
-              "A requirement that both parties appear before a hearing officer to resolve disputes",
-              "A criminal penalty for an official who withholds a document from a journalist",
+              "Review, redaction, charges, and refusal, each of which can be contested",
+              "A mandatory joint hearing before a hearing officer",
+              "A criminal penalty for withholding from a journalist",
               "A statutory presumption that the requester must justify their need for the record",
             ],
             correctIndex: 0,
@@ -221,8 +221,8 @@ export const REPORTER_PUBLIC_RECORDS_COURSE: AuthoredCourse = {
           {
             prompt: "Where does a requester's purpose actually become decisive?",
             options: [
-              "In a fee-waiver argument",
-              "In whether the agency must conduct a search of archived and backup systems",
+              "In a fee-waiver argument about public understanding",
+              "In whether archives must be searched",
               "In whether an exemption for personal privacy can be applied to the records",
               "In whether the request qualifies for review by an access ombudsman",
             ],
@@ -247,9 +247,9 @@ export const REPORTER_PUBLIC_RECORDS_COURSE: AuthoredCourse = {
           {
             prompt: "What is the most common reason a new reporter's request produces nothing?",
             options: [
-              "They wrote a question",
-              "They failed to state the statute they were invoking in the opening line",
-              "They sent it to a general inbox rather than to the designated custodian",
+              "They wrote a question instead of naming a record",
+              "They omitted the statute's name",
+              "They sent it to a general inbox",
               "They asked for records held on personal devices, which are exempt",
             ],
             correctIndex: 0,
@@ -260,10 +260,10 @@ export const REPORTER_PUBLIC_RECORDS_COURSE: AuthoredCourse = {
           {
             prompt: "Which federal entity is subject to FOIA?",
             options: [
-              "An independent regulatory agency",
-              "A standing committee of the United States Senate and its investigative staff",
-              "A federal district court's clerk of court and its docketing office",
-              "The President's immediate personal staff within the Executive Office",
+              "An independent regulatory agency in the executive branch",
+              "A Senate standing committee",
+              "A federal district court clerk",
+              "The President's personal staff",
             ],
             correctIndex: 0,
             explanation:
@@ -273,8 +273,8 @@ export const REPORTER_PUBLIC_RECORDS_COURSE: AuthoredCourse = {
           {
             prompt: "What happens when a reporter files a FOIA request with a congressional committee?",
             options: [
-              "It is the wrong statute",
-              "It is a denial that can be appealed through the Office of Government Information Services",
+              "It is the wrong statute, since Congress is not covered",
+              "It is an appealable denial",
               "It is processed under the committee's own rules, which mirror the federal exemptions",
               "It triggers a twenty-business-day clock that runs from the date of receipt",
             ],
@@ -286,9 +286,9 @@ export const REPORTER_PUBLIC_RECORDS_COURSE: AuthoredCourse = {
           {
             prompt: "Which law covers a county, a city, and a school district?",
             options: [
-              "The state's own records act",
-              "FOIA, which reaches any body receiving federal funds through a formula program",
-              "Whichever act the body designates in its published records policy",
+              "The state's own records act, not the federal FOIA",
+              "FOIA, via federal funding",
+              "Whichever the body designates",
               "Both FOIA and state law, with the requester choosing which to invoke",
             ],
             correctIndex: 0,
@@ -300,9 +300,9 @@ export const REPORTER_PUBLIC_RECORDS_COURSE: AuthoredCourse = {
             prompt: "Which of these is named as a hard coverage case?",
             options: [
               "A private contractor performing a public function",
-              "A state agency that has been reorganized under a new department name",
-              "A county office whose records are stored by a commercial cloud provider",
-              "A city council committee that meets less than four times a year",
+              "A renamed state agency",
+              "A county office using cloud storage",
+              "A rarely meeting council committee",
             ],
             correctIndex: 0,
             explanation:
@@ -313,7 +313,7 @@ export const REPORTER_PUBLIC_RECORDS_COURSE: AuthoredCourse = {
             prompt: "Why are the hard coverage cases frequently litigated?",
             options: [
               "The answer decides whether public money is visible",
-              "Because the entities themselves lack standing to defend a records decision in court",
+              "Entities lack standing in court",
               "Because state acts contain no definition of a public agency, leaving courts to supply one",
               "Because federal and state statutes reach the same entities and conflict with each other",
             ],
@@ -325,10 +325,10 @@ export const REPORTER_PUBLIC_RECORDS_COURSE: AuthoredCourse = {
           {
             prompt: "How do many states treat a record about public business held in an official's personal email?",
             options: [
-              "As public regardless of the device",
-              "As exempt, because personal accounts are outside the agency's possession and control",
-              "As public only if the official copied an official account on the message",
-              "As public only after a court has ordered the account to be searched",
+              "As public, whatever device or account holds the message",
+              "As exempt, being outside agency control",
+              "As public only if copied to work email",
+              "As public only once a court orders a search",
             ],
             correctIndex: 0,
             explanation:
@@ -365,8 +365,8 @@ export const REPORTER_PUBLIC_RECORDS_COURSE: AuthoredCourse = {
             prompt: "What is the working definition of a record?",
             options: [
               "Documentary material an agency created or received and controls",
-              "Any document an agency has designated as public in its published records policy",
-              "A document produced in the course of a formal proceeding and entered into a file",
+              "Any document the agency deems public",
+              "A document filed in a formal proceeding",
               "Any writing that has been signed, dated, or otherwise formally executed by an official",
             ],
             correctIndex: 0,
@@ -390,10 +390,10 @@ export const REPORTER_PUBLIC_RECORDS_COURSE: AuthoredCourse = {
           {
             prompt: "What does the lesson mean by asking for the artifact rather than the fact?",
             options: [
-              "Name the log, not the count",
-              "Request the physical original rather than a copy, so authenticity can be established",
-              "Request the agency's interpretation of the data alongside the data itself",
-              "Request only records that have already been released to another requester",
+              "Name the log, not the count, in the format kept",
+              "Request the physical original",
+              "Request the agency's interpretation",
+              "Request only already-released records",
             ],
             correctIndex: 0,
             explanation:
@@ -404,9 +404,9 @@ export const REPORTER_PUBLIC_RECORDS_COURSE: AuthoredCourse = {
             prompt: "Why does naming the underlying system defeat a no-responsive-records reply?",
             options: [
               "You did not ask for a summary that may never have existed",
-              "Because an agency must create a record when the requester names the system holding it",
-              "Because naming a system converts the request into a demand for expedited processing",
-              "Because a named system shifts the burden of searching onto the requester",
+              "The agency must then create the record",
+              "It converts the request to expedited processing",
+              "It shifts the search burden to the requester",
             ],
             correctIndex: 0,
             explanation:
@@ -417,7 +417,7 @@ export const REPORTER_PUBLIC_RECORDS_COURSE: AuthoredCourse = {
             prompt: "What should be requested alongside a database export?",
             options: [
               "The record layout or data dictionary",
-              "A signed certification that the export is a complete and accurate copy",
+              "A completeness certificate",
               "The agency's own published analysis of the same data for the same period",
               "A list of every other requester who has received the same export",
             ],
@@ -429,9 +429,9 @@ export const REPORTER_PUBLIC_RECORDS_COURSE: AuthoredCourse = {
           {
             prompt: "Why ask whether a system produces standard reports?",
             options: [
-              "A standard report is cheap and quick",
-              "Because a standard report is exempt from fees under every state records act",
-              "Because an agency may refuse a custom export but never a report it already runs",
+              "A standard report can be cheap and quick even when an export is not",
+              "Standard reports are exempt from fees by statute",
+              "An agency may never refuse a report it runs",
               "Because standard reports carry a data dictionary that custom exports do not",
             ],
             correctIndex: 0,
@@ -455,10 +455,10 @@ export const REPORTER_PUBLIC_RECORDS_COURSE: AuthoredCourse = {
           {
             prompt: "Why does the lesson call retention the hidden clock?",
             options: [
-              "Records are destroyed on schedules",
-              "Because a request must be filed within a set period after a record is created",
-              "Because an agency may delay a response until its retention review is complete",
-              "Because retention rules determine which exemption applies to an older record",
+              "Records are destroyed on schedules, so a story can expire",
+              "Requests must follow creation within a set period",
+              "A response may await retention review",
+              "Retention decides which exemption applies",
             ],
             correctIndex: 0,
             explanation:
@@ -469,7 +469,7 @@ export const REPORTER_PUBLIC_RECORDS_COURSE: AuthoredCourse = {
             prompt: "What does the lesson say about an agency's retention schedule itself?",
             options: [
               "It is usually a public document worth holding",
-              "It is internal guidance and is generally exempt from disclosure",
+              "It is internal and generally exempt",
               "It is set federally, so a single copy covers every agency on a beat",
               "It changes too often to be worth keeping a copy of on file",
             ],
@@ -482,9 +482,9 @@ export const REPORTER_PUBLIC_RECORDS_COURSE: AuthoredCourse = {
             prompt: "Which is the better records request?",
             options: [
               "The complaint log for a named site, 1 January to 31 December 2025",
-              "Any and all documents relating in any way to complaints about parking facilities",
-              "A statement of how many complaints the agency received about its garages last year",
-              "The agency's explanation of why complaints about the north garage increased",
+              "Any and all documents about parking complaints",
+              "How many garage complaints arrived last year",
+              "Why north garage complaints increased",
             ],
             correctIndex: 0,
             explanation:
@@ -520,9 +520,9 @@ export const REPORTER_PUBLIC_RECORDS_COURSE: AuthoredCourse = {
           {
             prompt: "What does the lesson say the word FOIA is often used for colloquially?",
             options: [
-              "All records requests, including state ones",
-              "Only requests made to federal law enforcement and intelligence agencies",
-              "Any request that has been formally denied and is heading to appeal",
+              "All records requests, including ones under state acts",
+              "Only federal law enforcement requests",
+              "Any denied request on appeal",
               "Requests made by journalists, as distinct from those made by the public",
             ],
             correctIndex: 0,
@@ -585,10 +585,10 @@ export const REPORTER_PUBLIC_RECORDS_COURSE: AuthoredCourse = {
           {
             prompt: "Why does the lesson describe records law as having a different failure mode from meetings law?",
             options: [
-              "An agency can refuse, redact, and charge",
-              "Because meetings law carries criminal penalties and records law carries only civil ones",
-              "Because a meeting cannot be delayed while a records response can be extended indefinitely",
-              "Because records law applies to fewer bodies than the equivalent meetings statute",
+              "An agency can review, refuse, redact, and charge for records",
+              "Meetings law alone carries criminal penalties",
+              "A records response can be extended indefinitely",
+              "Records law covers fewer bodies",
             ],
             correctIndex: 0,
             explanation:
@@ -598,8 +598,8 @@ export const REPORTER_PUBLIC_RECORDS_COURSE: AuthoredCourse = {
           {
             prompt: "What does the lesson say about a request sent to a general inbox?",
             options: [
-              "It can sit unrouted",
-              "It is invalid, and the agency must return it with instructions to refile",
+              "It can sit unrouted while you believe a clock runs",
+              "It is invalid and must be refiled",
               "It starts the statutory clock immediately, which is why it is the safer route",
               "It is automatically forwarded to the designated custodian under federal rules",
             ],
@@ -611,9 +611,9 @@ export const REPORTER_PUBLIC_RECORDS_COURSE: AuthoredCourse = {
           {
             prompt: "What kind of material does a records act reach that is generated outside any meeting?",
             options: [
-              "Settlement agreements and calendars",
-              "Draft minutes that have not yet been approved by the body that produced them",
-              "Deliberations conducted in a properly noticed executive session",
+              "Settlement agreements and officials' calendars",
+              "Unapproved draft minutes",
+              "Executive-session deliberations",
               "Verbal instructions given by an official to staff during a briefing",
             ],
             correctIndex: 0,
@@ -624,10 +624,10 @@ export const REPORTER_PUBLIC_RECORDS_COURSE: AuthoredCourse = {
           {
             prompt: "Why should you name a machine-readable format when requesting data?",
             options: [
-              "So the result can be analyzed",
-              "Because agencies are required by statute to produce data in the requester's chosen format",
-              "Because machine-readable formats are exempt from duplication fees under FOIA",
-              "Because a named format shortens the statutory response deadline",
+              "So the result can be analyzed, not just read as an image",
+              "Statute requires the requester's chosen format",
+              "Such formats are fee-exempt under FOIA",
+              "A named format shortens the deadline",
             ],
             correctIndex: 0,
             explanation:
@@ -638,7 +638,7 @@ export const REPORTER_PUBLIC_RECORDS_COURSE: AuthoredCourse = {
             prompt: "What does the lesson say about requesting a wider window when a date is unknown?",
             options: [
               "Narrowing is cheap, refiling is a new clock",
-              "A wider window will be rejected as overbroad and should be avoided entirely",
+              "Wider windows are rejected as overbroad",
               "Agencies charge by date range, so a wider window always costs more",
               "The statutory deadline extends automatically for requests covering multiple years",
             ],
@@ -651,9 +651,9 @@ export const REPORTER_PUBLIC_RECORDS_COURSE: AuthoredCourse = {
             prompt: "Which of these is a record request rather than a question?",
             options: [
               "The inspection reports for a named facility over a named year",
-              "Whether the facility passed its most recent inspection and on what date",
-              "How many violations inspectors have found at the facility since 2020",
-              "Why the facility has been inspected more often than comparable sites",
+              "Whether it passed its last inspection",
+              "How many violations since 2020",
+              "Why it is inspected so often",
             ],
             correctIndex: 0,
             explanation:
@@ -663,10 +663,10 @@ export const REPORTER_PUBLIC_RECORDS_COURSE: AuthoredCourse = {
           {
             prompt: "What does the lesson say about assuming a personal-device record is out of reach?",
             options: [
-              "Never assume, and never let the agency assume",
-              "Assume it is out of reach, since possession by an individual is not possession by the agency",
-              "Assume it is reachable, since federal law now covers personal devices in every state",
-              "Assume it depends on whether the official is elected or appointed",
+              "Never assume it, and never let the agency assume it for you",
+              "Out of reach, held by an individual",
+              "Reachable, since federal law covers it",
+              "Assume it depends on whether the official is elected or appointed to office",
             ],
             correctIndex: 0,
             explanation:
@@ -677,7 +677,7 @@ export const REPORTER_PUBLIC_RECORDS_COURSE: AuthoredCourse = {
             prompt: "Which body type does the lesson list among the hard cases alongside charter schools?",
             options: [
               "Police agencies at private universities",
-              "County sheriffs, whose records are held by an elected rather than appointed official",
+              "Elected county sheriffs",
               "State legislative committees, which are covered by the legislature's own rules",
               "Municipal utilities, which operate under a separate rate-setting statute",
             ],
@@ -690,9 +690,9 @@ export const REPORTER_PUBLIC_RECORDS_COURSE: AuthoredCourse = {
             prompt: "What is the practical consequence of records law reaching email?",
             options: [
               "A beat extends past what was ever said publicly",
-              "An agency must monitor employee correspondence to remain compliant with the act",
-              "A requester may compel an official to produce their personal account credentials",
-              "Every message becomes a permanent record that can never lawfully be deleted",
+              "Agencies must monitor staff email",
+              "Officials must surrender passwords",
+              "No message may ever be deleted",
             ],
             correctIndex: 0,
             explanation:
@@ -715,9 +715,9 @@ export const REPORTER_PUBLIC_RECORDS_COURSE: AuthoredCourse = {
           {
             prompt: "What kind of statement is no responsive records, according to this course?",
             options: [
-              "A claim about a search",
-              "A binding determination that the material has never existed in any agency system",
-              "A denial under a specific exemption that must be identified in the letter",
+              "A claim about a search, which can be questioned",
+              "A binding finding of nonexistence",
+              "An exemption-based denial",
               "An acknowledgment that starts the appeal clock running from the date sent",
             ],
             correctIndex: 0,
@@ -730,7 +730,7 @@ export const REPORTER_PUBLIC_RECORDS_COURSE: AuthoredCourse = {
             options: [
               "A misnamed body can be treated as no body at all",
               "Because the statutory deadline is calculated from the legal name's registration date",
-              "Because fee schedules are published under legal names rather than common names",
+              "Fees are published by legal name",
               "Because an agency may not release records to a requester who misnames it",
             ],
             correctIndex: 0,
@@ -742,9 +742,9 @@ export const REPORTER_PUBLIC_RECORDS_COURSE: AuthoredCourse = {
             prompt: "Which of these is the correct order of the two questions before filing?",
             options: [
               "Is the body covered, then where does the record sit",
-              "How much will it cost, then which exemption is likely to be claimed",
-              "What is the deadline, then who will process the request inside the agency",
-              "What format is available, then which appeal route the state provides",
+              "Cost first, then the likely exemption",
+              "Deadline first, then who processes it",
+              "Format first, then the appeal route",
             ],
             correctIndex: 0,
             explanation:
@@ -768,9 +768,9 @@ export const REPORTER_PUBLIC_RECORDS_COURSE: AuthoredCourse = {
             prompt: "What is the risk of relying only on what a meeting produced?",
             options: [
               "You never see the email or the inspection report",
-              "You miss the statutory deadline for challenging what the body decided",
+              "You miss the challenge deadline",
               "You lose the right to request the same material later under the records act",
-              "You are limited to the exemptions the meetings statute allows",
+              "You are bound by meetings exemptions",
             ],
             correctIndex: 0,
             explanation:
@@ -892,9 +892,9 @@ export const REPORTER_PUBLIC_RECORDS_COURSE: AuthoredCourse = {
             prompt: "What is a formal request, described as an instrument?",
             options: [
               "A legal filing with a clock, a fee, and an appeal route",
-              "A courtesy notice that an agency may honor or decline at its discretion",
-              "A demand that suspends an agency's authority to destroy responsive records",
-              "An administrative step that must precede any conversation with a records officer",
+              "A courtesy the agency may decline",
+              "A demand that freezes record destruction",
+              "A step required before talking to an officer",
             ],
             correctIndex: 0,
             explanation:
@@ -905,7 +905,7 @@ export const REPORTER_PUBLIC_RECORDS_COURSE: AuthoredCourse = {
             prompt: "Why do agencies often release a document informally when asked?",
             options: [
               "It costs them less than a processed request",
-              "Because informal release removes their ability to charge a duplication fee",
+              "It voids their duplication fees",
               "Because a released document restarts the statutory clock in their favor",
               "Because informal release exempts them from logging the request publicly",
             ],
@@ -917,9 +917,9 @@ export const REPORTER_PUBLIC_RECORDS_COURSE: AuthoredCourse = {
           {
             prompt: "What is the highest-value conversation in the records process?",
             options: [
-              "Asking the records officer what exists",
-              "Asking the agency's counsel which exemptions they intend to claim in advance",
-              "Asking the press office to confirm whether a story is worth pursuing at all",
+              "Asking the records officer what exists and what it is called",
+              "Asking counsel about planned exemptions",
+              "Asking the press office whether to proceed",
               "Asking a competing reporter what they have already obtained from the same agency",
             ],
             correctIndex: 0,
@@ -931,9 +931,9 @@ export const REPORTER_PUBLIC_RECORDS_COURSE: AuthoredCourse = {
             prompt: "What is a records officer able to tell you that no document can?",
             options: [
               "That the thing you want is called something else",
-              "Which exemption a court would uphold if the request were denied",
-              "Whether the agency intends to release the material to any other requester",
-              "How long the record will be retained before it is destroyed under schedule",
+              "Which exemption a court would uphold",
+              "Whether others will get the material",
+              "How long it will be retained",
             ],
             correctIndex: 0,
             explanation:
@@ -943,8 +943,8 @@ export const REPORTER_PUBLIC_RECORDS_COURSE: AuthoredCourse = {
           {
             prompt: "Why file formally even after an agency agrees to send something?",
             options: [
-              "A verbal no is not appealable",
-              "Because informal release is unlawful unless a formal request is also on file",
+              "A verbal no is not appealable and leaves no record",
+              "Informal release is otherwise unlawful",
               "Because a formal filing entitles the reporter to a fee waiver on the same material",
               "Because agencies must log informal releases and will refuse them without a filing",
             ],
@@ -956,9 +956,9 @@ export const REPORTER_PUBLIC_RECORDS_COURSE: AuthoredCourse = {
           {
             prompt: "Whom should a request be written to be read by?",
             options: [
-              "Someone who was not on the call",
-              "The official whose conduct the resulting story is most likely to scrutinize",
-              "The reporter's own editor, who must approve the scope before it is sent",
+              "Someone who was not on the call, possibly a lawyer",
+              "The official the story will scrutinize",
+              "The reporter's own editor",
               "A judge, since the wording will be quoted verbatim in any eventual litigation",
             ],
             correctIndex: 0,
@@ -983,9 +983,9 @@ export const REPORTER_PUBLIC_RECORDS_COURSE: AuthoredCourse = {
             prompt: "What does a complete request log record?",
             options: [
               "Date, text, recipient, tracking number, promises, extensions",
-              "The reporter's assessment of how cooperative each agency has been over time",
-              "Only the requests that produced documents, since denials are tracked separately",
-              "The exemptions claimed, so a pattern can be raised with the agency's counsel",
+              "A rating of each agency's cooperativeness",
+              "Only requests that produced documents",
+              "The exemptions claimed, for counsel",
             ],
             correctIndex: 0,
             explanation:
@@ -1021,10 +1021,10 @@ export const REPORTER_PUBLIC_RECORDS_COURSE: AuthoredCourse = {
           {
             prompt: "What is the first part of a well-formed request?",
             options: [
-              "The statute invoked, by name and citation",
-              "A description of the story the records are intended to support",
-              "A statement of the requester's profession and employer",
-              "The date range, which determines how the agency scopes its search",
+              "The statute invoked, by name and citation, so the deadline is clear",
+              "A description of the intended story",
+              "The requester's profession and employer",
+              "The date range, to scope the search",
             ],
             correctIndex: 0,
             explanation:
@@ -1048,9 +1048,9 @@ export const REPORTER_PUBLIC_RECORDS_COURSE: AuthoredCourse = {
             prompt: "Why is a wider date range better than a guess when the timing is unknown?",
             options: [
               "Narrowing is cheap and refiling is a new clock",
-              "Because a wider range qualifies the request for expedited processing",
+              "It qualifies for expedited processing",
               "Because an agency must search the widest range a request could plausibly cover",
-              "Because fee waivers apply only to requests covering more than one year",
+              "Waivers need a multi-year range",
             ],
             correctIndex: 0,
             explanation:
@@ -1061,7 +1061,7 @@ export const REPORTER_PUBLIC_RECORDS_COURSE: AuthoredCourse = {
             prompt: "Why is a request for all emails a poor request?",
             options: [
               "It invites a large fee estimate and a long delay",
-              "It is barred by statute, since email is exempt from most state records acts",
+              "Email is exempt by statute",
               "It cannot be appealed, because an overbroad request is deemed never filed",
               "It obliges the agency to search personal accounts, which extends the deadline",
             ],
@@ -1074,9 +1074,9 @@ export const REPORTER_PUBLIC_RECORDS_COURSE: AuthoredCourse = {
             prompt: "What does including an offer to narrow protect you from later?",
             options: [
               "The claim that the request was too vague to process",
-              "A fee estimate that exceeds the ceiling you stated in the original filing",
-              "An exemption claimed over material that was never within your scope",
-              "A retention schedule that destroys the records before the response is due",
+              "A fee above your stated ceiling",
+              "An exemption over out-of-scope material",
+              "Records destroyed before the due date",
             ],
             correctIndex: 0,
             explanation:
@@ -1087,7 +1087,7 @@ export const REPORTER_PUBLIC_RECORDS_COURSE: AuthoredCourse = {
             prompt: "What does the partial-release line change?",
             options: [
               "You can report from the first tranche",
-              "It shortens the statutory determination deadline from twenty days to ten",
+              "It halves the deadline",
               "It waives the agency's right to charge duplication fees on later tranches",
               "It obliges the agency to release exempt material pending its appeal decision",
             ],
@@ -1100,8 +1100,8 @@ export const REPORTER_PUBLIC_RECORDS_COURSE: AuthoredCourse = {
             prompt: "Why file five unrelated requests separately?",
             options: [
               "Bundled requests move at the speed of the slowest",
-              "Because an agency may charge a separate fee for each subject inside one filing",
-              "Because a bundled request cannot be appealed until every part is resolved",
+              "Each subject draws its own fee",
+              "A bundle cannot be appealed early",
               "Because separate filings each qualify for their own free duplication allowance",
             ],
             correctIndex: 0,
@@ -1112,10 +1112,10 @@ export const REPORTER_PUBLIC_RECORDS_COURSE: AuthoredCourse = {
           {
             prompt: "What three things scope a request?",
             options: [
-              "Custodian, record type, date range",
-              "Fee ceiling, format, and the audience the reporting will reach",
-              "Statute, appeal route, and the deadline the agency is working to",
-              "Exemption, redaction standard, and the segregability of the material",
+              "The custodian, the record type, and the date range",
+              "Fee ceiling, format, and audience",
+              "Statute, appeal route, and deadline",
+              "Exemption, redaction, and segregability",
             ],
             correctIndex: 0,
             explanation:
@@ -1138,9 +1138,9 @@ export const REPORTER_PUBLIC_RECORDS_COURSE: AuthoredCourse = {
           {
             prompt: "What may a commercial-use requester be charged under FOIA?",
             options: [
-              "Search, review, and duplication",
-              "Duplication only, with the first one hundred pages provided at no charge",
-              "Search and duplication, but never the cost of reviewing records for exemptions",
+              "Search, review, and duplication costs",
+              "Duplication only",
+              "Search and duplication only",
               "Nothing, since commercial requesters are outside the fee provisions entirely",
             ],
             correctIndex: 0,
@@ -1165,7 +1165,7 @@ export const REPORTER_PUBLIC_RECORDS_COURSE: AuthoredCourse = {
             prompt: "What are the two statutory free allowances for non-commercial requesters?",
             options: [
               "Two hours of search and one hundred pages",
-              "Ten business days of processing and fifty pages of duplication",
+              "Ten days and fifty pages",
               "One waiver per calendar year and unlimited inspection in person",
               "Twenty-five percent of the estimate and any electronic delivery",
             ],
@@ -1217,9 +1217,9 @@ export const REPORTER_PUBLIC_RECORDS_COURSE: AuthoredCourse = {
             prompt: "What is the second half of the fee-waiver test?",
             options: [
               "Not primarily in the commercial interest of the requester",
-              "That the requester qualifies as a representative of the news media",
-              "That the agency has already released similar records without charge",
-              "That the request covers fewer than one hundred pages of duplication",
+              "That the requester is news media",
+              "That similar records were released free",
+              "That it covers under a hundred pages",
             ],
             correctIndex: 0,
             explanation:
@@ -1243,7 +1243,7 @@ export const REPORTER_PUBLIC_RECORDS_COURSE: AuthoredCourse = {
             prompt: "How do state fee rules differ from the federal ones?",
             options: [
               "Some permit charges FOIA does not, including staff time",
-              "They are preempted by FOIA wherever a state receives federal funding",
+              "FOIA preempts them where funds flow",
               "They are uniform across states under a model act adopted in every jurisdiction",
               "They apply only to commercial requesters, leaving journalists unbilled",
             ],
@@ -1269,9 +1269,9 @@ export const REPORTER_PUBLIC_RECORDS_COURSE: AuthoredCourse = {
             prompt: "What often collapses a large fee estimate?",
             options: [
               "A narrower date range or an existing standard report",
-              "A formal appeal filed within the statutory window for challenging fees",
-              "Claiming the educational rather than the news-media requester category",
-              "Agreeing to inspect the records in person rather than receiving copies",
+              "A formal fee appeal",
+              "Claiming the educational category",
+              "Inspecting in person instead",
             ],
             correctIndex: 0,
             explanation:
@@ -1283,8 +1283,8 @@ export const REPORTER_PUBLIC_RECORDS_COURSE: AuthoredCourse = {
             options: [
               "Ask for it, because it is not always applied automatically",
               "It is applied by default, so raising it signals inexperience to the processor",
-              "It applies only after an appeal has been filed and partially sustained",
-              "It cannot be combined with a claim to the news-media requester category",
+              "It only applies after an appeal",
+              "It excludes the news-media category",
             ],
             correctIndex: 0,
             explanation:
@@ -1295,7 +1295,7 @@ export const REPORTER_PUBLIC_RECORDS_COURSE: AuthoredCourse = {
             prompt: "Why is the fee estimate described as where a request dies quietly?",
             options: [
               "The requester simply stops responding",
-              "Because an unpaid estimate is treated as a withdrawal and cannot be appealed",
+              "It counts as a withdrawal",
               "Because agencies are permitted to destroy records once an estimate is unpaid",
               "Because an estimate suspends the statutory clock for an indefinite period",
             ],
@@ -1321,9 +1321,9 @@ export const REPORTER_PUBLIC_RECORDS_COURSE: AuthoredCourse = {
             prompt: "Which record types are described as frequently available through the informal ask?",
             options: [
               "Ones routinely released or already published",
-              "Records that have been the subject of a prior denial and later appeal",
-              "Records held in personal accounts, which agencies prefer to release voluntarily",
-              "Records that an exemption covers but the agency chooses not to withhold",
+              "Records once denied and appealed",
+              "Records in personal accounts",
+              "Exempt records released anyway",
             ],
             correctIndex: 0,
             explanation:
@@ -1333,9 +1333,9 @@ export const REPORTER_PUBLIC_RECORDS_COURSE: AuthoredCourse = {
           {
             prompt: "What does the lesson say a request should never contain?",
             options: [
-              "Editorializing about the agency",
-              "The requester's telephone number, which invites informal handling instead",
-              "A stated fee ceiling, which caps what the agency may release",
+              "Editorializing about why the agency should be ashamed",
+              "Your telephone number",
+              "A stated fee ceiling",
               "A reference to a prior request, which restarts the processing queue",
             ],
             correctIndex: 0,
@@ -1360,7 +1360,7 @@ export const REPORTER_PUBLIC_RECORDS_COURSE: AuthoredCourse = {
             prompt: "Why does a stated fee ceiling belong in the original request?",
             options: [
               "So an estimate triggers a conversation, not a stall",
-              "Because a ceiling caps what the agency may lawfully charge for the request",
+              "It caps the lawful charge",
               "Because it converts the request into a commercial-use filing under FOIA",
               "Because without one an agency may refuse to process the request at all",
             ],
@@ -1386,9 +1386,9 @@ export const REPORTER_PUBLIC_RECORDS_COURSE: AuthoredCourse = {
             prompt: "What is the practical value of asking a records officer what the fields are called?",
             options: [
               "Your request reaches the system rather than missing it",
-              "It obliges the agency to produce the data dictionary without a separate request",
+              "It compels the data dictionary",
               "It establishes a record that the agency understood what was being sought",
-              "It qualifies the request for expedited processing under the compelling-need test",
+              "It earns expedited processing",
             ],
             correctIndex: 0,
             explanation:
@@ -1399,9 +1399,9 @@ export const REPORTER_PUBLIC_RECORDS_COURSE: AuthoredCourse = {
             prompt: "What does the lesson say about calls versus written follow-up in the request process?",
             options: [
               "Calls build the relationship, writing builds the file",
-              "Calls are the only channel that starts a statutory clock running",
-              "Written follow-up should be avoided, since it creates a discoverable record",
-              "Calls should replace written requests entirely once a relationship exists",
+              "Only calls start the clock",
+              "Avoid writing; it is discoverable",
+              "Calls replace written requests",
             ],
             correctIndex: 0,
             explanation:
@@ -1413,7 +1413,7 @@ export const REPORTER_PUBLIC_RECORDS_COURSE: AuthoredCourse = {
             options: [
               "The machine-readable export and the record layout",
               "The standard report and the agency's published analysis of it",
-              "The fee waiver and the expedited processing request",
+              "The fee waiver and expedited processing",
               "The retention schedule and the destruction certificate",
             ],
             correctIndex: 0,
@@ -1425,8 +1425,8 @@ export const REPORTER_PUBLIC_RECORDS_COURSE: AuthoredCourse = {
             prompt: "What does the sixth part of a well-formed request ask for?",
             options: [
               "Partial releases as they become available",
-              "A written estimate before any work is performed on the request",
-              "An acknowledgment within one business day of receipt",
+              "A written estimate first",
+              "A one-day acknowledgment",
               "Confirmation of which exemptions the agency expects to apply",
             ],
             correctIndex: 0,
@@ -1463,10 +1463,10 @@ export const REPORTER_PUBLIC_RECORDS_COURSE: AuthoredCourse = {
           {
             prompt: "Why does the lesson call the informal ask faster than a filing?",
             options: [
-              "A filing has a clock measured in weeks",
-              "Because informal requests are exempt from the review step agencies must perform",
-              "Because an informal request may be made to any employee rather than a custodian",
-              "Because informal requests bypass the fee schedule entirely under federal law",
+              "A formal filing runs on a clock measured in weeks",
+              "Informal asks skip review",
+              "Any employee can handle it",
+              "It bypasses the fee schedule",
             ],
             correctIndex: 0,
             explanation:
@@ -1479,7 +1479,7 @@ export const REPORTER_PUBLIC_RECORDS_COURSE: AuthoredCourse = {
               "That a request was filed and when",
               "That an exemption was claimed without a foreseeable harm being articulated",
               "That an agency searched the wrong system when it reported no records",
-              "That the reporter qualified for the news-media requester category",
+              "Your fee category",
             ],
             correctIndex: 0,
             explanation:
@@ -1490,9 +1490,9 @@ export const REPORTER_PUBLIC_RECORDS_COURSE: AuthoredCourse = {
             prompt: "What does the offer to narrow convert the process into?",
             options: [
               "Something workable rather than adversarial",
-              "A negotiation in which the agency sets the final scope unilaterally",
-              "An informal ask, which withdraws the statutory clock and the appeal right",
-              "A joint filing, in which the agency shares responsibility for the wording",
+              "A negotiation the agency controls",
+              "An informal ask, without a clock",
+              "A joint filing with the agency",
             ],
             correctIndex: 0,
             explanation:
@@ -1503,8 +1503,8 @@ export const REPORTER_PUBLIC_RECORDS_COURSE: AuthoredCourse = {
             prompt: "Which detail makes an email request runnable by an agency?",
             options: [
               "A named sender, a named domain, and a date range",
-              "A statement that the request covers personal as well as official accounts",
-              "A list of every keyword the agency should use in its search",
+              "Coverage of personal accounts too",
+              "A list of search keywords",
               "An instruction to search all archived and backup systems without limitation",
             ],
             correctIndex: 0,
@@ -1515,10 +1515,10 @@ export const REPORTER_PUBLIC_RECORDS_COURSE: AuthoredCourse = {
           {
             prompt: "What is the seventh part of a well-formed request?",
             options: [
-              "Contact details and an offer to narrow",
-              "A signature block naming the outlet's counsel as an alternate contact",
-              "A statement of the deadline by which the story must publish",
-              "A citation to a prior release of similar records by the same agency",
+              "Contact details and an offer to narrow the scope",
+              "Counsel as an alternate contact",
+              "The story's publication deadline",
+              "A prior similar release",
             ],
             correctIndex: 0,
             explanation:
@@ -1528,9 +1528,9 @@ export const REPORTER_PUBLIC_RECORDS_COURSE: AuthoredCourse = {
           {
             prompt: "Why does the lesson describe fee rules as the requester's most specific leverage?",
             options: [
-              "They are written down and citable",
-              "Because a fee dispute suspends the agency's authority to withhold records",
-              "Because an agency that overcharges forfeits its exemptions on appeal",
+              "They are written down in the statute and citable",
+              "Fee disputes suspend withholding",
+              "Overcharging forfeits exemptions",
               "Because fee decisions are the only ones an ombudsman may overturn",
             ],
             correctIndex: 0,
@@ -1654,8 +1654,8 @@ export const REPORTER_PUBLIC_RECORDS_COURSE: AuthoredCourse = {
           {
             prompt: "What does the twenty-business-day FOIA deadline measure?",
             options: [
-              "The determination",
-              "The delivery of every responsive record located during the agency's search",
+              "The agency's determination, not delivery",
+              "Delivery of every record",
               "The period during which an agency may claim unusual circumstances",
               "The window in which a requester must accept or dispute a fee estimate",
             ],
@@ -1667,9 +1667,9 @@ export const REPORTER_PUBLIC_RECORDS_COURSE: AuthoredCourse = {
           {
             prompt: "How much extra time does FOIA allow in unusual circumstances?",
             options: [
-              "Up to ten business days",
-              "Up to thirty calendar days, renewable once on written notice to the requester",
-              "An indefinite period, provided the agency issues a monthly status update",
+              "Up to ten business days beyond the twenty",
+              "Up to thirty calendar days",
+              "Any period, with monthly updates",
               "Up to ninety days, matching the minimum appeal window under the 2016 Act",
             ],
             correctIndex: 0,
@@ -1680,10 +1680,10 @@ export const REPORTER_PUBLIC_RECORDS_COURSE: AuthoredCourse = {
           {
             prompt: "Why is the determination deadline the most misunderstood part of FOIA?",
             options: [
-              "It is not a delivery deadline",
-              "Because it runs from the date of the agency's acknowledgment rather than from filing",
-              "Because it applies only to requests from representatives of the news media",
-              "Because it is suspended whenever a fee estimate has been issued",
+              "It is not a delivery deadline, only a decision one",
+              "It runs from acknowledgment",
+              "It covers only news media",
+              "Fee estimates suspend it",
             ],
             correctIndex: 0,
             explanation:
@@ -1706,10 +1706,10 @@ export const REPORTER_PUBLIC_RECORDS_COURSE: AuthoredCourse = {
           {
             prompt: "What is a constructive denial?",
             options: [
-              "A missed deadline treated as a denial",
-              "A partial release that withholds the material the requester actually wanted",
-              "A fee estimate set so high that the requester cannot proceed with the request",
-              "A referral of the request to another agency without notifying the requester",
+              "A missed deadline treated as a denial, opening the next stage",
+              "A release that withholds the key part",
+              "A prohibitive fee estimate",
+              "An unannounced referral elsewhere",
             ],
             correctIndex: 0,
             explanation:
@@ -1719,8 +1719,8 @@ export const REPORTER_PUBLIC_RECORDS_COURSE: AuthoredCourse = {
           {
             prompt: "What is the mistake in treating agency silence as rudeness?",
             options: [
-              "It is an answer you can escalate",
-              "It voids the original request, so a new filing is required to restart the clock",
+              "It is an answer, and you can escalate it",
+              "It voids the request",
               "It transfers the request to the agency's litigation hold procedure automatically",
               "It obliges the requester to accept whatever is eventually produced",
             ],
@@ -1732,9 +1732,9 @@ export const REPORTER_PUBLIC_RECORDS_COURSE: AuthoredCourse = {
           {
             prompt: "What is the standard for expedited processing under FOIA?",
             options: [
-              "A demonstrated compelling need",
-              "A pending publication date within thirty days of the request being filed",
-              "A showing that the agency has previously missed a deadline for the same requester",
+              "A demonstrated compelling need, as the statute defines it",
+              "Publication within thirty days",
+              "A prior missed deadline",
               "A certification from an editor that the story is of statewide significance",
             ],
             correctIndex: 0,
@@ -1745,9 +1745,9 @@ export const REPORTER_PUBLIC_RECORDS_COURSE: AuthoredCourse = {
           {
             prompt: "When should expedited processing be requested?",
             options: [
-              "In the original filing",
+              "In the original filing, alongside the request",
               "After the twenty-business-day determination window has passed without a response",
-              "Only once an administrative appeal has been filed and is pending",
+              "Once an appeal is pending",
               "At the point a fee estimate arrives, since cost and urgency are decided together",
             ],
             correctIndex: 0,
@@ -1758,10 +1758,10 @@ export const REPORTER_PUBLIC_RECORDS_COURSE: AuthoredCourse = {
           {
             prompt: "How often does the lesson recommend following up, and in what form?",
             options: [
-              "Every two weeks, in writing",
-              "Weekly by telephone, so the processor associates a person with the request",
-              "Monthly, and only after the statutory determination deadline has passed",
-              "Once, at the promised completion date, to avoid antagonizing the office",
+              "Every two weeks, in writing, citing the tracking number",
+              "Weekly by telephone",
+              "Monthly, after the deadline",
+              "Once, at the promised date",
             ],
             correctIndex: 0,
             explanation:
@@ -1771,9 +1771,9 @@ export const REPORTER_PUBLIC_RECORDS_COURSE: AuthoredCourse = {
           {
             prompt: "What are phone calls for during a pending request?",
             options: [
-              "Building the relationship",
-              "Establishing the legal record of the agency's promised completion date",
-              "Formally invoking the constructive-denial provisions of the statute",
+              "Building the relationship, not the file",
+              "Setting the legal record",
+              "Invoking constructive denial",
               "Substituting for written follow-up when the processor prefers it",
             ],
             correctIndex: 0,
@@ -1811,9 +1811,9 @@ export const REPORTER_PUBLIC_RECORDS_COURSE: AuthoredCourse = {
             prompt: "What is an exemption, precisely?",
             options: [
               "Permission to withhold, not an obligation",
-              "A statutory bar making release of the material unlawful in every circumstance",
-              "A classification level assigned to a document at the time it is created",
-              "A category of record that falls outside the definition of a public record",
+              "A bar making release unlawful",
+              "A classification level",
+              "A record outside the definition",
             ],
             correctIndex: 0,
             explanation:
@@ -1823,10 +1823,10 @@ export const REPORTER_PUBLIC_RECORDS_COURSE: AuthoredCourse = {
           {
             prompt: "Which FOIA exemption is best known as the deliberative process exemption?",
             options: [
-              "Inter-agency and intra-agency memoranda",
-              "Internal personnel rules and practices of an agency",
-              "Matters specifically exempted from disclosure by another statute",
-              "Records compiled for law enforcement purposes",
+              "Inter-agency and intra-agency memoranda covered by a privilege",
+              "Internal personnel rules",
+              "Matters barred by another statute",
+              "Law enforcement records",
             ],
             correctIndex: 0,
             explanation:
@@ -1837,8 +1837,8 @@ export const REPORTER_PUBLIC_RECORDS_COURSE: AuthoredCourse = {
             prompt: "What does segregability require?",
             options: [
               "Release of the reasonably segregable portions",
-              "Separation of the request into one filing per record type before processing",
-              "Storage of exempt material apart from releasable material in agency systems",
+              "One filing per record type",
+              "Exempt material stored apart",
               "Review of each withholding by an official senior to the one who applied it",
             ],
             correctIndex: 0,
@@ -1863,9 +1863,9 @@ export const REPORTER_PUBLIC_RECORDS_COURSE: AuthoredCourse = {
             prompt: "What does the foreseeable harm standard require of an agency?",
             options: [
               "That it reasonably foresee harm to a protected interest",
-              "That it notify the requester of the harm before applying any exemption",
-              "That it obtain a court's approval before withholding deliberative material",
-              "That it release any record whose harm cannot be quantified in dollars",
+              "That it warns the requester first",
+              "That a court approves it first",
+              "That harm be quantified in dollars",
             ],
             correctIndex: 0,
             explanation:
@@ -1876,7 +1876,7 @@ export const REPORTER_PUBLIC_RECORDS_COURSE: AuthoredCourse = {
             prompt: "How does the foreseeable harm standard change an appeal argument?",
             options: [
               "From may you withhold to what harm do you foresee",
-              "From administrative review to mandatory mediation through the federal ombudsman",
+              "From review to mandatory mediation",
               "From the requester's burden to the agency's, only in litigation and not on appeal",
               "From a page-by-page review to a single determination covering the whole request",
             ],
@@ -1902,8 +1902,8 @@ export const REPORTER_PUBLIC_RECORDS_COURSE: AuthoredCourse = {
             prompt: "What is a Glomar response?",
             options: [
               "A refusal to confirm or deny that records exist",
-              "A release of records so heavily redacted that no content remains visible",
-              "A referral of the request to another agency believed to hold the records",
+              "A release redacted to nothing",
+              "A referral to another agency",
               "A statement that the records were destroyed under an approved retention schedule",
             ],
             correctIndex: 0,
@@ -1915,7 +1915,7 @@ export const REPORTER_PUBLIC_RECORDS_COURSE: AuthoredCourse = {
             prompt: "What is the usual line of attack against a Glomar response?",
             options: [
               "Official acknowledgment",
-              "The segregability rule, which requires release of the non-exempt portions",
+              "Segregability",
               "The foreseeable harm standard, which does not apply to intelligence records",
               "An expedited processing request, which forces a substantive determination",
             ],
@@ -1928,9 +1928,9 @@ export const REPORTER_PUBLIC_RECORDS_COURSE: AuthoredCourse = {
             prompt: "What is a Vaughn index?",
             options: [
               "An itemized justification for each withholding",
-              "A public register of every request an agency has received in a calendar year",
-              "The list of exemptions an agency has adopted in its published records policy",
-              "A schedule of duplication fees approved by the agency's governing board",
+              "A register of all requests",
+              "The agency's exemption list",
+              "A duplication fee schedule",
             ],
             correctIndex: 0,
             explanation:
@@ -1940,9 +1940,9 @@ export const REPORTER_PUBLIC_RECORDS_COURSE: AuthoredCourse = {
           {
             prompt: "What should redactions on a released page carry?",
             options: [
-              "An individual citation",
-              "A stamp recording the date and initials of the reviewing official",
-              "A statement of the total number of words removed from the page",
+              "An individual citation of the exemption claimed",
+              "The reviewer's initials",
+              "A word count",
               "A reference to the retention schedule governing the underlying record",
             ],
             correctIndex: 0,
@@ -1980,7 +1980,7 @@ export const REPORTER_PUBLIC_RECORDS_COURSE: AuthoredCourse = {
             prompt: "Which five things should a denial letter contain?",
             options: [
               "Records located, withheld, exemptions, decision maker, appeal route",
-              "Fee estimate, payment terms, delivery format, contact, and retention schedule",
+              "Fees, payment terms, format, contact, retention",
               "Statute, tracking number, custodian, search terms, and systems searched",
               "Requester category, waiver decision, free allowance, total pages, and due date",
             ],
@@ -1992,10 +1992,10 @@ export const REPORTER_PUBLIC_RECORDS_COURSE: AuthoredCourse = {
           {
             prompt: "Which of these is a distinct category of answer that reporters wrongly treat as a simple no?",
             options: [
-              "A fee estimate you never accepted",
-              "A written denial citing a specific exemption for each withheld record",
-              "A partial release accompanied by an itemized redaction log",
-              "An acknowledgment giving a tracking number and an estimated date",
+              "A fee estimate you never went on to accept",
+              "A written exemption denial",
+              "A partial release with a log",
+              "An acknowledgment with a date",
             ],
             correctIndex: 0,
             explanation:
@@ -2019,7 +2019,7 @@ export const REPORTER_PUBLIC_RECORDS_COURSE: AuthoredCourse = {
             prompt: "What does asking about a search often reveal?",
             options: [
               "The wrong system or the wrong vocabulary",
-              "That the agency destroyed the records after the request was filed",
+              "The records were destroyed",
               "That a different agency holds the material and must be asked instead",
               "That the request was never routed to a custodian at all",
             ],
@@ -2044,9 +2044,9 @@ export const REPORTER_PUBLIC_RECORDS_COURSE: AuthoredCourse = {
           {
             prompt: "Why does the lesson prefer eighty percent in three weeks to an appeal?",
             options: [
-              "You can always file again for the rest",
-              "Because an appeal forfeits the material already released under the original request",
-              "Because appeals are decided by the same official who issued the denial",
+              "You can report now and file again for the rest",
+              "An appeal forfeits released material",
+              "The denier decides appeals",
               "Because a narrowed request qualifies automatically for a fee waiver",
             ],
             correctIndex: 0,
@@ -2058,9 +2058,9 @@ export const REPORTER_PUBLIC_RECORDS_COURSE: AuthoredCourse = {
             prompt: "What common mismatch does the lesson say to name in writing?",
             options: [
               "A privacy exemption claimed over an entire record",
-              "A duplication fee charged to a requester in the news-media category",
-              "A determination issued after the twenty-business-day window had closed",
-              "A referral to another agency without a tracking number being assigned",
+              "A copy fee charged to media",
+              "A late determination",
+              "A referral with no tracking number",
             ],
             correctIndex: 0,
             explanation:
@@ -2072,7 +2072,7 @@ export const REPORTER_PUBLIC_RECORDS_COURSE: AuthoredCourse = {
             options: [
               "When the same office repeats the same boilerplate",
               "When a single denial is upheld on administrative appeal without explanation",
-              "When an agency charges fees above the statutory cap for copies",
+              "When fees exceed the cap",
               "When a request is referred between agencies more than twice",
             ],
             correctIndex: 0,
@@ -2083,10 +2083,10 @@ export const REPORTER_PUBLIC_RECORDS_COURSE: AuthoredCourse = {
           {
             prompt: "What does the lesson say most reporters do with a denial letter?",
             options: [
-              "Read the first sentence and stop",
-              "Forward it to counsel without extracting the appeal deadline it contains",
-              "File an appeal without identifying which specific decisions are disputed",
-              "Treat it as final because the exemption cited appears in the statute",
+              "They read the first sentence and stop",
+              "Forward it to counsel",
+              "Appeal without specifics",
+              "Treat it as final",
             ],
             correctIndex: 0,
             explanation:
@@ -2096,9 +2096,9 @@ export const REPORTER_PUBLIC_RECORDS_COURSE: AuthoredCourse = {
           {
             prompt: "Which is different from records exist but are exempt?",
             options: [
-              "No responsive records",
-              "A written denial identifying the exemption applied to each withheld document",
-              "A partial release in which several pages carry individual redaction citations",
+              "No responsive records, a claim about the search",
+              "A per-document exemption denial",
+              "A partial release with citations",
               "A statement that segregable portions have been released after deletion",
             ],
             correctIndex: 0,
@@ -2111,7 +2111,7 @@ export const REPORTER_PUBLIC_RECORDS_COURSE: AuthoredCourse = {
             options: [
               "It ends most records reporting",
               "It waives the requester's right to a fee waiver on any subsequent request",
-              "It obliges the agency to close the file without an appeal being available",
+              "It bars an appeal",
               "It converts the request into a commercial-use filing under the fee rules",
             ],
             correctIndex: 0,
@@ -2123,9 +2123,9 @@ export const REPORTER_PUBLIC_RECORDS_COURSE: AuthoredCourse = {
             prompt: "What does the lesson say about the decision maker's name in a denial?",
             options: [
               "It should be there, and its absence is a point on appeal",
-              "It is exempt under the personnel exemption and is routinely withheld",
-              "It is only required when the denial is issued after an administrative appeal",
-              "It matters less than the exemption cited, which is the appealable element",
+              "It is exempt as a personnel record",
+              "Only needed after an appeal",
+              "It matters less than the exemption",
             ],
             correctIndex: 0,
             explanation:
@@ -2135,9 +2135,9 @@ export const REPORTER_PUBLIC_RECORDS_COURSE: AuthoredCourse = {
           {
             prompt: "Which document form did Vaughn v. Rosen establish?",
             options: [
-              "An itemized index of withholdings",
-              "A standard federal request form used by all executive branch agencies",
-              "The required contents of an administrative appeal letter",
+              "An itemized index justifying each withholding",
+              "A standard request form",
+              "Appeal letter contents",
               "A public log of every Glomar response issued in a fiscal year",
             ],
             correctIndex: 0,
@@ -2175,7 +2175,7 @@ export const REPORTER_PUBLIC_RECORDS_COURSE: AuthoredCourse = {
             prompt: "What does the lesson call the correct framing when a whole file is withheld?",
             options: [
               "Permission to withhold something, not everything",
-              "A total exemption, which segregability does not reach",
+              "A total exemption beyond segregability",
               "A determination that the file falls outside the definition of a record",
               "A classification decision that only the originating agency may revisit",
             ],
@@ -2187,10 +2187,10 @@ export const REPORTER_PUBLIC_RECORDS_COURSE: AuthoredCourse = {
           {
             prompt: "Why is an estimated completion date worth insisting on?",
             options: [
-              "It is what you hold the agency to",
-              "It converts an informal request into a formal one with an appeal route",
-              "It caps the fee the agency may charge once the date has passed",
-              "It obliges the agency to release partial material by that date",
+              "It is the date you then hold the agency to",
+              "It formalizes the request",
+              "It caps the fee",
+              "It forces partial release",
             ],
             correctIndex: 0,
             explanation:
@@ -2201,9 +2201,9 @@ export const REPORTER_PUBLIC_RECORDS_COURSE: AuthoredCourse = {
             prompt: "Where else might a pending document already exist?",
             options: [
               "A court exhibit or a vendor's own filing",
-              "The agency's classified holdings, which are searchable on request",
-              "The requester's own prior releases, which agencies cross-reference",
-              "The retention schedule, which reproduces the content of destroyed records",
+              "Classified holdings",
+              "Your own prior releases",
+              "The retention schedule",
             ],
             correctIndex: 0,
             explanation:
@@ -2213,8 +2213,8 @@ export const REPORTER_PUBLIC_RECORDS_COURSE: AuthoredCourse = {
           {
             prompt: "What does a written follow-up build that a call does not?",
             options: [
-              "The record an appeal will need",
-              "A relationship with the processor handling the request",
+              "The written record an appeal will need",
+              "Rapport with the processor",
               "An estimated completion date, which must be given verbally",
               "Grounds for expedited processing under the compelling-need test",
             ],
@@ -2239,9 +2239,9 @@ export const REPORTER_PUBLIC_RECORDS_COURSE: AuthoredCourse = {
           {
             prompt: "What is the practical effect of an agency claiming an exemption without foreseeing harm?",
             options: [
-              "It is a specific ground for appeal",
-              "It voids the entire response and restarts the statutory determination clock",
-              "It converts the withholding into a Glomar response requiring litigation",
+              "It is a specific ground for an administrative appeal",
+              "It voids the response",
+              "It becomes a Glomar response",
               "It obliges the agency to produce a Vaughn index at the administrative stage",
             ],
             correctIndex: 0,
@@ -2252,10 +2252,10 @@ export const REPORTER_PUBLIC_RECORDS_COURSE: AuthoredCourse = {
           {
             prompt: "What does the lesson say about a fee estimate you never accepted?",
             options: [
-              "It is its own category of answer",
-              "It is a denial, and the appeal deadline runs from the date it was issued",
-              "It is a withdrawal, and the request is closed without further action",
-              "It is an acknowledgment, and the determination deadline has been met",
+              "It is its own distinct category of answer",
+              "It is an appealable denial",
+              "It closes the request",
+              "It meets the deadline",
             ],
             correctIndex: 0,
             explanation:
@@ -2266,7 +2266,7 @@ export const REPORTER_PUBLIC_RECORDS_COURSE: AuthoredCourse = {
             prompt: "Why does naming a mismatch in writing resolve disputes without appeal?",
             options: [
               "It forces a second person to look",
-              "It suspends the agency's authority to withhold pending internal review",
+              "It suspends withholding",
               "It triggers a statutory obligation to produce an itemized index",
               "It converts the matter into a mediation before the federal ombudsman",
             ],
@@ -2446,9 +2446,9 @@ export const REPORTER_PUBLIC_RECORDS_COURSE: AuthoredCourse = {
             prompt: "What is OGIS?",
             options: [
               "The federal FOIA ombudsman at the National Archives",
-              "The office within each agency that issues determinations on records requests",
-              "The interagency board that maintains the government's classification guidelines",
-              "The federal registry of every public records request filed in a fiscal year",
+              "Each agency's determinations office",
+              "The classification guidelines board",
+              "A federal registry of requests",
             ],
             correctIndex: 0,
             explanation:
@@ -2461,7 +2461,7 @@ export const REPORTER_PUBLIC_RECORDS_COURSE: AuthoredCourse = {
               "The OPEN Government Act of 2007",
               "The FOIA Improvement Act of 2016, alongside the foreseeable harm standard",
               "The Administrative Procedure Act, in its original 1946 enactment",
-              "The Privacy Act of 1974, which governs records about individuals",
+              "The Privacy Act",
             ],
             correctIndex: 0,
             explanation:
@@ -2485,9 +2485,9 @@ export const REPORTER_PUBLIC_RECORDS_COURSE: AuthoredCourse = {
             prompt: "What may a substantially prevailing FOIA complainant be awarded?",
             options: [
               "Attorney fees and litigation costs",
-              "Statutory damages calculated per page improperly withheld",
-              "An order barring the agency from charging fees for two years",
-              "Priority processing on all future requests to the same agency",
+              "Per-page damages",
+              "A two-year fee ban",
+              "Priority processing",
             ],
             correctIndex: 0,
             explanation:
@@ -2498,8 +2498,8 @@ export const REPORTER_PUBLIC_RECORDS_COURSE: AuthoredCourse = {
             prompt: "How should disputed decisions be presented in an appeal letter?",
             options: [
               "Each one separately, with its specific ground",
-              "As a single narrative describing the overall inadequacy of the response",
-              "As a request that the agency reprocess the entire filing from the beginning",
+              "As one overall narrative",
+              "As a full reprocessing request",
               "As a list of the records still wanted, without reference to the reasons given",
             ],
             correctIndex: 0,
@@ -2536,8 +2536,8 @@ export const REPORTER_PUBLIC_RECORDS_COURSE: AuthoredCourse = {
           {
             prompt: "Which non-legal leverage does the lesson recommend first?",
             options: [
-              "Ask for a call about narrowing",
-              "Publish the denial letter so the agency faces public pressure to reconsider",
+              "Ask for a call about narrowing the request",
+              "Publish the denial letter",
               "Contact an elected official whose office oversees the agency's budget",
               "File a duplicate request under a colleague's name to test the response",
             ],
@@ -2550,9 +2550,9 @@ export const REPORTER_PUBLIC_RECORDS_COURSE: AuthoredCourse = {
             prompt: "Why ask what an agency has released to other requesters?",
             options: [
               "A released record is hard to withhold from you",
-              "Because prior releases must be disclosed under the same exemption analysis",
-              "Because agencies must charge every requester the same fee for identical records",
-              "Because a prior release restarts the retention clock on the underlying record",
+              "Prior releases share one analysis",
+              "Identical records cost the same",
+              "It restarts the retention clock",
             ],
             correctIndex: 0,
             explanation:
@@ -2564,7 +2564,7 @@ export const REPORTER_PUBLIC_RECORDS_COURSE: AuthoredCourse = {
             options: [
               "State press associations and press freedom organizations",
               "The federal ombudsman's regional offices, one in each judicial circuit",
-              "Bar associations, which are required to provide counsel to requesters",
+              "State bar associations",
               "The agencies themselves, through their designated public liaison offices",
             ],
             correctIndex: 0,
@@ -2589,9 +2589,9 @@ export const REPORTER_PUBLIC_RECORDS_COURSE: AuthoredCourse = {
             prompt: "What is an advisory opinion, in state access practice?",
             options: [
               "A non-binding determination from an access ombudsman",
-              "A court order compelling an agency to release specified records",
-              "The agency's own written explanation of the exemption it applied",
-              "A ruling by the attorney general that binds every agency in the state",
+              "A court order to release",
+              "The agency's own explanation",
+              "A binding attorney general ruling",
             ],
             correctIndex: 0,
             explanation:
@@ -2603,8 +2603,8 @@ export const REPORTER_PUBLIC_RECORDS_COURSE: AuthoredCourse = {
             options: [
               "The track was prompted by an Indiana newsroom's job posting",
               "Because Indiana's act is the model most other states adopted verbatim",
-              "Because Indiana is the only state with an access counselor",
-              "Because federal FOIA does not apply to any Indiana agency",
+              "Indiana alone has a counselor",
+              "Indiana's act has no exemptions",
             ],
             correctIndex: 0,
             explanation:
@@ -2654,7 +2654,7 @@ export const REPORTER_PUBLIC_RECORDS_COURSE: AuthoredCourse = {
             prompt: "Why does this lesson decline to print Indiana's response deadlines?",
             options: [
               "It has not read them against the current statutory text",
-              "Because Indiana's deadlines are confidential under the act's own terms",
+              "Its deadlines are confidential",
               "Because deadlines vary by agency rather than being set in statute",
               "Because the federal deadline preempts state deadlines for news media requesters",
             ],
@@ -2666,9 +2666,9 @@ export const REPORTER_PUBLIC_RECORDS_COURSE: AuthoredCourse = {
           {
             prompt: "Which Indiana sections does the lesson send a reader to for the current deadlines?",
             options: [
-              "Indiana Code 5-14-3-9 and 5-14-5",
+              "Indiana Code 5-14-3-9 and Indiana Code 5-14-5",
               "Indiana Code 5-14-1.5-5 and 5-14-4, which cover notice and the counselor",
-              "5 U.S.C. 552(a)(6), which governs determination timing in every jurisdiction",
+              "5 U.S.C. 552(a)(6)",
               "The agency's own published records policy, which restates the statutory periods",
             ],
             correctIndex: 0,
@@ -2680,9 +2680,9 @@ export const REPORTER_PUBLIC_RECORDS_COURSE: AuthoredCourse = {
             prompt: "What does Indiana's act do that the lesson describes without giving numbers?",
             options: [
               "Sets deadlines that differ by how a request was delivered",
-              "Charges a per-page copy fee that rises with the age of the record",
-              "Requires an advisory opinion before any suit may be brought",
-              "Exempts electronic records from the definition of a public record",
+              "Charges copy fees by record age",
+              "Requires an advisory opinion first",
+              "Exempts electronic records",
             ],
             correctIndex: 0,
             explanation:
@@ -2719,9 +2719,9 @@ export const REPORTER_PUBLIC_RECORDS_COURSE: AuthoredCourse = {
             prompt: "What is a fee-shifting provision, and why does it matter?",
             options: [
               "It makes an agency pay a prevailing requester's costs",
-              "It moves duplication charges from the requester to the agency's own budget",
+              "It shifts copy costs to the agency",
               "It converts search fees into review fees for news-media requesters",
-              "It allows a requester to defer payment until after the records are delivered",
+              "It defers payment until delivery",
             ],
             correctIndex: 0,
             explanation:
@@ -2731,10 +2731,10 @@ export const REPORTER_PUBLIC_RECORDS_COURSE: AuthoredCourse = {
           {
             prompt: "What is the difference between a mandatory and a discretionary exemption?",
             options: [
-              "Must withhold, as against may withhold",
-              "Applies to the whole record, as against applying only to identifiers within it",
-              "Set by statute, as against adopted in an agency's own published policy",
-              "Reviewable by a court, as against reviewable only by an ombudsman",
+              "Must withhold, as against may withhold if it chooses",
+              "Whole record, as against identifiers",
+              "Statute, as against agency policy",
+              "Court, as against ombudsman review",
             ],
             correctIndex: 0,
             explanation:
@@ -2745,7 +2745,7 @@ export const REPORTER_PUBLIC_RECORDS_COURSE: AuthoredCourse = {
             prompt: "What four things does the homework ask you to write into your beat file?",
             options: [
               "Record definition, exemptions, deadline, appeal route",
-              "Statute number, agency address, custodian name, and fee schedule",
+              "Statute, address, custodian, fees",
               "Requester category, waiver text, tracking number, and promised date",
               "Retention schedule, destruction certificate, archive location, and format",
             ],
@@ -2758,9 +2758,9 @@ export const REPORTER_PUBLIC_RECORDS_COURSE: AuthoredCourse = {
             prompt: "Where does the lesson send a reader to start on their own state?",
             options: [
               "The Reporters Committee's Open Government Guide",
-              "The state attorney general's advisory opinion archive",
-              "The National Archives' Office of Government Information Services",
-              "The agency's own records policy, which restates the statute in plain language",
+              "The attorney general's opinions",
+              "The National Archives' OGIS",
+              "The agency's records policy",
             ],
             correctIndex: 0,
             explanation:
@@ -2770,9 +2770,9 @@ export const REPORTER_PUBLIC_RECORDS_COURSE: AuthoredCourse = {
           {
             prompt: "What is the position of a reporter who has not read their state's statute?",
             options: [
-              "Negotiating against someone who has",
-              "Protected, since the agency must explain the law to any requester who asks",
-              "Unaffected, since the RCFP guide is a sufficient substitute for the text",
+              "Negotiating against someone who has read it",
+              "Protected by the agency's duty",
+              "Unaffected, given the RCFP guide",
               "Barred from appealing, since an appeal must cite a statutory ground",
             ],
             correctIndex: 0,
@@ -2784,7 +2784,7 @@ export const REPORTER_PUBLIC_RECORDS_COURSE: AuthoredCourse = {
             prompt: "What is the difference between the reporter who files on demand and the one who files continuously?",
             options: [
               "Documents arrive that you were not waiting for",
-              "One qualifies for the news-media category and the other does not",
+              "Only one qualifies as news media",
               "One pays duplication fees and the other qualifies for a standing waiver",
               "One may appeal a denial and the other must accept the agency's determination",
             ],
@@ -2797,9 +2797,9 @@ export const REPORTER_PUBLIC_RECORDS_COURSE: AuthoredCourse = {
             prompt: "What is a standing request?",
             options: [
               "A recurring release of a class of record",
-              "A request that remains open until the agency locates responsive material",
-              "A filing made jointly by several outlets covering the same institution",
-              "A request preserved on file so a future reporter can adopt it",
+              "A request left open until found",
+              "A joint multi-outlet filing",
+              "A request kept for successors",
             ],
             correctIndex: 0,
             explanation:
@@ -2835,9 +2835,9 @@ export const REPORTER_PUBLIC_RECORDS_COURSE: AuthoredCourse = {
           {
             prompt: "Why does every released document go into the beat file?",
             options: [
-              "Agencies lose things and links rot",
-              "Because the act requires a requester to retain what was released to them",
-              "Because a retained copy extends the agency's retention obligation",
+              "Because agencies lose things and links rot",
+              "The act requires you to keep it",
+              "It extends agency retention",
               "Because an appeal cannot proceed without the original release attached",
             ],
             correctIndex: 0,
@@ -2849,7 +2849,7 @@ export const REPORTER_PUBLIC_RECORDS_COURSE: AuthoredCourse = {
             prompt: "What should be stored alongside each released document?",
             options: [
               "Its request number and release date",
-              "The reporter's notes on which story the document eventually supported",
+              "The story it supported",
               "The exemptions the agency considered but decided not to apply",
               "A signed statement from the custodian confirming authenticity",
             ],
@@ -2887,10 +2887,10 @@ export const REPORTER_PUBLIC_RECORDS_COURSE: AuthoredCourse = {
           {
             prompt: "What does the next course in the track cover?",
             options: [
-              "Reading somebody else's data report",
-              "Interviewing people who did not seek the attention a story brings",
-              "Libel, privacy, recording consent, minors, and shield protections",
-              "Pitching an enterprise project and choosing the shape a story takes",
+              "Reading somebody else's data report correctly",
+              "Interviewing reluctant subjects",
+              "Libel and privacy law",
+              "Pitching enterprise projects",
             ],
             correctIndex: 0,
             explanation:
@@ -2901,8 +2901,8 @@ export const REPORTER_PUBLIC_RECORDS_COURSE: AuthoredCourse = {
             prompt: "Why is getting a document a different skill from reading it?",
             options: [
               "What the document says is its own problem",
-              "Because released documents are redacted and therefore incomplete by design",
-              "Because a released record may not be republished without the agency's consent",
+              "Released documents are redacted",
+              "Republishing needs consent",
               "Because the request log records only what arrived, not what it means",
             ],
             correctIndex: 0,
@@ -2927,9 +2927,9 @@ export const REPORTER_PUBLIC_RECORDS_COURSE: AuthoredCourse = {
             prompt: "What should an appeal letter open with?",
             options: [
               "The tracking number and the date of the response",
-              "A summary of the story the records are intended to support",
-              "A citation to every exemption the agency might have applied",
-              "A request for a fee waiver covering the appeal itself",
+              "Your story summary",
+              "Every possible exemption",
+              "A fee waiver for the appeal",
             ],
             correctIndex: 0,
             explanation:
@@ -2942,7 +2942,7 @@ export const REPORTER_PUBLIC_RECORDS_COURSE: AuthoredCourse = {
               "The search was inadequate, and here is why",
               "The exemption claimed does not cover the material withheld",
               "Segregable portions of the record were not released",
-              "The requester was placed in the wrong fee category",
+              "The fee category was wrong",
             ],
             correctIndex: 0,
             explanation:
@@ -2953,9 +2953,9 @@ export const REPORTER_PUBLIC_RECORDS_COURSE: AuthoredCourse = {
             prompt: "What does the lesson say about the reading room and published request logs?",
             options: [
               "Check them, since prior releases are hard to withhold",
-              "Ignore them, since prior releases have no bearing on a new request",
+              "Ignore them as irrelevant",
               "Cite them only in litigation, where prior release becomes legally relevant",
-              "Request them formally, since they are not published voluntarily",
+              "Request them formally",
             ],
             correctIndex: 0,
             explanation:
@@ -2966,9 +2966,9 @@ export const REPORTER_PUBLIC_RECORDS_COURSE: AuthoredCourse = {
             prompt: "How is the Indiana example framed relative to the track as a whole?",
             options: [
               "One state worked end to end, so the shape is visible",
-              "The definitive statement of access law for readers in every state",
-              "A digression included because the plan required a state example",
-              "A substitute for reading your own state's statute, which most readers will not do",
+              "The definitive word for all states",
+              "A required digression",
+              "A substitute for your own statute",
             ],
             correctIndex: 0,
             explanation:
@@ -2992,7 +2992,7 @@ export const REPORTER_PUBLIC_RECORDS_COURSE: AuthoredCourse = {
             prompt: "What does a beat calendar make cheaper in records terms?",
             options: [
               "Filing early on predictable needs",
-              "Duplication fees, which fall when requests are batched by quarter",
+              "Batched copy fees",
               "Appeals, which succeed more often when filed on a schedule",
               "Standing requests, which are only granted to reporters with a calendar",
             ],
@@ -3004,10 +3004,10 @@ export const REPORTER_PUBLIC_RECORDS_COURSE: AuthoredCourse = {
           {
             prompt: "What is process coverage?",
             options: [
-              "Reporting on the records system itself",
-              "The internal newsroom log of which requests are pending and with whom",
-              "The agency's published account of how it processes incoming requests",
-              "The practice of narrating a pending request inside an unrelated story",
+              "Reporting on the records system itself, using response times and fees",
+              "The newsroom's pending log",
+              "The agency's process account",
+              "Narrating a pending request",
             ],
             correctIndex: 0,
             explanation:
@@ -3018,9 +3018,9 @@ export const REPORTER_PUBLIC_RECORDS_COURSE: AuthoredCourse = {
             prompt: "What is a public document archive, as this lesson uses the term?",
             options: [
               "A shared repository where obtained records are posted",
-              "The agency's own reading room of previously released material",
+              "The agency's reading room",
               "The National Archives' holdings of permanently retained federal records",
-              "The beat file's private store of documents the reporter has obtained",
+              "The beat file's private store",
             ],
             correctIndex: 0,
             explanation:
@@ -3031,9 +3031,9 @@ export const REPORTER_PUBLIC_RECORDS_COURSE: AuthoredCourse = {
             prompt: "Why does the lesson call standing requests a one-time cost?",
             options: [
               "Getting on the list does not have to be repeated",
-              "Because the agency waives all fees once a standing arrangement exists",
-              "Because a standing request cannot be denied once it has been granted",
-              "Because the statutory clock runs only on the first filing in a series",
+              "All fees are waived after that",
+              "It cannot then be denied",
+              "Only the first filing runs a clock",
             ],
             correctIndex: 0,
             explanation:
@@ -3044,8 +3044,8 @@ export const REPORTER_PUBLIC_RECORDS_COURSE: AuthoredCourse = {
             prompt: "What kind of leverage does the lesson call the cheapest available without a lawyer?",
             options: [
               "A neutral office's written determination",
-              "A court order compelling release within a fixed number of days",
-              "A public campaign drawing attention to the agency's refusal",
+              "A court order to release",
+              "A public pressure campaign",
               "A parallel request filed with a body that holds a copy of the same record",
             ],
             correctIndex: 0,
@@ -3082,10 +3082,10 @@ export const REPORTER_PUBLIC_RECORDS_COURSE: AuthoredCourse = {
           {
             prompt: "Which two agency documents does an appeal letter reference at the top?",
             options: [
-              "The tracking number and the response date",
-              "The fee estimate and the itemization behind it",
-              "The retention schedule and the destruction certificate",
-              "The reading room index and the published request log",
+              "The tracking number and the date of the response",
+              "The fee estimate and itemization",
+              "The schedule and the certificate",
+              "The index and the request log",
             ],
             correctIndex: 0,
             explanation:
@@ -3095,9 +3095,9 @@ export const REPORTER_PUBLIC_RECORDS_COURSE: AuthoredCourse = {
           {
             prompt: "What makes records work compound over a year on a beat?",
             options: [
-              "Standing requests and early filing",
-              "Appealing every denial, which trains the agency to release faster",
-              "Filing identical requests with several agencies to compare responses",
+              "Standing requests and early filing on predictable needs",
+              "Appealing every denial",
+              "Identical multi-agency filings",
               "Waiting for a story before filing, so each request is fully scoped",
             ],
             correctIndex: 0,
@@ -3147,8 +3147,8 @@ export const REPORTER_PUBLIC_RECORDS_COURSE: AuthoredCourse = {
             prompt: "Which entities does FOIA NOT reach?",
             options: [
               "Congress and the federal courts",
-              "Independent regulatory agencies and government corporations",
-              "Military departments and executive departments",
+              "Independent regulators",
+              "Military departments",
               "State agencies that administer federally funded programs",
             ],
             correctIndex: 0,
@@ -3173,9 +3173,9 @@ export const REPORTER_PUBLIC_RECORDS_COURSE: AuthoredCourse = {
             prompt: "How should a request for numbers be written?",
             options: [
               "Ask for the export and the data dictionary",
-              "Ask how many incidents occurred and over what period",
-              "Ask the agency to compute the rate per thousand residents",
-              "Ask for whichever published report contains the closest figure",
+              "Ask how many incidents occurred",
+              "Ask for a rate per thousand",
+              "Ask for a published figure",
             ],
             correctIndex: 0,
             explanation:
@@ -3200,7 +3200,7 @@ export const REPORTER_PUBLIC_RECORDS_COURSE: AuthoredCourse = {
             options: [
               "Asking the records officer what exists",
               "Asking the agency's counsel which exemptions it intends to claim",
-              "Asking the press office whether the subject is worth pursuing",
+              "Asking the press office",
               "Asking a colleague which requests have succeeded at the same agency",
             ],
             correctIndex: 0,
@@ -3225,9 +3225,9 @@ export const REPORTER_PUBLIC_RECORDS_COURSE: AuthoredCourse = {
             prompt: "What does a maintained request log make possible?",
             options: [
               "A story about the agency's own pattern of delay",
-              "A statutory presumption that undelivered records were improperly withheld",
-              "An automatic fee waiver on any request that exceeds its promised date",
-              "Standing to file suit without exhausting administrative remedies",
+              "A presumption of improper withholding",
+              "Automatic fee waivers when late",
+              "Standing to skip the appeal",
             ],
             correctIndex: 0,
             explanation:
@@ -3250,9 +3250,9 @@ export const REPORTER_PUBLIC_RECORDS_COURSE: AuthoredCourse = {
           {
             prompt: "Which line keeps a large request from producing nothing until the end?",
             options: [
-              "A request for partial releases",
-              "A stated fee ceiling above which you want to be contacted",
-              "A citation to the statutory determination deadline",
+              "A request for partial releases as they come",
+              "A stated fee ceiling",
+              "A deadline citation",
               "A demand for expedited processing on compelling-need grounds",
             ],
             correctIndex: 0,
@@ -3264,9 +3264,9 @@ export const REPORTER_PUBLIC_RECORDS_COURSE: AuthoredCourse = {
             prompt: "Why file five unrelated requests separately?",
             options: [
               "Bundled requests move at the speed of the slowest",
-              "Because each subject qualifies for its own statutory free allowance",
-              "Because a bundled filing may not be appealed until every part resolves",
-              "Because agencies charge a separate processing fee per subject anyway",
+              "Each subject gets its own allowance",
+              "A bundle cannot be appealed early",
+              "Fees are charged per subject anyway",
             ],
             correctIndex: 0,
             explanation:
@@ -3341,10 +3341,10 @@ export const REPORTER_PUBLIC_RECORDS_COURSE: AuthoredCourse = {
           {
             prompt: "What is a constructive denial?",
             options: [
-              "A missed deadline treated as a denial",
-              "A release so heavily redacted that nothing usable remains",
-              "A fee estimate high enough that the requester abandons the request",
-              "A referral to another agency without notice to the requester",
+              "A missed deadline treated as a denial, opening the next stage",
+              "A release redacted to nothing",
+              "A prohibitive fee estimate",
+              "A referral made without notice",
             ],
             correctIndex: 0,
             explanation:
@@ -3381,8 +3381,8 @@ export const REPORTER_PUBLIC_RECORDS_COURSE: AuthoredCourse = {
             prompt: "What does segregability require?",
             options: [
               "Release of the reasonably segregable portions",
-              "Storage of exempt material separately from releasable material",
-              "Review of each withholding by a second official before release",
+              "Separate storage of exempt material",
+              "Second-official review",
               "Separation of a multi-subject request into individual filings",
             ],
             correctIndex: 0,
@@ -3407,9 +3407,9 @@ export const REPORTER_PUBLIC_RECORDS_COURSE: AuthoredCourse = {
             prompt: "What is a Glomar response?",
             options: [
               "A refusal to confirm or deny that records exist",
-              "A withholding of an entire file under a single exemption",
-              "A referral of a request to the agency believed to hold the records",
-              "A statement that responsive records were lawfully destroyed",
+              "A whole file under one exemption",
+              "A referral to the holding agency",
+              "Notice of lawful destruction",
             ],
             correctIndex: 0,
             explanation:
@@ -3420,8 +3420,8 @@ export const REPORTER_PUBLIC_RECORDS_COURSE: AuthoredCourse = {
             prompt: "What is a Vaughn index?",
             options: [
               "An itemized justification for each withholding",
-              "A register of every request an agency received in a fiscal year",
-              "A published list of the exemptions an agency routinely applies",
+              "A register of all requests",
+              "A list of routine exemptions",
               "The schedule of duplication fees approved by an agency's board",
             ],
             correctIndex: 0,
@@ -3460,7 +3460,7 @@ export const REPORTER_PUBLIC_RECORDS_COURSE: AuthoredCourse = {
             options: [
               "As an invitation to narrow",
               "As a denial to be appealed at once, since breadth is the agency's problem",
-              "As a withdrawal requiring a fresh filing from the beginning",
+              "As a withdrawal",
               "As a fee dispute, since breadth is always a cost objection",
             ],
             correctIndex: 0,
@@ -3472,9 +3472,9 @@ export const REPORTER_PUBLIC_RECORDS_COURSE: AuthoredCourse = {
             prompt: "When does a set of denials become a story in itself?",
             options: [
               "When the same office repeats the same boilerplate",
-              "When one denial is upheld on appeal without an explanation",
-              "When an agency exceeds the statutory cap on copy charges",
-              "When a request is referred between agencies more than twice",
+              "When one denial survives appeal",
+              "When copy charges exceed the cap",
+              "When requests bounce between agencies",
             ],
             correctIndex: 0,
             explanation:
@@ -3498,9 +3498,9 @@ export const REPORTER_PUBLIC_RECORDS_COURSE: AuthoredCourse = {
             prompt: "What is OGIS, and what does it do?",
             options: [
               "The federal FOIA ombudsman, which offers mediation",
-              "The office inside each agency that issues determinations",
+              "Each agency's determinations office",
               "The board that sets classification policy across the executive branch",
-              "The registry of all federal records requests and their outcomes",
+              "A registry of all requests",
             ],
             correctIndex: 0,
             explanation:
@@ -3511,9 +3511,9 @@ export const REPORTER_PUBLIC_RECORDS_COURSE: AuthoredCourse = {
             prompt: "What is the difference between an appeal that argues sentiment and one that argues the standard?",
             options: [
               "The standard names a specific failure the reviewer can decide",
-              "Sentiment appeals are decided faster because they are shorter to read",
-              "The standard is only available in litigation, not at the administrative stage",
-              "Sentiment appeals preserve the requester's right to sue, and standards appeals do not",
+              "Sentiment appeals are decided faster",
+              "The standard is only for litigation",
+              "Only sentiment preserves the right to sue",
             ],
             correctIndex: 0,
             explanation:
@@ -3576,9 +3576,9 @@ export const REPORTER_PUBLIC_RECORDS_COURSE: AuthoredCourse = {
             prompt: "What is fee shifting, and why does it matter to a small outlet?",
             options: [
               "The agency pays a prevailing requester's costs",
-              "Duplication charges move to the agency once an appeal succeeds",
+              "Copy costs shift after an appeal",
               "Search fees convert to review fees for news-media requesters",
-              "Payment may be deferred until after the records are delivered",
+              "Deferred payment until delivery",
             ],
             correctIndex: 0,
             explanation:
@@ -3589,9 +3589,9 @@ export const REPORTER_PUBLIC_RECORDS_COURSE: AuthoredCourse = {
             prompt: "What is a standing request?",
             options: [
               "A recurring release of a class of record",
-              "A request left open until responsive material is located",
-              "A joint filing by several outlets covering one institution",
-              "A request preserved so a future reporter can adopt it",
+              "A request left open until found",
+              "A joint multi-outlet filing",
+              "A request kept for successors",
             ],
             correctIndex: 0,
             explanation:
@@ -3602,7 +3602,7 @@ export const REPORTER_PUBLIC_RECORDS_COURSE: AuthoredCourse = {
             prompt: "Why does a beat calendar make records work cheaper?",
             options: [
               "The November request can be filed in July",
-              "Because batching requests by quarter reduces duplication fees",
+              "Batched copy fees",
               "Because agencies grant standing requests only to reporters with a calendar",
               "Because appeals filed on a schedule are decided more favorably",
             ],
@@ -3614,9 +3614,9 @@ export const REPORTER_PUBLIC_RECORDS_COURSE: AuthoredCourse = {
           {
             prompt: "Why keep every released document with its request number and release date?",
             options: [
-              "Agencies lose things and links rot",
-              "Because the act requires requesters to retain what was released",
-              "Because retention obligations transfer to the requester on release",
+              "Because agencies lose things and links rot",
+              "The act requires you to keep them",
+              "Retention duties pass to you",
               "Because an appeal cannot proceed without the original attached",
             ],
             correctIndex: 0,
@@ -3630,7 +3630,7 @@ export const REPORTER_PUBLIC_RECORDS_COURSE: AuthoredCourse = {
               "Reading somebody else's data report",
               "Interviewing people who did not seek the attention",
               "Verification under time pressure and the decision not to publish",
-              "Libel, privacy, recording consent, minors, and shield protections",
+              "Libel and privacy law",
             ],
             correctIndex: 0,
             explanation:
