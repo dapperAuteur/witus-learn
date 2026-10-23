@@ -31,4 +31,24 @@ describe("school disclaimer", () => {
       );
     }
   });
+
+  // BAM, 2026-10-23: also on sign-in and in every /api/v1 response; never on /kids. These pages need a
+  // request and a database to render, so the wiring is pinned in source.
+  it("reaches /login and every /api/v1 response, and not /kids", async () => {
+    const { readFileSync, readdirSync } = await import("node:fs");
+    const read = (p: string) => readFileSync(new URL(`../${p}`, import.meta.url), "utf8");
+    expect(read("src/app/login/page.tsx")).toContain('<SchoolDisclaimerNotice tenantSlug={tenant.slug} variant="footer" />');
+    for (const route of [
+      "src/app/api/v1/courses/route.ts",
+      "src/app/api/v1/courses/[id]/route.ts",
+      "src/app/api/v1/courses/[id]/lessons/[lessonId]/route.ts",
+    ]) {
+      expect(read(route), route).toContain("schoolDisclaimer: schoolDisclaimerFor(auth.tenant.slug)?.text ?? null");
+    }
+    const kids = readdirSync(new URL("../src/app/kids", import.meta.url), { recursive: true })
+      .filter((f) => String(f).endsWith(".tsx"))
+      .map((f) => read(`src/app/kids/${String(f)}`))
+      .join("\n");
+    expect(kids).not.toContain("SchoolDisclaimerNotice");
+  });
 });
