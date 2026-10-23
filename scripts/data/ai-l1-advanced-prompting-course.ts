@@ -109,7 +109,7 @@ You don't need all five every time. But when an answer disappoints, the fix is a
             prompt: "What is a prompt, in this lesson's terms?",
             options: [
               "A command the model is obliged to follow exactly as written",
-              "The context the model reasons from",
+              "The context the model reasons from, text that steers it",
               "A setting that changes how the model was originally trained",
               "A phrase whose precise wording unlocks a hidden capability",
             ],
@@ -121,10 +121,10 @@ You don't need all five every time. But when an answer disappoints, the fix is a
           {
             prompt: "Why does this lesson say hunting for magic words is wasted effort?",
             options: [
-              "Models are retrained often enough that any phrase stops working",
-              "Providers filter out phrases that get shared too widely online",
-              "Magic words add no context",
-              "A long prompt is truncated before the model ever reads all of it",
+              "Models are retrained too often",
+              "Providers filter shared phrases",
+              "Magic words add no context, and the model answers from context",
+              "Long prompts get truncated",
             ],
             correctIndex: 2,
             explanation:
@@ -137,7 +137,7 @@ You don't need all five every time. But when an answer disappoints, the fix is a
               "They are drawn from the most common answer in its training data",
               "They default to the most cautious answer available to the model",
               "They are plausible, not correct",
-              "They are flagged in the output, so you know which parts were guessed",
+              "They are flagged",
             ],
             correctIndex: 2,
             explanation:
@@ -163,7 +163,7 @@ You don't need all five every time. But when an answer disappoints, the fix is a
               "It uses vocabulary the model encountered often during training",
               "It asks for less work than the weak version of the same prompt",
               "It names a topic narrow enough to have only one right answer",
-              "It supplies structure",
+              "It supplies structure: audience, length, format and a precise task",
             ],
             correctIndex: 3,
             explanation:
@@ -173,10 +173,10 @@ You don't need all five every time. But when an answer disappoints, the fix is a
           {
             prompt: "The editor example ends with \"Don't rewrite them yet.\" What is that instruction doing?",
             options: [
-              "Bounding the task",
-              "Saving the model effort, so the answer comes back more quickly",
-              "Reserving the rewrite for a model better suited to editing work",
-              "Signaling that the draft is already close to finished",
+              "Bounding the task: critique now, and no rewriting yet",
+              "Saving the model effort",
+              "Reserving the rewrite for another model",
+              "Signaling the draft is nearly done",
             ],
             correctIndex: 0,
             explanation:
@@ -186,9 +186,9 @@ You don't need all five every time. But when an answer disappoints, the fix is a
           {
             prompt: "What does the lesson say happens when you change the context you give a model?",
             options: [
-              "You reset the conversation the model has been tracking so far",
+              "You reset the chat",
               "You force the model to reason step by step through the request",
-              "You change the answer",
+              "You change the answer you get back",
               "You override any role the model was assigned earlier on",
             ],
             correctIndex: 2,
@@ -212,10 +212,10 @@ You don't need all five every time. But when an answer disappoints, the fix is a
           {
             prompt: "Why is Context the piece where accuracy is usually won or lost?",
             options: [
-              "It is the only part of a prompt the model reads word for word",
-              "Pasted material grounds the answer",
-              "It is weighted more heavily than the other pieces of the frame",
-              "It decides which of its training sources the model will consult",
+              "It is the only part read word for word",
+              "Pasted material grounds the answer instead of the model's memory",
+              "It is weighted more heavily",
+              "It picks which training sources to consult",
             ],
             correctIndex: 1,
             explanation:
@@ -227,7 +227,7 @@ You don't need all five every time. But when an answer disappoints, the fix is a
             options: [
               "A list of everything you would like the answer to accomplish",
               "A description of why the work matters to you personally",
-              "One clear verb",
+              "One clear verb, such as summarize, compare or critique",
               "A restatement of the role in the form of an instruction",
             ],
             correctIndex: 2,
@@ -238,8 +238,8 @@ You don't need all five every time. But when an answer disappoints, the fix is a
           {
             prompt: "Which piece of the frame covers length, structure, and tone?",
             options: [
-              "Format",
-              "Context, which carries the audience the answer is written for",
+              "Format, the shape of the output",
+              "Context",
               "Role, since the persona you choose decides how the answer reads",
               "Task, since the verb you choose implies how long the answer runs",
             ],
@@ -264,10 +264,10 @@ You don't need all five every time. But when an answer disappoints, the fix is a
           {
             prompt: "An answer disappoints you. Where does the lesson say the fix almost always is?",
             options: [
-              "A missing piece of the frame",
-              "A model too small for the difficulty of what you asked",
-              "A prompt long enough that the earliest instructions were lost",
-              "An ambiguity in the wording that the right synonym would resolve",
+              "A missing piece of the frame, most often the context",
+              "A model too small for the task",
+              "Lost early instructions in a long prompt",
+              "A wording ambiguity a synonym would fix",
             ],
             correctIndex: 0,
             explanation:
@@ -278,8 +278,8 @@ You don't need all five every time. But when an answer disappoints, the fix is a
             prompt: "Do you need all five pieces of the frame in every prompt?",
             options: [
               "Yes, since leaving one out makes the others harder to interpret",
-              "No",
-              "Yes, because the published guides describe the five as one unit",
+              "No, the frame is a diagnostic checklist",
+              "Yes, always",
               "Only when the answer will be published rather than kept private",
             ],
             correctIndex: 1,
@@ -293,7 +293,7 @@ You don't need all five every time. But when an answer disappoints, the fix is a
               "Training a collaborator through repeated rounds of correction",
               "Translating a human goal into the model's own internal language",
               "Constraining a system until only one possible output remains",
-              "Designing a handoff",
+              "Designing a handoff: goal, inputs, and the form of a good result",
             ],
             correctIndex: 3,
             explanation:
@@ -316,10 +316,10 @@ You don't need all five every time. But when an answer disappoints, the fix is a
           {
             prompt: "You want a reply that sounds like a kind, patient tutor rather than a generic bot. Which piece sets that?",
             options: [
-              "Context, by describing the learner the answer is written for",
-              "Examples, by showing a passage written in that same manner",
-              "Task, by asking the model to teach rather than to summarize",
-              "Role",
+              "Context, describing the learner",
+              "Examples of that manner",
+              "Task, asking it to teach",
+              "Role, which sets the voice, the depth, and the bar",
             ],
             correctIndex: 3,
             explanation:
@@ -329,10 +329,10 @@ You don't need all five every time. But when an answer disappoints, the fix is a
           {
             prompt: "\"Tell me about this report\" is too open. What does the drill say it needs?",
             options: [
-              "A precise task",
+              "A precise task, one named action",
               "A role, since no expertise has been assigned to the answer",
               "A format, since no length or structure has been requested",
-              "A constraint, since nothing limits what may be included",
+              "A constraint",
             ],
             correctIndex: 0,
             explanation:
@@ -345,7 +345,7 @@ You don't need all five every time. But when an answer disappoints, the fix is a
               "Task, since it says what the model is being asked to produce",
               "Context, since it describes the reader's tolerance for jargon",
               "Role, since plain English implies a non-expert speaker",
-              "Format",
+              "Format, setting length, structure and tone in one clause",
             ],
             correctIndex: 3,
             explanation:
@@ -471,8 +471,8 @@ A reliable pattern that stacks these moves:
             prompt: "What is few-shot prompting?",
             options: [
               "Sending several short prompts instead of one long one",
-              "Putting example answers in the prompt",
-              "Asking the model to generate its own examples before answering",
+              "Putting example answers in the prompt, one or a few of them",
+              "Asking the model to generate its own examples first",
               "Limiting the model to a few sentences of output at a time",
             ],
             correctIndex: 1,
@@ -483,10 +483,10 @@ A reliable pattern that stacks these moves:
           {
             prompt: "What does the lesson call a prompt that carries no examples at all?",
             options: [
-              "Cold prompting, since the model has nothing to warm up on",
-              "Zero-shot",
-              "Direct prompting, since the instruction goes straight to the task",
-              "Open prompting, since the output shape is left unconstrained",
+              "Cold prompting",
+              "Zero-shot, which is most prompting most people do",
+              "Direct prompting",
+              "Open prompting",
             ],
             correctIndex: 1,
             explanation:
@@ -497,8 +497,8 @@ A reliable pattern that stacks these moves:
             prompt: "Why does showing an example work so well?",
             options: [
               "An example is treated as a rule the model is not allowed to break",
-              "Examples are stored separately from the rest of the prompt text",
-              "The model is a pattern-matcher",
+              "Examples are stored separately",
+              "The model is a pattern-matcher and locks onto it",
               "The model was trained mostly on question and answer pairs",
             ],
             correctIndex: 2,
@@ -522,10 +522,10 @@ A reliable pattern that stacks these moves:
           {
             prompt: "Which job does the lesson name as one examples are good at?",
             options: [
-              "Edge-case handling",
-              "Making the model's factual claims more reliable overall",
-              "Reducing the amount of context a prompt has to carry",
-              "Getting the model to admit when it does not know something",
+              "Edge-case handling, such as an input with a missing date",
+              "Making factual claims more reliable",
+              "Reducing the context a prompt needs",
+              "Getting it to admit ignorance",
             ],
             correctIndex: 0,
             explanation:
@@ -535,10 +535,10 @@ A reliable pattern that stacks these moves:
           {
             prompt: "How does the lesson suggest making \"what counts as urgent\" concrete for a classification task?",
             options: [
-              "Define the word urgent in a sentence at the top of the prompt",
+              "Define the word urgent",
               "Ask the model to propose a definition and then confirm it",
               "List every word that should never be classified as urgent",
-              "Give labeled examples",
+              "Give two or three labeled examples",
             ],
             correctIndex: 3,
             explanation:
@@ -548,7 +548,7 @@ A reliable pattern that stacks these moves:
           {
             prompt: "What does the lesson warn that your examples also teach the model?",
             options: [
-              "Their mistakes",
+              "Their mistakes, along with the pattern you meant to show",
               "The order the model should work through the inputs in",
               "The level of confidence the answer should be stated with",
               "The number of items the finished answer should contain",
@@ -561,10 +561,10 @@ A reliable pattern that stacks these moves:
           {
             prompt: "What can a good example still not do for you?",
             options: [
-              "Set the tone or the voice the answer is written in",
-              "Show the model how an unusual input should be treated",
-              "Make a claim true",
-              "Fix the shape of an output you struggled to describe",
+              "Set the tone or the voice",
+              "Show how to treat an odd input",
+              "Make a claim true, since showing a format verifies nothing",
+              "Fix a hard-to-describe shape",
             ],
             correctIndex: 2,
             explanation:
@@ -575,8 +575,8 @@ A reliable pattern that stacks these moves:
             prompt: "The lesson turns \"Call the dentist sometime\" into \"Call the dentist, schedule a cleaning, by Friday.\" What is that example for?",
             options: [
               "Showing that short notes must be expanded into full sentences",
-              "Showing the output format",
-              "Showing that the model should sort the notes by urgency first",
+              "Showing the output format to follow",
+              "Sorting notes by urgency",
               "Showing that a note without a verb cannot be turned into a task",
             ],
             correctIndex: 1,
@@ -601,7 +601,7 @@ A reliable pattern that stacks these moves:
             prompt: "What is chain-of-thought prompting?",
             options: [
               "Breaking one request into a series of separate messages",
-              "Asking for the steps before the answer",
+              "Asking for the reasoning steps first, then the conclusion",
               "Having the model answer, then asking it to justify itself",
               "Feeding the model's own answer back in as the next prompt",
             ],
@@ -613,10 +613,10 @@ A reliable pattern that stacks these moves:
           {
             prompt: "What did Wei et al. (2022) find about generating intermediate reasoning steps?",
             options: [
-              "It makes answers longer without changing how often they are right",
+              "It makes answers longer but no more often right",
               "It helps with commonsense questions but not with arithmetic ones",
               "It removes the need to verify the conclusion the model reaches",
-              "It substantially improves performance",
+              "It substantially improves performance on arithmetic, commonsense and logic tasks",
             ],
             correctIndex: 3,
             explanation:
@@ -639,9 +639,9 @@ A reliable pattern that stacks these moves:
           {
             prompt: "What is the first payoff of asking a model to reason step by step?",
             options: [
-              "The model consults outside references while it works",
+              "It consults references",
               "The answer comes back in a format easier to paste elsewhere",
-              "Fewer careless leaps",
+              "Fewer careless leaps to a plausible ending",
               "The model reports how confident it is in each conclusion",
             ],
             correctIndex: 2,
@@ -652,7 +652,7 @@ A reliable pattern that stacks these moves:
           {
             prompt: "Which of the two payoffs does this course care about most?",
             options: [
-              "A checkable trail",
+              "A checkable trail of the work, shown step by step",
               "The higher accuracy that the 2022 study measured",
               "The gentler pace at which the explanation unfolds",
               "The wider range of problems the model will attempt",
@@ -665,10 +665,10 @@ A reliable pattern that stacks these moves:
           {
             prompt: "What can you do with visible reasoning that a bare answer never allows?",
             options: [
-              "Confirm the model consulted more than one source",
-              "Measure how long the model spent on the problem",
-              "Check that the model followed your format instructions",
-              "Find the step that went wrong",
+              "Confirm it used several sources",
+              "Measure its time on the problem",
+              "Check it followed your format",
+              "Find the exact step that went wrong and fix your prompt there",
             ],
             correctIndex: 3,
             explanation:
@@ -678,9 +678,9 @@ A reliable pattern that stacks these moves:
           {
             prompt: "What word does the lesson use for what showing the work makes an answer?",
             options: [
-              "Reproducible, meaning the same prompt returns the same result",
+              "Reproducible",
               "Attributable, meaning each claim can be traced to a source",
-              "Inspectable",
+              "Inspectable, which is what makes it trustworthy",
               "Deterministic, meaning the reasoning follows fixed rules",
             ],
             correctIndex: 2,
@@ -704,10 +704,10 @@ A reliable pattern that stacks these moves:
           {
             prompt: "For which kind of task does the lesson recommend step-by-step reasoning?",
             options: [
-              "Any request where the answer must be verified afterwards",
-              "Any question whose answer depends on recent information",
-              "Anything with steps",
-              "Any task where the output format is difficult to describe",
+              "Any answer needing verification",
+              "Questions needing recent information",
+              "Anything with steps, like a math problem or a multi-part decision",
+              "Hard-to-describe output formats",
             ],
             correctIndex: 2,
             explanation:
@@ -720,7 +720,7 @@ A reliable pattern that stacks these moves:
               "That the model will follow the format you requested",
               "That every step will be written in plain language",
               "That the same question will get the same steps twice",
-              "That the answer is true",
+              "That the answer is true, which still needs your verifying",
             ],
             correctIndex: 3,
             explanation:
@@ -743,10 +743,10 @@ A reliable pattern that stacks these moves:
           {
             prompt: "What does the lesson say a request for sources actually produces?",
             options: [
-              "Verified references drawn from a checked bibliography",
-              "A confidence estimate attached to each factual statement",
-              "Leads",
-              "The subset of claims the model is willing to stand behind",
+              "Verified references",
+              "A confidence estimate per claim",
+              "Leads that you then have to confirm yourself",
+              "Claims it will stand behind",
             ],
             correctIndex: 2,
             explanation:
@@ -756,7 +756,7 @@ A reliable pattern that stacks these moves:
           {
             prompt: "What can a model invent that looks completely real?",
             options: [
-              "The date on which it last updated its knowledge",
+              "Its update date",
               "URLs, DOIs, and case names",
               "A record of which tool it used to check a claim",
               "A note admitting that a source could not be located",
@@ -771,7 +771,7 @@ A reliable pattern that stacks these moves:
             options: [
               "A second pass gives the model access to more context",
               "Reviewing text costs less computation than writing it",
-              "They critique better than they draft",
+              "Models are often better at critiquing than drafting",
               "The model compares its answer against its training data",
             ],
             correctIndex: 2,
@@ -782,8 +782,8 @@ A reliable pattern that stacks these moves:
           {
             prompt: "Which of these is a self-check prompt the lesson gives?",
             options: [
-              "Explain the answer again using simpler vocabulary",
-              "Give me a second answer written from another angle",
+              "Explain it more simply",
+              "Give a second answer",
               "Tell me which part of my question was most ambiguous",
               "List what could make this wrong",
             ],
@@ -808,10 +808,10 @@ A reliable pattern that stacks these moves:
           {
             prompt: "How does the lesson describe what self-checking achieves?",
             options: [
-              "It removes the need to open the sources yourself",
-              "It raises the floor",
-              "It turns a draft into something ready to publish",
-              "It gives you a reliable measure of the error rate",
+              "It removes the need to open sources",
+              "It raises the floor by catching some mistakes",
+              "It makes a draft ready to publish",
+              "It measures the error rate reliably",
             ],
             correctIndex: 1,
             explanation:
@@ -823,8 +823,8 @@ A reliable pattern that stacks these moves:
             options: [
               "Choosing which of them the model should prioritize",
               "Telling the model which sources you already trust",
-              "Opening them",
-              "Asking the model to rank them by how reliable they are",
+              "Opening them to confirm what they say",
+              "Ranking them by reliability",
             ],
             correctIndex: 2,
             explanation:
@@ -834,10 +834,10 @@ A reliable pattern that stacks these moves:
           {
             prompt: "The stacking pattern asks for the answer, then a separate section with three things. What is the third?",
             options: [
-              "A shorter version of the answer for quick reference",
+              "A short version",
               "The steps the model took to reach its conclusion",
               "A rating of how difficult the question was to answer",
-              "What could make this wrong",
+              "What could make the answer wrong",
             ],
             correctIndex: 3,
             explanation:
@@ -847,10 +847,10 @@ A reliable pattern that stacks these moves:
           {
             prompt: "What other name does the lesson give for asking a model to review its own answer?",
             options: [
-              "Self-critique",
-              "Back-propagation, borrowed from how the model was trained",
+              "Self-critique, or asking it to reflect",
+              "Back-propagation",
               "Cross-validation, borrowed from statistical model testing",
-              "Recursion, since the model is being applied to its own output",
+              "Recursion",
             ],
             correctIndex: 0,
             explanation:
@@ -1157,7 +1157,7 @@ Notice what every pattern shares: a **role**, **pasted context** when accuracy m
             prompt: "What is step one of the prompt-debug loop?",
             options: [
               "Rewrite the prompt from the beginning with more detail",
-              "Name the gap specifically",
+              "Name the gap specifically, such as the wrong audience",
               "Ask the model what it thought you were asking for",
               "Run the same prompt again to see whether the answer varies",
             ],
@@ -1169,10 +1169,10 @@ Notice what every pattern shares: a **role**, **pasted context** when accuracy m
           {
             prompt: "An answer comes back with a made-up fact. Which missing piece of the frame does the loop trace that to?",
             options: [
-              "A fuzzy task, since the model was never told what to produce",
-              "A missing format, since no evidence structure was requested",
-              "The wrong role, since no expert persona had been assigned",
-              "Missing context",
+              "A fuzzy task",
+              "A missing format",
+              "The wrong role",
+              "Missing context, so the model fills the gap from memory",
             ],
             correctIndex: 3,
             explanation:
@@ -1182,9 +1182,9 @@ Notice what every pattern shares: a **role**, **pasted context** when accuracy m
           {
             prompt: "Why does the loop insist on changing only one thing at a time?",
             options: [
-              "So you learn what worked",
+              "So you learn what worked and can reuse it",
               "Because each extra instruction weakens the ones before it",
-              "Because a prompt has a limit on how much it can carry",
+              "Prompts have a size limit",
               "Because the model applies changes in the order they appear",
             ],
             correctIndex: 0,
@@ -1208,8 +1208,8 @@ Notice what every pattern shares: a **role**, **pasted context** when accuracy m
           {
             prompt: "\"This intro is perfect, keep it. Rewrite only the second paragraph.\" What does the lesson call that?",
             options: [
-              "Freezing, since the good text is locked against further changes",
-              "Keep the good, fix the rest",
+              "Freezing, since the good text is locked from changes",
+              "Keep the good, fix the rest, rather than regenerating",
               "Layering, since each pass builds on the one before it",
               "Anchoring, since the strong section sets the standard",
             ],
@@ -1221,9 +1221,9 @@ Notice what every pattern shares: a **role**, **pasted context** when accuracy m
           {
             prompt: "How do the OpenAI and Anthropic guides describe prompting itself?",
             options: [
-              "A design skill best learned from published templates",
+              "A design skill from templates",
               "A precise craft in which the first attempt should be the best",
-              "Iterative and empirical",
+              "Iterative and empirical: test, observe, refine",
               "A matter of matching the prompt's style to the model in use",
             ],
             correctIndex: 2,
@@ -1234,10 +1234,10 @@ Notice what every pattern shares: a **role**, **pasted context** when accuracy m
           {
             prompt: "What do models tend to do when you give no length limit?",
             options: [
-              "Over-explain",
-              "Return the shortest answer that satisfies the question",
-              "Match the length of whatever you pasted in as context",
-              "Stop at the first natural break in the explanation",
+              "Over-explain, which is why a length limit helps",
+              "Give the shortest answer",
+              "Match the pasted length",
+              "Stop at the first break",
             ],
             correctIndex: 0,
             explanation:
@@ -1249,7 +1249,7 @@ Notice what every pattern shares: a **role**, **pasted context** when accuracy m
             options: [
               "The order in which the points are presented",
               "How many sources the finished answer will name",
-              "Vocabulary and depth",
+              "Vocabulary and depth, the level of detail",
               "Whether the model shows its reasoning as it goes",
             ],
             correctIndex: 2,
@@ -1260,10 +1260,10 @@ Notice what every pattern shares: a **role**, **pasted context** when accuracy m
           {
             prompt: "Why does the lesson call scope a powerful guardrail against invented facts?",
             options: [
-              "It reduces the amount of text the model has to produce",
+              "It shortens the answer",
               "It makes the model check each claim before including it",
               "It tells the model which topics it was trained well on",
-              "It limits what may be used",
+              "It limits what material may be used",
             ],
             correctIndex: 3,
             explanation:
@@ -1273,10 +1273,10 @@ Notice what every pattern shares: a **role**, **pasted context** when accuracy m
           {
             prompt: "What is the \"out\" the lesson says to give a model?",
             options: [
-              "A shorter answer option for when it runs low on material",
-              "Permission to say it does not know",
-              "A chance to ask you a clarifying question first",
-              "A way to flag the question as outside its training",
+              "A shorter answer option",
+              "Permission to say it does not know, instead of fabricating",
+              "A chance to ask first",
+              "A way to flag it as out of scope",
             ],
             correctIndex: 1,
             explanation:
@@ -1299,7 +1299,7 @@ Notice what every pattern shares: a **role**, **pasted context** when accuracy m
           {
             prompt: "Which is an example of the \"what not to do\" kind of constraint?",
             options: [
-              "Keep the answer under one hundred words in total",
+              "Keep it short",
               "Write it for a reader who is new to the topic",
               "Present the options as a table with three columns",
               "Do not invent statistics",
@@ -1325,10 +1325,10 @@ Notice what every pattern shares: a **role**, **pasted context** when accuracy m
           {
             prompt: "What does \"advanced\" mean in the lesson on when not to trust an answer?",
             options: [
-              "More willing to trust a model that has shown its work",
-              "More able to judge an answer without having to check it",
-              "More skeptical",
-              "More reliant on the techniques taught earlier in the course",
+              "More willing to trust shown work",
+              "Able to judge without checking",
+              "More skeptical, since no technique makes an answer true",
+              "More reliant on earlier techniques",
             ],
             correctIndex: 2,
             explanation:
@@ -1339,8 +1339,8 @@ Notice what every pattern shares: a **role**, **pasted context** when accuracy m
             prompt: "What does the lesson say a confident tone is evidence of?",
             options: [
               "A claim the model found repeated across many sources",
-              "Nothing",
-              "A subject the model happened to be trained on thoroughly",
+              "Nothing; fluency is not accuracy",
+              "Thorough training",
               "An answer the model would produce the same way twice",
             ],
             correctIndex: 1,
@@ -1354,7 +1354,7 @@ Notice what every pattern shares: a **role**, **pasted context** when accuracy m
               "A subject you have studied enough to spot an error",
               "A claim that contradicts what you expected to find",
               "A topic on which you hold no prior opinion at all",
-              "Something you want to be true",
+              "Something you want to be true, as it feels right",
             ],
             correctIndex: 3,
             explanation:
@@ -1364,7 +1364,7 @@ Notice what every pattern shares: a **role**, **pasted context** when accuracy m
           {
             prompt: "Why does the lesson single out anything recent or fast-changing?",
             options: [
-              "The knowledge has a cutoff",
+              "The knowledge has a cutoff date, past which it still sounds confident",
               "Recent events are described in fewer words than older ones",
               "Newer sources are less likely to have been peer reviewed",
               "The model weights recent text lower than established text",
@@ -1378,9 +1378,9 @@ Notice what every pattern shares: a **role**, **pasted context** when accuracy m
             prompt: "Which trustworthiness property does the lesson cite from the NIST AI Risk Management Framework?",
             options: [
               "Explainable and interpretable, since reasoning can be shown",
-              "Secure and resilient, since a prompt can be manipulated",
+              "Secure and resilient",
               "Fair with harmful bias managed, since the data carries bias",
-              "Valid and reliable",
+              "Valid and reliable, a core property",
             ],
             correctIndex: 3,
             explanation:
@@ -1405,8 +1405,8 @@ Notice what every pattern shares: a **role**, **pasted context** when accuracy m
             options: [
               "AI proposes the claims and sources rank them by strength",
               "AI handles the reasoning and sources supply the numbers",
-              "AI drafts, sources confirm",
-              "AI writes the first pass and sources are checked only if it fails",
+              "AI drafts, reasons and explains; real sources confirm",
+              "AI writes first, and sources are checked only if it fails",
             ],
             correctIndex: 2,
             explanation:
@@ -1416,7 +1416,7 @@ Notice what every pattern shares: a **role**, **pasted context** when accuracy m
           {
             prompt: "What does the tutor pattern ask for on top of the explanation?",
             options: [
-              "An analogy, a misconception, a question",
+              "An analogy, a misconception, and a quick question to check understanding",
               "A reading list with a short summary of each item on it",
               "A second explanation written for a more advanced reader",
               "A breakdown of which parts of the topic are hardest",
@@ -1443,8 +1443,8 @@ Notice what every pattern shares: a **role**, **pasted context** when accuracy m
             prompt: "What does the decision-brief pattern ask for after the recommendation?",
             options: [
               "What to verify independently",
-              "A ranked list of the options that were not chosen",
-              "An estimate of how long the decision ought to take",
+              "A ranked list",
+              "A time estimate",
               "A summary of the material that was pasted in",
             ],
             correctIndex: 0,
@@ -1455,7 +1455,7 @@ Notice what every pattern shares: a **role**, **pasted context** when accuracy m
           {
             prompt: "In the turn-mess-into-structure pattern, what happens to a field the notes never mention?",
             options: [
-              "It is filled with the most likely value from the context",
+              "It is guessed",
               "It is written as unknown",
               "It is left blank, so the gap is visible at a glance",
               "It is moved to a separate list of open questions",
@@ -1468,10 +1468,10 @@ Notice what every pattern shares: a **role**, **pasted context** when accuracy m
           {
             prompt: "What does the editor pattern explicitly forbid on the first pass?",
             options: [
-              "Commenting on anything beyond the three weakest spots",
-              "Considering the audience the draft was written for",
-              "Rewriting",
-              "Suggesting fixes before the weaknesses are explained",
+              "Going beyond three spots",
+              "Considering the audience",
+              "Rewriting, so the diagnosis stays visible",
+              "Suggesting early fixes",
             ],
             correctIndex: 2,
             explanation:
@@ -1484,7 +1484,7 @@ Notice what every pattern shares: a **role**, **pasted context** when accuracy m
               "A worked example showing the model the exact output shape",
               "An instruction to reason step by step before concluding",
               "A word limit that keeps the answer short enough to check",
-              "A built-in verify step",
+              "A built-in verify step, alongside role, context, task and format",
             ],
             correctIndex: 3,
             explanation:
@@ -1495,7 +1495,7 @@ Notice what every pattern shares: a **role**, **pasted context** when accuracy m
             prompt: "The drill: the output format is hard to describe, so you paste one done-right example. What is that?",
             options: [
               "Few-shot prompting",
-              "Grounding, since the example anchors what the model may use",
+              "Grounding",
               "Templating, since the example acts as a form to be filled",
               "Calibration, since the example sets the expected standard",
             ],
@@ -1520,10 +1520,10 @@ Notice what every pattern shares: a **role**, **pasted context** when accuracy m
           {
             prompt: "The drill: a first answer is too long and too generic, so you add a length limit and an audience. What are you tightening?",
             options: [
-              "The role, since an audience implies who is speaking",
-              "The task, since a shorter answer is a different job",
-              "The context, since the audience is part of the situation",
-              "The format",
+              "The role",
+              "The task",
+              "The context",
+              "The format, since length and audience are format constraints",
             ],
             correctIndex: 3,
             explanation:
@@ -1546,10 +1546,10 @@ Notice what every pattern shares: a **role**, **pasted context** when accuracy m
           {
             prompt: "The drill: treating the first answer as a draft and changing one variable at a time is the prompt-what loop?",
             options: [
-              "Revision, borrowed from how editors work through a draft",
+              "Revision",
               "Feedback, since each pass responds to the one before it",
               "Convergence, since the answers narrow toward the target",
-              "Debug",
+              "Debug, as in read, trace, change, re-run",
             ],
             correctIndex: 3,
             explanation:
@@ -1560,8 +1560,8 @@ Notice what every pattern shares: a **role**, **pasted context** when accuracy m
             prompt: "The drill: a step-by-step answer with cited-looking sources may still be false, because the reasoning and the citations are also what?",
             options: [
               "Drawn from the least reliable part of the training data",
-              "Produced faster than the rest of the answer is",
-              "Generated text",
+              "Produced more quickly than the rest of the answer is",
+              "Generated text, the reasoning and citations included",
               "Written to match the confidence you showed in the prompt",
             ],
             correctIndex: 2,

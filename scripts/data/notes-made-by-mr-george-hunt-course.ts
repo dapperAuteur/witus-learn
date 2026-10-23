@@ -223,9 +223,9 @@ Hodge, F. W. (1921). Note on the accompanying paper. In F. Boas, *Ethnology of t
             prompt: "What does the 1897 title page inside the museum volume add after Boas's name?",
             options: [
               "Notes made by Mr. George Hunt",
-              "A note that the manuscript was submitted to the Bureau of American Ethnology for review",
-              "A dedication to the Jesup North Pacific Expedition and its subscribers in New York",
-              "An acknowledgement of the Government Printing Office's typesetters and engravers",
+              "A Bureau review note",
+              "A Jesup dedication",
+              "Typesetters' thanks",
             ],
             correctIndex: 0,
             explanation:
@@ -236,9 +236,9 @@ Hodge, F. W. (1921). Note on the accompanying paper. In F. Boas, *Ethnology of t
             prompt: "Which two verbs does the 1897 preface use for what George Hunt did?",
             options: [
               "Observed and recorded",
-              "Translated and proofread, meaning he checked language that others had already collected",
-              "Suggested and advised, meaning he pointed Boas toward people worth interviewing",
-              "Illustrated and photographed, meaning he supplied the plates that fill the volume",
+              "Translated and proofread",
+              "Suggested and advised",
+              "Illustrated and photographed",
             ],
             correctIndex: 0,
             explanation:
@@ -249,9 +249,9 @@ Hodge, F. W. (1921). Note on the accompanying paper. In F. Boas, *Ethnology of t
             prompt: "Which office printed the 1897 study?",
             options: [
               "The Government Printing Office",
-              "Columbia University Press, which issued it in its Contributions to Anthropology series",
-              "G. E. Stechert and Company of New York, publisher of the Boas Anniversary Volume",
-              "E. J. Brill of Leiden, printer to the Jesup North Pacific Expedition memoirs",
+              "Columbia University Press",
+              "G. E. Stechert and Company",
+              "E. J. Brill of Leiden, Netherlands",
             ],
             correctIndex: 0,
             explanation:
@@ -274,10 +274,10 @@ Hodge, F. W. (1921). Note on the accompanying paper. In F. Boas, *Ethnology of t
           {
             prompt: "Which place does the 1897 preface give as George Hunt's?",
             options: [
-              "Fort Rupert",
-              "Alert Bay, British Columbia, where the U'mista Cultural Centre later stood",
-              "Victoria, British Columbia, where the provincial courts and offices were",
-              "Tongass, in Southeast Alaska, where his mother's family lived",
+              "Fort Rupert, British Columbia",
+              "Alert Bay",
+              "Victoria",
+              "Tongass, Alaska",
             ],
             correctIndex: 0,
             explanation:
@@ -288,9 +288,9 @@ Hodge, F. W. (1921). Note on the accompanying paper. In F. Boas, *Ethnology of t
             prompt: "What phrase does the 1897 preface use for what Boas owes Hunt?",
             options: [
               "Under great obligations",
-              "In permanent partnership, a phrase repeated in every later preface Boas wrote",
-              "Indebted for financial support, referring to the cost of the fieldwork seasons",
-              "Grateful for the loan of objects, referring to the masks and dishes described",
+              "In partnership",
+              "Indebted for his financial support",
+              "Grateful for the loan of objects",
             ],
             correctIndex: 0,
             explanation:
@@ -300,9 +300,9 @@ Hodge, F. W. (1921). Note on the accompanying paper. In F. Boas, *Ethnology of t
           {
             prompt: "Where can a learner read the 1897 title pages for themselves?",
             options: [
-              "On the Internet Archive",
-              "Only in the Rare Book and Manuscript Library reading room at Columbia University",
-              "Only at the American Philosophical Society in Philadelphia, by appointment",
+              "On the Internet Archive, in two scanned copies",
+              "Only in Columbia's reading room",
+              "Only at the APS, by appointment",
               "Nowhere, because every surviving copy is access-restricted by community protocol",
             ],
             correctIndex: 0,
@@ -326,10 +326,10 @@ Hodge, F. W. (1921). Note on the accompanying paper. In F. Boas, *Ethnology of t
           {
             prompt: "Which course does this one borrow the credit ladder from?",
             options: [
-              "Written by Himself",
-              "Archives and Finding Aids, which teaches provenance and original order instead",
-              "Who Made the Record, which teaches how a record about people is assembled",
-              "Tribal Nations Governance, which teaches where a course about a nation stops",
+              "Written by Himself, its lesson 3",
+              "Archives and Finding Aids, on provenance and order",
+              "Who Made the Record",
+              "Who Gets Named",
             ],
             correctIndex: 0,
             explanation:
@@ -340,9 +340,9 @@ Hodge, F. W. (1921). Note on the accompanying paper. In F. Boas, *Ethnology of t
             prompt: "How many different rungs does Hunt occupy across the six publications?",
             options: [
               "Four",
-              "One, because every book from 1897 to 1930 credits him in exactly the same words",
-              "Six, because each of the six publications invents a different formula for him",
-              "Two, because a contributor can only be either an author or an acknowledgement",
+              "One",
+              "Six",
+              "Two",
             ],
             correctIndex: 0,
             explanation:
@@ -353,9 +353,9 @@ Hodge, F. W. (1921). Note on the accompanying paper. In F. Boas, *Ethnology of t
             prompt: "Why does the course prefer the sentence about note-making to the words not credited?",
             options: [
               "It is a finding, not a complaint",
-              "It is shorter, and short sentences are easier for a learner to remember accurately",
+              "It is shorter",
               "It is kinder to Boas, whose reputation the course is written to protect",
-              "It avoids naming Hunt, which the community has asked writers not to do",
+              "It avoids naming Hunt",
             ],
             correctIndex: 0,
             explanation:
@@ -379,9 +379,9 @@ Hodge, F. W. (1921). Note on the accompanying paper. In F. Boas, *Ethnology of t
             prompt: "What does the lesson say a title page is NOT?",
             options: [
               "A description of how the book was made",
-              "A legal document, since publishers are not bound by anything printed there",
-              "A place where a contributor's name can appear below the author's name",
-              "Something a library catalogue ever copies when it describes a book",
+              "A legal document",
+              "A place to name contributors",
+              "Something catalogues copy",
             ],
             correctIndex: 0,
             explanation:
@@ -391,8 +391,8 @@ Hodge, F. W. (1921). Note on the accompanying paper. In F. Boas, *Ethnology of t
           {
             prompt: "Why does the rung on the ladder still matter a century later?",
             options: [
-              "Libraries copy it forward",
-              "Because copyright in the 1897 report has not yet expired in the United States",
+              "Libraries and citations copy it forward",
+              "Unexpired US copyright",
               "Because the Bureau of American Ethnology still reprints the book each decade",
               "Because a title page can be amended only by the author who signed it",
             ],
@@ -405,9 +405,9 @@ Hodge, F. W. (1921). Note on the accompanying paper. In F. Boas, *Ethnology of t
             prompt: "Which spelling does this course use for the people?",
             options: [
               "Kwakwaka'wakw",
-              "Kwakiutl, because that is the form the historical documents use throughout",
-              "Kwagu'ł, because that is the name of the whole nation rather than one community",
-              "'Namgis, because the U'mista Cultural Centre is located in that community",
+              "Kwakiutl",
+              "Kwagu'ł",
+              "'Namgis",
             ],
             correctIndex: 0,
             explanation:
@@ -418,9 +418,9 @@ Hodge, F. W. (1921). Note on the accompanying paper. In F. Boas, *Ethnology of t
             prompt: "Which spelling does this course use for the language?",
             options: [
               "Kwak'wala",
-              "Kwakiutl, which is how both the 1897 and the 1921 prefaces name the language",
-              "Tlingit, which is the language of Hunt's mother's family in Southeast Alaska",
-              "Chinook Jargon, the trade language of the coast in the nineteenth century",
+              "Kwakiutl",
+              "Tlingit",
+              "Chinook Jargon",
             ],
             correctIndex: 0,
             explanation:
@@ -444,9 +444,9 @@ Hodge, F. W. (1921). Note on the accompanying paper. In F. Boas, *Ethnology of t
             prompt: "Whose spelling practice does the course follow for the people and the language?",
             options: [
               "The American Philosophical Society's",
-              "The Bureau of American Ethnology's, as printed in its 1921 annual report",
-              "The Internet Archive's, as recorded in the creator fields of its scanned items",
-              "The Government Printing Office's, as set in the 1897 museum report",
+              "The Bureau's, as of 1921",
+              "The Internet Archive's",
+              "The 1897 printer's",
             ],
             correctIndex: 0,
             explanation:
@@ -457,9 +457,9 @@ Hodge, F. W. (1921). Note on the accompanying paper. In F. Boas, *Ethnology of t
             prompt: "How many title pages does the 1897 study have?",
             options: [
               "Two",
-              "One, set once and reprinted identically in the offprint and the museum volume",
-              "Four, one for each of the sections into which the monograph is divided",
-              "None, because a paper inside an annual report is not given a title page",
+              "One",
+              "Four",
+              "None",
             ],
             correctIndex: 0,
             explanation:
@@ -483,9 +483,9 @@ Hodge, F. W. (1921). Note on the accompanying paper. In F. Boas, *Ethnology of t
             prompt: "What is front matter?",
             options: [
               "The pages before a book's text",
-              "The opening chapter of a book, in which the author states the argument",
-              "The bibliography and index, which are printed at the front in older reports",
-              "The archival folder that holds the correspondence about a book's publication",
+              "The opening chapter",
+              "The index",
+              "A publication file",
             ],
             correctIndex: 0,
             explanation:
@@ -496,9 +496,9 @@ Hodge, F. W. (1921). Note on the accompanying paper. In F. Boas, *Ethnology of t
             prompt: "Which section of this course follows the credit into archives and catalogue records?",
             options: [
               "Section 3",
-              "Section 5, which reads the corrections made to the record after 1920",
-              "Section 4, which asks whose knowledge the manuscripts actually carry",
-              "Section 2, which reads Boas's own account of how the method worked",
+              "Section 5",
+              "Section 4",
+              "Section 2",
             ],
             correctIndex: 0,
             explanation:
@@ -509,9 +509,9 @@ Hodge, F. W. (1921). Note on the accompanying paper. In F. Boas, *Ethnology of t
             prompt: "On how many publications do the 2019 exhibition's curators say Hunt was explicitly credited as an author or co-author?",
             options: [
               "Three",
-              "One, meaning the 1921 Ethnology of the Kwakiutl and nothing else",
-              "Six, meaning every book this course examines between 1897 and 1930",
-              "None, meaning the exhibition found no publication that named him at all",
+              "One",
+              "Six",
+              "None",
             ],
             correctIndex: 0,
             explanation:
@@ -535,9 +535,9 @@ Hodge, F. W. (1921). Note on the accompanying paper. In F. Boas, *Ethnology of t
             prompt: "Whose name is on the title page of Kwakiutl Tales, published in 1910?",
             options: [
               "Boas alone",
-              "Boas and Hunt together, in the same size type, joined by the word and",
-              "Hunt alone, with Boas credited in smaller type as the volume's editor",
-              "Neither man, because the volume was issued anonymously by the expedition",
+              "Boas and Hunt",
+              "Hunt alone",
+              "Neither man",
             ],
             correctIndex: 0,
             explanation:
@@ -547,10 +547,10 @@ Hodge, F. W. (1921). Note on the accompanying paper. In F. Boas, *Ethnology of t
           {
             prompt: "Whose name is on the title page of The Religion of the Kwakiutl Indians in 1930?",
             options: [
-              "Boas alone",
-              "Boas, with a line reading based on notes made by Mr. George Hunt beneath it",
-              "Boas and Hunt, with Hunt named as the collector of the texts in part one",
-              "Columbia University's Department of Anthropology, as a corporate author",
+              "Boas alone: By Franz Boas",
+              "Boas and Hunt",
+              "Hunt alone",
+              "No one",
             ],
             correctIndex: 0,
             explanation:
@@ -561,8 +561,8 @@ Hodge, F. W. (1921). Note on the accompanying paper. In F. Boas, *Ethnology of t
             prompt: "What does the Boas Anniversary Volume's table of contents show about Hunt?",
             options: [
               "His name on his own piece",
-              "That he is thanked in a list of contributors printed at the back of the volume",
-              "That he supplied the photographs used to illustrate other people's papers",
+              "A thank-you list",
+              "Photo credits",
               "That his contribution was withdrawn before the volume went to press",
             ],
             correctIndex: 0,
@@ -587,9 +587,9 @@ Hodge, F. W. (1921). Note on the accompanying paper. In F. Boas, *Ethnology of t
             prompt: "What page number does the 1906 contents line give for Hunt's piece?",
             options: [
               "108",
-              "1, because a volume in someone's honour opens with the guest of honour's collaborator",
-              "455, the page on which the volume's musical transcriptions begin",
-              "269, which is the final page of the second series of Kwakiutl Texts",
+              "1",
+              "455",
+              "269",
             ],
             correctIndex: 0,
             explanation:
@@ -600,7 +600,7 @@ Hodge, F. W. (1921). Note on the accompanying paper. In F. Boas, *Ethnology of t
             prompt: "Why has nobody in this course read the printed Kwakiutl Texts title page?",
             options: [
               "The scans were refused",
-              "Because the only surviving copy was destroyed in a fire at the museum in 1975",
+              "A 1975 fire",
               "Because the Kwakwaka'wakw Editorial Committee has asked that it not be reproduced",
               "Because the volumes were published without any title page at all",
             ],
@@ -613,9 +613,9 @@ Hodge, F. W. (1921). Note on the accompanying paper. In F. Boas, *Ethnology of t
             prompt: "How many catalogue records does the course cite as agreeing that Hunt is an author of the Texts volumes?",
             options: [
               "Four",
-              "One, the American Museum of Natural History's own digital library record",
-              "None, which is why the claim is left out of the course altogether",
-              "Twelve, one for every library in North America that holds a copy",
+              "One",
+              "None",
+              "Twelve",
             ],
             correctIndex: 0,
             explanation:
@@ -626,9 +626,9 @@ Hodge, F. W. (1921). Note on the accompanying paper. In F. Boas, *Ethnology of t
             prompt: "Which record carries the word author beside Hunt's name for the 1975 reprint of the second series?",
             options: [
               "The Internet Archive's",
-              "The Government Printing Office's, in its catalogue of federal publications",
-              "The Bureau of American Ethnology's, in its thirty-fifth annual report",
-              "Columbia University Libraries', in its 2023 noteworthy acquisitions list",
+              "The GPO's",
+              "The Bureau's",
+              "Columbia's",
             ],
             correctIndex: 0,
             explanation:
@@ -639,9 +639,9 @@ Hodge, F. W. (1921). Note on the accompanying paper. In F. Boas, *Ethnology of t
             prompt: "What dates does the Canadiana record give for George Hunt?",
             options: [
               "1854 to 1933",
-              "1856 to 1931, the same dates the American Philosophical Society gives",
-              "1884 to 1954, the dates attached to a different man of the same name",
-              "1858 to 1942, which are in fact Franz Boas's dates",
+              "1856 to 1931",
+              "1884 to 1954",
+              "1858 to 1942",
             ],
             correctIndex: 0,
             explanation:
@@ -651,9 +651,9 @@ Hodge, F. W. (1921). Note on the accompanying paper. In F. Boas, *Ethnology of t
           {
             prompt: "What does this course refuse to state about Boas?",
             options: [
-              "His reason",
+              "His reason for any credit decision",
               "His name, since naming a publisher's author is outside the course's subject",
-              "His dates, because the sources fetched for the course disagree about them",
+              "His dates",
               "His role, since the record does not show that he edited the manuscripts at all",
             ],
             correctIndex: 0,
@@ -664,9 +664,9 @@ Hodge, F. W. (1921). Note on the accompanying paper. In F. Boas, *Ethnology of t
           {
             prompt: "What is the difference between saying the credit went down and saying Boas took it?",
             options: [
-              "One asserts a motive",
-              "One is a shorter sentence, and short sentences are easier to prove in general",
-              "One names a person and the other does not, which is the only real difference",
+              "One asserts a motive the documents do not carry",
+              "One is a shorter sentence",
+              "One names a person",
               "There is no difference, since both describe exactly the same documented event",
             ],
             correctIndex: 0,
@@ -690,10 +690,10 @@ Hodge, F. W. (1921). Note on the accompanying paper. In F. Boas, *Ethnology of t
           {
             prompt: "Over roughly how many years does the credit pattern in this section run?",
             options: [
-              "Thirty-three",
-              "Ten, from the first Kwakiutl Texts volume in 1902 to the Curtis film of 1914",
-              "Forty-four, from Hunt's first work as an interpreter in 1879 to his death",
-              "Five, from the 1897 monograph to the first series of Kwakiutl Texts",
+              "Thirty-three, from 1897 to 1930",
+              "Ten",
+              "Forty-four",
+              "Five",
             ],
             correctIndex: 0,
             explanation:
@@ -706,7 +706,7 @@ Hodge, F. W. (1921). Note on the accompanying paper. In F. Boas, *Ethnology of t
               "How it is set in type",
               "Whether either volume was ever printed, since no copy has been located",
               "Whether Hunt wrote any part of the two volumes at all",
-              "Which publisher issued the first series, which no record names",
+              "Its year",
             ],
             correctIndex: 0,
             explanation:
@@ -716,10 +716,10 @@ Hodge, F. W. (1921). Note on the accompanying paper. In F. Boas, *Ethnology of t
           {
             prompt: "What does the course say about the contents of The Rival Chiefs?",
             options: [
-              "Nothing",
+              "Nothing, beyond its bibliographic line",
               "That it is the longest piece in the Boas Anniversary Volume by some margin",
-              "That it was later reprinted in the second series of Kwakiutl Texts",
-              "That Boas supplied the English translation printed beneath each line",
+              "That it was reprinted later",
+              "That Boas translated it",
             ],
             correctIndex: 0,
             explanation:
@@ -743,9 +743,9 @@ Hodge, F. W. (1921). Note on the accompanying paper. In F. Boas, *Ethnology of t
             prompt: "Which two books leave Hunt off the title page entirely?",
             options: [
               "The 1910 and 1930 ones",
-              "The 1897 monograph and the 1921 Ethnology, which name only Boas as author",
-              "The two series of Kwakiutl Texts, published in 1902 to 1905 and in 1906",
-              "The Boas Anniversary Volume and the Thirty-fifth Annual Report of the Bureau",
+              "1897 and 1921",
+              "1902 and 1906",
+              "1906 and 1921",
             ],
             correctIndex: 0,
             explanation:
@@ -756,9 +756,9 @@ Hodge, F. W. (1921). Note on the accompanying paper. In F. Boas, *Ethnology of t
             prompt: "Which word does the 1897 inner title page use for what Hunt supplied?",
             options: [
               "Notes",
-              "Texts, meaning the Kwak'wala pages with an English translation under each line",
-              "Data, which is the word the Bureau of American Ethnology chose in 1921",
-              "Observations, which the page assigns to Hunt rather than to Boas",
+              "Texts",
+              "Data",
+              "Observations",
             ],
             correctIndex: 0,
             explanation:
@@ -769,9 +769,9 @@ Hodge, F. W. (1921). Note on the accompanying paper. In F. Boas, *Ethnology of t
             prompt: "Which word does the 1921 title page use for what Hunt supplied?",
             options: [
               "Data",
-              "Notes, the same word the 1897 inner title page used twenty-four years earlier",
-              "Manuscripts, referring to the pages later given to Columbia University",
-              "Translations, meaning the English lines printed under the Kwak'wala",
+              "Notes",
+              "Manuscripts",
+              "Translations",
             ],
             correctIndex: 0,
             explanation:
@@ -794,10 +794,10 @@ Hodge, F. W. (1921). Note on the accompanying paper. In F. Boas, *Ethnology of t
           {
             prompt: "Who signed the 1921 Note on the Accompanying Paper?",
             options: [
-              "F. W. Hodge",
-              "Franz Boas, who also wrote the preface that follows it in the same volume",
-              "George Hunt, who was asked to certify the accuracy of his own material",
-              "Berthold Laufer, the editor of the Boas Anniversary Volume of 1906",
+              "F. W. Hodge, for the Bureau",
+              "Franz Boas",
+              "George Hunt",
+              "Berthold Laufer",
             ],
             correctIndex: 0,
             explanation:
@@ -809,7 +809,7 @@ Hodge, F. W. (1921). Note on the accompanying paper. In F. Boas, *Ethnology of t
             options: [
               "Ethnologist-in-Charge",
               "Secretary of the Smithsonian Institution, to whom the annual report was addressed",
-              "Professor of Anthropology at Columbia University, New York",
+              "Professor",
               "Public Printer of the United States, responsible for the volume's typesetting",
             ],
             correctIndex: 0,
@@ -821,9 +821,9 @@ Hodge, F. W. (1921). Note on the accompanying paper. In F. Boas, *Ethnology of t
             prompt: "What three things does the 1921 note make Hunt responsible for?",
             options: [
               "Accuracy, authenticity and character",
-              "Typesetting, proofreading and the correction of the plates before printing",
+              "Typesetting and proofs",
               "Translation, transcription and the arrangement of the chapters in the volume",
-              "Funding, transport and the purchase of objects for the museum's collection",
+              "Funding and transport",
             ],
             correctIndex: 0,
             explanation:
@@ -847,9 +847,9 @@ Hodge, F. W. (1921). Note on the accompanying paper. In F. Boas, *Ethnology of t
             prompt: "Whose name is on the author line of the 1921 volume?",
             options: [
               "Franz Boas",
-              "George Hunt, with Boas named above him as the collector of the data",
-              "Both men, printed together in the same size type on one line",
-              "The Bureau of American Ethnology, as the volume's corporate author",
+              "George Hunt",
+              "Both men",
+              "The Bureau",
             ],
             correctIndex: 0,
             explanation:
@@ -860,7 +860,7 @@ Hodge, F. W. (1921). Note on the accompanying paper. In F. Boas, *Ethnology of t
             prompt: "In which report did Ethnology of the Kwakiutl appear?",
             options: [
               "The Bureau's thirty-fifth annual report",
-              "The Report of the U.S. National Museum for 1895, as the 1897 monograph did",
+              "The Museum's 1895 report",
               "The Memoirs of the American Museum of Natural History, volume fourteen",
               "Columbia University Contributions to Anthropology, volume two",
             ],
@@ -872,10 +872,10 @@ Hodge, F. W. (1921). Note on the accompanying paper. In F. Boas, *Ethnology of t
           {
             prompt: "Which earlier book does Hodge's note reach back and connect to?",
             options: [
-              "The 1897 monograph",
-              "Kwakiutl Tales of 1910, whose preface describes Boas's control material",
+              "The 1897 monograph, as a similar collaboration",
+              "Kwakiutl Tales of 1910",
               "The Boas Anniversary Volume of 1906, in which Hunt published under his own name",
-              "The Religion of the Kwakiutl Indians, which had not yet been published",
+              "The Religion of the Kwakiutl Indians",
             ],
             correctIndex: 0,
             explanation:
@@ -898,10 +898,10 @@ Hodge, F. W. (1921). Note on the accompanying paper. In F. Boas, *Ethnology of t
           {
             prompt: "Which course teaches the four authorship criteria this lesson uses?",
             options: [
-              "Who Gets Named",
-              "Written by Himself, which teaches the credit ladder used in lessons 1 and 2",
-              "Archives and Finding Aids, which teaches provenance and original order",
-              "Hoodoo Complete, which teaches how a paid collector's corpus should be read",
+              "Who Gets Named, in its lesson 13",
+              "Written by Himself",
+              "Who Made the Record",
+              "Hoodoo Complete",
             ],
             correctIndex: 0,
             explanation:
@@ -912,9 +912,9 @@ Hodge, F. W. (1921). Note on the accompanying paper. In F. Boas, *Ethnology of t
             prompt: "Which body's authorship criteria does the lesson name?",
             options: [
               "The ICMJE's",
-              "The Bureau of American Ethnology's, as printed in its annual reports",
-              "The American Philosophical Society's, as applied to its manuscript collections",
-              "Columbia University's, as applied to doctoral dissertations in anthropology",
+              "The Bureau's",
+              "The APS's",
+              "Columbia's",
             ],
             correctIndex: 0,
             explanation:
@@ -924,10 +924,10 @@ Hodge, F. W. (1921). Note on the accompanying paper. In F. Boas, *Ethnology of t
           {
             prompt: "In the 1921 arrangement, what runs one way while credit runs the other?",
             options: [
-              "Blame",
+              "Blame for errors in the contents",
               "Royalties, since the Bureau paid Hunt a share of the volume's sales revenue",
               "Copyright, which the note transfers from the Bureau to Hunt personally",
-              "Translation rights, which the preface reserves for the author alone",
+              "Translation rights",
             ],
             correctIndex: 0,
             explanation:
@@ -937,10 +937,10 @@ Hodge, F. W. (1921). Note on the accompanying paper. In F. Boas, *Ethnology of t
           {
             prompt: "What does the course say about Boas's motive for the 1921 arrangement?",
             options: [
-              "It states none",
-              "That he wished to protect Hunt from criticism by scholars in the field",
+              "It states none, as nothing fetched gives one",
+              "That he shielded Hunt",
               "That the Bureau required a single author line for all its annual report papers",
-              "That Hunt had asked in writing to be kept off the title page",
+              "That Hunt asked to be left off",
             ],
             correctIndex: 0,
             explanation:
@@ -951,9 +951,9 @@ Hodge, F. W. (1921). Note on the accompanying paper. In F. Boas, *Ethnology of t
             prompt: "What makes the 1921 arrangement unusual rather than ordinary neglect?",
             options: [
               "Responsibility and credit are split",
-              "The volume is the only one of the six in which Hunt's name appears at all",
-              "The note was printed after the volume had already been distributed to libraries",
-              "The Bureau printed two contradictory title pages in the same annual report",
+              "It alone names Hunt",
+              "The note came late",
+              "Two clashing title pages",
             ],
             correctIndex: 0,
             explanation:
@@ -964,7 +964,7 @@ Hodge, F. W. (1921). Note on the accompanying paper. In F. Boas, *Ethnology of t
             prompt: "Why does the lesson quote the Bureau's phrase describing Hunt rather than paraphrase it?",
             options: [
               "It is the document's own wording",
-              "Because the phrase is the most flattering description of Hunt in any of the books",
+              "It flatters Hunt most",
               "Because paraphrasing a printed government document is not permitted by copyright",
               "Because the phrase is the one the U'mista Cultural Society asked be used",
             ],
@@ -976,9 +976,9 @@ Hodge, F. W. (1921). Note on the accompanying paper. In F. Boas, *Ethnology of t
           {
             prompt: "Where would a reader in 1925 look to find out whose error an error in the book was?",
             options: [
-              "The Bureau's note",
-              "The title page, which names the person answerable for everything in the volume",
-              "The index, which lists each contributor beside the pages they supplied",
+              "The Bureau's note on the accompanying paper",
+              "The title page",
+              "The index",
               "The Smithsonian's annual accounts, which recorded who was paid for the work",
             ],
             correctIndex: 0,
@@ -1003,9 +1003,9 @@ Hodge, F. W. (1921). Note on the accompanying paper. In F. Boas, *Ethnology of t
             prompt: "Why is the correction in section 5 aimed at the 1897 book rather than the 1921 one?",
             options: [
               "Hodge's note links the two",
-              "Because the 1921 volume was withdrawn from circulation shortly after publication",
-              "Because Hunt never read the 1921 volume, which reached him only after his death",
-              "Because the 1897 book is the only one of the six still held by any library",
+              "It was withdrawn",
+              "Hunt never saw it",
+              "It alone survives",
             ],
             correctIndex: 0,
             explanation:
@@ -1016,9 +1016,9 @@ Hodge, F. W. (1921). Note on the accompanying paper. In F. Boas, *Ethnology of t
             prompt: "Roughly how long is the Bureau's 1921 note?",
             options: [
               "Half a page",
-              "Forty pages, making it the longest piece of front matter in the annual report",
-              "A single sentence, printed at the foot of the title page itself",
-              "Three chapters, since the note doubles as the volume's introduction",
+              "Forty pages",
+              "One sentence",
+              "Three chapters",
             ],
             correctIndex: 0,
             explanation:
@@ -1029,9 +1029,9 @@ Hodge, F. W. (1921). Note on the accompanying paper. In F. Boas, *Ethnology of t
             prompt: "How many documents inside the 1921 volume make Hunt answerable for its contents?",
             options: [
               "Two",
-              "One, the Bureau's note, which Boas's preface then contradicts",
-              "None, since responsibility is assigned only on the title page",
-              "Five, one in each chapter of the paper as it was printed",
+              "One",
+              "None",
+              "Five",
             ],
             correctIndex: 0,
             explanation:
@@ -1055,9 +1055,9 @@ Hodge, F. W. (1921). Note on the accompanying paper. In F. Boas, *Ethnology of t
             prompt: "What does the course call the finding in this lesson?",
             options: [
               "The arrangement itself",
-              "Boas's private reason for keeping Hunt off the author line of the volume",
-              "The Bureau's decision to publish the paper twenty-four years after the fieldwork",
-              "Hunt's refusal to sign the note that Hodge drafted on his behalf",
+              "Boas's motive",
+              "A late printing",
+              "Hunt's refusal",
             ],
             correctIndex: 0,
             explanation:
@@ -1069,7 +1069,7 @@ Hodge, F. W. (1921). Note on the accompanying paper. In F. Boas, *Ethnology of t
             options: [
               "The offprint title page and the inner one",
               "The title page and the list of illustrations bound in front of it",
-              "The preface and the table of contents, which name different collaborators",
+              "The cover and the spine",
               "The cover of the museum report and the spine of the bound volume",
             ],
             correctIndex: 0,
@@ -1082,8 +1082,8 @@ Hodge, F. W. (1921). Note on the accompanying paper. In F. Boas, *Ethnology of t
             options: [
               "A pattern with describable rules",
               "A single consistent credit repeated in identical words six times",
-              "A set of unrelated decisions made by six different publishers",
-              "A record too fragmentary to support any conclusion at all",
+              "Six unrelated decisions",
+              "A fragmentary record",
             ],
             correctIndex: 0,
             explanation:
@@ -1207,9 +1207,9 @@ Goldsher, T., & Glass, A. (n.d.). *George Hunt*. The Story Box: Franz Boas, Geor
             prompt: "Which source gives Hunt's dates as 1856 to 1931?",
             options: [
               "The American Philosophical Society",
-              "The Canadian Encyclopedia, in its entry written by Kathleen Mooney",
-              "The Bard Graduate Center, on its page about Hunt's life and work",
-              "The Bureau of American Ethnology, in its 1921 note on the accompanying paper",
+              "The Canadian Encyclopedia",
+              "The Bard Graduate Center",
+              "The Bureau's 1921 note",
             ],
             correctIndex: 0,
             explanation:
@@ -1220,9 +1220,9 @@ Goldsher, T., & Glass, A. (n.d.). *George Hunt*. The Story Box: Franz Boas, Geor
             prompt: "What birth date does the Canadian Encyclopedia give?",
             options: [
               "14 February 1854",
-              "3 June 1856, at Alert Bay on the northern coast of Vancouver Island",
-              "1 May 1858, the same year Franz Boas was born in Germany",
-              "September 1884, which would make him thirty years younger than Bard says",
+              "3 June 1856",
+              "1 May 1858",
+              "September 1884",
             ],
             correctIndex: 0,
             explanation:
@@ -1232,10 +1232,10 @@ Goldsher, T., & Glass, A. (n.d.). *George Hunt*. The Story Box: Franz Boas, Geor
           {
             prompt: "How does Bard describe Hunt's father?",
             options: [
-              "A British fur trader",
-              "A Hudson's Bay Company officer who arrived at Fort Rupert in the 1860s",
+              "A British fur trader, Robert Hunt",
+              "A Russian sea captain",
               "An American missionary posted to the northern coast of Vancouver Island",
-              "A Tongass Tlingit trader from Southeast Alaska who settled at Fort Rupert",
+              "A Tlingit trader",
             ],
             correctIndex: 0,
             explanation:
@@ -1246,9 +1246,9 @@ Goldsher, T., & Glass, A. (n.d.). *George Hunt*. The Story Box: Franz Boas, Geor
             prompt: "How many different words do this course's sources use for the nationality of Hunt's father?",
             options: [
               "Four",
-              "One, since Bard, Boas, the APS and the 2019 review all print the same word",
-              "None, because no source this course read mentions his father at all",
-              "Two, and the course picks the one that appears in the older document",
+              "One",
+              "None",
+              "Two",
             ],
             correctIndex: 0,
             explanation:
@@ -1261,7 +1261,7 @@ Goldsher, T., & Glass, A. (n.d.). *George Hunt*. The Story Box: Franz Boas, Geor
               "A Tongass Tlingit noblewoman",
               "A Kwagu'ł woman of Fort Rupert whose family held hereditary rights there",
               "A 'Namgis woman from Alert Bay who later moved to Southeast Alaska",
-              "A British settler who arrived on the coast with the fur trade in the 1840s",
+              "A British settler",
             ],
             correctIndex: 0,
             explanation:
@@ -1271,10 +1271,10 @@ Goldsher, T., & Glass, A. (n.d.). *George Hunt*. The Story Box: Franz Boas, Geor
           {
             prompt: "Why is the description Tlingit-born wrong for George Hunt?",
             options: [
-              "He was born at Fort Rupert",
-              "Because his mother was Kwagu'ł rather than Tlingit, which reverses the two sides",
-              "Because he was born in Southeast Alaska but raised in British Columbia",
-              "Because no source this course read records where he was born at all",
+              "He was born at Fort Rupert, in Kwakwaka'wakw territory",
+              "His mother was Kwagu'ł, not Tlingit",
+              "He was born in Southeast Alaska",
+              "No source records his birthplace",
             ],
             correctIndex: 0,
             explanation:
@@ -1298,9 +1298,9 @@ Goldsher, T., & Glass, A. (n.d.). *George Hunt*. The Story Box: Franz Boas, Geor
             prompt: "Why does this course print no Kwak'wala personal names?",
             options: [
               "The spellings are unsettled",
-              "Because the names are copyrighted by the U'mista Cultural Society and cannot be reprinted",
+              "Copyright law",
               "Because the course is private and private courses may not print names of any kind",
-              "Because no published source this course read contains a Kwak'wala name anywhere",
+              "No source has one",
             ],
             correctIndex: 0,
             explanation:
@@ -1312,7 +1312,7 @@ Goldsher, T., & Glass, A. (n.d.). *George Hunt*. The Story Box: Franz Boas, Geor
             options: [
               "It was kept for the keeper's convenience",
               "That the man himself used several names during different periods of his life",
-              "That the record is a forgery, since a genuine record would be internally consistent",
+              "That it is a forgery",
               "That the spelling in the oldest surviving document is the correct one",
             ],
             correctIndex: 0,
@@ -1324,9 +1324,9 @@ Goldsher, T., & Glass, A. (n.d.). *George Hunt*. The Story Box: Franz Boas, Geor
             prompt: "How do the course's three main institutions differ over the name of the language?",
             options: [
               "In apostrophes and marks",
-              "In the number of syllables, with one institution using a shortened two-syllable form",
-              "In whether they use the name at all, since one of them refuses to print it",
-              "In the alphabet used, with one institution printing it only in phonetic symbols",
+              "In syllables",
+              "In capitals",
+              "In the alphabet",
             ],
             correctIndex: 0,
             explanation:
@@ -1337,9 +1337,9 @@ Goldsher, T., & Glass, A. (n.d.). *George Hunt*. The Story Box: Franz Boas, Geor
             prompt: "Whom did Hunt interpret for in 1879?",
             options: [
               "Israel Powell",
-              "Johan Adrian Jacobsen, the collector he worked for in the early 1880s",
-              "Franz Boas, whom he did not meet until nearly a decade later",
-              "Edward S. Curtis, whose film work he assisted more than thirty years later",
+              "J. A. Jacobsen",
+              "Franz Boas",
+              "Edward S. Curtis",
             ],
             correctIndex: 0,
             explanation:
@@ -1350,9 +1350,9 @@ Goldsher, T., & Glass, A. (n.d.). *George Hunt*. The Story Box: Franz Boas, Geor
             prompt: "In which year does Bard say Hunt met Franz Boas?",
             options: [
               "1888",
-              "1893, the year of the Chicago exposition at which Boas taught him to write",
-              "1879, the year he interpreted for Israel Powell on the coast",
-              "1901, the year he spent several weeks working in New York",
+              "1893",
+              "1879",
+              "1901",
             ],
             correctIndex: 0,
             explanation:
@@ -1363,9 +1363,9 @@ Goldsher, T., & Glass, A. (n.d.). *George Hunt*. The Story Box: Franz Boas, Geor
             prompt: "From which year does Bard date the beginning of Hunt's work for Boas?",
             options: [
               "1889",
-              "1897, the year the monograph naming his notes was published in Washington",
-              "1902, the year the first series of Kwakiutl Texts began to appear",
-              "1913, the year Boas began giving manuscripts to Columbia University",
+              "1897",
+              "1902",
+              "1913",
             ],
             correctIndex: 0,
             explanation:
@@ -1375,9 +1375,9 @@ Goldsher, T., & Glass, A. (n.d.). *George Hunt*. The Story Box: Franz Boas, Geor
           {
             prompt: "Whose film work did Hunt assist between 1911 and 1914?",
             options: [
-              "Edward S. Curtis",
+              "Edward S. Curtis, for his 1914 film",
               "Johan Adrian Jacobsen, who had employed him three decades earlier",
-              "Franz Boas, who filmed at Fort Rupert during those same years",
+              "Franz Boas",
               "The Bureau of American Ethnology, which sent a film unit to the coast",
             ],
             correctIndex: 0,
@@ -1402,9 +1402,9 @@ Goldsher, T., & Glass, A. (n.d.). *George Hunt*. The Story Box: Franz Boas, Geor
             prompt: "Why does the course name the American Philosophical Society's disagreement about Hunt's dates?",
             options: [
               "Hiding it would repeat the defect",
-              "Because the APS figure is the correct one and the other two are typographical errors",
+              "The APS figure is right",
               "Because the APS is the only institution that holds any of Hunt's manuscripts",
-              "Because a course is required to list every source that mentions its subject",
+              "Rules require it",
             ],
             correctIndex: 0,
             explanation:
@@ -1415,9 +1415,9 @@ Goldsher, T., & Glass, A. (n.d.). *George Hunt*. The Story Box: Franz Boas, Geor
             prompt: "Which word does this course use for Hunt's father's nationality?",
             options: [
               "British",
-              "Scotch, because that is the word Boas himself used in his 1930 preface",
-              "English, because that is the word the most recent of the sources uses",
-              "None, because four sources disagree and the course omits the fact entirely",
+              "Scotch",
+              "English",
+              "None given",
             ],
             correctIndex: 0,
             explanation:
@@ -1427,10 +1427,10 @@ Goldsher, T., & Glass, A. (n.d.). *George Hunt*. The Story Box: Franz Boas, Geor
           {
             prompt: "Roughly how long was Hunt's working life across all his employers?",
             options: [
-              "More than forty years",
-              "About five years, from his first meeting with Boas to the 1893 exposition",
-              "About fifteen years, ending when Kwakiutl Tales was published in 1910",
-              "Less than a decade, since his work for Boas was seasonal and intermittent",
+              "More than forty years, from 1879 to 1933",
+              "About five years",
+              "About fifteen years",
+              "Less than a decade",
             ],
             correctIndex: 0,
             explanation:
@@ -1442,7 +1442,7 @@ Goldsher, T., & Glass, A. (n.d.). *George Hunt*. The Story Box: Franz Boas, Geor
             options: [
               "The one at Fort Rupert",
               "The whole Kwakwaka'wakw nation, of which Fort Rupert is one village",
-              "The 'Namgis community at Alert Bay, where the U'mista Cultural Centre stands",
+              "Alert Bay's",
               "The Tongass Tlingit community in Southeast Alaska that Hunt's mother came from",
             ],
             correctIndex: 0,
@@ -1454,9 +1454,9 @@ Goldsher, T., & Glass, A. (n.d.). *George Hunt*. The Story Box: Franz Boas, Geor
             prompt: "Which of Boas's prefaces says he began teaching Hunt to write?",
             options: [
               "The 1930 one",
-              "The 1897 one, printed in the Report of the U.S. National Museum for 1895",
-              "The 1921 one, printed in the Bureau of American Ethnology's annual report",
-              "The 1910 one, which introduces the volume of Kwakiutl Tales",
+              "The 1897 one",
+              "The 1921 one",
+              "The 1910 one",
             ],
             correctIndex: 0,
             explanation:
@@ -1466,10 +1466,10 @@ Goldsher, T., & Glass, A. (n.d.). *George Hunt*. The Story Box: Franz Boas, Geor
           {
             prompt: "To which event does Bard date Boas's training of Hunt to transcribe the language?",
             options: [
-              "The 1893 Chicago fair",
+              "The 1893 world's fair in Chicago",
               "The Jesup North Pacific Expedition's first field season on the coast",
-              "Hunt's several weeks in New York during 1901",
-              "The publication of the 1897 monograph in Washington",
+              "The 1901 New York stay",
+              "The 1897 monograph",
             ],
             correctIndex: 0,
             explanation:
@@ -1493,9 +1493,9 @@ Goldsher, T., & Glass, A. (n.d.). *George Hunt*. The Story Box: Franz Boas, Geor
             prompt: "In which years does the 1921 preface say Hunt worked with Boas before 1901?",
             options: [
               "1893, 1897 and 1900",
-              "1889, 1890 and 1891, the first three years of their working relationship",
-              "1902, 1905 and 1906, the years the two series of Kwakiutl Texts appeared",
-              "1911, 1912 and 1913, the years Hunt also worked for Edward S. Curtis",
+              "1889, 1890 and 1891",
+              "1902, 1905 and 1906",
+              "1911, 1912 and 1913",
             ],
             correctIndex: 0,
             explanation:
@@ -1506,9 +1506,9 @@ Goldsher, T., & Glass, A. (n.d.). *George Hunt*. The Story Box: Franz Boas, Geor
             prompt: "How long does the 1921 preface say Hunt spent in New York in 1901?",
             options: [
               "Several weeks",
-              "Three years, during which he worked in the American Museum of Natural History",
-              "One day, to sign the contract for the first series of Kwakiutl Texts",
-              "The whole winter, returning to Fort Rupert only in the spring of 1902",
+              "Three years",
+              "One day",
+              "All winter",
             ],
             correctIndex: 0,
             explanation:
@@ -1520,7 +1520,7 @@ Goldsher, T., & Glass, A. (n.d.). *George Hunt*. The Story Box: Franz Boas, Geor
             options: [
               "Transmitted from time to time",
               "Delivered in person on Hunt's annual visits to Columbia University in New York",
-              "Collected by Bureau of American Ethnology staff during their field seasons",
+              "By Bureau staff",
               "Deposited directly with the American Philosophical Society in Philadelphia",
             ],
             correctIndex: 0,
@@ -1532,8 +1532,8 @@ Goldsher, T., & Glass, A. (n.d.). *George Hunt*. The Story Box: Franz Boas, Geor
             prompt: "What does the 1910 preface say about who wrote down the texts in the Jesup expedition's publications?",
             options: [
               "All by the same individual",
-              "That they were written down by several different collaborators working in parallel",
-              "That Boas wrote them all himself directly from the speech of the people he met",
+              "By several hands",
+              "Boas wrote them",
               "That the question of who wrote them cannot now be established from the records",
             ],
             correctIndex: 0,
@@ -1545,9 +1545,9 @@ Goldsher, T., & Glass, A. (n.d.). *George Hunt*. The Story Box: Franz Boas, Geor
             prompt: "What does the 1910 preface call the material Boas collected himself?",
             options: [
               "The necessary control material",
-              "The definitive edition of the tales, against which Hunt's pages are only drafts",
-              "Supplementary material, gathered to fill gaps Hunt had not had time to cover",
-              "The Jesup corpus, meaning the whole body of texts the expedition published",
+              "A definitive edition",
+              "Gap-filling material",
+              "The Jesup corpus",
             ],
             correctIndex: 0,
             explanation:
@@ -1558,9 +1558,9 @@ Goldsher, T., & Glass, A. (n.d.). *George Hunt*. The Story Box: Franz Boas, Geor
             prompt: "What are the two jobs the phrase control material does at once?",
             options: [
               "It credits and it positions",
-              "It funds the fieldwork and it records the expenses, in a single accounting term",
-              "It names a coauthor and it dates the collection, both in one printed line",
-              "It conceals Hunt's role and it exaggerates the size of the collection",
+              "It funds and it records",
+              "It names and it dates",
+              "It conceals and it inflates",
             ],
             correctIndex: 0,
             explanation:
@@ -1584,9 +1584,9 @@ Goldsher, T., & Glass, A. (n.d.). *George Hunt*. The Story Box: Franz Boas, Geor
             prompt: "Whose name is on the title page of the book containing the control-material sentence?",
             options: [
               "Boas alone",
-              "Boas and Hunt, printed together as joint authors of the volume",
-              "Hunt alone, with Boas credited as editor in smaller type below",
-              "The Jesup North Pacific Expedition, as the volume's corporate author",
+              "Boas and Hunt",
+              "Hunt alone",
+              "The expedition",
             ],
             correctIndex: 0,
             explanation:
@@ -1598,7 +1598,7 @@ Goldsher, T., & Glass, A. (n.d.). *George Hunt*. The Story Box: Franz Boas, Geor
             options: [
               "Training and correspondence",
               "A series of interviews conducted at Fort Rupert over four field seasons",
-              "A salaried museum post with fixed hours and an annual written report",
+              "A salaried post",
               "A publishing contract under which Hunt was paid for each completed volume",
             ],
             correctIndex: 0,
@@ -1610,9 +1610,9 @@ Goldsher, T., & Glass, A. (n.d.). *George Hunt*. The Story Box: Franz Boas, Geor
             prompt: "Why does the lesson call a preface one-sided evidence?",
             options: [
               "Only one party wrote it",
-              "Because prefaces are written after publication and so cannot describe the work",
-              "Because a preface is unsigned and therefore cannot be attributed to anyone",
-              "Because publishers edit prefaces more heavily than they edit the main text",
+              "It is post hoc",
+              "It is unsigned",
+              "It is edited",
             ],
             correctIndex: 0,
             explanation:
@@ -1623,9 +1623,9 @@ Goldsher, T., & Glass, A. (n.d.). *George Hunt*. The Story Box: Franz Boas, Geor
             prompt: "Where in this course does the other party finally describe the work in his own words?",
             options: [
               "Section 5",
-              "Section 1, in the preface to the 1897 monograph printed in Washington",
-              "Section 3, in the finding aid Columbia created for the manuscripts in 2023",
-              "Nowhere, since no writing by Hunt about the work has ever been found",
+              "Section 1",
+              "Section 3",
+              "Nowhere",
             ],
             correctIndex: 0,
             explanation:
@@ -1649,9 +1649,9 @@ Goldsher, T., & Glass, A. (n.d.). *George Hunt*. The Story Box: Franz Boas, Geor
             prompt: "Which two volumes of the Jesup publications does the 1910 preface single out?",
             options: [
               "Volumes three and ten",
-              "Volumes one and two, the first the expedition published after its 1897 season",
-              "Volumes fourteen and fifteen, which contain the two series of Kwakiutl Texts",
-              "Volumes thirty-four and thirty-five, the Bureau's annual reports for 1913 and 1914",
+              "Volumes one and two",
+              "Volumes four and nine",
+              "Volumes five and six",
             ],
             correctIndex: 0,
             explanation:
@@ -1662,7 +1662,7 @@ Goldsher, T., & Glass, A. (n.d.). *George Hunt*. The Story Box: Franz Boas, Geor
             prompt: "What phrase does the 1910 preface use for how Boas gathered his own material?",
             options: [
               "From the lips of natives",
-              "By correspondence with community leaders at Fort Rupert and Alert Bay",
+              "By letter",
               "From the manuscripts already deposited at the American Museum in New York",
               "Through interpreters supplied by the provincial government of British Columbia",
             ],
@@ -1674,10 +1674,10 @@ Goldsher, T., & Glass, A. (n.d.). *George Hunt*. The Story Box: Franz Boas, Geor
           {
             prompt: "What does the 1930 preface call the language Boas taught Hunt to write?",
             options: [
-              "His mother tongue",
-              "A trade language he had learned as an interpreter on the coast in the 1870s",
-              "A second language, since the preface says his first language was English",
-              "The language of his mother's Tongass Tlingit family in Southeast Alaska",
+              "Kwakiutl, his mother tongue",
+              "A trade language",
+              "A second language",
+              "Tlingit",
             ],
             correctIndex: 0,
             explanation:
@@ -1690,7 +1690,7 @@ Goldsher, T., & Glass, A. (n.d.). *George Hunt*. The Story Box: Franz Boas, Geor
               "A series of interviews",
               "A correspondence, since almost all the work was done face to face in New York",
               "A paid arrangement, since no money changed hands between the two men",
-              "A long relationship, since it lasted only from 1893 until 1901",
+              "Long-lasting",
             ],
             correctIndex: 0,
             explanation:
@@ -1701,9 +1701,9 @@ Goldsher, T., & Glass, A. (n.d.). *George Hunt*. The Story Box: Franz Boas, Geor
             prompt: "Which section of this course goes to look at what the method produced?",
             options: [
               "Section 3",
-              "Section 4, which asks whose knowledge the manuscripts actually carry",
-              "Section 1, which reads the six title pages in the order they were printed",
-              "Section 5, which reads the corrections made to the record after 1920",
+              "Section 4",
+              "Section 1",
+              "Section 5",
             ],
             correctIndex: 0,
             explanation:
@@ -1715,8 +1715,8 @@ Goldsher, T., & Glass, A. (n.d.). *George Hunt*. The Story Box: Franz Boas, Geor
             options: [
               "It names Hunt nowhere on the title page",
               "It names Hunt twice on the title page, once above and once below the author line",
-              "It names Hunt as sole author, with Boas credited only as the volume's editor",
-              "It carries no title page at all, which is why the preface has to do the work",
+              "It names Hunt as sole author",
+              "It has no title page",
             ],
             correctIndex: 0,
             explanation:
@@ -1726,10 +1726,10 @@ Goldsher, T., & Glass, A. (n.d.). *George Hunt*. The Story Box: Franz Boas, Geor
           {
             prompt: "How many years passed between Boas teaching Hunt to write and Hunt's death?",
             options: [
-              "About forty",
-              "About ten, since the writing work ended when Kwakiutl Tales appeared in 1910",
-              "About sixty, since the teaching took place in the early 1870s",
-              "About five, since Hunt stopped writing after his weeks in New York in 1901",
+              "About forty, from 1893 to 1933",
+              "About ten",
+              "About sixty",
+              "About five",
             ],
             correctIndex: 0,
             explanation:
@@ -1740,7 +1740,7 @@ Goldsher, T., & Glass, A. (n.d.). *George Hunt*. The Story Box: Franz Boas, Geor
             prompt: "What did Boas's own collecting exist in order to do, according to the 1910 preface?",
             options: [
               "Check Hunt's reliability",
-              "Replace Hunt's pages, which the preface says were unusable as printed",
+              "Replace him",
               "Train the next generation of fieldworkers in the writing system he had devised",
               "Supply the illustrations for the volumes the expedition was preparing",
             ],
@@ -1753,9 +1753,9 @@ Goldsher, T., & Glass, A. (n.d.). *George Hunt*. The Story Box: Franz Boas, Geor
             prompt: "Why does the course treat Boas's prefaces as evidence at all, given that they are one-sided?",
             options: [
               "They are contemporary and specific",
-              "Because a preface is the only kind of document a court will accept as evidence",
+              "Courts accept prefaces",
               "Because Boas wrote them after Hunt's death, when there was no reason to flatter",
-              "Because the Bureau of American Ethnology verified each one before printing it",
+              "The Bureau verified them",
             ],
             correctIndex: 0,
             explanation:
@@ -1779,9 +1779,9 @@ Goldsher, T., & Glass, A. (n.d.). *George Hunt*. The Story Box: Franz Boas, Geor
             prompt: "What does this course do when two sources disagree about a fact?",
             options: [
               "Names both and says which it follows",
-              "Chooses the older source, on the grounds that it is closer to the events",
-              "Leaves the fact out until a third source can settle the question",
-              "Prints whichever version the holding institution prefers",
+              "Chooses the older source",
+              "Leaves the fact out",
+              "Defers to the holder",
             ],
             correctIndex: 0,
             explanation:
@@ -1792,9 +1792,9 @@ Goldsher, T., & Glass, A. (n.d.). *George Hunt*. The Story Box: Franz Boas, Geor
             prompt: "Who did Hunt work for in 1881 and 1882, before meeting Boas?",
             options: [
               "Johan Adrian Jacobsen",
-              "Edward S. Curtis, whose film work he assisted three decades later",
-              "The Bureau of American Ethnology, which later published his material",
-              "Israel Powell, for whom he had interpreted two years earlier",
+              "Edward S. Curtis",
+              "The Smithsonian",
+              "Israel Powell",
             ],
             correctIndex: 0,
             explanation:
@@ -1921,9 +1921,9 @@ Internet Archive. (n.d.-d). *Kwakiutl texts: Second series* [Item metadata recor
             prompt: "In which year did Boas begin giving handwritten manuscripts to Columbia University?",
             options: [
               "1913",
-              "1897, the year the monograph on social organization was published in Washington",
-              "1933, the year George Hunt died at Fort Rupert in British Columbia",
-              "2023, the year Columbia first created an electronic catalogue record for them",
+              "1897",
+              "1933",
+              "2023",
             ],
             correctIndex: 0,
             explanation:
@@ -1933,10 +1933,10 @@ Internet Archive. (n.d.-d). *Kwakiutl texts: Second series* [Item metadata recor
           {
             prompt: "What does Columbia's 2023 post say Boas did NOT do with those manuscripts?",
             options: [
-              "Write them",
-              "Edit them, since the post says the pages reached Columbia exactly as Hunt sent them",
-              "Donate them, since the post says the university purchased them from his estate",
-              "Prepare them for publication, which the post says was done by his students",
+              "Write them, which Hunt did",
+              "Edit them",
+              "Donate them",
+              "Prepare them",
             ],
             correctIndex: 0,
             explanation:
@@ -1947,9 +1947,9 @@ Internet Archive. (n.d.-d). *Kwakiutl texts: Second series* [Item metadata recor
             prompt: "Whose handwriting does Columbia's post say the pages bear?",
             options: [
               "George Hunt's",
-              "Franz Boas's, in the clear hand he used for fair copies of field notes",
-              "Several different hands, which the project has not yet been able to identify",
-              "A professional copyist's, hired in New York to prepare the pages for the printer",
+              "Franz Boas's",
+              "Several hands",
+              "A copyist's",
             ],
             correctIndex: 0,
             explanation:
@@ -1961,8 +1961,8 @@ Internet Archive. (n.d.-d). *Kwakiutl texts: Second series* [Item metadata recor
             options: [
               "Edited and re-sorted them",
               "Translated them from Kwak'wala into English line by line before binding them",
-              "Copied them out by hand so that a second set could be kept in New York",
-              "Destroyed the portions he considered unreliable before giving the rest away",
+              "Copied them",
+              "Destroyed some",
             ],
             correctIndex: 0,
             explanation:
@@ -1986,9 +1986,9 @@ Internet Archive. (n.d.-d). *Kwakiutl texts: Second series* [Item metadata recor
             prompt: "How many volumes does the Rare Book and Manuscript Library post give?",
             options: [
               "Fourteen",
-              "Thirty, the figure Columbia's own noteworthy acquisitions list gives for 2023",
-              "Two, matching the two series of Kwakiutl Texts published in 1902 and 1906",
-              "Thirty-five, matching the Bureau of American Ethnology's annual report number",
+              "Thirty",
+              "Two",
+              "Thirty-five",
             ],
             correctIndex: 0,
             explanation:
@@ -1998,10 +1998,10 @@ Internet Archive. (n.d.-d). *Kwakiutl texts: Second series* [Item metadata recor
           {
             prompt: "How many pages does Columbia's own 2023 acquisitions list give?",
             options: [
-              "About 8,500",
-              "Nearly 8,000, which is the same figure the library's blog post gives",
-              "Over 6,000, the figure the American Philosophical Society gives for its holding",
-              "Exactly 1,000, matching the indexed correspondence between Hunt and Boas",
+              "About 8,500, in thirty volumes",
+              "Nearly 8,000",
+              "Over 6,000",
+              "Exactly 1,000",
             ],
             correctIndex: 0,
             explanation:
@@ -2012,7 +2012,7 @@ Internet Archive. (n.d.-d). *Kwakiutl texts: Second series* [Item metadata recor
             prompt: "What does this course do about Columbia's two different page counts?",
             options: [
               "Prints both with their sources",
-              "Averages them, since the true figure is likely to lie between the two",
+              "Averages them",
               "Uses the larger one, because a bigger number makes the collection look important",
               "Omits both, since a count that disagrees with itself cannot be cited at all",
             ],
@@ -2038,9 +2038,9 @@ Internet Archive. (n.d.-d). *Kwakiutl texts: Second series* [Item metadata recor
             prompt: "What does interlinear mean?",
             options: [
               "Written between the lines",
-              "Written across two facing pages so that a reader can compare them side by side",
-              "Written in a second colour of ink to distinguish it from the original text",
-              "Written in the margin of a page by a later editor rather than by the author",
+              "On facing pages",
+              "In coloured ink",
+              "In the margin",
             ],
             correctIndex: 0,
             explanation:
@@ -2051,8 +2051,8 @@ Internet Archive. (n.d.-d). *Kwakiutl texts: Second series* [Item metadata recor
             prompt: "In what languages are the Columbia manuscripts written?",
             options: [
               "Kwak'wala with English translations",
-              "English alone, translated from Kwak'wala speech at the time of recording",
-              "Kwak'wala alone, with no translation supplied by either man",
+              "English alone",
+              "Kwak'wala alone",
               "German and Kwak'wala, since Boas wrote his own notes in German",
             ],
             correctIndex: 0,
@@ -2077,9 +2077,9 @@ Internet Archive. (n.d.-d). *Kwakiutl texts: Second series* [Item metadata recor
             prompt: "Which question does provenance answer?",
             options: [
               "Who gave this",
-              "How much the collection would be worth if it were offered for sale",
-              "Whether the contents of a collection are factually reliable",
-              "Which community holds the rights to the knowledge in a collection",
+              "What it is worth",
+              "Is it reliable",
+              "Who holds the rights",
             ],
             correctIndex: 0,
             explanation:
@@ -2090,9 +2090,9 @@ Internet Archive. (n.d.-d). *Kwakiutl texts: Second series* [Item metadata recor
             prompt: "Which question does provenance NOT answer?",
             options: [
               "Who made this",
-              "Who owned this, which requires a separate chain-of-custody document",
-              "Where the collection is shelved, which only the finding aid records",
-              "When the collection arrived, which only the accession register records",
+              "Who owned this",
+              "Where it came from",
+              "Who held it before",
             ],
             correctIndex: 0,
             explanation:
@@ -2104,7 +2104,7 @@ Internet Archive. (n.d.-d). *Kwakiutl texts: Second series* [Item metadata recor
             options: [
               "Archives and Finding Aids",
               "Written by Himself, which supplies the credit ladder used in section 1",
-              "Who Gets Named, which supplies the accountability criterion used in lesson 3",
+              "Who Gets Named",
               "Who Made the Record, which handles records made about people",
             ],
             correctIndex: 0,
@@ -2116,9 +2116,9 @@ Internet Archive. (n.d.-d). *Kwakiutl texts: Second series* [Item metadata recor
             prompt: "What does Columbia's writer say about Hunt's original order?",
             options: [
               "It is traceable again",
-              "That it was destroyed when Boas re-sorted the pages and cannot be recovered",
-              "That it was never established, since Hunt sent the pages in no particular order",
-              "That it is recorded in a separate index held by the American Philosophical Society",
+              "It was lost",
+              "Never fixed",
+              "In APS files",
             ],
             correctIndex: 0,
             explanation:
@@ -2143,8 +2143,8 @@ Internet Archive. (n.d.-d). *Kwakiutl texts: Second series* [Item metadata recor
             options: [
               "What a search returns",
               "The wording printed on a book's title page in all surviving copies",
-              "The legal ownership of the collection the record describes",
-              "The order in which the pages of a manuscript are bound together",
+              "Ownership",
+              "Page order",
             ],
             correctIndex: 0,
             explanation:
@@ -2155,9 +2155,9 @@ Internet Archive. (n.d.-d). *Kwakiutl texts: Second series* [Item metadata recor
             prompt: "What does a catalogue change NOT alter?",
             options: [
               "The printed title page",
-              "The way search engines describe a book to people looking for it",
-              "The name under which a library shelves and retrieves a collection",
-              "Whether a researcher can find the collection by the maker's name",
+              "Search results",
+              "The shelving name",
+              "Findability by name",
             ],
             correctIndex: 0,
             explanation:
@@ -2169,7 +2169,7 @@ Internet Archive. (n.d.-d). *Kwakiutl texts: Second series* [Item metadata recor
             options: [
               "On an Internet Archive capture",
               "In a printed annual report issued by Columbia University Libraries",
-              "In the reading room of the Rare Book and Manuscript Library",
+              "In the reading room",
               "In the exhibition catalogue published by the Bard Graduate Center",
             ],
             correctIndex: 0,
@@ -2194,9 +2194,9 @@ Internet Archive. (n.d.-d). *Kwakiutl texts: Second series* [Item metadata recor
             prompt: "What did Columbia's 2023 project do with the manuscripts besides describing them?",
             options: [
               "Digitised them",
-              "Rebound them into thirty new volumes matching the original order",
-              "Translated the remaining untranslated pages into English",
-              "Transferred them to the American Philosophical Society in Philadelphia",
+              "Rebound them",
+              "Translated them",
+              "Transferred them",
             ],
             correctIndex: 0,
             explanation:
@@ -2207,8 +2207,8 @@ Internet Archive. (n.d.-d). *Kwakiutl texts: Second series* [Item metadata recor
             prompt: "Which archive holds the pages described in the 2018 CNAIR post?",
             options: [
               "The American Philosophical Society",
-              "Columbia University's Rare Book and Manuscript Library in New York",
-              "The U'mista Cultural Centre at Alert Bay, British Columbia",
+              "Columbia University",
+              "The U'mista Centre",
               "The American Museum of Natural History's library in New York",
             ],
             correctIndex: 0,
@@ -2220,9 +2220,9 @@ Internet Archive. (n.d.-d). *Kwakiutl texts: Second series* [Item metadata recor
             prompt: "Who wrote the 2018 post about the manuscripts in Philadelphia?",
             options: [
               "Brian Carpenter",
-              "Amanda Althoff, who wrote the guest post published by Columbia in 2023",
-              "Aaron Glass, who curated the 2019 exhibition at the Bard Graduate Center",
-              "Kathleen Mooney, who wrote the Canadian Encyclopedia entry on Hunt",
+              "Amanda Althoff",
+              "Aaron Glass",
+              "Kathleen Mooney",
             ],
             correctIndex: 0,
             explanation:
@@ -2233,9 +2233,9 @@ Internet Archive. (n.d.-d). *Kwakiutl texts: Second series* [Item metadata recor
             prompt: "How many pages does the APS say Hunt sent Boas?",
             options: [
               "Over 6,000",
-              "Nearly 8,000, which is the figure Columbia's library post gives for its own holding",
-              "About 600, which is the number of correction pages he sent after 1920",
-              "More than 1,000, which is the length of the indexed correspondence",
+              "Nearly 8,000",
+              "About 600",
+              "More than 1,000",
             ],
             correctIndex: 0,
             explanation:
@@ -2246,9 +2246,9 @@ Internet Archive. (n.d.-d). *Kwakiutl texts: Second series* [Item metadata recor
             prompt: "How does the APS rank the collection in its own description?",
             options: [
               "Among the largest by an Indigenous person",
-              "As the single most valuable manuscript collection the Society owns",
-              "As a minor supplement to the far larger Franz Boas papers",
-              "As the earliest Indigenous-language manuscript held anywhere in the United States",
+              "As a set of copies only",
+              "As a minor supplement",
+              "As the earliest of its kind",
             ],
             correctIndex: 0,
             explanation:
@@ -2259,9 +2259,9 @@ Internet Archive. (n.d.-d). *Kwakiutl texts: Second series* [Item metadata recor
             prompt: "Which centre of the American Philosophical Society published the 2018 post?",
             options: [
               "CNAIR",
-              "The Rare Book and Manuscript Library, which also holds the Boas correspondence",
-              "The Bard Graduate Center Gallery, which curated the 2019 exhibition",
-              "The Bureau of American Ethnology, which published the 1921 volume",
+              "Rare Books",
+              "Bard Gallery",
+              "The Bureau",
             ],
             correctIndex: 0,
             explanation:
@@ -2272,9 +2272,9 @@ Internet Archive. (n.d.-d). *Kwakiutl texts: Second series* [Item metadata recor
             prompt: "What does the APS post cite as examples of where the pages sit?",
             options: [
               "Two sections of the ACLS Collection",
-              "Fourteen bound volumes shelved under the name of the donor",
+              "Fourteen bound volumes",
               "Thirty volumes catalogued under Kwakwaka'wakw community names",
-              "A single uncatalogued box, opened for the first time in 2018",
+              "One uncatalogued box",
             ],
             correctIndex: 0,
             explanation:
@@ -2298,9 +2298,9 @@ Internet Archive. (n.d.-d). *Kwakiutl texts: Second series* [Item metadata recor
             prompt: "How long does the APS post say Hunt's indexed correspondence with Boas runs?",
             options: [
               "More than a thousand pages",
-              "About sixty pages, mostly covering the years 1929 to 1933",
-              "Over 6,000 pages, the same figure given for the manuscripts themselves",
-              "Fourteen volumes, matching the count Columbia gives for its manuscripts",
+              "About sixty pages",
+              "Over 6,000 pages",
+              "Fourteen volumes",
             ],
             correctIndex: 0,
             explanation:
@@ -2312,7 +2312,7 @@ Internet Archive. (n.d.-d). *Kwakiutl texts: Second series* [Item metadata recor
             options: [
               "A small selection",
               "All of it, fully transcribed and translated into English",
-              "None of it, since digitisation began only after the 2019 exhibition",
+              "None",
               "Everything except the correspondence, which remains closed to researchers",
             ],
             correctIndex: 0,
@@ -2324,8 +2324,8 @@ Internet Archive. (n.d.-d). *Kwakiutl texts: Second series* [Item metadata recor
             prompt: "Why did this course read an archived copy of the APS post?",
             options: [
               "The live page returned an access error",
-              "Because the Society asks researchers to cite only archived versions of its posts",
-              "Because the live post has since been rewritten and no longer names Hunt",
+              "The APS requires it",
+              "The post was rewritten",
               "Because the archived copy is the only version that gives page counts",
             ],
             correctIndex: 0,
@@ -2337,9 +2337,9 @@ Internet Archive. (n.d.-d). *Kwakiutl texts: Second series* [Item metadata recor
             prompt: "What dates does the APS give for Hunt's life?",
             options: [
               "1856 to 1931",
-              "1854 to 1933, the dates Bard and the Canadian Encyclopedia both give",
-              "1884 onward, the dates of the other George Hunt in a catalogue record",
-              "1885 to 1951, which are in fact the years of the potlatch ban",
+              "1854 to 1933",
+              "1884 onward",
+              "1885 to 1951",
             ],
             correctIndex: 0,
             explanation:
@@ -2363,9 +2363,9 @@ Internet Archive. (n.d.-d). *Kwakiutl texts: Second series* [Item metadata recor
             prompt: "Whom does the APS say its centre works with on those protocols?",
             options: [
               "Members of several Kwakwaka'wakw communities",
-              "A committee of anthropologists appointed by the Society's own membership",
-              "The Canadian federal government, which administered the potlatch ban",
-              "Columbia University Libraries, which holds the companion collection",
+              "A committee of anthropologists",
+              "The Canadian government",
+              "Columbia University Libraries",
             ],
             correctIndex: 0,
             explanation:
@@ -2376,9 +2376,9 @@ Internet Archive. (n.d.-d). *Kwakiutl texts: Second series* [Item metadata recor
             prompt: "How long does the APS say the potlatch ban in Canada lasted?",
             options: [
               "1885 to 1951",
-              "1897 to 1921, the years between the two books at the centre of this course",
-              "1913 to 1942, the years Boas was giving manuscripts to Columbia",
-              "1854 to 1933, which are in fact the dates Bard gives for Hunt's life",
+              "1897 to 1921",
+              "1913 to 1942",
+              "1854 to 1933",
             ],
             correctIndex: 0,
             explanation:
@@ -2388,8 +2388,8 @@ Internet Archive. (n.d.-d). *Kwakiutl texts: Second series* [Item metadata recor
           {
             prompt: "What does this lesson say the finding is, once the two archives are added together?",
             options: [
-              "The scale",
-              "The disagreement between the two institutions about Hunt's date of birth",
+              "The scale of the writing",
+              "A date dispute",
               "The fact that neither archive has ever created a catalogue record",
               "That Boas kept the most important pages for himself and gave away the rest",
             ],
@@ -2402,9 +2402,9 @@ Internet Archive. (n.d.-d). *Kwakiutl texts: Second series* [Item metadata recor
             prompt: "How much of the Hunt and Boas correspondence does this course quote?",
             options: [
               "One sentence",
-              "The whole of the indexed correspondence, running to more than a thousand pages",
-              "Every letter written after 1920, when Hunt began sending corrections",
-              "None of it, since no letter between the two men has ever been published",
+              "All of it",
+              "Later letters",
+              "None of it",
             ],
             correctIndex: 0,
             explanation:
@@ -2427,10 +2427,10 @@ Internet Archive. (n.d.-d). *Kwakiutl texts: Second series* [Item metadata recor
           {
             prompt: "What does the lesson say the APS's ranking sentence functions as?",
             options: [
-              "A credit line",
-              "A valuation, used to set the insurance premium on the collection",
-              "A disclaimer, limiting the Society's responsibility for the contents",
-              "A finding aid, listing the contents of each section in order",
+              "A credit line for his body of work",
+              "A valuation",
+              "A disclaimer",
+              "A finding aid",
             ],
             correctIndex: 0,
             explanation:
@@ -2441,8 +2441,8 @@ Internet Archive. (n.d.-d). *Kwakiutl texts: Second series* [Item metadata recor
             prompt: "What would the phrase the Kwakiutl section of the Boas papers do differently?",
             options: [
               "File the work under someone else's name",
-              "Give the collection a more accurate description of its physical arrangement",
-              "Record the protocols under which the community governs the material",
+              "Describe its arrangement",
+              "Record the protocols",
               "Add Hunt to the creator field of the catalogue record for the collection",
             ],
             correctIndex: 0,
@@ -2455,7 +2455,7 @@ Internet Archive. (n.d.-d). *Kwakiutl texts: Second series* [Item metadata recor
             options: [
               "No, they are separate accessions",
               "Yes, Columbia holds the originals and the Society holds photographic copies",
-              "Yes, the collection was divided between them by Boas's will in 1942",
+              "Yes, by Boas's will",
               "No, because the Society's pages were returned to Alert Bay in 2016",
             ],
             correctIndex: 0,
@@ -2467,9 +2467,9 @@ Internet Archive. (n.d.-d). *Kwakiutl texts: Second series* [Item metadata recor
             prompt: "What is a catalogue record's purpose, as lesson 8 describes it?",
             options: [
               "Finding",
-              "Crediting, which is the same job a title page does but in machine-readable form",
-              "Preserving, meaning keeping a permanent copy of a book's text",
-              "Valuing, meaning recording what a library paid for an item",
+              "Crediting",
+              "Preserving",
+              "Valuing",
             ],
             correctIndex: 0,
             explanation:
@@ -2480,9 +2480,9 @@ Internet Archive. (n.d.-d). *Kwakiutl texts: Second series* [Item metadata recor
             prompt: "How many catalogue records does lesson 8 read?",
             options: [
               "Four",
-              "One, the Getty Research Institute's record for the 1897 monograph",
-              "Six, one for each of the publications examined in section 1",
-              "Fourteen, one for each volume of the Columbia manuscripts",
+              "One",
+              "Six",
+              "Fourteen",
             ],
             correctIndex: 0,
             explanation:
@@ -2493,9 +2493,9 @@ Internet Archive. (n.d.-d). *Kwakiutl texts: Second series* [Item metadata recor
             prompt: "Which record names a different man entirely?",
             options: [
               "The Getty-sourced 1897 scan",
-              "The Harvard-sourced 1897 scan, which carries a bracketed note about an old catalogue",
-              "The Library of Congress scan of the 1921 Ethnology of the Kwakiutl",
-              "The record for the 1975 reprint of the second series of Kwakiutl Texts",
+              "The Harvard scan",
+              "The 1921 LC scan",
+              "The 1975 reprint",
             ],
             correctIndex: 0,
             explanation:
@@ -2506,9 +2506,9 @@ Internet Archive. (n.d.-d). *Kwakiutl texts: Second series* [Item metadata recor
             prompt: "What birth year does the wrong George Hunt in that record carry?",
             options: [
               "1884",
-              "1854, the year Bard and the Canadian Encyclopedia give for the right man",
-              "1856, the year the American Philosophical Society gives for the right man",
-              "1858, which is in fact the year Franz Boas was born",
+              "1854",
+              "1856",
+              "1858",
             ],
             correctIndex: 0,
             explanation:
@@ -2519,7 +2519,7 @@ Internet Archive. (n.d.-d). *Kwakiutl texts: Second series* [Item metadata recor
             prompt: "What bracketed note does the Harvard-sourced 1897 record carry beside Hunt's name?",
             options: [
               "From old catalog",
-              "Attributed, meaning the library is not certain the attribution is correct",
+              "Author",
               "Author, meaning the library ranks him equally with Boas on that book",
               "See also, meaning the name points to a separate authority record",
             ],
@@ -2532,8 +2532,8 @@ Internet Archive. (n.d.-d). *Kwakiutl texts: Second series* [Item metadata recor
             prompt: "Which record ranks Hunt higher than the printed title page does?",
             options: [
               "The Library of Congress 1921 scan",
-              "The Getty-sourced 1897 scan, which lists three creators for the monograph",
-              "The 1975 reprint record, which names Boas alone as creator",
+              "The Getty 1897 scan",
+              "The 1975 reprint record",
               "The Harvard-sourced 1897 scan, which flags its data as unverified",
             ],
             correctIndex: 0,
@@ -2558,9 +2558,9 @@ Internet Archive. (n.d.-d). *Kwakiutl texts: Second series* [Item metadata recor
             prompt: "In which field does that word author appear?",
             options: [
               "Associated names",
-              "Creator, alongside Boas and in exactly the same form",
-              "Title, as part of the book's full printed title statement",
-              "Publisher, as part of the 1975 reprint's imprint information",
+              "Creator",
+              "Title",
+              "Imprint",
             ],
             correctIndex: 0,
             explanation:
@@ -2571,9 +2571,9 @@ Internet Archive. (n.d.-d). *Kwakiutl texts: Second series* [Item metadata recor
             prompt: "What does a creator field mean in a catalogue record?",
             options: [
               "Who made the work",
-              "Who donated the copy that the library scanned for its digital collection",
-              "Who holds the copyright in the edition being described",
-              "Who catalogued the item and is answerable for the record's accuracy",
+              "Who donated the copy",
+              "Who holds copyright",
+              "Who catalogued it",
             ],
             correctIndex: 0,
             explanation:
@@ -2583,10 +2583,10 @@ Internet Archive. (n.d.-d). *Kwakiutl texts: Second series* [Item metadata recor
           {
             prompt: "What does an associated names field mean?",
             options: [
-              "Connected to the work",
-              "Named in the text of the work at least once by the author",
+              "Connected to the work, but not its creator",
+              "Named in the text of the work",
               "Legally responsible for the accuracy of the work's contents",
-              "Holding a copy of the work in a library somewhere in the world",
+              "Holding a copy of it",
             ],
             correctIndex: 0,
             explanation:
@@ -2610,9 +2610,9 @@ Internet Archive. (n.d.-d). *Kwakiutl texts: Second series* [Item metadata recor
             prompt: "What is authority control?",
             options: [
               "Matching a name to approved name forms",
-              "Deciding which library has the right to catalogue a given book first",
-              "Restricting access to a collection at the request of a donor",
-              "Verifying that a book's stated author actually wrote it",
+              "Deciding who catalogues first",
+              "Donor-requested restriction",
+              "Verifying authorship",
             ],
             correctIndex: 0,
             explanation:
@@ -2622,8 +2622,8 @@ Internet Archive. (n.d.-d). *Kwakiutl texts: Second series* [Item metadata recor
           {
             prompt: "Which case taught in Who Gets Named shares the mechanism of the wrong-man record?",
             options: [
-              "Henrietta Lacks",
-              "The 1850 commission, which made a record about people rather than by them",
+              "Henrietta Lacks, a substituted name",
+              "The 1850 commission",
               "The four moments of silence, in which a record simply stops recording",
               "The anatomy of a correction, which is about who repairs a record",
             ],
@@ -2636,9 +2636,9 @@ Internet Archive. (n.d.-d). *Kwakiutl texts: Second series* [Item metadata recor
             prompt: "What is the practical rule this lesson gives for checking a credit?",
             options: [
               "Open the book",
-              "Trust the catalogue, since librarians verify every name before entering it",
-              "Prefer the most recent record, since later records correct earlier ones",
-              "Count how many records agree, and accept whichever version has the most",
+              "Trust the catalogue",
+              "Prefer the newest",
+              "Go with the majority",
             ],
             correctIndex: 0,
             explanation:
@@ -2648,9 +2648,9 @@ Internet Archive. (n.d.-d). *Kwakiutl texts: Second series* [Item metadata recor
           {
             prompt: "What does the rule say to do when you cannot open the book?",
             options: [
-              "Name the record you read",
-              "Report the strongest version of the claim, since one of the records must be right",
-              "Leave the credit out of your writing entirely until you can see the page",
+              "Name the record you read and who made it",
+              "Report the strongest version",
+              "Leave the credit out",
               "Use the version that the largest institution has published",
             ],
             correctIndex: 0,
@@ -2662,9 +2662,9 @@ Internet Archive. (n.d.-d). *Kwakiutl texts: Second series* [Item metadata recor
             prompt: "When were the four catalogue records in this lesson fetched?",
             options: [
               "In September 2026",
-              "In April 2023, at the same time Columbia created its own catalogue record",
-              "In May 2018, when the American Philosophical Society published its post",
-              "In 1975, when the second series of Kwakiutl Texts was reprinted",
+              "In April 2023",
+              "In May 2018",
+              "In mid-1975",
             ],
             correctIndex: 0,
             explanation:
@@ -2675,9 +2675,9 @@ Internet Archive. (n.d.-d). *Kwakiutl texts: Second series* [Item metadata recor
             prompt: "How many of the four records describe a person other than the George Hunt of this course?",
             options: [
               "One",
-              "None, since all four correctly identify the same man born in the 1850s",
-              "Two, since the Harvard record also carries a different person's dates",
-              "All four, since no catalogue has ever recorded his dates correctly",
+              "None",
+              "Two",
+              "All four",
             ],
             correctIndex: 0,
             explanation:
@@ -2701,9 +2701,9 @@ Internet Archive. (n.d.-d). *Kwakiutl texts: Second series* [Item metadata recor
             prompt: "What do the four records add up to?",
             options: [
               "Four different answers about one man",
-              "A single consistent account that confirms what the title pages already say",
-              "Proof that the 1897 book was written by George M. Hunt of 1884",
-              "Evidence that catalogues are always more accurate than printed books",
+              "One consistent account",
+              "Proof of a second author",
+              "Proof catalogues beat books",
             ],
             correctIndex: 0,
             explanation:
@@ -2714,7 +2714,7 @@ Internet Archive. (n.d.-d). *Kwakiutl texts: Second series* [Item metadata recor
             prompt: "Which of the four scanned copies came from Harvard?",
             options: [
               "One of the two 1897 scans",
-              "The 1921 Ethnology, which the Library of Congress also holds",
+              "The 1921 scan",
               "The 1975 reprint of the second series of Kwakiutl Texts",
               "None of them, since all four copies came from the Getty Research Institute",
             ],
@@ -2727,9 +2727,9 @@ Internet Archive. (n.d.-d). *Kwakiutl texts: Second series* [Item metadata recor
             prompt: "Why does the course treat catalogue records as evidence at all?",
             options: [
               "They are where most readers meet a book",
-              "Because a catalogue record is legally binding on the publisher of a book",
+              "They bind publishers",
               "Because librarians check every record against the title page before publishing it",
-              "Because a catalogue record is written by the author of the book it describes",
+              "Authors write them",
             ],
             correctIndex: 0,
             explanation:
@@ -2853,10 +2853,10 @@ Pickman, S. M. (2019, June 21). The Story Box: Franz Boas, George Hunt, and the 
           {
             prompt: "What does the American Philosophical Society say about whose knowledge is in the manuscripts?",
             options: [
-              "Not just Hunt's",
-              "That it belongs to Boas, who commissioned and paid for every page written",
-              "That it cannot be attributed to anyone, since the pages are unsigned",
-              "That it is Hunt's alone, since he is the only person who wrote in the volumes",
+              "Not just Hunt's, but that of numerous Kwakwaka'wakw people he recorded",
+              "That it belongs to Boas, who paid for every page",
+              "That it cannot be attributed, being unsigned",
+              "That it is Hunt's alone",
             ],
             correctIndex: 0,
             explanation:
@@ -2867,7 +2867,7 @@ Pickman, S. M. (2019, June 21). The Story Box: Franz Boas, George Hunt, and the 
             prompt: "What is wrong with simply moving the name up on the title page?",
             options: [
               "It repeats the error one rung down",
-              "It is impossible, because a printed title page cannot be legally amended",
+              "It is legally impossible",
               "It would credit a man who did not in fact write any of the pages",
               "It would make the catalogue records disagree with the printed book",
             ],
@@ -2879,9 +2879,9 @@ Pickman, S. M. (2019, June 21). The Story Box: Franz Boas, George Hunt, and the 
           {
             prompt: "Why does the lesson say the new error would be harder to see?",
             options: [
-              "It looks like justice",
-              "Because catalogue records take decades to propagate through library systems",
-              "Because no reader ever checks a title page against the text of a book",
+              "Because the correction looks like justice, so it reads as a repair",
+              "Because catalogue records are slow to change",
+              "Because no reader checks a title page",
               "Because the correction would be made by the community rather than the publisher",
             ],
             correctIndex: 0,
@@ -2906,8 +2906,8 @@ Pickman, S. M. (2019, June 21). The Story Box: Franz Boas, George Hunt, and the 
             prompt: "What does the lesson offer in place of a better author line?",
             options: [
               "A sentence describing what the book is",
-              "A footnote listing every person named anywhere inside the manuscripts",
-              "A recommendation that the books be withdrawn from library collections",
+              "A footnote listing every name",
+              "Withdrawing the books",
               "A new title page printed by the community rather than the publisher",
             ],
             correctIndex: 0,
@@ -2919,9 +2919,9 @@ Pickman, S. M. (2019, June 21). The Story Box: Franz Boas, George Hunt, and the 
             prompt: "What second job does the word informant do, besides naming a function?",
             options: [
               "It makes people interchangeable",
-              "It records how much each person was paid for the information they gave",
-              "It establishes that the person consented to have their words published",
-              "It marks the person as a member of the community being described",
+              "It records payment",
+              "It shows consent",
+              "It marks membership",
             ],
             correctIndex: 0,
             explanation:
@@ -2931,10 +2931,10 @@ Pickman, S. M. (2019, June 21). The Story Box: Franz Boas, George Hunt, and the 
           {
             prompt: "Which course does this lesson name as teaching the same problem in a different collection?",
             options: [
-              "Hoodoo Complete",
+              "Hoodoo Complete, in its lesson on the Hyatt corpus",
               "Archives and Finding Aids, which teaches provenance and original order",
               "Written by Himself, which teaches the credit ladder used in section 1",
-              "Who Made the Record, which handles the 1850 commission",
+              "Who Made the Record",
             ],
             correctIndex: 0,
             explanation:
@@ -2944,10 +2944,10 @@ Pickman, S. M. (2019, June 21). The Story Box: Franz Boas, George Hunt, and the 
           {
             prompt: "What does this course quote from the manuscripts?",
             options: [
-              "Nothing",
-              "Only the passages the American Philosophical Society has put online",
-              "Only the passages that appear in the printed books rather than the manuscripts",
-              "Only the hereditary names, since those are needed to explain the corrections",
+              "Nothing: no story, song, prayer or hereditary name",
+              "Only the online passages",
+              "Only the printed passages",
+              "Only the hereditary names",
             ],
             correctIndex: 0,
             explanation:
@@ -2958,9 +2958,9 @@ Pickman, S. M. (2019, June 21). The Story Box: Franz Boas, George Hunt, and the 
             prompt: "Why does the course call its no-reproduction rule practical rather than squeamish?",
             options: [
               "Reproducing it would repeat the taking",
-              "Because reproducing manuscript pages would breach United States copyright law",
-              "Because the manuscripts are written in a language the course cannot translate",
-              "Because a private course is not permitted to quote any archival document",
+              "Because it would breach copyright law",
+              "Because it cannot translate the language",
+              "Because private courses may not quote archives",
             ],
             correctIndex: 0,
             explanation:
@@ -2972,7 +2972,7 @@ Pickman, S. M. (2019, June 21). The Story Box: Franz Boas, George Hunt, and the 
             options: [
               "The Creator's Game and Tribal Nations Governance",
               "Who Gets Named and Written by Himself, the two credit courses in the catalog",
-              "Hoodoo Complete and Who Made the Record, the two collector courses",
+              "Hoodoo Complete and Who Made the Record",
               "Archives and Finding Aids and Who Gets the Credit",
             ],
             correctIndex: 0,
@@ -2996,10 +2996,10 @@ Pickman, S. M. (2019, June 21). The Story Box: Franz Boas, George Hunt, and the 
           {
             prompt: "Where do the names of most of the people whose knowledge is in the pages appear?",
             options: [
-              "Inside the pages",
-              "On the title pages of the six books, below the author line",
+              "Inside the pages, the material this course does not open",
+              "On the title pages",
               "In the catalogue records Columbia created for the collection in 2023",
-              "In the index to the correspondence held in Philadelphia",
+              "In the correspondence index",
             ],
             correctIndex: 0,
             explanation:
@@ -3009,10 +3009,10 @@ Pickman, S. M. (2019, June 21). The Story Box: Franz Boas, George Hunt, and the 
           {
             prompt: "What three questions does the lesson say the record raises besides who should be on the title page?",
             options: [
-              "Who agreed, what were they told, who decides now",
-              "Who paid, who printed it, and who holds the copyright today",
-              "Where it was written, when it was written, and how long it took",
-              "How many pages, how many volumes, and how many languages",
+              "Who agreed, what were they told, and who decides now",
+              "Who paid, who printed, who holds copyright",
+              "Where, when, and how long it took",
+              "How many pages, volumes and languages",
             ],
             correctIndex: 0,
             explanation:
@@ -3035,10 +3035,10 @@ Pickman, S. M. (2019, June 21). The Story Box: Franz Boas, George Hunt, and the 
           {
             prompt: "What does the course call its own stated limit?",
             options: [
-              "The care rule",
+              "The care rule: teach that the knowledge exists, then stop",
               "The credit ladder, which sets out how far a contributor may be ranked",
-              "Authority control, which decides which names a record may carry",
-              "Provenance, which records where the material came from",
+              "Authority control, which decides which names a catalogue record may carry",
+              "Provenance",
             ],
             correctIndex: 0,
             explanation:
@@ -3048,7 +3048,7 @@ Pickman, S. M. (2019, June 21). The Story Box: Franz Boas, George Hunt, and the 
           {
             prompt: "What is a corpus, as this lesson uses the word?",
             options: [
-              "A whole body of collected material",
+              "A whole body of collected material, such as thousands of pages in one hand",
               "A catalogue listing every item a single institution holds",
               "The physical binding of a manuscript volume",
               "The English translation printed under a line of another language",
@@ -3061,10 +3061,10 @@ Pickman, S. M. (2019, June 21). The Story Box: Franz Boas, George Hunt, and the 
           {
             prompt: "Who published the sentence about whose knowledge is in the manuscripts?",
             options: [
-              "The American Philosophical Society",
-              "Columbia University's Rare Book and Manuscript Library, in its 2023 post",
+              "The American Philosophical Society, in its 2018 post",
+              "Columbia University Libraries",
               "The Bard Graduate Center, on its page about the making of the 1897 book",
-              "The Bureau of American Ethnology, in its note of 1921",
+              "The Bureau of American Ethnology",
             ],
             correctIndex: 0,
             explanation:
@@ -3075,7 +3075,7 @@ Pickman, S. M. (2019, June 21). The Story Box: Franz Boas, George Hunt, and the 
             prompt: "What is plural authorship, as this lesson uses it?",
             options: [
               "Knowledge from many people in one work",
-              "Two authors sharing a title page in the same size type",
+              "Co-authors in equal type",
               "A book published under a committee's name rather than an individual's",
               "The practice of listing every contributor in a long acknowledgements section",
             ],
@@ -3087,9 +3087,9 @@ Pickman, S. M. (2019, June 21). The Story Box: Franz Boas, George Hunt, and the 
           {
             prompt: "What did Hunt himself belong to, that Boas did not?",
             options: [
-              "The community he was recording",
-              "The Bureau of American Ethnology, which employed him as a salaried officer",
-              "The American Philosophical Society, which later held his manuscripts",
+              "The community he was recording, at Fort Rupert",
+              "The Bureau of American Ethnology",
+              "The American Philosophical Society",
               "The Jesup North Pacific Expedition, which Boas only advised",
             ],
             correctIndex: 0,
@@ -3100,10 +3100,10 @@ Pickman, S. M. (2019, June 21). The Story Box: Franz Boas, George Hunt, and the 
           {
             prompt: "Which section of this course takes up the question of who decides now?",
             options: [
-              "Section 5",
-              "Section 3, which describes what the two archives hold",
-              "Section 1, which reads the six title pages in order",
-              "Section 2, which sets out Boas's account of the method",
+              "Section 5, whose last lesson covers the two institutions",
+              "Section 3, on the archives",
+              "Section 1, on the title pages",
+              "Section 2, on the method",
             ],
             correctIndex: 0,
             explanation:
@@ -3115,7 +3115,7 @@ Pickman, S. M. (2019, June 21). The Story Box: Franz Boas, George Hunt, and the 
             options: [
               "Whatever it was not built to preserve",
               "Anything written in a language other than English",
-              "Anything recorded after the collector's own death",
+              "Anything posthumous",
               "Anything the collector did not personally witness",
             ],
             correctIndex: 0,
@@ -3126,9 +3126,9 @@ Pickman, S. M. (2019, June 21). The Story Box: Franz Boas, George Hunt, and the 
           {
             prompt: "What does the lesson say the obvious repair to a credit record is?",
             options: [
-              "Move the name up",
-              "Withdraw the book from circulation until a new edition can be prepared",
-              "Add a footnote to every page explaining who supplied the material",
+              "Move the name up: cross out one name and write in another",
+              "Withdraw the book",
+              "Add a footnote to every page",
               "Publish the manuscripts in full so readers can judge for themselves",
             ],
             correctIndex: 0,
@@ -3139,10 +3139,10 @@ Pickman, S. M. (2019, June 21). The Story Box: Franz Boas, George Hunt, and the 
           {
             prompt: "What years does the American Philosophical Society give for the potlatch ban in Canada?",
             options: [
-              "1885 to 1951",
-              "1897 to 1930, the span of the six books examined in this course",
-              "1900 to 1914, ending when Hunt began working with Edward S. Curtis",
-              "1854 to 1933, which are in fact the dates Bard gives for Hunt's life",
+              "1885 to 1951, sixty-six years",
+              "1897 to 1930",
+              "1900 to 1914",
+              "1854 to 1933",
             ],
             correctIndex: 0,
             explanation:
@@ -3167,7 +3167,7 @@ Pickman, S. M. (2019, June 21). The Story Box: Franz Boas, George Hunt, and the 
             options: [
               "To a colleague in Victoria",
               "To the Bureau of American Ethnology in Washington, for its annual report",
-              "To the U'mista Cultural Centre at Alert Bay, British Columbia",
+              "To Alert Bay",
               "To the American Philosophical Society in Philadelphia, for safekeeping",
             ],
             correctIndex: 0,
@@ -3178,9 +3178,9 @@ Pickman, S. M. (2019, June 21). The Story Box: Franz Boas, George Hunt, and the 
           {
             prompt: "Which category was the book entered in court to prove for Hunt?",
             options: [
-              "Ethnographer",
-              "Participant, which is the category that would have brought the law down on him",
-              "Interpreter, the role he had held for Israel Powell two decades earlier",
+              "Ethnographer, present to record and not to take part",
+              "Participant",
+              "Interpreter",
               "Informant, the word most scholars used for him for the next century",
             ],
             correctIndex: 0,
@@ -3191,10 +3191,10 @@ Pickman, S. M. (2019, June 21). The Story Box: Franz Boas, George Hunt, and the 
           {
             prompt: "What was the outcome of the 1900 case?",
             options: [
-              "He was acquitted",
-              "He was convicted and fined, and Boas paid the fine from expedition funds",
-              "The case was withdrawn before the book reached the court in Victoria",
-              "The record does not say, because the court papers have never been found",
+              "He was acquitted, though what the court found decisive is unrecorded",
+              "He was convicted and fined",
+              "The case was withdrawn",
+              "The record does not say",
             ],
             correctIndex: 0,
             explanation:
@@ -3205,9 +3205,9 @@ Pickman, S. M. (2019, June 21). The Story Box: Franz Boas, George Hunt, and the 
             prompt: "Why does this course refuse to say that the book saved him?",
             options: [
               "Nobody here has read the court record",
-              "Because the book arrived in Victoria after the verdict had been delivered",
-              "Because Bard's account says explicitly that the book was ignored by the judge",
-              "Because saying so would credit Boas rather than Hunt with the acquittal",
+              "The book arrived after the verdict",
+              "Bard says the judge ignored the book",
+              "It would credit Boas with the acquittal",
             ],
             correctIndex: 0,
             explanation:
@@ -3218,7 +3218,7 @@ Pickman, S. M. (2019, June 21). The Story Box: Franz Boas, George Hunt, and the 
             prompt: "What does the course say is the difference between the two sentences about the 1900 case?",
             options: [
               "A finding against a story",
-              "One is shorter and easier for a learner to remember accurately",
+              "One is shorter",
               "One names Boas and the other does not, which is the only real difference",
               "One is taken from a primary source and the other from a catalogue record",
             ],
@@ -3231,8 +3231,8 @@ Pickman, S. M. (2019, June 21). The Story Box: Franz Boas, George Hunt, and the 
             prompt: "What general lesson does the 1900 episode carry about credit lines?",
             options: [
               "A credit line can be a legal identity",
-              "A credit line is decided by the courts rather than by publishers",
-              "A credit line matters only to the person named on it",
+              "Courts decide credit lines",
+              "A credit line is private",
               "A credit line cannot be used as evidence in any legal proceeding",
             ],
             correctIndex: 0,
@@ -3243,10 +3243,10 @@ Pickman, S. M. (2019, June 21). The Story Box: Franz Boas, George Hunt, and the 
           {
             prompt: "What does this course describe about the potlatch itself?",
             options: [
-              "Nothing",
-              "Its full ceremonial sequence, taken from the 1897 monograph",
-              "The hereditary names announced at the events Hunt attended in 1900",
-              "The songs recorded in the manuscripts held at Columbia University",
+              "Nothing beyond the 1885 to 1951 ban and Hunt's 1900 arrest",
+              "Its full ceremonial sequence",
+              "The hereditary names announced",
+              "The songs in the manuscripts",
             ],
             correctIndex: 0,
             explanation:
@@ -3270,9 +3270,9 @@ Pickman, S. M. (2019, June 21). The Story Box: Franz Boas, George Hunt, and the 
             prompt: "What is the symmetry the lesson asks a reader to hold rather than resolve?",
             options: [
               "The same arrangement ranked him low and made him a professional",
-              "The court acquitted him while the Bureau of American Ethnology blamed him",
-              "Columbia credited him while the American Philosophical Society did not",
-              "His father's people published him while his mother's people did not",
+              "The court acquitted him; the Bureau blamed him",
+              "Columbia credited him while the Society did not",
+              "His father's people published him",
             ],
             correctIndex: 0,
             explanation:
@@ -3283,7 +3283,7 @@ Pickman, S. M. (2019, June 21). The Story Box: Franz Boas, George Hunt, and the 
             prompt: "What habit does the lesson say the course is written against?",
             options: [
               "Dropping evidence to keep a shape",
-              "Quoting a primary source without giving the page number",
+              "Omitting page numbers",
               "Citing a catalogue record rather than the book it describes",
               "Writing about a community without naming a reviewer from it",
             ],
@@ -3296,8 +3296,8 @@ Pickman, S. M. (2019, June 21). The Story Box: Franz Boas, George Hunt, and the 
             prompt: "What does the 1900 episode settle about the stakes of a title page?",
             options: [
               "They were never merely administrative",
-              "That publishers were legally required to name every contributor",
-              "That a title page could be amended by a court order if it was wrong",
+              "Naming was a legal duty",
+              "Courts amend title pages",
               "That the wording of a title page was chosen by the Bureau, not the author",
             ],
             correctIndex: 0,
@@ -3308,9 +3308,9 @@ Pickman, S. M. (2019, June 21). The Story Box: Franz Boas, George Hunt, and the 
           {
             prompt: "Which word does the Bard account put in quotation marks alongside ethnographer?",
             options: [
-              "Participant",
-              "Author, the rank the 1897 title page declined to give him",
-              "Informant, the role word scholars later used for him",
+              "Participant, the competing category",
+              "Author",
+              "Informant",
               "Collaborator, the word used in the Bureau's 1921 note",
             ],
             correctIndex: 0,
@@ -3321,10 +3321,10 @@ Pickman, S. M. (2019, June 21). The Story Box: Franz Boas, George Hunt, and the 
           {
             prompt: "How long was the potlatch ban in force, in years?",
             options: [
-              "Sixty-six",
-              "Thirty-three, the same span as the six books examined in section 1",
-              "Fourteen, the number of volumes Columbia holds of Hunt's writing",
-              "Ninety, running from Confederation until the middle of the last century",
+              "Sixty-six, from 1885 to 1951",
+              "Thirty-three",
+              "Fourteen",
+              "Ninety",
             ],
             correctIndex: 0,
             explanation:
@@ -3348,7 +3348,7 @@ Pickman, S. M. (2019, June 21). The Story Box: Franz Boas, George Hunt, and the 
             prompt: "What is an ethnographer, as this lesson defines the word?",
             options: [
               "Someone who writes a description of a way of life",
-              "Someone licensed by a government to attend prohibited ceremonies",
+              "Someone licensed to attend ceremonies",
               "Someone employed by a museum to collect objects for its displays",
               "Someone who translates a community's records into another language",
             ],
@@ -3360,10 +3360,10 @@ Pickman, S. M. (2019, June 21). The Story Box: Franz Boas, George Hunt, and the 
           {
             prompt: "Who mailed the book to British Columbia?",
             options: [
-              "Boas",
-              "Hunt himself, from Fort Rupert, after he was charged",
+              "Boas, who sent it to a colleague in Victoria",
+              "Hunt himself",
               "The Bureau of American Ethnology, at the request of the provincial court",
-              "The Government Printing Office, which held the remaining stock",
+              "The Government Printing Office",
             ],
             correctIndex: 0,
             explanation:
@@ -3386,8 +3386,8 @@ Pickman, S. M. (2019, June 21). The Story Box: Franz Boas, George Hunt, and the 
           {
             prompt: "In which year did the book go into a courtroom?",
             options: [
-              "1900",
-              "1897, the year the monograph was printed in Washington",
+              "1900, three years after publication",
+              "1897",
               "1921, the year the Bureau published Ethnology of the Kwakiutl",
               "1951, the year the potlatch ban in Canada came to an end",
             ],
@@ -3400,8 +3400,8 @@ Pickman, S. M. (2019, June 21). The Story Box: Franz Boas, George Hunt, and the 
             prompt: "What does the lesson say a book is not usually asked to do?",
             options: [
               "Serve as evidence about what a person is",
-              "Travel across a continent in the ordinary post",
-              "Be published without naming everyone who worked on it",
+              "Travel by post",
+              "Leave a worker unnamed",
               "Be read by the people it describes rather than by scholars",
             ],
             correctIndex: 0,
@@ -3413,9 +3413,9 @@ Pickman, S. M. (2019, June 21). The Story Box: Franz Boas, George Hunt, and the 
             prompt: "What two permissions does lesson 11 separate?",
             options: [
               "Recording and publishing",
-              "Reading and copying, which archives grant under different conditions",
-              "Collecting and cataloguing, which are done by different institutions",
-              "Translating and printing, which the 1897 book treated as one step",
+              "Reading and copying",
+              "Collecting and cataloguing",
+              "Translating and printing",
             ],
             correctIndex: 0,
             explanation:
@@ -3425,10 +3425,10 @@ Pickman, S. M. (2019, June 21). The Story Box: Franz Boas, George Hunt, and the 
           {
             prompt: "Whom did Boas write to in April 1897, according to the published review?",
             options: [
-              "Kwagu'ł chiefs",
-              "The Bureau of American Ethnology's Ethnologist-in-Charge in Washington",
-              "The provincial authorities in Victoria, British Columbia",
-              "The trustees of the American Museum of Natural History in New York",
+              "Kwagu'ł chiefs, announcing that Hunt would show them a box",
+              "The Bureau's Ethnologist-in-Charge",
+              "Provincial authorities in Victoria",
+              "The Museum's trustees",
             ],
             correctIndex: 0,
             explanation:
@@ -3438,8 +3438,8 @@ Pickman, S. M. (2019, June 21). The Story Box: Franz Boas, George Hunt, and the 
           {
             prompt: "What word does the 1897 letter use for where the material would go?",
             options: [
-              "A box",
-              "A library, which the letter describes as open to everyone in the community",
+              "A box, in which stories would be kept",
+              "A library",
               "A museum case, which the letter says would be labelled with their names",
               "A printing house, which the letter names as being in New York",
             ],
@@ -3452,8 +3452,8 @@ Pickman, S. M. (2019, June 21). The Story Box: Franz Boas, George Hunt, and the 
             prompt: "Why does the lesson call the 1897 letter incomplete as a permission document?",
             options: [
               "It promises keeping, not circulation",
-              "Because it was written in English, which its recipients could not read",
-              "Because it was never sent, and survives only as a draft in an archive",
+              "It was written in English",
+              "It was never sent",
               "Because it names Hunt rather than Boas as the person responsible",
             ],
             correctIndex: 0,
@@ -3467,7 +3467,7 @@ Pickman, S. M. (2019, June 21). The Story Box: Franz Boas, George Hunt, and the 
               "That Hunt accuses Boas of publishing a promised secret",
               "That Hunt asked for his name to be removed from all future editions",
               "That Boas admits in writing that the manuscripts were never his",
-              "That the community asked for the manuscripts to be destroyed",
+              "That the community wanted them destroyed",
             ],
             correctIndex: 0,
             explanation:
@@ -3491,8 +3491,8 @@ Pickman, S. M. (2019, June 21). The Story Box: Franz Boas, George Hunt, and the 
             prompt: "What does Columbia's post fail to identify about the note?",
             options: [
               "Which manuscript page it is on",
-              "Which of the two men wrote it, since the handwriting is disputed",
-              "Whether it was written in Kwak'wala or in English",
+              "Which man wrote it",
+              "The language it is in",
               "Whether the note survives, or is known only from a later description",
             ],
             correctIndex: 0,
@@ -3504,9 +3504,9 @@ Pickman, S. M. (2019, June 21). The Story Box: Franz Boas, George Hunt, and the 
             prompt: "What did Hunt write in January 1929, as Columbia's post reports it?",
             options: [
               "That Boas should get him a medal",
-              "That he intended to publish the manuscripts himself in Victoria",
-              "That he wished his name removed from the 1921 Ethnology of the Kwakiutl",
-              "That he had stopped writing for Boas and would send no further pages",
+              "That he would publish them himself",
+              "That his name come off the 1921 book",
+              "That he would send Boas no more pages",
             ],
             correctIndex: 0,
             explanation:
@@ -3519,7 +3519,7 @@ Pickman, S. M. (2019, June 21). The Story Box: Franz Boas, George Hunt, and the 
               "At the American Philosophical Society",
               "At Columbia University's Rare Book and Manuscript Library in New York",
               "At the U'mista Cultural Centre at Alert Bay, British Columbia",
-              "At the Bard Graduate Center, which exhibited it in 2019",
+              "At the Bard Graduate Center",
             ],
             correctIndex: 0,
             explanation:
@@ -3530,9 +3530,9 @@ Pickman, S. M. (2019, June 21). The Story Box: Franz Boas, George Hunt, and the 
             prompt: "What is the discipline this lesson states in one line?",
             options: [
               "A claim you have only seen quoted is a claim about a quotation",
-              "A claim from a university is stronger than a claim from a newspaper",
-              "A claim with a date attached may be asserted without further checking",
-              "A claim that appears in two sources may be treated as verified",
+              "A university's claim outranks a newspaper's",
+              "A dated claim needs no checking",
+              "A claim in two sources is verified",
             ],
             correctIndex: 0,
             explanation:
@@ -3543,8 +3543,8 @@ Pickman, S. M. (2019, June 21). The Story Box: Franz Boas, George Hunt, and the 
             prompt: "What would a course wanting drama have done with these two items?",
             options: [
               "Asserted them and cited a blog post",
-              "Left them out entirely and said nothing about the promise",
-              "Contacted the archives and waited for a page reference",
+              "Left them out",
+              "Contacted the archives",
               "Published the manuscripts so readers could decide for themselves",
             ],
             correctIndex: 0,
@@ -3557,7 +3557,7 @@ Pickman, S. M. (2019, June 21). The Story Box: Franz Boas, George Hunt, and the 
             options: [
               "It would be the objection in his own hand",
               "It would prove that Boas never wrote any part of the published books",
-              "It would establish that the 1897 letter was a forgery",
+              "It would prove a forgery",
               "It would settle which of the two page counts at Columbia is correct",
             ],
             correctIndex: 0,
@@ -3570,8 +3570,8 @@ Pickman, S. M. (2019, June 21). The Story Box: Franz Boas, George Hunt, and the 
             options: [
               "Columbia reports such a note and the question is open",
               "Hunt objected in writing to Boas publishing what he had promised to keep",
-              "No such note exists, since nobody has been able to locate it",
-              "The note is unimportant, since a note is not a legal document",
+              "No such note exists",
+              "The note is unimportant",
             ],
             correctIndex: 0,
             explanation:
@@ -3581,10 +3581,10 @@ Pickman, S. M. (2019, June 21). The Story Box: Franz Boas, George Hunt, and the 
           {
             prompt: "What happens to the permission question when the people involved die?",
             options: [
-              "It moves",
+              "It moves, to the institutions now holding the pages",
               "It closes, since consent cannot be given or withdrawn after death",
-              "It passes to the publisher of the original book",
-              "It is decided by the archive that holds the material",
+              "It passes to the publisher",
+              "The archive decides it",
             ],
             correctIndex: 0,
             explanation:
@@ -3594,9 +3594,9 @@ Pickman, S. M. (2019, June 21). The Story Box: Franz Boas, George Hunt, and the 
           {
             prompt: "What made the permission question live again?",
             options: [
-              "Digitisation",
+              "Digitisation, which makes copying trivial",
               "The publication of the 1921 Ethnology of the Kwakiutl in Washington",
-              "The end of the potlatch ban in Canada in 1951",
+              "The end of the potlatch ban",
               "The sale of the manuscripts by Boas's estate after his death",
             ],
             correctIndex: 0,
@@ -3620,10 +3620,10 @@ Pickman, S. M. (2019, June 21). The Story Box: Franz Boas, George Hunt, and the 
           {
             prompt: "What happens to this course if the reported note turns out to say something different?",
             options: [
-              "Nothing falls over",
+              "Nothing falls over, since no lesson is built on the note",
               "Section 4 would have to be withdrawn and rewritten from the beginning",
-              "The whole argument about the credit ladder would be undermined",
-              "The research check would have to be closed without an answer",
+              "The credit-ladder argument collapses",
+              "The check closes unanswered",
             ],
             correctIndex: 0,
             explanation:
@@ -3634,9 +3634,9 @@ Pickman, S. M. (2019, June 21). The Story Box: Franz Boas, George Hunt, and the 
             prompt: "Which source quotes the April 1897 letter?",
             options: [
               "A published exhibition review",
-              "Columbia's 2023 post about the manuscripts it holds",
+              "Columbia's 2023 post",
               "The American Philosophical Society's 2018 post from Philadelphia",
-              "The Bureau of American Ethnology's note of 1921",
+              "A 1921 Bureau note",
             ],
             correctIndex: 0,
             explanation:
@@ -3660,9 +3660,9 @@ Pickman, S. M. (2019, June 21). The Story Box: Franz Boas, George Hunt, and the 
             prompt: "Why does the lesson say the note must not be borrowed on credit?",
             options: [
               "Because it has not been read",
-              "Because Columbia has asked that it not be quoted by other writers",
-              "Because the note contains hereditary names this course may not print",
-              "Because a note written in Kwak'wala cannot be translated reliably",
+              "Columbia asked it not be quoted",
+              "It holds hereditary names",
+              "Kwak'wala resists translation",
             ],
             correctIndex: 0,
             explanation:
@@ -3672,9 +3672,9 @@ Pickman, S. M. (2019, June 21). The Story Box: Franz Boas, George Hunt, and the 
           {
             prompt: "What does the course do so the unread page does not become a forgotten question?",
             options: [
-              "Files a research check",
-              "Adds it to the course description so every learner is warned",
-              "Removes the lesson until somebody can travel to New York",
+              "Files a research check on what would settle it",
+              "Adds a warning",
+              "Removes the lesson",
               "Writes to the archive on behalf of every learner who enrols",
             ],
             correctIndex: 0,
@@ -3820,10 +3820,10 @@ Columbia University Libraries. (n.d.). *Noteworthy acquisitions, digitization, a
           {
             prompt: "On what date did Hunt write to Boas about mistakes he wanted put right?",
             options: [
-              "7 June 1920",
-              "4 April 1923, the same date Columbia later published its post about the manuscripts",
-              "1 May 1918, the date of the American Philosophical Society's later post",
-              "14 February 2019, the opening day of the exhibition in New York",
+              "7 June 1920, as the Bard curators quote it",
+              "4 April 1923",
+              "1 May 1918",
+              "14 February 2019",
             ],
             correctIndex: 0,
             explanation:
@@ -3846,10 +3846,10 @@ Columbia University Libraries. (n.d.). *Noteworthy acquisitions, digitization, a
           {
             prompt: "How many pages of corrections had Hunt sent Boas by the time he died?",
             options: [
-              "More than 600",
+              "More than 600, sent between 1920 and 1933",
               "Nearly 8,000, which is the figure Columbia gives for its whole manuscript holding",
               "Over 6,000, which is the figure the American Philosophical Society gives",
-              "About 30, one for each volume of the collection at Columbia",
+              "About 30",
             ],
             correctIndex: 0,
             explanation:
@@ -3859,10 +3859,10 @@ Columbia University Libraries. (n.d.). *Noteworthy acquisitions, digitization, a
           {
             prompt: "How many years did Hunt spend on the corrections?",
             options: [
-              "Thirteen",
-              "Thirty-three, the same span as the six books examined in section 1",
-              "Forty-four, the length of his whole working relationship with Boas",
-              "Two, ending when the Bureau published the 1921 Ethnology of the Kwakiutl",
+              "Thirteen, from 1920 to his death in 1933",
+              "Thirty-three",
+              "Forty-four",
+              "Two",
             ],
             correctIndex: 0,
             explanation:
@@ -3872,10 +3872,10 @@ Columbia University Libraries. (n.d.). *Noteworthy acquisitions, digitization, a
           {
             prompt: "Who made the earliest and most detailed correction of the 1897 book on record?",
             options: [
-              "Hunt himself",
+              "Hunt himself, in more than 600 pages",
               "Franz Boas, in the preface to his 1930 book on the religion of the Kwakiutl",
-              "The Bureau of American Ethnology, in its note of 1921",
-              "The curators of the 2019 exhibition at the Bard Graduate Center",
+              "The Bureau, in 1921",
+              "The 2019 curators",
             ],
             correctIndex: 0,
             explanation:
@@ -3886,7 +3886,7 @@ Columbia University Libraries. (n.d.). *Noteworthy acquisitions, digitization, a
             prompt: "Why is a maker's own correction a different kind of evidence?",
             options: [
               "It is part of the record, not an argument about it",
-              "Because it is always more accurate than a later scholar's correction",
+              "Because it is always more accurate",
               "Because it can be published without the permission of the original publisher",
               "Because it is written in the same language as the original material",
             ],
@@ -3899,9 +3899,9 @@ Columbia University Libraries. (n.d.). *Noteworthy acquisitions, digitization, a
             prompt: "What dependency does the 1920 letter record?",
             options: [
               "One knew the errors, the other could get a correction printed",
-              "Hunt depended on Boas for the wages that paid for his writing materials",
-              "Boas depended on the Bureau of American Ethnology to approve any correction",
-              "Both men depended on the U'mista Cultural Centre to hold the manuscripts",
+              "Hunt depended on Boas for wages",
+              "Boas depended on the Bureau's approval",
+              "Both depended on U'mista to hold the pages",
             ],
             correctIndex: 0,
             explanation:
@@ -3911,9 +3911,9 @@ Columbia University Libraries. (n.d.). *Noteworthy acquisitions, digitization, a
           {
             prompt: "What does this course NOT claim about the six hundred pages?",
             options: [
-              "That they were printed",
-              "That they were written by Hunt, since the handwriting has not been examined",
-              "That they were sent to Boas, since no source describes them arriving",
+              "That they were printed, or where they are now",
+              "That Hunt wrote them",
+              "That they were sent",
               "That they were about the 1897 book rather than some other publication",
             ],
             correctIndex: 0,
@@ -3925,9 +3925,9 @@ Columbia University Libraries. (n.d.). *Noteworthy acquisitions, digitization, a
             prompt: "In the anatomy of this correction, what is the instrument?",
             options: [
               "Six hundred pages in his own hand",
-              "The catalogue record Columbia created for the manuscripts in 2023",
-              "The exhibition mounted in New York and Alert Bay in 2019",
-              "The note the Bureau of American Ethnology printed in 1921",
+              "Columbia's 2023 catalogue record",
+              "The 2019 exhibition in New York",
+              "The Bureau's 1921 printed note",
             ],
             correctIndex: 0,
             explanation:
@@ -3938,7 +3938,7 @@ Columbia University Libraries. (n.d.). *Noteworthy acquisitions, digitization, a
             prompt: "What system did the correction travel through?",
             options: [
               "The same correspondence by post",
-              "The Canadian courts, which had already heard the 1897 book as evidence",
+              "The Canadian courts",
               "The Bureau of American Ethnology's editorial office in Washington",
               "The American Philosophical Society's reading room in Philadelphia",
             ],
@@ -3951,9 +3951,9 @@ Columbia University Libraries. (n.d.). *Noteworthy acquisitions, digitization, a
             prompt: "What is an emendation?",
             options: [
               "A change made to correct a text",
-              "A note added to a catalogue record by a later librarian",
-              "A permission granted by a community for material to be published",
-              "A formal apology printed at the front of a later edition",
+              "A catalogue note",
+              "A community permission",
+              "A printed apology",
             ],
             correctIndex: 0,
             explanation:
@@ -3963,10 +3963,10 @@ Columbia University Libraries. (n.d.). *Noteworthy acquisitions, digitization, a
           {
             prompt: "Which course teaches the anatomy of a correction that this lesson uses?",
             options: [
-              "Who Gets Named",
-              "Archives and Finding Aids, which teaches provenance and original order",
+              "Who Gets Named, in its lesson on who corrects a record",
+              "Archives and Finding Aids",
               "Hoodoo Complete, which teaches how to read a collector's corpus critically",
-              "The Creator's Game, which teaches where a course about a nation stops",
+              "The Creator's Game",
             ],
             correctIndex: 0,
             explanation:
@@ -3979,7 +3979,7 @@ Columbia University Libraries. (n.d.). *Noteworthy acquisitions, digitization, a
               "It was a year before the Bureau printed its note",
               "It was the same year the potlatch ban in Canada came to an end",
               "It was ten years after Boas had stopped publishing his material",
-              "It was immediately after his acquittal in a court in Victoria",
+              "It followed his acquittal",
             ],
             correctIndex: 0,
             explanation:
@@ -3991,8 +3991,8 @@ Columbia University Libraries. (n.d.). *Noteworthy acquisitions, digitization, a
             options: [
               "From the Bard curators' account",
               "From the letter itself, read in the reading room in Philadelphia",
-              "From Columbia's 2023 post about its own manuscript holdings",
-              "From the 1921 preface, in which Boas quotes it at length",
+              "From Columbia",
+              "From the 1921 preface",
             ],
             correctIndex: 0,
             explanation:
@@ -4002,10 +4002,10 @@ Columbia University Libraries. (n.d.). *Noteworthy acquisitions, digitization, a
           {
             prompt: "Who encouraged Hunt to send the corrections?",
             options: [
-              "Boas",
-              "The Bureau of American Ethnology, which commissioned them for a new edition",
-              "The U'mista Cultural Society, which was founded for that purpose",
-              "Nobody, according to the curators, who say he worked alone and unprompted",
+              "Boas, according to the Bard curators' account",
+              "The Bureau of American Ethnology",
+              "The U'mista Cultural Society",
+              "Nobody; he worked alone",
             ],
             correctIndex: 0,
             explanation:
@@ -4015,9 +4015,9 @@ Columbia University Libraries. (n.d.). *Noteworthy acquisitions, digitization, a
           {
             prompt: "How does the length of the corrections compare with the books in this course?",
             options: [
-              "Longer than some of them",
+              "Longer than some of them, at over 600 pages",
               "Shorter than all of them, which is why they were never printed",
-              "Exactly the same length as the 1897 monograph",
+              "As long as the 1897 monograph",
               "Longer than all six put together",
             ],
             correctIndex: 0,
@@ -4028,10 +4028,10 @@ Columbia University Libraries. (n.d.). *Noteworthy acquisitions, digitization, a
           {
             prompt: "How many years after publication did Hunt begin correcting the 1897 book?",
             options: [
-              "Twenty-three",
-              "Three, immediately after his arrest and acquittal in 1900",
-              "Thirty-six, in the year the exhibition opened in New York",
-              "One, as soon as the offprint reached him at Fort Rupert",
+              "Twenty-three, from 1897 to June 1920",
+              "Three",
+              "Thirty-six",
+              "One",
             ],
             correctIndex: 0,
             explanation:
@@ -4042,9 +4042,9 @@ Columbia University Libraries. (n.d.). *Noteworthy acquisitions, digitization, a
             prompt: "Who is the actor in this correction, in the frame the lesson uses?",
             options: [
               "The person the record ranked lowest",
-              "The publisher, who alone can reprint a corrected edition",
-              "The archive, which decides what a catalogue record says",
-              "The community, which had not yet been consulted in 1920",
+              "The publisher, who can reprint",
+              "The archive that catalogues it",
+              "The community, not yet consulted",
             ],
             correctIndex: 0,
             explanation:
@@ -4056,7 +4056,7 @@ Columbia University Libraries. (n.d.). *Noteworthy acquisitions, digitization, a
             options: [
               "Made at the time by a participant",
               "Made recently, by scholars now working on the same subject",
-              "Made by an institution rather than by an individual",
+              "Made by an institution",
               "Made in more than one language, so that it can be checked",
             ],
             correctIndex: 0,
@@ -4067,10 +4067,10 @@ Columbia University Libraries. (n.d.). *Noteworthy acquisitions, digitization, a
           {
             prompt: "In which year did Hunt die?",
             options: [
-              "1933",
+              "1933, the year Bard gives",
               "1931, the date the American Philosophical Society gives",
-              "1920, the year he wrote to Boas about the mistakes",
-              "1942, the year Franz Boas died",
+              "1920",
+              "1942",
             ],
             correctIndex: 0,
             explanation:
@@ -4082,7 +4082,7 @@ Columbia University Libraries. (n.d.). *Noteworthy acquisitions, digitization, a
             options: [
               "An argument about a record",
               "A part of the record, with the same standing as the original",
-              "A legal instrument that compels a publisher to reprint",
+              "A legal order",
               "An unreliable account, since it depends on secondary sources",
             ],
             correctIndex: 0,
@@ -4093,10 +4093,10 @@ Columbia University Libraries. (n.d.). *Noteworthy acquisitions, digitization, a
           {
             prompt: "What did the 1920 letter say was wrong with the book?",
             options: [
-              "Mistakes in names",
-              "Errors in the English translations printed under each line",
-              "Omissions of whole chapters that had been sent but never printed",
-              "The absence of his own name from the offprint title page",
+              "Mistakes in the names of the masks and dishes",
+              "Translation errors",
+              "Omitted chapters",
+              "His name was missing",
             ],
             correctIndex: 0,
             explanation:
@@ -4120,9 +4120,9 @@ Columbia University Libraries. (n.d.). *Noteworthy acquisitions, digitization, a
             prompt: "Why does this course give no dates for the Alert Bay showing?",
             options: [
               "No source it read settles them",
-              "Because the showing was cancelled and never in fact took place",
+              "It was cancelled",
               "Because the U'mista Cultural Centre has asked that they not be published",
-              "Because the exhibition is still running there and has no closing date",
+              "It is still running",
             ],
             correctIndex: 0,
             explanation:
@@ -4145,10 +4145,10 @@ Columbia University Libraries. (n.d.). *Noteworthy acquisitions, digitization, a
           {
             prompt: "What does the exhibition page say the 1897 book fails to address?",
             options: [
-              "Three aspects of its making",
+              "Three important aspects of its making",
               "The identity of the people whose knowledge it records, none of whom it names",
               "The legal status of the potlatch in Canada at the time it was written",
-              "The disagreement between Boas and the Bureau over the author line",
+              "A Bureau dispute",
             ],
             correctIndex: 0,
             explanation:
@@ -4159,9 +4159,9 @@ Columbia University Libraries. (n.d.). *Noteworthy acquisitions, digitization, a
             prompt: "Which of the three aspects does this course take up?",
             options: [
               "Hunt's status as a full co-author",
-              "The cost of printing the plates that illustrate the volume",
-              "The Bureau of American Ethnology's editorial policy in the 1890s",
-              "The location of the original manuscript from which the book was set",
+              "The cost of printing the plates",
+              "The Bureau's editorial policy",
+              "Where the original manuscript is",
             ],
             correctIndex: 0,
             explanation:
@@ -4172,9 +4172,9 @@ Columbia University Libraries. (n.d.). *Noteworthy acquisitions, digitization, a
             prompt: "How does the Story Box page on Hunt phrase the credit problem?",
             options: [
               "Not sufficiently acknowledged as co-author",
-              "Entirely omitted from the book, with no mention of him anywhere in it",
-              "Credited too generously, given the amount of work Boas himself did",
-              "Credited correctly, since notes is an accurate description of what he supplied",
+              "Entirely omitted from the book",
+              "Credited too generously",
+              "Credited correctly",
             ],
             correctIndex: 0,
             explanation:
@@ -4187,7 +4187,7 @@ Columbia University Libraries. (n.d.). *Noteworthy acquisitions, digitization, a
               "Because the documents support a claim about rank",
               "Because the curators were being careful not to criticise Boas directly",
               "Because an uncredited contributor has no legal standing to complain",
-              "Because the 1897 book credits nobody at all, including Boas",
+              "The book credits nobody",
             ],
             correctIndex: 0,
             explanation:
@@ -4197,9 +4197,9 @@ Columbia University Libraries. (n.d.). *Noteworthy acquisitions, digitization, a
           {
             prompt: "What two role words does the 2019 review say scholars had used for Hunt?",
             options: [
-              "Informant and culture broker",
-              "Collector and translator, the two roles the 1921 note assigns him",
-              "Participant and ethnographer, the two categories argued in court in 1900",
+              "Informant and culture broker, both role words",
+              "Collector and translator",
+              "Participant and ethnographer",
               "Author and editor, the two names used on the Kwakiutl Texts title pages",
             ],
             correctIndex: 0,
@@ -4210,10 +4210,10 @@ Columbia University Libraries. (n.d.). *Noteworthy acquisitions, digitization, a
           {
             prompt: "What two credit words does the review say the exhibition establishes for Hunt?",
             options: [
-              "Research partner and co-author",
-              "Collector and recorder, the two verbs the Bureau used in 1921",
-              "Interpreter and assistant, the roles he held before meeting Boas",
-              "Editor and translator, the tasks Boas performed on the manuscripts",
+              "Research partner and co-author, both credit words",
+              "Collector and recorder",
+              "Interpreter and assistant",
+              "Editor and translator",
             ],
             correctIndex: 0,
             explanation:
@@ -4225,7 +4225,7 @@ Columbia University Libraries. (n.d.). *Noteworthy acquisitions, digitization, a
             options: [
               "The U'mista Cultural Centre",
               "The American Philosophical Society, which holds the Philadelphia manuscripts",
-              "Columbia University Libraries, which holds the New York manuscripts",
+              "Columbia Libraries",
               "The American Museum of Natural History, publisher of Kwakiutl Texts",
             ],
             correctIndex: 0,
@@ -4237,8 +4237,8 @@ Columbia University Libraries. (n.d.). *Noteworthy acquisitions, digitization, a
             prompt: "Who made the exhibition's designs?",
             options: [
               "A Kwakwaka'wakw designer descended from Hunt",
-              "The Bard Graduate Center's in-house exhibitions department",
-              "Franz Boas's descendants, working from his surviving sketches",
+              "The gallery's own staff",
+              "Boas's descendants",
               "A design studio commissioned by Columbia University Libraries",
             ],
             correctIndex: 0,
@@ -4250,9 +4250,9 @@ Columbia University Libraries. (n.d.). *Noteworthy acquisitions, digitization, a
             prompt: "Why does this course not print the names of Hunt's living descendants?",
             options: [
               "It describes living people by role and does not quote them",
-              "Because the names are unspellable in the writing system the course uses",
-              "Because the U'mista Cultural Society has asked that they be withheld",
-              "Because none of the sources this course read names any of them",
+              "The names are unspellable",
+              "U'mista asked to withhold them",
+              "No source names them",
             ],
             correctIndex: 0,
             explanation:
@@ -4263,8 +4263,8 @@ Columbia University Libraries. (n.d.). *Noteworthy acquisitions, digitization, a
             prompt: "What did the chairman of the U'mista Cultural Society do for the exhibition?",
             options: [
               "Signed a Statement of Participation",
-              "Curated the New York showing alongside the gallery's own staff",
-              "Wrote the catalogue essay about the 1897 book's making",
+              "Co-curated it",
+              "Wrote the catalogue essay",
               "Lent the manuscripts that were displayed in the first gallery",
             ],
             correctIndex: 0,
@@ -4275,10 +4275,10 @@ Columbia University Libraries. (n.d.). *Noteworthy acquisitions, digitization, a
           {
             prompt: "In what years did the chairman's father work with Boas?",
             options: [
-              "1931 to 1942",
-              "1889 to 1933, the same years as Hunt's own work for Boas",
-              "1911 to 1914, the years Hunt also assisted Edward S. Curtis",
-              "1897 to 1900, the years the 1921 preface names as working years",
+              "1931 to 1942, overlapping Hunt's last two years",
+              "1889 to 1933",
+              "1911 to 1914",
+              "1897 to 1900",
             ],
             correctIndex: 0,
             explanation:
@@ -4302,8 +4302,8 @@ Columbia University Libraries. (n.d.). *Noteworthy acquisitions, digitization, a
             prompt: "How does the project page describe Hunt in passing?",
             options: [
               "Boas's Indigenous co-author",
-              "Boas's most reliable informant on the northern coast",
-              "The translator of the texts Boas collected himself",
+              "Boas's informant",
+              "His translator",
               "The man who supplied the notes for the 1897 monograph",
             ],
             correctIndex: 0,
@@ -4314,8 +4314,8 @@ Columbia University Libraries. (n.d.). *Noteworthy acquisitions, digitization, a
           {
             prompt: "How many members does the Kwakwaka'wakw Editorial Committee have?",
             options: [
-              "Seven",
-              "Two, one from Fort Rupert and one from Alert Bay",
+              "Seven members",
+              "Two",
               "Fourteen, one for each volume held at Columbia University",
               "None yet, since the committee is still being assembled",
             ],
@@ -4328,7 +4328,7 @@ Columbia University Libraries. (n.d.). *Noteworthy acquisitions, digitization, a
             prompt: "Why does this course treat the critical edition as in progress?",
             options: [
               "The project page carries no publication date",
-              "Because the Editorial Committee has not yet been appointed",
+              "The committee is unappointed",
               "Because Columbia has refused permission to publish the manuscripts",
               "Because the exhibition it grew out of closed before the edition began",
             ],
@@ -4340,10 +4340,10 @@ Columbia University Libraries. (n.d.). *Noteworthy acquisitions, digitization, a
           {
             prompt: "What did 2019 change about the co-authorship claim?",
             options: [
-              "Its authority",
-              "The wording of the 1897 title page, which the gallery had reprinted",
-              "The catalogue records held by the Internet Archive for the 1897 book",
-              "The legal ownership of the manuscripts held in New York and Philadelphia",
+              "Its authority, from argument to record",
+              "The 1897 title page",
+              "The Internet Archive records",
+              "Ownership of the manuscripts",
             ],
             correctIndex: 0,
             explanation:
@@ -4354,9 +4354,9 @@ Columbia University Libraries. (n.d.). *Noteworthy acquisitions, digitization, a
             prompt: "What did 2019 NOT change?",
             options: [
               "A printed title page",
-              "The vocabulary scholars use when writing about Hunt",
-              "The authority of the claim that Hunt was a co-author",
-              "Whether the Bard Graduate Center had published a finding",
+              "The vocabulary used for Hunt",
+              "The claim's authority",
+              "Bard's published finding",
             ],
             correctIndex: 0,
             explanation:
@@ -4368,8 +4368,8 @@ Columbia University Libraries. (n.d.). *Noteworthy acquisitions, digitization, a
             options: [
               "A claim a museum publishes from its own research",
               "An object a curator discovers in a collection nobody had catalogued",
-              "A decision by a gallery about which items to display",
-              "A legal determination about who owns a contested collection",
+              "A display decision",
+              "A legal ruling on ownership",
             ],
             correctIndex: 0,
             explanation:
@@ -4382,7 +4382,7 @@ Columbia University Libraries. (n.d.). *Noteworthy acquisitions, digitization, a
               "One that prints the evidence of how a text was made",
               "An edition published with a hostile review printed alongside it",
               "The first edition of a book, before any later corrections were added",
-              "An edition approved by the community the text describes",
+              "A community-approved edition",
             ],
             correctIndex: 0,
             explanation:
@@ -4392,10 +4392,10 @@ Columbia University Libraries. (n.d.). *Noteworthy acquisitions, digitization, a
           {
             prompt: "What does Columbia say it will do with the digitised images of the manuscripts?",
             options: [
-              "Not publish them",
+              "Not publish them, but make them available to community members",
               "Publish them in full alongside the new catalogue record created in 2023",
-              "Sell reproductions to fund further conservation of the volumes",
-              "Transfer them to the American Philosophical Society for publication",
+              "Sell reproductions",
+              "Transfer them to the APS",
             ],
             correctIndex: 0,
             explanation:
@@ -4419,7 +4419,7 @@ Columbia University Libraries. (n.d.). *Noteworthy acquisitions, digitization, a
             prompt: "What purpose does Columbia give for digitising the manuscripts?",
             options: [
               "Language revitalisation",
-              "Conservation, since handling the fragile originals damages them",
+              "Conservation",
               "Publication of a scholarly edition with English translations",
               "Sale of high-resolution reproductions to other research libraries",
             ],
@@ -4432,9 +4432,9 @@ Columbia University Libraries. (n.d.). *Noteworthy acquisitions, digitization, a
             prompt: "What did the American Philosophical Society do at Alert Bay in 2015 and 2016?",
             options: [
               "Gave away books of unpublished manuscripts",
-              "Opened a permanent reading room for community researchers",
-              "Purchased additional Hunt material from private collectors",
-              "Filmed the manuscripts for an exhibition that opened in New York",
+              "Opened a reading room",
+              "Bought more Hunt material",
+              "Filmed the manuscripts",
             ],
             correctIndex: 0,
             explanation:
@@ -4444,10 +4444,10 @@ Columbia University Libraries. (n.d.). *Noteworthy acquisitions, digitization, a
           {
             prompt: "What is the ordinary thing for a library to do with a digitised collection?",
             options: [
-              "Publish it",
+              "Publish it, which neither institution here did",
               "Restrict it to readers who visit the building in person",
-              "Transfer ownership of it to the community it came from",
-              "Sell it to whichever institution offers the most for it",
+              "Transfer ownership",
+              "Sell it",
             ],
             correctIndex: 0,
             explanation:
@@ -4458,9 +4458,9 @@ Columbia University Libraries. (n.d.). *Noteworthy acquisitions, digitization, a
             prompt: "What are the two questions this lesson insists on separating?",
             options: [
               "Correcting the record, and publishing the knowledge",
-              "Who owns the pages, and who paid for the digitisation",
-              "Which title page is right, and which catalogue record is right",
-              "Whether Hunt was an author, and whether Boas was an editor",
+              "Who owns, and who paid",
+              "Which title page is right",
+              "Hunt as author, Boas as editor",
             ],
             correctIndex: 0,
             explanation:
@@ -4471,7 +4471,7 @@ Columbia University Libraries. (n.d.). *Noteworthy acquisitions, digitization, a
             prompt: "Which of Columbia's two things is public?",
             options: [
               "The catalogue record",
-              "The digitised images, which anyone may download",
+              "The images",
               "Both, since a catalogue record implies public access to the item",
               "Neither, since the collection remains closed to all readers",
             ],
@@ -4484,9 +4484,9 @@ Columbia University Libraries. (n.d.). *Noteworthy acquisitions, digitization, a
             prompt: "What is on the list of public evidence this course rests on?",
             options: [
               "Title pages, prefaces, catalogue records and institutional posts",
-              "The manuscripts at Columbia and the American Philosophical Society",
-              "The six hundred pages of corrections Hunt sent between 1920 and 1933",
-              "The court record of the 1900 case heard in British Columbia",
+              "The manuscripts themselves",
+              "Hunt's six hundred pages",
+              "The 1900 court record",
             ],
             correctIndex: 0,
             explanation:
@@ -4497,8 +4497,8 @@ Columbia University Libraries. (n.d.). *Noteworthy acquisitions, digitization, a
             prompt: "Why were the manuscripts never needed for this course?",
             options: [
               "Reading a credit record does not require its contents",
-              "Because the manuscripts contain no information about who wrote them",
-              "Because the printed books reproduce the manuscripts in full anyway",
+              "They hold no authorship data",
+              "The books reproduce them",
               "Because the course covers only the period before Hunt began writing",
             ],
             correctIndex: 0,
@@ -4510,9 +4510,9 @@ Columbia University Libraries. (n.d.). *Noteworthy acquisitions, digitization, a
             prompt: "Why is this course held private?",
             options: [
               "It was written by someone outside the community",
-              "Because the sources it uses are not available to the public",
-              "Because the Bard Graduate Center holds copyright in the exhibition text",
-              "Because private courses carry no series code in this catalog",
+              "Because the sources it uses are not public",
+              "Because Bard holds copyright in the text",
+              "Because private courses carry no series code",
             ],
             correctIndex: 0,
             explanation:
@@ -4549,7 +4549,7 @@ Columbia University Libraries. (n.d.). *Noteworthy acquisitions, digitization, a
             prompt: "What does the lesson say is unusual about this particular case?",
             options: [
               "How good the evidence is",
-              "That the record-keeper eventually apologised in print",
+              "An apology",
               "That the community never learned what had been published",
               "That no correction of any kind has ever been attempted",
             ],
@@ -4575,9 +4575,9 @@ Columbia University Libraries. (n.d.). *Noteworthy acquisitions, digitization, a
             prompt: "What is an access protocol?",
             options: [
               "An agreed rule about who may see or use material",
-              "A library's technical standard for scanning fragile documents",
-              "A legal contract transferring ownership from a donor to an archive",
-              "A checklist an archivist follows when accepting a new collection",
+              "A scanning standard",
+              "An ownership contract",
+              "An accession checklist",
             ],
             correctIndex: 0,
             explanation:
@@ -4589,8 +4589,8 @@ Columbia University Libraries. (n.d.). *Noteworthy acquisitions, digitization, a
             options: [
               "The written explanation for why a course stays private",
               "The archival note explaining why a collection is closed to readers",
-              "The reason a publisher delays a book's release date",
-              "The condition a donor attaches to a gift of manuscripts",
+              "A publisher's delay",
+              "A donor's condition",
             ],
             correctIndex: 0,
             explanation:
@@ -4601,7 +4601,7 @@ Columbia University Libraries. (n.d.). *Noteworthy acquisitions, digitization, a
             prompt: "How much of the American Philosophical Society material was online as of 2018?",
             options: [
               "A small selection",
-              "All of it, fully catalogued and searchable by page",
+              "All",
               "None of it, since digitisation had not yet begun",
               "Everything except the correspondence with Boas",
             ],
@@ -4615,8 +4615,8 @@ Columbia University Libraries. (n.d.). *Noteworthy acquisitions, digitization, a
             options: [
               "No stories, songs, prayers, hereditary names or ceremonial detail",
               "Only the passages the American Philosophical Society has already put online",
-              "Only the passages needed to show what the corrections were about",
-              "Everything that appears in the published books, since those are public",
+              "Only what shows the corrections",
+              "Everything in the published books",
             ],
             correctIndex: 0,
             explanation:
@@ -4639,10 +4639,10 @@ Columbia University Libraries. (n.d.). *Noteworthy acquisitions, digitization, a
           {
             prompt: "What does the course say a learner can do with almost all of its evidence?",
             options: [
-              "Open it from a laptop",
+              "Open it from a laptop, since it is all public",
               "Request it by appointment from either of the two holding archives",
-              "Read it only in the gallery that mounted the 2019 exhibition",
-              "Obtain it through a community member with access rights",
+              "Visit the gallery",
+              "Ask a community member",
             ],
             correctIndex: 0,
             explanation:
@@ -4668,9 +4668,9 @@ Columbia University Libraries. (n.d.). *Noteworthy acquisitions, digitization, a
             prompt: "Which sentence best states this course's central finding about George Hunt?",
             options: [
               "He was credited, at a different rank in almost every book",
-              "He was never named anywhere in any of the six publications examined",
-              "He was named as the sole author of every book he wrote for Boas",
-              "He was credited identically on all six title pages between 1897 and 1930",
+              "He was never named",
+              "He was named sole author",
+              "He was credited identically on all six",
             ],
             correctIndex: 0,
             explanation:
@@ -4681,9 +4681,9 @@ Columbia University Libraries. (n.d.). *Noteworthy acquisitions, digitization, a
             prompt: "What does the 1897 inner title page say about Hunt?",
             options: [
               "Notes made by Mr. George Hunt",
-              "Data collected by George Hunt, printed above the author line",
+              "Data collected",
               "Written in Kwak'wala by George Hunt and translated by Franz Boas",
-              "Nothing, since only the preface mentions him at all",
+              "Nothing",
             ],
             correctIndex: 0,
             explanation:
@@ -4709,7 +4709,7 @@ Columbia University Libraries. (n.d.). *Noteworthy acquisitions, digitization, a
               "Based on data collected by George Hunt",
               "With the collaboration of Mr. George Hunt of Fort Rupert, British Columbia",
               "Recorded in Kwak'wala and translated into English by George Hunt",
-              "Prepared for the press by F. W. Hodge, Ethnologist-in-Charge",
+              "Prepared by F. W. Hodge",
             ],
             correctIndex: 0,
             explanation:
@@ -4720,9 +4720,9 @@ Columbia University Libraries. (n.d.). *Noteworthy acquisitions, digitization, a
             prompt: "Why does this course attribute rather than assert the Kwakiutl Texts credit?",
             options: [
               "Nobody in this build has read the title page",
-              "Because the volumes were published anonymously and carry no author line",
-              "Because the curators and the catalogues contradict each other about it",
-              "Because the Kwakwaka'wakw Editorial Committee has asked that it be withheld",
+              "Because the volumes carry no author line",
+              "Because the sources contradict each other",
+              "Because the Committee asked it be withheld",
             ],
             correctIndex: 0,
             explanation:
@@ -4733,8 +4733,8 @@ Columbia University Libraries. (n.d.). *Noteworthy acquisitions, digitization, a
             prompt: "Which 1906 publication carries Hunt's name first, on his own piece?",
             options: [
               "A paper in the Boas Anniversary Volume",
-              "The 1897 monograph, reprinted that year as a separate offprint",
-              "The Bureau of American Ethnology's thirty-fifth annual report",
+              "The 1897 offprint",
+              "The Bureau's 35th report",
               "The Columbia University Contributions to Anthropology, volume two",
             ],
             correctIndex: 0,
@@ -4746,9 +4746,9 @@ Columbia University Libraries. (n.d.). *Noteworthy acquisitions, digitization, a
             prompt: "What does the Bureau's 1921 note make Hunt responsible for?",
             options: [
               "The accuracy, authenticity and character of the contents",
-              "The typesetting, proofreading and correction of the printed plates",
-              "The cost of the fieldwork that produced the material in the paper",
-              "The translation of the Kwak'wala into readable English prose",
+              "The typesetting and proofreading",
+              "The cost of the fieldwork",
+              "The English translation",
             ],
             correctIndex: 0,
             explanation:
@@ -4758,10 +4758,10 @@ Columbia University Libraries. (n.d.). *Noteworthy acquisitions, digitization, a
           {
             prompt: "Which authorship criterion does the 1921 volume satisfy for Hunt?",
             options: [
-              "Accountability",
+              "Accountability, the fourth ICMJE criterion",
               "Drafting, since the note says he wrote the finished text of the paper",
               "Approval, since the note says he read and approved the final version",
-              "Conception, since the note says he designed the study himself",
+              "Conception",
             ],
             correctIndex: 0,
             explanation:
@@ -4772,8 +4772,8 @@ Columbia University Libraries. (n.d.). *Noteworthy acquisitions, digitization, a
             prompt: "What asymmetry does the 1921 arrangement create?",
             options: [
               "Blame runs one way and credit the other",
-              "The community is named but the individual is not",
-              "The preface is signed but the title page is anonymous",
+              "The community is named",
+              "The preface is signed",
               "The catalogue is accurate but the printed book is not",
             ],
             correctIndex: 0,
@@ -4785,9 +4785,9 @@ Columbia University Libraries. (n.d.). *Noteworthy acquisitions, digitization, a
             prompt: "Which dates does this course use for Hunt, and what does it do about the disagreement?",
             options: [
               "1854 to 1933, and it names the source that says otherwise",
-              "1856 to 1931, and it treats the other two sources as errors",
-              "It gives no dates at all, because three sources disagree",
-              "It averages the two pairs and prints the midpoint",
+              "1856 to 1931, treating the rest as errors",
+              "No dates at all",
+              "It averages the two",
             ],
             correctIndex: 0,
             explanation:
@@ -4812,8 +4812,8 @@ Columbia University Libraries. (n.d.). *Noteworthy acquisitions, digitization, a
             options: [
               "He was born at Fort Rupert to a Tlingit mother and a British father",
               "He was born in Southeast Alaska but to a Kwagu'ł mother",
-              "He was born in Victoria, where his father's company had its offices",
-              "Nothing, since every source this course read uses that description",
+              "He was born in Victoria",
+              "Nothing is wrong with it",
             ],
             correctIndex: 0,
             explanation:
@@ -4825,7 +4825,7 @@ Columbia University Libraries. (n.d.). *Noteworthy acquisitions, digitization, a
             options: [
               "The necessary control material",
               "The definitive version, against which Hunt's pages count as drafts",
-              "Supplementary notes, gathered to fill the gaps Hunt had left",
+              "Supplementary notes",
               "The Jesup corpus, meaning everything the expedition published",
             ],
             correctIndex: 0,
@@ -4837,9 +4837,9 @@ Columbia University Libraries. (n.d.). *Noteworthy acquisitions, digitization, a
             prompt: "What kind of working system do Boas's prefaces describe?",
             options: [
               "Training and then correspondence",
-              "A salaried museum post with fixed hours and annual reports",
-              "A series of interviews conducted at Fort Rupert each summer",
-              "A publishing contract paying Hunt for each completed volume",
+              "A salaried post at the museum",
+              "Summer interviews at Fort Rupert",
+              "A per-volume publishing contract",
             ],
             correctIndex: 0,
             explanation:
@@ -4849,9 +4849,9 @@ Columbia University Libraries. (n.d.). *Noteworthy acquisitions, digitization, a
           {
             prompt: "What does Columbia's 2023 post say about the manuscripts Boas gave the university?",
             options: [
-              "He did not write them",
-              "He wrote them all himself from notes Hunt had dictated",
-              "He purchased them from Hunt's estate after 1933",
+              "He did not write them; they are in Hunt's hand",
+              "He wrote them himself",
+              "He purchased them from Hunt's estate",
               "He never gave them to Columbia, which bought them at auction",
             ],
             correctIndex: 0,
@@ -4876,7 +4876,7 @@ Columbia University Libraries. (n.d.). *Noteworthy acquisitions, digitization, a
             prompt: "What question does provenance answer, and which does it leave open?",
             options: [
               "It answers who gave this, not who made this",
-              "It answers who made this, not who owns it now",
+              "Who made it, not who owns it",
               "It answers where an item is shelved, not what it contains",
               "It answers when an item arrived, not who paid for it",
             ],
@@ -4889,9 +4889,9 @@ Columbia University Libraries. (n.d.). *Noteworthy acquisitions, digitization, a
             prompt: "How does the American Philosophical Society describe its Hunt holding?",
             options: [
               "Among the largest bodies of work by an Indigenous person it holds",
-              "A minor appendix to the far larger Franz Boas papers",
-              "The oldest manuscript collection in any American learned society",
-              "A collection of little research value until it is fully translated",
+              "A minor appendix",
+              "The oldest collection it holds",
+              "A collection of little research value until it is fully translated into English",
             ],
             correctIndex: 0,
             explanation:
@@ -4901,10 +4901,10 @@ Columbia University Libraries. (n.d.). *Noteworthy acquisitions, digitization, a
           {
             prompt: "What does the American Philosophical Society say governs the manuscripts?",
             options: [
-              "Kwakwaka'wakw protocols",
-              "United States copyright law, applied to all of its holdings",
-              "The terms Boas set out in his will of 1942",
-              "Nothing, since ownership passed outright to the Society",
+              "Kwakwaka'wakw protocols, worked out with several communities",
+              "US copyright law",
+              "The terms of Boas's will",
+              "Nothing; the Society owns them",
             ],
             correctIndex: 0,
             explanation:
@@ -4915,9 +4915,9 @@ Columbia University Libraries. (n.d.). *Noteworthy acquisitions, digitization, a
             prompt: "What do the four Internet Archive catalogue records show?",
             options: [
               "Four different answers, one of them a different man",
-              "One consistent answer that matches all six title pages",
+              "One consistent answer",
               "That every catalogue names Hunt as sole author of the 1897 book",
-              "That no catalogue has ever recorded Hunt's name at all",
+              "That no catalogue has ever recorded Hunt's name at all, in any form",
             ],
             correctIndex: 0,
             explanation:
@@ -4928,8 +4928,8 @@ Columbia University Libraries. (n.d.). *Noteworthy acquisitions, digitization, a
             prompt: "Which catalogue record ranks Hunt higher than the printed book does?",
             options: [
               "The 1921 volume's, which lists him as a creator",
-              "The Getty-sourced 1897 record, which names him first",
-              "The 1975 reprint record, which puts him in the creator field",
+              "The Getty-sourced record",
+              "The 1975 reprint record",
               "The Harvard-sourced 1897 record, which calls him the author",
             ],
             correctIndex: 0,
@@ -4941,9 +4941,9 @@ Columbia University Libraries. (n.d.). *Noteworthy acquisitions, digitization, a
             prompt: "What practical rule does the catalogue lesson give?",
             options: [
               "If the credit matters, open the book",
-              "Prefer whichever record the largest institution published",
-              "Accept the version that appears in the greatest number of records",
-              "Treat the most recent record as correcting all earlier ones",
+              "Prefer the largest institution's record",
+              "Accept the version most records give",
+              "Treat the newest record as correct",
             ],
             correctIndex: 0,
             explanation:
@@ -4955,8 +4955,8 @@ Columbia University Libraries. (n.d.). *Noteworthy acquisitions, digitization, a
             options: [
               "The pages carry many people's knowledge, not one man's",
               "Because Hunt did not write the pages, according to the archives",
-              "Because a printed title page can never be corrected at all",
-              "Because Boas did the editing, which counts as authorship",
+              "A title page cannot be corrected",
+              "Boas's editing counts as authorship",
             ],
             correctIndex: 0,
             explanation:
@@ -4993,9 +4993,9 @@ Columbia University Libraries. (n.d.). *Noteworthy acquisitions, digitization, a
             prompt: "What happened to the 1897 book in 1900?",
             options: [
               "It was entered in court as evidence of what Hunt was",
-              "It was withdrawn from sale at the request of the Canadian authorities",
-              "It was reprinted with Hunt's name added to the offprint title page",
-              "It was sent to Fort Rupert so that the community could correct it",
+              "It was withdrawn from sale",
+              "It was reprinted with Hunt's name",
+              "It was sent to Fort Rupert",
             ],
             correctIndex: 0,
             explanation:
@@ -5007,7 +5007,7 @@ Columbia University Libraries. (n.d.). *Noteworthy acquisitions, digitization, a
             options: [
               "A credit line can be a legal identity",
               "A court can order a publisher to change a title page",
-              "A book is admissible evidence in any jurisdiction",
+              "Books are evidence anywhere",
               "An arrest always follows from a published description",
             ],
             correctIndex: 0,
@@ -5020,8 +5020,8 @@ Columbia University Libraries. (n.d.). *Noteworthy acquisitions, digitization, a
             options: [
               "Nobody here has read the court record",
               "Because Bard's account says the judge ignored the book entirely",
-              "Because the book arrived after the verdict had been given",
-              "Because saying so would credit Boas rather than Hunt",
+              "It arrived too late",
+              "It would credit Boas",
             ],
             correctIndex: 0,
             explanation:
@@ -5058,7 +5058,7 @@ Columbia University Libraries. (n.d.). *Noteworthy acquisitions, digitization, a
             prompt: "What does the April 1897 letter to Kwagu'ł chiefs describe?",
             options: [
               "A box in which material would be kept",
-              "A contract setting out payment for each page recorded",
+              "A payment contract",
               "A request for permission to publish the following year",
               "An apology for material already printed without consent",
             ],
@@ -5070,10 +5070,10 @@ Columbia University Libraries. (n.d.). *Noteworthy acquisitions, digitization, a
           {
             prompt: "How many pages of corrections had Hunt sent Boas by his death?",
             options: [
-              "More than 600",
-              "Nearly 8,000, matching Columbia's count of its manuscript holding",
-              "Over 6,000, matching the count the American Philosophical Society gives",
-              "Fourteen volumes, one for each volume Columbia holds",
+              "More than 600, sent from 1920 until his death in 1933",
+              "Nearly 8,000",
+              "Over 6,000",
+              "Fourteen volumes",
             ],
             correctIndex: 0,
             explanation:
@@ -5097,8 +5097,8 @@ Columbia University Libraries. (n.d.). *Noteworthy acquisitions, digitization, a
             prompt: "What does the phrase before one of us die record about the situation in 1920?",
             options: [
               "Urgency and a dependency between the two men",
-              "That Hunt intended to publish the corrections himself",
-              "That Boas had refused to accept any further material",
+              "Hunt would self-publish",
+              "Boas refused more material",
               "That the Bureau had set a deadline for the 1921 volume",
             ],
             correctIndex: 0,
@@ -5110,9 +5110,9 @@ Columbia University Libraries. (n.d.). *Noteworthy acquisitions, digitization, a
             prompt: "What does the 2019 exhibition page say the 1897 book fails to address?",
             options: [
               "Three aspects of its making, including Hunt's status as a full co-author",
-              "The names of every Kwakwaka'wakw person whose knowledge it records",
-              "The Canadian law under which the potlatch was prohibited",
-              "The disagreement between Boas and the Bureau about the author line",
+              "Every contributor's name",
+              "The potlatch law",
+              "A Boas-Bureau dispute",
             ],
             correctIndex: 0,
             explanation:
@@ -5123,7 +5123,7 @@ Columbia University Libraries. (n.d.). *Noteworthy acquisitions, digitization, a
             prompt: "In credit terms, what did the 2019 exhibition change?",
             options: [
               "The authority of the co-authorship claim",
-              "The wording of the 1897 title page in all surviving copies",
+              "The 1897 title page",
               "The catalogue records held for the book by the Internet Archive",
               "The ownership of the manuscripts held in New York and Philadelphia",
             ],
@@ -5136,8 +5136,8 @@ Columbia University Libraries. (n.d.). *Noteworthy acquisitions, digitization, a
             prompt: "What does the course mean by saying the exhibition was made with rather than about?",
             options: [
               "The community co-presented it and the family took part",
-              "It was assembled entirely from objects owned by the gallery",
-              "It described the community without quoting anyone from it",
+              "It used only gallery objects",
+              "It quoted no one from it",
               "It was curated by a committee of anthropologists from two universities",
             ],
             correctIndex: 0,
@@ -5162,9 +5162,9 @@ Columbia University Libraries. (n.d.). *Noteworthy acquisitions, digitization, a
             prompt: "Which two questions does the course's last lesson separate?",
             options: [
               "Correcting a credit record, and publishing the knowledge it carries",
-              "Who owns the pages, and who paid for their conservation",
-              "Which title page is right, and which catalogue record is right",
-              "Whether Hunt wrote the pages, and whether Boas edited them",
+              "Who owns the pages",
+              "Which title page is right",
+              "Hunt as writer, Boas as editor",
             ],
             correctIndex: 0,
             explanation:
