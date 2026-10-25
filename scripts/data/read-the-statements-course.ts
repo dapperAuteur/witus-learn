@@ -1421,6 +1421,184 @@ The same word, "debt," means two different things in two sources. Neither source
         ],
       },
     },
-    // ── END OF LESSONS ──
+    // ══════════════════════════════════════════════════════════════════════
+    // SECTION 5: Capstone and final
+    // ══════════════════════════════════════════════════════════════════════
+    {
+      slug: "capstone-five-questions",
+      title: "14 · Capstone: five questions about one filing",
+      section: S5,
+      lessonType: "assignment",
+      recallContent: [
+        {
+          prompt: "What two parts make up the SEC's registration test for an issuer that is not a bank?",
+          answer: "More than $10 million of total assets, and holders of record of 2,000 persons, or 500 who are not accredited investors.",
+        },
+        {
+          prompt: "Where does a filer say whether it is required to file reports?",
+          answer: "On the 10-K cover page, by answering the Section 13 or 15(d) question.",
+        },
+      ],
+      body: `${QR}
+
+**What this capstone asks.** Five questions about one company, answered from its own filing, with the page for every answer. Part A works through them on the filing this course has read, the 10-K for ${DATED}, accession number 0001058090-26-000009. Try each one before you open its answer. Part B asks the same five questions about a 10-K you choose.
+
+**The rule for every answer.** Give the figure, the Item and the printed page. An answer without a page is an opinion; an answer with one is something anyone can check.
+
+## Part A · The course's filing
+
+**Question 1. Did the company make money in fiscal 2025, and where does it say so?** Look at the income statement.
+
+:::reveal Did the company make money in fiscal 2025? Give the figure and the page. ||| Yes. Net income was 1,535,761 thousand, about $1.54 billion (Item 8, page 37, Consolidated Statements of Income and Comprehensive Income).
+
+**Question 2. Where did the cash go?** Cash and cash equivalents fell during the year. Find the section of the cash flow statement that used the most, and the single line inside it.
+
+:::reveal Where did the cash go in 2025? ||| Financing activities used 2,470,898 thousand, and 2,425,516 of that was the repurchase of common stock (Item 8, page 39). Operating activities provided 2,113,926, so buybacks took more cash than the business produced.
+
+**Question 3. Does the balance sheet balance?** Use the equation from lesson 1.
+
+:::reveal Does the December 31, 2025 balance sheet balance? ||| Yes. Total liabilities 6,163,924 plus total shareholders' equity 2,830,607 equals 8,994,531, which is total assets (Item 8, page 36; all in thousands).
+
+**Question 4. What does the MD&A say drove revenue, and do the statements agree?** Read the highlights and the sales bridge, then check them against the income statement.
+
+:::reveal What drove revenue in 2025, and do the statements agree? ||| The MD&A says total revenue rose 5.4% to $11.9 billion while comparable restaurant sales fell 1.7% (Item 7, page 24). The sales bridge shows new restaurants adding 327.0 and 481.8 million (page 26). Page 37 agrees: 11,925,601 divided by 11,313,853 is about 1.054.
+
+**Question 5. Which policy produced the unearned revenue line, and what does the note report beside it?** Start at the balance sheet line and go to the notes.
+
+:::reveal Which policy produced unearned revenue, and what does the note report beside it? ||| The gift card and rewards policies in Note 1 (page 45): gift card balances are "initially recorded as unearned revenue" until redeemed, and rewards deferred revenue is included there too. Note 3 (page 48) gives the gift card liability (174,600) and the rewards roll-forward (ending 63,799). Note 1 also reports breakage revenue of 27,877, the source of the MD&A's $20.1 million (lesson 10).
+
+**How you did.** If you found every page on your own, you can read a 10-K. If you had to look back, the lesson named in each answer is the one to reread.
+
+## Part B · A filing you choose (ungraded)
+
+Now do it on your own. Pick any company that files a 10-K, find its newest one on EDGAR (lesson 8), and answer the same five questions. This part is not graded; it is practice, and the template is there so your work is complete enough for someone else to check.
+
+Copy this template into the box below and fill it in:
+
+- **Company and form:** (name), Form 10-K for fiscal year (year)
+- **Filing date and accession number:** (date), (accession number)
+- **1. Did it make money?** (net income figure), Item 8, page (page)
+- **2. Where did the cash go?** (largest using section and its biggest line), Item 8, page (page)
+- **3. Does the balance sheet balance?** (total liabilities) + (total equity) = (total assets), Item 8, page (page)
+- **4. What does the MD&A say drove revenue, and do the statements agree?** (claim), Item 7, page (page); (your check), Item 8, page (page)
+- **5. Which policy produced one liability line, and what does its note report?** (policy), Note (number), page (page)
+
+Three things to watch, from this course. Check the units in each statement's heading before you copy a number. Check whether a caption says what a line leaves out. And if two of your answers will not tie, look for a misread heading before you decide anything is wrong.
+
+**One last time: what this is.** This course, and this capstone, describe what a public filing says. Answering these five questions does not tell you whether to buy, hold or sell any stock, and nothing here is investment advice. It tells you that you can read the document, which is where any honest judgment would have to start.
+
+## Vocabulary
+- **Capstone**: a final piece of work that uses every part of a course.
+- **Locator**: the Item and printed page that tell a reader where a figure is.
+- **Template**: a fill-in outline that makes sure every answer carries its source.
+
+## Sources
+- ${CMG_10K} Locator: Item 7, p. 24 (highlights) and p. 26 (sales bridge); Item 8, p. 36 (balance sheet), p. 37 (income statement), p. 39 (cash flows); Note 1, p. 45 (gift cards, rewards, breakage); Note 3, p. 48 (gift card liability and rewards roll-forward). ${TB}
+- ${SEC_SEARCH} Locator: Company Search, for Part B. ${TA}`,
+    },
+    {
+      slug: "final-quiz",
+      title: "Final quiz · Read the Statements",
+      section: S5,
+      body: "The final check across the whole course: the equation and double entry, the four statements and how they tie, finding and reading the filing, and judgment. Many questions ask you to locate a figure by its page, the skill the capstone practices. Each answer links back to the lesson that teaches it.",
+      quiz: {
+        passingScore: 80,
+        questionsPerAttempt: 10,
+        shuffleOptions: true,
+        questions: [
+          { prompt: "Capstone: on which page would you prove the company made money in fiscal 2025?", options: ["Page 37", "Page 36", "Page 39", "Page 24"], correctIndex: 0, explanation: "Net income of 1,535,761 thousand is on the income statement, page 37 (lesson 14).", sourceLessonSlug: "capstone-five-questions" },
+          { prompt: "Capstone: on which page would you show where the cash went?", options: ["Page 36", "Page 39", "Page 37", "Page 61"], correctIndex: 1, explanation: "The cash flow statement, page 39, shows financing used 2,470,898 thousand (lesson 14).", sourceLessonSlug: "capstone-five-questions" },
+          { prompt: "Capstone: which page proves the balance sheet balances?", options: ["Page 24", "Page 39", "Page 36", "Page 45"], correctIndex: 2, explanation: "Page 36: 6,163,924 + 2,830,607 = 8,994,531 (lesson 14).", sourceLessonSlug: "capstone-five-questions" },
+          { prompt: "Capstone: which pages hold the MD&A's revenue claim and its sales bridge?", options: ["Pages 36 and 37", "Pages 40 and 41", "Pages 31 and 32", "Pages 24 and 26"], correctIndex: 3, explanation: "Highlights on page 24, the bridge on page 26 (lesson 14).", sourceLessonSlug: "capstone-five-questions" },
+          { prompt: "Capstone: which note and page hold the gift card policy?", options: ["Note 1, page 45", "Note 3, page 48", "Note 9, page 58", "Note 12, page 61"], correctIndex: 0, explanation: "Note 1, page 45; Note 3, page 48 gives the liability tables (lesson 14).", sourceLessonSlug: "capstone-five-questions" },
+          { prompt: "Capstone: what must every answer carry?", options: ["A stock price", "Item and page", "A forecast", "A rating"], correctIndex: 1, explanation: "The figure with its Item and printed page, so anyone can check it (lesson 14).", sourceLessonSlug: "capstone-five-questions" },
+          { prompt: "What two identifiers does the Part B template ask for first?", options: ["Ticker and price", "Auditor and fee", "Date and accession", "CEO and CFO names"], correctIndex: 2, explanation: "The filing date and the accession number (lesson 14).", sourceLessonSlug: "capstone-five-questions" },
+          { prompt: "Is Part B of the capstone graded?", options: ["Yes, out of 100", "Yes, pass or fail", "Only by the SEC", "No, it is practice"], correctIndex: 3, explanation: "Part B is ungraded practice on a filing you choose (lesson 14).", sourceLessonSlug: "capstone-five-questions" },
+          { prompt: "In 2025, did buybacks use more cash than operations provided?", options: ["Yes, they did", "No, much less", "They were equal", "None were made"], correctIndex: 0, explanation: "Repurchases were 2,425,516 thousand; operating activities provided 2,113,926 (lesson 14).", sourceLessonSlug: "capstone-five-questions" },
+          { prompt: "Which statement is a snapshot as of one date?", options: ["Income statement", "Balance sheet", "Cash flow statement", "Equity statement"], correctIndex: 1, explanation: "The balance sheet, which the SBA calls a snapshot (lesson 1).", sourceLessonSlug: "two-sides-of-every-transaction" },
+          { prompt: "Which statement starts its operating section at net income?", options: ["The balance sheet", "The income statement", "The cash flow statement", "The auditor's report"], correctIndex: 2, explanation: "The cash flow statement, under the indirect method (lesson 6).", sourceLessonSlug: "the-cash-flow-statement" },
+          { prompt: "What makes double entry self-balancing?", options: ["An annual outside audit", "Monthly bank statements", "Quarterly tax filings", "Paired debits and credits"], correctIndex: 3, explanation: "Every transaction is a debit in one account and a credit in another (lesson 2).", sourceLessonSlug: "debits-and-credits" },
+          { prompt: "A guest redeems a $25 gift card for food. Which account shrinks?", options: ["Unearned revenue", "Sales revenue", "Inventory on hand", "Retained earnings"], correctIndex: 0, explanation: "The liability shrinks as revenue is recognized (lesson 3).", sourceLessonSlug: "when-a-sale-counts" },
+          { prompt: "Which word in the rewards roll-forward marks money held back as owed?", options: ["Recognized", "Deferred", "Ending", "Beginning"], correctIndex: 1, explanation: "\"Revenue deferred\" is added to the liability (lesson 3).", sourceLessonSlug: "when-a-sale-counts" },
+          { prompt: "What is current assets minus current liabilities called?", options: ["Net income", "Operating margin", "Working capital", "Retained earnings"], correctIndex: 2, explanation: "Working capital: 278,811 thousand at the end of 2025 (lesson 4).", sourceLessonSlug: "the-balance-sheet" },
+          { prompt: "Which line does Regulation S-X make a company show apart from its other cash?", options: ["Inventory", "Unearned revenue", "Lease assets", "Restricted cash"], correctIndex: 3, explanation: "Cash \"restricted as to withdrawal or usage\" (lesson 4).", sourceLessonSlug: "the-balance-sheet" },
+          { prompt: "Which line on page 37 is revenue minus operating expenses?", options: ["Income from operations", "Net income for the year", "Diluted earnings per share", "Provision for income taxes"], correctIndex: 0, explanation: "Income from operations, 1,935,798 thousand (lesson 5).", sourceLessonSlug: "the-income-statement" },
+          { prompt: "What does a caption beginning \"exclusive of\" tell you?", options: ["The line is audited", "What the line leaves out", "The line is estimated", "Who prepared the line"], correctIndex: 1, explanation: "It names what the line does not include, such as depreciation (lesson 5).", sourceLessonSlug: "the-income-statement" },
+          { prompt: "Which line is added back on the cash flow statement because no cash was paid for it that year?", options: ["Repurchases", "Capital spending", "Depreciation", "Income taxes"], correctIndex: 2, explanation: "Depreciation and amortization, 361,382 thousand (lesson 6).", sourceLessonSlug: "the-cash-flow-statement" },
+          { prompt: "Which figure appears on both page 37 and page 38?", options: ["Total assets", "Ending cash", "Inventory", "Net income"], correctIndex: 3, explanation: "Net income, 1,535,761, links the income statement to the equity statement (lesson 7).", sourceLessonSlug: "how-the-statements-tie" },
+          { prompt: "To tie page 39's ending cash to page 36, what must you add to cash?", options: ["Restricted cash", "Inventory", "Unearned revenue", "Lease assets"], correctIndex: 0, explanation: "350,545 + 35,364 = 385,909 (lesson 7).", sourceLessonSlug: "how-the-statements-tie" },
+          { prompt: "In this filing, repurchases mostly reduce which equity line?", options: ["Common stock only", "Retained earnings", "Treasury stock", "Total revenue"], correctIndex: 1, explanation: "Retained earnings, because shares are retired rather than held as treasury stock (lesson 7).", sourceLessonSlug: "how-the-statements-tie" },
+          { prompt: "What names exactly one filing on EDGAR?", options: ["The company's CIK", "The stock ticker", "The accession number", "The fiscal year"], correctIndex: 2, explanation: "The accession number; the CIK names the company (lesson 8).", sourceLessonSlug: "find-the-10-k" },
+          { prompt: "Which Item of a 10-K is marked Reserved today?", options: ["Item 1", "Item 7", "Item 8", "Item 6"], correctIndex: 3, explanation: "Item 6, after the 2020 rule eliminated Selected Financial Data (lesson 8).", sourceLessonSlug: "find-the-10-k" },
+          { prompt: "What filing deadline applied to this company's 10-K?", options: ["60 days", "75 days", "90 days", "35 days"], correctIndex: 0, explanation: "A large accelerated filer has 60 days; it filed in 35 (lesson 8).", sourceLessonSlug: "find-the-10-k" },
+          { prompt: "What does the SEC say about the accuracy of a 10-K?", options: ["It guarantees it", "It does not vouch", "It audits it yearly", "It rates it A to F"], correctIndex: 1, explanation: "\"The SEC neither writes the 10-K nor vouches for its accuracy\" (lesson 8).", sourceLessonSlug: "find-the-10-k" },
+          { prompt: "What does the MD&A give, per Item 303?", options: ["An audit opinion", "A stock rating", "Management's view", "A tax summary"], correctIndex: 2, explanation: "Material information from management's perspective (lesson 9).", sourceLessonSlug: "md-and-a-against-the-numbers" },
+          { prompt: "Which line in the sales bridge did most to lift 2025 revenue?", options: ["Comparable restaurant sales", "Restaurant closures", "Other, incl. breakage", "Restaurants opened in 2024"], correctIndex: 3, explanation: "Restaurants opened in 2024 added 481.8 million, the largest line (lesson 9).", sourceLessonSlug: "md-and-a-against-the-numbers" },
+          { prompt: "Where does Note 1 begin in this filing?", options: ["Page 40", "Page 36", "Page 34", "Page 47"], correctIndex: 0, explanation: "Page 40, running to page 46 (lesson 10).", sourceLessonSlug: "the-footnote-behind-the-number" },
+          { prompt: "How much more breakage revenue did 2025 record than 2024?", options: ["$27.9 million", "$20.1 million", "$7.8 million", "$1.2 million"], correctIndex: 1, explanation: "27,877 minus 7,760 = 20,117 thousand (lesson 10).", sourceLessonSlug: "the-footnote-behind-the-number" },
+          { prompt: "Which part of the filing first pointed to the breakage change?", options: ["The cover page", "The balance sheet", "An MD&A footnote", "The auditor's report"], correctIndex: 2, explanation: "The footnote to the sales bridge on page 26 (lesson 10).", sourceLessonSlug: "the-footnote-behind-the-number" },
+          { prompt: "Who gives an opinion on the financial statements?", options: ["The SEC staff", "The CEO and CFO", "The stock exchange", "The outside auditor"], correctIndex: 3, explanation: "The independent auditor, Ernst & Young LLP (lesson 11).", sourceLessonSlug: "the-auditors-opinion" },
+          { prompt: "Where are this filing's CEO and CFO certifications?", options: ["Exhibits 31 and 32", "Item 8, page 36", "Note 1, page 40", "Item 6, page 23"], correctIndex: 0, explanation: "EX-31.1, EX-31.2 and EX-32.1 (lesson 11).", sourceLessonSlug: "the-auditors-opinion" },
+          { prompt: "Which critical estimate touches the largest balance sheet lines?", options: ["Income taxes", "Leases", "Stock awards", "Impairment"], correctIndex: 1, explanation: "Leases: operating lease assets and liabilities are the largest lines (lesson 12).", sourceLessonSlug: "what-management-chose" },
+          { prompt: "Liabilities over equity is about 2.18. What makes up most of the top?", options: ["Bank loans drawn", "Bonds outstanding", "Lease liabilities", "Taxes unpaid now"], correctIndex: 2, explanation: "Operating lease liabilities, about 82% of total liabilities (lesson 12).", sourceLessonSlug: "what-management-chose" },
+          { prompt: "Who issues the rule that defines critical accounting estimates?", options: ["The FASB", "The PCAOB", "The IRS", "The SEC"], correctIndex: 3, explanation: "The SEC, in Item 303(b)(3) of Regulation S-K (lesson 12).", sourceLessonSlug: "what-management-chose" },
+          { prompt: "Which part of the filing lists the four critical estimates?", options: ["The MD&A, Item 7", "The auditor's report", "Note 12 on debt", "The cover page"], correctIndex: 0, explanation: "Item 7, pages 31 to 32 (lesson 12).", sourceLessonSlug: "what-management-chose" },
+          { prompt: "What is the SEC's registration test about, in two words?", options: ["Revenue, profit", "Assets, holders", "Staff, sites", "Debt, cash"], correctIndex: 1, explanation: "Total assets and holders of record (lesson 13).", sourceLessonSlug: "who-has-to-file" },
+          { prompt: "What does No in this filing's Section 13 or 15(d) box tell you?", options: ["It filed late", "It is a bank", "It must file", "It is private"], correctIndex: 2, explanation: "It is required to file reports (lesson 13).", sourceLessonSlug: "who-has-to-file" },
+          { prompt: "Who decides what a 7(a) lender asks a private company for?", options: ["The SEC", "The IRS", "The SBA alone", "The lender"], correctIndex: 3, explanation: "The lender helps determine the documents, which vary (lesson 13).", sourceLessonSlug: "who-has-to-file" },
+          { prompt: "Does this course say whether to buy the company's stock?", options: ["No, never", "Yes, buy it", "Yes, sell it", "Only in lesson 9"], correctIndex: 0, explanation: "It describes a filing; it is not investment advice (lesson 1).", sourceLessonSlug: "two-sides-of-every-transaction" },
+          { prompt: "Where does unearned revenue sit in the accounting equation?", options: ["An asset", "A liability", "Equity", "An expense"], correctIndex: 1, explanation: "It is owed to customers, so it is a liability (lesson 3).", sourceLessonSlug: "when-a-sale-counts" },
+          { prompt: "Which regulation sets the content of Item 8's statements?", options: ["Regulation S-K", "Publication 583", "Regulation S-X", "Form 1040"], correctIndex: 2, explanation: "Item 8 files statements meeting Regulation S-X (lesson 8).", sourceLessonSlug: "find-the-10-k" },
+          { prompt: "What did working capital do from 2024 to 2025?", options: ["It doubled in size", "It held steady", "It turned negative", "It fell by about half"], correctIndex: 3, explanation: "From 611,819 to 278,811 thousand (lesson 4).", sourceLessonSlug: "the-balance-sheet" },
+        ],
+      },
+    },
+  ],
+};
+
+// ── The Learn.WitUS preview copy ──────────────────────────────────────────────────────────────────
+// Learn.WitUS shows FIRM-01 as the preview of a series whose home is ElementaryMBA (the preview rule,
+// BAM 2026-10-23; src/lib/series-previews.ts). It is the same course plus one closing lesson that
+// names ElementaryMBA and links to its front page (BAM's answer 6: until the sign-up page ships, the
+// link goes to the front page), placed just before the final quiz so the quiz still comes last, and
+// three final-quiz questions on it so the lesson is assessed in its own section. The link is the
+// domain the README and scripts/seed-tenants.ts give for the school; BAM confirms it before release.
+
+const SERIES_CONTINUES: AuthoredLesson = {
+  slug: "the-series-continues",
+  title: "The series continues",
+  section: S5,
+  body: `**Where this course sits.** Read the Statements is the first course in a series called How a Firm Works. You have learned to open one company's annual report and read its four statements, its notes, its auditor's opinion and its management's account of the year. The courses that follow build on that reading.
+
+**Where the rest is.** The rest of the How a Firm Works series continues on ElementaryMBA, a separate school, not on Learn.WitUS. This course is shown here as a preview, so you can start the series where you already are.
+
+**ElementaryMBA is not open yet.** Its front page is where you can see when the school and its courses launch: [ElementaryMBA](https://elementarymba.com/).
+
+**What carries over.** Everything you practiced here travels with you: the equation, double entry, the four statements and how they tie, finding a 10-K on EDGAR, checking the MD&A against the numbers, reading the notes and the auditor's opinion, and asking what goes into a ratio before you use it. Before you move on, try Part B of the capstone on a filing you choose. It is the best test of whether the reading habit has stuck.
+
+:::reveal Where does the How a Firm Works series continue after this course? ||| On ElementaryMBA, a separate school; this course is shown on Learn.WitUS as the series preview.`,
+};
+
+const ELEMENTARY_MBA_FINAL = READ_THE_STATEMENTS_COURSE.lessons.find((l) => l.slug === "final-quiz");
+if (!ELEMENTARY_MBA_FINAL?.quiz) throw new Error("read-the-statements: the final quiz is missing");
+
+export const READ_THE_STATEMENTS_LEARN_COURSE: AuthoredCourse = {
+  title: READ_THE_STATEMENTS_COURSE.title,
+  description: `${READ_THE_STATEMENTS_COURSE.description} On Learn.WitUS it is the series preview: the rest of How a Firm Works continues on ElementaryMBA.`,
+  lessons: [
+    ...READ_THE_STATEMENTS_COURSE.lessons.filter((l) => l.slug !== "final-quiz"),
+    SERIES_CONTINUES,
+    {
+      ...ELEMENTARY_MBA_FINAL,
+      quiz: {
+        ...ELEMENTARY_MBA_FINAL.quiz,
+        questions: [
+          ...ELEMENTARY_MBA_FINAL.quiz.questions,
+          { prompt: "Where does the How a Firm Works series continue after this course?", options: ["On ElementaryMBA", "On EDGAR", "At the SEC", "On the SBA site"], correctIndex: 0, explanation: "On ElementaryMBA, a separate school; this course is the preview on Learn.WitUS (the series continues).", sourceLessonSlug: "the-series-continues" },
+          { prompt: "What is this course's place in the How a Firm Works series?", options: ["The capstone", "The first course", "The third course", "An optional extra"], correctIndex: 1, explanation: "Read the Statements is the first course in the series (the series continues).", sourceLessonSlug: "the-series-continues" },
+          { prompt: "What does the series-continues lesson link to?", options: ["A FIRM-02 course page", "The SEC's search page", "ElementaryMBA's front page", "A paid sign-up page"], correctIndex: 2, explanation: "ElementaryMBA's front page, where you can see when the school and its courses launch (the series continues).", sourceLessonSlug: "the-series-continues" },
+        ],
+      },
+    },
   ],
 };
