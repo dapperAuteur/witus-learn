@@ -55,7 +55,10 @@ see [src/lib/vetting.ts](src/lib/vetting.ts). A lesson's media is its own `conte
 the field (`lesson_tour_embeds`, see the Field Log section) is not included yet. Mint
 keys at `/admin/api-keys` (owner/brand-admin). Every response includes a top-level `disclaimer`
 field the consumer must display; see [src/lib/disclaimer.ts](src/lib/disclaimer.ts) and the
-consumer's guide, `plans/wanderlearn-embed-integration.md`. A chromeless
+consumer's guide, `plans/wanderlearn-embed-integration.md`. Every response also carries
+`schoolDisclaimer`: the calling school's name disclaimer from
+[src/lib/school-disclaimer.ts](src/lib/school-disclaimer.ts) (ElementaryMBA's "not a degree" notice),
+or `null` for a school without one; a consumer showing ElementaryMBA content must display it too. A chromeless
 `/embed/course/[id]` iframe view is also available for embedding without calling the API directly.
 
 **Paste-anywhere course card (no key).** `/embed/card/[courseId]` is a public, unauthenticated,

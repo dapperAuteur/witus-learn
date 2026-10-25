@@ -55,10 +55,11 @@ export function seriesPreviewFor(
  * home school is not found at all: a notice naming a school that does not exist says nothing true.
  */
 export function seriesContinuation(preview: SeriesPreview, home: HomeSchool | null): SeriesContinuation | null {
-  if (!home) return null;
-  const linkable = home.isActive && !home.comingSoon && home.primaryHost != null;
+  // BAM, 2026-10-23: while the home school is coming soon or switched off, the whole line is hidden,
+  // not only the link. A preview must not point learners at a school they cannot open yet.
+  if (!home || !home.isActive || home.comingSoon) return null;
   return {
     schoolName: home.name,
-    href: linkable ? `https://${home.primaryHost}/series/${encodeURIComponent(preview.seriesSlug)}` : null,
+    href: home.primaryHost != null ? `https://${home.primaryHost}/series/${encodeURIComponent(preview.seriesSlug)}` : null,
   };
 }

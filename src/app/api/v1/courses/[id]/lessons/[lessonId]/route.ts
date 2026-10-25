@@ -2,6 +2,7 @@ import { NextResponse } from "next/server";
 import { authenticateApiV1Request } from "@/lib/api-v1-auth";
 import { getPublishedLesson } from "@/db/queries/api-v1";
 import { DISCLAIMER_FULL } from "@/lib/disclaimer";
+import { schoolDisclaimerFor } from "@/lib/school-disclaimer";
 
 type Params = { params: Promise<{ id: string; lessonId: string }> };
 
@@ -33,7 +34,7 @@ export async function GET(request: Request, { params }: Params) {
   }
 
   return NextResponse.json(
-    { lesson, disclaimer: DISCLAIMER_FULL },
+    { lesson, disclaimer: DISCLAIMER_FULL, schoolDisclaimer: schoolDisclaimerFor(auth.tenant.slug)?.text ?? null },
     { status: 200, headers: { "Cache-Control": "private, max-age=60" } },
   );
 }

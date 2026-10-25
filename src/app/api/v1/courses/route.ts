@@ -2,6 +2,7 @@ import { NextResponse } from "next/server";
 import { authenticateApiV1Request } from "@/lib/api-v1-auth";
 import { listPublishedCourses } from "@/db/queries/api-v1";
 import { DISCLAIMER_FULL } from "@/lib/disclaimer";
+import { schoolDisclaimerFor } from "@/lib/school-disclaimer";
 
 // GET /api/v1/courses — the calling tenant's published, public courses. Auth: a
 // per-tenant API key (Authorization: Bearer <key>) — see plans/wanderlearn-embed-design.md.
@@ -22,7 +23,7 @@ export async function GET(request: Request) {
   });
 
   return NextResponse.json(
-    { courses: items, pagination, disclaimer: DISCLAIMER_FULL },
+    { courses: items, pagination, disclaimer: DISCLAIMER_FULL, schoolDisclaimer: schoolDisclaimerFor(auth.tenant.slug)?.text ?? null },
     {
       status: 200,
       headers: {
