@@ -131,6 +131,8 @@ const DATED = "fiscal 2025, Form 10-K filed February 4, 2026";
 const S1 = "1 · The equation and the entry";
 const S2 = "2 · The statements";
 const S3 = "3 · Open the filing";
+const S4 = "4 · Judgment";
+const S5 = "5 · Capstone: five questions about one filing";
 
 export const READ_THE_STATEMENTS_COURSE: AuthoredCourse = {
   title: "Read the Statements",
@@ -1219,6 +1221,203 @@ The form's instructions say Item 7 furnishes "the information required by Item 3
           { prompt: "Is an audit opinion a guarantee against fraud?", options: ["Yes, always", "No, it is not", "Only if clean", "Only for cash"], correctIndex: 1, explanation: "It is an opinion on fair presentation, narrower than a guarantee (lesson 11).", sourceLessonSlug: "the-auditors-opinion" },
           { prompt: "Where in the 10-K does the auditor's report sit?", options: ["After all the notes", "On the cover page", "Before the statements", "In the exhibit list"], correctIndex: 2, explanation: "At the front of Item 8, before the statements (lesson 11).", sourceLessonSlug: "the-auditors-opinion" },
           { prompt: "What does \"present fairly\" stop short of saying?", options: ["A fair picture", "Under the rules", "Most things", "With no errors"], correctIndex: 3, explanation: "It does not say \"exactly\" or \"with no errors\" (lesson 11).", sourceLessonSlug: "the-auditors-opinion" },
+        ],
+      },
+    },
+    // ══════════════════════════════════════════════════════════════════════
+    // SECTION 4: Judgment
+    // ══════════════════════════════════════════════════════════════════════
+    {
+      slug: "what-management-chose",
+      title: "12 · What management chose",
+      section: S4,
+      recallContent: [
+        {
+          prompt: "What does \"present fairly, in all material respects\" not promise?",
+          answer: "That every number is exact, or that there is no error or fraud. It is an opinion on a fair picture in what matters.",
+        },
+        {
+          prompt: "What critical audit matter does the auditor's report name?",
+          answer: "\"Evaluation of stock-based compensation performance condition assumptions.\"",
+        },
+      ],
+      body: `> **Before release:** needs a qualified reviewer (QR): a CPA or a college accounting instructor, who also checks this lesson's reading of "no outstanding debt" beside a liabilities-to-equity ratio of about 2.18 and the lease-rate example (brief answer 8).
+
+**Numbers that rest on choices.** Lesson 5 showed that depreciation depends on "estimated useful lives." Lesson 10 showed that a policy decides how inventory is valued. Many figures in a filing rest on judgments like these. The SEC requires companies to say which ones matter most.
+
+**What the rule says.** In 2020 the SEC added "a new Item 303(b)(3), Critical accounting estimates" to the rule that governs the MD&A. Its definition (17 CFR 229.303(b)(3)): "Critical accounting estimates are those estimates made in accordance with generally accepted accounting principles that involve a significant level of estimation uncertainty and have had or are reasonably likely to have a material impact on the financial condition or results of operations of the registrant." Two tests, then: the estimate is uncertain, and it matters. The SEC's 10-K bulletin describes the same part of the MD&A as "Critical accounting judgments, such as estimates and assumptions." This course quotes the rule from the printed edition revised as of April 1, 2025; later changes have not been checked.
+
+**This filing's four.** The Critical Accounting Estimates section of the 10-K for ${DATED} (Item 7, pages 31 to 32) names four:
+
+1. Leases
+2. Impairment of long-lived assets
+3. Stock-based compensation
+4. Income taxes
+
+You met the third in lesson 11: the auditor's one critical audit matter is about stock-based compensation too. Management and the auditor point at the same place.
+
+**The lease estimate, close up.** Lesson 4 showed that the largest lines on the balance sheet are leases: operating lease assets of 4,463,010 thousand, and lease liabilities of 302,380 (current) plus 4,773,434 (long-term). To put a value on a lease liability, the company needs an interest rate, the incremental borrowing rate. Here is how it gets one (Item 7, page 31; the same sentence is in Note 1, page 43): "As we have no outstanding debt, we estimate this rate based on prevailing financial market conditions, comparable company and credit analysis, and management judgment." Because it does not borrow, it has no loan rate of its own to point to, so management estimates one. And the section says that if this estimate changed, "our operating lease assets and liabilities could differ materially." The biggest numbers on the balance sheet rest partly on a rate management chose. That is exactly what the rule asks a company to disclose. How lease amounts are measured is set by accounting standards this course does not teach; what you can read is that the estimate exists and that the company calls it critical.
+
+**A reading lesson: "no debt" and 2.18.** The company says, twice, that it has no debt: "As we have no outstanding debt" (page 31), and in Note 12 (page 61), on its $500,000 thousand revolving credit facility, "We had no outstanding borrowings under the credit facility." Now open the SEC's *Beginners' Guide*. It defines a ratio and prints its formula: "Debt-to-Equity Ratio = Total Liabilities / Shareholders' Equity." Apply it to page 36 for December 31, 2025:
+
+6,163,924 divided by 2,830,607 = about **2.18**.
+
+A company with "no debt" and a "debt-to-equity ratio" of 2.18. Is one of them wrong? No. Look at what each one counts.
+
+- The company's "no outstanding debt" means no borrowings: no bank loans, nothing drawn on its credit facility.
+- The guide's formula uses **total liabilities**, everything the company owes. Here most of that is leases. Add the two lease lines: 302,380 + 4,773,434 = 5,075,814, which is about 82% of total liabilities (5,075,814 divided by 6,163,924). Unearned revenue from lesson 3 is in there too.
+
+The same word, "debt," means two different things in two sources. Neither source is wrong; they count different things. The ratio is also high partly because equity is small, and lesson 7 showed why: the company spent more on buybacks than it earned, the main reason equity fell from 3,655,546 to 2,830,607 thousand. On the 2024 column the same formula gives 5,548,828 divided by 3,655,546, about 1.52. The ratio rose in a year, mostly because the bottom number shrank.
+
+**The habit.** Before you compare a ratio, find out what goes into it. Never repeat "a debt-to-equity ratio of 2.18" about this company as if it meant borrowing. It does not, and the filing tells you so.
+
+**Where the definitions come from.** Behind the standards sits the Financial Accounting Standards Board's (FASB) conceptual framework. The *Journal of Accountancy* reported that in December 2021 the FASB issued two chapters of Concepts Statement No. 8, Chapter 4, "Elements of Financial Statements," and Chapter 7, "Presentation," and that "Each Statement of Financial Accounting Concepts is nonauthoritative." This course has not read the FASB's own text, so it names the framework only as background, through that report.
+
+:::reveal What two tests make an estimate "critical" under Item 303(b)(3)? ||| It involves a significant level of estimation uncertainty, and it has had or is reasonably likely to have a material impact on the company's financial condition or results.
+
+:::reveal Why does management estimate the lease rate itself? ||| "As we have no outstanding debt," it has no borrowing rate of its own, so it estimates one from market conditions, comparable companies and credit analysis, and judgment.
+
+:::reveal The company has no borrowings, yet total liabilities divided by equity is about 2.18. Explain. ||| The formula counts all liabilities, about 82% of which here are operating lease liabilities, not borrowings. Same word, two meanings.
+
+## Vocabulary
+- **Critical accounting estimate**: an estimate that is highly uncertain and could materially change the results, disclosed in the MD&A.
+- **Incremental borrowing rate**: the interest rate used to value lease liabilities, which this company estimates because it has no debt.
+- **Revolving credit facility**: a line of credit a company can draw on; this company had drawn nothing.
+- **Total liabilities to equity**: total liabilities divided by shareholders' equity, the formula the SEC guide labels debt-to-equity.
+
+## Sources
+- ${CFR_303} Locator: § 229.303(b)(3), printed p. 414 (the definition of critical accounting estimates). ${CFR_EDITION} ${TA}
+- ${SEC_2020} Locator: the list of amendments ("a new Item 303(b)(3), Critical accounting estimates"). ${TA}
+- ${SEC_BULLETIN} Locator: PDF pp. 2 to 3 (critical accounting judgments in the MD&A). ${TA}
+- ${SEC_GUIDE} Locator: section "Financial Statement Analysis" (the debt-to-equity formula). ${TA}
+- ${CMG_10K} Locator: Item 7, pp. 31 to 32, Critical Accounting Estimates (the four; the lease rate; "could differ materially"); Note 1, p. 43 (the same lease-rate sentence); Note 12, p. 61 (the credit facility; no outstanding borrowings); Item 8, p. 36 (total liabilities, equity and lease lines). ${TB}
+- ${DREW_2021} Locator: the article's report of Concepts Statement No. 8, Chapters 4 and 7, and that concepts statements are nonauthoritative. ${TB}
+- ${FASB_CON8} Named through Drew (2021); the FASB's own page could not be read. ${TC}`,
+    },
+    {
+      slug: "who-has-to-file",
+      title: "13 · Who has to file",
+      section: S4,
+      recallContent: [
+        {
+          prompt: "Name the four critical accounting estimates in the fiscal 2025 10-K.",
+          answer: "Leases; impairment of long-lived assets; stock-based compensation; income taxes.",
+        },
+        {
+          prompt: "Why can a company with no borrowings show total liabilities to equity of about 2.18?",
+          answer: "Total liabilities include operating lease liabilities, about 82% of the total here, which are not borrowings.",
+        },
+      ],
+      body: `${QR}
+
+**Not every company files.** Everything in this course so far depends on one fact: the company had to file a 10-K, so its statements are public, audited and on EDGAR for free. The SEC's 10-K bulletin says most U.S. public companies must file one each year. Not every business is a public company. Before you go looking for a company's 10-K, it helps to know when one has to exist.
+
+**One line the SEC draws: registration.** The SEC's 2016 compliance guide for smaller companies explains when a company must register a class of its shares under the Securities Exchange Act. An issuer that is not a bank "is required to register a class of equity securities under the Exchange Act if" it has "more than $10 million of total assets" and the securities are "held of record" by "either 2,000 persons, or 500 persons who are not accredited investors." Both parts matter: the asset size and the number of holders of record. (Accredited investor is a defined term in the securities rules; this course does not go into it.) This course does not trace every route from registration to the duty to file a 10-K. The cover page is where each filer states its own position.
+
+**The cover page asks the question.** Every 10-K cover page asks the filer to say where it stands. This filing's cover asks whether the registrant "is not required to file reports pursuant to Section 13 or Section 15(d) of the Act," and the box marked is No. In plain words: it is required to file. The same cover checks "Large accelerated filer" (lesson 8), the category with the shortest deadline.
+
+**What this means for you as a reader.** The skills in this course work on any company that files a 10-K, because its 10-K follows the same Items, the same Regulation S-X statements and the same Item 303 MD&A. For a company that is not required to file, there may be no 10-K to read. If it keeps double-entry books, its numbers are built from the same equation as any filer's. But they are private.
+
+**Private does not mean no one asks.** A company that files nothing with the SEC may still be asked for financial statements, most often by a lender. The Small Business Administration's page on its 7(a) loan program says: "The contents of the loan application vary depending on the size of the loan and the lender's processing method." And: "Your lender will help you determine which documents you'll need based on your individual circumstances." Its working-capital loan program describes a business that "Can produce timely and accurate financial statements, accounts receivable and accounts payable agings, and inventory reports." So there is no single list. What a lender asks for depends on the lender, the loan and the business. When one does ask, the statements it wants are the kind this course has taught you to read.
+
+**What this course will not tell you.** It will not say how many U.S. companies file with the SEC, or what share of all businesses that is. The research for this course looked for a reliable count and did not find one it could cite. A guess dressed up as a statistic would be worse than no number. What you can rely on is the test itself: the asset size and the holders of record in the compliance guide, and the box every filer marks on its cover page.
+
+**Where to look first.** If you want to read a company's statements, search its name on EDGAR (lesson 8). If a 10-K is there, every lesson in this course applies. If nothing is there, the company may not be required to file, and its statements, if it shares them, will come from the company itself.
+
+:::reveal Under the 12(g) test, when must a non-bank issuer register a class of equity securities? ||| When it has more than $10 million of total assets and the securities are held of record by 2,000 persons, or by 500 persons who are not accredited investors.
+
+:::reveal How does this filing's cover page show it must file reports? ||| It asks whether the registrant is not required to file under Section 13 or 15(d), and the box marked is No.
+
+:::reveal What will a lender ask a private company for? ||| It varies. The SBA says application contents depend on the loan's size and the lender's process, and the lender helps decide which documents are needed.
+
+## Vocabulary
+- **Registration**: the step that makes a company's class of shares subject to the SEC's reporting rules.
+- **Holders of record**: the persons who hold a company's securities on its records, counted in the registration test.
+- **Section 13 and Section 15(d)**: the parts of the Exchange Act under which companies file reports, named on the 10-K cover.
+- **Private company**: a company that is not required to file with the SEC, so its statements are not public.
+
+## Sources
+- ${SEC_12G} Locator: the summary of registration thresholds for issuers that are not banks ($10 million of total assets; 2,000 persons, or 500 who are not accredited investors). ${TA}
+- ${SEC_BULLETIN} Locator: PDF p. 1 (most U.S. public companies file a 10-K). ${TA}
+- ${CMG_10K} Locator: cover page (the Section 13 or 15(d) question marked No; "Large accelerated filer"). ${TB}
+- ${SBA_7A} Locator: sections "Who can benefit?" (the working-capital program's financial statements) and "How do I apply?" (contents vary; the lender helps determine documents). ${TA}`,
+    },
+    {
+      slug: "section-4-quiz",
+      title: "Section 4 quiz · Judgment",
+      section: S4,
+      body: "A graded check on critical accounting estimates, the lease-rate example, reading \"no debt\" beside a liabilities-to-equity ratio, and which companies have to file. Each answer links back to the lesson that teaches it.",
+      quiz: {
+        passingScore: 80,
+        questionsPerAttempt: 5,
+        shuffleOptions: true,
+        questions: [
+          { prompt: "In what year did the SEC add Item 303(b)(3)?", options: ["2020", "2011", "2014", "2025"], correctIndex: 0, explanation: "The November 19, 2020 amendments added \"a new Item 303(b)(3), Critical accounting estimates\" (lesson 12).", sourceLessonSlug: "what-management-chose" },
+          { prompt: "What does Item 303(b)(3) cover?", options: ["Selected financial data", "Critical accounting estimates", "Risk factor summary pages", "Executive compensation tables"], correctIndex: 1, explanation: "Critical accounting estimates, disclosed in the MD&A (lesson 12).", sourceLessonSlug: "what-management-chose" },
+          { prompt: "Which two tests make an estimate critical under the rule?", options: ["Large and recent", "Audited and signed", "Uncertain and material", "Old and unchanged"], correctIndex: 2, explanation: "A significant level of estimation uncertainty, and a material impact that has happened or is reasonably likely (lesson 12).", sourceLessonSlug: "what-management-chose" },
+          { prompt: "Under what basis must a critical estimate be made, per the rule?", options: ["Tax rules", "SBA rules", "Bank rules", "GAAP"], correctIndex: 3, explanation: "\"Estimates made in accordance with generally accepted accounting principles\" (lesson 12).", sourceLessonSlug: "what-management-chose" },
+          { prompt: "How does the SEC bulletin describe this part of the MD&A?", options: ["Critical accounting judgments", "Selected financial data", "Quantitative market risk", "Controls and procedures"], correctIndex: 0, explanation: "\"Critical accounting judgments, such as estimates and assumptions\" (lesson 12).", sourceLessonSlug: "what-management-chose" },
+          { prompt: "Where are the Critical Accounting Estimates in this filing?", options: ["Item 8, pp. 36 to 37", "Item 7, pp. 31 to 32", "Note 12, page 61", "Item 1A, page 9"], correctIndex: 1, explanation: "In the MD&A, Item 7, pages 31 to 32 (lesson 12).", sourceLessonSlug: "what-management-chose" },
+          { prompt: "How many critical accounting estimates does this filing name?", options: ["Two", "Three", "Four", "Six"], correctIndex: 2, explanation: "Leases, impairment of long-lived assets, stock-based compensation and income taxes (lesson 12).", sourceLessonSlug: "what-management-chose" },
+          { prompt: "Which is not one of the filing's four critical accounting estimates?", options: ["Leases", "Income taxes", "Impairment", "Breakage"], correctIndex: 3, explanation: "Gift card breakage is reported in Note 1 but is not on the critical estimates list (lesson 12).", sourceLessonSlug: "what-management-chose" },
+          { prompt: "Which critical estimate matches the auditor's critical audit matter?", options: ["Stock-based compensation", "Impairment of assets", "Income taxes owed", "Lease interest rates"], correctIndex: 0, explanation: "Both point at stock-based compensation (lesson 12).", sourceLessonSlug: "what-management-chose" },
+          { prompt: "What rate does the company estimate to value its lease liabilities?", options: ["The bank's posted loan rate", "Incremental borrowing rate", "The Federal Reserve rate", "Its own dividend payout rate"], correctIndex: 1, explanation: "The incremental borrowing rate (lesson 12).", sourceLessonSlug: "what-management-chose" },
+          { prompt: "Why does management estimate the lease rate itself?", options: ["The auditor sets it", "The IRS requires it", "It has no debt", "Its leases are short"], correctIndex: 2, explanation: "\"As we have no outstanding debt, we estimate this rate\" (Item 7, page 31; lesson 12).", sourceLessonSlug: "what-management-chose" },
+          { prompt: "Which of these does the lease-rate sentence name as an input?", options: ["Stock price trends", "Analyst forecasts", "Dividend history", "Management judgment"], correctIndex: 3, explanation: "Market conditions, comparable company and credit analysis, \"and management judgment\" (lesson 12).", sourceLessonSlug: "what-management-chose" },
+          { prompt: "If the lease estimate changed, what does the filing say could differ materially?", options: ["Lease assets and liabilities", "Revenue and comparable sales", "Cash and restricted cash", "Gift card balances and breakage"], correctIndex: 0, explanation: "\"Our operating lease assets and liabilities could differ materially\" (lesson 12).", sourceLessonSlug: "what-management-chose" },
+          { prompt: "Where else does the lease-rate sentence appear besides page 31?", options: ["Note 3, page 48", "Note 1, page 43", "Note 12, page 61", "Item 1, page 4"], correctIndex: 1, explanation: "The same sentence is in Note 1, page 43 (lesson 12).", sourceLessonSlug: "what-management-chose" },
+          { prompt: "What were total operating lease liabilities, current plus long-term, at year-end 2025?", options: ["4,773,434", "4,463,010", "5,075,814", "6,163,924"], correctIndex: 2, explanation: "302,380 + 4,773,434 = 5,075,814 thousand (lesson 12).", sourceLessonSlug: "what-management-chose" },
+          { prompt: "What size revolving credit facility does Note 12 describe, in thousands?", options: ["$50,000", "$5,000,000", "$250,000", "$500,000"], correctIndex: 3, explanation: "A $500,000 thousand facility, with nothing drawn (lesson 12).", sourceLessonSlug: "what-management-chose" },
+          { prompt: "What did the company owe under its credit facility at year-end 2025?", options: ["Nothing", "$500 million", "$250 million", "$35 million"], correctIndex: 0, explanation: "\"We had no outstanding borrowings under the credit facility\" (Note 12, page 61; lesson 12).", sourceLessonSlug: "what-management-chose" },
+          { prompt: "What formula does the SEC guide print for debt-to-equity?", options: ["Borrowings / total assets", "Total liabilities / equity", "Revenue / shareholders' equity", "Net income / total liabilities"], correctIndex: 1, explanation: "\"Debt-to-Equity Ratio = Total Liabilities / Shareholders' Equity\" (lesson 12).", sourceLessonSlug: "what-management-chose" },
+          { prompt: "What is total liabilities divided by equity at December 31, 2025?", options: ["About 1.52", "About 3.18", "About 2.18", "About 0.46"], correctIndex: 2, explanation: "6,163,924 divided by 2,830,607 is about 2.18 (lesson 12).", sourceLessonSlug: "what-management-chose" },
+          { prompt: "What is the same ratio for December 31, 2024?", options: ["About 2.18", "About 1.18", "About 0.66", "About 1.52"], correctIndex: 3, explanation: "5,548,828 divided by 3,655,546 is about 1.52 (lesson 12).", sourceLessonSlug: "what-management-chose" },
+          { prompt: "What does the company mean by \"no outstanding debt\"?", options: ["No borrowings", "No liabilities", "No leases", "No unpaid bills"], correctIndex: 0, explanation: "No borrowings: no bank loans and nothing drawn on its facility. It still has liabilities (lesson 12).", sourceLessonSlug: "what-management-chose" },
+          { prompt: "What does the guide's debt-to-equity formula put on top?", options: ["Only borrowings", "All liabilities", "Only leases", "Current debts"], correctIndex: 1, explanation: "Total liabilities, everything the company owes (lesson 12).", sourceLessonSlug: "what-management-chose" },
+          { prompt: "About what share of total liabilities are operating lease liabilities?", options: ["About 18%", "About 50%", "About 82%", "About 95%"], correctIndex: 2, explanation: "5,075,814 divided by 6,163,924 is about 0.82 (lesson 12).", sourceLessonSlug: "what-management-chose" },
+          { prompt: "Is either \"no debt\" or the 2.18 ratio wrong?", options: ["The 2.18 is wrong", "No debt is wrong", "Both are wrong", "Neither is wrong"], correctIndex: 3, explanation: "Both are right; the word \"debt\" means borrowings in one and all liabilities in the other (lesson 12).", sourceLessonSlug: "what-management-chose" },
+          { prompt: "Why did the ratio rise from 2024 to 2025, mostly?", options: ["Equity shrank", "Loans rose", "Revenue fell", "Cash rose"], correctIndex: 0, explanation: "Equity fell from 3,655,546 to 2,830,607 thousand, so the bottom of the fraction shrank (lesson 12).", sourceLessonSlug: "what-management-chose" },
+          { prompt: "What was the main reason equity fell in 2025?", options: ["A net loss", "Buybacks", "Lease costs", "Tax refunds"], correctIndex: 1, explanation: "The company spent more on buybacks than it earned (lessons 7 and 12).", sourceLessonSlug: "what-management-chose" },
+          { prompt: "How should the 2.18 figure be described for this company?", options: ["As heavy bank borrowing", "As a clear buy signal", "As liabilities to equity", "As a market price ratio"], correctIndex: 2, explanation: "It is total liabilities to equity, not borrowing, and not a judgment of the stock (lesson 12).", sourceLessonSlug: "what-management-chose" },
+          { prompt: "What habit does the lesson give for reading any ratio?", options: ["Compare it at once", "Round it to one digit", "Trust the highest one", "Learn what goes in it"], correctIndex: 3, explanation: "Before you compare a ratio, find out what goes into it (lesson 12).", sourceLessonSlug: "what-management-chose" },
+          { prompt: "Which item from lesson 3 also sits inside total liabilities?", options: ["Unearned revenue", "Retained earnings", "Restricted cash", "Inventory"], correctIndex: 0, explanation: "Unearned revenue is a current liability (lesson 12).", sourceLessonSlug: "what-management-chose" },
+          { prompt: "Who issues the conceptual framework named in this lesson?", options: ["The SEC", "The FASB", "The PCAOB", "The IRS"], correctIndex: 1, explanation: "The Financial Accounting Standards Board (lesson 12).", sourceLessonSlug: "what-management-chose" },
+          { prompt: "How does the Journal of Accountancy say concepts statements stand?", options: ["They are binding law", "They are SEC rules", "Nonauthoritative", "They replace GAAP"], correctIndex: 2, explanation: "\"Each Statement of Financial Accounting Concepts is nonauthoritative\" (lesson 12).", sourceLessonSlug: "what-management-chose" },
+          { prompt: "Which chapters of Concepts Statement No. 8 came out in December 2021?", options: ["1 and 2", "3 and 5", "6 and 8", "4 and 7"], correctIndex: 3, explanation: "Chapter 4, Elements of Financial Statements, and Chapter 7, Presentation (lesson 12).", sourceLessonSlug: "what-management-chose" },
+          { prompt: "How does this course cite the FASB framework?", options: ["By title only", "With long quotes", "With a copied table", "With a hosted PDF"], correctIndex: 0, explanation: "By title only, through the Journal of Accountancy's report (lesson 12).", sourceLessonSlug: "what-management-chose" },
+          { prompt: "Why does the course cite the FASB framework only by title?", options: ["It is out of print", "Its text was not read", "It is a federal work", "It was withdrawn"], correctIndex: 1, explanation: "The FASB's own text was not read, so nothing from it is quoted (lesson 12).", sourceLessonSlug: "what-management-chose" },
+          { prompt: "What do lesson 5's useful lives and the lease rate have in common?", options: ["Both are taxes", "Both are cash", "Both are estimates", "Both are audited"], correctIndex: 2, explanation: "Both are figures management chose: estimated useful lives and an estimated rate (lesson 12).", sourceLessonSlug: "what-management-chose" },
+          { prompt: "Which balance sheet figures rest partly on the lease rate?", options: ["Cash and inventory", "Revenue and labor", "Retained earnings", "The lease lines"], correctIndex: 3, explanation: "Operating lease assets and liabilities, the largest lines on page 36 (lesson 12).", sourceLessonSlug: "what-management-chose" },
+          { prompt: "What total-asset level is part of the registration test in the SEC guide?", options: ["Over $10 million", "Over $1 million", "Over $100 million", "Over $500,000"], correctIndex: 0, explanation: "\"More than $10 million of total assets\" (lesson 13).", sourceLessonSlug: "who-has-to-file" },
+          { prompt: "How many holders of record trigger registration, in general?", options: ["500", "2,000", "10,000", "100"], correctIndex: 1, explanation: "2,000 persons, or 500 who are not accredited investors (lesson 13).", sourceLessonSlug: "who-has-to-file" },
+          { prompt: "How many holders who are not accredited investors trigger registration?", options: ["2,000", "100", "500", "35"], correctIndex: 2, explanation: "500 persons who are not accredited investors (lesson 13).", sourceLessonSlug: "who-has-to-file" },
+          { prompt: "Which issuers does the quoted threshold apply to?", options: ["Only banks", "Only nonprofits", "Only foreign firms", "Issuers not banks"], correctIndex: 3, explanation: "The guide states the test for an issuer that is not a bank (lesson 13).", sourceLessonSlug: "who-has-to-file" },
+          { prompt: "Which document explains the registration thresholds in this course?", options: ["An SEC compliance guide", "The 2011 SEC bulletin", "IRS Publication 583", "Form 10-K Item 7"], correctIndex: 0, explanation: "The SEC's 2016 small entity compliance guide (lesson 13).", sourceLessonSlug: "who-has-to-file" },
+          { prompt: "How many parts does the registration test have?", options: ["One", "Two", "Three", "Four"], correctIndex: 1, explanation: "Asset size and the number of holders of record (lesson 13).", sourceLessonSlug: "who-has-to-file" },
+          { prompt: "What does every 10-K cover page ask the filer?", options: ["Its stock price", "Its auditor's fee", "If it must file", "Its CEO's salary"], correctIndex: 2, explanation: "Whether it is not required to file reports under Section 13 or 15(d) (lesson 13).", sourceLessonSlug: "who-has-to-file" },
+          { prompt: "How is the box marked on this filing's Section 13 or 15(d) question?", options: ["Yes", "Blank", "Both", "No"], correctIndex: 3, explanation: "No: it is not the case that it is not required to file (lesson 13).", sourceLessonSlug: "who-has-to-file" },
+          { prompt: "What does that answer on the cover page mean?", options: ["It must file", "It may skip filing", "It filed late", "It is a bank"], correctIndex: 0, explanation: "It is required to file reports (lesson 13).", sourceLessonSlug: "who-has-to-file" },
+          { prompt: "Which sections of the Exchange Act does the cover page name?", options: ["Sections 10 and 12", "Sections 13 and 15(d)", "Sections 302 and 906", "Sections 3 and 4"], correctIndex: 1, explanation: "Section 13 or Section 15(d) (lesson 13).", sourceLessonSlug: "who-has-to-file" },
+          { prompt: "Why do this course's skills work on any 10-K filer?", options: ["All filers are big", "All are restaurants", "Same Items and rules", "All use one auditor"], correctIndex: 2, explanation: "Every 10-K follows the same Items, Regulation S-X statements and Item 303 MD&A (lesson 13).", sourceLessonSlug: "who-has-to-file" },
+          { prompt: "What can be said of a company that is not required to file?", options: ["It keeps no books", "It must use cash basis", "It cannot borrow", "There may be no 10-K"], correctIndex: 3, explanation: "There may be no 10-K to read; its numbers are private (lesson 13).", sourceLessonSlug: "who-has-to-file" },
+          { prompt: "Who most often asks a private company for financial statements?", options: ["A lender", "The SEC", "An auditor", "A competitor"], correctIndex: 0, explanation: "Most often a lender (lesson 13).", sourceLessonSlug: "who-has-to-file" },
+          { prompt: "What does the SBA say about a 7(a) loan application's contents?", options: ["They are fixed by law", "They vary by loan", "They need a 10-K", "They are online only"], correctIndex: 1, explanation: "\"The contents of the loan application vary depending on the size of the loan and the lender's processing method\" (lesson 13).", sourceLessonSlug: "who-has-to-file" },
+          { prompt: "Who helps decide which documents a 7(a) borrower needs?", options: ["The SEC", "The IRS", "The lender", "The auditor"], correctIndex: 2, explanation: "\"Your lender will help you determine which documents you'll need\" (lesson 13).", sourceLessonSlug: "who-has-to-file" },
+          { prompt: "What does the SBA's working-capital program describe a business producing?", options: ["A filed Form 10-K", "Audited tax returns", "Stock price charts", "Financial statements"], correctIndex: 3, explanation: "\"Timely and accurate financial statements,\" agings and inventory reports (lesson 13).", sourceLessonSlug: "who-has-to-file" },
+          { prompt: "Is there one standard list of what lenders ask private companies for?", options: ["No, it varies", "Yes, the SBA's", "Yes, the SEC's", "Yes, the IRS's"], correctIndex: 0, explanation: "It depends on the lender, the loan and the business (lesson 13).", sourceLessonSlug: "who-has-to-file" },
+          { prompt: "How many U.S. companies file with the SEC, per this course?", options: ["About 4,042", "It gives no count", "About 10,000", "Most of them"], correctIndex: 1, explanation: "The course found no count it could cite, so it gives none (lesson 13).", sourceLessonSlug: "who-has-to-file" },
+          { prompt: "Why does the course give no count of SEC filers?", options: ["It is secret", "It is too large", "None was found", "It changes daily"], correctIndex: 2, explanation: "The research found no reliable count it could cite (lesson 13).", sourceLessonSlug: "who-has-to-file" },
+          { prompt: "Where should you look first for a company's statements?", options: ["The SBA site", "A stock forum", "The IRS site", "EDGAR"], correctIndex: 3, explanation: "Search its name on EDGAR (lesson 13).", sourceLessonSlug: "who-has-to-file" },
+          { prompt: "If EDGAR has no 10-K for a company, what may be true?", options: ["It need not file", "It went bankrupt", "It is a bank", "It is overseas"], correctIndex: 0, explanation: "The company may not be required to file (lesson 13).", sourceLessonSlug: "who-has-to-file" },
+          { prompt: "What kind of term is accredited investor, per the lesson?", options: ["A tax bracket", "A defined term", "A job title", "A stock class"], correctIndex: 1, explanation: "A defined term in the securities rules, which the course does not go into (lesson 13).", sourceLessonSlug: "who-has-to-file" },
+          { prompt: "What filer category does the cover page check?", options: ["Smaller reporting", "Non-accelerated", "Large accelerated", "Emerging growth"], correctIndex: 2, explanation: "\"Large accelerated filer\" (lesson 13).", sourceLessonSlug: "who-has-to-file" },
+          { prompt: "Under which law does the guide's registration test sit?", options: ["Securities Act", "JOBS Act alone", "Tax Code", "Exchange Act"], correctIndex: 3, explanation: "Registration \"under the Exchange Act\" (lesson 13).", sourceLessonSlug: "who-has-to-file" },
+          { prompt: "What makes a private company's statements private?", options: ["They are not filed", "They are unaudited", "They are in pencil", "They use no GAAP"], correctIndex: 0, explanation: "They are not filed with the SEC, so they are not public (lesson 13).", sourceLessonSlug: "who-has-to-file" },
+          { prompt: "Which statements would a lender likely want, per the lesson?", options: ["Stock price records", "The kind taught here", "Tax forms only", "Social media posts"], correctIndex: 1, explanation: "Financial statements of the kind this course teaches you to read (lesson 13).", sourceLessonSlug: "who-has-to-file" },
+          { prompt: "What does a 10-K filer's MD&A follow, whatever the company?", options: ["IRS Publication 583", "Its own house format", "Regulation S-K 303", "SBA lending guidance"], correctIndex: 2, explanation: "Item 303 of Regulation S-K (lesson 13).", sourceLessonSlug: "who-has-to-file" },
+          { prompt: "Which pair makes up the registration test in the guide?", options: ["Revenue and staff", "Profit and age", "Debt and cash", "Assets and holders"], correctIndex: 3, explanation: "Total assets and holders of record (lesson 13).", sourceLessonSlug: "who-has-to-file" },
+          { prompt: "Does a company that files nothing still have an accounting equation?", options: ["Yes, if it keeps books", "No, never at all", "Only if it is audited", "Only if it is public"], correctIndex: 0, explanation: "If it keeps double-entry books, the same equation holds; only the statements are private (lesson 13).", sourceLessonSlug: "who-has-to-file" },
+          { prompt: "Where does each filer state whether it must file reports?", options: ["In Item 8, page 36", "On its cover page", "In Note 1, page 40", "In Exhibit 32 only"], correctIndex: 1, explanation: "On the 10-K cover page (lesson 13).", sourceLessonSlug: "who-has-to-file" },
         ],
       },
     },
