@@ -129,6 +129,7 @@ const QR = "> **Before release:** needs a qualified reviewer (QR): a CPA or a co
 const DATED = "fiscal 2025, Form 10-K filed February 4, 2026";
 
 const S1 = "1 · The equation and the entry";
+const S2 = "2 · The statements";
 
 export const READ_THE_STATEMENTS_COURSE: AuthoredCourse = {
   title: "Read the Statements",
@@ -440,6 +441,419 @@ This table is a **roll-forward**: start, plus what came in, minus what went out,
           { prompt: "Which page of the 10-K states the revenue recognition policy?", options: ["Page 36", "Page 44", "Page 48", "Page 61"], correctIndex: 1, explanation: "Note 1, Revenue Recognition, page 44 (lesson 3).", sourceLessonSlug: "when-a-sale-counts" },
           { prompt: "Which page holds the gift card and rewards policy text?", options: ["Page 24", "Page 37", "Page 45", "Page 58"], correctIndex: 2, explanation: "Note 1, Gift Cards and Chipotle Rewards, page 45 (lesson 3).", sourceLessonSlug: "when-a-sale-counts" },
           { prompt: "Under the cash method, when would a $25 gift card count as a sale?", options: ["When it is redeemed", "When the year ends", "When it expires", "When it is paid for"], correctIndex: 3, explanation: "The cash method records a sale once payment is received, which is when the card is bought (lesson 3).", sourceLessonSlug: "when-a-sale-counts" },
+        ],
+      },
+    },
+    // ══════════════════════════════════════════════════════════════════════
+    // SECTION 2: The statements
+    // ══════════════════════════════════════════════════════════════════════
+    {
+      slug: "the-balance-sheet",
+      title: "4 · The balance sheet",
+      section: S2,
+      recallContent: [
+        {
+          prompt: "Under the accrual method, when does a sale count?",
+          answer: "When the sale is completed, whether or not the money has arrived (the SBA's wording).",
+        },
+        {
+          prompt: "How does the filing first record a gift card sale, and when does it become revenue?",
+          answer: "As unearned revenue, a liability; it becomes revenue when the guest redeems the card (Note 1, page 45).",
+        },
+      ],
+      exercise: {
+        instructions: "Use the balance sheet figures from page 36 (in thousands of dollars). Type the number with or without commas.",
+        items: [
+          {
+            prompt: "December 31, 2025: total current assets 1,466,953 minus total current liabilities 1,188,142. What is working capital?",
+            answer: "278,811",
+            accept: ["278811"],
+            explanation: "1,466,953 minus 1,188,142 = 278,811 thousand, about $279 million.",
+            computedAnswer: true,
+          },
+          {
+            prompt: "December 31, 2024: total current assets 1,780,587 minus total current liabilities 1,168,768. What is working capital?",
+            answer: "611,819",
+            accept: ["611819"],
+            explanation: "1,780,587 minus 1,168,768 = 611,819 thousand. Working capital fell during 2025, mostly because cash fell.",
+            computedAnswer: true,
+          },
+        ],
+      },
+      body: `${QR}
+
+**One date, two columns.** A balance sheet is true as of a single day. The SEC's accounting rules for public companies, Regulation S-X, require "audited balance sheets as of the end of each of the two most recent fiscal years" (17 CFR 210.3-01). That is why page 36 of the 10-K for ${DATED} shows two columns, December 31, 2025 and December 31, 2024. Read across a line and you see how it changed in a year.
+
+**Reading the page.** The heading says "(in thousands, except per share data)," so add three zeros to every figure. A number in parentheses is negative. These two habits prevent most misreadings.
+
+**Current and noncurrent.** The SEC's *Beginners' Guide* sorts assets and liabilities by time. Current assets are those expected to turn into cash within one year; current liabilities are those that come due within one year. Everything else is noncurrent, or long-term. The page groups lines that way, with a subtotal for each group:
+
+| Line on page 36 (in thousands) | December 31, 2025 | December 31, 2024 |
+|---|---|---|
+| Cash and cash equivalents | 350,545 | 748,537 |
+| Restricted cash | 35,364 | 29,842 |
+| Inventory | 49,508 | 48,942 |
+| Total current assets | 1,466,953 | 1,780,587 |
+| Unearned revenue (current liability) | 240,375 | 238,577 |
+| Total current liabilities | 1,188,142 | 1,168,768 |
+
+**Why restricted cash has its own line.** Regulation S-X's balance sheet list (17 CFR 210.5-02), under its first caption, "Cash and cash items," requires "Separate disclosure" of cash "restricted as to withdrawal or usage." Cash the company cannot freely spend should not be mixed in with cash it can. So the filing shows it apart: 35,364 at the end of 2025. Lesson 7 shows this small line doing real work, when it ties the cash flow statement to the balance sheet.
+
+**Inventory is small here.** The same rule asks companies to show inventories, with major classes such as finished goods and raw materials. For a restaurant company the figure is tiny next to its size: 49,508 thousand of inventory against 8,994,531 thousand of total assets.
+
+**Working capital.** The SEC guide defines working capital as "the money leftover if a company paid its current liabilities." It is current assets minus current liabilities:
+
+- December 31, 2025: 1,466,953 minus 1,188,142 = **278,811** thousand.
+- December 31, 2024: 1,780,587 minus 1,168,768 = **611,819** thousand.
+
+It fell by about half in a year. The first line of the table shows the main reason: cash and cash equivalents dropped from 748,537 to 350,545. Lesson 6 shows where that cash went.
+
+**Let management explain.** Is a small working capital a warning? Not by itself, and the company says why in its management's discussion (Item 7, page 30): "We have not required significant working capital because guests generally pay using cash or credit and debit cards and because our operations do not require significant receivables or significant inventories." A restaurant is paid at the counter and, as the company says, carries no significant inventories. A business that waits months to be paid would need far more. A ratio means little until you know the business behind it.
+
+**The biggest lines are leases.** Scan down the page and the largest asset is not cash or equipment. It is "Operating lease assets," 4,463,010 thousand at the end of 2025. On the other side sit current operating lease liabilities of 302,380 and long-term operating lease liabilities of 4,773,434. These lines come from leases: the asset is the right to use leased property, and the liabilities are the payments promised for it. How those amounts are measured is set by accounting standards this course does not teach. For now, notice that they are there, and that they are large. Lesson 12 comes back to them.
+
+**A note on the rule's date.** The Regulation S-X text quoted in this course comes from the government's printed edition revised as of April 1, 2025. Changes made after that date have not been checked here.
+
+:::reveal Why does page 36 show two years? ||| Regulation S-X requires audited balance sheets as of the end of each of the two most recent fiscal years.
+
+:::reveal What makes an asset "current"? ||| It is expected to turn into cash within one year. A current liability is one that comes due within one year.
+
+:::reveal Why is restricted cash on its own line? ||| Regulation S-X requires separate disclosure of cash "restricted as to withdrawal or usage," so cash the company cannot freely spend is shown apart.
+
+:::reveal Working capital is only 278,811 thousand. Why does management say that is enough? ||| Guests pay by cash or card at the counter, and the business needs no significant receivables or inventories (Item 7, page 30).
+
+## Vocabulary
+- **Current asset**: an asset expected to turn into cash within one year.
+- **Current liability**: an obligation that comes due within one year.
+- **Restricted cash**: cash the company cannot freely withdraw or use, shown on its own line.
+- **Working capital**: current assets minus current liabilities.
+- **Operating lease asset**: the recorded right to use a leased property, such as a restaurant space.
+
+## Sources
+- ${CFR_3_01} Locator: § 210.3-01(a), printed p. 272 (two most recent fiscal years). ${CFR_EDITION} ${TA}
+- ${CFR_5_02} Locator: § 210.5-02, printed p. 301, caption 1, "Cash and cash items" (separate disclosure of restricted cash); p. 302, caption 6, "Inventories." ${CFR_EDITION} ${TA}
+- ${SEC_GUIDE} Locator: section "Balance Sheets" (current and noncurrent); section "Financial Statement Analysis" (working capital). ${TA}
+- ${CMG_10K} Locator: Item 8, p. 36, Consolidated Balance Sheets (every figure in the table; operating lease lines); Item 7, p. 30 (the working capital paragraph). ${TB}`,
+    },
+    {
+      slug: "the-income-statement",
+      title: "5 · The income statement",
+      section: S2,
+      recallContent: [
+        {
+          prompt: "What is working capital, and what was it at December 31, 2025?",
+          answer: "Current assets minus current liabilities: 1,466,953 minus 1,188,142 = 278,811 thousand.",
+        },
+        {
+          prompt: "Why does Regulation S-X make restricted cash a separate line?",
+          answer: "It requires separate disclosure of cash \"restricted as to withdrawal or usage.\"",
+        },
+      ],
+      body: `${QR}
+
+**A year, not a day.** The balance sheet is a snapshot. The income statement is a film of the year: what came in, what it cost, and what was left. Regulation S-X requires "audited statements of comprehensive income and cash flows for each of the three fiscal years preceding the date of the most recent audited balance sheet" (17 CFR 210.3-02). So page 37 of the 10-K for ${DATED}, titled "Consolidated Statements of Income and Comprehensive Income," shows three columns: 2025, 2024 and 2023.
+
+**Top to bottom.** Figures are in thousands, except per share amounts.
+
+| Line on page 37 (in thousands) | 2025 | 2024 | 2023 |
+|---|---|---|---|
+| Total revenue | 11,925,601 | 11,313,853 | 9,871,649 |
+| Food, beverage and packaging | 3,526,992 | 3,374,516 | 2,912,564 |
+| Labor | 2,991,680 | 2,789,789 | 2,440,982 |
+| Total operating expenses | 9,989,803 | 9,397,520 | 8,313,836 |
+| Income from operations | 1,935,798 | 1,916,333 | 1,557,813 |
+| Provision for income taxes | 473,758 | 476,120 | 391,769 |
+| Net income | 1,535,761 | 1,534,110 | 1,228,737 |
+| Diluted earnings per share (dollars) | $1.14 | $1.11 | $0.89 |
+
+**Revenue, then costs.** Revenue is the top line, the sales the company recognized under the rules from lesson 3. Below it come the costs of running restaurants. The two biggest are food, beverage and packaging (3,526,992) and labor (2,991,680). Add every operating cost and you get total operating expenses, 9,989,803.
+
+**Income from operations.** Revenue minus operating expenses: 11,925,601 minus 9,989,803 = 1,935,798, exactly the line printed on page 37. This is what the restaurants earned from running restaurants, before taxes and a few other lines.
+
+**Down to net income.** Between income from operations and net income sit a few more lines on the page, ending with the provision for income taxes, 473,758. What remains is **net income**: 1,535,761 thousand, about $1.54 billion, for 2025. It is the "bottom line," and lesson 7 follows it into the balance sheet.
+
+**Read the captions.** The restaurant cost lines carry a caption: "exclusive of depreciation and amortization shown separately below." That means the cost of food and labor here does not include the wearing out of ovens and buildings; that cost has its own line, 361,382 thousand in 2025. If you added depreciation into food costs yourself, you would count it twice. Small words in a caption change what a number means, so read them before you compare anything.
+
+**What depreciation is.** When a company buys equipment that lasts for years, it does not put the whole cost into one year's expenses. It spreads the cost over the years the asset is used. The filing's policy note (Note 1, page 42) says: "Depreciation is calculated using the straight-line method over the estimated useful lives of the assets." Straight-line means an equal share each year. The useful lives it gives are 3-20 years for leasehold improvements and buildings, 4-7 years for furniture and fixtures, and 3-10 years for equipment. Notice the word "estimated": someone chose those lives. Lesson 12 is about choices like that.
+
+**Earnings per share.** The last line divides earnings among the company's shares. Diluted earnings per share was $1.14 for 2025, up from $1.11. It is in dollars, not thousands. One more thing to know: a 50-for-1 stock split took effect on June 26, 2024, and Note 1 (page 40) says share and per-share figures are restated for it. That is why the earlier years look comparable. When you compare per-share numbers across years, check for a split first.
+
+**A measure you can compute.** The SEC guide names **operating margin**: income from operations as a share of revenue. For 2025: 1,935,798 divided by 11,925,601 is about 0.162, or about 16.2%. Out of every dollar of sales, about 16 cents was left after operating costs. This is a description of one year, not a judgment of the company.
+
+:::reveal Why does page 37 show three years when page 36 shows two? ||| Regulation S-X requires audited income and cash flow statements for each of three fiscal years, but balance sheets for only two.
+
+:::reveal What does "exclusive of depreciation and amortization shown separately below" warn you about? ||| The cost lines do not include depreciation; it has its own line. Adding it in again would count it twice.
+
+:::reveal Compute 2025 income from operations from revenue and total operating expenses. ||| 11,925,601 minus 9,989,803 = 1,935,798 thousand, the figure printed on page 37.
+
+:::reveal What does straight-line depreciation mean? ||| The cost of an asset is spread in equal shares over its estimated useful life.
+
+## Vocabulary
+- **Income statement**: the statement of revenue, expenses and net income over a period.
+- **Income from operations**: revenue minus operating expenses.
+- **Net income**: what is left after all expenses and income taxes; the bottom line.
+- **Depreciation**: spreading the cost of a long-lived asset over the years it is used.
+- **Earnings per share**: net income divided among the company's shares; printed in dollars, not thousands.
+- **Operating margin**: income from operations divided by revenue.
+
+## Sources
+- ${CFR_3_02} Locator: § 210.3-02(a), printed p. 273 (three fiscal years). ${CFR_EDITION} ${TA}
+- ${CMG_10K} Locator: Item 8, p. 37, Consolidated Statements of Income and Comprehensive Income (every figure; the "exclusive of depreciation" caption; depreciation and amortization); Note 1, p. 40 (the stock split); Note 1, p. 42 (straight-line depreciation; useful lives). ${TB}
+- ${SEC_GUIDE} Locator: section "Income Statements"; section "Financial Statement Analysis" (operating margin). ${TA}`,
+    },
+    {
+      slug: "the-cash-flow-statement",
+      title: "6 · The cash flow statement",
+      section: S2,
+      recallContent: [
+        {
+          prompt: "What was net income for 2025, and on which page?",
+          answer: "1,535,761 thousand, on page 37, the income statement.",
+        },
+        {
+          prompt: "What does straight-line depreciation do with the cost of an oven?",
+          answer: "It spreads the cost in equal shares over the oven's estimated useful life (Note 1, page 42).",
+        },
+      ],
+      body: `${QR}
+
+**Profit is not cash.** Net income for 2025 was 1,535,761 thousand, yet cash and cash equivalents fell by almost 400 million dollars during the year (lesson 4). Both are true. The cash flow statement explains how.
+
+**Three kinds of cash flow.** The SEC's *Beginners' Guide* says cash flow statements report cash flows from "(1) operating activities; (2) investing activities; and (3) financing activities." Operating activities are the business itself: selling food, paying staff and suppliers. Investing activities are buying and selling long-lived assets, such as building out new restaurants. Financing activities are dealings with the people who fund the company: borrowing, repaying, and buying back or issuing shares. Page 39 of the 10-K for ${DATED} has one section for each (in thousands):
+
+| Line on page 39 (in thousands) | 2025 |
+|---|---|
+| Net cash provided by operating activities | 2,113,926 |
+| Net cash used in investing activities | (35,082) |
+| Net cash used in financing activities | (2,470,898) |
+| Effect of exchange rate changes | (416) |
+| Net change in cash, cash equivalents, and restricted cash | (392,470) |
+| Cash, cash equivalents, and restricted cash at beginning of year | 778,379 |
+| Cash, cash equivalents, and restricted cash at end of year | 385,909 |
+
+**The operating section starts at net income.** Its first line is net income, followed by "Adjustments to reconcile net income to net cash provided by operating activities." This layout, starting from profit and adjusting it to cash, is called the **indirect method**. Two adjustments show how it works:
+
+- **Depreciation and amortization, 361,382, added back.** Lesson 5 showed depreciation as an expense that spreads an old purchase over many years. It lowered net income, but no cash left the company for it in 2025; the cash left when the equipment was bought. So the statement adds it back to get from profit to cash.
+- **Change in unearned revenue, 40,710.** Lesson 3 showed that gift card cash arrives before it becomes revenue. Cash taken in ahead of revenue is cash the company has even though it is not yet profit, so a change in unearned revenue is one of the adjustments.
+
+After all the adjustments, operating activities provided 2,113,926 thousand, about $2.11 billion. The restaurants produced more cash than profit.
+
+**Investing.** The biggest investing line is "Purchases of leasehold improvements, property and equipment," (666,336). The management's discussion (page 30) puts capital expenditures for 2025 at "$666.3 million," the same number rounded. Yet net investing was only (35,082). Do the arithmetic: if the whole section nets to minus 35,082 and one line is minus 666,336, the other investing lines on page 39 must add up to plus 631,254. This course does not go through them; the point is that one big line does not tell you the section total.
+
+**Financing.** Here is where the cash went. Net cash used in financing was (2,470,898), about $2.47 billion, and one line in it, "Repurchase of common stock," was (2,425,516). Almost all of the financing outflow was the company buying back its own shares. A buyback sends cash to shareholders who sell; lesson 7 shows what it does to equity.
+
+**It adds up.** Check the totals: 2,113,926 minus 35,082 minus 2,470,898 minus 416 = minus 392,470, the net change printed on the page. And 385,909 minus 778,379 = minus 392,470 as well. Beginning cash plus the year's change equals ending cash. The cash flow statement is one more roll-forward, like the rewards table in lesson 3.
+
+**Notice what is counted.** The total is "cash, cash equivalents, and restricted cash," not cash alone. Remember restricted cash from lesson 4. In lesson 7 that detail makes this page match the balance sheet to the dollar.
+
+:::reveal Name the three kinds of activity on a cash flow statement. ||| Operating, investing and financing (the SEC guide).
+
+:::reveal Why is depreciation added back in the operating section? ||| It was subtracted as an expense to get net income, but no cash was paid for it in 2025; the cash went out when the assets were bought.
+
+:::reveal Where did most of the cash go in 2025? ||| Financing: net cash used of 2,470,898 thousand, of which 2,425,516 was the repurchase of common stock.
+
+:::reveal Show that the 2025 cash flow statement adds up. ||| 2,113,926 minus 35,082 minus 2,470,898 minus 416 = minus 392,470, and 778,379 minus 392,470 = 385,909, the ending figure.
+
+## Vocabulary
+- **Operating activities**: cash flows from running the business.
+- **Investing activities**: cash flows from buying and selling long-lived assets.
+- **Financing activities**: cash flows with the company's funders, such as borrowing or buying back shares.
+- **Indirect method**: a cash flow layout that starts with net income and adjusts it to cash.
+- **Share repurchase**: the company buying back its own shares with cash.
+
+## Sources
+- ${SEC_GUIDE} Locator: section "Cash Flow Statements" (the three activities). ${TA}
+- ${CMG_10K} Locator: Item 8, p. 39, Consolidated Statements of Cash Flows (every figure; "Adjustments to reconcile net income"); Item 7, p. 30 (capital expenditures of $666.3 million). ${TB}`,
+    },
+    {
+      slug: "how-the-statements-tie",
+      title: "7 · How the statements tie",
+      section: S2,
+      recallContent: [
+        {
+          prompt: "How much cash did operating activities provide in 2025?",
+          answer: "2,113,926 thousand, about $2.11 billion (page 39).",
+        },
+        {
+          prompt: "What took most of the financing outflow in 2025?",
+          answer: "Repurchase of common stock, (2,425,516) thousand, out of (2,470,898) net financing.",
+        },
+      ],
+      exercise: {
+        instructions: "Use the figures from pages 36, 37, 38 and 39 (in thousands of dollars). Type the number with or without commas.",
+        items: [
+          {
+            prompt: "Retained earnings at the end of 2024 were 1,574,232. Add 2025 net income of 1,535,761. What is the subtotal?",
+            answer: "3,109,993",
+            accept: ["3109993"],
+            explanation: "1,574,232 + 1,535,761 = 3,109,993.",
+            computedAnswer: true,
+          },
+          {
+            prompt: "Subtract the 2,490,085 of repurchases charged to retained earnings from 3,109,993. What is ending retained earnings?",
+            answer: "619,908",
+            accept: ["619908"],
+            explanation: "3,109,993 minus 2,490,085 = 619,908, the retained earnings line on page 36 for December 31, 2025.",
+            computedAnswer: true,
+          },
+          {
+            prompt: "Cash and cash equivalents 350,545 plus restricted cash 35,364 (page 36, December 31, 2025) equals what?",
+            answer: "385,909",
+            accept: ["385909"],
+            explanation: "350,545 + 35,364 = 385,909, the cash flow statement's end-of-year figure on page 39.",
+            computedAnswer: true,
+          },
+        ],
+      },
+      body: `${QR}
+
+**Four statements, one set of books.** The statements are not four separate reports. They are four views of the same accounts, and the numbers pass from one to the next. When they agree, you know you are reading them right. This lesson checks two links in the 10-K for ${DATED}.
+
+**The equity statement is a reconciliation.** Regulation S-X (17 CFR 210.3-04) says: "An analysis of the changes in each caption of stockholders' equity and noncontrolling interests presented in the balance sheets shall be given in a note or separate statement," as "a reconciliation of the beginning balance to the ending balance." In plain words: for each equity line on the balance sheet, show how you got from last year's number to this year's. The filing does it on page 38, the Consolidated Statements of Shareholders' Equity. It is a roll-forward with columns.
+
+**Link 1: net income into retained earnings.** **Retained earnings** is the part of equity built from profits kept in the company. On page 38, the row "Net income" puts 1,535,761 into the Retained Earnings column: the same bottom line as page 37. The row "Repurchase of common stock" takes (2,490,085) out of that column. So (in thousands):
+
+| Retained earnings | Amount | Page |
+|---|---|---|
+| End of 2024 | 1,574,232 | 36 |
+| Plus 2025 net income | 1,535,761 | 37 and 38 |
+| Minus repurchases charged to retained earnings | (2,490,085) | 38 |
+| End of 2025 | 619,908 | 36 |
+
+Check it: 1,574,232 + 1,535,761 = 3,109,993, and 3,109,993 minus 2,490,085 = 619,908. That is the retained earnings line on the balance sheet for December 31, 2025. The income statement fed the equity statement, and the equity statement landed on the balance sheet.
+
+**Why buybacks hit retained earnings here.** Companies treat repurchased shares in different ways. This filing says which way it uses (Note 1, page 40): "All shares of common stock that we repurchase are immediately retired and not held as treasury stock." Retired shares are canceled, so their cost comes out of equity accounts, and in this filing most of it comes out of retained earnings. In 2025 the company spent more on repurchases than it earned, so retained earnings fell from 1,574,232 to 619,908, and total shareholders' equity fell from 3,655,546 to 2,830,607 (lesson 1). Lesson 12 shows why that matters when you read a ratio.
+
+**Link 2: cash flow into the balance sheet.** The cash flow statement ended 2025 at 385,909 thousand of "cash, cash equivalents, and restricted cash" (page 39). The balance sheet (page 36) has no line with that number. But it has two lines that add to it:
+
+- Cash and cash equivalents: 350,545
+- Restricted cash: 35,364
+- Sum: 350,545 + 35,364 = **385,909**
+
+It matches. Try the start of the year too: 748,537 + 29,842 = 778,379, the cash flow statement's beginning figure. This is why lesson 4 cared about the small restricted cash line. Leave it out and the two statements seem not to agree.
+
+**What the links prove.** If you are handed one statement and a figure in it looks odd, the links let you check it from another page. Net income must reach retained earnings; ending cash must reach the balance sheet. When a number will not tie, either you have misread a heading, a unit or a caption, or something needs a closer look. Lesson 14 asks you to use these checks on your own.
+
+:::reveal What does Regulation S-X's rule 3-04 require for equity? ||| An analysis of the changes in each equity caption, as a reconciliation of the beginning balance to the ending balance.
+
+:::reveal Which number links the income statement to the equity statement? ||| Net income, 1,535,761 thousand, which appears on page 37 and again in the Retained Earnings column on page 38.
+
+:::reveal Why do repurchases reduce retained earnings in this filing? ||| The company retires repurchased shares immediately rather than holding them as treasury stock (Note 1, page 40), so their cost comes out of equity, here mostly retained earnings.
+
+:::reveal The cash flow statement ends at 385,909. Which balance sheet lines add up to it? ||| Cash and cash equivalents, 350,545, plus restricted cash, 35,364.
+
+## Vocabulary
+- **Statement of shareholders' equity**: the reconciliation of each equity line from the start of the year to the end.
+- **Retained earnings**: the part of equity built from profits the company has kept.
+- **Articulation**: the way the statements' numbers pass from one to another and agree.
+- **Retired shares**: repurchased shares that are canceled rather than held by the company.
+
+## Sources
+- ${CFR_3_04} Locator: § 210.3-04, printed p. 274 (the reconciliation of each equity caption). ${CFR_EDITION} ${TA}
+- ${CMG_10K} Locator: Item 8, p. 36 (retained earnings; cash; restricted cash; equity totals); p. 37 (net income); p. 38, Consolidated Statements of Shareholders' Equity ("Net income" and "Repurchase of common stock" rows); p. 39 (beginning and ending cash, cash equivalents, and restricted cash); Note 1, p. 40 (repurchased shares retired). ${TB}`,
+    },
+    {
+      slug: "section-2-quiz",
+      title: "Section 2 quiz · The statements",
+      section: S2,
+      body: "A graded check on the balance sheet, the income statement, the cash flow statement and how the three tie through the statement of shareholders' equity, all read from the fiscal 2025 10-K. Each answer links back to the lesson that teaches it.",
+      quiz: {
+        passingScore: 80,
+        questionsPerAttempt: 5,
+        shuffleOptions: true,
+        questions: [
+          { prompt: "How many years of balance sheets does Regulation S-X require?", options: ["Two", "Three", "Five", "One"], correctIndex: 0, explanation: "17 CFR 210.3-01: balance sheets as of the end of each of the two most recent fiscal years (lesson 4).", sourceLessonSlug: "the-balance-sheet" },
+          { prompt: "On page 36, which two dates head the columns?", options: ["Dec. 31, 2025 and 2023", "Dec. 31, 2025 and 2024", "Jan. 1 and Dec. 31, 2025", "June 30 and Dec. 31, 2025"], correctIndex: 1, explanation: "December 31, 2025 and December 31, 2024, the two most recent year-ends (lesson 4).", sourceLessonSlug: "the-balance-sheet" },
+          { prompt: "What does the heading \"(in thousands, except per share data)\" tell you?", options: ["Add six zeros to totals", "Figures are estimates", "Add three zeros to most", "Figures are in millions"], correctIndex: 2, explanation: "Every figure except per-share amounts is in thousands, so add three zeros (lesson 4).", sourceLessonSlug: "the-balance-sheet" },
+          { prompt: "Per the SEC guide, what makes an asset current?", options: ["It is worth over $1 million", "It was bought this same month", "It is held at a bank or broker", "It turns to cash within a year"], correctIndex: 3, explanation: "Current assets are expected to turn into cash within one year (lesson 4).", sourceLessonSlug: "the-balance-sheet" },
+          { prompt: "What makes a liability current?", options: ["It comes due within a year", "It is owed to a bank", "It carries no interest", "It is owed to the owners"], correctIndex: 0, explanation: "A current liability comes due within one year, whoever it is owed to (lesson 4).", sourceLessonSlug: "the-balance-sheet" },
+          { prompt: "What were cash and cash equivalents at December 31, 2025, in thousands?", options: ["748,537", "350,545", "385,909", "35,364"], correctIndex: 1, explanation: "Page 36: 350,545. The 748,537 figure is 2024, and 385,909 includes restricted cash (lesson 4).", sourceLessonSlug: "the-balance-sheet" },
+          { prompt: "What was restricted cash at December 31, 2025, in thousands?", options: ["29,842", "49,508", "35,364", "40,710"], correctIndex: 2, explanation: "Page 36: 35,364. The 29,842 figure is 2024 (lesson 4).", sourceLessonSlug: "the-balance-sheet" },
+          { prompt: "Why does restricted cash get its own line?", options: ["It earns more interest", "It is held overseas", "Auditors prefer it", "S-X requires it apart"], correctIndex: 3, explanation: "Regulation S-X requires separate disclosure of cash \"restricted as to withdrawal or usage\" (lesson 4).", sourceLessonSlug: "the-balance-sheet" },
+          { prompt: "Which caption in Regulation S-X's balance sheet list covers restricted cash?", options: ["Cash and cash items", "Inventories", "Prepaid expenses", "Other assets"], correctIndex: 0, explanation: "Caption 1, \"Cash and cash items,\" on printed page 301 (lesson 4).", sourceLessonSlug: "the-balance-sheet" },
+          { prompt: "What was inventory at December 31, 2025, in thousands?", options: ["48,942", "49,508", "63,799", "35,364"], correctIndex: 1, explanation: "Page 36: 49,508, small next to total assets of 8,994,531 (lesson 4).", sourceLessonSlug: "the-balance-sheet" },
+          { prompt: "What were total current assets at December 31, 2025, in thousands?", options: ["1,780,587", "1,188,142", "1,466,953", "1,168,768"], correctIndex: 2, explanation: "Page 36: 1,466,953. The 1,780,587 figure is 2024 (lesson 4).", sourceLessonSlug: "the-balance-sheet" },
+          { prompt: "What were total current liabilities at December 31, 2025, in thousands?", options: ["1,466,953", "1,168,768", "1,780,587", "1,188,142"], correctIndex: 3, explanation: "Page 36: 1,188,142. The 1,168,768 figure is 2024 (lesson 4).", sourceLessonSlug: "the-balance-sheet" },
+          { prompt: "How does the SEC guide define working capital?", options: ["Money left after paying current debts", "Cash spent opening new restaurants", "Revenue minus food and labor costs", "Profit kept inside the business"], correctIndex: 0, explanation: "\"The money leftover if a company paid its current liabilities\" (lesson 4).", sourceLessonSlug: "the-balance-sheet" },
+          { prompt: "What was working capital at December 31, 2025, in thousands?", options: ["611,819", "278,811", "385,909", "240,375"], correctIndex: 1, explanation: "1,466,953 minus 1,188,142 = 278,811 (lesson 4).", sourceLessonSlug: "the-balance-sheet" },
+          { prompt: "What was working capital at December 31, 2024, in thousands?", options: ["278,811", "591,819", "611,819", "1,168,768"], correctIndex: 2, explanation: "1,780,587 minus 1,168,768 = 611,819 (lesson 4).", sourceLessonSlug: "the-balance-sheet" },
+          { prompt: "What was the main reason working capital fell during 2025?", options: ["Inventory doubled", "Taxes were raised", "Debt came due", "Cash fell sharply"], correctIndex: 3, explanation: "Cash and cash equivalents dropped from 748,537 to 350,545 thousand (lesson 4).", sourceLessonSlug: "the-balance-sheet" },
+          { prompt: "Why does management say it needs little working capital?", options: ["Guests pay at the counter", "It borrows every month", "It owns no restaurants", "Its suppliers pay it"], correctIndex: 0, explanation: "Guests pay by cash or card, and it needs no significant receivables or inventories (Item 7, page 30; lesson 4).", sourceLessonSlug: "the-balance-sheet" },
+          { prompt: "Where does the company explain its working capital needs?", options: ["Note 12, page 61", "Item 7, page 30", "Item 8, page 36", "Cover page"], correctIndex: 1, explanation: "In the management's discussion, Item 7, page 30 (lesson 4).", sourceLessonSlug: "the-balance-sheet" },
+          { prompt: "What is the largest asset line on page 36?", options: ["Cash and cash equivalents", "Total inventory on hand", "Operating lease assets", "Restricted cash balance"], correctIndex: 2, explanation: "Operating lease assets, 4,463,010 thousand at the end of 2025 (lesson 4).", sourceLessonSlug: "the-balance-sheet" },
+          { prompt: "What were operating lease assets at December 31, 2025, in thousands?", options: ["4,773,434", "4,000,127", "302,380", "4,463,010"], correctIndex: 3, explanation: "Page 36: 4,463,010. The 4,000,127 figure is 2024, and 4,773,434 is the long-term lease liability (lesson 4).", sourceLessonSlug: "the-balance-sheet" },
+          { prompt: "What were long-term operating lease liabilities at December 31, 2025?", options: ["4,773,434", "4,463,010", "4,262,782", "302,380"], correctIndex: 0, explanation: "Page 36: 4,773,434 thousand; the current part was a further 302,380 (lesson 4).", sourceLessonSlug: "the-balance-sheet" },
+          { prompt: "What does this course say about how lease amounts are measured?", options: ["It teaches the formula", "It is set by standards", "It is set by the IRS", "It is up to the bank"], correctIndex: 1, explanation: "Measurement is set by accounting standards the course does not teach; it names the lines only (lesson 4).", sourceLessonSlug: "the-balance-sheet" },
+          { prompt: "Which edition of the regulations does this course quote?", options: ["The January 2026 edition", "The 1934 original text", "The April 1, 2025 edition", "The 2020 amended edition"], correctIndex: 2, explanation: "The printed edition revised as of April 1, 2025; later changes were not checked (lesson 4).", sourceLessonSlug: "the-balance-sheet" },
+          { prompt: "How many years does the income statement on page 37 show?", options: ["One", "Two", "Four", "Three"], correctIndex: 3, explanation: "2025, 2024 and 2023 (lesson 5).", sourceLessonSlug: "the-income-statement" },
+          { prompt: "Which rule requires three years of income statements?", options: ["Regulation S-X 3-02", "Regulation S-X 3-01", "Regulation S-K 303", "Form 10-K Item 6"], correctIndex: 0, explanation: "17 CFR 210.3-02 requires income and cash flow statements for three fiscal years; 3-01 covers balance sheets (lesson 5).", sourceLessonSlug: "the-income-statement" },
+          { prompt: "What was total revenue for 2025, in thousands?", options: ["11,313,853", "11,925,601", "9,989,803", "9,871,649"], correctIndex: 1, explanation: "Page 37: 11,925,601 (lesson 5).", sourceLessonSlug: "the-income-statement" },
+          { prompt: "What was total revenue for 2024, in thousands?", options: ["11,925,601", "9,871,649", "11,313,853", "9,397,520"], correctIndex: 2, explanation: "Page 37: 11,313,853. The 9,871,649 figure is 2023 (lesson 5).", sourceLessonSlug: "the-income-statement" },
+          { prompt: "What were labor costs for 2025, in thousands?", options: ["3,526,992", "2,789,789", "1,935,798", "2,991,680"], correctIndex: 3, explanation: "Page 37: 2,991,680. The 2,789,789 figure is 2024 (lesson 5).", sourceLessonSlug: "the-income-statement" },
+          { prompt: "What were food, beverage and packaging costs for 2025, in thousands?", options: ["3,526,992", "3,374,516", "2,991,680", "2,912,564"], correctIndex: 0, explanation: "Page 37: 3,526,992. The 3,374,516 figure is 2024 (lesson 5).", sourceLessonSlug: "the-income-statement" },
+          { prompt: "What were total operating expenses for 2025, in thousands?", options: ["11,925,601", "9,989,803", "9,397,520", "1,935,798"], correctIndex: 1, explanation: "Page 37: 9,989,803 (lesson 5).", sourceLessonSlug: "the-income-statement" },
+          { prompt: "What was income from operations for 2025, in thousands?", options: ["1,535,761", "1,916,333", "1,935,798", "1,557,813"], correctIndex: 2, explanation: "Page 37: 1,935,798, which is 11,925,601 minus 9,989,803 (lesson 5).", sourceLessonSlug: "the-income-statement" },
+          { prompt: "How is income from operations found?", options: ["Net income minus taxes", "Revenue plus all taxes", "Cash minus all expenses", "Revenue minus operating costs"], correctIndex: 3, explanation: "Revenue minus total operating expenses (lesson 5).", sourceLessonSlug: "the-income-statement" },
+          { prompt: "What was net income for 2025, in thousands?", options: ["1,535,761", "1,534,110", "1,935,798", "1,228,737"], correctIndex: 0, explanation: "Page 37: 1,535,761. The 1,534,110 figure is 2024 (lesson 5).", sourceLessonSlug: "the-income-statement" },
+          { prompt: "What was the provision for income taxes for 2025, in thousands?", options: ["476,120", "473,758", "391,769", "361,382"], correctIndex: 1, explanation: "Page 37: 473,758. The 476,120 figure is 2024 (lesson 5).", sourceLessonSlug: "the-income-statement" },
+          { prompt: "What was diluted earnings per share for 2025?", options: ["$1.11", "$0.89", "$1.14", "$1.54"], correctIndex: 2, explanation: "$1.14, up from $1.11 in 2024 (lesson 5).", sourceLessonSlug: "the-income-statement" },
+          { prompt: "In what unit is diluted earnings per share printed?", options: ["Thousands of dollars", "Millions of dollars", "Percent of revenue", "Dollars per share"], correctIndex: 3, explanation: "Per-share data is the exception to \"in thousands\" (lesson 5).", sourceLessonSlug: "the-income-statement" },
+          { prompt: "What does \"exclusive of depreciation and amortization shown separately below\" mean?", options: ["Depreciation has its own line", "Depreciation is not recorded", "Depreciation is in labor costs", "Depreciation is paid in cash"], correctIndex: 0, explanation: "The cost lines leave depreciation out because it is shown on its own line (lesson 5).", sourceLessonSlug: "the-income-statement" },
+          { prompt: "What was depreciation and amortization for 2025, in thousands?", options: ["473,758", "361,382", "666,336", "40,710"], correctIndex: 1, explanation: "361,382 (lesson 5).", sourceLessonSlug: "the-income-statement" },
+          { prompt: "What happens if you add depreciation into the food cost line yourself?", options: ["Profit rises", "Taxes fall", "It counts twice", "Cash grows"], correctIndex: 2, explanation: "Depreciation already has its own line, so you would count it twice (lesson 5).", sourceLessonSlug: "the-income-statement" },
+          { prompt: "What depreciation method does Note 1 name?", options: ["Double-declining", "Units of output", "Sum of the years", "Straight-line"], correctIndex: 3, explanation: "\"Depreciation is calculated using the straight-line method\" (Note 1, page 42; lesson 5).", sourceLessonSlug: "the-income-statement" },
+          { prompt: "What does straight-line depreciation do?", options: ["Spreads cost in equal shares", "Expenses it all in year one", "Charges more in early years", "Charges nothing until sold"], correctIndex: 0, explanation: "It spreads the cost in equal shares over the estimated useful life (lesson 5).", sourceLessonSlug: "the-income-statement" },
+          { prompt: "What useful life range does the filing give for equipment?", options: ["4-7 years", "3-10 years", "3-20 years", "1-2 years"], correctIndex: 1, explanation: "Equipment 3-10 years; furniture and fixtures 4-7; leasehold improvements and buildings 3-20 (lesson 5).", sourceLessonSlug: "the-income-statement" },
+          { prompt: "Which word in the depreciation policy shows that someone made a judgment?", options: ["Calculated", "Straight-line", "Estimated", "Method"], correctIndex: 2, explanation: "\"Estimated useful lives\": someone chose them (lesson 5).", sourceLessonSlug: "the-income-statement" },
+          { prompt: "Why do earlier per-share figures stay comparable after the 2024 split?", options: ["The split was undone", "Shares were not split", "Prices were adjusted", "They were restated"], correctIndex: 3, explanation: "Note 1 says share and per-share figures are restated for the split (lesson 5).", sourceLessonSlug: "the-income-statement" },
+          { prompt: "What stock split took effect on June 26, 2024?", options: ["50-for-1", "2-for-1", "10-for-1", "100-for-1"], correctIndex: 0, explanation: "A 50-for-1 split (Note 1, page 40; lesson 5).", sourceLessonSlug: "the-income-statement" },
+          { prompt: "What was operating margin for 2025, rounded?", options: ["About 12.9%", "About 16.2%", "About 18.0%", "About 20.4%"], correctIndex: 1, explanation: "1,935,798 divided by 11,925,601 is about 0.162 (lesson 5).", sourceLessonSlug: "the-income-statement" },
+          { prompt: "How is operating margin computed?", options: ["Net income over assets", "Revenue over expenses", "Operating income over revenue", "Cash flow over revenue"], correctIndex: 2, explanation: "Income from operations divided by revenue, the measure the SEC guide names (lesson 5).", sourceLessonSlug: "the-income-statement" },
+          { prompt: "Which statement explains how a year's profit and its cash differ?", options: ["The balance sheet", "The auditor's report", "The 10-K cover page", "The cash flow statement"], correctIndex: 3, explanation: "Net income was 1,535,761 thousand while cash fell; the cash flow statement explains how (lesson 6).", sourceLessonSlug: "the-cash-flow-statement" },
+          { prompt: "Which three activities does the SEC guide name for cash flows?", options: ["Operating, investing, financing", "Selling, buying, borrowing", "Revenue, expense, profit", "Current, noncurrent, equity"], correctIndex: 0, explanation: "\"(1) operating activities; (2) investing activities; and (3) financing activities\" (lesson 6).", sourceLessonSlug: "the-cash-flow-statement" },
+          { prompt: "Building out new restaurants is which kind of cash flow?", options: ["Operating", "Investing", "Financing", "Exchange"], correctIndex: 1, explanation: "Buying long-lived assets is investing (lesson 6).", sourceLessonSlug: "the-cash-flow-statement" },
+          { prompt: "Buying back the company's own shares is which kind of cash flow?", options: ["Operating", "Investing", "Financing", "Exchange"], correctIndex: 2, explanation: "Dealings with the company's funders, including buybacks, are financing (lesson 6).", sourceLessonSlug: "the-cash-flow-statement" },
+          { prompt: "Paying staff and food suppliers is which kind of cash flow?", options: ["Financing", "Investing", "Exchange", "Operating"], correctIndex: 3, explanation: "Running the business itself is operating (lesson 6).", sourceLessonSlug: "the-cash-flow-statement" },
+          { prompt: "What does the indirect method start from?", options: ["Net income", "Total revenue", "Ending cash", "Total assets"], correctIndex: 0, explanation: "The operating section starts at net income and lists adjustments to reconcile it to cash (lesson 6).", sourceLessonSlug: "the-cash-flow-statement" },
+          { prompt: "What was net cash provided by operating activities in 2025, in thousands?", options: ["1,535,761", "2,113,926", "2,470,898", "2,425,516"], correctIndex: 1, explanation: "Page 39: 2,113,926, about $2.11 billion (lesson 6).", sourceLessonSlug: "the-cash-flow-statement" },
+          { prompt: "Why is depreciation added back in the operating section?", options: ["It is a tax refund", "It was paid twice", "No cash left for it", "It is a new loan"], correctIndex: 2, explanation: "It lowered net income, but no cash was paid for it in 2025 (lesson 6).", sourceLessonSlug: "the-cash-flow-statement" },
+          { prompt: "When did the cash for depreciated equipment leave the company?", options: ["When it was depreciated", "When taxes were paid", "When the year closed", "When it was bought"], correctIndex: 3, explanation: "The cash went out at purchase, which shows in investing activities (lesson 6).", sourceLessonSlug: "the-cash-flow-statement" },
+          { prompt: "What was the change in unearned revenue on page 39 for 2025?", options: ["40,710", "35,082", "361,382", "63,799"], correctIndex: 0, explanation: "40,710 thousand, one of the operating adjustments (lesson 6).", sourceLessonSlug: "the-cash-flow-statement" },
+          { prompt: "What was net cash used in investing activities in 2025, in thousands?", options: ["(666,336)", "(35,082)", "(416)", "(2,470,898)"], correctIndex: 1, explanation: "Page 39: (35,082) (lesson 6).", sourceLessonSlug: "the-cash-flow-statement" },
+          { prompt: "What were purchases of leasehold improvements, property and equipment in 2025?", options: ["(35,082)", "(361,382)", "(666,336)", "(2,425,516)"], correctIndex: 2, explanation: "Page 39: (666,336) thousand (lesson 6).", sourceLessonSlug: "the-cash-flow-statement" },
+          { prompt: "How does the MD&A state 2025 capital expenditures?", options: ["$35.1 million", "$361.4 million", "$2.4 billion", "$666.3 million"], correctIndex: 3, explanation: "Item 7, page 30: \"$666.3 million\" (lesson 6).", sourceLessonSlug: "the-cash-flow-statement" },
+          { prompt: "Investing nets (35,082) and one line is (666,336). What must the other lines total?", options: ["+631,254", "+701,418", "-631,254", "+35,082"], correctIndex: 0, explanation: "Minus 35,082 minus (minus 666,336) = plus 631,254 (lesson 6).", sourceLessonSlug: "the-cash-flow-statement" },
+          { prompt: "What was net cash used in financing activities in 2025, in thousands?", options: ["(2,425,516)", "(2,470,898)", "(2,113,926)", "(392,470)"], correctIndex: 1, explanation: "Page 39: (2,470,898), about $2.47 billion (lesson 6).", sourceLessonSlug: "the-cash-flow-statement" },
+          { prompt: "What does the cash flow statement show for repurchase of common stock in 2025?", options: ["(2,470,898)", "(2,490,085)", "(2,425,516)", "(666,336)"], correctIndex: 2, explanation: "Page 39: (2,425,516) thousand, almost all of the financing outflow (lesson 6).", sourceLessonSlug: "the-cash-flow-statement" },
+          { prompt: "Where did most of the 2025 cash outflow go?", options: ["New restaurants", "Income taxes", "Paying off loans", "Buying back shares"], correctIndex: 3, explanation: "Repurchases of common stock, 2,425,516 thousand (lesson 6).", sourceLessonSlug: "the-cash-flow-statement" },
+          { prompt: "What was the net change in cash, equivalents and restricted cash for 2025?", options: ["(392,470)", "(397,992)", "(35,082)", "392,470"], correctIndex: 0, explanation: "Page 39: (392,470) thousand (lesson 6).", sourceLessonSlug: "the-cash-flow-statement" },
+          { prompt: "What were cash, equivalents and restricted cash at the beginning of 2025?", options: ["385,909", "778,379", "748,537", "350,545"], correctIndex: 1, explanation: "Page 39: 778,379 thousand (lesson 6).", sourceLessonSlug: "the-cash-flow-statement" },
+          { prompt: "What were cash, equivalents and restricted cash at the end of 2025?", options: ["350,545", "778,379", "385,909", "35,364"], correctIndex: 2, explanation: "Page 39: 385,909 thousand, which is 778,379 minus 392,470 (lesson 6).", sourceLessonSlug: "the-cash-flow-statement" },
+          { prompt: "What was the effect of exchange rate changes on cash in 2025?", options: ["(392,470)", "(35,082)", "40,710", "(416)"], correctIndex: 3, explanation: "Page 39: (416) thousand (lesson 6).", sourceLessonSlug: "the-cash-flow-statement" },
+          { prompt: "Which statement does the lesson call one more roll-forward?", options: ["The cash flow statement", "The auditor's report", "The cover page list", "The risk factor list"], correctIndex: 0, explanation: "Beginning cash plus the year's change equals ending cash (lesson 6).", sourceLessonSlug: "the-cash-flow-statement" },
+          { prompt: "What does the cash flow statement's total include besides cash?", options: ["Inventory and lease assets", "Equivalents, restricted cash", "Gift card and rewards cash", "Short-term debt balances"], correctIndex: 1, explanation: "Its total is \"cash, cash equivalents, and restricted cash\" (lesson 6).", sourceLessonSlug: "the-cash-flow-statement" },
+          { prompt: "What does Regulation S-X 3-04 require for each equity caption?", options: ["A forecast of next year", "A list of shareholders", "A reconciliation of balances", "An audit of each line"], correctIndex: 2, explanation: "\"A reconciliation of the beginning balance to the ending balance\" (lesson 7).", sourceLessonSlug: "how-the-statements-tie" },
+          { prompt: "On which page is the statement of shareholders' equity?", options: ["Page 36", "Page 37", "Page 39", "Page 38"], correctIndex: 3, explanation: "Page 38, between the income statement (37) and the cash flow statement (39) (lesson 7).", sourceLessonSlug: "how-the-statements-tie" },
+          { prompt: "What is retained earnings?", options: ["Equity from profits kept", "Cash held in the bank", "Money owed to lenders", "Revenue not yet earned"], correctIndex: 0, explanation: "The part of equity built from profits the company has kept (lesson 7).", sourceLessonSlug: "how-the-statements-tie" },
+          { prompt: "What were retained earnings at the end of 2024, in thousands?", options: ["619,908", "1,574,232", "1,535,761", "2,490,085"], correctIndex: 1, explanation: "Page 36, 2024 column: 1,574,232 (lesson 7).", sourceLessonSlug: "how-the-statements-tie" },
+          { prompt: "What were retained earnings at the end of 2025, in thousands?", options: ["1,574,232", "1,535,761", "619,908", "385,909"], correctIndex: 2, explanation: "Page 36: 619,908 (lesson 7).", sourceLessonSlug: "how-the-statements-tie" },
+          { prompt: "How much did the repurchase row take from retained earnings in 2025?", options: ["(2,425,516)", "(2,470,898)", "(2,490,653)", "(2,490,085)"], correctIndex: 3, explanation: "(2,490,085) in the Retained Earnings column; (2,490,653) is the row's Total column (page 38; lesson 7).", sourceLessonSlug: "how-the-statements-tie" },
+          { prompt: "Which figure links page 37 to page 38?", options: ["Net income", "Revenue", "Tax provision", "Inventory"], correctIndex: 0, explanation: "Net income, 1,535,761, flows into the Retained Earnings column (lesson 7).", sourceLessonSlug: "how-the-statements-tie" },
+          { prompt: "Why do repurchases reduce retained earnings in this filing?", options: ["Shares are held in treasury", "Shares are retired at once", "Shares are sold back later", "Shares are given to staff"], correctIndex: 1, explanation: "\"Immediately retired and not held as treasury stock\" (Note 1, page 40; lesson 7).", sourceLessonSlug: "how-the-statements-tie" },
+          { prompt: "What happened to retained earnings during 2025?", options: ["It rose sharply", "It held steady", "It fell sharply", "It turned negative"], correctIndex: 2, explanation: "From 1,574,232 to 619,908 thousand (lesson 7).", sourceLessonSlug: "how-the-statements-tie" },
+          { prompt: "Why did retained earnings fall during 2025?", options: ["Net income was negative", "Taxes rose sharply", "Inventory was written off", "Buybacks beat earnings"], correctIndex: 3, explanation: "Repurchases charged to retained earnings (2,490,085) exceeded net income (1,535,761) (lesson 7).", sourceLessonSlug: "how-the-statements-tie" },
+          { prompt: "How did total shareholders' equity at the end of 2025 compare with 2024?", options: ["It fell", "It rose", "It doubled", "Unchanged"], correctIndex: 0, explanation: "From 3,655,546 to 2,830,607 thousand (lesson 7).", sourceLessonSlug: "how-the-statements-tie" },
+          { prompt: "Which balance sheet lines add up to the cash flow statement's ending total?", options: ["Cash plus total inventory", "Cash plus restricted cash", "Cash plus unearned revenue", "Restricted cash plus leases"], correctIndex: 1, explanation: "350,545 + 35,364 = 385,909 (lesson 7).", sourceLessonSlug: "how-the-statements-tie" },
+          { prompt: "Cash and equivalents at December 31, 2024 plus restricted cash equals what?", options: ["748,537", "385,909", "778,379", "750,000"], correctIndex: 2, explanation: "748,537 + 29,842 = 778,379, the cash flow statement's beginning figure (lesson 7).", sourceLessonSlug: "how-the-statements-tie" },
+          { prompt: "If you left out the restricted cash line, what would seem to happen?", options: ["Assets would rise", "Profit would fall", "Taxes would rise", "The ties would fail"], correctIndex: 3, explanation: "Cash alone would not match the cash flow statement's total, so the statements would seem not to agree (lesson 7).", sourceLessonSlug: "how-the-statements-tie" },
+          { prompt: "What does articulation mean for financial statements?", options: ["Their figures tie together", "They are audited each year", "They are filed on EDGAR", "They use the same fonts"], correctIndex: 0, explanation: "The numbers pass from one statement to the next and agree (lesson 7).", sourceLessonSlug: "how-the-statements-tie" },
+          { prompt: "If a figure will not tie to another statement, what should you suspect first?", options: ["A fraud by managers", "A misread heading", "A missing audit", "A late filing"], correctIndex: 1, explanation: "Usually a misread heading, unit or caption; only then something needing a closer look (lesson 7).", sourceLessonSlug: "how-the-statements-tie" },
+          { prompt: "In form, what is the statement of shareholders' equity?", options: ["A forecast", "A ranking", "A roll-forward", "A tax form"], correctIndex: 2, explanation: "It reconciles each equity line from beginning to end: a roll-forward with columns (lesson 7).", sourceLessonSlug: "how-the-statements-tie" },
+          { prompt: "What does the \"Net income\" row on page 38 add to retained earnings?", options: ["1,574,232", "1,935,798", "2,490,085", "1,535,761"], correctIndex: 3, explanation: "1,535,761, the same bottom line as page 37 (lesson 7).", sourceLessonSlug: "how-the-statements-tie" },
+          { prompt: "By how much did retained earnings fall during 2025, in thousands?", options: ["954,324", "824,939", "1,535,761", "2,490,085"], correctIndex: 0, explanation: "1,574,232 minus 619,908 = 954,324. The 824,939 figure is the fall in total equity (lesson 7).", sourceLessonSlug: "how-the-statements-tie" },
+          { prompt: "What does the equity statement reconcile?", options: ["Sales to cash", "Start to end balances", "Assets to revenue", "Tax to profit"], correctIndex: 1, explanation: "Each equity caption's beginning balance to its ending balance (lesson 7).", sourceLessonSlug: "how-the-statements-tie" },
+          { prompt: "Which statement shows the repurchase row charged to retained earnings?", options: ["The balance sheet", "The cash flow page", "The equity statement", "The income statement"], correctIndex: 2, explanation: "The statement of shareholders' equity, page 38 (lesson 7).", sourceLessonSlug: "how-the-statements-tie" },
+          { prompt: "In this filing, what happens to repurchased shares?", options: ["Held as treasury stock", "Given to employees", "Resold the next year", "Retired immediately"], correctIndex: 3, explanation: "They are immediately retired (Note 1, page 40; lesson 7).", sourceLessonSlug: "how-the-statements-tie" },
         ],
       },
     },
