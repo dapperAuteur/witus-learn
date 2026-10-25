@@ -1,7 +1,7 @@
 # Read the Statements (FIRM-01): Verified Evidence Pack
 
 **Researched:** October 23, 2026 (UTC). Every source listed in the References was fetched in that session.
-**Companion to:** `scripts/data/briefs/read-the-statements-brief.md`. The brief's outline cites the IDs below.
+**Companion to:** `cloud-briefs/firm-01/00-approved-brief.md`. The brief's outline cites the IDs below.
 
 **Tags.** **V** = VERIFIED: read on a page or document fetched on October 23, 2026, at the locator given.
 **I** = inferred: arithmetic or reasoning on V items, with the working shown; may be taught only with the

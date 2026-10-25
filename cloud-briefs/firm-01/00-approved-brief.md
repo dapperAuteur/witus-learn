@@ -1,12 +1,12 @@
 # Brief: Read the Statements (proposed FIRM-01)
 
-**Status:** DRAFT for BAM's approval (2026-10-23). Not approved; no course file may be created from it until
-BAM approves it (rubric gate A8).
+**Status:** APPROVED by BAM on 2026-10-25 (rubric gate A8 met). His answers to section 11 are recorded there and
+override the proposals elsewhere in this brief where they differ.
 
 **Why it lives here.** The course-brief rule in `CLAUDE.md` puts briefs in `plans/future-courses/`, which is
 gitignored. This course will be authored by a cloud session that reads only committed files, so the brief and
-its evidence pack are committed beside the course data (the CREW-05 brief did the same in `cloud-briefs/`).
-**Evidence pack:** `scripts/data/briefs/read-the-statements-evidence.md`. Every ID below (F, E, A, M, R, N)
+its evidence pack are committed in `cloud-briefs/firm-01/`, beside CREW-05's (BAM, 2026-10-25).
+**Evidence pack:** `cloud-briefs/firm-01/research/read-the-statements-evidence.md`. Every ID below (F, E, A, M, R, N)
 points into it. **Source plan:** the ElementaryMBA curriculum plan of 2026-08-28 (sections 3, 5.1, 6, 7, 8 and
 11), whose text is also committed in `src/lib/future-work-content/proposals.ts`. **Decisions:** BAM's answers of
 2026-10-23 on the FIRM series, summarized in section 3.
@@ -25,10 +25,10 @@ points into it. **Source plan:** the ElementaryMBA curriculum plan of 2026-08-28
 | Series | `seriesSlug: "how-a-firm-works"`, `seriesTitle: "How a Firm Works"`, `seriesOrder: 1`, `seriesCode: "FIRM"`, `seriesPosition: "01"`, no track |
 | Navigation | `navigationMode: "linear"` |
 | Visibility (insert-only) | `visibility: "public"`, held with a `publishHoldReason` until a qualified reviewer signs off |
-| Price (insert-only) | Proposed `price: 0`, `priceType: "free"` on both schools (question 4) |
-| Research tier | **Tier 2** proposed (money and credential-adjacent; question 3) |
+| Price (insert-only) | Seed `price: 0`, `priceType: "free"` on both schools. BAM: free for the first 100 students (question 4); the capped promotion that ends it after 100 is a separate, later feature |
+| Research tier | **Tier 2** (approved; question 3) |
 | Standards | Excused: one `BACKLOG` line (section 3) |
-| Hold reason (draft) | "Held until a qualified reviewer (a CPA or a college accounting instructor) has checked every lesson marked QR, and until ElementaryMBA's courses are vetted. Research tier 2: every figure is read from one filed 10-K (Chipotle Mexican Grill, fiscal 2025, accession 0001058090-26-000009) and every rule from SEC, CFR, IRS or SBA text." |
+| Hold reason (draft) | "Held until the qualified reviewer BAM has named has checked every lesson marked QR, and until ElementaryMBA's courses are vetted. Research tier 2: every figure is read from one filed 10-K (Chipotle Mexican Grill, fiscal 2025, accession 0001058090-26-000009) and every rule from SEC, CFR, IRS or SBA text." |
 
 ## 1. Description
 
@@ -127,11 +127,11 @@ titles follow CREW-01's numbering ("1 · Title"). Slugs are proposals and become
   on ElementaryMBA only. **The Learn.WitUS copy ends by pointing to the rest of the series on ElementaryMBA.**
   Recommended mechanism: the data module exports the course, and the Learn.WitUS registration seeds it with one
   extra closing lesson, `the-series-continues`, that names the series and says the next courses continue on
-  ElementaryMBA. While ElementaryMBA is "coming soon" that lesson carries no link (question 6). **Dependency:**
-  registering one slug on two schools needs the change to `tests/seed-registry.test.ts` ("each slug once per
-  school", allowed only at position 01), which is being built on its own branch
-  (`chore/seed-registry-per-school`). Confirm `pnpm lint` (series codes, standards, citations) accepts the
-  pair after that change lands.
+  ElementaryMBA, **with a link to the ElementaryMBA landing page** (BAM's answer 6), where learners will be able
+  to sign up to be told when the school and its courses launch. **Registry:** the sharing rule is already on
+  main (`scripts/lib/seed-registry.ts`, `tests/seed-registry.test.ts`): a course may sit on a second school only
+  at position 01, which this course is; add it to `src/lib/series-previews.ts` (E1's preview list) so the
+  automatic notice knows it is a preview. Confirm `pnpm lint` and `pnpm test` accept the pair.
 - **Cross-school isolation.** One lesson text seeds to two schools, and a learner on one school must not be sent
   to a course that exists only on the other. So **lesson bodies link to no other course**. The connections in
   section 4 are for the author's awareness and for later, per-school work.
@@ -313,23 +313,25 @@ REPORTED (seen only in search results or summaries) and UNVERIFIED may not. Wiki
 citation. A failed fetch supports nothing. Thinness is reported as the finding. Say what the record shows, not
 a motive it does not.
 
-## 11. Questions for BAM
+## 11. BAM's answers (2026-10-25)
 
-1. Approve the slug `read-the-statements`, the title, and the series slug and title `how-a-firm-works`, "How a
-   Firm Works"?
-2. Approve Chipotle's fiscal 2025 10-K as the one filing? The criteria were one segment, no outstanding
-   borrowings, short statements, a familiar business. A different company can be swapped in at the cost of
-   redoing the evidence pack's sections 1 to 4.
-3. Research tier 2 (recommended: the method guide lists money and credential-adjacent subjects as tier 2,
-   which adds an adversarial pass on the generated outline) or tier 1?
-4. Price: free on both schools (recommended, since the Learn.WitUS copy is a preview), or paid on ElementaryMBA?
-5. Who is the qualified reviewer (a CPA or an accounting instructor)? The course stays held until they sign off.
-6. Before ElementaryMBA opens, should the Learn.WitUS closing lesson name ElementaryMBA without a link, or should
-   that lesson wait until ElementaryMBA is live?
-7. Is the capstone's Part B (any 10-K the learner picks, ungraded) the right shape?
-8. Teach the "no debt" versus 2.18 reading lesson (A8) in lesson 12? Recommended, reviewer-checked.
-9. Keep committed cloud briefs under `scripts/data/briefs/`, or move this one to `cloud-briefs/firm-01/` beside
-   CREW-05's?
+1. **Slug, title, series:** approved: `read-the-statements`, "Read the Statements", `how-a-firm-works`, "How a Firm
+   Works".
+2. **The one filing:** approved: Chipotle Mexican Grill's fiscal 2025 10-K (accession 0001058090-26-000009).
+3. **Research tier:** tier 2.
+4. **Price:** free for the first 100 students. Seed it free on both schools now. A capped promotion ("free for
+   the first N students", then the list price) does not exist in the app yet (promotions are time-windowed price
+   cuts, `src/db/schema/promotions.ts`); BAM wants it as a standard, reusable promotion template. Building it is
+   separate work and does not block this course.
+5. **Qualified reviewer:** named by BAM (recorded in his private task list, not in this public repo). The course
+   stays held until that reviewer signs off on every lesson marked QR.
+6. **The Learn.WitUS closing lesson:** names ElementaryMBA **with a link** to the ElementaryMBA landing page. That
+   page is to let learners sign up to be told when the school and its courses launch (a separate build; until it
+   ships, the link goes to the school's front page). This is lesson text written by the author; the automatic
+   "This series continues on" notice keeps its own rule and stays hidden while ElementaryMBA is coming soon.
+7. **Capstone Part B:** ungraded, as designed.
+8. **The "no debt" versus 2.18 reading lesson:** taught in lesson 12, as recommended, and reviewer-checked.
+9. **Where briefs live:** `cloud-briefs/firm-01/`, beside CREW-05's (done in this commit).
 
 ## References
 
