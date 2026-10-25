@@ -161,6 +161,7 @@ import { HOW_TO_READ_A_NUMBER_COURSE } from "./data/how-to-read-a-number-course"
 import { HOW_WE_KNOW_WHATS_OUT_THERE_COURSE } from "./data/how-we-know-whats-out-there-course";
 import { INTRO_TO_CITIZEN_SCIENCE_COURSE } from "./data/intro-to-citizen-science-course";
 import { THE_SLIDE_RULE_COURSE } from "./data/the-slide-rule-course";
+import { READ_THE_STATEMENTS_LEARN_COURSE } from "./data/read-the-statements-course";
 import { THE_RIVER_AND_THE_WATERSHED_COURSE } from "./data/the-river-and-the-watershed-course";
 import { HOW_TO_RESEARCH_COURSE } from "./data/how-to-research-course";
 import { ARCHIVES_AND_FINDING_AIDS_COURSE } from "./data/archives-and-finding-aids-course";
@@ -3788,6 +3789,31 @@ async function main() {
     .insert(schema.courseCategories)
     .values({ tenantId: learnWitus, name: "Money & Property", sortOrder: 13 })
     .onConflictDoNothing();
+  // FIRM-01 Read the Statements, the Learn.WitUS PREVIEW of the How a Firm Works series, whose home is
+  // ElementaryMBA (scripts/seed-speedway.ts, Business Core). BAM's preview rule (2026-10-23): only a
+  // series' position 01 sits on both schools, and this copy is listed in src/lib/series-previews.ts.
+  // It seeds READ_THE_STATEMENTS_LEARN_COURSE, which adds the closing lesson `the-series-continues`
+  // (names ElementaryMBA and links to its front page, BAM's answer 6). Brief:
+  // cloud-briefs/firm-01/00-approved-brief.md (approved 2026-10-25). Tier 2. Free (BAM: free for the
+  // first 100 students; the capped promotion is separate work). Public, held for the QR reviewer.
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "read-the-statements",
+    course: READ_THE_STATEMENTS_LEARN_COURSE,
+    category: "Money & Property",
+    seriesSlug: "how-a-firm-works",
+    seriesTitle: "How a Firm Works",
+    seriesOrder: 1,
+    seriesCode: "FIRM",
+    seriesPosition: "01",
+    navigationMode: "linear",
+    price: 0,
+    priceType: "free",
+    visibility: "public",
+    publishHoldReason:
+      "Held until the qualified reviewer BAM has named has checked every lesson marked QR, and until ElementaryMBA's courses are vetted. Research tier 2: every figure is read from one filed 10-K (Chipotle Mexican Grill, fiscal 2025, accession 0001058090-26-000009) and every rule from SEC, CFR, IRS or SBA text.",
+  });
   // Storytelling. Monodrama I is course #1 of the series (docs/storytelling-curriculum.md), built
   // before the core "how stories work" course on purpose: one performer removes every structural
   // crutch, so all six spine terms are exposed at once. The spine vocabulary was fixed in that doc

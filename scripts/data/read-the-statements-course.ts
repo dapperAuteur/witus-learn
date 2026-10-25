@@ -62,6 +62,9 @@ import type { AuthoredCourse, AuthoredLesson } from "./authored-course";
 //    in place. rts-newer-10k.
 //  - L12: the FASB's own pages were not read; the Concepts Statement is named through the Journal of
 //    Accountancy. rts-fasb-concepts-unread.
+//  - L10: how Note 1 says breakage is determined is not yet quoted (the pack excerpted only the
+//    figures), so the learner is sent to page 45. rts-breakage-method.
+//  - L13: no count of SEC filers is given, because none was found (N5). rts-filer-count.
 //
 // STANDARDS: excused with one BACKLOG line in scripts/check-standards-coverage.ts (brief section 3).
 //
@@ -1583,7 +1586,7 @@ const ELEMENTARY_MBA_FINAL = READ_THE_STATEMENTS_COURSE.lessons.find((l) => l.sl
 if (!ELEMENTARY_MBA_FINAL?.quiz) throw new Error("read-the-statements: the final quiz is missing");
 
 export const READ_THE_STATEMENTS_LEARN_COURSE: AuthoredCourse = {
-  title: READ_THE_STATEMENTS_COURSE.title,
+  title: "Read the Statements",
   description: `${READ_THE_STATEMENTS_COURSE.description} On Learn.WitUS it is the series preview: the rest of How a Firm Works continues on ElementaryMBA.`,
   lessons: [
     ...READ_THE_STATEMENTS_COURSE.lessons.filter((l) => l.slug !== "final-quiz"),

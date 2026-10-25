@@ -54,6 +54,22 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   school-wide pass share that doubles as the length-balance campaign's progress bar; it states that a
   database figure can differ slightly from lint. Follow-up: \`tests/isolation/quiz-integrity.db.test.ts\`
   has not run against a database.
+- 🔧 **Read the Statements, FIRM-01** (\`feat/course-firm-01-read-the-statements\`, no migration; after merge
+  run \`pnpm seed:speedway:prod\` and \`pnpm seed:courses:prod\`). BAM approved the brief on 2026-10-25
+  (\`cloud-briefs/firm-01/00-approved-brief.md\`; tier 2). Financial accounting learned from one real filing,
+  Chipotle Mexican Grill's fiscal 2025 Form 10-K (filed 2026-02-04, accession 0001058090-26-000009), every
+  figure dated to it and cited by Item and printed page. Four sections and a capstone, 14 lessons, 378
+  questions (four section quizzes of 84, 92, 92 and 66, and a final of 44 serving 10): the equation and
+  double entry, cash versus accrual through gift cards and the rewards roll-forward; the balance sheet,
+  income statement and cash flow statement, and how they tie through the equity statement; finding the 10-K
+  on EDGAR, the MD&A against the numbers, the note behind a number, the auditor's opinion; critical
+  accounting estimates and the "no outstanding debt" versus 2.18 reading, and who has to file. The capstone
+  answers five questions from the filing (Part B, on a 10-K the learner picks, ungraded). Not investment
+  advice, said in three lessons. Seeded on ElementaryMBA (Business Core, the series home) and on
+  Learn.WitUS (Money & Property) as the series preview, whose copy adds a closing lesson linking to
+  ElementaryMBA's front page. Public and free, held for the qualified reviewer's sign-off on every lesson
+  marked QR. Standards excused (BACKLOG). Five research checks filed (\`rts-*\`). Not yet: STAGED_COURSES
+  (after seeding), the reviewer's sign-off, and BAM's confirmation of the ElementaryMBA link.
 - 🔧 **The Slide Rule, TOOLS-02** (\`feat/course-the-slide-rule\`, no migration; after merge run
   \`pnpm seed:courses:prod\`). BAM approved the brief on 2026-10-14. Seven sections, 25 lessons, 599 questions
   (seven section quizzes and a final of 40 serving 10): why it works (logarithms made physical, a paper
@@ -3008,10 +3024,11 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
     business-formation courses shared whole from Learn.WitUS (ENTITY-01 to ENTITY-06, capstone ENTITY-99),
     the only Learn.WitUS courses ElementaryMBA gets in full (BAM, 2026-10-23;
     \`FULL_SHARE_TO_ELEMENTARY_MBA\` in \`scripts/lib/seed-registry.ts\`, enforced by its test).
-  - **Business Core** (⚪ backlog, no course written): the FIRM series, FIRM-01 *Read the Statements*
-    (financial accounting from a real 10-K) to FIRM-10, then FIRM-99. Its category shelf exists now.
-    FIRM-01 will also appear on Learn.WitUS as a preview, saying "This series continues on ElementaryMBA"
-    (\`src/lib/series-previews.ts\`; the link stays hidden while the school is coming soon).
+  - **Business Core**: the FIRM series, FIRM-01 *Read the Statements* to FIRM-10, then FIRM-99. 🔧 FIRM-01
+    is written (\`feat/course-firm-01-read-the-statements\`, see the entry under Platform); FIRM-02 on are
+    ⚪ backlog. FIRM-01 also appears on Learn.WitUS as a preview, listed in \`src/lib/series-previews.ts\`
+    (the automatic "This series continues on ElementaryMBA" link stays hidden while the school is coming
+    soon; the course's own closing lesson names the school and links to its front page).
   - **Professional** (⚪ backlog): \`harvard-ed-l-d\` once it moves, and anything of that register later,
     on a shelf not named for any university.
   - ✅ **School-name disclaimer** (\`src/lib/school-disclaimer.ts\`): "not a degree, not a university, not

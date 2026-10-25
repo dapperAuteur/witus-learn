@@ -313,6 +313,7 @@
 - [`housing-decisions`](./housing-decisions-course.ts) Housing: the Lease, the Loan Estimate, and the Map · MONEY-06 (personal-money)
 - [`keeping-a-house`](./keeping-a-house-course.ts) Keeping a House: Hazards, Checks, and Where an Amateur Has to Stop · series the-house-you-live-in · private · also in: Science & Math, Civics
 - [`predatory-products`](./predatory-products-course.ts) Predatory Products, Priced · MONEY-04 (personal-money)
+- [`read-the-statements`](./read-the-statements-course.ts) Read the Statements · FIRM-01 (how-a-firm-works)
 - [`retirement-accounts`](./retirement-accounts-course.ts) Retirement: the Plan, the Fee Disclosure, and the Floor · MONEY-07 (personal-money)
 - [`surplus-funds-basics`](./surplus-funds-basics-course.ts) Surplus Funds Basics: Helping Homeowners Recover What Is Theirs
 - [`taxes-and-filing`](./taxes-and-filing-course.ts) Taxes, and the Money Taken Before You See It · MONEY-05 (personal-money)
@@ -486,6 +487,10 @@
 - [`foreign-business-forms`](./foreign-business-forms-course.ts) How Other Countries Form Businesses · ENTITY-05 (how-a-business-is-formed)
 - [`us-business-forms`](./us-business-forms-course.ts) The US Forms: Sole Prop to Corporation · ENTITY-02 (how-a-business-is-formed)
 - [`what-a-business-entity-is`](./what-a-business-entity-is-course.ts) What a Business Entity Actually Is · ENTITY-01 (how-a-business-is-formed)
+
+### Business Core
+
+- [`read-the-statements`](./read-the-statements-course.ts) Read the Statements · FIRM-01 (how-a-firm-works)
 
 ## Acme Academy (the isolation-test school)
 
