@@ -130,6 +130,7 @@ const DATED = "fiscal 2025, Form 10-K filed February 4, 2026";
 
 const S1 = "1 · The equation and the entry";
 const S2 = "2 · The statements";
+const S3 = "3 · Open the filing";
 
 export const READ_THE_STATEMENTS_COURSE: AuthoredCourse = {
   title: "Read the Statements",
@@ -854,6 +855,370 @@ It matches. Try the start of the year too: 748,537 + 29,842 = 778,379, the cash 
           { prompt: "What does the equity statement reconcile?", options: ["Sales to cash", "Start to end balances", "Assets to revenue", "Tax to profit"], correctIndex: 1, explanation: "Each equity caption's beginning balance to its ending balance (lesson 7).", sourceLessonSlug: "how-the-statements-tie" },
           { prompt: "Which statement shows the repurchase row charged to retained earnings?", options: ["The balance sheet", "The cash flow page", "The equity statement", "The income statement"], correctIndex: 2, explanation: "The statement of shareholders' equity, page 38 (lesson 7).", sourceLessonSlug: "how-the-statements-tie" },
           { prompt: "In this filing, what happens to repurchased shares?", options: ["Held as treasury stock", "Given to employees", "Resold the next year", "Retired immediately"], correctIndex: 3, explanation: "They are immediately retired (Note 1, page 40; lesson 7).", sourceLessonSlug: "how-the-statements-tie" },
+        ],
+      },
+    },
+    // ══════════════════════════════════════════════════════════════════════
+    // SECTION 3: Open the filing
+    // ══════════════════════════════════════════════════════════════════════
+    {
+      slug: "find-the-10-k",
+      title: "8 · Find the 10-K",
+      section: S3,
+      recallContent: [
+        {
+          prompt: "Which two balance sheet lines add up to the cash flow statement's ending total of 385,909?",
+          answer: "Cash and cash equivalents (350,545) plus restricted cash (35,364).",
+        },
+        {
+          prompt: "Why do repurchases reduce retained earnings in this filing?",
+          answer: "Repurchased shares are immediately retired, not held as treasury stock (Note 1, page 40).",
+        },
+      ],
+      body: `${QR}
+
+**What a 10-K is, and who writes it.** The SEC's investor bulletin *How to Read a 10-K* says most U.S. public companies must file a 10-K every year: an annual report on a form the SEC sets. It also says something every reader should keep in mind: "The SEC neither writes the 10-K nor vouches for its accuracy." The company writes it. The SEC makes it public.
+
+**EDGAR is free.** The SEC's system for filings is called EDGAR. Its search page invites you to "Enjoy free public access to millions of informational documents filed by publicly traded companies," with tools that include Company Search and Full Text Search. No account and no fee are needed.
+
+**Finding this course's filing, step by step.**
+
+1. On the SEC's "Search filings" page, use Company Search and type the company's name.
+2. Filter the list of filings to Form 10-K. On October 23, 2026, EDGAR listed 21 Form 10-K filings for this company, the oldest filed March 17, 2006, and the newest was the one this course reads.
+3. Open the filing index. It shows the company's Central Index Key (CIK), 0001058090, the filing date, February 4, 2026, the time it was accepted, 4:51:26 p.m. that day, and the **accession number**, 0001058090-26-000009. It lists every document in the filing: the main 10-K, here a file named cmg-20251231.htm, and the exhibits.
+4. Open the main document. The company's own page number is printed at the foot of each page, and its table of contents uses those numbers.
+
+**Record two things every time.** Write down the filing date and the accession number. A company files a new 10-K every year, 21 of them for this company so far, so "the Chipotle 10-K" is not specific enough. The accession number names exactly one filing.
+
+**The deadline, and this filing's timing.** The SEC's general instructions for Form 10-K set the due date by the size of the filer: 60 days after the fiscal year ends for a large accelerated filer, 75 days for an accelerated filer and 90 days for everyone else. The cover page of this filing checks the box "Large accelerated filer." Its fiscal year ended December 31, 2025, and it was filed February 4, 2026. December has 31 days to count, January adds 31 more, and February 4 makes it 35 days in all: well inside its 60.
+
+**The Items, in order.** A 10-K is divided into numbered Items, and every company uses the same numbers, so you can find the same part of any filing. Where they fall in this one:
+
+| Item | What it holds | Printed page |
+|---|---|---|
+| Item 1 | Business | 4 |
+| Item 1A | Risk Factors | 9 |
+| Item 6 | "Reserved" | 23 |
+| Item 7 | Management's discussion and analysis (MD&A) | 24 |
+| Item 7A | Market risk | 32 |
+| Item 8 | Auditor's report, then the statements and notes | 34 onward |
+
+The form's instructions say Item 7 furnishes "the information required by Item 303 of Regulation S-K," and Item 8 files "financial statements meeting the requirements of Regulation S-X." So the two most important Items each point to a federal rule, and lessons 4, 5, 7, 9 and 12 quote those rules.
+
+**A lesson in dating your sources.** The 2011 SEC bulletin describes Item 6 as "Selected Financial Data," five years of figures in one table. But this filing's Item 6, on page 23, says only "Reserved," and the current form's instructions say the same. What changed? On November 19, 2020, the SEC adopted amendments that included "Eliminating Item 301 (Selected Financial Data)." The names match: the table the bulletin describes is the one the 2020 rule removed. The bulletin was right when it was written. A source can be official, free and true on its date, and out of date now. Always check when a source was written, not just who wrote it.
+
+**The same is true of this course.** This filing will not be the newest for long. A large accelerated filer with a December year-end has 60 days to file, so a 10-K for fiscal 2026 should appear in early 2027. This course does not change its figures when that happens. Every number here stays dated to the fiscal 2025 filing, and you should check EDGAR for a newer one before you rely on any of it.
+
+**How to cite a figure.** Give the company, the form, the fiscal year, the filing date and the accession number once, then the Item and printed page for each figure: "Item 8, p. 36." Anyone can then find exactly what you read.
+
+:::reveal Does the SEC check that a 10-K is accurate? ||| No. The SEC's bulletin: "The SEC neither writes the 10-K nor vouches for its accuracy." The company writes it.
+
+:::reveal Why record the accession number and not just "the 2025 10-K"? ||| A company files many documents over the years; the accession number names exactly one filing.
+
+:::reveal Was this 10-K filed on time? ||| Yes. As a large accelerated filer it had 60 days; it filed 35 days after its December 31, 2025 year-end.
+
+:::reveal Why does the 2011 bulletin's description of Item 6 not match this filing? ||| A 2020 SEC rule eliminated Selected Financial Data, so the current form, and this filing, show Item 6 as reserved.
+
+## Vocabulary
+- **Form 10-K**: the annual report most U.S. public companies file with the SEC.
+- **EDGAR**: the SEC's free online system for company filings.
+- **Filing index**: the EDGAR page that lists a filing's date, accession number and documents.
+- **Large accelerated filer**: a filer category with the shortest deadline, 60 days after year-end.
+- **Item**: a numbered part of Form 10-K, the same in every company's filing.
+
+## Sources
+- ${SEC_BULLETIN} Locator: PDF p. 1 of 6 (most public companies file a 10-K; "neither writes the 10-K nor vouches for its accuracy"); PDF p. 2 (Item 6 as "Selected Financial Data"). ${TA}
+- ${SEC_SEARCH} Locator: the page introduction ("free public access"; Company Search and Full Text Search). ${TA}
+- ${EDGAR_LIST} Locator: the Form 10-K filter (21 filings as of October 23, 2026; the oldest filed 2006-03-17). ${TB}
+- ${EDGAR_INDEX} Locator: the index header (CIK, filing date, acceptance time, accession number) and the document list. ${TB}
+- ${FORM_10K} Locator: General Instruction A(2), PDF p. 1 of 19 (60, 75 and 90 days); PDF pp. 12 to 13 (Item 6 reserved; Items 7 and 8). ${TA}
+- ${SEC_2020} Locator: the list of amendments ("Eliminating Item 301 (Selected Financial Data)"). ${TA}
+- ${CMG_10K} Locator: cover page ("Large accelerated filer"); table of contents and page footers (the Items and pages); Item 6, p. 23 ("Reserved"). ${TB}`,
+    },
+    {
+      slug: "md-and-a-against-the-numbers",
+      title: "9 · The MD&A against the numbers",
+      section: S3,
+      recallContent: [
+        {
+          prompt: "How many days after year-end does a large accelerated filer have to file its 10-K?",
+          answer: "60 days. This filing came 35 days after December 31, 2025.",
+        },
+        {
+          prompt: "Why does this filing show Item 6 as \"Reserved\"?",
+          answer: "A 2020 SEC rule eliminated Selected Financial Data, which is what Item 6 used to hold.",
+        },
+      ],
+      body: `${QR}
+
+**Management's own account.** Item 7 is management's discussion and analysis of financial condition and results of operations, the MD&A. The rule that governs it, Item 303 of Regulation S-K, gives its objective: "to provide material information relevant to an assessment of the financial condition and results of operations of the registrant." A compliant MD&A "is expected to better allow investors to view the registrant from management's perspective." The SEC's *Beginners' Guide* says the same in plainer words: "It is intended to help investors to see the company through the eyes of management." And the SEC's 10-K bulletin says the MD&A "allows company management to tell its story in its own words."
+
+**Its own words is the point, and the risk.** The statements are audited numbers. The MD&A is the company explaining them. That makes it the most useful reading in the filing, and also the part you should check. The habit to build: take a claim in the MD&A and find the number behind it in the statements.
+
+**The headline claims.** The MD&A in the 10-K for ${DATED} opens with 2025 financial highlights (Item 7, page 24). Three of them:
+
+- "Total revenue increased 5.4% to $11.9 billion"
+- "Comparable restaurant sales decreased 1.7%"
+- "Diluted earnings per share was $1.14, a 2.7% increase from $1.11"
+
+**Check them against page 37.** Revenue on the income statement was 11,925,601 thousand in 2025 and 11,313,853 thousand in 2024. Divide: 11,925,601 divided by 11,313,853 is about 1.054, an increase of about 5.4%. And 11,925,601 thousand is $11.9 billion, rounded. Diluted earnings per share on page 37 was $1.14 and $1.11; 1.14 divided by 1.11 is about 1.027, a 2.7% increase. The MD&A's numbers match the audited statements.
+
+**A puzzle.** Revenue went up 5.4%, but comparable restaurant sales went down 1.7%. How can both be true? The MD&A answers it with a table on page 26, "Change in restaurant sales," that walks from 2024 sales to 2025 sales. This course calls a table like this a sales bridge (dollars in millions):
+
+| Change in restaurant sales (page 26) | $ millions |
+|---|---|
+| 2024 total | 11,313.9 |
+| Comparable restaurant sales | (191.3) |
+| Restaurants opened in 2025 | 327.0 |
+| Restaurants opened in 2024 | 481.8 |
+| Restaurant closures | (31.6) |
+| Other | 25.8 |
+| 2025 total | 11,925.6 |
+
+**Read the bridge.** It separates the comparable restaurant sales line from the sales of restaurants opened in 2024 and 2025, so the comparable measure is one that leaves the newest restaurants out; the company defines it in the MD&A on page 25. That measure lost 191.3 million. The new restaurants added 327.0 plus 481.8, more than 800 million together. So total revenue grew because the company had more restaurants, while sales at the restaurants it compares fell. The headline and the comparable figure are both true; they measure different things.
+
+**Check the bridge too.** 11,313.9 minus 191.3 plus 327.0 plus 481.8 minus 31.6 plus 25.8 = 11,925.6. It adds up, and 11,925.6 million is the 11,925,601 thousand on page 37.
+
+**Count the restaurants.** Page 25 shows the company-owned restaurant count: 3,726 at the beginning of 2025, 334 openings, 13 permanent closures and 5 relocations, and 4,042 at the end. The end figure is the same 4,042 that Note 1 gives. A business that opened 334 restaurants in a year can grow total sales even while its comparable sales slip, which is just what the bridge shows.
+
+**What the "Other" line holds.** A footnote to the bridge says: "Other includes the impact of gift card breakage adjustments, as $20.1 million of additional gift card breakage revenue was recorded during the year ended December 31, 2025 as compared to the year ended December 31, 2024." That is a thread to pull. Lesson 10 follows it into the notes.
+
+**What the check does not tell you.** Matching numbers show that the MD&A reports the statements correctly. They do not tell you whether the company is a good investment, and neither does this course. **This course describes what a filing says; it is not investment advice.** It names no stock as good or bad and makes no forecast.
+
+:::reveal What is the MD&A's objective, under Item 303? ||| To provide material information relevant to an assessment of the company's financial condition and results of operations, from management's perspective.
+
+:::reveal Revenue rose 5.4% while comparable restaurant sales fell 1.7%. How? ||| New restaurants: the 2024 and 2025 openings added 327.0 and 481.8 million, more than the 191.3 million comparable sales lost.
+
+:::reveal How do you check the MD&A's 5.4% revenue claim? ||| Divide page 37's revenue, 11,925,601 by 11,313,853: about 1.054, a 5.4% increase.
+
+## Vocabulary
+- **MD&A**: management's discussion and analysis, Item 7, the company's own account of its results.
+- **Comparable restaurant sales**: the company's measure of sales that leaves its newest restaurants out, defined on page 25.
+- **Sales bridge**: a table that walks from last year's sales to this year's, one cause per line.
+- **Highlights**: the headline claims at the start of the MD&A.
+
+## Sources
+- ${CFR_303} Locator: § 229.303(a), printed p. 413 (the objective; "management's perspective"). ${CFR_EDITION} ${TA}
+- ${SEC_GUIDE} Locator: section "Read the MD&A." ${TA}
+- ${SEC_BULLETIN} Locator: PDF pp. 2 to 3 (Item 7, "in its own words"). ${TA}
+- ${CMG_10K} Locator: Item 7, p. 24 (2025 Financial Highlights); p. 25 (restaurant counts; comparable sales); p. 26 (change in restaurant sales and its footnote); Item 8, p. 37 (revenue and diluted earnings per share). ${TB}`,
+    },
+    {
+      slug: "the-footnote-behind-the-number",
+      title: "10 · The footnote behind the number",
+      section: S3,
+      recallContent: [
+        {
+          prompt: "What explained revenue rising while comparable restaurant sales fell?",
+          answer: "Restaurants opened in 2024 and 2025 added 481.8 and 327.0 million, more than the 191.3 million comparable sales lost.",
+        },
+        {
+          prompt: "What does the bridge's footnote say the \"Other\" line includes?",
+          answer: "Gift card breakage adjustments: $20.1 million more breakage revenue in 2025 than in 2024.",
+        },
+      ],
+      body: `${QR}
+
+**The notes hold the rules.** The SEC's *Beginners' Guide* puts it simply: "The footnotes to financial statements are packed with information." The 10-K bulletin adds that Item 8's audited statements are "accompanied by notes." The statements give you numbers. The notes tell you which rules produced them. Two companies can do the same business and print different numbers because they chose different policies, and the notes are where you find out which.
+
+**Note 1 is the policy list.** In the 10-K for ${DATED}, Note 1, "Description of Business and Summary of Significant Accounting Policies," starts on page 40 and runs to page 46. You have already read four of its policies in this course:
+
+| Policy | What Note 1 says | Page | Lesson |
+|---|---|---|---|
+| Revenue | "when payment is tendered at the point of sale" | 44 | 3 |
+| Gift cards | "initially recorded as unearned revenue" | 45 | 3 |
+| Depreciation | "the straight-line method over the estimated useful lives" | 42 | 5 |
+| Repurchased shares | "immediately retired and not held as treasury stock" | 40 | 7 |
+
+**One more: inventory.** Note 1 (page 41) says inventory "is valued at the lower of first-in, first-out cost or net realizable value." First-in, first-out, as the name says, treats the first items bought as the first ones used, so what is left on the shelf carries the most recent costs. "The lower of" means that if that cost is higher than the net realizable value, the lower figure is the one on the balance sheet. This is why the 49,508 thousand of inventory on page 36 is not simply a count of food times today's price: a policy decided how to value it.
+
+**Follow a thread from the MD&A to the note.** Lesson 9 ended on a footnote in the MD&A (page 26): "$20.1 million of additional gift card breakage revenue was recorded during the year ended December 31, 2025 as compared to the year ended December 31, 2024." The MD&A calls these "gift card breakage adjustments." Where does the number come from? Go to the gift card policy in Note 1, page 45. There the company reports gift card breakage revenue of "$27,877, $7,760 and $1,162" for 2025, 2024 and 2023, in thousands.
+
+**Check that they agree.** 27,877 minus 7,760 = 20,117 thousand, which is $20.1 million, rounded. The MD&A's number and the note's numbers match.
+
+**Read what the jump means.** Breakage revenue was 1,162 thousand in 2023, 7,760 in 2024 and 27,877 in 2025: more than three and a half times the year before. That growth added 20.1 million dollars of revenue in a year when total revenue grew about 612 million (11,925,601 minus 11,313,853 = 611,748 thousand). It is a small part of the total. But it is revenue that came from the gift card policy rather than from serving more meals, and you would not have known it was there without the MD&A's footnote and the note behind it.
+
+**How breakage is decided.** Note 1's gift card paragraph on page 45 explains how the company determines breakage. This course has not yet quoted that explanation, so read it on page 45 yourself before you say how the number is set. What you can say from the pages quoted here is what the MD&A says: the change came from gift card breakage adjustments, and it moved revenue by 20.1 million dollars.
+
+**The reading habit.** When a number surprises you, or an MD&A line says "Other," look for a footnote, then look in the notes for the policy behind it. Lesson 12 goes one step further: which of these policies rest on estimates management itself calls critical.
+
+:::reveal Where does a 10-K list the accounting policies behind its numbers? ||| In Note 1, the Summary of Significant Accounting Policies (pages 40 to 46 in this filing).
+
+:::reveal How is inventory valued in this filing? ||| At "the lower of first-in, first-out cost or net realizable value" (Note 1, page 41).
+
+:::reveal Show that the MD&A's $20.1 million matches the note. ||| Breakage revenue was 27,877 in 2025 and 7,760 in 2024 (thousands); 27,877 minus 7,760 = 20,117, about $20.1 million.
+
+## Vocabulary
+- **Notes to the financial statements**: the pages after the statements that explain policies and break out figures.
+- **Accounting policy**: a rule the company chose for how to record and value something.
+- **First-in, first-out (FIFO)**: valuing inventory as if the first items bought are the first used.
+- **Gift card breakage revenue**: revenue the filing reports from gift card balances under its gift card policy (Note 1, page 45).
+
+## Sources
+- ${SEC_GUIDE} Locator: section "Read the Footnotes." ${TA}
+- ${SEC_BULLETIN} Locator: PDF p. 3 (Item 8, statements "accompanied by notes"). ${TA}
+- ${CMG_10K} Locator: Note 1, pp. 40 to 46 (the policies); p. 41 (inventory); p. 45 (gift card breakage revenue for 2025, 2024 and 2023); Item 7, p. 26 (the breakage footnote to the sales bridge); Item 8, pp. 36 and 37 (inventory; revenue). ${TB}`,
+    },
+    {
+      slug: "the-auditors-opinion",
+      title: "11 · The auditor's opinion",
+      section: S3,
+      recallContent: [
+        {
+          prompt: "How does this filing value inventory?",
+          answer: "At the lower of first-in, first-out cost or net realizable value (Note 1, page 41).",
+        },
+        {
+          prompt: "How do you show the MD&A's $20.1 million breakage figure matches the note?",
+          answer: "27,877 minus 7,760 = 20,117 thousand, the 2025 and 2024 breakage revenue in Note 1.",
+        },
+      ],
+      body: `${QR}
+
+**An outsider's opinion.** The SEC does not vouch for a 10-K (lesson 8). Someone else checks the financial statements: an independent auditor, an outside accounting firm. The firm's report sits at the front of Item 8, before the statements. In the 10-K for ${DATED}, it is the "Report of Independent Registered Public Accounting Firm" on pages 34 and 35.
+
+**Who wrote it, and when.** The auditor is Ernst & Young LLP. The report is dated February 4, 2026, the same day the 10-K was filed, and says: "We have served as the Company's auditor since 1997." The report also gives the firm's identification number with the Public Company Accounting Oversight Board: PCAOB ID 42.
+
+**The opinion, word by word.** The key sentence says the financial statements "present fairly, in all material respects, the financial position of the Company at December 31, 2025 and 2024, and the results of its operations and its cash flows for each of the three years in the period ended December 31, 2025, in conformity with U.S. generally accepted accounting principles." Take it apart:
+
+- **"present fairly"**: a judgment that the statements give a fair picture. It does not say "exactly" or "with no errors."
+- **"in all material respects"**: the opinion is about the things that matter to the picture, not every figure to the last dollar. Read the words for what they do not say: they do not promise that every number is perfect.
+- **"financial position ... at December 31, 2025 and 2024"**: the two balance sheets (lesson 4).
+- **"results of its operations and its cash flows for each of the three years"**: the three years of income and cash flow statements (lessons 5 and 6).
+- **"in conformity with U.S. generally accepted accounting principles"**: the rulebook the statements are measured against, not tax rules (lesson 3).
+
+**What an opinion is not.** It is not a recommendation to buy anything. It is not a prediction that the company will do well. It is not a guarantee against fraud or mistakes. It is a professional's opinion that the statements fairly present the company's finances under the accounting rules. That is valuable, and it is narrower than many readers assume.
+
+**Unqualified and qualified.** The SEC's 10-K bulletin says: "Most audit reports express an 'unqualified opinion'." An unqualified opinion is a clean one: no exceptions. If an auditor's opinion is qualified, or the auditor disclaims an opinion, the bulletin says the reader should look carefully at why. The sentence quoted above has no exceptions in it, which is what a clean opinion looks like.
+
+**A critical audit matter.** The report names one critical audit matter: "Evaluation of stock-based compensation performance condition assumptions." Read what the report says about it on page 35. Notice one connection now: stock-based compensation is also one of the four estimates management lists as critical in its MD&A. Lesson 12 reads that list. The auditor and management point at the same area.
+
+**Management signs too.** The bulletin notes that the Sarbanes-Oxley Act requires the company's chief executive officer (CEO) and chief financial officer (CFO) to certify the 10-K, and that the certifications under Sections 302 and 906 are usually in Exhibits 31 and 32. This filing's index lists exhibits EX-31.1, EX-31.2 and EX-32.1. So the people who run the company put their own names to the report, separately from the auditor.
+
+**Putting it together.** Management writes the 10-K and certifies it. The auditor gives an opinion on the financial statements. The SEC makes it public and vouches for neither. Each does a different job, and knowing which is which tells you how much weight each part of the filing can carry.
+
+:::reveal What does "present fairly, in all material respects" promise, and what does it not? ||| A fair picture in everything that matters; it does not promise that every number is exact or that there is no error or fraud.
+
+:::reveal What is an unqualified opinion? ||| A clean opinion with no exceptions. The SEC bulletin says most audit reports express one.
+
+:::reveal What critical audit matter does this report name, and where else does that area appear? ||| "Evaluation of stock-based compensation performance condition assumptions"; stock-based compensation is also one of management's four critical accounting estimates.
+
+:::reveal Where are the CEO and CFO certifications usually found? ||| In Exhibits 31 and 32; this filing lists EX-31.1, EX-31.2 and EX-32.1.
+
+## Vocabulary
+- **Independent auditor**: an outside accounting firm that gives an opinion on the financial statements.
+- **Unqualified opinion**: a clean audit opinion with no exceptions.
+- **Qualified opinion**: an audit opinion with an exception the reader should look into.
+- **Critical audit matter**: an area the auditor's report singles out and explains.
+- **Certification**: the CEO's and CFO's signed statements filed as exhibits with the 10-K.
+
+## Sources
+- ${CMG_10K} Locator: Item 8, pp. 34 to 35, Report of Independent Registered Public Accounting Firm (the opinion; the auditor and date; "since 1997"; PCAOB ID 42; the critical audit matter). ${TB}
+- ${SEC_BULLETIN} Locator: PDF p. 1 (certification by the CEO and CFO); PDF p. 4 (unqualified opinions; Exhibits 31 and 32). ${TA}
+- ${EDGAR_INDEX} Locator: the document list (EX-31.1, EX-31.2, EX-32.1). ${TB}`,
+    },
+    {
+      slug: "section-3-quiz",
+      title: "Section 3 quiz · Open the filing",
+      section: S3,
+      body: "A graded check on finding and citing a 10-K, checking the MD&A against the statements, tracing a number to its note, and reading the auditor's opinion, all in the fiscal 2025 10-K. Each answer links back to the lesson that teaches it.",
+      quiz: {
+        passingScore: 80,
+        questionsPerAttempt: 5,
+        shuffleOptions: true,
+        questions: [
+          { prompt: "Who writes a company's 10-K?", options: ["The company itself", "The SEC's staff", "The stock exchange", "The IRS examiners"], correctIndex: 0, explanation: "The company writes it; the SEC makes it public (lesson 8).", sourceLessonSlug: "find-the-10-k" },
+          { prompt: "What does the SEC's bulletin say about the SEC's role in a 10-K?", options: ["It audits every single 10-K", "It neither writes nor vouches", "It rewrites unclear Items", "It certifies each figure"], correctIndex: 1, explanation: "\"The SEC neither writes the 10-K nor vouches for its accuracy\" (lesson 8).", sourceLessonSlug: "find-the-10-k" },
+          { prompt: "What does it cost to search filings on EDGAR?", options: ["A yearly fee", "A per-page fee", "Nothing at all", "A broker account"], correctIndex: 2, explanation: "The SEC offers \"free public access\" (lesson 8).", sourceLessonSlug: "find-the-10-k" },
+          { prompt: "Which two search tools does the SEC's Search Filings page name?", options: ["Price and Volume Search", "Broker and Dealer Search", "Ticker and Chart Search", "Company and Full Text Search"], correctIndex: 3, explanation: "Company Search and Full Text Search (lesson 8).", sourceLessonSlug: "find-the-10-k" },
+          { prompt: "What is the company's Central Index Key on EDGAR?", options: ["0001058090", "0001058009", "1058090000", "0026000009"], correctIndex: 0, explanation: "CIK 0001058090, shown on the filing index (lesson 8).", sourceLessonSlug: "find-the-10-k" },
+          { prompt: "At what time was the filing accepted on February 4, 2026?", options: ["9:00:00 a.m.", "4:51:26 p.m.", "11:59:59 p.m.", "5:00:00 p.m."], correctIndex: 1, explanation: "Accepted at 16:51:26, which is 4:51:26 p.m. (lesson 8).", sourceLessonSlug: "find-the-10-k" },
+          { prompt: "What is the main 10-K document's file name?", options: ["cmg-20260204.htm", "cmg-10k-2025.htm", "cmg-20251231.htm", "chipotle-10k.htm"], correctIndex: 2, explanation: "cmg-20251231.htm, named for the fiscal year-end (lesson 8).", sourceLessonSlug: "find-the-10-k" },
+          { prompt: "How many Form 10-K filings did EDGAR list for the company on October 23, 2026?", options: ["12", "35", "60", "21"], correctIndex: 3, explanation: "21, the newest being the one this course reads (lesson 8).", sourceLessonSlug: "find-the-10-k" },
+          { prompt: "When was the oldest 10-K on that list filed?", options: ["March 17, 2006", "March 17, 2016", "January 1, 2000", "June 26, 2024"], correctIndex: 0, explanation: "March 17, 2006 (lesson 8).", sourceLessonSlug: "find-the-10-k" },
+          { prompt: "Why record the accession number of a filing?", options: ["It sets the deadline", "It names one filing", "It is the stock ticker", "It proves an audit"], correctIndex: 1, explanation: "It identifies exactly one document among all a company has filed (lesson 8).", sourceLessonSlug: "find-the-10-k" },
+          { prompt: "How many days does a large accelerated filer have to file its 10-K?", options: ["90 days", "75 days", "60 days", "35 days"], correctIndex: 2, explanation: "General Instruction A(2): 60 days after fiscal year-end (lesson 8).", sourceLessonSlug: "find-the-10-k" },
+          { prompt: "How many days does a filer that is not accelerated have?", options: ["35 days", "60 days", "75 days", "90 days"], correctIndex: 3, explanation: "90 days for all other registrants (lesson 8).", sourceLessonSlug: "find-the-10-k" },
+          { prompt: "How many days does an accelerated filer have?", options: ["75 days", "90 days", "60 days", "45 days"], correctIndex: 0, explanation: "75 days (lesson 8).", sourceLessonSlug: "find-the-10-k" },
+          { prompt: "Which filer box does this filing's cover page check?", options: ["Accelerated filer", "Large accelerated filer", "Non-accelerated filer", "Smaller reporting company"], correctIndex: 1, explanation: "\"Large accelerated filer\" (lesson 8).", sourceLessonSlug: "find-the-10-k" },
+          { prompt: "How many days after year-end was this 10-K filed?", options: ["60 days", "90 days", "35 days", "4 days"], correctIndex: 2, explanation: "December 31, 2025 to February 4, 2026 is 35 days (lesson 8).", sourceLessonSlug: "find-the-10-k" },
+          { prompt: "Which Item holds the Business description?", options: ["Item 7", "Item 6", "Item 8", "Item 1"], correctIndex: 3, explanation: "Item 1, Business, page 4 (lesson 8).", sourceLessonSlug: "find-the-10-k" },
+          { prompt: "Which Item holds management's discussion and analysis?", options: ["Item 7", "Item 1A", "Item 8", "Item 6"], correctIndex: 0, explanation: "Item 7, beginning on page 24 (lesson 8).", sourceLessonSlug: "find-the-10-k" },
+          { prompt: "Which Item holds the audited financial statements?", options: ["Item 7", "Item 8", "Item 1", "Item 7A"], correctIndex: 1, explanation: "Item 8, with the auditor's report first (lesson 8).", sourceLessonSlug: "find-the-10-k" },
+          { prompt: "On what printed page does this filing's MD&A begin?", options: ["Page 4", "Page 9", "Page 24", "Page 36"], correctIndex: 2, explanation: "Item 7 begins on page 24 (lesson 8).", sourceLessonSlug: "find-the-10-k" },
+          { prompt: "What does Item 6 show in this filing?", options: ["Selected data", "Risk factors", "Market risk", "Reserved"], correctIndex: 3, explanation: "Page 23 says \"Reserved\" (lesson 8).", sourceLessonSlug: "find-the-10-k" },
+          { prompt: "What eliminated Selected Financial Data from the form?", options: ["SEC amendments of 2020", "The 2011 investor bulletin", "A 2006 company decision", "The 2016 JOBS Act guide"], correctIndex: 0, explanation: "Amendments adopted November 19, 2020 (lesson 8).", sourceLessonSlug: "find-the-10-k" },
+          { prompt: "What does the Item 6 story teach about sources?", options: ["Old sources are false", "Check when it was written", "Official means current", "Ignore SEC bulletins"], correctIndex: 1, explanation: "The 2011 bulletin was right on its date and is out of date now (lesson 8).", sourceLessonSlug: "find-the-10-k" },
+          { prompt: "Which rule does the form say Item 8's statements must meet?", options: ["Regulation S-K", "IRS Publication 583", "Regulation S-X", "The PCAOB's rules"], correctIndex: 2, explanation: "\"Financial statements meeting the requirements of Regulation S-X\"; Item 7 points to S-K (lesson 8).", sourceLessonSlug: "find-the-10-k" },
+          { prompt: "What should you check before relying on this course's figures?", options: ["The stock's price", "The auditor's fee", "Tax rates this year", "EDGAR for a newer 10-K"], correctIndex: 3, explanation: "The figures stay dated to fiscal 2025; a newer 10-K may exist (lesson 8).", sourceLessonSlug: "find-the-10-k" },
+          { prompt: "Which Item of Regulation S-K governs the MD&A?", options: ["Item 303", "Item 301", "Item 105", "Item 8"], correctIndex: 0, explanation: "Item 303, 17 CFR 229.303 (lesson 9).", sourceLessonSlug: "md-and-a-against-the-numbers" },
+          { prompt: "Whose perspective does Item 303 say the MD&A should show?", options: ["The auditor's", "Management's", "The SEC staff's", "Shareholders'"], correctIndex: 1, explanation: "It should \"allow investors to view the registrant from management's perspective\" (lesson 9).", sourceLessonSlug: "md-and-a-against-the-numbers" },
+          { prompt: "How does the SEC 10-K bulletin describe the MD&A?", options: ["An audited summary", "A list of risks", "Management's story", "A legal opinion"], correctIndex: 2, explanation: "It \"allows company management to tell its story in its own words\" (lesson 9).", sourceLessonSlug: "md-and-a-against-the-numbers" },
+          { prompt: "What habit does the lesson build for reading the MD&A?", options: ["Skip it entirely", "Trust it fully", "Read it last only", "Check its numbers"], correctIndex: 3, explanation: "Take a claim and find the number behind it in the statements (lesson 9).", sourceLessonSlug: "md-and-a-against-the-numbers" },
+          { prompt: "By how much does the MD&A say total revenue increased in 2025?", options: ["5.4%", "1.7%", "2.7%", "16.2%"], correctIndex: 0, explanation: "\"Total revenue increased 5.4% to $11.9 billion\" (lesson 9).", sourceLessonSlug: "md-and-a-against-the-numbers" },
+          { prompt: "What happened to comparable restaurant sales in 2025?", options: ["Rose 5.4%", "Fell 1.7%", "Rose 2.7%", "Fell 5.4%"], correctIndex: 1, explanation: "\"Comparable restaurant sales decreased 1.7%\" (lesson 9).", sourceLessonSlug: "md-and-a-against-the-numbers" },
+          { prompt: "By how much did diluted earnings per share increase, per the MD&A?", options: ["5.4%", "1.7%", "2.7%", "1.14%"], correctIndex: 2, explanation: "\"$1.14, a 2.7% increase from $1.11\" (lesson 9).", sourceLessonSlug: "md-and-a-against-the-numbers" },
+          { prompt: "How do you check the MD&A's 5.4% revenue claim?", options: ["Ask the auditor", "Read the cover", "Use page 36 cash", "Divide page 37 revenue"], correctIndex: 3, explanation: "11,925,601 divided by 11,313,853 is about 1.054 (lesson 9).", sourceLessonSlug: "md-and-a-against-the-numbers" },
+          { prompt: "On what page is the change in restaurant sales table?", options: ["Page 26", "Page 24", "Page 37", "Page 45"], correctIndex: 0, explanation: "Item 7, page 26 (lesson 9).", sourceLessonSlug: "md-and-a-against-the-numbers" },
+          { prompt: "In the sales bridge, what did comparable restaurant sales contribute?", options: ["+191.3 million", "-191.3 million", "+327.0 million", "-31.6 million"], correctIndex: 1, explanation: "(191.3) million, a decrease (lesson 9).", sourceLessonSlug: "md-and-a-against-the-numbers" },
+          { prompt: "In the sales bridge, what did restaurants opened in 2024 add?", options: ["327.0 million", "25.8 million", "481.8 million", "191.3 million"], correctIndex: 2, explanation: "481.8 million; the 2025 openings added 327.0 (lesson 9).", sourceLessonSlug: "md-and-a-against-the-numbers" },
+          { prompt: "In the sales bridge, what did restaurants opened in 2025 add?", options: ["481.8 million", "191.3 million", "31.6 million", "327.0 million"], correctIndex: 3, explanation: "327.0 million (lesson 9).", sourceLessonSlug: "md-and-a-against-the-numbers" },
+          { prompt: "Why did revenue rise while comparable sales fell?", options: ["New restaurants opened", "Prices were cut", "Gift cards expired", "Taxes were refunded"], correctIndex: 0, explanation: "The 2024 and 2025 openings added more than 800 million, more than comparable sales lost (lesson 9).", sourceLessonSlug: "md-and-a-against-the-numbers" },
+          { prompt: "What does the comparable sales measure leave out, as the bridge shows?", options: ["All gift card sales", "The newest restaurants", "Every delivery order", "Sales tax collected"], correctIndex: 1, explanation: "The bridge lists the newest restaurants on their own lines, apart from comparable sales (lesson 9).", sourceLessonSlug: "md-and-a-against-the-numbers" },
+          { prompt: "What did restaurant closures take away in the sales bridge?", options: ["191.3 million", "25.8 million", "31.6 million", "327.0 million"], correctIndex: 2, explanation: "(31.6) million (lesson 9).", sourceLessonSlug: "md-and-a-against-the-numbers" },
+          { prompt: "What total does the sales bridge end at, in millions?", options: ["11,313.9", "11,122.6", "12,034.2", "11,925.6"], correctIndex: 3, explanation: "11,925.6 million, matching page 37's 11,925,601 thousand (lesson 9).", sourceLessonSlug: "md-and-a-against-the-numbers" },
+          { prompt: "How many company-owned restaurants were there at the start of 2025?", options: ["3,726", "4,042", "3,938", "334"], correctIndex: 0, explanation: "3,726 at the beginning of the year (page 25; lesson 9).", sourceLessonSlug: "md-and-a-against-the-numbers" },
+          { prompt: "How many restaurant openings does page 25 show for 2025?", options: ["13", "334", "5", "104"], correctIndex: 1, explanation: "334 openings (lesson 9).", sourceLessonSlug: "md-and-a-against-the-numbers" },
+          { prompt: "How many permanent closures does page 25 show for 2025?", options: ["5", "334", "13", "104"], correctIndex: 2, explanation: "13 permanent closures; 5 is the number of relocations (lesson 9).", sourceLessonSlug: "md-and-a-against-the-numbers" },
+          { prompt: "What does the bridge's footnote say the Other line includes?", options: ["Delivery fees", "Menu price changes", "New store rents", "Breakage adjustments"], correctIndex: 3, explanation: "\"The impact of gift card breakage adjustments\" (lesson 9).", sourceLessonSlug: "md-and-a-against-the-numbers" },
+          { prompt: "How much additional breakage revenue does the footnote report for 2025?", options: ["$20.1 million", "$27.9 million", "$7.8 million", "$25.8 million"], correctIndex: 0, explanation: "\"$20.1 million of additional gift card breakage revenue\" compared with 2024 (lesson 9).", sourceLessonSlug: "md-and-a-against-the-numbers" },
+          { prompt: "What does matching the MD&A to the statements show?", options: ["The stock is cheap", "It reports them right", "The firm will grow", "No fraud occurred"], correctIndex: 1, explanation: "Only that the MD&A reports the statements correctly; it says nothing about investing (lesson 9).", sourceLessonSlug: "md-and-a-against-the-numbers" },
+          { prompt: "Which statement fits this course's posture on the MD&A?", options: ["It ranks the stock", "It forecasts revenue", "It is not advice", "It sets price goals"], correctIndex: 2, explanation: "The course describes what a filing says; it is not investment advice (lesson 9).", sourceLessonSlug: "md-and-a-against-the-numbers" },
+          { prompt: "What does the SEC guide say about footnotes?", options: ["They can be skipped", "They repeat the totals", "They are unaudited", "They are packed with info"], correctIndex: 3, explanation: "\"The footnotes to financial statements are packed with information\" (lesson 10).", sourceLessonSlug: "the-footnote-behind-the-number" },
+          { prompt: "Why can two similar companies print different numbers?", options: ["Different policies", "Different auditors", "Different fonts", "Different stock prices"], correctIndex: 0, explanation: "They may choose different accounting policies, which the notes disclose (lesson 10).", sourceLessonSlug: "the-footnote-behind-the-number" },
+          { prompt: "What does Note 1 summarize, besides the business?", options: ["Leases and Debt", "Accounting policies", "Revenue Recognition", "Supplemental info"], correctIndex: 1, explanation: "\"Description of Business and Summary of Significant Accounting Policies\" (lesson 10).", sourceLessonSlug: "the-footnote-behind-the-number" },
+          { prompt: "On which pages does Note 1 run?", options: ["Pages 34 to 35", "Pages 36 to 39", "Pages 40 to 46", "Pages 47 to 48"], correctIndex: 2, explanation: "Page 40 to page 46 (lesson 10).", sourceLessonSlug: "the-footnote-behind-the-number" },
+          { prompt: "Inventory is valued at the lower of first-in, first-out cost or what?", options: ["Replacement cost", "Retail price", "Original cost", "Net realizable value"], correctIndex: 3, explanation: "\"The lower of first-in, first-out cost or net realizable value\" (Note 1, page 41; lesson 10).", sourceLessonSlug: "the-footnote-behind-the-number" },
+          { prompt: "What does first-in, first-out assume?", options: ["First items bought are used first", "Last items bought are used first", "All items cost the same amount", "Items are valued at sale price"], correctIndex: 0, explanation: "As the name says, the first items bought are treated as the first used (lesson 10).", sourceLessonSlug: "the-footnote-behind-the-number" },
+          { prompt: "On what page is the inventory policy?", options: ["Page 36", "Page 41", "Page 42", "Page 45"], correctIndex: 1, explanation: "Note 1, page 41 (lesson 10).", sourceLessonSlug: "the-footnote-behind-the-number" },
+          { prompt: "On what page is the depreciation policy?", options: ["Page 40", "Page 44", "Page 42", "Page 48"], correctIndex: 2, explanation: "Note 1, page 42 (lesson 10).", sourceLessonSlug: "the-footnote-behind-the-number" },
+          { prompt: "Which Note 1 policy, on page 40, did lesson 7 rely on?", options: ["Revenue at point of sale", "Straight-line depreciation", "Gift cards as unearned", "Repurchased shares retired"], correctIndex: 3, explanation: "Repurchased shares are immediately retired, page 40 (lesson 10).", sourceLessonSlug: "the-footnote-behind-the-number" },
+          { prompt: "What was gift card breakage revenue in 2025, in thousands?", options: ["27,877", "7,760", "1,162", "20,117"], correctIndex: 0, explanation: "27,877 (Note 1, page 45; lesson 10).", sourceLessonSlug: "the-footnote-behind-the-number" },
+          { prompt: "What was gift card breakage revenue in 2024, in thousands?", options: ["27,877", "7,760", "1,162", "20,117"], correctIndex: 1, explanation: "7,760 (Note 1, page 45; lesson 10).", sourceLessonSlug: "the-footnote-behind-the-number" },
+          { prompt: "What was gift card breakage revenue in 2023, in thousands?", options: ["27,877", "7,760", "1,162", "20,117"], correctIndex: 2, explanation: "1,162 (Note 1, page 45; lesson 10).", sourceLessonSlug: "the-footnote-behind-the-number" },
+          { prompt: "What does 27,877 minus 7,760 come to?", options: ["35,637", "19,117", "21,017", "20,117"], correctIndex: 3, explanation: "20,117 thousand, the MD&A's $20.1 million (lesson 10).", sourceLessonSlug: "the-footnote-behind-the-number" },
+          { prompt: "Where in the notes is gift card breakage revenue reported?", options: ["Note 1, page 45", "Note 3, page 48", "Note 9, page 58", "Note 12, page 61"], correctIndex: 0, explanation: "In the gift card policy, Note 1, page 45 (lesson 10).", sourceLessonSlug: "the-footnote-behind-the-number" },
+          { prompt: "What does the MD&A call the change in breakage?", options: ["Gift card write-offs", "Breakage adjustments", "Loyalty redemptions", "Unearned discounts"], correctIndex: 1, explanation: "\"Gift card breakage adjustments\" (lesson 10).", sourceLessonSlug: "the-footnote-behind-the-number" },
+          { prompt: "Roughly how many times 2024's breakage revenue was 2025's?", options: ["About 1.5 times", "About 2 times", "About 3.6 times", "About 10 times"], correctIndex: 2, explanation: "27,877 divided by 7,760 is about 3.6 (lesson 10).", sourceLessonSlug: "the-footnote-behind-the-number" },
+          { prompt: "By how much did total revenue grow in 2025, in thousands?", options: ["20,117", "191,300", "808,800", "611,748"], correctIndex: 3, explanation: "11,925,601 minus 11,313,853 = 611,748 (lesson 10).", sourceLessonSlug: "the-footnote-behind-the-number" },
+          { prompt: "Why is the jump in breakage revenue worth noticing?", options: ["It came from policy", "It was the largest line", "It was a one-time loss", "It reduced net income"], correctIndex: 0, explanation: "It is revenue from the gift card policy rather than from serving more meals (lesson 10).", sourceLessonSlug: "the-footnote-behind-the-number" },
+          { prompt: "Where should you look when an MD&A line says Other?", options: ["The cover page", "Its footnote", "The stock price", "The exhibits"], correctIndex: 1, explanation: "Look for its footnote, then the note behind it (lesson 10).", sourceLessonSlug: "the-footnote-behind-the-number" },
+          { prompt: "What does this course say about how breakage is determined?", options: ["It is set by the IRS", "It equals all balances", "Read Note 1 on page 45", "It is set by the auditor"], correctIndex: 2, explanation: "The method is in Note 1's gift card paragraph, which the course asks you to read yourself (lesson 10).", sourceLessonSlug: "the-footnote-behind-the-number" },
+          { prompt: "Which source says Item 8's statements are accompanied by notes?", options: ["The cover page", "Form 10-K Item 6", "The 2020 rule", "The SEC bulletin"], correctIndex: 3, explanation: "The SEC's 10-K bulletin, page 3 (lesson 10).", sourceLessonSlug: "the-footnote-behind-the-number" },
+          { prompt: "Why is the 49,508 of inventory not just food times today's price?", options: ["A policy set its value", "The auditor guessed it", "It includes leases", "It is in millions"], correctIndex: 0, explanation: "The FIFO, lower-of policy decided how it is valued (lesson 10).", sourceLessonSlug: "the-footnote-behind-the-number" },
+          { prompt: "On which pages is the auditor's report?", options: ["Pages 24 to 26", "Pages 34 to 35", "Pages 36 to 39", "Pages 40 to 46"], correctIndex: 1, explanation: "Item 8, pages 34 to 35 (lesson 11).", sourceLessonSlug: "the-auditors-opinion" },
+          { prompt: "Which firm audited the statements?", options: ["Deloitte & Touche LLP", "Grant Thornton LLP", "Ernst & Young LLP", "Moss Adams LLP"], correctIndex: 2, explanation: "Ernst & Young LLP (lesson 11).", sourceLessonSlug: "the-auditors-opinion" },
+          { prompt: "What date is the auditor's report dated?", options: ["December 31, 2025", "January 30, 2026", "March 17, 2026", "February 4, 2026"], correctIndex: 3, explanation: "February 4, 2026, the day the 10-K was filed (lesson 11).", sourceLessonSlug: "the-auditors-opinion" },
+          { prompt: "Since what year has this firm audited the company?", options: ["1997", "2006", "1993", "2020"], correctIndex: 0, explanation: "\"We have served as the Company's auditor since 1997\" (lesson 11).", sourceLessonSlug: "the-auditors-opinion" },
+          { prompt: "What PCAOB ID does the report give for the firm?", options: ["1997", "42", "303", "10"], correctIndex: 1, explanation: "PCAOB ID 42 (lesson 11).", sourceLessonSlug: "the-auditors-opinion" },
+          { prompt: "What does the opinion say the statements do?", options: ["Guarantee profits", "Forecast fairly", "Present fairly", "Exceed targets"], correctIndex: 2, explanation: "They \"present fairly, in all material respects\" (lesson 11).", sourceLessonSlug: "the-auditors-opinion" },
+          { prompt: "What does \"in all material respects\" not promise?", options: ["A fair picture", "Things that matter", "A clean opinion", "Every number exact"], correctIndex: 3, explanation: "It covers what matters to the picture, not every figure to the last dollar (lesson 11).", sourceLessonSlug: "the-auditors-opinion" },
+          { prompt: "What rules does the opinion measure the statements against?", options: ["U.S. GAAP", "IRS tax rules", "SBA lending rules", "Exchange rules"], correctIndex: 0, explanation: "\"In conformity with U.S. generally accepted accounting principles\" (lesson 11).", sourceLessonSlug: "the-auditors-opinion" },
+          { prompt: "Which years' balance sheets does the opinion cover?", options: ["2024 and 2023", "2025 and 2024", "2025 only", "2023 to 2025"], correctIndex: 1, explanation: "Financial position \"at December 31, 2025 and 2024\" (lesson 11).", sourceLessonSlug: "the-auditors-opinion" },
+          { prompt: "How many years of operations and cash flows does the opinion cover?", options: ["One", "Two", "Three", "Five"], correctIndex: 2, explanation: "\"For each of the three years in the period ended December 31, 2025\" (lesson 11).", sourceLessonSlug: "the-auditors-opinion" },
+          { prompt: "Which best describes an audit opinion?", options: ["A stock rating", "A sales forecast", "A fraud guarantee", "A professional's view"], correctIndex: 3, explanation: "A professional's opinion that the statements fairly present the finances under the rules (lesson 11).", sourceLessonSlug: "the-auditors-opinion" },
+          { prompt: "What does the SEC bulletin say most audit reports express?", options: ["An unqualified opinion", "A qualified opinion", "A disclaimer of opinion", "An adverse opinion"], correctIndex: 0, explanation: "\"Most audit reports express an 'unqualified opinion'\" (lesson 11).", sourceLessonSlug: "the-auditors-opinion" },
+          { prompt: "What is an unqualified opinion?", options: ["One with exceptions", "A clean opinion", "A refused opinion", "A draft opinion"], correctIndex: 1, explanation: "A clean opinion with no exceptions (lesson 11).", sourceLessonSlug: "the-auditors-opinion" },
+          { prompt: "What should a reader do on meeting a qualified opinion?", options: ["Ignore it", "Sell at once", "Look carefully", "File a complaint"], correctIndex: 2, explanation: "The bulletin says a qualified opinion or disclaimer deserves a careful look (lesson 11).", sourceLessonSlug: "the-auditors-opinion" },
+          { prompt: "What critical audit matter does the report name?", options: ["Lease rate assumptions", "Gift card breakage", "Inventory counts", "Stock-based compensation"], correctIndex: 3, explanation: "\"Evaluation of stock-based compensation performance condition assumptions\" (lesson 11).", sourceLessonSlug: "the-auditors-opinion" },
+          { prompt: "Where else does stock-based compensation appear as a critical item?", options: ["Management's estimates", "The 10-K cover page", "Note 12, on debt", "Item 6, reserved"], correctIndex: 0, explanation: "It is one of the four critical accounting estimates in the MD&A (lesson 11).", sourceLessonSlug: "the-auditors-opinion" },
+          { prompt: "Which law requires the CEO and CFO to certify the 10-K?", options: ["The JOBS Act", "Sarbanes-Oxley", "The Tax Code", "Securities Act"], correctIndex: 1, explanation: "The Sarbanes-Oxley Act, per the SEC bulletin (lesson 11).", sourceLessonSlug: "the-auditors-opinion" },
+          { prompt: "Where are the officers' certifications usually found?", options: ["Items 1 and 1A", "Notes 1 and 3", "Exhibits 31 and 32", "Pages 36 and 37"], correctIndex: 2, explanation: "Exhibits 31 and 32 (lesson 11).", sourceLessonSlug: "the-auditors-opinion" },
+          { prompt: "Which certification exhibits does this filing's index list?", options: ["EX-10.1 and EX-21", "EX-1.1 and EX-2.1", "EX-99.1 only", "EX-31.1, 31.2, 32.1"], correctIndex: 3, explanation: "EX-31.1, EX-31.2 and EX-32.1 (lesson 11).", sourceLessonSlug: "the-auditors-opinion" },
+          { prompt: "In the lesson's summary, what is the auditor's job?", options: ["Opine on statements", "Write the 10-K", "Publish the 10-K", "Certify for the CEO"], correctIndex: 0, explanation: "Management writes and certifies; the auditor gives an opinion on the statements; the SEC publishes (lesson 11).", sourceLessonSlug: "the-auditors-opinion" },
+          { prompt: "Is an audit opinion a guarantee against fraud?", options: ["Yes, always", "No, it is not", "Only if clean", "Only for cash"], correctIndex: 1, explanation: "It is an opinion on fair presentation, narrower than a guarantee (lesson 11).", sourceLessonSlug: "the-auditors-opinion" },
+          { prompt: "Where in the 10-K does the auditor's report sit?", options: ["After all the notes", "On the cover page", "Before the statements", "In the exhibit list"], correctIndex: 2, explanation: "At the front of Item 8, before the statements (lesson 11).", sourceLessonSlug: "the-auditors-opinion" },
+          { prompt: "What does \"present fairly\" stop short of saying?", options: ["A fair picture", "Under the rules", "Most things", "With no errors"], correctIndex: 3, explanation: "It does not say \"exactly\" or \"with no errors\" (lesson 11).", sourceLessonSlug: "the-auditors-opinion" },
         ],
       },
     },
