@@ -6,6 +6,7 @@ import {
   schoolShareViolations,
   type SeedEntry,
 } from "../scripts/lib/seed-registry";
+import { SERIES_PREVIEWS } from "@/lib/series-previews";
 
 // The registry is what the lint guards (series codes, standards, citations) and the course index
 // (scripts/data/README.md, `pnpm gen:course-index`) read. Loop-registered courses used to come back
@@ -59,16 +60,21 @@ describe("seed registry", () => {
     expect(broken.map((v) => v.detail)).toEqual([]);
   });
 
-  // The seven business-formation courses are shared whole (scripts/seed-speedway.ts), and nothing
-  // else from Learn.WitUS is: a course added to ElementaryMBA by hand fails here by name.
-  it("puts exactly the seven listed business courses on both Learn.WitUS and ElementaryMBA", () => {
+  // The seven business-formation courses are shared whole (scripts/seed-speedway.ts). The only other
+  // courses on both schools are series previews that Learn.WitUS shows of an ElementaryMBA series,
+  // each listed in SERIES_PREVIEWS (FIRM-01 is the first). A course added to ElementaryMBA by hand,
+  // with no such entry, fails here by name.
+  it("puts only the seven listed business courses and registered previews on both Learn.WitUS and ElementaryMBA", () => {
     const schoolsOf = (slug: string) => new Set(entries.filter((e) => e.slug === slug).map((e) => e.school));
     for (const slug of FULL_SHARE_TO_ELEMENTARY_MBA) {
       expect([...schoolsOf(slug)].sort(), slug).toEqual(["elementary-mba", "learn-witus"]);
     }
+    const previews = Object.entries(SERIES_PREVIEWS["learn-witus"] ?? {})
+      .filter(([, p]) => p.homeSchool === "elementary-mba")
+      .map(([slug]) => slug);
     const lw = new Set(entries.filter((e) => e.school === "learn-witus").map((e) => e.slug));
     const onBoth = entries.filter((e) => e.school === "elementary-mba" && lw.has(e.slug)).map((e) => e.slug);
-    expect(onBoth.sort()).toEqual([...FULL_SHARE_TO_ELEMENTARY_MBA].sort());
+    expect(onBoth.sort()).toEqual([...FULL_SHARE_TO_ELEMENTARY_MBA, ...previews].sort());
   });
 });
 

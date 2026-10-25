@@ -332,6 +332,8 @@ const BACKLOG: Record<string, string> = {
   "reporter-solutions-journalism": "OUT OF SCOPE for now, professional track for working reporters (plans/68)",
   "reporter-pitch-and-shapes": "OUT OF SCOPE for now, professional track for working reporters (plans/68)",
   "reporter-capstone": "OUT OF SCOPE for now, professional track for working reporters (plans/68)",
+  // FIRM-01, the first course of How a Firm Works (brief cloud-briefs/firm-01/00-approved-brief.md, section 3).
+  "read-the-statements": "OUT OF SCOPE for now: adult and post-secondary business education. State business standards sit in career and technical education frameworks this repo has not transcribed, and the Subject union has no CTE shelf. Revisit as a project, not as a per-course fix (BAM, 2026-10-23).",
 };
 
 // WAS A REGEX OVER scripts/seed-courses.ts, AND IT WAS SILENTLY WRONG. The pattern required a `{`

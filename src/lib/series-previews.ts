@@ -9,8 +9,8 @@
 //
 // FOR PREVIEWS ONLY. The seven business-formation courses in FULL_SHARE_TO_ELEMENTARY_MBA are shared
 // whole, so the whole series is on both schools and there is nothing to continue elsewhere; the test
-// fails if one of them is listed here. The first expected entry is FIRM-01 on Learn.WitUS, pointing
-// to the FIRM series on ElementaryMBA, once that course exists.
+// fails if one of them is listed here. The first entry is FIRM-01 on Learn.WitUS, pointing to the
+// How a Firm Works (FIRM) series on ElementaryMBA.
 
 export interface SeriesPreview {
   /** Tenant slug of the school the rest of the series lives on, e.g. "elementary-mba". */
@@ -36,9 +36,13 @@ export interface SeriesContinuation {
   href: string | null;
 }
 
-/** Registry keyed by the PREVIEWING school's tenant slug, then the course slug. Empty until the
- *  first preview (FIRM-01 on Learn.WitUS) is seeded. */
-export const SERIES_PREVIEWS: Record<string, Record<string, SeriesPreview>> = {};
+/** Registry keyed by the PREVIEWING school's tenant slug, then the course slug. */
+export const SERIES_PREVIEWS: Record<string, Record<string, SeriesPreview>> = {
+  "learn-witus": {
+    // FIRM-01 Read the Statements: the rest of How a Firm Works is on ElementaryMBA (scripts/seed-speedway.ts).
+    "read-the-statements": { homeSchool: "elementary-mba", seriesSlug: "how-a-firm-works" },
+  },
+};
 
 export function seriesPreviewFor(
   tenantSlug: string | null | undefined,
