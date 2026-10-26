@@ -34,7 +34,7 @@ In the sources' own words, the line sits here:
 | The spotter must speak directly to the team physician, UNC or head athletic trainer; the spotter "cannot relay the information to other team staff assigned to answer the bench phones" | V | NFL (n.d.-a), same section, paragraph 3 |
 | Spotters are retained and assigned by the NFL and must hold current Board of Certification athletic trainer certification, state licence or registration where required, a four-year undergraduate degree, at least 10 years as an athletic trainer, significant football experience, and no paid NFL team employment in the last 5 years | V | NFL (n.d.-a), requirements list |
 | Each game has two booth spotters ("two certified athletic trainers ... observe the game from a booth above the field and monitor all camera views") | V | NFL (2022a), "Booth ATC Spotters and the Medical Timeout"; also NFL (2016b), paragraph 1 |
-| The second booth spotter was added for the 2016 season | V | NFL (2016a), paragraph after the requirements |
+| The second booth spotter was added for the 2016 season | V | NFL (2016a), paragraph beginning "For the 2016 season" |
 | Spotters sit in "a dedicated private booth overlooking the field of play" | V | NFL (2022b), paragraph on ATC spotters |
 | The Injury Video Review System (IVRS) "is in place at every NFL game" and "gives the medical experts in the booth access to every camera angle in the stadium, well beyond what viewers see in the TV broadcast. Each game has an average of 16 camera angles" | V (as of the page's December 6, 2022 date) | NFL (2022b), IVRS paragraph |
 | "ATC Spotters are supported by two Injury Video Replay Technicians, who assist with video replay." | V | NFL (2022b), IVRS paragraph |
@@ -56,7 +56,7 @@ In the sources' own words, the line sits here:
 | Final clearance after a diagnosed concussion is made by the club's medical staff and "must be confirmed by" an Independent Neurological Consultant (INC); neither a UNC nor an INC may have any affiliation with an NFL team | V | NFL Head, Neck and Spine Committee (2024), p. 13 |
 | Applying the Concussion Game Day Checklist is mandatory in preseason and regular-season games, and booth AT spotters are among the people who must complete and record their designated steps "using the designated technology" | V | NFL Head, Neck and Spine Committee (2024), p. 13 |
 | A sideline survey is performed in the sideline medical evaluation tent (or the locker room) "using the tablet or other technology assigned by the NFL" | V | NFL Head, Neck and Spine Committee (2024), p. 8 |
-| The current protocol PDF is headed "Updated September 2024"; the NFL fact-sheet page that links it was last modified September 26, 2025 | V | NFL Head, Neck and Spine Committee (2024), every page header; page metadata of the linking fact sheet |
+| The current protocol PDF is headed "Updated September 2024" | V | NFL Head, Neck and Spine Committee (2024), every page header |
 
 ### The medical timeout
 
@@ -119,7 +119,7 @@ In the sources' own words, the line sits here:
 | A temporary replacement of 12 minutes is allowed for the off-field assessment, "a set 12 minutes"; the clock starts "when the player crosses the sideline"; a player who has a blood injury needing suturing as well has 17 minutes | V | World Rugby (n.d.-a), paragraphs on the 12-minute replacement |
 | The Team Doctor has primary responsibility for the off-field assessment and can delegate it to the MDD; "All return to play decisions must be discussed with the Independent Match Day Doctor who has ultimate oversight and decision-making with respect to return to play" | V | World Rugby (n.d.-a), Stage 1 paragraph on responsibility |
 | Who may request an HIA1: the on-field medical staff, the referee or the MDD; the opposition's medical staff may not request one on an opposing player | V | World Rugby (2022), p. 15, Q6 |
-| The MDD may unilaterally remove a player under Regulation 15.2.1(d), after discussion with the Team Doctor | V | World Rugby (n.d.-c), list items; World Rugby (2022), p. 25 |
+| The MDD may unilaterally remove a player under Regulation 15.2.1(d), after discussion with the Team Doctor | V | World Rugby (n.d.-d), list items; World Rugby (2022), p. 25 |
 | MDD pre-match duties include confirming with match officials and Team Doctors "the hand signal indicating that a player is leaving the field with a head injury - head touched on three occasions" | V | World Rugby (2022), p. 24, "Pre-match duties" |
 | Temporary substitution for head injury became permanent in Law for elite adult rugby in "April 2015" (current page) or "August 2015" (2022 PDF, twice) | V (conflict) | World Rugby (n.d.-a), paragraph on Law 3.11; World Rugby (2022), pp. 1 and 26 |
 | The HIA process "was introduced as a Global Law Trial in 2012" | V | World Rugby (2022), p. 34 |
@@ -129,7 +129,7 @@ In the sources' own words, the line sits here:
 | A post-game HIA Review Process collates clips of all HIA events and other suspicious events and sends them weekly to the competition's HIA Process Reviewer; World Rugby appoints "three video interpretation experts from each hemisphere" for interpretation disputes | V | World Rugby (2022), pp. 29 to 30 |
 | A failure in "the delivery of video viewing", for example "no side-line video link", is one of the six thresholds that send a case to the HIA Review Panel | V | World Rugby (2022), p. 30, threshold 2 |
 | HIA assessments are logged in World Rugby's Specialised Concussion rugby Management (SCRM) app | V | World Rugby (n.d.-a), paragraph on SCRM |
-| Instrumented mouthguards (iMGs) are now part of the elite HIA: an alert on "The Game Day App" requires the MDD to act immediately, and "All alerts necessitate immediate removal of the player for HIA1"; the alert screen shows a timestamp and peak linear and angular acceleration against thresholds set by World Rugby | V | World Rugby (n.d.-d), alert paragraphs |
+| Instrumented mouthguards (iMGs) are now part of the elite HIA: an alert on "The Game Day App" requires the MDD to act immediately, and "All alerts necessitate immediate removal of the player for HIA1"; the alert screen shows a timestamp and peak linear and angular acceleration against thresholds set by World Rugby | V | World Rugby (n.d.-c), alert paragraphs |
 | The home team provides the MDD with a Prevent iPad or iPhone at the pre-match medical meeting, sometimes with a Bluetooth device that "helps enhance the connectivity to the IMGs" and must sit next to the iPad for the whole game | V | World Rugby (n.d.-b), paragraph 1 |
 
 ### World Rugby inferences
@@ -138,7 +138,7 @@ In the sources' own words, the line sits here:
 |---|---|---|
 | The rugby video standard is a technician's spec: four or more views including broadcast, a 10-second delayed view, transport controls, marking, and sound | I | It is written as competition requirements (World Rugby, n.d.-e; 2022, p. 26), and each item is something a video crew builds and runs. No source fetched says who builds it |
 | No World Rugby page fetched today names a non-medical match-day video operator; the doctors are described as doing the in-game review, and "union video support technicians" do the clipping for post-game review | I | From World Rugby (n.d.-a; n.d.-e; 2022, p. 29). The current page mentions a "video match day doctor" in the multiple-HIA paragraph, which suggests a doctor sometimes runs the review. Open check |
-| The iMG tablet and Bluetooth relay are a new handoff point between wearable data and the doctor | I | From World Rugby (n.d.-b; n.d.-d). Links to outline section 1 (wearables) |
+| The iMG tablet and Bluetooth relay are a new handoff point between wearable data and the doctor | I | From World Rugby (n.d.-b; n.d.-c). Links to outline section 1 (wearables) |
 
 ## 3. NCAA (with a short NHL note)
 
@@ -274,9 +274,9 @@ World Rugby. (n.d.-a). *HIA protocol*. World Rugby Passport. https://passport.wo
 
 World Rugby. (n.d.-b). *Match day: Before kick-off*. World Rugby Passport. https://passport.world.rugby/player-welfare-medical/concussion-management-for-match-day-medical-staff-using-the-hia-protocol/img-alerts-prevent/match-day-doctor-requirements/match-day-before-kick-off/ (retrieved October 26, 2026)
 
-World Rugby. (n.d.-c). *MDD rights and responsibilities*. World Rugby Passport. https://passport.world.rugby/player-welfare-medical/concussion-management-for-match-day-medical-staff-using-the-hia-protocol/the-match-day-doctor/mdd-rights-and-responsibilities/ (retrieved October 26, 2026)
+World Rugby. (n.d.-c). *Match day: During the match*. World Rugby Passport. https://passport.world.rugby/player-welfare-medical/concussion-management-for-match-day-medical-staff-using-the-hia-protocol/img-alerts-prevent/match-day-doctor-requirements/match-day-during-the-match/ (retrieved October 26, 2026)
 
-World Rugby. (n.d.-d). *Match day: During the match*. World Rugby Passport. https://passport.world.rugby/player-welfare-medical/concussion-management-for-match-day-medical-staff-using-the-hia-protocol/img-alerts-prevent/match-day-doctor-requirements/match-day-during-the-match/ (retrieved October 26, 2026)
+World Rugby. (n.d.-d). *MDD rights and responsibilities*. World Rugby Passport. https://passport.world.rugby/player-welfare-medical/concussion-management-for-match-day-medical-staff-using-the-hia-protocol/the-match-day-doctor/mdd-rights-and-responsibilities/ (retrieved October 26, 2026)
 
 World Rugby. (n.d.-e). *Video review*. World Rugby Passport. https://passport.world.rugby/player-welfare-medical/concussion-management-for-match-day-medical-staff-using-the-hia-protocol/match-day-doctor/video-review/ (retrieved October 26, 2026)
 
