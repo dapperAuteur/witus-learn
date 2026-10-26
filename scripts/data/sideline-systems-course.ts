@@ -177,7 +177,6 @@ const OU_2024 = `University of Oklahoma Information Technology. (2024, August 29
 const NFL_AT_SPOTTERS = `National Football League. (n.d.-e). *AT spotters*. NFL Football Operations. ${RETRIEVED} https://operations.nfl.com/gameday/behind-the-scenes/at-spotters/`;
 const NFL_PREP = `National Football League. (n.d.-f). *Game and stadium prep*. NFL Football Operations. ${RETRIEVED} https://operations.nfl.com/game-operations-logistics/preparation-safety/game-and-stadium-prep`;
 const NFL_2016A = `National Football League. (2016a, September 14). *Transforming the sideline: The medical timeout*. NFL.com. ${RETRIEVED} https://www.nfl.com/news/transforming-the-sideline-the-medical-timeout`;
-const NFL_2016B = `National Football League. (2016b, December 22). *The eyes in the sky*. NFL.com. ${RETRIEVED} https://www.nfl.com/news/the-eyes-in-the-sky`;
 const NFL_2018 = `National Football League. (2018, June 22). *Concussion protocol & return-to-participation protocol: Overview*. NFL Player Health and Safety. ${RETRIEVED} https://www.nfl.com/playerhealthandsafety/resources/fact-sheets/concussion-protocol-return-to-participation-protocol`;
 const NFL_2022A = `National Football League. (2022a, September 13). *NFL health and safety fact sheet*. NFL Player Health and Safety. ${RETRIEVED} https://www.nfl.com/playerhealthandsafety/resources/fact-sheets/nfl-health-and-safety-fact-sheet`;
 const NFL_2022B = `National Football League. (2022b, December 6). *Delivering world-class game day care to the NFL's world-class athletes*. NFL.com. ${RETRIEVED} https://www.nfl.com/news/delivering-world-class-game-day-care-to-nfl-world-class-athletes`;
@@ -1276,6 +1275,320 @@ So, reasoned from Rule 12-4: in college football the "technician" is a named sea
         ],
       },
     },
-    // NEXT_SECTION
+    // ══════════════════════════════════════════════════════════════════════
+    // SECTION 4: The game day, hour by hour
+    // ══════════════════════════════════════════════════════════════════════
+    {
+      slug: "arrival-and-setup",
+      title: "13 · Before the gates open: arrival and setup",
+      section: "4 · The game day, hour by hour",
+      recallContent: [
+        {
+          prompt: "Which three people does NCAA Rule 12-4-1 name for replay?",
+          answer: "The replay official, the communicator and the technician (NCAA, 2026a).",
+        },
+        {
+          prompt: "Which ball-tracking systems does the ICC approve for DRS?",
+          answer: "HawkEye (HawkEye Innovations) or VirtualEye (ARL) (ICC, 2026, p. 98).",
+        },
+      ],
+      body: `${QR}
+
+**How this section is built.** This section assembles a game day from job postings and league pages, each named where it is used. A posting is a primary source for what one employer asked on the date it was posted. Different employers and sports are combined here to show the shape of the day, so no single job does every step. For the broadcast crew's own day beside this one, see *Break Into Sports & Media Broadcasting* lesson "13 · Game day: roles, call times, and where utility fits".
+
+**What this section leaves out.** An early outline of this course listed "synchronizing the medical monitors" as a game-day step. No posting or league page read for this course supports it, so it is left out. Tagging video at the spotter's direction is real, but its source is the NFL's AT spotters page (lesson 5), not a posting.
+
+**A week out.** The NFL's injury video review operator posting, created April 15, 2026, says operators "must notify the League's Player Health and Safety department of any scheduling conflicts at least one (1) week prior to game day" (NFL, 2026b).
+
+**The day before.** Hawk-Eye's Big Ten technician posting gives the working hours as "Game Day minus 1 and Game Day," with hours that "vary depending on sport delivery" (Hawk-Eye Innovations, n.d.-f). Its football technician postings in Italy say setup days "may require the assistants to be present on the day/s before match day" (Hawk-Eye Innovations, 2026e, 2026f).
+
+**Arrival.** The postings give different call times for different jobs.
+
+| Role | Arrival, as posted | Source |
+|---|---|---|
+| Football video systems technician, Bolzano | "up to 7 hours pre-Kick Off" | Hawk-Eye Innovations (2026f), published October 22, 2026 |
+| Football tracking systems technician, Firenze | "up to 6 hours pre-Kick Off" | Hawk-Eye Innovations (2026e), published October 19, 2026 |
+| NFL injury video review operator | "Arrive at the stadium four (4) hours prior to kickoff" | NFL (2026b), created April 15, 2026 |
+
+The NFL's own game-prep page matches for its local staff: all local game day assistants arrive at the stadium 4 hours before kickoff (NFL, n.d.-f).
+
+**Setup: cameras and cable.** Hawk-Eye's UK casual football roles list "Setting up Hawk-Eye technology at the stadium/remote centre (this can involve physically demanding work, such as rigging cameras and running cables)" (Hawk-Eye Innovations, n.d.-g). The Big Ten posting lists "Assisting in the set-up of the SMART replay & medical systems (both hardware and software)" (Hawk-Eye Innovations, n.d.-f). For the cable craft, see CREW-00 lesson "27 · Coil, label and run".
+
+**Setup: fiber and the network.** The Firenze tracking technician's first listed duty is: "Check that there is a fibre connection with all the switches in the stadium rooms and possibly resolve the problems by re-establishing the connections" (Hawk-Eye Innovations, 2026e). For fiber, see CREW-00 lessons "11 · Single-mode, multimode and the color codes", "12 · LC, SC and ST, and the polish on the end" and "13 · Inspect before you connect"; for network cable, "19 · Network cable: categories, the 100-meter channel, etherCON and PoE".
+
+**Setup: comms and the remote center.** The same technician sets up and tests "communication via Dante with Replay Operator (RO), Assistant Replay Operator (ARO), Video Technical Guarantee (VTG) onsite and Technical Guarantee (TG) at the Remote Centre" (Hawk-Eye Innovations, 2026e). For Dante, see CREW-00 lesson "20 · Dante, ST 2110, and why a media network is not the office network". The Bolzano video technician connects "the van or the Control Room with the Remote Center," handles "Installation of the audio and Referee Review Area (RRA) system on the sidelines," and takes "the video signals from the control medium of all the cameras that frame the field" (Hawk-Eye Innovations, 2026f). For video signal paths, see CREW-00 lessons "4 · SDI on coax and the BNC" and "7 · Reference, timecode and return video". The referee review area is the one the Laws require (lesson 11).
+
+**Sometimes you are the only one.** Hawk-Eye's Netherlands Football Systems Operator posting says: "you will be the only Hawk-Eye employee at the stadium" (Hawk-Eye Innovations, 2026d). Reasoned: on those days no colleague on site checks your work, which is one reason the remote center and the checklists in lesson 14 exist.
+
+**Setup in the NBA G League.** A league posting for an automated officiating representative at Van Andel Arena, read on October 26, 2026, lists: "Lead gameday operations for connected basketball technology from pregame setup to postgame teardown," "Verify physical placements and functionality of cameras managed by technology vendors," and "Ensure all data is captured and flows to NBA storage locations" (National Basketball Association [NBA], 2026). CREW-05 lesson "5 · The jobs behind the network" teaches a twin of this posting at another arena.
+
+**The radios, by the clock.** The NFL's game-prep page gives the medical radio handout times (NFL, n.d.-f):
+
+- At 3 hours: "The injury video review system operator distributes a case containing fully charged radios to the visiting club's athletic training staff at the entrance to the visiting locker room."
+- At 2 hours: "The injury video review system operators distribute radios to the local league-appointed unaffiliated neurotrauma consultants, airway management physician, emergency response physician, and AT spotters."
+
+The operator posting also asks for skill with "Audio equipment (headsets and belt packs)" (NFL, 2026b). CREW-00 lesson "17 · Same plug, different signal: intercom and DMX on XLR" covers wired intercom beltpacks; it does not cover two-way radios. The case goes out "fully charged," so, reasoned, charging the radios is work done before that 3-hour handoff.
+
+:::reveal How many hours before kickoff does the NFL posting say the injury video review operator arrives? ||| Four hours (NFL, 2026b).
+
+:::reveal What is the Firenze tracking technician's first listed duty? ||| Check that there is a fiber connection with all the switches in the stadium rooms, and re-establish connections if needed (Hawk-Eye Innovations, 2026e).
+
+:::reveal When, and where, does the NFL operator hand radios to the visiting club's athletic training staff? ||| At 3 hours before kickoff, at the entrance to the visiting locker room (NFL, n.d.-f).
+
+## Sources
+- ${NFL_IVR} Locator: "Responsibilities" (arrival, scheduling conflicts); "Qualifications" (headsets and belt packs).
+- ${HE_RUTGERS} Locator: "Working Hours"; "Key Responsibilities".
+- ${HE_FIRENZE} Locator: "Working day expectations"; "Key Responsibilities," items 1 and 3.
+- ${HE_BOLZANO} Locator: "Working day expectations"; "Key Responsibilities".
+- ${HE_UK_EOI} Locator: "What You Can Expect to Be Doing".
+- ${HE_NL} Locator: "What does a typical day look like?"
+- ${NBA_VAN_ANDEL} Locator: "Key Responsibilities".
+- ${NFL_PREP} Locator: "Countdown to Kickoff," 4 hours, 3 hours and 2 hours.`,
+    },
+    {
+      slug: "checks-calibration-and-meetings",
+      title: "14 · Checks, calibration and the pre-game meetings",
+      section: "4 · The game day, hour by hour",
+      recallContent: [
+        {
+          prompt: "What does the NFL posting say operators must do about scheduling conflicts?",
+          answer: "Notify the League's Player Health and Safety department at least one week before game day (NFL, 2026b).",
+        },
+        {
+          prompt: "What does Hawk-Eye's Netherlands posting say about who else from Hawk-Eye is at the stadium?",
+          answer: "\"you will be the only Hawk-Eye employee at the stadium\" (Hawk-Eye Innovations, 2026d).",
+        },
+      ],
+      body: `${QR}
+
+**Checks by the book.** The postings use the same words for pre-game checks. The Big Ten technician conducts "pre-game checks of the systems in accordance with standard procedures" (Hawk-Eye Innovations, n.d.-f). The UK roles conduct "pre-match set-up, checks and calibration of the systems in accordance with standard procedures" (Hawk-Eye Innovations, n.d.-g). The procedures themselves are the vendor's and are not public, so this course teaches that they exist and what the postings say about them.
+
+**A checklist with reasons.** The Bolzano video technician fills in "the checklist relating to your role, reporting any uncompleted checks and specifying the reason" (Hawk-Eye Innovations, 2026f). Look at the second half of that sentence. A skipped check is not hidden; it is written down with its reason. Reasoned: the next person to read that checklist, on site or at the remote center, then knows exactly what was not done and why.
+
+**Calibration and color.** The Firenze tracking technician must "Calibrate the GLT system before the match, following the relevant checklist and carrying out all the necessary tests to test its reliability and precision," and, with camera control, correct the colorimetry of the goal-line Ultra Motion cameras so they are "as similar as possible to the broadcast cameras" (Hawk-Eye Innovations, 2026e). Lesson 3 explained why calibration matters. One likely reason for the color match, reasoned, is that a goal-line angle shown beside a broadcast angle should look like the same match.
+
+**The referees' test.** The same posting monitors the system "during the referees' test approximately two hours before the match" (Hawk-Eye Innovations, 2026e). That is the test the Laws require: "the referee must test the technology's functionality before the match as set out in the Testing Manual" (IFAB, 2026, p. 52). The technician's job at that moment is to have the system ready, and to watch it while the referee tests.
+
+**The league side checks too.** At the NFL's replay center: "Before the games begin, staff conduct technology checks to ensure they can communicate with officials at each stadium and see video of every game" (NFL, n.d.-b).
+
+**The remote desk's checks.** Hawk-Eye's SEC Live Operations Coordinator posting, published October 16, 2026 with a deadline to apply of October 30, 2026, asks the coordinator to "Verify system readiness for every assigned sporting event," to ensure events "are operationally sound from pre-game, in-game, and post-game checklists," and to be "the main point of contact for on-site personnel if remote assistance is required" (Hawk-Eye Innovations, 2026g). So a venue technician's checklist has a reader in the conference's home city of Birmingham, Alabama.
+
+**The 60-minute medical meeting.** In the NFL, at 60 minutes before kickoff, a medical meeting brings together the head team physicians, head athletic trainers, AT spotters, UNCs, paramedic crews, the airway management physician, the emergency response physician, the NFL Football Operations representative and the referee. They review protocols, verify equipment locations and "test communication equipment" (NFL, n.d.-f). At that meeting the booth spotters "review the Medical Time-Out procedures with officials" (NFL Head, Neck and Spine Committee, 2024, p. 7). The two NFL documents place the meeting differently: the game-prep page puts it outside the officials' locker room, and the protocol says "in the referees' locker room" (NFL Head, Neck and Spine Committee, 2024, p. 6). Reasoned: the radios the operators handed out at 3 and 2 hours are among the communication equipment that meeting relies on, so they must be working before it starts.
+
+**One practitioner's account.** An NFL AT spotter interviewed by the Board of Certification in 2021 described the game-day team as "two spotters, video and IT technicians," an arrival four to five hours before kickoff, checks of "all communication and computer equipment on the field and in our booth," and the assignment of home and away teams "to each spotter and video technician" (BOC, 2021). It is one person's account, published by the certifying body. It matches the 2026 posting's one operator per team in the booth (NFL, 2026b).
+
+**Rugby's pre-match handoff.** At the pre-match medical meeting, the home team gives the MDD the tablet for mouthguard data, with its Bluetooth device (World Rugby, n.d.-b; lesson 7). That device has to be paired and charged before the meeting, not during it.
+
+:::reveal What does the Bolzano posting say to do with a check you could not complete? ||| Report it on your role's checklist and specify the reason (Hawk-Eye Innovations, 2026f).
+
+:::reveal About when does the Firenze technician monitor the system during the referees' test? ||| About two hours before the match (Hawk-Eye Innovations, 2026e).
+
+:::reveal What does the NFL's 60-minute medical meeting do with communication equipment? ||| It tests it, along with reviewing protocols and verifying equipment locations (NFL, n.d.-f).
+
+## Sources
+- ${HE_RUTGERS} Locator: "Key Responsibilities".
+- ${HE_UK_EOI} Locator: "What You Can Expect to Be Doing".
+- ${HE_BOLZANO} Locator: "Key Responsibilities".
+- ${HE_FIRENZE} Locator: "Key Responsibilities," items 5 to 7.
+- ${IFAB_2026} Locator: Law 1, "Requirements and specifications of GLT," p. 52.
+- ${NFL_AMGC} Locator: "Gameday at AMGC" paragraph 2.
+- ${HE_SEC_COORD} Locator: "Key Responsibilities" and "What to Be Prepared For"; the publish and deadline dates.
+- ${NFL_PREP} Locator: "60-Minute Medical Meeting".
+- ${NFL_HNS_2024} Locator: p. 6 (meeting location); p. 7 (Medical Time-Out review).
+- ${BOC_2021} Locator: paragraphs 2 and 4.
+- ${NFL_IVR} Locator: "Summary".
+- ${WR_BEFORE} Locator: paragraph 1.`,
+    },
+    {
+      slug: "during-and-after-the-game",
+      title: "15 · During the game and after it",
+      section: "4 · The game day, hour by hour",
+      recallContent: [
+        {
+          prompt: "What does Hawk-Eye's SEC coordinator verify for every assigned event?",
+          answer: "System readiness, against pre-game, in-game and post-game checklists (Hawk-Eye Innovations, 2026g).",
+        },
+        {
+          prompt: "At the NFL's 60-minute medical meeting, who reviews the Medical Time-Out procedures with the officials?",
+          answer: "The booth AT spotters (NFL Head, Neck and Spine Committee, 2024, p. 7).",
+        },
+      ],
+      body: `${QR}
+
+**During the game: monitor.** The postings agree on the core duty: "Monitoring and maintaining the technology during the games" (Hawk-Eye Innovations, n.d.-f) and "Monitoring the systems during the match" (Hawk-Eye Innovations, n.d.-g). The UK roles also involve "Liaising with stadium staff, match officials and host broadcasters on-site" (Hawk-Eye Innovations, n.d.-g), and the Big Ten technician coordinates "with officials, broadcasters and Hawk-Eye staff, both on-site and remotely" (Hawk-Eye Innovations, n.d.-f).
+
+**During the game: the medical booth.** The NFL operator posting says operators keep the Injury Video Review System "functional on game day" and support "the AT Spotters, Booth Unaffiliated Neurotrauma Consultant (UNC) and team medical personnel as it relates to reviewing injury video" (NFL, 2026b). Lesson 5 covered what that support is and is not. One line in the posting names the discipline the job takes: operators "Must be able to focus on the task at hand, not the game" (NFL, 2026b).
+
+**The remote desk.** The SEC coordinator is "the first level of resolution for operational software issues and challenges before escalating to the Tech Ops engineering teams" (Hawk-Eye Innovations, 2026g). The posting is frank that there is no "typical day in the life": the schedule shifts "between fast-paced live event support on game days and structured project collaboration mid-week" (Hawk-Eye Innovations, 2026g). Hawk-Eye also says its goal-line technology can run with "24/7 remote monitoring" from a Remote Operations Centre (Michaelides, 2026). For a method of finding a fault, see CREW-00 lesson "28 · Test, then find the fault".
+
+**When something fails.** Each rulebook in section 3 has a fallback. Knowing them helps you judge how urgent a fault is.
+
+| Rule | Fallback |
+|---|---|
+| NFL Rule 15-8 | If the link to the League office is lost, the Referee waits one minute, then reviews with the Replay Official (NFL, 2026a) |
+| Law 1, goal-line technology | If the pre-match test fails, the referee must not use the system and must report it (IFAB, 2026, p. 52) |
+| FIFA's semi-automated offside | If it fails, VARs use crosshairs and triangulation (FIFA, n.d.-b) |
+| World Rugby's HIA | If the video fails, the protocol may still be used; a missing side-line video link is a review-panel threshold (World Rugby, n.d.-e; World Rugby, 2022, p. 30) |
+
+Reasoned: a fallback keeps the game going, but it is slower or rougher than the system, and in rugby the failure itself is reviewed. The technician's job is to make the fallback unnecessary, and to report it when it was used.
+
+**After the final whistle.** The postings list the closing work:
+
+- Upload "all the data requested by EPTS Remote Support," then help with "disassembly activities" (Hawk-Eye Innovations, 2026e).
+- Fill in "your sections in the match report" (Hawk-Eye Innovations, 2026f).
+- "Submit game reports through the Game Management System at the conclusion of each game," and be "Responsible for accurately reporting working hours in timekeeping system" (NFL, 2026b).
+
+At the league level, AMGC staff "'tag' every play so they can be searched later in a database" (NFL, n.d.-b). The booth's medical reports are filed by the spotters and the booth UNC, not by the video crew (lesson 6).
+
+**Going home.** The NFL posting gives "Approximately 8-9 hours per game (arrive 4 hours before kickoff, leave approximately 45 minutes" to 1 hour "after end of game)" (NFL, 2026b). The Firenze technician's day ends "up to 1 hour post game completion," and the Bolzano video technician's "up to 2 hours post-game completion" (Hawk-Eye Innovations, 2026e, 2026f).
+
+**Between games.** The Big Ten posting adds "Periodic work during the off-season for building and maintaining our hardware and equipment" (Hawk-Eye Innovations, n.d.-f). The NFL posting says operators "Must be able to troubleshoot issues on non-game days in some circumstances" (NFL, 2026b).
+
+**The whole day on one page.** Assembled from lessons 13 to 15; each line comes from the sources named there, and no single job does all of it.
+
+| When | What happens | From |
+|---|---|---|
+| A week or more before | Report scheduling conflicts | NFL operator posting |
+| The day before | Setup on site ("Game Day minus 1") | Big Ten and Italy postings |
+| 7 to 4 hours before | Arrival, by role | Italy and NFL postings |
+| Setup | Cameras, cable, fiber, Dante comms, the referee review area, video signals | UK, Italy and Big Ten postings |
+| 3 and 2 hours before | NFL medical radios handed out | NFL game-prep page |
+| About 2 hours before | The referees' test of goal-line technology | Firenze posting; Law 1 |
+| 60 minutes before | NFL medical meeting tests communication equipment | NFL game-prep page |
+| During | Monitor; support the medical booth; call the remote desk | All postings |
+| After | Upload data, reports, hours, dismantle | Italy and NFL postings |
+| Off-season | Build and maintain hardware | Big Ten posting |
+
+**Not the same system.** The Big Ten posting's "SMART replay & medical systems" and the NFL's injury video review system both serve medical staff, but no source read for this course links them, so this course does not treat them as the same system.
+
+:::reveal What does the SEC coordinator do before escalating to the engineering teams? ||| Acts as the first level of resolution for operational software issues (Hawk-Eye Innovations, 2026g).
+
+:::reveal Through what system does the NFL operator submit game reports? ||| The Game Management System, at the end of each game (NFL, 2026b).
+
+:::reveal About how long is an NFL injury video review operator's game day, as posted? ||| Approximately 8 to 9 hours (NFL, 2026b).
+
+## Sources
+- ${HE_RUTGERS} Locator: "Key Responsibilities"; the off-season line.
+- ${HE_UK_EOI} Locator: "What You Can Expect to Be Doing".
+- ${NFL_IVR} Locator: "Summary"; "Responsibilities"; "Qualifications"; "Physical Demands/Travel".
+- ${HE_SEC_COORD} Locator: "First-Line Issue Resolution" and "What to Be Prepared For".
+- ${MICHAELIDES_2026} Locator: "Sustainable & Hybrid Operations".
+- ${NFL_RULES} Locator: Rule 15-8, PDF p. 71.
+- ${IFAB_2026} Locator: Law 1, p. 52.
+- ${FIFA_SAOT} Locator: FAQ on system failure.
+- ${WR_VIDEO} Locator: paragraph 4.
+- ${WR_2022} Locator: p. 30, threshold 2.
+- ${HE_FIRENZE} Locator: "Key Responsibilities," item 9; "Working day expectations".
+- ${HE_BOLZANO} Locator: "Key Responsibilities"; "Working day expectations".
+- ${NFL_AMGC} Locator: "After the Games".`,
+    },
+    {
+      slug: "section-4-quiz",
+      title: "Section 4 quiz · The game day, hour by hour",
+      section: "4 · The game day, hour by hour",
+      body: "A graded check on the technician's game day, from the week before to the off-season, as the postings and league pages describe it. Each answer links back to the lesson that teaches it.",
+      quiz: {
+        passingScore: 80,
+        questionsPerAttempt: 5,
+        shuffleOptions: true,
+        questions: [
+          { prompt: "Where does section 4 get its game-day steps?", options: ["Vendor operator manuals", "Interviews with referees", "Job postings and league pages", "Broadcast rundown sheets"], correctIndex: 2, explanation: "Lesson 13: the day is assembled from job postings and league pages, each named where it is used.", sourceLessonSlug: "arrival-and-setup" },
+          { prompt: "Why does no single job do every step in section 4's game day?", options: ["Each step is a separate union job", "Leagues forbid one person doing all", "Vendors split the day by the hour", "Steps come from different employers"], correctIndex: 3, explanation: "Different employers and sports are combined to show the shape of the day.", sourceLessonSlug: "arrival-and-setup" },
+          { prompt: "Why does section 4 leave out \"synchronizing the medical monitors\"?", options: ["No posting or league page supports it", "The NFL forbids anyone teaching it", "It is a decision for the physician", "It happens only at rugby matches"], correctIndex: 0, explanation: "No posting or league page read for the course supports that step, so it is left out.", sourceLessonSlug: "arrival-and-setup" },
+          { prompt: "Where does tagging video at the spotter's direction come from, if not a posting?", options: ["Hawk-Eye's Big Ten posting", "The NFL's AT spotters page", "World Rugby's HIA protocol", "The NCAA concussion checklist"], correctIndex: 1, explanation: "NFL (n.d.-e), the AT spotters page: the spotter \"tells the technician to tag and label the video\" (lesson 5).", sourceLessonSlug: "arrival-and-setup" },
+          { prompt: "How far ahead must NFL operators report scheduling conflicts?", options: ["At least one day", "At least one month", "At least one week", "At least one season"], correctIndex: 2, explanation: "NFL (2026b): \"at least one (1) week prior to game day.\"", sourceLessonSlug: "arrival-and-setup" },
+          { prompt: "To which NFL department do operators report scheduling conflicts?", options: ["Football Operations staff", "The NFL Media studios", "Each club's business office", "Player Health and Safety"], correctIndex: 3, explanation: "NFL (2026b): \"the League's Player Health and Safety department.\"", sourceLessonSlug: "arrival-and-setup" },
+          { prompt: "What working hours does the Big Ten posting give?", options: ["Game Day minus 1 and Game Day", "Game Day only, from noon", "The whole week before games", "Weekdays only, nine to five"], correctIndex: 0, explanation: "Hawk-Eye Innovations (n.d.-f): \"Game Day minus 1 and Game Day,\" with hours that vary by sport.", sourceLessonSlug: "arrival-and-setup" },
+          { prompt: "What do the Italy postings say setup days may require?", options: ["A second technician from the UK", "Presence on the day before the match", "Overnight stays in the stadium", "A remote center shift instead"], correctIndex: 1, explanation: "Hawk-Eye Innovations (2026e, 2026f): setup days \"may require the assistants to be present on the day/s before match day.\"", sourceLessonSlug: "arrival-and-setup" },
+          { prompt: "How early may the Bolzano video technician arrive, as posted?", options: ["Up to 2 hours before kickoff", "Exactly 1 hour before kickoff", "Up to 7 hours before kickoff", "Up to 12 hours before kickoff"], correctIndex: 2, explanation: "Hawk-Eye Innovations (2026f): \"up to 7 hours pre-Kick Off.\"", sourceLessonSlug: "arrival-and-setup" },
+          { prompt: "How early may the Firenze tracking technician arrive, as posted?", options: ["Up to 7 hours before kickoff", "Up to 3 hours before kickoff", "Up to 10 hours before kickoff", "Up to 6 hours before kickoff"], correctIndex: 3, explanation: "Hawk-Eye Innovations (2026e): \"up to 6 hours pre-Kick Off.\" Seven hours is the Bolzano video technician.", sourceLessonSlug: "arrival-and-setup" },
+          { prompt: "How early does the NFL posting say the injury video operator arrives?", options: ["Four hours before kickoff", "Two hours before kickoff", "Seven hours before kickoff", "One hour before kickoff"], correctIndex: 0, explanation: "NFL (2026b): \"Arrive at the stadium four (4) hours prior to kickoff.\"", sourceLessonSlug: "arrival-and-setup" },
+          { prompt: "When do all NFL local game day assistants arrive, per the NFL's game-prep page?", options: ["2 hours before kickoff", "4 hours before kickoff", "1 day before kickoff", "30 minutes before kickoff"], correctIndex: 1, explanation: "NFL (n.d.-f): all local game day assistants arrive 4 hours before kickoff.", sourceLessonSlug: "arrival-and-setup" },
+          { prompt: "What do Hawk-Eye's UK roles say setup can involve?", options: ["Writing the match officials' reports", "Selling the tickets at the main gate", "Rigging cameras and running cables", "Training the match officials on Laws"], correctIndex: 2, explanation: "Hawk-Eye Innovations (n.d.-g): \"physically demanding work, such as rigging cameras and running cables.\"", sourceLessonSlug: "arrival-and-setup" },
+          { prompt: "What is the Firenze tracking technician's first listed duty?", options: ["Calibrate the goal-line system's cameras", "Hand radios to the visiting medical staff", "Write the match report for the referee", "Check fiber links to all the stadium switches"], correctIndex: 3, explanation: "Hawk-Eye Innovations (2026e), item 1: \"Check that there is a fibre connection with all the switches in the stadium rooms.\"", sourceLessonSlug: "arrival-and-setup" },
+          { prompt: "Over what does the Firenze technician test communication with the replay operators?", options: ["Dante", "Wi-Fi", "Bluetooth", "Cellular"], correctIndex: 0, explanation: "Hawk-Eye Innovations (2026e): \"communication via Dante.\"", sourceLessonSlug: "arrival-and-setup" },
+          { prompt: "With whom does the Firenze technician test Dante communication?", options: ["The broadcast director and producer", "Replay operators and the Remote Centre", "The home club's coaches and captain", "The stadium's security and stewards"], correctIndex: 1, explanation: "Hawk-Eye Innovations (2026e): the Replay Operator, Assistant Replay Operator, Video Technical Guarantee onsite and Technical Guarantee at the Remote Centre.", sourceLessonSlug: "arrival-and-setup" },
+          { prompt: "What does the Bolzano video technician install on the sidelines?", options: ["Tracking cameras under the roof", "Goal-line cameras in the nets", "Audio and the Referee Review Area", "Wi-Fi for the team benches"], correctIndex: 2, explanation: "Hawk-Eye Innovations (2026f): \"Installation of the audio and Referee Review Area (RRA) system on the sidelines.\"", sourceLessonSlug: "arrival-and-setup" },
+          { prompt: "What does the Bolzano technician connect to the Remote Center?", options: ["The referee's smartwatch", "The stadium's scoreboard", "The home club's office", "The van or the Control Room"], correctIndex: 3, explanation: "Hawk-Eye Innovations (2026f): connecting \"the van or the Control Room with the Remote Center.\"", sourceLessonSlug: "arrival-and-setup" },
+          { prompt: "Where does the Bolzano technician take video signals from?", options: ["The control of all field cameras", "The broadcaster's final program", "The stadium's security system", "The fans' phones in the stands"], correctIndex: 0, explanation: "Hawk-Eye Innovations (2026f): \"the video signals from the control medium of all the cameras that frame the field.\"", sourceLessonSlug: "arrival-and-setup" },
+          { prompt: "What does the Netherlands posting say about Hawk-Eye staff at the stadium?", options: ["You will lead a team of five", "You will be the only one there", "You will work beside the VAR", "You will share with a trainee"], correctIndex: 1, explanation: "Hawk-Eye Innovations (2026d): \"you will be the only Hawk-Eye employee at the stadium.\"", sourceLessonSlug: "arrival-and-setup" },
+          { prompt: "By lesson 13's reasoning, why do the remote center and checklists matter on a solo day?", options: ["The league pays more for paperwork", "The remote center runs the cameras", "No colleague on site checks your work", "Solo workers may skip the checks"], correctIndex: 2, explanation: "Reasoned in lesson 13: with no colleague on site, the remote center and the checklists are how work gets checked.", sourceLessonSlug: "arrival-and-setup" },
+          { prompt: "What does the G League posting ask the representative to verify?", options: ["The arena's ticket scanners each game", "The referee's pay and travel claims", "The broadcast truck's graphics feed", "Placements and function of vendor cameras"], correctIndex: 3, explanation: "NBA (2026): \"Verify physical placements and functionality of cameras managed by technology vendors.\"", sourceLessonSlug: "arrival-and-setup" },
+          { prompt: "Where does the G League posting say all data must flow?", options: ["To NBA storage locations", "To the home team's servers", "To the broadcast truck", "To the referee's tablet"], correctIndex: 0, explanation: "NBA (2026): \"Ensure all data is captured and flows to NBA storage locations.\"", sourceLessonSlug: "arrival-and-setup" },
+          { prompt: "At 3 hours before kickoff, what does the NFL operator hand the visiting athletic training staff?", options: ["A tablet with the injury video", "A case of fully charged radios", "A copy of the medical protocol", "A list of the booth's camera angles"], correctIndex: 1, explanation: "NFL (n.d.-f): \"a case containing fully charged radios.\"", sourceLessonSlug: "arrival-and-setup" },
+          { prompt: "Where does the 3-hour radio handoff take place?", options: ["At the spotters' booth above the field", "At the league's command center in NY", "At the visiting locker room entrance", "At the home team's bench on the field"], correctIndex: 2, explanation: "NFL (n.d.-f): \"at the entrance to the visiting locker room.\"", sourceLessonSlug: "arrival-and-setup" },
+          { prompt: "At 2 hours before kickoff, to whom do operators distribute radios?", options: ["Both teams' coaches and captains", "The referee and the chain crew", "The broadcast crew in the truck", "UNCs, physicians and AT spotters"], correctIndex: 3, explanation: "NFL (n.d.-f): the UNCs, airway management physician, emergency response physician and AT spotters.", sourceLessonSlug: "arrival-and-setup" },
+          { prompt: "What audio equipment does the NFL operator posting name?", options: ["Headsets and belt packs", "Wireless lavalier mics", "Studio monitor speakers", "Shotgun microphones"], correctIndex: 0, explanation: "NFL (2026b): \"Audio equipment (headsets and belt packs).\"", sourceLessonSlug: "arrival-and-setup" },
+          { prompt: "Does CREW-00 lesson 17 cover two-way radios?", options: ["Yes, it covers them in full", "No, only wired intercom beltpacks", "Yes, with a licensing guide", "No, it covers only fiber optics"], correctIndex: 1, explanation: "Lesson 13: CREW-00's lesson 17 covers wired intercom beltpacks; it does not cover two-way radios.", sourceLessonSlug: "arrival-and-setup" },
+          { prompt: "By lesson 13's reasoning, when is charging the medical radios done?", options: ["During the first quarter", "At the 60-minute meeting", "Before the 3-hour handoff", "After the final whistle"], correctIndex: 2, explanation: "The case goes out \"fully charged\" at 3 hours, so charging is done before that handoff.", sourceLessonSlug: "arrival-and-setup" },
+          { prompt: "What does a posting tell you, as section 4 uses it?", options: ["What every employer pays in the market", "What the league's union contract says", "What a vendor's screens look like", "What one employer asked on one date"], correctIndex: 3, explanation: "Lesson 13: a posting is a primary source for what one employer asked on the date it was posted.", sourceLessonSlug: "arrival-and-setup" },
+          { prompt: "Which posting is a G League twin of the one CREW-05 lesson 5 teaches?", options: ["The Van Andel Arena posting", "The Rutgers Big Ten posting", "The Bolzano video posting", "The Netherlands operator posting"], correctIndex: 0, explanation: "NBA (2026), Van Andel Arena, read October 26, 2026; CREW-05 teaches a twin at another arena.", sourceLessonSlug: "arrival-and-setup" },
+          { prompt: "How do the Big Ten and UK postings say pre-game checks are done?", options: ["However the technician sees fit that day", "In accordance with standard procedures", "Only when the referee asks for them", "Only after the broadcast truck is ready"], correctIndex: 1, explanation: "Hawk-Eye Innovations (n.d.-f, n.d.-g): checks \"in accordance with standard procedures.\"", sourceLessonSlug: "checks-calibration-and-meetings" },
+          { prompt: "Why does lesson 14 not teach the check procedures themselves?", options: ["They change with every single game", "They are the referee's to write", "They are the vendor's and not public", "They are too short to be useful"], correctIndex: 2, explanation: "The procedures are the vendor's own and are not public.", sourceLessonSlug: "checks-calibration-and-meetings" },
+          { prompt: "What does the Bolzano posting say to do with a check you could not complete?", options: ["Leave it off the checklist", "Finish it after the match", "Ask a fan to help with it", "Report it with the reason"], correctIndex: 3, explanation: "Hawk-Eye Innovations (2026f): \"reporting any uncompleted checks and specifying the reason.\"", sourceLessonSlug: "checks-calibration-and-meetings" },
+          { prompt: "By lesson 14's reasoning, why write down a skipped check with its reason?", options: ["The next reader knows what was not done", "The league pays per completed check", "It lets the technician leave earlier", "Vendors fine anyone who skips a check"], correctIndex: 0, explanation: "Reasoned: the next reader, on site or remote, knows exactly what was not done and why.", sourceLessonSlug: "checks-calibration-and-meetings" },
+          { prompt: "What must the Firenze technician follow to calibrate goal-line technology?", options: ["The broadcast rundown", "The relevant checklist", "The referee's notebook", "The club's match program"], correctIndex: 1, explanation: "Hawk-Eye Innovations (2026e): \"following the relevant checklist.\"", sourceLessonSlug: "checks-calibration-and-meetings" },
+          { prompt: "What do the Firenze calibration tests check?", options: ["Crowd size and noise", "Ticket sales and gates", "Reliability and precision", "Weather and pitch length"], correctIndex: 2, explanation: "Hawk-Eye Innovations (2026e): tests \"to test its reliability and precision.\"", sourceLessonSlug: "checks-calibration-and-meetings" },
+          { prompt: "Which cameras does the Firenze technician color-match?", options: ["The stadium's security cameras", "The broadcaster's handheld cameras", "The fans' big-screen cameras", "The goal-line Ultra Motion cameras"], correctIndex: 3, explanation: "Hawk-Eye Innovations (2026e): the colorimetry of the goal-line Ultra Motion cameras.", sourceLessonSlug: "checks-calibration-and-meetings" },
+          { prompt: "To what does the Firenze technician match the goal-line cameras' color?", options: ["The broadcast cameras", "The referee's kit", "The stadium lights", "The club's colors"], correctIndex: 0, explanation: "Hawk-Eye Innovations (2026e): \"as similar as possible to the broadcast cameras.\"", sourceLessonSlug: "checks-calibration-and-meetings" },
+          { prompt: "By lesson 14's reasoning, what is one likely reason for the color match?", options: ["The referee prefers warmer colors", "Goal-line and broadcast angles look alike", "Color matching speeds up the tracking", "The league fines mismatched colors"], correctIndex: 1, explanation: "Reasoned: a goal-line angle shown beside a broadcast angle should look like the same match.", sourceLessonSlug: "checks-calibration-and-meetings" },
+          { prompt: "About when is the referees' test of goal-line technology, per the Firenze posting?", options: ["About ten minutes before", "On the night before the match", "About two hours before", "At half-time, between halves"], correctIndex: 2, explanation: "Hawk-Eye Innovations (2026e): \"approximately two hours before the match.\"", sourceLessonSlug: "checks-calibration-and-meetings" },
+          { prompt: "Whose test does the Laws' goal-line requirement describe before each match?", options: ["The vendor's", "The club's", "FIFA's", "The referee's"], correctIndex: 3, explanation: "IFAB (2026, p. 52): \"the referee must test the technology's functionality before the match.\"", sourceLessonSlug: "checks-calibration-and-meetings" },
+          { prompt: "What is the technician's job during the referees' test, per lesson 14?", options: ["Have it ready and watch it", "Run the test for the referee", "Skip it if the system is fine", "Sign off on the referee's behalf"], correctIndex: 0, explanation: "Lesson 14: have the system ready, and watch it while the referee tests.", sourceLessonSlug: "checks-calibration-and-meetings" },
+          { prompt: "What do NFL replay center staff confirm before games begin?", options: ["Every player's tracking tag is charged", "They can reach officials and see video", "The chain crew is set at each stadium", "Each broadcast has loaded its graphics"], correctIndex: 1, explanation: "NFL (n.d.-b): staff check \"they can communicate with officials at each stadium and see video of every game.\"", sourceLessonSlug: "checks-calibration-and-meetings" },
+          { prompt: "As posted, when was the SEC coordinator posting published, and when did applications close?", options: ["Published Apr 15, deadline Apr 24, 2026", "Published Sep 2, deadline Dec 16, 2026", "Published Oct 16, deadline Oct 30, 2026", "Published Oct 19, deadline Oct 22, 2026"], correctIndex: 2, explanation: "Hawk-Eye Innovations (2026g): published October 16, 2026; deadline to apply October 30, 2026.", sourceLessonSlug: "checks-calibration-and-meetings" },
+          { prompt: "What does the SEC coordinator verify for every assigned event?", options: ["Ticket sales", "Player health", "Referee pay", "System readiness"], correctIndex: 3, explanation: "Hawk-Eye Innovations (2026g): \"Verify system readiness for every assigned sporting event.\"", sourceLessonSlug: "checks-calibration-and-meetings" },
+          { prompt: "Which checklists does the SEC coordinator work from?", options: ["Pre-game, in-game and post-game", "Only the post-game checklist", "Only the referees' checklist", "The broadcaster's rundown only"], correctIndex: 0, explanation: "Hawk-Eye Innovations (2026g): events must be \"operationally sound from pre-game, in-game, and post-game checklists.\"", sourceLessonSlug: "checks-calibration-and-meetings" },
+          { prompt: "Whose main point of contact is the SEC coordinator when remote help is needed?", options: ["The SEC's fans", "On-site personnel", "The TV audience", "The team doctors"], correctIndex: 1, explanation: "Hawk-Eye Innovations (2026g): \"the main point of contact for on-site personnel if remote assistance is required.\"", sourceLessonSlug: "checks-calibration-and-meetings" },
+          { prompt: "Where does a venue technician's SEC checklist have a reader, per lesson 14?", options: ["In Basingstoke, UK", "In New York City", "In Birmingham, Alabama", "In Toronto, Canada"], correctIndex: 2, explanation: "The SEC coordinator works on site in Birmingham, Alabama (Hawk-Eye Innovations, 2026g).", sourceLessonSlug: "checks-calibration-and-meetings" },
+          { prompt: "How long before kickoff is the NFL medical meeting?", options: ["3 hours", "15 minutes", "2 hours", "60 minutes"], correctIndex: 3, explanation: "NFL (n.d.-f): the 60-Minute Medical Meeting.", sourceLessonSlug: "checks-calibration-and-meetings" },
+          { prompt: "Which of these attends the NFL's 60-minute medical meeting?", options: ["The referee", "The head coach", "The team owner", "The TV producer"], correctIndex: 0, explanation: "NFL (n.d.-f): physicians, athletic trainers, spotters, UNCs, paramedics, the Football Operations representative and the referee.", sourceLessonSlug: "checks-calibration-and-meetings" },
+          { prompt: "What does the 60-minute meeting do besides reviewing protocols?", options: ["Sets the betting lines for the game", "Verifies equipment and tests comms", "Chooses the broadcast camera plan", "Assigns parking for medical staff"], correctIndex: 1, explanation: "NFL (n.d.-f): it verifies equipment locations and tests communication equipment.", sourceLessonSlug: "checks-calibration-and-meetings" },
+          { prompt: "Who reviews the Medical Time-Out procedures with officials at the meeting?", options: ["The video operators", "The head coaches", "The booth spotters", "The team captains"], correctIndex: 2, explanation: "NFL Head, Neck and Spine Committee (2024, p. 7): the booth spotters review the Medical Time-Out procedures with officials.", sourceLessonSlug: "checks-calibration-and-meetings" },
+          { prompt: "Where does the 2024 protocol place the 60-minute meeting?", options: ["In the spotters' booth", "On the fifty-yard line", "In the broadcast truck", "In the referees' locker room"], correctIndex: 3, explanation: "NFL Head, Neck and Spine Committee (2024, p. 6): \"in the referees' locker room.\"", sourceLessonSlug: "checks-calibration-and-meetings" },
+          { prompt: "Where does the NFL game-prep page place the meeting, against the protocol?", options: ["Outside the officials' locker room", "Inside the broadcast truck", "At the league office in NY", "On the visiting team's bench"], correctIndex: 0, explanation: "NFL (n.d.-f) puts it outside the officials' locker room; the protocol says inside. The two documents differ.", sourceLessonSlug: "checks-calibration-and-meetings" },
+          { prompt: "By lesson 14's reasoning, why must the radios work before the 60-minute meeting?", options: ["The radios are collected then", "The meeting relies on them", "The meeting assigns new radios", "Officials test them at kickoff"], correctIndex: 1, explanation: "Reasoned: the radios handed out at 3 and 2 hours are among the communication equipment the meeting relies on.", sourceLessonSlug: "checks-calibration-and-meetings" },
+          { prompt: "Who published the 2021 account by an NFL AT spotter?", options: ["The NFL Players Association", "The NCAA Sport Science Institute", "The Board of Certification", "World Rugby's medical team"], correctIndex: 2, explanation: "BOC (2021), the Board of Certification for the Athletic Trainer.", sourceLessonSlug: "checks-calibration-and-meetings" },
+          { prompt: "How did that spotter describe the game-day team?", options: ["Three spotters and a broadcast crew", "One spotter, one coach and a medic", "Four spotters and two replay referees", "Two spotters, video and IT technicians"], correctIndex: 3, explanation: "BOC (2021): \"two spotters, video and IT technicians.\"", sourceLessonSlug: "checks-calibration-and-meetings" },
+          { prompt: "How early did that spotter say the team arrives?", options: ["Four to five hours before kickoff", "One to two hours before kickoff", "The night before, every game", "Thirty minutes before kickoff"], correctIndex: 0, explanation: "BOC (2021): an arrival four to five hours before kickoff.", sourceLessonSlug: "checks-calibration-and-meetings" },
+          { prompt: "What did that spotter say is assigned to each spotter and video technician?", options: ["A camera position", "A home or away team", "A quarter of play", "A set of officials"], correctIndex: 1, explanation: "BOC (2021): home and away teams are assigned \"to each spotter and video technician.\"", sourceLessonSlug: "checks-calibration-and-meetings" },
+          { prompt: "Why does lesson 14 call the 2021 account one person's?", options: ["The NFL disputes everything in it", "It was written by a vendor's marketer", "It is a single practitioner's account", "It describes a college game instead"], correctIndex: 2, explanation: "It is one practitioner's account, published by the certifying body; it matches the posting's one operator per team.", sourceLessonSlug: "checks-calibration-and-meetings" },
+          { prompt: "In rugby, what does the home team hand the MDD at the pre-match medical meeting?", options: ["The match video on a drive", "The referee's earpiece set", "The team sheet and kit list", "The tablet for mouthguard data"], correctIndex: 3, explanation: "World Rugby (n.d.-b): a Prevent iPad or iPhone for mouthguard data, sometimes with a Bluetooth device.", sourceLessonSlug: "checks-calibration-and-meetings" },
+          { prompt: "By lesson 14, when must the rugby tablet's Bluetooth device be paired and charged?", options: ["Before the meeting", "During the match", "At half-time", "After the match"], correctIndex: 0, explanation: "Lesson 14: it has to be ready before the pre-match meeting, not during it.", sourceLessonSlug: "checks-calibration-and-meetings" },
+          { prompt: "What core duty during the game do the Big Ten and UK postings share?", options: ["Calling the medical timeout", "Monitoring the systems", "Choosing the replay angles", "Talking to the broadcast"], correctIndex: 1, explanation: "Hawk-Eye Innovations (n.d.-f, n.d.-g): monitoring and maintaining the technology during the game.", sourceLessonSlug: "during-and-after-the-game" },
+          { prompt: "With whom do the UK roles liaise on site?", options: ["Ticket agents, ushers and caterers", "Players, coaches and team doctors", "Stadium staff, officials, broadcasters", "Fans, sponsors and the visiting press"], correctIndex: 2, explanation: "Hawk-Eye Innovations (n.d.-g): \"stadium staff, match officials and host broadcasters on-site.\"", sourceLessonSlug: "during-and-after-the-game" },
+          { prompt: "With whom does the Big Ten technician coordinate?", options: ["Team doctors, trainers and the coaches", "Ticketing, parking and stadium security", "Players, captains and the marching band", "Officials, broadcasters and Hawk-Eye staff"], correctIndex: 3, explanation: "Hawk-Eye Innovations (n.d.-f): \"officials, broadcasters and Hawk-Eye staff, both on-site and remotely.\"", sourceLessonSlug: "during-and-after-the-game" },
+          { prompt: "What does the NFL posting say operators keep functional on game day?", options: ["The Injury Video Review System", "The coaches' sideline headsets", "The chain crew's down markers", "The stadium's main scoreboard"], correctIndex: 0, explanation: "NFL (2026b): the operator ensures the Injury Video Review System \"is functional on game day.\"", sourceLessonSlug: "during-and-after-the-game" },
+          { prompt: "Whom does the NFL operator support in reviewing injury video?", options: ["Head coaches and their video staff", "AT spotters, booth UNC and medical staff", "Referees and the replay official", "Broadcasters and their producers"], correctIndex: 1, explanation: "NFL (2026b): \"the AT Spotters, Booth Unaffiliated Neurotrauma Consultant (UNC) and team medical personnel.\"", sourceLessonSlug: "during-and-after-the-game" },
+          { prompt: "What does the NFL posting say operators must focus on?", options: ["The game, not the task at hand", "The broadcast, not the booth", "The task at hand, not the game", "The crowd, not the field"], correctIndex: 2, explanation: "NFL (2026b): \"Must be able to focus on the task at hand, not the game.\"", sourceLessonSlug: "during-and-after-the-game" },
+          { prompt: "What is the SEC coordinator before engineering is called in?", options: ["The final level of approval", "The on-site camera operator", "The league's replay official", "The first level of resolution"], correctIndex: 3, explanation: "Hawk-Eye Innovations (2026g): \"the first level of resolution for operational software issues.\"", sourceLessonSlug: "during-and-after-the-game" },
+          { prompt: "To whom does the SEC coordinator escalate?", options: ["The Tech Ops engineering teams", "The SEC commissioner's office", "The home team's coaching staff", "The broadcast network's producer"], correctIndex: 0, explanation: "Hawk-Eye Innovations (2026g): \"before escalating to the Tech Ops engineering teams.\"", sourceLessonSlug: "during-and-after-the-game" },
+          { prompt: "What does the SEC posting say about a typical day?", options: ["Every day is the same", "There is no typical day", "Days end by 5 p.m.", "Days start at noon"], correctIndex: 1, explanation: "Hawk-Eye Innovations (2026g): there is no \"typical day in the life.\"", sourceLessonSlug: "during-and-after-the-game" },
+          { prompt: "How does the SEC posting describe the week?", options: ["Projects on game days, live support mid-week", "Only office work, with no game days at all", "Live support on game days, projects mid-week", "Travel on game days and rest in mid-week"], correctIndex: 2, explanation: "Hawk-Eye Innovations (2026g): \"between fast-paced live event support on game days and structured project collaboration mid-week.\"", sourceLessonSlug: "during-and-after-the-game" },
+          { prompt: "What does Hawk-Eye say its goal-line technology can run with from a Remote Operations Centre?", options: ["Weekly site inspections", "A referee on call", "A backup chain crew", "24/7 remote monitoring"], correctIndex: 3, explanation: "Michaelides (2026): \"24/7 remote monitoring.\"", sourceLessonSlug: "during-and-after-the-game" },
+          { prompt: "Under NFL Rule 15-8, how long does the Referee wait after losing the League link?", options: ["One minute", "Five minutes", "Ten seconds", "Two minutes"], correctIndex: 0, explanation: "NFL (2026a, Rule 15-8): one minute, then a review with the Replay Official.", sourceLessonSlug: "during-and-after-the-game" },
+          { prompt: "If goal-line technology fails its pre-match test, what must the referee do?", options: ["Use it, and report it", "Not use it, and report it", "Delay the match an hour", "Replace it with a camera"], correctIndex: 1, explanation: "IFAB (2026, p. 52): \"the referee must not use the GLT system and must report this.\"", sourceLessonSlug: "during-and-after-the-game" },
+          { prompt: "What do VARs use if FIFA's semi-automated offside fails?", options: ["The broadcast's graphics", "The assistant's flag alone", "Crosshairs and triangulation", "A second tracking system"], correctIndex: 2, explanation: "FIFA (n.d.-b): \"crosshairs and triangulation.\"", sourceLessonSlug: "during-and-after-the-game" },
+          { prompt: "In World Rugby's HIA, what is a missing side-line video link?", options: ["A reason to end the match", "A matter for the referee", "A normal part of a match", "A review-panel threshold"], correctIndex: 3, explanation: "World Rugby (2022, p. 30): a failure in the delivery of video viewing is one of the thresholds for the HIA Review Panel.", sourceLessonSlug: "during-and-after-the-game" },
+          { prompt: "By lesson 15's reasoning, what is a fallback?", options: ["Slower or rougher, but it keeps play going", "Faster and more accurate than the system", "A rule that stops the game for the day", "A way to skip all of the pre-game checks"], correctIndex: 0, explanation: "Reasoned: a fallback keeps the game going but is slower or rougher than the system.", sourceLessonSlug: "during-and-after-the-game" },
+          { prompt: "By lesson 15's reasoning, what is the technician's job about fallbacks?", options: ["Use them as often as is possible", "Make them unnecessary; report their use", "Hide every use of them from officials", "Choose which one the referee will use"], correctIndex: 1, explanation: "Lesson 15: make the fallback unnecessary, and report it when it was used.", sourceLessonSlug: "during-and-after-the-game" },
+          { prompt: "What does the Firenze technician upload after the match?", options: ["The full broadcast feed to the club", "Player medical files to the league", "Data requested by EPTS Remote Support", "Highlight clips to social media pages"], correctIndex: 2, explanation: "Hawk-Eye Innovations (2026e): \"all the data requested by EPTS Remote Support.\"", sourceLessonSlug: "during-and-after-the-game" },
+          { prompt: "What does the Firenze technician help with after uploading?", options: ["Ticket refunds", "Pitch watering", "Press interviews", "Disassembly"], correctIndex: 3, explanation: "Hawk-Eye Innovations (2026e): \"disassembly activities.\"", sourceLessonSlug: "during-and-after-the-game" },
+          { prompt: "What does the Bolzano technician fill in after the match?", options: ["Their sections of the match report", "The referee's disciplinary report", "The home club's injury report form", "The broadcaster's running order"], correctIndex: 0, explanation: "Hawk-Eye Innovations (2026f): \"your sections in the match report.\"", sourceLessonSlug: "during-and-after-the-game" },
+          { prompt: "Through what system does the NFL operator submit game reports?", options: ["The Next Gen Stats portal", "The Game Management System", "The league's ticketing app", "The club's scouting database"], correctIndex: 1, explanation: "NFL (2026b): \"Submit game reports through the Game Management System at the conclusion of each game.\"", sourceLessonSlug: "during-and-after-the-game" },
+          { prompt: "What else does the NFL posting make operators responsible for reporting?", options: ["Injuries, in a medical database", "Penalties, in the officials' log", "Working hours, in a timekeeping system", "Ratings, in the broadcast system"], correctIndex: 2, explanation: "NFL (2026b): \"Responsible for accurately reporting working hours in timekeeping system.\"", sourceLessonSlug: "during-and-after-the-game" },
+          { prompt: "Who files the NFL booth's medical reports?", options: ["The video operators", "The broadcast producer", "The replay official", "The spotters and booth UNC"], correctIndex: 3, explanation: "Lesson 6: booth spotters and booth UNCs file the reports, not the video crew (NFL Head, Neck and Spine Committee, 2024).", sourceLessonSlug: "during-and-after-the-game" },
+          { prompt: "About how long is an NFL operator's game day, as posted?", options: ["8 to 9 hours", "4 to 5 hours", "12 to 14 hours", "2 to 3 hours"], correctIndex: 0, explanation: "NFL (2026b): \"Approximately 8-9 hours per game.\"", sourceLessonSlug: "during-and-after-the-game" },
+          { prompt: "When does the NFL operator leave, as posted?", options: ["Right at the final whistle, with the crowd", "About 45 minutes to an hour after the game", "About four hours after the game has ended", "At halftime, once the radios are checked"], correctIndex: 1, explanation: "NFL (2026b): leave \"approximately 45 minutes\" to 1 hour \"after end of game.\"", sourceLessonSlug: "during-and-after-the-game" },
+          { prompt: "Up to how long after the match does the Bolzano video technician's day run?", options: ["Up to 1 hour", "Up to 6 hours", "Up to 2 hours", "Up to 15 minutes"], correctIndex: 2, explanation: "Hawk-Eye Innovations (2026f): \"up to 2 hours post-game completion.\" Firenze's is up to 1 hour.", sourceLessonSlug: "during-and-after-the-game" },
+          { prompt: "What off-season work does the Big Ten posting mention?", options: ["Scouting players for next season", "Selling season tickets to fans", "Training new referees each week", "Building and maintaining hardware"], correctIndex: 3, explanation: "Hawk-Eye Innovations (n.d.-f): \"Periodic work during the off-season for building and maintaining our hardware and equipment.\"", sourceLessonSlug: "during-and-after-the-game" },
+          { prompt: "What does the NFL posting say about non-game days?", options: ["Some troubleshooting may be needed", "No work is ever needed then", "Operators must attend practices", "Operators run the team's video"], correctIndex: 0, explanation: "NFL (2026b): \"Must be able to troubleshoot issues on non-game days in some circumstances.\"", sourceLessonSlug: "during-and-after-the-game" },
+          { prompt: "On lesson 15's one-page day, what happens about 2 hours before kickoff?", options: ["The final whistle and teardown", "The referees' goal-line test", "The day-before setup on site", "The medical radio collection"], correctIndex: 1, explanation: "The referees' test of goal-line technology, about two hours before (Hawk-Eye Innovations, 2026e; IFAB, 2026).", sourceLessonSlug: "during-and-after-the-game" },
+          { prompt: "Why does lesson 15 not treat the Big Ten medical system as the NFL's system?", options: ["The Big Ten uses no video", "The NFL bans that comparison", "No source read links the two", "They are made by one vendor"], correctIndex: 2, explanation: "Both serve medical staff, but no source read for the course links them.", sourceLessonSlug: "during-and-after-the-game" },
+          { prompt: "On lesson 15's one-page day, when are the NFL medical radios handed out?", options: ["On the day before", "At 60 minutes before", "During the first half", "3 and 2 hours before"], correctIndex: 3, explanation: "NFL (n.d.-f): at 3 hours (visiting athletic training staff) and 2 hours (UNCs, physicians, spotters).", sourceLessonSlug: "during-and-after-the-game" },
+          { prompt: "What do AMGC staff do with plays after the games?", options: ["Tag them for later search", "Delete them at midnight", "Send them to the clubs", "Air them on NFL Network"], correctIndex: 0, explanation: "NFL (n.d.-b): staff \"'tag' every play so they can be searched later in a database.\"", sourceLessonSlug: "during-and-after-the-game" },
+        ],
+      },
+    },
   ],
 };

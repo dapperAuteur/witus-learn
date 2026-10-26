@@ -9564,6 +9564,19 @@ export const RESEARCH_CHECKS: ResearchCheck[] = [
     needs: ["A Big Ten release or page naming the vendor, with date and locator"],
     where: ["https://bigten.org/fb/article/60351/ (404 on 2026-10-26)", "bigten.org football officiating pages", "The qualified reviewer"],
   },
+  {
+    key: "crew07-big-ten-vs-ivrs",
+    title: "Is the Big Ten's SMART medical system the same as the NFL's injury video review system?",
+    course: "sideline-systems",
+    lesson: "during-and-after-the-game",
+    quote: "The Big Ten posting's \"SMART replay & medical systems\" and the NFL's injury video review system both serve medical staff, but no source read for this course links them, so this course does not treat them as the same system.",
+    severity: "low",
+    question: "Is the medical video system a Hawk-Eye technician sets up at Big Ten football stadiums the same product, or the same kind of system, as the NFL's Injury Video Review System, and who uses it on game day?",
+    claim: "Lesson 15 keeps the two apart: the Big Ten posting names \"SMART replay & medical systems\"; the NFL's system \"uses NFL Vision technology and the broadcast feed\".",
+    stakes: "Low: the lesson makes no claim that they are the same.",
+    needs: ["Hawk-Eye's or the Big Ten's own description of the medical system, with locator", "Or the qualified reviewer's account"],
+    where: ["Hawk-Eye Innovations product pages", "The Big Ten conference office", "The qualified reviewer (a tracking or replay systems technician)"],
+  },
 ];
 
 export function getResearchCheck(key: string): ResearchCheck | undefined {
