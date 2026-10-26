@@ -99,6 +99,9 @@ import type { AuthoredCourse } from "./authored-course";
 //    530's title (crew00-nec-530-title); Oregon's official rule text (crew00-oregon-rule-official);
 //    ETCP in place of a license (crew00-etcp-license).
 //  - L24: a crew procedure for mismatched cam gender (crew00-turnaround-procedure).
+//  - L25: Sony's own 9-pin pin-out (crew00-sony-9pin); USB 3.x length, Biamp against Cambrionix
+//    (crew00-usb3-length). DMX device count and termination stay under crew00-dmx-cable-impedance.
+//  - L26: the FCC's current licensing and 600 MHz guidance (crew00-fcc-wireless-licensing).
 //
 // House style, matching stage-and-broadcast-rigging-course.ts and arena-transmission-course.ts:
 // `section` on every lesson; flush-left single-line `:::reveal q ||| a`; recallContent from the second
@@ -237,6 +240,25 @@ const CLEARCOM_ISOLATE =
   "Clear-Com. (2025c, December 24). *Shure: How do I isolate Dante network*. Clear-Com Solution Finder. https://clear-com.atlassian.net/wiki/spaces/SF/pages/4298670090";
 const CLEARCOM_AES67 =
   "Clear-Com. (2026b, January 26). *Matrix: New install - Network requirements for AES67 audio*. Clear-Com Solution Finder. https://clear-com.atlassian.net/wiki/spaces/SF/pages/3142975501";
+
+// Control, comms and data (research file 02, section 8)
+const CLEARCOM_GPI =
+  "Clear-Com. (2019a, April 6). *Matrix: What is opto-isolated mode on the Eclipse frame GPI inputs?* Clear-Com Solution Finder. https://clear-com.atlassian.net/wiki/spaces/SF/pages/158851786";
+const CLEARCOM_IFB_GPI =
+  "Clear-Com. (2024b, November 22). *Matrix: IFB audio, can I switch the PGM via GPI or panel key*. Clear-Com Solution Finder. https://clear-com.atlassian.net/wiki/spaces/SF/pages/3376381960";
+const CLEARCOM_RELAY =
+  "Clear-Com. (2026a, April 28). *HelixNet DB25 relay pin-out*. Clear-Com Solution Finder. https://clear-com.atlassian.net/wiki/spaces/SF/pages/513933691";
+const BRAINBOXES_SERIAL =
+  "Brainboxes. (2026a, February 19). *RS232, RS422 & RS485 standards*. Brainboxes Documentation. https://docs.brainboxes.com/explanation/serial-communications/rs232-rs422-rs485-standards";
+const BRAINBOXES_SONY =
+  "Brainboxes. (2026b, March 13). *Sony RS-422 DB9 pinout*. Brainboxes Documentation. https://docs.brainboxes.com/reference/pinouts/sony-rs-422-pinout-db9";
+const BMD_ATEM = `Blackmagic Design. (n.d.-c). *ATEM* [Tech specs page]. ${RETRIEVED} https://www.blackmagicdesign.com/products/atem/techspecs`;
+const BMD_HYPERDECK = `Blackmagic Design. (n.d.-d). *HyperDeck Studio* [Tech specs page]. ${RETRIEVED} https://www.blackmagicdesign.com/products/hyperdeckstudio/techspecs`;
+const BIAMP = `Biamp. (n.d.). *What to consider when working with USB*. Biamp Cornerstone. ${RETRIEVED} https://support.biamp.com/Biamp_Control/Troubleshooting/What_to_consider_when_working_with_USB`;
+const CAMBRIONIX = `Cambrionix. (n.d.). *Maximum length of a USB cable*. Cambrionix Knowledge Base. ${RETRIEVED} https://knowledge.cambrionix.com/Content/Articles/USB/Maximum-Length-of-a-USB-Cable.htm`;
+const SHURE_UA825 = `Shure. (n.d.). *UA825: Coaxial cable* [Product page]. ${RETRIEVED} https://www.shure.com/en-US/products/accessories/ua825`;
+const CFR_47_15_236 =
+  "47 C.F.R. § 15.236 (2025). U.S. Government Publishing Office, Code of Federal Regulations, October 1, 2025 edition. https://www.govinfo.gov/content/pkg/CFR-2025-title47-vol1/pdf/CFR-2025-title47-vol1-sec15-236.pdf";
 
 // Power (research file 03, section 7). Regulations were read in the official eCFR text current to
 // October 22, 2026 (osha.gov refused the fetch).
@@ -2511,6 +2533,222 @@ Two notes to the general industry rule matter on a show. "A cord connector on an
           { prompt: "On the stop list, what happens with a tripped breaker?", options: ["Reset it once and watch", "Stop; it waits for a safe check", "Reset it from the panel", "Swap in a larger breaker"], correctIndex: 1, explanation: "Item 5: it is not reset until someone has determined the circuit can be safely energized (§ 1910.334(b)(2)).", sourceLessonSlug: "gfci-wet-locations-and-when-to-stop" },
           { prompt: "On the stop list, what do you do about a GFCI that fails its test?", options: ["Reset it and try again", "Bypass it for the show", "Contact a qualified electrician", "Tape over the test button"], correctIndex: 2, explanation: "Item 8: \"Contact a qualified electrician\" (CPSC, n.d.-a, p. 2).", sourceLessonSlug: "gfci-wet-locations-and-when-to-stop" },
           { prompt: "On the stop list, what do you do about mismatched cam gender?", options: ["Use a turnaround and go on", "Swap the colored boots", "Tape it and label it", "Stop and ask who owns the power"], correctIndex: 3, explanation: "Item 13: no source gives a crew procedure; stop and ask the person responsible for the distribution.", sourceLessonSlug: "gfci-wet-locations-and-when-to-stop" },
+        ],
+      },
+    },
+    // ══════════════════════════════════════════════════════════════════════
+    // SECTION 8: Control, comms and data
+    // ══════════════════════════════════════════════════════════════════════
+    {
+      slug: "dmx-rs-422-tally-and-usb",
+      title: "25 · DMX, RS-422, tally and USB",
+      section: "8 · Control, comms and data",
+      recallContent: [
+        {
+          prompt: "How small a current difference can trip a GFCI, according to the CPSC?",
+          answer: "As little as 0.006 amperes, designed to act before the electricity can affect your heartbeat.",
+        },
+        {
+          prompt: "Under OSHA's general industry rule, when is an extension cord's connector treated as a receptacle outlet?",
+          answer: "When the cord set is used for temporary electric power (29 C.F.R. § 1910.304(b)(3)(ii)(A), Note 1).",
+        },
+      ],
+      body: `${QR}
+
+**Control lines are cables too.** Not every cable on a show carries a picture, sound or power. Some carry instructions: lighting data, deck control, a tally light, a contact closure, a computer link. This lesson covers four of them.
+
+**DMX: terminate the end of the line.** Lesson 17 met DMX's 5-pin XLR and why microphone cable is the wrong cable for it. Two more rules complete the picture. ProSoundWeb: "The DMX signal must be terminated at the end of a line of fixtures or dimmers." A terminator is "a 120-ohm resistor, and a male XLR plug," and "Make sure only the last fixture in the line is terminated" (Leerman, 2013, p. 2). ENTTEC says the same: "A 120 ohm terminator across Data plus and Data minus on the last fixture." It adds that on short runs termination matters more than cable type, because an unterminated line reflects nearly the full edge of the signal (ENTTEC, 2026).
+
+How many devices: "DMX512 supports a maximum of 32 devices on a line." With a repeater, "a total of 63 devices (The repeater counts as a device)" (Leerman, 2013, p. 2). ESTA's E1.11 is the DMX512-A standard itself (Entertainment Services and Technology Association [ESTA], n.d.); this course did not download it (lesson 17), so these figures are ProSoundWeb's.
+
+Reasoned: this is the word clock rule from lesson 18 again. One termination, at the far end of the line, matched to the cable.
+
+**RS-422: deck and switcher control.** Brainboxes explains the serial standards. RS-422 uses "2 wires ... to carry each signal, configured as a twisted pair," with "one transmitter and up to 10 receivers." It runs up to 10 Mbit/s for up to 40 feet, and up to 100 kbit/s for up to 4000 feet (1219 m). RS-485 allows "up to 32 driver/receivers pairs on a party line data bus." RS-232 uses "± 12 Volt logic levels over distances up to 100 feet, at speeds up to 20,000 Baud" (Brainboxes, 2026a). Reasoned: RS-422 reaches farther than RS-232 because each signal rides a twisted pair, the same idea as the balanced audio line in lesson 16.
+
+Brainboxes describes the Sony protocol as "a 2-way communications protocol for controlling advanced video recorders," on a DB9 connector, and warns that the wiring depends on whether a unit is the controller or the device (Brainboxes, 2026b). Its controller (master) pin-out:
+
+| Pin | Controller side |
+|---|---|
+| 1 | Frame ground |
+| 2 | Receive A- |
+| 3 | Transmit B- |
+| 4 | Transmit ground |
+| 5 | Not connected |
+| 6 | Receive ground |
+| 7 | Receive B+ |
+| 8 | Transmit A+ |
+| 9 | Not connected |
+
+The device (slave) side swaps transmit and receive on pins 2, 3, 7 and 8 (Brainboxes, 2026b). Whether Sony's own 9-pin protocol document gives the same pin-out is a question this course leaves open.
+
+Where you meet it: Blackmagic's HyperDeck Studio 4K Pro, HD Pro and HD Plus each list "1 x RS-422 In, 1 x RS-422 Out" (the HD Mini has RS-422 In only), with external control by "RS-422 deck control, SDI start/stop, timecode run" (Blackmagic Design, n.d.-d). Blackmagic's top 4 M/E ATEM Constellation models "include RS-422 for serial control and MADI digital audio connections" (Blackmagic Design, n.d.-c).
+
+**Tally and GPI: contact closures.** Blackmagic's GPI and Tally Interface "Adds 8 Tally relay contacts to any ATEM switcher" (Blackmagic Design, n.d.-c). Clear-Com's HelixNet DB25 relay port gives each relay a pole, a normally closed (NC) contact and a normally open (NO) contact, beside opto-isolated inputs with + and - pins (Clear-Com, 2026a). On Clear-Com's Eclipse matrix, an opto-isolated GPI input needs 7 to 24 V DC at EXTVIN+ relative to EXTVIN-. It goes active at 5 mA or more, a 1.5 kilohm resistor limits the current, and an input pin must not go above +6 V relative to EXTVIN- (Clear-Com, 2019a). A matrix can also switch an IFB's program feed by a panel key or by a GPI driven from an external switch (Clear-Com, 2024b).
+
+Reasoned from those three pages: a general-purpose output (GPO) is usually a relay contact, a switch that closes or opens, and a general-purpose input (GPI) senses a closure or a current. Tally is one use of them. That definition is this course's summary, not a quotation. Each device sets its own voltage and current limits, as the Eclipse figures show, so check both devices' limits before wiring one to the other.
+
+**USB: short by design.** Biamp: "A standard USB 2.0 cable has a maximum cable length of 5 meters," and "If you use a USB 3 or 3.1 cable, your maximum cable length shortens to 3 meters." Longer runs need "USB Extenders" (USB over Ethernet cable) or "Active USB" cables, and never more than 5 "Hub Hops" from the root hub (Biamp, n.d.). Cambrionix agrees on 5 meters for USB 2.0. For USB 3.x, it says the USB-IF moved from fixed lengths to performance criteria, and it gives up to 2 m for USB 3.2 Gen 1, up to 1 m for Gen 2 and Gen 2x2, and 0.8 m for USB4 (Cambrionix, n.d.).
+
+So the rule to carry: 5 meters for USB 2.0; faster USB is shorter, and Biamp (3 m) and Cambrionix (2 m) disagree on the figure; past that, use an active cable or an extender.
+
+:::reveal Where does a DMX line get its terminator, and what is it? ||| Only at the last fixture: a 120-ohm resistor across Data plus and Data minus, in a male XLR plug (Leerman, 2013, p. 2; ENTTEC, 2026).
+
+:::reveal Why does RS-422 reach farther than RS-232? ||| Each RS-422 signal rides a twisted pair, like a balanced audio line: up to 4000 feet at 100 kbit/s, against 100 feet for RS-232 (Brainboxes, 2026a).
+
+:::reveal How long may a USB 2.0 cable be, and what do you do past that? ||| 5 meters; beyond it, use an active USB cable or a USB extender (Biamp, n.d.).
+
+## Sources
+- ${LEERMAN_2013} Locator: p. 2, the termination and device-count paragraphs.
+- ${ENTTEC_2026} Locator: page text, the terminator and short-run paragraphs.
+- ${ESTA_LISTING} Locator: entry for E1.11.
+- ${BRAINBOXES_SERIAL} Locator: the RS-422, RS-485 and RS-232 sections.
+- ${BRAINBOXES_SONY} Locator: both pin-out tables and the controller and device note.
+- ${BMD_HYPERDECK} Locator: "Connections" and "External Control" for each model.
+- ${BMD_ATEM} Locator: ATEM Constellation 4 M/E connections; GPI and Tally Interface.
+- ${CLEARCOM_RELAY} Locator: the relay and input table.
+- ${CLEARCOM_GPI} Locator: answer text, the opto-isolated mode figures.
+- ${CLEARCOM_IFB_GPI} Locator: answer text.
+- ${BIAMP} Locator: the cable length, extender and hub-hop sections.
+- ${CAMBRIONIX} Locator: the USB 2.0 and USB 3.x length paragraphs.`,
+    },
+    {
+      slug: "rf-coax-wireless-mics-and-ifb",
+      title: "26 · RF coax, wireless mics and IFB",
+      section: "8 · Control, comms and data",
+      recallContent: [
+        {
+          prompt: "Where does a DMX line get terminated, and with what?",
+          answer: "Only at the last fixture, with a 120-ohm terminator across Data plus and Data minus.",
+        },
+        {
+          prompt: "How far can RS-422 run at 100 kbit/s, according to Brainboxes?",
+          answer: "Up to 4000 feet (1219 m); at 10 Mbit/s, up to 40 feet.",
+        },
+      ],
+      body: `${QR}
+
+**RF lives at 50 ohms.** Lesson 1 met the two coax impedances: 75 ohms for video, and 50 ohms mainly for data, with GPS antennas, cell towers and base stations among its uses and SMA, TNC and N among its connectors (Coaxicom, 2015). Rohde & Schwarz's note on RF connectors gives the details a crew member needs (Rohde & Schwarz, 2015, pp. 4 to 6):
+
+| Connector | What the note says |
+|---|---|
+| Type N, 50 ohms | "developed to satisfy the need for a durable, weatherproof, medium-sized RF connector"; to 11 GHz (normal) and 18 GHz (precision) |
+| Type N, 75 ohms | Tops out at 4 GHz, and is "not compatible despite sharing a common thread size" with the 50-ohm version |
+| SMA, 50 ohms | "good electrical performance from DC to 12 GHz" (some makers to 18 GHz), but "mechanically rated for only 500 mate / de-mate operations" |
+
+Two cautions come with the table. The 50-ohm Type N male pin is larger than the 75-ohm female socket, "resulting in damage if connected together" (lesson 2). And SMA parts vary between makers, so check compatibility "to avoid physical damage" (Rohde & Schwarz, 2015, pp. 5 to 6). A system is only as good as its weakest part: "The connector type having the lowest frequency range will set the frequency range of the system" (p. 4).
+
+**Same plug, different cable.** The BNC lives in both worlds. RME notes that 50-ohm BNC parts are what computer stores usually carry, while the 75-ohm parts used for word clock are "part of video technology (RG59)" (RME, n.d., p. 17). Shure's UA825 accessory is a "25-foot coaxial cable" that "offers BNC to BNC connection," and its product page does not state an impedance (Shure, n.d.).
+
+Reasoned from lessons 2, 17 and 18: video, word clock and AES3id run at 75 ohms; antenna and RF test gear run at 50 ohms, with Type N and SMA as 50-ohm series. A BNC can be either, so the plug fitting proves nothing. A 50-ohm N plug can damage a 75-ohm N jack. And a mismatched cable reflects signal, the same reason RME and ENTTEC give for matching impedance. Read the cable's print or the maker's page. When the page does not say, as Shure's does not, ask the RF coordinator before you swap in a different cable.
+
+**Wireless microphones: the rule, named.** In the United States, the FCC's rule for unlicensed wireless microphones is 47 C.F.R. § 15.236. The October 1, 2025 edition is headed for the bands 54 to 72 MHz, 76 to 88 MHz, 174 to 216 MHz, 470 to 608 MHz, 614 to 616 MHz and 657 to 663 MHz. It defines a wireless microphone as a radiator that sends sound by radio "to a receiver which converts the radio signals back into audio signals," and says wireless microphones "may be used for cue and control communications and synchronization of TV camera signals as defined in § 74.801" (47 C.F.R. § 15.236(a), 2025). It also sets limits:
+
+- maximum radiated power of 50 mW EIRP in the TV broadcast bands, and 20 mW EIRP in the 600 MHz guard band and duplex gap ((d));
+- operation at least four kilometers outside the protected contours of co-channel TV stations ((e));
+- a channel no wider than 200 kHz ((f)(1)(ii)).
+
+*Break Into Sports & Media Broadcasting* lesson "9 · Encoding, streaming, and the FCC basics" explains what the FCC does.
+
+**IFB: named, too.** An IFB carries a program feed. Clear-Com wires a balanced line-level feed from a matrix port to its PTX-3 IFB transmitter (Clear-Com, 2019e), the cable lesson 16 met, and a matrix can switch that program feed by a panel key or a GPI (Clear-Com, 2024b; lesson 25).
+
+**Why this lesson stops there.** This course teaches no frequency to use. The FCC's own wireless microphone guide pages refused this course's requests, so it cannot say what they advise today, and a frequency plan belongs to the show's RF coordinator. What the FCC's pages say today about licensing under Part 74 and the 600 MHz band is a question this course leaves open. Your part is the cable: 50 ohms, the right connector, the right length, and no swaps without asking.
+
+:::reveal Why must a 50-ohm Type N plug never meet a 75-ohm Type N jack? ||| The 50-ohm male pin is larger than the 75-ohm female socket, "resulting in damage if connected together" (Rohde & Schwarz, 2015, p. 5).
+
+:::reveal How many mate and de-mate operations is an SMA rated for? ||| Only 500 (Rohde & Schwarz, 2015, pp. 5 to 6).
+
+:::reveal What maximum radiated power does § 15.236 allow an unlicensed wireless mic in the TV broadcast bands? ||| 50 mW EIRP; 20 mW in the 600 MHz guard band and duplex gap (47 C.F.R. § 15.236(d), 2025).
+
+## Sources
+- ${COAXICOM_2015} Locator: applications table.
+- ${ROHDE_2015} Locator: p. 4, section 3; p. 5, section 3.1 and notes 1 and 2; pp. 5 to 6, section 3.2.
+- ${RME_ADI648} Locator: p. 17, section 9.2 "Cabling and Termination".
+- ${SHURE_UA825} Locator: product description.
+- ${CFR_47_15_236} Locator: p. 1036, section heading; paragraphs (a), (d), (e) and (f)(1)(ii).
+- ${CLEARCOM_IFB} Locator: the cable wiring answer.
+- ${CLEARCOM_IFB_GPI} Locator: answer text.`,
+    },
+    {
+      slug: "section-8-quiz",
+      title: "Section 8 quiz · Control, comms and data",
+      section: "8 · Control, comms and data",
+      body: "A graded check on DMX termination and device counts, RS-422 and serial control, tally and GPI contacts, USB length, 50-ohm RF connectors, and the FCC's wireless microphone rule. Each answer links back to the lesson that teaches it.",
+      quiz: {
+        passingScore: 80,
+        questionsPerAttempt: 5,
+        shuffleOptions: true,
+        questions: [
+          { prompt: "Where does ProSoundWeb say a DMX line must be terminated?", options: ["At the end of the line", "At the console output", "At every fixture", "At the first dimmer"], correctIndex: 0, explanation: "Leerman (2013, p. 2): \"The DMX signal must be terminated at the end of a line of fixtures or dimmers.\"", sourceLessonSlug: "dmx-rs-422-tally-and-usb" },
+          { prompt: "What does ProSoundWeb say a DMX terminator is?", options: ["A 75-ohm resistor in a BNC cap", "A 120-ohm resistor in a male XLR", "A ferrite clamp on the last cable", "A 110-ohm resistor in a TRS jack"], correctIndex: 1, explanation: "Leerman (2013, p. 2): \"a 120-ohm resistor, and a male XLR plug.\"", sourceLessonSlug: "dmx-rs-422-tally-and-usb" },
+          { prompt: "How many fixtures in a DMX line does ProSoundWeb say get terminated?", options: ["Every one of them", "The first and last", "Only the last one", "Every fifth one"], correctIndex: 2, explanation: "Leerman (2013, p. 2): \"Make sure only the last fixture in the line is terminated.\"", sourceLessonSlug: "dmx-rs-422-tally-and-usb" },
+          { prompt: "Where does ENTTEC put the DMX terminator's 120 ohms?", options: ["Across pin 1 and the shell", "Across pins 4 and 5 only", "Across shield and Data plus", "Across Data plus and Data minus"], correctIndex: 3, explanation: "ENTTEC (2026): \"A 120 ohm terminator across Data plus and Data minus on the last fixture.\"", sourceLessonSlug: "dmx-rs-422-tally-and-usb" },
+          { prompt: "On short DMX runs, what does ENTTEC say matters more than cable type?", options: ["Termination", "Cable color", "Fixture brand", "Console age"], correctIndex: 0, explanation: "ENTTEC (2026): at short lengths termination matters more than cable type.", sourceLessonSlug: "dmx-rs-422-tally-and-usb" },
+          { prompt: "Why does an unterminated short DMX line misbehave, per ENTTEC?", options: ["It picks up phantom power", "It reflects nearly the full edge", "It loses its shield ground", "It clocks the data too slowly"], correctIndex: 1, explanation: "ENTTEC (2026): an unterminated line reflects nearly the full edge of the signal.", sourceLessonSlug: "dmx-rs-422-tally-and-usb" },
+          { prompt: "How many devices does ProSoundWeb say DMX512 supports on one line?", options: ["16", "512", "32", "63"], correctIndex: 2, explanation: "Leerman (2013, p. 2): \"DMX512 supports a maximum of 32 devices on a line.\" 512 is the channel count in the name, not devices.", sourceLessonSlug: "dmx-rs-422-tally-and-usb" },
+          { prompt: "With a repeater, how many devices does ProSoundWeb give for a DMX line?", options: ["32", "64", "512", "63"], correctIndex: 3, explanation: "Leerman (2013, p. 2): \"a total of 63 devices (The repeater counts as a device).\"", sourceLessonSlug: "dmx-rs-422-tally-and-usb" },
+          { prompt: "Whose figures are the DMX device counts in lesson 25?", options: ["ProSoundWeb's", "ESTA's E1.11", "ENTTEC's sheet", "Clear-Com's"], correctIndex: 0, explanation: "The course did not download ESTA's E1.11, so the 32 and 63 are ProSoundWeb's figures (Leerman, 2013).", sourceLessonSlug: "dmx-rs-422-tally-and-usb" },
+          { prompt: "Which earlier rule does lesson 25 say DMX termination repeats?", options: ["The phantom power rule", "Word clock's end termination", "The pin 2 is hot rule", "The cam ground-first rule"], correctIndex: 1, explanation: "As with word clock in lesson 18: one termination, at the far end of the line, matched to the cable.", sourceLessonSlug: "dmx-rs-422-tally-and-usb" },
+          { prompt: "How does Brainboxes say RS-422 carries each signal?", options: ["On a single wire and ground", "On a coax with a BNC", "On two wires as a twisted pair", "On an optical fiber pair"], correctIndex: 2, explanation: "Brainboxes (2026a): \"2 wires ... to carry each signal, configured as a twisted pair.\"", sourceLessonSlug: "dmx-rs-422-tally-and-usb" },
+          { prompt: "How many receivers does Brainboxes allow one RS-422 transmitter?", options: ["1", "32", "63", "Up to 10"], correctIndex: 3, explanation: "Brainboxes (2026a): \"one transmitter and up to 10 receivers.\" RS-485 allows 32 driver/receiver pairs.", sourceLessonSlug: "dmx-rs-422-tally-and-usb" },
+          { prompt: "How far does Brainboxes say RS-422 runs at 100 kbit/s?", options: ["Up to 4000 feet", "Up to 40 feet", "Up to 100 feet", "Up to 400 feet"], correctIndex: 0, explanation: "Brainboxes (2026a): up to 100 kbit/s for up to 4000 feet (1219 m).", sourceLessonSlug: "dmx-rs-422-tally-and-usb" },
+          { prompt: "How far does Brainboxes say RS-422 runs at 10 Mbit/s?", options: ["Up to 4000 feet", "Up to 40 feet", "Up to 100 feet", "Up to 1219 feet"], correctIndex: 1, explanation: "Brainboxes (2026a): up to 10 Mbit/s for up to 40 feet.", sourceLessonSlug: "dmx-rs-422-tally-and-usb" },
+          { prompt: "How many driver/receiver pairs does RS-485 allow on a party line bus?", options: ["Up to 10", "Up to 63", "Up to 32", "Up to 2"], correctIndex: 2, explanation: "Brainboxes (2026a): RS-485 allows \"up to 32 driver/receivers pairs on a party line data bus.\"", sourceLessonSlug: "dmx-rs-422-tally-and-usb" },
+          { prompt: "What does Brainboxes give for RS-232's range and speed?", options: ["4000 feet at 100 kbit/s", "40 feet at 10 Mbit/s", "1219 m at 20,000 Baud", "100 feet at 20,000 Baud"], correctIndex: 3, explanation: "Brainboxes (2026a): \"± 12 Volt logic levels over distances up to 100 feet, at speeds up to 20,000 Baud.\"", sourceLessonSlug: "dmx-rs-422-tally-and-usb" },
+          { prompt: "Why does RS-422 reach farther than RS-232, by lesson 25's reasoning?", options: ["Each signal rides a twisted pair", "It uses a higher signal voltage", "It runs on a fiber optic pair", "It needs no shield or ground"], correctIndex: 0, explanation: "Each RS-422 signal rides a twisted pair, the same idea as a balanced audio line (Brainboxes, 2026a; lesson 16).", sourceLessonSlug: "dmx-rs-422-tally-and-usb" },
+          { prompt: "What does Brainboxes say the Sony protocol is for?", options: ["Lighting fixture control", "Controlling video recorders", "Intercom party-lines", "Camera lens focus"], correctIndex: 1, explanation: "Brainboxes (2026b): \"a 2-way communications protocol for controlling advanced video recorders.\"", sourceLessonSlug: "dmx-rs-422-tally-and-usb" },
+          { prompt: "On what connector does Brainboxes show the Sony RS-422 protocol?", options: ["XLR-5", "RJ45", "DB9", "BNC"], correctIndex: 2, explanation: "Brainboxes (2026b) gives the Sony RS-422 pin-out on a DB9.", sourceLessonSlug: "dmx-rs-422-tally-and-usb" },
+          { prompt: "What does Brainboxes warn decides how a Sony RS-422 cable is wired?", options: ["The cable's length", "The baud rate set", "The deck's maker", "Controller or device role"], correctIndex: 3, explanation: "Brainboxes (2026b): wiring depends on whether a unit is the controller or the device; the device side swaps transmit and receive.", sourceLessonSlug: "dmx-rs-422-tally-and-usb" },
+          { prompt: "On Brainboxes' controller-side pin-out, what is pin 1?", options: ["Frame ground", "Receive A-", "Transmit A+", "Not connected"], correctIndex: 0, explanation: "Brainboxes (2026b): pin 1, frame ground.", sourceLessonSlug: "dmx-rs-422-tally-and-usb" },
+          { prompt: "On Brainboxes' controller side, which pin is Transmit A+?", options: ["Pin 2", "Pin 8", "Pin 7", "Pin 3"], correctIndex: 1, explanation: "Brainboxes (2026b): pin 8, Transmit A+; pin 2 Receive A-, pin 3 Transmit B-, pin 7 Receive B+.", sourceLessonSlug: "dmx-rs-422-tally-and-usb" },
+          { prompt: "Which pins swap between the controller and device sides?", options: ["Pins 1, 4, 6 and 9", "Pins 5 and 9 only", "Pins 2, 3, 7 and 8", "Pins 1 and 6 only"], correctIndex: 2, explanation: "Brainboxes (2026b): the device side swaps transmit and receive on pins 2, 3, 7 and 8.", sourceLessonSlug: "dmx-rs-422-tally-and-usb" },
+          { prompt: "Does lesson 25 say Sony's own document matches Brainboxes' pin-out?", options: ["Yes, exactly", "No, it differs", "Only for decks", "It leaves it open"], correctIndex: 3, explanation: "Sony's own 9-pin protocol document was not read, so the lesson leaves the match open.", sourceLessonSlug: "dmx-rs-422-tally-and-usb" },
+          { prompt: "What RS-422 ports does Blackmagic list on the HyperDeck Studio 4K Pro?", options: ["1 x RS-422 In, 1 x RS-422 Out", "1 x RS-422 In, no RS-422 Out", "2 x RS-422 Out, no RS-422 In", "2 x RS-422 In, 2 x RS-422 Out"], correctIndex: 0, explanation: "Blackmagic Design (n.d.-d): \"1 x RS-422 In, 1 x RS-422 Out\" on the 4K Pro, HD Pro and HD Plus.", sourceLessonSlug: "dmx-rs-422-tally-and-usb" },
+          { prompt: "Which HyperDeck Studio model lists RS-422 In only?", options: ["HD Plus", "HD Mini", "HD Pro", "4K Pro"], correctIndex: 1, explanation: "Blackmagic Design (n.d.-d): the HD Mini has RS-422 In only.", sourceLessonSlug: "dmx-rs-422-tally-and-usb" },
+          { prompt: "Which external control methods does Blackmagic list for HyperDeck Studio?", options: ["DMX, MIDI and USB control", "Dante, AES67 and PTP control", "RS-422, SDI start/stop, timecode", "GPI relay and IR remote only"], correctIndex: 2, explanation: "Blackmagic Design (n.d.-d): \"RS-422 deck control, SDI start/stop, timecode run.\"", sourceLessonSlug: "dmx-rs-422-tally-and-usb" },
+          { prompt: "What do the top 4 M/E ATEM Constellation models include, per Blackmagic?", options: ["DMX and RS-232 ports", "USB-C and Thunderbolt", "Dante and AES67 ports", "RS-422 and MADI"], correctIndex: 3, explanation: "Blackmagic Design (n.d.-c): they \"include RS-422 for serial control and MADI digital audio connections.\"", sourceLessonSlug: "dmx-rs-422-tally-and-usb" },
+          { prompt: "What does Blackmagic's GPI and Tally Interface add to an ATEM switcher?", options: ["8 tally relay contacts", "8 more SDI return feeds", "8 DMX universes of data", "8 extra RS-422 ports"], correctIndex: 0, explanation: "Blackmagic Design (n.d.-c): it \"Adds 8 Tally relay contacts to any ATEM switcher.\"", sourceLessonSlug: "dmx-rs-422-tally-and-usb" },
+          { prompt: "What three contacts does each HelixNet DB25 relay give?", options: ["Hot, cold and a shield", "Pole, NC and NO contact", "Plus, minus and ground", "Tip, ring and a sleeve"], correctIndex: 1, explanation: "Clear-Com (2026a): each relay has a pole, a normally closed (NC) and a normally open (NO) contact.", sourceLessonSlug: "dmx-rs-422-tally-and-usb" },
+          { prompt: "What voltage does Clear-Com's Eclipse opto-isolated GPI input need at EXTVIN+?", options: ["48 V DC", "5 V DC", "7 to 24 V DC", "120 V AC"], correctIndex: 2, explanation: "Clear-Com (2019a): 7 to 24 V DC at EXTVIN+ relative to EXTVIN-.", sourceLessonSlug: "dmx-rs-422-tally-and-usb" },
+          { prompt: "At what current does an Eclipse opto-isolated GPI input go active?", options: ["0.006 A", "50 mA", "1.5 mA", "5 mA or more"], correctIndex: 3, explanation: "Clear-Com (2019a): an input goes active at 5 mA or more.", sourceLessonSlug: "dmx-rs-422-tally-and-usb" },
+          { prompt: "What limits the current on an Eclipse opto-isolated GPI input?", options: ["A 1.5 kilohm resistor", "A 120-ohm terminator", "A 5 A slow-blow fuse", "A 75-ohm terminator"], correctIndex: 0, explanation: "Clear-Com (2019a): a 1.5 kilohm resistor limits the current.", sourceLessonSlug: "dmx-rs-422-tally-and-usb" },
+          { prompt: "How can a Clear-Com matrix switch an IFB's program feed?", options: ["Only by its menus", "A panel key or a GPI", "Only by RS-422", "By DMX cue"], correctIndex: 1, explanation: "Clear-Com (2024b): by a panel key, or by a matrix GPI driven from an external switch.", sourceLessonSlug: "dmx-rs-422-tally-and-usb" },
+          { prompt: "By lesson 25's summary, what is a GPO usually?", options: ["A balanced audio pair", "A fiber transceiver", "A relay contact", "A 75-ohm output"], correctIndex: 2, explanation: "A GPO is usually a relay contact that closes or opens; a GPI senses a closure or a current. The lesson labels this its own summary.", sourceLessonSlug: "dmx-rs-422-tally-and-usb" },
+          { prompt: "What does lesson 25 say to check before wiring one device's GPO to another's GPI?", options: ["The cable's color code", "The maker of each unit", "The serial baud rate", "Each unit's voltage limits"], correctIndex: 3, explanation: "Each device sets its own voltage and current limits, as the Eclipse figures show, so check both before wiring.", sourceLessonSlug: "dmx-rs-422-tally-and-usb" },
+          { prompt: "What maximum length does Biamp give for a USB 2.0 cable?", options: ["5 meters", "3 meters", "10 meters", "2 meters"], correctIndex: 0, explanation: "Biamp (n.d.): \"A standard USB 2.0 cable has a maximum cable length of 5 meters.\"", sourceLessonSlug: "dmx-rs-422-tally-and-usb" },
+          { prompt: "What does Biamp say a USB 3 or 3.1 cable's maximum length shortens to?", options: ["5 meters", "3 meters", "1 meter", "10 meters"], correctIndex: 1, explanation: "Biamp (n.d.): it \"shortens to 3 meters.\" Cambrionix gives 2 m for USB 3.2 Gen 1.", sourceLessonSlug: "dmx-rs-422-tally-and-usb" },
+          { prompt: "What does Biamp say a longer USB run needs?", options: ["A passive barrel coupler", "A thicker passive cable", "An extender or active cable", "A 75-ohm BNC adapter"], correctIndex: 2, explanation: "Biamp (n.d.): \"USB Extenders\" (USB over Ethernet cable) or \"Active USB\" cables.", sourceLessonSlug: "dmx-rs-422-tally-and-usb" },
+          { prompt: "How many hub hops from the root hub does Biamp allow?", options: ["10", "7", "2", "5"], correctIndex: 3, explanation: "Biamp (n.d.): never more than 5 \"Hub Hops\" from the root hub.", sourceLessonSlug: "dmx-rs-422-tally-and-usb" },
+          { prompt: "What length does Cambrionix give for USB 3.2 Gen 1?", options: ["Up to 2 m", "Up to 5 m", "Up to 3 m", "Up to 0.8 m"], correctIndex: 0, explanation: "Cambrionix (n.d.): up to 2 m for USB 3.2 Gen 1; 1 m for Gen 2 and Gen 2x2; 0.8 m for USB4.", sourceLessonSlug: "dmx-rs-422-tally-and-usb" },
+          { prompt: "What does Cambrionix say the USB-IF did for USB 3.x lengths?", options: ["Fixed all of them at 3 m", "Moved to performance criteria", "Banned every passive cable", "Kept USB 2.0's 5 m limit"], correctIndex: 1, explanation: "Cambrionix (n.d.): for USB 3.x the USB-IF moved from fixed lengths to performance criteria.", sourceLessonSlug: "dmx-rs-422-tally-and-usb" },
+          { prompt: "What does lesson 25 conclude about USB 3.x cable length?", options: ["It is 5 m, like USB 2.0", "It is 3 m, by standard", "Shorter, and makers disagree", "Longer than USB 2.0"], correctIndex: 2, explanation: "Faster USB is shorter than USB 2.0's 5 m, and Biamp (3 m) and Cambrionix (2 m) disagree on the figure.", sourceLessonSlug: "dmx-rs-422-tally-and-usb" },
+          { prompt: "What does Rohde & Schwarz say Type N was developed to be?", options: ["A tiny connector for boards", "A quick-push video plug", "A low-cost consumer jack", "A durable, weatherproof RF part"], correctIndex: 3, explanation: "Rohde & Schwarz (2015, p. 5): \"developed to satisfy the need for a durable, weatherproof, medium-sized RF connector.\"", sourceLessonSlug: "rf-coax-wireless-mics-and-ifb" },
+          { prompt: "To what frequency does Rohde & Schwarz rate a normal 50-ohm Type N?", options: ["11 GHz", "4 GHz", "18 GHz", "12 GHz"], correctIndex: 0, explanation: "Rohde & Schwarz (2015, p. 5): 11 GHz normal, 18 GHz precision.", sourceLessonSlug: "rf-coax-wireless-mics-and-ifb" },
+          { prompt: "To what frequency does a precision 50-ohm Type N reach?", options: ["11 GHz", "18 GHz", "4 GHz", "200 MHz"], correctIndex: 1, explanation: "Rohde & Schwarz (2015, p. 5): 18 GHz for precision Type N.", sourceLessonSlug: "rf-coax-wireless-mics-and-ifb" },
+          { prompt: "Where does Rohde & Schwarz say 75-ohm Type N tops out?", options: ["11 GHz", "18 GHz", "4 GHz", "12 GHz"], correctIndex: 2, explanation: "Rohde & Schwarz (2015, p. 5): 75-ohm Type N tops out at 4 GHz.", sourceLessonSlug: "rf-coax-wireless-mics-and-ifb" },
+          { prompt: "What do 50- and 75-ohm Type N share, though they are not compatible?", options: ["Pin size", "Color code", "Frequency limit", "Thread size"], correctIndex: 3, explanation: "Rohde & Schwarz (2015, p. 5): \"not compatible despite sharing a common thread size.\"", sourceLessonSlug: "rf-coax-wireless-mics-and-ifb" },
+          { prompt: "What happens if a 50-ohm Type N plug meets a 75-ohm Type N jack?", options: ["The jack is damaged", "Nothing at all", "A small reflection only", "The plug will not turn"], correctIndex: 0, explanation: "The larger 50-ohm male pin damages the 75-ohm female socket (Rohde & Schwarz, 2015, p. 5).", sourceLessonSlug: "rf-coax-wireless-mics-and-ifb" },
+          { prompt: "How many mate and de-mate operations is SMA mechanically rated for?", options: ["5000", "500", "50", "1000"], correctIndex: 1, explanation: "Rohde & Schwarz (2015, pp. 5 to 6): \"mechanically rated for only 500 mate / de-mate operations.\"", sourceLessonSlug: "rf-coax-wireless-mics-and-ifb" },
+          { prompt: "To what frequency does Rohde & Schwarz give SMA good electrical performance?", options: ["4 GHz", "11 GHz", "12 GHz", "200 MHz"], correctIndex: 2, explanation: "Rohde & Schwarz (2015, p. 5): \"good electrical performance from DC to 12 GHz,\" some makers to 18 GHz.", sourceLessonSlug: "rf-coax-wireless-mics-and-ifb" },
+          { prompt: "Why check SMA compatibility between makers?", options: ["Their colors differ", "Their impedance differs", "Their thread pitch is metric", "To avoid physical damage"], correctIndex: 3, explanation: "Rohde & Schwarz (2015, p. 6): mechanical variance between makers means checking compatibility \"to avoid physical damage.\"", sourceLessonSlug: "rf-coax-wireless-mics-and-ifb" },
+          { prompt: "What does Rohde & Schwarz say sets a system's frequency range?", options: ["Its lowest-rated connector", "Its highest-rated connector", "The longest cable in it", "The test set's display"], correctIndex: 0, explanation: "Rohde & Schwarz (2015, p. 4): \"The connector type having the lowest frequency range will set the frequency range of the system.\"", sourceLessonSlug: "rf-coax-wireless-mics-and-ifb" },
+          { prompt: "Which BNC impedance does RME say a computer store usually stocks?", options: ["75 ohms", "50 ohms", "110 ohms", "100 ohms"], correctIndex: 1, explanation: "RME (n.d., p. 17): computer stores usually carry 50-ohm BNC parts; 75-ohm parts belong to video technology (RG59).", sourceLessonSlug: "rf-coax-wireless-mics-and-ifb" },
+          { prompt: "What does Shure's UA825 product page leave out?", options: ["Its length", "Its connectors", "Its impedance", "Its maker"], correctIndex: 2, explanation: "Shure (n.d.) gives a 25-foot BNC to BNC coaxial cable and states no impedance.", sourceLessonSlug: "rf-coax-wireless-mics-and-ifb" },
+          { prompt: "What length and connectors does Shure give the UA825?", options: ["10 feet, N to N", "50 feet, SMA to BNC", "25 feet, BNC to N", "25 feet, BNC to BNC"], correctIndex: 3, explanation: "Shure (n.d.): \"25-foot coaxial cable offers BNC to BNC connection.\"", sourceLessonSlug: "rf-coax-wireless-mics-and-ifb" },
+          { prompt: "By lesson 26's reasoning, why does a BNC prove nothing about impedance?", options: ["BNCs come in 50 and 75 ohms", "BNCs carry no outer shield", "BNCs only ever fit video", "BNCs stop at 200 MHz"], correctIndex: 0, explanation: "A BNC can be either impedance, so the plug fitting proves nothing; read the cable's print or the maker's page.", sourceLessonSlug: "rf-coax-wireless-mics-and-ifb" },
+          { prompt: "Which signals in lesson 26's list run at 75 ohms?", options: ["Antenna feeds and RF test", "Video, word clock, AES3id", "Network pairs and DMX", "AES3 and mic lines"], correctIndex: 1, explanation: "Video, word clock and AES3id are 75 ohms; antenna and RF test gear are 50 ohms.", sourceLessonSlug: "rf-coax-wireless-mics-and-ifb" },
+          { prompt: "What does lesson 26 tell you to do when a coax cable's page states no impedance?", options: ["Use it if it fits", "Assume it is 75 ohms", "Ask the RF coordinator", "Assume it is 50 ohms"], correctIndex: 2, explanation: "When the page does not say, as Shure's does not, ask the RF coordinator before swapping in a different cable.", sourceLessonSlug: "rf-coax-wireless-mics-and-ifb" },
+          { prompt: "Which FCC rule covers unlicensed wireless microphones?", options: ["47 C.F.R. § 74.801", "47 C.F.R. § 15.247", "29 C.F.R. § 1910.305", "47 C.F.R. § 15.236"], correctIndex: 3, explanation: "47 C.F.R. § 15.236 (2025 edition). § 74.801 is cited inside it for cue and control definitions.", sourceLessonSlug: "rf-coax-wireless-mics-and-ifb" },
+          { prompt: "How does § 15.236 define a wireless microphone?", options: ["Sends sound by radio to a receiver", "Any mic with a battery inside", "A mic that plugs into a network", "Any mic used on a TV set"], correctIndex: 0, explanation: "47 C.F.R. § 15.236(a): a radiator that sends sound by radio \"to a receiver which converts the radio signals back into audio signals.\"", sourceLessonSlug: "rf-coax-wireless-mics-and-ifb" },
+          { prompt: "Besides sound, what does § 15.236 say wireless mics may be used for?", options: ["Streaming video to viewers", "Cue, control and camera sync", "Carrying DMX lighting data", "Phone calls to the truck"], correctIndex: 1, explanation: "47 C.F.R. § 15.236(a): \"cue and control communications and synchronization of TV camera signals.\"", sourceLessonSlug: "rf-coax-wireless-mics-and-ifb" },
+          { prompt: "What is the maximum radiated power for an unlicensed mic in the TV broadcast bands?", options: ["20 mW EIRP", "250 mW EIRP", "50 mW EIRP", "1 W EIRP"], correctIndex: 2, explanation: "47 C.F.R. § 15.236(d): 50 mW EIRP in the TV broadcast bands.", sourceLessonSlug: "rf-coax-wireless-mics-and-ifb" },
+          { prompt: "What maximum power does § 15.236 allow in the 600 MHz guard band and duplex gap?", options: ["50 mW EIRP", "100 mW EIRP", "5 mW EIRP", "20 mW EIRP"], correctIndex: 3, explanation: "47 C.F.R. § 15.236(d): 20 mW EIRP in the 600 MHz guard band and duplex gap.", sourceLessonSlug: "rf-coax-wireless-mics-and-ifb" },
+          { prompt: "How far outside co-channel TV stations' protected contours must unlicensed mics operate?", options: ["At least four kilometers", "At least 400 meters", "At least 40 kilometers", "At least one kilometer"], correctIndex: 0, explanation: "47 C.F.R. § 15.236(e): at least four kilometers outside the protected contours.", sourceLessonSlug: "rf-coax-wireless-mics-and-ifb" },
+          { prompt: "How wide may an unlicensed wireless mic's channel be, per § 15.236?", options: ["2 MHz", "200 kHz", "6 MHz", "20 kHz"], correctIndex: 1, explanation: "47 C.F.R. § 15.236(f)(1)(ii): a channel may not exceed 200 kHz.", sourceLessonSlug: "rf-coax-wireless-mics-and-ifb" },
+          { prompt: "Which of these bands is in § 15.236's heading?", options: ["2400 to 2483 MHz", "902 to 928 MHz", "470 to 608 MHz", "5725 to 5850 MHz"], correctIndex: 2, explanation: "The heading lists 54 to 72, 76 to 88, 174 to 216, 470 to 608, 614 to 616 and 657 to 663 MHz.", sourceLessonSlug: "rf-coax-wireless-mics-and-ifb" },
+          { prompt: "What does Clear-Com wire into its PTX-3 IFB transmitter?", options: ["A 4-pin headset line", "A party-line with 30 V", "A DMX data feed", "A balanced line-level feed"], correctIndex: 3, explanation: "Clear-Com (2019e): a balanced line-level feed from a matrix port.", sourceLessonSlug: "rf-coax-wireless-mics-and-ifb" },
+          { prompt: "Why does lesson 26 teach no wireless frequency to use?", options: ["The plan is the RF coordinator's", "Every band is free to use", "The FCC bans crews from radio", "Mics never need a license"], correctIndex: 0, explanation: "The FCC's guide pages could not be read, and a frequency plan belongs to the show's RF coordinator.", sourceLessonSlug: "rf-coax-wireless-mics-and-ifb" },
+          { prompt: "Which lesson does lesson 26 link for what the FCC does?", options: ["Broadcasting lesson 9", "Light on Set lesson 26", "Arena transmission 4", "Sound Craft lesson 15"], correctIndex: 1, explanation: "Break Into Sports & Media Broadcasting, \"9 · Encoding, streaming, and the FCC basics.\"", sourceLessonSlug: "rf-coax-wireless-mics-and-ifb" },
+          { prompt: "Does lesson 26 say what the FCC's pages say today about Part 74 licensing?", options: ["Yes, a license is needed", "No, licensing is ended", "It leaves that open", "Yes, for over 50 mW"], correctIndex: 2, explanation: "The FCC's pages refused the course's requests, so it leaves Part 74 and the 600 MHz band open.", sourceLessonSlug: "rf-coax-wireless-mics-and-ifb" },
         ],
       },
     },
