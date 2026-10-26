@@ -27,8 +27,9 @@ and it does not teach a vendor's operator screens, which are proprietary and tau
    technology and Statcast in MLB; line calling in tennis; goal-line and offside technology in football (soccer);
    the review system in cricket; replay in college conferences (Big Ten, SEC) with vendor technicians on site.
 4. **The game day, hour by hour, from the postings:** arrival hours before kickoff; power, network and camera
-   checks; calibration; synchronizing the medical monitors; radios; tagging plays at the spotters' direction;
-   monitoring during the game; the report after; the remote desk that supports venue technicians.
+   checks; calibration; radios; monitoring during the game; the report after; the remote desk that supports venue
+   technicians. (Corrected 2026-10-26: "synchronizing the medical monitors" and "tagging plays at the spotters'
+   direction" were in the draft but no posting read supports them; they stay out unless a primary source does.)
 5. **The jobs and the ladder:** systems technician (casual, by venue), match day technician and systems operator,
    injury video review operator (league-hired), college sports systems technician, live operations coordinator
    (remote desk), technology coordinator and analyst; what each asks, the pay posted, eligibility rules (for
