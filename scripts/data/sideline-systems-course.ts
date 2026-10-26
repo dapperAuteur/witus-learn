@@ -2303,5 +2303,170 @@ Ask the employer all three before you accept. Questions of tax, contracts and be
         ],
       },
     },
+    // ══════════════════════════════════════════════════════════════════════
+    // SECTION 7: Capstone
+    // ══════════════════════════════════════════════════════════════════════
+    {
+      slug: "capstone-runbook-from-the-public-record",
+      title: "22 · Capstone: a game-day runbook from the public record",
+      section: "7 · Capstone",
+      recallContent: [
+        {
+          prompt: "Through whom was Hawk-Eye's Rutgers technician employed, and how were benefits offered?",
+          answer: "A third-party managed service provider; benefits \"at your cost,\" through that provider (Hawk-Eye Innovations, n.d.-f).",
+        },
+        {
+          prompt: "What three questions does lesson 21 say to ask before accepting an offer?",
+          answer: "Who employs you; what the pay unit is and what it covers; and what comes with it.",
+        },
+      ],
+      body: `${QR}
+
+**The task.** Choose one of two written projects:
+
+- **Option A, a runbook.** Write a game-day runbook for one role, from the public record, with every step cited.
+- **Option B, a comparison.** Compare two vendors' systems from their own pages.
+
+Either way you work only from sources a reader can open, and you show plainly where the public record stops. Nothing here asks you to operate a system, so the capstone is written, not filmed.
+
+**Rules for both options.**
+
+1. **Every line is cited,** with a locator a reader can follow: a posting's section, a page, a paragraph, as in this course's Sources lists.
+2. **Postings are dated.** Pay, terms and dates are "as posted on" a date. A posting past its deadline is written as a record, not an open ad (lesson 19).
+3. **A vendor's figure is the vendor's.** Write "the vendor says" beside any accuracy, speed or latency claim (lesson 2).
+4. **No medical step.** A line that would tell someone how to recognize, assess or clear an injury is out. Your runbook may say whom the role supports and what it keeps working, in the source's words (lessons 5 to 8).
+5. **No screens, no internal procedures.** Where a source says "in accordance with standard procedures" or "the relevant checklist," write that the step exists and that its procedure is the vendor's (lessons 3 and 14).
+6. **A gap is written as a gap.** "No source read says..." is a finished line, not a failure.
+7. **No real people.** No athlete, game or injury is used as an example, and no private person is named.
+
+**Option A: a model opening.** Here are the first lines of a runbook for the NFL injury video review operator, built from lessons 13 to 15. Use it to see the shape; then write your runbook for a different role.
+
+| When | Step | Source |
+|---|---|---|
+| A week or more out | Tell the League's Player Health and Safety department of any scheduling conflict | NFL (2026b), "Responsibilities" |
+| Kickoff minus 4 hours | Arrive at the stadium | NFL (2026b), "Responsibilities" |
+| Before kickoff minus 3 hours | Have the radios charged: the case goes out "fully charged" (reasoned from the source) | NFL (n.d.-f), "Countdown to Kickoff" |
+| Kickoff minus 3 hours | Case of radios to the visiting club's athletic training staff, at the visiting locker room entrance | NFL (n.d.-f), "Countdown to Kickoff" |
+| Kickoff minus 2 hours | Radios to the UNCs, the airway management physician, the emergency response physician and the AT spotters | NFL (n.d.-f), "Countdown to Kickoff" |
+| Kickoff minus 60 minutes | The medical meeting tests communication equipment, so the radios must already work | NFL (n.d.-f), "60-Minute Medical Meeting" |
+| During the game | Keep the Injury Video Review System functional; support the AT spotters, the booth UNC and team medical personnel "as it relates to reviewing injury video" | NFL (2026b), "Summary" |
+| Gap | The system's pre-game check procedure: not public | NFL (2026b) says only that the system must be "functional on game day" |
+| After the game | Game report in the Game Management System; hours in the timekeeping system | NFL (2026b), "Responsibilities" |
+| Leave | About 45 minutes to 1 hour after the game | NFL (2026b), "Physical Demands/Travel" |
+
+**Choosing your role.** Good choices are the roles with the fullest public record: the Firenze tracking technician, the Bolzano video technician (both in lesson 13), the Rutgers Big Ten technician, the SEC remote desk, or the G League representative. A runbook for one role can borrow a league step, such as the referees' goal-line test in Law 1, if you cite the league document and say which role the step belongs to.
+
+**Decisions while you write.** This is an invented walk-through with no real venue or people in it. Read each beat, decide your call, then reveal the answer.
+
+**Beat 1: a step from a conversation.** Someone tells you operators "sync the medical monitors" before kickoff.
+
+:::reveal What is your call on the step from a conversation? ||| Leave it out. A conversation is not a source a reader can open, and no posting or league page read for this course supports that step (lesson 13).
+
+**Beat 2: an upper bound.** The Firenze posting says arrival is "up to 6 hours pre-Kick Off," and you want to write "Arrive 6 hours before kickoff."
+
+:::reveal What is your call on the Firenze arrival line? ||| Write "up to 6 hours before kickoff," quoted. The posting gives an upper bound, not a fixed call time (Hawk-Eye Innovations, 2026e).
+
+**Beat 3: the calibration steps.** Your tracking technician's runbook needs the goal-line calibration.
+
+:::reveal What is your call on the calibration steps? ||| Write that the step exists and follows "the relevant checklist," and that the procedure is the vendor's and not public (Hawk-Eye Innovations, 2026e; lessons 3 and 14).
+
+**Beat 4: the pay line.** You want to add "$38/hour" to the NFL operator's runbook header.
+
+:::reveal What is your call on the NFL pay line? ||| Write "$38 USD at both ends of the range, unit not stated, created April 15, 2026" (NFL, 2026b). Never add "an hour" (lesson 16).
+
+**Beat 5: a medical line.** A draft step reads "watch the replay for signs of a concussion."
+
+:::reveal What is your call on the medical line? ||| Cut it. The operator supports licensed staff and makes no medical call; the course never teaches signs (lessons 5 and 8).
+
+**Option B: what to compare.** Pick two vendors whose own pages this course cited: Hawk-Eye and TRACAB for optical tracking (lessons 2 and 4), or Catapult and KINEXON for worn tracking (lesson 4). Compare them, row by row, on what each system tracks and how (cameras or radio tags); points per athlete or what is tracked, in the vendor's words; rate and latency, marked "the vendor says"; where it is installed; and who uses the output. End with a row headed "What neither page says."
+
+**A model row, and the trap in it.**
+
+| Row | TRACAB | Hawk-Eye |
+|---|---|---|
+| Speed claim | "Data delivered within 0.15 seconds," the vendor says (TRACAB Technologies, n.d.) | Offside alerts reach officials' headsets "in under a second," the vendor says (Hawk-Eye Innovations, 2026a) |
+
+The two figures do not measure the same thing: one is data delivery, the other an alert reaching officials. A good comparison says so in the row instead of ranking the two vendors by the numbers.
+
+**You pass Option A when:**
+
+- the runbook has at least ten timed steps for one role, each with a citation and a locator;
+- every posting is dated, and every pay or terms line is "as posted";
+- at least one line names a gap in the public record;
+- no step is medical, and no step describes a screen or an internal procedure;
+- it ends with a References list in APA 7 style.
+
+**You pass Option B when:**
+
+- the comparison has at least eight rows, each cell cited to the vendor's own page with a locator;
+- every vendor figure is marked "the vendor says";
+- at least one row notes where the two figures measure different things;
+- it has a "What neither page says" row;
+- it ends with a References list in APA 7 style.
+
+:::reveal Why must the Option A runbook be for a different role than the model's? ||| The model already covers the NFL operator from lessons 13 to 15. The capstone asks you to build one yourself, from the record of another role.
+
+## Sources
+- ${NFL_IVR} Locator: "Summary"; "Responsibilities"; "Physical Demands/Travel"; "Salary".
+- ${NFL_PREP} Locator: "Countdown to Kickoff," 3 hours and 2 hours; "60-Minute Medical Meeting".
+- ${HE_FIRENZE} Locator: "Working day expectations"; "Key Responsibilities," item 5.
+- ${TRACAB} Locator: "Live In-Game Data".
+- ${HE_SAOT} Locator: "How Advanced SAOT Works".`,
+    },
+    {
+      slug: "section-7-quiz",
+      title: "Section 7 quiz \u00b7 Capstone",
+      section: "7 \u00b7 Capstone",
+      body: "A graded check on the capstone's rules, the model runbook, the decisions while you write, the vendor comparison and what it takes to pass. Each answer links back to the lesson that teaches it.",
+      quiz: {
+        passingScore: 80,
+        questionsPerAttempt: 5,
+        shuffleOptions: true,
+        questions: [
+          { prompt: "What are the capstone's two options?", options: ["A filmed demo, or a live system test", "A league exam, or a vendor certificate", "A cited runbook, or a vendor comparison", "A job application, or an interview"], correctIndex: 2, explanation: "Lesson 22: Option A, a game-day runbook for one role with every step cited; Option B, a comparison of two vendors' systems from their own pages.", sourceLessonSlug: "capstone-runbook-from-the-public-record" },
+          { prompt: "Why is the capstone written rather than filmed?", options: ["Filming at stadiums is banned by every league", "The vendors' screens are public, so no need", "A written task needs no sources at all", "Nothing in it asks you to operate a system"], correctIndex: 3, explanation: "Lesson 22: nothing here asks you to operate a system, so the capstone is written, not filmed.", sourceLessonSlug: "capstone-runbook-from-the-public-record" },
+          { prompt: "What must every line of a capstone carry?", options: ["A citation with a locator", "A photo of the equipment", "A vendor's written approval", "A signature from a referee"], correctIndex: 0, explanation: "Rule 1: every line is cited, with a locator a reader can follow.", sourceLessonSlug: "capstone-runbook-from-the-public-record" },
+          { prompt: "Which of these is a locator, as the capstone uses the word?", options: ["The name of the person who told you", "A posting's section or a page number", "The date you first heard of the job", "The vendor's logo on the equipment"], correctIndex: 1, explanation: "Rule 1: a posting's section, a page or a paragraph, as in this course's Sources lists.", sourceLessonSlug: "capstone-runbook-from-the-public-record" },
+          { prompt: "How must pay, terms and dates appear in a capstone?", options: ["Rounded to market rates", "Converted to yearly pay", "\"As posted on\" a date", "Left out of the runbook"], correctIndex: 2, explanation: "Rule 2: postings are dated, and pay, terms and dates are \"as posted on\" a date.", sourceLessonSlug: "capstone-runbook-from-the-public-record" },
+          { prompt: "How is a posting past its deadline written in a capstone?", options: ["As an open ad, with its pay", "It is left out of the work", "As a rumor, without a date", "As a record, not an open ad"], correctIndex: 3, explanation: "Rule 2: a posting past its deadline is written as a record, not an open ad (lesson 19).", sourceLessonSlug: "capstone-runbook-from-the-public-record" },
+          { prompt: "What must you write beside a vendor's accuracy or latency claim?", options: ["\"The vendor says\"", "\"Independently tested\"", "\"League approved\"", "\"Industry standard\""], correctIndex: 0, explanation: "Rule 3: a vendor's figure is the vendor's; write \"the vendor says\" (lesson 2).", sourceLessonSlug: "capstone-runbook-from-the-public-record" },
+          { prompt: "Which kind of line does rule 4 keep out of a runbook?", options: ["One on handing out the charged radios", "One on recognizing or clearing injuries", "One on arriving before the kickoff", "One on filing the game report after"], correctIndex: 1, explanation: "Rule 4: no line that would tell someone how to recognize, assess or clear an injury (lessons 5 to 8).", sourceLessonSlug: "capstone-runbook-from-the-public-record" },
+          { prompt: "What may a runbook say about the medical staff, under rule 4?", options: ["How to assess a player before the next play", "When a player may return to the game", "Whom the role supports, in the source's words", "Which signs of injury the operator watches"], correctIndex: 2, explanation: "Rule 4: the runbook may say whom the role supports and what it keeps working, in the source's words.", sourceLessonSlug: "capstone-runbook-from-the-public-record" },
+          { prompt: "A source says \"in accordance with standard procedures.\" What do you write?", options: ["The procedure, guessed from similar systems", "Nothing at all; leave the step out entirely", "The procedure from a friend who worked it", "The step exists; its procedure is the vendor's"], correctIndex: 3, explanation: "Rule 5: write that the step exists and that its procedure is the vendor's (lessons 3 and 14).", sourceLessonSlug: "capstone-runbook-from-the-public-record" },
+          { prompt: "How does rule 6 treat a gap in the public record?", options: ["As a finished line, written as a gap", "As a failure that sinks the runbook", "As a cue to fill in a likely answer", "As a reason to switch to Option B"], correctIndex: 0, explanation: "Rule 6: \"No source read says...\" is a finished line, not a failure.", sourceLessonSlug: "capstone-runbook-from-the-public-record" },
+          { prompt: "What does rule 7 forbid as an example?", options: ["A league's published rulebook", "A real athlete, game or injury", "A vendor's own product page", "A dated job posting copy"], correctIndex: 1, explanation: "Rule 7: no athlete, game or injury is used as an example, and no private person is named.", sourceLessonSlug: "capstone-runbook-from-the-public-record" },
+          { prompt: "For which role is the capstone's model runbook written?", options: ["The Firenze tracking technician", "The SEC live operations coordinator", "The NFL injury video review operator", "The G League representative"], correctIndex: 2, explanation: "Lesson 22: the model opening is for the NFL injury video review operator, built from lessons 13 to 15.", sourceLessonSlug: "capstone-runbook-from-the-public-record" },
+          { prompt: "What is the model runbook's first line?", options: ["Arrive at the stadium at kickoff", "Calibrate the goal-line cameras", "Upload match data to the remote center", "Report scheduling conflicts a week out"], correctIndex: 3, explanation: "NFL (2026b), \"Responsibilities\": tell Player Health and Safety of any scheduling conflict at least one week before game day.", sourceLessonSlug: "capstone-runbook-from-the-public-record" },
+          { prompt: "In the model runbook, when does the operator arrive?", options: ["Kickoff minus 4 hours", "Kickoff minus 7 hours", "Kickoff minus 1 hour", "The day before, at noon"], correctIndex: 0, explanation: "NFL (2026b): arrive four hours before kickoff.", sourceLessonSlug: "capstone-runbook-from-the-public-record" },
+          { prompt: "Why does the model mark radio charging as \"reasoned from the source\"?", options: ["The posting lists a charging schedule", "The source says only \"fully charged\"", "The league forbids charging at stadiums", "The vendor's manual gives the time"], correctIndex: 1, explanation: "NFL (n.d.-f): the case goes out \"fully charged,\" so charging before the 3-hour handoff is reasoned, not stated.", sourceLessonSlug: "capstone-runbook-from-the-public-record" },
+          { prompt: "In the model, who gets radios at kickoff minus 2 hours?", options: ["The coaches and the team captains", "The broadcast crew in the truck", "UNCs, physicians and AT spotters", "The referee and the chain crew"], correctIndex: 2, explanation: "NFL (n.d.-f): the UNCs, airway management physician, emergency response physician and AT spotters.", sourceLessonSlug: "capstone-runbook-from-the-public-record" },
+          { prompt: "Why must the radios work before the 60-minute line in the model?", options: ["The radios are collected at that time", "Kickoff is moved if they are not ready", "The referee issues new radios then", "The meeting tests communication gear"], correctIndex: 3, explanation: "NFL (n.d.-f): the 60-minute medical meeting tests communication equipment.", sourceLessonSlug: "capstone-runbook-from-the-public-record" },
+          { prompt: "What does the model's \"Gap\" line record?", options: ["The system's check procedure is not public", "The operator's pay unit is an hourly rate", "The operator diagnoses players at halftime", "The posting's created date is unknown"], correctIndex: 0, explanation: "Lesson 22: the posting says only that the system must be \"functional on game day\"; the check procedure is not public.", sourceLessonSlug: "capstone-runbook-from-the-public-record" },
+          { prompt: "When does the model runbook say the operator leaves?", options: ["Right at the final whistle", "About 45 minutes to 1 hour after", "Up to 2 hours after the match", "At halftime, once checked"], correctIndex: 1, explanation: "NFL (2026b), \"Physical Demands/Travel\": leave about 45 minutes to 1 hour after the game.", sourceLessonSlug: "capstone-runbook-from-the-public-record" },
+          { prompt: "For which role should your own Option A runbook be written?", options: ["The model's role, copied out", "Any medical role in the booth", "A role other than the model's", "A role you invent yourself"], correctIndex: 2, explanation: "Lesson 22: use the model to see the shape, then write your runbook for a different role.", sourceLessonSlug: "capstone-runbook-from-the-public-record" },
+          { prompt: "Which role is suggested for Option A because its public record is full?", options: ["The NFL booth AT spotter", "The team's head physician", "The broadcast director", "The Bolzano video technician"], correctIndex: 3, explanation: "Lesson 22: Firenze, Bolzano, Rutgers, the SEC remote desk or the G League representative.", sourceLessonSlug: "capstone-runbook-from-the-public-record" },
+          { prompt: "May an Option A runbook borrow a league step, such as Law 1's referees' test?", options: ["Yes, if cited and assigned to its role", "No, runbooks may cite postings only", "Yes, without any citation needed", "No, league documents are private"], correctIndex: 0, explanation: "Lesson 22: you may borrow a league step if you cite the league document and say which role the step belongs to.", sourceLessonSlug: "capstone-runbook-from-the-public-record" },
+          { prompt: "What is your call on a step heard in a conversation?", options: ["Keep it; a colleague is a source", "Leave it out; no source supports it", "Keep it, marked \"the vendor says\"", "Keep it, with today's date on it"], correctIndex: 1, explanation: "Beat 1: a conversation is not a source a reader can open, and no posting or league page supports \"sync the medical monitors\" (lesson 13).", sourceLessonSlug: "capstone-runbook-from-the-public-record" },
+          { prompt: "How do you write the Firenze arrival time in a runbook?", options: ["\"Exactly 6 hours before the kickoff\"", "\"About 4 hours before kickoff\"", "\"Up to 6 hours before kickoff,\" quoted", "\"At least 6 hours before kickoff\""], correctIndex: 2, explanation: "Beat 2: the posting gives an upper bound, \"up to 6 hours pre-Kick Off,\" not a fixed call time (Hawk-Eye Innovations, 2026e).", sourceLessonSlug: "capstone-runbook-from-the-public-record" },
+          { prompt: "What is your call on the goal-line calibration steps?", options: ["Copy the steps from another vendor's guide", "Invent steps that seem likely to be right", "Leave calibration out of the runbook", "Note the step and \"the relevant checklist\""], correctIndex: 3, explanation: "Beat 3: write that the step exists and follows \"the relevant checklist\"; the procedure is the vendor's and not public.", sourceLessonSlug: "capstone-runbook-from-the-public-record" },
+          { prompt: "How should the NFL operator's pay appear in a runbook header?", options: ["$38 USD, unit not stated, with its date", "$38 an hour, the standard league rate", "$38,000 a year, plus game-day bonuses", "Left out, since pay is never public"], correctIndex: 0, explanation: "Beat 4: \"$38 USD at both ends of the range, unit not stated, created April 15, 2026\" (NFL, 2026b). Never add \"an hour.\"", sourceLessonSlug: "capstone-runbook-from-the-public-record" },
+          { prompt: "What is your call on \"watch the replay for signs of a concussion\"?", options: ["Keep it; it helps the doctors", "Cut it; it is a medical line", "Keep it, cited to the posting", "Soften it to \"look for hits\""], correctIndex: 1, explanation: "Beat 5: the operator supports licensed staff and makes no medical call; the course never teaches signs (lessons 5 and 8).", sourceLessonSlug: "capstone-runbook-from-the-public-record" },
+          { prompt: "Which vendor pair does lesson 22 suggest for an optical comparison?", options: ["Catapult and KINEXON", "Sportradar and Genius", "Hawk-Eye and TRACAB", "DV Sport and Sony"], correctIndex: 2, explanation: "Lesson 22: Hawk-Eye and TRACAB for optical tracking (lessons 2 and 4); Catapult and KINEXON for worn tracking.", sourceLessonSlug: "capstone-runbook-from-the-public-record" },
+          { prompt: "Which vendor pair does lesson 22 suggest for a worn-tracking comparison?", options: ["Hawk-Eye and TRACAB", "TRACAB and Genius Sports", "Hawk-Eye and Sportradar", "Catapult and KINEXON"], correctIndex: 3, explanation: "Lesson 22: Catapult and KINEXON for worn tracking (lesson 4).", sourceLessonSlug: "capstone-runbook-from-the-public-record" },
+          { prompt: "Where must Option B's facts come from?", options: ["Each vendor's own pages", "Fan forums and comments", "A rival vendor's claims", "An unnamed insider's tip"], correctIndex: 0, explanation: "Lesson 22: compare two vendors' systems from their own pages, each cell cited with a locator.", sourceLessonSlug: "capstone-runbook-from-the-public-record" },
+          { prompt: "What row must end an Option B comparison?", options: ["\"Which vendor is best\"", "\"What neither page says\"", "\"Which costs the least\"", "\"Which league prefers it\""], correctIndex: 1, explanation: "Lesson 22: end with a row headed \"What neither page says.\"", sourceLessonSlug: "capstone-runbook-from-the-public-record" },
+          { prompt: "What does TRACAB's page claim for data delivery?", options: ["Within 15 seconds", "Within 1.5 minutes", "Within 0.15 seconds", "In real time at 1 ms"], correctIndex: 2, explanation: "TRACAB Technologies (n.d.): \"Data delivered within 0.15 seconds,\" the vendor says.", sourceLessonSlug: "capstone-runbook-from-the-public-record" },
+          { prompt: "What does Hawk-Eye claim for its offside alerts to officials?", options: ["In under a minute", "In under 10 ms", "In two seconds flat", "In under a second"], correctIndex: 3, explanation: "Hawk-Eye Innovations (2026a): alerts reach officials' headsets \"in under a second,\" the vendor says.", sourceLessonSlug: "capstone-runbook-from-the-public-record" },
+          { prompt: "What is the trap in the model comparison row?", options: ["The two figures measure different things", "One of the two vendors made up its figure", "Both vendors quote the very same number", "The figures are in two different languages"], correctIndex: 0, explanation: "Lesson 22: one is data delivery, the other an alert reaching officials, so the row should say so rather than rank them.", sourceLessonSlug: "capstone-runbook-from-the-public-record" },
+          { prompt: "How does lesson 22 say to handle two figures that measure different things?", options: ["Pick the faster number as the winner", "Say so in the row; do not rank by them", "Average the two numbers into one", "Drop the row from the comparison"], correctIndex: 1, explanation: "Lesson 22: a good comparison says so in the row instead of ranking the vendors by the numbers.", sourceLessonSlug: "capstone-runbook-from-the-public-record" },
+          { prompt: "How many timed steps must an Option A runbook have to pass?", options: ["At least three", "Exactly five", "At least ten", "At least thirty"], correctIndex: 2, explanation: "Lesson 22: at least ten timed steps for one role, each with a citation and a locator.", sourceLessonSlug: "capstone-runbook-from-the-public-record" },
+          { prompt: "How many rows must an Option B comparison have to pass?", options: ["Exactly two", "At least twenty", "No set number", "At least eight"], correctIndex: 3, explanation: "Lesson 22: at least eight rows, each cell cited to the vendor's own page.", sourceLessonSlug: "capstone-runbook-from-the-public-record" },
+          { prompt: "Which of these is required to pass Option A?", options: ["At least one line naming a gap", "A photograph of the venue itself", "A quote from a team doctor", "A signed vendor approval"], correctIndex: 0, explanation: "Lesson 22: at least one line names a gap in the public record.", sourceLessonSlug: "capstone-runbook-from-the-public-record" },
+          { prompt: "Which of these is required to pass Option B?", options: ["A recommendation of one vendor", "A row on figures that differ in kind", "A current price for each of the systems", "A league official's sign-off"], correctIndex: 1, explanation: "Lesson 22: at least one row notes where the two figures measure different things.", sourceLessonSlug: "capstone-runbook-from-the-public-record" },
+          { prompt: "How must both capstone options end?", options: ["With a vendor's logo and contact", "With a summary of medical signs", "With a References list in APA 7", "With the learner's pay request"], correctIndex: 2, explanation: "Lesson 22: both end with a References list in APA 7 style.", sourceLessonSlug: "capstone-runbook-from-the-public-record" },
+          { prompt: "Which of these would fail an Option A runbook?", options: ["A step dated \"as posted\" with its source", "A gap line naming what is not public", "A step citing a league's own page", "A step describing a vendor's screen"], correctIndex: 3, explanation: "Lesson 22: no step may describe a screen or an internal procedure.", sourceLessonSlug: "capstone-runbook-from-the-public-record" },
+        ],
+      },
+    },
   ],
 };
