@@ -2,6 +2,11 @@ import type { NextConfig } from "next";
 import { withSentryConfig } from "@sentry/nextjs";
 
 const nextConfig: NextConfig = {
+  // The build's type-check covers the app only (tsconfig.build.json). scripts/ (325 course data
+  // files, about 53 MB) and tests/ are checked by `pnpm typecheck` in CI on every pull request;
+  // checking them inside the build pushed the TypeScript step past Vercel's 45-minute limit on a
+  // 4-core, 8 GB machine (2026-10-25).
+  typescript: { tsconfigPath: "tsconfig.build.json" },
   // @neondatabase/serverless uses `ws` for websocket transport; its native
   // bindings get mangled by the build minifier unless externalized. Mirrors
   // the shop-witus / wanderlearn fix for `TypeError: b.mask is not a function`.
