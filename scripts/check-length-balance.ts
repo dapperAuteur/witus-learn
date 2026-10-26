@@ -59,7 +59,6 @@ function rankOf(lens: number[], correct: number): number {
  * the progress bar. Do not add to this list to make new content pass.
  */
 const GRANDFATHERED: Record<string, number> = {
-  "scripts/data/acting-course.ts": 1.00,
   "scripts/data/ai-l2-detecting-ai-course.ts": 1.00,
   "scripts/data/banking-and-the-unbanked-course.ts": 1.00,
   "scripts/data/cash-flow-timing-course.ts": 1.00,
