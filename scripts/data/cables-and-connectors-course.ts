@@ -102,6 +102,9 @@ import type { AuthoredCourse } from "./authored-course";
 //  - L25: Sony's own 9-pin pin-out (crew00-sony-9pin); USB 3.x length, Biamp against Cambrionix
 //    (crew00-usb3-length). DMX device count and termination stay under crew00-dmx-cable-impedance.
 //  - L26: the FCC's current licensing and 600 MHz guidance (crew00-fcc-wireless-licensing).
+//  - L27: labeling both ends as this course's practice (crew00-label-both-ends); cable protectors
+//    under the ADA (crew00-cable-protector-ada).
+//  - L29: the kit list as this course's own (crew00-kit-list).
 //
 // House style, matching stage-and-broadcast-rigging-course.ts and arena-transmission-course.ts:
 // `section` on every lesson; flush-left single-line `:::reveal q ||| a`; recallContent from the second
@@ -319,6 +322,20 @@ const MN_DLI = `Minnesota Department of Labor and Industry. (n.d.). *Filming in 
 const OREGON_ST =
   "Oregon Secretary of State. (2026, February 11). *Limited journeyman stage electrician (ST)* [Oregon license directory entry; issuing agency DCBS Building Codes Division]. https://apps.oregon.gov/SOS/LicenseDirectory/LicenseDetail/18";
 const OREGON_RULE = `Limited Journeyman Stage Electrician License, Or. Admin. R. 918-282-0230 (2005). Legal Information Institute reproduction. ${RETRIEVED} https://www.law.cornell.edu/regulations/oregon/Or-Admin-Code-SS-918-282-0230`;
+
+// Craft (research file 03, section 9)
+const TOBIAS_2023 = "Tobias, T. K. (2023, July 10). *How to roll your cable*. LEWITT. https://www.lewitt-audio.com/blog/how-to-roll-your-cable";
+const MOELLER_2014 = "Moeller, J. (2014, January 28). *Cable wrapping*. PerfTech, Texas A&M University. https://perftech.sites.tamu.edu/2014/01/28/cable-wrapping/";
+const CFR_1910_22 = `Occupational Safety and Health Standards, 29 C.F.R. § 1910.22 (2026). ${ECFR} ${RETRIEVED} https://www.ecfr.gov/api/versioner/v1/full/2026-10-22/title-29.xml?part=1910&section=1910.22`;
+const CFR_1910_37 = `Occupational Safety and Health Standards, 29 C.F.R. § 1910.37 (2026). ${ECFR} ${RETRIEVED} https://www.ecfr.gov/api/versioner/v1/full/2026-10-22/title-29.xml?part=1910&section=1910.37`;
+const ACCESS_BOARD = `U.S. Access Board. (n.d.). *ADA accessibility standards: 2010 standards for Titles II and III facilities*. ${RETRIEVED} https://www.access-board.gov/ada/`;
+const ROLLS_2001 = "Rolls. (2001). *CT 1 Cable Detective cable tester owner's manual* [Manual dated 10/01]. https://www.rolls.com/doc/manuals/manual_CT1.pdf";
+const FLUKE_2018 =
+  "Fluke Networks. (2018, September 6). *Wire map testing: It's not all about color*. https://www.flukenetworks.com/blog/cabling-chronicles/wire-map-testing-it-s-not-all-about-color";
+const FOA_2019 = `Fiber Optic Association. (2019). *The FOA reference for fiber optics: Link testing*. ${RETRIEVED} https://www.thefoa.org/tech/ref/testing/test/linktest.html`;
+const FOA_2020 = `Fiber Optic Association. (2020). *The FOA reference for fiber optics: Fiber optic testing*. ${RETRIEVED} https://www.thefoa.org/tech/ref/basic/test.html`;
+const FOA_2021 = `Fiber Optic Association. (2021). *The FOA reference for fiber optics: Testing UTP premises cabling, wiremap*. ${RETRIEVED} https://www.thefoa.org/tech/ref/premises/wiremap.html`;
+const FOA_2024 = `Fiber Optic Association. (2024). *The FOA reference for fiber optics: Network troubleshooting*. ${RETRIEVED} https://www.thefoa.org/tech/ref/testing/test/network-troubleshooting.html`;
 
 /** The marker every lesson needing a qualified reviewer opens with (authoring checklist, section 3). */
 const QR = "> **Before release:** needs a qualified reviewer (QR): a broadcast engineer.";
@@ -2749,6 +2766,341 @@ Reasoned from lessons 2, 17 and 18: video, word clock and AES3id run at 75 ohms;
           { prompt: "Why does lesson 26 teach no wireless frequency to use?", options: ["The plan is the RF coordinator's", "Every band is free to use", "The FCC bans crews from radio", "Mics never need a license"], correctIndex: 0, explanation: "The FCC's guide pages could not be read, and a frequency plan belongs to the show's RF coordinator.", sourceLessonSlug: "rf-coax-wireless-mics-and-ifb" },
           { prompt: "Which lesson does lesson 26 link for what the FCC does?", options: ["Broadcasting lesson 9", "Light on Set lesson 26", "Arena transmission 4", "Sound Craft lesson 15"], correctIndex: 1, explanation: "Break Into Sports & Media Broadcasting, \"9 · Encoding, streaming, and the FCC basics.\"", sourceLessonSlug: "rf-coax-wireless-mics-and-ifb" },
           { prompt: "Does lesson 26 say what the FCC's pages say today about Part 74 licensing?", options: ["Yes, a license is needed", "No, licensing is ended", "It leaves that open", "Yes, for over 50 mW"], correctIndex: 2, explanation: "The FCC's pages refused the course's requests, so it leaves Part 74 and the 600 MHz band open.", sourceLessonSlug: "rf-coax-wireless-mics-and-ifb" },
+        ],
+      },
+    },
+    // ══════════════════════════════════════════════════════════════════════
+    // SECTION 9: Craft
+    // ══════════════════════════════════════════════════════════════════════
+    {
+      slug: "coil-label-and-run",
+      title: "27 · Coil, label and run",
+      section: "9 · Craft",
+      recallContent: [
+        {
+          prompt: "Why must a 50-ohm Type N plug never meet a 75-ohm Type N jack?",
+          answer: "Its larger male pin damages the 75-ohm female socket, though the two share a thread size (Rohde & Schwarz).",
+        },
+        {
+          prompt: "What maximum radiated power does § 15.236 allow an unlicensed wireless mic in the TV broadcast bands?",
+          answer: "50 mW EIRP; 20 mW in the 600 MHz guard band and duplex gap.",
+        },
+      ],
+      body: `${QR}
+
+**Where this sits.** *Knot-Tying & Rope Work* lesson "28 · Coiling cable over-under" teaches the method step by step, with the common mistakes. *Sound Craft* lesson "15 · The kit and the site survey" covers cable care from 1987 and 1989 Army texts: handle cable by the connector, coil it neatly and not too tight, tape floor runs. This lesson adds what a microphone maker and a university theater shop say, then labeling, then where cable may run.
+
+**Why over-under.** Coil a cable the wrong way and it takes a spiral, so "when you pull it out straight, you will end up with a twisted mess." The method: draw back a loop with your thumb toward the connector, make the next loop with your thumb turned the opposite way, and alternate to the end. For very long cables, Tobias names the figure-8 as an alternative. To relax a badly coiled cable, lay it flat in the sun, but a surface that is too hot can damage it (Tobias, 2023).
+
+Texas A&M's PerfTech shop says the same in its own words: "Wrap your cable using the over-under method," and "Roll the cable in your fingers to guide its natural twist." For cables 25 feet and longer, coils should be "about forearm length," secured with velcro. If a coil twists, back up and redo it, because forcing a cable into shape "can do as much damage as mistreating it did" (Moeller, 2014).
+
+**A coil is also a bend, reasoned.** Lesson 3 gave Belden 1694A's minimum bend radius during installation, 2.75 inches (Belden, 2026a, p. 2), and lesson 14 gave the FOA's rule for fiber. A coil tighter than a cable's minimum bend radius bends the cable tighter than its maker allows, however neat it looks. Coil to the cable, not to the smallest loop your hands can make.
+
+**Labeling: what the rules and makers mark.**
+
+- Power cord: listed cord types must be "durably marked on the surface at intervals not exceeding 610 mm (24 in.) with the type designation, size, and number of conductors," and the grounded and equipment grounding conductors in a cord "shall be distinguishable from other conductors" (29 C.F.R. § 1910.305(g)(2)(i)). Lesson 22 read that print.
+- Test records: where an assured equipment grounding conductor program is used, its test records may be kept "by means of logs, color coding, or other effective means" (29 C.F.R. § 1926.404(b)(1)(iii)(G)).
+- powerCON is "Colour coded for easy identification": blue in, grey out (Neutrik, n.d.-a, p. 10).
+- Neutrik's colored boots use a ten-color code by digit, the "10 resistor colors": 0 black, 1 brown, 2 red, 3 orange, 4 yellow, 5 green, 6 blue, 7 violet, 8 grey, 9 white (Neutrik, n.d.-a, p. 19).
+- Lex's feeder is "banded every 2ft with heavy duty sealant type heat shrink" (LEX Innovations, n.d.-b), and Union Connector's panels carry "Laser engraved cam identifiers" (Union Connector, 2016).
+- Fiber has its own jacket colors (lesson 11).
+
+This course's practice: label both ends of every cable with what it is and where it goes. No maker or standards source read for this course states that rule, so treat it as this course's practice, not a cited rule.
+
+**Runs: floors, exits and walkways.** OSHA's general industry rule says walking-working surfaces must be "kept in a clean, orderly, and sanitary condition" and "maintained free of hazards such as sharp or protruding objects" (29 C.F.R. § 1910.22(a)(1), (a)(3)). A hazard must be corrected before the surface is used; if it cannot be fixed at once, it "must be guarded to prevent employees from using the walking-working surface until the hazard is corrected" (§ 1910.22(d)(2)). Exits are stricter: "Exit routes must be free and unobstructed. No materials or equipment may be placed, either permanently or temporarily, within the exit route" (§ 1910.37(a)(3)). On construction sites, "Working spaces, walkways, and similar locations shall be kept clear of cords so as not to create a hazard to employees" (§ 1926.416(b)(2)).
+
+*Light on Set* lesson 26 covers protecting cords at doorways and pinch points, and the ban on stapling them. Lesson 23 here adds that "No branch-circuit conductor may be laid on the floor."
+
+**Ramps and the people who cross them.** The 2010 ADA Standards "apply to temporary and permanent buildings and facilities," and their advisory names stages, platforms and exhibit areas (U.S. Access Board, n.d., § 201.3 and Advisory 201.3). A change in level up to 1/4 inch may be vertical. From 1/4 to 1/2 inch it must be beveled, no steeper than 1:2. More than 1/2 inch "shall be ramped" (§§ 303.2 to 303.4), and a ramp's running slope may be "not steeper than 1:12" (§ 405.2).
+
+Reasoned: a cable protector laid across an accessible route is a change in level, so those limits are the test of whether a wheelchair user can cross it. No Access Board or Justice Department page read for this course addresses cable protectors directly, and a vendor's "ADA compliant" label is not evidence.
+
+:::reveal How does Tobias describe over-under coiling? ||| Draw back a loop with your thumb toward the connector, make the next loop with your thumb turned the opposite way, and alternate to the end (Tobias, 2023).
+
+:::reveal How big should the coil be for a cable 25 feet or longer, according to PerfTech? ||| About forearm length, secured with velcro (Moeller, 2014).
+
+:::reveal Can a cable run sit in an exit route if it is only temporary? ||| No. "No materials or equipment may be placed, either permanently or temporarily, within the exit route" (29 C.F.R. § 1910.37(a)(3)).
+
+## Sources
+- ${TOBIAS_2023} Locator: the spiral warning, the method, the figure-8 and the sun advice.
+- ${MOELLER_2014} Locator: post text.
+- ${BELDEN_1694A} Locator: p. 2, "Mechanical Characteristics".
+- ${CFR_1910_305} Locator: paragraph (g)(2)(i).
+- ${CFR_1926_404} Locator: paragraph (b)(1)(iii)(G).
+- ${NEUTRIK_PG} Locator: p. 10, powerCON; p. 19, BSP accessory note.
+- ${LEX_FBL305W} Locator: product description.
+- ${UNION_2016} Locator: options and labeling list.
+- ${CFR_1910_22} Locator: paragraphs (a)(1), (a)(3) and (d)(2).
+- ${CFR_1910_37} Locator: paragraph (a)(3).
+- ${CFR_1926_416} Locator: paragraph (b)(2).
+- ${ACCESS_BOARD} Locator: § 201.3 and Advisory 201.3; §§ 303.2, 303.3, 303.4; § 405.2.`,
+    },
+    {
+      slug: "test-then-find-the-fault",
+      title: "28 · Test, then find the fault",
+      section: "9 · Craft",
+      recallContent: [
+        {
+          prompt: "What coil size does Texas A&M's PerfTech give for cables 25 feet and longer?",
+          answer: "About forearm length, secured with velcro.",
+        },
+        {
+          prompt: "What does 29 C.F.R. § 1910.37(a)(3) say about exit routes?",
+          answer: "They must be free and unobstructed; no materials or equipment may be placed in them, permanently or temporarily.",
+        },
+      ],
+      body: `${QR}
+
+**A copper cable tester.** Rolls' CT 1 Cable Detective tests 1/4 inch TS and TRS, RCA, XLR and MIDI cables "for: opens, shorts, intermittents, and crossed wires." Its LEDs show continuity pin by pin: LED 1 for pin 1 (or ground), LED 2 for pin 2 (or tip), LED 3 for pin 3 (or ring). To test, plug in both ends and "wiggle the cable around at different points." If an LED "is off, or goes on and off - the cable is bad." The readout: no LEDs means a bad cord or a dead battery; one LED means shorted wires; three LEDs means a good TRS or XLR cord (Rolls, 2001).
+
+**The words a tester uses.** Fluke Networks defines them for network cable (Fluke Networks, 2018):
+
+| Fault | What it is |
+|---|---|
+| Open | "the DC signal doesn't reach the other end" |
+| Short | "the signal crosses onto another conductor" |
+| Reversed pair | A polarity reversal at one end, a "tip/ring reversal" |
+| Crossed pair | A pair that lands on a different pair's position at the other end |
+| Split pair | "pin to pin continuity is maintained but the physical pairs are separated" |
+
+The split pair is the trap. Fluke: "a simple DC continuity test will still pass," while "a near end crosstalk test will fail" (Fluke Networks, 2018). The Fiber Optic Association (FOA) agrees: a split pair passes a DC wiremap, "some wiremappers which use only DC tests do not check crosstalk," and split pairs usually come from using punchdown color codes on jacks (Fiber Optic Association [FOA], 2021).
+
+Reasoned from both: a continuity tester can pass a network cable that will still fail on a network. Every LED lit proves the pins connect; only a tester that checks crosstalk proves the pairs are pairs.
+
+**Fiber: the power meter and the fault locator.** The FOA's testing page: "dB is for measuring loss, dBm is for measuring power." Multimode is generally tested at 850 nm (optionally 1300 nm) with LED sources, and single-mode at 1310 nm (optionally 1550 nm) with laser sources. Setting the "0 dB" reference "is critical to making good loss measurements." Its rule-of-thumb loss estimate is "(0.5 dB X # connectors) + (0.2 dB x # splices) + fiber loss on the total length of cable." A visual fault locator is a higher-power fiber tracer using a visible laser, "powerful enough for continuity checking or to trace fibers for several kilometers." And before you look: check connectors with a power meter, and check "that no power is present in the cable before you look at it in a microscope" (FOA, 2020). Lessons 13 to 15 cover cleaning, loss budgets and laser safety, and CREW-05's "22 · A fiber kit and a first lab" prices a fault locator and a cleaner.
+
+**Power circuits are different.** "Only qualified persons may perform testing work on electric circuits or equipment," and test instruments must be inspected before use and rated for the circuit (29 C.F.R. § 1910.334(c)(1) to (3)). The testers in this lesson check signal cable that is not powered. Testing a power circuit is item 7 on lesson 24's stop list.
+
+**The fault-finding order.** CREW-05's lesson "24 · Source, transport or receiver?" teaches the three places a fault can live and to take the cheapest evidence first. The FOA's published method for a fiber link says where to start measuring, and it is not the source. "Disconnect the fiber optic cable connector at the receiver, attach the power meter, and measure the power." If that is low, measure the transmitter: "If receiver power is low, but transmitter power is high, there is something wrong with the cables." Transmitter power can be measured with "a known good test jumper," and suspect cables "must be tested at every connection to isolate the bad cable(s) and or connectors." Before any of it: "If there is any question about the condition of the connectors, clean them before testing" (FOA, 2019). For a network link, troubleshooting "should always begin with checking power in the link"; then check the transmitter against its spec, swap in known-good transceivers, and only then troubleshoot loss in the cable plant (FOA, 2024).
+
+The order, as those pages state it:
+
+1. Clean any connector you have doubts about.
+2. Measure at the receiver.
+3. If the receiver is low, measure the transmitter, through a known-good test jumper.
+4. If the transmitter is good and the receiver low, the fault is in the cables: test at every connection until you find it.
+
+Source, cable and receiver are the three places a fault can live. The published fiber method sorts them by measuring at the receiver first, not by starting at the source.
+
+Reasoned, for copper: swapping in a known-good cable is the copper version of the known-good test jumper. That is this course's analogy, not a quoted rule.
+
+:::reveal What does a CT 1 showing one LED mean? ||| Shorted wires. No LEDs means a bad cord or a dead battery; three LEDs means a good TRS or XLR cord (Rolls, 2001).
+
+:::reveal Why can a network cable pass a continuity test and still fail? ||| A split pair keeps pin-to-pin continuity, so a DC test passes, but the pairs are separated, so a near-end crosstalk test fails (Fluke Networks, 2018).
+
+:::reveal Where does the FOA's link troubleshooting start measuring? ||| At the receiver. If receiver power is low, measure the transmitter; if the transmitter is good, test the cables at every connection (FOA, 2019).
+
+## Sources
+- ${ROLLS_2001} Locator: Introduction; LED descriptions; test instructions; "TEST INDICATORS".
+- ${FLUKE_2018} Locator: the open, short, reversed, crossed and split pair definitions.
+- ${FOA_2021} Locator: the split pair paragraphs.
+- ${FOA_2020} Locator: "Fiber Optic Testing," the dB and dBm line, test wavelengths, the reference, the loss estimate, the VFL and the safety note.
+- ${CFR_1910_334} Locator: paragraph (c)(1) to (3).
+- ${FOA_2019} Locator: "Link Testing," the troubleshooting steps.
+- ${FOA_2024} Locator: "Network Troubleshooting," the opening steps.`,
+    },
+    {
+      slug: "capstone-ten-cables-on-camera",
+      title: "29 · Capstone: the kit, a mock load-in, and ten cables on camera",
+      section: "9 · Craft",
+      recallContent: [
+        {
+          prompt: "What does Fluke Networks say about a split pair and a DC continuity test?",
+          answer: "The DC continuity test still passes; a near-end crosstalk test fails.",
+        },
+        {
+          prompt: "Where does the FOA's fiber link troubleshooting start measuring?",
+          answer: "At the receiver; then the transmitter through a known-good jumper; then the cables at every connection.",
+        },
+      ],
+      body: `> **Before release:** needs a practitioner: a recorded model-answer video.
+
+**The kit.** No training body or union list of a crew cable kit turned up in the research for this course, so this is this course's own list, built from the lessons:
+
+- A copper cable tester that shows continuity pin by pin for XLR and TRS, such as the Rolls CT 1 (lesson 28).
+- A network tester that checks crosstalk, not only a DC wiremap, if Cat cable is in the kit (lesson 28).
+- A fiber kit: a cleaner, a visual fault locator and spare patch cords (lessons 13 and 28; CREW-05, lesson 22).
+- 75-ohm BNC terminators for reference and word clock chains, and 120-ohm DMX terminators (lessons 7, 18 and 25).
+- Velcro ties for coils (Moeller, 2014), and labels and a marker (lesson 27).
+- A plug-in GFCI or a GFCI cord set where installed protection is not present. The CPSC says portable GFCIs are for places where installed ones are not practical, and OSHA accepts a GFCI cord set "connected to the receptacle closest to the source of power" (U.S. Consumer Product Safety Commission [CPSC], n.d.-a, p. 2; 29 C.F.R. § 1910.304(b)(3)(ii)(A), Note 2).
+
+Cam turnaround and gender adapters are not on the list. Lesson 22 explains why they belong to the person responsible for the distribution.
+
+**A mock load-in.** This is an invented walk-through with no real venue or people in it. Read each beat, decide your call, then reveal the answer.
+
+**Beat 1: the long camera run.** A camera position needs 12G-SDI to the truck, about 90 meters away. The coax on the cart is Belden 1694A.
+
+:::reveal What is your call on 90 meters of 1694A at 12G? ||| Flag it. Belden does not list 12G for 1694A, and the two 12G reaches published for it with a named receiver are 70 m (AJA) and 80 m (Semtech) (lessons 3 and 5). Read the cable and receiver sheets at that rate, and ask the engineer about a lower-loss cable or fiber.
+
+**Beat 2: one more word clock cable.** The audio rack's word clock chain needs one more cable, and the only BNC cable in the spares bin came from a computer store.
+
+:::reveal What is your call on the computer-store BNC cable? ||| Do not use it until you know its impedance. RME says computer stores usually carry 50-ohm BNC parts, while word clock wants 75-ohm cable and one 75-ohm termination at the end of the chain (lesson 18).
+
+**Beat 3: DMX from a mic cable.** Lighting asks for a DMX run, and a 3-pin microphone cable is the closest thing at hand.
+
+:::reveal What is your call on a mic cable for DMX? ||| It is the wrong cable. ENTTEC says mic cable often works on a short, simple rig but causes intermittent faults; use 120-ohm data cable and terminate only the last fixture (lessons 17 and 25).
+
+**Beat 4: a spare intercom line.** A free 3-pin XLR from the party-line intercom is lying by the mixer, and someone wants to patch it into a mixer input.
+
+:::reveal What is your call on patching the party-line into the mixer? ||| No. Clear-Com's party-line puts +30 V DC on pin 2, and Clear-Com says balanced audio and party-line are not compatible without an interface (lesson 17).
+
+**Beat 5: the stage box link.** The Dante stage box needs a link to the console 130 meters away, over Cat6.
+
+:::reveal What is your call on 130 meters of Cat6? ||| It is past the 100-meter channel Fluke Networks gives for twisted pair, cords included. Ask the engineer about fiber (lessons 19 and 20).
+
+**Beat 6: the feeder.** The cam feeder from the generator has a turnaround adapter in the run, and the generator is running.
+
+:::reveal What is your call on the turnaround in the live feeder? ||| Stop, keep clear, and call the person responsible for the distribution. Cam connections are made and broken dead by a qualified person, and a turnaround can let a hot reach the wrong socket (lessons 22 and 24).
+
+**Beat 7: the shortcut.** The quickest path for the audio snake runs along the exit corridor.
+
+:::reveal What is your call on the exit corridor? ||| Find another path. "No materials or equipment may be placed, either permanently or temporarily, within the exit route" (29 C.F.R. § 1910.37(a)(3); lesson 27).
+
+**Beat 8: no picture.** At line-up, a fiber link from a converter to the truck shows no picture.
+
+:::reveal Where do you start on the dead fiber link? ||| Clean any doubtful connector, then measure at the receiver; if it is low, measure the transmitter through a known-good jumper; if that is good, test the cables at every connection. Never look into a fiber end (lessons 15 and 28).
+
+**The capstone, on video.** Gather ten cables from a real kit, unplugged from everything. A good set covers the course: a 75-ohm BNC video coax, a 50-ohm BNC or Type N RF cable, an XLR microphone cable, a 5-pin DMX cable, a 4-pin headset or intercom cable, a Cat6 or Cat6A cable (with etherCON if you have one), a fiber patch cord with its dust caps on, a USB cable, a power cord, and a powerCON cable. Then film yourself with each one in turn. For each cable, say aloud:
+
+1. What it is and what it carries.
+2. The connector on each end, and why that connector.
+3. Its impedance, category or type, read from the jacket print, the label or the maker's sheet, or say that the cable does not tell you.
+4. How far it can run, or which sheet would tell you.
+5. What must never be plugged into it.
+
+Then test it on the right tester and say what the tester shows: wiggle a copper cable at several points as Rolls says (lesson 28). Do not power-test the power cords; read their jacket print instead, because testing electric circuits is for qualified persons (lesson 24). Do not look into the fiber; name its connector and polish from the outside (lesson 12). Finish each cable by coiling it over-under to forearm length and securing it with velcro (lesson 27).
+
+You pass when all ten are named correctly, each of the five questions is answered for each cable, every copper signal cable is tested on camera, and every coil lies flat with no twist when you shake it out.
+
+:::reveal Which cables in the capstone set are never tested on camera, and why? ||| The power cords: testing electric circuits is for qualified persons, so read their jacket print instead. The fiber is inspected from the outside, never looked into.
+
+## Sources
+- ${ROLLS_2001} Locator: test instructions and "TEST INDICATORS".
+- ${MOELLER_2014} Locator: post text, coil size and velcro.
+- ${CPSC_GFCI} Locator: p. 2, "Portable".
+- ${CFR_1910_304} Locator: paragraph (b)(3)(ii)(A), Note 2.
+- ${CFR_1910_37} Locator: paragraph (a)(3).
+- ${CFR_1910_334} Locator: paragraph (c)(1).
+- ${BELDEN_1694A} Locator: p. 1, "Suitable Applications".
+- ${AJA_12GDA} Locator: specifications, cable equalization by rate.
+- ${SEMTECH} Locator: product description, reach on Belden 1694A.
+- ${RME_ADI648} Locator: p. 17, section 9.2 "Cabling and Termination".
+- ${ENTTEC_2026} Locator: page text, the short-rig exception and advice for new runs.
+- ${CLEARCOM_XLR_DIFF} Locator: answer text.
+- ${FLUKE_2016} Locator: the channel definition.
+- ${LEX_2020} Locator: pp. 6 to 7.
+- ${FOA_2019} Locator: "Link Testing".`,
+    },
+    {
+      slug: "section-9-quiz",
+      title: "Section 9 quiz · Craft",
+      section: "9 · Craft",
+      body: "A graded check on over-under coiling, labeling, cable runs and ramps; cable testers, fiber test tools and the fault-finding order; and the capstone's kit, mock load-in and on-camera task. Each answer links back to the lesson that teaches it.",
+      quiz: {
+        passingScore: 80,
+        questionsPerAttempt: 5,
+        shuffleOptions: true,
+        questions: [
+          { prompt: "Which lesson does lesson 27 link for the step-by-step over-under method?", options: ["Knot-Tying, lesson 28", "Sound Craft, lesson 15", "Light on Set, lesson 26", "Arena transmission, 22"], correctIndex: 0, explanation: "Knot-Tying & Rope Work, \"28 · Coiling cable over-under,\" teaches the method step by step; Sound Craft lesson 15 covers cable care.", sourceLessonSlug: "coil-label-and-run" },
+          { prompt: "What does Tobias say a wrongly coiled cable becomes when pulled straight?", options: ["A tidy flat line", "A twisted mess", "A shorter cable", "A tangle-free run"], correctIndex: 1, explanation: "Tobias (2023): \"when you pull it out straight, you will end up with a twisted mess.\"", sourceLessonSlug: "coil-label-and-run" },
+          { prompt: "In Tobias's method, how does each loop differ from the one before?", options: ["It is twice the size", "It goes around a knee", "The thumb turns over", "It wraps on the elbow"], correctIndex: 2, explanation: "Tobias (2023): make the next loop with the thumb turned the opposite way, and alternate to the end.", sourceLessonSlug: "coil-label-and-run" },
+          { prompt: "What alternative does Tobias name for very long cables?", options: ["The elbow wrap", "The overhand coil", "The single loop", "The figure-8"], correctIndex: 3, explanation: "Tobias (2023) names the figure-8 for very long cables.", sourceLessonSlug: "coil-label-and-run" },
+          { prompt: "How does Tobias say to relax a badly coiled cable?", options: ["Lay it flat in the sun", "Hang it from a hook", "Soak it in warm water", "Freeze it overnight"], correctIndex: 0, explanation: "Tobias (2023): lay it flat in the sun, on a surface that is not too hot.", sourceLessonSlug: "coil-label-and-run" },
+          { prompt: "What caution does Tobias add about relaxing a cable in the sun?", options: ["Sunlight fades the label", "Too hot a surface harms it", "It voids any warranty", "It takes a full week"], correctIndex: 1, explanation: "Tobias (2023): a surface that is too hot can damage the cable.", sourceLessonSlug: "coil-label-and-run" },
+          { prompt: "What does PerfTech say to roll in your fingers while coiling?", options: ["The connector's latch", "The velcro tie's tail", "The cable's natural twist", "The jacket's printed label"], correctIndex: 2, explanation: "Moeller (2014): \"Roll the cable in your fingers to guide its natural twist.\"", sourceLessonSlug: "coil-label-and-run" },
+          { prompt: "What coil size does PerfTech give for cables 25 feet and longer?", options: ["Fist size", "Plate size", "Hand width", "Forearm length"], correctIndex: 3, explanation: "Moeller (2014): coils \"about forearm length,\" secured with velcro.", sourceLessonSlug: "coil-label-and-run" },
+          { prompt: "What does PerfTech say to secure coils with?", options: ["Velcro", "Tape", "Wire", "Knots"], correctIndex: 0, explanation: "Moeller (2014): secure coils with velcro.", sourceLessonSlug: "coil-label-and-run" },
+          { prompt: "What does PerfTech say to do if a coil twists?", options: ["Force it flat", "Back up and redo it", "Tape the twist", "Leave it for now"], correctIndex: 1, explanation: "Moeller (2014): if a coil twists, back up and redo it.", sourceLessonSlug: "coil-label-and-run" },
+          { prompt: "Why does PerfTech warn against forcing a cable into shape?", options: ["It voids the warranty", "It slows the load-out", "It harms it like misuse", "It loosens the plugs"], correctIndex: 2, explanation: "Moeller (2014): forcing a cable into shape \"can do as much damage as mistreating it did.\"", sourceLessonSlug: "coil-label-and-run" },
+          { prompt: "By lesson 27's reasoning, why is a very tight coil a problem?", options: ["It adds weight to cases", "It looks untidy on carts", "It wastes velcro ties", "It overbends the cable"], correctIndex: 3, explanation: "A coil tighter than a cable's minimum bend radius bends it tighter than its maker allows, however neat it looks.", sourceLessonSlug: "coil-label-and-run" },
+          { prompt: "What minimum installation bend radius does lesson 27 recall for Belden 1694A?", options: ["2.75 inches", "6 inches", "1 inch", "12 inches"], correctIndex: 0, explanation: "Belden (2026a, p. 2): 2.75 in (69.9 mm) during installation.", sourceLessonSlug: "coil-label-and-run" },
+          { prompt: "What three things must a listed cord's jacket print give, per OSHA?", options: ["Maker, date and price", "Type, size and conductors", "Voltage, color and length", "Owner, show and venue"], correctIndex: 1, explanation: "29 C.F.R. § 1910.305(g)(2)(i): the type designation, size, and number of conductors.", sourceLessonSlug: "coil-label-and-run" },
+          { prompt: "What does OSHA say about a cord's grounded and grounding conductors?", options: ["They must be bare wire", "They must be the same color", "They must be distinguishable", "They must be in separate cords"], correctIndex: 2, explanation: "29 C.F.R. § 1910.305(g)(2)(i): they \"shall be distinguishable from other conductors.\"", sourceLessonSlug: "coil-label-and-run" },
+          { prompt: "How may assured-program test records be kept, per OSHA?", options: ["Only on signed paper forms", "Only in an online database", "Only by the cord's maker", "Logs, color coding or similar"], correctIndex: 3, explanation: "29 C.F.R. § 1926.404(b)(1)(iii)(G): \"by means of logs, color coding, or other effective means.\"", sourceLessonSlug: "coil-label-and-run" },
+          { prompt: "What does Neutrik say powerCON's colors are for?", options: ["Easy identification", "Voltage rating", "Country of sale", "Cable length"], correctIndex: 0, explanation: "Neutrik (n.d.-a, p. 10): \"Colour coded for easy identification,\" blue in and grey out.", sourceLessonSlug: "coil-label-and-run" },
+          { prompt: "In Neutrik's ten-color boot code, which color is digit 2?", options: ["Brown", "Red", "Orange", "Blue"], correctIndex: 1, explanation: "Neutrik (n.d.-a, p. 19): 0 black, 1 brown, 2 red, 3 orange, 4 yellow, 5 green, 6 blue.", sourceLessonSlug: "coil-label-and-run" },
+          { prompt: "In Neutrik's boot code, which color is digit 0?", options: ["White", "Grey", "Black", "Brown"], correctIndex: 2, explanation: "Neutrik (n.d.-a, p. 19): 0 is black; 9 is white and 8 grey.", sourceLessonSlug: "coil-label-and-run" },
+          { prompt: "In Neutrik's boot code, which digit is blue?", options: ["3", "8", "5", "6"], correctIndex: 3, explanation: "Neutrik (n.d.-a, p. 19): 6 is blue; 5 green, 8 grey, 3 orange.", sourceLessonSlug: "coil-label-and-run" },
+          { prompt: "How often does Lex band its feeder, and with what?", options: ["Every 2 ft, with heat shrink", "Every 10 ft, with tape", "Every 6 ft, with paint", "Only at each end, with tags"], correctIndex: 0, explanation: "LEX Innovations (n.d.-b): \"banded every 2ft with heavy duty sealant type heat shrink.\"", sourceLessonSlug: "coil-label-and-run" },
+          { prompt: "How does Union Connector mark the cams on its panels?", options: ["Hand-painted letters", "Laser engraved identifiers", "Printed paper stickers", "Colored zip ties only"], correctIndex: 1, explanation: "Union Connector (2016): \"Laser engraved cam identifiers.\"", sourceLessonSlug: "coil-label-and-run" },
+          { prompt: "What is the status of \"label both ends of every cable\" in lesson 27?", options: ["An OSHA requirement", "A rule in Neutrik's guide", "This course's practice", "A rule in NEC Article 400"], correctIndex: 2, explanation: "No maker or standards source read for the course states it, so it is taught as this course's practice.", sourceLessonSlug: "coil-label-and-run" },
+          { prompt: "What does OSHA say walking-working surfaces must be kept free of?", options: ["Signs, posters and labels", "Rugs, carpets and mats", "Dust, pollen and lint", "Sharp or protruding objects"], correctIndex: 3, explanation: "29 C.F.R. § 1910.22(a)(3): \"free of hazards such as sharp or protruding objects.\"", sourceLessonSlug: "coil-label-and-run" },
+          { prompt: "What does OSHA say to do with a surface hazard that cannot be fixed at once?", options: ["Guard it until it is fixed", "Leave it, and tell no one", "Mark it in the show report", "Fix it after the show"], correctIndex: 0, explanation: "29 C.F.R. § 1910.22(d)(2): it \"must be guarded to prevent employees from using the walking-working surface until the hazard is corrected.\"", sourceLessonSlug: "coil-label-and-run" },
+          { prompt: "Can equipment sit in an exit route if only temporarily, per OSHA?", options: ["Yes, during load-in", "No, not even briefly", "Yes, with a sign", "Yes, if under 1 hour"], correctIndex: 1, explanation: "29 C.F.R. § 1910.37(a)(3): nothing may be placed \"either permanently or temporarily, within the exit route.\"", sourceLessonSlug: "coil-label-and-run" },
+          { prompt: "What does the construction rule say about cords and walkways?", options: ["Tape them down flat", "Paint them bright yellow", "Keep the walkways clear", "Run them under the rugs"], correctIndex: 2, explanation: "29 C.F.R. § 1926.416(b)(2): walkways \"shall be kept clear of cords so as not to create a hazard to employees.\"", sourceLessonSlug: "coil-label-and-run" },
+          { prompt: "Do the 2010 ADA Standards apply to temporary facilities?", options: ["No, only to permanent ones", "Only to outdoor events", "Only to sports arenas", "Yes, to temporary ones too"], correctIndex: 3, explanation: "U.S. Access Board (n.d., § 201.3): they \"apply to temporary and permanent buildings and facilities.\"", sourceLessonSlug: "coil-label-and-run" },
+          { prompt: "Up to what height may a change in level be vertical under § 303?", options: ["1/4 inch", "1/2 inch", "1 inch", "2 inches"], correctIndex: 0, explanation: "U.S. Access Board (n.d., § 303.2): up to 1/4 inch may be vertical.", sourceLessonSlug: "coil-label-and-run" },
+          { prompt: "What must a change in level from 1/4 to 1/2 inch be, per § 303?", options: ["Ramped at 1:12 or less", "Beveled no steeper than 1:2", "Left vertical and marked", "Covered with a rubber mat"], correctIndex: 1, explanation: "U.S. Access Board (n.d., § 303.3): beveled, no steeper than 1:2.", sourceLessonSlug: "coil-label-and-run" },
+          { prompt: "What must a change in level of more than 1/2 inch be?", options: ["Beveled at 1:2", "Painted to show", "Ramped per § 405", "Left as vertical"], correctIndex: 2, explanation: "U.S. Access Board (n.d., § 303.4): more than 1/2 inch \"shall be ramped.\"", sourceLessonSlug: "coil-label-and-run" },
+          { prompt: "What running slope does § 405.2 allow for a ramp?", options: ["No steeper than 1:2", "No steeper than 1:8", "No steeper than 1:4", "No steeper than 1:12"], correctIndex: 3, explanation: "U.S. Access Board (n.d., § 405.2): \"not steeper than 1:12.\"", sourceLessonSlug: "coil-label-and-run" },
+          { prompt: "By lesson 27's reasoning, what is a cable protector across an accessible route?", options: ["A change in level", "A ramp by definition", "Exempt from the ADA", "A form of signage"], correctIndex: 0, explanation: "A cable protector is a change in level, so the § 303 limits test whether a wheelchair user can cross it. No Access Board page read addresses protectors directly.", sourceLessonSlug: "coil-label-and-run" },
+          { prompt: "Which faults does Rolls say the CT 1 tests for?", options: ["Impedance and return loss", "Opens, shorts, intermittents", "Crosstalk and split pairs", "Phantom and PoE voltage"], correctIndex: 1, explanation: "Rolls (2001): \"opens, shorts, intermittents, and crossed wires.\"", sourceLessonSlug: "test-then-find-the-fault" },
+          { prompt: "Which cable types does Rolls list for the CT 1?", options: ["Cat6, Cat6A and fiber", "BNC, N and SMA coax", "TS, TRS, RCA, XLR and MIDI", "Cam, stage pin, powerCON"], correctIndex: 2, explanation: "Rolls (2001): 1/4 inch TS and TRS, RCA, XLR and MIDI.", sourceLessonSlug: "test-then-find-the-fault" },
+          { prompt: "On the CT 1, what does LED 2 show?", options: ["Pin 1 or ground", "Pin 3 or ring", "The battery level", "Pin 2 or tip"], correctIndex: 3, explanation: "Rolls (2001): LED 1 pin 1 (or ground), LED 2 pin 2 (or tip), LED 3 pin 3 (or ring).", sourceLessonSlug: "test-then-find-the-fault" },
+          { prompt: "What does Rolls say to do to the cable during a test?", options: ["Wiggle it at several points", "Hold it perfectly still", "Coil it tightly first", "Plug in one end only"], correctIndex: 0, explanation: "Rolls (2001): plug in both ends and \"wiggle the cable around at different points.\"", sourceLessonSlug: "test-then-find-the-fault" },
+          { prompt: "On the CT 1, what does an LED that goes on and off mean?", options: ["A good cable", "A bad cable", "A low battery", "A shielded cable"], correctIndex: 1, explanation: "Rolls (2001): if an LED \"is off, or goes on and off - the cable is bad.\"", sourceLessonSlug: "test-then-find-the-fault" },
+          { prompt: "On the CT 1, what does one LED lit mean?", options: ["A good cord", "A dead battery", "Shorted wires", "An open shield"], correctIndex: 2, explanation: "Rolls (2001): one LED means shorted wires.", sourceLessonSlug: "test-then-find-the-fault" },
+          { prompt: "On the CT 1, what do three LEDs mean on an XLR cord?", options: ["Shorted wires", "A dead battery", "A crossed pair", "A good cord"], correctIndex: 3, explanation: "Rolls (2001): three LEDs means a good TRS or XLR cord.", sourceLessonSlug: "test-then-find-the-fault" },
+          { prompt: "On the CT 1, what can no LEDs at all mean?", options: ["Bad cord or dead battery", "A perfect, shielded cable", "A split pair in the cord", "Phantom power on the line"], correctIndex: 0, explanation: "Rolls (2001): no LEDs means a bad cord or a dead battery.", sourceLessonSlug: "test-then-find-the-fault" },
+          { prompt: "How does Fluke define an open?", options: ["The signal crosses to another wire", "The DC signal doesn't reach the end", "A pair lands on another pair", "Polarity reverses at one end"], correctIndex: 1, explanation: "Fluke Networks (2018): an open is when \"the DC signal doesn't reach the other end.\"", sourceLessonSlug: "test-then-find-the-fault" },
+          { prompt: "How does Fluke define a short?", options: ["Polarity reverses at one end", "The DC signal stops partway", "The signal crosses to another wire", "Pairs separate along the run"], correctIndex: 2, explanation: "Fluke Networks (2018): a short is when \"the signal crosses onto another conductor.\"", sourceLessonSlug: "test-then-find-the-fault" },
+          { prompt: "What is a reversed pair, per Fluke?", options: ["A pair on another pair's pins", "Two wires touching each other", "A wire that never arrives", "A tip/ring polarity reversal"], correctIndex: 3, explanation: "Fluke Networks (2018): a polarity reversal at one end, a \"tip/ring reversal.\"", sourceLessonSlug: "test-then-find-the-fault" },
+          { prompt: "What is a crossed pair, per Fluke?", options: ["A pair on another pair's pins", "A tip/ring polarity reversal", "Two wires touching each other", "A wire that never arrives"], correctIndex: 0, explanation: "Fluke Networks (2018): a pair that lands on a different pair's position at the other end.", sourceLessonSlug: "test-then-find-the-fault" },
+          { prompt: "What is a split pair, per Fluke?", options: ["A single wire broken in two", "Continuity kept, pairs split", "A pair landed on two jacks", "A short between two pairs"], correctIndex: 1, explanation: "Fluke Networks (2018): \"pin to pin continuity is maintained but the physical pairs are separated.\"", sourceLessonSlug: "test-then-find-the-fault" },
+          { prompt: "Which test does a split pair pass?", options: ["Near-end crosstalk", "Return loss", "DC continuity", "Insertion loss"], correctIndex: 2, explanation: "Fluke Networks (2018): \"a simple DC continuity test will still pass.\"", sourceLessonSlug: "test-then-find-the-fault" },
+          { prompt: "Which test does a split pair fail?", options: ["DC continuity", "LED wiremap", "Pin-to-pin", "Near-end crosstalk"], correctIndex: 3, explanation: "Fluke Networks (2018): \"a near end crosstalk test will fail.\"", sourceLessonSlug: "test-then-find-the-fault" },
+          { prompt: "What does the FOA say usually causes split pairs?", options: ["Punchdown color codes on jacks", "Cable longer than 100 meters", "Overtight velcro on coils", "Phantom power on the pair"], correctIndex: 0, explanation: "FOA (2021): split pairs are usually caused by using punchdown color codes on jacks.", sourceLessonSlug: "test-then-find-the-fault" },
+          { prompt: "By lesson 28's reasoning, what does every LED lit prove on a network cable?", options: ["The pairs are pairs", "The pins connect", "It passes crosstalk", "It runs 10 gigabit"], correctIndex: 1, explanation: "Continuity proves the pins connect; only a crosstalk test proves the pairs are pairs.", sourceLessonSlug: "test-then-find-the-fault" },
+          { prompt: "What does the FOA say dBm measures?", options: ["Loss", "Length", "Power", "Bend"], correctIndex: 2, explanation: "FOA (2020): \"dB is for measuring loss, dBm is for measuring power.\"", sourceLessonSlug: "test-then-find-the-fault" },
+          { prompt: "At what wavelength does the FOA say multimode is generally tested?", options: ["1310 nm", "1550 nm", "650 nm", "850 nm"], correctIndex: 3, explanation: "FOA (2020): multimode at 850 nm (optionally 1300 nm) with LED sources.", sourceLessonSlug: "test-then-find-the-fault" },
+          { prompt: "At what wavelength does the FOA say single-mode is generally tested?", options: ["1310 nm", "850 nm", "1300 nm", "650 nm"], correctIndex: 0, explanation: "FOA (2020): single-mode at 1310 nm (optionally 1550 nm) with laser sources.", sourceLessonSlug: "test-then-find-the-fault" },
+          { prompt: "What does the FOA call critical to good loss measurements?", options: ["A very long test cord", "Setting the 0 dB reference", "A visible red laser", "Testing in a dark room"], correctIndex: 1, explanation: "FOA (2020): setting the \"0 dB\" reference \"is critical to making good loss measurements.\"", sourceLessonSlug: "test-then-find-the-fault" },
+          { prompt: "What does the FOA's rule of thumb allow per connector?", options: ["0.2 dB", "3 dB", "0.5 dB", "1 dB"], correctIndex: 2, explanation: "FOA (2020): \"(0.5 dB X # connectors) + (0.2 dB x # splices) + fiber loss.\"", sourceLessonSlug: "test-then-find-the-fault" },
+          { prompt: "What does the FOA's rule of thumb allow per splice?", options: ["0.5 dB", "1 dB", "0.05 dB", "0.2 dB"], correctIndex: 3, explanation: "FOA (2020): 0.2 dB per splice, 0.5 dB per connector.", sourceLessonSlug: "test-then-find-the-fault" },
+          { prompt: "What does the FOA say a visual fault locator can do?", options: ["Trace fibers for kilometers", "Measure loss in dB", "Clean a ferrule end", "Set the 0 dB reference"], correctIndex: 0, explanation: "FOA (2020): \"powerful enough for continuity checking or to trace fibers for several kilometers.\"", sourceLessonSlug: "test-then-find-the-fault" },
+          { prompt: "What does the FOA say to check before looking at a fiber in a microscope?", options: ["The polish type", "That no power is present", "The jacket color", "The connector's age"], correctIndex: 1, explanation: "FOA (2020): check \"that no power is present in the cable before you look at it in a microscope.\"", sourceLessonSlug: "test-then-find-the-fault" },
+          { prompt: "Who may perform testing work on electric circuits, per OSHA?", options: ["Any crew member", "The show's producer", "Only qualified persons", "Anyone with a tester"], correctIndex: 2, explanation: "29 C.F.R. § 1910.334(c)(1): \"Only qualified persons may perform testing work on electric circuits or equipment.\"", sourceLessonSlug: "test-then-find-the-fault" },
+          { prompt: "What must test instruments be before use on a circuit, per OSHA?", options: ["Calibrated yearly", "Bought new", "Battery powered", "Inspected and rated"], correctIndex: 3, explanation: "29 C.F.R. § 1910.334(c)(2) and (3): inspected before use and rated for the circuit.", sourceLessonSlug: "test-then-find-the-fault" },
+          { prompt: "Which CREW-05 lesson teaches the source, transport or receiver sort?", options: ["Lesson 24", "Lesson 20", "Lesson 12", "Lesson 9"], correctIndex: 0, explanation: "CREW-05's \"24 · Source, transport or receiver?\" teaches the sort and cheapest evidence first.", sourceLessonSlug: "test-then-find-the-fault" },
+          { prompt: "Where does the FOA's link troubleshooting start measuring?", options: ["At the transmitter", "At the receiver", "At the patch panel", "At the midpoint"], correctIndex: 1, explanation: "FOA (2019): \"disconnect the fiber optic cable connector at the receiver, attach the power meter, and measure the power.\"", sourceLessonSlug: "test-then-find-the-fault" },
+          { prompt: "If receiver power is low and transmitter power high, what does the FOA say is wrong?", options: ["The receiver", "The transmitter", "The cables", "The power meter"], correctIndex: 2, explanation: "FOA (2019): \"there is something wrong with the cables.\"", sourceLessonSlug: "test-then-find-the-fault" },
+          { prompt: "What does the FOA say to measure transmitter power with?", options: ["A visual fault locator", "An inspection microscope", "The receiver's own meter", "A known-good test jumper"], correctIndex: 3, explanation: "FOA (2019): transmitter power can be measured with \"a known good test jumper.\"", sourceLessonSlug: "test-then-find-the-fault" },
+          { prompt: "Where does the FOA say suspect cables must be tested?", options: ["At every connection", "At the far end only", "At the source only", "At the midpoint only"], correctIndex: 0, explanation: "FOA (2019): suspect cables \"must be tested at every connection to isolate the bad cable(s) and or connectors.\"", sourceLessonSlug: "test-then-find-the-fault" },
+          { prompt: "What does the FOA say to do with connectors you have doubts about?", options: ["Replace them all", "Clean them first", "Look into them", "Tape them over"], correctIndex: 1, explanation: "FOA (2019): \"If there is any question about the condition of the connectors, clean them before testing.\"", sourceLessonSlug: "test-then-find-the-fault" },
+          { prompt: "Where does the FOA say network troubleshooting should always begin?", options: ["Swapping cables", "Checking the switch logs", "Checking power in the link", "Cleaning every connector"], correctIndex: 2, explanation: "FOA (2024): it \"should always begin with checking power in the link.\"", sourceLessonSlug: "test-then-find-the-fault" },
+          { prompt: "Why is the capstone's kit list labeled as this course's own?", options: ["OSHA published it", "A union local wrote it", "ETCP requires every item", "No published list was found"], correctIndex: 3, explanation: "No training body or union kit list turned up in the research, so the course builds its own from the lessons.", sourceLessonSlug: "capstone-ten-cables-on-camera" },
+          { prompt: "Which network tester does the kit call for if Cat cable is in it?", options: ["One that checks crosstalk", "One with a DC wiremap only", "One that measures dBm", "One that tests phantom"], correctIndex: 0, explanation: "A DC wiremap misses split pairs, so the kit asks for a tester that checks crosstalk (lesson 28).", sourceLessonSlug: "capstone-ten-cables-on-camera" },
+          { prompt: "Which terminators does the capstone kit list?", options: ["50-ohm BNC and 110-ohm XLR", "75-ohm BNC and 120-ohm DMX", "100-ohm RJ45 and 75-ohm N", "200-ohm intercom and 50-ohm SMA"], correctIndex: 1, explanation: "75-ohm BNC terminators for reference and word clock, and 120-ohm DMX terminators (lessons 7, 18 and 25).", sourceLessonSlug: "capstone-ten-cables-on-camera" },
+          { prompt: "When does the kit call for a plug-in GFCI or GFCI cord set?", options: ["On every circuit, always", "Only on 240 V circuits", "Where no installed GFCI exists", "Only outdoors after dark"], correctIndex: 2, explanation: "CPSC (n.d.-a, p. 2): portable GFCIs are for places where installed ones are not practical; OSHA accepts a GFCI cord set at the receptacle closest to the source.", sourceLessonSlug: "capstone-ten-cables-on-camera" },
+          { prompt: "Why are cam turnaround adapters left off the capstone kit?", options: ["They weigh too much", "They cost too much", "OSHA bans them outright", "The distro's owner holds them"], correctIndex: 3, explanation: "Lesson 22: turnarounds belong to the person responsible for the distribution.", sourceLessonSlug: "capstone-ten-cables-on-camera" },
+          { prompt: "In beat 1, which published 12G reaches does the capstone cite for 1694A?", options: ["70 m (AJA), 80 m (Semtech)", "100 m (Belden), 140 m (Canare)", "44 m and 65 m (Canare US)", "30 m and 50 m (SMPTE)"], correctIndex: 0, explanation: "AJA's 12GDA quotes 70 m and Semtech's GS12341 80 m on 1694A at 12G (lesson 5).", sourceLessonSlug: "capstone-ten-cables-on-camera" },
+          { prompt: "What is the call in beat 1, 90 meters of 1694A at 12G?", options: ["Run it, since 1694A suits 12G", "Flag it and ask the engineer", "Add a 50-ohm barrel to boost it", "Run it if the picture appears"], correctIndex: 1, explanation: "Belden does not list 12G for 1694A, and 90 m is past both published receiver figures. Flag it and ask about lower-loss cable or fiber.", sourceLessonSlug: "capstone-ten-cables-on-camera" },
+          { prompt: "In beat 2, why not use the computer-store BNC cable for word clock?", options: ["It is too long", "It has no shield", "It is likely 50 ohms", "It carries phantom"], correctIndex: 2, explanation: "RME (n.d., p. 17): computer stores usually carry 50-ohm BNC parts; word clock wants 75 ohms.", sourceLessonSlug: "capstone-ten-cables-on-camera" },
+          { prompt: "In beat 3, what is the call on a mic cable for DMX?", options: ["Fine at any length", "Fine if it is terminated", "Fine for one fixture only", "Wrong, use 120-ohm cable"], correctIndex: 3, explanation: "ENTTEC (2026): mic cable often works on a short simple rig but is the wrong cable and fails intermittently.", sourceLessonSlug: "capstone-ten-cables-on-camera" },
+          { prompt: "In beat 4, why may the party-line not be patched into the mixer?", options: ["It has +30 V DC on pin 2", "It uses a 4-pin connector", "It runs at 110 ohms only", "It is wired for DMX data"], correctIndex: 0, explanation: "Clear-Com's party-line puts +30 V DC on pin 2 and is not compatible with balanced audio without an interface (lesson 17).", sourceLessonSlug: "capstone-ten-cables-on-camera" },
+          { prompt: "In beat 5, what is wrong with 130 meters of Cat6?", options: ["Cat6 cannot carry Dante", "It is past the 100 m channel", "Cat6 needs etherCON ends", "Dante runs only on coax"], correctIndex: 1, explanation: "Fluke Networks (2016): the channel should not exceed 100 meters, cords included.", sourceLessonSlug: "capstone-ten-cables-on-camera" },
+          { prompt: "In beat 6, what do you do about the turnaround in the live feeder?", options: ["Pull it out very quickly", "Reverse it where it sits", "Stop and call the distro owner", "Tape over the whole joint"], correctIndex: 2, explanation: "Cam connections are made and broken dead by a qualified person, and a turnaround can let a hot reach the wrong socket (lessons 22 and 24).", sourceLessonSlug: "capstone-ten-cables-on-camera" },
+          { prompt: "In beat 7, why can the snake not run along the exit corridor?", options: ["Snakes need ramps", "Corridors are too long", "It needs a GFCI", "Exit routes stay clear"], correctIndex: 3, explanation: "29 C.F.R. § 1910.37(a)(3): no materials or equipment in an exit route, permanently or temporarily.", sourceLessonSlug: "capstone-ten-cables-on-camera" },
+          { prompt: "In beat 8, after cleaning doubtful connectors, where do you start on the dead fiber link?", options: ["Measure at the receiver", "Swap the camera first", "Look into the fiber end", "Measure at the source"], correctIndex: 0, explanation: "FOA (2019): measure at the receiver, then the transmitter, then the cables at every connection.", sourceLessonSlug: "capstone-ten-cables-on-camera" },
+          { prompt: "Where must the capstone's ten cables be during filming?", options: ["Live, to show they work", "Unplugged from everything", "Coiled on a reel", "Plugged into a tester"], correctIndex: 1, explanation: "The capstone asks for ten cables unplugged from everything.", sourceLessonSlug: "capstone-ten-cables-on-camera" },
+          { prompt: "Which cable is not in the capstone's suggested set of ten?", options: ["A 5-pin DMX cable", "A USB cable", "A cam feeder", "A powerCON cable"], correctIndex: 2, explanation: "The set includes DMX, USB and powerCON cables, but no cam feeder.", sourceLessonSlug: "capstone-ten-cables-on-camera" },
+          { prompt: "How many questions must you answer aloud for each capstone cable?", options: ["Two", "Three", "Ten", "Five"], correctIndex: 3, explanation: "Five: what it is, its connectors, its impedance or category, its reach, and what must never plug into it.", sourceLessonSlug: "capstone-ten-cables-on-camera" },
+          { prompt: "In the capstone, what is the first thing you say about each cable?", options: ["What it is and carries", "Its price and maker", "Who last used it", "Its date of purchase"], correctIndex: 0, explanation: "First, what it is and what it carries.", sourceLessonSlug: "capstone-ten-cables-on-camera" },
+          { prompt: "Where does the capstone tell you to read a cable's impedance or category?", options: ["From its connector's color", "From the jacket print or label", "From its weight in the hand", "From its coiled length"], correctIndex: 1, explanation: "From the jacket print, the label or the maker's sheet, or say that the cable does not tell you.", sourceLessonSlug: "capstone-ten-cables-on-camera" },
+          { prompt: "In the capstone, how do you handle the power cords?", options: ["Test them on a live outlet", "Use the CT 1 on them", "Read their print, no test", "Skip them entirely"], correctIndex: 2, explanation: "Read their jacket print; testing electric circuits is for qualified persons (lesson 24).", sourceLessonSlug: "capstone-ten-cables-on-camera" },
+          { prompt: "In the capstone, how do you handle the fiber patch cord?", options: ["Look into it under light", "Shine the VFL at your eye", "Remove its dust caps", "Inspect it from outside"], correctIndex: 3, explanation: "Name its connector and polish from the outside, dust caps on; never look into it (lessons 12 and 15).", sourceLessonSlug: "capstone-ten-cables-on-camera" },
+          { prompt: "How do you test a copper cable in the capstone?", options: ["Wiggle it on the tester", "Plug it into the console", "Bend it to its radius", "Measure it with a tape"], correctIndex: 0, explanation: "On the right tester, wiggling it at several points as Rolls says (lesson 28).", sourceLessonSlug: "capstone-ten-cables-on-camera" },
+          { prompt: "How is each capstone cable finished?", options: ["Wrapped around an elbow", "Coiled over-under, velcroed", "Folded flat and taped", "Wound on a cable reel"], correctIndex: 1, explanation: "Coiled over-under to forearm length and secured with velcro (lesson 27).", sourceLessonSlug: "capstone-ten-cables-on-camera" },
+          { prompt: "What does a passing coil do when shaken out, per the capstone?", options: ["Springs back to a coil", "Knots once in the middle", "Lies flat with no twist", "Spirals into loops"], correctIndex: 2, explanation: "The pass standard: every coil lies flat with no twist when you shake it out.", sourceLessonSlug: "capstone-ten-cables-on-camera" },
+          { prompt: "Which cables does the capstone say are never power-tested on camera?", options: ["The XLR mic cables", "The DMX data cables", "The Cat6 patch cables", "The power cords"], correctIndex: 3, explanation: "Power cords are read, not tested, because testing electric circuits is for qualified persons.", sourceLessonSlug: "capstone-ten-cables-on-camera" },
+          { prompt: "Why are power cords not tested in the capstone?", options: ["Circuit tests are for the qualified", "They cannot carry any signal", "The CT 1 has no power socket", "They are too heavy to wiggle"], correctIndex: 0, explanation: "29 C.F.R. § 1910.334(c)(1): only qualified persons may test electric circuits.", sourceLessonSlug: "capstone-ten-cables-on-camera" },
+          { prompt: "In the capstone, what must you say about how far a cable runs?", options: ["It is always 100 meters", "Its reach, or which sheet says", "Nothing, reach is not asked", "Only its length in feet"], correctIndex: 1, explanation: "Question 4: how far it can run, or which sheet would tell you.", sourceLessonSlug: "capstone-ten-cables-on-camera" },
+          { prompt: "What is the fifth thing said about each capstone cable?", options: ["Who owns it now", "Its jacket color", "What never goes in it", "Its weight in pounds"], correctIndex: 2, explanation: "Question 5: what must never be plugged into it.", sourceLessonSlug: "capstone-ten-cables-on-camera" },
+          { prompt: "Which beat in the mock load-in is about word clock?", options: ["Beat 1", "Beat 4", "Beat 6", "Beat 2"], correctIndex: 3, explanation: "Beat 2: one more word clock cable from the spares bin.", sourceLessonSlug: "capstone-ten-cables-on-camera" },
+          { prompt: "Which beat in the mock load-in is about the exit corridor?", options: ["Beat 7", "Beat 3", "Beat 5", "Beat 8"], correctIndex: 0, explanation: "Beat 7: the shortcut along the exit corridor.", sourceLessonSlug: "capstone-ten-cables-on-camera" },
+          { prompt: "What does the capstone say about the mock load-in's venue and people?", options: ["They are real and named", "They are invented", "They are a CREW-05 arena", "They are from a union"], correctIndex: 1, explanation: "It is an invented walk-through with no real venue or people in it.", sourceLessonSlug: "capstone-ten-cables-on-camera" },
+          { prompt: "Which kit item does the capstone tie to lesson 27?", options: ["The GFCI cord set", "The fiber cleaner", "Labels and a marker", "The DMX terminator"], correctIndex: 2, explanation: "Labels and a marker come from lesson 27's labeling practice.", sourceLessonSlug: "capstone-ten-cables-on-camera" },
+          { prompt: "Which cable in the capstone set keeps its dust caps on?", options: ["The USB cable", "The power cord", "The XLR mic cord", "The fiber cord"], correctIndex: 3, explanation: "The fiber patch cord stays capped and is inspected from the outside.", sourceLessonSlug: "capstone-ten-cables-on-camera" },
         ],
       },
     },
