@@ -85,6 +85,11 @@ import type { AuthoredCourse } from "./authored-course";
 //  - L17: other makers' 4-pin headset pin-outs (crew00-headset-pinouts); DMX cable impedance
 //    (crew00-dmx-cable-impedance).
 //  - L18: current AES3 and AES3id run lengths (crew00-aes3-run-lengths).
+//  - L19: 10GBASE-T reach on Category 6 (crew00-cat6-10g-reach); PoE power at the switch end
+//    (crew00-poe-switch-end).
+//  - L20: Audinate's own switch requirements (crew00-dante-audinate-requirements); whether Dante
+//    needs a dedicated network (crew00-dante-dedicated-network); ST 2110 copper in practice
+//    (crew00-st2110-copper).
 //
 // House style, matching stage-and-broadcast-rigging-course.ts and arena-transmission-course.ts:
 // `section` on every lesson; flush-left single-line `:::reveal q ||| a`; recallContent from the second
@@ -196,6 +201,33 @@ const ENTTEC_2026 = "ENTTEC. (2026, July 19). *Can I use a microphone cable for 
 const ESTA_LISTING = `Entertainment Services and Technology Association. (n.d.). *Published documents*. ESTA Technical Standards Program. ${RETRIEVED} https://tsp.esta.org/tsp/documents/published_docs.php`;
 const BOHN_2014 = "Bohn, D. (2014). *Interfacing AES3 & S/PDIF* (RaneNote 149). Rane Corporation. https://www.ranecommercial.com/legacy/pdf/ranenotes/Interfacing_AES3_&_SPDIF.pdf";
 const RME_ADI648 = "RME. (n.d.). *User's guide: ADI-648 multichannel audio digital interface*. https://www.rme-audio.de/downloads/adi648_e.pdf";
+
+// Audio and video over the network (research file 02, section 6)
+const BELDEN_5E =
+  "Belden. (2026c). *5e LAN Category 5e CMR: Category 5e cable, 4 pair, U/UTP, CMR* [Technical data sheet, revision 0.10]. https://catalog.belden.com/techdata/EN/5eLANCategory5eCMR_techdata.pdf";
+const SIEMON_6A_SFTP = `Siemon. (n.d.-a). *Category 6A S/FTP cable: International* [Spec sheet]. ${RETRIEVED} https://files.siemon.com/en/specsheet/siemon-category-6a-s-ftp-cable-international_spec-sheet.pdf`;
+const SIEMON_6A_UTP = `Siemon. (n.d.-b). *Category 6A UTP cable: International* [Spec sheet]. ${RETRIEVED} https://files.siemon.com/en/specsheet/siemon-category-6a-utp-lsoh-international_spec-sheet.pdf`;
+const SIEMON_P6 = `Siemon. (n.d.-c). *Premium 6 UTP cable* [Spec sheet]. ${RETRIEVED} https://files.siemon.com/en/specsheet/siemon-premium_6_utp_cable_spec-sheet.pdf`;
+const FLUKE_2016 =
+  "Fluke Networks. (2016, February 9). *Cabling mistakes #1: Specify channel testing while installing permanent links*. https://www.flukenetworks.com/blog/cabling-chronicles/dumb-thing-1-specifying-channel-testing-when-installing-permanent-links";
+const NEUTRIK_ETHERCON = `Neutrik. (n.d.-h). *etherCON CAT6A cable connector self-termination, for insulation diameter > 1.1 mm, nickel plating (NE8MX6)* [Product page]. ${RETRIEVED} https://www.neutrik.com/en/product/ne8mx6`;
+const TI_2018 =
+  "Texas Instruments. (2018). *TPS2373 high-power PoE PD interface with advanced startup* (SLUSCD1C, revised November 2018) [Data sheet]. https://www.ti.com/lit/ds/symlink/tps2373.pdf";
+const SHURE_2021 =
+  "Shure. (2021, June 17). *Configuring a network switch for Shure devices and Dante/AES67*. Shure Service. https://service.shure.com/articles/en_US/Knowledge/Dante-Switch-Configuration";
+const SENNHEISER_DANTE = `Sennheiser. (n.d.). *Designing and configuring Dante network*. TC Bar network guide. ${RETRIEVED} https://docs.cloud.sennheiser.com/en-us/tc-bar/tc-bar/network-guide/designing-configuring-dante-network.html`;
+const SYMETRIX = `Symetrix. (n.d.). *Dante requirements*. Symetrix Composer Help. ${RETRIEVED} https://composer-docs.symetrix.co/networking/dante-audio/Dante_Requirements.html`;
+const EAW = `Eastern Acoustic Works. (n.d.). *Selecting network switches for Dante*. EAW Knowledge Base. ${RETRIEVED} https://design.eaw.com/en/knowledge/selecting-network-switches-for-dante`;
+const CLEARCOM_DANTE_NEW =
+  "Clear-Com. (2024c, August 11). *Matrix: New install - Dante requirements*. Clear-Com Solution Finder. https://clear-com.atlassian.net/wiki/spaces/SF/pages/3142615056";
+const CLEARCOM_DANTE_REQ =
+  "Clear-Com. (2025a, January 21). *Dante requirements and recommendations*. Clear-Com Solution Finder. https://clear-com.atlassian.net/wiki/spaces/SF/pages/220725331";
+const CLEARCOM_FIREWALL =
+  "Clear-Com. (2025b, March 13). *Matrix: Dante controller & EHX blocked by company firewall*. Clear-Com Solution Finder. https://clear-com.atlassian.net/wiki/spaces/SF/pages/3416293547";
+const CLEARCOM_ISOLATE =
+  "Clear-Com. (2025c, December 24). *Shure: How do I isolate Dante network*. Clear-Com Solution Finder. https://clear-com.atlassian.net/wiki/spaces/SF/pages/4298670090";
+const CLEARCOM_AES67 =
+  "Clear-Com. (2026b, January 26). *Matrix: New install - Network requirements for AES67 audio*. Clear-Com Solution Finder. https://clear-com.atlassian.net/wiki/spaces/SF/pages/3142975501";
 
 /** The marker every lesson needing a qualified reviewer opens with (authoring checklist, section 3). */
 const QR = "> **Before release:** needs a qualified reviewer (QR): a broadcast engineer.";
@@ -1795,6 +1827,230 @@ RME adds that the 64-channel mode "was introduced officially in 2001" and that "
           { prompt: "How long a coax cable does RME give for MADI on the ADI-648?", options: ["Up to 100 m", "Up to 1000 m", "Up to 10 m", "Up to 2 km"], correctIndex: 0, explanation: "RME (n.d., p. 7): coaxial MADI on 75-ohm BNC, cable length up to 100 m.", sourceLessonSlug: "aes3-word-clock-and-madi" },
           { prompt: "What does RME give for optical MADI on the ADI-648?", options: ["Duplex LC, single-mode, 10 km", "Duplex SC, multimode, 2,000 m", "ST on OM5 fiber, up to 500 m", "SMPTE 304 hybrid, up to 4 km"], correctIndex: 1, explanation: "RME (n.d., p. 7): a duplex SC connector on 62.5/125 or 50/125 multimode, up to 2,000 m.", sourceLessonSlug: "aes3-word-clock-and-madi" },
           { prompt: "Why does lesson 18 say \"AES10\" without a year?", options: ["AES10 has never had a year", "SMPTE replaced the standard", "RME's dates for it differ", "Clear-Com forbids the year"], correctIndex: 2, explanation: "RME dates MADI's definition to 1989 but cites \"AES10-1991\" for its interface, so the course gives no year.", sourceLessonSlug: "aes3-word-clock-and-madi" },
+        ],
+      },
+    },
+    // ══════════════════════════════════════════════════════════════════════
+    // SECTION 6: Audio and video over the network
+    // ══════════════════════════════════════════════════════════════════════
+    {
+      slug: "network-cable-categories-and-poe",
+      title: "19 · Network cable: categories, the 100-meter channel, etherCON and PoE",
+      section: "6 · Audio and video over the network",
+      recallContent: [
+        {
+          prompt: "Give AES3's connector and impedance, and AES3id's.",
+          answer: "AES3: XLR-3, 110 ohms, balanced. AES3id: BNC, 75 ohms, unbalanced (Rane's table, from the 2003 and 2001 editions).",
+        },
+        {
+          prompt: "What impedance does RME want for word clock cable and its terminator?",
+          answer: "75 ohms, the video-coax parts (RG59), not the 50-ohm BNC parts a computer store usually carries.",
+        },
+      ],
+      body: `${QR}
+
+**Where this sits.** Lessons 4 to 18 moved signals on coax, fiber and audio pairs. This section moves them on twisted-pair network cable, the cable sold by "category." CREW-05, *Arena transmission*, teaches the network itself: its lesson "6 · What the job asks you to know about IP" covers layers and VLANs, and "9 · Why multicast is on every posting" covers multicast. This lesson is the cable and the connector under them.
+
+**Three spec sheets side by side.**
+
+| Cable | What the sheet says about frequency | Ethernet the sheet lists |
+|---|---|---|
+| Belden 5e LAN (Category 5e) | Sold as "Category 5e Premise Horizontal Cable (200MHz)," but "Values above 100 MHz are for Engineering Information Only" | 1000BASE-T, 100BASE-TX, 10BASE-T |
+| Siemon Premium 6 (Category 6) | Performance table runs to 250 MHz | 10BASE-T, 100BASE-T, 1000BASE-T; no 10GBASE-T |
+| Siemon Category 6A | Performance "up to 500 MHz," all of it "based on 100 meters (328 ft.)" | 10GBASE-T over "100-meter, 4-connector topologies" |
+
+Sources: Belden (2026c, pp. 1 to 2); Siemon (n.d.-c, pp. 1 to 2); Siemon (n.d.-a, pp. 1 to 2; n.d.-b, p. 1).
+
+**What the category number tells you, reasoned.** Read across the table: a higher category is tested to a higher frequency, and its sheet lists faster Ethernet over the same 100-meter channel. Of these sheets, only Category 6A is rated for 10GBASE-T at 100 meters. The categories themselves are defined in TIA-568 and ISO/IEC 11801, which are paywalled and were not read for this course. Siemon's Category 6 sheet lists Ethernet only to 1000BASE-T, so how far 10GBASE-T runs on Category 6 is a question this course leaves open.
+
+**One more impedance.** Siemon's Premium 6 is 100 ohms, plus or minus 15% from 1 to 100 MHz and plus or minus 20% from 101 to 250 MHz (Siemon, n.d.-c, p. 2). Put that beside the earlier lessons: network pairs are 100 ohms, DMX data cable is 120 ohms nominal (lesson 17), AES3 is 110 ohms (lesson 18), video and word clock coax are 75 ohms, and RF coax is 50 ohms (lesson 2). Each number names a different cable.
+
+**The 100-meter channel.** Fluke Networks defines the channel as "the connection from one active device to another, including any patch cords and equipment cords." It "should not exceed 100 meters per industry standard guidelines." Inside it, "The maximum permitted length of the permanent link is 90 meters," and "standards recommend 5 meter patch cords" (Fluke Networks, 2016). So the 100 meters counts every cord from one box to the next, not just the long run in the wall or across the floor.
+
+**etherCON: the RJ45 for the road.** Neutrik's NE8MX6 etherCON is a "CAT6A compliant RJ45 plug" inside a cable carrier with "a robust metal shell" and "chuck-type strain relief." Neutrik calls it a "Ruggedized connector with CAT6A component compliance according to ISO/IEC 11801 and TIA/EIA 568-C.2." It is rated IP65 when mated with the NE8FDX-P6-W or NE8FDX-Y6-W chassis, for more than 1000 mating cycles, and "PoE++ compliant according to 802.3bt Type4," on cable 7.0 to 9.5 mm across (Neutrik, n.d.-h).
+
+Then the catch. It is "Intermateable with the existing etherCON CAT5 range," but it "Does not intermate with the CAT6 chassis connectors NE8FDY-C6 and NE8FDY-C6-B" (Neutrik, n.d.-h). So, reasoned: not every etherCON mates with every etherCON chassis. When one will not seat, read the part numbers before you push.
+
+**Power over Ethernet.** Siemon's sheets list support for IEEE 802.3af (Type 1 PoE), 802.3at (Type 2) and 802.3bt Types 3 and 4 (Siemon, n.d.-a, p. 1; n.d.-c, p. 1). The power at the far end is less than the power sent. Texas Instruments' data sheet for its TPS2373 powered-device (PD) chips says its two versions support "90 W and 60 W respectively. Assuming 100-meter CAT5 cable, this translates into 71.3 W and 51 W at PD input" (Texas Instruments, 2018, p. 1). Its Table 1 gives the most power a device may draw by class:
+
+| Class | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 |
+|---|---|---|---|---|---|---|---|---|---|
+| Watts at the device | 12.95 | 3.84 | 6.49 | 12.95 | 25.5 | 40 | 51 | 62 | 71 |
+
+Source: Texas Instruments (2018, p. 18). The 2018 sheet still calls 802.3bt "(Draft)."
+
+**What that means for a switch, reasoned.** If 90 W leaves the switch and 71.3 W arrives over 100 meters, the cable eats the difference, so a switch's PoE budget is planned at the switch end, from what each port must send. Clear-Com says the same in its own words: "Pay close attention to the maximum power budget for PoE ports" (Clear-Com, 2025a). TI's table is a device-end table. This course read no source for the power each PoE Type delivers at the switch end, and gives no switch-end figures.
+
+:::reveal What does Fluke Networks say a channel includes, and how long may it be? ||| Everything from one active device to another, patch and equipment cords included; no more than 100 meters, with the permanent link at most 90 meters (Fluke Networks, 2016).
+
+:::reveal Which of the three cables is rated for 10GBASE-T over 100 meters? ||| Category 6A (Siemon, n.d.-b). Siemon's Category 6 sheet lists Ethernet only to 1000BASE-T.
+
+:::reveal An NE8MX6 etherCON will not seat in an NE8FDY-C6 chassis. Is it broken? ||| No. Neutrik says the NE8MX6 does not intermate with the NE8FDY-C6 chassis connectors, though it mates with the Cat5 range. Read the part numbers.
+
+## Sources
+- ${BELDEN_5E} Locator: p. 1, product description and suitable applications; p. 2, "Product Notes".
+- ${SIEMON_P6} Locator: p. 1, "Compliance"; p. 2, "Electrical Specifications".
+- ${SIEMON_6A_SFTP} Locator: p. 1, description; p. 2, performance note.
+- ${SIEMON_6A_UTP} Locator: p. 1, description.
+- ${FLUKE_2016} Locator: body text, the channel and permanent-link definitions.
+- ${NEUTRIK_ETHERCON} Locator: product description, features and intermating notes.
+- ${TI_2018} Locator: p. 1, section 3 "Description"; p. 18, Table 1 "Class Resistor Selection".
+- ${CLEARCOM_DANTE_REQ} Locator: the PoE power budget note.`,
+    },
+    {
+      slug: "dante-st-2110-and-the-media-network",
+      title: "20 · Dante, ST 2110, and why a media network is not the office network",
+      section: "6 · Audio and video over the network",
+      recallContent: [
+        {
+          prompt: "How does Fluke Networks define the channel, and what is its length limit?",
+          answer: "From one active device to another, including patch and equipment cords; no more than 100 meters, with the permanent link at most 90 meters.",
+        },
+        {
+          prompt: "TI's TPS2373 sends 90 W. How much arrives at the device over 100 meters of Cat5?",
+          answer: "71.3 W, so a PoE budget is planned at the switch end.",
+        },
+      ],
+      body: `${QR}
+
+**Audio as network traffic.** Dante carries audio channels over Ethernet. Symetrix gives the scale: with 30% of bandwidth held back for control traffic, a 100-megabit link carries up to 48 by 48 channels and a gigabit link up to 512 by 512, at 48 kHz (Symetrix, n.d.). Audinate, which makes Dante, publishes its own network requirements, and this course could not read them. So this lesson teaches what five makers of Dante equipment ask of a switch, credited to each.
+
+**What the makers ask of a switch.**
+
+| Ask | What the makers say |
+|---|---|
+| Gigabit | Shure: "Ensure your network switch has Gigabit ports"; 100 Mbps is possible "but we do not recommend it." Sennheiser and EAW: non-blocking layer 2 gigabit switches. Symetrix: "Daisy chains and uplinks should be Gigabit." Clear-Com: 1 Gb or more per port. |
+| Managed, with QoS | Sennheiser: "DiffServ (DSCP) Quality of Service (QoS) with strict priority and 4 queues." Symetrix: QoS with four queues and DSCP with strict priority, and managed switches for more than 10 local units or units more than 100 m apart. EAW: managed switches and DSCP QoS with strict priority. |
+| Energy Efficient Ethernet off | Shure: "Disable EEE/Energy Efficient Ethernet." Sennheiser: EEE "can result in poor synchronization performance and occasional audio dropouts." EAW and Clear-Com: EEE off. |
+| Multicast handled | Shure: enable IGMP snooping (IGMPv2) and an IGMP querier, enable Fast Leave, do not forward all multicast, disable multicast storm control. Sennheiser: VLAN and IGMP snooping support. |
+| Capacity | Sennheiser: switching capacity at least "1 Gbit/s × the number of ports × 2." Clear-Com: twice the port count, so a 10-port switch needs 20 Gb/s. |
+
+Sources: Shure (2021); Sennheiser (n.d.); Symetrix (n.d.); Eastern Acoustic Works (n.d.); Clear-Com (2025a).
+
+Two more rules from the same pages. Symetrix: "Use CAT6 cabling for all Dante interconnects," and "Repeater hubs are not supported." Sennheiser: every Dante device, and the computer running Dante Controller, must be on the same IP subnet (Symetrix, n.d.; Sennheiser, n.d.).
+
+**Reasoned from the table.** Five makers agree on the core: gigabit, managed, DSCP QoS with strict priority, EEE off, and IGMP snooping set up. CREW-05's lesson 9 explains multicast and snooping; this course does not redefine them. Shure also gives DSCP values: 56 (CS7) for clock, 46 (EF) for audio, 34 (AF41) for video (Shure, 2021). Those are Shure's settings for Shure devices, not Audinate's.
+
+**AES67 and the clock.** Clear-Com uses AES67 because "It is considered to be broadcast-quality audio" and "The latency is incredibly low." It relies on PTP, normally with one grandmaster clock in the system, and Clear-Com asks that AES67 devices sit no more than 3 switch hops from that grandmaster (Clear-Com, 2026b). When Dante runs its PTPv1 clock, Clear-Com says the Dante network must be on a separate VLAN or physical network from the AES67 or ST 2110-30 network, "as it relies on PTPv2" (Clear-Com, 2024c, 2025a). CREW-05's lessons "12 · ST 2110: separate streams" and "17 · One clock: PTP" teach the streams and the clock.
+
+**ST 2110 on copper and on fiber, reasoned.** CREW-05's lesson "14 · Bandwidth math" works out about 2.486 Gbps for one uncompressed 1080p59.94 picture, with about four fitting a 10 Gbps link. So one uncompressed HD stream does not fit a gigabit port, and ST 2110 video needs 10 Gbps or faster links. On copper that means 10GBASE-T, which Siemon rates over a 100-meter Category 6A channel (lesson 19). Clear-Com prefers fiber-to-copper conversion "preferable using the SFP/mini-GBIC form factor" on AV switches (Clear-Com, 2025a). Past 100 meters, or at higher rates, the link goes to fiber: section 4 here, and CREW-05's "20 · Fiber on the map." Which copper category broadcast plants use for ST 2110 in practice is not stated in the pages read for this course.
+
+**Why a media network is not the office network.** The sources point the same way:
+
+- Shure: "Do not make changes to an Enterprise network or networks managed by others without proper authorization." If the AV switch must uplink to a larger network, set "the uplink port (only) to Forbidden to prevent multicast traffic from leaking out of the network" (Shure, 2021).
+- Clear-Com: "Ideally place all of your Clear-Com AES67 devices on a dedicated set of Ethernet switches" (Clear-Com, 2026b). Network administrators may need to filter Dante audio, PTP or other multicast traffic from a corporate network (Clear-Com, 2025c), and a company firewall update can stop Dante Controller from working on the company network (Clear-Com, 2025b).
+- Sennheiser: "Assign the connected LAN as a private network," and switch off the configuring computer's Wi-Fi (Sennheiser, n.d.).
+
+Reasoned together: media networks run multicast, which floods ports without IGMP snooping (CREW-05, lesson 9); they need QoS and EEE settings an office network may not have; they need a clock the office network does not carry; and an office network belongs to someone else. So crews keep media on its own switches or VLANs, and touch the house network only with its owner's permission. Whether Audinate says Dante must have a dedicated network is a question this course leaves open; the makers above ask for dedicated switches or isolation for their own gear.
+
+:::reveal What five things do the Dante equipment makers agree a switch needs? ||| Gigabit ports, managed switching, DSCP QoS with strict priority, Energy Efficient Ethernet off, and IGMP snooping set up (Shure, Sennheiser, Symetrix, EAW, Clear-Com).
+
+:::reveal Why does Sennheiser say to switch off EEE on Dante ports? ||| It "can result in poor synchronization performance and occasional audio dropouts" (Sennheiser, n.d.).
+
+:::reveal Why can one uncompressed HD ST 2110 stream not ride a gigabit port? ||| It is about 2.486 Gbps (CREW-05, "Bandwidth math"), more than 1 Gbps; it needs a 10 Gbps link, which on copper means Category 6A to 100 meters, or fiber.
+
+## Sources
+- ${SYMETRIX} Locator: the cabling, switch and bandwidth sections.
+- ${SHURE_2021} Locator: the gigabit, QoS (DSCP table), EEE and multicast settings; the enterprise-network and uplink notes.
+- ${SENNHEISER_DANTE} Locator: "Selecting the Network Switch"; "Managing Energy Efficiency Ethernet (EEE)"; "Configuring Dante network".
+- ${EAW} Locator: the switch requirements list.
+- ${CLEARCOM_DANTE_REQ} Locator: the switch requirements list; the VLAN and PTPv1 note; the SFP note.
+- ${CLEARCOM_DANTE_NEW} Locator: the separate-network note for Dante PTPv1.
+- ${CLEARCOM_AES67} Locator: the reasons for AES67; the network requirements list.
+- ${CLEARCOM_ISOLATE} Locator: answer text.
+- ${CLEARCOM_FIREWALL} Locator: answer text.
+- ${SIEMON_6A_UTP} Locator: p. 1, description.
+- ${SIEMON_P6} Locator: p. 1, "Compliance".
+- ${FLUKE_2016} Locator: the 100-meter channel sentence.`,
+    },
+    {
+      slug: "section-6-quiz",
+      title: "Section 6 quiz · Audio and video over the network",
+      section: "6 · Audio and video over the network",
+      body: "A graded check on network cable categories, the 100-meter channel, etherCON and PoE; and on what Dante equipment makers ask of a switch, AES67's clock, ST 2110's bandwidth and why a media network stays off the office network. Each answer links back to the lesson that teaches it.",
+      quiz: {
+        passingScore: 80,
+        questionsPerAttempt: 5,
+        shuffleOptions: true,
+        questions: [
+          { prompt: "Which CREW-05 lesson does this course point to for network layers and VLANs?", options: ["Lesson 6, on what the job asks about IP", "Lesson 14, on the bandwidth arithmetic", "Lesson 17, on the PTP grandmaster clock", "Lesson 22, on a fiber kit and first lab"], correctIndex: 0, explanation: "CREW-05's \"6 · What the job asks you to know about IP\" covers layers and VLANs; lesson 19 covers the cable under them.", sourceLessonSlug: "network-cable-categories-and-poe" },
+          { prompt: "How does Belden describe its 5e LAN cable on the sheet's first page?", options: ["Category 6 Premise Riser Cable (250MHz)", "Category 5e Premise Horizontal Cable (200MHz)", "Category 5 Patch Cord Cable (100MHz) only", "Category 6A Shielded Plenum Cable (500MHz)"], correctIndex: 1, explanation: "Belden (2026c, p. 1): \"Category 5e Premise Horizontal Cable (200MHz).\"", sourceLessonSlug: "network-cable-categories-and-poe" },
+          { prompt: "What does Belden's 5e sheet say about its values above 100 MHz?", options: ["They are guaranteed to 250 MHz", "They apply only to shielded cable", "They are for engineering information only", "They were measured on 50 m of cable"], correctIndex: 2, explanation: "Belden (2026c, p. 2): \"Values above 100 MHz are for Engineering Information Only.\"", sourceLessonSlug: "network-cable-categories-and-poe" },
+          { prompt: "Which Ethernet types does Belden's 5e sheet list?", options: ["10GBASE-T and 5GBASE-T only", "40GBASE-T over 30 meters", "1000BASE-T only, with no PoE", "1000BASE-T, 100BASE-TX, 10BASE-T"], correctIndex: 3, explanation: "Belden (2026c, p. 1) lists 1000BASE-T, 100BASE-TX and 10BASE-T, plus PoE, PoE+ and PoE++.", sourceLessonSlug: "network-cable-categories-and-poe" },
+          { prompt: "Which PoE types does Belden's 5e sheet list among its applications?", options: ["PoE, PoE+ and PoE++", "None; it lists no PoE", "PoE+ only, not PoE++", "PoE++ only, not PoE"], correctIndex: 0, explanation: "Belden (2026c, p. 1) lists PoE, PoE+ and PoE++ with its Ethernet applications.", sourceLessonSlug: "network-cable-categories-and-poe" },
+          { prompt: "To what frequency does Siemon's Premium 6 performance table run?", options: ["100 MHz", "250 MHz", "500 MHz", "200 MHz"], correctIndex: 1, explanation: "Siemon (n.d.-c, p. 2): the Category 6 table runs to 250 MHz. Category 6A runs to 500 MHz.", sourceLessonSlug: "network-cable-categories-and-poe" },
+          { prompt: "What is the fastest Ethernet Siemon's Premium 6 (Category 6) sheet lists?", options: ["10GBASE-T", "100BASE-T", "1000BASE-T", "25GBASE-T"], correctIndex: 2, explanation: "Siemon (n.d.-c, p. 1) lists 10BASE-T, 100BASE-T and 1000BASE-T, and no 10GBASE-T.", sourceLessonSlug: "network-cable-categories-and-poe" },
+          { prompt: "To what frequency does Siemon say its Category 6A S/FTP cable performs?", options: ["100 MHz", "250 MHz", "200 MHz", "500 MHz"], correctIndex: 3, explanation: "Siemon (n.d.-a, p. 1): it \"exceeds all standards requirements for category 6A transmission performance up to 500 MHz.\"", sourceLessonSlug: "network-cable-categories-and-poe" },
+          { prompt: "What length are all of Siemon's Category 6A S/FTP performance figures based on?", options: ["100 meters (328 ft.)", "90 meters (295 ft.)", "55 meters (180 ft.)", "5 meters (16 ft.)"], correctIndex: 0, explanation: "Siemon (n.d.-a, p. 2): \"All performance based on 100 meters (328 ft.).\"", sourceLessonSlug: "network-cable-categories-and-poe" },
+          { prompt: "What does Siemon say its Category 6A UTP channel supports?", options: ["1000BASE-T to 55 meters, 2 connectors", "10GBASE-T to 100 meters, 4 connectors", "10GBASE-T to 55 meters, 2 connectors", "40GBASE-T to 100 meters, 4 connectors"], correctIndex: 1, explanation: "Siemon (n.d.-b, p. 1): \"a channel capable of supporting 10GBASE-T operation over 100-meter, 4-connector topologies.\"", sourceLessonSlug: "network-cable-categories-and-poe" },
+          { prompt: "By lesson 19's reasoning, what does a higher category number buy you?", options: ["A lower impedance on each pair", "Runs well past 100 meters", "Testing to a higher frequency", "A thicker jacket for outdoors"], correctIndex: 2, explanation: "Across the three sheets, a higher category is tested to a higher frequency and lists faster Ethernet over the same 100-meter channel. It does not lengthen the channel.", sourceLessonSlug: "network-cable-categories-and-poe" },
+          { prompt: "Which of lesson 19's cables is rated for 10GBASE-T at 100 meters?", options: ["Belden 5e LAN cable", "Siemon Premium 6 cable", "Belden 1694A coax", "Siemon Category 6A"], correctIndex: 3, explanation: "Siemon's Category 6A UTP is rated for 10GBASE-T over 100 meters (n.d.-b); the Category 6 sheet stops at 1000BASE-T.", sourceLessonSlug: "network-cable-categories-and-poe" },
+          { prompt: "Where are the cable categories themselves defined, per lesson 19?", options: ["TIA-568 and ISO/IEC 11801", "SMPTE ST 2110 and ST 2022", "AES67 and IEEE 802.3az", "NFPA 70 Article 400"], correctIndex: 0, explanation: "The categories are defined in TIA-568 and ISO/IEC 11801, which are paywalled and were not read; the lesson works from makers' sheets.", sourceLessonSlug: "network-cable-categories-and-poe" },
+          { prompt: "How far does lesson 19 say 10GBASE-T runs on Category 6?", options: ["55 meters, per Siemon", "It leaves that open", "100 meters, per Fluke", "90 meters, per Belden"], correctIndex: 1, explanation: "Siemon's Category 6 sheet lists Ethernet only to 1000BASE-T, so the course leaves the Category 6 reach for 10GBASE-T open.", sourceLessonSlug: "network-cable-categories-and-poe" },
+          { prompt: "What is Siemon Premium 6's characteristic impedance from 1 to 100 MHz?", options: ["75 ohms, plus or minus 5%", "110 ohms, plus or minus 20%", "100 ohms, plus or minus 15%", "120 ohms, plus or minus 10%"], correctIndex: 2, explanation: "Siemon (n.d.-c, p. 2): 100 ohms, plus or minus 15% from 1 to 100 MHz.", sourceLessonSlug: "network-cable-categories-and-poe" },
+          { prompt: "What tolerance does Siemon give Premium 6's impedance from 101 to 250 MHz?", options: ["Plus or minus 5%", "Plus or minus 10%", "Plus or minus 15%", "Plus or minus 20%"], correctIndex: 3, explanation: "Siemon (n.d.-c, p. 2): 100 ohms, plus or minus 20% from 101 to 250 MHz; 15% below 100 MHz.", sourceLessonSlug: "network-cable-categories-and-poe" },
+          { prompt: "Which cable does lesson 19 list at 100 ohms?", options: ["Twisted-pair network cable", "AES3 digital audio cable", "DMX lighting data cable", "Word clock coax cable"], correctIndex: 0, explanation: "Network pairs are 100 ohms (Siemon). AES3 is 110, DMX data cable 120 nominal, word clock coax 75.", sourceLessonSlug: "network-cable-categories-and-poe" },
+          { prompt: "In lesson 19's list of impedances, which belongs to DMX data cable?", options: ["110 ohms nominal", "120 ohms nominal", "100 ohms nominal", "75 ohms nominal"], correctIndex: 1, explanation: "DMX data cable is 120 ohms nominal (ENTTEC, in lesson 17). 110 is AES3, 100 is network cable, 75 is video and word clock coax.", sourceLessonSlug: "network-cable-categories-and-poe" },
+          { prompt: "How does Fluke Networks define the channel?", options: ["Only the cable inside the wall", "Only the patch cords at each end", "Device to device, cords included", "The switch's internal backplane"], correctIndex: 2, explanation: "Fluke Networks (2016): \"the connection from one active device to another, including any patch cords and equipment cords.\"", sourceLessonSlug: "network-cable-categories-and-poe" },
+          { prompt: "What does Fluke say the channel should not exceed?", options: ["90 meters", "55 meters", "5 meters", "100 meters"], correctIndex: 3, explanation: "Fluke Networks (2016): the channel \"should not exceed 100 meters per industry standard guidelines.\" 90 meters is the permanent link.", sourceLessonSlug: "network-cable-categories-and-poe" },
+          { prompt: "What is the maximum permitted length of the permanent link, per Fluke?", options: ["90 meters", "100 meters", "55 meters", "10 meters"], correctIndex: 0, explanation: "Fluke Networks (2016): \"The maximum permitted length of the permanent link is 90 meters.\"", sourceLessonSlug: "network-cable-categories-and-poe" },
+          { prompt: "What patch cord length does Fluke say standards recommend?", options: ["1 meter", "5 meters", "10 meters", "15 meters"], correctIndex: 1, explanation: "Fluke Networks (2016): \"standards recommend 5 meter patch cords.\"", sourceLessonSlug: "network-cable-categories-and-poe" },
+          { prompt: "What does the 100-meter channel limit cover?", options: ["The long run in the wall only", "The patch cords at each end only", "Every cord from one box to the next", "Only cable laid across a floor"], correctIndex: 2, explanation: "The channel includes patch and equipment cords, so the 100 meters counts every cord from one active device to the next (Fluke Networks, 2016).", sourceLessonSlug: "network-cable-categories-and-poe" },
+          { prompt: "What does Neutrik call its NE8MX6 etherCON?", options: ["A CAT5e shielded field plug", "A CAT6 crimp plug for patch", "A CAT7 plug with metal latch", "A CAT6A compliant RJ45 plug"], correctIndex: 3, explanation: "Neutrik (n.d.-h): a \"CAT6A compliant RJ45 plug\" in a cable carrier with a robust metal shell.", sourceLessonSlug: "network-cable-categories-and-poe" },
+          { prompt: "What strain relief does Neutrik name for the NE8MX6?", options: ["Chuck-type strain relief", "Molded rubber boot relief", "Cable tie and clamp relief", "Heat-shrink sleeve relief"], correctIndex: 0, explanation: "Neutrik (n.d.-h): \"chuck-type strain relief\" inside \"a robust metal shell.\"", sourceLessonSlug: "network-cable-categories-and-poe" },
+          { prompt: "What does Neutrik say the NE8MX6 is intermateable with?", options: ["The NE8FDY-C6 chassis", "The etherCON CAT5 range", "Any RJ45 jack at all", "Its powerCON chassis"], correctIndex: 1, explanation: "Neutrik (n.d.-h): \"Intermateable with the existing etherCON CAT5 range.\" It does not intermate with NE8FDY-C6.", sourceLessonSlug: "network-cable-categories-and-poe" },
+          { prompt: "Which chassis connectors does Neutrik say the NE8MX6 does not intermate with?", options: ["NE8FDX-P6-W and NE8FDX-Y6-W", "Every etherCON CAT5 chassis", "NE8FDY-C6 and NE8FDY-C6-B", "NAC3FCA and NAC3FCB parts"], correctIndex: 2, explanation: "Neutrik (n.d.-h): it \"Does not intermate with the CAT6 chassis connectors NE8FDY-C6 and NE8FDY-C6-B.\"", sourceLessonSlug: "network-cable-categories-and-poe" },
+          { prompt: "With which chassis is the NE8MX6 rated IP65?", options: ["NE8FDY-C6 and NE8FDY-C6-B", "Any RJ45 jack in a wall box", "NAC3MPA-1 and NAC3MPB-1", "NE8FDX-P6-W or NE8FDX-Y6-W"], correctIndex: 3, explanation: "Neutrik (n.d.-h): IP65 when mated with the NE8FDX-P6-W or NE8FDX-Y6-W chassis.", sourceLessonSlug: "network-cable-categories-and-poe" },
+          { prompt: "How many mating cycles does Neutrik give the NE8MX6?", options: ["More than 1000", "Exactly 500", "About 100", "More than 10000"], correctIndex: 0, explanation: "Neutrik (n.d.-h): more than 1000 mating cycles.", sourceLessonSlug: "network-cable-categories-and-poe" },
+          { prompt: "What PoE rating does Neutrik give the NE8MX6?", options: ["PoE only, 802.3af Type 1", "PoE++, 802.3bt Type 4", "PoE+, 802.3at Type 2", "No PoE rating at all"], correctIndex: 1, explanation: "Neutrik (n.d.-h): \"PoE++ compliant according to 802.3bt Type4.\"", sourceLessonSlug: "network-cable-categories-and-poe" },
+          { prompt: "What does lesson 19 tell you to do when an etherCON will not seat?", options: ["Push harder until it clicks", "Swap in a plain RJ45 plug", "Read the part numbers first", "Trim the latch to make it fit"], correctIndex: 2, explanation: "Not every etherCON mates with every etherCON chassis (Neutrik, n.d.-h), so read the part numbers before you push.", sourceLessonSlug: "network-cable-categories-and-poe" },
+          { prompt: "Which IEEE PoE standards do Siemon's sheets list support for?", options: ["802.3af and 802.3at only", "802.3az and 802.3bz only", "802.3bt Type 4 alone", "802.3af, 802.3at, 802.3bt"], correctIndex: 3, explanation: "Siemon (n.d.-a, n.d.-c, p. 1): 802.3af (Type 1), 802.3at (Type 2) and 802.3bt (Types 3 and 4).", sourceLessonSlug: "network-cable-categories-and-poe" },
+          { prompt: "TI's TPS2373-4 supports 90 W. How much reaches the device over 100 m of Cat5?", options: ["71.3 W", "90 W", "51 W", "60 W"], correctIndex: 0, explanation: "Texas Instruments (2018, p. 1): 90 W and 60 W \"translates into 71.3 W and 51 W at PD input\" over 100-meter Cat5.", sourceLessonSlug: "network-cable-categories-and-poe" },
+          { prompt: "TI's TPS2373-3 supports 60 W. How much reaches the device over 100 m?", options: ["71.3 W", "51 W", "40 W", "60 W"], correctIndex: 1, explanation: "Texas Instruments (2018, p. 1): 51 W at the powered device.", sourceLessonSlug: "network-cable-categories-and-poe" },
+          { prompt: "In TI's Table 1, what is the most a class 4 device may draw?", options: ["12.95 W", "40 W", "25.5 W", "51 W"], correctIndex: 2, explanation: "Texas Instruments (2018, p. 18): class 4, 25.5 W; class 5, 40 W; class 6, 51 W.", sourceLessonSlug: "network-cable-categories-and-poe" },
+          { prompt: "In TI's Table 1, what is the most a class 8 device may draw?", options: ["51 W", "62 W", "90 W", "71 W"], correctIndex: 3, explanation: "Texas Instruments (2018, p. 18): class 8, 71 W; class 7, 62 W.", sourceLessonSlug: "network-cable-categories-and-poe" },
+          { prompt: "Which two PoE classes share 12.95 W in TI's Table 1?", options: ["Classes 0 and 3", "Classes 1 and 2", "Classes 4 and 5", "Classes 6 and 7"], correctIndex: 0, explanation: "Texas Instruments (2018, p. 18): class 0 and class 3 are both 12.95 W.", sourceLessonSlug: "network-cable-categories-and-poe" },
+          { prompt: "What does TI's 2018 data sheet still call 802.3bt?", options: ["Withdrawn", "(Draft)", "Obsolete", "Type 5"], correctIndex: 1, explanation: "The 2018 sheet calls 802.3bt \"(Draft)\" (Texas Instruments, 2018).", sourceLessonSlug: "network-cable-categories-and-poe" },
+          { prompt: "Where does lesson 19 say to plan a switch's PoE budget?", options: ["At the device end, from Table 1", "At the patch panel in the rack", "At the switch end, port by port", "At the midpoint of each cable"], correctIndex: 2, explanation: "The cable loses power (90 W sent, 71.3 W received over 100 m), so the budget is planned at the switch end from what each port must send.", sourceLessonSlug: "network-cable-categories-and-poe" },
+          { prompt: "What does Clear-Com tell you to watch on PoE ports?", options: ["Each port's cable color", "Each port's label text", "Each port's link lights", "The PoE power budget"], correctIndex: 3, explanation: "Clear-Com (2025a): \"Pay close attention to the maximum power budget for PoE ports.\"", sourceLessonSlug: "network-cable-categories-and-poe" },
+          { prompt: "Does lesson 19 give switch-end wattages for each PoE Type?", options: ["No, only TI's device-end table", "Yes, 15.4, 30, 60 and 90 W", "Yes, the same as Table 1", "Yes, 12.95 W for every Type"], correctIndex: 0, explanation: "Only TI's device-end class table was read, so the course gives no switch-end figures.", sourceLessonSlug: "network-cable-categories-and-poe" },
+          { prompt: "What does Symetrix say a gigabit link carries with 30% held back for control?", options: ["Up to 48 by 48 channels", "Up to 512 by 512 channels", "Up to 64 by 64 channels", "Up to 1024 by 1024 channels"], correctIndex: 1, explanation: "Symetrix (n.d.): with the 30% reserve, a 1 Gbps link carries up to 512 x 512 channels at 48 kHz.", sourceLessonSlug: "dante-st-2110-and-the-media-network" },
+          { prompt: "What does Symetrix say a 100-megabit link carries with the same reserve?", options: ["Up to 512 by 512 channels", "Up to 128 by 128 channels", "Up to 48 by 48 channels", "Up to 16 by 16 channels"], correctIndex: 2, explanation: "Symetrix (n.d.): a 100 Mbit link carries up to 48 x 48 channels at 48 kHz.", sourceLessonSlug: "dante-st-2110-and-the-media-network" },
+          { prompt: "How much bandwidth does Symetrix reserve when control traffic shares the network?", options: ["10%", "50%", "20%", "30%"], correctIndex: 3, explanation: "Symetrix (n.d.): reserve 30% of bandwidth if control traffic shares the network.", sourceLessonSlug: "dante-st-2110-and-the-media-network" },
+          { prompt: "Whose Dante network requirements could this course not read?", options: ["Audinate's own pages", "Shure's service article", "Symetrix's help pages", "Sennheiser's network guide"], correctIndex: 0, explanation: "Audinate makes Dante and publishes its own requirements; the course could not read them, so it credits five equipment makers instead.", sourceLessonSlug: "dante-st-2110-and-the-media-network" },
+          { prompt: "What does Shure say about a 100 Mbps switch for Dante?", options: ["It is required for clock", "It is possible but not advised", "It is faster than gigabit", "It is banned by Audinate"], correctIndex: 1, explanation: "Shure (2021): a 100 Mbps switch is possible \"but we do not recommend it\"; use Gigabit ports.", sourceLessonSlug: "dante-st-2110-and-the-media-network" },
+          { prompt: "What kind of switch do Sennheiser and EAW ask for?", options: ["An unmanaged 100 Mbps hub", "A layer 3 router with Wi-Fi", "A non-blocking layer 2 gigabit", "A repeater hub with PoE++"], correctIndex: 2, explanation: "Sennheiser (n.d.): \"Use non-blocking layer 2 gigabit switches\"; EAW (n.d.) asks for the same.", sourceLessonSlug: "dante-st-2110-and-the-media-network" },
+          { prompt: "What QoS does Sennheiser ask for on a Dante switch?", options: ["None; QoS adds latency", "Two queues, round robin", "Weighted fair queueing only", "DSCP, strict priority, 4 queues"], correctIndex: 3, explanation: "Sennheiser (n.d.): \"DiffServ (DSCP) Quality of Service (QoS) with strict priority and 4 queues.\"", sourceLessonSlug: "dante-st-2110-and-the-media-network" },
+          { prompt: "When does Symetrix call for managed switches?", options: ["Over 10 local units or 100 m apart", "Only when PoE++ is in use", "Never; unmanaged is preferred", "Only for video, not for audio"], correctIndex: 0, explanation: "Symetrix (n.d.): managed switches for more than 10 local units or units more than 100 m apart.", sourceLessonSlug: "dante-st-2110-and-the-media-network" },
+          { prompt: "What does Shure say to do with Energy Efficient Ethernet?", options: ["Enable it on every port", "Disable it on the switch", "Enable it on uplinks only", "Leave it at the default"], correctIndex: 1, explanation: "Shure (2021): \"Disable EEE/Energy Efficient Ethernet.\"", sourceLessonSlug: "dante-st-2110-and-the-media-network" },
+          { prompt: "What does Sennheiser say EEE can cause on a Dante network?", options: ["Higher PoE power draw", "Laser eye hazard on fiber", "Poor sync and audio dropouts", "Ground loops between racks"], correctIndex: 2, explanation: "Sennheiser (n.d.): EEE \"can result in poor synchronization performance and occasional audio dropouts.\"", sourceLessonSlug: "dante-st-2110-and-the-media-network" },
+          { prompt: "What does Shure say to do with IGMP snooping?", options: ["Disable it on all ports", "Enable it on uplinks only", "Replace it with storm control", "Enable it, with a querier"], correctIndex: 3, explanation: "Shure (2021): enable IGMP snooping (IGMPv2) and the IGMP querier, and enable Fast Leave.", sourceLessonSlug: "dante-st-2110-and-the-media-network" },
+          { prompt: "What does Shure say to do with multicast storm control?", options: ["Disable it", "Enable it", "Set it to 10%", "Set it to 50%"], correctIndex: 0, explanation: "Shure (2021): disable multicast storm control, and do not forward all multicast.", sourceLessonSlug: "dante-st-2110-and-the-media-network" },
+          { prompt: "What switching capacity does Sennheiser ask for?", options: ["1 Gbit/s times the port count", "1 Gbit/s times ports times 2", "10 Gbit/s times the port count", "Half of 1 Gbit/s per port"], correctIndex: 1, explanation: "Sennheiser (n.d.): at least \"1 Gbit/s × the number of ports × 2.\"", sourceLessonSlug: "dante-st-2110-and-the-media-network" },
+          { prompt: "By Clear-Com's rule, what capacity does a 10-port switch need?", options: ["10 Gb/s", "5 Gb/s", "20 Gb/s", "40 Gb/s"], correctIndex: 2, explanation: "Clear-Com (2025a): switching capacity twice the port count, so a 10-port switch needs 20 Gb/s.", sourceLessonSlug: "dante-st-2110-and-the-media-network" },
+          { prompt: "What cable does Symetrix name for all Dante interconnects?", options: ["Cat5e", "Cat5", "Cat7", "Cat6"], correctIndex: 3, explanation: "Symetrix (n.d.): \"Use CAT6 cabling for all Dante interconnects.\"", sourceLessonSlug: "dante-st-2110-and-the-media-network" },
+          { prompt: "What does Symetrix say about repeater hubs on Dante?", options: ["They are not supported", "They are required", "They add redundancy", "They carry the clock"], correctIndex: 0, explanation: "Symetrix (n.d.): \"Repeater hubs are not supported.\"", sourceLessonSlug: "dante-st-2110-and-the-media-network" },
+          { prompt: "What must every Dante device and the Dante Controller computer share, per Sennheiser?", options: ["One PoE switch", "One IP subnet", "One VLAN tag", "One Wi-Fi band"], correctIndex: 1, explanation: "Sennheiser (n.d.): all Dante devices, including the PC running Dante Controller, must be on the same IP subnet.", sourceLessonSlug: "dante-st-2110-and-the-media-network" },
+          { prompt: "Which five things do the makers in lesson 20 agree a Dante switch needs?", options: ["Wi-Fi, PoE++, hubs, EEE on, no QoS", "Fiber only, unmanaged, EEE on, no IGMP", "Gigabit, managed, DSCP QoS, EEE off, IGMP", "100 Mbps, hubs, QoS off, EEE on, VLANs"], correctIndex: 2, explanation: "Shure, Sennheiser, Symetrix, EAW and Clear-Com agree on gigabit, managed switching, DSCP QoS with strict priority, EEE off and IGMP snooping.", sourceLessonSlug: "dante-st-2110-and-the-media-network" },
+          { prompt: "Which DSCP value does Shure give for clock traffic?", options: ["46 (EF)", "34 (AF41)", "0 (best effort)", "56 (CS7)"], correctIndex: 3, explanation: "Shure (2021): DSCP 56 (CS7) highest, for clock; 46 (EF) for audio; 34 (AF41) for video.", sourceLessonSlug: "dante-st-2110-and-the-media-network" },
+          { prompt: "Which DSCP value does Shure give for audio?", options: ["46 (EF)", "56 (CS7)", "34 (AF41)", "8 (CS1)"], correctIndex: 0, explanation: "Shure (2021): DSCP 46 (EF), second priority, for audio.", sourceLessonSlug: "dante-st-2110-and-the-media-network" },
+          { prompt: "Whose settings are the DSCP values 56, 46 and 34, per lesson 20?", options: ["Audinate's, for all Dante", "Shure's, for Shure devices", "SMPTE's, for ST 2110", "The IEEE's, for 802.3"], correctIndex: 1, explanation: "They come from Shure's article for Shure devices (Shure, 2021); the course does not present them as Audinate's.", sourceLessonSlug: "dante-st-2110-and-the-media-network" },
+          { prompt: "Why does Clear-Com use AES67?", options: ["It needs no clock at all", "It runs only on fiber", "Broadcast quality, low latency", "It carries video and audio"], correctIndex: 2, explanation: "Clear-Com (2026b): \"It is considered to be broadcast-quality audio\" and \"The latency is incredibly low.\" It relies on PTP.", sourceLessonSlug: "dante-st-2110-and-the-media-network" },
+          { prompt: "How many switch hops from the PTP grandmaster does Clear-Com allow AES67 devices?", options: ["10", "1", "7", "3"], correctIndex: 3, explanation: "Clear-Com (2026b): AES67 devices no more than 3 switch hops from the PTP grandmaster.", sourceLessonSlug: "dante-st-2110-and-the-media-network" },
+          { prompt: "When Dante runs its PTPv1 clock, where must it sit relative to AES67 or ST 2110-30?", options: ["A separate VLAN or network", "The same VLAN, same switch", "A Wi-Fi bridge between them", "A single shared PoE port"], correctIndex: 0, explanation: "Clear-Com (2024c, 2025a): on a separate VLAN or physical network from the AES67 or ST 2110-30 network.", sourceLessonSlug: "dante-st-2110-and-the-media-network" },
+          { prompt: "Why does Clear-Com separate the Dante PTPv1 network from AES67?", options: ["AES67 needs no clock", "AES67 relies on PTPv2", "Dante cannot use VLANs", "PTPv1 needs fiber links"], correctIndex: 1, explanation: "Clear-Com (2025a): the AES67 or ST 2110-30 network is kept apart \"as it relies on PTPv2.\"", sourceLessonSlug: "dante-st-2110-and-the-media-network" },
+          { prompt: "About how much bandwidth does one uncompressed 1080p59.94 picture take, per CREW-05?", options: ["About 250 Mbps", "About 1 Gbps", "About 2.486 Gbps", "About 10 Gbps"], correctIndex: 2, explanation: "CREW-05's \"14 · Bandwidth math\" works out about 2.486 Gbps, with about four per 10 Gbps link.", sourceLessonSlug: "dante-st-2110-and-the-media-network" },
+          { prompt: "What link speed does lesson 20 conclude ST 2110 video needs?", options: ["100 Mbps or faster", "1 Gbps or faster", "2.5 Gbps or faster", "10 Gbps or faster"], correctIndex: 3, explanation: "One uncompressed HD picture is about 2.486 Gbps, more than a gigabit port carries, so ST 2110 video needs 10 Gbps or faster links.", sourceLessonSlug: "dante-st-2110-and-the-media-network" },
+          { prompt: "On copper, which cable does lesson 20 tie to 10GBASE-T at 100 meters?", options: ["Category 6A", "Category 5e", "Category 6", "Category 5"], correctIndex: 0, explanation: "Siemon rates 10GBASE-T over a 100-meter Category 6A channel (lesson 19); its Category 6 sheet stops at 1000BASE-T.", sourceLessonSlug: "dante-st-2110-and-the-media-network" },
+          { prompt: "What form factor does Clear-Com prefer for fiber-to-copper conversion?", options: ["Media converter brick", "SFP or mini-GBIC", "Inline RJ45 coupler", "BNC-to-RJ45 balun"], correctIndex: 1, explanation: "Clear-Com (2025a): fiber-to-copper conversion \"preferable using the SFP/mini-GBIC form factor.\"", sourceLessonSlug: "dante-st-2110-and-the-media-network" },
+          { prompt: "Which copper category do broadcast plants use for ST 2110 in practice, per lesson 20?", options: ["Category 6, always", "Category 5e, mostly", "The pages read do not say", "Category 7, by SMPTE rule"], correctIndex: 2, explanation: "No page read for the course states it, so the lesson says so rather than guess.", sourceLessonSlug: "dante-st-2110-and-the-media-network" },
+          { prompt: "What does Shure say about changing an enterprise network?", options: ["Change it freely for audio", "Change only its Wi-Fi", "Change it freely during a show", "Not without proper authorization"], correctIndex: 3, explanation: "Shure (2021): \"Do not make changes to an Enterprise network or networks managed by others without proper authorization.\"", sourceLessonSlug: "dante-st-2110-and-the-media-network" },
+          { prompt: "What does Shure say to set on an uplink to a larger network?", options: ["The uplink port to Forbidden", "Every port to Forbidden", "The uplink to EEE on", "The uplink to 100 Mbps"], correctIndex: 0, explanation: "Shure (2021): set \"the uplink port (only) to Forbidden to prevent multicast traffic from leaking out of the network.\"", sourceLessonSlug: "dante-st-2110-and-the-media-network" },
+          { prompt: "Where does Clear-Com ideally place its AES67 devices?", options: ["On the office LAN, with QoS", "On dedicated Ethernet switches", "On a Wi-Fi mesh network", "On a repeater hub chain"], correctIndex: 1, explanation: "Clear-Com (2026b): \"Ideally place all of your Clear-Com AES67 devices on a dedicated set of Ethernet switches.\"", sourceLessonSlug: "dante-st-2110-and-the-media-network" },
+          { prompt: "What can a company firewall update do, per Clear-Com?", options: ["Raise PoE power on ports", "Turn on EEE everywhere", "Stop Dante Controller working", "Swap the PTP grandmaster"], correctIndex: 2, explanation: "Clear-Com (2025b): a company firewall update can stop Dante Controller from working on the company network.", sourceLessonSlug: "dante-st-2110-and-the-media-network" },
+          { prompt: "What does Sennheiser say to do with the configuring computer's Wi-Fi?", options: ["Use it for Dante", "Bridge it to the LAN", "Set it to 5 GHz", "Switch it off"], correctIndex: 3, explanation: "Sennheiser (n.d.): assign the connected LAN as a private network and switch off the configuring PC's Wi-Fi.", sourceLessonSlug: "dante-st-2110-and-the-media-network" },
+          { prompt: "By lesson 20's reasoning, when may a crew touch the house network?", options: ["Only with its owner's permission", "Whenever the show needs it", "Only after the show ends", "Only with a managed switch"], correctIndex: 0, explanation: "An office network belongs to someone else (Shure, 2021), so crews keep media on its own switches or VLANs and touch the house network only with permission.", sourceLessonSlug: "dante-st-2110-and-the-media-network" },
+          { prompt: "Does lesson 20 say Audinate requires a dedicated network for Dante?", options: ["Yes, by Audinate's rule", "It leaves that open", "No, any network will do", "Yes, for over 32 channels"], correctIndex: 1, explanation: "The course could not read Audinate's own pages, so it leaves that open; the makers it cites ask for dedicated switches or isolation for their own gear.", sourceLessonSlug: "dante-st-2110-and-the-media-network" },
         ],
       },
     },
