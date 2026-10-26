@@ -1069,5 +1069,433 @@ Reasoned from those: the fiber can go much farther than the copper can carry pow
         ],
       },
     },
+    // ══════════════════════════════════════════════════════════════════════
+    // SECTION 4: Fiber
+    // ══════════════════════════════════════════════════════════════════════
+    {
+      slug: "single-mode-multimode-and-color-codes",
+      title: "11 · Single-mode, multimode and the color codes",
+      section: "4 · Fiber",
+      recallContent: [
+        {
+          prompt: "What does Camplex's Pro-Tac tactical fiber carry, and what does it not?",
+          answer: "Single-mode fibers with aramid strength members under a polyurethane jacket; no power copper, so the far end needs its own power (reasoned, for the reviewer to confirm).",
+        },
+        {
+          prompt: "Who makes the warning that a 9-micron fiber connector can cause problems in sand, mud or water, and why weigh it?",
+          answer: "Fischer, a maker of triax connectors, the competing technology.",
+        },
+      ],
+      body: `**Where this section fits.** CREW-05, *Arena transmission*, lesson "20 · Fiber on the map", ends with a table of what that course does not teach: connector types, inspection and cleaning, polarity, light levels, loss budgets and laser safety. This section supplies connector types, inspection and cleaning, loss budgets and laser safety from the Fiber Optic Association (FOA) and makers' sheets. For free courses and certification, CREW-05's lesson "21 · Where to learn fiber, and what certifies it" is the place to go.
+
+**Two kinds of glass.** All fiber here has a cladding 125 µm across. What differs is the core that carries the light (Camplex, n.d.-b):
+
+| | Single-mode | Multimode |
+|---|---|---|
+| Core | 9 µm | 62.5 or 50 µm |
+| Classes | OS1, OS1a, OS2 | OM1 (62.5/125); OM2, OM3, OM4 (50/125) |
+| Light source | 1310 and 1550 nm lasers | 850 and 1300 nm sources |
+| Typical distance | "Typically over 2km" | "Typically under 2km" |
+| Camplex's examples of use | Outside broadcast, ENG, live events | Data centers, MADI, CCTV |
+
+The OS classes come from FOA's color table, below (Fiber Optic Association [FOA], n.d.-d).
+
+**Loss per kilometer.** FOA's typical figures for planning: multimode 3 dB per km at 850 nm and 1 dB per km at 1300 nm; single-mode 0.4 dB per km at 1310 nm and 0.3 dB per km at 1550 nm (FOA, n.d.-a). Compare that with lesson 3, where 1694A coax loses 17.7 dB in 100 ft at 6 GHz. That gap helps explain why fiber carries a camera kilometers while coax carries it meters.
+
+**Broadcast camera fiber is single-mode.** The SMPTE hybrid cable (Canare Electric, n.d.-c), AJA's FiDO converters (AJA Video Systems, 2023, p. 4) and Sony's 10 km camera link (Sony Corporation, 2017, p. 34) all use single-mode. Camplex lists MADI among multimode's uses, and RME's MADI interface in lesson 18 runs on multimode.
+
+**Never mix them.** Camplex warns against using a multimode adapter on single-mode fiber or the reverse: "the core diameters/mode fields differ," causing high loss or reflection (Camplex, n.d.-d).
+
+**Jacket colors.** FOA restates the TIA-598 color code (FOA, n.d.-d):
+
+| Fiber | Jacket (non-military) |
+|---|---|
+| OM1 62.5/125 | Orange (military: slate) |
+| OM2 50/125 | Orange |
+| OM3 and OM4, laser-optimized 50/125 | Aqua |
+| OM5 | Lime green |
+| Single-mode OS1, OS1a, OS2 | Yellow |
+| Polarization-maintaining single-mode | Blue |
+
+Other colors are allowed "providing that the print on the outer jacket identifies fiber classifications," and outdoor cables are generally black, with the markings printed on (FOA, n.d.-d).
+
+**Connector colors** (FOA, n.d.-d):
+
+| Fiber | Connector body or boot |
+|---|---|
+| 62.5/125 multimode | Beige |
+| OM2 | Black |
+| OM3 and OM4 | Aqua |
+| OM5 | Lime |
+| Single-mode | Blue |
+| Single-mode APC | Green |
+
+Lesson 12 explains what APC means and why green matters.
+
+**Read the print, reasoned.** Because other jacket colors are allowed and outdoor cable is usually black, a black outdoor or tactical jacket tells you nothing about the fiber inside by itself. Read the printed markings. If you are still unsure, FOA says the core size can be checked by looking at the ferrule through an inspection microscope "while illuminating the fiber with a white light" (FOA, n.d.-d). Lesson 15 explains why you never do that on a live fiber.
+
+:::reveal What core sizes do single-mode and multimode fiber have? ||| Single-mode 9 µm; multimode 62.5 or 50 µm; both have 125 µm cladding (Camplex, n.d.-b).
+
+:::reveal What jacket color does FOA give for single-mode fiber, and for OM3 and OM4? ||| Yellow for single-mode; aqua for OM3 and OM4 (FOA, n.d.-d).
+
+:::reveal Why can you not tell the fiber type from a black jacket? ||| Other colors are allowed when the print identifies the fiber, and outdoor cables are generally black, so read the printed markings (FOA, n.d.-d).
+
+## Sources
+- ${CAMPLEX_SM_MM} Locator: "How Does Fiber Optics Work?" and the comparison chart.
+- ${FOA_LOSS} Locator: "Step 1. Fiber loss" table.
+- ${FOA_COLORS} Locator: "Cable Jacket Colors" table and notes; "Connector Color Codes" table and the text above it.
+- ${CAMPLEX_ADAPTERS} Locator: "Common Pitfalls & FAQ Highlights".
+- ${CANARE_HYBRID} Locator: specification table.
+- ${AJA_FIDO} Locator: p. 4, "Overview" and "Features".
+- ${SONY_2017} Locator: p. 34, "About Transmission Distance".`,
+    },
+    {
+      slug: "lc-sc-st-and-the-polish",
+      title: "12 · LC, SC and ST, and the polish on the end",
+      section: "4 · Fiber",
+      recallContent: [
+        {
+          prompt: "What jacket color does FOA give for single-mode fiber, and what connector color for single-mode APC?",
+          answer: "A yellow jacket; a green connector.",
+        },
+        {
+          prompt: "What happens if you use a multimode adapter on single-mode fiber, according to Camplex?",
+          answer: "High loss or reflection, because \"the core diameters/mode fields differ.\"",
+        },
+      ],
+      body: `**Three connectors you will meet.** FOA's connector identifier (FOA, n.d.-f):
+
+| Connector | Ferrule | How it holds | What FOA says |
+|---|---|---|---|
+| ST | 2.5 mm, long and cylindrical, usually ceramic | Bayonet | Spring-loaded, so make sure it is seated. "If you have high loss, reconnect them." |
+| SC | 2.5 mm | Snap-in; it "latches with a simple push-pull motion" | Also comes in duplex |
+| LC | 1.25 mm, "half the size of the SC" | Small form factor | "Highly favored for singlemode" |
+
+ST, SC and the older FC share the 2.5 mm ferrule, so they can be mated through hybrid adapters (FOA, n.d.-f).
+
+**Where the shapes came from.** FOA's history: AT&T's ST replaced the FC's screw nut "with a bayonet lock like a BNC coax connector," and NTT then introduced the SC (FOA, n.d.-c). Camplex describes the ST the same way, with a keyed ferrule "and a bayonet lock similar to a BNC shell" (Camplex, 2019a).
+
+**Where you will see them.** Camplex notes that LC is often found on SFP and SFP+ transceivers, and that Neutrik's opticalCON puts duplex LCs in a rugged metal housing with a shutter against dirt (Camplex, 2019a). Tactical fiber comes with ST or LC (lesson 10), and RME's MADI interface uses SC (lesson 18).
+
+**Adapters.** A fiber adapter, or coupler, aligns two ferrules in a sleeve. Ceramic sleeves are more precise and durable than metal, and Camplex suggests aiming for adapter loss of 0.2 dB or less (Camplex, n.d.-d).
+
+**The polish on the end.** How the ferrule's end is finished changes how much light reflects back. FOA's history of the step (FOA, n.d.-c):
+
+| Finish | Typical loss | Typical return loss |
+|---|---|---|
+| Air gap (early connectors) | 0.5 dB or more | 20 dB |
+| Physical contact (PC) | 0.3 dB | 30 to 50 dB |
+
+FOA adds that "Super PC or Ultra PC are simply marketing names" for polishing processes. The angled physical contact (APC) connector angles the end 8 degrees, so reflected light "is absorbed in the cladding," for reflection-sensitive single-mode systems such as cable TV and high-bit-rate telephone links (FOA, n.d.-c).
+
+Camplex gives back reflection by polish: PC better than -40 dB, UPC better than -50 dB, APC better than -60 dB. APC generally has higher insertion loss, and Camplex's rule is plain: "Only mate to other angle-polished connectors" (Camplex, 2019a).
+
+**Green means angled.** A green body or boot means single-mode APC; blue means single-mode PC or UPC (FOA, n.d.-d, n.d.-f). So UPC and APC are not interchangeable, even when the connector shapes are the same. Check the color before you mate two connectors.
+
+:::reveal Which connector has a 1.25 mm ferrule, and which two share a 2.5 mm ferrule? ||| LC is 1.25 mm; ST and SC (and FC) share 2.5 mm (FOA, n.d.-f).
+
+:::reveal What does FOA say to do with an ST connection that shows high loss? ||| Reconnect it: the ST is spring-loaded, so make sure it is seated (FOA, n.d.-f).
+
+:::reveal What does Camplex say an APC connector may be mated to? ||| "Only mate to other angle-polished connectors" (Camplex, 2019a).
+
+## Sources
+- ${FOA_CONNID} Locator: "ST", "SC", "LC", "Mating Dissimilar Connectors" and the color code note.
+- ${FOA_NAMES} Locator: "NTT FC, AT&T ST, NTT SC"; the PC and APC paragraphs.
+- ${CAMPLEX_IDENT} Locator: connector panels; "Fiber Optic Connector Polish Types".
+- ${CAMPLEX_ADAPTERS} Locator: "What are Fiber Optic Adapters?" and "How to Choose".
+- ${FOA_COLORS} Locator: "Connector Color Codes" table.`,
+    },
+    {
+      slug: "inspect-before-you-connect",
+      title: "13 · Inspect before you connect",
+      section: "4 · Fiber",
+      recallContent: [
+        {
+          prompt: "What do FOA's figures give as typical loss for a PC connector against an early air-gap connector?",
+          answer: "About 0.3 dB with 30 to 50 dB return loss, against 0.5 dB or more with 20 dB return loss.",
+        },
+        {
+          prompt: "What does a green connector body mean, and what may it be mated to?",
+          answer: "Single-mode APC; only to other angle-polished connectors.",
+        },
+      ],
+      body: `${QR}
+
+**The rule in one line.** Camplex: "Inspection, cleaning and re-inspection are critical steps for the connector as well as the bulkhead before you make any fiber-optic connection" (Camplex, 2019b, p. 1). Both sides of the mating need checking, not only the plug in your hand.
+
+**How small dirt matters.** A single-mode core is 9 µm across (lesson 11). Camplex: a 1 µm dust particle on a single-mode core "can block up to 1% of the light (a 0.05dB loss)," a 9 µm speck can block the core completely, and a human hair is 50 to 75 µm (Camplex, 2019b, p. 1). You will not see that dirt with your eyes.
+
+**What dirt does.** FOA says dirty connectors cause "high connector loss, high reflectance," and can contaminate transceivers. Dirt mated between two ferrules can scratch them and transfer to the other connector (FOA, n.d.-h). One dirty end can spoil a clean one. FOA also reports that network operators "claim that 15-50% of all network problems can be traced to dirty connectors" (FOA, n.d.-h). That is a claim FOA passes on, not a measured statistic, so teach it as a claim.
+
+**Caps help, and are not clean.** Keep dust caps on (FOA, n.d.-b; Sony Corporation, 2017, p. 10). But FOA calls them "protective caps," because a cap can carry dust and mold release, so clean and inspect a connector when its cap comes off (FOA, n.d.-h).
+
+**FOA's cleaning rules** (FOA, n.d.-b):
+
+- "Always clean connectors before mating," and inspect after cleaning.
+- Never use cotton swabs or cloth.
+- If wet-cleaning, use reagent-grade 99% isopropyl alcohol and lint-free pads.
+- Never use shop compressed air, and never blow on a connector.
+
+Where a connector maker gives its own note, follow it. Canare's note for its hybrid camera plugs calls for a non-alcohol cleaning stick (lesson 9).
+
+**Three rules that do not quite agree.** FOA says always clean before mating. LEMO's white paper on hybrid camera connectors says "inspect the endface and if it isn't dirty don't touch it" (Longhurst & Brooks, 2017, p. 5). Camplex says inspect, clean, re-inspect. What all three share is looking before you mate. So this course teaches: **inspect first, clean if needed, re-inspect, and follow your crew chief's house rule.** The reviewer will settle the default wording before release.
+
+**What you inspect with.** FOA: field microscopes run 100X to 400X, good ones filter infrared, and "A video microscope is preferable since it offers no danger to the eye" (FOA, n.d.-h). Lesson 15 explains the danger.
+
+**What you look for.** Camplex lists IEC 61300-3-35 as the endface inspection standard, which divides the end into zones from A, the core, out to D, the contact area, with stricter limits nearest the core (Camplex, 2019b, p. 1). The standard itself is paywalled; the idea to keep is that dirt on the core matters most.
+
+**Kit and practice.** CREW-05, *Arena transmission*, lesson "22 · A fiber kit and a first lab", prices a starter cleaner and fault locator and sets out a five-step home lab. Use it with this lesson's rules.
+
+:::reveal According to Camplex, how much light can a 1 µm dust particle on a single-mode core block? ||| Up to 1%, about a 0.05 dB loss; a 9 µm speck can block the core completely (Camplex, 2019b, p. 1).
+
+:::reveal Name two things FOA says never to clean or dry a fiber connector with. ||| Cotton swabs or cloth; shop compressed air or your breath (FOA, n.d.-b).
+
+:::reveal What order does this course teach for a fiber connection? ||| Inspect first, clean if needed, re-inspect, and follow the crew chief's house rule.
+
+## Sources
+- ${CAMPLEX_INSPECT} Locator: p. 1, the opening rule, the dust-particle figures and the IEC 61300-3-35 zones.
+- ${FOA_SCOPE} Locator: introduction; "Optical Inspection Of Connectors with Microscopes".
+- ${FOA_CLEAN} Locator: body text, the cleaning rules.
+- ${SONY_2017} Locator: p. 10, note under item g.
+- ${LONGHURST_2017} Locator: PDF p. 5, the inspection rule.`,
+    },
+    {
+      slug: "loss-budgets-and-bend-radius",
+      title: "14 · Loss budgets and bend radius",
+      section: "4 · Fiber",
+      recallContent: [
+        {
+          prompt: "What order does lesson 13 teach for making a fiber connection?",
+          answer: "Inspect first, clean if needed, re-inspect, and follow the crew chief's house rule.",
+        },
+        {
+          prompt: "Why does FOA call dust caps \"protective caps\" rather than clean caps?",
+          answer: "They can carry dust and mold release, so clean and inspect a connector when its cap comes off.",
+        },
+      ],
+      body: `${QR}
+
+**Two budgets.** FOA separates them (FOA, n.d.-a):
+
+- The **power budget** is the loss a link can tolerate: the transmitter's output minus the receiver's sensitivity. It can have a minimum as well as a maximum, so the receiver is not overloaded.
+- The **loss budget** is the estimated loss of the installed cable plant: fiber loss plus connection loss plus splice loss. It is worked out in design and compared with test results after installation.
+
+A link works when the loss budget fits inside the power budget.
+
+**Connections, not connectors.** FOA: "Connectors have no loss; only connections have loss" (FOA, n.d.-a). Loss happens where two ends meet, a mated pair.
+
+**Typical values** (FOA, n.d.-a):
+
+| Item | Typical loss |
+|---|---|
+| Multimode connection | 0.2 to 0.5 dB |
+| Single-mode connection, factory made | 0.1 to 0.2 dB |
+| Single-mode connection, field terminated | As high as 0.5 to 1.0 dB |
+| Single-mode fusion splice | Typically under 0.05 dB |
+| TIA-568 allowance, as FOA states it | 0.75 dB per connection, 0.3 dB per splice |
+
+Fiber loss per kilometer is in lesson 11.
+
+**FOA's worked example.** A 0.2 km multimode link at 850 nm: 0.6 dB of fiber, 0.9 dB for three connections, and 0.3 dB for a splice (FOA, n.d.-a). Added up, that is 1.8 dB.
+
+**A broadcast example, worked.** AJA's FiDO 12G converters state light levels in dBm. The transmitter puts out -5 dBm at least and +0.5 dBm at most, at 1310 nm. The receiver's sensitivity is -10 dBm at 6 and 12 Gb/s, -14 dBm at lower rates, and it overloads at -2 dBm (AJA Video Systems, 2023, pp. 9, 12). The numbers are negative, and -2 is more light than -10: overload sits above sensitivity.
+
+Reasoned from those figures:
+
+1. Power budget at 12G: -5 minus -10 is about 5 dB.
+2. Loss budget for 10 km of single-mode at FOA's 0.4 dB per km: 4 dB of fiber, plus two connections at 0.1 to 0.2 dB each, about 4.2 to 4.4 dB.
+3. That fits inside 5 dB, which matches AJA's "up to 10km."
+
+**Too much light, reasoned.** On a very short link there is almost no loss, so a +0.5 dBm transmitter could reach the receiver above its -2 dBm overload point. That is the case FOA describes when it says a power budget can have a minimum. Whether AJA recommends an optical attenuator for very short FiDO links is a question this course leaves open.
+
+CREW-05's lesson "21 · Where to learn fiber, and what certifies it" sets explaining a loss budget as a goal and points to FOA's free courses for more practice.
+
+**Bend radius.** Bending fiber too tightly costs light and can break it. FOA's normal recommendation: a minimum bend radius of 20 times the cable diameter under tension while pulling, and 10 times after installation. Some cables differ, and FOA's advice is "Always check with the manufacturer" (FOA, n.d.-e).
+
+**Radius, not diameter.** A 20-times radius rule means a pulley or capstan 40 times the cable's diameter. FOA's example: a 13 mm cable needs a 260 mm radius under tension (FOA, n.d.-e).
+
+**Damage you cannot see.** Damage from bending "may not always be obvious": broken fibers, higher loss from stress, or structural damage, and damage during installation can void the maker's warranty (FOA, n.d.-e).
+
+**Use the number for the cable in hand.** Makers differ a lot. Canare gives 6 times the outside diameter for its SMPTE hybrid cable (lesson 9); FOA's general rule is 10 to 20 times. Use the maker's figure for the cable you are holding, and when the maker does not say whether a figure is for pulling or installed, ask.
+
+:::reveal What is the difference between a power budget and a loss budget? ||| The power budget is what the link can tolerate (transmitter output minus receiver sensitivity); the loss budget is what the installed cable plant is expected to lose (fiber plus connections plus splices) (FOA, n.d.-a).
+
+:::reveal What does FOA mean by "Connectors have no loss; only connections have loss"? ||| Loss happens where two ends mate, so you count mated pairs, not individual connectors.
+
+:::reveal FOA's rule is 20 times the diameter as a radius under tension. What size pulley does that mean? ||| One 40 times the cable's diameter, because a diameter is twice the radius (FOA, n.d.-e).
+
+## Sources
+- ${FOA_LOSS} Locator: "Power Budgets And Loss Budgets"; "Analyze Link Loss In The Design Stage"; the note under the link drawing; "Step 2. Connection Loss"; "Step 3. Splice Loss"; Steps 1 to 4 tables.
+- ${AJA_FIDO} Locator: p. 4, "Features"; p. 9, FiDO-T-12G specifications; p. 12, FiDO-R-12G specifications.
+- ${FOA_BEND} Locator: "Typical Specifications"; "Bend radius example"; "Bend Radius or Diameter?"
+- ${CANARE_HYBRID} Locator: specification table.`,
+    },
+    {
+      slug: "laser-safety",
+      title: "15 · Laser safety: the light you cannot see",
+      section: "4 · Fiber",
+      recallContent: [
+        {
+          prompt: "Worked from AJA's figures, what is the FiDO 12G power budget, and does 10 km of single-mode fit?",
+          answer: "About 5 dB (-5 minus -10 dBm); 10 km at 0.4 dB per km plus two connections is about 4.2 to 4.4 dB, so it fits.",
+        },
+        {
+          prompt: "What bend radius does FOA recommend under tension and after installation?",
+          answer: "20 times the cable diameter while pulling, 10 times after installation; check the maker's figure.",
+        },
+      ],
+      body: `${QR}
+
+**Invisible is not off.** FOA: the light in fiber is mostly infrared and invisible. "Never look into a fiber end," and test a fiber with a power meter before working on it (FOA, n.d.-g). A dark connector can be a live one.
+
+**How lasers are classed.** The U.S. Food and Drug Administration (FDA) groups laser products into hazard classes, with the matching IEC classes (U.S. Food and Drug Administration [FDA], 2024):
+
+| FDA class | IEC class | What the FDA table says |
+|---|---|---|
+| I | 1, 1M | "Considered non-hazardous"; hazard increases if viewed with magnifiers or binoculars |
+| II | 2, 2M | |
+| IIIa | 3R | |
+| IIIb | 3B | "Immediate skin hazard from direct beam and immediate eye hazard when viewed directly" |
+| IV | 4 | Hazard from the direct or reflected beam; possible fire hazard |
+
+**One converter's label.** AJA calls its FiDO converters "CDRH Compliant Class 1," and warns that active fiber cables "emit radiation invisible to the human eye. Do not look directly at the end of an active fiber-optic cable or the fiber connector" (AJA Video Systems, 2023, pp. 17, 23).
+
+**Class 1 does not mean look into it, reasoned.** The FDA says the hazard of a class I product increases when it is viewed with optical aids. FOA says a microscope "will focus virtually all the light back into the eye" (FOA, n.d.-g). An inspection microscope is an optical aid. So even a Class 1 source is never inspected through an unfiltered microscope while it is live. FOA's rule: check the power with a meter before inspecting, and use microscopes with infrared filters (FOA, n.d.-g, n.d.-h). Lesson 13 noted that a video microscope "offers no danger to the eye."
+
+**A port can be switched on.** Sony's HXCU-FB80 ships with its LASER DIODE output set to OFF for links that use only single-mode fiber; the user turns it on in a menu, and the setting is not needed with hybrid cable (Sony Corporation, 2017, p. 12). So whether a fiber port is lit can depend on a setting you cannot see from the connector. That is another reason to meter before you look.
+
+**How much power is out there.** FOA says most communications links are too low in power to harm the eye, but cable TV (CATV) links, and some telecom links that use fiber amplifiers (FOA names DWDM links), can be "as much as 100 times more" powerful (FOA, n.d.-g). You will not always know what a strange fiber is connected to. Treat every fiber as live until a meter says otherwise.
+
+What laser class the fiber transmitters in broadcast camera systems carry is not stated in the pages read for this course. Check the label and the manual of the gear in front of you.
+
+**The commoner hazard: glass.** FOA calls bare fiber scraps the more common danger: wear safety glasses with side shields, work on a black mat, put scraps in a sealed container, and keep food and drink out of the work area (FOA, n.d.-g).
+
+**Back in CREW-05.** Its lesson "22 · A fiber kit and a first lab" set a precaution before these sources were read: never look into a fiber end. The FDA, FOA and AJA now back that rule.
+
+:::reveal What does FOA say to do before working on, or inspecting, a fiber? ||| Test it with a power meter; never look into a fiber end; use an infrared-filtered or video microscope (FOA, n.d.-g, n.d.-h).
+
+:::reveal Why is a Class 1 source still not safe to view through a microscope? ||| The FDA says class I hazard increases with optical aids, and FOA says a microscope focuses virtually all the light back into the eye.
+
+:::reveal According to FOA, what is the more common hazard than laser light, and what protects you from it? ||| Bare fiber shards: safety glasses with side shields, a black work mat, a sealed scrap container, and no food or drink in the work area (FOA, n.d.-g).
+
+## Sources
+- ${FOA_SAFETY} Locator: "Eye Safety"; "Focusing Light Into The Eye Can Be Dangerous"; "Power In Fiber Optic Networks"; "Safety In High Power OSP Links"; "Bare Fiber Safety"; the safety rules list.
+- ${FDA_2024} Locator: "Laser Hazard Classes" table.
+- ${AJA_FIDO} Locator: p. 17, "Laser"; p. 23, warning.
+- ${FOA_SCOPE} Locator: "Note On Eye Safety"; "Optical Inspection Of Connectors with Microscopes".
+- ${SONY_2017} Locator: p. 12, "Settings when Connecting with Only Single-Mode Optical Fiber Cable".`,
+    },
+    {
+      slug: "section-4-quiz",
+      title: "Section 4 quiz · Fiber",
+      section: "4 · Fiber",
+      body: "A graded check on single-mode and multimode fiber and their color codes, LC, SC and ST connectors and their polish, inspection and cleaning, loss budgets and bend radius, and laser safety. Each answer links back to the lesson that teaches it.",
+      quiz: {
+        passingScore: 80,
+        questionsPerAttempt: 5,
+        shuffleOptions: true,
+        questions: [
+          { prompt: "What does CREW-05's lesson \"Fiber on the map\" end with?", options: ["A table of what that course does not teach", "A five-step home lab with its kit prices", "A list of FOA certificates and exam scores", "A worked loss budget for an arena link"], correctIndex: 0, explanation: "It ends with a table of what CREW-05 does not teach: connector types, inspection and cleaning, polarity, light levels, loss budgets and laser safety. Section 4 supplies most of them.", sourceLessonSlug: "single-mode-multimode-and-color-codes" },
+          { prompt: "What cladding diameter does Camplex give for both single-mode and multimode fiber?", options: ["9 µm", "125 µm", "50 µm", "62.5 µm"], correctIndex: 1, explanation: "Camplex (n.d.-b): both have 125 µm cladding; the core is what differs.", sourceLessonSlug: "single-mode-multimode-and-color-codes" },
+          { prompt: "What core size does Camplex give for single-mode fiber?", options: ["50 µm", "62.5 µm", "9 µm", "125 µm"], correctIndex: 2, explanation: "Camplex (n.d.-b): single-mode core 9 µm.", sourceLessonSlug: "single-mode-multimode-and-color-codes" },
+          { prompt: "What core sizes does Camplex give for multimode fiber?", options: ["9 or 10 µm", "125 or 250 µm", "1 or 2 µm", "62.5 or 50 µm"], correctIndex: 3, explanation: "Camplex (n.d.-b): multimode 62.5 or 50 µm.", sourceLessonSlug: "single-mode-multimode-and-color-codes" },
+          { prompt: "Which light sources does Camplex list for single-mode fiber?", options: ["1310 and 1550 nm lasers", "850 and 1300 nm sources", "650 nm visible red light", "White light from an LED"], correctIndex: 0, explanation: "Camplex (n.d.-b): single-mode uses 1310 and 1550 nm lasers; multimode 850 and 1300 nm sources.", sourceLessonSlug: "single-mode-multimode-and-color-codes" },
+          { prompt: "Which light sources does Camplex list for multimode fiber?", options: ["1310 and 1550 nm lasers", "850 and 1300 nm sources", "650 nm visible red light", "1625 nm test lasers"], correctIndex: 1, explanation: "Camplex (n.d.-b): multimode uses 850 and 1300 nm sources.", sourceLessonSlug: "single-mode-multimode-and-color-codes" },
+          { prompt: "What typical distance does Camplex give for multimode fiber?", options: ["Typically over 2 km", "Typically over 20 km", "Typically under 2 km", "Typically under 20 m"], correctIndex: 2, explanation: "Camplex (n.d.-b): multimode \"Typically under 2km\"; single-mode \"Typically over 2km.\"", sourceLessonSlug: "single-mode-multimode-and-color-codes" },
+          { prompt: "Which uses does Camplex list for single-mode fiber?", options: ["Data centers, MADI and CCTV", "Home theater and gaming", "Short office patch cords", "Outside broadcast, ENG, live events"], correctIndex: 3, explanation: "Camplex (n.d.-b): single-mode for outside broadcast, ENG and live events.", sourceLessonSlug: "single-mode-multimode-and-color-codes" },
+          { prompt: "Which uses does Camplex list for multimode fiber?", options: ["Data centers, MADI and CCTV", "Outside broadcast and ENG", "Live events and stadiums", "Undersea telephone cables"], correctIndex: 0, explanation: "Camplex (n.d.-b): multimode for data centers, MADI and CCTV.", sourceLessonSlug: "single-mode-multimode-and-color-codes" },
+          { prompt: "What typical loss does FOA give for single-mode fiber at 1310 nm?", options: ["3 dB per km", "0.4 dB per km", "1 dB per km", "0.3 dB per km"], correctIndex: 1, explanation: "FOA (n.d.-a): single-mode 0.4 dB/km at 1310 nm and 0.3 at 1550; multimode 3 dB/km at 850 and 1 at 1300.", sourceLessonSlug: "single-mode-multimode-and-color-codes" },
+          { prompt: "What typical loss does FOA give for multimode fiber at 850 nm?", options: ["0.4 dB per km", "1 dB per km", "3 dB per km", "0.3 dB per km"], correctIndex: 2, explanation: "FOA (n.d.-a): multimode 3 dB/km at 850 nm.", sourceLessonSlug: "single-mode-multimode-and-color-codes" },
+          { prompt: "Which fiber do the SMPTE hybrid cable, AJA's FiDO and Sony's 10 km camera link use?", options: ["OM1 multimode", "OM3 multimode", "OM5 multimode", "Single-mode"], correctIndex: 3, explanation: "Canare Electric (n.d.-c), AJA Video Systems (2023) and Sony Corporation (2017) all describe single-mode.", sourceLessonSlug: "single-mode-multimode-and-color-codes" },
+          { prompt: "What does Camplex say happens if you use a multimode adapter on single-mode fiber?", options: ["High loss or reflection", "No effect at all on loss", "Better return loss overall", "A higher laser hazard class"], correctIndex: 0, explanation: "Camplex (n.d.-d): \"the core diameters/mode fields differ,\" causing high loss or reflection.", sourceLessonSlug: "single-mode-multimode-and-color-codes" },
+          { prompt: "What jacket color does FOA give for single-mode fiber?", options: ["Aqua", "Yellow", "Orange", "Lime green"], correctIndex: 1, explanation: "FOA (n.d.-d): single-mode (OS1, OS1a, OS2) is yellow.", sourceLessonSlug: "single-mode-multimode-and-color-codes" },
+          { prompt: "What jacket color does FOA give for OM3 and OM4 fiber?", options: ["Yellow", "Orange", "Aqua", "Blue"], correctIndex: 2, explanation: "FOA (n.d.-d): OM3 and OM4, laser-optimized 50/125, are aqua.", sourceLessonSlug: "single-mode-multimode-and-color-codes" },
+          { prompt: "What jacket color does FOA give for non-military OM1 and OM2 fiber?", options: ["Aqua", "Lime green", "Yellow", "Orange"], correctIndex: 3, explanation: "FOA (n.d.-d): OM1 and OM2 are orange (military OM1 is slate).", sourceLessonSlug: "single-mode-multimode-and-color-codes" },
+          { prompt: "What jacket color does FOA give for OM5 fiber?", options: ["Lime green", "Aqua", "Orange", "Slate"], correctIndex: 0, explanation: "FOA (n.d.-d): OM5 is lime green.", sourceLessonSlug: "single-mode-multimode-and-color-codes" },
+          { prompt: "When does FOA say a jacket may be another color?", options: ["When used indoors only", "When the print identifies the fiber", "When the run is under 2 km", "When the connectors are coded"], correctIndex: 1, explanation: "FOA (n.d.-d): other colors are allowed \"providing that the print on the outer jacket identifies fiber classifications.\"", sourceLessonSlug: "single-mode-multimode-and-color-codes" },
+          { prompt: "What color does FOA say outdoor fiber cables generally are?", options: ["Yellow", "Orange", "Black", "Aqua"], correctIndex: 2, explanation: "FOA (n.d.-d): outdoor cables are generally black, with the markings printed on.", sourceLessonSlug: "single-mode-multimode-and-color-codes" },
+          { prompt: "What connector color does FOA give for single-mode PC or UPC?", options: ["Green", "Beige", "Aqua", "Blue"], correctIndex: 3, explanation: "FOA (n.d.-d): single-mode blue; single-mode APC green.", sourceLessonSlug: "single-mode-multimode-and-color-codes" },
+          { prompt: "What connector color does FOA give for single-mode APC?", options: ["Green", "Blue", "Black", "Beige"], correctIndex: 0, explanation: "FOA (n.d.-d): single-mode APC is green.", sourceLessonSlug: "single-mode-multimode-and-color-codes" },
+          { prompt: "What connector color does FOA give for 62.5/125 multimode?", options: ["Black", "Beige", "Aqua", "Lime"], correctIndex: 1, explanation: "FOA (n.d.-d): 62.5/125 beige; OM2 black; OM3 and OM4 aqua; OM5 lime.", sourceLessonSlug: "single-mode-multimode-and-color-codes" },
+          { prompt: "What does a black tactical or outdoor jacket tell you about the fiber inside?", options: ["That it is single-mode", "That it is OM3 multimode", "Nothing alone; read the print", "That it carries power too"], correctIndex: 2, explanation: "Other colors are allowed when the print identifies the fiber, and outdoor cable is generally black, so read the printed markings.", sourceLessonSlug: "single-mode-multimode-and-color-codes" },
+          { prompt: "How does FOA say you can check a fiber's core size if unsure?", options: ["By weighing the reel", "By the dust cap's color", "By a meter on the jacket", "By microscope in white light"], correctIndex: 3, explanation: "FOA (n.d.-d): look at the ferrule with an inspection microscope \"while illuminating the fiber with a white light\"; never on a live fiber (lesson 15).", sourceLessonSlug: "single-mode-multimode-and-color-codes" },
+          { prompt: "What ferrule does FOA describe for the ST connector?", options: ["2.5 mm, long and cylindrical", "1.25 mm, short and square", "9 µm, glass with no sleeve", "5 mm, threaded at the tip"], correctIndex: 0, explanation: "FOA (n.d.-f): ST has a long cylindrical 2.5 mm ferrule, usually ceramic.", sourceLessonSlug: "lc-sc-st-and-the-polish" },
+          { prompt: "How does the ST connector lock?", options: ["Snap-in latch", "Bayonet", "Screw nut", "Push-pull"], correctIndex: 1, explanation: "FOA (n.d.-f): ST is a bayonet mount, \"similar to a BNC shell\" (Camplex, 2019a).", sourceLessonSlug: "lc-sc-st-and-the-polish" },
+          { prompt: "What does FOA say to do when ST connections show high loss?", options: ["Replace the cable at once", "Clean it with a cotton swab", "Reconnect it and seat it", "Add a 50-ohm terminator"], correctIndex: 2, explanation: "FOA (n.d.-f): ST is spring-loaded, so make sure it is seated; \"If you have high loss, reconnect them.\"", sourceLessonSlug: "lc-sc-st-and-the-polish" },
+          { prompt: "How does the SC connector latch?", options: ["Bayonet twist", "Screw collar", "Tape wrap", "Push-pull snap-in"], correctIndex: 3, explanation: "FOA (n.d.-f): SC \"latches with a simple push-pull motion.\"", sourceLessonSlug: "lc-sc-st-and-the-polish" },
+          { prompt: "What ferrule size does FOA give for the LC connector?", options: ["1.25 mm", "2.5 mm", "3.0 mm", "0.9 mm"], correctIndex: 0, explanation: "FOA (n.d.-f): LC has a 1.25 mm ferrule, \"half the size of the SC.\"", sourceLessonSlug: "lc-sc-st-and-the-polish" },
+          { prompt: "For which fiber does FOA say LC is highly favored?", options: ["Multimode", "Single-mode", "Plastic", "Hybrid"], correctIndex: 1, explanation: "FOA (n.d.-f): LC is \"highly favored for singlemode.\"", sourceLessonSlug: "lc-sc-st-and-the-polish" },
+          { prompt: "Which connectors share a 2.5 mm ferrule and can mate through hybrid adapters?", options: ["LC, SC and ST", "LC, MTP and FC", "ST, SC and FC", "LC and SFP only"], correctIndex: 2, explanation: "FOA (n.d.-f): ST, SC and FC share the 2.5 mm ferrule and can be mated through hybrid adapters.", sourceLessonSlug: "lc-sc-st-and-the-polish" },
+          { prompt: "What did AT&T's ST replace the FC's screw nut with, according to FOA?", options: ["A push-pull latch like SC", "A threaded collar like N", "A spring clip like RJ45", "A bayonet lock like a BNC"], correctIndex: 3, explanation: "FOA (n.d.-c): the ST replaced the FC's screw nut \"with a bayonet lock like a BNC coax connector.\"", sourceLessonSlug: "lc-sc-st-and-the-polish" },
+          { prompt: "Who does FOA say introduced the SC after the ST?", options: ["NTT", "AT&T", "Camplex", "Neutrik"], correctIndex: 0, explanation: "FOA (n.d.-c): AT&T's ST came first, then NTT introduced the SC.", sourceLessonSlug: "lc-sc-st-and-the-polish" },
+          { prompt: "Where does Camplex say LC is often found?", options: ["On SMPTE hybrid camera plugs", "On SFP and SFP+ transceivers", "On triax base stations", "On BNC patch panels"], correctIndex: 1, explanation: "Camplex (2019a): LC is often found on SFP and SFP+ transceivers.", sourceLessonSlug: "lc-sc-st-and-the-polish" },
+          { prompt: "What is Neutrik's opticalCON, per Camplex?", options: ["Single STs in a plastic body with a cap", "SC pairs in a rubber boot with a latch", "Duplex LCs in metal with a dirt shutter", "Hybrid SMPTE contacts in a push-pull shell"], correctIndex: 2, explanation: "Camplex (2019a): opticalCON puts duplex LCs in a rugged metal housing with a shutter against dirt.", sourceLessonSlug: "lc-sc-st-and-the-polish" },
+          { prompt: "Which adapter sleeve material does Camplex call more precise and durable?", options: ["Metal", "Plastic", "Rubber", "Ceramic"], correctIndex: 3, explanation: "Camplex (n.d.-d): ceramic sleeves are more precise and durable than metal.", sourceLessonSlug: "lc-sc-st-and-the-polish" },
+          { prompt: "What adapter loss does Camplex suggest aiming for?", options: ["0.2 dB or less", "2 dB or less", "0.75 dB or less", "0.05 dB or less"], correctIndex: 0, explanation: "Camplex (n.d.-d): aim for adapter loss of 0.2 dB or less.", sourceLessonSlug: "lc-sc-st-and-the-polish" },
+          { prompt: "What typical loss and return loss does FOA give for physical contact (PC) connectors?", options: ["0.5 dB, 20 dB return loss", "0.3 dB, 30 to 50 dB return loss", "1.0 dB, 60 dB return loss", "0.1 dB, 10 dB return loss"], correctIndex: 1, explanation: "FOA (n.d.-c): PC typically 0.3 dB with 30 to 50 dB return loss; air gap 0.5 dB or more with 20 dB.", sourceLessonSlug: "lc-sc-st-and-the-polish" },
+          { prompt: "What does FOA say \"Super PC\" and \"Ultra PC\" are?", options: ["Standards for single-mode only", "Angled 8-degree end finishes", "Marketing names for polishing", "Air-gap connector designs"], correctIndex: 2, explanation: "FOA (n.d.-c): \"Super PC or Ultra PC are simply marketing names\" for polishing processes.", sourceLessonSlug: "lc-sc-st-and-the-polish" },
+          { prompt: "At what angle is an APC ferrule end polished?", options: ["45 degrees", "2 degrees", "15 degrees", "8 degrees"], correctIndex: 3, explanation: "FOA (n.d.-c): APC angles the end 8 degrees.", sourceLessonSlug: "lc-sc-st-and-the-polish" },
+          { prompt: "Where does FOA say the reflected light from an APC end goes?", options: ["Absorbed in the cladding", "Back into the laser", "Out into the jacket", "Into heat in the core"], correctIndex: 0, explanation: "FOA (n.d.-c): reflected light \"is absorbed in the cladding.\"", sourceLessonSlug: "lc-sc-st-and-the-polish" },
+          { prompt: "What back reflection does Camplex give for APC connectors?", options: ["Better than -40 dB", "Better than -60 dB", "Better than -50 dB", "Better than -20 dB"], correctIndex: 1, explanation: "Camplex (2019a): PC better than -40 dB, UPC better than -50 dB, APC better than -60 dB.", sourceLessonSlug: "lc-sc-st-and-the-polish" },
+          { prompt: "What may an APC connector be mated to, according to Camplex?", options: ["Any blue single-mode plug", "Any 2.5 mm ferrule plug", "Only angle-polished plugs", "UPC plugs, via an adapter"], correctIndex: 2, explanation: "Camplex (2019a): \"Only mate to other angle-polished connectors.\"", sourceLessonSlug: "lc-sc-st-and-the-polish" },
+          { prompt: "What does a blue connector body or boot mean, per FOA?", options: ["Single-mode APC", "OM3 multimode", "62.5/125 multimode", "Single-mode PC or UPC"], correctIndex: 3, explanation: "FOA (n.d.-d, n.d.-f): blue is single-mode PC or UPC; green is single-mode APC.", sourceLessonSlug: "lc-sc-st-and-the-polish" },
+          { prompt: "What does Camplex call critical before any fiber connection?", options: ["Inspect, clean and re-inspect", "Clean once a week, used or not", "Connect, then inspect if needed", "Blow the end clear, then mate"], correctIndex: 0, explanation: "Camplex (2019b, p. 1): \"Inspection, cleaning and re-inspection are critical steps for the connector as well as the bulkhead.\"", sourceLessonSlug: "inspect-before-you-connect" },
+          { prompt: "Which parts does Camplex's rule cover?", options: ["Only the plug in your hand", "The connector and the bulkhead", "Only the far end of the run", "Only new, unused connectors"], correctIndex: 1, explanation: "Camplex (2019b, p. 1): the connector as well as the bulkhead; both sides of the mating.", sourceLessonSlug: "inspect-before-you-connect" },
+          { prompt: "How much light can a 1 µm dust particle on a single-mode core block, per Camplex?", options: ["Up to 50% of it", "None of it", "Up to 1% of it", "All of it"], correctIndex: 2, explanation: "Camplex (2019b, p. 1): \"up to 1% of the light (a 0.05dB loss).\"", sourceLessonSlug: "inspect-before-you-connect" },
+          { prompt: "What can a 9 µm speck do to a single-mode core, per Camplex?", options: ["Nothing at all on single-mode", "Affect only multimode cores", "Add exactly 0.05 dB of loss", "Block the core completely"], correctIndex: 3, explanation: "Camplex (2019b, p. 1): a 9 µm speck can completely block a 9 µm core.", sourceLessonSlug: "inspect-before-you-connect" },
+          { prompt: "What does FOA say dirty connectors cause?", options: ["High loss, high reflectance", "Lower loss, better return", "A change in core size", "A higher laser class"], correctIndex: 0, explanation: "FOA (n.d.-h): \"high connector loss, high reflectance,\" and they can contaminate transceivers.", sourceLessonSlug: "inspect-before-you-connect" },
+          { prompt: "What can dirt mated between two ferrules do, per FOA?", options: ["Polish both to an APC finish", "Scratch them and transfer over", "Lower the laser's power output", "Turn single-mode into multimode"], correctIndex: 1, explanation: "FOA (n.d.-h): it can scratch the ferrules and transfer to the other connector.", sourceLessonSlug: "inspect-before-you-connect" },
+          { prompt: "How does lesson 13 treat \"15-50% of all network problems\" being dirty connectors?", options: ["As a measured FOA statistic", "As a TIA-568 requirement", "As a claim FOA reports", "As Camplex's lab result"], correctIndex: 2, explanation: "FOA (n.d.-h) reports that network operators \"claim\" it; teach it as a claim.", sourceLessonSlug: "inspect-before-you-connect" },
+          { prompt: "Why does FOA call dust caps \"protective caps\"?", options: ["They are cleaned at the factory", "They block all laser light", "They must stay off in use", "They can carry dust and mold release"], correctIndex: 3, explanation: "FOA (n.d.-h): caps may carry dust and mold release, so clean and inspect a connector when its cap comes off.", sourceLessonSlug: "inspect-before-you-connect" },
+          { prompt: "What does FOA say to wet-clean a connector with?", options: ["99% isopropyl and lint-free pads", "Tap water and a cotton swab", "Window cleaner and a cloth", "Compressed air and a brush"], correctIndex: 0, explanation: "FOA (n.d.-b): reagent-grade 99% isopropyl alcohol and lint-free pads.", sourceLessonSlug: "inspect-before-you-connect" },
+          { prompt: "What does FOA say never to clean a connector with?", options: ["Lint-free pads", "Cotton swabs or cloth", "Isopropyl alcohol", "A cleaning stick"], correctIndex: 1, explanation: "FOA (n.d.-b): never use cotton swabs or cloth.", sourceLessonSlug: "inspect-before-you-connect" },
+          { prompt: "What does FOA say never to use to clear a connector?", options: ["A lint-free pad", "An IR-filtered scope", "Shop air or your breath", "A clean dust cap"], correctIndex: 2, explanation: "FOA (n.d.-b): never use shop compressed air, and never blow on a connector.", sourceLessonSlug: "inspect-before-you-connect" },
+          { prompt: "What does Canare's note say to clean its hybrid camera plugs with?", options: ["Isopropyl and a cloth", "Tap water and a swab", "Compressed air", "A non-alcohol stick"], correctIndex: 3, explanation: "Canare Electric (n.d.-b): plugs with a non-alcohol cleaning stick. Where a maker gives a note, follow it.", sourceLessonSlug: "inspect-before-you-connect" },
+          { prompt: "What is LEMO's rule for hybrid camera connector end faces?", options: ["Inspect; if it isn't dirty, don't touch it", "Always clean it first, then inspect it", "Clean it with alcohol, then mate it", "Never inspect hybrid connectors at all"], correctIndex: 0, explanation: "Longhurst and Brooks (2017, p. 5): \"inspect the endface and if it isn't dirty don't touch it.\"", sourceLessonSlug: "inspect-before-you-connect" },
+          { prompt: "What order does lesson 13 teach for a fiber connection?", options: ["Clean, mate, then inspect", "Inspect, clean if needed, re-inspect", "Mate, test, then clean", "Blow off, wipe, then mate"], correctIndex: 1, explanation: "FOA, LEMO and Camplex differ, but all look before mating: inspect first, clean if needed, re-inspect, and follow the house rule.", sourceLessonSlug: "inspect-before-you-connect" },
+          { prompt: "Who settles the default cleaning wording before release?", options: ["The FOA in its next update", "The camera maker's manual", "The course's reviewer", "Each learner by preference"], correctIndex: 2, explanation: "The lesson says the reviewer will settle the default wording before release.", sourceLessonSlug: "inspect-before-you-connect" },
+          { prompt: "What magnification does FOA give for field inspection microscopes?", options: ["2X to 10X", "1000X to 4000X", "10X to 40X", "100X to 400X"], correctIndex: 3, explanation: "FOA (n.d.-h): field microscopes run 100X to 400X.", sourceLessonSlug: "inspect-before-you-connect" },
+          { prompt: "Which kind of microscope does FOA say is preferable?", options: ["A video microscope", "An unfiltered optical one", "A hand magnifying glass", "A phone camera at 1X"], correctIndex: 0, explanation: "FOA (n.d.-h): \"A video microscope is preferable since it offers no danger to the eye.\"", sourceLessonSlug: "inspect-before-you-connect" },
+          { prompt: "How does IEC 61300-3-35 divide an end face, as Camplex summarizes it?", options: ["A at the jacket, in to D at the core", "A at the core, out to D at the contact", "One zone for the whole end face", "Zones by color code, not distance"], correctIndex: 1, explanation: "Camplex (2019b, p. 1): zones A (core) to D (contact), with stricter limits nearest the core.", sourceLessonSlug: "inspect-before-you-connect" },
+          { prompt: "Where does lesson 13 send you for a starter kit and a home lab?", options: ["CREW-04, \"Outputs, timecode and genlock\"", "CREW-01, \"Which rulebook applies\"", "CREW-05, \"A fiber kit and a first lab\"", "CREW-02, \"The kit and the site survey\""], correctIndex: 2, explanation: "CREW-05, Arena transmission, lesson 22, prices a starter cleaner and fault locator and sets out a five-step home lab.", sourceLessonSlug: "inspect-before-you-connect" },
+          { prompt: "How does FOA define a power budget?", options: ["Fiber plus connection and splice loss", "Receiver overload minus transmitter output", "Fiber length times loss per kilometer", "Transmitter output minus receiver sensitivity"], correctIndex: 3, explanation: "FOA (n.d.-a): the loss a link can tolerate, transmitter output minus receiver sensitivity.", sourceLessonSlug: "loss-budgets-and-bend-radius" },
+          { prompt: "How does FOA define a loss budget?", options: ["Fiber plus connection plus splice loss", "Transmitter output minus sensitivity", "Receiver overload minus sensitivity", "The loss of the worst single connector"], correctIndex: 0, explanation: "FOA (n.d.-a): the estimated loss of the installed cable plant, fiber plus connection plus splice loss.", sourceLessonSlug: "loss-budgets-and-bend-radius" },
+          { prompt: "Why can a power budget have a minimum as well as a maximum?", options: ["So the fiber is not bent too far", "So the receiver is not overloaded", "So the laser stays at Class 1", "So splices stay under 0.05 dB"], correctIndex: 1, explanation: "FOA (n.d.-a): a minimum keeps the receiver from being overloaded.", sourceLessonSlug: "loss-budgets-and-bend-radius" },
+          { prompt: "What does FOA mean by \"Connectors have no loss; only connections have loss\"?", options: ["Connectors never need cleaning", "Connector loss is too small to count", "Only mated pairs lose light", "Only splices lose any light"], correctIndex: 2, explanation: "Loss happens where two ends mate, so you count mated pairs.", sourceLessonSlug: "loss-budgets-and-bend-radius" },
+          { prompt: "What typical loss does FOA give for a factory-made single-mode connection?", options: ["0.5 to 1.0 dB", "0.2 to 0.5 dB", "Under 0.05 dB", "0.1 to 0.2 dB"], correctIndex: 3, explanation: "FOA (n.d.-a): factory single-mode 0.1 to 0.2 dB; field-terminated as high as 0.5 to 1.0 dB.", sourceLessonSlug: "loss-budgets-and-bend-radius" },
+          { prompt: "What loss can a field-terminated single-mode connection reach, per FOA?", options: ["0.5 to 1.0 dB", "0.1 to 0.2 dB", "Under 0.05 dB", "3 to 5 dB"], correctIndex: 0, explanation: "FOA (n.d.-a): as high as 0.5 to 1.0 dB.", sourceLessonSlug: "loss-budgets-and-bend-radius" },
+          { prompt: "What typical loss does FOA give for a single-mode fusion splice?", options: ["0.3 to 0.5 dB", "Under 0.05 dB", "About 0.75 dB", "About 1.0 dB"], correctIndex: 1, explanation: "FOA (n.d.-a): typically under 0.05 dB.", sourceLessonSlug: "loss-budgets-and-bend-radius" },
+          { prompt: "What per-connection allowance does FOA state for TIA-568?", options: ["0.3 dB", "0.05 dB", "0.75 dB", "1.5 dB"], correctIndex: 2, explanation: "FOA (n.d.-a): TIA-568 allows 0.75 dB per connection and 0.3 dB per splice.", sourceLessonSlug: "loss-budgets-and-bend-radius" },
+          { prompt: "What does FOA's worked 0.2 km multimode example add up to?", options: ["0.9 dB", "3.0 dB", "0.6 dB", "1.8 dB"], correctIndex: 3, explanation: "0.6 dB of fiber + 0.9 dB for three connections + 0.3 dB for a splice = 1.8 dB (FOA, n.d.-a).", sourceLessonSlug: "loss-budgets-and-bend-radius" },
+          { prompt: "What minimum transmitter output does AJA give for the FiDO-T-12G?", options: ["-5 dBm", "-10 dBm", "+0.5 dBm", "-2 dBm"], correctIndex: 0, explanation: "AJA Video Systems (2023, p. 9): -5 dBm minimum, +0.5 dBm maximum, at 1310 nm.", sourceLessonSlug: "loss-budgets-and-bend-radius" },
+          { prompt: "What receiver sensitivity does AJA give for the FiDO-R-12G at 12 Gb/s?", options: ["-5 dBm", "-10 dBm", "-2 dBm", "-14 dBm"], correctIndex: 1, explanation: "AJA Video Systems (2023, p. 12): -10 dBm at 6 and 12 Gb/s; -14 dBm at lower rates.", sourceLessonSlug: "loss-budgets-and-bend-radius" },
+          { prompt: "Worked from AJA's figures, about what is the FiDO 12G power budget?", options: ["About 10 dB", "About 2 dB", "About 5 dB", "About 15 dB"], correctIndex: 2, explanation: "-5 dBm minus -10 dBm is about 5 dB.", sourceLessonSlug: "loss-budgets-and-bend-radius" },
+          { prompt: "About what loss budget does lesson 14 work out for 10 km of single-mode with two connections?", options: ["About 0.4 dB", "About 40 dB", "About 9 dB", "About 4.2 to 4.4 dB"], correctIndex: 3, explanation: "10 km x 0.4 dB/km = 4 dB, plus two connections at 0.1 to 0.2 dB each.", sourceLessonSlug: "loss-budgets-and-bend-radius" },
+          { prompt: "What can go wrong on a very short FiDO link, by lesson 14's reasoning?", options: ["Too much light, past overload", "Too little light to receive", "Too much bend in the fiber", "Too many splices in the run"], correctIndex: 0, explanation: "A +0.5 dBm transmitter over almost no loss can exceed the -2 dBm overload point.", sourceLessonSlug: "loss-budgets-and-bend-radius" },
+          { prompt: "Does AJA recommend an attenuator for very short FiDO links, according to lesson 14?", options: ["AJA requires one always", "Left open by the course", "AJA forbids using one", "FOA bans attenuators"], correctIndex: 1, explanation: "The course leaves it open: no source read says whether AJA recommends one.", sourceLessonSlug: "loss-budgets-and-bend-radius" },
+          { prompt: "What minimum bend radius does FOA recommend under tension while pulling?", options: ["10 x the cable diameter", "6 x the cable diameter", "20 x the cable diameter", "40 x the cable diameter"], correctIndex: 2, explanation: "FOA (n.d.-e): 20 x under tension, 10 x after installation; check the maker.", sourceLessonSlug: "loss-budgets-and-bend-radius" },
+          { prompt: "FOA's 20-times rule is a radius. What size pulley or capstan does that mean?", options: ["10 x the diameter", "20 x the diameter", "5 x the diameter", "40 x the diameter"], correctIndex: 3, explanation: "A diameter is twice the radius, so a 20 x radius means a pulley 40 x the cable's diameter (FOA, n.d.-e).", sourceLessonSlug: "loss-budgets-and-bend-radius" },
+          { prompt: "In FOA's example, what radius does a 13 mm cable need under tension?", options: ["260 mm", "130 mm", "520 mm", "78 mm"], correctIndex: 0, explanation: "FOA (n.d.-e): 20 x 13 mm = 260 mm radius.", sourceLessonSlug: "loss-budgets-and-bend-radius" },
+          { prompt: "What does FOA say about damage from bending?", options: ["It always shows as a kink", "It may not always be obvious", "It shows only at 850 nm", "It never harms single-mode"], correctIndex: 1, explanation: "FOA (n.d.-e): damage \"may not always be obvious\": broken fibers, higher loss from stress, structural damage.", sourceLessonSlug: "loss-budgets-and-bend-radius" },
+          { prompt: "Which bend radius figure does lesson 14 tell you to use?", options: ["FOA's 20 x, for any cable", "Canare's 6 x, for any cable", "The maker's, for that cable", "The smallest figure found"], correctIndex: 2, explanation: "Makers differ widely (Canare 6 x; FOA 10 to 20 x), so use the maker's figure for the cable in hand.", sourceLessonSlug: "loss-budgets-and-bend-radius" },
+          { prompt: "What does FOA say about the light in fiber?", options: ["Mostly red and easy to see", "Ultraviolet and harmless", "Visible only on multimode", "Mostly infrared and invisible"], correctIndex: 3, explanation: "FOA (n.d.-g): mostly infrared and invisible; never look into a fiber end.", sourceLessonSlug: "laser-safety" },
+          { prompt: "What does FOA say to do before working on a fiber?", options: ["Test it with a power meter", "Look into the end to check", "Shine a flashlight into it", "Wait a minute after unplugging"], correctIndex: 0, explanation: "FOA (n.d.-g): test a fiber with a power meter before working on it.", sourceLessonSlug: "laser-safety" },
+          { prompt: "How does the FDA table describe class I lasers?", options: ["Immediate eye hazard", "Considered non-hazardous", "Possible fire hazard", "Skin hazard from beam"], correctIndex: 1, explanation: "FDA (2024): class I is \"Considered non-hazardous,\" with more hazard under magnifiers or binoculars.", sourceLessonSlug: "laser-safety" },
+          { prompt: "Which IEC class matches FDA class IIIb?", options: ["1M", "2M", "3B", "4"], correctIndex: 2, explanation: "FDA (2024): IIIb matches IEC 3B; IIIa matches 3R; IV matches 4.", sourceLessonSlug: "laser-safety" },
+          { prompt: "What does the FDA table say of class IV?", options: ["Considered non-hazardous", "Hazard only under binoculars", "Skin hazard, never an eye hazard", "Direct or reflected beam; may cause fire"], correctIndex: 3, explanation: "FDA (2024): hazard from the direct or reflected beam, and a possible fire hazard.", sourceLessonSlug: "laser-safety" },
+          { prompt: "When does the FDA say a class I laser's hazard increases?", options: ["Viewed with magnifiers or binoculars", "When used at 1310 nm", "On runs longer than 2 km", "When plugged into multimode"], correctIndex: 0, explanation: "FDA (2024): class I hazard increases when viewed with magnifiers or binoculars.", sourceLessonSlug: "laser-safety" },
+          { prompt: "How does AJA label its FiDO converters' laser class?", options: ["Class IIIb", "CDRH Compliant Class 1", "Class 4", "Class 3R"], correctIndex: 1, explanation: "AJA Video Systems (2023, p. 17): \"CDRH Compliant Class 1.\"", sourceLessonSlug: "laser-safety" },
+          { prompt: "What does AJA warn about active fiber cables?", options: ["Use only multimode fiber", "Keep runs under 2 km", "Don't look at an active end", "Clean with compressed air"], correctIndex: 2, explanation: "AJA Video Systems (2023, p. 23): they \"emit radiation invisible to the human eye. Do not look directly at the end of an active fiber-optic cable.\"", sourceLessonSlug: "laser-safety" },
+          { prompt: "What does FOA say a microscope does with the light from a live fiber?", options: ["Blocks all infrared by design", "Spreads it out so it is safe", "Has no effect on eye safety", "Focuses nearly all of it into the eye"], correctIndex: 3, explanation: "FOA (n.d.-g): a microscope \"will focus virtually all the light back into the eye.\"", sourceLessonSlug: "laser-safety" },
+          { prompt: "Why is even a Class 1 source never viewed through an unfiltered microscope while live?", options: ["Optical aids raise class I hazard", "Class 1 is a fire hazard", "Microscopes add a laser", "Class 1 means 1 watt"], correctIndex: 0, explanation: "The FDA says class I hazard increases with optical aids, and FOA says a microscope concentrates the light into the eye.", sourceLessonSlug: "laser-safety" },
+          { prompt: "What does FOA say to do before inspecting a fiber end?", options: ["Shine a white light into it", "Check its power with a meter", "Look at it with a bare eye", "Remove the far-end connector"], correctIndex: 1, explanation: "FOA (n.d.-g, n.d.-h): check power with a meter before inspecting, and use IR-filtered microscopes.", sourceLessonSlug: "laser-safety" },
+          { prompt: "How does Sony's HXCU-FB80 ship its LASER DIODE output for single-mode-only links?", options: ["On whenever powered", "On only for multimode", "Off until set in a menu", "Off only on hybrid cable"], correctIndex: 2, explanation: "Sony Corporation (2017, p. 12): it ships OFF; the user turns it on in a menu; not needed with hybrid cable.", sourceLessonSlug: "laser-safety" },
+          { prompt: "How much more powerful does FOA say CATV and amplified links can be?", options: ["About half as much", "Exactly the same", "About 10 times less", "As much as 100 times"], correctIndex: 3, explanation: "FOA (n.d.-g): \"as much as 100 times more\" powerful than most communications links.", sourceLessonSlug: "laser-safety" },
+          { prompt: "What laser class do broadcast camera fiber transmitters carry, per this course?", options: ["Not stated in pages read", "Always Class 1", "Always Class 3B", "Always Class 4"], correctIndex: 0, explanation: "The pages read for the course do not state it; check the label and the manual of the gear in front of you.", sourceLessonSlug: "laser-safety" },
+          { prompt: "What does FOA call the more common hazard in fiber work?", options: ["Laser burns", "Bare fiber shards", "Electric shock", "Fire"], correctIndex: 1, explanation: "FOA (n.d.-g): bare fiber shards.", sourceLessonSlug: "laser-safety" },
+          { prompt: "Which precautions does FOA give against fiber shards?", options: ["Bare hands and a white mat", "Gloves and a snack at the bench", "Side-shield glasses, black mat", "A fan to blow scraps away"], correctIndex: 2, explanation: "FOA (n.d.-g): safety glasses with side shields, a black work mat, scraps in a sealed container, no food or drink.", sourceLessonSlug: "laser-safety" },
+        ],
+      },
+    },
   ],
 };
