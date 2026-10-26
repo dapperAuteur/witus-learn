@@ -793,5 +793,281 @@ The connector is a BNC with a loop-through output, which is "automatically conne
         ],
       },
     },
+    // ══════════════════════════════════════════════════════════════════════
+    // SECTION 3: Camera cables
+    // ══════════════════════════════════════════════════════════════════════
+    {
+      slug: "the-ccu-and-triax",
+      title: "8 · The camera control unit and triax",
+      section: "3 · Camera cables",
+      recallContent: [
+        {
+          prompt: "What two kinds of reference does Sony's CCU accept, and at what impedance?",
+          answer: "HD tri-level sync and SD black burst, both at 75 ohms, on BNC.",
+        },
+        {
+          prompt: "Why does a camera have a timecode input separate from its reference input?",
+          answer: "LTC is an audio signal (QSC); reference is a 75-ohm video sync signal. Different signals, different jobs.",
+        },
+      ],
+      body: `${QR}
+
+**The other end of the camera cable.** A broadcast camera's cable runs back to a camera control unit, or CCU. Sony says its HXCU-FB80 "performs signal processing, provides an interface for external equipment, and supplies power to the camera," and with a remote control panel forms a camera control system (Sony Corporation, 2017, p. 3). Ikegami describes its CCU as "connected to the camera using fiber cable to transmit video, audio and control signals, as well as, supplying the power to the camera when hybrid fiber/copper cable is used" (Ikegami, n.d.-d).
+
+So one camera cable carries the camera's pictures and sound to the CCU, return pictures and control back to the camera, and, on hybrid cable, the camera's power.
+
+**Read the back panel.** Ikegami's CCU and base-station pages list what plugs in at the CCU end: SDI program and monitor outputs, return video inputs, a reference input, a prompter feed, intercom (4-wire, Clear-Com or RTS), program sound, tally, and a data trunk (Ikegami, n.d.-a, n.d.-b). Lesson 7 covered reference and returns; lesson 17 covers intercom on XLR.
+
+Smaller systems do the same job. Blackmagic's Studio Fiber Converter "converts SDI video, audio, and remote camera control connections into a single optical fiber cable," with 12G-SDI for the camera feed, three HD return feeds, talkback, tally, and "power for your remote cameras" (Blackmagic Design, n.d.-b).
+
+**Triax.** Triax is a coax-family camera cable that is still in service. Ikegami's DTA-55 and BST-55 form "a triax transmission system" that lets owners move from SD to HD "while still using their existing triax camera cable infrastructure," which Ikegami calls a "rugged easy to repair cable/connector type" (Ikegami, n.d.-a). The BST-55 base station handles reference, two SDI and two analog returns, intercom, program sound, tally and a data trunk, and lists "Power for camera head: less than 180VA." Its maximum cable distance is 800 m on Fujikura 8.8 mm triax (Ikegami, n.d.-a).
+
+**One cable for everything, reasoned.** The triax is the only link between that base station and the camera adaptor. So all of those signals, and the camera's power, share one triax cable. The reviewer will confirm this against a triax system manual before release.
+
+**How far triax runs.** Ikegami's HDK-79EC brochure gives distances by cable (Ikegami, n.d.-c, p. 5):
+
+| Triax cable | Distance |
+|---|---|
+| Fujikura 8.8 mm | 850 m |
+| Fujikura 14.5 mm | 1,550 m |
+| Belden 9267, 9.2 mm | 500 m |
+| Belden 9232, 13.2 mm | 1,000 m |
+
+Within each maker's pair, the thicker triax runs farther. An older white paper from LEMO puts HDTV on "digital grade RG-11/U type 75 ohm triax" under about 1000 m, and about 2000 m with a repeater, figures it attributes to Grass Valley literature for an older camera (Longhurst & Brooks, 2017, p. 2). Treat those as dated.
+
+**Why crews keep triax.** LEMO's paper says a broken triax can get a "fast and dirty" repair with a stripper and insulation tape, and that triax is terminated with copper tooling (Longhurst & Brooks, 2017, p. 2). Fischer, which makes triax connectors, says its 1051 Triax HD Pro+ reaches "up to 1.5 kilometers" in HD without a repeater, is backward compatible with genuine 1051 parts, and can be repaired in about 10 minutes with simple tools (Richards, 2018, pp. 4 to 5). Those are a maker's claims about its own product.
+
+**Which triax connector?** Fischer's backward-compatibility claim covers its own 1051 family. Whether other triax connector families mate with one another is a question this course leaves open. Match the connector to the camera system in front of you.
+
+:::reveal Name three jobs a CCU does, according to Sony. ||| Signal processing, an interface for external equipment, and power for the camera (Sony Corporation, 2017, p. 3).
+
+:::reveal On Ikegami's HDK-79EC figures, how far does 14.5 mm Fujikura triax run? ||| 1,550 m, against 850 m for 8.8 mm Fujikura (Ikegami, n.d.-c, p. 5).
+
+## Sources
+- ${SONY_2017} Locator: p. 3, "Overview".
+- ${IKEGAMI_UHK430} Locator: CCU-430 description.
+- ${IKEGAMI_BST55} Locator: description and specifications.
+- ${IKEGAMI_CCU970} Locator: "Input Signals" and "Output Signals".
+- ${BMD_URSA_SPECS} Locator: "Blackmagic Studio Fiber Converter: Description".
+- ${IKEGAMI_HDK79EC} Locator: p. 5, "Transmission Distance".
+- ${LONGHURST_2017} Locator: PDF p. 2, the triax paragraphs.
+- ${RICHARDS_2018} Locator: pp. 4 to 5, the 1051 Triax HD Pro+ claims.`,
+    },
+    {
+      slug: "the-smpte-hybrid-camera-cable",
+      title: "9 · The SMPTE hybrid fiber camera cable",
+      section: "3 · Camera cables",
+      recallContent: [
+        {
+          prompt: "What does Ikegami list as the BST-55's power for the camera head, and its maximum triax distance?",
+          answer: "Less than 180 VA, and 800 m on Fujikura 8.8 mm triax.",
+        },
+        {
+          prompt: "Why does a crew value triax in the field, per LEMO's white paper?",
+          answer: "A broken triax can get a \"fast and dirty\" repair with a stripper and insulation tape.",
+        },
+      ],
+      body: `${QR}
+
+**Fiber and copper in one jacket.** The SMPTE hybrid camera cable carries fiber for the signals and copper for power and control. SMPTE ST 311 covers the cable and ST 304 the connector. Those standards are paywalled, so this lesson reads makers' sheets that state what they comply with.
+
+**What is inside.** Canare's LF-2SM9N, sold as SMPTE ST 311 compliant (Canare Electric, n.d.-c):
+
+| Part | LF-2SM9N |
+|---|---|
+| Fibers | 2 single-mode, 9/125, low water peak |
+| Power conductors | 4 x 20 AWG |
+| Control conductors | 2 x 25 AWG |
+| Outside diameter | 9.2 mm |
+| Minimum bend radius | 6 x outside diameter |
+| Temperature | -40 to +75 °C |
+
+Its fiber is ITU-T G.657.A2, a "low bending loss" single-mode type (Canare Electric, n.d.-c). The fibers are single-mode. Calling SMPTE camera fiber multimode is wrong.
+
+**What is in the connector.** LEMO's 3K.93C SMPTE insert lists "2 FO Type FS, 2 HV + 2 LV": two fiber contacts, two high-voltage and two low-voltage contacts, for cable type "SMPTE 311M or EBU R100," with push-pull locking, a rated current of 10 A, and a working voltage of 600 V for power and 42 V for signal (LEMO, n.d., p. 2). Camplex describes the LEMO SMPTE 304M connector the same way: "two singlemode fibers, two power conductors and two low voltage conductors in a single connector" (Camplex, 2019a). LEMO states the connector meets SMPTE 304M, ARIB BTA S-1005B and EBU R100, with typical attenuation of 0.1 dB and return loss over 45 dB (Longhurst & Brooks, 2017, p. 7). Canare's assemblies claim ST 304, ST 311 and ARIB compliance, with return loss of 45 dB or more and insertion loss of 0.5 dB or less at 1.3 µm (Canare Electric, n.d.-b).
+
+**Male and female.** Blackmagic's camera-side fiber converter has a male SMPTE 304 connector, and its studio-side converter a female one (Blackmagic Design, n.d.-b).
+
+**Not every hybrid connector mates.** Canare's Japanese-style OC hybrid connectors carry "the same combination of SMPTE but different pinouts" and are "non-compatible with SMPTE connectors"; a conversion cable is needed (Canare Electric, n.d.-b).
+
+**What voltage is on it?** The 600 V figure is LEMO's working-voltage rating for the connector, not the voltage a CCU sends. No source read for this course states what voltage the copper carries, or whether an unmated connector is live, and this course names none. Until the reviewer settles it, treat the hybrid cable as a power cable and follow the engineer's procedure for connecting it. That is this course's precaution, not a quoted rule.
+
+**How far.** With the camera powered from the CCU over the hybrid cable:
+
+| System | Reach |
+|---|---|
+| Ikegami UHK-430 | Up to 4 km (13,123 ft) (Ikegami, n.d.-d) |
+| Sony HXC-FB80, with lens and viewfinder | 600 m on Sony's hybrid cable; 250 m for the camera adaptor (Sony Corporation, 2017, p. 34) |
+| Blackmagic URSA Broadcast G2 system | "Up to 2 km" (Blackmagic Design, n.d.-a) |
+
+Sony adds that reach "varies depending on the total power consumption of the connected peripherals" (Sony Corporation, 2017, p. 34). LEMO's paper says that with the camera powered over the hybrid cable, distance "is only limited by the voltage drop in the electrical power part," while with local power, HD can run "well over 20km" of single-mode fiber (Longhurst & Brooks, 2017, p. 3). Without the copper, single-mode fiber alone carries "all signals (except power)": Sony up to 10 km on general single-mode cable with LC connectors, and Ikegami up to 10 km with local camera power (Sony Corporation, 2017, pp. 5 to 6, 10; Ikegami, n.d.-d).
+
+Reasoned from those: the fiber can go much farther than the copper can carry power. When the cable powers the camera, the copper sets the limit.
+
+**Caring for it.** Sony warns that dust on hybrid or single-mode terminations "may" cause transmission errors, and says to put the cable's cap back on when it is not in use (Sony Corporation, 2017, p. 10). LEMO: "Any connector that is filled with water will have problems if it is to handle power," so waterproof end caps are "essential" (Longhurst & Brooks, 2017, p. 3). Canare's cleaning note covers ferrule tips and sides, alignment sleeves and shells: plugs with a non-alcohol cleaning stick, shells with cotton gauze, because scratches or particles on a ferrule tip "can have a disabling effect" (Canare Electric, n.d.-b). Lesson 13 is about inspection and cleaning in general.
+
+**Bending it.** Six times 9.2 mm is about 55 mm minimum bend radius for LF-2SM9N. The sheet does not say whether that is while pulling or after installation; this course leaves that open, and lesson 14 explains why the difference matters.
+
+:::reveal How many fibers does an ST 311 hybrid cable such as Canare's LF-2SM9N carry, and of what type? ||| Two single-mode 9/125 fibers (Canare Electric, n.d.-c).
+
+:::reveal Is 600 V the voltage a CCU puts on the hybrid cable? ||| No. It is LEMO's working-voltage rating for the connector's power contacts. No source read for this course states the actual supply voltage.
+
+:::reveal What limits reach when the hybrid cable powers the camera? ||| The copper: LEMO says distance is then "only limited by the voltage drop in the electrical power part," and Sony says reach varies with the power the peripherals draw.
+
+## Sources
+- ${CANARE_HYBRID} Locator: specification table; "Key Features and Benefits".
+- ${LEMO_3K93C} Locator: p. 2, "Technical details".
+- ${CAMPLEX_IDENT} Locator: "SMPTE Hybrid 304M Connector".
+- ${LONGHURST_2017} Locator: PDF p. 3, the hybrid distance and water paragraphs; PDF p. 7, the compliance and loss figures.
+- ${CANARE_HFO} Locator: "Key Features and Benefits"; "About Camera Cable Assemblies"; "Technical Note".
+- ${BMD_URSA_SPECS} Locator: "Optical Fiber Input" entries.
+- ${BMD_URSA} Locator: the camera fiber reach paragraph.
+- ${IKEGAMI_UHK430} Locator: CCU-430 description.
+- ${SONY_2017} Locator: pp. 5 to 6; p. 10, item g and the note under it; p. 34, "About Transmission Distance".`,
+    },
+    {
+      slug: "tactical-fiber",
+      title: "10 · Tactical fiber",
+      section: "3 · Camera cables",
+      recallContent: [
+        {
+          prompt: "What do LEMO's \"2 FO, 2 HV + 2 LV\" contacts in a SMPTE hybrid connector stand for?",
+          answer: "Two fiber, two high-voltage and two low-voltage contacts.",
+        },
+        {
+          prompt: "Why must Canare's Japanese-style OC hybrid connectors not be mated straight to SMPTE connectors?",
+          answer: "They carry the same combination but different pinouts and are \"non-compatible with SMPTE connectors\"; a conversion cable is needed.",
+        },
+      ],
+      body: `${QR}
+
+**Fiber built for the ground.** Tactical fiber is fiber cable made to be laid out and picked up again. Camplex's Pro-Tac is single-mode tactical fiber on reels with 4, 8 or 12 fanouts and ST or LC connectors. Camplex calls it "crush resistant with internal aramid strength members and a polyurethane jacket," built for "multiple deployments in outside broadcast," and says it "Can be used directly on the ground for temporary deployment" (Camplex, n.d.-a).
+
+**What rides on it.** Camplex sells converter and reel systems that "Convert and extend 4K HD/3G/6G/12G-SDI, HDMI, 100BaseT Ethernet, and audio signals over tactical fiber" (Camplex, n.d.-c). AJA's FiDO converters are another example: a pair, with LC or ST single-mode connections, carrying 12G-SDI "up to 10km" (AJA Video Systems, 2023, p. 4). Reasoned from those: SDI usually rides a tactical run through a converter pair, one at each end.
+
+**What does not ride on it, reasoned.** Camplex describes Pro-Tac's fibers, strength members and jacket, and no copper. Canare's SMPTE hybrid cable, in lesson 9, lists power conductors. So tactical fiber carries no power: the camera or converter at the far end needs local power or a separate feed. No source read for this course says that in words, and the reviewer will confirm it before release.
+
+**Three camera cables side by side.**
+
+| | Triax | SMPTE hybrid | Tactical fiber |
+|---|---|---|---|
+| Carries camera power | Yes: the BST-55 lists under 180 VA for the head (Ikegami, n.d.-a) | Yes, when the CCU powers the camera (Ikegami, n.d.-d) | No, reasoned above |
+| Example reach | 500 to 1,550 m, by cable (Ikegami, n.d.-c) | 250 m to 4 km powered; 10 km with local power (Sony Corporation, 2017; Ikegami, n.d.-d) | Set by the converters, such as 10 km for FiDO (AJA Video Systems, 2023) |
+| In the field | "Fast and dirty" repair with tape (Longhurst & Brooks, 2017) | Keep it capped, clean and dry (Sony Corporation, 2017; Longhurst & Brooks, 2017) | Laid on the ground; same fiber care |
+
+**Dirt, sand and water.** Fischer, a maker of triax connectors and so of the competing technology, warns that a fiber connector using a 9-micron single-mode core, "such as SMPTE 304," can cause problems in sand, mud or water "without extreme care" (Richards, 2018, p. 4). Weigh the source, but the warning matches what the fiber makers say themselves: Sony on dust (lesson 9) and LEMO on water. Section 4 covers how to inspect and clean a fiber end before it is mated.
+
+:::reveal Which connectors does Camplex offer on its Pro-Tac tactical fiber? ||| ST or LC, on 4, 8 or 12 fanouts (Camplex, n.d.-a).
+
+:::reveal Why does a camera at the far end of tactical fiber need its own power? ||| Tactical fiber carries fiber and strength members, no power copper, unlike the SMPTE hybrid cable. The lesson reasons this from the makers' descriptions, for the reviewer to confirm.
+
+## Sources
+- ${CAMPLEX_PROTAC} Locator: description and "Features".
+- ${CAMPLEX_TACTICAL} Locator: "Signal Extender & Reel Systems".
+- ${AJA_FIDO} Locator: p. 4, "Overview" and "Features".
+- ${CANARE_HYBRID} Locator: specification table.
+- ${IKEGAMI_BST55} Locator: specifications.
+- ${IKEGAMI_HDK79EC} Locator: p. 5, "Transmission Distance".
+- ${IKEGAMI_UHK430} Locator: CCU-430 description.
+- ${SONY_2017} Locator: p. 10, note under item g; p. 34, "About Transmission Distance".
+- ${LONGHURST_2017} Locator: PDF p. 2, triax repair; PDF p. 3, water.
+- ${RICHARDS_2018} Locator: p. 4, the SMPTE 304 warning.`,
+    },
+    {
+      slug: "section-3-quiz",
+      title: "Section 3 quiz · Camera cables",
+      section: "3 · Camera cables",
+      body: "A graded check on what a camera control unit does, triax, the SMPTE hybrid fiber camera cable and tactical fiber. Each answer links back to the lesson that teaches it.",
+      quiz: {
+        passingScore: 80,
+        questionsPerAttempt: 5,
+        shuffleOptions: true,
+        questions: [
+          { prompt: "Which three jobs does Sony say its HXCU-FB80 CCU does?", options: ["Signal processing, an interface, camera power", "Recording, editing and storing camera video", "Switching, graphics and replay for the show", "Lighting control, tally and audio mixing"], correctIndex: 0, explanation: "Sony Corporation (2017, p. 3): it \"performs signal processing, provides an interface for external equipment, and supplies power to the camera.\"", sourceLessonSlug: "the-ccu-and-triax" },
+          { prompt: "With a remote control panel, what does Sony's CCU form?", options: ["A video router", "A camera control system", "A sync generator", "An intercom matrix"], correctIndex: 1, explanation: "Sony Corporation (2017, p. 3): with a Remote Control Panel it forms a camera control system.", sourceLessonSlug: "the-ccu-and-triax" },
+          { prompt: "What does Ikegami say its CCU sends to and from the camera over fiber?", options: ["Only the camera's program video", "Only power and intercom audio", "Video, audio and control signals", "Only timecode and reference sync"], correctIndex: 2, explanation: "Ikegami (n.d.-d): fiber carries \"video, audio and control signals.\"", sourceLessonSlug: "the-ccu-and-triax" },
+          { prompt: "When does Ikegami say the CCU also powers the camera?", options: ["Only on tactical fiber runs", "Only when it runs on triax", "Never; heads use batteries", "When hybrid fiber/copper is used"], correctIndex: 3, explanation: "Ikegami (n.d.-d): \"supplying the power to the camera when hybrid fiber/copper cable is used.\"", sourceLessonSlug: "the-ccu-and-triax" },
+          { prompt: "Which intercom types does Ikegami list on its CCU and base-station panels?", options: ["4-wire, Clear-Com or RTS", "Dante, AES67 or MADI", "DMX, RS-232 or USB", "Wireless IFB only"], correctIndex: 0, explanation: "Ikegami (n.d.-a, n.d.-b): intercom (4-wire, Clear-Com or RTS).", sourceLessonSlug: "the-ccu-and-triax" },
+          { prompt: "Which of these does Ikegami list among the connections at the CCU end?", options: ["A DMX output", "A prompter feed", "A power feeder", "A USB hub port"], correctIndex: 1, explanation: "Ikegami's list: SDI program and monitor outputs, returns, reference, prompter feed, intercom, program sound, tally and a data trunk.", sourceLessonSlug: "the-ccu-and-triax" },
+          { prompt: "Into what does Blackmagic's Studio Fiber Converter combine video, audio and control?", options: ["Four 12G-SDI coax cables", "A Cat6A Ethernet cable", "A single optical fiber cable", "A triax cable and a BNC"], correctIndex: 2, explanation: "Blackmagic Design (n.d.-b): it \"converts SDI video, audio, and remote camera control connections into a single optical fiber cable.\"", sourceLessonSlug: "the-ccu-and-triax" },
+          { prompt: "Which format does Blackmagic's Studio Fiber Converter give for the camera feed?", options: ["3G-SDI", "HDMI", "ST 2110", "12G-SDI"], correctIndex: 3, explanation: "Blackmagic Design (n.d.-b): 12G-SDI for the camera feed, plus three HD return feeds.", sourceLessonSlug: "the-ccu-and-triax" },
+          { prompt: "How many HD return feeds does Blackmagic's Studio Fiber Converter provide?", options: ["Three", "Two", "Four", "One"], correctIndex: 0, explanation: "Blackmagic Design (n.d.-b): three HD return feeds, talkback, tally and power.", sourceLessonSlug: "the-ccu-and-triax" },
+          { prompt: "Besides signals, what does Blackmagic's Studio Fiber Converter provide?", options: ["Lighting for the set", "Power for remote cameras", "Storage for recordings", "Wi-Fi for the crew"], correctIndex: 1, explanation: "Blackmagic Design (n.d.-b): \"power for your remote cameras.\"", sourceLessonSlug: "the-ccu-and-triax" },
+          { prompt: "What does Ikegami's DTA-55 and BST-55 triax system let owners do?", options: ["Swap triax for tactical fiber", "Run 12G-SDI over Cat6A", "Go from SD to HD on old triax", "Power cameras from the mains"], correctIndex: 2, explanation: "Ikegami (n.d.-a): move from SD to HD \"while still using their existing triax camera cable infrastructure.\"", sourceLessonSlug: "the-ccu-and-triax" },
+          { prompt: "How does Ikegami describe triax as a cable and connector type?", options: ["Fragile, factory repair only", "Light, for indoor use only", "Cheap, for one-time use", "Rugged and easy to repair"], correctIndex: 3, explanation: "Ikegami (n.d.-a): a \"rugged easy to repair cable/connector type.\"", sourceLessonSlug: "the-ccu-and-triax" },
+          { prompt: "What power for the camera head does Ikegami list for the BST-55?", options: ["Less than 180 VA", "Less than 18 VA", "Exactly 600 V", "Up to 10 A"], correctIndex: 0, explanation: "Ikegami (n.d.-a): \"Power for camera head: less than 180VA.\" 600 V and 10 A are LEMO's hybrid connector ratings.", sourceLessonSlug: "the-ccu-and-triax" },
+          { prompt: "What maximum cable distance does Ikegami give for the BST-55?", options: ["4 km on hybrid fiber", "800 m on Fujikura 8.8 mm", "1,550 m on Belden 9267", "100 m on RG6 coax"], correctIndex: 1, explanation: "Ikegami (n.d.-a): maximum 800 m on Fujikura 8.8 mm triax.", sourceLessonSlug: "the-ccu-and-triax" },
+          { prompt: "Reasoning from the BST-55's specifications, what shares the one triax cable?", options: ["Only the video; power runs apart", "Only the intercom and tally lines", "All the signals and camera power", "Only power; signals ride fiber"], correctIndex: 2, explanation: "The triax is the only link between base station and camera adaptor, so every signal and the camera's power share it; the reviewer will confirm against a triax manual.", sourceLessonSlug: "the-ccu-and-triax" },
+          { prompt: "On Ikegami's HDK-79EC figures, how far does 14.5 mm Fujikura triax run?", options: ["850 m", "1,000 m", "500 m", "1,550 m"], correctIndex: 3, explanation: "Ikegami (n.d.-c, p. 5): 1,550 m on 14.5 mm Fujikura; 850 m on 8.8 mm.", sourceLessonSlug: "the-ccu-and-triax" },
+          { prompt: "On Ikegami's HDK-79EC figures, how far does 8.8 mm Fujikura triax run?", options: ["850 m", "1,550 m", "1,000 m", "500 m"], correctIndex: 0, explanation: "Ikegami (n.d.-c, p. 5): 850 m on 8.8 mm Fujikura.", sourceLessonSlug: "the-ccu-and-triax" },
+          { prompt: "On Ikegami's HDK-79EC figures, how far does 9.2 mm Belden 9267 triax run?", options: ["1,000 m", "500 m", "850 m", "1,550 m"], correctIndex: 1, explanation: "Ikegami (n.d.-c, p. 5): 500 m on Belden 9267; 1,000 m on 13.2 mm Belden 9232.", sourceLessonSlug: "the-ccu-and-triax" },
+          { prompt: "On Ikegami's HDK-79EC figures, how far does 13.2 mm Belden 9232 triax run?", options: ["500 m", "850 m", "1,000 m", "1,550 m"], correctIndex: 2, explanation: "Ikegami (n.d.-c, p. 5): 1,000 m on Belden 9232.", sourceLessonSlug: "the-ccu-and-triax" },
+          { prompt: "What pattern does lesson 8 read in Ikegami's triax table?", options: ["Belden always outruns Fujikura", "Thinner triax runs farther", "Every triax runs the same", "For each maker, thicker goes farther"], correctIndex: 3, explanation: "Fujikura 14.5 mm beats 8.8 mm, and Belden 13.2 mm beats 9.2 mm: within each maker's pair, the thicker cable runs farther.", sourceLessonSlug: "the-ccu-and-triax" },
+          { prompt: "Under about what length does LEMO's white paper put HDTV on RG-11 type triax?", options: ["About 1000 m", "About 100 m", "About 10 km", "About 400 m"], correctIndex: 0, explanation: "Longhurst and Brooks (2017, p. 2): under about 1000 m, about 2000 m with a repeater.", sourceLessonSlug: "the-ccu-and-triax" },
+          { prompt: "How does lesson 8 treat the LEMO paper's triax distances?", options: ["As current SMPTE limits", "As dated, older-camera figures", "As Ikegami's own figures", "As measured by this course"], correctIndex: 1, explanation: "LEMO attributes them to Grass Valley literature for an older camera, so the lesson treats them as dated.", sourceLessonSlug: "the-ccu-and-triax" },
+          { prompt: "What does LEMO's white paper say a broken triax can be repaired with in a hurry?", options: ["A fusion splicer and a cleaver", "A crimp tool and a new BNC", "A stripper and insulation tape", "Epoxy and a polishing puck"], correctIndex: 2, explanation: "Longhurst and Brooks (2017, p. 2): a \"fast and dirty\" repair with a stripper and insulation tape.", sourceLessonSlug: "the-ccu-and-triax" },
+          { prompt: "How far does Fischer say its 1051 Triax HD Pro+ reaches in HD without a repeater?", options: ["Up to 800 m", "Up to 10 km", "Up to 4 km", "Up to 1.5 km"], correctIndex: 3, explanation: "Richards (2018, pp. 4 to 5): \"up to 1.5 kilometers\" in HD without a repeater.", sourceLessonSlug: "the-ccu-and-triax" },
+          { prompt: "How long does Fischer say a repair of its triax connector takes with simple tools?", options: ["About 10 minutes", "About two hours", "About one day", "About one minute"], correctIndex: 0, explanation: "Richards (2018, pp. 4 to 5): about 10 minutes with simple tools.", sourceLessonSlug: "the-ccu-and-triax" },
+          { prompt: "How does lesson 8 treat Fischer's reach and repair figures?", options: ["As independent test results", "As a maker's claims about itself", "As SMPTE requirements", "As Ikegami's own specifications"], correctIndex: 1, explanation: "They come from Fischer's own white paper about its own product, and the lesson says so.", sourceLessonSlug: "the-ccu-and-triax" },
+          { prompt: "Do the different triax connector families mate with one another, according to lesson 8?", options: ["Yes, every triax plug mates", "No, none of them ever mates", "Left open; match the system", "Only Fischer and LEMO mate"], correctIndex: 2, explanation: "Fischer's compatibility claim covers its own 1051 family. Whether other families mate is left open, so match the connector to the camera system.", sourceLessonSlug: "the-ccu-and-triax" },
+          { prompt: "What does the SMPTE hybrid camera cable carry?", options: ["Copper for signals, fiber for power", "Coax for video, pairs for audio", "Fiber only, with aramid members", "Fiber for signals, copper for power"], correctIndex: 3, explanation: "The hybrid cable carries fiber for the signals and copper for power and control (Canare Electric, n.d.-c).", sourceLessonSlug: "the-smpte-hybrid-camera-cable" },
+          { prompt: "Which SMPTE standard covers the hybrid camera cable?", options: ["ST 311", "ST 304", "ST 2082", "ST 297"], correctIndex: 0, explanation: "ST 311 covers the cable and ST 304 the connector; Canare sells LF-2SM9N as ST 311 compliant.", sourceLessonSlug: "the-smpte-hybrid-camera-cable" },
+          { prompt: "Which SMPTE standard covers the hybrid camera connector?", options: ["ST 311", "ST 304", "ST 2110", "ST 259"], correctIndex: 1, explanation: "ST 304: Camplex and LEMO describe the SMPTE 304M connector.", sourceLessonSlug: "the-smpte-hybrid-camera-cable" },
+          { prompt: "Which fibers does Canare's LF-2SM9N carry?", options: ["Two multimode 50/125", "Four single-mode 9/125", "Two single-mode 9/125", "One multimode 62.5/125"], correctIndex: 2, explanation: "Canare Electric (n.d.-c): two single-mode 9/125 fibers, low water peak.", sourceLessonSlug: "the-smpte-hybrid-camera-cable" },
+          { prompt: "Which power conductors does Canare's LF-2SM9N carry?", options: ["2 x 25 AWG", "2 x 14 AWG", "6 x 18 AWG", "4 x 20 AWG"], correctIndex: 3, explanation: "Canare Electric (n.d.-c): 4 x 20 AWG power and 2 x 25 AWG control conductors.", sourceLessonSlug: "the-smpte-hybrid-camera-cable" },
+          { prompt: "Which control conductors does Canare's LF-2SM9N carry?", options: ["2 x 25 AWG", "4 x 20 AWG", "2 x 14 AWG", "8 x 24 AWG"], correctIndex: 0, explanation: "Canare Electric (n.d.-c): 2 x 25 AWG control conductors.", sourceLessonSlug: "the-smpte-hybrid-camera-cable" },
+          { prompt: "What outside diameter does Canare give for LF-2SM9N?", options: ["8.8 mm", "9.2 mm", "14.5 mm", "13.2 mm"], correctIndex: 1, explanation: "Canare Electric (n.d.-c): 9.2 mm. 8.8 and 14.5 mm are the Fujikura triax sizes in lesson 8.", sourceLessonSlug: "the-smpte-hybrid-camera-cable" },
+          { prompt: "What minimum bend radius does Canare give for LF-2SM9N?", options: ["20 x outside diameter", "10 x outside diameter", "6 x outside diameter", "2 x outside diameter"], correctIndex: 2, explanation: "Canare Electric (n.d.-c): 6 x the nominal outside diameter.", sourceLessonSlug: "the-smpte-hybrid-camera-cable" },
+          { prompt: "What temperature range does Canare give for LF-2SM9N?", options: ["0 to +40 °C", "-10 to +60 °C", "-20 to +50 °C", "-40 to +75 °C"], correctIndex: 3, explanation: "Canare Electric (n.d.-c): -40 to +75 °C.", sourceLessonSlug: "the-smpte-hybrid-camera-cable" },
+          { prompt: "What fiber type does Canare name for LF-2SM9N?", options: ["G.657.A2, low bending loss", "OM3 laser-optimized multimode", "OM1 62.5/125 multimode", "Polarization-maintaining type"], correctIndex: 0, explanation: "Canare Electric (n.d.-c): ITU-T G.657.A2, \"low bending loss\" single-mode.", sourceLessonSlug: "the-smpte-hybrid-camera-cable" },
+          { prompt: "Someone says SMPTE camera fiber is multimode. What is right?", options: ["Right: it is OM3 multimode", "Wrong: it is single-mode", "Right for HD, wrong for 4K", "Wrong: it is plastic fiber"], correctIndex: 1, explanation: "ST 311 cable carries two single-mode fibers (Canare; LEMO; Camplex).", sourceLessonSlug: "the-smpte-hybrid-camera-cable" },
+          { prompt: "What does LEMO's \"2 FO, 2 HV + 2 LV\" mean?", options: ["Two fiber outputs, video, lines", "Two front optics, halves, latches", "Two fiber, high- and low-voltage", "Two frequencies, two levels each"], correctIndex: 2, explanation: "LEMO (n.d., p. 2): two fiber contacts, two high-voltage and two low-voltage contacts.", sourceLessonSlug: "the-smpte-hybrid-camera-cable" },
+          { prompt: "Which cable types does LEMO list for its 3K.93C SMPTE insert?", options: ["ARIB OC or Canare HFO", "Belden 1694A or 4794R", "OM3 or OM4 multimode", "SMPTE 311M or EBU R100"], correctIndex: 3, explanation: "LEMO (n.d., p. 2): cable type \"SMPTE 311M or EBU R100.\"", sourceLessonSlug: "the-smpte-hybrid-camera-cable" },
+          { prompt: "How does LEMO's 3K.93C connector lock?", options: ["Push-pull", "Bayonet", "Screw thread", "Snap-in clip"], correctIndex: 0, explanation: "LEMO (n.d., p. 2): push-pull locking.", sourceLessonSlug: "the-smpte-hybrid-camera-cable" },
+          { prompt: "What rated current does LEMO give for the 3K.93C?", options: ["20 A", "10 A", "600 A", "1 A"], correctIndex: 1, explanation: "LEMO (n.d., p. 2): rated current 10 A.", sourceLessonSlug: "the-smpte-hybrid-camera-cable" },
+          { prompt: "What working voltage does LEMO give for the 3K.93C's power contacts?", options: ["42 V", "120 V", "600 V", "48 V"], correctIndex: 2, explanation: "LEMO (n.d., p. 2): 600 V for power and 42 V for signal. It is a connector rating, not the voltage a CCU sends.", sourceLessonSlug: "the-smpte-hybrid-camera-cable" },
+          { prompt: "What working voltage does LEMO give for the 3K.93C's signal contacts?", options: ["600 V", "48 V", "30 V", "42 V"], correctIndex: 3, explanation: "LEMO (n.d., p. 2): 42 V for signal.", sourceLessonSlug: "the-smpte-hybrid-camera-cable" },
+          { prompt: "How does Camplex describe the SMPTE 304M hybrid connector?", options: ["Two single-mode fibers, two power, two low-voltage", "Four multimode fibers and two power conductors", "Two fibers and one BNC for the program video", "One fiber and four power conductors in a shell"], correctIndex: 0, explanation: "Camplex (2019a): \"two singlemode fibers, two power conductors and two low voltage conductors in a single connector.\"", sourceLessonSlug: "the-smpte-hybrid-camera-cable" },
+          { prompt: "What typical attenuation and return loss does LEMO give for its SMPTE connector?", options: ["0.5 dB, return loss over 20 dB", "0.1 dB, return loss over 45 dB", "1.0 dB, return loss over 30 dB", "0.05 dB, return loss over 60 dB"], correctIndex: 1, explanation: "Longhurst and Brooks (2017, p. 7): typical attenuation 0.1 dB and return loss over 45 dB.", sourceLessonSlug: "the-smpte-hybrid-camera-cable" },
+          { prompt: "What insertion loss does Canare claim for its SMPTE camera cable assemblies?", options: ["0.1 dB or less at 850 nm", "1.0 dB or less at 1.55 µm", "0.5 dB or less at 1.3 µm", "3 dB or less at 1300 nm"], correctIndex: 2, explanation: "Canare Electric (n.d.-b): insertion loss 0.5 dB or less at 1.3 µm, return loss 45 dB or more.", sourceLessonSlug: "the-smpte-hybrid-camera-cable" },
+          { prompt: "What gender is the SMPTE 304 connector on Blackmagic's camera-side fiber converter?", options: ["Female", "Genderless", "Either one", "Male"], correctIndex: 3, explanation: "Blackmagic Design (n.d.-b): male on the camera side, female on the studio side.", sourceLessonSlug: "the-smpte-hybrid-camera-cable" },
+          { prompt: "What gender is the SMPTE 304 connector on Blackmagic's studio-side converter?", options: ["Female", "Male", "Genderless", "Either one"], correctIndex: 0, explanation: "Blackmagic Design (n.d.-b): the studio-side converter has a female SMPTE 304 connector.", sourceLessonSlug: "the-smpte-hybrid-camera-cable" },
+          { prompt: "Can Canare's Japanese-style OC hybrid connectors mate straight to SMPTE connectors?", options: ["Yes; they share one pinout", "No; a conversion cable is needed", "Yes, below 1 km of cable", "Yes, once the caps are off"], correctIndex: 1, explanation: "Canare Electric (n.d.-b): \"non-compatible with SMPTE connectors\"; a conversion cable is needed.", sourceLessonSlug: "the-smpte-hybrid-camera-cable" },
+          { prompt: "Is 600 V the voltage a CCU puts on the hybrid cable's copper?", options: ["Yes: every CCU sends 600 V", "No: CCUs send exactly 42 V", "No: it is the connector's rating", "Yes, but only on long runs"], correctIndex: 2, explanation: "600 V is LEMO's working-voltage rating for the power contacts. No source read for the course states the supply voltage, and the course names none.", sourceLessonSlug: "the-smpte-hybrid-camera-cable" },
+          { prompt: "What precaution does lesson 9 set for the hybrid cable until the reviewer settles its voltage?", options: ["Treat it as data and plug it live", "Treat it as fiber and skip the copper", "Treat it as 600 V and call the FCC", "Treat it as power; follow the engineer"], correctIndex: 3, explanation: "\"Treat the hybrid cable as a power cable and follow the engineer's procedure for connecting it.\" The lesson labels this its own precaution.", sourceLessonSlug: "the-smpte-hybrid-camera-cable" },
+          { prompt: "How far does Ikegami say the UHK-430 reaches with power from the CCU?", options: ["Up to 4 km", "Up to 600 m", "Up to 2 km", "Up to 20 km"], correctIndex: 0, explanation: "Ikegami (n.d.-d): up to 4 km (13,123 ft).", sourceLessonSlug: "the-smpte-hybrid-camera-cable" },
+          { prompt: "How far does Sony give for the HXC-FB80 with lens and viewfinder on its hybrid cable?", options: ["250 m", "600 m", "4 km", "10 km"], correctIndex: 1, explanation: "Sony Corporation (2017, p. 34): 600 m with lens and viewfinder; 250 m for the camera adaptor.", sourceLessonSlug: "the-smpte-hybrid-camera-cable" },
+          { prompt: "According to Sony, what does reach on hybrid cable vary with?", options: ["The number of return feeds", "The SDI rate of the program", "The power peripherals draw", "The color of the jacket"], correctIndex: 2, explanation: "Sony Corporation (2017, p. 34): it \"varies depending on the total power consumption of the connected peripherals.\"", sourceLessonSlug: "the-smpte-hybrid-camera-cable" },
+          { prompt: "With the camera powered over the hybrid cable, what does LEMO say limits distance?", options: ["Loss in the single-mode fiber", "Reflections at the connector", "The CCU's processing delay", "Voltage drop in the power part"], correctIndex: 3, explanation: "Longhurst and Brooks (2017, p. 3): distance \"is only limited by the voltage drop in the electrical power part.\"", sourceLessonSlug: "the-smpte-hybrid-camera-cable" },
+          { prompt: "With local camera power, how far does LEMO say HD can run on single-mode fiber?", options: ["Well over 20 km", "About 600 m", "About 4 km", "Exactly 10 km"], correctIndex: 0, explanation: "Longhurst and Brooks (2017, p. 3): \"well over 20km\" with local power.", sourceLessonSlug: "the-smpte-hybrid-camera-cable" },
+          { prompt: "Without the hybrid copper, what does single-mode fiber alone carry on Sony's system?", options: ["Power but no signals", "All signals except power", "Only the program video", "Only control and tally"], correctIndex: 1, explanation: "Sony Corporation (2017): \"all signals (except power),\" up to 10 km on general single-mode cable with LC connectors.", sourceLessonSlug: "the-smpte-hybrid-camera-cable" },
+          { prompt: "What does Sony say to do with a hybrid cable's end when it is not in use?", options: ["Coil it under tension", "Leave the end open", "Put its cap back on", "Wipe it with water"], correctIndex: 2, explanation: "Sony Corporation (2017, p. 10): dust may cause transmission errors; replace the cable's cap when not in use.", sourceLessonSlug: "the-smpte-hybrid-camera-cable" },
+          { prompt: "What does LEMO's white paper say about water and hybrid connectors?", options: ["Water helps cool the contacts", "Water matters only for triax", "Dry it with compressed air", "Waterproof end caps are essential"], correctIndex: 3, explanation: "Longhurst and Brooks (2017, p. 3): \"Any connector that is filled with water will have problems if it is to handle power\"; end caps are \"essential.\"", sourceLessonSlug: "the-smpte-hybrid-camera-cable" },
+          { prompt: "What does Canare say to clean hybrid camera plugs with?", options: ["A non-alcohol cleaning stick", "A cotton swab and water", "Shop compressed air", "A dry fingertip"], correctIndex: 0, explanation: "Canare Electric (n.d.-b): plugs with a non-alcohol cleaning stick; shells with cotton gauze.", sourceLessonSlug: "the-smpte-hybrid-camera-cable" },
+          { prompt: "What on a ferrule tip does Canare say \"can have a disabling effect\"?", options: ["A dust cap", "Scratches or particles", "A blue boot", "A push-pull latch"], correctIndex: 1, explanation: "Canare Electric (n.d.-b): scratches or particles on a ferrule tip \"can have a disabling effect.\"", sourceLessonSlug: "the-smpte-hybrid-camera-cable" },
+          { prompt: "About what minimum bend radius is 6 x the outside diameter of LF-2SM9N?", options: ["About 92 mm", "About 184 mm", "About 55 mm", "About 9 mm"], correctIndex: 2, explanation: "6 x 9.2 mm is about 55 mm.", sourceLessonSlug: "the-smpte-hybrid-camera-cable" },
+          { prompt: "Does Canare's sheet say whether LF-2SM9N's bend radius is for pulling or after installation?", options: ["Yes, it is the pulling figure", "Yes, it is the installed figure", "Yes, the two are the same", "No; the course leaves it open"], correctIndex: 3, explanation: "The sheet does not say, and the course leaves it open; lesson 14 explains why the difference matters.", sourceLessonSlug: "the-smpte-hybrid-camera-cable" },
+          { prompt: "What kind of fiber is Camplex's Pro-Tac tactical cable?", options: ["Single-mode", "OM3 multimode", "OM1 multimode", "Plastic fiber"], correctIndex: 0, explanation: "Camplex (n.d.-a): single-mode tactical fiber on reels.", sourceLessonSlug: "tactical-fiber" },
+          { prompt: "With how many fanouts does Camplex offer Pro-Tac reels?", options: ["1, 2 or 3", "4, 8 or 12", "16, 24 or 48", "2, 6 or 10"], correctIndex: 1, explanation: "Camplex (n.d.-a): reels with 4, 8 or 12 fanouts.", sourceLessonSlug: "tactical-fiber" },
+          { prompt: "Which connectors does Camplex offer on Pro-Tac?", options: ["SC or FC", "BNC or N", "ST or LC", "XLR or DMX"], correctIndex: 2, explanation: "Camplex (n.d.-a): ST or LC connectors.", sourceLessonSlug: "tactical-fiber" },
+          { prompt: "How does Camplex describe Pro-Tac's construction?", options: ["Steel armor and a PVC jacket", "Copper power pairs and a braid", "A foil shield and a rubber jacket", "Aramid members, polyurethane jacket"], correctIndex: 3, explanation: "Camplex (n.d.-a): \"crush resistant with internal aramid strength members and a polyurethane jacket.\"", sourceLessonSlug: "tactical-fiber" },
+          { prompt: "Where does Camplex say Pro-Tac can be used for a temporary deployment?", options: ["Directly on the ground", "Only inside conduit", "Only on a messenger wire", "Only buried for good"], correctIndex: 0, explanation: "Camplex (n.d.-a): \"Can be used directly on the ground for temporary deployment.\"", sourceLessonSlug: "tactical-fiber" },
+          { prompt: "What use does Camplex build Pro-Tac for?", options: ["One permanent building install", "Many outside broadcast deployments", "Links between ships at sea", "Office network patch panels"], correctIndex: 1, explanation: "Camplex (n.d.-a): \"multiple deployments in outside broadcast.\"", sourceLessonSlug: "tactical-fiber" },
+          { prompt: "Which signals do Camplex's converter systems carry over tactical fiber?", options: ["Only 12G-SDI video", "Only Ethernet data", "SDI, HDMI, Ethernet and audio", "Power, SDI and DMX"], correctIndex: 2, explanation: "Camplex (n.d.-c): \"4K HD/3G/6G/12G-SDI, HDMI, 100BaseT Ethernet, and audio signals.\"", sourceLessonSlug: "tactical-fiber" },
+          { prompt: "How far does AJA say a FiDO pair carries 12G-SDI on single-mode fiber?", options: ["Up to 2 km", "Up to 600 m", "Up to 4 km", "Up to 10 km"], correctIndex: 3, explanation: "AJA Video Systems (2023, p. 4): \"up to 10km.\"", sourceLessonSlug: "tactical-fiber" },
+          { prompt: "Which fiber connections does lesson 10 give for AJA's FiDO converters?", options: ["LC or ST single-mode", "SC multimode only", "SMPTE 304 hybrid", "BNC 75-ohm coax"], correctIndex: 0, explanation: "Lesson 10: a FiDO pair with LC or ST single-mode connections (AJA Video Systems, 2023).", sourceLessonSlug: "tactical-fiber" },
+          { prompt: "Reasoned in lesson 10, how does SDI usually ride a tactical run?", options: ["Directly, with no converters", "Through a converter at each end", "On a copper pair in the jacket", "Through one HDMI adapter"], correctIndex: 1, explanation: "Camplex and AJA both sell converter pairs, so SDI rides tactical fiber through a converter at each end.", sourceLessonSlug: "tactical-fiber" },
+          { prompt: "Does tactical fiber carry power to the far end, by lesson 10's reasoning?", options: ["Yes, on copper pairs inside", "Yes, the light powers it", "No; the far end needs power", "Only on 12-fanout reels"], correctIndex: 2, explanation: "Pro-Tac's description lists fibers and strength members, no copper, so the far end needs local power or a separate feed.", sourceLessonSlug: "tactical-fiber" },
+          { prompt: "What is lesson 10's reasoning that tactical fiber carries no power?", options: ["Camplex says it carries 180 VA", "AJA says FiDO powers cameras", "SMPTE ST 311 says it in words", "Camplex lists no copper; Canare does"], correctIndex: 3, explanation: "Camplex describes fibers, strength members and jacket, while Canare's hybrid cable lists power conductors.", sourceLessonSlug: "tactical-fiber" },
+          { prompt: "What is the status of the claim that tactical fiber carries no power?", options: ["Reasoned; the reviewer confirms", "Quoted from Camplex's page", "Quoted from SMPTE ST 311", "Measured by this course"], correctIndex: 0, explanation: "No source read says it in words; the lesson reasons it and the reviewer will confirm it before release.", sourceLessonSlug: "tactical-fiber" },
+          { prompt: "Which of the three camera cables carries no camera power?", options: ["Triax", "Tactical fiber", "SMPTE hybrid", "All of them carry it"], correctIndex: 1, explanation: "Triax carries power (BST-55, under 180 VA); the hybrid carries it when the CCU powers the camera; tactical fiber does not.", sourceLessonSlug: "tactical-fiber" },
+          { prompt: "What example reach does lesson 10's table give for triax?", options: ["Up to 10 km", "Up to 4 km, powered", "500 to 1,550 m, by cable", "About 100 m"], correctIndex: 2, explanation: "Ikegami (n.d.-c): 500 to 1,550 m depending on the cable.", sourceLessonSlug: "tactical-fiber" },
+          { prompt: "What sets the reach of a tactical fiber run, per lesson 10's table?", options: ["The color of its jacket", "The CCU's power supply", "A triax repeater", "The converters at each end"], correctIndex: 3, explanation: "Tactical reach is set by the converters, such as 10 km for AJA's FiDO.", sourceLessonSlug: "tactical-fiber" },
+          { prompt: "Where does Fischer warn that a 9-micron single-mode connector can cause problems without extreme care?", options: ["Sand, mud or water", "Heat, sun and wind", "Snow, ice and frost", "Rain, but only at night"], correctIndex: 0, explanation: "Richards (2018, p. 4): sand, mud or water, \"without extreme care.\"", sourceLessonSlug: "tactical-fiber" },
+          { prompt: "Why does lesson 10 say to weigh Fischer's warning about fiber?", options: ["Fischer makes SMPTE fiber cable", "Fischer makes competing triax gear", "Fischer is a standards body", "Fischer wrote ST 304 itself"], correctIndex: 1, explanation: "Fischer makes triax connectors, the competing technology, so its warning about fiber comes from an interested party.", sourceLessonSlug: "tactical-fiber" },
+          { prompt: "Which fiber makers' own warnings does lesson 10 say match Fischer's?", options: ["AJA on lasers, VESA on length", "Canare on bends, Belden on loss", "Sony on dust and LEMO on water", "Coaxicom on VSWR, DDK on BNC"], correctIndex: 2, explanation: "Sony warns that dust may cause transmission errors, and LEMO that water-filled power connectors have problems.", sourceLessonSlug: "tactical-fiber" },
+        ],
+      },
+    },
   ],
 };
