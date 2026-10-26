@@ -90,6 +90,15 @@ import type { AuthoredCourse } from "./authored-course";
 //  - L20: Audinate's own switch requirements (crew00-dante-audinate-requirements); whether Dante
 //    needs a dedicated network (crew00-dante-dedicated-network); ST 2110 copper in practice
 //    (crew00-st2110-copper).
+//  - L21: the ground pin on each stage pin size (crew00-stage-pin-ground); whether TRUE1 mates with
+//    classic powerCON (crew00-true1-intermating).
+//  - L22: black, red and blue as the hots, by elimination (crew00-cam-hot-colors); why reverse gender
+//    exists (crew00-reverse-gender-reason); OSHA's 2002 letter on daisy chains
+//    (crew00-osha-daisy-chain-letter).
+//  - L23: single-conductor cam feeder under OSHA and the NEC (crew00-cam-feeder-osha-nec); Article
+//    530's title (crew00-nec-530-title); Oregon's official rule text (crew00-oregon-rule-official);
+//    ETCP in place of a license (crew00-etcp-license).
+//  - L24: a crew procedure for mismatched cam gender (crew00-turnaround-procedure).
 //
 // House style, matching stage-and-broadcast-rigging-course.ts and arena-transmission-course.ts:
 // `section` on every lesson; flush-left single-line `:::reveal q ||| a`; recallContent from the second
@@ -229,8 +238,70 @@ const CLEARCOM_ISOLATE =
 const CLEARCOM_AES67 =
   "Clear-Com. (2026b, January 26). *Matrix: New install - Network requirements for AES67 audio*. Clear-Com Solution Finder. https://clear-com.atlassian.net/wiki/spaces/SF/pages/3142975501";
 
+// Power (research file 03, section 7). Regulations were read in the official eCFR text current to
+// October 22, 2026 (osha.gov refused the fetch).
+const ECFR = "eCFR text current to October 22, 2026.";
+const CFR_1910_303 = `Occupational Safety and Health Standards, 29 C.F.R. § 1910.303 (2026). ${ECFR} ${RETRIEVED} https://www.ecfr.gov/api/versioner/v1/full/2026-10-22/title-29.xml?part=1910&section=1910.303`;
+const CFR_1910_304 = `Occupational Safety and Health Standards, 29 C.F.R. § 1910.304 (2026). ${ECFR} ${RETRIEVED} https://www.ecfr.gov/api/versioner/v1/full/2026-10-22/title-29.xml?part=1910&section=1910.304`;
+const CFR_1910_305 = `Occupational Safety and Health Standards, 29 C.F.R. § 1910.305 (2026). ${ECFR} ${RETRIEVED} https://www.ecfr.gov/api/versioner/v1/full/2026-10-22/title-29.xml?part=1910&section=1910.305`;
+const CFR_1910_332 = `Occupational Safety and Health Standards, 29 C.F.R. § 1910.332 (2026). ${ECFR} ${RETRIEVED} https://www.ecfr.gov/api/versioner/v1/full/2026-10-22/title-29.xml?part=1910&section=1910.332`;
+const CFR_1910_334 = `Occupational Safety and Health Standards, 29 C.F.R. § 1910.334 (2026). ${ECFR} ${RETRIEVED} https://www.ecfr.gov/api/versioner/v1/full/2026-10-22/title-29.xml?part=1910&section=1910.334`;
+const CFR_1910_399 = `Occupational Safety and Health Standards, 29 C.F.R. § 1910.399 (2026). ${ECFR} ${RETRIEVED} https://www.ecfr.gov/api/versioner/v1/full/2026-10-22/title-29.xml?part=1910&section=1910.399`;
+const CFR_1926_404 = `Safety and Health Regulations for Construction, 29 C.F.R. § 1926.404 (2026). ${ECFR} ${RETRIEVED} https://www.ecfr.gov/api/versioner/v1/full/2026-10-22/title-29.xml?part=1926&section=1926.404`;
+const CFR_1926_405 = `Safety and Health Regulations for Construction, 29 C.F.R. § 1926.405 (2026). ${ECFR} ${RETRIEVED} https://www.ecfr.gov/api/versioner/v1/full/2026-10-22/title-29.xml?part=1926&section=1926.405`;
+const CFR_1926_416 = `Safety and Health Regulations for Construction, 29 C.F.R. § 1926.416 (2026). ${ECFR} ${RETRIEVED} https://www.ecfr.gov/api/versioner/v1/full/2026-10-22/title-29.xml?part=1926&section=1926.416`;
+const INTERPOWER = `Interpower. (n.d.). *NEMA nomenclature*. ${RETRIEVED} https://interpower.com/ic/designers/designing-for-export/guides-and-charts/nema-nomenclature-guide.html`;
+const LEVITON_2310 = `Leviton. (n.d.-a). *20 amp, 125 volt, flush mount locking receptacle, industrial grade (2310)*. ${RETRIEVED} https://leviton.com/products/2310`;
+const LEVITON_2610 = `Leviton. (n.d.-b). *30 amp, 125 volt, flush mount locking receptacle, industrial grade (2610)*. ${RETRIEVED} https://leviton.com/products/2610`;
+const LEVITON_2620 = `Leviton. (n.d.-c). *30 amp, 250 volt, flush mount locking receptacle, industrial grade (2620)*. ${RETRIEVED} https://leviton.com/products/2620`;
+const LEVITON_2710 = `Leviton. (n.d.-d). *30 amp, 125/250 volt, flush mount locking receptacle, industrial grade (2710)*. ${RETRIEVED} https://leviton.com/products/2710`;
+const LEVITON_2810 = `Leviton. (n.d.-e). *30 amp, 120/208 volt, flush mount locking receptacle, industrial grade (2810)*. ${RETRIEVED} https://leviton.com/products/2810`;
+const LEVITON_5252 = `Leviton. (n.d.-g). *15 amp duplex receptacle/outlet, industrial grade, self-grounding (5252)*. ${RETRIEVED} https://leviton.com/products/5252`;
+const LEVITON_5362 = `Leviton. (n.d.-h). *20 amp single receptacle/outlet, industrial grade, self-grounding (5362)*. ${RETRIEVED} https://leviton.com/products/5362`;
+const LEVITON_SHEET = `Leviton. (n.d.-i). *20A and 30A flush locking receptacle devices* (PK-A3388-10-02-0I) [Instruction sheet]. ${RETRIEVED} https://leviton.com/content/dam/leviton/commercial-industrial/product_documents/instruction_sheet/PK-A3388-10-02-0H-W.pdf`;
+const UNION_PIN = `Union Connector. (n.d.-a). *Stage pin connectors, pin connectors*. ${RETRIEVED} https://unionconnector.com/connectors/stage-pin-connectors`;
+const UNION_CS = `Union Connector. (n.d.-b). *Basic company switch with Series 16 Cam-Lok receptacle, 100 amp*. ${RETRIEVED} https://unionconnector.com/https-unionconnector-com-company-switch/`;
+const UNION_SAFECAM = `Union Connector. (n.d.-c). *Basic company switch with Series 16 SafeCam receptacles, 100 amp*. ${RETRIEVED} https://unionconnector.com/basic-company-switch-with-series-16-safecam-receptacles-100-amp/`;
+const UNION_GEN = `Union Connector. (n.d.-d). *Generator connection box: 100 - 400 amp*. ${RETRIEVED} https://unionconnector.com/generator-connection-box-with-series-16-cam-inlets-100-400-amp/`;
+const UNION_2016 = `Union Connector. (2016). *Company switch data sheet CSC-4020-CSP-3R* [Data sheet]. ${RETRIEVED} https://unionconnector.com/wp-content/uploads/Company_Switch_Data_Sheet_CSC4020CSP3R.pdf`;
+const NEUTRIK_PG = `Neutrik. (n.d.-a). *powerCON connectors & circular connectors* [Product guide; file name "PG EN 202210-V25"]. ${RETRIEVED} https://www.neutrik.com/media/10093/download/Neutrik%20Product%20Guide%20-%2006%20powerCON%20and%20Circular%20Connectors%20PG%20EN%20202210-V25.pdf?v=10`;
+const NEUTRIK_NAC3FCA = `Neutrik. (n.d.-b). *NAC3FCA* [Product page]. ${RETRIEVED} https://www.neutrik.com/en/product/nac3fca`;
+const NEUTRIK_NAC3FCB = `Neutrik. (n.d.-c). *NAC3FCB* [Product page]. ${RETRIEVED} https://www.neutrik.com/en/product/nac3fcb`;
+const NEUTRIK_NAC3FXW = `Neutrik. (n.d.-d). *NAC3FX-W* [Product page]. ${RETRIEVED} https://www.neutrik.com/en/product/nac3fx-w`;
+const NEUTRIK_NAC3FXXA = `Neutrik. (n.d.-f). *NAC3FXXA-W-S* [Product page]. ${RETRIEVED} https://www.neutrik.com/en/product/nac3fxxa-w-s`;
+const NEUTRIK_NAC3MPA = `Neutrik. (n.d.-g). *NAC3MPA-1* [Product page]. ${RETRIEVED} https://www.neutrik.com/en/product/nac3mpa-1`;
+const NEUTRIK_2025 =
+  "Neutrik. (2025). *powerCON TRUE1 cable connector NAC3F-TRUE1-CG & NAC3M-TRUE1-CG: Application & safety instruction* (BDA 728 V2) [Product manual]. https://www.neutrik.com/media/20441/download/BDA%20728%20V2%20-%20powerCON%20TRUE1%20Cable%20Connector%20NAC3F-TRUE1-CG%20&%20NAC3M-TRUE1-CG.pdf?v=1";
+const EATON_2017 =
+  "Eaton. (2017). *Cam-Lok single pole connectors E-Z1016 & E-Z1018 series: Installation and maintenance information IM 1012* (Rev. E) [Instruction sheet; distributor-hosted copy]. https://default.assets-hunzicker-prod.roccommercecloud.com/assets%2F9af5b16fd6300952702ff91767e7b311/E_Z1016_8006_Installation_Manual.pdf";
+const LEX_CABLES = `LEX Innovations. (n.d.-a). *Specification of feeder cables*. ${RETRIEVED} https://lexproducts.com/technical/specification-feeder-cables`;
+const LEX_FBL305W = `LEX Innovations. (n.d.-b). *100A 5-wire banded cam-type feeder extension (FBL305W)*. ${RETRIEVED} https://lexproducts.com/powerflex_detail?part=FBL305W-xxx`;
+const LEX_MMM = `LEX Innovations. (n.d.-c). *Cam-type adapter, (1) male to (1) male (MMM)*. ${RETRIEVED} https://lexproducts.com/powerflex_detail?part=MMM-y`;
+const LEX_CS100 = `LEX Innovations. (n.d.-d). *100A company switch black: Indoor CAM & lug panel (CS-100F-C5DS1-BLK)*. ${RETRIEVED} https://lexproducts.com/powergate_detail?part=CS-100F-C5DS1-BLK`;
+const LEX_2020 =
+  "Lex Products. (2020). *PowerGATE 400A-800A input/output panels user manual* (LM-PIP400). https://lexproducts.com/admin/storage/uploads/2020/04/13/5e94bc9f2ab61400A-800A-Input-Output-Panel-Manual-final.pdf";
+const SOUTHWIRE = `Southwire. (n.d.). *600V ROYAL SOOW cord with black jacket 90°C. MSHA approved* (SPEC 70000). ${RETRIEVED} https://www.southwire.com/wire-cable/flexible-cord/600v-royal-soow-cord-with-black-jacket-90-c-msha-approved/p/SPEC70000`;
+const BROOKHAVEN_2007 =
+  "Brookhaven National Laboratory. (2007). *[Fact sheet on extension cords and power strips]* [Fact sheet, created August 17, 2007]. https://www.bnl.gov/esh/shsd/pdf/electrical/fact%20sheet%20text%201.pdf";
+const CPSC_GFCI = `U.S. Consumer Product Safety Commission. (n.d.-a). *CPSC fact sheet: What is a GFCI?* (Pub. 099). ${RETRIEVED} https://www.cpsc.gov/s3fs-public/099_0.pdf`;
+const CPSC_2008 = "U.S. Consumer Product Safety Commission. (2008). *Home electrical safety checklist* (Pub. 513). https://www.cpsc.gov/s3fs-public/513.pdf";
+const NFPA_2021 =
+  "National Fire Protection Association. (2021). *Second revision no. 8529-NFPA 70-2021: Change title of Article 530* [NEC Code-Making Panel 15 second revision statements, 2023 edition cycle]. https://docinfofiles.nfpa.org/files/AboutTheCodes/70/70_A2022_NEC_P15_SD_SRStatements.pdf";
+const NFPA_2026 =
+  "National Fire Protection Association. (2026). *NEC restructure (2023-2029): Proposed organization of the 2029 National Electrical Code* [Chart]. https://content.nfpa.org/-/media/Project/Storefront/Catalog/Files/NEC/NEC-2023-2029-Restructure.pdf?rev=d73eb274f19d4b5ca73f25a26ce3134a";
+const ESTA_2016 =
+  "Entertainment Services and Technology Association. (2016). *Entertainment Technician Certification Program candidate handbook: Certified entertainment electrician* (Version 5.0). https://etcp.esta.org/certify/documents/electrical/ETCP_Handbook_Electrical.pdf";
+const ETCP_GET = `Entertainment Technician Certification Program. (n.d.-a). *Get certified: Entertainment electrician*. ${RETRIEVED} https://etcp.esta.org/certify/certify_electrical.html`;
+const ETCP_EXAM = `Entertainment Technician Certification Program. (n.d.-b). *Examination content: Entertainment electrician*. ${RETRIEVED} https://etcp.esta.org/certify/examination_electrical.html`;
+const MN_DLI = `Minnesota Department of Labor and Industry. (n.d.). *Filming in Minnesota: Electrical safety requirements* [PDF]. ${RETRIEVED} https://dli.mn.gov/sites/default/files/pdf/eli_filming.pdf`;
+const OREGON_ST =
+  "Oregon Secretary of State. (2026, February 11). *Limited journeyman stage electrician (ST)* [Oregon license directory entry; issuing agency DCBS Building Codes Division]. https://apps.oregon.gov/SOS/LicenseDirectory/LicenseDetail/18";
+const OREGON_RULE = `Limited Journeyman Stage Electrician License, Or. Admin. R. 918-282-0230 (2005). Legal Information Institute reproduction. ${RETRIEVED} https://www.law.cornell.edu/regulations/oregon/Or-Admin-Code-SS-918-282-0230`;
+
 /** The marker every lesson needing a qualified reviewer opens with (authoring checklist, section 3). */
 const QR = "> **Before release:** needs a qualified reviewer (QR): a broadcast engineer.";
+/** Section 7 (electrical safety) is held for a stage electrician instead. */
+const QR_ELEC = "> **Before release:** needs a qualified reviewer (QR): a stage electrician.";
 
 export const CABLES_AND_CONNECTORS_COURSE: AuthoredCourse = {
   title: "Cables and Connectors",
@@ -2051,6 +2122,395 @@ Reasoned together: media networks run multicast, which floods ports without IGMP
           { prompt: "What does Sennheiser say to do with the configuring computer's Wi-Fi?", options: ["Use it for Dante", "Bridge it to the LAN", "Set it to 5 GHz", "Switch it off"], correctIndex: 3, explanation: "Sennheiser (n.d.): assign the connected LAN as a private network and switch off the configuring PC's Wi-Fi.", sourceLessonSlug: "dante-st-2110-and-the-media-network" },
           { prompt: "By lesson 20's reasoning, when may a crew touch the house network?", options: ["Only with its owner's permission", "Whenever the show needs it", "Only after the show ends", "Only with a managed switch"], correctIndex: 0, explanation: "An office network belongs to someone else (Shure, 2021), so crews keep media on its own switches or VLANs and touch the house network only with permission.", sourceLessonSlug: "dante-st-2110-and-the-media-network" },
           { prompt: "Does lesson 20 say Audinate requires a dedicated network for Dante?", options: ["Yes, by Audinate's rule", "It leaves that open", "No, any network will do", "Yes, for over 32 channels"], correctIndex: 1, explanation: "The course could not read Audinate's own pages, so it leaves that open; the makers it cites ask for dedicated switches or isolation for their own gear.", sourceLessonSlug: "dante-st-2110-and-the-media-network" },
+        ],
+      },
+    },
+    // ══════════════════════════════════════════════════════════════════════
+    // SECTION 7: Power (research tier 2: electrical safety; held for a stage electrician)
+    // ══════════════════════════════════════════════════════════════════════
+    {
+      slug: "straight-blade-locking-stage-pin-and-powercon",
+      title: "21 · Straight-blade, locking, stage pin and powerCON",
+      section: "7 · Power",
+      recallContent: [
+        {
+          prompt: "What five things do the Dante equipment makers in lesson 20 agree a switch needs?",
+          answer: "Gigabit ports, managed switching, DSCP QoS with strict priority, Energy Efficient Ethernet off, and IGMP snooping set up.",
+        },
+        {
+          prompt: "Why does Clear-Com keep a Dante network running PTPv1 apart from an AES67 or ST 2110-30 network?",
+          answer: "The AES67 and ST 2110-30 network relies on PTPv2, so Dante's PTPv1 network goes on a separate VLAN or physical network.",
+        },
+      ],
+      body: `${QR_ELEC}
+
+**What this section is, and what it is not.** Section 7 teaches what the power connectors on a show are, what the rules say about who may do what, and when to stop and call a licensed electrician. It never teaches anyone to tie in to a power source, open a panel, land a feeder or build a cable. Makers write their wiring instructions for qualified people. Leviton's sheet for its locking receptacles opens: "TO AVOID FIRE, SHOCK, OR DEATH, TURN OFF POWER AT CIRCUIT BREAKER OR FUSE AND TEST THAT THE POWER IS OFF BEFORE WIRING!" and "If you are not sure about any part of these instructions, consult an electrician" (Leviton, n.d.-i, p. 1).
+
+*Light on Set* lesson "26 · Cords, plugs and circuits" already teaches OSHA's rules for cords on a set: inspection before each shift, damaged cords out of service, pinch points, no splices, no wet hands. This section links there and does not repeat it.
+
+**Reading a NEMA code.** A NEMA designation has four parts: a blank or the letter L, a voltage number, an amperage number, and P or R. "L" marks a locking device; no letter means a non-locking, straight-blade device. The first number "determines the voltage rating": 5 is 125 V AC grounded, 6 is 250 V AC grounded, 14 is 125/250 V AC single-phase, three-pole, four-wire, and 21 is 120/208 V AC three-phase, five-wire, four-pole. The number after it is the amperage. P is a plug and R is a receptacle (Interpower, n.d.).
+
+Leviton's devices, read against that code:
+
+| Code | What Leviton's page says | Leviton part |
+|---|---|---|
+| 5-15R | 15 A, 125 V AC, 2-pole, 3-wire | 5252 |
+| 5-20R | 20 A, 125 V AC, 2-pole, 3-wire | 5362 |
+| L5-20R | 20 A, 125 V, 2P, 3W, locking, grounding | 2310 |
+| L5-30R | 30 A, 125 V, 2P, 3W, locking, grounding | 2610 |
+| L6-30R | 30 A, 250 V, 2P, 3W, locking, grounding | 2620 |
+| L14-30R | 30 A, 125/250 V, 3P, 4W, locking, grounding | 2710 |
+| L21-30R | 30 A, 120/208 V three-phase Y, 4P, 5W, locking, grounding | 2810 |
+
+Sources: Leviton (n.d.-a, n.d.-b, n.d.-c, n.d.-d, n.d.-e, n.d.-g, n.d.-h).
+
+**Why the shapes differ, reasoned from the rule.** OSHA requires that receptacles, cord connectors and plugs "be constructed so that no receptacle or cord connector will accept an attachment plug with a different voltage or current rating than that for which the device is intended." The one exception: a 20 A T-slot receptacle may accept a 15 A plug of the same voltage (29 C.F.R. § 1910.305(j)(2)(ii)). So a different NEMA shape is a physical lock-out of the wrong voltage or current. An L6-30 plug does not fit an L5-30 receptacle because one is rated 250 V and the other 125 V. Forcing or adapting a plug defeats the lock-out.
+
+OSHA adds four rules you can follow without a tool. Before a plug is connected, "the relationship of the plug and receptacle contacts shall first be checked to ensure that they are of proper mating configurations" (§ 1910.334(a)(2)(iii)). Plugs may not be altered "to allow the grounding pole of a plug to be inserted into slots intended for connection to the current-carrying conductors," and adapters that interrupt the grounding connection "may not be used" (§ 1910.334(a)(3)(ii), (iii)). And "Locking-type connectors shall be properly secured after connection" (§ 1910.334(a)(5)(iii)).
+
+**Stage pin.** Union Connector calls its 2P&G stage pin devices "the standard electrical connector used in theatrical lighting." "The 20A pin connector devices are rated for 120V," and "The 60A and 100A stage pin devices are available in either a 120V or 240V rating" (Union Connector, n.d.-a). So stage pin is not one voltage: the 20 A size is 120 V. ESTA lists ANSI E1.24 (2012, reaffirmed 2021), *Dimensional Requirements for Stage Pin Connectors*, which covers mating, contact set-backs and marking, and leaves electrical reliability and flammability to other standards such as UL 498 (Entertainment Services and Technology Association [ESTA], n.d.). Which stage pin is the ground on each size is not stated on the pages read for this course, so this lesson does not teach it.
+
+**powerCON: blue in, grey out.** Neutrik's powerCON is a "Lockable 3 pole single phase equipment (AC) connector," rated 20 A at 250 V AC. It "offers power-in (blue) and power-out (grey) versions with different keying to avoid the possibility of intermating" (Neutrik, n.d.-a, p. 10). "With the two non-interchangeable types of connectors (A type and B type) it is impossible to produce a short circuit. Mating connectors (combination) are identified by mechanical keyways and by color" (p. 11).
+
+**Live or not: read the exact part.** The classic powerCON is not made to be plugged or pulled under power. Neutrik's guide: "ATTENTION: The technical data of the powerCON connectors refer to connectors without breaking capacity, meaning connecting devices not to be engaged and disengaged in normal use when live or under load" (Neutrik, n.d.-a, p. 11). The blue NAC3FCA cable connector "must not be connected or disconnected under load or live!" (Neutrik, n.d.-b). The grey NAC3FCB carries the same statement (n.d.-c), and the NAC3MPA-1 chassis connector says it "should not be connected or disconnected under load or live" (n.d.-g). Neutrik marks those three discontinued. A successor, the NAC3FXXA-W-S, lists "Circuit Breaking Capability when mated with powerCON XX Series receptacles" (n.d.-f).
+
+powerCON TRUE1 is different. The NAC3FX-W is "a locking waterproof 16 A true mains connector" (20 A in the USA), 250 V AC, IP65 when mated, with breaking capacity, and it "can be connected or disconnected under load or live" (Neutrik, n.d.-d). TRUE1 TOP is "Designed to be engaged and disengaged in normal use when live or under load" (Neutrik, n.d.-a, p. 4). Even so, Neutrik's TRUE1 cable connector manual says "To be installed by qualified person only," and that the connector must not be cleaned while under load (Neutrik, 2025, p. 1 and section D).
+
+The rule this lesson teaches: a classic powerCON without breaking capacity is never plugged or unplugged live; TRUE1 and some newer parts are rated for it. Read the exact part's page before you treat any powerCON as safe to pull. If a classic powerCON must come out while loaded, the circuit is switched off first by whoever owns it. Whether TRUE1 mates with a classic blue or grey powerCON is not stated on any Neutrik page read for this course, so do not assume either way.
+
+:::reveal Decode NEMA L21-30R. ||| Locking; 120/208 V three-phase Y; 30 A; a receptacle, 4-pole and 5-wire, grounding (Interpower, n.d.; Leviton, n.d.-e).
+
+:::reveal Why does an L6-30 plug not fit an L5-30 receptacle, and what follows? ||| One is rated 250 V and the other 125 V, and OSHA requires that a receptacle refuse a plug of a different voltage or current rating. The shape is the lock-out, so never force or adapt it.
+
+:::reveal May you pull a classic blue powerCON under load? ||| No. Neutrik says the NAC3FCA "must not be connected or disconnected under load or live!" Only parts with breaking capacity, such as TRUE1, are rated for it; read the exact part's page.
+
+## Sources
+- ${LEVITON_SHEET} Locator: p. 1, WARNINGS.
+- ${INTERPOWER} Locator: "NEMA Nomenclature".
+- ${LEVITON_5252} Locator: Technical Information.
+- ${LEVITON_5362} Locator: Technical Information.
+- ${LEVITON_2310} Locator: description line.
+- ${LEVITON_2610} Locator: description line.
+- ${LEVITON_2620} Locator: description line.
+- ${LEVITON_2710} Locator: description line.
+- ${LEVITON_2810} Locator: description line.
+- ${CFR_1910_305} Locator: paragraph (j)(2)(ii).
+- ${CFR_1910_334} Locator: paragraphs (a)(2)(iii), (a)(3)(ii), (a)(3)(iii) and (a)(5)(iii).
+- ${UNION_PIN} Locator: page text, the ratings and body materials.
+- ${ESTA_LISTING} Locator: entry "ANSI E1.24 - 2012 (R2021)".
+- ${NEUTRIK_PG} Locator: p. 4, powerCON TRUE1 TOP; p. 10, powerCON; p. 11, "Combination & Keyways" and the ATTENTION note.
+- ${NEUTRIK_NAC3FCA} Locator: product description and status.
+- ${NEUTRIK_NAC3FCB} Locator: product description and status.
+- ${NEUTRIK_NAC3MPA} Locator: product description and status.
+- ${NEUTRIK_NAC3FXXA} Locator: product features.
+- ${NEUTRIK_NAC3FXW} Locator: product description.
+- ${NEUTRIK_2025} Locator: p. 1, installation note; section D, Cleaning.`,
+    },
+    {
+      slug: "cam-feeders-and-the-gender-trap",
+      title: "22 · Cam-type feeders, cords, and the gender trap",
+      section: "7 · Power",
+      recallContent: [
+        {
+          prompt: "What does each part of NEMA L14-30R mean?",
+          answer: "L: locking. 14: 125/250 V single-phase, three-pole, four-wire. 30: 30 A. R: receptacle.",
+        },
+        {
+          prompt: "What does Neutrik say about plugging or pulling a classic powerCON (NAC3FCA) live?",
+          answer: "It must not be connected or disconnected under load or live; TRUE1 parts have breaking capacity and are rated for it. Read the exact part's page.",
+        },
+      ],
+      body: `${QR_ELEC}
+
+**A feeder is not an extension cord.** OSHA defines a feeder as the conductors between the service or other supply source and "the final branch-circuit overcurrent device." A branch circuit is the conductors between that final overcurrent device and the outlets (29 C.F.R. § 1910.399). An extension cord is something else: OSHA's rule on using equipment covers "cord- and plug-connected equipment, including flexible cord sets (extension cords)" (§ 1910.334(a)). So a cam feeder run from a generator to a distribution box sits upstream of the breakers that protect the branch circuits. It is not a big extension cord.
+
+**The cam-type connector.** A single-pole cam-type connector carries one conductor. Eaton's Cam-Lok single-pole connectors "are designed to meet NEC code requirements for listed connectors that are of the locking type," and its E-Z series is "rated at 600 Volts up to 400 Amperes continuous." They lock by turning: Eaton's sheet says to "fully engage male to female and rotate 1/3 of a turn clockwise," and to reverse that to unmate (Eaton, 2017, p. 1). That is here so you can recognize a locked connector. It is not permission to make the connection; the rest of this lesson and lesson 23 say who does. Eaton recommends visual, electrical and mechanical checks of all components "at least once per year" (Eaton, 2017, p. 1).
+
+**A five-wire set.** Lex's 100 A five-wire feeder extension uses five 16 Series cam connectors, black, white, red, blue and green, on #2 Type SC cable banded every 2 feet, for theatrical, film and television, concert and live-event work (LEX Innovations, n.d.-b). A Lex company switch's cam outlets are "color-coded, (H,H,H,N,G)" for 120/208Y V: three hots, a neutral and a ground (LEX Innovations, n.d.-d). Union Connector describes a company switch as "a specialized distribution panel" that venues such as theaters and arenas use to power portable equipment (Union Connector, n.d.-b). Lex's panel manual names green as ground and white as neutral, then "the Phase (hot) connections" (Lex Products, 2020, pp. 7 to 8).
+
+So, by elimination, the three colors left on that five-wire set, black, red and blue, are the three hots. That is reasoning, not a rule: no source read for this course assigns black, red and blue to particular phases, or says the code requires those colors.
+
+**The order, and why order is not enough.** Lex's warning label: "Plug connection should be in the following order: 1) Equipment grounding conductor connectors, 2) Grounded circuit conductor connectors, and 3) Ungrounded conductor connectors. Disconnection should be in the reverse order" (Lex Products, 2020, p. 6). In plain words: ground, then neutral, then the hots; to disconnect, the hots, then neutral, then ground. It is not "neutral first."
+
+The order does not make live work safe. The same manual: "DO NOT ATTEMPT CONNECTION WHILE CIRCUITS ARE LIVE" (p. 7), and "Any terminal may be energized when any cable is connected. De-energize cables at the generator prior to connecting or removing any connectors" (p. 6). OSHA says cable connectors "not of the load-break type" may not be used to open or close circuits under load, "except in an emergency" (29 C.F.R. § 1910.334(b)(1)). Lex says installation "should be carried out by qualified personnel in accordance with local electrical codes" (Lex Products, 2020, p. 5), and Union Connector's generator connection box is "for safe connection of portable cables by qualified personnel" (Union Connector, n.d.-d). One maker's company switch, SafeCam, "activates shunt trip whenever a plug is disconnected from a receptacle" and "automatically opens the main circuit breaker if a plug is removed under load" (Union Connector, n.d.-c). Cam connections are made and broken dead, by the qualified person responsible for the distribution.
+
+**The gender trap.** Lex sells cam adapters in black, red, blue, white, green, brown, orange and yellow, including a male-to-male adapter for "reversing the gender" on 16 Series female outlets (LEX Innovations, n.d.-c). Its company switch notes that "Reverse Ground and Neutral are also available" (n.d.-d). Union Connector offers "Reverse Neutral/Ground" as well, with "Laser engraved cam identifiers" and a "Cable connection warning label per NEC Art 520" (Union Connector, 2016).
+
+Reasoned from those pages: if the neutral and ground connectors are the opposite gender from the hots, a hot cannot be mated straight into a neutral or a ground. No maker page read for this course states that reason, so treat it as reasoning. It follows that a reverse-gender system and a same-gender system do not mate without turnaround adapters, and a turnaround can let a hot reach the wrong socket. Mismatched gender, or a turnaround in the run, is a reason to stop and ask the person responsible for the distribution, never to improvise.
+
+**Feeder cable and cord: read the jacket.** Type SC is "STAGE & LIGHTING CABLE," 600 V, 105 °C, "UL listed Type SC per NEC Article 520 and 530, indoor and outdoor locations" (LEX Innovations, n.d.-a). Southwire's 600 V SOOW cord is "designed for extra hard usage" on equipment, tools, portable lights and power extensions, rated from minus 40 °C to 90 °C (Southwire, n.d.). OSHA requires listed cord types to be "durably marked on the surface at intervals not exceeding 610 mm (24 in.) with the type designation, size, and number of conductors," and flexible cords to be "approved for conditions of use and location" (29 C.F.R. § 1910.305(g)(2)(i), (g)(1)(i)). The print on the jacket tells you what a cord is.
+
+**Extension cords and daisy chains.** Brookhaven National Laboratory notes that listed extension cords carry conditions of use near the plug, typically "do not plug one extension cord in to another," and that power strips "are not intended to be series connected (daisy chained) to other relocatable power taps or to extension cords" (Brookhaven National Laboratory, 2007, paras. 2 and 4). OSHA requires listed equipment to be "installed and used in accordance with any instructions included in the listing or labeling" (29 C.F.R. § 1910.303(b)(2)). Reasoned: a daisy chain breaks the listing's own instructions, which OSHA requires you to follow. *Light on Set* lesson "27 · What the rules forbid, shown through the makeshifts of 1928 and 1929" explains that listing rule. OSHA's own interpretation letter on daisy chains could not be read for this course, so this lesson quotes no separate OSHA daisy-chain rule. The U.S. Consumer Product Safety Commission (CPSC) adds that "Extension cords are not as safe as permanent house wiring," that a warm cord or plug "may be overloaded," and that "Using a 3-prong product with a 2-prong extension cord eliminates the protection" (U.S. Consumer Product Safety Commission [CPSC], 2008).
+
+:::reveal In what order does Lex's label say cam connectors are connected, and disconnected? ||| Ground, then neutral, then the hots; disconnect in reverse: hots, neutral, ground. And never live: de-energize at the generator first (Lex Products, 2020, pp. 6 to 7).
+
+:::reveal On a five-wire 120/208 V cam set colored black, white, red, blue and green, which are the hots, and how do you know? ||| Black, red and blue, by elimination: Lex names green ground and white neutral. No source read assigns them to phases or says the code requires those colors.
+
+:::reveal You find a turnaround adapter in a cam run. What do you do? ||| Stop and ask the person responsible for the distribution. A turnaround can let a hot reach the wrong socket.
+
+## Sources
+- ${CFR_1910_399} Locator: definitions "Feeder" and "Branch circuit".
+- ${CFR_1910_334} Locator: paragraphs (a) and (b)(1).
+- ${EATON_2017} Locator: p. 1, introduction, OPERATION and the MAINTENANCE note.
+- ${LEX_FBL305W} Locator: product description.
+- ${LEX_CS100} Locator: product description, outlet color coding and options.
+- ${UNION_CS} Locator: product description.
+- ${LEX_2020} Locator: p. 5, Installation; p. 6, warning and DANGER labels; pp. 7 to 8, WARNING and Steps 8 and 11.
+- ${UNION_GEN} Locator: product description.
+- ${UNION_SAFECAM} Locator: product description.
+- ${LEX_MMM} Locator: product description and color list.
+- ${UNION_2016} Locator: options and labeling list.
+- ${LEX_CABLES} Locator: "Entertainment Cable," Type SC.
+- ${SOUTHWIRE} Locator: product description and specifications.
+- ${CFR_1910_305} Locator: paragraphs (g)(1)(i) and (g)(2)(i).
+- ${BROOKHAVEN_2007} Locator: paragraphs 2 and 4.
+- ${CFR_1910_303} Locator: paragraph (b)(2).
+- ${CPSC_2008} Locator: "Check Electrical Cords" and "Check Extension Cords Used Outdoors".`,
+    },
+    {
+      slug: "the-law-and-the-license",
+      title: "23 · The law and the license: who may connect what",
+      section: "7 · Power",
+      recallContent: [
+        {
+          prompt: "How does OSHA define a feeder, and why is a cam feeder not an extension cord?",
+          answer: "Conductors between the supply and the final branch-circuit overcurrent device; an extension cord is cord-and-plug equipment downstream of it.",
+        },
+        {
+          prompt: "Why is a turnaround adapter in a cam run a reason to stop?",
+          answer: "It can let a hot reach the wrong socket; stop and ask the person responsible for the distribution.",
+        },
+      ],
+      body: `${QR_ELEC}
+
+**OSHA's temporary wiring rules, beyond Light on Set.** *Light on Set* lesson "26 · Cords, plugs and circuits" teaches OSHA's 1997 view that entertainment is generally general industry, and its rules for cords. This lesson adds what OSHA's general industry rule says about feeders and branch circuits in temporary wiring. It opens: "Except as specifically modified in this paragraph, all other requirements of this subpart for permanent wiring shall also apply to temporary wiring installations" (29 C.F.R. § 1910.305(a)(2)). Then:
+
+- "Feeders shall originate in an approved distribution center" ((a)(2)(iv)(A)).
+- Feeder conductors "shall be run as multiconductor cord or cable assemblies." Single insulated conductors are allowed only in the cases of (a)(2)(i)(C), experimental or development work and emergencies, "and if accessible only to qualified persons" ((a)(2)(iv)(B)).
+- "Branch circuits shall originate in an approved power outlet or panelboard," and "No branch-circuit conductor may be laid on the floor" ((a)(2)(v)(A), (C)).
+- Temporary receptacles "shall be of the grounding type," and "No bare conductors nor earth returns may be used for the wiring of any temporary circuit" ((a)(2)(vi), (vii)).
+- Cord assemblies "shall be supported in place at intervals that ensure that they will be protected from physical damage" ((a)(2)(xi)).
+
+Reasoned: single-conductor cam feeder (lesson 22) sits in a narrow lane in that text, allowed only in those cases and only where accessible to qualified persons. How OSHA and the NEC together treat single-conductor cam feeder at a US show is a question for the stage electrician; this course does not answer it.
+
+**Qualified, and unqualified.** OSHA defines a qualified person as "One who has received training in and has demonstrated skills and knowledge in the construction and operation of electric equipment and installations and the hazards involved," and notes that a person can be qualified for some equipment and "unqualified" for other equipment (29 C.F.R. § 1910.399). Qualified persons are "those permitted to work on or near exposed energized parts" (§ 1910.332(b)(3)). Three rules follow that every crew member should know:
+
+- "Only qualified persons may perform testing work on electric circuits or equipment" (§ 1910.334(c)(1)).
+- After a breaker or fuse opens a circuit, it "may not be manually reenergized until it has been determined that the equipment and circuit can be safely energized," and repeated manual reclosing "is prohibited" (§ 1910.334(b)(2)).
+- Overcurrent protection "may not be modified, even on a temporary basis" beyond what the rule allows (§ 1910.334(b)(3)).
+
+**The NEC, by name only.** The National Electrical Code (NFPA 70) is paywalled, and this course quotes none of it. NFPA's own restructure chart lists Article 520, "Theaters, Audience Areas of Motion Picture and Television Studios, Performance Areas, and Similar Locations"; Article 525, "Carnivals, Circuses, Fairs, and Similar Events"; Article 400, "Flexible Cords and Flexible Cables"; and Article 590, "Temporary Installations" (National Fire Protection Association [NFPA], 2026, pp. 3 to 4, 8). Article 530 covers motion picture and television studios. NFPA's chart and an NEC code-making panel's 2021 revision give it different titles, so this course quotes neither (NFPA, 2021, p. 1; 2026, p. 8). The U.S. Consumer Product Safety Commission notes that the NEC "may be adopted into law by states, counties or local jurisdictions for enforcement by inspection authorities and is currently revised every three years" (U.S. Consumer Product Safety Commission [CPSC], n.d.-a, p. 2). Which edition applies where you work is the local authority's call.
+
+**Who may connect what: the license.** Licensing is set by states and cities. Two states show how different the rules look.
+
+Minnesota: "Persons other than licensed employees of licensed electrical contractors are only allowed to connect or inter-connect multi-conductor cords and single-conductor cables that are equipped with approved separable multi-pole or single-pole connectors." Licensed employees "are required to connect or terminate cords and cables that have bare ends, clamps, clips or other types of connections other than approved separable connectors," and must do "all electrical work on interior or exterior premises wiring systems." Generators and temporary distribution for filming "are required to be inspected," and "Electrical equipment must not be energized until it has been inspected and approved" (Minnesota Department of Labor and Industry [MN DLI], n.d., pp. 1 to 2).
+
+Oregon issues a Limited Journeyman Stage Electrician (ST) license to "Install temporary feeders, branch circuits, and equipment used for the production of shows, exhibits, displays, festivals, conventions, stage, theater, film, or video productions." The holder "Must be employed by an electrical contractor" and renews every three years (Oregon Secretary of State, 2026). The rule bars the license holder from installing or extending permanent wiring and from "service conductors or service equipment" (Limited Journeyman Stage Electrician License, 2005). This course read that rule in the Legal Information Institute's unofficial reproduction, not on Oregon's official rules site.
+
+Minnesota's line (separable connectors yes, bare ends no) is one state's rule, not a national one. Reasoned from the two: who may connect a company switch in a given venue is set by the state or city rule, the venue and any labor agreement. Ask the venue and the local authority before you assume.
+
+**ETCP is a certification, not a license.** ETCP's Entertainment Electrician exam is for "experienced electricians" and aims to "validate the competency of the upper third of electricians working in the entertainment industry" (Entertainment Technician Certification Program [ETCP], n.d.-a). Its content outline includes feeder cable with a "single-pole locking connector," the "company switch," and "temporary tie-in means (e.g., lugs, bus bars, sister lugs)" (ETCP, n.d.-b). ETCP's handbook calls certification "the voluntary process by which a nongovernmental organization grants recognition to an individual" (Entertainment Services and Technology Association [ESTA], 2016, p. 5). Reasoned: a voluntary, nongovernmental certification is not a state license, and it does not by itself let anyone do licensed work. Whether any state or city accepts ETCP in place of a license is not answered by the pages read for this course.
+
+:::reveal Under Minnesota's rule, what may someone who is not a licensed contractor's employee connect? ||| Only multi-conductor cords and single-conductor cables fitted with approved separable connectors. Bare ends, clamps and clips, and all premises wiring, are for licensed employees (MN DLI, n.d., p. 2).
+
+:::reveal A breaker trips during the show. May you reset it? ||| Not until it has been determined that the equipment and circuit can be safely energized, and repeated resetting is prohibited (29 C.F.R. § 1910.334(b)(2)). Call the person responsible for the power.
+
+:::reveal Does ETCP Entertainment Electrician certification let you tie in? ||| No. It is a voluntary, nongovernmental certification for experienced electricians; who may tie in is set by state and local licensing rules.
+
+## Sources
+- ${CFR_1910_305} Locator: paragraph (a)(2), lead-in and (a)(2)(iv)(A), (iv)(B), (v)(A), (v)(C), (vi), (vii) and (xi).
+- ${CFR_1910_399} Locator: definition "Qualified person" and Note 1.
+- ${CFR_1910_332} Locator: paragraph (b)(3).
+- ${CFR_1910_334} Locator: paragraphs (b)(2), (b)(3) and (c)(1).
+- ${NFPA_2026} Locator: pp. 3 to 4, Articles 400 and 590; p. 8, Chapter 19 rows for Articles 520, 525 and 530.
+- ${NFPA_2021} Locator: Second Revision No. 8529, p. 1.
+- ${CPSC_GFCI} Locator: p. 2, footnote.
+- ${MN_DLI} Locator: p. 1, questions 1 and 3; p. 2, question 8.
+- ${OREGON_ST} Locator: license description and requirements.
+- ${OREGON_RULE} Locator: rule text, the limits on the license.
+- ${ETCP_GET} Locator: page text, who the exam is for.
+- ${ETCP_EXAM} Locator: content outline, items 1.C.5, 3.B.1 and 3.B.2.
+- ${ESTA_2016} Locator: PDF p. 5, "Become ETCP Certified".`,
+    },
+    {
+      slug: "gfci-wet-locations-and-when-to-stop",
+      title: "24 · GFCI, wet locations, and when to stop",
+      section: "7 · Power",
+      recallContent: [
+        {
+          prompt: "Who does OSHA say may perform testing work on electric circuits?",
+          answer: "Only qualified persons (29 C.F.R. § 1910.334(c)(1)).",
+        },
+        {
+          prompt: "Is Minnesota's \"separable connectors yes, bare ends no\" line a national rule?",
+          answer: "No. It is one state's rule; Oregon licenses the work differently, and the venue, the local authority and any labor agreement decide who connects what.",
+        },
+      ],
+      body: `${QR_ELEC}
+
+**What a GFCI does.** OSHA defines a ground-fault circuit-interrupter as "A device intended for the protection of personnel that functions to deenergize a circuit or a portion of a circuit within an established period of time when a current to ground exceeds some predetermined value," a value below what would trip the circuit's overcurrent device (29 C.F.R. § 1910.399). The U.S. Consumer Product Safety Commission puts it plainly. A ground fault is "an unintentional electrical path between a power source and a grounded surface," and a GFCI cuts the power when outgoing and returning current differ "by a very small amount (as little as 0.006 amperes)." It is "designed to operate before the electricity can affect your heartbeat" (U.S. Consumer Product Safety Commission [CPSC], n.d.-a, p. 1).
+
+The CPSC says to test every GFCI after installation, at least once a month, after a power failure, and as the maker directs. If the test button does not cut the power to a plugged-in lamp, "Contact a qualified electrician." Portable GFCIs, the plug-in units and GFCI extension cords, are for places where installed GFCIs are not practical (CPSC, n.d.-a, p. 2). ESTA publishes ANSI E1.19 (2021), a recommended practice on how to "select, install, use, and maintain ground fault protection devices in the entertainment industry" (Entertainment Services and Technology Association [ESTA], n.d.).
+
+**Where OSHA requires one.** There are two rules, and which applies depends on the work.
+
+| Rule | What it requires | Source |
+|---|---|---|
+| Construction sites | GFCIs on all 120 V, single-phase, 15 A and 20 A receptacle outlets that are not part of permanent wiring and are in use by employees, or an assured equipment grounding conductor program | 29 C.F.R. § 1926.404(b)(1) |
+| General industry, construction-like activities | GFCI protection on all 125 V, single-phase, 15, 20 and 30 A temporary receptacle outlets in use by personnel; other temporary receptacles need it too, or an assured program where it is not available | § 1910.304(b)(3)(ii) |
+
+Two notes to the general industry rule matter on a show. "A cord connector on an extension cord set is considered to be a receptacle outlet if the cord set is used for temporary electric power." And a GFCI cord set "connected to the receptacle closest to the source of power" is an acceptable form of protection (§ 1910.304(b)(3)(ii)(A), Notes 1 and 2). *Basic Construction Safety* lesson "10 · Subpart K: electricity on a jobsite" explains the assured equipment grounding conductor program. So the rule is not "a GFCI on every temporary circuit at every show." Which paragraph governs your show depends on whether the work is construction or general industry, and *Light on Set* lesson 26 teaches OSHA's 1997 view that entertainment is generally general industry. Ask the person responsible for power which applies.
+
+**Wet locations.** OSHA's wet location includes "locations unprotected and exposed to weather," and a damp location includes partly protected places "under canopies, marquees, roofed open porches" (29 C.F.R. § 1910.399). Equipment and cords in wet or highly conductive work locations "shall be approved for those locations" (§ 1910.334(a)(4)). A wet connection that could conduct to the hand may be handled "only with insulating protective equipment" (§ 1910.334(a)(5)(ii)). Receptacles in wet locations need weatherproof enclosures: weatherproof with the plug in where the load is left unattended, and with the plug removed where it is attended (§ 1910.305(j)(2)(vi), (vii)). On construction sites, portable lighting in wet or conductive locations runs at 12 V or less, or at 120 V with GFCI protection (§ 1926.405(a)(2)(ii)(G)).
+
+**Stop and call an electrician.** Section 7 comes down to this list. Each item names what backs it. When one applies, stop, keep people clear, and call the venue's electrician or the qualified person responsible for the power.
+
+1. **A bare end, lug, clamp or clip.** In Minnesota only licensed employees may connect cords and cables with "bare ends, clamps, clips or other types of connections other than approved separable connectors" (MN DLI, n.d., p. 2; lesson 23).
+2. **A panel, premises wiring or a tie-in.** Minnesota reserves premises wiring to licensed employees, Oregon's stage license excludes service equipment, and ETCP's exam treats tie-in means as electrician content (lesson 23).
+3. **A generator or company switch on cam feeders.** Qualified personnel only, with the cables de-energized at the generator first (Lex Products, 2020, pp. 5 to 7; lesson 22).
+4. **Wiring any receptacle, plug or connector body.** "If you are not sure about any part of these instructions, consult an electrician" (Leviton, n.d.-i, p. 1). TRUE1: "To be installed by qualified person only" (Neutrik, 2025, p. 1).
+5. **A tripped breaker or blown fuse.** It is not reset until someone has determined the circuit can be safely energized (§ 1910.334(b)(2)).
+6. **Anything that would change overcurrent protection or add load beyond a circuit's rating** (§ 1910.334(b)(3); § 1926.416(c)).
+7. **Testing an electric circuit.** Only qualified persons (§ 1910.334(c)(1)).
+8. **A GFCI that fails its test.** "Contact a qualified electrician" (CPSC, n.d.-a, p. 2).
+9. **A damaged cord, plug or connector.** Out of service until repaired and tested (§ 1910.334(a)(2)(ii); *Light on Set* lesson 26).
+10. **A wet energized connection.** Handled only with insulating protective equipment, which this course does not issue (§ 1910.334(a)(5)(ii)).
+11. **Plugs that do not match.** Never alter a plug or use an adapter that breaks the ground (§ 1910.334(a)(3)(ii), (iii); lesson 21).
+12. **A classic powerCON that must come out under load.** The circuit is switched off first by whoever owns it (Neutrik, n.d.-b; lesson 21).
+13. **Mismatched cam gender, or a turnaround in the run.** No source gives a crew procedure; stop and ask the person responsible for the distribution (lesson 22).
+
+:::reveal How small a current difference does the CPSC say a GFCI trips on? ||| As little as 0.006 amperes, designed to act before the electricity can affect your heartbeat (CPSC, n.d.-a, p. 1).
+
+:::reveal Under OSHA's general industry rule, when is an extension cord's connector a receptacle outlet? ||| When the cord set is used for temporary electric power (29 C.F.R. § 1910.304(b)(3)(ii)(A), Note 1).
+
+:::reveal A GFCI's test button does not cut power to the lamp plugged into it. What now? ||| Contact a qualified electrician, as the CPSC says (CPSC, n.d.-a, p. 2). It is item 8 on the stop list.
+
+## Sources
+- ${CFR_1910_399} Locator: definitions "Ground-fault circuit-interrupter" and "Location" (1) and (3).
+- ${CPSC_GFCI} Locator: p. 1, definitions; p. 2, "How to Test" and "Portable".
+- ${ESTA_LISTING} Locator: entry "ANSI E1.19 - 2021".
+- ${CFR_1926_404} Locator: paragraph (b)(1).
+- ${CFR_1910_304} Locator: paragraph (b)(3)(ii)(A) to (C), Notes 1 and 2.
+- ${CFR_1910_334} Locator: paragraphs (a)(2)(ii), (a)(3)(ii), (a)(3)(iii), (a)(4), (a)(5)(ii), (b)(2), (b)(3) and (c)(1).
+- ${CFR_1910_305} Locator: paragraphs (j)(2)(vi) and (vii).
+- ${CFR_1926_405} Locator: paragraph (a)(2)(ii)(G).
+- ${CFR_1926_416} Locator: paragraph (c).
+- ${MN_DLI} Locator: p. 2, question 8.
+- ${LEX_2020} Locator: pp. 5 to 7.
+- ${LEVITON_SHEET} Locator: p. 1, WARNINGS.
+- ${NEUTRIK_2025} Locator: p. 1.
+- ${NEUTRIK_NAC3FCA} Locator: product description.`,
+    },
+    {
+      slug: "section-7-quiz",
+      title: "Section 7 quiz · Power",
+      section: "7 · Power",
+      body: "A graded check on NEMA codes, stage pin and powerCON; cam-type feeders, cords and the gender trap; OSHA's temporary wiring rules and who may connect what; and GFCI, wet locations and the stop list. Each answer links back to the lesson that teaches it.",
+      quiz: {
+        passingScore: 80,
+        questionsPerAttempt: 5,
+        shuffleOptions: true,
+        questions: [
+          { prompt: "What does section 7 say it never teaches?", options: ["Tying in, panels, feeders, cables", "Reading a NEMA plug's code", "When to call an electrician", "What powerCON's colors mean"], correctIndex: 0, explanation: "Section 7 never teaches anyone to tie in to a power source, open a panel, land a feeder or build a cable. The other three are what it does teach.", sourceLessonSlug: "straight-blade-locking-stage-pin-and-powercon" },
+          { prompt: "What does Leviton's locking-receptacle sheet tell you if you are unsure of any part of it?", options: ["Call the maker's support line", "Consult an electrician", "Ask the venue's stage manager", "Read the NEMA standard first"], correctIndex: 1, explanation: "Leviton (n.d.-i, p. 1): \"If you are not sure about any part of these instructions, consult an electrician.\"", sourceLessonSlug: "straight-blade-locking-stage-pin-and-powercon" },
+          { prompt: "Which lesson does section 7 link for OSHA's cord rules on a set?", options: ["Rigging for crews, lesson 11", "Arena transmission, lesson 24", "Light on Set, lesson 26", "Sound Craft, lesson 15"], correctIndex: 2, explanation: "Light on Set's \"26 · Cords, plugs and circuits\" teaches inspection, damaged cords, pinch points, splices and wet hands; section 7 links rather than repeats.", sourceLessonSlug: "straight-blade-locking-stage-pin-and-powercon" },
+          { prompt: "What does the letter L mean at the front of a NEMA code?", options: ["A low-voltage device", "A large-amperage device", "A listed device", "A locking device"], correctIndex: 3, explanation: "Interpower (n.d.): \"L\" marks a locking device; no letter means a non-locking, straight-blade device.", sourceLessonSlug: "straight-blade-locking-stage-pin-and-powercon" },
+          { prompt: "What does voltage number 5 mean in a NEMA code?", options: ["125 V AC grounded", "120/208 V three-phase", "250 V AC grounded", "125/250 V AC, four-wire"], correctIndex: 0, explanation: "Interpower (n.d.): 5 is 125 V AC grounded; 6 is 250 V AC grounded.", sourceLessonSlug: "straight-blade-locking-stage-pin-and-powercon" },
+          { prompt: "What does voltage number 6 mean in a NEMA code?", options: ["125 V AC grounded", "250 V AC grounded", "125/250 V AC, four-wire", "120/208 V three-phase"], correctIndex: 1, explanation: "Interpower (n.d.): 6 is 250 V AC grounded.", sourceLessonSlug: "straight-blade-locking-stage-pin-and-powercon" },
+          { prompt: "What does voltage number 14 mean in a NEMA code?", options: ["120/208 V AC three-phase, 5-wire", "250 V AC grounded, 3-wire", "125/250 V AC single-phase, 4-wire", "125 V AC grounded, 3-wire"], correctIndex: 2, explanation: "Interpower (n.d.): 14 is 125/250 V AC single-phase, three-pole, four-wire. 21 is 120/208 V three-phase.", sourceLessonSlug: "straight-blade-locking-stage-pin-and-powercon" },
+          { prompt: "In a NEMA code, what do P and R stand for?", options: ["Phase and return", "Pole and rating", "Pin and ring", "Plug and receptacle"], correctIndex: 3, explanation: "Interpower (n.d.): P is a plug and R is a receptacle.", sourceLessonSlug: "straight-blade-locking-stage-pin-and-powercon" },
+          { prompt: "What does Leviton's page give for a NEMA 5-20R?", options: ["20 A, 125 V AC, 2-pole, 3-wire", "15 A, 125 V AC, 2-pole, 3-wire", "30 A, 125 V, locking, grounding", "20 A, 250 V, locking, grounding"], correctIndex: 0, explanation: "Leviton (n.d.-h): 5-20R, 20 A, 125 V AC, 2-pole, 3-wire. The 5-15R is 15 A.", sourceLessonSlug: "straight-blade-locking-stage-pin-and-powercon" },
+          { prompt: "What rating does Leviton give its L14-30R receptacle?", options: ["30 A, 250 V, 2P, 3W", "30 A, 125/250 V, 3P, 4W", "30 A, 120/208 V, 4P, 5W", "20 A, 125 V, 2P, 3W"], correctIndex: 1, explanation: "Leviton (n.d.-d): L14-30R, 30 A, 125/250 V, 3P, 4W, locking, grounding.", sourceLessonSlug: "straight-blade-locking-stage-pin-and-powercon" },
+          { prompt: "What does Leviton give for its L21-30R receptacle?", options: ["30 A, 125/250 V single-phase, 3P, 4W", "20 A, 125 V single-phase, 2P, 3W", "30 A, 120/208 V three-phase Y, 4P, 5W", "30 A, 250 V single-phase, 2P, 3W"], correctIndex: 2, explanation: "Leviton (n.d.-e): L21-30R, 30 A, 120/208 V three-phase Y, 4P, 5W, locking, grounding.", sourceLessonSlug: "straight-blade-locking-stage-pin-and-powercon" },
+          { prompt: "What does OSHA require of receptacles, cord connectors and plugs?", options: ["Every plug must fit every receptacle", "Only locking devices may be used", "All must be colored by voltage", "None may accept a plug of another rating"], correctIndex: 3, explanation: "29 C.F.R. § 1910.305(j)(2)(ii): no receptacle or cord connector may accept a plug with a different voltage or current rating.", sourceLessonSlug: "straight-blade-locking-stage-pin-and-powercon" },
+          { prompt: "What one exception does § 1910.305(j)(2)(ii) allow?", options: ["A 20 A T-slot taking a 15 A plug", "A 15 A slot taking a 20 A plug", "A 250 V slot taking a 125 V plug", "A locking slot taking a straight plug"], correctIndex: 0, explanation: "A 20 A T-slot receptacle may accept a 15 A plug of the same voltage; nothing else crosses ratings.", sourceLessonSlug: "straight-blade-locking-stage-pin-and-powercon" },
+          { prompt: "By lesson 21's reasoning, what is a different NEMA shape?", options: ["A difference between brands", "A lock-out of the wrong rating", "A sign of a newer model year", "A matter of the maker's taste"], correctIndex: 1, explanation: "Because OSHA bars a device from accepting a plug of another rating, a different shape physically locks out the wrong voltage or current.", sourceLessonSlug: "straight-blade-locking-stage-pin-and-powercon" },
+          { prompt: "What does OSHA say to check before a plug is connected?", options: ["The cord's printed date code", "The breaker's trip rating", "That the contacts mate properly", "The color of the cord jacket"], correctIndex: 2, explanation: "29 C.F.R. § 1910.334(a)(2)(iii): first check the plug and receptacle contacts are of proper mating configurations.", sourceLessonSlug: "straight-blade-locking-stage-pin-and-powercon" },
+          { prompt: "What does OSHA say about adapters that interrupt the grounding connection?", options: ["They are fine indoors", "They need a label", "They need a GFCI", "They may not be used"], correctIndex: 3, explanation: "29 C.F.R. § 1910.334(a)(3)(iii): adapters that interrupt the grounding connection may not be used.", sourceLessonSlug: "straight-blade-locking-stage-pin-and-powercon" },
+          { prompt: "What does Union Connector call 2P&G stage pin?", options: ["The standard in theatrical lighting", "A connector for audio snakes", "A camera power connector", "A three-phase feeder connector"], correctIndex: 0, explanation: "Union Connector (n.d.-a): \"the standard electrical connector used in theatrical lighting.\"", sourceLessonSlug: "straight-blade-locking-stage-pin-and-powercon" },
+          { prompt: "What voltage does Union Connector give for its 20 A stage pin?", options: ["240 V", "120 V", "250 V", "208 V"], correctIndex: 1, explanation: "Union Connector (n.d.-a): \"The 20A pin connector devices are rated for 120V.\"", sourceLessonSlug: "straight-blade-locking-stage-pin-and-powercon" },
+          { prompt: "In what voltages does Union Connector offer 60 A and 100 A stage pin?", options: ["120 V only", "250 V only", "120 V or 240 V", "208 V or 480 V"], correctIndex: 2, explanation: "Union Connector (n.d.-a): 60 A and 100 A stage pin come \"in either a 120V or 240V rating.\"", sourceLessonSlug: "straight-blade-locking-stage-pin-and-powercon" },
+          { prompt: "What does ESTA say ANSI E1.24 covers?", options: ["Stage pin flammability and reliability", "DMX cable impedance and termination", "Cam-type connector colors and gender", "Stage pin dimensions, mating and marking"], correctIndex: 3, explanation: "ESTA (n.d.): mating requirements, contact set-backs and marking; electrical reliability and flammability are outside its scope.", sourceLessonSlug: "straight-blade-locking-stage-pin-and-powercon" },
+          { prompt: "Which stage pin is the ground on each size, per lesson 21?", options: ["The lesson does not teach it", "The center pin on every size", "The outer pin on 20 A only", "The pin nearest the latch"], correctIndex: 0, explanation: "No page read for the course states it, so the lesson does not teach it; read the maker's sheet.", sourceLessonSlug: "straight-blade-locking-stage-pin-and-powercon" },
+          { prompt: "What do powerCON's blue and grey mean?", options: ["Grey in, blue out", "Blue in, grey out", "120 V and 240 V", "Live and dead"], correctIndex: 1, explanation: "Neutrik (n.d.-a, p. 10): power-in (blue) and power-out (grey), keyed so they cannot intermate.", sourceLessonSlug: "straight-blade-locking-stage-pin-and-powercon" },
+          { prompt: "Why does Neutrik say powerCON's A and B types cannot produce a short circuit?", options: ["They carry no ground", "They are rated 250 V", "They are not interchangeable", "They lock with a latch"], correctIndex: 2, explanation: "Neutrik (n.d.-a, p. 11): \"With the two non-interchangeable types of connectors (A type and B type) it is impossible to produce a short circuit.\"", sourceLessonSlug: "straight-blade-locking-stage-pin-and-powercon" },
+          { prompt: "What does \"without breaking capacity\" mean in Neutrik's guide?", options: ["Rated to be pulled under load", "Built without a locking latch", "Sold without a strain relief", "Not to be mated or pulled live"], correctIndex: 3, explanation: "Neutrik (n.d.-a, p. 11): connecting devices \"not to be engaged and disengaged in normal use when live or under load.\"", sourceLessonSlug: "straight-blade-locking-stage-pin-and-powercon" },
+          { prompt: "What does Neutrik say about connecting a blue NAC3FCA under load?", options: ["It must not be done", "It is fine below 10 A", "It is fine if locked", "It needs a GFCI first"], correctIndex: 0, explanation: "Neutrik (n.d.-b): it \"must not be connected or disconnected under load or live!\"", sourceLessonSlug: "straight-blade-locking-stage-pin-and-powercon" },
+          { prompt: "What status does Neutrik show for NAC3FCA, NAC3FCB and NAC3MPA-1?", options: ["Current and best-selling", "Discontinued, with successors", "Recalled for a safety fault", "Renamed as the TRUE1 range"], correctIndex: 1, explanation: "Neutrik's pages mark all three discontinued and name successors (n.d.-b, n.d.-c, n.d.-g).", sourceLessonSlug: "straight-blade-locking-stage-pin-and-powercon" },
+          { prompt: "What does Neutrik list for the NAC3FXXA-W-S successor?", options: ["No breaking capacity at all", "Waterproofing to IP68 alone", "Circuit breaking capability", "A 32 A rating at 400 V AC"], correctIndex: 2, explanation: "Neutrik (n.d.-f): \"Circuit Breaking Capability when mated with powerCON XX Series receptacles.\"", sourceLessonSlug: "straight-blade-locking-stage-pin-and-powercon" },
+          { prompt: "What does Neutrik say powerCON TRUE1 (NAC3FX-W) can do?", options: ["Mate with every classic powerCON", "Carry 32 A at 400 V three-phase", "Carry DMX data beside its power", "Connect or disconnect under load"], correctIndex: 3, explanation: "Neutrik (n.d.-d): TRUE1 has breaking capacity and \"can be connected or disconnected under load or live.\" No page read says it mates with classic powerCON.", sourceLessonSlug: "straight-blade-locking-stage-pin-and-powercon" },
+          { prompt: "What rating does Neutrik give the TRUE1 NAC3FX-W?", options: ["16 A (20 A USA), 250 V AC, IP65", "20 A (16 A EU), 125 V AC, IP20", "32 A (30 A USA), 400 V AC, IP44", "10 A (15 A USA), 125 V AC, IP54"], correctIndex: 0, explanation: "Neutrik (n.d.-d): \"a locking waterproof 16 A true mains connector\" (20 A in the USA), 250 V AC, IP65 when mated.", sourceLessonSlug: "straight-blade-locking-stage-pin-and-powercon" },
+          { prompt: "What does Neutrik's TRUE1 cable connector manual say about installation?", options: ["Anyone may fit it", "Qualified person only", "Fit it only when live", "Fit it with crimp tools"], correctIndex: 1, explanation: "Neutrik (2025, p. 1): \"To be installed by qualified person only.\"", sourceLessonSlug: "straight-blade-locking-stage-pin-and-powercon" },
+          { prompt: "What rule does lesson 21 teach for powerCON?", options: ["Every powerCON may be pulled live", "No powerCON may ever be pulled", "Read the exact part's page first", "Blue parts may be pulled live"], correctIndex: 2, explanation: "Classic powerCON without breaking capacity is never plugged or unplugged live; TRUE1 and some newer parts are rated for it. The exact part's page decides.", sourceLessonSlug: "straight-blade-locking-stage-pin-and-powercon" },
+          { prompt: "Does lesson 21 say TRUE1 mates with classic blue and grey powerCON?", options: ["Yes, every one", "No, never", "Only the grey", "It leaves it open"], correctIndex: 3, explanation: "No Neutrik page read for the course says, so the lesson tells you not to assume either way.", sourceLessonSlug: "straight-blade-locking-stage-pin-and-powercon" },
+          { prompt: "How does OSHA define a feeder?", options: ["Supply to final branch protection", "A cord from an outlet to a lamp", "Any cord longer than 50 feet", "Conductors from outlets onward"], correctIndex: 0, explanation: "29 C.F.R. § 1910.399: conductors between the service or other supply source and \"the final branch-circuit overcurrent device.\"", sourceLessonSlug: "cam-feeders-and-the-gender-trap" },
+          { prompt: "What does OSHA's use-of-equipment rule name as cord-and-plug equipment?", options: ["Feeder cables", "Extension cords", "Panelboards", "Service drops"], correctIndex: 1, explanation: "29 C.F.R. § 1910.334(a) covers \"cord- and plug-connected equipment, including flexible cord sets (extension cords).\"", sourceLessonSlug: "cam-feeders-and-the-gender-trap" },
+          { prompt: "Why is a cam feeder from a generator not a big extension cord?", options: ["It is always shorter", "It never carries a ground", "It sits upstream of the breakers", "It is always single-phase"], correctIndex: 2, explanation: "A feeder runs from the supply to the final branch-circuit overcurrent device, upstream of the breakers that protect the branch circuits.", sourceLessonSlug: "cam-feeders-and-the-gender-trap" },
+          { prompt: "What voltage and current does Eaton give its E-Z series cam connectors?", options: ["250 V up to 100 A", "125 V up to 30 A", "480 V up to 200 A", "600 V up to 400 A"], correctIndex: 3, explanation: "Eaton (2017, p. 1): \"rated at 600 Volts up to 400 Amperes continuous.\"", sourceLessonSlug: "cam-feeders-and-the-gender-trap" },
+          { prompt: "How does Eaton say a cam connector locks?", options: ["Rotate 1/3 turn clockwise", "Push until it clicks", "Screw it a full turn", "Snap a latch closed"], correctIndex: 0, explanation: "Eaton (2017, p. 1): \"fully engage male to female and rotate 1/3 of a turn clockwise.\"", sourceLessonSlug: "cam-feeders-and-the-gender-trap" },
+          { prompt: "Why does lesson 22 describe how a cam connector locks?", options: ["To teach making connections", "To recognize a locked one", "To pass the ETCP exam", "To meet Eaton's warranty"], correctIndex: 1, explanation: "So you can recognize a locked connector; the lesson says it is not permission to make the connection.", sourceLessonSlug: "cam-feeders-and-the-gender-trap" },
+          { prompt: "What colors are the five cam connectors on Lex's FBL305W feeder?", options: ["Red, red, red, white, green", "Black, black, black, grey, green", "Black, white, red, blue, green", "Brown, orange, yellow, grey, green"], correctIndex: 2, explanation: "LEX Innovations (n.d.-b): black, white, red, blue and green, on #2 Type SC banded every 2 feet.", sourceLessonSlug: "cam-feeders-and-the-gender-trap" },
+          { prompt: "What does Lex's company switch page say its cam outlets are?", options: ["G, N, H, H, H", "H, N, G, N, H", "N, N, H, H, G", "H, H, H, N, G"], correctIndex: 3, explanation: "LEX Innovations (n.d.-d): \"color-coded, (H,H,H,N,G)\" for 120/208Y V: three hots, a neutral and a ground.", sourceLessonSlug: "cam-feeders-and-the-gender-trap" },
+          { prompt: "Which colors does Lex's manual name for ground and neutral?", options: ["Green ground, white neutral", "White ground, green neutral", "Black ground, red neutral", "Blue ground, white neutral"], correctIndex: 0, explanation: "Lex Products (2020, pp. 7 to 8): green is ground and white is neutral, then the phase (hot) connections.", sourceLessonSlug: "cam-feeders-and-the-gender-trap" },
+          { prompt: "How does lesson 22 know black, red and blue are the hots on Lex's set?", options: ["A code table lists them", "By elimination, reasoned", "Lex's label names them", "Eaton's sheet prints them"], correctIndex: 1, explanation: "Green is ground and white neutral (Lex), and the set is H, H, H, N, G, so the three colors left are the hots. It is reasoning, not a sourced rule.", sourceLessonSlug: "cam-feeders-and-the-gender-trap" },
+          { prompt: "Does any source read for the course say the code requires black, red and blue?", options: ["Yes, NEC Article 520", "Yes, OSHA 1910.305", "No source read says so", "Yes, Eaton's IM 1012"], correctIndex: 2, explanation: "No source read assigns those colors to phases or says the code requires them.", sourceLessonSlug: "cam-feeders-and-the-gender-trap" },
+          { prompt: "What does Union Connector call a company switch?", options: ["A portable generator on wheels", "A three-phase plug and cord set", "A cam-type gender adapter kit", "A specialized distribution panel"], correctIndex: 3, explanation: "Union Connector (n.d.-b): \"a specialized distribution panel\" that venues use to power portable equipment.", sourceLessonSlug: "cam-feeders-and-the-gender-trap" },
+          { prompt: "In what order does Lex's label say cam connectors are connected?", options: ["Ground, neutral, then hots", "Neutral, ground, then hots", "Hots, neutral, then ground", "Hots, ground, then neutral"], correctIndex: 0, explanation: "Lex Products (2020, p. 6): equipment grounding conductor first, then the grounded conductor (neutral), then the ungrounded conductors (hots).", sourceLessonSlug: "cam-feeders-and-the-gender-trap" },
+          { prompt: "In what order does Lex's label say cam connectors are disconnected?", options: ["Ground, neutral, then hots", "Hots, neutral, then ground", "Neutral, hots, then ground", "Neutral, ground, then hots"], correctIndex: 1, explanation: "Lex Products (2020, p. 6): \"Disconnection should be in the reverse order\": hots, neutral, ground.", sourceLessonSlug: "cam-feeders-and-the-gender-trap" },
+          { prompt: "Is \"neutral first on, last off\" what Lex's label says?", options: ["Yes, word for word", "Yes, for 400 A only", "No, ground comes first", "No, hots come first"], correctIndex: 2, explanation: "Lex's label puts the equipment grounding conductor first and the neutral second (Lex Products, 2020, p. 6).", sourceLessonSlug: "cam-feeders-and-the-gender-trap" },
+          { prompt: "What does Lex say about connecting while circuits are live?", options: ["Allowed in the right order", "Allowed with gloves on", "Allowed below 100 A", "Never attempt it live"], correctIndex: 3, explanation: "Lex Products (2020, p. 7): \"DO NOT ATTEMPT CONNECTION WHILE CIRCUITS ARE LIVE.\" The order does not make live work safe.", sourceLessonSlug: "cam-feeders-and-the-gender-trap" },
+          { prompt: "Where does Lex say to de-energize cables before connecting or removing cam connectors?", options: ["At the generator", "At the dimmer rack", "At the far-end box", "At each connector"], correctIndex: 0, explanation: "Lex Products (2020, p. 6): \"De-energize cables at the generator prior to connecting or removing any connectors.\"", sourceLessonSlug: "cam-feeders-and-the-gender-trap" },
+          { prompt: "What does OSHA say about using non-load-break connectors to switch circuits under load?", options: ["Allowed if they lock", "Not except in an emergency", "Allowed with a GFCI", "Allowed below 50 A"], correctIndex: 1, explanation: "29 C.F.R. § 1910.334(b)(1): cable connectors not of the load-break type may not be used to open or close circuits under load, except in an emergency.", sourceLessonSlug: "cam-feeders-and-the-gender-trap" },
+          { prompt: "Who does Union Connector's generator connection box say connects portable cables?", options: ["Any crew member", "The show's producer", "Qualified personnel", "The generator's driver"], correctIndex: 2, explanation: "Union Connector (n.d.-d): \"for safe connection of portable cables by qualified personnel.\"", sourceLessonSlug: "cam-feeders-and-the-gender-trap" },
+          { prompt: "What does Union Connector's SafeCam company switch do if a plug is pulled under load?", options: ["Sounds an alarm only", "Locks the plug in place", "Lights a red warning lamp", "Opens the main breaker"], correctIndex: 3, explanation: "Union Connector (n.d.-c): it \"automatically opens the main circuit breaker if a plug is removed under load.\"", sourceLessonSlug: "cam-feeders-and-the-gender-trap" },
+          { prompt: "What does Lex's male-to-male cam adapter do?", options: ["Reverses the gender", "Joins two feeders", "Adds a ground", "Splits one phase"], correctIndex: 0, explanation: "LEX Innovations (n.d.-c): a way of \"reversing the gender\" on 16 Series female outlets.", sourceLessonSlug: "cam-feeders-and-the-gender-trap" },
+          { prompt: "What option does Union Connector list on its Series 16 company switch?", options: ["A built-in generator", "Reverse Neutral/Ground", "Hot-swap cam outlets", "A 20 A stage pin out"], correctIndex: 1, explanation: "Union Connector (2016): \"Reverse Neutral/Ground,\" with laser-engraved cam identifiers and an NEC Art 520 warning label.", sourceLessonSlug: "cam-feeders-and-the-gender-trap" },
+          { prompt: "By lesson 22's reasoning, why reverse the gender of the neutral and ground connectors?", options: ["To save on connector cost", "To let any plug mate any socket", "So a hot cannot mate them", "So turnarounds are not needed"], correctIndex: 2, explanation: "If neutral and ground are the opposite gender from the hots, a hot cannot be mated straight into them. The lesson labels this as reasoning; no maker states it.", sourceLessonSlug: "cam-feeders-and-the-gender-trap" },
+          { prompt: "What can a turnaround adapter in a cam run do, per lesson 22?", options: ["Raise the run's ampacity", "Ground the run twice over", "Balance the three phases", "Let a hot reach a wrong socket"], correctIndex: 3, explanation: "A turnaround defeats the reverse-gender protection and can let a hot reach the wrong socket.", sourceLessonSlug: "cam-feeders-and-the-gender-trap" },
+          { prompt: "What does lesson 22 tell you to do about mismatched cam gender in a run?", options: ["Stop and ask who owns the power", "Add a turnaround and carry on", "Swap the colored boots around", "Tape the joint and label it"], correctIndex: 0, explanation: "Mismatched gender or a turnaround is a reason to stop and ask the person responsible for the distribution, never to improvise.", sourceLessonSlug: "cam-feeders-and-the-gender-trap" },
+          { prompt: "What does Lex say Type SC cable is?", options: ["Service entrance cable", "Stage and lighting cable", "Shielded control cable", "Solar and cell cable"], correctIndex: 1, explanation: "LEX Innovations (n.d.-a): Type SC is \"STAGE & LIGHTING CABLE,\" 600 V, 105 °C.", sourceLessonSlug: "cam-feeders-and-the-gender-trap" },
+          { prompt: "Under which NEC articles does Lex list Type SC as UL listed?", options: ["NEC Article 400 only", "NEC Article 590 only", "NEC Articles 520 and 530", "NEC Article 525 only"], correctIndex: 2, explanation: "LEX Innovations (n.d.-a): \"UL listed Type SC per NEC Article 520 and 530, indoor and outdoor locations.\"", sourceLessonSlug: "cam-feeders-and-the-gender-trap" },
+          { prompt: "What does Southwire say its SOOW cord is designed for?", options: ["Light duty indoors", "Fixed wall wiring", "Low-voltage data", "Extra hard usage"], correctIndex: 3, explanation: "Southwire (n.d.): \"designed for extra hard usage\" on equipment, tools, portable lights and power extensions.", sourceLessonSlug: "cam-feeders-and-the-gender-trap" },
+          { prompt: "How often must listed cord types be marked on the jacket, per OSHA?", options: ["At least every 24 inches", "Once, near each plug", "At least every 10 feet", "Only on the reel label"], correctIndex: 0, explanation: "29 C.F.R. § 1910.305(g)(2)(i): at intervals not exceeding 610 mm (24 in.), with type, size and number of conductors.", sourceLessonSlug: "cam-feeders-and-the-gender-trap" },
+          { prompt: "What does Brookhaven say listed extension cords typically warn?", options: ["Use them only indoors", "Do not plug one into another", "Do not exceed 50 feet", "Use only with 120 V loads"], correctIndex: 1, explanation: "Brookhaven National Laboratory (2007, para. 2): typically \"do not plug one extension cord in to another.\"", sourceLessonSlug: "cam-feeders-and-the-gender-trap" },
+          { prompt: "By lesson 22's reasoning, why is a daisy chain of power strips wrong?", options: ["An OSHA rule names it outright", "It always trips the main breaker", "It breaks the listing instructions", "It doubles the voltage on the strip"], correctIndex: 2, explanation: "Power strips are not intended to be daisy chained (Brookhaven, 2007), and OSHA requires following the listing's instructions (§ 1910.303(b)(2)). The course quotes no separate OSHA daisy-chain rule.", sourceLessonSlug: "cam-feeders-and-the-gender-trap" },
+          { prompt: "What does the CPSC say about a cord or plug that feels warm?", options: ["It is working normally", "It needs a GFCI fitted", "It should be taped over", "It may be overloaded"], correctIndex: 3, explanation: "CPSC (2008): a warm cord, plug or outlet \"may be overloaded.\"", sourceLessonSlug: "cam-feeders-and-the-gender-trap" },
+          { prompt: "What does OSHA say about permanent wiring rules and temporary wiring?", options: ["They apply unless modified", "They never apply to it", "They apply only outdoors", "They apply only to feeders"], correctIndex: 0, explanation: "29 C.F.R. § 1910.305(a)(2): \"Except as specifically modified in this paragraph, all other requirements of this subpart for permanent wiring shall also apply to temporary wiring installations.\"", sourceLessonSlug: "the-law-and-the-license" },
+          { prompt: "Where does OSHA say temporary feeders must originate?", options: ["At any wall receptacle nearby", "In an approved distribution center", "At a generator's own panel", "In a listed relocatable tap"], correctIndex: 1, explanation: "29 C.F.R. § 1910.305(a)(2)(iv)(A): \"Feeders shall originate in an approved distribution center.\"", sourceLessonSlug: "the-law-and-the-license" },
+          { prompt: "How does OSHA say temporary feeder conductors are normally run?", options: ["As single insulated wires", "As bare conductors on hooks", "As multiconductor assemblies", "As earth-return circuits"], correctIndex: 2, explanation: "29 C.F.R. § 1910.305(a)(2)(iv)(B): \"run as multiconductor cord or cable assemblies.\"", sourceLessonSlug: "the-law-and-the-license" },
+          { prompt: "When does OSHA allow single insulated feeder conductors in temporary wiring?", options: ["Any time they are color coded", "Whenever the run is under 100 ft", "Only for 120 V branch circuits", "Listed cases, qualified access only"], correctIndex: 3, explanation: "29 C.F.R. § 1910.305(a)(2)(iv)(B): only in the (a)(2)(i)(C) cases, experimental or development work and emergencies, \"and if accessible only to qualified persons.\"", sourceLessonSlug: "the-law-and-the-license" },
+          { prompt: "What does OSHA say about branch-circuit conductors and the floor?", options: ["None may be laid on the floor", "They must be taped down", "They need a cable ramp", "They may lie on dry floors"], correctIndex: 0, explanation: "29 C.F.R. § 1910.305(a)(2)(v)(C): \"No branch-circuit conductor may be laid on the floor.\"", sourceLessonSlug: "the-law-and-the-license" },
+          { prompt: "What type must temporary receptacles be, per OSHA?", options: ["Locking type", "Grounding type", "Weatherproof type", "GFCI type"], correctIndex: 1, explanation: "29 C.F.R. § 1910.305(a)(2)(vi): temporary receptacles \"shall be of the grounding type.\"", sourceLessonSlug: "the-law-and-the-license" },
+          { prompt: "How does OSHA define a qualified person?", options: ["Anyone who holds a license", "Anyone with ETCP certification", "Trained, and has shown the skills", "Anyone over 18 on the crew"], correctIndex: 2, explanation: "29 C.F.R. § 1910.399: one who has received training in and has demonstrated skills and knowledge of the equipment and its hazards.", sourceLessonSlug: "the-law-and-the-license" },
+          { prompt: "What does OSHA say about re-energizing a circuit after a breaker trips?", options: ["Reset it at once", "Reset it twice, then call", "Only at the main panel", "Not until it is safe"], correctIndex: 3, explanation: "29 C.F.R. § 1910.334(b)(2): not until it has been determined the equipment and circuit can be safely energized; repeated reclosing is prohibited.", sourceLessonSlug: "the-law-and-the-license" },
+          { prompt: "What does OSHA say about modifying overcurrent protection on a temporary basis?", options: ["It may not be modified", "Allowed for one show", "Allowed with a GFCI", "Allowed by the crew chief"], correctIndex: 0, explanation: "29 C.F.R. § 1910.334(b)(3): overcurrent protection \"may not be modified, even on a temporary basis.\"", sourceLessonSlug: "the-law-and-the-license" },
+          { prompt: "What does NFPA's chart list as Article 520's subject?", options: ["Carnivals, circuses and fairs", "Theaters and performance areas", "Flexible cords and cables", "Temporary installations"], correctIndex: 1, explanation: "NFPA (2026, p. 8): Article 520 covers theaters, audience areas of studios, performance areas and similar locations. 525 is carnivals, 400 cords, 590 temporary installations.", sourceLessonSlug: "the-law-and-the-license" },
+          { prompt: "Which NEC article does NFPA's chart list as \"Temporary Installations\"?", options: ["Article 400", "Article 520", "Article 590", "Article 525"], correctIndex: 2, explanation: "NFPA (2026, pp. 3 to 4): Article 590, \"Temporary Installations.\"", sourceLessonSlug: "the-law-and-the-license" },
+          { prompt: "Why does the course quote neither title for NEC Article 530?", options: ["The article was repealed", "Its text is free to read", "It covers only Canada", "NFPA's documents disagree"], correctIndex: 3, explanation: "NFPA's 2026 chart and a 2021 panel revision give Article 530 different titles (NFPA, 2021, 2026).", sourceLessonSlug: "the-law-and-the-license" },
+          { prompt: "What does the CPSC say about how the NEC becomes law?", options: ["States or localities adopt it", "Congress passes each edition", "OSHA adopts it every year", "NFPA enforces it directly"], correctIndex: 0, explanation: "CPSC (n.d.-a, p. 2): the NEC \"may be adopted into law by states, counties or local jurisdictions\" and is revised every three years.", sourceLessonSlug: "the-law-and-the-license" },
+          { prompt: "Under Minnesota's rule, what may an unlicensed person connect?", options: ["Cords with bare ends or clamps", "Cords with approved connectors", "Premises wiring for a film set", "Generators to a panelboard"], correctIndex: 1, explanation: "MN DLI (n.d., p. 2): only multi-conductor cords and single-conductor cables equipped with approved separable connectors.", sourceLessonSlug: "the-law-and-the-license" },
+          { prompt: "Under Minnesota's rule, who connects cables with bare ends, clamps or clips?", options: ["Any crew member", "The gaffer only", "Licensed employees", "The producer"], correctIndex: 2, explanation: "MN DLI (n.d., p. 2): licensed employees of licensed electrical contractors.", sourceLessonSlug: "the-law-and-the-license" },
+          { prompt: "What does Minnesota say about energizing filming equipment?", options: ["Allowed after a GFCI test", "Allowed once the gaffer signs", "Not until the cords are taped", "Not until inspected and approved"], correctIndex: 3, explanation: "MN DLI (n.d., p. 1): \"Electrical equipment must not be energized until it has been inspected and approved.\"", sourceLessonSlug: "the-law-and-the-license" },
+          { prompt: "What does Oregon's ST license let its holder install?", options: ["Temporary feeders for shows", "Permanent premises wiring", "Service conductors", "Utility service drops"], correctIndex: 0, explanation: "Oregon Secretary of State (2026): \"Install temporary feeders, branch circuits, and equipment used for the production of shows.\" Permanent wiring and service equipment are excluded.", sourceLessonSlug: "the-law-and-the-license" },
+          { prompt: "What does Oregon require of an ST license holder's employment?", options: ["Work for the venue directly", "Work for an electrical contractor", "Work alone, with insurance", "Work for a union local only"], correctIndex: 1, explanation: "Oregon Secretary of State (2026): \"Must be employed by an electrical contractor.\"", sourceLessonSlug: "the-law-and-the-license" },
+          { prompt: "How did this course read Oregon's rule on the ST license's limits?", options: ["On Oregon's official rules site", "In a union hall's posted copy", "In an unofficial reproduction", "In ETCP's candidate handbook"], correctIndex: 2, explanation: "It read the Legal Information Institute's unofficial reproduction, and says so.", sourceLessonSlug: "the-law-and-the-license" },
+          { prompt: "By lesson 23's reasoning, who decides who may connect a company switch in a venue?", options: ["The crew chief, alone", "ETCP's certification board", "The switch's manufacturer", "Local rule, venue and contract"], correctIndex: 3, explanation: "The state or city rule, the venue and any labor agreement; Minnesota and Oregon differ, so ask the venue and the local authority.", sourceLessonSlug: "the-law-and-the-license" },
+          { prompt: "Who is ETCP's Entertainment Electrician exam for?", options: ["Experienced electricians", "Anyone new to stagecraft", "Students in high school", "Riggers moving to audio"], correctIndex: 0, explanation: "ETCP (n.d.-a): \"experienced electricians,\" to validate the upper third of entertainment electricians.", sourceLessonSlug: "the-law-and-the-license" },
+          { prompt: "How does ETCP's handbook describe certification?", options: ["A state electrical license", "Voluntary and nongovernmental", "Required for all tie-ins", "Issued by OSHA's office"], correctIndex: 1, explanation: "ESTA (2016, p. 5): \"the voluntary process by which a nongovernmental organization grants recognition to an individual.\" It is not a license.", sourceLessonSlug: "the-law-and-the-license" },
+          { prompt: "Whom does OSHA say a GFCI is intended to protect?", options: ["Equipment", "Wiring", "Personnel", "Breakers"], correctIndex: 2, explanation: "29 C.F.R. § 1910.399: \"A device intended for the protection of personnel.\"", sourceLessonSlug: "gfci-wet-locations-and-when-to-stop" },
+          { prompt: "How does the CPSC define a ground fault?", options: ["A breaker tripping on overload", "A neutral wired backward", "A plug missing its ground pin", "An unintended path to ground"], correctIndex: 3, explanation: "CPSC (n.d.-a, p. 1): \"an unintentional electrical path between a power source and a grounded surface.\"", sourceLessonSlug: "gfci-wet-locations-and-when-to-stop" },
+          { prompt: "At what current difference can a GFCI trip, per the CPSC?", options: ["0.006 amperes", "0.6 amperes", "6 amperes", "0.06 amperes"], correctIndex: 0, explanation: "CPSC (n.d.-a, p. 1): \"as little as 0.006 amperes.\"", sourceLessonSlug: "gfci-wet-locations-and-when-to-stop" },
+          { prompt: "Which outlets does OSHA's construction GFCI rule cover?", options: ["All 240 V outlets on site", "120 V, 15 and 20 A, temporary", "Every outlet in the building", "Only outlets used outdoors"], correctIndex: 1, explanation: "29 C.F.R. § 1926.404(b)(1): 120 V, single-phase, 15 A and 20 A receptacle outlets not part of permanent wiring, in use by employees, or an assured program.", sourceLessonSlug: "gfci-wet-locations-and-when-to-stop" },
+          { prompt: "What does the general industry rule add beyond 15 and 20 A temporary outlets?", options: ["50 A outlets", "240 V outlets", "30 A outlets", "DC outlets"], correctIndex: 2, explanation: "29 C.F.R. § 1910.304(b)(3)(ii): 125 V, single-phase, 15, 20 and 30 A temporary receptacle outlets.", sourceLessonSlug: "gfci-wet-locations-and-when-to-stop" },
+          { prompt: "When is an extension cord's connector a receptacle outlet under § 1910.304?", options: ["When it is outdoors", "When it has three prongs", "When it is over 50 feet", "When used for temporary power"], correctIndex: 3, explanation: "§ 1910.304(b)(3)(ii)(A), Note 1: when the cord set is used for temporary electric power.", sourceLessonSlug: "gfci-wet-locations-and-when-to-stop" },
+          { prompt: "Where may a GFCI cord set go to count as protection, per Note 2?", options: ["At the outlet nearest the source", "At the far end of the run", "Anywhere along the cord run", "Only inside the panelboard"], correctIndex: 0, explanation: "§ 1910.304(b)(3)(ii)(A), Note 2: \"connected to the receptacle closest to the source of power.\"", sourceLessonSlug: "gfci-wet-locations-and-when-to-stop" },
+          { prompt: "Does OSHA require a GFCI on every temporary circuit at every show?", options: ["Yes, by § 1910.305", "No; it depends on the work", "Yes, by NEC Article 520", "No; only for 240 V"], correctIndex: 1, explanation: "The construction and general industry rules cover different outlets, and which applies depends on the work.", sourceLessonSlug: "gfci-wet-locations-and-when-to-stop" },
+          { prompt: "What does OSHA's definition of a wet location include?", options: ["Any room with a sink", "Anywhere below grade", "Places exposed to weather", "Rooms over 60% humidity"], correctIndex: 2, explanation: "29 C.F.R. § 1910.399: \"locations unprotected and exposed to weather.\"", sourceLessonSlug: "gfci-wet-locations-and-when-to-stop" },
+          { prompt: "How may a wet energized connection be handled, per OSHA?", options: ["By dry hands, quickly", "With a towel wrapped around it", "After a GFCI test, by anyone", "With insulating protective gear"], correctIndex: 3, explanation: "29 C.F.R. § 1910.334(a)(5)(ii): \"only with insulating protective equipment,\" which this course does not issue.", sourceLessonSlug: "gfci-wet-locations-and-when-to-stop" },
+          { prompt: "At what voltage may portable lighting in wet construction locations run?", options: ["12 V, or 120 V with a GFCI", "240 V, if a GFCI is fitted", "48 V, or 120 V if locked", "Any voltage, if waterproof"], correctIndex: 0, explanation: "29 C.F.R. § 1926.405(a)(2)(ii)(G): 12 V or less, or 120 V with GFCI protection.", sourceLessonSlug: "gfci-wet-locations-and-when-to-stop" },
+          { prompt: "On the stop list, what happens with a tripped breaker?", options: ["Reset it once and watch", "Stop; it waits for a safe check", "Reset it from the panel", "Swap in a larger breaker"], correctIndex: 1, explanation: "Item 5: it is not reset until someone has determined the circuit can be safely energized (§ 1910.334(b)(2)).", sourceLessonSlug: "gfci-wet-locations-and-when-to-stop" },
+          { prompt: "On the stop list, what do you do about a GFCI that fails its test?", options: ["Reset it and try again", "Bypass it for the show", "Contact a qualified electrician", "Tape over the test button"], correctIndex: 2, explanation: "Item 8: \"Contact a qualified electrician\" (CPSC, n.d.-a, p. 2).", sourceLessonSlug: "gfci-wet-locations-and-when-to-stop" },
+          { prompt: "On the stop list, what do you do about mismatched cam gender?", options: ["Use a turnaround and go on", "Swap the colored boots", "Tape it and label it", "Stop and ask who owns the power"], correctIndex: 3, explanation: "Item 13: no source gives a crew procedure; stop and ask the person responsible for the distribution.", sourceLessonSlug: "gfci-wet-locations-and-when-to-stop" },
         ],
       },
     },
