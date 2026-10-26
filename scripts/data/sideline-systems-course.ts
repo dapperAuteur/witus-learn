@@ -19,10 +19,11 @@ import type { AuthoredCourse } from "./authored-course";
 //           A lines are never taught. Each file's "Teach this, not that" list is taught as corrections
 //           where the lesson needs it.
 //
-// BUILD STATUS: pass 1 of 2 (2026-10-26) wrote sections 1 to 4 (lessons 1 to 15): what a tracking
-// array is; what review systems do for medical staff; the leagues and the rules; the game day, hour
-// by hour. Sections 5 to 7 (the jobs and the ladder, getting hired, the capstone) and the final quiz
-// follow in pass 2.
+// BUILD STATUS: complete, written in two passes on 2026-10-26. Pass 1 wrote sections 1 to 4 (lessons
+// 1 to 15): what a tracking array is; what review systems do for medical staff; the leagues and the
+// rules; the game day, hour by hour. Pass 2 wrote sections 5 to 7 (lessons 16 to 22): the jobs and
+// the ladder; getting hired; the written capstone (a cited game-day runbook, or a two-vendor
+// comparison). Seven section quizzes and a final (pool 44, serving 10, passing 80).
 //
 // MEDICINE (gate A6). Section 2 says how review is organized and who is licensed to act, quoting each
 // body's own words on the boundary. It never teaches diagnosis, signs or symptoms, assessment steps,
@@ -37,7 +38,8 @@ import type { AuthoredCourse } from "./authored-course";
 // athletic trainer joins for section 2. The publishHoldReason in scripts/seed-courses.ts says so.
 //
 // MARKED LESSONS. Each starts its body with a "> **Before release:**" line naming who must act.
-//   QR (a tracking or replay systems technician): 2 to 4 and 9 to 15.
+//   QR (a tracking or replay systems technician): 2 to 4 and 9 to 22. Lesson 22, the capstone, is
+//   written work and asks for no demonstration, so it carries no practitioner marker.
 //   QR (a tracking or replay systems technician; and a certified athletic trainer): 5 to 8, section 2.
 //   Unmarked: 1 (the map of the three systems, every line a direct quotation or a definition).
 //
@@ -51,24 +53,32 @@ import type { AuthoredCourse } from "./authored-course";
 // XLR" (wired intercom beltpacks; it does not cover two-way radios), "19 · Network cable: categories,
 // the 100-meter channel, etherCON and PoE", "20 · Dante, ST 2110, and why a media network is not the
 // office network", "27 · Coil, label and run" and "28 · Test, then find the fault". Each is named by
-// title where this course stops.
+// title where this course stops. Section 6 maps the postings' skill lines to those CREW-00 lessons
+// (lesson 20) and links broadcasting-break-in's "5 · Résumé, portfolio, and personal brand", "14 ·
+// Internships, freelancing, and building credits" and "15 · Unions, networking, and landing the first
+// job" for general job-hunting; it does not repeat their BLS pay figures, which could not be re-checked.
 //
 // CORRECTIONS TO THE BRIEF taught from the research: TRACAB is TRACAB Technologies, which Electronic
 // Arts agreed to buy in 2025, not "ChyronHego TRACAB"; the Premier League's offside system is Genius
 // Sports, not Hawk-Eye; the NFL kept the chain crew in a secondary role; NFL player tracking is radio,
 // not optical; VAR reviews five categories in 2026/27; the outline's "synchronizing the medical
 // monitors" is supported by no source and stays out; "tagging" comes from the NFL's AT spotters page,
-// not from a posting.
+// not from a posting. From file 03's "Teach this, not that": the NFL operator's $38 has no unit in the
+// posting and is never printed as "an hour"; the Rutgers $28 was a staffing provider's offer, not
+// Hawk-Eye's pay; the SEC coordinator is an office job in Birmingham, not remote; aggregator ages are
+// not opening dates; Sportradar and Genius Sports operators do data work, not replay.
 //
 // RIGHTS (the source-hosting rule in CLAUDE.md, decided per source):
-//  - Tier A: none. No U.S. federal work is cited in sections 1 to 4.
+//  - Tier A: none. No U.S. federal work is cited.
 //  - Tier B, link only, never rehost: every league, governing body, conference and vendor page and
 //    PDF (the NFL, its Head, Neck and Spine Committee protocol, the NFLPA, the NBA, the WNBA, MLB, the
 //    NHL, the NCAA and its Sport Science Institute, the SEC, IFAB's Laws, FIFA, the Premier League, The
 //    FA, the ICC, the ATP, the All England Club, World Rugby, NATA, the BOC, Hawk-Eye, Sony, Electronic
 //    Arts and TRACAB, Genius Sports, Catapult, KINEXON), the University of Oklahoma's IT page, the
-//    trade press (Sports Video Group) and the AP story, and the job postings and their aggregator
-//    copies (SHRM HireVets, startup.jobs, Ashby, Workday).
+//    trade press (Sports Video Group) and the AP story, the job postings and their boards and
+//    aggregator copies (SHRM HireVets, startup.jobs, TeamWork Online, Ashby, Workday, Greenhouse,
+//    SmartRecruiters; the NFL, Hawk-Eye, the NBA, KINEXON, Catapult, Genius Sports, Sportradar), and
+//    Microsoft's support and lifecycle pages.
 //  - Tier C: none.
 //  - FIGURES: none embedded.
 //
@@ -84,7 +94,12 @@ import type { AuthoredCourse } from "./authored-course";
 // stays NFL (2026a) and the New Orleans injury video review operator posting (file 03's 2026a) becomes
 // NFL (2026b); file 03's Hawk-Eye postings become Hawk-Eye Innovations (n.d.-f) Rutgers, (n.d.-g) the UK
 // expression of interest, (2026d) Netherlands, (2026e) Firenze, (2026f) Bolzano and (2026g) the SEC
-// coordinator, after file 01's (n.d.-a) to (n.d.-e) and (2026a) to (2026c).
+// coordinator, after file 01's (n.d.-a) to (n.d.-e) and (2026a) to (2026c). Pass 2 continues the
+// sequences: Hawk-Eye (n.d.-h) careers page, (n.d.-i) the Ashby board API, (2026h) Sofia analyst,
+// (2026i) tennis student placement; NFL (2026c) the Tampa Bay operator copy (file 02's NFL 2026),
+// (2026d) the seasonal FAST video systems operator, (2026e) the seasonal TOC operator, (n.d.-g) the
+// Greenhouse board and (n.d.-h) its API. File 03's KINEXON, Catapult, Genius Sports, Sportradar,
+// Microsoft, startup.jobs and TeamWork Online letters are kept as written there.
 //
 // STANDARDS: unmapped for now (BACKLOG entry in scripts/check-standards-coverage.ts).
 //
@@ -110,6 +125,14 @@ import type { AuthoredCourse } from "./authored-course";
 //  - L12: SEC football replay vendor (crew07-sec-football-vendor); the Big Ten's own word on its vendor
 //    (crew07-big-ten-vendor).
 //  - L15: whether the Big Ten's SMART medical system is the NFL's IVRS (crew07-big-ten-vs-ivrs).
+//  - L16: the unit of the NFL operator's $38 (crew07-ivr-pay-unit); the Rutgers posting's dates
+//    (crew07-rutgers-dates).
+//  - L17: the translation of KINEXON's German postings (crew07-kinexon-translation).
+//  - L18: occupation-wide pay, BLS refused (crew07-occupation-pay).
+//  - L19: whether the NFL posts operator roles every spring (crew07-ivr-posting-season); whether every
+//    stadium has its own posting (crew07-ivr-markets); when Hawk-Eye's US venue roles open
+//    (crew07-hawkeye-us-technician-timing); how TeamWork Online's alerts work (crew07-teamwork-alerts).
+//  - L21: the NFL operator's employment type (crew07-ivr-employment-type).
 //
 // House style, matching cables-and-connectors-course.ts and arena-transmission-course.ts: `section` on
 // every lesson; flush-left single-line `:::reveal q ||| a`; recallContent from the second teaching
@@ -237,7 +260,7 @@ const QR_MED =
 export const SIDELINE_SYSTEMS_COURSE: AuthoredCourse = {
   title: "The Sideline's Other Crew",
   description:
-    "Beside every broadcast crew at a big game works a second crew that most viewers never see: the technicians who run the tracking cameras, the officials' replay systems and the injury video that medical staff review. This course explains what a stadium's tracking array is and who uses its output; how review systems serve the licensed medical people who keep athletes safe, and why the video crew never makes a medical call; how the NFL, the NBA, the NHL, MLB, tennis, football (soccer), cricket and college conferences use replay, tracking and measurement under their own rules; and what a technician's game day looks like, hour by hour, from the postings that describe it. It is job-shaped knowledge for crew who already know a truck or an arena. It does not teach medicine, and it does not teach any vendor's operator screens. Vendors and leagues are cited worked examples, not endorsements, and every lesson that needs a systems technician's or an athletic trainer's sign-off says so at the top.",
+    "Beside every broadcast crew at a big game works a second crew that most viewers never see: the technicians who run the tracking cameras, the officials' replay systems and the injury video that medical staff review. This course explains what a stadium's tracking array is and who uses its output; how review systems serve the licensed medical people who keep athletes safe, and why the video crew never makes a medical call; how the NFL, the NBA, the NHL, MLB, tennis, football (soccer), cricket and college conferences use replay, tracking and measurement under their own rules; what a technician's game day looks like, hour by hour, from the postings that describe it; which jobs the leagues and vendors post, what they ask, what they paid as posted and how the postings describe moving up; and where and when those postings open, what to practice and how the work is contracted. It ends with a written capstone: a game-day runbook for one role, every step cited from the public record, or a comparison of two vendors' systems from their own pages. It is job-shaped knowledge for crew who already know a truck or an arena. It does not teach medicine, and it does not teach any vendor's operator screens. Vendors and leagues are cited worked examples, not endorsements, and every lesson that needs a systems technician's or an athletic trainer's sign-off says so at the top.",
   lessons: [
     // ══════════════════════════════════════════════════════════════════════
     // SECTION 1: What a tracking array is
@@ -2423,7 +2446,7 @@ The two figures do not measure the same thing: one is data delivery, the other a
         questionsPerAttempt: 5,
         shuffleOptions: true,
         questions: [
-          { prompt: "What are the capstone's two options?", options: ["A filmed demo, or a live system test", "A league exam, or a vendor certificate", "A cited runbook, or a vendor comparison", "A job application, or an interview"], correctIndex: 2, explanation: "Lesson 22: Option A, a game-day runbook for one role with every step cited; Option B, a comparison of two vendors' systems from their own pages.", sourceLessonSlug: "capstone-runbook-from-the-public-record" },
+          { prompt: "What are the capstone's two options?", options: ["A filmed demo, or a live system test", "A league exam, or a vendor certificate", "A cited runbook, or a vendor comparison", "A job application, or an interview"], correctIndex: 2, explanation: "Lesson 22: either a game-day runbook for one role with every step cited, or a comparison of two vendors' systems from their own pages.", sourceLessonSlug: "capstone-runbook-from-the-public-record" },
           { prompt: "Why is the capstone written rather than filmed?", options: ["Filming at stadiums is banned by every league", "The vendors' screens are public, so no need", "A written task needs no sources at all", "Nothing in it asks you to operate a system"], correctIndex: 3, explanation: "Lesson 22: nothing here asks you to operate a system, so the capstone is written, not filmed.", sourceLessonSlug: "capstone-runbook-from-the-public-record" },
           { prompt: "What must every line of a capstone carry?", options: ["A citation with a locator", "A photo of the equipment", "A vendor's written approval", "A signature from a referee"], correctIndex: 0, explanation: "Rule 1: every line is cited, with a locator a reader can follow.", sourceLessonSlug: "capstone-runbook-from-the-public-record" },
           { prompt: "Which of these is a locator, as the capstone uses the word?", options: ["The name of the person who told you", "A posting's section or a page number", "The date you first heard of the job", "The vendor's logo on the equipment"], correctIndex: 1, explanation: "Rule 1: a posting's section, a page or a paragraph, as in this course's Sources lists.", sourceLessonSlug: "capstone-runbook-from-the-public-record" },
@@ -2465,6 +2488,66 @@ The two figures do not measure the same thing: one is data delivery, the other a
           { prompt: "Which of these is required to pass Option B?", options: ["A recommendation of one vendor", "A row on figures that differ in kind", "A current price for each of the systems", "A league official's sign-off"], correctIndex: 1, explanation: "Lesson 22: at least one row notes where the two figures measure different things.", sourceLessonSlug: "capstone-runbook-from-the-public-record" },
           { prompt: "How must both capstone options end?", options: ["With a vendor's logo and contact", "With a summary of medical signs", "With a References list in APA 7", "With the learner's pay request"], correctIndex: 2, explanation: "Lesson 22: both end with a References list in APA 7 style.", sourceLessonSlug: "capstone-runbook-from-the-public-record" },
           { prompt: "Which of these would fail an Option A runbook?", options: ["A step dated \"as posted\" with its source", "A gap line naming what is not public", "A step citing a league's own page", "A step describing a vendor's screen"], correctIndex: 3, explanation: "Lesson 22: no step may describe a screen or an internal procedure.", sourceLessonSlug: "capstone-runbook-from-the-public-record" },
+        ],
+      },
+    },
+    // ══════════════════════════════════════════════════════════════════════
+    // FINAL
+    // ══════════════════════════════════════════════════════════════════════
+    {
+      slug: "final-quiz",
+      title: "Final quiz \u00b7 The Sideline's Other Crew",
+      section: "Final assessment",
+      body: "Ten questions drawn from the whole course: tracking arrays and calibration, the medical review boundary, the leagues' rules, the game day, the jobs and their pay as posted, getting hired, and the capstone. Each answer links back to the lesson that teaches it.",
+      quiz: {
+        passingScore: 80,
+        questionsPerAttempt: 10,
+        shuffleOptions: true,
+        questions: [
+          { prompt: "Whom does the replay in this course serve, unlike broadcast replay?", options: ["The director and the show", "Sponsors and advertisers", "Fans in the arena seats", "Officials and medical staff"], correctIndex: 3, explanation: "Lesson 1: broadcast replay is production for the show; this course's replay belongs to a league or governing body and serves officials and medical staff.", sourceLessonSlug: "three-systems-beside-the-field" },
+          { prompt: "What does \"synchronized\" give an official reviewing on SMART?", options: ["Every angle shows the same instant", "Every angle is in slow motion", "Every angle is in the broadcast", "Every angle is in high color"], correctIndex: 0, explanation: "Lesson 1: synchronized means every angle shows the same instant, so one moment can be stepped through from several cameras.", sourceLessonSlug: "three-systems-beside-the-field" },
+          { prompt: "How often does FIFA's offside system track up to 29 points per player?", options: ["5 times per second", "50 times per second", "500 times per minute", "10 times per second"], correctIndex: 1, explanation: "FIFA (n.d.-b): 12 cameras, up to 29 data points per player, 50 times per second.", sourceLessonSlug: "cameras-points-and-speed" },
+          { prompt: "Why is \"29 points per athlete\" not an industry standard?", options: ["It is FIFA's legal minimum", "It is set by each league", "It is one vendor's figure", "It is never used in sport"], correctIndex: 2, explanation: "Lesson 2: 29 is Hawk-Eye's number; TRACAB gives 65 points from 21 joints, and the Premier League's system up to 10,000 mesh points.", sourceLessonSlug: "cameras-points-and-speed" },
+          { prompt: "How long does FIFA certify a goal-line installation for?", options: ["6 months", "5 years", "One match", "12 months"], correctIndex: 3, explanation: "FIFA (n.d.-a): certification lasts 12 months, and a retest is needed when it expires.", sourceLessonSlug: "calibration-and-certification" },
+          { prompt: "What must the referee do if goal-line technology fails its pre-match test?", options: ["Not use it, and report it", "Use it, but watch closely", "Delay kickoff until fixed", "Ask the vendor to override"], correctIndex: 0, explanation: "IFAB (2026, p. 52): the referee must not use the GLT system and must report this.", sourceLessonSlug: "calibration-and-certification" },
+          { prompt: "How does NFL Next Gen Stats track players?", options: ["By cameras under the stadium roof", "By radio tags in the shoulder pads", "By GPS units in each player's helmet", "By operators logging each play by hand"], correctIndex: 1, explanation: "NFL (n.d.-c): RFID tags in shoulder pads and ultra-wideband receivers around the venue.", sourceLessonSlug: "the-vendors-optical-and-worn" },
+          { prompt: "Which company built the Premier League's semi-automated offside system?", options: ["Hawk-Eye", "TRACAB", "Genius Sports", "Catapult Sports"], correctIndex: 2, explanation: "Premier League (2025b): Genius Sports, with PGMOL, not Hawk-Eye.", sourceLessonSlug: "the-vendors-optical-and-worn" },
+          { prompt: "Who decides on a concussion diagnosis and return to the game in the NFL's protocol?", options: ["The booth athletic trainer spotter", "The injury video review operator", "The referee, after a replay review", "The head team or club physician"], correctIndex: 3, explanation: "NFL Head, Neck and Spine Committee (2024, p. 5): the Head Team Physician or the designated Club physician.", sourceLessonSlug: "the-nfl-booth" },
+          { prompt: "What does the NFL spotter tell the video technician to do?", options: ["Tag and label the video", "Diagnose the player", "Stop the game at once", "Call the team's coach"], correctIndex: 0, explanation: "NFL (n.d.-e): the spotter \"tells the technician to tag and label the video.\"", sourceLessonSlug: "the-nfl-booth" },
+          { prompt: "Who calls a medical timeout in the NFL sources this course read?", options: ["The video operator", "The booth AT spotter", "The head coach", "The broadcaster"], correctIndex: 1, explanation: "Lesson 6: every NFL source read gives the call to the booth AT spotter, not the injury video review operator.", sourceLessonSlug: "the-medical-timeout-and-the-radio-net" },
+          { prompt: "For whom does the NFL operator maintain two-way radios?", options: ["Both teams' coaches and their quarterbacks", "The broadcast crew and the stadium security", "Both teams' medical and independent staff", "The officials and the chain crew only"], correctIndex: 2, explanation: "NFL (2026b): \"two-way radios for both teams' medical personnel and independent medical personnel.\"", sourceLessonSlug: "the-medical-timeout-and-the-radio-net" },
+          { prompt: "Under World Rugby's protocol, who must call for an off-field HIA1 assessment?", options: ["The referee", "Video crew", "The captain", "Medical staff"], correctIndex: 3, explanation: "World Rugby (2022, pp. 18 to 19): non-medical staff can alert their medical staff, but the call \"must be done by medical staff.\"", sourceLessonSlug: "world-rugby-hia-and-pitch-side-video" },
+          { prompt: "What does World Rugby's minimum video standard for the HIA include?", options: ["At least 4 views, including broadcast", "A single broadcast view with sound off", "Only a 10-minute delayed recording", "A drone view above the whole pitch"], correctIndex: 0, explanation: "World Rugby (n.d.-e): live and 10-second delayed views, at least 4 views including broadcast, transport controls and sound.", sourceLessonSlug: "world-rugby-hia-and-pitch-side-video" },
+          { prompt: "In lesson 8's three tiers, where does the video crew sit?", options: ["Tier 1, physicians", "Tier 3, non-medical crew", "Tier 2, licensed watchers", "Outside all three tiers"], correctIndex: 1, explanation: "Lesson 8: tier 3 keeps the video, clips and radios working and tags what it is told to tag; it never diagnoses or decides.", sourceLessonSlug: "who-is-licensed-to-act" },
+          { prompt: "Under the NCAA checklist, who makes the final determination of return to sport?", options: ["The athletic trainer on duty", "The head coach of the team", "The team physician or designee", "The conference's replay official"], correctIndex: 2, explanation: "NCAA Sport Science Institute (2026, p. 11): the team physician or a medically qualified physician designee.", sourceLessonSlug: "who-is-licensed-to-act" },
+          { prompt: "Under NFL Rule 15-2, who conducts every replay review?", options: ["The home team's video coordinator", "The broadcast network's producer", "The injury video review operator", "The SVP of Officiating or a designee"], correctIndex: 3, explanation: "NFL (2026a, Rule 15-2): the Senior Vice President of Officiating or a designee, with the Replay Official and the Referee.", sourceLessonSlug: "nfl-replay-and-the-line-to-gain" },
+          { prompt: "What happened to the NFL chain crew when Hawk-Eye took over the line to gain?", options: ["It stayed on in a secondary role", "It was removed from every game", "It moved to the replay booth", "It took over the tracking cameras"], correctIndex: 0, explanation: "Sony Electronics (2025): Hawk-Eye became the primary line-to-gain method, and the chain crew stays in a secondary capacity.", sourceLessonSlug: "nfl-replay-and-the-line-to-gain" },
+          { prompt: "Who may challenge a ball or strike call under MLB's ABS Challenge System?", options: ["The manager from the dugout", "The pitcher, catcher or batter", "Any fielder on the infield", "The broadcast replay team"], correctIndex: 1, explanation: "MLB (2025): only the pitcher, catcher or batter, immediately, by tapping the hat or helmet.", sourceLessonSlug: "basketball-hockey-and-baseball" },
+          { prompt: "What network carries MLB's ABS camera data?", options: ["The stadium's public Wi-Fi", "A satellite uplink truck", "A 5G private network", "The broadcaster's own fiber"], correctIndex: 2, explanation: "MLB (2025): a 5G private network from T-Mobile for Business.", sourceLessonSlug: "basketball-hockey-and-baseball" },
+          { prompt: "Within how long must a goal-line goal signal be confirmed, and to whom?", options: ["Five seconds, to the broadcaster", "One minute, to both team benches", "Ten seconds, to the stadium screen", "One second, to match officials only"], correctIndex: 3, explanation: "IFAB (2026, p. 52): within one second, only to the match officials.", sourceLessonSlug: "tennis-and-football" },
+          { prompt: "Who works in the video operation room under Law 1?", options: ["The VAR, the AVAR and the replay operator", "The coaches, the captains and a reporter", "The fourth official and the team doctors", "The broadcaster's director and producer"], correctIndex: 0, explanation: "IFAB (2026, p. 53): the video assistant referee, the assistant VAR and the replay operator.", sourceLessonSlug: "tennis-and-football" },
+          { prompt: "Which two ball-tracking systems does the ICC approve for DRS?", options: ["TRACAB or Catapult", "HawkEye or VirtualEye", "SkeleTRACK or KINEXON", "Statcast or Genius"], correctIndex: 1, explanation: "ICC (2026, p. 98): HawkEye (HawkEye Innovations) or VirtualEye (ARL).", sourceLessonSlug: "cricket-and-college-replay" },
+          { prompt: "Who decides what replay equipment a college football game uses?", options: ["The NCAA's national office only", "The home team's broadcaster", "Each conference or member school", "The vendor with the lowest bid"], correctIndex: 2, explanation: "NCAA (2026a, Rule 12-4-2-a): each conference or member institution.", sourceLessonSlug: "cricket-and-college-replay" },
+          { prompt: "What does the NFL posting say operators must do a week before game day?", options: ["Recalibrate the booth cameras", "Collect the visiting team's radios", "Take a typing test again", "Report any scheduling conflict"], correctIndex: 3, explanation: "NFL (2026b): notify Player Health and Safety of any scheduling conflict at least one week before game day.", sourceLessonSlug: "arrival-and-setup" },
+          { prompt: "Over what does the Firenze technician test comms with replay operators?", options: ["Dante", "Bluetooth", "Cellular", "Satellite"], correctIndex: 0, explanation: "Hawk-Eye Innovations (2026e): \"communication via Dante\" with the replay operators and the Remote Centre.", sourceLessonSlug: "arrival-and-setup" },
+          { prompt: "What must the Bolzano technician do about a check that could not be completed?", options: ["Finish it after the match, without a note", "Report it on the checklist, with the reason", "Leave it off the checklist altogether", "Ask the referee to sign it off instead"], correctIndex: 1, explanation: "Hawk-Eye Innovations (2026f): \"reporting any uncompleted checks and specifying the reason.\"", sourceLessonSlug: "checks-calibration-and-meetings" },
+          { prompt: "About when is the referees' goal-line test, per the Firenze posting?", options: ["About ten minutes before the match", "During the half-time interval", "About two hours before the match", "On the evening before match day"], correctIndex: 2, explanation: "Hawk-Eye Innovations (2026e): \"approximately two hours before the match.\"", sourceLessonSlug: "checks-calibration-and-meetings" },
+          { prompt: "What must an NFL operator be able to focus on, per the posting?", options: ["The game, not the task at hand", "The crowd, not the medical booth", "The broadcast, not the field", "The task at hand, not the game"], correctIndex: 3, explanation: "NFL (2026b): \"Must be able to focus on the task at hand, not the game.\"", sourceLessonSlug: "during-and-after-the-game" },
+          { prompt: "What does the Firenze technician upload after the match?", options: ["Data requested by EPTS Remote Support", "Highlight clips for the club's channels", "Player medical files for the league", "The broadcast feed for the sponsors"], correctIndex: 0, explanation: "Hawk-Eye Innovations (2026e): \"all the data requested by EPTS Remote Support,\" then disassembly.", sourceLessonSlug: "during-and-after-the-game" },
+          { prompt: "How does this course write the NFL operator's posted pay?", options: ["$38 an hour, the posted rate", "$38 USD, with no unit stated", "$38 per game, as posted", "$38,000 per year, as posted"], correctIndex: 1, explanation: "Lesson 16: the salary line gives $38 at both ends in USD and never states a unit.", sourceLessonSlug: "four-us-roles-as-posted" },
+          { prompt: "What was the SEC coordinator posting's deadline to apply?", options: ["April 24, 2026", "December 16, 2026", "October 30, 2026", "October 14, 2026"], correctIndex: 2, explanation: "Hawk-Eye Innovations (2026g): \"Deadline to Apply October 30, 2026 at 7:00 PM EDT.\" It is quoted as a record.", sourceLessonSlug: "four-us-roles-as-posted" },
+          { prompt: "What did Hawk-Eye's Italy technician postings offer, as posted in October 2026?", options: ["€130 as an hourly rate", "€80 for each 8-hour shift", "A salary of €43,112 a year", "From €130 as a daily rate"], correctIndex: 3, explanation: "Hawk-Eye Innovations (2026e, 2026f): \"Starting from €130 daily rate, based on experience.\"", sourceLessonSlug: "casual-freelance-and-remote-roles" },
+          { prompt: "Why are Sportradar's operator roles not replay jobs?", options: ["Their duties are live data work", "They are based only in Europe", "They pay by the year, not hour", "They require a medical license"], correctIndex: 0, explanation: "Lesson 17: Sportradar's operators assist scouts collecting live data and enter line-ups; it is data work.", sourceLessonSlug: "casual-freelance-and-remote-roles" },
+          { prompt: "Why can the Sofia pay be converted to an hourly figure?", options: ["The posting gives an hourly rate", "The posting states 8-hour shifts", "All euro pay is quoted by the hour", "The analyst works a 40-hour week"], correctIndex: 1, explanation: "Lesson 18: 80 EUR per 8-hour shift is 10 EUR an hour for that posting.", sourceLessonSlug: "pay-eligibility-and-the-ladder" },
+          { prompt: "What do the Italy postings call the casual technician route?", options: ["A temporary job with no route to staff", "A volunteer role for students only", "An entry level route into full time work", "A step up from refereeing in Serie A"], correctIndex: 2, explanation: "Hawk-Eye Innovations (2026e): \"a great entry level route into full time employment with Hawk-Eye Innovations ltd.\"", sourceLessonSlug: "pay-eligibility-and-the-ladder" },
+          { prompt: "When were the two NFL operator copies read for this course created?", options: ["October 16 and 30, 2026", "June 26 and August 14, 2026", "January 7 and 8, 2026", "April 6 and April 15, 2026"], correctIndex: 3, explanation: "NFL (2026c, 2026b): Tampa Bay on April 6, New Orleans on April 15, 2026.", sourceLessonSlug: "where-and-when-postings-open" },
+          { prompt: "How should you read a single posting date on a board?", options: ["As last published, not when hiring began", "As the deadline for every application", "As the start date for the first shift", "As the date the role was filled"], correctIndex: 0, explanation: "Lesson 19: the employer's board shows the latest publish date, and a copy's age can be older.", sourceLessonSlug: "where-and-when-postings-open" },
+          { prompt: "When did Windows 10 reach its end of support, per Microsoft?", options: ["October 12, 2027", "October 14, 2025", "April 15, 2026", "July 29, 2015"], correctIndex: 1, explanation: "Microsoft (n.d.-c): \"Windows 10 has reached the end of support on October 14, 2025.\"", sourceLessonSlug: "what-to-practice" },
+          { prompt: "What is the last step of Microsoft's Wi-Fi troubleshooting guide?", options: ["Restart the modem first", "Forget the network", "Ping the default gateway", "Check Airplane mode"], correctIndex: 2, explanation: "Microsoft (n.d.-a), step 9: run ipconfig, find the \"Default gateway\" address, then ping it.", sourceLessonSlug: "what-to-practice" },
+          { prompt: "How was the Rutgers technician employed, as posted?", options: ["Directly by Rutgers' athletic department staff", "Directly by the Big Ten Conference's office", "As a volunteer under the NCAA's student rules", "Through a third-party managed service provider"], correctIndex: 3, explanation: "Hawk-Eye Innovations (n.d.-f): \"employed through a third-party managed service provider.\"", sourceLessonSlug: "applying-and-how-you-are-employed" },
+          { prompt: "What does the NFL operator posting say about employment type?", options: ["It does not state it", "It is a union post", "It is unpaid work", "It is a staff job"], correctIndex: 0, explanation: "Lesson 21: the posting does not say whether the operator is an NFL employee, a contractor or a staffing provider's worker.", sourceLessonSlug: "applying-and-how-you-are-employed" },
+          { prompt: "In the capstone, how do you handle a step whose procedure is the vendor's?", options: ["Reconstruct the procedure from similar systems", "Say the step exists; the procedure is not public", "Leave the step out of the runbook entirely", "Ask a friend who worked it for the details"], correctIndex: 1, explanation: "Lesson 22, rule 5: write that the step exists and that its procedure is the vendor's.", sourceLessonSlug: "capstone-runbook-from-the-public-record" },
+          { prompt: "In a capstone vendor comparison, what goes beside a vendor's latency figure?", options: ["\"Independently tested\"", "\"League certified\"", "\"The vendor says\"", "\"Industry standard\""], correctIndex: 2, explanation: "Lesson 22, rule 3: a vendor's figure is the vendor's; mark it \"the vendor says.\"", sourceLessonSlug: "capstone-runbook-from-the-public-record" },
         ],
       },
     },

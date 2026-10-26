@@ -3625,8 +3625,8 @@ async function main() {
   // the NFL, the SEC, the Big Ten) are cited worked examples. Public, held for a qualified reviewer who
   // has worked one of these jobs (a tracking or replay systems technician), with a certified athletic
   // trainer for the medical-review section. Research tier 2: it describes concussion and injury review
-  // protocols and never teaches medicine. Pass 1 (2026-10-26) wrote sections 1 to 4; sections 5 to 7
-  // (jobs, hiring, the capstone) and the final quiz follow.
+  // protocols and never teaches medicine. Written in two passes on 2026-10-26: all seven sections, 22
+  // lessons (jobs, hiring and a written capstone in pass 2), seven section quizzes and the final quiz.
   await seedAuthoredCourse(db, {
     tenantId: learnWitus,
     instructorId,
