@@ -928,6 +928,354 @@ The NFL booth spotter shows why tier 2 exists. The role requires BOC certificati
         ],
       },
     },
+    // ══════════════════════════════════════════════════════════════════════
+    // SECTION 3: The leagues and the rules
+    // ══════════════════════════════════════════════════════════════════════
+    {
+      slug: "nfl-replay-and-the-line-to-gain",
+      title: "9 · NFL: challenges, the command center and the line to gain",
+      section: "3 · The leagues and the rules",
+      recallContent: [
+        {
+          prompt: "Who makes the final determination of unrestricted return to sport under the NCAA checklist?",
+          answer: "The team physician or a medically qualified physician designee (NCAA Sport Science Institute, 2026, p. 11).",
+        },
+        {
+          prompt: "In lesson 8's three tiers, where does the video crew sit?",
+          answer: "Tier 3, non-medical crew: keep the video, clips and radios working and tag what they are told to tag; never diagnose or decide.",
+        },
+      ],
+      body: `${QR}
+
+**Back to officiating.** Section 2 was about video for medical staff. This section is about video and measurement for officials, league by league, from each league's or governing body's own rules. It starts with the NFL.
+
+**Who may ask for a review.** Rule 15 gives each team "a minimum of two challenges," a third if at least one succeeds, and "A fourth challenge will not be permitted"; each challenge needs an available timeout (NFL, 2026a, Rule 15-1-1). In the 2026 text, "The head coach or head coach's pregame challenge designee can initiate a challenge by throwing a red flag" (Rule 15-1-1-a). Only the Replay Official or the Senior Vice President of Officiating, or a designee, may start a review after the two-minute warning, in overtime, on scores and Try attempts, and on rulings such as interceptions and failed fourth-down attempts (Rule 15-1-2).
+
+**Who decides.** "All Replay Reviews will be conducted by the Senior Vice President of Officiating or his or her designee," in consultation with the Replay Official and the Referee (Rule 15-2). A ruling changes only when "clear and obvious video evidence warrants a change" (Rule 15-2-1). The Replay Official or the officiating department may also "advise, consult with, or assist the on-field officials on specific, objective aspects of a play when clear and obvious video evidence is present," including the game clock, possession and the ball's position relative to a line (Rule 15-9).
+
+**When the link drops.** If communication with the League office is lost, the Referee waits one minute and then reviews with the Replay Official (Rule 15-8). A rule written for a lost link shows how much the system leans on the network between the stadium and New York.
+
+**Art McNally GameDay Central (AMGC).** At league headquarters in New York, AMGC, "Launched in 2014," is "the hub of the NFL's replay review process," active for every game from preseason through the Super Bowl (NFL, n.d.-b).
+
+| Item | What the NFL says |
+|---|---|
+| Stations | "16 stations, each set up to show a designated game on a 58-inch touch-screen monitor," with a replay assistant at each |
+| Technology | "powered by Sony Hawk-Eye technology"; replays are driven "by Xbox controllers" |
+| Who decides | "Three AMGC decision makers make final replay decisions"; each supervisor covers up to four games |
+| Peak load | Up to nine games at once in the 1 p.m. ET window |
+| Since 2021 | "the NFL has used Hawk-Eye to review multiple time-synchronized angles of the same play" |
+| To the field | The replay field operator brings the referee a Microsoft Surface Pro tablet (since 2017); "Up to four selected synchronized camera angles can be sent to the tablet" |
+| Speed | "In 2024, the average review lasted 1 minute and 25 seconds" |
+| After the games | Staff "'tag' every play so they can be searched later in a database" |
+
+Source: NFL (n.d.-b). Sony adds that SMART, adopted in 2021, combines "video feeds from all of the NFL's broadcast partners in one place" (Sony Electronics, 2025). So the officials' review system is fed by the broadcast's cameras, which is one reason the two crews work so closely on game day.
+
+**The replay crew at the stadium.** Replay officials "oversee a team that includes a video operator, replay field operators, replay field communicators and a replay assistant" (NFL, n.d.-d). Replay assistants often come from college replay or from NFL game day assistant roles "such as replay video operators, replay field communicators or clock operators" (NFL, n.d.-d). That is a career path in the league's own words, and section 5 returns to it.
+
+**The line to gain.** On April 1, 2025, Sony announced that Hawk-Eye would become "the primary method for measuring the line to gain, beginning with the 2025 season," and that "The chain crew will remain on the field in a secondary capacity" (Sony Electronics, 2025). So the NFL did not drop the chains. The system "consists of six 8K cameras for optical tracking of the position of the ball," in all 30 NFL stadiums and international venues, "operated from" AMGC and "integrated with the league's existing replay system." "The full operational process takes around 30 seconds, saving up to 40 seconds from a measurement with the chains" (Sony Electronics, 2025). This course read only the April 2025 announcement, so it does not say how the system ran across the 2025 season or whether it changed for 2026.
+
+**Two kinds of tracking in one league, reasoned.** Lesson 4 showed that NFL player tracking is radio: tags in the shoulder pads and receivers around the venue (NFL, n.d.-c). The line to gain is optical: six Hawk-Eye cameras (Sony Electronics, 2025). Same league, same game, two technologies, run by different crews.
+
+:::reveal Who conducts every NFL replay review? ||| The Senior Vice President of Officiating or a designee, in consultation with the Replay Official and the Referee (NFL, 2026a, Rule 15-2).
+
+:::reveal What happens if the link to the League office is lost? ||| The Referee waits one minute and then reviews with the Replay Official (NFL, 2026a, Rule 15-8).
+
+:::reveal Did the NFL drop the chain crew in 2025? ||| No. Hawk-Eye became the primary line-to-gain method, and the chain crew stays on the field in a secondary capacity (Sony Electronics, 2025).
+
+## Sources
+- ${NFL_RULES} Locator: Rule 15-1-1, 15-1-2, 15-2 and 15-2-1, PDF p. 67 (printed p. 60); Rules 15-8 and 15-9, PDF p. 71.
+- ${NFL_AMGC} Locator: opening; "Gameday at AMGC" paragraphs 3 to 6; "During a Review" paragraph 4, the sidebar and the last paragraph; "After the Games".
+- ${NFL_REPLAY_OFFICIALS} Locator: paragraph 2; "Maintaining the Pipeline".
+- ${SONY_2025} Locator: paragraphs 1 and 3 to 6.
+- ${NFL_NGS} Locator: paragraphs 3 and 4.`,
+    },
+    {
+      slug: "basketball-hockey-and-baseball",
+      title: "10 · Basketball, hockey and baseball",
+      section: "3 · The leagues and the rules",
+      recallContent: [
+        {
+          prompt: "How long did the average NFL replay review last in 2024?",
+          answer: "1 minute and 25 seconds (NFL, n.d.-b).",
+        },
+        {
+          prompt: "What does the NFL's optical line-to-gain system use?",
+          answer: "Six 8K cameras for optical tracking of the ball, operated from AMGC; the chain crew stays in a secondary role (Sony Electronics, 2025).",
+        },
+      ],
+      body: `${QR}
+
+**Basketball: link, then add.** CREW-05 lesson "4 · Beside the network: replay, tracking and referee comms" teaches the NBA Replay Center, Rule 13's review triggers and the arena tracking counts. This lesson does not repeat them. It adds three things from one trade report (Dachman, 2023):
+
+- **History.** "Since 2019, Hawk-Eye has worked closely with the NBA in a proof-of-concept capacity," collecting data "at NBA Summer League and six NBA arenas."
+- **Data.** Sportradar, "the league's exclusive data provider," works alongside Hawk-Eye to generate events and stats (lesson 4).
+- **The earlier provider stays.** Second Spectrum remains "an official NBA League Pass augmentation provider and an official NBA Team Basketball analytics provider."
+
+Lesson 4 showed that Second Spectrum is the WNBA's tracking provider from 2024 (WNBA, 2024). So the NBA's league tracking and the WNBA's come from different optical vendors.
+
+**Hockey.** The NHL says: "The NHL has used Sony's Hawk-Eye technology since 2015 with Synchronized Multi-Angle Replay Technology (SMART) services installed in all 32 NHL arenas" (NHL, 2025). Hawk-Eye's own homepage says "since 2016" (Hawk-Eye Innovations, n.d.-d). This course teaches the league's date, names the vendor's, and has not settled why they differ. In June 2025, Sony became an Official NHL Technology Partner in a multiyear deal (NHL, 2025).
+
+A trade report describes the league's Situation Room in Toronto: "a dedicated operator" for each game, feeds from "standardized goal-line, blue-line, and overhead camera positions," and video that can go to officials' iPads on the ice (Costa, 2026). It adds that a separate Hawk-Eye optical tracking system "has been live league-wide for more than a year," as of January 2026 (Costa, 2026). Standardized camera positions in every arena are, reasoned, what make one central room possible: the operator in Toronto knows where each angle comes from.
+
+**Baseball: Statcast.** MLB installed pitch tracking in every stadium in 2008, and Statcast in all 30 ballparks in 2015 after a partial 2014 trial (MLB, n.d.). "From 2015-19, Statcast consisted of a combination of camera and radar systems. That changed in 2020, with the arrival of Hawk-Eye" (MLB, n.d.). Hawk-Eye's homepage says Statcast data "since 2019" (Hawk-Eye Innovations, n.d.-d). The league says 2020 and the vendor 2019, and this course has not settled whether the vendor's year counts testing. Bat tracking began "with the second half of the 2023 season" (MLB, n.d.). Lesson 2 gave the 12 cameras and their frame rates.
+
+**Baseball: the ABS Challenge System.** On September 23, 2025, MLB announced that its Joint Competition Committee, "six owners, four active players and one active umpire," had approved the Automated Ball-Strike (ABS) Challenge System for all Spring Training, regular-season and Postseason games "Beginning in 2026" (MLB, 2025). How it works, from MLB's release:
+
+- "Twelve (12) Hawk-Eye cameras set up around the perimeter of the field track the location of each pitch," on "a 5G private network from T-Mobile for Business." "The entire process takes approximately 15 seconds."
+- Only the pitcher, catcher or batter may challenge, "immediately," by tapping the hat or helmet, with no help from coaches or anyone else.
+- Each club starts with two challenges, keeps any that succeed, and gets one in each extra inning if it has none left.
+- The ABS zone is a two-dimensional rectangle at the middle of home plate, 17 inches wide, with its top at 53.5% and its bottom at 27% of the batter's height. Independent testers measure players in Spring Training.
+
+The system came up through the minor leagues: the Florida State League from 2021, select Triple-A parks in 2022, all of Triple-A in 2023, and MLB Spring Training in 2025. In 2025 Spring Training, "just over four (4) pitches per game" were challenged, and success was "near 50%" (MLB, 2025).
+
+**Why a technician reads this, reasoned.** The ABS rules set a time budget, about 15 seconds, and name a dedicated network. A system that must answer in 15 seconds in front of a crowd is one whose cameras and network are checked before the first pitch. Section 4 is about those checks.
+
+:::reveal Since when does the NHL say it has used Hawk-Eye SMART, and what does Hawk-Eye's homepage say? ||| The NHL says since 2015, in all 32 arenas (NHL, 2025). Hawk-Eye's homepage says since 2016.
+
+:::reveal Who may challenge a ball or strike call under MLB's ABS Challenge System? ||| Only the pitcher, catcher or batter, immediately, by tapping the hat or helmet (MLB, 2025).
+
+:::reveal What network carries MLB's ABS camera data? ||| A 5G private network from T-Mobile for Business (MLB, 2025).
+
+## Sources
+- ${DACHMAN_2023} Locator: paragraph 1; paragraphs 7 and 8; section "Second Spectrum Stays in the Mix".
+- ${WNBA_2024} Locator: release text (read through a web fetch tool).
+- ${NHL_2025} Locator: paragraphs 1, 2 and 5.
+- ${HE_HOME} Locator: "The Hawk-Eye You Know" (the NHL and MLB dates).
+- ${COSTA_2026} Locator: "From Replay Reviews to a League-Wide Hub"; "The Sony Hawk-Eye Backbone".
+- ${MLB_STATCAST} Locator: "About Statcast" paragraphs 2 and 3.
+- ${MLB_2025} Locator: paragraph 1; "How It Works"; "ABS Challenge System Rules"; "ABS Challenge System Strike Zone"; the paragraph after the quotes; "ABS Challenge Results".`,
+    },
+    {
+      slug: "tennis-and-football",
+      title: "11 · Tennis and football: line calling, goal-line, VAR and offside",
+      section: "3 · The leagues and the rules",
+      recallContent: [
+        {
+          prompt: "When does MLB say Hawk-Eye arrived for Statcast, and what does Hawk-Eye's homepage say?",
+          answer: "MLB says 2020; from 2015 to 2019 Statcast combined camera and radar (MLB, n.d.). Hawk-Eye's homepage says 2019.",
+        },
+        {
+          prompt: "How long does MLB say the whole ABS challenge process takes?",
+          answer: "Approximately 15 seconds (MLB, 2025).",
+        },
+      ],
+      body: `${QR}
+
+**Tennis: the line judges' calls move to cameras.** On April 28, 2023, the ATP announced "Tour-wide adoption of Electronic Line Calling Live (ELC Live) from 2025," covering "all court lines for 'out' calls," a role "traditionally carried out by on-court line judges" (ATP Tour, 2023). ELC Live "was first trialled at the Next Gen ATP Finals in 2017 in Milan." "Multiple suppliers" were approved, and all-court ELC Live would also deliver "comprehensive player and ball tracking across the whole Tour" (ATP Tour, 2023).
+
+On February 6, 2025, the ATP said: "For the first time ever, all tour-level events on all surfaces are featuring Live Electronic Line Calling," and Video Review was coming to every court at all nine ATP Masters 1000 events that year (ATP Tour, 2025). The ATP's February 2025 news page was read through a web fetch tool rather than a browser, so a reviewer will open it before release.
+
+**Wimbledon.** In October 2024, Wimbledon announced live electronic line calling from 2025 "for all main draw and qualifying match courts," for the calls line judges had made, after testing at the 2024 Championships (ATP Tour, 2024). That ATP page was also read through a web fetch tool rather than a browser, so a reviewer will open it before release. For 2026 the All England Club announced Video Review on six Show Courts, and "visual indicators will be installed on every court for live Electronic Line Calling to signal 'out' and 'fault' calls" (All England Lawn Tennis Club, 2026, p. 2). Older accounts that describe Wimbledon as the Grand Slam holding out with line judges are out of date.
+
+Hawk-Eye's own account: electronic line calling was approved in 2005 and debuted at the 2006 Miami Masters, and Hawk-Eye Live launched in 2017 (Hawk-Eye Innovations, 2026c). Since the ATP approved "Multiple suppliers," Hawk-Eye is one supplier, not the only one.
+
+**Football: the Laws set the rules for the technology.** The Laws of the Game 2026/27 are "Effective from 1st July 2026" (IFAB, 2026, cover).
+
+*Goal-line technology (GLT).* "GLT systems may be used to verify whether a goal has been scored to support the referee's decision," and their use "must be stipulated in the competition rules" (IFAB, 2026, p. 50). GLT "applies solely to the goal line." The goal signal must be "automatically confirmed within one second," only to the match officials, by watch vibration and visual signal and/or earpiece, and may also go to the video operation room (p. 52). Systems must meet "the FIFA Quality Programme for GLT" (p. 52). Lesson 3 covered installation, certification and the referee's pre-match test. Hawk-Eye calls its GLT "the first FIFA-certified goal-line system" and says it can run from a "Remote Operations Centre (ROC)" with "24/7 remote monitoring" (Michaelides, 2026).
+
+*Video assistant referee (VAR).* A VAR match needs a video operation room (VOR), "where the video assistant referee (VAR), assistant VAR (AVAR) and replay operator (RO) work; it may be in/close to the stadium or at a more distant location," and at least one referee review area (RRA) (IFAB, 2026, p. 53). A competition needs "written permission from FIFA" to use VAR (p. 153). VAR assists only on a "clear and obvious error" or "serious missed incident" in set categories; "The final decision is always taken by the referee"; and "There is no time limit for the review process" (pp. 153 to 154). In 2026/27 there are five categories, and the fifth is a "Clearly incorrectly awarded corner kick" in limited conditions (p. 155). Older material says four.
+
+Notice, reasoned, that the replay operator is named in the Laws themselves. It is a job written into a sport's rulebook, which is why postings for it exist.
+
+*Semi-automated offside (SAOT).* FIFA trialled its system at the FIFA Arab Cup 2021 and the FIFA Club World Cup 2021 (FIFA, n.d.-b); lesson 3 showed how VAR officials check its kick point and line. The Premier League introduced its own SAOT "on Saturday 12 April (Match Round 32)" of 2024/25, after "non-live testing in the Premier League and live operation in the FA Cup" (Premier League, 2025a), built with Genius Sports (lesson 4). It expected to save "approximately 30 seconds" on close offside calls (Premier League, 2025b). After a season it reported "27 seconds per offside event" and kept the system for 2025/26 (Premier League, 2025c).
+
+**Not every match gets it.** In the 2025-26 FA Cup, SAOT was "active from the fifth round onwards at all matches taking place in Premier League stadiums, due to the technology and infrastructure that it requires," and GLT ran from the third round at fixtures hosted by Premier League and EFL Championship clubs (The Football Association, 2026). Reasoned: the technology follows the venue's installed infrastructure, so one competition runs with it in some grounds and without it in others.
+
+:::reveal Within how long must a GLT goal signal be confirmed, and to whom? ||| Within one second, only to the match officials (IFAB, 2026, p. 52).
+
+:::reveal Who works in the video operation room under Law 1? ||| The video assistant referee (VAR), the assistant VAR (AVAR) and the replay operator (RO) (IFAB, 2026, p. 53).
+
+:::reveal Why did the 2025-26 FA Cup use SAOT only in Premier League stadiums? ||| "due to the technology and infrastructure that it requires" (The Football Association, 2026).
+
+## Sources
+- ${ATP_2023} Locator: paragraphs 1, 3, 5 and 6.
+- ${ATP_2025} Locator: opening paragraphs (read through a web fetch tool).
+- ${ATP_2024} Locator: paragraphs 1 to 3 (read through a web fetch tool).
+- ${AELTC_2026} Locator: PDF p. 2 (repeated on PDF p. 14).
+- ${HE_ATP} Locator: "The Dawn of Electronic Officiating" and "Going Live".
+- ${IFAB_2026} Locator: cover; Law 1.11, p. 50; "Principles of GLT," p. 52; Law 1.14, p. 53; VAR protocol preamble, p. 153; Principles 1, 5 and 6, pp. 153 to 154; section 2, item e, p. 155.
+- ${MICHAELIDES_2026} Locator: "A Decade of Trust" and "Sustainable & Hybrid Operations".
+- ${FIFA_SAOT} Locator: "How was it tested?"
+- ${PL_2025A} Locator: paragraph 1.
+- ${PL_2025B} Locator: "Will SAOT rule out more goals".
+- ${PL_2025C} Locator: VAR section.
+- ${FA_2026} Locator: paragraphs 3 to 5.`,
+    },
+    {
+      slug: "cricket-and-college-replay",
+      title: "12 · Cricket and college: DRS, Rule 12 and the conferences",
+      section: "3 · The leagues and the rules",
+      recallContent: [
+        {
+          prompt: "How many VAR review categories do the 2026/27 Laws list, and what is the newest?",
+          answer: "Five; the fifth is a clearly incorrectly awarded corner kick, in limited conditions (IFAB, 2026, p. 155).",
+        },
+        {
+          prompt: "How much time per offside event did the Premier League say SAOT saved after a season?",
+          answer: "27 seconds (Premier League, 2025c).",
+        },
+      ],
+      body: `${QR}
+
+**Cricket: the Decision Review System (DRS).** The International Cricket Council's men's Test playing conditions are "Effective from October 2026," and DRS and the third umpire are in Appendix D (International Cricket Council [ICC], 2026, p. 88). From Appendix D:
+
+- Minimum requirements for DRS are the camera specification, "Approved ball-tracking technology" and "Approved sound-based edge detection technology" (p. 89).
+- With DRS, the ICC appoints a neutral third umpire and "an independent technology expert (ICC Technical Officer)" at every DRS series (p. 89).
+- Without DRS, the third umpire uses camera replays only, and the broadcaster's ball-tracking and edge detection "shall not be used during Umpire Reviews" (p. 89).
+- The Home Board must provide "a separate room" for the third umpire, with access to the equipment (p. 89).
+- An on-field umpire refers a decision to the third umpire "by making the shape of a TV screen with their hands" (p. 90).
+- Each team may make at most "three (3) Player Review requests that are categorised as 'Unsuccessful'" per innings (p. 97). Older material says two.
+- The ICC Match Referee makes the final call on which technology is used in a match, with the ICC Technical Official, ICC management and the boards (p. 99).
+
+| Job | Approved technology (ICC, 2026, p. 98) |
+|---|---|
+| Ball-tracking | "HawkEye (HawkEye Innovations), or; VirtualEye (ARL)" |
+| Sound-based edge detection | "Real-Time Snickometer (BBG Sports), or; UltraEdge (HawkEye Innovations)" |
+| Heat-based edge detection | "Hot Spot cameras (BBG Sports)" |
+| LED wickets | "Zing Bails and Stumps" |
+
+So cricket ball-tracking is not only Hawk-Eye.
+
+**College football: NCAA Rule 12.** The 2026 NCAA Football Rules and Interpretations define the process: "Instant replay is a process whereby video review is used to uphold or overturn certain on-field decisions" (National Collegiate Athletic Association [NCAA], 2026a, Rule 12-1-1). To overturn, the replay official "must be convinced beyond all doubt by clear and obvious video evidence" (Rule 12-1-3). Replay is optional: "Any member institution may use instant replay, but there is no requirement to do so" (Rule 12-2-1-a).
+
+The rule names the crew. Replay needs "a minimum of three persons," "normally referred to as replay official, communicator and technician" (Rule 12-4-1). "The type of equipment used to carry out necessary instant replay duties shall be determined by each conference or member institution" (Rule 12-4-2-a). Replay equipment and staff sit in "a separate, secure location in the traditional press box area," a collaborative model may reach beyond the press box, and a protected wireless official-to-official (O2O) system is permitted (Rules 12-4-2 and 12-4-3). One 2026 change: after the two-minute timeout, when the Replay Official stops the game, the play clock freezes and restarts at the ready signal, with at least 10 seconds (NCAA, 2026b, p. 2).
+
+So, reasoned from Rule 12-4: in college football the "technician" is a named seat in the rule, and the vendor is a conference's or a school's choice, not the NCAA's.
+
+**The SEC.** The Southeastern Conference uses a Hawk-Eye multi-sport video review system, beginning with men's and women's basketball in 2024-25 (Southeastern Conference [SEC], 2025). For soccer and volleyball from 2024, a trade report says SMART is "the basis for video capture, replay, clipping and distribution." Soccer adds "six dedicated high-speed cameras," and referees talk to "a dedicated Replay Operator in a designated replay room on campus." Volleyball uses "12 dedicated high-speed cameras," including six "pylon cameras," and a Review Referee at the scorer's table has sole authority (Sports Video Group, 2024). Hawk-Eye says it supplies SMART to the SEC in "soccer, volleyball, baseball, softball and men's and women's basketball." It adds that the SEC Baseball Tournament of May 2026 ran the ABS Challenge on an experimental basis, "For the first time in a collegiate setting," with three challenges per team rather than MLB's two (Hawk-Eye Innovations, 2026b).
+
+**SEC football is a separate question.** The University of Oklahoma's IT department wrote in 2024 that joining the SEC meant "Upgrade of the DV Sport video replay system for Football to include additional camera feeds and video delivery to the SEC office in Birmingham," and, separately, cabling "7 event venues" for "in-game instant replay review using the Hawkeye system" (University of Oklahoma Information Technology, 2024). One school is not the conference. This course does not say which vendor runs SEC football replay across the conference.
+
+**The Big Ten.** A Hawk-Eye posting for a College Sports Systems Technician at Rutgers, now closed, described work "on-site at Big Ten Conference Football stadiums," including "Assisting in the set-up of the SMART replay & medical systems (both hardware and software)" (Hawk-Eye Innovations, n.d.-f). A posting is a primary source for what that employer asked. No Big Ten announcement naming its replay vendor could be read for this course, so the course states only what the posting says.
+
+:::reveal Which two ball-tracking technologies does the ICC approve for DRS? ||| HawkEye (HawkEye Innovations) or VirtualEye (ARL) (ICC, 2026, p. 98).
+
+:::reveal Which three people does NCAA Rule 12-4-1 name for replay? ||| The replay official, the communicator and the technician (NCAA, 2026a).
+
+:::reveal Who decides what replay equipment a college football game uses? ||| Each conference or member institution (NCAA, 2026a, Rule 12-4-2-a).
+
+## Sources
+- ${ICC_2026} Locator: cover; Appendix D, p. 88; 1.1.3 table and 1.1.4, p. 89; 2.1.2, p. 90; 3.6.1, p. 97; 3.8.1.3 to 3.8.1.6, p. 98; 3.8.3, p. 99.
+- ${NCAA_RULES} Locator: Rules 12-1-1, 12-1-3 and 12-2-1-a, p. FR-117; Rules 12-4-1 to 12-4-3, p. FR-122.
+- ${NCAA_CHANGES} Locator: p. 2, Rule 3-2-4-c-12.
+- ${SEC_2025} Locator: paragraph 1.
+- ${SVG_2024} Locator: "Soccer" and "Volleyball".
+- ${HE_SEC_ABS} Locator: paragraphs 1 to 3 and 5; last paragraph.
+- ${OU_2024} Locator: "Projects Include".
+- ${HE_RUTGERS} Locator: "What the Job is All About" and "Key Responsibilities".`,
+    },
+    {
+      slug: "section-3-quiz",
+      title: "Section 3 quiz · The leagues and the rules",
+      section: "3 · The leagues and the rules",
+      body: "A graded check on replay, tracking and measurement under each league's rules: the NFL, the NBA, the NHL, MLB, tennis, football (soccer), cricket and college conferences. Each answer links back to the lesson that teaches it.",
+      quiz: {
+        passingScore: 80,
+        questionsPerAttempt: 5,
+        shuffleOptions: true,
+        questions: [
+          { prompt: "How many challenges does NFL Rule 15 give each team at minimum?", options: ["One", "Two", "Three", "Four"], correctIndex: 1, explanation: "NFL (2026a, Rule 15-1-1): \"a minimum of two challenges,\" with a third if at least one succeeds.", sourceLessonSlug: "nfl-replay-and-the-line-to-gain" },
+          { prompt: "When does an NFL team get a third challenge?", options: ["If both of its challenges fail", "Only in the fourth quarter", "If at least one challenge succeeds", "Only after the two-minute warning"], correctIndex: 2, explanation: "NFL (2026a, Rule 15-1-1): a third challenge if at least one of the first two succeeds.", sourceLessonSlug: "nfl-replay-and-the-line-to-gain" },
+          { prompt: "Is a fourth challenge ever permitted under Rule 15?", options: ["Yes, in overtime only", "Yes, if two succeed", "Yes, with a timeout left", "No, it is not permitted"], correctIndex: 3, explanation: "NFL (2026a, Rule 15-1-1): \"A fourth challenge will not be permitted.\"", sourceLessonSlug: "nfl-replay-and-the-line-to-gain" },
+          { prompt: "What must a team have available to make a challenge?", options: ["An available timeout", "A replay assistant", "A second red flag", "A sideline tablet"], correctIndex: 0, explanation: "NFL (2026a, Rule 15-1-1): each challenge needs an available timeout.", sourceLessonSlug: "nfl-replay-and-the-line-to-gain" },
+          { prompt: "Who may throw the red flag to start a challenge in the 2026 rule text?", options: ["Any player on the field of play", "The head coach or pregame designee", "The team's replay video operator", "The stadium's public-address host"], correctIndex: 1, explanation: "NFL (2026a, Rule 15-1-1-a): \"The head coach or head coach's pregame challenge designee can initiate a challenge by throwing a red flag.\"", sourceLessonSlug: "nfl-replay-and-the-line-to-gain" },
+          { prompt: "After the two-minute warning, who may start an NFL replay review?", options: ["Either head coach, with a red flag", "Either team's captain, with a hand signal", "The Replay Official or SVP of Officiating", "The broadcast network's replay producer"], correctIndex: 2, explanation: "NFL (2026a, Rule 15-1-2): only the Replay Official or the Senior Vice President of Officiating, or a designee.", sourceLessonSlug: "nfl-replay-and-the-line-to-gain" },
+          { prompt: "Who conducts every NFL replay review under Rule 15-2?", options: ["The Referee alone at the sideline", "The home team's replay assistant", "The broadcast's replay operator", "The SVP of Officiating or a designee"], correctIndex: 3, explanation: "NFL (2026a, Rule 15-2): \"All Replay Reviews will be conducted by the Senior Vice President of Officiating or his or her designee.\"", sourceLessonSlug: "nfl-replay-and-the-line-to-gain" },
+          { prompt: "What standard must video meet to change a ruling under Rule 15-2-1?", options: ["Clear and obvious evidence", "Beyond all reasonable doubt", "More likely than not", "A majority of angles agree"], correctIndex: 0, explanation: "NFL (2026a, Rule 15-2-1): only when \"clear and obvious video evidence warrants a change.\"", sourceLessonSlug: "nfl-replay-and-the-line-to-gain" },
+          { prompt: "What does Rule 15-8 say the Referee does if communication with the League office is lost?", options: ["Cancels the review and plays on at once", "Waits one minute, then reviews on site", "Calls a ten-minute delay of the game", "Lets the home team's coach decide it"], correctIndex: 1, explanation: "NFL (2026a, Rule 15-8): the Referee waits one minute, then reviews with the Replay Official.", sourceLessonSlug: "nfl-replay-and-the-line-to-gain" },
+          { prompt: "What may Rule 15-9 let the Replay Official help on-field officials with?", options: ["Judgment calls such as holding fouls", "Which head coach may challenge next", "Objective aspects such as the game clock", "Whether a player needs to leave the game"], correctIndex: 2, explanation: "NFL (2026a, Rule 15-9): \"specific, objective aspects of a play,\" including the game clock, possession and the ball's position relative to a line.", sourceLessonSlug: "nfl-replay-and-the-line-to-gain" },
+          { prompt: "Where is the NFL's Art McNally GameDay Central?", options: ["In each NFL stadium's press box", "At Sony's offices in Basingstoke", "In a production truck at each game", "At league headquarters in New York"], correctIndex: 3, explanation: "NFL (n.d.-b): AMGC is at league headquarters in New York.", sourceLessonSlug: "nfl-replay-and-the-line-to-gain" },
+          { prompt: "How many stations does AMGC have, per the NFL?", options: ["16", "12", "30", "9"], correctIndex: 0, explanation: "NFL (n.d.-b): \"16 stations, each set up to show a designated game on a 58-inch touch-screen monitor.\"", sourceLessonSlug: "nfl-replay-and-the-line-to-gain" },
+          { prompt: "What drives the replays at AMGC, per the NFL?", options: ["Foot pedals", "Xbox controllers", "Touch pens", "Voice commands"], correctIndex: 1, explanation: "NFL (n.d.-b): replays are driven \"by Xbox controllers.\"", sourceLessonSlug: "nfl-replay-and-the-line-to-gain" },
+          { prompt: "What does the replay field operator bring the referee?", options: ["A printed still of the play", "A headset tied to the truck", "A Microsoft Surface Pro tablet", "A replay monitor on a cart"], correctIndex: 2, explanation: "NFL (n.d.-b): a Microsoft Surface Pro tablet, used since 2017.", sourceLessonSlug: "nfl-replay-and-the-line-to-gain" },
+          { prompt: "What do AMGC staff do with every play after the games?", options: ["Delete it from the system in a day", "Send it to every broadcast partner", "Print it out for each of the clubs", "Tag it for search in a database"], correctIndex: 3, explanation: "NFL (n.d.-b): staff \"'tag' every play so they can be searched later in a database.\"", sourceLessonSlug: "nfl-replay-and-the-line-to-gain" },
+          { prompt: "What does Sony say SMART combines for the NFL?", options: ["Feeds from all broadcast partners", "Tags from all players' pads", "Data from all betting partners", "Audio from all referee mics"], correctIndex: 0, explanation: "Sony Electronics (2025): SMART combines \"video feeds from all of the NFL's broadcast partners in one place.\"", sourceLessonSlug: "nfl-replay-and-the-line-to-gain" },
+          { prompt: "Which roles do NFL replay officials oversee, per the NFL?", options: ["Chain crew and the ball crew", "Video and replay field operators", "Broadcast camera and audio crew", "Doctors, trainers and paramedics"], correctIndex: 1, explanation: "NFL (n.d.-d): a video operator, replay field operators, replay field communicators and a replay assistant.", sourceLessonSlug: "nfl-replay-and-the-line-to-gain" },
+          { prompt: "Where do NFL replay assistants often come from, per the NFL?", options: ["Broadcast production truck jobs", "Team video coaching staffs", "College replay or game day roles", "Retired on-field officials"], correctIndex: 2, explanation: "NFL (n.d.-d): college replay, or game day assistant roles \"such as replay video operators, replay field communicators or clock operators.\"", sourceLessonSlug: "nfl-replay-and-the-line-to-gain" },
+          { prompt: "From which season did Hawk-Eye become the NFL's primary line-to-gain method?", options: ["The 2021 season", "The 2014 season", "The 2023 season", "The 2025 season"], correctIndex: 3, explanation: "Sony Electronics (2025): \"beginning with the 2025 season.\"", sourceLessonSlug: "nfl-replay-and-the-line-to-gain" },
+          { prompt: "What happened to the NFL chain crew under the 2025 change?", options: ["It stays in a secondary role", "It was removed from the field", "It now runs the Hawk-Eye cameras", "It moved into AMGC in New York"], correctIndex: 0, explanation: "Sony Electronics (2025): \"The chain crew will remain on the field in a secondary capacity.\"", sourceLessonSlug: "nfl-replay-and-the-line-to-gain" },
+          { prompt: "What cameras make up the NFL's optical line-to-gain system?", options: ["Twelve 4K cameras", "Six 8K cameras", "Two HD cameras", "Thirty 8K cameras"], correctIndex: 1, explanation: "Sony Electronics (2025): \"six 8K cameras for optical tracking of the position of the ball.\"", sourceLessonSlug: "nfl-replay-and-the-line-to-gain" },
+          { prompt: "From where is the NFL's line-to-gain system operated?", options: ["Each press box", "The chain crew", "AMGC in New York", "The TV truck"], correctIndex: 2, explanation: "Sony Electronics (2025): the system is \"operated from\" AMGC and integrated with the replay system.", sourceLessonSlug: "nfl-replay-and-the-line-to-gain" },
+          { prompt: "About how long does Sony say the full line-to-gain process takes?", options: ["About 3 seconds", "About 3 minutes", "About 90 seconds", "About 30 seconds"], correctIndex: 3, explanation: "Sony Electronics (2025): \"around 30 seconds, saving up to 40 seconds from a measurement with the chains.\"", sourceLessonSlug: "nfl-replay-and-the-line-to-gain" },
+          { prompt: "Why does lesson 9 not say how the line-to-gain system ran in 2025?", options: ["Only the April 2025 release was read", "The NFL kept the results secret", "The system was not used in 2025", "Sony withdrew the system in May"], correctIndex: 0, explanation: "The course read only the April 2025 announcement, so it says nothing about the season that followed.", sourceLessonSlug: "nfl-replay-and-the-line-to-gain" },
+          { prompt: "Since when does a trade report say Hawk-Eye worked with the NBA as a proof of concept?", options: ["2014", "2019", "2023", "2008"], correctIndex: 1, explanation: "Dachman (2023): \"Since 2019, Hawk-Eye has worked closely with the NBA in a proof-of-concept capacity.\"", sourceLessonSlug: "basketball-hockey-and-baseball" },
+          { prompt: "Where did Hawk-Eye's NBA proof of concept collect data?", options: ["All 30 arenas and the Finals", "Only the All-Star Game venue", "Summer League and six arenas", "College arenas in the SEC"], correctIndex: 2, explanation: "Dachman (2023): \"at NBA Summer League and six NBA arenas.\"", sourceLessonSlug: "basketball-hockey-and-baseball" },
+          { prompt: "What roles does Second Spectrum keep with the NBA, per the trade report?", options: ["Replay Center video operator", "Exclusive league data provider", "Official referee comms vendor", "League Pass and team analytics"], correctIndex: 3, explanation: "Dachman (2023): \"an official NBA League Pass augmentation provider and an official NBA Team Basketball analytics provider.\" Sportradar is the exclusive data provider.", sourceLessonSlug: "basketball-hockey-and-baseball" },
+          { prompt: "Why does lesson 10 say the NBA's and the WNBA's tracking differ?", options: ["Different optical vendors", "Only one uses cameras", "Only one tracks the ball", "The WNBA uses radio tags"], correctIndex: 0, explanation: "The NBA's league tracking is Hawk-Eye's; the WNBA's is Second Spectrum's (WNBA, 2024). Both are optical.", sourceLessonSlug: "basketball-hockey-and-baseball" },
+          { prompt: "Since when does the NHL say it has used Hawk-Eye SMART?", options: ["2016", "2015", "2019", "2025"], correctIndex: 1, explanation: "NHL (2025): \"since 2015.\" Hawk-Eye's homepage says 2016; the course teaches the league's date.", sourceLessonSlug: "basketball-hockey-and-baseball" },
+          { prompt: "Which date does lesson 10 teach for NHL SMART?", options: ["The vendor's date", "Neither date", "The league's date", "An average of both"], correctIndex: 2, explanation: "It teaches the NHL's 2015, names Hawk-Eye's 2016, and has not settled why they differ.", sourceLessonSlug: "basketball-hockey-and-baseball" },
+          { prompt: "In how many NHL arenas is SMART installed, per the NHL?", options: ["All 30", "Only 12", "Only 6", "All 32"], correctIndex: 3, explanation: "NHL (2025): SMART services \"installed in all 32 NHL arenas.\"", sourceLessonSlug: "basketball-hockey-and-baseball" },
+          { prompt: "Where is the NHL's Situation Room, per the trade report?", options: ["Toronto", "New York", "Secaucus", "Montreal"], correctIndex: 0, explanation: "Costa (2026): the Situation Room is in Toronto. Secaucus is the NBA's Replay Center.", sourceLessonSlug: "basketball-hockey-and-baseball" },
+          { prompt: "How many operators does the NHL Situation Room assign to each game, per the trade report?", options: ["Three shared operators", "One dedicated operator", "No live operator at all", "A team of sixteen staff"], correctIndex: 1, explanation: "Costa (2026): \"a dedicated operator\" for each game.", sourceLessonSlug: "basketball-hockey-and-baseball" },
+          { prompt: "By lesson 10's reasoning, what makes one central NHL review room possible?", options: ["A single shared broadcaster", "Referees with radio earpieces", "Standardized camera positions", "A league-wide ticketing system"], correctIndex: 2, explanation: "Feeds come from \"standardized goal-line, blue-line, and overhead camera positions\" (Costa, 2026), so the operator knows where each angle comes from.", sourceLessonSlug: "basketball-hockey-and-baseball" },
+          { prompt: "As of January 2026, how long had a separate NHL Hawk-Eye tracking system been live league-wide?", options: ["About a month", "Since 2015", "Not yet live", "More than a year"], correctIndex: 3, explanation: "Costa (2026): it \"has been live league-wide for more than a year.\"", sourceLessonSlug: "basketball-hockey-and-baseball" },
+          { prompt: "When did MLB install Statcast in all 30 ballparks?", options: ["2015", "2008", "2020", "2023"], correctIndex: 0, explanation: "MLB (n.d.): Statcast in all 30 ballparks in 2015, after a partial 2014 trial. 2008 was pitch tracking.", sourceLessonSlug: "basketball-hockey-and-baseball" },
+          { prompt: "What made up Statcast from 2015 to 2019, per MLB?", options: ["Radio tags in caps", "Cameras and radar", "GPS in the bats", "Umpire tablets"], correctIndex: 1, explanation: "MLB (n.d.): \"a combination of camera and radar systems.\"", sourceLessonSlug: "basketball-hockey-and-baseball" },
+          { prompt: "What year does MLB give for Hawk-Eye's arrival in Statcast?", options: ["2019", "2015", "2020", "2008"], correctIndex: 2, explanation: "MLB (n.d.): \"That changed in 2020, with the arrival of Hawk-Eye.\" Hawk-Eye's homepage says 2019.", sourceLessonSlug: "basketball-hockey-and-baseball" },
+          { prompt: "Why does lesson 10 give both 2019 and 2020 for Statcast's Hawk-Eye start?", options: ["MLB revised its own date in 2021", "Two ballparks started a year apart", "Statcast had two vendors at once", "League and vendor give different years"], correctIndex: 3, explanation: "MLB says 2020 and Hawk-Eye says 2019; the course has not settled whether the vendor's year counts testing.", sourceLessonSlug: "basketball-hockey-and-baseball" },
+          { prompt: "Who approved MLB's ABS Challenge System?", options: ["The Joint Competition Committee", "The umpires' union alone", "The 30 club owners alone", "The players' union alone"], correctIndex: 0, explanation: "MLB (2025): the Joint Competition Committee approved it.", sourceLessonSlug: "basketball-hockey-and-baseball" },
+          { prompt: "Who sits on MLB's Joint Competition Committee?", options: ["Ten owners and the commissioner", "Six owners, four players, one umpire", "Thirty owners and thirty players", "Four umpires and two managers"], correctIndex: 1, explanation: "MLB (2025): \"six owners, four active players and one active umpire.\"", sourceLessonSlug: "basketball-hockey-and-baseball" },
+          { prompt: "How many Hawk-Eye cameras track each pitch for ABS?", options: ["Six", "Three", "Twelve", "Thirty"], correctIndex: 2, explanation: "MLB (2025): \"Twelve (12) Hawk-Eye cameras set up around the perimeter of the field.\"", sourceLessonSlug: "basketball-hockey-and-baseball" },
+          { prompt: "What network does MLB say carries ABS data?", options: ["The public stadium Wi-Fi", "A satellite uplink", "The broadcast truck", "A private 5G network"], correctIndex: 3, explanation: "MLB (2025): \"a 5G private network from T-Mobile for Business.\"", sourceLessonSlug: "basketball-hockey-and-baseball" },
+          { prompt: "About how long does MLB say the whole ABS challenge process takes?", options: ["15 seconds", "85 seconds", "5 minutes", "1 second"], correctIndex: 0, explanation: "MLB (2025): \"The entire process takes approximately 15 seconds.\"", sourceLessonSlug: "basketball-hockey-and-baseball" },
+          { prompt: "Who may make an ABS challenge?", options: ["The manager from the dugout", "Pitcher, catcher or batter", "Any coach on the bench", "The home plate umpire"], correctIndex: 1, explanation: "MLB (2025): only the pitcher, catcher or batter, with no help from coaches or others.", sourceLessonSlug: "basketball-hockey-and-baseball" },
+          { prompt: "How does a player signal an ABS challenge?", options: ["Throwing a red flag", "Waving at the dugout", "Tapping the hat or helmet", "Pointing at the plate"], correctIndex: 2, explanation: "MLB (2025): by tapping the hat or helmet, immediately.", sourceLessonSlug: "basketball-hockey-and-baseball" },
+          { prompt: "How many ABS challenges does each MLB club start with?", options: ["Three", "One", "Five", "Two"], correctIndex: 3, explanation: "MLB (2025): two, keeping any that succeed. The 2026 SEC tournament used three.", sourceLessonSlug: "basketball-hockey-and-baseball" },
+          { prompt: "What sets the top and bottom of the ABS zone?", options: ["Percentages of the batter's height", "The umpire's view of the hitter", "The catcher's mitt position", "A fixed height for every batter"], correctIndex: 0, explanation: "MLB (2025): top at 53.5% and bottom at 27% of the batter's height.", sourceLessonSlug: "basketball-hockey-and-baseball" },
+          { prompt: "How wide is the ABS strike zone?", options: ["12 inches", "17 inches", "20 inches", "24 inches"], correctIndex: 1, explanation: "MLB (2025): a two-dimensional rectangle at the middle of home plate, 17 inches wide.", sourceLessonSlug: "basketball-hockey-and-baseball" },
+          { prompt: "From when did the ATP announce tour-wide ELC Live?", options: ["2017", "2023", "2025", "2005"], correctIndex: 2, explanation: "ATP Tour (2023): \"Tour-wide adoption of Electronic Line Calling Live (ELC Live) from 2025.\" The announcement was made in 2023.", sourceLessonSlug: "tennis-and-football" },
+          { prompt: "Which calls does the ATP's ELC Live cover?", options: ["Only the service line calls", "Only foot faults at the base", "Only net cords on a serve", "All court lines for out calls"], correctIndex: 3, explanation: "ATP Tour (2023): \"all court lines for 'out' calls.\"", sourceLessonSlug: "tennis-and-football" },
+          { prompt: "Whose role does the ATP say ELC Live takes on?", options: ["On-court line judges", "The chair umpires", "The ball persons", "The tour referees"], correctIndex: 0, explanation: "ATP Tour (2023): a role \"traditionally carried out by on-court line judges.\"", sourceLessonSlug: "tennis-and-football" },
+          { prompt: "Where was ELC Live first trialled, per the ATP?", options: ["The Wimbledon qualifying in London", "The Next Gen ATP Finals in Milan", "The US Open night session in New York", "The Davis Cup Finals in Malaga, Spain"], correctIndex: 1, explanation: "ATP Tour (2023): \"first trialled at the Next Gen ATP Finals in 2017 in Milan.\"", sourceLessonSlug: "tennis-and-football" },
+          { prompt: "What did the ATP say ELC Live would deliver besides line calls?", options: ["Live betting odds feeds", "Crowd noise monitoring", "Player and ball tracking", "Automatic score graphics"], correctIndex: 2, explanation: "ATP Tour (2023): \"comprehensive player and ball tracking across the whole Tour.\"", sourceLessonSlug: "tennis-and-football" },
+          { prompt: "What did the ATP say in February 2025 about live electronic line calling?", options: ["Only Masters events use it", "It was paused for clay", "It ended at Grand Slams", "All tour-level events use it"], correctIndex: 3, explanation: "ATP Tour (2025): \"all tour-level events on all surfaces are featuring Live Electronic Line Calling.\"", sourceLessonSlug: "tennis-and-football" },
+          { prompt: "Where did the ATP say Video Review was coming to every court in 2025?", options: ["All nine Masters 1000 events", "All four Grand Slam events", "All Next Gen Finals events", "All Davis Cup ties and finals"], correctIndex: 0, explanation: "ATP Tour (2025): Video Review on every court at all nine ATP Masters 1000 events.", sourceLessonSlug: "tennis-and-football" },
+          { prompt: "What will the All England Club install on every court for 2026?", options: ["New cameras for the broadcast feed", "Visual indicators for out and fault", "Seats for the returning line judges", "Screens showing player tracking"], correctIndex: 1, explanation: "All England Lawn Tennis Club (2026, p. 2): \"visual indicators will be installed on every court\" to signal \"out\" and \"fault\" calls.", sourceLessonSlug: "tennis-and-football" },
+          { prompt: "Why is calling Wimbledon the holdout with line judges out of date?", options: ["It never used line judges", "It bans electronic calling", "It went electronic in 2025", "It went electronic in 2006"], correctIndex: 2, explanation: "ATP Tour (2024): live electronic line calling from 2025 on all main draw and qualifying match courts.", sourceLessonSlug: "tennis-and-football" },
+          { prompt: "Since the ATP approved multiple suppliers, what follows about Hawk-Eye?", options: ["It is the only approved supplier", "It was turned down by the ATP", "It supplies only the Grand Slams", "It is one supplier, not the only one"], correctIndex: 3, explanation: "ATP Tour (2023) approved \"Multiple suppliers,\" so Hawk-Eye is one of them.", sourceLessonSlug: "tennis-and-football" },
+          { prompt: "What does Law 1 say goal-line technology applies to?", options: ["Solely the goal line", "All lines on the pitch", "Offside lines as well", "Penalty-area lines too"], correctIndex: 0, explanation: "IFAB (2026, p. 52): GLT \"applies solely to the goal line.\"", sourceLessonSlug: "tennis-and-football" },
+          { prompt: "Within how long must a GLT goal signal be confirmed?", options: ["Five seconds", "One second", "Ten seconds", "Half a minute"], correctIndex: 1, explanation: "IFAB (2026, p. 52): \"automatically confirmed within one second.\"", sourceLessonSlug: "tennis-and-football" },
+          { prompt: "To whom must the GLT goal signal go?", options: ["Both teams' benches", "The stadium screens", "Only the match officials", "The broadcasters first"], correctIndex: 2, explanation: "IFAB (2026, p. 52): only to the match officials; it may also go to the video operation room.", sourceLessonSlug: "tennis-and-football" },
+          { prompt: "Who works in the video operation room under Law 1.14?", options: ["Referee, captains and coaches", "Doctors, physios and analysts", "Director, producer and talent", "VAR, AVAR and replay operator"], correctIndex: 3, explanation: "IFAB (2026, p. 53): the VAR, the assistant VAR (AVAR) and the replay operator (RO).", sourceLessonSlug: "tennis-and-football" },
+          { prompt: "Where may the video operation room be, under Law 1.14?", options: ["In or near the stadium, or farther away", "Only inside the stadium's main stand", "Only at FIFA's headquarters in Zurich", "Only inside the host broadcast truck"], correctIndex: 0, explanation: "IFAB (2026, p. 53): \"it may be in/close to the stadium or at a more distant location.\"", sourceLessonSlug: "tennis-and-football" },
+          { prompt: "What must a competition get before using VAR?", options: ["A vote of all the clubs", "Written permission from FIFA", "A broadcaster's approval", "A referee union contract"], correctIndex: 1, explanation: "IFAB (2026, p. 153): \"written permission from FIFA.\"", sourceLessonSlug: "tennis-and-football" },
+          { prompt: "Who always takes the final decision in a VAR review?", options: ["The VAR", "The AVAR", "The referee", "The RO"], correctIndex: 2, explanation: "IFAB (2026, pp. 153 to 154): \"The final decision is always taken by the referee.\"", sourceLessonSlug: "tennis-and-football" },
+          { prompt: "What time limit do the Laws set for the VAR review process?", options: ["Ninety seconds at most", "Two minutes, then play", "Until the next restart", "There is no time limit"], correctIndex: 3, explanation: "IFAB (2026, pp. 153 to 154): \"There is no time limit for the review process.\"", sourceLessonSlug: "tennis-and-football" },
+          { prompt: "What is the fifth VAR review category in 2026/27?", options: ["Clearly wrong corner kick awards", "Clearly wrong throw-in awards", "Clearly wrong yellow cards", "Clearly wrong substitutions"], correctIndex: 0, explanation: "IFAB (2026, p. 155): a \"Clearly incorrectly awarded corner kick\" in limited conditions.", sourceLessonSlug: "tennis-and-football" },
+          { prompt: "Which job does lesson 11 note is named in the Laws themselves?", options: ["The camera operator", "The replay operator", "The stadium manager", "The tracking engineer"], correctIndex: 1, explanation: "Law 1.14 names the replay operator (RO) in the video operation room (IFAB, 2026, p. 53).", sourceLessonSlug: "tennis-and-football" },
+          { prompt: "Where did FIFA trial its semi-automated offside technology?", options: ["Euro 2020 and Copa America 2021", "The 2018 World Cup in Russia", "Arab Cup and Club World Cup 2021", "The 2023 Women's World Cup"], correctIndex: 2, explanation: "FIFA (n.d.-b): trialled at the FIFA Arab Cup 2021 and FIFA Club World Cup 2021.", sourceLessonSlug: "tennis-and-football" },
+          { prompt: "When did the Premier League introduce SAOT?", options: ["1 July 2026, Round 1", "9 January 2026, Round 20", "5 August 2024, Round 1", "12 April 2025, Round 32"], correctIndex: 3, explanation: "Premier League (2025a): \"on Saturday 12 April (Match Round 32)\" of 2024/25.", sourceLessonSlug: "tennis-and-football" },
+          { prompt: "How much time per offside event did the Premier League say SAOT saved after a season?", options: ["27 seconds", "3 minutes", "90 seconds", "2 seconds"], correctIndex: 0, explanation: "Premier League (2025c): \"27 seconds per offside event.\"", sourceLessonSlug: "tennis-and-football" },
+          { prompt: "Why was SAOT used only in Premier League stadiums in the 2025-26 FA Cup?", options: ["The broadcasters paid only for those games", "The technology and infrastructure it needs", "The referees asked for it in big games", "The smaller clubs all voted against using it"], correctIndex: 1, explanation: "The Football Association (2026): \"due to the technology and infrastructure that it requires.\"", sourceLessonSlug: "tennis-and-football" },
+          { prompt: "What can Hawk-Eye's goal-line system run from, besides a stadium cabin?", options: ["A drone over the pitch", "A referee's smartphone", "A Remote Operations Centre", "The home team's bench"], correctIndex: 2, explanation: "Michaelides (2026): a \"Remote Operations Centre (ROC)\" with \"24/7 remote monitoring.\"", sourceLessonSlug: "tennis-and-football" },
+          { prompt: "Since when are the current ICC men's Test playing conditions effective?", options: ["July 2026", "January 2025", "September 2017", "October 2026"], correctIndex: 3, explanation: "ICC (2026), cover: \"Effective from October 2026.\"", sourceLessonSlug: "cricket-and-college-replay" },
+          { prompt: "Which three things are DRS minimum requirements?", options: ["Cameras, ball-tracking, edge detection", "Stumps, bails and a sight screen behind", "Umpire mics, radios, a scoreboard", "Floodlights, covers, a spare pitch"], correctIndex: 0, explanation: "ICC (2026, p. 89): the camera specification, approved ball-tracking and approved sound-based edge detection.", sourceLessonSlug: "cricket-and-college-replay" },
+          { prompt: "Whom does the ICC appoint at every DRS series besides a neutral third umpire?", options: ["A broadcast liaison", "An ICC Technical Officer", "A ball-tracking analyst", "A home board engineer"], correctIndex: 1, explanation: "ICC (2026, p. 89): \"an independent technology expert (ICC Technical Officer).\"", sourceLessonSlug: "cricket-and-college-replay" },
+          { prompt: "What must the Home Board provide for the third umpire?", options: ["A seat in the broadcast truck", "A tablet at the boundary rope", "A separate room with the equipment", "A desk in the players' area"], correctIndex: 2, explanation: "ICC (2026, p. 89): \"a separate room\" with access to the equipment.", sourceLessonSlug: "cricket-and-college-replay" },
+          { prompt: "How does an on-field umpire refer a decision to the third umpire?", options: ["Raises one finger and points up high", "Taps the top of the helmet twice", "Throws a red flag onto the pitch", "Makes a TV-screen shape with the hands"], correctIndex: 3, explanation: "ICC (2026, p. 90): \"by making the shape of a TV screen with their hands.\"", sourceLessonSlug: "cricket-and-college-replay" },
+          { prompt: "How many unsuccessful player reviews may each team make per innings?", options: ["Three", "Two", "One", "Four"], correctIndex: 0, explanation: "ICC (2026, p. 97): \"three (3) Player Review requests that are categorised as 'Unsuccessful'.\" Older material says two.", sourceLessonSlug: "cricket-and-college-replay" },
+          { prompt: "Who makes the final call on which DRS technology is used in a match?", options: ["The home board's chair", "The ICC Match Referee", "The host broadcaster", "The two team captains"], correctIndex: 1, explanation: "ICC (2026, p. 99): the ICC Match Referee, with the Technical Official, ICC management and the boards.", sourceLessonSlug: "cricket-and-college-replay" },
+          { prompt: "Which ball-tracking systems does the ICC approve?", options: ["HawkEye or TRACAB Optical", "VirtualEye or Statcast", "HawkEye or VirtualEye", "HawkEye and nothing else"], correctIndex: 2, explanation: "ICC (2026, p. 98): \"HawkEye (HawkEye Innovations), or; VirtualEye (ARL).\"", sourceLessonSlug: "cricket-and-college-replay" },
+          { prompt: "What does the ICC approve UltraEdge for?", options: ["Ball-tracking on lbw calls", "LED wickets and the bails", "Heat-based edge detection", "Sound-based edge detection"], correctIndex: 3, explanation: "ICC (2026, p. 98): UltraEdge (HawkEye Innovations) is approved for sound-based edge detection; Hot Spot is the heat-based one.", sourceLessonSlug: "cricket-and-college-replay" },
+          { prompt: "Without DRS, what may the third umpire use?", options: ["Camera replays only", "Ball-tracking only", "Edge detection only", "No video at all"], correctIndex: 0, explanation: "ICC (2026, p. 89): camera replays only; broadcaster ball-tracking and edge detection \"shall not be used during Umpire Reviews.\"", sourceLessonSlug: "cricket-and-college-replay" },
+          { prompt: "How does the NCAA define instant replay in Rule 12-1-1?", options: ["A broadcast's rerun of the key plays", "Video review to uphold or overturn calls", "A coach's challenge made with a flag", "A medical review of an injured player"], correctIndex: 1, explanation: "NCAA (2026a, Rule 12-1-1): \"video review is used to uphold or overturn certain on-field decisions.\"", sourceLessonSlug: "cricket-and-college-replay" },
+          { prompt: "Must an NCAA member institution use instant replay?", options: ["Yes, at every home game", "Yes, in conference play", "No, there is no requirement", "Only in the bowl games"], correctIndex: 2, explanation: "NCAA (2026a, Rule 12-2-1-a): \"Any member institution may use instant replay, but there is no requirement to do so.\"", sourceLessonSlug: "cricket-and-college-replay" },
+          { prompt: "What minimum replay crew does NCAA Rule 12-4-1 set?", options: ["Two: an official and a camera operator", "Four: two officials and two technicians", "One: the replay official working alone", "Three: official, communicator, technician"], correctIndex: 3, explanation: "NCAA (2026a, Rule 12-4-1): \"a minimum of three persons,\" the replay official, communicator and technician.", sourceLessonSlug: "cricket-and-college-replay" },
+          { prompt: "Who determines the replay equipment used in college football?", options: ["Each conference or institution", "The NCAA's national office", "The visiting team's staff", "The host television network"], correctIndex: 0, explanation: "NCAA (2026a, Rule 12-4-2-a): \"determined by each conference or member institution.\"", sourceLessonSlug: "cricket-and-college-replay" },
+          { prompt: "Where does NCAA Rule 12-4-3-a put replay equipment and staff?", options: ["On the home team's own sideline bench", "A secure location in the press box", "Inside the host broadcaster's truck", "In a tent behind one of the end zones"], correctIndex: 1, explanation: "NCAA (2026a, Rule 12-4-3-a): \"a separate, secure location in the traditional press box area.\"", sourceLessonSlug: "cricket-and-college-replay" },
+          { prompt: "What 2026 NCAA change applies when the Replay Official stops the game after the two-minute timeout?", options: ["The game clock resets to two minutes", "Each team loses one of its timeouts", "The play clock freezes, then restarts", "The quarter ends at once on the stop"], correctIndex: 2, explanation: "NCAA (2026b, p. 2): the play clock freezes and restarts at the ready signal, with at least 10 seconds.", sourceLessonSlug: "cricket-and-college-replay" },
+          { prompt: "By lesson 12's reasoning, whose choice is the replay vendor in college football?", options: ["The NCAA's national office", "The TV network's director", "The referee crew chief's", "A conference's or a school's"], correctIndex: 3, explanation: "Rule 12-4-2-a leaves equipment to each conference or member institution, so the vendor is their choice.", sourceLessonSlug: "cricket-and-college-replay" },
+          { prompt: "In which SEC sport did Hawk-Eye video review begin in 2024-25, per the SEC?", options: ["Men's and women's basketball", "Football, home games only", "Track and field meets only", "Swimming and diving meets"], correctIndex: 0, explanation: "SEC (2025): the Hawk-Eye system for men's and women's basketball from 2024-25.", sourceLessonSlug: "cricket-and-college-replay" },
+          { prompt: "In SEC soccer, whom do referees talk to for review, per a trade report?", options: ["The VAR at the SEC's central office", "A Replay Operator in a campus room", "The home team's own video coach", "The broadcast truck's replay director"], correctIndex: 1, explanation: "Sports Video Group (2024): \"a dedicated Replay Operator in a designated replay room on campus.\"", sourceLessonSlug: "cricket-and-college-replay" },
+          { prompt: "Who has sole review authority in SEC volleyball?", options: ["The Replay Operator on campus", "The head coaches jointly", "A Review Referee at the table", "The SEC office in Birmingham"], correctIndex: 2, explanation: "Sports Video Group (2024): a Review Referee at the scorer's table has sole authority.", sourceLessonSlug: "cricket-and-college-replay" },
+          { prompt: "How many ABS challenges per team did the 2026 SEC Baseball Tournament give?", options: ["Two", "One", "Five", "Three"], correctIndex: 3, explanation: "Hawk-Eye Innovations (2026b): three challenges per team, against MLB's two.", sourceLessonSlug: "cricket-and-college-replay" },
+          { prompt: "What does the University of Oklahoma's 2024 note say about its football replay?", options: ["Upgrade of the DV Sport system", "Install of a Hawk-Eye system", "Removal of all replay gear", "Purchase of TRACAB cameras"], correctIndex: 0, explanation: "University of Oklahoma Information Technology (2024): \"Upgrade of the DV Sport video replay system for Football.\" Hawk-Eye was for seven other venues.", sourceLessonSlug: "cricket-and-college-replay" },
+          { prompt: "Why does lesson 12 not name a conference-wide vendor for SEC football replay?", options: ["The SEC bans vendor names", "One school is not the conference", "Football has no replay in the SEC", "Every school uses Hawk-Eye"], correctIndex: 1, explanation: "Only one school's note was read; it cannot speak for the whole conference.", sourceLessonSlug: "cricket-and-college-replay" },
+          { prompt: "What did the closed Rutgers posting say the technician helps set up?", options: ["Stadium lighting and power", "Broadcast cameras and graphics", "SMART replay and medical systems", "Ticket scanners and Wi-Fi"], correctIndex: 2, explanation: "Hawk-Eye Innovations (n.d.-f): \"Assisting in the set-up of the SMART replay & medical systems (both hardware and software).\"", sourceLessonSlug: "cricket-and-college-replay" },
+          { prompt: "Why does lesson 12 state only what the Rutgers posting says about the Big Ten?", options: ["The Big Ten forbids naming vendors", "The posting is the conference's own", "Hawk-Eye asked the course not to", "No Big Ten vendor announcement was read"], correctIndex: 3, explanation: "No Big Ten announcement naming its replay vendor could be read for the course.", sourceLessonSlug: "cricket-and-college-replay" },
+        ],
+      },
+    },
     // NEXT_SECTION
   ],
 };
