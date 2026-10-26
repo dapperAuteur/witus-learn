@@ -69,9 +69,9 @@ CREW-02 and CREW-05. Public, held until the reviewers sign off.
 
 ## 6. Known gaps going in (2026-10-26)
 
-- Belden 1694A spec page: returned 403 to automated readers and "not found" in a browser on 2026-10-26. Find
-  the spec sheet another way (a PDF on a distributor's site, Belden's catalog, or another maker's 12G coax
-  with published run lengths).
+- Belden 1694A: the product page is unreachable, but the spec sheet is on Belden's catalog server (research
+  file 01). Belden lists 1694A for 6G and HD-SDI, not 12G; 12G reach comes from equipment makers (AJA, Semtech)
+  and Canare's own run-length tables, which Canare says depend on the receiver.
 - Neutrik's XLR pages list products only; no page states pin counts by use. Find a manufacturer or standards
   body page that does.
 - Audinate's Dante pages moved to getdante.com; the Dante Via page is about software routing, not network
