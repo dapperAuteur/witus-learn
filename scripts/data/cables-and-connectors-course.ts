@@ -456,5 +456,342 @@ Belden's 1694A has a foil shield plus a 95% tinned copper braid. Belden's 4794R,
         ],
       },
     },
+    // ══════════════════════════════════════════════════════════════════════
+    // SECTION 2: Video over copper
+    // ══════════════════════════════════════════════════════════════════════
+    {
+      slug: "sdi-on-coax-and-the-bnc",
+      title: "4 · SDI on coax and the BNC",
+      section: "2 · Video over copper",
+      recallContent: [
+        {
+          prompt: "Is 12G-SDI among the suitable applications on Belden's 1694A sheet?",
+          answer: "No. It lists \"Digital Video, 6 Gb/s UHDTV, HD-SDI 1080p\"; 12G is on the 4794R sheet.",
+        },
+        {
+          prompt: "What does doubling a coax run do to its loss in decibels?",
+          answer: "Doubles it, because loss is quoted per 100 ft or per 100 m.",
+        },
+      ],
+      body: `**What SDI is.** SDI, the serial digital interface, carries video between broadcast gear as one stream of bits. SMPTE's free overview of its 12G standard says ST 2082-1 "defines a bit-serial data structure, electrical signal and coaxial cable interface," and that it "also specifies the electrical and physical characteristics of coaxial cables and connectors" (Society of Motion Picture and Television Engineers [SMPTE], 2018, p. 2). In other words, the standard covers the cable and the plug, not only the signal. The standards themselves are paywalled; this lesson takes its facts from SMPTE's free overviews and from makers' sheets.
+
+**The rates.** SMPTE's overview of its fiber suite lists the SDI signals and their rates (SMPTE, 2017, p. 1). The names in the last column are the ones Canare uses in its distance table (Canare Electric, n.d.-d), plus 6G, which makers such as Camplex list beside 3G and 12G (Camplex, n.d.-c).
+
+| Standard | Rate | Common name |
+|---|---|---|
+| ST 259 | 143 through 360 Mb/s | SD-SDI (270 Mb/s for 525 and 625 line) |
+| ST 344 | 540 Mb/s | |
+| ST 292-1 and -2 | 1.485 and 1.485/1.001 Gb/s | HD-SDI (1080i) |
+| ST 424 | 2.970 and 2.970/1.001 Gb/s | 3G-SDI (1080p) |
+| ST 2081-1 | 5.940 and 5.940/1.001 Gb/s | 6G-SDI |
+| ST 2082-1 | 11.88 and 11.88/1.001 Gb/s | 12G-SDI (4K UHD) |
+
+From HD up, each rate comes in two versions, one divided by 1.001. Gear is built to handle both: AJA's FiDO 12G converters detect and reclock 270 Mb/s, 1.483, 1.485, 2.967, 2.970, 5.934, 5.940, 11.868 and 11.880 Gb/s (AJA Video Systems, 2023, p. 9).
+
+**One, two or four cables.** The ST 2082 suite maps picture formats onto "single-link, dual-link and quad-link" 12 Gb/s interfaces, and ST 2082-10 carries 2160-line formats on one 12G link (SMPTE, 2018, pp. 1, 3). So a 4K picture can travel on one 12G cable. Belden's 4794R sheet lists "8K Quad-link UHDTV" among its uses (Belden, 2026b, p. 1): four 12G links for one picture.
+
+**Fiber carries the same signals.** ST 297-1 defines an optical fiber system for these same SDI signals, and ST 297-2 carries several SDI streams on one fiber (SMPTE, 2017, p. 1). Section 4 is about that fiber.
+
+**What it looks like on a real back panel.** Sony's HXCU-FB80 camera control unit lists its SDI outputs as 0.8 Vp-p into 75 ohms on BNC connectors: HD-SDI per ST 292-1, SD-SDI per SMPTE 259M at 270 Mb/s, and 12G-SDI per ST 2082-1 (Sony Corporation, 2017, pp. 35 to 36). Seventy-five ohms, BNC: lesson 1's numbers on a working machine.
+
+**The BNC for 12G.** A BNC is not just a BNC at these rates. Canare sells a BNC that is "12G-SDI 4K UHD Capable," "SMPTE ST-2082-1 Compliant," and "Specifically engineered for the Canare 12G-SDI Cables." Its smaller micro BNC is "Compatible with Amphenol HD-BNCs" and also ST 2082-1 compliant (Canare Corporation of America, n.d.-b).
+
+**Match the plug to the cable.** Canare's crimp tables pair each BNC with specific cables, including Belden 1694A for one of its micro BNCs (Canare Corporation of America, n.d.-b). Reasoned from those tables: a BNC has to suit the cable it is crimped onto, not only its impedance. A 75-ohm BNC made for a thinner cable is the wrong part for a thicker one.
+
+**Connectors have return loss too.** Canare quotes its 12G connectors' return loss by frequency. One right-angle micro BNC gives 24 dB at 3 GHz, 20 dB at 6 GHz and 13 dB at 12 GHz (Canare Corporation of America, n.d.-b). Lesson 2's rule holds: the higher the frequency, the harder a good match gets.
+
+**Where to go deeper.** CREW-04, *Cinema-look camera rig*, lesson "7 · Outputs, timecode and genlock", shows which camera bodies give SDI, the locking BNC, and an HDMI-to-SDI converter. CREW-05, *Arena transmission*, lesson "12 · ST 2110: separate streams", shows how the audio embedded in SDI and the picture are split apart when video moves onto a network.
+
+:::reveal Which SMPTE standard defines 12G-SDI, and what does it cover besides the signal? ||| ST 2082-1; it also specifies the electrical and physical characteristics of coaxial cables and connectors (SMPTE, 2018, p. 2).
+
+:::reveal What does Sony list as the level and impedance of its CCU's SDI outputs? ||| 0.8 Vp-p into 75 ohms, on BNC (Sony Corporation, 2017, pp. 35 to 36).
+
+## Sources
+- ${SMPTE_2018} Locator: p. 1, "Document Overview"; p. 2, section 1; p. 3, section 2.
+- ${SMPTE_2017} Locator: p. 1, "Documents in the SMPTE 297 Suite".
+- ${CANARE_ULTRA} Locator: "Typical Transmission Distance as per SMPTE Standard," header rows.
+- ${BELDEN_4794R} Locator: p. 1, "Product Overview".
+- ${CAMPLEX_TACTICAL} Locator: "Signal Extender & Reel Systems".
+- ${AJA_FIDO} Locator: p. 9, FiDO-T-12G "Reclocking".
+- ${SONY_2017} Locator: pp. 35 to 36, "Specifications: Input/output connectors".
+- ${CANARE_US_12G} Locator: "12G BNC Connectors"; micro BNC "Key Features"; connector and crimp-tool tables; micro right-angle BNC "Key Features".`,
+    },
+    {
+      slug: "how-far-sdi-runs",
+      title: "5 · How far SDI runs",
+      section: "2 · Video over copper",
+      recallContent: [
+        {
+          prompt: "What are the common names and rates for ST 424 and ST 2082-1?",
+          answer: "3G-SDI at 2.970 Gb/s (and 2.970/1.001), and 12G-SDI at 11.88 Gb/s (and 11.88/1.001).",
+        },
+        {
+          prompt: "Why does a BNC have to match the cable it is crimped onto, not only the impedance?",
+          answer: "Canare's crimp tables pair each BNC with specific cables, so a part made for one cable is the wrong part for another.",
+        },
+      ],
+      body: `${QR}
+
+**There is no single answer.** "How far will this cable go?" depends on the rate, the cable and the receiver at the far end. This lesson shows why, using one maker's table and three published figures for one cable.
+
+**How Canare computes its table.** Canare lists a "typical transmission distance" for each cable, computed as the length at which the cable's loss reaches SMPTE's typical figure at half the clock frequency (Canare Electric, n.d.-d). The loss points it uses:
+
+| Signal | Loss point |
+|---|---|
+| 270 Mb/s | 30 dB at 135 MHz |
+| HD-SDI | 20 dB at 750 MHz |
+| 3G-SDI | 30 dB at 1.5 GHz |
+| 12G-SDI | 40 dB at 6 GHz |
+
+**Canare's typical distances, in meters** (Canare Electric, n.d.-d):
+
+| Cable | 270 Mb/s | HD | 3G | 12G |
+|---|---|---|---|---|
+| L-4.5CHD | 415 | 114 | 119 | 74 |
+| L-5.5CUHD | 566 | 150 | 157 | 101 |
+| L-8CUHD | 789 | 217 | 225 | 140 |
+| L-5.5CUHWS (mobile) | 441 | 117 | 120 | 70 |
+
+Read across a row and the distance falls as the rate rises, as lesson 3's loss table predicts. Read down a column and L-8CUHD, the lowest-loss cable in lesson 3's figures, runs farthest. Compare L-5.5CUHD with its mobile sibling L-5.5CUHWS: 101 against 70 meters at 12G. Canare also says L-5.5CUHD is "Designed for fixed installation, please avoid repeated bending or external pressure" (Canare Electric, n.d.-d).
+
+**Canare's own warning.** Under the table: "These values are not equivalent to actual transmission distances, which depends on the equalized distance of receiver." Check the receiver maker's equalized distance (Canare Electric, n.d.-d). Of L-5.5CUHD, it says it can carry 4K UHD on one link "100 m or longer," "Depending on receiving equipment."
+
+**One cable, three answers.** Take Belden 1694A at 12G. Belden does not list 12G for it (lesson 3). Yet:
+
+- AJA's 12GDA distribution amplifier equalizes 70 m of 1694A at 12 Gb/s, 120 m at 6 Gb/s, 190 m at 3 Gb/s and 405 m at 270 Mb/s (AJA Video Systems, n.d.).
+- Semtech's GS12341 equalizer chip reaches 80 m at 11.88 Gb/s, 100 m at 5.94, 190 m at 2.97 and 450 m at 270 Mb/s, all on 1694A (Semtech, n.d.).
+- Worked from Belden's own sheet with Canare's 12G loss point: 40 dB divided by 17.7 dB per 100 ft is about 226 ft, or about 69 m.
+
+So the same cable has a 69, a 70 and an 80 meter answer at 12G. The difference is the receiver. AJA and Semtech can quote 12G over a cable Belden does not sell for 12G because their receivers equalize it.
+
+**The same maker, three answers.** Canare publishes three different 12G figures for L-4.5CHD: 74 m in its Japanese table, 65 m on its US 12G solutions page, and 143 ft, about 44 m, on its US "Mastering" page. The US pages give no test conditions (Canare Electric, n.d.-d; Canare Corporation of America, n.d.-a, n.d.-b). Canare's US cable cards also list maximum distances, such as 335 ft for L-5.5CUHD, without naming the rate (Canare Corporation of America, n.d.-a). A distance with no rate and no receiver tells you very little.
+
+**The rule to take away.** Read the cable sheet and the receiver sheet together, at the rate you are running.
+
+**When copper runs out.** AJA's FiDO converters equalize coax inputs, reclock the signal, and carry 12G-SDI "up to 10km" on single-mode fiber (AJA Video Systems, 2023, p. 4). Sections 3 and 4 take the signal onto glass.
+
+:::reveal What does Canare say its typical distances are not equivalent to? ||| Actual transmission distances, which depend on the equalized distance of the receiver (Canare Electric, n.d.-d).
+
+:::reveal Give the three 12G reaches this lesson finds for Belden 1694A, and what explains the spread. ||| About 69 m (Belden's loss against Canare's 40 dB point), 70 m (AJA 12GDA) and 80 m (Semtech GS12341). The receiver's equalization explains it.
+
+## Sources
+- ${CANARE_ULTRA} Locator: "Typical Transmission Distance as per SMPTE Standard," including the "Cable Loss @ 1/2 Clock" row and the footnotes; "Key Features and Benefits" and notes for L-5.5CUHD.
+- ${CANARE_US_12G} Locator: L-CHD "Key Features".
+- ${CANARE_US_MASTERING} Locator: L-4.5CHD and L-5.5CUHD cable cards.
+- ${AJA_12GDA} Locator: "Specifications: Cable Equalization (Belden 1694A coax)".
+- ${SEMTECH} Locator: "Features: Automatic cable equalization".
+- ${BELDEN_1694A} Locator: p. 1, "Product Overview"; pp. 1 to 2, "Attenuation" table.
+- ${AJA_FIDO} Locator: p. 4, "Overview" and "Features".`,
+    },
+    {
+      slug: "hdmi-and-displayport-where-they-stop",
+      title: "6 · HDMI and DisplayPort: where they stop",
+      section: "2 · Video over copper",
+      recallContent: [
+        {
+          prompt: "What does Canare's footnote say decides the real SDI transmission distance?",
+          answer: "The equalized distance of the receiver; its typical distances are not actual transmission distances.",
+        },
+        {
+          prompt: "At 12G on Belden 1694A, what reach do AJA's 12GDA and Semtech's GS12341 quote?",
+          answer: "70 m (AJA) and 80 m (Semtech).",
+        },
+      ],
+      body: `**Short by design.** The bodies behind HDMI and DisplayPort say plainly that their fastest cables are short.
+
+**HDMI.** HDMI Licensing Administrator (HDMI LA) writes of its Ultra High Speed HDMI Cable: "it is likely that the only way to meet the Ultra High Speed HDMI requirements in cables longer than a few meters is through powered, active HDMI Cables" (HDMI Licensing Administrator, n.d.). In a post on cables for installations, it explains that as speeds rose, passive cables were "getting shorter or made thicker." Active optical cables, which run the high-speed lanes on fiber and the rest on copper, allow "much longer lengths in a relatively thin cable," and certification testing is required "for each length as electrical parameters can vary" (HDMI Licensing Administrator, 2021).
+
+Neither HDMI LA page read for this course gives a maximum length in meters. So this course gives none. "A few meters" passive at Ultra High Speed is what the licensing body itself says.
+
+**DisplayPort.** The Video Electronics Standards Association (VESA) is more specific, and its numbers have moved:
+
+| Cable | What VESA says |
+|---|---|
+| DP54 | Four lanes at UHBR13.5 (54 Gbps) "over a two-meter passive cable" (VESA, 2024) |
+| DP80LL | Four lanes at UHBR20 (80 Gbps) "over an active cable up to three meters in length"; before it, users were "limited to a one-meter cable connection" (VESA, 2025) |
+| Archived FAQ | "DisplayPort is specified and tested to run 15 meters without the need for a booster station" (VESA, n.d.) |
+
+**Reading that table, reasoned.** The 15-meter answer is from an archived FAQ, written before the UHBR cable classes. The 2024 and 2025 releases give 2 m passive at UHBR13.5, and 1 m passive or 3 m active at UHBR20. So the safe length depends on the data rate: the faster the link, the shorter the cable. Quoting "DisplayPort runs 15 meters" for current high-rate gear would be wrong.
+
+**Compare with SDI.** Lesson 5 found 12G-SDI running about 70 to 100 meters or more on coax, depending on the cable and receiver. The two are not built for the same job: SDI runs on 75-ohm coax, and HDMI's own licensing body says its fastest passive cables stop at a few meters. So a picture that has to go farther than an HDMI cable reaches gets converted, to SDI or to fiber.
+
+**Converting.** CREW-04, *Cinema-look camera rig*, lesson "7 · Outputs, timecode and genlock", shows an HDMI-to-SDI converter on a camera that has only HDMI out. For longer runs, makers sell systems that "Convert and extend 4K HD/3G/6G/12G-SDI, HDMI, 100BaseT Ethernet, and audio signals over tactical fiber" (Camplex, n.d.-c). Lesson 10 covers tactical fiber.
+
+:::reveal What does HDMI LA say is likely the only way to meet Ultra High Speed requirements beyond a few meters? ||| Powered, active HDMI cables (HDMI Licensing Administrator, n.d.).
+
+:::reveal Why is "DisplayPort runs 15 meters" wrong for current high-rate gear? ||| It comes from an archived FAQ that predates the UHBR cable classes; VESA's 2024 and 2025 releases give 2 m passive at UHBR13.5 and 1 m passive or 3 m active at UHBR20.
+
+## Sources
+- ${HDMI_POWER} Locator: body text, the Ultra High Speed paragraph.
+- ${HDMI_2021} Locator: body text, the paragraphs on passive cables, active optical cables and certification by length.
+- ${VESA_2024} Locator: body text, the DP54 paragraph.
+- ${VESA_2025} Locator: body text and quotation, the DP80LL paragraphs.
+- ${VESA_FAQ} Locator: "How Far Can I Run A DP Cable?"
+- ${CAMPLEX_TACTICAL} Locator: "Signal Extender & Reel Systems".`,
+    },
+    {
+      slug: "reference-timecode-and-return-video",
+      title: "7 · Reference, timecode and return video",
+      section: "2 · Video over copper",
+      recallContent: [
+        {
+          prompt: "What does HDMI LA say about Ultra High Speed HDMI cables longer than a few meters?",
+          answer: "It is likely the only way to meet the requirements is through powered, active HDMI cables.",
+        },
+        {
+          prompt: "What did VESA say UHBR20 users were limited to before the DP80LL active cable?",
+          answer: "A one-meter cable connection; DP80LL allows up to three meters, active.",
+        },
+      ],
+      body: `${QR}
+
+**Three more BNC lines.** Not every coax on a truck carries the program. Some carry a timing signal, some carry timecode, and some carry pictures back to the camera. CREW-04, *Cinema-look camera rig*, lesson "7 · Outputs, timecode and genlock", explains timecode against genlock on a camera. This lesson is the cable side.
+
+**Reference, which Ikegami's panel calls genlock.** Sony's HXCU-FB80 camera control unit has a REFERENCE IN connector that "Inputs an HD tri-level reference sync signal or SD reference sync signal (black burst signal) for external sync" (Sony Corporation, 2017, p. 10). Its specification (Sony Corporation, 2017, p. 35):
+
+| Reference | Level | Impedance |
+|---|---|---|
+| HD tri-level sync (SMPTE 274M) | 0.6 Vp-p | 75 ohms |
+| SD black burst, NTSC | 0.286 Vp-p | 75 ohms |
+| SD black burst, PAL | 0.3 Vp-p | 75 ohms |
+
+The connector is a BNC with a loop-through output, which is "automatically connected to a 75 Ω terminator" when nothing is plugged into it (Sony Corporation, 2017, p. 10). Ikegami's CCU-970 takes the same two kinds of reference, each as a "75Ω bridged connection" (Ikegami, n.d.-b).
+
+**Where reference comes from.** A sync generator makes it. AJA's GEN10 has six video sync outputs on BNC in two groups; each group can be set to HD tri-level sync in 19 formats or to SD color black or 75% bars, all locked to one master time base with 3 ppm accuracy. It adds one AES-11 output on BNC. AJA says its multiple outputs "can synchronize entire systems without requiring a Sync DA," meaning a distribution amplifier (AJA Video Systems, 2014, pp. 4, 10).
+
+**What that means for the cable, reasoned.** Reference is a 75-ohm signal on BNC, so lesson 2 applies: a 50-ohm jumper does not belong in it. A bridged or loop-through input is built to pass the signal on to the next device, so the last device in the chain must be terminated in 75 ohms. Sony's unit does that by itself when the loop-through is empty. Whether you add a terminator by hand on other gear is your engineer's house rule; the reviewer will confirm the wording before release. On an IP plant, timing moves to the network clock instead; CREW-05, *Arena transmission*, lesson "17 · One clock: PTP", covers it.
+
+**Timecode.** QSC describes its generator as making "a Linear Timecode (LTC) audio signal, per the SMPTE 12M specification," at 24, 25, 30 or pulldown rates, with a drop-frame mode "to stay in sync with wall clock time" (QSC, n.d.). Blackmagic's URSA Broadcast G2 lists "Reference Inputs: Tri-Sync/Black Burst/Timecode" and has a BNC timecode input that the camera detects and locks its own generator to, quoting its clock at "Less than 1 frame drift every 8 hours" (Blackmagic Design, n.d.-a, n.d.-b).
+
+**Why they are separate inputs, reasoned.** QSC calls LTC an audio signal. Reference is a video sync signal at 75 ohms, tri-level or black burst. They are different signals for different jobs, which is why a camera has a timecode input and a reference input, even when both are BNC. This course has no source that lists which connector carries LTC on current broadcast gear, so read the device's panel.
+
+**Return video.** Pictures also travel back to the camera. Sony's CCU takes two SDI returns and two analog returns on 75-ohm BNC and sends them up the camera cable (Sony Corporation, 2017, pp. 10, 35). Ikegami's CCU-970 takes four 3G or HD-SDI returns, two when its frame synchronizer is on (Ikegami, n.d.-b). On Blackmagic's URSA Broadcast G2, pressing PGM switches the viewfinder "to the program return feed from the switcher," so an operator far from the switcher can watch the show (Blackmagic Design, n.d.-a).
+
+:::reveal What two kinds of reference does Sony's CCU accept on REFERENCE IN? ||| HD tri-level sync and SD black burst, both at 75 ohms (Sony Corporation, 2017, pp. 10, 35).
+
+:::reveal What does QSC say LTC is? ||| A Linear Timecode audio signal, per SMPTE 12M (QSC, n.d.).
+
+:::reveal What does a camera operator gain from return video? ||| A feed from the switcher, such as the program, in the viewfinder, so they can watch the show far from the switcher (Blackmagic Design, n.d.-a).
+
+## Sources
+- ${SONY_2017} Locator: p. 10, "Rear Panel," items e and i; p. 35, "REFERENCE IN/OUT" and return inputs.
+- ${IKEGAMI_CCU970} Locator: "Input Signals: GENLOCK signal"; "Features" and "Return signal".
+- ${AJA_GEN10} Locator: p. 4, "Overview" and "Features"; p. 5, block diagram; p. 10, "Appendix A: Specifications".
+- ${QSC_LTC} Locator: description and properties.
+- ${BMD_URSA_SPECS} Locator: "Reference Inputs" and "Timecode Clock".
+- ${BMD_URSA} Locator: "Built in Timecode Generator"; the program return paragraph.`,
+    },
+    {
+      slug: "section-2-quiz",
+      title: "Section 2 quiz · Video over copper",
+      section: "2 · Video over copper",
+      body: "A graded check on SDI rates and the BNC, how far SDI runs, where HDMI and DisplayPort stop, and the reference, timecode and return lines. Each answer links back to the lesson that teaches it.",
+      quiz: {
+        passingScore: 80,
+        questionsPerAttempt: 5,
+        shuffleOptions: true,
+        questions: [
+          { prompt: "What does SMPTE's overview say ST 2082-1 defines?", options: ["A bit-serial data structure, signal and coax interface", "A packet format for sending video over Ethernet", "A fiber connector with two single-mode cores", "A sync signal for locking cameras together"], correctIndex: 0, explanation: "SMPTE (2018, p. 2): ST 2082-1 \"defines a bit-serial data structure, electrical signal and coaxial cable interface.\"", sourceLessonSlug: "sdi-on-coax-and-the-bnc" },
+          { prompt: "Besides the signal, what does ST 2082-1 also specify?", options: ["The camera's lens mount", "The coax cables and connectors", "The power on a hybrid cable", "The IP address of each device"], correctIndex: 1, explanation: "SMPTE (2018, p. 2): it \"also specifies the electrical and physical characteristics of coaxial cables and connectors.\"", sourceLessonSlug: "sdi-on-coax-and-the-bnc" },
+          { prompt: "Where does lesson 4 take its facts about SMPTE standards from?", options: ["The full paywalled text of each standard", "Forum posts by working broadcast engineers", "SMPTE's free overviews and makers' sheets", "Its own reconstruction of each standard"], correctIndex: 2, explanation: "The standards are paywalled; the lesson uses SMPTE's free overview documents and makers' spec sheets, and never reconstructs a standard's text.", sourceLessonSlug: "sdi-on-coax-and-the-bnc" },
+          { prompt: "Which standard does SMPTE's overview list for HD-SDI at 1.485 Gb/s?", options: ["ST 259", "ST 424", "ST 2082-1", "ST 292-1"], correctIndex: 3, explanation: "SMPTE (2017, p. 1): ST 292-1 and -2 at 1.485 and 1.485/1.001 Gb/s. ST 259 is SD, ST 424 is 3G, ST 2082-1 is 12G.", sourceLessonSlug: "sdi-on-coax-and-the-bnc" },
+          { prompt: "What rate does SMPTE's overview give for ST 424, 3G-SDI?", options: ["2.970 Gb/s", "1.485 Gb/s", "5.940 Gb/s", "11.88 Gb/s"], correctIndex: 0, explanation: "SMPTE (2017, p. 1): ST 424 at 2.970 and 2.970/1.001 Gb/s.", sourceLessonSlug: "sdi-on-coax-and-the-bnc" },
+          { prompt: "What rate does SMPTE's overview give for ST 2082-1, 12G-SDI?", options: ["5.940 Gb/s", "11.88 Gb/s", "2.970 Gb/s", "1.485 Gb/s"], correctIndex: 1, explanation: "SMPTE (2017, p. 1): ST 2082-1 at 11.88 and 11.88/1.001 Gb/s.", sourceLessonSlug: "sdi-on-coax-and-the-bnc" },
+          { prompt: "Which standard carries 6G-SDI at 5.940 Gb/s?", options: ["ST 2082-1", "ST 344", "ST 2081-1", "ST 297-1"], correctIndex: 2, explanation: "SMPTE (2017, p. 1): ST 2081-1 at 5.940 and 5.940/1.001 Gb/s. ST 297-1 is the fiber system.", sourceLessonSlug: "sdi-on-coax-and-the-bnc" },
+          { prompt: "What range of rates does SMPTE's overview give for ST 259?", options: ["540 Mb/s only", "1.485 Gb/s only", "2.970 to 5.940 Gb/s", "143 through 360 Mb/s"], correctIndex: 3, explanation: "SMPTE (2017, p. 1): ST 259 at 143 through 360 Mb/s; Canare's table uses 270 Mb/s for SD-SDI.", sourceLessonSlug: "sdi-on-coax-and-the-bnc" },
+          { prompt: "Which rate does SMPTE's overview list for ST 344?", options: ["540 Mb/s", "270 Mb/s", "1.485 Gb/s", "360 Mb/s"], correctIndex: 0, explanation: "SMPTE (2017, p. 1): ST 344 at 540 Mb/s.", sourceLessonSlug: "sdi-on-coax-and-the-bnc" },
+          { prompt: "In Canare's distance table, what is the common name for ST 424 at 1080p?", options: ["HD-SDI", "3G-SDI", "SD-SDI", "12G-SDI"], correctIndex: 1, explanation: "Canare Electric (n.d.-d): 3G-SDI is ST 424, 1080p, 2.97 Gb/s. HD-SDI is ST 292 at 1080i.", sourceLessonSlug: "sdi-on-coax-and-the-bnc" },
+          { prompt: "In Canare's table, which name goes with ST 2082-1 and 4K UHD?", options: ["3G-SDI", "HD-SDI", "12G-SDI", "6G-SDI"], correctIndex: 2, explanation: "Canare Electric (n.d.-d): 12G-SDI is ST 2082-1, 4K UHD, 11.88 Gb/s.", sourceLessonSlug: "sdi-on-coax-and-the-bnc" },
+          { prompt: "From HD up, in how many versions does each SDI rate come?", options: ["One fixed rate only", "Three, one per frame rate", "Four, one per link count", "Two, one divided by 1.001"], correctIndex: 3, explanation: "SMPTE (2017) lists each rate from HD up twice, for example 1.485 and 1.485/1.001 Gb/s.", sourceLessonSlug: "sdi-on-coax-and-the-bnc" },
+          { prompt: "Which two rates near 3 Gb/s does AJA's FiDO 12G reclock?", options: ["2.967 and 2.970 Gb/s", "2.970 and 3.000 Gb/s", "2.500 and 2.970 Gb/s", "2.970 and 2.997 Gb/s"], correctIndex: 0, explanation: "AJA Video Systems (2023, p. 9) lists 2.967 and 2.970 Gb/s among the rates FiDO-T-12G detects and reclocks.", sourceLessonSlug: "sdi-on-coax-and-the-bnc" },
+          { prompt: "Onto which link counts does the ST 2082 suite map picture formats?", options: ["A single link only", "Single, dual and quad link", "Dual and octal link", "Triple and quad link"], correctIndex: 1, explanation: "SMPTE (2018, p. 1): \"single-link, dual-link and quad-link\" 12 Gb/s interfaces.", sourceLessonSlug: "sdi-on-coax-and-the-bnc" },
+          { prompt: "What does ST 2082-10 carry on one 12G link?", options: ["1080-line formats only", "4320-line formats", "2160-line formats", "Audio-only streams"], correctIndex: 2, explanation: "SMPTE (2018, p. 3): ST 2082-10 carries 2160-line formats on one 12G link.", sourceLessonSlug: "sdi-on-coax-and-the-bnc" },
+          { prompt: "Which use on Belden's 4794R sheet shows a picture spread across four links?", options: ["4K Dual-link UHDTV", "HD Quad-link 1080i", "SD Quad-link 525", "8K Quad-link UHDTV"], correctIndex: 3, explanation: "Belden (2026b, p. 1) lists \"8K Quad-link UHDTV\": four 12G links for one picture.", sourceLessonSlug: "sdi-on-coax-and-the-bnc" },
+          { prompt: "What does ST 297-1 define, according to SMPTE's overview?", options: ["A fiber system for the same SDI signals", "A coax interface for 12G-SDI at 75 ohms", "A sync signal for HD cameras and CCUs", "A timecode format carried as audio"], correctIndex: 0, explanation: "SMPTE (2017, p. 1): ST 297-1 defines an optical fiber system for the same SDI signals.", sourceLessonSlug: "sdi-on-coax-and-the-bnc" },
+          { prompt: "What does ST 297-2 do?", options: ["Splits one SDI stream across four coax", "Carries several SDI streams on one fiber", "Sends SDI signals over twisted pair", "Embeds timecode in an SDI stream"], correctIndex: 1, explanation: "SMPTE (2017, p. 1): ST 297-2 carries multiple SDI streams on one fiber.", sourceLessonSlug: "sdi-on-coax-and-the-bnc" },
+          { prompt: "What level and impedance does Sony list for its HXCU-FB80's SDI outputs?", options: ["0.6 Vp-p into 50 ohms", "2 Vp-p into 110 ohms", "0.8 Vp-p into 75 ohms", "1.0 Vp-p into 600 ohms"], correctIndex: 2, explanation: "Sony Corporation (2017, pp. 35 to 36): SDI outputs are 0.8 Vp-p into 75 ohms on BNC.", sourceLessonSlug: "sdi-on-coax-and-the-bnc" },
+          { prompt: "Which connector carries the SDI outputs on Sony's HXCU-FB80?", options: ["XLR", "LC", "N", "BNC"], correctIndex: 3, explanation: "Sony Corporation (2017, pp. 35 to 36): the SDI outputs are on BNC.", sourceLessonSlug: "sdi-on-coax-and-the-bnc" },
+          { prompt: "What does Canare say its BCP-D55UHD BNC is engineered for?", options: ["Canare's 12G-SDI cables", "Any 50-ohm RF cable", "Belden's triax cables", "HDMI-to-SDI converters"], correctIndex: 0, explanation: "Canare Corporation of America (n.d.-b): \"Specifically engineered for the Canare 12G-SDI Cables.\"", sourceLessonSlug: "sdi-on-coax-and-the-bnc" },
+          { prompt: "Which connectors does Canare say its micro BNC is compatible with?", options: ["Neutrik etherCON", "Amphenol HD-BNCs", "LEMO SMPTE plugs", "50-ohm SMA jacks"], correctIndex: 1, explanation: "Canare Corporation of America (n.d.-b): its micro BNC is \"Compatible with Amphenol HD-BNCs.\"", sourceLessonSlug: "sdi-on-coax-and-the-bnc" },
+          { prompt: "What do Canare's crimp tables pair each BNC with?", options: ["Specific cameras", "Specific routers", "Specific cables", "Specific rates"], correctIndex: 2, explanation: "Canare Corporation of America (n.d.-b): each BNC is paired with specific cables, including Belden 1694A for one micro BNC.", sourceLessonSlug: "sdi-on-coax-and-the-bnc" },
+          { prompt: "What does lesson 4 reason from Canare's crimp tables?", options: ["Any 75-ohm BNC fits any 75-ohm cable", "Crimped BNCs are weaker than soldered", "Micro BNCs suit only 50-ohm cable", "A BNC must suit its cable, not just ohms"], correctIndex: 3, explanation: "Because the tables pair each BNC with particular cables, a BNC has to match the cable it is crimped onto, not only its impedance.", sourceLessonSlug: "sdi-on-coax-and-the-bnc" },
+          { prompt: "What return loss does Canare quote for its right-angle micro BNC at 12 GHz?", options: ["13 dB", "24 dB", "20 dB", "30 dB"], correctIndex: 0, explanation: "Canare Corporation of America (n.d.-b): 24 dB at 3 GHz, 20 dB at 6 GHz and 13 dB at 12 GHz.", sourceLessonSlug: "sdi-on-coax-and-the-bnc" },
+          { prompt: "What return loss does Canare quote for its right-angle micro BNC at 3 GHz?", options: ["13 dB", "24 dB", "20 dB", "9 dB"], correctIndex: 1, explanation: "Canare Corporation of America (n.d.-b): 24 dB at 3 GHz, falling to 13 dB at 12 GHz.", sourceLessonSlug: "sdi-on-coax-and-the-bnc" },
+          { prompt: "Which lesson in the series shows the locking BNC and an HDMI-to-SDI converter?", options: ["CREW-05, \"ST 2110: separate streams\"", "CREW-05, \"One clock: PTP\"", "CREW-04, \"Outputs, timecode and genlock\"", "CREW-01, \"Which rulebook applies\""], correctIndex: 2, explanation: "CREW-04, Cinema-look camera rig, lesson 7, covers camera outputs, the locking BNC and an HDMI-to-SDI converter.", sourceLessonSlug: "sdi-on-coax-and-the-bnc" },
+          { prompt: "Where does lesson 4 send you to see how SDI's embedded audio and picture split onto a network?", options: ["CREW-04, \"Outputs, timecode and genlock\"", "CREW-02, \"The kit and the site survey\"", "CREW-01, \"Who rigs on a show\"", "CREW-05, \"ST 2110: separate streams\""], correctIndex: 3, explanation: "CREW-05, Arena transmission, lesson 12, shows how SDI's parts become separate streams on an IP network.", sourceLessonSlug: "sdi-on-coax-and-the-bnc" },
+          { prompt: "How does Canare compute its \"typical transmission distance\"?", options: ["Where cable loss hits SMPTE's figure at half clock", "Where the picture first shows visible errors", "Where the cable's bend radius limit is reached", "Where a receiver's equalizer finally gives up"], correctIndex: 0, explanation: "Canare Electric (n.d.-d): the length at which the cable's loss reaches SMPTE's typical attenuation at half the clock frequency.", sourceLessonSlug: "how-far-sdi-runs" },
+          { prompt: "Which loss point does Canare use for 12G-SDI?", options: ["20 dB at 750 MHz", "40 dB at 6 GHz", "30 dB at 1.5 GHz", "30 dB at 135 MHz"], correctIndex: 1, explanation: "Canare Electric (n.d.-d): 40 dB at 6 GHz for 12G-SDI.", sourceLessonSlug: "how-far-sdi-runs" },
+          { prompt: "Which loss point does Canare use for HD-SDI?", options: ["30 dB at 135 MHz", "40 dB at 6 GHz", "20 dB at 750 MHz", "30 dB at 1.5 GHz"], correctIndex: 2, explanation: "Canare Electric (n.d.-d): 20 dB at 750 MHz for HD-SDI.", sourceLessonSlug: "how-far-sdi-runs" },
+          { prompt: "Which loss point does Canare use for 270 Mb/s?", options: ["40 dB at 6 GHz", "20 dB at 750 MHz", "30 dB at 1.5 GHz", "30 dB at 135 MHz"], correctIndex: 3, explanation: "Canare Electric (n.d.-d): 30 dB at 135 MHz for 270 Mb/s.", sourceLessonSlug: "how-far-sdi-runs" },
+          { prompt: "Which loss point does Canare use for 3G-SDI?", options: ["30 dB at 1.5 GHz", "20 dB at 750 MHz", "40 dB at 6 GHz", "30 dB at 135 MHz"], correctIndex: 0, explanation: "Canare Electric (n.d.-d): 30 dB at 1.5 GHz for 3G-SDI.", sourceLessonSlug: "how-far-sdi-runs" },
+          { prompt: "What typical 12G distance does Canare give for L-5.5CUHD?", options: ["74 m", "101 m", "140 m", "70 m"], correctIndex: 1, explanation: "Canare Electric (n.d.-d): L-5.5CUHD 101 m at 12G. L-4.5CHD is 74, L-8CUHD 140 and the mobile L-5.5CUHWS 70.", sourceLessonSlug: "how-far-sdi-runs" },
+          { prompt: "What typical 12G distance does Canare give for L-8CUHD?", options: ["101 m", "74 m", "140 m", "217 m"], correctIndex: 2, explanation: "Canare Electric (n.d.-d): L-8CUHD 140 m at 12G; 217 m is its HD figure.", sourceLessonSlug: "how-far-sdi-runs" },
+          { prompt: "What typical HD-SDI distance does Canare give for L-4.5CHD?", options: ["415 m", "74 m", "150 m", "114 m"], correctIndex: 3, explanation: "Canare Electric (n.d.-d): L-4.5CHD 415 m at 270 Mb/s, 114 m at HD, 119 m at 3G, 74 m at 12G.", sourceLessonSlug: "how-far-sdi-runs" },
+          { prompt: "At 12G, how does Canare's mobile L-5.5CUHWS compare with the fixed L-5.5CUHD?", options: ["70 m against 101 m", "101 m against 70 m", "140 m against 101 m", "74 m against 68 m"], correctIndex: 0, explanation: "Canare Electric (n.d.-d): the mobile cable reaches 70 m at 12G against 101 m for the fixed-installation cable.", sourceLessonSlug: "how-far-sdi-runs" },
+          { prompt: "Reading across one row of Canare's table, what happens to distance?", options: ["It rises as the rate rises", "It falls as the rate rises", "It stays the same at each rate", "It falls only at 270 Mb/s"], correctIndex: 1, explanation: "Each row shows distance falling from 270 Mb/s to 12G, as loss rises with frequency.", sourceLessonSlug: "how-far-sdi-runs" },
+          { prompt: "What does Canare say about how L-5.5CUHD should be installed?", options: ["Mobile use, safe to coil often", "Outdoor burial with no conduit", "Fixed runs; avoid repeated bending", "Short patches only, under 10 m"], correctIndex: 2, explanation: "Canare Electric (n.d.-d): \"Designed for fixed installation, please avoid repeated bending or external pressure.\"", sourceLessonSlug: "how-far-sdi-runs" },
+          { prompt: "What does Canare's footnote say its typical distances are not equivalent to?", options: ["Values measured at 6 GHz", "Values for mobile cable", "Values based on SMPTE loss", "Actual transmission distances"], correctIndex: 3, explanation: "Canare Electric (n.d.-d): \"These values are not equivalent to actual transmission distances, which depends on the equalized distance of receiver.\"", sourceLessonSlug: "how-far-sdi-runs" },
+          { prompt: "According to Canare, what does the actual SDI transmission distance depend on?", options: ["The receiver's equalized distance", "The color of the cable's jacket", "The model of BNC crimp tool used", "The camera's frame rate alone"], correctIndex: 0, explanation: "Canare Electric (n.d.-d): actual distance \"depends on the equalized distance of receiver.\"", sourceLessonSlug: "how-far-sdi-runs" },
+          { prompt: "What does Canare say L-5.5CUHD can do with 4K UHD on one link?", options: ["Exactly 101 m with any receiver", "100 m or longer, by receiver", "No more than 50 m at 12G", "Up to 10 km with an equalizer"], correctIndex: 1, explanation: "Canare Electric (n.d.-d): \"100 m or longer,\" \"Depending on receiving equipment.\"", sourceLessonSlug: "how-far-sdi-runs" },
+          { prompt: "How far does AJA's 12GDA equalize Belden 1694A at 12 Gb/s?", options: ["80 m", "120 m", "70 m", "190 m"], correctIndex: 2, explanation: "AJA Video Systems (n.d.): 70 m at 12 Gb/s, 120 m at 6, 190 m at 3, 405 m at 270 Mb/s.", sourceLessonSlug: "how-far-sdi-runs" },
+          { prompt: "How far does AJA's 12GDA equalize Belden 1694A at 270 Mb/s?", options: ["450 m", "566 m", "789 m", "405 m"], correctIndex: 3, explanation: "AJA Video Systems (n.d.): 405 m at 270 Mb/s. Semtech's chip gives 450 m.", sourceLessonSlug: "how-far-sdi-runs" },
+          { prompt: "How far does Semtech's GS12341 reach on 1694A at 11.88 Gb/s?", options: ["80 m", "70 m", "69 m", "100 m"], correctIndex: 0, explanation: "Semtech (n.d.): 80 m at 11.88 Gb/s; 100 m at 5.94 Gb/s.", sourceLessonSlug: "how-far-sdi-runs" },
+          { prompt: "How far does Semtech's GS12341 reach on 1694A at 270 Mb/s?", options: ["405 m", "450 m", "260 m", "190 m"], correctIndex: 1, explanation: "Semtech (n.d.): 450 m at 270 Mb/s; 260 m at 1.485 Gb/s, 190 m at 2.97.", sourceLessonSlug: "how-far-sdi-runs" },
+          { prompt: "What 12G reach does lesson 5 work out from Belden's 1694A loss and Canare's 40 dB point?", options: ["About 58 m", "About 101 m", "About 69 m", "About 140 m"], correctIndex: 2, explanation: "40 dB divided by 17.7 dB per 100 ft is about 226 ft, or about 69 m.", sourceLessonSlug: "how-far-sdi-runs" },
+          { prompt: "Why can AJA and Semtech quote 12G reach over 1694A when Belden does not list 12G?", options: ["Belden lists 1694A for 12G", "They use a thicker variant", "They measure it at 6G instead", "Their receivers equalize it"], correctIndex: 3, explanation: "The receiver's equalization sets the reach; the cable sheet alone does not.", sourceLessonSlug: "how-far-sdi-runs" },
+          { prompt: "Which three 12G figures does Canare publish for L-4.5CHD?", options: ["74 m, 65 m and about 44 m", "74 m, 101 m and 140 m", "70 m, 80 m and about 69 m", "68 m, 74 m and 114 m"], correctIndex: 0, explanation: "Japanese table 74 m, US 12G page 65 m, US \"Mastering\" page 143 ft (about 44 m), with no test conditions on the US pages.", sourceLessonSlug: "how-far-sdi-runs" },
+          { prompt: "What is missing from the maximum distances on Canare's US cable cards?", options: ["The cable's part number", "The rate they apply to", "The unit of measure", "The maker's own name"], correctIndex: 1, explanation: "Canare Corporation of America (n.d.-a) lists distances such as 335 ft for L-5.5CUHD without naming the rate.", sourceLessonSlug: "how-far-sdi-runs" },
+          { prompt: "What rule does lesson 5 give for planning an SDI run?", options: ["Trust the longest figure a maker prints", "Use the cable sheet's number on its own", "Read cable and receiver sheets together", "Assume 100 m for any 75-ohm cable"], correctIndex: 2, explanation: "The receiver decides the real distance, so read the cable sheet and the receiver sheet together at the rate you are running.", sourceLessonSlug: "how-far-sdi-runs" },
+          { prompt: "How far does AJA say its FiDO converters carry 12G-SDI on fiber?", options: ["Up to 2 km on multimode", "Up to 100 m on Cat6A", "Up to 1 km on tactical coax", "Up to 10 km on single-mode"], correctIndex: 3, explanation: "AJA Video Systems (2023, p. 4): 12G-SDI \"up to 10km\" on single-mode fiber.", sourceLessonSlug: "how-far-sdi-runs" },
+          { prompt: "What does HDMI LA say is likely needed for Ultra High Speed HDMI beyond a few meters?", options: ["Powered, active HDMI cables", "Thicker passive HDMI cables", "Any certified passive cable", "A 75-ohm coax adapter"], correctIndex: 0, explanation: "HDMI Licensing Administrator (n.d.): \"powered, active HDMI Cables\" are likely the only way to meet the requirements beyond a few meters.", sourceLessonSlug: "hdmi-and-displayport-where-they-stop" },
+          { prompt: "What does HDMI LA say happened to passive cables as speeds rose?", options: ["They got longer and thinner", "They got shorter or thicker", "They stayed the same length", "They were replaced by coax"], correctIndex: 1, explanation: "HDMI Licensing Administrator (2021): passive cables were \"getting shorter or made thicker.\"", sourceLessonSlug: "hdmi-and-displayport-where-they-stop" },
+          { prompt: "In an active optical HDMI cable, what carries the high-speed lanes?", options: ["Copper", "Coax", "Fiber", "Radio"], correctIndex: 2, explanation: "HDMI Licensing Administrator (2021): fiber for the high-speed lanes, copper for the auxiliaries.", sourceLessonSlug: "hdmi-and-displayport-where-they-stop" },
+          { prompt: "What does HDMI LA say active optical cables make possible?", options: ["Lower cost at short lengths", "Power for the display end", "Analog video at any length", "Long lengths in a thin cable"], correctIndex: 3, explanation: "HDMI Licensing Administrator (2021): \"much longer lengths in a relatively thin cable.\"", sourceLessonSlug: "hdmi-and-displayport-where-they-stop" },
+          { prompt: "For what does HDMI LA say certification testing is required?", options: ["Each length", "Each color", "Each maker", "Each display"], correctIndex: 0, explanation: "HDMI Licensing Administrator (2021): testing is required \"for each length as electrical parameters can vary.\"", sourceLessonSlug: "hdmi-and-displayport-where-they-stop" },
+          { prompt: "Why does lesson 6 give no maximum HDMI length in meters?", options: ["HDMI has no length limit at all", "Neither HDMI LA page read gives one", "Lengths change with every TV model", "HDMI LA forbids publishing one"], correctIndex: 1, explanation: "Neither HDMI LA page read for the course states a maximum length in meters, so the course gives none.", sourceLessonSlug: "hdmi-and-displayport-where-they-stop" },
+          { prompt: "How long a passive cable does VESA say DP54 supports at UHBR13.5?", options: ["1 m", "3 m", "2 m", "15 m"], correctIndex: 2, explanation: "VESA (2024): four-lane UHBR13.5 (54 Gbps) \"over a two-meter passive cable.\"", sourceLessonSlug: "hdmi-and-displayport-where-they-stop" },
+          { prompt: "How long an active cable does VESA say DP80LL supports at UHBR20?", options: ["Up to 2 m", "Up to 15 m", "Up to 1 m", "Up to 3 m"], correctIndex: 3, explanation: "VESA (2025): UHBR20 \"over an active cable up to three meters in length.\"", sourceLessonSlug: "hdmi-and-displayport-where-they-stop" },
+          { prompt: "Before DP80LL, what cable length were UHBR20 users limited to?", options: ["1 m", "2 m", "3 m", "5 m"], correctIndex: 0, explanation: "VESA (2025): users were \"limited to a one-meter cable connection\" at UHBR20.", sourceLessonSlug: "hdmi-and-displayport-where-they-stop" },
+          { prompt: "What does DisplayPort.org's archived FAQ say about length?", options: ["2 m passive at any rate", "15 m without a booster", "3 m active at UHBR20", "100 m on coax adapters"], correctIndex: 1, explanation: "VESA (n.d.): \"DisplayPort is specified and tested to run 15 meters without the need for a booster station.\"", sourceLessonSlug: "hdmi-and-displayport-where-they-stop" },
+          { prompt: "Why is \"DisplayPort runs 15 meters\" wrong for current high-rate gear?", options: ["VESA never published it at all", "It applied only to HDMI cables", "It predates the UHBR cable classes", "It was measured on active cable"], correctIndex: 2, explanation: "The 15 m figure is from an archived FAQ that predates UHBR; the 2024 and 2025 releases give 1 to 3 m at the high rates.", sourceLessonSlug: "hdmi-and-displayport-where-they-stop" },
+          { prompt: "On what does lesson 6 say a safe DisplayPort cable length depends?", options: ["The display size", "The video format", "The jacket color", "The data rate"], correctIndex: 3, explanation: "Comparing VESA's pages: 15 m at older rates, 2 m passive at UHBR13.5, 1 m passive or 3 m active at UHBR20.", sourceLessonSlug: "hdmi-and-displayport-where-they-stop" },
+          { prompt: "What is UHBR13.5 over four lanes, per VESA?", options: ["54 Gbps", "80 Gbps", "48 Gbps", "13.5 Gbps"], correctIndex: 0, explanation: "VESA (2024): four-lane UHBR13.5 is 54 Gbps.", sourceLessonSlug: "hdmi-and-displayport-where-they-stop" },
+          { prompt: "What is UHBR20 over four lanes, per VESA?", options: ["54 Gbps", "80 Gbps", "20 Gbps", "40 Gbps"], correctIndex: 1, explanation: "VESA (2025): four-lane UHBR20 is 80 Gbps.", sourceLessonSlug: "hdmi-and-displayport-where-they-stop" },
+          { prompt: "What does VESA stand for?", options: ["Video Equipment Safety Agency", "Visual Engineering Standards Alliance", "Video Electronics Standards Association", "Video Electronic Signal Association"], correctIndex: 2, explanation: "The Video Electronics Standards Association publishes the DisplayPort cable specifications cited in lesson 6.", sourceLessonSlug: "hdmi-and-displayport-where-they-stop" },
+          { prompt: "How does lesson 6 contrast 12G-SDI on coax with Ultra High Speed HDMI on passive cable?", options: ["Both reach about 15 m", "Both reach about 2 m", "A few m against 70 to 100+ m", "70 to 100+ m against a few m"], correctIndex: 3, explanation: "Lesson 5 found 12G-SDI running about 70 to 100 m or more on coax; HDMI LA says its fastest passive cables stop at a few meters.", sourceLessonSlug: "hdmi-and-displayport-where-they-stop" },
+          { prompt: "What does lesson 6 say happens to a picture that must go farther than an HDMI cable reaches?", options: ["It is converted, to SDI or fiber", "It goes on a longer HDMI cable", "It is split across two HDMI runs", "It is cut to standard definition"], correctIndex: 0, explanation: "\"A picture that has to go farther than an HDMI cable reaches gets converted, to SDI or to fiber.\"", sourceLessonSlug: "hdmi-and-displayport-where-they-stop" },
+          { prompt: "Which lesson in the series shows an HDMI-to-SDI converter on a camera?", options: ["CREW-05, \"Fiber on the map\"", "CREW-04, \"Outputs, timecode and genlock\"", "CREW-05, \"Bandwidth math\"", "CREW-01, \"Which rulebook applies\""], correctIndex: 1, explanation: "CREW-04, Cinema-look camera rig, lesson 7, shows an HDMI-to-SDI converter on a camera with only HDMI out.", sourceLessonSlug: "hdmi-and-displayport-where-they-stop" },
+          { prompt: "Over what do Camplex's systems convert and extend HDMI and SDI?", options: ["Cat5e copper", "Triax cable", "Tactical fiber", "Wi-Fi radio"], correctIndex: 2, explanation: "Camplex (n.d.-c): systems that \"Convert and extend 4K HD/3G/6G/12G-SDI, HDMI, 100BaseT Ethernet, and audio signals over tactical fiber.\"", sourceLessonSlug: "hdmi-and-displayport-where-they-stop" },
+          { prompt: "What does Sony's REFERENCE IN accept?", options: ["LTC timecode or word clock", "Return video or program audio", "AES3 audio or MADI streams", "HD tri-level or SD black burst"], correctIndex: 3, explanation: "Sony Corporation (2017, p. 10): \"an HD tri-level reference sync signal or SD reference sync signal (black burst signal).\"", sourceLessonSlug: "reference-timecode-and-return-video" },
+          { prompt: "What level does Sony list for HD tri-level reference?", options: ["0.6 Vp-p", "0.286 Vp-p", "0.8 Vp-p", "0.3 Vp-p"], correctIndex: 0, explanation: "Sony Corporation (2017, p. 35): HD tri-level 0.6 Vp-p; NTSC black burst 0.286; PAL 0.3.", sourceLessonSlug: "reference-timecode-and-return-video" },
+          { prompt: "What level does Sony list for NTSC black burst?", options: ["0.6 Vp-p", "0.286 Vp-p", "0.8 Vp-p", "1.0 Vp-p"], correctIndex: 1, explanation: "Sony Corporation (2017, p. 35): NTSC black burst 0.286 Vp-p, 75 ohms.", sourceLessonSlug: "reference-timecode-and-return-video" },
+          { prompt: "What level does Sony list for PAL black burst?", options: ["0.6 Vp-p", "0.8 Vp-p", "0.3 Vp-p", "0.286 Vp-p"], correctIndex: 2, explanation: "Sony Corporation (2017, p. 35): PAL black burst 0.3 Vp-p, 75 ohms.", sourceLessonSlug: "reference-timecode-and-return-video" },
+          { prompt: "At what impedance does Sony list every reference signal?", options: ["50 ohms", "110 ohms", "600 ohms", "75 ohms"], correctIndex: 3, explanation: "Sony Corporation (2017, p. 35): tri-level and black burst are all 75 ohms.", sourceLessonSlug: "reference-timecode-and-return-video" },
+          { prompt: "Which SMPTE standard does Sony name for HD tri-level sync?", options: ["SMPTE 274M", "SMPTE 12M", "SMPTE 259M", "ST 2082-1"], correctIndex: 0, explanation: "Sony Corporation (2017, p. 35): HD tri-level sync (SMPTE 274M). SMPTE 12M is LTC, per QSC.", sourceLessonSlug: "reference-timecode-and-return-video" },
+          { prompt: "What does Sony's reference loop-through do when nothing is plugged into it?", options: ["Leaves the line open, unterminated", "Connects a 75-ohm terminator itself", "Switches in a 50-ohm terminator", "Turns the reference input off"], correctIndex: 1, explanation: "Sony Corporation (2017, p. 10): the loop-through output is \"automatically connected to a 75 Ω terminator\" when unused.", sourceLessonSlug: "reference-timecode-and-return-video" },
+          { prompt: "How does Ikegami describe its CCU-970 genlock input?", options: ["A 50-ohm terminated input", "A 110-ohm balanced XLR", "A 75-ohm bridged connection", "A fiber LC receptacle"], correctIndex: 2, explanation: "Ikegami (n.d.-b): tri-sync or black burst, each as a \"75Ω bridged connection.\"", sourceLessonSlug: "reference-timecode-and-return-video" },
+          { prompt: "What does Ikegami's CCU-970 panel call its reference input?", options: ["Timecode", "Return", "Tally", "Genlock"], correctIndex: 3, explanation: "Ikegami (n.d.-b) lists it as \"GENLOCK signal.\"", sourceLessonSlug: "reference-timecode-and-return-video" },
+          { prompt: "How many video sync outputs does AJA's GEN10 have?", options: ["Six, in two groups", "Four, in one group", "Eight, in four groups", "Two, one per format"], correctIndex: 0, explanation: "AJA Video Systems (2014, p. 4): six video sync outputs on BNC in two groups.", sourceLessonSlug: "reference-timecode-and-return-video" },
+          { prompt: "To what can each GEN10 output group be set?", options: ["LTC timecode or word clock", "HD tri-level, or SD black or bars", "12G-SDI or 3G-SDI video", "AES3 or MADI audio"], correctIndex: 1, explanation: "AJA Video Systems (2014): each group is HD tri-level (19 formats) or SD color black or 75% bars.", sourceLessonSlug: "reference-timecode-and-return-video" },
+          { prompt: "What accuracy does AJA give for the GEN10?", options: ["1 frame in 8 hours", "0.1 dB", "3 ppm", "30 ppm"], correctIndex: 2, explanation: "AJA Video Systems (2014, p. 10): 3 ppm, all outputs locked to one master time base.", sourceLessonSlug: "reference-timecode-and-return-video" },
+          { prompt: "Besides its six video outputs, what does the GEN10 provide?", options: ["One LTC output on XLR", "One HDMI output", "One MADI output on SC", "One AES-11 output on BNC"], correctIndex: 3, explanation: "AJA Video Systems (2014): one AES-11 output on BNC.", sourceLessonSlug: "reference-timecode-and-return-video" },
+          { prompt: "What does AJA say the GEN10's outputs can synchronize systems without?", options: ["A Sync DA", "A power supply", "A terminator", "A reference input"], correctIndex: 0, explanation: "AJA Video Systems (2014, p. 4): \"can synchronize entire systems without requiring a Sync DA.\"", sourceLessonSlug: "reference-timecode-and-return-video" },
+          { prompt: "What does DA mean in \"Sync DA\"?", options: ["Digital adapter", "Distribution amplifier", "Delay assembly", "Data acquisition"], correctIndex: 1, explanation: "A DA is a distribution amplifier, as in AJA's 12GDA \"12G-SDI 1x6 distribution amplifier.\"", sourceLessonSlug: "reference-timecode-and-return-video" },
+          { prompt: "Reasoning from bridged and loop-through inputs, how must a reference chain end?", options: ["Left open at the last device", "With a second reference feed", "Terminated in 75 ohms", "Terminated in 50 ohms"], correctIndex: 2, explanation: "Bridged inputs pass the signal on, so the last device must be terminated in 75 ohms; Sony's unit does this itself when its loop-through is empty.", sourceLessonSlug: "reference-timecode-and-return-video" },
+          { prompt: "Who settles whether you add a reference terminator by hand on other gear?", options: ["The camera operator's taste", "The cable maker's spec sheet", "The SMPTE 274M standard text", "The engineer's house rule"], correctIndex: 3, explanation: "Lesson 7: it is your engineer's house rule, and the reviewer will confirm the wording before release.", sourceLessonSlug: "reference-timecode-and-return-video" },
+          { prompt: "Does a 50-ohm jumper belong in a reference line?", options: ["No: reference is a 75-ohm signal", "Yes: any BNC jumper will serve", "Only when the run is black burst", "Only on a loop-through output"], correctIndex: 0, explanation: "Reference is a 75-ohm BNC signal (Sony; Ikegami), so lesson 2's rule applies: a 50-ohm jumper does not belong in it.", sourceLessonSlug: "reference-timecode-and-return-video" },
+          { prompt: "On an IP plant, what does lesson 7 say timing moves to?", options: ["LTC on an XLR line", "The network clock, PTP", "Word clock on BNC", "Tally on a relay"], correctIndex: 1, explanation: "Timing moves to the network clock; CREW-05 lesson \"17 · One clock: PTP\" covers it.", sourceLessonSlug: "reference-timecode-and-return-video" },
+          { prompt: "How does QSC describe LTC?", options: ["A video sync per SMPTE 274M", "A data packet on Ethernet", "An audio signal per SMPTE 12M", "A tri-level sync at 0.6 Vp-p"], correctIndex: 2, explanation: "QSC (n.d.): \"a Linear Timecode (LTC) audio signal, per the SMPTE 12M specification.\"", sourceLessonSlug: "reference-timecode-and-return-video" },
+          { prompt: "Why does QSC's LTC generator have a drop-frame mode?", options: ["To drop frames from the program", "To lower the signal level", "To switch over to PAL rates", "To keep pace with wall clock time"], correctIndex: 3, explanation: "QSC (n.d.): drop-frame mode \"to stay in sync with wall clock time.\"", sourceLessonSlug: "reference-timecode-and-return-video" },
+          { prompt: "Which reference inputs does Blackmagic list for the URSA Broadcast G2?", options: ["Tri-Sync, Black Burst, Timecode", "Word clock, AES3 and MADI", "HDMI, DisplayPort and USB", "Return, tally and intercom"], correctIndex: 0, explanation: "Blackmagic Design (n.d.-b): \"Reference Inputs: Tri-Sync/Black Burst/Timecode.\"", sourceLessonSlug: "reference-timecode-and-return-video" },
+          { prompt: "What drift does Blackmagic quote for the URSA Broadcast G2's timecode clock?", options: ["Under 1 frame each hour", "Under 1 frame every 8 hours", "Under 1 second per day", "Under 3 frames per minute"], correctIndex: 1, explanation: "Blackmagic Design (n.d.-b): \"Less than 1 frame drift every 8 hours.\"", sourceLessonSlug: "reference-timecode-and-return-video" },
+          { prompt: "Why does a camera have separate timecode and reference inputs, per lesson 7?", options: ["LTC is 50 ohms; reference is 110", "Timecode needs fiber; sync needs coax", "LTC is audio; reference is video sync", "Reference carries pictures; LTC none"], correctIndex: 2, explanation: "QSC calls LTC an audio signal; reference is a 75-ohm video sync signal. Different signals, different jobs.", sourceLessonSlug: "reference-timecode-and-return-video" },
+          { prompt: "Which connector carries LTC, according to this course?", options: ["Always a BNC on broadcast gear", "Always a 3-pin XLR connector", "Always a LEMO 5-pin connector", "No source lists it; read the panel"], correctIndex: 3, explanation: "The course has no source listing which connector carries LTC on current broadcast gear, so it tells you to read the device's panel.", sourceLessonSlug: "reference-timecode-and-return-video" },
+          { prompt: "Which returns does Sony's HXCU-FB80 take?", options: ["Two SDI and two analog", "Four SDI and no analog", "Two SDI and no analog", "One analog and one SDI"], correctIndex: 0, explanation: "Sony Corporation (2017, pp. 10, 35): two SDI and two analog returns on 75-ohm BNC, sent up the camera cable.", sourceLessonSlug: "reference-timecode-and-return-video" },
+          { prompt: "How many 3G or HD-SDI returns does Ikegami's CCU-970 take?", options: ["Two, or four with frame sync on", "Four, or two with frame sync on", "Six, on two BNC groups", "One, on the camera cable"], correctIndex: 1, explanation: "Ikegami (n.d.-b): four returns, two when its frame synchronizer is on.", sourceLessonSlug: "reference-timecode-and-return-video" },
+          { prompt: "What does the PGM button do on Blackmagic's URSA Broadcast G2?", options: ["Sends the camera's picture to air", "Turns on the camera's tally light", "Shows program return in the viewfinder", "Starts the camera's internal timecode"], correctIndex: 2, explanation: "Blackmagic Design (n.d.-a): PGM switches the viewfinder \"to the program return feed from the switcher.\"", sourceLessonSlug: "reference-timecode-and-return-video" },
+        ],
+      },
+    },
   ],
 };
