@@ -64,6 +64,7 @@ import { LIGHT_ON_SET_COURSE } from "./data/light-on-set-course";
 import { CINEMA_LOOK_CAMERA_RIG_COURSE } from "./data/cinema-look-camera-rig-course";
 import { ARENA_TRANSMISSION_COURSE } from "./data/arena-transmission-course";
 import { RENTING_OUT_PRODUCTION_GEAR_COURSE } from "./data/renting-out-production-gear-course";
+import { SIDELINE_SYSTEMS_COURSE } from "./data/sideline-systems-course";
 import { MAP_AND_COMPASS_COURSE } from "./data/map-and-compass-course";
 import { SURVEYING_HOW_LAND_GETS_MEASURED_COURSE } from "./data/surveying-how-land-gets-measured-course";
 import { READING_A_LAND_DESCRIPTION_COURSE } from "./data/reading-a-land-description-course";
@@ -3617,6 +3618,30 @@ async function main() {
     navigationMode: "linear",
     publishHoldReason:
       "Needs a qualified reviewer: held until a peer reviewer (for example a rental house owner) has signed off, with an attorney, an insurance agent and a CPA or enrolled agent for the lessons marked QR. Research tier 2: money, contracts, insurance and taxes.",
+  });
+  // CREW-07, approved by BAM 2026-10-26 (cloud-briefs/crew-07/00-approved-brief.md): the tracking,
+  // replay and injury video crew beside the field, what the systems do for officials, broadcasters and
+  // medical staff, who sits where on a game day, and the non-medical jobs. Vendors and leagues (Hawk-Eye,
+  // the NFL, the SEC, the Big Ten) are cited worked examples. Public, held for a qualified reviewer who
+  // has worked one of these jobs (a tracking or replay systems technician), with a certified athletic
+  // trainer for the medical-review section. Research tier 2: it describes concussion and injury review
+  // protocols and never teaches medicine. Pass 1 (2026-10-26) wrote sections 1 to 4; sections 5 to 7
+  // (jobs, hiring, the capstone) and the final quiz follow.
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "sideline-systems",
+    course: SIDELINE_SYSTEMS_COURSE,
+    category: "Careers & Media",
+    additionalCategories: ["Sports", "Trade Skills"],
+    seriesSlug: "the-crew-behind-the-show",
+    seriesTitle: "The Crew Behind the Show",
+    seriesOrder: 7,
+    seriesCode: "CREW",
+    seriesPosition: "07",
+    navigationMode: "linear",
+    publishHoldReason:
+      "Held: needs a qualified reviewer (a tracking or replay systems technician who has worked one of these jobs, and a certified athletic trainer for the medical-review section) to read every lesson marked QR, with authority to change or cut it. Research tier 2: concussion and injury review protocols, described and never taught as medicine.",
   });
 
   // Tools That Think (TOOLS), BAM's series of analog tools that work without electricity (decisions of

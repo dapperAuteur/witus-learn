@@ -163,6 +163,7 @@
 - [`light-on-set`](./light-on-set-course.ts) Light on Set · CREW-03 (the-crew-behind-the-show) · listed here as an extra category; primary: Careers & Media
 - [`raising-animals-for-yarn`](./raising-animals-for-yarn-course.ts) Raising Animals for Yarn · LOOP-03 (the-calorie-loop) · listed here as an extra category; primary: Farm & Garden
 - [`renting-out-production-gear`](./renting-out-production-gear-course.ts) Renting Out Production Gear: the Owner-Operator's Business · CREW-06 (the-crew-behind-the-show) · listed here as an extra category; primary: Careers & Media
+- [`sideline-systems`](./sideline-systems-course.ts) sideline-systems (course data not in git: generated, or kept outside the repository) · CREW-07 (the-crew-behind-the-show) · listed here as an extra category; primary: Careers & Media
 - [`stage-and-broadcast-rigging`](./stage-and-broadcast-rigging-course.ts) Rigging for Stage and Broadcast Crews · CREW-01 (the-crew-behind-the-show) · listed here as an extra category; primary: Careers & Media
 
 ### Farm & Garden
@@ -194,6 +195,7 @@
 - [`how-the-trades-work`](./how-the-trades-work-course.ts) How the Trades Work: Journeyman, Apprentice, and Who Actually Decides · private · also in: Money & Property
 - [`light-on-set`](./light-on-set-course.ts) Light on Set · CREW-03 (the-crew-behind-the-show) · also in: Trade Skills
 - [`renting-out-production-gear`](./renting-out-production-gear-course.ts) Renting Out Production Gear: the Owner-Operator's Business · CREW-06 (the-crew-behind-the-show) · also in: Trade Skills, Money & Property
+- [`sideline-systems`](./sideline-systems-course.ts) sideline-systems (course data not in git: generated, or kept outside the repository) · CREW-07 (the-crew-behind-the-show) · also in: Sports, Trade Skills
 - [`soul-train-the-business`](./soul-train-the-business-course.ts) Soul Train: Who Paid, Who Owned, Who Got Paid · private · also in: Culture & History
 - [`sound-craft`](./sound-craft-course.ts) Sound Craft · CREW-02 (the-crew-behind-the-show) · also in: Storytelling
 - [`stage-and-broadcast-rigging`](./stage-and-broadcast-rigging-course.ts) Rigging for Stage and Broadcast Crews · CREW-01 (the-crew-behind-the-show) · also in: Trade Skills
@@ -292,6 +294,7 @@
 - [`arena-transmission`](./arena-transmission-course.ts) Arena transmission: how a game leaves the building · CREW-05 (the-crew-behind-the-show) · listed here as an extra category; primary: Careers & Media
 - [`cables-and-connectors`](./cables-and-connectors-course.ts) Cables and Connectors · CREW-00 (the-crew-behind-the-show) · listed here as an extra category; primary: Careers & Media
 - [`cinema-look-camera-rig`](./cinema-look-camera-rig-course.ts) Cinema-look camera rig · CREW-04 (the-crew-behind-the-show) · listed here as an extra category; primary: Careers & Media
+- [`sideline-systems`](./sideline-systems-course.ts) sideline-systems (course data not in git: generated, or kept outside the repository) · CREW-07 (the-crew-behind-the-show) · listed here as an extra category; primary: Careers & Media
 
 ### Travel & Living Abroad
 
