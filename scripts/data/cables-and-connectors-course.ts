@@ -28,12 +28,12 @@ import type { AuthoredCourse } from "./authored-course";
 // section 7). The publishHoldReason in scripts/seed-courses.ts says so.
 //
 // MARKED LESSONS (pass 1). Each starts its body with a "> **Before release:**" line naming who must act.
-//   QR (a broadcast engineer): 2 (the 75 against 50 ohm arithmetic), 5 (three published reaches for one
-//   cable), 7 (reference termination and the timecode connectors), 8 (all of a triax system's signals
-//   and power on one cable), 9 (the hybrid cable's power, bend radius), 10 (tactical fiber carries no
-//   power), 13 (the cleaning rule), 14 (the loss-budget arithmetic and the short-link overload), 15
-//   (laser safety), 16 (pin 3 as the cold leg), 17 (never patch party-line into audio, and the XLR
-//   family), 18 (AES3 run lengths and conversion).
+//   QR (a broadcast engineer): 2 (the 75 against 50 ohm arithmetic), 5 (three published reaches for
+//   one cable, one worked out), 7 (reference termination and the timecode connectors), 8 (all of a
+//   triax system's signals and power on one cable), 9 (the hybrid cable's power, bend radius), 10
+//   (tactical fiber carries no power), 13 (the cleaning rule), 14 (the loss-budget arithmetic and the
+//   short-link overload), 15 (laser safety), 16 (the common-mode wording, pin 3 as the cold leg), 17
+//   (never patch party-line into audio; DMX cable), 18 (AES3 run lengths and conversion).
 //   Unmarked: 1, 3, 4, 6, 11, 12 (definitions and spec-sheet facts read directly from the sources).
 //
 // LINK, DO NOT REPEAT. CREW-05's fiber lessons ("20 · Fiber on the map", "21 · Where to learn fiber,
@@ -69,19 +69,19 @@ import type { AuthoredCourse } from "./authored-course";
 // HEDGES WRITTEN INTO LESSONS (each has a check in src/lib/research-checks.ts, keys crew00-*):
 //  - L2: the 75 against 50 ohm arithmetic (crew00-mismatch-arithmetic); whether mating a 50-ohm BNC
 //    with a 75-ohm BNC damages either (crew00-bnc-mating-damage).
-//  - L5: Belden's own SDI distance chart (crew00-belden-sdi-distance); 6G-SDI typical distances
-//    (crew00-6g-sdi-distance).
 //  - L6: a maximum passive HDMI length (crew00-hdmi-max-length).
 //  - L7: terminating a reference chain by hand (crew00-reference-termination); which connectors carry
 //    LTC (crew00-ltc-connectors).
-//  - L8: triax connector families and intermating (crew00-triax-connectors).
+//  - L8: whether every signal and the camera's power share the one triax (crew00-triax-single-cable);
+//    triax connector families and intermating (crew00-triax-connectors).
 //  - L9: the voltage on a hybrid cable's copper (crew00-hybrid-voltage); pulling or installed bend
 //    radius for LF-2SM9N (crew00-hybrid-bend-radius).
 //  - L10: tactical fiber carries no power (crew00-tactical-no-power).
 //  - L13: the default cleaning rule (crew00-cleaning-default).
 //  - L14: an attenuator on a very short FiDO link (crew00-short-link-attenuator).
 //  - L15: the laser class of fiber camera transmitters (crew00-camera-laser-class).
-//  - L16: pin 3 as the cold leg, in words (crew00-xlr-pin3-cold).
+//  - L16: the one-sentence account of common-mode rejection (crew00-balanced-wording); pin 3 as the
+//    cold leg, in words (crew00-xlr-pin3-cold).
 //  - L17: other makers' 4-pin headset pin-outs (crew00-headset-pinouts); DMX cable impedance
 //    (crew00-dmx-cable-impedance).
 //  - L18: current AES3 and AES3id run lengths (crew00-aes3-run-lengths).
@@ -186,11 +186,8 @@ const CLEARCOM_PL_PINOUT =
   "Clear-Com. (2019d, April 6). *Partyline: What is the 3-pin XLR line pin-out?* Clear-Com Solution Finder. https://clear-com.atlassian.net/wiki/spaces/SF/pages/158784598";
 const CLEARCOM_IFB =
   "Clear-Com. (2019e, April 6). *Wireless: Can I connect a PTX-3 IFB transmitter directly to a Matrix +3 or Eclipse port output?* Clear-Com Solution Finder. https://clear-com.atlassian.net/wiki/spaces/SF/pages/158809612";
-const CLEARCOM_HELIX = "Clear-Com. (2022, April 5). *HelixNet powerline XLR pin-out*. Clear-Com Solution Finder. https://clear-com.atlassian.net/wiki/spaces/SF/pages/513933672";
 const CLEARCOM_XLR_DIFF =
   "Clear-Com. (2024a, December 16). *General: What is the difference between an XLR connector wired for balanced audio and one wired for Clear-Com partyline intercom?* Clear-Com Solution Finder. https://clear-com.atlassian.net/wiki/spaces/SF/pages/158808157";
-const CLEARCOM_VSERIES =
-  "Clear-Com. (2024d, April 2). *Matrix: What are the correct pin outs for balanced microphone input on a V-Series panel?* Clear-Com Solution Finder. https://clear-com.atlassian.net/wiki/spaces/SF/pages/158850612";
 const CLEARCOM_HEADSETS =
   "Clear-Com. (2026c, June 4). *Matrix: What are the headset pin outs for 4 pin XLR, 5 pin XLR and 5 pin Din units*. Clear-Com Solution Finder. https://clear-com.atlassian.net/wiki/spaces/SF/pages/158808488";
 const LEERMAN_2013 =
@@ -1494,6 +1491,310 @@ What laser class the fiber transmitters in broadcast camera systems carry is not
           { prompt: "What laser class do broadcast camera fiber transmitters carry, per this course?", options: ["Not stated in pages read", "Always Class 1", "Always Class 3B", "Always Class 4"], correctIndex: 0, explanation: "The pages read for the course do not state it; check the label and the manual of the gear in front of you.", sourceLessonSlug: "laser-safety" },
           { prompt: "What does FOA call the more common hazard in fiber work?", options: ["Laser burns", "Bare fiber shards", "Electric shock", "Fire"], correctIndex: 1, explanation: "FOA (n.d.-g): bare fiber shards.", sourceLessonSlug: "laser-safety" },
           { prompt: "Which precautions does FOA give against fiber shards?", options: ["Bare hands and a white mat", "Gloves and a snack at the bench", "Side-shield glasses, black mat", "A fan to blow scraps away"], correctIndex: 2, explanation: "FOA (n.d.-g): safety glasses with side shields, a black work mat, scraps in a sealed container, no food or drink.", sourceLessonSlug: "laser-safety" },
+        ],
+      },
+    },
+    // ══════════════════════════════════════════════════════════════════════
+    // SECTION 5: Audio over copper
+    // ══════════════════════════════════════════════════════════════════════
+    {
+      slug: "balanced-lines-the-xlr-and-phantom-power",
+      title: "16 · Balanced lines, the XLR and phantom power",
+      section: "5 · Audio over copper",
+      recallContent: [
+        {
+          prompt: "What does FOA say to do before working on or inspecting a fiber?",
+          answer: "Test it with a power meter; never look into a fiber end; use an infrared-filtered or video microscope.",
+        },
+        {
+          prompt: "Why is a Class 1 laser source still not safe to view through an unfiltered microscope?",
+          answer: "The FDA says class I hazard increases with optical aids, and FOA says a microscope focuses virtually all the light back into the eye.",
+        },
+      ],
+      body: `${QR}
+
+**Where this starts.** *Break Into Sports & Media Broadcasting* lesson "6 · Signal flow and audio fundamentals" covers microphone types, gain and the chain from source to recorder. It does not cover the cable. This lesson does.
+
+**Why balanced lines reject noise.** Mackie explains it this way: in a balanced line, "Any noise that is induced will be so equally on both connections." At the receiving end the two signals are brought back into phase, which "flips the noise 180 degrees out of phase between the two signals," and the noise cancels. Mackie calls this "Common Mode Rejection" (Mackie, n.d.). In one sentence, reasoned from that: the same noise lands on both legs, the receiver responds only to the difference between the legs, and the shared noise drops out. The reviewer will check that wording.
+
+Rane adds two points. The twisted pair inside a balanced cable "provides much greater immunity to magnetic field interference," and in an unbalanced cable the shield also carries the signal's return current (Macatee, 2002, p. 2). Balanced interconnect "was developed to be immune to these noise currents," and balanced and unbalanced interconnect "are truly not compatible." Rane's practical rule: "It all boils down to using balanced lines, only balanced lines, and nothing but balanced lines" (Rane Corporation, 2015, pp. 2 to 3).
+
+**Which plug is which.** Mackie: XLR mic cables and 1/4 inch TRS are "the most commonly found types of balanced connectors in live sound," and "A standard TS instrument cable is the unbalanced cable you will run into most often" (Mackie, n.d.). Rane's interconnect chart treats 1/4 inch TRS (tip, ring, sleeve) as balanced, and 1/4 inch or 3.5 mm TS (tip, sleeve) and RCA as unbalanced (Rane Corporation, 2015, p. 6).
+
+**How far.** Mackie: "Unbalanced cables are generally only good for running signal up to 15 feet." It gives no length for balanced cable (Mackie, n.d.).
+
+**The 3-pin XLR, pin by pin.**
+
+| Pin | What it carries | Source |
+|---|---|---|
+| 1 | The shield. Many makers tie balanced shields to signal ground at "pin 1 for XLR connectors, the sleeve on 1/4" (6.35mm) jacks" | Macatee (2002, p. 2) |
+| 2 | Hot. "The Audio Engineering Society has adopted the 'pin 2 is hot' standard" | Macatee (2002, p. 1) |
+| 3 | The other leg of the pair, the cold or negative side | Reasoned below |
+
+Rane: "Standard XLR cables come with their shields tied to pin 1 at each end (the shells are not tied, nor need be)" (Rane Corporation, 2015, p. 3). Sennheiser's pin figure for its MK 4 microphone marks pin 2 "+," joins pin 1 to the cable shield, and runs the capsule's other leg to pin 3 (Sennheiser, 2026, p. 39). Reasoned from those three sources: pin 3 is the other leg of the pair, the cold or negative side. No source read for this course says "pin 3 is cold" in words, and the reviewer will confirm it.
+
+Rane's cable drawings join plus to plus and minus to minus, with the shield going "TO XLR PIN 1" or "TO TRS SLEEVE" (Rane Corporation, 2015, p. 6). Not every cable ties pin 1 at both ends: a Clear-Com cable for a balanced line-level feed wires the pair to pins 2 and 3 and leaves pin 1 floating in that cable (Clear-Com, 2019e). Read the drawing for the cable you are making.
+
+**Phantom power.** Schoeps describes phantom power as "a standardized method of supplying power to professional analog microphones." P48 uses 48 V. "The supply voltage is applied as a common-mode DC voltage to both signal wires," with the cable shield as the return, and the details are in IEC 61938 (Schoeps, n.d.). Sennheiser's manual for the MK 4 says to connect it only to inputs giving "48 V phantom powering as per IEC 61938," 48 V plus or minus 4 V with at least 3.5 mA per channel, and warns: "An unsuitable power supply can cause damage to the product" (Sennheiser, 2026, p. 16).
+
+**What phantom does and does not harm.** Schoeps says phantom powering is "generally safe" for dynamic and ribbon microphones, "whereas 'T' powering can easily damage them," and that damage can come from "plugging or unplugging it while the powering is on." Connect microphones with the supply off (Schoeps, n.d.). So "phantom power fries dynamic mics" is not what the maker says. The risks it names are the wrong kind of powering and hot-plugging.
+
+**What that means for the cable, reasoned.** The two signal wires of a 3-pin XLR are pins 2 and 3. So a mic line with phantom on carries 48 V DC on pins 2 and 3 along with the audio. Lesson 17 shows a 3-pin XLR that carries DC on only one pin, and why the two must never meet.
+
+:::reveal How does a balanced line reject noise, in one sentence? ||| The same noise lands on both legs, and the receiver responds only to the difference between them, so the shared noise cancels (reasoned from Mackie, n.d.; Macatee, 2002).
+
+:::reveal On a 3-pin XLR, which pin is hot and which is the shield? ||| Pin 2 is hot (the AES "pin 2 is hot" standard, per Rane); pin 1 is the shield.
+
+:::reveal What does Schoeps say can damage a microphone when phantom power is on? ||| Plugging or unplugging it while the powering is on; and T powering can easily damage dynamic and ribbon mics.
+
+## Sources
+- ${MACKIE} Locator: the section on balanced cables; the connector and length paragraphs.
+- ${MACATEE_2002} Locator: p. 1, "Introduction"; p. 2, "The 'Pin 1' Problem" and "Balanced vs. Unbalanced Shields".
+- ${RANE_2015} Locator: p. 2, "Ground Loops"; p. 3, the balanced-lines rule and the XLR shield sentence; p. 6, Figure 4 and the cable figure labels.
+- ${SENNHEISER_MK4} Locator: p. 16, "Connecting the microphone," NOTICE; p. 39, "Pin assignment of the XLR-3 connector" (figure).
+- ${CLEARCOM_IFB} Locator: the cable wiring answer.
+- ${SCHOEPS} Locator: page text, the P48 definition, the dynamic and ribbon sentence, and the hot-plugging advice.`,
+    },
+    {
+      slug: "same-plug-different-signal",
+      title: "17 · Same plug, different signal: intercom and DMX on XLR",
+      section: "5 · Audio over copper",
+      recallContent: [
+        {
+          prompt: "Under P48 phantom power, where does the 48 V go?",
+          answer: "As a common-mode DC voltage on both signal wires (pins 2 and 3 of an XLR), with the shield as the return (Schoeps).",
+        },
+        {
+          prompt: "Which pin of a 3-pin XLR is hot, and which carries the shield?",
+          answer: "Pin 2 is hot; pin 1 is the shield.",
+        },
+      ],
+      body: `${QR}
+
+**Same shell, different jobs.** The XLR family carries more than microphone audio. This lesson shows three other signals that ride the same connectors, and why the plug fitting proves nothing.
+
+**Party-line intercom on a 3-pin XLR.** Clear-Com draws the line plainly. A balanced 3-pin XLR audio feed is a 4-wire connection "that doesn't use a Vdc component on any of the 3-pins." A 3-pin XLR wired for Clear-Com intercom is "an unbalanced 2-wire connection that uses a +30Vdc on one of the XLR pins to power various intercom stations, beltpacks and interfaces." Then: "The two disciplines are not compatible and in order to join them together an interface is required," such as its EF-701M for one channel or IF4W4 for four (Clear-Com, 2024a).
+
+Clear-Com's party-line pin-out: "Pin 1 = Ground Pin 2 = Voltage Pin 3 = Audio" (Clear-Com, 2019d). The line "must be terminated with 200 ohms," and every 2-wire party-line converts the headset's 4-wire circuit to 2-wire and back with a "hybrid" (Clear-Com, 2019c).
+
+**The CCU's intercom pins.** Many camera CCUs label an intercom connector "common," "+" and "-". It looks like a 3-wire circuit. Clear-Com says it is not: "The '+' & '-' pins are a 2-wire party-line, with the 'common' simply being a shield/ground" (Clear-Com, 2019c).
+
+**Headsets on 4-pin and 5-pin XLR.** Clear-Com's headset pin-outs (Clear-Com, 2026c):
+
+| Pin | 4-pin XLR (male on the beltpack or panel) | 5-pin XLR (female on the unit) |
+|---|---|---|
+| 1 | Mic low | Mic low |
+| 2 | Mic high | Mic high |
+| 3 | Headphone low | Headphone low |
+| 4 | Headphone high | Headphone left |
+| 5 | | Headphone right |
+
+Whether other intercom makers use the same 4-pin pin-out is a question this course leaves open; check the maker's sheet.
+
+**DMX lighting data on a 5-pin XLR.** ProSoundWeb: "The standard for DMX calls for using a 5-pin XLR connector and 5-conductor shielded 110-ohm cable," though some manufacturers "have opted to use 3-pin XLR connectors instead" (Leerman, 2013, p. 2). Its pin list: pin 1 signal common (shield); pin 2 Data 1 negative; pin 3 Data 1 positive, the primary data; pins 4 and 5 an optional second data pair.
+
+**Why mic cable is the wrong DMX cable.** ProSoundWeb: "Use of standard microphone cable is not recommended as it could induce dropouts or errors in the data stream, especially over longer cable runs" (Leerman, 2013, p. 2). ENTTEC's support page explains: "Typical microphone cable has a characteristic impedance of roughly 40 to 70 ohms," not controlled in manufacture, at about 100 pF per meter or more, while DMX data cable is 120 ohms nominal (110 to 120 acceptable) at about 40 to 50 pF per meter. The mismatch causes reflections that grow with run length and fixture count, and the faults are intermittent: flicker, twitching moving lights, faults that move when cables are swapped (ENTTEC, 2026).
+
+ENTTEC is honest about the exception: mic cable "will often carry DMX" on a short, simple rig, roughly 10 to 15 m, a handful of fixtures, terminated, indoors. It is still the wrong cable. ENTTEC's advice is 5-pin, 120-ohm shielded twisted pair for new runs, and labeling mic leads audio-only (ENTTEC, 2026).
+
+**What the cable impedance should be.** ProSoundWeb says 110-ohm cable; ENTTEC says 120 nominal, with 110 to 120 acceptable. ESTA lists the governing documents, E1.11 (DMX512-A) and E1.27-1 (portable control cables), as free downloads under a license agreement (Entertainment Services and Technology Association [ESTA], n.d.). This course did not download them, so it leaves the exact cable figure open. Termination and how many devices a DMX line can carry are in section 8.
+
+**Why the XLRs must never be swapped, reasoned.** Put it together. The same connector family carries:
+
+- mic-level balanced audio on a 3-pin XLR, with 48 V on pins 2 and 3 when phantom is on (lesson 16);
+- a party-line on a 3-pin XLR, with +30 V DC on pin 2;
+- a headset's mic and earphone on a 4-pin XLR;
+- lighting data on a 5-pin XLR, and sometimes on a 3-pin.
+
+Patch a party-line into a phantom-powered mixer input and you put DC where neither end expects it. Clear-Com says the two are incompatible and need an interface; Schoeps and Sennheiser say an unsuitable supply or hot-plugging can damage gear. No source read for this course says exactly what breaks, or how fast, so this course names no failure. The rule is simple: never patch a party-line cable into an audio input, or a mic into a party-line, even though the plugs fit. The shell tells you the pin count, not the signal. Read the label and the gear.
+
+:::reveal What is on each pin of a Clear-Com party-line 3-pin XLR? ||| Pin 1 ground, pin 2 voltage (+30 V DC), pin 3 audio (Clear-Com, 2019d; 2024a).
+
+:::reveal A CCU's intercom pins say "common," "+" and "-". Is that a 3-wire circuit? ||| No. Clear-Com says "+" and "-" are a 2-wire party-line and "common" is just a shield or ground.
+
+:::reveal Why is mic cable the wrong cable for DMX, according to ENTTEC? ||| Its impedance is roughly 40 to 70 ohms and uncontrolled, against 120 ohms for DMX cable, so it causes reflections and intermittent faults that grow with length and fixture count.
+
+## Sources
+- ${CLEARCOM_XLR_DIFF} Locator: answer text, the balanced and party-line definitions and the interface sentence.
+- ${CLEARCOM_PL_PINOUT} Locator: answer text, the pin-out line.
+- ${CLEARCOM_CCU_PL} Locator: rules 1 to 3; note 14.
+- ${CLEARCOM_HEADSETS} Locator: the XLR-4 and XLR-5 tables.
+- ${LEERMAN_2013} Locator: p. 2, the connector, pin list and microphone-cable paragraphs.
+- ${ENTTEC_2026} Locator: page text, the impedance and capacitance figures, the failure symptoms, and the short-rig exception.
+- ${ESTA_LISTING} Locator: entries for E1.11 and E1.27-1, and the note on free downloads.
+- ${SCHOEPS} Locator: page text, the hot-plugging advice.
+- ${SENNHEISER_MK4} Locator: p. 16, NOTICE.`,
+    },
+    {
+      slug: "aes3-word-clock-and-madi",
+      title: "18 · AES3, word clock and MADI",
+      section: "5 · Audio over copper",
+      recallContent: [
+        {
+          prompt: "What does Clear-Com say a 3-pin XLR wired for its party-line intercom carries?",
+          answer: "An unbalanced 2-wire connection with +30 V DC on one pin (pin 2) to power stations, beltpacks and interfaces.",
+        },
+        {
+          prompt: "What range does ENTTEC give for typical microphone cable impedance, and for DMX cable?",
+          answer: "Roughly 40 to 70 ohms for mic cable; 120 ohms nominal (110 to 120 acceptable) for DMX cable.",
+        },
+      ],
+      body: `${QR}
+
+**Digital audio on two kinds of copper.** AES3 is digital audio on a balanced pair; AES3id is the same format on coax. The AES standards are paywalled, so this lesson uses Rane's table, which it footnotes to the 2003 and 2001 editions (Bohn, 2014, p. 2):
+
+| | AES3 | AES3id | S/PDIF |
+|---|---|---|---|
+| Line | Balanced | Unbalanced | Unbalanced |
+| Connector | XLR-3 | BNC | RCA |
+| Impedance | 110 ohms | 75 ohms | 75 ohms |
+| Level | 2 to 7 V peak to peak | 1.0 V peak to peak | 0.5 V |
+| Cable | Shielded twisted pair | Coax | |
+| Maximum distance | 100 m | 1000 m | 10 m |
+
+Those run lengths come from 2001 and 2003 editions, as Rane tabulated them in 2014. Treat them as Rane's dated figures, not as today's standard. This course did not read a current maker's figure.
+
+Lesson 1 met a 110-ohm "digital microphone cable," Belden's 1800F. Its sheet says digital audio, not AES3 by name, but 110 ohms is the impedance Rane gives for AES3.
+
+**Why a coax version exists.** Rane: AES3id carries "the same format as AES3 but instead of 110 Ω balanced line, it is a 75 Ω unbalanced line using BNC connectors." It is "a special AES3 subset for broadcast applications and long distance runs," because "unbalanced coax is superior to balanced lines due to the high capacitance of shielded twisted-pair cable" (Bohn, 2014, p. 2).
+
+**Coax is not all the same.** Rane's caution: "AES3 converted to 75 Ω coax is not S/PDIF ... Nor is AES3id 75 Ω BNC the same as 75 Ω RCA S/PDIF" (Bohn, 2014, p. 2). The level and format differ. Going from AES3 to AES3id takes either a resistor network, which Rane notes is the AES3id recommended network for a 12 dB pad, usable only if one end is transformer coupled and the run is short, or a transformer, which Rane calls "the best passive impedance matchers" (Bohn, 2014, pp. 2 to 4). Either way it is a converter, not a plain adapter cable.
+
+**Word clock.** Clear-Com calls word clock the "metronome" that governs sample timing. MADI, AES/EBU and S/PDIF carry their clock inside the data stream, but a separate word clock is often sent as a square wave at the sample rate, and "Dedicated word clock inputs and outputs on digital equipment generally use BNC connectors" (Clear-Com, 2019b).
+
+RME's manual is specific. Word clock is ideally "a 5 Volt square wave with the frequency of the sample rate," with harmonics "far above 500 kHz," and "both the cable itself and the terminating resistor at the end of the chain should have an impedance of 75 Ohm." Too low a voltage makes sync fail, and reflections cause jitter and sync failure. Devices are chained with BNC T-adapters, and the last one is terminated with a 75-ohm resistor or its own termination switch; a device with fixed internal 75-ohm termination can load the chain with a second 75-ohm load (RME, n.d., p. 17). On RME's ADI-648, the word clock input is a BNC, unterminated at 10 kilohms with a switch for internal 75-ohm termination, and the output gives 4.0 V peak to peak into 75 ohms (RME, n.d., pp. 6 to 7).
+
+**The trap again, reasoned.** RME warns that computer stores "usually" carry 50-ohm BNC parts, while "The 75 Ohm components used for word clock are part of video technology (RG59)" (RME, n.d., p. 17). So a 50-ohm BNC cable fits a word clock jack and is the wrong cable: lesson 2's "it fits, and it reflects," in an audio rack. The chain rule is the same as reference in lesson 7: one 75-ohm termination, at the end.
+
+**MADI.** MADI, the Multichannel Audio Digital Interface (AES10), carries many channels of digital audio "on a single coaxial or fiber cable." It runs one way, one sender to one receiver (Clear-Com, 2019b). Its channel count depends on the sample rate (Clear-Com, 2019b):
+
+| Channels | Sample rate |
+|---|---|
+| 56 | 32 to 48 kHz, plus or minus 12.5% |
+| 64 | 32 to 48 kHz, nominal |
+| 28 | 64 to 96 kHz, plus or minus 12.5% |
+
+RME adds that the 64-channel mode "was introduced officially in 2001" and that "Older devices understand and generate only the 56 channel format" (RME, n.d., p. 24). So "MADI is 64 channels" is only part of the answer. RME dates MADI's definition to 1989 while citing "AES10-1991" for its interface, so this course says AES10 without a year.
+
+**MADI's two cables.** On RME's ADI-648, coaxial MADI is a 75-ohm BNC with cable up to 100 m; optical MADI is a duplex SC connector on 62.5/125 or 50/125 multimode fiber, up to 2,000 m (RME, n.d., p. 7). RME notes that single-mode reaches much farther on a different fiber, that the 1300 nm light is invisible, and that the plugs are SC, not to be confused with ST (RME, n.d., p. 24). Lessons 11, 12 and 15 apply: multimode, an SC connector, and light you cannot see.
+
+:::reveal Give AES3's connector and impedance, and AES3id's. ||| AES3: XLR-3, 110 ohms, balanced. AES3id: BNC, 75 ohms, unbalanced (Bohn, 2014, p. 2).
+
+:::reveal What impedance does RME want for word clock cable and termination, and why does that matter in a computer store? ||| 75 ohms; stores usually carry 50-ohm BNC parts, which fit but are wrong (RME, n.d., p. 17).
+
+:::reveal How many MADI channels at 48 kHz, and at 96 kHz? ||| 56 or 64 at 32 to 48 kHz (older devices only 56); 28 at 64 to 96 kHz (Clear-Com, 2019b; RME, n.d., p. 24).
+
+## Sources
+- ${BOHN_2014} Locator: p. 2, table "Differences Between AES3 and S/PDIF," the AES3id paragraph and "Conversion Caution"; pp. 2 to 3, "AES3 to AES3id or S/PDIF" and transformers; p. 4, figure "AES3 4V out = AES3id 1V in".
+- ${BELDEN_1800F} Locator: p. 1, title and "Electricals".
+- ${CLEARCOM_MADI} Locator: the word clock and MADI paragraphs and the channel table.
+- ${RME_ADI648} Locator: pp. 6 to 7, section 4; p. 7, section 4.2 "Outputs"; p. 17, section 9.2 "Cabling and Termination"; p. 24, section 12.3 "MADI Basics".`,
+    },
+    {
+      slug: "section-5-quiz",
+      title: "Section 5 quiz · Audio over copper",
+      section: "5 · Audio over copper",
+      body: "A graded check on balanced lines, the XLR and phantom power; party-line intercom, headsets and DMX on the XLR family; and AES3, word clock and MADI. Each answer links back to the lesson that teaches it.",
+      quiz: {
+        passingScore: 80,
+        questionsPerAttempt: 5,
+        shuffleOptions: true,
+        questions: [
+          { prompt: "What does broadcasting lesson 6, \"Signal flow and audio fundamentals\", leave for this course to cover?", options: ["The cable and its connectors", "Microphone types and uses", "Gain staging and clipping", "The chain to the recorder"], correctIndex: 0, explanation: "That lesson covers mic types, gain and the chain from source to recorder; lesson 16 covers the cable.", sourceLessonSlug: "balanced-lines-the-xlr-and-phantom-power" },
+          { prompt: "How does Mackie say noise is induced on a balanced line?", options: ["Only on the shield wire", "Equally on both connections", "Only on the hot leg", "Only near power cables"], correctIndex: 1, explanation: "Mackie (n.d.): \"Any noise that is induced will be so equally on both connections.\"", sourceLessonSlug: "balanced-lines-the-xlr-and-phantom-power" },
+          { prompt: "What does Mackie say the receiver does to the noise?", options: ["Doubles it to measure it", "Sends it down the shield", "Flips it 180 degrees out of phase", "Filters out every low tone"], correctIndex: 2, explanation: "Mackie (n.d.): bringing the signals back into phase \"flips the noise 180 degrees out of phase between the two signals.\"", sourceLessonSlug: "balanced-lines-the-xlr-and-phantom-power" },
+          { prompt: "What does Mackie call this noise-cancelling effect?", options: ["Phantom Powering", "Ground Lifting", "Pin 1 Bonding", "Common Mode Rejection"], correctIndex: 3, explanation: "Mackie (n.d.): \"Common Mode Rejection.\"", sourceLessonSlug: "balanced-lines-the-xlr-and-phantom-power" },
+          { prompt: "In lesson 16's one-sentence version, why does a balanced line reject noise?", options: ["Shared noise drops out of the difference", "The shield soaks up all of the noise", "Twisting the pair cancels the signal", "The XLR shell grounds out the noise"], correctIndex: 0, explanation: "The same noise lands on both legs, and the receiver responds only to the difference between them, so the shared noise cancels.", sourceLessonSlug: "balanced-lines-the-xlr-and-phantom-power" },
+          { prompt: "What does Rane say the twisted pair in a balanced cable provides?", options: ["Lower loss at high frequency", "Much more magnetic immunity", "Power for phantom microphones", "A 75-ohm match for word clock"], correctIndex: 1, explanation: "Macatee (2002, p. 2): \"much greater immunity to magnetic field interference.\"", sourceLessonSlug: "balanced-lines-the-xlr-and-phantom-power" },
+          { prompt: "In an unbalanced cable, what else does the shield carry, per Rane?", options: ["Phantom power at 48 V", "The party-line's 30 V DC", "The signal's return current", "A second copy of the audio"], correctIndex: 2, explanation: "Macatee (2002, p. 2): an unbalanced cable's shield also carries the signal's return current.", sourceLessonSlug: "balanced-lines-the-xlr-and-phantom-power" },
+          { prompt: "What does Rane say about balanced and unbalanced interconnect?", options: ["Fully interchangeable", "Compatible below 15 ft", "Compatible with an XLR", "Truly not compatible"], correctIndex: 3, explanation: "Rane Corporation (2015, p. 2): balanced and unbalanced interconnect \"are truly not compatible.\"", sourceLessonSlug: "balanced-lines-the-xlr-and-phantom-power" },
+          { prompt: "What is Rane's practical rule for interconnects?", options: ["Balanced lines, only balanced lines", "Unbalanced lines for short runs", "Any line, if the shield is tied", "TS cables for every live job"], correctIndex: 0, explanation: "Rane Corporation (2015, p. 3): \"using balanced lines, only balanced lines, and nothing but balanced lines.\"", sourceLessonSlug: "balanced-lines-the-xlr-and-phantom-power" },
+          { prompt: "Which balanced connectors does Mackie call the most common in live sound?", options: ["RCA and 3.5 mm TS", "XLR and 1/4 inch TRS", "BNC and SMA", "RJ45 and etherCON"], correctIndex: 1, explanation: "Mackie (n.d.): XLR mic cables and 1/4 inch TRS.", sourceLessonSlug: "balanced-lines-the-xlr-and-phantom-power" },
+          { prompt: "Which cable does Mackie call the unbalanced one you will meet most often?", options: ["A 3-pin XLR mic cable", "A 1/4 inch TRS patch", "A TS instrument cable", "A 4-pin XLR headset"], correctIndex: 2, explanation: "Mackie (n.d.): \"A standard TS instrument cable is the unbalanced cable you will run into most often.\"", sourceLessonSlug: "balanced-lines-the-xlr-and-phantom-power" },
+          { prompt: "How does Rane's interconnect chart treat 1/4 inch TRS?", options: ["As unbalanced", "As digital", "As powered", "As balanced"], correctIndex: 3, explanation: "Rane Corporation (2015, p. 6): TRS balanced; TS and RCA unbalanced.", sourceLessonSlug: "balanced-lines-the-xlr-and-phantom-power" },
+          { prompt: "How far does Mackie say unbalanced cables are generally good for?", options: ["Up to 15 feet", "Up to 100 meters", "Up to 1000 feet", "Up to 3 feet"], correctIndex: 0, explanation: "Mackie (n.d.): \"generally only good for running signal up to 15 feet.\"", sourceLessonSlug: "balanced-lines-the-xlr-and-phantom-power" },
+          { prompt: "What length does Mackie give for balanced cable?", options: ["Up to 15 feet", "None; it gives no length", "Up to 100 meters", "Unlimited by design"], correctIndex: 1, explanation: "Mackie (n.d.) gives no length for balanced cables.", sourceLessonSlug: "balanced-lines-the-xlr-and-phantom-power" },
+          { prompt: "What does pin 1 of a 3-pin XLR carry, per Rane?", options: ["The hot leg", "The cold leg", "The shield", "Phantom only"], correctIndex: 2, explanation: "Macatee (2002, p. 2): shields go to signal ground at \"pin 1 for XLR connectors.\"", sourceLessonSlug: "balanced-lines-the-xlr-and-phantom-power" },
+          { prompt: "Which standard does Rane say the Audio Engineering Society adopted?", options: ["Pin 3 is hot", "Pin 1 is hot", "Pin 4 is hot", "Pin 2 is hot"], correctIndex: 3, explanation: "Macatee (2002, p. 1): \"the Audio Engineering Society has adopted the 'pin 2 is hot' standard.\"", sourceLessonSlug: "balanced-lines-the-xlr-and-phantom-power" },
+          { prompt: "What does lesson 16 say pin 3 of a 3-pin XLR carries?", options: ["The other leg, the cold", "The cable's shield", "Phantom power only", "Nothing; it is unused"], correctIndex: 0, explanation: "Reasoned from pin 2 hot (Rane), the \"+\" on pin 2 and the capsule's other leg to pin 3 (Sennheiser), and pin 1 as shield.", sourceLessonSlug: "balanced-lines-the-xlr-and-phantom-power" },
+          { prompt: "What is the status of \"pin 3 is cold\" in this course?", options: ["Quoted from Rane", "Reasoned; reviewer confirms", "Quoted from AES3", "Measured on a cable"], correctIndex: 1, explanation: "No source read says it in words; the lesson reasons it from three sources and the reviewer will confirm it.", sourceLessonSlug: "balanced-lines-the-xlr-and-phantom-power" },
+          { prompt: "How does Rane say standard XLR cables tie their shields?", options: ["To the shell at each end", "Floating at both ends", "To pin 1 at each end", "To pin 3 at one end"], correctIndex: 2, explanation: "Rane Corporation (2015, p. 3): \"shields tied to pin 1 at each end.\"", sourceLessonSlug: "balanced-lines-the-xlr-and-phantom-power" },
+          { prompt: "What does Rane say about the XLR shells?", options: ["Tied to pin 2", "Tied to earth", "Tied to pin 1 at the mic", "Not tied, nor need be"], correctIndex: 3, explanation: "Rane Corporation (2015, p. 3): \"(the shells are not tied, nor need be).\"", sourceLessonSlug: "balanced-lines-the-xlr-and-phantom-power" },
+          { prompt: "Where do Rane's cable drawings send the shield?", options: ["XLR pin 1 or TRS sleeve", "XLR pin 3 or TRS tip", "XLR shell or TRS ring", "XLR pin 2 or TRS ring"], correctIndex: 0, explanation: "Rane Corporation (2015, p. 6): \"TO XLR PIN 1\" or \"TO TRS SLEEVE.\"", sourceLessonSlug: "balanced-lines-the-xlr-and-phantom-power" },
+          { prompt: "In Clear-Com's balanced line-level feed cable, what happens to pin 1?", options: ["It is tied to pin 2", "It floats in that cable", "It carries 30 V DC", "It is tied to the shell"], correctIndex: 1, explanation: "Clear-Com (2019e): the pair goes to pins 2 and 3 and pin 1 is left floating in that cable.", sourceLessonSlug: "balanced-lines-the-xlr-and-phantom-power" },
+          { prompt: "How does Schoeps describe phantom power?", options: ["A way to power intercom beltpacks", "A clock for digital audio gear", "A standard way to power analog mics", "A DC supply for DMX fixtures"], correctIndex: 2, explanation: "Schoeps (n.d.): \"a standardized method of supplying power to professional analog microphones.\"", sourceLessonSlug: "balanced-lines-the-xlr-and-phantom-power" },
+          { prompt: "What voltage does P48 phantom power use?", options: ["30 V", "12 V", "600 V", "48 V"], correctIndex: 3, explanation: "Schoeps (n.d.): P48 uses 48 V.", sourceLessonSlug: "balanced-lines-the-xlr-and-phantom-power" },
+          { prompt: "Where does Schoeps say the phantom supply voltage is applied?", options: ["As common-mode DC on both signal wires", "As DC on the cable shield only", "As AC on pin 1 of the XLR", "As DC on pin 2 alone"], correctIndex: 0, explanation: "Schoeps (n.d.): \"applied as a common-mode DC voltage to both signal wires,\" with the shield as return.", sourceLessonSlug: "balanced-lines-the-xlr-and-phantom-power" },
+          { prompt: "Which standard holds the details of phantom powering, per Schoeps?", options: ["AES3", "IEC 61938", "SMPTE 12M", "TIA-568"], correctIndex: 1, explanation: "Schoeps (n.d.): the details are in IEC 61938.", sourceLessonSlug: "balanced-lines-the-xlr-and-phantom-power" },
+          { prompt: "What phantom supply does Sennheiser require for the MK 4?", options: ["30 V, at least 10 mA", "12 V plus or minus 1 V", "48 V ± 4 V, 3.5 mA or more", "48 V ± 10 V, no minimum"], correctIndex: 2, explanation: "Sennheiser (2026, p. 16): 48 V plus or minus 4 V, at least 3.5 mA per channel, per IEC 61938.", sourceLessonSlug: "balanced-lines-the-xlr-and-phantom-power" },
+          { prompt: "What does Schoeps say about phantom power and dynamic or ribbon mics?", options: ["It always destroys them", "It is never allowed", "It must be 12 V only", "It is generally safe"], correctIndex: 3, explanation: "Schoeps (n.d.): phantom is \"generally safe\" for dynamic and ribbon microphones.", sourceLessonSlug: "balanced-lines-the-xlr-and-phantom-power" },
+          { prompt: "Which kind of powering does Schoeps say can easily damage dynamic and ribbon mics?", options: ["T powering", "P48 phantom", "Battery power", "USB power"], correctIndex: 0, explanation: "Schoeps (n.d.): \"whereas 'T' powering can easily damage them.\"", sourceLessonSlug: "balanced-lines-the-xlr-and-phantom-power" },
+          { prompt: "What does Schoeps advise about connecting microphones?", options: ["Connect with phantom on", "Connect with supply off", "Connect via a 50-ohm pad", "Connect only to T power"], correctIndex: 1, explanation: "Schoeps (n.d.): damage can come from plugging or unplugging while powering is on; connect with the supply off.", sourceLessonSlug: "balanced-lines-the-xlr-and-phantom-power" },
+          { prompt: "Reasoned in lesson 16, what does a mic line with phantom on carry besides audio?", options: ["48 V DC on pin 1 only", "30 V DC on pin 2 only", "48 V DC on pins 2 and 3", "No DC on any pin"], correctIndex: 2, explanation: "The signal wires of a 3-pin XLR are pins 2 and 3, and phantom puts common-mode DC on both.", sourceLessonSlug: "balanced-lines-the-xlr-and-phantom-power" },
+          { prompt: "How does Clear-Com describe a balanced 3-pin XLR audio feed?", options: ["2-wire, 30 V on pin 2", "2-wire, 48 V on pin 3", "4-wire, 30 V on pin 1", "4-wire, no DC on any pin"], correctIndex: 3, explanation: "Clear-Com (2024a): a 4-wire connection \"that doesn't use a Vdc component on any of the 3-pins.\"", sourceLessonSlug: "same-plug-different-signal" },
+          { prompt: "How does Clear-Com describe a 3-pin XLR wired for its party-line intercom?", options: ["Unbalanced 2-wire, +30 V DC on a pin", "Balanced 4-wire, no DC on any pin", "Balanced 2-wire, 48 V on two pins", "Unbalanced 4-wire, 12 V on pin 1"], correctIndex: 0, explanation: "Clear-Com (2024a): \"an unbalanced 2-wire connection that uses a +30Vdc on one of the XLR pins.\"", sourceLessonSlug: "same-plug-different-signal" },
+          { prompt: "What does the +30 V on a Clear-Com party-line power?", options: ["Microphones on stage", "Stations, beltpacks, interfaces", "Fixtures on a DMX line", "The camera head on fiber"], correctIndex: 1, explanation: "Clear-Com (2024a): it powers \"various intercom stations, beltpacks and interfaces.\"", sourceLessonSlug: "same-plug-different-signal" },
+          { prompt: "What does Clear-Com say joining balanced audio and party-line requires?", options: ["A plain XLR barrel", "A 3-to-5-pin adapter", "An interface", "A phantom supply"], correctIndex: 2, explanation: "Clear-Com (2024a): \"The two disciplines are not compatible and in order to join them together an interface is required.\"", sourceLessonSlug: "same-plug-different-signal" },
+          { prompt: "Which Clear-Com interface does lesson 17 name for one channel?", options: ["IF4W4", "HelixNet", "GS12341", "EF-701M"], correctIndex: 3, explanation: "Clear-Com (2024a): the EF-701M for one channel; the IF4W4 for four.", sourceLessonSlug: "same-plug-different-signal" },
+          { prompt: "What is on pin 1 of a Clear-Com party-line 3-pin XLR?", options: ["Ground", "Voltage", "Audio", "Data"], correctIndex: 0, explanation: "Clear-Com (2019d): \"Pin 1 = Ground Pin 2 = Voltage Pin 3 = Audio.\"", sourceLessonSlug: "same-plug-different-signal" },
+          { prompt: "What is on pin 2 of a Clear-Com party-line 3-pin XLR?", options: ["Ground", "Voltage", "Audio", "Shield"], correctIndex: 1, explanation: "Clear-Com (2019d): pin 2 is voltage, the +30 V DC.", sourceLessonSlug: "same-plug-different-signal" },
+          { prompt: "What is on pin 3 of a Clear-Com party-line 3-pin XLR?", options: ["Ground", "Voltage", "Audio", "Tally"], correctIndex: 2, explanation: "Clear-Com (2019d): pin 3 is audio.", sourceLessonSlug: "same-plug-different-signal" },
+          { prompt: "What termination does Clear-Com say a party-line needs?", options: ["120 ohms", "75 ohms", "110 ohms", "200 ohms"], correctIndex: 3, explanation: "Clear-Com (2019c): the line \"must be terminated with 200 ohms.\"", sourceLessonSlug: "same-plug-different-signal" },
+          { prompt: "What converts a headset's 4-wire circuit to the party-line's 2-wire and back?", options: ["A hybrid", "A terminator", "A splitter", "A DA"], correctIndex: 0, explanation: "Clear-Com (2019c): every 2-wire party-line does this with a \"hybrid.\"", sourceLessonSlug: "same-plug-different-signal" },
+          { prompt: "What does Clear-Com say a CCU's \"common,\" \"+\" and \"-\" intercom pins are?", options: ["A true 3-wire circuit", "2-wire party-line plus shield", "A balanced mic line", "A DMX data pair"], correctIndex: 1, explanation: "Clear-Com (2019c): \"The '+' & '-' pins are a 2-wire party-line, with the 'common' simply being a shield/ground.\"", sourceLessonSlug: "same-plug-different-signal" },
+          { prompt: "On a CCU's intercom connector, what is the pin marked \"common\"?", options: ["A third audio wire", "The 30 V supply", "A shield or ground", "The talk channel"], correctIndex: 2, explanation: "Clear-Com (2019c): \"the 'common' simply being a shield/ground.\"", sourceLessonSlug: "same-plug-different-signal" },
+          { prompt: "On Clear-Com's 4-pin XLR headset pin-out, what is on pin 2?", options: ["Mic low", "Headphone low", "Headphone high", "Mic high"], correctIndex: 3, explanation: "Clear-Com (2026c): pin 1 mic low, pin 2 mic high, pin 3 headphone low, pin 4 headphone high.", sourceLessonSlug: "same-plug-different-signal" },
+          { prompt: "On Clear-Com's 4-pin XLR headset pin-out, what is on pin 4?", options: ["Headphone high", "Headphone low", "Mic high", "Mic low"], correctIndex: 0, explanation: "Clear-Com (2026c): pin 4 is headphone high.", sourceLessonSlug: "same-plug-different-signal" },
+          { prompt: "On Clear-Com's 5-pin XLR headset pin-out, what is on pin 5?", options: ["Headphone left", "Headphone right", "Mic high", "Mic low"], correctIndex: 1, explanation: "Clear-Com (2026c): pin 4 headphone left, pin 5 headphone right.", sourceLessonSlug: "same-plug-different-signal" },
+          { prompt: "Do other intercom makers use Clear-Com's 4-pin headset pin-out, per lesson 17?", options: ["Yes, every maker matches", "No, every maker differs", "Left open; check the maker", "Only one other maker does"], correctIndex: 2, explanation: "The course leaves it open: no other maker's pin-out was read.", sourceLessonSlug: "same-plug-different-signal" },
+          { prompt: "What does ProSoundWeb say the DMX standard calls for?", options: ["3-pin XLR, 67-ohm mic cable", "RJ45, Cat5e 100-ohm cable", "BNC, 75-ohm RG59 coax", "5-pin XLR, 110-ohm shielded cable"], correctIndex: 3, explanation: "Leerman (2013, p. 2): \"a 5-pin XLR connector and 5-conductor shielded 110-ohm cable.\"", sourceLessonSlug: "same-plug-different-signal" },
+          { prompt: "What connector does ProSoundWeb say some DMX makers use instead of 5-pin?", options: ["3-pin XLR", "4-pin XLR", "BNC", "RJ45"], correctIndex: 0, explanation: "Leerman (2013, p. 2): some manufacturers \"have opted to use 3-pin XLR connectors.\"", sourceLessonSlug: "same-plug-different-signal" },
+          { prompt: "On a DMX 5-pin XLR, what is pin 1?", options: ["Data 1 positive", "Signal common (shield)", "Data 1 negative", "Optional second pair"], correctIndex: 1, explanation: "Leerman (2013, p. 2): pin 1 signal common (shield); pin 2 Data 1 negative; pin 3 Data 1 positive.", sourceLessonSlug: "same-plug-different-signal" },
+          { prompt: "On a DMX 5-pin XLR, what is pin 3?", options: ["Signal common", "Data 1 negative", "Data 1 positive", "Optional data"], correctIndex: 2, explanation: "Leerman (2013, p. 2): pin 3 is Data 1 positive, the primary data.", sourceLessonSlug: "same-plug-different-signal" },
+          { prompt: "On a DMX 5-pin XLR, what is pin 2?", options: ["Signal common", "Data 1 positive", "Optional data", "Data 1 negative"], correctIndex: 3, explanation: "Leerman (2013, p. 2): pin 2 is Data 1 negative.", sourceLessonSlug: "same-plug-different-signal" },
+          { prompt: "What does ProSoundWeb say about microphone cable for DMX?", options: ["Not advised: dropouts or errors", "Fine at any length of run", "Required by the DMX standard", "Better than data cable indoors"], correctIndex: 0, explanation: "Leerman (2013, p. 2): \"not recommended as it could induce dropouts or errors in the data stream.\"", sourceLessonSlug: "same-plug-different-signal" },
+          { prompt: "What impedance does ENTTEC give for typical microphone cable?", options: ["Exactly 120 ohms", "Roughly 40 to 70 ohms", "About 75 ohms", "About 600 ohms"], correctIndex: 1, explanation: "ENTTEC (2026): \"roughly 40 to 70 ohms,\" not controlled in manufacture.", sourceLessonSlug: "same-plug-different-signal" },
+          { prompt: "What impedance does ENTTEC give for DMX data cable?", options: ["75 nominal; 50 to 75 OK", "67 nominal; 40 to 70 OK", "120 nominal; 110 to 120 OK", "100 nominal; 90 to 110 OK"], correctIndex: 2, explanation: "ENTTEC (2026): 120 ohms nominal, 110 to 120 acceptable, at about 40 to 50 pF per meter.", sourceLessonSlug: "same-plug-different-signal" },
+          { prompt: "What capacitance does ENTTEC give for typical microphone cable?", options: ["About 40 to 50 pF/m", "About 16 pF per foot", "Almost none at all", "About 100 pF/m or more"], correctIndex: 3, explanation: "ENTTEC (2026): typically 100 pF per meter or more, against 40 to 50 for DMX cable.", sourceLessonSlug: "same-plug-different-signal" },
+          { prompt: "Which faults does ENTTEC say mic cable on DMX causes?", options: ["Flicker, twitching, faults that move", "Hum and buzz in the PA speakers", "A blank picture on the SDI feed", "A tripped breaker on the dimmer"], correctIndex: 0, explanation: "ENTTEC (2026): intermittent faults such as flicker, twitching moving lights, and faults that move when cables are swapped.", sourceLessonSlug: "same-plug-different-signal" },
+          { prompt: "What does ENTTEC say about mic cable on a short, simple rig?", options: ["It never works at all", "It often works, but is wrong", "It is required indoors", "It is best under 15 m"], correctIndex: 1, explanation: "ENTTEC (2026): it \"will often carry DMX\" there, but it is still the wrong cable.", sourceLessonSlug: "same-plug-different-signal" },
+          { prompt: "What does ENTTEC advise for new DMX runs?", options: ["Mic cable, kept short", "75-ohm coax and BNC", "5-pin 120-ohm pair; label mic leads", "Cat6 with RJ45 plugs"], correctIndex: 2, explanation: "ENTTEC (2026): 5-pin, 120-ohm shielded twisted pair, and label mic leads audio-only.", sourceLessonSlug: "same-plug-different-signal" },
+          { prompt: "Which ESTA documents does lesson 17 name for DMX?", options: ["AES3 and AES10", "ST 2082-1 and ST 297", "IEC 61938 and 61300", "E1.11 and E1.27-1"], correctIndex: 3, explanation: "ESTA (n.d.): E1.11 (DMX512-A) and E1.27-1 (portable control cables).", sourceLessonSlug: "same-plug-different-signal" },
+          { prompt: "What does lesson 17 say about the exact DMX cable impedance?", options: ["Left open: 110 or 120 ohms", "Settled at 75 ohms", "Settled at 67 ohms", "Settled at 200 ohms"], correctIndex: 0, explanation: "ProSoundWeb says 110-ohm cable and ENTTEC 120 nominal; ESTA's documents were not downloaded, so it stays open.", sourceLessonSlug: "same-plug-different-signal" },
+          { prompt: "What is lesson 17's rule for the XLR family?", options: ["Patch anything that fits the jack", "Never patch party-line into audio", "Use 3-pin XLR for all intercom", "Use mic cable for short DMX runs"], correctIndex: 1, explanation: "Never patch a party-line cable into an audio input, or a mic into a party-line, even though the plugs fit.", sourceLessonSlug: "same-plug-different-signal" },
+          { prompt: "What does an XLR's shell tell you, per lesson 17?", options: ["The signal it carries", "The voltage on it", "The pin count only", "The cable's impedance"], correctIndex: 2, explanation: "\"The shell tells you the pin count, not the signal.\" Read the label and the gear.", sourceLessonSlug: "same-plug-different-signal" },
+          { prompt: "What failure does lesson 17 say happens when party-line meets a phantom-powered input?", options: ["The mic always explodes", "The PA always blows a fuse", "The beltpack always melts", "It names none; no source says"], correctIndex: 3, explanation: "Clear-Com, Schoeps and Sennheiser warn of incompatibility and damage, but none says exactly what breaks, so the course names no failure.", sourceLessonSlug: "same-plug-different-signal" },
+          { prompt: "Which connector does Rane give for AES3?", options: ["XLR-3", "BNC", "RCA", "LC"], correctIndex: 0, explanation: "Bohn (2014, p. 2): AES3 is balanced, on XLR-3, 110 ohms.", sourceLessonSlug: "aes3-word-clock-and-madi" },
+          { prompt: "Which impedance does Rane give for AES3?", options: ["75 ohms", "110 ohms", "50 ohms", "67 ohms"], correctIndex: 1, explanation: "Bohn (2014, p. 2): 110 ohms.", sourceLessonSlug: "aes3-word-clock-and-madi" },
+          { prompt: "Which connector does Rane give for AES3id?", options: ["XLR-3", "RCA", "BNC", "SC"], correctIndex: 2, explanation: "Bohn (2014, p. 2): AES3id is unbalanced, on BNC, 75 ohms.", sourceLessonSlug: "aes3-word-clock-and-madi" },
+          { prompt: "Which impedance does Rane give for AES3id?", options: ["110 ohms", "50 ohms", "120 ohms", "75 ohms"], correctIndex: 3, explanation: "Bohn (2014, p. 2): 75 ohms.", sourceLessonSlug: "aes3-word-clock-and-madi" },
+          { prompt: "Which connector does Rane give for S/PDIF?", options: ["RCA", "BNC", "XLR-3", "ST"], correctIndex: 0, explanation: "Bohn (2014, p. 2): S/PDIF is unbalanced RCA, 75 ohms, 0.5 V.", sourceLessonSlug: "aes3-word-clock-and-madi" },
+          { prompt: "What maximum distance does Rane's table give for AES3?", options: ["1000 m", "100 m", "10 m", "15 ft"], correctIndex: 1, explanation: "Bohn (2014, p. 2): AES3 100 m; AES3id 1000 m; S/PDIF 10 m.", sourceLessonSlug: "aes3-word-clock-and-madi" },
+          { prompt: "What maximum distance does Rane's table give for AES3id?", options: ["100 m", "10 m", "1000 m", "2,000 m"], correctIndex: 2, explanation: "Bohn (2014, p. 2): 1000 m on coax.", sourceLessonSlug: "aes3-word-clock-and-madi" },
+          { prompt: "How does lesson 18 treat Rane's AES3 run lengths?", options: ["As today's AES standard text", "As Belden's spec sheet values", "As measured by this course", "As dated figures from 2001-03"], correctIndex: 3, explanation: "They come from the 2001 and 2003 editions as Rane tabulated them in 2014.", sourceLessonSlug: "aes3-word-clock-and-madi" },
+          { prompt: "What does Rane say AES3id is for?", options: ["Broadcast and long runs", "Consumer hi-fi on RCA", "Analog mics on XLR", "Phantom-powered mics"], correctIndex: 0, explanation: "Bohn (2014, p. 2): \"a special AES3 subset for broadcast applications and long distance runs.\"", sourceLessonSlug: "aes3-word-clock-and-madi" },
+          { prompt: "Why does Rane say unbalanced coax beats balanced lines for AES3id's job?", options: ["Coax carries phantom power", "Twisted pair has high capacitance", "Coax is always cheaper", "Twisted pair can't be shielded"], correctIndex: 1, explanation: "Bohn (2014, p. 2): \"due to the high capacitance of shielded twisted-pair cable.\"", sourceLessonSlug: "aes3-word-clock-and-madi" },
+          { prompt: "Is AES3 converted to 75-ohm coax the same as S/PDIF?", options: ["Yes; both are on 75-ohm coax", "Yes, with an RCA adapter", "No; level and format differ", "Only at a 48 kHz rate"], correctIndex: 2, explanation: "Bohn (2014, p. 2): \"AES3 converted to 75 Ω coax is not S/PDIF.\"", sourceLessonSlug: "aes3-word-clock-and-madi" },
+          { prompt: "What does going from AES3 to AES3id take, per Rane?", options: ["A plain XLR-to-BNC cable", "Any 75-ohm coax and a barrel", "A phantom-power injector", "A resistor network or transformer"], correctIndex: 3, explanation: "Bohn (2014, pp. 2 to 4): a resistor network or a transformer; a converter, not a plain adapter cable.", sourceLessonSlug: "aes3-word-clock-and-madi" },
+          { prompt: "When does Rane say the resistor network for AES3 to AES3id is usable?", options: ["One end transformer coupled, short run", "Any length, with no transformer used", "Only on runs longer than 1000 m", "Only with phantom power switched on"], correctIndex: 0, explanation: "Bohn (2014, p. 2): only if one end is transformer coupled and the run is short.", sourceLessonSlug: "aes3-word-clock-and-madi" },
+          { prompt: "What does Rane call transformers for this job?", options: ["The worst choice for coax", "The best passive matchers", "A cause of S/PDIF errors", "Needed only for analog"], correctIndex: 1, explanation: "Bohn (2014, p. 3): \"the best passive impedance matchers.\"", sourceLessonSlug: "aes3-word-clock-and-madi" },
+          { prompt: "How does Clear-Com describe word clock?", options: ["A timecode for each frame", "A reference for video sync", "A metronome for sample timing", "A clock for the network's PTP"], correctIndex: 2, explanation: "Clear-Com (2019b): the \"metronome\" that governs sample timing.", sourceLessonSlug: "aes3-word-clock-and-madi" },
+          { prompt: "Which connector does Clear-Com say dedicated word clock inputs and outputs generally use?", options: ["XLR", "RCA", "LC", "BNC"], correctIndex: 3, explanation: "Clear-Com (2019b): \"generally use BNC connectors.\"", sourceLessonSlug: "aes3-word-clock-and-madi" },
+          { prompt: "What does RME say word clock ideally is?", options: ["A 5 V square wave at the sample rate", "48 V DC on XLR pins 2 and 3", "A 0.6 V tri-level sync pulse", "A 1 V sine wave at 10 MHz"], correctIndex: 0, explanation: "RME (n.d., p. 17): \"a 5 Volt square wave with the frequency of the sample rate.\"", sourceLessonSlug: "aes3-word-clock-and-madi" },
+          { prompt: "What impedance does RME want for word clock cable and its terminator?", options: ["50 ohms", "75 ohms", "110 ohms", "120 ohms"], correctIndex: 1, explanation: "RME (n.d., p. 17): both \"should have an impedance of 75 Ohm.\"", sourceLessonSlug: "aes3-word-clock-and-madi" },
+          { prompt: "What does RME say happens when word clock voltage is too low?", options: ["Mics are damaged", "Fiber overloads", "Sync fails", "Nothing at all"], correctIndex: 2, explanation: "RME (n.d., p. 17): too low a voltage makes sync fail.", sourceLessonSlug: "aes3-word-clock-and-madi" },
+          { prompt: "What does RME say reflections on a word clock line cause?", options: ["Hum in the speakers", "Laser eye hazard", "A tripped breaker", "Jitter and sync failure"], correctIndex: 3, explanation: "RME (n.d., p. 17): reflections cause jitter and sync failure.", sourceLessonSlug: "aes3-word-clock-and-madi" },
+          { prompt: "How does RME say word clock devices are chained?", options: ["BNC T-adapters, last one terminated", "XLR splitters, first one terminated", "An RJ45 switch, none terminated", "RCA links, every one terminated"], correctIndex: 0, explanation: "RME (n.d., p. 17): BNC T-adapters, with the last device terminated in 75 ohms.", sourceLessonSlug: "aes3-word-clock-and-madi" },
+          { prompt: "What does RME's ADI-648 word clock output give?", options: ["0.8 V p-p into 75 ohms", "4.0 V p-p into 75 ohms", "48 V into 110 ohms", "1.0 V into 50 ohms"], correctIndex: 1, explanation: "RME (n.d., pp. 6 to 7): 4.0 Vpp into 75 ohms.", sourceLessonSlug: "aes3-word-clock-and-madi" },
+          { prompt: "What BNC parts does RME say computer stores usually carry?", options: ["75-ohm video parts", "110-ohm audio parts", "50-ohm parts", "120-ohm parts"], correctIndex: 2, explanation: "RME (n.d., p. 17): computer stores \"usually\" carry 50-ohm BNC parts; word clock's 75-ohm parts are video technology.", sourceLessonSlug: "aes3-word-clock-and-madi" },
+          { prompt: "What does MADI stand for?", options: ["Main Audio Data Input", "Mixed Analog Digital Interface", "Media Access Data Interface", "Multichannel Audio Digital Interface"], correctIndex: 3, explanation: "Clear-Com (2019b): Multichannel Audio Digital Interface, AES10.", sourceLessonSlug: "aes3-word-clock-and-madi" },
+          { prompt: "In which direction does MADI run, per Clear-Com?", options: ["One way, one sender to one receiver", "Both ways on a single cable", "One sender to many receivers", "A ring of up to 32 devices"], correctIndex: 0, explanation: "Clear-Com (2019b): one-way, one sender and one receiver.", sourceLessonSlug: "aes3-word-clock-and-madi" },
+          { prompt: "How many MADI channels at 64 to 96 kHz?", options: ["56", "28", "64", "32"], correctIndex: 1, explanation: "Clear-Com (2019b): 28 channels at 64 to 96 kHz; 56 or 64 at 32 to 48 kHz.", sourceLessonSlug: "aes3-word-clock-and-madi" },
+          { prompt: "What does RME say older MADI devices understand?", options: ["Only the 64-channel format", "Only the 28-channel format", "Only the 56-channel format", "Only 96 kHz streams"], correctIndex: 2, explanation: "RME (n.d., p. 24): \"Older devices understand and generate only the 56 channel format.\"", sourceLessonSlug: "aes3-word-clock-and-madi" },
+          { prompt: "When does RME say MADI's 64-channel mode was introduced officially?", options: ["1989", "1991", "2014", "2001"], correctIndex: 3, explanation: "RME (n.d., p. 24): \"introduced officially in 2001.\"", sourceLessonSlug: "aes3-word-clock-and-madi" },
+          { prompt: "How long a coax cable does RME give for MADI on the ADI-648?", options: ["Up to 100 m", "Up to 1000 m", "Up to 10 m", "Up to 2 km"], correctIndex: 0, explanation: "RME (n.d., p. 7): coaxial MADI on 75-ohm BNC, cable length up to 100 m.", sourceLessonSlug: "aes3-word-clock-and-madi" },
+          { prompt: "What does RME give for optical MADI on the ADI-648?", options: ["Duplex LC, single-mode, 10 km", "Duplex SC, multimode, 2,000 m", "ST on OM5 fiber, up to 500 m", "SMPTE 304 hybrid, up to 4 km"], correctIndex: 1, explanation: "RME (n.d., p. 7): a duplex SC connector on 62.5/125 or 50/125 multimode, up to 2,000 m.", sourceLessonSlug: "aes3-word-clock-and-madi" },
+          { prompt: "Why does lesson 18 say \"AES10\" without a year?", options: ["AES10 has never had a year", "SMPTE replaced the standard", "RME's dates for it differ", "Clear-Com forbids the year"], correctIndex: 2, explanation: "RME dates MADI's definition to 1989 but cites \"AES10-1991\" for its interface, so the course gives no year.", sourceLessonSlug: "aes3-word-clock-and-madi" },
         ],
       },
     },
