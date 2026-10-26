@@ -205,6 +205,29 @@ const HE_BOLZANO = `Hawk-Eye Innovations. (2026f, October 22). *Football video s
 const HE_SEC_COORD = `Hawk-Eye Innovations. (2026g, October 16). *Live operations coordinator - SEC* [Job posting]. Ashby. ${SAVED} https://jobs.ashbyhq.com/hawkeyeinnovations/50e2c73e-7607-43f9-a9a0-fe03c3c4581c`;
 const NBA_VAN_ANDEL = `National Basketball Association. (2026, October 14). *Project employee, league technology representative - automated officiating (Van Andel Arena)* [Job posting]. Workday. ${RETRIEVED} https://nba.wd108.myworkdayjobs.com/nbacareers/job/New-York-USA---Remote/Project-Employee--League-Technology-Representative---Automated-Officiating--Van-Andel-Arena-_JR001080`;
 
+// Jobs and hiring, sections 5 to 7 (research file 03; the Tampa Bay copy is research file 02's NFL 2026)
+const NFL_IVR_TB = `National Football League. (2026c). *Injury video review operator, Tampa Bay Buccaneers* [Job posting; created April 6, 2026]. SHRM HireVets. ${RETRIEVED} https://hirevets.shrm.org/jobs/69df2e5b568dabf91ebff0e6`;
+const NFL_FAST = `National Football League. (2026d, August 11). *Seasonal FAST video systems operator* [Job posting]. Greenhouse. ${RETRIEVED} https://job-boards.greenhouse.io/nflcareers/jobs/5373370008`;
+const NFL_TOC = `National Football League. (2026e, August 14). *Seasonal part-time TOC operator* [Job posting]. Greenhouse. ${RETRIEVED} https://job-boards.greenhouse.io/nflcareers/jobs/5389873008`;
+const NFL_BOARD = `National Football League. (n.d.-g). *Jobs at the National Football League* [Job board]. Greenhouse. ${SAVED} https://job-boards.greenhouse.io/nflcareers`;
+const NFL_BOARD_API = `National Football League. (n.d.-h). *nflcareers job board* [Greenhouse public job board API]. ${RETRIEVED} https://boards-api.greenhouse.io/v1/boards/nflcareers/jobs?content=true`;
+const HE_CAREERS = `Hawk-Eye Innovations. (n.d.-h). *Hawk-Eye Innovations careers* [Careers home page with open positions]. ${SAVED} https://careers.hawkeyeinnovations.com`;
+const HE_BOARD_API = `Hawk-Eye Innovations. (n.d.-i). *Job board* [Ashby public posting API]. ${RETRIEVED} https://api.ashbyhq.com/posting-api/job-board/hawkeyeinnovations?includeCompensation=true`;
+const HE_SOFIA = `Hawk-Eye Innovations. (2026h, October 20). *Sports technology analyst* [Job posting]. Ashby. ${RETRIEVED} https://jobs.ashbyhq.com/hawkeyeinnovations/60cf4b0c-5d62-4acc-8aea-7a4cf3b4fdb7`;
+const HE_STUDENT = `Hawk-Eye Innovations. (2026i, October 15). *Student placement: Tennis systems operator 27/28* [Job posting]. Ashby. ${RETRIEVED} https://jobs.ashbyhq.com/hawkeyeinnovations/be7c01bf-a20f-47aa-9e64-ae7e954294db`;
+const KINEXON_MUC = `KINEXON. (2026a, August 25). *Football match tracking operator (m/f/d) München* [Job posting]. ${RETRIEVED} https://www.kinexon.com/jobs?gh_jid=4960164101`;
+const KINEXON_HH = `KINEXON. (2026b, August 4). *Tracking operator (m/f/d) HSV Hamburg* [Job posting]. ${RETRIEVED} https://www.kinexon.com/jobs?gh_jid=4944464101`;
+const CATAPULT_JOB = `Catapult. (2026, September 1). *Product support technician* [Job posting]. Greenhouse. ${RETRIEVED} https://job-boards.greenhouse.io/catapultsports/jobs/8161973`;
+const GENIUS_ANALYST = `Genius Sports. (2026a, October 26). *Game operations analyst, sports (remote - Estonia, service provider)* [Job posting]. Greenhouse. ${RETRIEVED} https://boards.greenhouse.io/geniussports/jobs/8042567003?gh_jid=8042567003`;
+const GENIUS_LEAD = `Genius Sports. (2026b, October 23). *Match lead* [Job posting]. Greenhouse. ${RETRIEVED} https://boards.greenhouse.io/geniussports/jobs/8034521003?gh_jid=8034521003`;
+const SPORTRADAR_PT = `Sportradar. (2026a, July 20). *Production operator part time* [Job posting]. SmartRecruiters. ${RETRIEVED} https://jobs.smartrecruiters.com/Sportradar/744000138641759-production-operator-part-time`;
+const SPORTRADAR_TRAINEE = `Sportradar. (2026b, September 30). *Production operator trainee* [Job posting]. SmartRecruiters. ${RETRIEVED} https://jobs.smartrecruiters.com/Sportradar/744000152749419-production-operator-trainee`;
+const STARTUP_JOBS = `startup.jobs. (n.d.). *Hawk-Eye Innovations (HEI) jobs (October 2026)* [Company job list]. ${SAVED} https://startup.jobs/company/hawk-eye-innovations-hei?page=2`;
+const TEAMWORK = `TeamWork Online. (n.d.). *Hawk-Eye Innovations* [Organization job list]. Saved October 26, 2026; the saved copy does not record the page's URL.`;
+const MS_WIFI = `Microsoft. (n.d.-a). *Fix Wi-Fi connection issues in Windows*. Microsoft Support. ${RETRIEVED} https://support.microsoft.com/en-us/windows/experience/connectivity-networking/fix-wi-fi-connection-issues-in-windows`;
+const MS_LIFECYCLE = `Microsoft. (n.d.-b). *Windows 10 Home and Pro*. Microsoft Lifecycle, Microsoft Learn. ${RETRIEVED} https://learn.microsoft.com/en-us/lifecycle/products/windows-10-home-and-pro`;
+const MS_W10_END = `Microsoft. (n.d.-c). *Windows 10 support has ended on October 14, 2025*. Microsoft Support. ${RETRIEVED} https://support.microsoft.com/en-us/windows/deployment/updates-lifecycle/windows-10-support-has-ended-on-october-14-2025`;
+
 /** The marker every lesson needing a qualified reviewer opens with (authoring checklist, section 3). */
 const QR = "> **Before release:** needs a qualified reviewer (QR): a tracking or replay systems technician.";
 /** Section 2 (medical review) needs a certified athletic trainer as well; the parser splits on "; and needs". */
@@ -1587,6 +1610,359 @@ At the league level, AMGC staff "'tag' every play so they can be searched later 
           { prompt: "Why does lesson 15 not treat the Big Ten medical system as the NFL's system?", options: ["The Big Ten uses no video", "The NFL bans that comparison", "No source read links the two", "They are made by one vendor"], correctIndex: 2, explanation: "Both serve medical staff, but no source read for the course links them.", sourceLessonSlug: "during-and-after-the-game" },
           { prompt: "On lesson 15's one-page day, when are the NFL medical radios handed out?", options: ["On the day before", "At 60 minutes before", "During the first half", "3 and 2 hours before"], correctIndex: 3, explanation: "NFL (n.d.-f): at 3 hours (visiting athletic training staff) and 2 hours (UNCs, physicians, spotters).", sourceLessonSlug: "during-and-after-the-game" },
           { prompt: "What do AMGC staff do with plays after the games?", options: ["Tag them for later search", "Delete them at midnight", "Send them to the clubs", "Air them on NFL Network"], correctIndex: 0, explanation: "NFL (n.d.-b): staff \"'tag' every play so they can be searched later in a database.\"", sourceLessonSlug: "during-and-after-the-game" },
+        ],
+      },
+    },
+    // ══════════════════════════════════════════════════════════════════════
+    // SECTION 5: The jobs and the ladder
+    // ══════════════════════════════════════════════════════════════════════
+    {
+      slug: "four-us-roles-as-posted",
+      title: "16 · Four US roles, as posted",
+      section: "5 · The jobs and the ladder",
+      recallContent: [
+        {
+          prompt: "Under NFL Rule 15-8, what happens if the link to the League office is lost?",
+          answer: "The Referee waits one minute, then reviews with the Replay Official (NFL, 2026a).",
+        },
+        {
+          prompt: "What does the SEC coordinator do before escalating to the Tech Ops engineering teams?",
+          answer: "Acts as \"the first level of resolution for operational software issues\" (Hawk-Eye Innovations, 2026g).",
+        },
+      ],
+      body: `${QR}
+
+**How to read this section.** A job posting is a primary source for what one employer asked on the date it was posted. It is not a survey of the trade. So every pay figure in this section is written "as posted," with its date, and none of them is a going rate. Postings close and change, and each one below may be gone by the time you read this. Section 6 shows where to look for the current ones.
+
+**Medical jobs are hired by their own rules.** Lesson 5 named them. The NFL's booth spotter must hold Board of Certification (BOC) athletic trainer certification and a state license or registration where required, with at least 10 years as an athletic trainer (NFL, n.d.-e). The Unaffiliated Neurotrauma Consultants (UNCs) are physicians (NFL, 2022b). The four roles below are the technical crew those people rely on. Their postings ask for technical skills, quoted below, and lesson 8 placed the injury video operator in the non-medical tier.
+
+**1. Injury video review operator, NFL.** The copy read for this course is the New Orleans Saints posting on SHRM HireVets, a site that carried it; its page data gives a created date of April 15, 2026, and it was read on October 26, 2026 (NFL, 2026b).
+
+| Item | As posted |
+|---|---|
+| Games | "all preseason, regular season, and postseason home games," and "flexed" games |
+| Hours | About 8 to 9 per game |
+| Skills | Touch typing, "minimum 40 words per minute"; Windows 10; Wi-Fi setup and troubleshooting; "Audio equipment (headsets and belt packs)"; "Audio and video path troubleshooting and testing," for which "training will be provided" |
+| Physical | Lift "up to 30 pounds"; sit for long periods |
+| Training | "Must attend periodic video conference meetings and in-person training seminar(s) at the NFL's request" |
+| Location | "requires onsite presence at an NFL office or stadium location"; "NO RELOCATION ASSISTANCE WILL BE PROVIDED" |
+| Eligibility | "Candidate may not be a full-time, part-time, or game day employee of any NFL team" |
+| Employment type | Not stated (lesson 21) |
+| Pay | $38 at both ends of the range, in USD, with no unit |
+
+**The $38, read carefully.** The salary line gives $38 as the low and the high end, in US dollars, and never says per hour, per game or per year (NFL, 2026b). So this course does not write "$38 an hour." Here is a reading, with its reasons. The NFL's pay text on its own seasonal postings speaks of "salaries or hourly rates" (NFL, 2026d), so the league posts both kinds. And $38 for a whole game day of 8 to 9 hours would come to under $5 an hour, while $38 a year is not a wage at all. Hourly is therefore the likely unit, but it is a reading, not the posting's word, and the posting's unit is still unconfirmed.
+
+**2. College sports systems technician, Hawk-Eye, Big Ten.** The Rutgers University posting was read in a saved startup.jobs copy marked "no longer available" (Hawk-Eye Innovations, n.d.-f).
+
+| Item | As posted |
+|---|---|
+| Terms | "Part Time (contractor)"; "a temporary role"; employed through "a third-party managed service provider" |
+| Days | "Game Day minus 1 and Game Day"; "commit to all of the home games for the season"; weekends and federal holidays |
+| Skills | "Ideally a broadcast/engineering background with an understanding of signal flow"; "Strong technical grounding"; troubleshooting |
+| Pay | "starting at $28 per hour" |
+
+Read the terms row before the pay row. The employer of record was the staffing provider, so this is not "Hawk-Eye pays technicians $28 an hour." It was one provider's offer, for one season's work, at one school. The saved copy carries no publish or close date, so this course cannot say when it opened or closed.
+
+**3. League technology representative, automated officiating, NBA G League.** The Van Andel Arena posting had a posting window of October 14 to October 31, 2026 (National Basketball Association [NBA], 2026).
+
+| Item | As posted |
+|---|---|
+| Terms | "Project Employee"; a "temporary position," not to exceed 10 months; part time |
+| Days | All shifts on site at the arena for the 2026-27 G League season, though its work option field says "Remote" |
+| Skills | 1 to 3 years in broadcast technology, venue technology or technical operations; cabling, connectivity and basic IT; "work at heights"; preferred: calibration concepts, Linux and Python |
+| Pay | "$200/Daily game rate" |
+
+CREW-05 lesson "5 · The jobs behind the network" teaches a twin of this posting at another arena. It is here for the comparison of pay units in lesson 18.
+
+**4. Live operations coordinator, Hawk-Eye, SEC.** Published October 16, 2026, with "Deadline to Apply October 30, 2026 at 7:00 PM EDT" (Hawk-Eye Innovations, 2026g). This course quotes it as a record of what the job asked, not as an open ad.
+
+| Item | As posted |
+|---|---|
+| Terms | "Full time"; "On-site," Birmingham, Alabama, "Up to 5 days/week in the office" |
+| Days | Game days plus mid-week projects; "long days over consecutive weekends and midweek evenings"; some travel |
+| Skills | "A strong background in providing remote technical or operational support"; documentation; knowledge of college sports; desirable: "Prior experience within the broadcast A/V industry" |
+| Sports | "Women's Soccer, Volleyball, Men's & Women's Basketball, Baseball, and Softball"; "The 2024-25 season marked our inaugural year partnering with the SEC" |
+| Pay | $43,112 to $57,482 "base salary, plus bonus"; healthcare, paid vacation and "80 hours of accrued paid sick leave annually" |
+
+This is an office job that supports venue technicians from a distance (lessons 14 and 15). It is not a work-from-home job: the posting says on site, up to five days a week.
+
+:::reveal Why does this course not write "$38 an hour" for the NFL operator? ||| The posting gives $38 USD at both ends of its range with no unit. Hourly is a likely reading, not a stated fact.
+
+:::reveal Who was the Rutgers technician's employer of record? ||| A third-party managed service provider, not Hawk-Eye directly (Hawk-Eye Innovations, n.d.-f).
+
+:::reveal Is the SEC coordinator a work-from-home job? ||| No. The posting says "On-site" in Birmingham, Alabama, up to five days a week in the office; it supports venue technicians remotely.
+
+## Sources
+- ${NFL_AT_SPOTTERS} Locator: the requirements list.
+- ${NFL_2022B} Locator: UNC paragraph.
+- ${NFL_IVR} Locator: "Summary"; "Responsibilities"; "Qualifications"; "Physical Demands/Travel"; "Salary"; the page data's created date.
+- ${NFL_FAST} Locator: "Salary / Pay Range" paragraph.
+- ${HE_RUTGERS} Locator: "Working Hours"; "Key Responsibilities"; the requirements list; the pay and contractor lines; the "no longer available" banner.
+- ${NBA_VAN_ANDEL} Locator: posting window; the requirements list; pay line; work option field.
+- ${HE_SEC_COORD} Locator: "Role and Team Overview"; "Key Responsibilities"; "Salary & Benefits Disclosure"; the publish and deadline dates.`,
+    },
+    {
+      slug: "casual-freelance-and-remote-roles",
+      title: "17 · Casual, freelance and remote: the roles abroad",
+      section: "5 · The jobs and the ladder",
+      recallContent: [
+        {
+          prompt: "What eligibility rule does the NFL injury video review operator posting set?",
+          answer: "The candidate \"may not be a full-time, part-time, or game day employee of any NFL team\" (NFL, 2026b).",
+        },
+        {
+          prompt: "As posted on October 16, 2026, what was the SEC coordinator's pay?",
+          answer: "$43,112 to $57,482 base salary, plus bonus (Hawk-Eye Innovations, 2026g).",
+        },
+      ],
+      body: `${QR}
+
+**Why look abroad.** On October 26, 2026, Hawk-Eye's public job board listed 25 postings, and the only one in the US was the SEC coordinator (Hawk-Eye Innovations, n.d.-i). The roles below, all read that day, are in Europe. They are worth reading even if you never apply, because they spell out the work, the terms and the pay unit more fully than the US postings in lesson 16.
+
+**Hawk-Eye's posted roles, October 2026.**
+
+| Role | Terms as posted | Schedule | Asks | Pay as posted | Published |
+|---|---|---|---|---|---|
+| Football tracking systems technician, Firenze | "Freelance, Casual" | Match day plus setup days, "mostly on the weekend with some midweek fixtures" | Preferred: "A technical background, ideally in IT or Broadcast"; "Experience working with VT/replay technology desirable"; English; a driving licence | "Starting from €130 daily rate, based on experience" | October 19, 2026 (2026e) |
+| Football video systems technician, Bolzano | "Freelance" | As Firenze, with longer match days | English; work in a "high-pressure, procedural, live broadcast environment" | "Starting from €130 daily rate, based on experience" | October 22, 2026 (2026f) |
+| Football systems operator, Netherlands | "Part-time (24 hrs per week), 6-Month Fixed-Term contract" | Weekends and midweek evenings, set by "the league's fixture list" and liable to "change at short notice" | A driving licence and "willingness to drive our vans"; "Fluent in Dutch and English" | Not posted | September 2, 2026 (2026d) |
+| Sports technology analyst, Sofia Remote Operations Centre | "Contract: Consultant" | 8-hour shifts, "at least 4 days per week" | Data, video content, English | "80 EUR / shift" | October 20, 2026 (2026h) |
+| Student placement: tennis systems operator 27/28 | "Full-Time, Fixed-Term - 12 Months" | "up to 220 days per year on tour away from home" | "Must be currently studying towards an undergraduate degree" | Not posted; travel, accommodation and a daily living allowance paid | October 15, 2026 (2026i) |
+
+All five are Hawk-Eye Innovations postings, cited by the year and letter shown. The Netherlands operator is the posting that says "you will be the only Hawk-Eye employee at the stadium" (lesson 13).
+
+**The standing form.** Hawk-Eye's careers page says: "We are always hiring for casual Football Systems Operators and other similar roles in the UK" (Hawk-Eye Innovations, n.d.-h). Its expression of interest names three casual roles: match day technicians, match operations assistants and systems operators, who "Must be available to work weekends and some midweek evenings." It lists as desirable "Networking," "Broadcast," "Live events," "Video routing knowledge," "Experience with Audio Over IP devices" and "Working with Fibre Optics" (Hawk-Eye Innovations, n.d.-g). The form posts no pay.
+
+**Hawk-Eye in the US.** The careers page also says: "Join our growing business based in Atlanta and support the delivery of technology solutions to sports such as baseball and American football and Major League Soccer" (Hawk-Eye Innovations, n.d.-h). On October 26, 2026, no technician role for those sports was open on its board (Hawk-Eye Innovations, n.d.-i). Lesson 19 takes up what that means for timing.
+
+**Other vendors' operators.** KINEXON, whose wearable tracking lesson 4 described, posted tracking operator roles in Germany in summer 2026. Its Hamburg handball posting, published August 4, 2026, gives about 6 hours per game and about 2 to 3 games a month. Its Munich football posting, published August 25, 2026, is worked in the company's Munich office, not at the stadium (KINEXON, 2026a, 2026b). Both postings are written in German, and this course's translations of them have not yet been checked by a German reader.
+
+Catapult's product support technician in Wilmington, Massachusetts, published September 1, 2026, is office-based on a 24/7 support roster "including nights" and weekends. It prefers 1 to 2 years of technical support, PC or Mac troubleshooting and ticketing tools such as Salesforce and Zendesk, and posts "$48,300 to $72,450 per year" in total pay, base plus a target incentive (Catapult, 2026). Reasoned from those duties: it is a support desk for the product, not a seat at the game.
+
+**Not replay: data operations.** Sportradar and Genius Sports hire operators too, but their duties are data work. Sportradar's part-time remote production operator assists scouts collecting live data and enters line-ups, on nights, weekends and some holidays, at "$15.75/hour" as released on July 20, 2026 (Sportradar, 2026a). Genius Sports' game operations analyst is "A fully remote hourly paid Service Provider position" (Genius Sports, 2026a). Use them to compare shift patterns, not as replay or injury video jobs.
+
+**What the vendor postings share, reasoned.** Gather the asks from this lesson's table and the UK form and three come back: a technical background in IT or broadcast, English, and weekends and evenings set by a fixture list. Driving comes up for operators who move kit between grounds. That list is this course's gathering of the postings' words; no employer publishes it as one.
+
+:::reveal As posted in October 2026, what did Hawk-Eye's Italy technicians start from, and in what unit? ||| €130, as a daily rate, "based on experience" (Hawk-Eye Innovations, 2026e, 2026f).
+
+:::reveal What must an applicant be doing to take Hawk-Eye's tennis student placement? ||| Currently studying towards an undergraduate degree (Hawk-Eye Innovations, 2026i).
+
+:::reveal Why are Sportradar's and Genius Sports' operator roles not replay jobs? ||| Their duties are data work: collecting, entering and checking live data, not replay or injury video.
+
+## Sources
+- ${HE_BOARD_API} Locator: the posting list, 25 postings and their locations, read October 26, 2026.
+- ${HE_FIRENZE} Locator: employment type; "Working day expectations"; the requirements list; pay line.
+- ${HE_BOLZANO} Locator: employment type; "Working day expectations"; the requirements list; pay line.
+- ${HE_NL} Locator: contract line; "What does a typical day look like?"; requirements.
+- ${HE_SOFIA} Locator: contract line; shift pattern; pay line.
+- ${HE_STUDENT} Locator: contract line; travel days; eligibility; benefits.
+- ${HE_CAREERS} Locator: the UK casual roles line; "USA".
+- ${HE_UK_EOI} Locator: role list; availability; "Desirable".
+- ${KINEXON_HH} Locator: "Rahmenbedingungen"; publish date.
+- ${KINEXON_MUC} Locator: "Rahmenbedingungen"; publish date.
+- ${CATAPULT_JOB} Locator: schedule; the requirements list; pay range.
+- ${SPORTRADAR_PT} Locator: duties; schedule; pay line.
+- ${GENIUS_ANALYST} Locator: the opening line describing the position.`,
+    },
+    {
+      slug: "pay-eligibility-and-the-ladder",
+      title: "18 · Pay units, eligibility and the ladder",
+      section: "5 · The jobs and the ladder",
+      recallContent: [
+        {
+          prompt: "How did Hawk-Eye's Sofia analyst posting state its pay and terms?",
+          answer: "\"80 EUR / shift,\" as a consultant on 8-hour shifts (Hawk-Eye Innovations, 2026h).",
+        },
+        {
+          prompt: "Which casual roles does Hawk-Eye's UK expression of interest name?",
+          answer: "Match day technicians, match operations assistants and systems operators (Hawk-Eye Innovations, n.d.-g).",
+        },
+      ],
+      body: `${QR}
+
+**Six units in one section.** Put the posted pay lines from lessons 16 and 17 side by side, and the first thing they teach is that you cannot compare them until you know the unit.
+
+| Posting | Pay as posted | Unit | Date |
+|---|---|---|---|
+| NFL injury video review operator | $38 at both ends of the range | Not stated | Created April 15, 2026 (NFL, 2026b) |
+| Hawk-Eye Rutgers technician | "starting at $28 per hour" | Hour | Closed; saved October 26, 2026 (Hawk-Eye Innovations, n.d.-f) |
+| NBA G League representative | "$200/Daily game rate" | Game day | October 14, 2026 (NBA, 2026) |
+| Hawk-Eye Italy technicians | "Starting from €130 daily rate" | Day | October 19 and 22, 2026 (Hawk-Eye Innovations, 2026e, 2026f) |
+| Hawk-Eye Sofia analyst | "80 EUR / shift" | Shift of 8 hours | October 20, 2026 (Hawk-Eye Innovations, 2026h) |
+| Hawk-Eye SEC coordinator | $43,112 to $57,482 "base salary, plus bonus" | Year | October 16, 2026 (Hawk-Eye Innovations, 2026g) |
+| Catapult product support technician | "$48,300 to $72,450 per year" | Year | September 1, 2026 (Catapult, 2026) |
+
+**How to compare them, reasoned.** Convert only what the posting lets you convert. The Sofia posting states 8-hour shifts, so 80 EUR a shift is 10 EUR an hour for that posting. The Italy daily rate covers a match day that can start up to 6 or 7 hours before kickoff (lesson 13), but the postings give no total hours for the day, so it does not convert. The NFL's $38 has no unit, so it converts to nothing (lesson 16). And no figure here is a market rate: each is one employer's offer on one date, in one place.
+
+**What a range means.** The NFL's text on its Greenhouse postings says: "The NFL expects to hire for this position near the middle of the range" (NFL, 2026d). The SEC posting says its range "does not include any other compensation components or bonuses," and that the actual offer depends on qualifications, experience, skills, education, certifications "and geographic location" (Hawk-Eye Innovations, 2026g). So the top of a range is not the offer to expect.
+
+**No occupation-wide figure.** No government pay survey for this work could be read for this course: the Bureau of Labor Statistics page for broadcast, sound and video technicians refused the request. So this course gives no occupation-wide pay figure, only the postings above.
+
+**Eligibility, as posted.** Some rules decide whether you can apply at all.
+
+| Rule | Posting |
+|---|---|
+| "may not be a full-time, part-time, or game day employee of any NFL team" | NFL operator (NFL, 2026b) |
+| "onsite presence at an NFL office or stadium location"; no relocation help | NFL operator (NFL, 2026b) |
+| "commit to all of the home games for the season" | Rutgers technician (Hawk-Eye Innovations, n.d.-f) |
+| "Must be currently studying towards an undergraduate degree" | Tennis student placement (Hawk-Eye Innovations, 2026i) |
+| "Fluent in Dutch and English"; a driving licence | Netherlands operator (Hawk-Eye Innovations, 2026d) |
+| A CV in English | Italy technicians (Hawk-Eye Innovations, 2026e, 2026f) |
+| A question on whether you need visa sponsorship for the UK | UK form (Hawk-Eye Innovations, n.d.-g) |
+| All shifts on site, though the work option says "Remote" | G League representative (NBA, 2026) |
+
+**Why a team's employee is barred, reasoned.** The NFL posting gives no reason for its rule. But lesson 5 showed the same idea in the medical roles: UNCs have no affiliation with NFL clubs, and a spotter may have had no paid NFL team employment in the last 5 years (NFL, 2022b; NFL, n.d.-e). Read together, the league keeps the people around its injury review independent of the teams. That is a reading; the posting states only the rule.
+
+**The ladder, as the postings describe it.** No employer read for this course publishes a career map. Here is everything the postings say about moving up.
+
+- **From student placement.** The tennis operator role includes "contributing to the development of less experienced operators" and the "option to join a more project-focused team" (Hawk-Eye Innovations, 2026i).
+- **From casual to full time.** Italy: "a great entry level route into full time employment with Hawk-Eye Innovations ltd" (Hawk-Eye Innovations, 2026e). The UK form: "Opportunities for full-time employment," "Travel across Europe and beyond to support major football tournaments" and "Contribute to improvements in VAR workflows" (Hawk-Eye Innovations, n.d.-g).
+- **Growing in the role.** Netherlands: "you will initially focus on our on-site technical services. You will gain exposure to various other services as you grow in the role" (Hawk-Eye Innovations, 2026d). Big Ten: training to "encourage development and progression" (Hawk-Eye Innovations, n.d.-f).
+- **The remote desk trains the venue crew.** The SEC coordinator produces "documentation for (and assist in delivering) training programs for college replay staff, including both onsite technicians and the Birmingham team" (Hawk-Eye Innovations, 2026g).
+- **Beyond operator.** "Travel the world as a systems operator ... or join our engineering team," and "Grow your career as part of our leadership team, managing passionate individuals within our regional teams" (Hawk-Eye Innovations, n.d.-h).
+- **On the data side.** Genius Sports' match lead and game operations analyst roles "Lead a group of Operators" and lead "training for newly signed Operators" (Genius Sports, 2026a, 2026b).
+- **The NFL operator.** Its posting describes no progression at all (NFL, 2026b).
+
+TeamWork Online, a job board that lists Hawk-Eye's roles, labels Hawk-Eye's SEC coordinator "Entry Level" and its student placements "Intern" (TeamWork Online, n.d.).
+
+**One reading of the rungs.** Assembled from separate postings, not from any employer's map: you enter through a student placement, a casual venue technician role or a league game-day operator seat; next comes a part-time or fixed-term operator role; then a full-time coordinator or remote-desk role that trains and supports venue technicians; and at the vendor, engineering or leadership. Each rung rests on one posting's words, and the reviewer who has worked these jobs may reorder them.
+
+:::reveal Why can the Sofia pay be turned into an hourly figure, but not the Italy daily rate? ||| The Sofia posting states 8-hour shifts (80 EUR is 10 EUR an hour). The Italy postings give a daily rate but no total hours for the day.
+
+:::reveal Where in its range does the NFL say it expects to hire? ||| "Near the middle of the range" (NFL, 2026d).
+
+:::reveal Which posting in this section describes no progression at all? ||| The NFL injury video review operator posting (NFL, 2026b).
+
+## Sources
+- ${NFL_IVR} Locator: "Salary"; "Qualifications"; the onsite and relocation lines.
+- ${HE_RUTGERS} Locator: pay line; the season commitment; the training line.
+- ${NBA_VAN_ANDEL} Locator: pay line; work option field.
+- ${HE_FIRENZE} Locator: pay line; "Please attach your CV in English"; the entry level route line.
+- ${HE_BOLZANO} Locator: pay line; "Please attach your CV in English".
+- ${HE_SOFIA} Locator: shift pattern; pay line.
+- ${HE_SEC_COORD} Locator: "Salary & Benefits Disclosure"; the training programs line.
+- ${CATAPULT_JOB} Locator: pay range.
+- ${NFL_FAST} Locator: "Salary / Pay Range".
+- ${HE_STUDENT} Locator: eligibility; development of less experienced operators.
+- ${HE_NL} Locator: requirements; growth in the role.
+- ${HE_UK_EOI} Locator: visa question; "As You Progress".
+- ${NFL_AT_SPOTTERS} Locator: the requirements list.
+- ${NFL_2022B} Locator: UNC paragraph.
+- ${HE_CAREERS} Locator: the operator, engineering and leadership lines.
+- ${GENIUS_ANALYST} Locator: leadership and training duties.
+- ${GENIUS_LEAD} Locator: "Lead a group of Operators".
+- ${TEAMWORK} Locator: career-level label on each listing.`,
+    },
+    {
+      slug: "section-5-quiz",
+      title: "Section 5 quiz \u00b7 The jobs and the ladder",
+      section: "5 \u00b7 The jobs and the ladder",
+      body: "A graded check on the roles as posted, the pay units and dates, the eligibility rules and the ladder as the postings describe it. Each answer links back to the lesson that teaches it.",
+      quiz: {
+        passingScore: 80,
+        questionsPerAttempt: 5,
+        shuffleOptions: true,
+        questions: [
+          { prompt: "What is a job posting a primary source for, as section 5 uses it?", options: ["What one employer asked on one date", "What the whole trade pays this year", "What a union contract sets for crews", "What every league requires of staff"], correctIndex: 0, explanation: "Lesson 16: a posting is a primary source for what one employer asked on the date it was posted, not a survey of the trade.", sourceLessonSlug: "four-us-roles-as-posted" },
+          { prompt: "How does section 5 write every pay figure?", options: ["As a national average", "As posted, with its date", "As a union minimum rate", "As a yearly equivalent"], correctIndex: 1, explanation: "Lesson 16: every pay figure is written \"as posted,\" with its date, and none is a going rate.", sourceLessonSlug: "four-us-roles-as-posted" },
+          { prompt: "What certification must an NFL booth spotter hold?", options: ["A broadcast engineering license", "A Hawk-Eye systems operator certificate", "BOC athletic trainer certification", "An FCC radio operator permit"], correctIndex: 2, explanation: "NFL (n.d.-e): current Board of Certification athletic trainer certification, plus a state license or registration where required.", sourceLessonSlug: "four-us-roles-as-posted" },
+          { prompt: "How many years as an athletic trainer must an NFL booth spotter have?", options: ["At least 2 years", "At least 5 years", "At least 20 years", "At least 10 years"], correctIndex: 3, explanation: "NFL (n.d.-e): at least 10 years as an athletic trainer. Five years is the bar on paid NFL team employment.", sourceLessonSlug: "four-us-roles-as-posted" },
+          { prompt: "Where was the NFL operator posting read for this course?", options: ["A New Orleans copy on SHRM HireVets", "The NFL's own Greenhouse job board", "A printed notice at a team stadium", "Hawk-Eye's Ashby public job board"], correctIndex: 0, explanation: "NFL (2026b): the New Orleans Saints posting, read in a copy on SHRM HireVets.", sourceLessonSlug: "four-us-roles-as-posted" },
+          { prompt: "What created date does the New Orleans copy's page data give?", options: ["October 16, 2026", "April 15, 2026", "August 25, 2026", "January 7, 2026"], correctIndex: 1, explanation: "NFL (2026b): the page data gives a created date of April 15, 2026.", sourceLessonSlug: "four-us-roles-as-posted" },
+          { prompt: "Which games does the NFL operator posting cover?", options: ["Only the regular season's road games each year", "Only the playoff games, both home and away alike", "Preseason, regular season, postseason home games", "Only games shown on national television"], correctIndex: 2, explanation: "NFL (2026b): \"all preseason, regular season, and postseason home games,\" plus \"flexed\" games.", sourceLessonSlug: "four-us-roles-as-posted" },
+          { prompt: "What typing speed does the NFL operator posting ask for?", options: ["A minimum of 80 words per minute", "A minimum of 25 words per minute", "No typing speed is mentioned", "A minimum of 40 words per minute"], correctIndex: 3, explanation: "NFL (2026b): touch typing, \"minimum 40 words per minute.\"", sourceLessonSlug: "four-us-roles-as-posted" },
+          { prompt: "What does the NFL posting say about audio and video path testing?", options: ["Training will be provided", "A degree must cover it", "Five years are required", "It is the club's duty"], correctIndex: 0, explanation: "NFL (2026b): \"Audio and video path troubleshooting and testing,\" with \"training will be provided.\"", sourceLessonSlug: "four-us-roles-as-posted" },
+          { prompt: "How much must the NFL operator be able to lift, as posted?", options: ["Up to 75 pounds", "Up to 30 pounds", "Up to 10 pounds", "Up to 50 pounds"], correctIndex: 1, explanation: "NFL (2026b): lift \"up to 30 pounds,\" and sit for long periods.", sourceLessonSlug: "four-us-roles-as-posted" },
+          { prompt: "What does the NFL posting say about relocation?", options: ["Relocation is paid in full for the first season", "Relocation is shared with the home club", "No relocation assistance will be provided", "Relocation help depends on the market"], correctIndex: 2, explanation: "NFL (2026b): \"NO RELOCATION ASSISTANCE WILL BE PROVIDED.\"", sourceLessonSlug: "four-us-roles-as-posted" },
+          { prompt: "Who may not apply for the NFL operator role?", options: ["Anyone without a degree", "Anyone under twenty-five", "Any former broadcaster", "Any NFL team's employee"], correctIndex: 3, explanation: "NFL (2026b): \"Candidate may not be a full-time, part-time, or game day employee of any NFL team.\"", sourceLessonSlug: "four-us-roles-as-posted" },
+          { prompt: "What does the NFL posting's salary line show?", options: ["$38 at both ends, in USD, no unit", "$38 to $45 an hour, with overtime", "$38,000 a year, plus a game bonus", "$38 per game, paid at season's end"], correctIndex: 0, explanation: "NFL (2026b): $38 as the low and the high end, in USD; it never says per hour, per game or per year.", sourceLessonSlug: "four-us-roles-as-posted" },
+          { prompt: "Why does lesson 16 treat hourly as the likely unit for the $38?", options: ["The posting's salary line says \"per hour\" in small print", "It fits an 8 to 9 hour day; the NFL posts hourly rates", "Every sports league pays its game-day staff by the hour", "The New Orleans club confirmed it in a press statement"], correctIndex: 1, explanation: "Reasoned: the NFL's pay text speaks of \"salaries or hourly rates\" (NFL, 2026d), and $38 per whole game day would be under $5 an hour. It is a reading, not the posting's word.", sourceLessonSlug: "four-us-roles-as-posted" },
+          { prompt: "What phrase from the NFL's own pay text shows it posts both kinds of pay?", options: ["\"day rates and game fees\"", "\"stipends and allowances\"", "\"salaries or hourly rates\"", "\"contracts and retainers\""], correctIndex: 2, explanation: "NFL (2026d), \"Salary / Pay Range\": the text speaks of \"salaries or hourly rates.\"", sourceLessonSlug: "four-us-roles-as-posted" },
+          { prompt: "What employment type does the NFL operator posting state?", options: ["Seasonal full-time staff", "An unpaid volunteer role", "A union crew member", "None; it is not stated"], correctIndex: 3, explanation: "NFL (2026b): the employment type is not stated (lesson 21 returns to this).", sourceLessonSlug: "four-us-roles-as-posted" },
+          { prompt: "Where was the Hawk-Eye Rutgers posting read?", options: ["A saved startup.jobs copy, closed", "Hawk-Eye's live Ashby job board", "The Big Ten conference website", "A Rutgers University news release"], correctIndex: 0, explanation: "Hawk-Eye Innovations (n.d.-f): a saved startup.jobs copy marked \"no longer available.\"", sourceLessonSlug: "four-us-roles-as-posted" },
+          { prompt: "How did the Rutgers posting describe its terms?", options: ["Full-time salaried, permanent", "Part-time contractor, temporary", "Unpaid internship, one season", "Fixed-term, six months, salaried"], correctIndex: 1, explanation: "Hawk-Eye Innovations (n.d.-f): \"Part Time (contractor)\"; \"a temporary role.\"", sourceLessonSlug: "four-us-roles-as-posted" },
+          { prompt: "Through whom was the Rutgers technician employed?", options: ["The Big Ten Conference's league office", "Rutgers University's athletic department", "A third-party managed service provider", "Hawk-Eye's head office in Basingstoke"], correctIndex: 2, explanation: "Hawk-Eye Innovations (n.d.-f): \"employed through a third-party managed service provider.\"", sourceLessonSlug: "four-us-roles-as-posted" },
+          { prompt: "What background did the Rutgers posting ideally want?", options: ["Medical, with a current sports therapy license", "Coaching, with college football years", "Accounting, with payroll experience", "Broadcast or engineering, with signal flow"], correctIndex: 3, explanation: "Hawk-Eye Innovations (n.d.-f): \"Ideally a broadcast/engineering background with an understanding of signal flow.\"", sourceLessonSlug: "four-us-roles-as-posted" },
+          { prompt: "What commitment did the Rutgers posting ask for?", options: ["All of the home games for the season", "Two away games a month, at a minimum", "Only the conference championship", "Weekday practices through spring"], correctIndex: 0, explanation: "Hawk-Eye Innovations (n.d.-f): \"commit to all of the home games for the season.\"", sourceLessonSlug: "four-us-roles-as-posted" },
+          { prompt: "What pay did the Rutgers posting give?", options: ["A flat $200 per game day", "Starting at $28 per hour", "$38 with no unit stated", "€130 as a daily rate"], correctIndex: 1, explanation: "Hawk-Eye Innovations (n.d.-f): \"starting at $28 per hour.\"", sourceLessonSlug: "four-us-roles-as-posted" },
+          { prompt: "Why is \"Hawk-Eye pays technicians $28 an hour\" wrong?", options: ["The posting gave the pay in euros", "Hawk-Eye pays only yearly salaries", "The staffing provider employed them", "The $28 was really the NFL's posted rate"], correctIndex: 2, explanation: "Lesson 16: the employer of record was the staffing provider, so the figure was that provider's offer for one season at one school.", sourceLessonSlug: "four-us-roles-as-posted" },
+          { prompt: "What dates does the saved Rutgers copy carry?", options: ["A close date of April 24", "A publish date of Oct 16", "A start date of Summer 2027", "No publish or close date"], correctIndex: 3, explanation: "Lesson 16: the saved copy carries no publish or close date, so the course cannot say when it opened or closed.", sourceLessonSlug: "four-us-roles-as-posted" },
+          { prompt: "What was the G League Van Andel Arena posting window?", options: ["October 14 to October 31, 2026", "April 6 to April 24, 2026", "September 2 to October 30, 2026", "July 1 to August 4, 2026"], correctIndex: 0, explanation: "NBA (2026): a posting window of October 14 to October 31, 2026.", sourceLessonSlug: "four-us-roles-as-posted" },
+          { prompt: "How long may the G League representative's temporary position last?", options: ["Exactly one full season", "Not more than 10 months", "Not more than 6 months", "Two seasons, renewable"], correctIndex: 1, explanation: "NBA (2026): a \"temporary position,\" not to exceed 10 months.", sourceLessonSlug: "four-us-roles-as-posted" },
+          { prompt: "What does the G League posting's work option field say, against its shifts?", options: ["\"On-site,\" though shifts are all remote", "\"Hybrid,\" with two home days each week", "\"Remote,\" though all shifts are on site", "\"Travel,\" with games in several arenas"], correctIndex: 2, explanation: "NBA (2026): the work option says \"Remote,\" but candidates must work all shifts on site at the arena.", sourceLessonSlug: "four-us-roles-as-posted" },
+          { prompt: "Which skill does the G League posting list besides cabling and basic IT?", options: ["Touch typing", "Fluent Dutch", "Video editing", "Work at heights"], correctIndex: 3, explanation: "NBA (2026): \"work at heights,\" with cabling, connectivity and basic IT; calibration, Linux and Python are preferred.", sourceLessonSlug: "four-us-roles-as-posted" },
+          { prompt: "What pay did the G League representative posting give?", options: ["\"$200/Daily game rate\"", "\"$28 per hour, starting\"", "\"80 EUR / shift\"", "\"$38 USD, both ends\""], correctIndex: 0, explanation: "NBA (2026): \"$200/Daily game rate.\"", sourceLessonSlug: "four-us-roles-as-posted" },
+          { prompt: "What was the SEC coordinator posting's deadline to apply?", options: ["October 16, 2026, at noon EDT", "October 30, 2026, 7:00 PM EDT", "December 16, 2026, at midnight", "April 24, 2026, end of business"], correctIndex: 1, explanation: "Hawk-Eye Innovations (2026g): \"Deadline to Apply October 30, 2026 at 7:00 PM EDT.\" The course quotes it as a record, not an open ad.", sourceLessonSlug: "four-us-roles-as-posted" },
+          { prompt: "Where is the SEC coordinator based, as posted?", options: ["From home, anywhere in the US", "In Basingstoke, at head office", "On site in Birmingham, Alabama", "On the road, at every SEC venue"], correctIndex: 2, explanation: "Hawk-Eye Innovations (2026g): \"On-site,\" Birmingham, AL, \"Up to 5 days/week in the office.\"", sourceLessonSlug: "four-us-roles-as-posted" },
+          { prompt: "What background does the SEC coordinator posting ask for?", options: ["Physician training in college sports medicine", "A coaching career in college soccer", "Ten years of broadcast camera work", "Remote technical or operational support"], correctIndex: 3, explanation: "Hawk-Eye Innovations (2026g): \"A strong background in providing remote technical or operational support.\"", sourceLessonSlug: "four-us-roles-as-posted" },
+          { prompt: "What sick leave did the SEC coordinator posting list?", options: ["80 hours accrued annually", "10 days paid each quarter", "None; it is a contract role", "40 hours after six months"], correctIndex: 0, explanation: "Hawk-Eye Innovations (2026g): \"80 hours of accrued paid sick leave annually,\" with healthcare and paid vacation.", sourceLessonSlug: "four-us-roles-as-posted" },
+          { prompt: "Which sport is not in Hawk-Eye's SEC delivery list?", options: ["Softball", "Football", "Volleyball", "Baseball"], correctIndex: 1, explanation: "Hawk-Eye Innovations (2026g): women's soccer, volleyball, men's and women's basketball, baseball and softball. Football is not on the list.", sourceLessonSlug: "four-us-roles-as-posted" },
+          { prompt: "How many postings did Hawk-Eye's public job board list on October 26, 2026?", options: ["42", "8", "25", "12"], correctIndex: 2, explanation: "Hawk-Eye Innovations (n.d.-i): 25 postings; 42 is the NFL's Greenhouse count.", sourceLessonSlug: "casual-freelance-and-remote-roles" },
+          { prompt: "Which was the only US posting on Hawk-Eye's board that day?", options: ["The Rutgers Big Ten technician role", "An NFL injury video review operator", "An MLB ballpark tracking technician", "The SEC live operations coordinator"], correctIndex: 3, explanation: "Hawk-Eye Innovations (n.d.-i): the only US posting was the Live Operations Coordinator - SEC.", sourceLessonSlug: "casual-freelance-and-remote-roles" },
+          { prompt: "Why does lesson 17 read the European postings even for US learners?", options: ["They spell out work, terms and pay unit", "They pay more than any US posting does", "They are the only postings that exist", "They are written by the NFL's own staff"], correctIndex: 0, explanation: "Lesson 17: they spell out the work, the terms and the pay unit more fully than the US postings did.", sourceLessonSlug: "casual-freelance-and-remote-roles" },
+          { prompt: "How was the Firenze tracking technician role described?", options: ["\"Full time, Salaried\"", "\"Freelance, Casual\"", "\"Intern, Unpaid\"", "\"Project Employee\""], correctIndex: 1, explanation: "Hawk-Eye Innovations (2026e): \"Freelance, Casual.\"", sourceLessonSlug: "casual-freelance-and-remote-roles" },
+          { prompt: "What background does the Firenze posting prefer?", options: ["Medical, ideally in sports therapy", "Legal, ideally in sports contracts", "Technical, ideally in IT or broadcast", "Coaching, ideally in youth football"], correctIndex: 2, explanation: "Hawk-Eye Innovations (2026e): \"A technical background, ideally in IT or Broadcast.\"", sourceLessonSlug: "casual-freelance-and-remote-roles" },
+          { prompt: "When are the Italy technicians' matches mostly, as posted?", options: ["On weekday mornings, never at weekends", "Only in summer, during the off-season", "Only at night, after the last kickoff", "On weekends, with some midweek fixtures"], correctIndex: 3, explanation: "Hawk-Eye Innovations (2026e): \"mostly on the weekend with some midweek fixtures.\"", sourceLessonSlug: "casual-freelance-and-remote-roles" },
+          { prompt: "What pay did the Italy technician postings give?", options: ["From €130 daily, based on experience", "€130 per hour, for every match day", "€80 per shift, for eight-hour shifts", "€43,112 a year, plus a match bonus"], correctIndex: 0, explanation: "Hawk-Eye Innovations (2026e, 2026f): \"Starting from €130 daily rate, based on experience.\"", sourceLessonSlug: "casual-freelance-and-remote-roles" },
+          { prompt: "What environment does the Bolzano posting describe?", options: ["Quiet, office-based, from nine to five daily", "High-pressure, procedural, live broadcast", "Remote, flexible and self-paced", "Classroom-based, with a mentor"], correctIndex: 1, explanation: "Hawk-Eye Innovations (2026f): a \"high-pressure, procedural, live broadcast environment.\"", sourceLessonSlug: "casual-freelance-and-remote-roles" },
+          { prompt: "What terms did the Netherlands operator posting give?", options: ["40 hours a week, a permanent contract", "One match a month, freelance only", "24 hours a week, 6-month fixed term", "12-month student placement, full time"], correctIndex: 2, explanation: "Hawk-Eye Innovations (2026d): \"Part-time (24 hrs per week), 6-Month Fixed-Term contract.\"", sourceLessonSlug: "casual-freelance-and-remote-roles" },
+          { prompt: "What sets the Netherlands operator's schedule?", options: ["The operator's own choice", "The broadcaster's rundown", "The club's training plan", "The league's fixture list"], correctIndex: 3, explanation: "Hawk-Eye Innovations (2026d): \"dedicated by the league's fixture list and can change at short notice.\"", sourceLessonSlug: "casual-freelance-and-remote-roles" },
+          { prompt: "Which languages does the Netherlands posting require?", options: ["Dutch and English", "Dutch and German", "English and French", "Dutch and Italian"], correctIndex: 0, explanation: "Hawk-Eye Innovations (2026d): \"Fluent in Dutch and English.\"", sourceLessonSlug: "casual-freelance-and-remote-roles" },
+          { prompt: "Besides a driving licence, what does the Netherlands posting ask about vans?", options: ["A heavy goods vehicle permit", "Willingness to drive them", "Ownership of a work van", "A mechanic's certificate"], correctIndex: 1, explanation: "Hawk-Eye Innovations (2026d): a driving licence and \"willingness to drive our vans.\"", sourceLessonSlug: "casual-freelance-and-remote-roles" },
+          { prompt: "What pay did the Netherlands operator posting give?", options: ["€130 a day", "€80 a shift", "None was posted", "$28 an hour"], correctIndex: 2, explanation: "Hawk-Eye Innovations (2026d): pay not posted.", sourceLessonSlug: "casual-freelance-and-remote-roles" },
+          { prompt: "How did the Sofia analyst posting describe its contract?", options: ["\"Full time, permanent\"", "\"Casual, match day only\"", "\"Student placement\"", "\"Contract: Consultant\""], correctIndex: 3, explanation: "Hawk-Eye Innovations (2026h): \"Contract: Consultant.\"", sourceLessonSlug: "casual-freelance-and-remote-roles" },
+          { prompt: "How often must the Sofia analysts be available?", options: ["At least 4 days per week", "At least 1 day per month", "Exactly 2 weekends a month", "Only on tournament days"], correctIndex: 0, explanation: "Hawk-Eye Innovations (2026h): consultants \"are expected to be available for at least 4 days per week,\" on 8-hour shifts.", sourceLessonSlug: "casual-freelance-and-remote-roles" },
+          { prompt: "How far on tour may the tennis student placement go?", options: ["Up to 30 days a year away from home", "Up to 220 days a year away from home", "No travel; it is office-based only", "Up to 100 days, in the UK only"], correctIndex: 1, explanation: "Hawk-Eye Innovations (2026i): \"up to 220 days per year on tour away from home.\"", sourceLessonSlug: "casual-freelance-and-remote-roles" },
+          { prompt: "What does the tennis student placement pay for, as posted?", options: ["Tuition fees at the student's university", "A car, fuel and a monthly phone allowance", "Travel, accommodation and a daily allowance", "Nothing; the placement is entirely unpaid"], correctIndex: 2, explanation: "Hawk-Eye Innovations (2026i): no pay posted; travel, accommodation and a daily living allowance paid.", sourceLessonSlug: "casual-freelance-and-remote-roles" },
+          { prompt: "How long is the tennis student placement?", options: ["6 months, part time", "One tournament only", "Three summers in a row", "12 months, fixed term"], correctIndex: 3, explanation: "Hawk-Eye Innovations (2026i): \"Full-Time, Fixed-Term - 12 Months.\"", sourceLessonSlug: "casual-freelance-and-remote-roles" },
+          { prompt: "What does Hawk-Eye's careers page say it is always hiring for in the UK?", options: ["Casual Football Systems Operators", "Full-time tennis line judges", "Remote software engineers for tracking", "Club video analysts"], correctIndex: 0, explanation: "Hawk-Eye Innovations (n.d.-h): \"We are always hiring for casual Football Systems Operators and other similar roles in the UK.\"", sourceLessonSlug: "casual-freelance-and-remote-roles" },
+          { prompt: "Which three roles does the UK expression of interest name?", options: ["Replay officials, referees and assessors", "Match day technicians, assistants, operators", "Camera operators, directors and producers", "Physios, team doctors and athletic trainers"], correctIndex: 1, explanation: "Hawk-Eye Innovations (n.d.-g): match day technicians, match operations assistants and systems operators.", sourceLessonSlug: "casual-freelance-and-remote-roles" },
+          { prompt: "What availability does the UK form require?", options: ["Weekdays only, during office hours", "Summer tournaments only", "Weekends and some midweek evenings", "One weekend in four, at most"], correctIndex: 2, explanation: "Hawk-Eye Innovations (n.d.-g): \"Must be available to work weekends and some midweek evenings.\"", sourceLessonSlug: "casual-freelance-and-remote-roles" },
+          { prompt: "Which of these is on the UK form's desirable list?", options: ["A sports medicine degree", "Ticket office experience", "A heavy goods licence", "Working with Fibre Optics"], correctIndex: 3, explanation: "Hawk-Eye Innovations (n.d.-g): desirable skills include \"Working with Fibre Optics,\" \"Networking\" and \"Video routing knowledge.\"", sourceLessonSlug: "casual-freelance-and-remote-roles" },
+          { prompt: "What audio skill is on the UK form's desirable list?", options: ["Audio Over IP devices", "Studio music mixing", "Live concert sound", "Podcast production"], correctIndex: 0, explanation: "Hawk-Eye Innovations (n.d.-g): \"Experience with Audio Over IP devices.\"", sourceLessonSlug: "casual-freelance-and-remote-roles" },
+          { prompt: "Where does Hawk-Eye's careers page base its US business?", options: ["Birmingham", "Atlanta", "New York", "Basingstoke"], correctIndex: 1, explanation: "Hawk-Eye Innovations (n.d.-h): \"Join our growing business based in Atlanta.\"", sourceLessonSlug: "casual-freelance-and-remote-roles" },
+          { prompt: "Which sports does Hawk-Eye's US note name?", options: ["Tennis, cricket and rugby union", "Basketball, hockey and golf", "Baseball, American football, MLS", "Volleyball, softball and lacrosse"], correctIndex: 2, explanation: "Hawk-Eye Innovations (n.d.-h): \"sports such as baseball and American football and Major League Soccer.\"", sourceLessonSlug: "casual-freelance-and-remote-roles" },
+          { prompt: "Was a Hawk-Eye technician role for those US sports open on October 26, 2026?", options: ["Yes, five were open in Atlanta", "Yes, one at every NFL stadium", "Yes, but only for MLB ballparks", "No, none was open on its board"], correctIndex: 3, explanation: "Hawk-Eye Innovations (n.d.-i): no technician role for those sports was open that day.", sourceLessonSlug: "casual-freelance-and-remote-roles" },
+          { prompt: "What hours does KINEXON's Hamburg handball posting give?", options: ["About 6 hours a game, 2 to 3 games a month", "About 12 hours a game, and 8 games a month", "A full 40-hour week, all season long", "About 2 hours a game, every weekday"], correctIndex: 0, explanation: "KINEXON (2026b): about 6 hours per game, about 2 to 3 games per month.", sourceLessonSlug: "casual-freelance-and-remote-roles" },
+          { prompt: "Where is KINEXON's Munich football operator's work done?", options: ["In the stadium's broadcast truck", "In the company's Munich office", "At home, on a laptop, anywhere", "In the referees' review room"], correctIndex: 1, explanation: "KINEXON (2026a): the role is worked in the Munich office, not at the stadium.", sourceLessonSlug: "casual-freelance-and-remote-roles" },
+          { prompt: "Why does lesson 17 flag its reading of the KINEXON postings?", options: ["KINEXON withdrew both of them in September", "They name no employer, so cannot be cited", "In German; the translations are unchecked", "They were read only on an aggregator site"], correctIndex: 2, explanation: "Lesson 17: both postings are written in German, and the course's translations have not yet been checked by a German reader.", sourceLessonSlug: "casual-freelance-and-remote-roles" },
+          { prompt: "What roster does Catapult's product support technician work?", options: ["Match days only, at the venue", "Weekdays, nine to five, no nights", "Tournaments only, on the road", "A 24/7 roster, including nights"], correctIndex: 3, explanation: "Catapult (2026): office-based on a 24/7 support roster \"including nights\" and weekends.", sourceLessonSlug: "casual-freelance-and-remote-roles" },
+          { prompt: "What pay did Catapult's support technician posting give?", options: ["$48,300 to $72,450 a year in total", "$200 for each daily game shift", "$15.75 an hour, nights included", "$28 an hour through a provider"], correctIndex: 0, explanation: "Catapult (2026): \"$48,300 to $72,450 per year,\" base plus target incentive.", sourceLessonSlug: "casual-freelance-and-remote-roles" },
+          { prompt: "By lesson 17's reasoning, what kind of job is Catapult's support technician?", options: ["A replay operator in a stadium booth", "A product support desk, not a game seat", "An athletic trainer on the sideline", "A league official in a command center"], correctIndex: 1, explanation: "Reasoned from its duties: it is a support desk for the product, not a seat at the game.", sourceLessonSlug: "casual-freelance-and-remote-roles" },
+          { prompt: "What does Sportradar's part-time production operator do?", options: ["Runs replay for the officials at the stadium", "Hands radios to the medical staff", "Assists scouts with live data and line-ups", "Calibrates goal-line cameras each match"], correctIndex: 2, explanation: "Sportradar (2026a): assists scouts collecting live data and enters line-ups. It is data work, not replay.", sourceLessonSlug: "casual-freelance-and-remote-roles" },
+          { prompt: "What pay did Sportradar's part-time operator posting give?", options: ["€130 a day", "$200 a game", "$38, no unit", "$15.75 an hour"], correctIndex: 3, explanation: "Sportradar (2026a): \"$15.75/hour,\" released July 20, 2026.", sourceLessonSlug: "casual-freelance-and-remote-roles" },
+          { prompt: "How does Genius Sports describe its game operations analyst?", options: ["A remote, hourly paid service provider", "A full-time stadium employee with benefits", "A volunteer scout at college games", "A league official in the replay center"], correctIndex: 0, explanation: "Genius Sports (2026a): \"A fully remote hourly paid Service Provider position.\"", sourceLessonSlug: "casual-freelance-and-remote-roles" },
+          { prompt: "By lesson 17, what three asks recur across the vendor postings?", options: ["A college degree, a car and a medical certificate", "IT or broadcast, English, weekends and evenings", "Sales, marketing and social media skills", "Coaching, refereeing and a sports license"], correctIndex: 1, explanation: "Lesson 17 gathers them: a technical background in IT or broadcast, English, and weekends and evenings set by a fixture list.", sourceLessonSlug: "casual-freelance-and-remote-roles" },
+          { prompt: "What is the first thing lesson 18 says the posted pay lines teach?", options: ["The NFL pays more than any vendor does", "Europe always pays less than the US does", "You cannot compare them without the unit", "Yearly pay is always the better offer"], correctIndex: 2, explanation: "Lesson 18: put side by side, they show you cannot compare them until you know the unit.", sourceLessonSlug: "pay-eligibility-and-the-ladder" },
+          { prompt: "What unit is the NBA G League pay figure?", options: ["Per hour", "Per year", "Per shift", "Per game day"], correctIndex: 3, explanation: "NBA (2026): \"$200/Daily game rate.\"", sourceLessonSlug: "pay-eligibility-and-the-ladder" },
+          { prompt: "What unit is the Italy technicians' pay?", options: ["Per day", "Per hour", "Per year", "Per shift"], correctIndex: 0, explanation: "Hawk-Eye Innovations (2026e, 2026f): \"Starting from €130 daily rate.\"", sourceLessonSlug: "pay-eligibility-and-the-ladder" },
+          { prompt: "What unit does the NFL operator's $38 carry?", options: ["Per hour, stated", "None is stated", "Per game, stated", "Per year, stated"], correctIndex: 1, explanation: "NFL (2026b): the salary line gives no unit.", sourceLessonSlug: "pay-eligibility-and-the-ladder" },
+          { prompt: "What is 80 EUR per 8-hour shift as an hourly figure, for that posting?", options: ["8 EUR an hour", "16 EUR an hour", "10 EUR an hour", "20 EUR an hour"], correctIndex: 2, explanation: "Reasoned in lesson 18: the Sofia posting states 8-hour shifts, so 80 EUR a shift is 10 EUR an hour.", sourceLessonSlug: "pay-eligibility-and-the-ladder" },
+          { prompt: "Why does the Italy daily rate not convert to an hourly figure?", options: ["The rate is paid in euros, not in US dollars", "Hawk-Eye forbids converting posted pay", "The rate changes with every single match", "The postings give no total hours for the day"], correctIndex: 3, explanation: "Lesson 18: the match day can start up to 6 or 7 hours before kickoff, but the postings give no total hours.", sourceLessonSlug: "pay-eligibility-and-the-ladder" },
+          { prompt: "Is any pay figure in lesson 18's table a market rate?", options: ["No; each is one employer's offer on one date", "Yes; the NFL figure is the national rate", "Yes; the yearly figures are market rates", "Yes; the average of all seven is the rate"], correctIndex: 0, explanation: "Lesson 18: no figure is a market rate; each is one employer's offer on one date, in one place.", sourceLessonSlug: "pay-eligibility-and-the-ladder" },
+          { prompt: "Where does the NFL say it expects to hire within a posted range?", options: ["At the bottom, for every hire", "Near the middle of the range", "At the top, for strong hires", "Wherever the club decides"], correctIndex: 1, explanation: "NFL (2026d): \"The NFL expects to hire for this position near the middle of the range.\"", sourceLessonSlug: "pay-eligibility-and-the-ladder" },
+          { prompt: "What does the SEC posting say its salary range leaves out?", options: ["Healthcare, sick leave and paid vacation benefits", "Travel costs for away game support", "Other compensation components and bonuses", "Overtime for consecutive weekends"], correctIndex: 2, explanation: "Hawk-Eye Innovations (2026g): the range \"does not include any other compensation components or bonuses.\"", sourceLessonSlug: "pay-eligibility-and-the-ladder" },
+          { prompt: "Besides experience and skills, what else does the SEC posting say shapes an offer?", options: ["The applicant's age", "The SEC's TV ratings", "Last season's results", "Geographic location"], correctIndex: 3, explanation: "Hawk-Eye Innovations (2026g): qualifications, experience, skills, education, certifications \"and geographic location.\"", sourceLessonSlug: "pay-eligibility-and-the-ladder" },
+          { prompt: "What does lesson 18 conclude about the top of a posted range?", options: ["It is not the offer to expect", "It is the usual starting offer", "It is the union minimum wage", "It is paid after one season"], correctIndex: 0, explanation: "Lesson 18: with the NFL hiring near the middle and the SEC range excluding bonuses, the top is not the offer to expect.", sourceLessonSlug: "pay-eligibility-and-the-ladder" },
+          { prompt: "Why does this course give no occupation-wide pay figure?", options: ["The BLS has never studied the work", "The BLS page refused the request", "Leagues forbid publishing pay data", "Vendors asked the course to omit it"], correctIndex: 1, explanation: "Lesson 18: the Bureau of Labor Statistics page for broadcast, sound and video technicians refused the request, so no occupation-wide figure could be read.", sourceLessonSlug: "pay-eligibility-and-the-ladder" },
+          { prompt: "Which posting requires current study toward an undergraduate degree?", options: ["The NFL injury video operator", "The Netherlands systems operator", "The tennis student placement", "The SEC live operations coordinator"], correctIndex: 2, explanation: "Hawk-Eye Innovations (2026i): \"Must be currently studying towards an undergraduate degree.\"", sourceLessonSlug: "pay-eligibility-and-the-ladder" },
+          { prompt: "Which postings ask for a CV in English?", options: ["The NFL operator postings", "The G League representative", "The Catapult support role", "The Italy technician postings"], correctIndex: 3, explanation: "Hawk-Eye Innovations (2026e, 2026f): \"Please attach your CV in English.\"", sourceLessonSlug: "pay-eligibility-and-the-ladder" },
+          { prompt: "What does the UK form ask that bears on eligibility?", options: ["Whether you need visa sponsorship for the UK", "Whether you hold an NFL club employment", "Whether you are a certified athletic trainer", "Whether you can work in Birmingham, Alabama"], correctIndex: 0, explanation: "Hawk-Eye Innovations (n.d.-g): whether the applicant needs \"visa sponsorship to work for Hawk-Eye in the UK.\"", sourceLessonSlug: "pay-eligibility-and-the-ladder" },
+          { prompt: "What reason does the NFL operator posting give for barring team employees?", options: ["To keep salaries in line", "None; it states only the rule", "A union contract requires it", "Team staff work other shifts"], correctIndex: 1, explanation: "Lesson 18: the posting gives no reason. The course's reading, from lesson 5, is that the league keeps injury review independent of the teams.", sourceLessonSlug: "pay-eligibility-and-the-ladder" },
+          { prompt: "Which lesson 5 facts support the reading that injury review is kept independent of teams?", options: ["Spotters are hired and paid by the home team", "Operators must be former team video staff", "UNCs lack club ties; spotters have a 5-year bar", "The clubs choose all of the booth's camera angles"], correctIndex: 2, explanation: "NFL (2022b; n.d.-e): UNCs have no affiliation with NFL clubs, and a spotter may have had no paid NFL team employment in the last 5 years.", sourceLessonSlug: "pay-eligibility-and-the-ladder" },
+          { prompt: "Does any employer read for this course publish a career map?", options: ["Yes; Hawk-Eye publishes a full map", "Yes; the NFL posts one with every job ad", "Yes; TeamWork Online publishes one", "No; the ladder is gathered from postings"], correctIndex: 3, explanation: "Lesson 18: no employer read for the course publishes a career map; the ladder is built from what the postings say.", sourceLessonSlug: "pay-eligibility-and-the-ladder" },
+          { prompt: "What do the Italy postings call the casual technician role?", options: ["An entry level route into full time work", "A final step before early retirement", "A volunteer role for students only", "A role reserved for qualified referees only"], correctIndex: 0, explanation: "Hawk-Eye Innovations (2026e): \"a great entry level route into full time employment with Hawk-Eye Innovations ltd.\"", sourceLessonSlug: "pay-eligibility-and-the-ladder" },
+          { prompt: "Which progression does the UK form list?", options: ["A guaranteed promotion after a season", "Full-time work and tournament travel", "A move into refereeing at the club", "Sponsorship to study sports medicine"], correctIndex: 1, explanation: "Hawk-Eye Innovations (n.d.-g): \"Opportunities for full-time employment\" and \"Travel across Europe and beyond to support major football tournaments.\"", sourceLessonSlug: "pay-eligibility-and-the-ladder" },
+          { prompt: "What improvement may UK casual staff contribute to, as posted?", options: ["Ticket pricing", "Club tactics", "VAR workflows", "Pitch design"], correctIndex: 2, explanation: "Hawk-Eye Innovations (n.d.-g): \"Contribute to improvements in VAR workflows.\"", sourceLessonSlug: "pay-eligibility-and-the-ladder" },
+          { prompt: "What does the Netherlands posting say the operator first focuses on?", options: ["Software engineering work", "Leading a regional team", "Remote data analysis", "On-site technical services"], correctIndex: 3, explanation: "Hawk-Eye Innovations (2026d): \"you will initially focus on our on-site technical services,\" with exposure to other services as you grow.", sourceLessonSlug: "pay-eligibility-and-the-ladder" },
+          { prompt: "What does the tennis operator role include toward others?", options: ["Developing less experienced operators", "Hiring all of the tour's line judges", "Coaching players between matches", "Selling systems to new tournaments"], correctIndex: 0, explanation: "Hawk-Eye Innovations (2026i): \"contributing to the development of less experienced operators.\"", sourceLessonSlug: "pay-eligibility-and-the-ladder" },
+          { prompt: "For whom does the SEC coordinator help deliver training?", options: ["The SEC's referees and their assessors", "Replay staff on site and in Birmingham", "Team doctors and athletic trainers", "The broadcast networks' camera crews"], correctIndex: 1, explanation: "Hawk-Eye Innovations (2026g): training programs \"for college replay staff, including both onsite technicians and the Birmingham team.\"", sourceLessonSlug: "pay-eligibility-and-the-ladder" },
+          { prompt: "Which two paths beyond operator does Hawk-Eye's careers page name?", options: ["Refereeing, and coaching", "Sales, and marketing", "Engineering, and leadership", "Medicine, and nursing"], correctIndex: 2, explanation: "Hawk-Eye Innovations (n.d.-h): \"join our engineering team,\" and \"Grow your career as part of our leadership team.\"", sourceLessonSlug: "pay-eligibility-and-the-ladder" },
+          { prompt: "What do Genius Sports' match lead and analyst roles lead, as posted?", options: ["The league's match officials and assessors", "The broadcast crew and its director", "The club's medical and fitness staff", "A group of Operators, and their training"], correctIndex: 3, explanation: "Genius Sports (2026a, 2026b): \"Lead a group of Operators\" and \"training for newly signed Operators.\"", sourceLessonSlug: "pay-eligibility-and-the-ladder" },
+          { prompt: "How does TeamWork Online label Hawk-Eye's SEC coordinator?", options: ["Entry Level", "Senior", "Manager", "Intern"], correctIndex: 0, explanation: "TeamWork Online (n.d.): \"Entry Level\"; student placements are labelled \"Intern.\"", sourceLessonSlug: "pay-eligibility-and-the-ladder" },
+          { prompt: "What progression does the NFL operator posting describe?", options: ["A path to spotter", "None at all", "A path to referee", "A path to physician"], correctIndex: 1, explanation: "NFL (2026b): the posting describes no progression.", sourceLessonSlug: "pay-eligibility-and-the-ladder" },
+          { prompt: "In lesson 18's reading of the rungs, what comes after a casual or entry seat?", options: ["An immediate move into team medicine", "A league referee's position on the field", "A part-time or fixed-term operator role", "A broadcast director's chair in the truck"], correctIndex: 2, explanation: "Reasoned from separate postings: entry, then a part-time or fixed-term operator, then a coordinator or remote desk, then engineering or leadership.", sourceLessonSlug: "pay-eligibility-and-the-ladder" },
+          { prompt: "Why may the reviewer reorder lesson 18's rungs?", options: ["Hawk-Eye's map contradicts the lesson", "The NFL published a different ladder", "The rungs come from a union contract", "Each rests on one posting, not a map"], correctIndex: 3, explanation: "Lesson 18: the reading is assembled from separate postings, not from any employer's published map.", sourceLessonSlug: "pay-eligibility-and-the-ladder" },
         ],
       },
     },
