@@ -248,7 +248,7 @@ Konijn, E. A. (2000). *Acting emotions* (B. Leach, Trans.). Amsterdam University
             prompt: "Why is the absence of a reviewer treated as a serious problem rather than a minor gap?",
             options: [
               "Practice needs feedback to improve you",
-              "Learners tend to lose motivation when nobody is watching their submitted work",
+              "Unwatched learners quit",
               "Courses without a grading component are not accepted for professional credentials",
               "Recorded material cannot be stored securely enough for casting use anyway",
             ],
@@ -260,9 +260,9 @@ Konijn, E. A. (2000). *Acting emotions* (B. Leach, Trans.). Amsterdam University
           {
             prompt: "What was the mean correlation between how people rated their own ability and how they actually performed?",
             options: [
-              "About .29",
-              "About .75, which is high enough to trust an unaided self-judgment",
-              "Almost exactly zero, meaning self-ratings carry no information at all",
+              "About .29, a real but weak link",
+              "About .75",
+              "Almost exactly zero",
               "Negative, meaning confident people reliably performed worse than modest ones",
             ],
             correctIndex: 0,
@@ -274,9 +274,9 @@ Konijn, E. A. (2000). *Acting emotions* (B. Leach, Trans.). Amsterdam University
             prompt: "What does the course say about the scientific evidence behind acting technique generally?",
             options: [
               "It is thin, so most technique is craft tradition",
-              "It is extensive and settled, which is why the major methods agree with one another",
-              "It exists only for stage work, because film acting is too recent to have been studied",
-              "It has been replaced entirely by neuroscience findings from the last two decades",
+              "It is extensive and settled",
+              "It exists only for stage work",
+              "Neuroscience has replaced it",
             ],
             correctIndex: 0,
             explanation:
@@ -300,7 +300,7 @@ Konijn, E. A. (2000). *Acting emotions* (B. Leach, Trans.). Amsterdam University
             prompt: "Why is script analysis a good fit for a text-based course specifically?",
             options: [
               "It is reading, and prose teaches reading",
-              "It requires the least talent of any acting skill, so beginners can be graded fairly on it",
+              "It requires the least talent",
               "It can be marked automatically by comparing a learner's answer against a stored key",
               "It is the only part of acting that professional performers do not already know",
             ],
@@ -313,8 +313,8 @@ Konijn, E. A. (2000). *Acting emotions* (B. Leach, Trans.). Amsterdam University
             prompt: "What is coverage?",
             options: [
               "The separate shots a scene is filmed in",
-              "The share of a script's pages a performer has memorized before the shooting day begins",
-              "The insurance a production carries against a performer being injured during a stunt",
+              "Memorized script pages",
+              "Stunt injury insurance",
               "The range of accents and dialects a performer lists as available on their resume",
             ],
             correctIndex: 0,
@@ -326,9 +326,9 @@ Konijn, E. A. (2000). *Acting emotions* (B. Leach, Trans.). Amsterdam University
             prompt: "What is a feedback loop, in the sense this lesson uses?",
             options: [
               "Something outside you reporting whether an attempt improved",
-              "The echo a performer hears when recording in a room that has not been acoustically treated",
-              "The repeated cycle of auditioning, being rejected, and auditioning again over a career",
-              "A performer's habit of watching their own reaction while a scene is still running",
+              "Echo in an untreated recording room",
+              "Auditioning, rejection, and repeat",
+              "Watching your own reaction mid-scene",
             ],
             correctIndex: 0,
             explanation:
@@ -352,7 +352,7 @@ Konijn, E. A. (2000). *Acting emotions* (B. Leach, Trans.). Amsterdam University
             prompt: "Which claim about a course of this kind would be dishonest, by this lesson's own standard?",
             options: [
               "Finishing it makes you employable",
-              "It explains what an eyeline is and why a crew places one for you rather than for the room",
+              "It defines an eyeline",
               "It sets out the technical minimum for a self-tape that nobody will have to apologize for",
               "It gives you a written procedure for reviewing a recorded scene more than once",
             ],
@@ -365,8 +365,8 @@ Konijn, E. A. (2000). *Acting emotions* (B. Leach, Trans.). Amsterdam University
             prompt: "What is a scope boundary, as the course uses the term?",
             options: [
               "The stated limit of what a course delivers",
-              "The maximum number of lessons a learner is expected to complete in a single sitting",
-              "The line between material suitable for younger learners and material that is not",
+              "The most lessons per sitting",
+              "The line for younger learners",
               "The set of territories in which a course is legally permitted to be sold",
             ],
             correctIndex: 0,
@@ -378,9 +378,9 @@ Konijn, E. A. (2000). *Acting emotions* (B. Leach, Trans.). Amsterdam University
             prompt: "Why does the course put the boundary statement in the first lesson rather than the last?",
             options: [
               "Everything after it depends on the boundary being true",
-              "Regulations covering online education require a disclaimer before any instruction begins",
-              "Learners who intend to request a refund are most likely to do so in the first week",
-              "The first lesson is the only one that appears on the public course page before purchase",
+              "Regulations require a disclaimer",
+              "Refunds peak in week one",
+              "Only it is on the public page",
             ],
             correctIndex: 0,
             explanation:
@@ -404,7 +404,7 @@ Konijn, E. A. (2000). *Acting emotions* (B. Leach, Trans.). Amsterdam University
             prompt: "Which of these is on the course's list of what it does teach?",
             options: [
               "Medium-by-medium adjustment, as rules",
-              "Live timing to an audience, practiced weekly in front of a group of your peers",
+              "Weekly live peer timing",
               "One-to-one correction of your physical habits by a trained movement teacher",
               "A guaranteed introduction to a casting director once the final assessment is passed",
             ],
@@ -417,8 +417,8 @@ Konijn, E. A. (2000). *Acting emotions* (B. Leach, Trans.). Amsterdam University
             prompt: "Why does knowing the vocabulary of the frame matter to a performer at all?",
             options: [
               "You cannot adjust to a frame you cannot name",
-              "Crews expect performers to be able to operate a camera during rehearsal setups",
-              "Casting platforms require the terminology to be listed among a performer's special skills",
+              "Crews expect you to run a camera",
+              "Casting sites require the terms",
               "Union agreements are written in that vocabulary and cannot otherwise be understood",
             ],
             correctIndex: 0,
@@ -429,10 +429,10 @@ Konijn, E. A. (2000). *Acting emotions* (B. Leach, Trans.). Amsterdam University
           {
             prompt: "According to the lesson, what does practice become once you remove the part that tells you whether you improved?",
             options: [
-              "Repetition",
-              "A rehearsal, which is still useful because it fixes the shape of the material",
-              "Deliberate practice, which is the technical term for unsupervised work",
-              "Muscle memory, which is the most durable form of learning available to a performer",
+              "Repetition rather than practice",
+              "A rehearsal",
+              "Deliberate practice",
+              "Muscle memory",
             ],
             correctIndex: 0,
             explanation:
@@ -456,7 +456,7 @@ Konijn, E. A. (2000). *Acting emotions* (B. Leach, Trans.). Amsterdam University
             prompt: "Which of these does the lesson treat as a research finding rather than as craft tradition?",
             options: [
               "The average accuracy of self-ratings of ability",
-              "The instruction to make a performance smaller when the camera moves in for a close-up",
+              "The make-it-smaller close-up rule",
               "The advice to aim an action at another person rather than describing an emotion",
               "The recommendation to mark unit breaks on a script before rehearsing it",
             ],
@@ -468,9 +468,9 @@ Konijn, E. A. (2000). *Acting emotions* (B. Leach, Trans.). Amsterdam University
           {
             prompt: "What is the lesson's stance toward schools that do sell cohorts, coaching, and industry access?",
             options: [
-              "Some genuinely deliver them",
-              "They are misleading learners, because no course of any format can improve a performance",
-              "They are the only legitimate way to learn, so this course is a supplement rather than a course",
+              "Some of them genuinely deliver those things",
+              "They mislead learners",
+              "They are the only legitimate way",
               "Their claims cannot be assessed, so learners should avoid all paid training entirely",
             ],
             correctIndex: 0,
@@ -482,9 +482,9 @@ Konijn, E. A. (2000). *Acting emotions* (B. Leach, Trans.). Amsterdam University
             prompt: "Why does the course flag which of its claims are craft and which are evidence?",
             options: [
               "Telling them apart is a professional skill",
-              "Publishers require every educational claim to carry a numbered evidence rating",
-              "Craft claims are unreliable and should be treated as optional reading",
-              "Evidence-based claims are the only ones that can appear in assessment questions",
+              "Publishers require ratings",
+              "Craft claims are unreliable",
+              "Only evidence claims get assessed",
             ],
             correctIndex: 0,
             explanation:
@@ -508,7 +508,7 @@ Konijn, E. A. (2000). *Acting emotions* (B. Leach, Trans.). Amsterdam University
             prompt: "What is the correct reading of the .29 correlation for a performer working alone?",
             options: [
               "Your impression of a take is weak evidence",
-              "Your impression of a take is worthless, so recorded work should not be reviewed at all",
+              "Your impression is worthless",
               "Your impression is accurate as long as you are experienced in the medium being reviewed",
               "Your impression improves automatically with the number of takes you have recorded",
             ],
@@ -521,8 +521,8 @@ Konijn, E. A. (2000). *Acting emotions* (B. Leach, Trans.). Amsterdam University
             prompt: "What does a usable statement of what a character wants have to be?",
             options: [
               "Specific enough to tell whether they got it",
-              "Broad enough to cover the character's behavior across the whole of the script",
-              "Emotionally resonant, so that the performer can feel it before the scene begins",
+              "Broad enough for the whole script",
+              "Emotionally resonant",
               "Agreed with the other performer in the scene before either of them has read it",
             ],
             correctIndex: 0,
@@ -534,9 +534,9 @@ Konijn, E. A. (2000). *Acting emotions* (B. Leach, Trans.). Amsterdam University
             prompt: "Why does \"to be respected\" fail as a statement of a character's want in a scene?",
             options: [
               "You could not tell whether they got it",
-              "It describes a negative goal, and characters can only pursue things they want to gain",
-              "It belongs to the performer rather than to the character, which confuses the two",
-              "It is a feeling, and feelings are the only thing a performer is forbidden to want",
+              "It is a negative goal",
+              "It belongs to the performer",
+              "Feelings are forbidden wants",
             ],
             correctIndex: 0,
             explanation:
@@ -559,8 +559,8 @@ Konijn, E. A. (2000). *Acting emotions* (B. Leach, Trans.). Amsterdam University
           {
             prompt: "What is a tactic?",
             options: [
-              "One attempt at the want",
-              "The overall strategy a character has worked out before the scene begins",
+              "One attempt at getting the want",
+              "The overall strategy",
               "The physical position a performer takes so that the camera can see them clearly",
               "A rehearsed piece of business used to fill a pause while another character speaks",
             ],
@@ -574,8 +574,8 @@ Konijn, E. A. (2000). *Acting emotions* (B. Leach, Trans.). Amsterdam University
             options: [
               "A tactic fails and is abandoned",
               "The performer runs out of breath and has to take another one mid-speech",
-              "A page of the script ends and the next page begins with a new speaker",
-              "The camera moves to a different position for the next portion of coverage",
+              "A page ends",
+              "The camera moves",
             ],
             correctIndex: 0,
             explanation:
@@ -599,9 +599,9 @@ Konijn, E. A. (2000). *Acting emotions* (B. Leach, Trans.). Amsterdam University
             prompt: "What are stakes?",
             options: [
               "What it costs if the character fails",
-              "The amount of screen time a character has been allocated across the whole production",
-              "The emotional intensity a director asks for on a scale agreed during rehearsal",
-              "The commitments a performer has made to other productions during the same period",
+              "Allocated screen time",
+              "A director's intensity scale",
+              "Other booked productions",
             ],
             correctIndex: 0,
             explanation:
@@ -625,7 +625,7 @@ Konijn, E. A. (2000). *Acting emotions* (B. Leach, Trans.). Amsterdam University
             prompt: "Why must analysis precede a decision about how to deliver a line?",
             options: [
               "A line's meaning is set by its function",
-              "Directors expect performers to arrive with the line readings already fixed and unchangeable",
+              "Directors want fixed readings",
               "Delivery decisions are physical, and physical choices must always be made last",
               "Reading a line aloud too early makes it harder to memorize accurately later",
             ],
@@ -637,9 +637,9 @@ Konijn, E. A. (2000). *Acting emotions* (B. Leach, Trans.). Amsterdam University
           {
             prompt: "The lesson gives four questions to ask of every scene. Which of these is one of them?",
             options: [
-              "What is in the way?",
-              "What genre is this piece, and how does that change the level of realism required?",
-              "Which other characters have more lines than mine in this particular sequence?",
+              "What is in the way of the want?",
+              "What genre is this?",
+              "Who has more lines?",
               "How long has this character known the other person in the room before now?",
             ],
             correctIndex: 0,
@@ -650,10 +650,10 @@ Konijn, E. A. (2000). *Acting emotions* (B. Leach, Trans.). Amsterdam University
           {
             prompt: "What does the lesson say most weak performances actually are?",
             options: [
-              "Reading problems",
-              "Confidence problems, which resolve on their own once a performer has enough experience",
-              "Technical problems caused by unfamiliarity with the equipment being used",
-              "Casting problems, because the performer was not suited to the part in the first place",
+              "Reading problems on the page",
+              "Confidence problems",
+              "Gear problems",
+              "Casting problems",
             ],
             correctIndex: 0,
             explanation:
@@ -678,7 +678,7 @@ Konijn, E. A. (2000). *Acting emotions* (B. Leach, Trans.). Amsterdam University
             options: [
               "Another person's opposing want",
               "A camera position that makes the intended blocking impossible to perform as written",
-              "A line of dialogue the performer finds difficult to say without stumbling over it",
+              "A hard line to say",
               "The absence of a rehearsal period, which prevents choices from being tested in advance",
             ],
             correctIndex: 0,
@@ -690,9 +690,9 @@ Konijn, E. A. (2000). *Acting emotions* (B. Leach, Trans.). Amsterdam University
             prompt: "Why is the part of the analysis about what a character DOES the important one for performance?",
             options: [
               "It is the part that is actually performed",
-              "It is the only part a director will ask about during a rehearsal on the day of shooting",
+              "The part directors ask about",
               "It is the part that determines how many pages of coverage a scene will require",
-              "It is the easiest part to change if a scene is not working during the take",
+              "The easiest part to change",
             ],
             correctIndex: 0,
             explanation:
@@ -703,9 +703,9 @@ Konijn, E. A. (2000). *Acting emotions* (B. Leach, Trans.). Amsterdam University
             prompt: "The lesson says a want should be located in this scene rather than in a life. What does that rule out?",
             options: [
               "Statements about what the character wants overall",
-              "Statements naming another person, because a want must be about the character themselves",
-              "Statements involving objects, because physical goals are too literal to play",
-              "Statements the performer disagrees with morally, because those cannot be pursued honestly",
+              "Statements naming another person",
+              "Statements involving objects",
+              "Statements you morally reject",
             ],
             correctIndex: 0,
             explanation:
@@ -728,8 +728,8 @@ Konijn, E. A. (2000). *Acting emotions* (B. Leach, Trans.). Amsterdam University
           {
             prompt: "Which reading of \"It is fine\" does the line itself decide?",
             options: [
-              "None of them",
-              "Forgiveness, because that is the plain meaning of the words as written",
+              "None of them; the line is neutral",
+              "Forgiveness",
               "A threat, because flat statements in dramatic writing are conventionally hostile",
               "A request to be asked again, because short lines invite a follow-up question",
             ],
@@ -741,9 +741,9 @@ Konijn, E. A. (2000). *Acting emotions* (B. Leach, Trans.). Amsterdam University
           {
             prompt: "Which of these applies to a scene in any medium, according to this lesson?",
             options: [
-              "The four questions",
-              "The requirement to mark floor positions so that focus can be pulled accurately",
-              "The convention of playing to the back of the house rather than to a partner",
+              "The four questions of analysis",
+              "Floor marks for focus",
+              "Playing to the house",
               "The rule that lines must be delivered exactly as written for legal reasons",
             ],
             correctIndex: 0,
@@ -755,9 +755,9 @@ Konijn, E. A. (2000). *Acting emotions* (B. Leach, Trans.). Amsterdam University
             prompt: "What happens to a scene's temperature when the stakes are left unexamined?",
             options: [
               "It sits at a default level",
-              "It rises, because uncertainty about consequences makes a performer anxious on camera",
-              "It becomes erratic, changing without reason between one take and the next",
-              "It has no effect, because temperature is set entirely by the size of the want",
+              "It rises",
+              "It turns erratic",
+              "No effect at all",
             ],
             correctIndex: 0,
             explanation:
@@ -781,7 +781,7 @@ Konijn, E. A. (2000). *Acting emotions* (B. Leach, Trans.). Amsterdam University
             prompt: "Why does the lesson say a want must name a specific person or thing?",
             options: [
               "So the scene can settle whether it happened",
-              "So the other performer can be told about it in advance and play the opposite",
+              "So the partner can play against it",
               "So the director has something concrete to write in the shooting schedule",
               "So the want can be stated in a single sentence during an audition discussion",
             ],
@@ -794,8 +794,8 @@ Konijn, E. A. (2000). *Acting emotions* (B. Leach, Trans.). Amsterdam University
             prompt: "According to the lesson, the diagnosis of a vague scene is available to you under what conditions?",
             options: [
               "Right now, with no camera and no coach",
-              "Only after recording the scene and reviewing the footage several times",
-              "Only in a rehearsal room with another performer reading the opposite part",
+              "Only after recording it",
+              "Only with a scene partner",
               "Only once a director has given a note identifying which section is unclear",
             ],
             correctIndex: 0,
@@ -806,10 +806,10 @@ Konijn, E. A. (2000). *Acting emotions* (B. Leach, Trans.). Amsterdam University
           {
             prompt: "What does the course say you cannot play?",
             options: [
-              "An emotion",
-              "An action, unless the other performer has agreed to receive it in the same way",
-              "A tactic, because tactics are decided by the director rather than by the performer",
-              "A want, since wants belong to the character and not to the person performing",
+              "An emotion on its own",
+              "An action",
+              "A tactic",
+              "A want",
             ],
             correctIndex: 0,
             explanation:
@@ -833,7 +833,7 @@ Konijn, E. A. (2000). *Acting emotions* (B. Leach, Trans.). Amsterdam University
             prompt: "Why do audiences catch indicating so reliably?",
             options: [
               "Real people fight rather than display",
-              "The face has more muscles than any other part of the body and is hardest to control",
+              "Faces are hard to control",
               "Audiences have been trained by decades of naturalistic screen work to spot technique",
               "Indicating always involves louder delivery, and volume is the easiest signal to detect",
             ],
@@ -846,8 +846,8 @@ Konijn, E. A. (2000). *Acting emotions* (B. Leach, Trans.). Amsterdam University
             prompt: "What is a result note?",
             options: [
               "A note describing the finished effect",
-              "A note written down by the script supervisor recording what happened in each take",
-              "A note the editor sends back asking for a specific line to be re-recorded later",
+              "A script supervisor's log",
+              "An editor's pickup request",
               "A note from a producer about how a scene tested with a preview audience",
             ],
             correctIndex: 0,
@@ -858,10 +858,10 @@ Konijn, E. A. (2000). *Acting emotions* (B. Leach, Trans.). Amsterdam University
           {
             prompt: "What do all the playable versions in the lesson's translation table have in common?",
             options: [
-              "A target",
-              "A physical component, so that the performer always has something concrete to do with the body",
-              "A time limit, so that the attempt has to succeed or fail before the scene ends",
-              "A negative form, since characters are more active when they are avoiding something",
+              "A target: someone it is aimed at",
+              "A physical component",
+              "A time limit",
+              "A negative form",
             ],
             correctIndex: 0,
             explanation:
@@ -885,7 +885,7 @@ Konijn, E. A. (2000). *Acting emotions* (B. Leach, Trans.). Amsterdam University
             prompt: "Where does the feeling come from, if it is not summoned?",
             options: [
               "It is a byproduct of really trying",
-              "It is generated by recalling a comparable event from the performer's own past",
+              "Recalling your own past",
               "It is supplied by the music and the editing once the footage reaches post-production",
               "It arrives from the other performer, who is responsible for provoking it in the scene",
             ],
@@ -898,8 +898,8 @@ Konijn, E. A. (2000). *Acting emotions* (B. Leach, Trans.). Amsterdam University
             prompt: "Why is a played action more durable across many takes than a summoned emotion?",
             options: [
               "It regenerates on its own each take",
-              "It requires less physical energy, so the performer is less tired by the end of the day",
-              "It is written into the script, so the performer does not have to remember it",
+              "It takes less energy",
+              "It is in the script",
               "It is the same in every take, which means the editor can cut between takes freely",
             ],
             correctIndex: 0,
@@ -911,9 +911,9 @@ Konijn, E. A. (2000). *Acting emotions* (B. Leach, Trans.). Amsterdam University
             prompt: "How does the previous lesson's analysis feed directly into playable instructions?",
             options: [
               "The want gives the target and the obstacle guarantees difficulty",
-              "The unit breaks tell the performer where the camera will cut, which sets the pace",
-              "The stakes decide which lines should be memorized first during preparation",
-              "The subtext supplies the emotion, which the performer then reproduces on cue",
+              "Unit breaks set the camera's cuts",
+              "Stakes set the memorizing order",
+              "Subtext supplies the emotion",
             ],
             correctIndex: 0,
             explanation:
@@ -936,8 +936,8 @@ Konijn, E. A. (2000). *Acting emotions* (B. Leach, Trans.). Amsterdam University
           {
             prompt: "What makes something playable, according to the lesson's own test?",
             options: [
-              "It is being done",
-              "It is forceful enough to change the other character's behavior within the scene",
+              "It is actually being done",
+              "It is forceful",
               "It can be described in a single word, so it is easy to remember during a take",
               "It matches the emotion the writer intended when the scene was first written",
             ],
@@ -950,8 +950,8 @@ Konijn, E. A. (2000). *Acting emotions* (B. Leach, Trans.). Amsterdam University
             prompt: "Convert \"show that you are scared\" into something playable, following the lesson's table.",
             options: [
               "Find out whether he is armed",
-              "Let the fear register clearly on your face before you say the next line",
-              "Raise the pitch of your voice and shorten the breath so the audience reads tension",
+              "Let the fear show",
+              "Raise your pitch",
               "Recall the most frightened you have ever been and hold on to that during the take",
             ],
             correctIndex: 0,
@@ -963,9 +963,9 @@ Konijn, E. A. (2000). *Acting emotions* (B. Leach, Trans.). Amsterdam University
             prompt: "Why does telling a performer to \"be sad\" leave them with nothing to do?",
             options: [
               "It names a state, not an act",
-              "It is too general, and would work if the director specified how sad on a numbered scale",
-              "It refers to the character rather than to the performer, which confuses the instruction",
-              "It requires information about the character's past that is usually not in the script",
+              "It is too general",
+              "It means the role",
+              "It lacks backstory",
             ],
             correctIndex: 0,
             explanation:
@@ -989,7 +989,7 @@ Konijn, E. A. (2000). *Acting emotions* (B. Leach, Trans.). Amsterdam University
             prompt: "According to the lesson, which is the single most common note in the craft?",
             options: [
               "You cannot play an emotion",
-              "You are moving too much for the size of the frame you are currently in",
+              "You move too much",
               "You are speaking too quietly for the microphone position that has been set",
               "You are not matching what you did physically in the previous take",
             ],
@@ -1001,9 +1001,9 @@ Konijn, E. A. (2000). *Acting emotions* (B. Leach, Trans.). Amsterdam University
           {
             prompt: "A director says \"more warmth.\" What kind of note is that?",
             options: [
-              "A result note",
-              "A playable action, because warmth is something one person directs at another",
-              "A technical note about vocal quality rather than about the performance itself",
+              "A result note, describing an effect",
+              "A playable action",
+              "A vocal note",
               "A note about the lighting, which affects how a performance appears on screen",
             ],
             correctIndex: 0,
@@ -1015,9 +1015,9 @@ Konijn, E. A. (2000). *Acting emotions* (B. Leach, Trans.). Amsterdam University
             prompt: "Why does the lesson say the translation skill is worth drilling on paper?",
             options: [
               "It converts unplayable notes into things you can do",
-              "Directors respond better to performers who can quote the technical terminology back",
-              "Written translations can be submitted as evidence of preparation before a shoot",
-              "Paper work is the only part of the process that a course can grade automatically",
+              "Directors like jargon",
+              "It proves preparation",
+              "It can be auto-graded",
             ],
             correctIndex: 0,
             explanation:
@@ -1042,7 +1042,7 @@ Konijn, E. A. (2000). *Acting emotions* (B. Leach, Trans.). Amsterdam University
             options: [
               "Be funnier becomes catch him out before he finishes",
               "Be more upset becomes let the tears come before the line rather than after it",
-              "More warmth becomes soften the voice and slow the delivery for the whole scene",
+              "More warmth becomes soften the voice",
               "Be funnier becomes find the comedy in the situation and let the audience see it",
             ],
             correctIndex: 0,
@@ -1053,9 +1053,9 @@ Konijn, E. A. (2000). *Acting emotions* (B. Leach, Trans.). Amsterdam University
           {
             prompt: "The lesson calls the feeling a byproduct. Why is that framed as good news?",
             options: [
-              "Byproducts are reliable",
-              "Byproducts require no preparation, which shortens the time needed before a shoot",
-              "Byproducts belong to the character rather than the performer, so they cost nothing",
+              "Byproducts recur reliably on their own",
+              "Byproducts need no prep",
+              "Byproducts cost nothing",
               "Byproducts can be adjusted by the director between takes without a new rehearsal",
             ],
             correctIndex: 0,
@@ -1067,9 +1067,9 @@ Konijn, E. A. (2000). *Acting emotions* (B. Leach, Trans.). Amsterdam University
             prompt: "Which of these is closest to the lesson's caution about aggressive verbs?",
             options: [
               "Not every action is forceful",
-              "Aggressive verbs should be avoided entirely because they push a scene toward melodrama",
-              "Aggressive verbs work only in drama, and comedy requires gentler ones throughout",
-              "Aggressive verbs are the most durable, so they should be the default choice",
+              "Avoid them entirely",
+              "Only for drama",
+              "Use them by default",
             ],
             correctIndex: 0,
             explanation:
@@ -1094,7 +1094,7 @@ Konijn, E. A. (2000). *Acting emotions* (B. Leach, Trans.). Amsterdam University
             options: [
               "The emotions of performing",
               "The character's emotions, reproduced faithfully each night through recall techniques",
-              "Nothing at all, because trained performers suppress feeling in order to stay accurate",
+              "Nothing at all",
               "A blend that becomes more like the character's the longer a production runs",
             ],
             correctIndex: 0,
@@ -1106,8 +1106,8 @@ Konijn, E. A. (2000). *Acting emotions* (B. Leach, Trans.). Amsterdam University
             prompt: "What are task emotions?",
             options: [
               "Feelings belonging to the act of performing",
-              "Feelings a performer deliberately generates during preparation and stores for later use",
-              "Feelings the audience experiences and transmits back to the stage during a live show",
+              "Stored prep feelings",
+              "The audience's feelings",
               "Feelings a character has about the specific job or duty the plot has assigned them",
             ],
             correctIndex: 0,
@@ -1119,9 +1119,9 @@ Konijn, E. A. (2000). *Acting emotions* (B. Leach, Trans.). Amsterdam University
             prompt: "What is the craft consequence of the task-emotions finding?",
             options: [
               "You do not have to feel it to play it",
-              "You should avoid emotionally demanding roles until you have several years of experience",
-              "You should rehearse each emotion separately before assembling them into a performance",
-              "You should tell a director when you are unable to reach the required feeling on a take",
+              "Avoid demanding roles",
+              "Rehearse each emotion apart",
+              "Report it to the director",
             ],
             correctIndex: 0,
             explanation:
@@ -1145,7 +1145,7 @@ Konijn, E. A. (2000). *Acting emotions* (B. Leach, Trans.). Amsterdam University
             prompt: "What did answering in character produce in the fMRI study?",
             options: [
               "Reductions in activity, including cortical midline deactivations",
-              "Increased activity throughout the frontal lobe, consistent with heightened concentration",
+              "Frontal-lobe activity rose",
               "Activation of the same regions used when recalling a real autobiographical memory",
               "No measurable difference from answering as oneself, which surprised the researchers",
             ],
@@ -1158,8 +1158,8 @@ Konijn, E. A. (2000). *Acting emotions* (B. Leach, Trans.). Amsterdam University
             prompt: "What is the honest limit of the fMRI result?",
             options: [
               "It studied questions in a scanner, not scenes",
-              "It used only stage-trained actors, so it says nothing about screen performance at all",
-              "It was never published in a peer-reviewed journal and remains a preprint",
+              "It used only stage actors",
+              "It is an unpublished preprint",
               "It measured blood flow rather than brain activity, so the interpretation is disputed",
             ],
             correctIndex: 0,
@@ -1171,9 +1171,9 @@ Konijn, E. A. (2000). *Acting emotions* (B. Leach, Trans.). Amsterdam University
             prompt: "What is the cortical midline network, in this lesson's usage?",
             options: [
               "Frontal-lobe regions that deactivated in the study",
-              "The bundle of fibers connecting the two hemispheres, which coordinates physical movement",
-              "The brain system responsible for storing and retrieving memorized text",
-              "The area that produces emotional responses to music and other performed art",
+              "The fibers joining the hemispheres",
+              "The memorized-text system",
+              "The music-response area",
             ],
             correctIndex: 0,
             explanation:
@@ -1197,7 +1197,7 @@ Konijn, E. A. (2000). *Acting emotions* (B. Leach, Trans.). Amsterdam University
             prompt: "What is the honest position the lesson recommends toward the technique you are taught?",
             options: [
               "Respect it as craft, not as evidence",
-              "Reject anything that has not been tested, since untested advice is likely to be harmful",
+              "Reject anything untested",
               "Follow whichever method your first teacher used, because consistency matters most",
               "Wait for better research before committing to any particular approach to the work",
             ],
@@ -1210,8 +1210,8 @@ Konijn, E. A. (2000). *Acting emotions* (B. Leach, Trans.). Amsterdam University
             prompt: "What is self-auditing, and why is it a problem?",
             options: [
               "Monitoring your feelings mid-take, which flattens it",
-              "Reviewing your own footage after a shoot, which biases you against your best work",
-              "Keeping a written record of every take, which distracts from the next setup",
+              "Reviewing footage after a shoot",
+              "Logging every take",
               "Comparing yourself to other performers on set, which damages working relationships",
             ],
             correctIndex: 0,
@@ -1223,9 +1223,9 @@ Konijn, E. A. (2000). *Acting emotions* (B. Leach, Trans.). Amsterdam University
             prompt: "What does the fact that different acting traditions disagree tell you?",
             options: [
               "They are tools rather than truths",
-              "All but one of them must be wrong, and identifying which is a research question",
-              "The disagreements are superficial and dissolve once the terminology is translated",
-              "Performers should train exclusively in one tradition to avoid contradictory habits",
+              "All but one are wrong",
+              "They differ in name only",
+              "Train in just one",
             ],
             correctIndex: 0,
             explanation:
@@ -1249,7 +1249,7 @@ Konijn, E. A. (2000). *Acting emotions* (B. Leach, Trans.). Amsterdam University
             prompt: "What is naturalistic acting?",
             options: [
               "The recent, realism-oriented style most screen work assumes",
-              "The classical tradition of heightened delivery that dominated theater before the 1900s",
+              "Heightened classical delivery",
               "A rehearsal method in which performers improvise rather than working from a script",
               "The practice of performing without makeup or costume so that the work appears unmediated",
             ],
@@ -1262,8 +1262,8 @@ Konijn, E. A. (2000). *Acting emotions* (B. Leach, Trans.). Amsterdam University
             prompt: "What does the lesson mean when it says the character's emotion is constructed and delivered?",
             options: [
               "It is built and shown rather than privately suffered",
-              "It is written by the writer, so the performer contributes nothing to it",
-              "It is assembled in the edit from several takes rather than performed in one",
+              "It is the writer's alone",
+              "It is assembled in the edit",
               "It is produced by the audience and only appears to originate on the stage",
             ],
             correctIndex: 0,
@@ -1275,9 +1275,9 @@ Konijn, E. A. (2000). *Acting emotions* (B. Leach, Trans.). Amsterdam University
             prompt: "Which of the three practice changes does the lesson recommend regarding technique?",
             options: [
               "Use what makes you do something",
-              "Choose one method and apply it consistently to every role for the whole of a career",
-              "Learn every method in sequence, in the historical order in which they were developed",
-              "Prefer the method with the strongest experimental support behind it at any given time",
+              "One method, always",
+              "Every method in order",
+              "The best-tested method",
             ],
             correctIndex: 0,
             explanation:
@@ -1300,8 +1300,8 @@ Konijn, E. A. (2000). *Acting emotions* (B. Leach, Trans.). Amsterdam University
           {
             prompt: "The lesson says knowing the difference between craft tradition and a finding is itself something. What?",
             options: [
-              "A professional skill",
-              "A requirement for union membership in most English-speaking countries",
+              "A professional skill in its own right",
+              "A union requirement",
               "An academic concern with no bearing on what happens in a rehearsal room",
               "A sign that a performer has been trained at a conservatory rather than privately",
             ],
@@ -1314,8 +1314,8 @@ Konijn, E. A. (2000). *Acting emotions* (B. Leach, Trans.). Amsterdam University
             prompt: "What did the authors of the fMRI study call the pattern they observed?",
             options: [
               "A deactivation-driven process",
-              "A heightened simulation state, in which the actor models another mind at high intensity",
-              "An emotional recall response, matching the pattern seen when recalling personal memories",
+              "A simulation state",
+              "An emotional recall",
               "A dual-attention condition, with the actor tracking both self and character at once",
             ],
             correctIndex: 0,
@@ -1327,9 +1327,9 @@ Konijn, E. A. (2000). *Acting emotions* (B. Leach, Trans.). Amsterdam University
             prompt: "What does the lesson say a performer should stop doing mid-scene?",
             options: [
               "Checking their own feelings",
-              "Adjusting to what the other performer is doing, since that breaks the agreed blocking",
-              "Thinking about the character's want, because analysis belongs to preparation only",
-              "Listening for direction, because notes given during a take cannot be acted on",
+              "Adapting to others",
+              "Analyzing the want",
+              "Listening for notes",
             ],
             correctIndex: 0,
             explanation:
@@ -1353,7 +1353,7 @@ Konijn, E. A. (2000). *Acting emotions* (B. Leach, Trans.). Amsterdam University
             prompt: "Why does this lesson exist in a practical acting course at all?",
             options: [
               "Sorting evidence from tradition protects you",
-              "Employers increasingly require performers to hold a qualification in performance science",
+              "Employers want a science credential",
               "Directors give notes in neuroscientific terms, so the vocabulary is needed on set",
               "The research determines which of the competing acting methods a learner should adopt",
             ],
@@ -1613,9 +1613,9 @@ Murch, W. (2001). *In the blink of an eye: A perspective on film editing* (2nd e
             prompt: "Order from tightest to widest: medium long shot, extreme close-up, medium close-up, long shot.",
             options: [
               "Extreme close-up, medium close-up, medium long shot, long shot",
-              "Medium close-up, extreme close-up, long shot, medium long shot, since medium always precedes extreme",
-              "Long shot, medium long shot, medium close-up, extreme close-up, which is the order a scene is normally shot in",
-              "Extreme close-up, medium long shot, medium close-up, long shot, because medium long sits between the two tight sizes",
+              "Medium close-up, extreme close-up, long shot, medium long shot",
+              "Long shot, medium long shot, medium close-up, extreme close-up",
+              "Extreme close-up, medium long shot, medium close-up, long shot",
             ],
             correctIndex: 0,
             explanation:
@@ -1625,9 +1625,9 @@ Murch, W. (2001). *In the blink of an eye: A perspective on film editing* (2nd e
           {
             prompt: "Roughly what does a medium close-up hold?",
             options: [
-              "Head to mid-chest",
-              "The whole body from the top of the head down to the feet, with a little room around it",
-              "A single detail such as the eyes alone or a hand resting on a glass",
+              "From the head down to mid-chest",
+              "The whole body",
+              "A single detail",
               "The figure small inside a landscape, so that the setting dominates the frame",
             ],
             correctIndex: 0,
@@ -1639,9 +1639,9 @@ Murch, W. (2001). *In the blink of an eye: A perspective on film editing* (2nd e
             prompt: "What does an extreme close-up typically hold?",
             options: [
               "A detail, such as the eyes",
-              "The head and shoulders of a performer, with a modest gap of headroom above",
-              "Two performers framed together so their reactions can be seen at the same time",
-              "Everything from the knees up, which is sometimes called a three-quarter shot",
+              "Head, shoulders",
+              "Two performers",
+              "Knees up",
             ],
             correctIndex: 0,
             explanation:
@@ -1665,7 +1665,7 @@ Murch, W. (2001). *In the blink of an eye: A perspective on film editing* (2nd e
             prompt: "What is an over the shoulder?",
             options: [
               "One person framed past the other's near shoulder",
-              "A shot taken from a raised position looking down on the whole of a scene",
+              "A raised shot looking down",
               "A move in which the camera travels around behind a performer during the take",
               "A glance a performer gives to the camera before turning back into the scene",
             ],
@@ -1678,9 +1678,9 @@ Murch, W. (2001). *In the blink of an eye: A perspective on film editing* (2nd e
             prompt: "What is a master?",
             options: [
               "A continuous take of the whole scene",
-              "The take the director has chosen as the one that will appear in the final cut",
+              "The director's chosen take",
               "The highest-resolution copy of the footage, from which all other versions are made",
-              "The performer whose eyeline the rest of the scene is arranged around",
+              "The lead performer",
             ],
             correctIndex: 0,
             explanation:
@@ -1691,9 +1691,9 @@ Murch, W. (2001). *In the blink of an eye: A perspective on film editing* (2nd e
             prompt: "What is an establishing shot for?",
             options: [
               "Telling the audience where everyone is",
-              "Giving the performers a rehearsal pass before the closer coverage begins",
-              "Recording the sound of a location without any dialogue over the top of it",
-              "Checking that the lighting is even before the main takes are recorded",
+              "Rehearsing the performers",
+              "Recording room tone",
+              "Checking the lighting",
             ],
             correctIndex: 0,
             explanation:
@@ -1717,7 +1717,7 @@ Murch, W. (2001). *In the blink of an eye: A perspective on film editing* (2nd e
             prompt: "What is the professional habit when the frame size matters and the naming is ambiguous?",
             options: [
               "Confirm the frame rather than infer it",
-              "Assume the tightest plausible reading, since playing small is safer than playing large",
+              "Assume the tightest reading",
               "Watch the monitor between takes and work out the size from the recorded image",
               "Default to the size used in the previous setup, since coverage is normally consistent",
             ],
@@ -1730,8 +1730,8 @@ Murch, W. (2001). *In the blink of an eye: A perspective on film editing* (2nd e
             prompt: "Why does a performer need the shot-size vocabulary at all?",
             options: [
               "What the audience cannot see does not exist",
-              "Crews will not give notes to a performer who has not learned the technical terminology",
-              "The size determines how many takes a scene will be given before moving on",
+              "Crews will not note you otherwise",
+              "It sets the take count",
               "Union agreements set different rates depending on how tight the framing is",
             ],
             correctIndex: 0,
@@ -1742,10 +1742,10 @@ Murch, W. (2001). *In the blink of an eye: A perspective on film editing* (2nd e
           {
             prompt: "What is another common name for a medium long shot?",
             options: [
-              "A cowboy",
-              "A dirty single, because part of another performer is visible in the frame",
-              "A slate, because it is the size used to record the identification board",
-              "A plate, because it is the background shot other elements are added to later",
+              "A cowboy, or a three-quarter",
+              "A dirty single",
+              "A slate",
+              "A plate",
             ],
             correctIndex: 0,
             explanation:
@@ -1769,7 +1769,7 @@ Murch, W. (2001). *In the blink of an eye: A perspective on film editing* (2nd e
             prompt: "Someone on set says \"tight two.\" What should you conclude?",
             options: [
               "Two people, tighter than usual, so confirm the frame",
-              "Two takes will be recorded before the setup changes to a different position",
+              "Two takes before a new setup",
               "The shot will be two seconds long, which is standard for a reaction insert",
               "Two cameras are running simultaneously on the same performer from different angles",
             ],
@@ -1781,9 +1781,9 @@ Murch, W. (2001). *In the blink of an eye: A perspective on film editing* (2nd e
           {
             prompt: "Which pair of terms describes how many people are in the frame rather than how tight it is?",
             options: [
-              "Single and two shot",
-              "Close-up and medium close-up, which count the number of visible performers",
-              "Master and establishing shot, which both refer to the size of the group being covered",
+              "Single and two shot, which count people",
+              "Close-up and medium close-up",
+              "Master and establishing shot",
               "Long shot and extreme long shot, which are defined by the number of figures present",
             ],
             correctIndex: 0,
@@ -1794,10 +1794,10 @@ Murch, W. (2001). *In the blink of an eye: A perspective on film editing* (2nd e
           {
             prompt: "What is the tighter coverage cut against?",
             options: [
-              "The master",
-              "The establishing shot, which fixes the pace the closer shots have to keep",
-              "The rehearsal take, which is recorded specifically as a matching reference",
-              "The widest available lens, which sets the standard for how much movement is allowed",
+              "The master shot of the whole scene",
+              "The establishing shot",
+              "The rehearsal take",
+              "The widest lens",
             ],
             correctIndex: 0,
             explanation:
@@ -1822,7 +1822,7 @@ Murch, W. (2001). *In the blink of an eye: A perspective on film editing* (2nd e
             options: [
               "It is a shared approximation",
               "It is fixed by an international standards body and is identical on every production",
-              "It changed completely with the move to digital and the older names are now obsolete",
+              "It is now obsolete",
               "It differs by genre, with drama and comedy using entirely separate sets of names",
             ],
             correctIndex: 0,
@@ -1833,8 +1833,8 @@ Murch, W. (2001). *In the blink of an eye: A perspective on film editing* (2nd e
           {
             prompt: "Roughly what does a medium shot hold?",
             options: [
-              "Waist up",
-              "Knees up, which is why it is sometimes called a three-quarter or a cowboy",
+              "Roughly from the waist up",
+              "Knees up",
               "Head and a little of the shoulders, with the eyes about a third down the frame",
               "The whole figure with generous space above and below it",
             ],
@@ -1847,9 +1847,9 @@ Murch, W. (2001). *In the blink of an eye: A perspective on film editing* (2nd e
             prompt: "Why does the lesson say the fuzziness of the boundaries is not a flaw in your knowledge?",
             options: [
               "The sources themselves disagree",
-              "The boundaries are precise but are deliberately kept secret from performers by crews",
-              "Only camera departments are expected to know them, so performers are excused",
-              "The names are being replaced by numeric codes, so learning them is no longer worthwhile",
+              "Crews keep them secret",
+              "Only crews must know",
+              "Codes replace them",
             ],
             correctIndex: 0,
             explanation:
@@ -1873,7 +1873,7 @@ Murch, W. (2001). *In the blink of an eye: A perspective on film editing* (2nd e
             prompt: "What does \"smaller\" NOT mean when the frame tightens?",
             options: [
               "Less committed or less specific",
-              "A reduced range of physical movement across the whole of the take",
+              "Less range of movement",
               "Gesture kept close to the body rather than travelling away from it",
               "A vocal level closer to ordinary conversation than to projection",
             ],
@@ -1885,9 +1885,9 @@ Murch, W. (2001). *In the blink of an eye: A perspective on film editing* (2nd e
           {
             prompt: "In a long shot, where does a realization have to be legible?",
             options: [
-              "In the body",
-              "In the eyes, since a realization is always read from where a performer is looking",
-              "In the voice, because at that distance sound carries better than image",
+              "In the body, through weight and hands",
+              "In the eyes",
+              "In the voice",
               "In the pause before the next line, since visual detail is unavailable at that size",
             ],
             correctIndex: 0,
@@ -1899,9 +1899,9 @@ Murch, W. (2001). *In the blink of an eye: A perspective on film editing* (2nd e
             prompt: "In an extreme close-up on the eyes, what is left to deliver the moment?",
             options: [
               "Where you look, when you blink, and the timing of the thought",
-              "The whole upper body, including the shoulders and the position of the hands",
-              "Vocal volume and pitch, since the visual channel is too restricted to carry meaning",
-              "The relationship between your position and the other performer's in the frame",
+              "The whole upper body",
+              "Vocal volume and pitch",
+              "Your position in frame",
             ],
             correctIndex: 0,
             explanation:
@@ -1925,7 +1925,7 @@ Murch, W. (2001). *In the blink of an eye: A perspective on film editing* (2nd e
             prompt: "In a medium close-up, where does a realization mainly live?",
             options: [
               "In the breath and the stillness before the answer",
-              "In the hands, which are the most expressive part of the body at that distance",
+              "In the hands",
               "In a change of position, since the frame is wide enough to show movement clearly",
               "In the volume of the line, because the microphone is furthest away at that size",
             ],
@@ -1938,8 +1938,8 @@ Murch, W. (2001). *In the blink of an eye: A perspective on film editing* (2nd e
             prompt: "How does a tighter frame change what an audience has time to read?",
             options: [
               "Quick reactions register that a wide shot would swallow",
-              "Nothing changes, because reading speed is a property of the viewer rather than the frame",
-              "Everything has to be slower, because detail takes longer to process at close range",
+              "Nothing changes",
+              "Everything must slow down",
               "Reactions must be repeated, because a single quick change is missed at close sizes",
             ],
             correctIndex: 0,
@@ -1950,10 +1950,10 @@ Murch, W. (2001). *In the blink of an eye: A perspective on film editing* (2nd e
           {
             prompt: "What vocal level does screen work assume?",
             options: [
-              "Conversational",
-              "Projected, so that the sound carries to the furthest microphone on the set",
-              "Slightly louder than conversation, to overcome the noise of the camera equipment",
-              "Whatever level the scene's emotional temperature suggests, regardless of the frame",
+              "Conversational, for a close mic",
+              "Projected",
+              "Slightly louder",
+              "The scene's level",
             ],
             correctIndex: 0,
             explanation:
@@ -1978,7 +1978,7 @@ Murch, W. (2001). *In the blink of an eye: A perspective on film editing* (2nd e
             options: [
               "Playing too small in a wide shot",
               "Playing too big in a close-up, since insincerity is the hardest fault to recover from",
-              "Matching the previous take too precisely, which makes the performance mechanical",
+              "Over-matching takes",
               "Speaking at a conversational level when the microphone has been placed far away",
             ],
             correctIndex: 0,
@@ -1990,8 +1990,8 @@ Murch, W. (2001). *In the blink of an eye: A perspective on film editing* (2nd e
             prompt: "What is the correct form of the instruction about scale?",
             options: [
               "Be the right size for this frame",
-              "Be as small as you can manage, because screen acting rewards restraint at every size",
-              "Match the size the other performer is playing, so the two shots cut together",
+              "Be as small as you can",
+              "Match your partner",
               "Start large and reduce with each successive take until the director stops you",
             ],
             correctIndex: 0,
@@ -2003,9 +2003,9 @@ Murch, W. (2001). *In the blink of an eye: A perspective on film editing* (2nd e
             prompt: "What is amplitude, as the lesson uses the word?",
             options: [
               "How far a movement travels",
-              "How loudly a performer speaks in relation to the microphone that is recording them",
-              "How much emotional intensity a performer commits to a given moment",
-              "How long a gesture is held before the performer releases it",
+              "Vocal loudness",
+              "Intensity",
+              "Gesture duration",
             ],
             correctIndex: 0,
             explanation:
@@ -2028,8 +2028,8 @@ Murch, W. (2001). *In the blink of an eye: A perspective on film editing* (2nd e
           {
             prompt: "Across the three sizes in the lesson's example, what stayed the same?",
             options: [
-              "The intention",
-              "The physical amplitude, which the performer holds constant so the takes will match",
+              "The intention behind the moment",
+              "The amplitude",
               "The vocal level, which is set by the microphone rather than by the frame",
               "The timing of the realization, which has to land identically for the edit to work",
             ],
@@ -2042,8 +2042,8 @@ Murch, W. (2001). *In the blink of an eye: A perspective on film editing* (2nd e
             prompt: "Why does a tight frame punish hurry?",
             options: [
               "The whole audience is watching one square meter",
-              "Focus cannot follow a fast movement at close distances, so the image goes soft",
-              "Microphones placed close to a performer distort when speech becomes rapid",
+              "Focus cannot follow",
+              "Close mics distort",
               "Editors cut tight shots shorter, leaving less room for a quick delivery",
             ],
             correctIndex: 0,
@@ -2055,9 +2055,9 @@ Murch, W. (2001). *In the blink of an eye: A perspective on film editing* (2nd e
             prompt: "Which of these changes as the frame tightens, according to the checklist?",
             options: [
               "Where the thought is visible",
-              "The character's want, which becomes narrower as the audience gets closer to the face",
-              "The number of tactics available, because tight frames support fewer changes of approach",
-              "The stakes of the scene, which rise automatically at closer sizes",
+              "The want",
+              "The tactics",
+              "The stakes",
             ],
             correctIndex: 0,
             explanation:
@@ -2081,7 +2081,7 @@ Murch, W. (2001). *In the blink of an eye: A perspective on film editing* (2nd e
             prompt: "What does the lesson mean by the frame magnifying you?",
             options: [
               "A tighter frame makes a small movement occupy more screen",
-              "Camera lenses enlarge facial features, so performers appear larger than in life",
+              "Lenses enlarge faces",
               "Audiences pay more attention to close shots, so mistakes are noticed more often",
               "Tighter frames are shown larger in cinemas than in domestic viewing situations",
             ],
@@ -2094,8 +2094,8 @@ Murch, W. (2001). *In the blink of an eye: A perspective on film editing* (2nd e
             prompt: "What happens to the body's contribution as the frame goes from long shot to extreme close-up?",
             options: [
               "It falls away until it has no vote",
-              "It becomes more important, because small movements are easier to see at close range",
-              "It stays constant, since a performer's physical life should not change with framing",
+              "It matters more",
+              "It stays constant",
               "It transfers to the voice, which takes over the work the body was doing",
             ],
             correctIndex: 0,
@@ -2107,9 +2107,9 @@ Murch, W. (2001). *In the blink of an eye: A perspective on film editing* (2nd e
             prompt: "Why is the shot-size rule described as the most transferable in screen work?",
             options: [
               "It applies in every screen medium",
-              "It is the only rule that can be taught without a camera present in the room",
-              "It is the one rule that directors and camera departments agree on completely",
-              "It replaces the need for any other adjustment between mediums",
+              "It needs no camera",
+              "Everyone agrees on it",
+              "It replaces all others",
             ],
             correctIndex: 0,
             explanation:
@@ -2133,7 +2133,7 @@ Murch, W. (2001). *In the blink of an eye: A perspective on film editing* (2nd e
             prompt: "What is the most legible event available in a face-only frame?",
             options: [
               "An eye moving away and back",
-              "A change in the angle of the head, which reads clearly against the edges of the frame",
+              "A head tilt",
               "A swallow, because the throat is the part of the face that moves most visibly",
               "A change in skin color, which cameras record faithfully at close distances",
             ],
@@ -2146,8 +2146,8 @@ Murch, W. (2001). *In the blink of an eye: A perspective on film editing* (2nd e
             prompt: "If a visible thought lands AFTER the line, what does the audience read?",
             options: [
               "The character surprised themselves",
-              "The character was lying, because thought following speech signals concealment",
-              "The performer missed their cue and the take will have to be repeated",
+              "The character lied",
+              "A missed cue",
               "The character was distracted by something outside the frame",
             ],
             correctIndex: 0,
@@ -2159,9 +2159,9 @@ Murch, W. (2001). *In the blink of an eye: A perspective on film editing* (2nd e
             prompt: "What does it mean when a thought never lands visibly at all?",
             options: [
               "The line is being recited",
-              "The character is deliberately concealing their reaction from the other person",
-              "The frame is too tight for the audience to register the change",
-              "The take is usable, because the audience supplies the thought from context",
+              "Concealment",
+              "A tight frame",
+              "The take works",
             ],
             correctIndex: 0,
             explanation:
@@ -2184,9 +2184,9 @@ Murch, W. (2001). *In the blink of an eye: A perspective on film editing* (2nd e
           {
             prompt: "What happened to Kuleshov's original footage?",
             options: [
-              "It is lost",
+              "The original footage is lost",
               "It survives in a Moscow archive and has been screened at academic conferences",
-              "It was recut by later editors, so only a rearranged version now exists",
+              "It was recut",
               "It was never shot, and the experiment was only ever described in writing",
             ],
             correctIndex: 0,
@@ -2197,10 +2197,10 @@ Murch, W. (2001). *In the blink of an eye: A perspective on film editing* (2nd e
           {
             prompt: "How many participants were in the 2016 Kuleshov replication?",
             options: [
-              "36",
+              "36, each shown 24 sequences",
               "Several thousand, recruited online, which is what gives the result its statistical power",
-              "Six, one for each of the emotional conditions being tested in the design",
-              "None, because the study was a reanalysis of data collected in earlier experiments",
+              "Six",
+              "None",
             ],
             correctIndex: 0,
             explanation:
@@ -2211,9 +2211,9 @@ Murch, W. (2001). *In the blink of an eye: A perspective on film editing* (2nd e
             prompt: "What did the 2016 study conclude?",
             options: [
               "Some sort of Kuleshov effect does exist",
-              "The effect is entirely a myth and viewers read neutral faces as neutral regardless of context",
-              "The effect appears only in viewers who have studied film editing formally",
-              "The effect is stronger than Kuleshov claimed, and context overrides the face completely",
+              "It is a myth",
+              "Only in film students",
+              "It beats Kuleshov's claim",
             ],
             correctIndex: 0,
             explanation:
@@ -2237,7 +2237,7 @@ Murch, W. (2001). *In the blink of an eye: A perspective on film editing* (2nd e
             prompt: "What does the Kuleshov evidence NOT license?",
             options: [
               "Doing nothing and relying on the editor",
-              "Receiving what the other performer is doing without adding a visible reaction",
+              "Simply receiving",
               "Trusting that the surrounding shots will contribute to how a face is read",
               "Playing a listening beat without deciding on a specific emotional label first",
             ],
@@ -2250,8 +2250,8 @@ Murch, W. (2001). *In the blink of an eye: A perspective on film editing* (2nd e
             prompt: "What do valence and arousal measure?",
             options: [
               "How positive a feeling is and how activated",
-              "How accurately a viewer identifies a face and how quickly they do it",
-              "How long a shot is held and how tightly it is framed on the performer",
+              "Accuracy and speed",
+              "Shot length and size",
               "How much a performer moves and how far their gaze travels during a take",
             ],
             correctIndex: 0,
@@ -2263,9 +2263,9 @@ Murch, W. (2001). *In the blink of an eye: A perspective on film editing* (2nd e
             prompt: "What did the eye-tracking data in the 2016 study NOT show?",
             options: [
               "The expected differences between emotional conditions",
-              "Any consistent pattern in where participants looked on a face at all",
-              "That participants looked at faces rather than at the surrounding context shots",
-              "That the participants had understood the instructions they were given",
+              "Any consistent pattern",
+              "Attention to faces",
+              "Grasp of instructions",
             ],
             correctIndex: 0,
             explanation:
@@ -2288,9 +2288,9 @@ Murch, W. (2001). *In the blink of an eye: A perspective on film editing* (2nd e
           {
             prompt: "How does the lesson describe the popular telling of the Kuleshov experiment?",
             options: [
-              "Film mythology",
+              "Film mythology rather than proof",
               "A well-replicated result that later research has confirmed in every detail",
-              "A deliberate fabrication invented for a film school lecture in the 1960s",
+              "A fabrication",
               "An accurate account of a study that has never been attempted again",
             ],
             correctIndex: 0,
@@ -2301,9 +2301,9 @@ Murch, W. (2001). *In the blink of an eye: A perspective on film editing* (2nd e
           {
             prompt: "What is a held gaze doing in a face-only frame?",
             options: [
-              "Applying pressure",
-              "Signalling that the character has stopped listening to the other person",
-              "Concealing a thought that the character does not want to be read",
+              "Applying pressure on the other person",
+              "Showing disinterest",
+              "Concealing a thought",
               "Marking the end of a unit, so the audience knows the subject is about to change",
             ],
             correctIndex: 0,
@@ -2315,9 +2315,9 @@ Murch, W. (2001). *In the blink of an eye: A perspective on film editing* (2nd e
             prompt: "Why is breath significant at the tightest sizes?",
             options: [
               "A change in it reads as an internal event",
-              "It is the only movement a camera can record when the frame is that tight",
-              "It has to be synchronized with the other performer for the shots to cut together",
-              "It determines how long a line can be delivered before a pause is needed",
+              "It is all a camera sees",
+              "It must sync with a partner",
+              "It sets line length",
             ],
             correctIndex: 0,
             explanation:
@@ -2340,8 +2340,8 @@ Murch, W. (2001). *In the blink of an eye: A perspective on film editing* (2nd e
           {
             prompt: "Which of these is NOT carried by a face-only frame?",
             options: [
-              "Posture",
-              "The direction of the gaze and the moment it changes",
+              "Posture and what your feet are doing",
+              "Gaze direction",
               "Whether a visible realization precedes or follows the spoken line",
               "A change in the rhythm of the performer's breathing",
             ],
@@ -2354,8 +2354,8 @@ Murch, W. (2001). *In the blink of an eye: A perspective on film editing* (2nd e
             prompt: "What is the honest summary of what context does to a listening face?",
             options: [
               "It does part of the work",
-              "It does all of the work, so the performer's choices in a reaction shot are irrelevant",
-              "It does none of the work, because audiences read faces independently of surrounding shots",
+              "All of it",
+              "None of it",
               "It reverses the performer's intention, so a reaction should be played against the context",
             ],
             correctIndex: 0,
@@ -2367,9 +2367,9 @@ Murch, W. (2001). *In the blink of an eye: A perspective on film editing* (2nd e
             prompt: "Why does the course teach the Kuleshov effect with its caveats rather than as a clean fact?",
             options: [
               "The strong version is not supportable",
-              "The effect has legal implications that a course is obliged to disclose to learners",
-              "Performers who believe it become passive, so the caveats are a motivational device",
-              "The study is too recent to be treated as established and will be updated shortly",
+              "Legal disclosure duties",
+              "A motivational device",
+              "The study is too recent",
             ],
             correctIndex: 0,
             explanation:
@@ -2393,7 +2393,7 @@ Murch, W. (2001). *In the blink of an eye: A perspective on film editing* (2nd e
             prompt: "Why do marks exist?",
             options: [
               "A lens has a narrow band of sharp focus",
-              "Directors use them to measure how long a performer takes to cross the set",
+              "To time crossings",
               "Insurance requires performers to stay within defined areas on a working set",
               "They record where the performer stood so the scene can be reshot months later",
             ],
@@ -2405,9 +2405,9 @@ Murch, W. (2001). *In the blink of an eye: A perspective on film editing* (2nd e
           {
             prompt: "What happens if you land past your mark?",
             options: [
-              "You go soft",
-              "You block the other performer, which forces the whole setup to be relit",
-              "You trigger a continuity error that the script supervisor has to log",
+              "You go out of focus and soft",
+              "You force a relight",
+              "You log an error",
               "You move outside the microphone's range and the dialogue has to be re-recorded",
             ],
             correctIndex: 0,
@@ -2419,9 +2419,9 @@ Murch, W. (2001). *In the blink of an eye: A perspective on film editing* (2nd e
             prompt: "How do you hit a mark without looking at it?",
             options: [
               "Peripheral vision and step counting",
-              "By having the other performer signal when you have reached the right position",
-              "By memorizing the pattern on the floor and recognizing it as you arrive",
-              "By slowing down at the end of the move until the focus puller confirms the distance",
+              "A partner signals you",
+              "Memorizing the floor",
+              "Slowing until confirmed",
             ],
             correctIndex: 0,
             explanation:
@@ -2445,7 +2445,7 @@ Murch, W. (2001). *In the blink of an eye: A perspective on film editing* (2nd e
             prompt: "What has to match across takes and sizes?",
             options: [
               "Which hand, which object, when, and which way you turn",
-              "The exact vocal pitch of each line, so that the audio can be cut without a noticeable seam",
+              "Exact vocal pitch",
               "The emotional intensity, since a mismatch there is what audiences notice most quickly",
               "The number of blinks, because blink timing is used to align the two pieces of footage",
             ],
@@ -2457,9 +2457,9 @@ Murch, W. (2001). *In the blink of an eye: A perspective on film editing* (2nd e
           {
             prompt: "What does the matching requirement make screen acting partly?",
             options: [
-              "A memory discipline",
-              "A technical trade, in which physical accuracy matters more than any dramatic choice",
-              "A group exercise, since matching can only be achieved by rehearsing with the crew",
+              "A discipline of physical memory",
+              "A technical trade",
+              "A group exercise",
               "An improvisational skill, because each take has to differ from the one before it",
             ],
             correctIndex: 0,
@@ -2470,10 +2470,10 @@ Murch, W. (2001). *In the blink of an eye: A perspective on film editing* (2nd e
           {
             prompt: "What is the frame line?",
             options: [
-              "The edge of the shot",
-              "The line of tape marking where the camera track begins and ends on the floor",
-              "The boundary between the lit area of a set and the unlit area behind it",
-              "The horizontal line an operator uses to keep the camera level during a move",
+              "The edge of what the shot holds",
+              "Track tape",
+              "The light boundary",
+              "A level line",
             ],
             correctIndex: 0,
             explanation:
@@ -2497,7 +2497,7 @@ Murch, W. (2001). *In the blink of an eye: A perspective on film editing* (2nd e
             prompt: "How does blocking on a set differ from movement on a stage?",
             options: [
               "You move where focus and lighting can follow",
-              "You move less, because sets are physically smaller than most theatrical stages",
+              "You move less",
               "You move only when the director calls for it during the take itself",
               "You move faster, because screen scenes are shorter than theatrical ones",
             ],
@@ -2510,8 +2510,8 @@ Murch, W. (2001). *In the blink of an eye: A perspective on film editing* (2nd e
             prompt: "Why is blocking worked out with the crew watching rather than with the director alone?",
             options: [
               "Every department plans from it",
-              "Union rules require a representative from each department to witness the rehearsal",
-              "The crew are the only people who can judge whether the movement looks natural",
+              "Union rules say so",
+              "Only crews judge it",
               "It saves the director from having to explain the same choices twice",
             ],
             correctIndex: 0,
@@ -2523,9 +2523,9 @@ Murch, W. (2001). *In the blink of an eye: A perspective on film editing* (2nd e
             prompt: "What does NOT have to match precisely between takes?",
             options: [
               "The temperature of the reading",
-              "The moment at which a glass reaches the performer's mouth during a line",
-              "The hand a performer uses to open a door on their exit from the room",
-              "The direction a performer turns when they leave the frame",
+              "Glass-to-mouth timing",
+              "The door hand",
+              "The exit turn",
             ],
             correctIndex: 0,
             explanation:
@@ -2549,7 +2549,7 @@ Murch, W. (2001). *In the blink of an eye: A perspective on film editing* (2nd e
             prompt: "What obligation do wide frames come with that a stage performance does not have?",
             options: [
               "Repeating the same movement every take",
-              "Keeping the whole body still, so that the audience can read the face clearly",
+              "Keeping the body still",
               "Playing to the widest possible audience position, as a theater performer would",
               "Staying within a fixed distance of the other performer throughout the scene",
             ],
@@ -2562,8 +2562,8 @@ Murch, W. (2001). *In the blink of an eye: A perspective on film editing* (2nd e
             prompt: "How can hitting a mark be practiced without a camera?",
             options: [
               "Pick a floor position at home and walk to it while talking",
-              "Watch footage of experienced performers and copy the way they move to their positions",
-              "Rehearse with a partner who stands at the mark and steps aside as you arrive",
+              "Copy footage of others",
+              "Rehearse with a partner",
               "Measure the distance precisely and count the number of seconds the move takes",
             ],
             correctIndex: 0,
@@ -2575,9 +2575,9 @@ Murch, W. (2001). *In the blink of an eye: A perspective on film editing* (2nd e
             prompt: "What should a performer note during a take, beyond what they felt?",
             options: [
               "What they did physically",
-              "How many seconds each unit of the scene took to play through",
-              "Which lines the director appeared to react to most strongly",
-              "Where the camera was positioned in relation to the other performer",
+              "Unit timings",
+              "Lines that hit",
+              "Camera position",
             ],
             correctIndex: 0,
             explanation:
@@ -2601,7 +2601,7 @@ Murch, W. (2001). *In the blink of an eye: A perspective on film editing* (2nd e
             prompt: "What does landing short of your mark risk?",
             options: [
               "Being out of frame or in someone's light",
-              "Losing focus, which is the specific consequence of landing past it instead",
+              "Losing focus",
               "Colliding with the camera, which is why marks are placed away from the lens",
               "Changing the eyeline, which stops the shot cutting against the master",
             ],
@@ -2613,9 +2613,9 @@ Murch, W. (2001). *In the blink of an eye: A perspective on film editing* (2nd e
           {
             prompt: "What does the lesson say a performer must be able to do while still doing the scene?",
             options: [
-              "Repeat the physical shape",
-              "Watch the camera to confirm that they remain inside the frame throughout",
-              "Adjust the intensity upward on each successive take of the same setup",
+              "Repeat the same physical shape",
+              "Watch the camera",
+              "Raise the intensity",
               "Track how much of the scene has been covered so far in the shooting day",
             ],
             correctIndex: 0,
@@ -2627,9 +2627,9 @@ Murch, W. (2001). *In the blink of an eye: A perspective on film editing* (2nd e
             prompt: "Wide does not mean unlimited. What is the practical consequence?",
             options: [
               "Gestures that leave the frame did not happen",
-              "Wide shots are shorter, so there is less time for physical choices to register",
-              "Wide shots are lit more brightly, so movement has to be slower to avoid blur",
-              "Wide shots require more takes, so the physical shape has to be simpler",
+              "Wide shots are shorter",
+              "Wide shots are brighter",
+              "Wide shots need more takes",
             ],
             correctIndex: 0,
             explanation:
@@ -2653,7 +2653,7 @@ Murch, W. (2001). *In the blink of an eye: A perspective on film editing* (2nd e
             prompt: "What is an eyeline?",
             options: [
               "The direction and height a performer looks",
-              "The imaginary line between two performers that a camera must not cross during a scene",
+              "The 180-degree line",
               "The level at which the camera is placed relative to the performer's eyes",
               "The mark on the floor a performer uses to judge their distance from the lens",
             ],
@@ -2666,8 +2666,8 @@ Murch, W. (2001). *In the blink of an eye: A perspective on film editing* (2nd e
             prompt: "In a single, where might your scene partner actually be?",
             options: [
               "Beside the lens, or gone entirely",
-              "Directly behind the camera, at the same height as the lens, in every case",
-              "In an adjacent room, delivering lines over a speaker for accuracy of timing",
+              "Behind the camera",
+              "In another room",
               "Standing in the frame just out of focus, so their presence can be felt",
             ],
             correctIndex: 0,
@@ -2679,9 +2679,9 @@ Murch, W. (2001). *In the blink of an eye: A perspective on film editing* (2nd e
             prompt: "What is the professional response when a placed eyeline feels wrong?",
             options: [
               "Accept the placement precisely",
-              "Adjust it slightly toward where the other performer actually is standing",
-              "Ask for the other performer to be brought back so the geometry is honest",
-              "Close your eyes on the line, so the mismatch is not visible in the shot",
+              "Adjust it slightly",
+              "Ask for the partner",
+              "Close your eyes",
             ],
             correctIndex: 0,
             explanation:
@@ -2705,7 +2705,7 @@ Murch, W. (2001). *In the blink of an eye: A perspective on film editing* (2nd e
             prompt: "Why can a performer not judge the apparent size of their own movement?",
             options: [
               "It depends on lens and distance",
-              "Performers are trained to underestimate their own movement as part of screen technique",
+              "Training biases them",
               "The monitor shows a different aspect ratio from the one the audience will see",
               "The effect only becomes visible once the footage has been color graded",
             ],
@@ -2717,10 +2717,10 @@ Murch, W. (2001). *In the blink of an eye: A perspective on film editing* (2nd e
           {
             prompt: "What is first in Murch's ordering of what a cut should serve?",
             options: [
-              "Emotion",
+              "Emotion, ahead of story",
               "Spatial continuity, because a cut that breaks the geography confuses the audience",
-              "Rhythm, since a cut that lands off the beat is felt before anything else is noticed",
-              "Story, because a cut that does not advance the narrative has no reason to exist",
+              "Rhythm",
+              "Story",
             ],
             correctIndex: 0,
             explanation:
@@ -2730,10 +2730,10 @@ Murch, W. (2001). *In the blink of an eye: A perspective on film editing* (2nd e
           {
             prompt: "Where does spatial continuity sit in Murch's ordering?",
             options: [
-              "Last",
-              "First, because a cut that breaks the space cannot be understood at all",
-              "Second, immediately after emotion and ahead of story",
-              "It is not in the ordering, because continuity is handled before editing begins",
+              "Last of the six",
+              "First",
+              "Second",
+              "Absent",
             ],
             correctIndex: 0,
             explanation:
@@ -2757,7 +2757,7 @@ Murch, W. (2001). *In the blink of an eye: A perspective on film editing* (2nd e
             prompt: "What is eye trace?",
             options: [
               "Where in the frame the audience is looking",
-              "The path a performer's gaze takes across the set during a moving shot",
+              "A performer's gaze path",
               "The line the camera follows when it tracks a performer through a scene",
               "The record of which takes a director watched most closely during dailies",
             ],
@@ -2770,8 +2770,8 @@ Murch, W. (2001). *In the blink of an eye: A perspective on film editing* (2nd e
             prompt: "What is direct address?",
             options: [
               "Performance played deliberately to the lens",
-              "A note delivered to a performer by the director in front of the whole crew",
-              "The practice of naming the other character explicitly in every line of dialogue",
+              "A director's public note",
+              "Naming the other character",
               "A speech given to the audience by a character who is otherwise unaware of them",
             ],
             correctIndex: 0,
@@ -2783,9 +2783,9 @@ Murch, W. (2001). *In the blink of an eye: A perspective on film editing* (2nd e
             prompt: "Two performers in a conversation both look camera left. What does the audience read?",
             options: [
               "Two people looking the same way",
-              "A shot that has been reversed in the edit, which audiences accept without noticing",
-              "A moment of shared attention on something happening off screen",
-              "Nothing unusual, because eyeline is corrected automatically in post-production",
+              "A reversed shot",
+              "Shared attention",
+              "Nothing unusual",
             ],
             correctIndex: 0,
             explanation:
@@ -2809,7 +2809,7 @@ Murch, W. (2001). *In the blink of an eye: A perspective on film editing* (2nd e
             prompt: "What might stand in for an absent scene partner?",
             options: [
               "A taped X or a crew member holding the script",
-              "A recorded playback of the other performer's lines synchronized to the take",
+              "A recorded playback",
               "A mirror positioned so the performer sees themselves at the correct eyeline",
               "A second camera showing the other performer on a monitor beside the lens",
             ],
@@ -2822,8 +2822,8 @@ Murch, W. (2001). *In the blink of an eye: A perspective on film editing* (2nd e
             prompt: "Why does a small lean sometimes read as a significant move?",
             options: [
               "A wide lens used close exaggerates what is nearest",
-              "Small movements are always magnified by the frame regardless of the lens",
-              "Editors slow down small movements to make them legible to the audience",
+              "Frames always magnify",
+              "Editors slow them",
               "The audience expects little movement in a close-up, so any move stands out",
             ],
             correctIndex: 0,
@@ -2835,9 +2835,9 @@ Murch, W. (2001). *In the blink of an eye: A perspective on film editing* (2nd e
             prompt: "What is the practical consequence of an eyeline being placed slightly too close to the lens?",
             options: [
               "It feels wrong and should be accepted anyway",
-              "It should be corrected by the performer, since the crew cannot see the discrepancy",
-              "It makes the shot unusable, so the setup will have to be rearranged",
-              "It reduces the depth of field, which is why focus becomes harder to hold",
+              "The performer should fix it",
+              "The shot is unusable",
+              "It narrows depth of field",
             ],
             correctIndex: 0,
             explanation:
@@ -2861,7 +2861,7 @@ Murch, W. (2001). *In the blink of an eye: A perspective on film editing* (2nd e
             prompt: "What is focal length?",
             options: [
               "The lens property deciding depth compression and near-object exaggeration",
-              "The distance between the performer and the mark they have been asked to hit",
+              "The performer-to-mark distance",
               "The length of time focus can be held on a moving performer before it drifts",
               "The measurement of how far the camera travels during a tracking shot",
             ],
@@ -2873,9 +2873,9 @@ Murch, W. (2001). *In the blink of an eye: A perspective on film editing* (2nd e
           {
             prompt: "How many criteria are in the ordering the lesson attributes to Murch?",
             options: [
-              "Six",
-              "Three, covering emotion, story, and continuity in that order of priority",
-              "Two, since everything reduces to whether the cut feels right and whether it reads",
+              "Six, starting with emotion",
+              "Three",
+              "Two",
               "Ten, one for each department whose work has to survive the join",
             ],
             correctIndex: 0,
@@ -2887,9 +2887,9 @@ Murch, W. (2001). *In the blink of an eye: A perspective on film editing* (2nd e
             prompt: "Why does the course teach the ordering rather than the numeric weights attached to it?",
             options: [
               "The ordering is the useful part and the weights were not read at the primary",
-              "The weights change between editions of the book, so quoting them would be inaccurate",
-              "The weights apply only to documentary editing rather than to dramatic work",
-              "The weights are disputed by other editors and have never been widely accepted",
+              "The weights change by edition",
+              "They suit only documentary",
+              "Other editors dispute them",
             ],
             correctIndex: 0,
             explanation:
@@ -3028,9 +3028,9 @@ Most television acting is done by people arriving for a day or a week into a com
             prompt: "Why do none of the frame rules apply in theater?",
             options: [
               "There is no frame",
-              "The audience is too far away for framing decisions to be visible to them",
-              "Stage lighting replaces framing as the way attention is directed to a performer",
-              "Theatrical productions are recorded from a fixed position, so the size never changes",
+              "The audience is too far away",
+              "Stage lighting replaces the frame",
+              "The production is recorded from a fixed position",
             ],
             correctIndex: 0,
             explanation:
@@ -3041,9 +3041,9 @@ Most television acting is done by people arriving for a day or a week into a com
             prompt: "Which is one of the four structural facts that define theater?",
             options: [
               "The audience is present and responding live",
-              "The performance is recorded so that it can be reviewed and improved between shows",
-              "The director gives notes during the performance itself through a concealed earpiece",
-              "The script may be changed by the performers as the run continues",
+              "The performance is recorded for review between shows",
+              "The director gives notes during the show",
+              "The script may be changed by the performers",
             ],
             correctIndex: 0,
             explanation:
@@ -3054,9 +3054,9 @@ Most television acting is done by people arriving for a day or a week into a com
             prompt: "What does it mean that a stage performance is continuous?",
             options: [
               "No coverage, no second take, no editor",
-              "The run continues nightly without a break until the production closes",
-              "The performers stay in character during intervals so the illusion is unbroken",
-              "The lighting never changes, so the audience sees one uninterrupted image",
+              "The run continues nightly without a break",
+              "The performers stay in character during intervals",
+              "The lighting never changes",
             ],
             correctIndex: 0,
             explanation:
@@ -3067,9 +3067,9 @@ Most television acting is done by people arriving for a day or a week into a com
             prompt: "Why is composition a performer's responsibility on stage?",
             options: [
               "Nobody curates where the audience looks",
-              "Stage directors delegate the whole visual design to the cast during rehearsal",
-              "Theatrical lighting is too dim to guide attention reliably in a large house",
-              "Audience members are seated at fixed distances, so the picture never changes",
+              "Stage directors hand visual design to the cast",
+              "Theatrical lighting is too dim to guide attention",
+              "Audience members sit at fixed distances",
             ],
             correctIndex: 0,
             explanation:
@@ -3080,9 +3080,9 @@ Most television acting is done by people arriving for a day or a week into a com
             prompt: "What can the person in the last row of a large house NOT see?",
             options: [
               "Your eyes",
-              "Your whole body, which is why upper-body work carries a theater and lower-body work does not",
-              "The other performers, since sightlines are obstructed from the rear of a house",
-              "Any part of the set, which is why dialogue must describe the location",
+              "Your whole body",
+              "The other performers",
+              "Any part of the set",
             ],
             correctIndex: 0,
             explanation:
@@ -3093,9 +3093,9 @@ Most television acting is done by people arriving for a day or a week into a com
             prompt: "What is the failure mode of enlarging a performance for the stage?",
             options: [
               "Size without specificity",
-              "Vocal strain, which is the only real risk of playing at a larger scale",
-              "Losing the other performer's timing, because larger movements take longer",
-              "Being unable to reduce again when the same actor works on camera",
+              "Vocal strain, the only real risk",
+              "Losing the other performer's timing",
+              "Being unable to reduce again on camera",
             ],
             correctIndex: 0,
             explanation:
@@ -3106,9 +3106,9 @@ Most television acting is done by people arriving for a day or a week into a com
             prompt: "What carries a long line to the back wall?",
             options: [
               "Breath support",
-              "Throat pressure, which is why projection tires the voice over a long run",
-              "A raised pitch, since higher frequencies travel further in a large room",
-              "Slower delivery, because slower speech is inherently more audible",
+              "Throat pressure",
+              "A raised pitch",
+              "Slower delivery",
             ],
             correctIndex: 0,
             explanation:
@@ -3119,9 +3119,9 @@ Most television acting is done by people arriving for a day or a week into a com
             prompt: "How do stage performers learn a character's journey, compared with screen performers?",
             options: [
               "In order, as arcs rather than fragments",
-              "From a written map prepared before rehearsal, because the run is too long to remember",
-              "From the director's notes, since the performer cannot see the whole shape from inside it",
-              "By recording rehearsals and reviewing the sequence between performances",
+              "From a written map prepared before rehearsal",
+              "From the director's notes",
+              "By reviewing recorded rehearsals",
             ],
             correctIndex: 0,
             explanation:
@@ -3132,9 +3132,9 @@ Most television acting is done by people arriving for a day or a week into a com
             prompt: "What does stage work give a performer that screen work cannot?",
             options: [
               "Repetition with an audience, night after night",
-              "A larger fee, which is why theater remains attractive to experienced performers",
-              "Freedom from technical constraints, since no equipment is involved in a live show",
-              "Certainty about the finished result, because nothing is edited afterward",
+              "A larger fee",
+              "Freedom from technical constraints",
+              "Certainty about the finished result",
             ],
             correctIndex: 0,
             explanation:
@@ -3145,9 +3145,9 @@ Most television acting is done by people arriving for a day or a week into a com
             prompt: "How does an audience's response change a live performance?",
             options: [
               "It feeds back in real time",
-              "It does not, because a rehearsed performance is fixed before opening night",
-              "It changes only the running time, since laughter extends the length of a show",
-              "It changes only for comedy, since dramatic work is unaffected by audience reaction",
+              "It does not; the show is fixed by opening night",
+              "It changes only the running time",
+              "It changes only for comedy",
             ],
             correctIndex: 0,
             explanation:
@@ -3158,9 +3158,9 @@ Most television acting is done by people arriving for a day or a week into a com
             prompt: "What happens to a fidgeting hand during a stage moment of stillness?",
             options: [
               "Anyone looking at you sees it",
-              "It is absorbed by the distance, which is why small habits do not matter on stage",
-              "It is covered by the lighting design, which isolates the speaking performer",
-              "It reads as characterization, because audiences interpret all movement as intentional",
+              "It is absorbed by the distance, so small habits do not matter on stage",
+              "It is covered by the lighting design",
+              "It reads as characterization",
             ],
             correctIndex: 0,
             explanation:
@@ -3171,9 +3171,9 @@ Most television acting is done by people arriving for a day or a week into a com
             prompt: "What is projection, as this lesson defines it?",
             options: [
               "Carrying the voice using breath support",
-              "Speaking at the maximum volume the performer can sustain across a whole run",
-              "Directing the voice toward a specific section of the audience in turn",
-              "Using amplification to reach the furthest seats in a large auditorium",
+              "Speaking at the maximum volume you can sustain",
+              "Aiming the voice at one section at a time",
+              "Using amplification to reach far seats",
             ],
             correctIndex: 0,
             explanation:
@@ -3184,9 +3184,9 @@ Most television acting is done by people arriving for a day or a week into a com
             prompt: "What is an arc, in this lesson's vocabulary?",
             options: [
               "The shape of a character's journey across the whole piece",
-              "The curved path a performer walks when crossing between two positions on stage",
-              "The period between a performer's entrance and their exit in a single scene",
-              "The rise and fall of vocal pitch across a long speech",
+              "The curved path walked when crossing the stage",
+              "The span between one entrance and exit",
+              "The rise and fall of pitch in a speech",
             ],
             correctIndex: 0,
             explanation:
@@ -3197,8 +3197,8 @@ Most television acting is done by people arriving for a day or a week into a com
             prompt: "Why does something going wrong on stage get solved live?",
             options: [
               "There is no second take",
-              "Union rules forbid stopping a performance once the curtain has risen",
-              "The audience has paid for a complete performance and can demand a refund otherwise",
+              "Union rules forbid stopping a performance",
+              "The audience can demand a refund otherwise",
               "The stage manager cannot intervene until the interval",
             ],
             correctIndex: 0,
@@ -3210,9 +3210,9 @@ Most television acting is done by people arriving for a day or a week into a com
             prompt: "What has to survive the distance to the furthest seat, beyond volume?",
             options: [
               "Gesture, timing, and the clarity of transitions",
-              "Facial detail, which is the main thing a large house makes harder to read",
-              "The subtlety of eye contact between performers, which anchors a scene",
-              "The texture of the costume, which tells the audience about the character",
+              "Facial detail",
+              "The subtlety of eye contact between performers",
+              "The texture of the costume",
             ],
             correctIndex: 0,
             explanation:
@@ -3223,9 +3223,9 @@ Most television acting is done by people arriving for a day or a week into a com
             prompt: "What must NOT go down when a performance is enlarged for a theater?",
             options: [
               "Specificity",
-              "Volume, which has to rise in exact proportion to the size of the room",
-              "Speed, since larger movements need more time and slow the whole show down",
-              "The number of physical choices, because a big house needs constant movement",
+              "Volume, in exact proportion to the room",
+              "Speed, since big movements slow a show",
+              "The number of physical choices",
             ],
             correctIndex: 0,
             explanation:
@@ -3236,9 +3236,9 @@ Most television acting is done by people arriving for a day or a week into a com
             prompt: "What does the lesson mean by continuous performance?",
             options: [
               "Playing a piece start to finish with no coverage or editing",
-              "Maintaining the same interpretation across every night of a long run",
-              "Staying on stage throughout, without exits, for the length of a scene",
-              "Delivering lines without pauses, so the momentum of the scene is unbroken",
+              "Keeping one interpretation across a long run",
+              "Staying on stage throughout a scene, with no exits",
+              "Delivering lines without pauses",
             ],
             correctIndex: 0,
             explanation:
@@ -3249,9 +3249,9 @@ Most television acting is done by people arriving for a day or a week into a com
             prompt: "In what order are film scenes shot?",
             options: [
               "The order that is cheapest and most practical",
-              "Story order, so that the performers can build the arc as they go",
-              "Reverse order, so that the ending is captured while performers are freshest",
-              "The order the writer specifies in the shooting script's numbering",
+              "Story order, to build the arc",
+              "Reverse order, with the ending captured first",
+              "The order the writer numbers",
             ],
             correctIndex: 0,
             explanation:
@@ -3262,9 +3262,9 @@ Most television acting is done by people arriving for a day or a week into a com
             prompt: "What is the direct consequence of out-of-order shooting for preparation?",
             options: [
               "You must know where every moment sits in the arc",
-              "You must learn the whole script before the first day, since scenes may be reordered",
-              "You must rehearse each scene twice, once alone and once with the other performer",
-              "You must keep the same physical shape for every scene so the pieces will cut",
+              "You must learn the whole script before day one",
+              "You must rehearse each scene twice, alone and with a partner",
+              "You must keep one physical shape for every scene",
             ],
             correctIndex: 0,
             explanation:
@@ -3275,9 +3275,9 @@ Most television acting is done by people arriving for a day or a week into a com
             prompt: "What is a setup?",
             options: [
               "One camera position",
-              "The rehearsal that precedes the first take of a scene on the shooting day",
-              "The arrangement of props and furniture before the performers arrive on set",
-              "The list of scenes a production intends to complete in a single day",
+              "The rehearsal before a first take",
+              "The arrangement of props before the performers arrive",
+              "A day's list of scenes",
             ],
             correctIndex: 0,
             explanation:
@@ -3288,9 +3288,9 @@ Most television acting is done by people arriving for a day or a week into a com
             prompt: "What is the unit of work on a film, according to the lesson?",
             options: [
               "The setup",
-              "The scene, which is prepared, shot, and completed before the next one begins",
-              "The shooting day, since the schedule is planned in days rather than in shots",
-              "The page, because the schedule counts pages rather than minutes of finished film",
+              "The scene",
+              "The shooting day",
+              "The page",
             ],
             correctIndex: 0,
             explanation:
@@ -3301,9 +3301,9 @@ Most television acting is done by people arriving for a day or a week into a com
             prompt: "What has to be repeatable across takes, and what must not become mechanical?",
             options: [
               "The physical shape repeats; the pursuit stays live",
-              "The vocal delivery repeats; the physical shape is free to vary between takes",
-              "The emotional level repeats; the blocking is adjusted by the director each time",
-              "Nothing repeats, because each take should be a fresh discovery of the scene",
+              "The vocal delivery repeats; the physical shape varies",
+              "The emotional level repeats; the blocking changes",
+              "Nothing repeats",
             ],
             correctIndex: 0,
             explanation:
@@ -3314,9 +3314,9 @@ Most television acting is done by people arriving for a day or a week into a com
             prompt: "What is an insert?",
             options: [
               "A tight shot of a detail cut into a scene",
-              "A scene added to a script after principal photography has already begun",
-              "A performer brought in for a single day to cover an absent cast member",
-              "A section of dialogue recorded separately and laid over existing footage",
+              "A scene added after principal photography has begun",
+              "A one-day cover for an absent cast member",
+              "Dialogue recorded separately",
             ],
             correctIndex: 0,
             explanation:
@@ -3327,9 +3327,9 @@ Most television acting is done by people arriving for a day or a week into a com
             prompt: "What does the lesson say a shooting day mostly consists of?",
             options: [
               "Waiting",
-              "Rehearsal, which occupies most of the time before each scene is recorded",
-              "Technical work by the performers, such as marking and matching each setup",
-              "Travel between locations, which is why scenes are grouped geographically",
+              "Rehearsal",
+              "Technical work",
+              "Travel",
             ],
             correctIndex: 0,
             explanation:
@@ -3340,9 +3340,9 @@ Most television acting is done by people arriving for a day or a week into a com
             prompt: "What kind of skill is managing your readiness across a shooting day?",
             options: [
               "A professional skill distinct from acting",
-              "A physical skill, which is why performers are advised to train for stamina",
-              "A social skill, since readiness depends on how well you know the crew",
-              "A technical skill, learned by observing how the camera department works",
+              "A physical skill built for stamina",
+              "A social skill",
+              "A technical skill learned from the camera crew",
             ],
             correctIndex: 0,
             explanation:
@@ -3353,9 +3353,9 @@ Most television acting is done by people arriving for a day or a week into a com
             prompt: "Who finishes a screen performance?",
             options: [
               "The editor, composer, sound team, and colorist",
-              "The director, working alone with the performer during additional recording sessions",
-              "The performer, in the final take of the last setup on the last day of shooting",
-              "The audience, who assemble the meaning from the pieces they are shown",
+              "The director, alone with the performer",
+              "The performer, in the last take",
+              "The audience",
             ],
             correctIndex: 0,
             explanation:
@@ -3366,9 +3366,9 @@ Most television acting is done by people arriving for a day or a week into a com
             prompt: "What is the healthy conclusion from the fact that others finish your performance?",
             options: [
               "Deliver honest, varied, matchable takes, then let go",
-              "Push for a say in the edit, since the performance is ultimately the performer's work",
-              "Deliver the same take every time, so that no unwanted version can be chosen",
-              "Withhold your best work until the final take, when the director is paying most attention",
+              "Push for a say in the edit",
+              "Deliver the same take every time",
+              "Withhold your best work until the final take",
             ],
             correctIndex: 0,
             explanation:
@@ -3379,9 +3379,9 @@ Most television acting is done by people arriving for a day or a week into a com
             prompt: "Why is a written story map less necessary in a play than on a film?",
             options: [
               "A play is performed in order",
-              "A play is shorter, so there is less material to keep track of",
-              "A play has a director present at every performance to correct the arc",
-              "A play is rehearsed for longer, so the shape is memorized rather than mapped",
+              "A play is shorter",
+              "A play has a director at every show",
+              "A play is rehearsed longer, so the shape is memorized",
             ],
             correctIndex: 0,
             explanation:
@@ -3392,9 +3392,9 @@ Most television acting is done by people arriving for a day or a week into a com
             prompt: "What should the story map record at each point?",
             options: [
               "What the character knows, wants, and has just lost",
-              "Which camera setups are planned for the scene and in what order",
-              "The emotional level on a numbered scale agreed with the director",
-              "The costume, hair, and props required so that continuity can be checked",
+              "The planned camera setups and their order",
+              "The emotional level on a numbered scale",
+              "Costume, hair, and props for continuity",
             ],
             correctIndex: 0,
             explanation:
@@ -3405,9 +3405,9 @@ Most television acting is done by people arriving for a day or a week into a com
             prompt: "How does film invert theater's structural facts?",
             options: [
               "Audience absent, performance discontinuous, frame decides visibility",
-              "Audience present, performance continuous, but with the option of a second take",
-              "Audience absent, but the performance is still continuous within each scene",
-              "Audience present on set, and the performance is assembled afterward",
+              "Audience present, continuous, with a second take",
+              "Audience absent, but continuous within each scene",
+              "Audience present on set, assembled afterward",
             ],
             correctIndex: 0,
             explanation:
@@ -3418,9 +3418,9 @@ Most television acting is done by people arriving for a day or a week into a com
             prompt: "Which setups does the lesson list as typical coverage for a scene?",
             options: [
               "A master, singles, over-the-shoulders, and inserts",
-              "A wide, a medium, and a close-up, in that fixed order, on every production",
-              "One setup per performer, plus one for the room, which is the standard minimum",
-              "As many as the schedule allows, with no conventional pattern to them",
+              "A wide, a medium, and a close-up, in that fixed order",
+              "One setup per performer",
+              "As many as the schedule allows",
             ],
             correctIndex: 0,
             explanation:
@@ -3431,9 +3431,9 @@ Most television acting is done by people arriving for a day or a week into a com
             prompt: "What makes screen performance a repeatability problem?",
             options: [
               "The same passage is delivered many times across hours",
-              "Performers are contractually required to produce identical takes for the editor",
-              "The camera records small variations that an audience finds distracting",
-              "Coverage is shot in a single continuous pass, so errors cannot be corrected",
+              "Performers must produce identical takes by contract",
+              "The camera records distracting small variations",
+              "Coverage is shot in one continuous pass",
             ],
             correctIndex: 0,
             explanation:
@@ -3444,9 +3444,9 @@ Most television acting is done by people arriving for a day or a week into a com
             prompt: "Why might a performer be asked for an exposed moment with ninety seconds of warning?",
             options: [
               "The light is going",
-              "The director prefers unprepared performances because they are more spontaneous",
-              "The schedule is deliberately withheld so performers stay alert through the day",
-              "Union rules cap the notice a production is required to give before a difficult scene",
+              "The director prefers unprepared performances",
+              "The schedule is withheld to keep performers alert",
+              "Union rules cap the notice required",
             ],
             correctIndex: 0,
             explanation:
@@ -3457,9 +3457,9 @@ Most television acting is done by people arriving for a day or a week into a com
             prompt: "What is out-of-order shooting?",
             options: [
               "Filming grouped by location and practicality rather than story order",
-              "Filming the same scene several times from different positions across a day",
-              "Filming without a completed script, so the story order is not yet fixed",
-              "Filming the second half of a production before the first half is written",
+              "Filming one scene from several positions",
+              "Filming without a completed script",
+              "Filming the second half before the first is written",
             ],
             correctIndex: 0,
             explanation:
@@ -3470,9 +3470,9 @@ Most television acting is done by people arriving for a day or a week into a com
             prompt: "What are the three differences that change the job in television?",
             options: [
               "Speed, continuity across episodes, and arriving as a visitor",
-              "Budget, audience size, and the number of cameras used on any given day",
-              "Rehearsal length, script quality, and the seniority of the director assigned",
-              "Location work, studio work, and the balance between the two across a season",
+              "Budget, audience size, and number of cameras",
+              "Rehearsal length, script quality, and director seniority",
+              "Location work, studio work, and the balance",
             ],
             correctIndex: 0,
             explanation:
@@ -3483,9 +3483,9 @@ Most television acting is done by people arriving for a day or a week into a com
             prompt: "Where does preparation happen in episodic television?",
             options: [
               "Almost entirely off the set",
-              "In the rehearsal period, which is longer than on a feature for the same page count",
-              "During the first two takes of each setup, which are treated as exploratory",
-              "In the read-through, which the whole cast attends before each episode",
+              "In a rehearsal period longer than a feature's",
+              "During the first two takes",
+              "In the read-through",
             ],
             correctIndex: 0,
             explanation:
@@ -3496,9 +3496,9 @@ Most television acting is done by people arriving for a day or a week into a com
             prompt: "Why does television reward preparation that is a decision rather than a fixed performance?",
             options: [
               "A decision can be changed in one breath",
-              "Decisions can be written down and shown to the director before the take",
-              "Fixed performances take longer to memorize, which the schedule cannot absorb",
-              "Directors on episodic work prefer performers who have not made choices in advance",
+              "Decisions can be written down for the director",
+              "Fixed performances take longer to memorize",
+              "Directors prefer performers with no prior choices",
             ],
             correctIndex: 0,
             explanation:
@@ -3509,9 +3509,9 @@ Most television acting is done by people arriving for a day or a week into a com
             prompt: "How does single-camera television work?",
             options: [
               "Like film, in setups, out of order",
-              "Continuously, with the whole scene played through and recorded in one pass",
-              "With a live audience present, which sets the pace of the recording",
-              "With the same camera position for every scene, which is why it is cheaper",
+              "Continuously, in one pass",
+              "With a live audience setting the pace",
+              "With one camera position for every scene, which is why it is cheaper",
             ],
             correctIndex: 0,
             explanation:
@@ -3522,9 +3522,9 @@ Most television acting is done by people arriving for a day or a week into a com
             prompt: "What defines multi-camera production?",
             options: [
               "Several cameras at once on a set open on one side",
-              "Two cameras placed at opposite ends of the set to capture both eyelines",
-              "A camera on every performer, so nobody has to repeat a line for coverage",
-              "Cameras that record continuously through rehearsals as well as through takes",
+              "Two cameras at opposite ends of the set",
+              "A camera on every performer",
+              "Cameras recording through rehearsals",
             ],
             correctIndex: 0,
             explanation:
@@ -3535,9 +3535,9 @@ Most television acting is done by people arriving for a day or a week into a com
             prompt: "What theater-like demands does multi-camera work impose?",
             options: [
               "Play continuously, time to real laughter, stay open to the camera side",
-              "Project to the back of the studio, since the audience sits some distance away",
+              "Project to the back of the studio",
               "Perform the whole episode in one pass, with no stops for technical problems",
-              "Build the character's arc in story order across the week of rehearsal",
+              "Build the arc in story order",
             ],
             correctIndex: 0,
             explanation:
@@ -3548,9 +3548,9 @@ Most television acting is done by people arriving for a day or a week into a com
             prompt: "Why should a series performer hold an invented backstory loosely?",
             options: [
               "Later writers will contradict it",
-              "Producers require backstories to be approved before they can be used in performance",
-              "Backstory is the writer's responsibility and performers should not invent any",
-              "An invented history makes the performance less spontaneous over a long run",
+              "Producers must approve every backstory",
+              "Backstory is the writer's job alone",
+              "It makes the performance less spontaneous",
             ],
             correctIndex: 0,
             explanation:
@@ -3561,9 +3561,9 @@ Most television acting is done by people arriving for a day or a week into a com
             prompt: "What is a guest performer?",
             options: [
               "Someone hired for one or a few episodes into an established company",
-              "A performer who appears without a credit, usually in a single scene",
-              "A well-known performer brought in to raise the profile of a particular episode",
-              "A cast member returning after an absence of one or more seasons",
+              "An uncredited performer in a single scene",
+              "A well-known name brought in to raise an episode's profile",
+              "A cast member returning after a season away",
             ],
             correctIndex: 0,
             explanation:
@@ -3574,9 +3574,9 @@ Most television acting is done by people arriving for a day or a week into a com
             prompt: "What is the craft response to the guest performer's problem?",
             options: [
               "Arrive over-prepared and be easy to work with",
-              "Ask the regulars to walk you through the set's conventions before the first take",
-              "Request additional rehearsal time, since a visitor is at a structural disadvantage",
-              "Match the regulars' performance style exactly, so your scenes cut with theirs",
+              "Ask the regulars to explain the set's conventions",
+              "Request extra rehearsal time",
+              "Match the regulars' style exactly so your scenes cut, whatever the director asks",
             ],
             correctIndex: 0,
             explanation:
@@ -3587,9 +3587,9 @@ Most television acting is done by people arriving for a day or a week into a com
             prompt: "What does the lesson call a professional skill that nobody teaches as one?",
             options: [
               "Being someone a busy crew is glad to see again",
-              "Learning a full episode's lines in a single evening before the shooting day",
-              "Reading a shooting schedule accurately enough to plan your own preparation",
-              "Judging when a director's note is worth challenging and when it is not",
+              "Learning a full episode's lines overnight",
+              "Reading a shooting schedule accurately",
+              "Judging when to challenge a director's note",
             ],
             correctIndex: 0,
             explanation:
@@ -3600,9 +3600,9 @@ Most television acting is done by people arriving for a day or a week into a com
             prompt: "What is adjustability, in this lesson's vocabulary?",
             options: [
               "Changing a prepared choice immediately",
-              "Adapting your physical scale to whichever camera is closest at the time",
-              "Modifying the script when a line does not work in the performer's mouth",
-              "Being available at short notice when a schedule changes during a week",
+              "Adapting your scale to the closest camera",
+              "Modifying the script when a line does not work",
+              "Being available at short notice",
             ],
             correctIndex: 0,
             explanation:
@@ -3613,9 +3613,9 @@ Most television acting is done by people arriving for a day or a week into a com
             prompt: "What is compressed in an episodic schedule?",
             options: [
               "Setups, takes, and rehearsal, with a higher daily page count",
-              "The length of each scene, which is why episodic dialogue is shorter than a feature's",
-              "The number of performers, since fewer people can be scheduled in a short day",
-              "The shooting season, which runs for a few weeks rather than several months",
+              "The length of each scene",
+              "The number of performers",
+              "The shooting season",
             ],
             correctIndex: 0,
             explanation:
@@ -3626,9 +3626,9 @@ Most television acting is done by people arriving for a day or a week into a com
             prompt: "What happens when a director asks a hardened prepared performance for something different?",
             options: [
               "They get the same thing again slightly louder",
-              "They get a noticeably worse take, because the performer loses confidence",
-              "They get the requested change, but only after several unusable takes",
-              "They get an improvised alternative, which rarely matches the previous coverage",
+              "A worse take, from lost confidence",
+              "The change, after several unusable takes",
+              "An improvised alternative",
             ],
             correctIndex: 0,
             explanation:
@@ -3639,9 +3639,9 @@ Most television acting is done by people arriving for a day or a week into a com
             prompt: "Why is a series character's future often unknown to the performer?",
             options: [
               "It has not been written yet",
-              "Producers withhold the storyline to keep performances free of foreknowledge",
-              "Contracts prevent performers from reading scripts beyond their own episodes",
-              "The writers deliberately change direction whenever a performer anticipates it",
+              "Producers withhold it to keep performances fresh",
+              "Contracts bar reading later scripts",
+              "Writers change course when a performer anticipates it",
             ],
             correctIndex: 0,
             explanation:
@@ -3652,9 +3652,9 @@ Most television acting is done by people arriving for a day or a week into a com
             prompt: "Which is true of multi-camera work but not single-camera work?",
             options: [
               "A week of rehearsal and often a live audience",
-              "Shooting out of order across a compressed schedule with few takes",
-              "Coverage assembled from separate setups requiring their own lighting",
-              "The absence of any audience, which allows for repeated attempts at a scene",
+              "Shooting out of order on a compressed schedule with few takes",
+              "Coverage assembled from separately lit setups",
+              "No audience, allowing repeated attempts",
             ],
             correctIndex: 0,
             explanation:
@@ -3665,9 +3665,9 @@ Most television acting is done by people arriving for a day or a week into a com
             prompt: "What does a guest performer NOT know on arrival?",
             options: [
               "The set's rhythms and shorthand",
-              "Their own lines, which are usually delivered on the morning of the shoot",
-              "Which scenes will be shot, since guest schedules are decided on the day",
-              "The name of the character they are playing, which is often changed late",
+              "Their own lines",
+              "Which scenes will be shot that day",
+              "Their character's name",
             ],
             correctIndex: 0,
             explanation:
@@ -3678,9 +3678,9 @@ Most television acting is done by people arriving for a day or a week into a com
             prompt: "What is the mistake that costs most performers a commercial job?",
             options: [
               "Treating it as a very short drama",
-              "Failing to memorize the copy, which is always required before an audition",
-              "Playing too small, because commercial framing is wider than dramatic framing",
-              "Arriving without a specific idea of who the character is and what they want",
+              "Failing to memorize the copy",
+              "Playing too small",
+              "Arriving without a specific idea of the character",
             ],
             correctIndex: 0,
             explanation:
@@ -3691,9 +3691,9 @@ Most television acting is done by people arriving for a day or a week into a com
             prompt: "Why is time described as a wall in commercial work?",
             options: [
               "Spots run to fixed lengths with room for the tag",
-              "Shooting days are shorter, so fewer takes are available than on a drama",
-              "Audiences stop watching after a few seconds, so the opening must be immediate",
-              "Editors cannot trim a commercial without breaking the rhythm of the music",
+              "Shooting days are shorter, so fewer takes",
+              "Audiences stop watching after a few seconds",
+              "Editors cannot trim without breaking the music",
             ],
             correctIndex: 0,
             explanation:
@@ -3704,9 +3704,9 @@ Most television acting is done by people arriving for a day or a week into a com
             prompt: "Why is paraphrasing advertising copy a different kind of error than paraphrasing a drama?",
             options: [
               "The wording has usually passed legal review",
-              "Commercial writers charge a fee per word and object to changes on principle",
-              "Copy is timed to the frame, so a longer word makes the spot overrun",
-              "Clients memorize the script and notice any deviation during the shoot",
+              "Commercial writers charge by the word",
+              "Copy is timed so a longer word overruns the frame",
+              "Clients notice any deviation",
             ],
             correctIndex: 0,
             explanation:
@@ -3717,9 +3717,9 @@ Most television acting is done by people arriving for a day or a week into a com
             prompt: "What does \"the product is the protagonist\" ask a performer to stop doing?",
             options: [
               "Building the most interesting character in the frame",
-              "Handling the product, since the camera department manages it separately",
-              "Speaking directly to the lens, which competes with the product for attention",
-              "Making specific choices, because commercial work rewards a generic presence",
+              "Handling the product",
+              "Speaking directly to the lens",
+              "Making specific choices",
             ],
             correctIndex: 0,
             explanation:
@@ -3730,9 +3730,9 @@ Most television acting is done by people arriving for a day or a week into a com
             prompt: "Notes arrive from the client, the agency, and the director, and they disagree. What do you do?",
             options: [
               "Execute the last one, pleasantly",
-              "Ask the three of them to agree before the next take is recorded",
-              "Combine all three into a single reading that partially satisfies each note",
-              "Follow the director's note, since the director outranks the other two on set",
+              "Ask the three of them to agree first",
+              "Combine all three into one reading",
+              "Follow the director, who outranks the other two",
             ],
             correctIndex: 0,
             explanation:
@@ -3743,9 +3743,9 @@ Most television acting is done by people arriving for a day or a week into a com
             prompt: "What is the real person read?",
             options: [
               "Conversational and unpolished, close to your own speech",
-              "A read delivered by a non-professional recruited from the public for authenticity",
-              "A read in which the performer uses their own name rather than a character's",
-              "A testimonial format in which the speaker describes a genuine experience",
+              "A read by a non-professional recruited from the public",
+              "A read using the performer's own name",
+              "A testimonial format",
             ],
             correctIndex: 0,
             explanation:
@@ -3756,9 +3756,9 @@ Most television acting is done by people arriving for a day or a week into a com
             prompt: "What does the spokesperson mode involve?",
             options: [
               "Direct address to the lens, clear and warm",
-              "Playing a heightened figure held for fifteen seconds and played completely straight",
-              "A silent performance in which the face carries the whole message",
-              "Conversation with another performer while the product sits between them",
+              "A heightened figure played completely straight",
+              "A silent performance carried by the face",
+              "Conversation with another performer over the product",
             ],
             correctIndex: 0,
             explanation:
@@ -3769,9 +3769,9 @@ Most television acting is done by people arriving for a day or a week into a com
             prompt: "How should a character or comedic commercial figure be played?",
             options: [
               "Completely straight, from the inside",
-              "Broadly, so that the joke reads within the very short running time available",
-              "With visible awareness of the absurdity, so the audience knows it is a comedy",
-              "At a lower scale than a dramatic performance, since the frame is usually tight",
+              "Broadly, so the joke reads",
+              "With visible awareness of the absurdity",
+              "At a lower scale than drama",
             ],
             correctIndex: 0,
             explanation:
@@ -3782,9 +3782,9 @@ Most television acting is done by people arriving for a day or a week into a com
             prompt: "What does a silent or reaction commercial mode put the performer squarely into?",
             options: [
               "The close-up rules",
-              "The physical acting rules, since the whole body must carry the story without dialogue",
-              "The narration rules, because the voice-over supplies the meaning of the shot",
-              "The stage rules, because the performance is continuous and unedited",
+              "The physical acting rules",
+              "The narration rules",
+              "The stage rules",
             ],
             correctIndex: 0,
             explanation:
@@ -3795,9 +3795,9 @@ Most television acting is done by people arriving for a day or a week into a com
             prompt: "What is the rule for holding a product on camera?",
             options: [
               "Label toward camera, fingers off the front, move slowly",
-              "Hold it at chest height throughout, so the framing does not have to change",
-              "Keep it moving, so that the audience sees it from several angles in one shot",
-              "Hand it to the other performer, so both people are associated with it",
+              "Hold it at chest height throughout",
+              "Keep it moving so it is seen from several angles",
+              "Hand it to the other performer",
             ],
             correctIndex: 0,
             explanation:
@@ -3808,9 +3808,9 @@ Most television acting is done by people arriving for a day or a week into a com
             prompt: "What is the tag in a commercial?",
             options: [
               "The short closing line or brand statement",
-              "The identifying slate recorded at the head of an audition tape",
-              "The label attached to a product so the camera can read it clearly",
-              "The credit naming the agency that produced the spot",
+              "The slate at the head of an audition tape",
+              "The label that lets the camera read a product",
+              "The agency credit",
             ],
             correctIndex: 0,
             explanation:
@@ -3821,9 +3821,9 @@ Most television acting is done by people arriving for a day or a week into a com
             prompt: "What part of a commercial performer's body is the second most directed?",
             options: [
               "The hands",
-              "The eyes, because the product has to be looked at on cue",
-              "The shoulders, because posture carries the credibility of the endorsement",
-              "The mouth, because the copy has to be articulated within a fixed time",
+              "The eyes",
+              "The shoulders",
+              "The mouth",
             ],
             correctIndex: 0,
             explanation:
@@ -3834,9 +3834,9 @@ Most television acting is done by people arriving for a day or a week into a com
             prompt: "How can the time constraint of commercial work be practiced at home?",
             options: [
               "With a phone timer",
-              "By recording several versions and asking a friend to time them",
-              "It cannot be, because timing depends on the edit rather than the performance",
-              "By memorizing the copy until it can be delivered without thinking about it",
+              "By having a friend time several versions",
+              "It cannot be, since timing is decided in the edit",
+              "By memorizing the copy",
             ],
             correctIndex: 0,
             explanation:
@@ -3847,9 +3847,9 @@ Most television acting is done by people arriving for a day or a week into a com
             prompt: "What is copy?",
             options: [
               "The scripted words of a commercial",
-              "The duplicate of a script issued to each performer before a shooting day",
-              "The recorded version of a spot supplied to broadcasters",
-              "The transcription of an improvised read, made so it can be repeated",
+              "The duplicate script each performer is issued",
+              "The recorded spot sent to broadcasters",
+              "A transcription of an improvised read, kept for repeating",
             ],
             correctIndex: 0,
             explanation:
@@ -3860,9 +3860,9 @@ Most television acting is done by people arriving for a day or a week into a com
             prompt: "Why do drama-trained performers often over-complicate commercial work?",
             options: [
               "They play an interior life that is in the way",
-              "They play too small, because dramatic training emphasizes restraint",
-              "They cannot work to a fixed duration, having never been timed before",
-              "They refuse to deliver copy they consider poorly written",
+              "They play too small, out of trained restraint",
+              "They cannot work to a fixed duration",
+              "They refuse badly written copy",
             ],
             correctIndex: 0,
             explanation:
@@ -3873,9 +3873,9 @@ Most television acting is done by people arriving for a day or a week into a com
             prompt: "Which of the four constraints does NOT exist in dramatic work?",
             options: [
               "Direction arriving from a room of people who disagree",
-              "A frame that decides how large a physical choice can be",
-              "A requirement to repeat physical actions so takes will cut together",
-              "An editor who chooses which take reaches the audience",
+              "A frame deciding how large a choice can be",
+              "A need to repeat actions so takes cut together",
+              "An editor choosing the take",
             ],
             correctIndex: 0,
             explanation:
@@ -3886,9 +3886,9 @@ Most television acting is done by people arriving for a day or a week into a com
             prompt: "What shape is a phone held upright?",
             options: [
               "Roughly nine units wide to sixteen tall",
-              "Roughly sixteen wide to nine tall, the same ratio as a television screen",
-              "Square, which is why short-form framing centers the subject so tightly",
-              "Variable, since the shape depends on which platform the video is made for",
+              "Roughly sixteen wide to nine tall, like a television",
+              "Square",
+              "Variable, depending on the platform",
             ],
             correctIndex: 0,
             explanation:
@@ -3899,9 +3899,9 @@ Most television acting is done by people arriving for a day or a week into a com
             prompt: "What does a vertical frame comfortably hold?",
             options: [
               "One person from the chest up",
-              "Two people side by side, which is why dialogue works well in the format",
-              "A full figure head to feet, since the frame is generous with height",
-              "A wide establishing view, provided the camera is far enough away",
+              "Two people side by side",
+              "A full figure, head to feet",
+              "A wide establishing view",
             ],
             correctIndex: 0,
             explanation:
@@ -3912,9 +3912,9 @@ Most television acting is done by people arriving for a day or a week into a com
             prompt: "What kind of movement does a vertical frame punish?",
             options: [
               "Lateral movement",
-              "Movement toward the lens, because focus cannot follow at close range",
-              "Any movement at all, because the frame is too small to contain it",
-              "Vertical movement, since standing up takes the head out of the frame",
+              "Movement toward the lens",
+              "Any movement at all",
+              "Vertical movement, which takes the head out of frame",
             ],
             correctIndex: 0,
             explanation:
@@ -3925,8 +3925,8 @@ Most television acting is done by people arriving for a day or a week into a com
             prompt: "How should a vertical medium shot be treated?",
             options: [
               "As though it were a close-up",
-              "As though it were a wide shot, since the frame contains the whole upper body",
-              "As a stage performance, since the audience is watching without editing",
+              "As though it were a wide shot",
+              "As a stage performance",
               "The same as a horizontal medium shot, since the size term means the same thing",
             ],
             correctIndex: 0,
@@ -3938,9 +3938,9 @@ Most television acting is done by people arriving for a day or a week into a com
             prompt: "What viewing condition should short-form work be planned for?",
             options: [
               "Sound off",
-              "Full attention on a large screen, since viewers seek out this material deliberately",
-              "Headphones, which is why quiet vocal detail carries better than volume",
-              "Repeated viewing, since short pieces are watched several times in succession",
+              "Full attention on a large screen",
+              "Headphones",
+              "Repeated viewing",
             ],
             correctIndex: 0,
             explanation:
@@ -3951,9 +3951,9 @@ Most television acting is done by people arriving for a day or a week into a com
             prompt: "What is the free diagnostic the lesson recommends for short-form work?",
             options: [
               "Watch it muted",
-              "Watch it at double speed to check whether the pacing holds up",
-              "Show it to someone who has not read the script and ask what they understood",
-              "Compare it against a professionally made piece in the same format",
+              "Watch it at double speed",
+              "Show it to someone who has not read the script",
+              "Compare it with a professional piece",
             ],
             correctIndex: 0,
             explanation:
@@ -3964,9 +3964,9 @@ Most television acting is done by people arriving for a day or a week into a com
             prompt: "What job does the beginning of a short-form piece have that it never had before?",
             options: [
               "Being worth not leaving",
-              "Establishing the location, since there is no time for an establishing shot later",
-              "Introducing the performer by name, since viewers may not know who they are",
-              "Setting the aspect ratio expectation, so viewers rotate their phones",
+              "Establishing the location",
+              "Introducing the performer by name",
+              "Telling viewers to rotate their phones",
             ],
             correctIndex: 0,
             explanation:
@@ -3977,9 +3977,9 @@ Most television acting is done by people arriving for a day or a week into a com
             prompt: "What is a cold open, in this lesson's sense?",
             options: [
               "Beginning inside an unresolved situation",
-              "Beginning with silence, so the viewer turns the sound on to find out why",
-              "Beginning with the ending, so the piece can work backward from it",
-              "Beginning without music, which is added only once the situation is established",
+              "Beginning with silence so the viewer turns the sound on",
+              "Beginning with the ending",
+              "Beginning without music",
             ],
             correctIndex: 0,
             explanation:
@@ -3990,9 +3990,9 @@ Most television acting is done by people arriving for a day or a week into a com
             prompt: "How does direct address invert the rule from the eyeline lesson?",
             options: [
               "The lens is played to deliberately",
-              "The eyeline is placed further from the lens rather than closer to it",
-              "The performer looks away from the camera to suggest an unseen listener",
-              "The camera moves to the performer rather than the performer to the camera",
+              "The eyeline moves further from the lens",
+              "The performer looks away to an unseen listener",
+              "The camera moves to the performer",
             ],
             correctIndex: 0,
             explanation:
@@ -4003,9 +4003,9 @@ Most television acting is done by people arriving for a day or a week into a com
             prompt: "What does direct address demand that acting to a partner does not?",
             options: [
               "Supplying the rhythm yourself",
-              "A louder delivery, since there is no partner to react and carry the energy",
+              "A louder delivery",
               "A fixed gaze that never moves, since any shift breaks the connection",
-              "Shorter sentences, because the lens cannot process complex constructions",
+              "Shorter sentences",
             ],
             correctIndex: 0,
             explanation:
@@ -4016,9 +4016,9 @@ Most television acting is done by people arriving for a day or a week into a com
             prompt: "Why is short-form work the most accessible practice ground in the course?",
             options: [
               "It is usually made alone",
-              "It requires no script, so there is nothing to prepare in advance",
-              "Platforms provide feedback that substitutes for a coach's judgment",
-              "It is shorter, so mistakes cost less time to correct than in longer work",
+              "It requires no script",
+              "Platform feedback substitutes for a coach",
+              "It is shorter, so mistakes cost less",
             ],
             correctIndex: 0,
             explanation:
@@ -4029,9 +4029,9 @@ Most television acting is done by people arriving for a day or a week into a com
             prompt: "Why are captions standard in short-form video?",
             options: [
               "Much of the audience is watching muted",
-              "Platforms require them before a piece can be published",
-              "They increase the amount of text on screen, which holds attention longer",
-              "They allow a performer to correct a line that was misdelivered on camera",
+              "Platforms require them before publishing",
+              "They put more text on screen",
+              "They correct misdelivered lines",
             ],
             correctIndex: 0,
             explanation:
@@ -4042,9 +4042,9 @@ Most television acting is done by people arriving for a day or a week into a com
             prompt: "How does gesture behave in a vertical frame?",
             options: [
               "It happens near the face or leaves the frame",
-              "It can be as wide as in any other frame, since height compensates for width",
-              "It should be avoided entirely, since vertical framing suits stillness only",
-              "It has to be repeated, because narrow frames make a single gesture ambiguous",
+              "It can be as wide as in any frame",
+              "It should be avoided entirely",
+              "It has to be repeated to be understood",
             ],
             correctIndex: 0,
             explanation:
@@ -4055,9 +4055,9 @@ Most television acting is done by people arriving for a day or a week into a com
             prompt: "Why is the effective intimacy of mobile viewing higher than the shot size suggests?",
             options: [
               "The screen is held at arm's length",
-              "Phone screens display a higher contrast image than television screens do",
-              "Viewers watch alone, which makes any performance feel more personal",
-              "Mobile video is compressed, which flattens the image and brings it forward",
+              "Phone screens show higher contrast",
+              "Viewers watch alone",
+              "Compression flattens the image forward",
             ],
             correctIndex: 0,
             explanation:
@@ -4068,9 +4068,9 @@ Most television acting is done by people arriving for a day or a week into a com
             prompt: "Which of these does the course deliberately NOT teach about vertical video?",
             options: [
               "Platform pixel dimensions and maximum durations",
-              "The consequences of a tall narrow frame for where gesture can happen",
-              "The assumption that a large share of viewing happens without audio",
-              "The way direct address changes what a performer has to supply",
+              "Where a tall narrow frame lets gesture happen",
+              "That much viewing happens without audio",
+              "How direct address changes the job",
             ],
             correctIndex: 0,
             explanation:
@@ -4081,9 +4081,9 @@ Most television acting is done by people arriving for a day or a week into a com
             prompt: "Where does movement run in a vertical frame?",
             options: [
               "Toward and away from the lens",
-              "Across the frame, which is how the narrow shape is made to feel wider",
-              "Upward and downward, since the frame is generous with height",
-              "Nowhere, because vertical framing cannot accommodate movement at all",
+              "Across the frame",
+              "Upward and downward",
+              "Nowhere",
             ],
             correctIndex: 0,
             explanation:
@@ -4094,9 +4094,9 @@ Most television acting is done by people arriving for a day or a week into a com
             prompt: "What is narration, as this lesson defines it?",
             options: [
               "Acting with the character removed",
-              "The reading of stage directions aloud during a rehearsal for the cast",
-              "Any performance recorded without a camera present in the room",
-              "A summary of a story delivered before the story itself begins",
+              "Reading stage directions aloud in rehearsal",
+              "Any performance recorded without a camera",
+              "A summary delivered before a story begins",
             ],
             correctIndex: 0,
             explanation:
@@ -4107,9 +4107,9 @@ Most television acting is done by people arriving for a day or a week into a com
             prompt: "What defines a narration mode?",
             options: [
               "What the listener is being promised",
-              "The technical specification of the recording the client has requested",
-              "The length of the script, which decides the pace throughout",
-              "Whether the piece will be broadcast or used internally by a company",
+              "The recording specification the client requested",
+              "The length of the script",
+              "Whether the piece is broadcast or internal",
             ],
             correctIndex: 0,
             explanation:
@@ -4120,9 +4120,9 @@ Most television acting is done by people arriving for a day or a week into a com
             prompt: "What is the failure mode of documentary or authoritative narration?",
             options: [
               "Portentousness",
-              "Excessive speed, since documentary copy is usually dense with information",
-              "Sounding uncertain, which undermines the authority the mode depends on",
-              "Over-articulation, which makes the delivery sound artificial to a listener",
+              "Excessive speed",
+              "Sounding uncertain",
+              "Over-articulation",
             ],
             correctIndex: 0,
             explanation:
@@ -4133,9 +4133,9 @@ Most television acting is done by people arriving for a day or a week into a com
             prompt: "In explainer or instructional narration, what outranks beauty?",
             options: [
               "Clarity",
-              "Speed, because the listener wants the information as quickly as possible",
-              "Warmth, because a listener who is struggling needs reassurance most",
-              "Consistency, because instructional material is often heard in fragments",
+              "Speed",
+              "Warmth",
+              "Consistency",
             ],
             correctIndex: 0,
             explanation:
@@ -4146,8 +4146,8 @@ Most television acting is done by people arriving for a day or a week into a com
             prompt: "How does the lesson describe good corporate or industrial narration?",
             options: [
               "Professional and unmemorable in the best sense",
-              "Distinctive, so that the company's material is recognizable across a campaign",
-              "Energetic, because internal audiences need to be kept engaged",
+              "Distinctive across a campaign",
+              "Energetic",
               "Formal, with careful articulation and a slower than conversational pace",
             ],
             correctIndex: 0,
@@ -4159,9 +4159,9 @@ Most television acting is done by people arriving for a day or a week into a com
             prompt: "Which narration mode treats sounding composed as a fault?",
             options: [
               "Personal or essay",
-              "Documentary, because authority is undermined by any audible polish",
-              "Explainer, because a composed delivery suggests the material is easy",
-              "Corporate, because polish reads as insincere to an internal audience",
+              "Documentary",
+              "Explainer",
+              "Corporate",
             ],
             correctIndex: 0,
             explanation:
@@ -4172,9 +4172,9 @@ Most television acting is done by people arriving for a day or a week into a com
             prompt: "What does \"emphasis is meaning\" mean in practice?",
             options: [
               "Land on the words carrying the new information",
-              "Increase the volume on the most important sentence in each paragraph",
-              "Emphasize every noun, since nouns carry the content of a sentence",
-              "Stress each word equally, so the listener decides what matters",
+              "Raise the volume on each key sentence",
+              "Emphasize every noun",
+              "Stress each word equally so the listener decides",
             ],
             correctIndex: 0,
             explanation:
@@ -4185,9 +4185,9 @@ Most television acting is done by people arriving for a day or a week into a com
             prompt: "What is the strongest punctuation available in narration?",
             options: [
               "A pause",
-              "A change of volume, which marks a boundary more clearly than silence does",
-              "A change of pitch, since listeners track pitch more reliably than timing",
-              "A repeated word, which signals to the listener that a point is important",
+              "A change of volume",
+              "A change of pitch",
+              "A repeated word",
             ],
             correctIndex: 0,
             explanation:
@@ -4198,9 +4198,9 @@ Most television acting is done by people arriving for a day or a week into a com
             prompt: "Why is \"talk to one person\" the standard fix for bad narration?",
             options: [
               "Addressing an audience produces announcing",
-              "One listener is easier to imagine than a crowd, which reduces nerves",
-              "It slows the delivery, which is the most common problem in narration work",
-              "It keeps the performer's eyeline consistent when a camera is present",
+              "One listener is easier to imagine, which calms nerves",
+              "It slows the delivery",
+              "It keeps the eyeline consistent",
             ],
             correctIndex: 0,
             explanation:
@@ -4211,9 +4211,9 @@ Most television acting is done by people arriving for a day or a week into a com
             prompt: "What should be found in narration copy before it is performed?",
             options: [
               "Where the argument turns and which sentence is the point",
-              "The words that will be hardest to pronounce cleanly at speed",
-              "The total running time, so the pace can be set before recording",
-              "The client's preferred emphasis, which is usually marked in the script",
+              "The hardest words to pronounce",
+              "The total running time",
+              "The client's preferred emphasis, usually marked in the script",
             ],
             correctIndex: 0,
             explanation:
@@ -4224,9 +4224,9 @@ Most television acting is done by people arriving for a day or a week into a com
             prompt: "What is announcing?",
             options: [
               "Flattened delivery produced by addressing an audience",
-              "The formal introduction of a program before the narration proper begins",
-              "Speaking at a raised level to compensate for a distant microphone",
-              "Reading copy without having analyzed its structure beforehand",
+              "A formal introduction before the narration",
+              "Speaking up for a distant microphone",
+              "Reading copy without analyzing it",
             ],
             correctIndex: 0,
             explanation:
@@ -4237,9 +4237,9 @@ Most television acting is done by people arriving for a day or a week into a com
             prompt: "What does presenting add to narration?",
             options: [
               "Direct address, with the face carrying what the voice carries",
-              "Amplification, since a presenter has to reach a live audience as well as a camera",
-              "Improvisation, because a presenter works without a fixed script",
-              "Movement, because a presenter must walk through a space during delivery",
+              "Amplification for a live audience",
+              "Improvisation, since there is no fixed script",
+              "Movement through a space during delivery",
             ],
             correctIndex: 0,
             explanation:
@@ -4250,9 +4250,9 @@ Most television acting is done by people arriving for a day or a week into a com
             prompt: "Where does the instrument itself, breath and articulation and the mic, get treated in detail?",
             options: [
               "In this course's voice-acting sibling",
-              "In the physical acting lesson later in this same course",
-              "In the self-tape lesson, which covers all recording technique",
-              "Nowhere, because voice technique cannot be taught in a text course",
+              "In the physical acting lesson",
+              "In the self-tape lesson",
+              "Nowhere; voice cannot be taught in text",
             ],
             correctIndex: 0,
             explanation:
@@ -4263,9 +4263,9 @@ Most television acting is done by people arriving for a day or a week into a com
             prompt: "What happens to most people who read well when a camera is added?",
             options: [
               "They flatten visually",
-              "They speed up, because the presence of a camera creates time pressure",
-              "They over-articulate, because they assume the picture demands more precision",
-              "They lower their pitch, which is a common response to being observed",
+              "They speed up under time pressure",
+              "They over-articulate",
+              "They lower their pitch",
             ],
             correctIndex: 0,
             explanation:
@@ -4276,9 +4276,9 @@ Most television acting is done by people arriving for a day or a week into a com
             prompt: "How does pace work in explainer narration?",
             options: [
               "It follows the difficulty of the idea",
-              "It stays constant, so the listener can settle into a predictable rhythm",
-              "It accelerates through the piece, since the listener grows more familiar",
-              "It is set by the client, who specifies a target duration in advance",
+              "It stays constant",
+              "It accelerates as the listener grows familiar",
+              "It is set by the client's target duration",
             ],
             correctIndex: 0,
             explanation:
@@ -4289,9 +4289,9 @@ Most television acting is done by people arriving for a day or a week into a com
             prompt: "What does the lesson say about narration's share of paid work in this field?",
             options: [
               "It is a large share",
-              "It is a small niche, mainly available to performers with broadcast experience",
-              "It is declining, because synthesized voices now cover most of the market",
-              "It is seasonal, concentrated around corporate reporting periods",
+              "It is a small niche",
+              "It is declining as synthesized voices take over",
+              "It is seasonal",
             ],
             correctIndex: 0,
             explanation:
@@ -4302,9 +4302,9 @@ Most television acting is done by people arriving for a day or a week into a com
             prompt: "What is the audience doing during a live theater performance, in the lesson's account?",
             options: [
               "Breathing, coughing, laughing, and going quiet",
-              "Sitting still, since a trained audience does not interfere with the performance",
-              "Reading the program, which is why the opening minutes are usually expository",
-              "Watching a fixed picture, because the composition is set by the lighting design",
+              "Sitting still, as a trained audience does",
+              "Reading the program",
+              "Watching a fixed picture set by the lighting design",
             ],
             correctIndex: 0,
             explanation:
@@ -4315,9 +4315,9 @@ Most television acting is done by people arriving for a day or a week into a com
             prompt: "Knowing which commercial mode a spot is in tells you what, before anyone gives a note?",
             options: [
               "The scale",
-              "The running time, since each mode is associated with a standard spot length",
-              "The number of takes, because character work is always given more than a real person read",
-              "Whether the product will be handled, since only some modes involve holding it",
+              "The running time",
+              "The number of takes",
+              "Whether the product is handled",
             ],
             correctIndex: 0,
             explanation:
@@ -4585,9 +4585,9 @@ Building a neutral baseline means learning to stand and move without your defaul
             prompt: "What is the temptation that makes dramatic work difficult?",
             options: [
               "Performing the size of the feeling",
-              "Underplaying, because restraint has become fashionable in contemporary screen work",
-              "Rushing the pauses, because silence feels longer to the performer than to the audience",
-              "Playing the obstacle instead of the want, which reverses the logic of the scene",
+              "Underplaying the scene",
+              "Rushing the pauses",
+              "Playing the obstacle",
             ],
             correctIndex: 0,
             explanation:
@@ -4598,9 +4598,9 @@ Building a neutral baseline means learning to stand and move without your defaul
             prompt: "How do people actually behave in a genuine crisis, according to the lesson?",
             options: [
               "They do practical things",
-              "They become still and silent, which is why stillness reads as grief on camera",
-              "They express the feeling openly, which is why restrained playing looks false",
-              "They speak more quickly, because urgency compresses the rhythm of speech",
+              "They become still and silent",
+              "They express the feeling openly",
+              "They speak more quickly",
             ],
             correctIndex: 0,
             explanation:
@@ -4611,9 +4611,9 @@ Building a neutral baseline means learning to stand and move without your defaul
             prompt: "What is the operative question in a heavy scene?",
             options: [
               "What is this person doing to stay functional?",
-              "How much does this hurt, measured against the worst moment in the character's life?",
-              "Which of the character's earlier scenes does this one pay off?",
-              "How long can the silence be held before the audience stops watching?",
+              "How much does this hurt?",
+              "Which earlier scene does this one pay off?",
+              "How long can the silence be held?",
             ],
             correctIndex: 0,
             explanation:
@@ -4624,9 +4624,9 @@ Building a neutral baseline means learning to stand and move without your defaul
             prompt: "What does a performer who leads with collapse skip?",
             options: [
               "The part the audience needs",
-              "The rehearsal process, which is where the emotional level should be set",
-              "The technical requirements of matching, which collapse makes impossible",
-              "The other performer's contribution, since collapse ends the exchange",
+              "The rehearsal process",
+              "The technical requirements of matching",
+              "The other performer's contribution",
             ],
             correctIndex: 0,
             explanation:
@@ -4637,9 +4637,9 @@ Building a neutral baseline means learning to stand and move without your defaul
             prompt: "What is usually missing from under-powered dramatic work?",
             options: [
               "Examined stakes",
-              "A clearly identified want, which most performers never establish at all",
-              "Physical commitment, because dramatic scenes are usually played seated",
-              "Vocal variety, which is what keeps a long scene from becoming monotonous",
+              "A clearly identified want",
+              "Physical commitment",
+              "Vocal variety",
             ],
             correctIndex: 0,
             explanation:
@@ -4650,9 +4650,9 @@ Building a neutral baseline means learning to stand and move without your defaul
             prompt: "What kind of cost produces urgency without anyone manufacturing it?",
             options: [
               "Specific and soon",
-              "Large and abstract, since the biggest possible loss produces the strongest playing",
-              "Uncertain, because not knowing the outcome is what creates dramatic tension",
-              "Shared with the other character, so both performers are pursuing the same thing",
+              "Large and abstract",
+              "Uncertain in outcome",
+              "Shared with the other character",
             ],
             correctIndex: 0,
             explanation:
@@ -4663,9 +4663,9 @@ Building a neutral baseline means learning to stand and move without your defaul
             prompt: "Where is the performable material often located in dramatic writing?",
             options: [
               "In the pauses and the changed subject",
-              "In the longest speeches, which is where a writer states the theme",
-              "In the stage directions, which describe what the character is feeling",
-              "In the final exchange of the scene, which resolves everything before it",
+              "In the longest speeches",
+              "In the stage directions",
+              "In the scene's final exchange",
             ],
             correctIndex: 0,
             explanation:
@@ -4676,9 +4676,9 @@ Building a neutral baseline means learning to stand and move without your defaul
             prompt: "What is a deflection, and what does it tell you?",
             options: [
               "Avoiding the question, which marks something being protected",
-              "A physical turn away from the other performer, which signals a change of tactic",
+              "A physical turn away from the other performer, signaling a change of tactic",
               "A line delivered to the camera instead of to the scene partner",
-              "A pause held long enough for the audience to anticipate the answer",
+              "A pause held so the audience anticipates the answer",
             ],
             correctIndex: 0,
             explanation:
@@ -4689,9 +4689,9 @@ Building a neutral baseline means learning to stand and move without your defaul
             prompt: "What does it mean to play the ending?",
             options: [
               "Performing knowledge the character does not have",
-              "Rushing toward the last beat of a scene before the earlier ones have landed",
-              "Deciding how a scene concludes before rehearsing the middle of it",
-              "Giving the final line more weight than the writer's structure supports",
+              "Rushing toward the last beat of a scene",
+              "Deciding how a scene ends before rehearsing its middle",
+              "Giving the final line more weight than the writing supports",
             ],
             correctIndex: 0,
             explanation:
@@ -4702,9 +4702,9 @@ Building a neutral baseline means learning to stand and move without your defaul
             prompt: "Why is playing the ending called a structural error rather than a taste problem?",
             options: [
               "It comes from information the character does not have",
-              "It always makes the performance larger than the frame can hold",
-              "It causes continuity mismatches, because the level cannot be repeated",
-              "It contradicts the director's plan for how the scene will be covered",
+              "It always makes the performance too big for the frame",
+              "It causes continuity mismatches between takes",
+              "It contradicts the director's coverage plan",
             ],
             correctIndex: 0,
             explanation:
@@ -4715,9 +4715,9 @@ Building a neutral baseline means learning to stand and move without your defaul
             prompt: "How are scenes involving violence, intimacy, or serious distress handled professionally?",
             options: [
               "Staged and choreographed, not improvised",
-              "Recorded in a single take, so nobody has to repeat a difficult moment",
-              "Left to the performers, who know their own limits better than anyone",
-              "Shot last, once the cast have built enough trust to work without preparation",
+              "Recorded in a single take, so nobody repeats it",
+              "Left to the performers' own judgment",
+              "Shot last, once the cast trust each other",
             ],
             correctIndex: 0,
             explanation:
@@ -4728,9 +4728,9 @@ Building a neutral baseline means learning to stand and move without your defaul
             prompt: "What does a production that treats safety choreography as optional tell you?",
             options: [
               "Something about itself",
-              "That the budget is limited, which is common and not a cause for concern",
-              "That the director trusts the cast's judgment more than a coordinator's",
-              "That the scene is less demanding than it appeared in the script",
+              "That the budget is limited",
+              "That the director trusts the cast more than a coordinator",
+              "That the scene is less demanding than it looked",
             ],
             correctIndex: 0,
             explanation:
@@ -4741,9 +4741,9 @@ Building a neutral baseline means learning to stand and move without your defaul
             prompt: "What is restraint, in this lesson's vocabulary?",
             options: [
               "The visible effort of holding together",
-              "A reduction in physical scale appropriate to a tighter camera frame",
-              "The decision to underplay a moment so the audience leans in toward it",
-              "The suppression of any visible emotion until the end of the scene",
+              "A smaller physical scale for a tighter frame",
+              "Underplaying so the audience leans in",
+              "Suppressing all visible emotion until the end",
             ],
             correctIndex: 0,
             explanation:
@@ -4754,9 +4754,9 @@ Building a neutral baseline means learning to stand and move without your defaul
             prompt: "What sets a scene's temperature?",
             options: [
               "The stakes",
-              "The want, since a stronger desire produces a more intense performance",
-              "The genre, which fixes the register before the scene is analyzed",
-              "The shot size, because tighter frames call for higher intensity",
+              "The want",
+              "The genre",
+              "The shot size",
             ],
             correctIndex: 0,
             explanation:
@@ -4768,8 +4768,8 @@ Building a neutral baseline means learning to stand and move without your defaul
             options: [
               "Apologizing for crying and then talking about paperwork",
               "Sitting in silence until someone else breaks it, which is the most common response",
-              "Repeating the last thing that was said, which is how shock presents itself",
-              "Leaving the room immediately, since people avoid the source of distress",
+              "Repeating the last thing that was said",
+              "Leaving the room immediately",
             ],
             correctIndex: 0,
             explanation:
@@ -4780,9 +4780,9 @@ Building a neutral baseline means learning to stand and move without your defaul
             prompt: "What makes the failure point of a scene land?",
             options: [
               "Everything before it was holding",
-              "The intensity of the collapse, which has to exceed everything earlier in the scene",
-              "Its position at the end, where the audience is most attentive",
-              "The other performer's reaction, which tells the audience how to read it",
+              "The intensity of the collapse",
+              "Its position at the end of the scene",
+              "The other performer's reaction to it",
             ],
             correctIndex: 0,
             explanation:
@@ -4794,8 +4794,8 @@ Building a neutral baseline means learning to stand and move without your defaul
             options: [
               "Something matters and a person cannot simply have it",
               "A genre in which the outcome is unhappy and the stakes are life and death",
-              "Any scene played without comic intent, whatever its subject matter",
-              "A form in which characters state their feelings directly to one another",
+              "Any scene played without comic intent",
+              "A form where characters state feelings outright",
             ],
             correctIndex: 0,
             explanation:
@@ -4806,9 +4806,9 @@ Building a neutral baseline means learning to stand and move without your defaul
             prompt: "Why does having read the whole script create a specific hazard?",
             options: [
               "It tempts you to play what you know",
-              "It fixes the interpretation before rehearsal, which makes adjustment harder",
-              "It reveals the director's intentions, which should remain private",
-              "It makes the earlier scenes feel less interesting to perform",
+              "It fixes the interpretation before rehearsal",
+              "It reveals the director's private intentions",
+              "It makes the earlier scenes dull to play",
             ],
             correctIndex: 0,
             explanation:
@@ -4819,9 +4819,9 @@ Building a neutral baseline means learning to stand and move without your defaul
             prompt: "What is the fastest way to kill comedy?",
             options: [
               "For the performer to find it funny first",
-              "To play the scene too quickly, which leaves no room for the audience to react",
-              "To underplay it, because comic writing needs a larger scale than drama",
-              "To change the wording, since audiences recognize familiar comic phrasing",
+              "To play the scene too quickly",
+              "To underplay it",
+              "To change the familiar wording",
             ],
             correctIndex: 0,
             explanation:
@@ -4832,9 +4832,9 @@ Building a neutral baseline means learning to stand and move without your defaul
             prompt: "Where does a character in a comedy think they are?",
             options: [
               "In the worst afternoon of their life",
-              "In a comedy, which is why comic characters address the audience so often",
-              "In a scene whose outcome they already know, which is what makes them relaxed",
-              "In a heightened world where ordinary consequences do not apply",
+              "In a comedy",
+              "In a scene whose outcome they already know",
+              "In a heightened world without consequences",
             ],
             correctIndex: 0,
             explanation:
@@ -4858,9 +4858,9 @@ Building a neutral baseline means learning to stand and move without your defaul
             prompt: "What is status, as this lesson uses it?",
             options: [
               "The relative standing two people are playing at a given moment",
-              "The character's actual rank within the world of the story, such as their job",
-              "The performer's billing on a production, which affects how scenes are staged",
-              "The amount of screen time a character receives relative to the others",
+              "The character's rank in the story, such as their job",
+              "The performer's billing on the production",
+              "The character's share of screen time",
             ],
             correctIndex: 0,
             explanation:
@@ -4871,9 +4871,9 @@ Building a neutral baseline means learning to stand and move without your defaul
             prompt: "How does high status behavior present?",
             options: [
               "Taking up space, holding eye contact, moving slowly",
-              "Speaking loudly and quickly, which signals confidence to an audience",
-              "Standing above the other performer, which is why blocking decides status",
-              "Refusing to answer questions, which is the clearest marker of authority",
+              "Speaking loudly and quickly",
+              "Standing above the other performer, so blocking decides it",
+              "Refusing to answer questions",
             ],
             correctIndex: 0,
             explanation:
@@ -4884,9 +4884,9 @@ Building a neutral baseline means learning to stand and move without your defaul
             prompt: "Which situation does the lesson describe as funny?",
             options: [
               "Playing high status while visibly failing",
-              "Playing high status successfully, since competence is inherently satisfying",
-              "Playing low status while genuinely powerless, which the audience recognizes",
-              "Playing no status at all, which creates the neutrality comedy requires",
+              "Playing high status successfully",
+              "Playing low status while truly powerless, which the audience recognizes",
+              "Playing no status at all, the neutrality comedy needs",
             ],
             correctIndex: 0,
             explanation:
@@ -4899,7 +4899,7 @@ Building a neutral baseline means learning to stand and move without your defaul
               "A mid-scene reversal of relative standing",
               "A moment when a character deliberately lowers their status to gain sympathy",
               "The point at which the audience's sympathy transfers to the other character",
-              "A staging change in which two performers exchange positions on the set",
+              "A staging change",
             ],
             correctIndex: 0,
             explanation:
@@ -4910,9 +4910,9 @@ Building a neutral baseline means learning to stand and move without your defaul
             prompt: "What usually tells you more about how to play a comic scene?",
             options: [
               "Reading it for its status moves",
-              "Reading it for its jokes, since the jokes are where the laughs are located",
-              "Reading it aloud at speed to find the natural rhythm of the exchange",
-              "Reading the scenes on either side of it to establish the character's arc",
+              "Reading it for its jokes",
+              "Reading it aloud at speed",
+              "Reading the scenes on either side of it",
             ],
             correctIndex: 0,
             explanation:
@@ -4923,9 +4923,9 @@ Building a neutral baseline means learning to stand and move without your defaul
             prompt: "Which part of comic timing does the lesson say text cannot teach?",
             options: [
               "The felt relationship with an audience",
-              "The placement of the turn within a sentence, which depends on the delivery",
-              "The clarity of a setup, which can only be judged in performance",
-              "The length of a pause, which is decided by the editor rather than the performer",
+              "The placement of the turn within a sentence",
+              "The clarity of a setup",
+              "The length of a pause, which the editor decides",
             ],
             correctIndex: 0,
             explanation:
@@ -4936,9 +4936,9 @@ Building a neutral baseline means learning to stand and move without your defaul
             prompt: "What does a setup need, and what must it avoid?",
             options: [
               "The needed information, delivered without emphasis",
-              "Maximum clarity, achieved by stressing the words the joke will depend on",
-              "Brevity, so the audience reaches the punchline as quickly as possible",
-              "A pause afterward, so the audience has time to prepare for the turn",
+              "Maximum clarity, by stressing the words the joke needs",
+              "Brevity, so the punchline arrives quickly",
+              "A pause afterward to prepare the audience",
             ],
             correctIndex: 0,
             explanation:
@@ -4949,9 +4949,9 @@ Building a neutral baseline means learning to stand and move without your defaul
             prompt: "Where should the turn in a comic line land?",
             options: [
               "On the last possible word",
-              "In the middle, so the audience has time to register it before the line ends",
-              "At the start, so the surprise arrives before the audience can anticipate it",
-              "Wherever the performer's breath naturally falls in the sentence",
+              "In the middle of the line",
+              "At the very start",
+              "Wherever the performer's breath falls",
             ],
             correctIndex: 0,
             explanation:
@@ -4962,9 +4962,9 @@ Building a neutral baseline means learning to stand and move without your defaul
             prompt: "What does a live audience require of comic timing that a recorded medium does not?",
             options: [
               "Letting the laugh happen and returning as it falls",
-              "Repeating the joke if the first delivery is missed by part of the room",
-              "Slowing the whole scene, since a live audience processes more slowly",
-              "Pausing between every line, so nothing is lost under the reaction",
+              "Repeating the joke if part of the room missed it",
+              "Slowing the whole scene down",
+              "Pausing between every line",
             ],
             correctIndex: 0,
             explanation:
@@ -4975,9 +4975,9 @@ Building a neutral baseline means learning to stand and move without your defaul
             prompt: "Where does breaking a pattern pay, in comic structure?",
             options: [
               "At the third repetition",
-              "At the second, because audiences recognize a pattern as soon as it repeats once",
-              "At the fourth, since three establishes the pattern and the fourth breaks it",
-              "At the point where the audience laughs, whenever that happens to be",
+              "At the second repetition",
+              "At the fourth repetition",
+              "Whenever the audience laughs",
             ],
             correctIndex: 0,
             explanation:
@@ -4988,9 +4988,9 @@ Building a neutral baseline means learning to stand and move without your defaul
             prompt: "Why should comic lines be learned exactly rather than paraphrased?",
             options: [
               "Comic writing is rhythmically engineered",
-              "Comic writers object more strongly to changes than dramatic writers do",
-              "Comic scripts are legally reviewed in the same way commercial copy is",
-              "Comic lines are shorter, so an added word takes proportionally more time",
+              "Comic writers object more to changes",
+              "Comic scripts are legally reviewed like commercial copy",
+              "Comic lines are shorter, so each added word costs more",
             ],
             correctIndex: 0,
             explanation:
@@ -5001,9 +5001,9 @@ Building a neutral baseline means learning to stand and move without your defaul
             prompt: "What should a performer treat as part of the text in comic writing?",
             options: [
               "The rhythm",
-              "The stage directions, which usually specify how the joke is meant to land",
-              "The other character's reaction, which the writer has timed precisely",
-              "The pauses marked in the script, which are fixed by the writer",
+              "The stage directions",
+              "The other character's reaction",
+              "The pauses marked in the script",
             ],
             correctIndex: 0,
             explanation:
@@ -5014,9 +5014,9 @@ Building a neutral baseline means learning to stand and move without your defaul
             prompt: "Is comedy a different kind of acting?",
             options: [
               "No, it is the same acting inside a different structure",
-              "Yes, because comic performance requires a larger scale than dramatic work",
+              "Yes, it needs a larger scale than drama",
               "Yes, because comic characters are aware of the audience in a way dramatic ones are not",
-              "Only on stage, where the live reaction changes what the performer is doing",
+              "Only on stage, where the live reaction changes it",
             ],
             correctIndex: 0,
             explanation:
@@ -5028,8 +5028,8 @@ Building a neutral baseline means learning to stand and move without your defaul
             options: [
               "The comedy softens with it",
               "The comedy becomes broader, which some material requires",
-              "Nothing, because the joke is in the writing rather than the playing",
-              "The scene becomes dramatic, which is a legitimate alternative reading",
+              "Nothing, because the joke is in the writing",
+              "The scene turns dramatic instead",
             ],
             correctIndex: 0,
             explanation:
@@ -5040,9 +5040,9 @@ Building a neutral baseline means learning to stand and move without your defaul
             prompt: "How does low status behavior present?",
             options: [
               "Making itself small, checking for reactions, stumbling",
-              "Speaking quietly and slowly, which signals deference to an audience",
-              "Agreeing with everything the other character says without hesitation",
-              "Standing further from the camera, which reduces the character's presence",
+              "Speaking quietly and slowly",
+              "Agreeing with everything the other character says",
+              "Standing further from the camera",
             ],
             correctIndex: 0,
             explanation:
@@ -5054,8 +5054,8 @@ Building a neutral baseline means learning to stand and move without your defaul
             options: [
               "The layer under every other lesson in the course",
               "A genre practiced by performers who specialize in movement-based theater",
-              "The set of techniques used when a scene contains no dialogue",
-              "A rehearsal method used to explore a character before the text is added",
+              "Techniques for scenes with no dialogue",
+              "A way to explore a character before adding text",
             ],
             correctIndex: 0,
             explanation:
@@ -5066,9 +5066,9 @@ Building a neutral baseline means learning to stand and move without your defaul
             prompt: "What does an audience read from movement, and when?",
             options: [
               "Intention, before it processes the line",
-              "Character history, which is why physical choices should reflect a backstory",
-              "The genre, since comic and dramatic movement follow different conventions",
-              "Nothing reliable, which is why movement is subordinate to speech",
+              "Character history, reflecting a backstory",
+              "The genre",
+              "Nothing reliable",
             ],
             correctIndex: 0,
             explanation:
@@ -5079,7 +5079,7 @@ Building a neutral baseline means learning to stand and move without your defaul
             prompt: "What is the difference between the what and the how of a movement?",
             options: [
               "The what is the action; the how is speed, weight, directness, continuity",
-              "The what is the intention; the how is the physical technique used to achieve it",
+              "The what is the intention; the how is the technique",
               "The what is visible to the audience; the how is felt only by the performer",
               "The what is scripted; the how is decided by the director during blocking",
             ],
@@ -5092,8 +5092,8 @@ Building a neutral baseline means learning to stand and move without your defaul
             prompt: "What do movement traditions agree on, despite differing terminology?",
             options: [
               "The axes: speed, weight, directness, and continuity",
-              "The sequence in which physical training should be undertaken",
-              "That physical work must precede any analysis of the text",
+              "The order in which physical training should happen",
+              "That physical work must precede text analysis",
               "That the body should be trained to a neutral state and left there",
             ],
             correctIndex: 0,
@@ -5105,9 +5105,9 @@ Building a neutral baseline means learning to stand and move without your defaul
             prompt: "What does the door-opening exercise demonstrate?",
             options: [
               "Each combination produces a recognizably different person",
-              "That physical choices must be consistent with a character's biography",
-              "That certain combinations are unusable and should be avoided in performance",
-              "That physical training requires equipment and cannot be done at home",
+              "That physical choices must fit the character's biography",
+              "That some combinations are unusable",
+              "That physical training needs equipment",
             ],
             correctIndex: 0,
             explanation:
@@ -5131,9 +5131,9 @@ Building a neutral baseline means learning to stand and move without your defaul
             prompt: "What is neutral, in this lesson's vocabulary?",
             options: [
               "A baseline of moving without personal habit",
-              "An expressionless face used as a starting point for close-up work",
+              "An expressionless face for close-ups",
               "A standing position agreed with the director before blocking begins",
-              "The absence of any physical choice, which lets the text speak for itself",
+              "The absence of any physical choice",
             ],
             correctIndex: 0,
             explanation:
@@ -5157,7 +5157,7 @@ Building a neutral baseline means learning to stand and move without your defaul
             prompt: "What is character from the outside in?",
             options: [
               "Choosing a physical life and letting the internal life follow",
-              "Building a costume and makeup design before deciding on any behavior",
+              "Designing costume and makeup before any behavior",
               "Copying the physical mannerisms of a real person the character resembles",
               "Working from the director's staging rather than from your own analysis",
             ],
@@ -5171,8 +5171,8 @@ Building a neutral baseline means learning to stand and move without your defaul
             options: [
               "Behavior a psychological approach often misses",
               "A consistent silhouette, which is what the audience recognizes at a distance",
-              "A reliable starting position for each take, which helps with matching",
-              "A physical vocabulary that transfers unchanged between different roles",
+              "A reliable starting position for each take",
+              "A physical vocabulary that transfers between roles",
             ],
             correctIndex: 0,
             explanation:
@@ -5183,9 +5183,9 @@ Building a neutral baseline means learning to stand and move without your defaul
             prompt: "What separates trained stillness from untrained stillness?",
             options: [
               "Trained stillness is available weight not being spent",
-              "Trained stillness lasts longer, because the performer has built the stamina for it",
-              "Trained stillness involves no movement at all, while untrained stillness drifts",
-              "Trained stillness is planned in rehearsal, while untrained stillness is spontaneous",
+              "Trained stillness lasts longer, thanks to stamina",
+              "Trained stillness involves no movement at all",
+              "Trained stillness is planned in rehearsal",
             ],
             correctIndex: 0,
             explanation:
@@ -5196,9 +5196,9 @@ Building a neutral baseline means learning to stand and move without your defaul
             prompt: "What does untrained stillness read as, regardless of the scene?",
             options: [
               "Anxiety",
-              "Authority, which is why beginners are often told to stand still",
-              "Concentration, which an audience interprets as intelligence",
-              "Nothing at all, which is why stillness is a neutral choice",
+              "Authority",
+              "Concentration",
+              "Nothing at all",
             ],
             correctIndex: 0,
             explanation:
@@ -5209,9 +5209,9 @@ Building a neutral baseline means learning to stand and move without your defaul
             prompt: "What is leading, in this lesson's vocabulary?",
             options: [
               "Which part of the body initiates a movement",
-              "Taking the first line in a scene so the other performer can respond",
-              "Guiding another performer physically during a choreographed sequence",
-              "Setting the pace of a scene so the rest of the cast can match it",
+              "Taking the first line in a scene",
+              "Guiding another performer in choreography",
+              "Setting the pace for the rest of the cast",
             ],
             correctIndex: 0,
             explanation:
@@ -5222,9 +5222,9 @@ Building a neutral baseline means learning to stand and move without your defaul
             prompt: "Why is physical work the layer most likely to be neglected in a text course?",
             options: [
               "Text is where the words live",
-              "Physical technique cannot be described accurately in prose",
-              "Learners assume that physical work belongs to stage rather than screen",
-              "The exercises require equipment that most learners do not have",
+              "Physical technique cannot be described in prose",
+              "Learners assume physical work is for stage",
+              "The exercises require equipment",
             ],
             correctIndex: 0,
             explanation:
@@ -5235,9 +5235,9 @@ Building a neutral baseline means learning to stand and move without your defaul
             prompt: "At close sizes, what is the most powerful physical option?",
             options: [
               "Doing nothing on purpose",
-              "A small gesture near the face, since that is the only movement in frame",
-              "A change of head angle, which the frame magnifies more than any other move",
-              "Holding the breath, which reads as concentration at close range",
+              "A small gesture near the face",
+              "A change of head angle",
+              "Holding the breath",
             ],
             correctIndex: 0,
             explanation:
@@ -5248,8 +5248,8 @@ Building a neutral baseline means learning to stand and move without your defaul
             prompt: "What is available weight?",
             options: [
               "The quality of a trained stillness, holding without frozen tension",
-              "The amount of physical force a performer can safely apply in a staged fight",
-              "The distribution of a performer's mass across both feet when standing",
+              "The force a performer can safely apply in a staged fight",
+              "How a performer's mass is spread across both feet",
               "The physical energy a performer has left at the end of a long shooting day",
             ],
             correctIndex: 0,
@@ -5261,9 +5261,9 @@ Building a neutral baseline means learning to stand and move without your defaul
             prompt: "What are effort qualities?",
             options: [
               "The axes describing how a movement is performed",
-              "The physical demands a role places on a performer over a long run",
+              "The physical demands of a role over a long run",
               "The degrees of exertion a director can request from a performer on a scale",
-              "The muscle groups a movement training program is designed to develop",
+              "The muscle groups movement training develops",
             ],
             correctIndex: 0,
             explanation:
@@ -5276,7 +5276,7 @@ Building a neutral baseline means learning to stand and move without your defaul
               "That they are decoration",
               "That they can be practiced without another person present in the room",
               "That they carry a wide shot better than a close-up",
-              "That they can be chosen before any decision about the character's history",
+              "That they can precede any backstory decision",
             ],
             correctIndex: 0,
             explanation:
@@ -5287,9 +5287,9 @@ Building a neutral baseline means learning to stand and move without your defaul
             prompt: "What do weight, tempo, and the origin of a movement have in common?",
             options: [
               "They are legible at any distance",
-              "They can only be judged by a trained movement teacher observing in person",
-              "They are fixed by a performer's build and cannot be changed by training",
-              "They matter on stage and become invisible once a frame is introduced",
+              "Only a trained teacher can judge them",
+              "They are fixed by a performer's build",
+              "They vanish once a frame is introduced",
             ],
             correctIndex: 0,
             explanation:
@@ -5546,9 +5546,9 @@ SAG-AFTRA. (n.d.). *Self-tape guidelines for members*. https://www.sagaftra.org/
             prompt: "What is the standard self-tape frame?",
             options: [
               "A medium close-up, roughly chest up",
-              "A wide shot showing the whole body, so physical choices are visible to the viewer",
-              "An extreme close-up on the face, since casting decisions are made on the eyes",
-              "Whatever frame best suits the scene, decided fresh for each audition",
+              "A wide shot showing the whole body",
+              "An extreme close-up on the eyes",
+              "Whatever frame suits the scene",
             ],
             correctIndex: 0,
             explanation:
@@ -5559,9 +5559,9 @@ SAG-AFTRA. (n.d.). *Self-tape guidelines for members*. https://www.sagaftra.org/
             prompt: "Where should the eyes sit in a self-tape frame?",
             options: [
               "About a third down from the top edge",
-              "Exactly in the center of the frame, so the composition is balanced",
-              "In the lower half, so that the background is visible above the performer",
-              "Wherever they fall naturally, since eye position is not a framing consideration",
+              "Exactly in the center of the frame",
+              "In the lower half of the frame",
+              "Wherever they happen to fall",
             ],
             correctIndex: 0,
             explanation:
@@ -5585,9 +5585,9 @@ SAG-AFTRA. (n.d.). *Self-tape guidelines for members*. https://www.sagaftra.org/
             prompt: "Where should the main light source be?",
             options: [
               "In front of you and slightly above",
-              "Behind you, so that the performer is separated from the background",
-              "To one side at floor level, which produces a dramatic and memorable image",
-              "Directly overhead, which is how professional sets are usually lit",
+              "Behind you, to separate you from the background",
+              "To one side at floor level, for drama",
+              "Directly overhead, as on a film set",
             ],
             correctIndex: 0,
             explanation:
@@ -5598,9 +5598,9 @@ SAG-AFTRA. (n.d.). *Self-tape guidelines for members*. https://www.sagaftra.org/
             prompt: "What does being backlit do to a self-tape?",
             options: [
               "Turns you into a silhouette",
-              "Softens the image, which flatters the performer and is generally desirable",
-              "Overexposes the background, which is corrected automatically by most cameras",
-              "Reduces the contrast, which makes the file smaller and easier to send",
+              "Softens and flatters the image",
+              "Overexposes only the background",
+              "Shrinks the file size",
             ],
             correctIndex: 0,
             explanation:
@@ -5611,9 +5611,9 @@ SAG-AFTRA. (n.d.). *Self-tape guidelines for members*. https://www.sagaftra.org/
             prompt: "Where should the camera sit?",
             options: [
               "At roughly eye level, far enough away not to distort",
-              "Slightly below eye level, which is more flattering to most faces",
-              "As close as possible, so the face fills the frame completely",
-              "Above eye level, since that is the angle casting viewers prefer",
+              "Slightly below eye level, to flatter the face",
+              "As close as possible, so the face fills the frame",
+              "Above eye level, the angle casting prefers",
             ],
             correctIndex: 0,
             explanation:
@@ -5624,9 +5624,9 @@ SAG-AFTRA. (n.d.). *Self-tape guidelines for members*. https://www.sagaftra.org/
             prompt: "What does the lesson call the most common fatal flaw in a self-tape, and the least noticed?",
             options: [
               "Sound",
-              "Framing, because most performers place themselves too far from the lens",
-              "Performance choices, which are what a casting viewer is actually assessing",
-              "File naming, which causes tapes to be lost before they are ever watched",
+              "Framing",
+              "Performance",
+              "File naming",
             ],
             correctIndex: 0,
             explanation:
@@ -5637,9 +5637,9 @@ SAG-AFTRA. (n.d.). *Self-tape guidelines for members*. https://www.sagaftra.org/
             prompt: "What should you do with files before sending them?",
             options: [
               "Name them exactly as asked and check the whole file plays",
-              "Compress them as far as possible, since large files are often rejected",
-              "Send several versions, so the viewer can choose the take they prefer",
-              "Rename them with your own system, so they are easy to find again later",
+              "Compress them as far as possible, since big files get rejected",
+              "Send several versions so the viewer can pick a take",
+              "Rename them with your own system for easy filing",
             ],
             correctIndex: 0,
             explanation:
@@ -5650,9 +5650,9 @@ SAG-AFTRA. (n.d.). *Self-tape guidelines for members*. https://www.sagaftra.org/
             prompt: "What makes a good reader?",
             options: [
               "Flat, prompt, and well under your level",
-              "An experienced performer who gives a full performance to play against",
-              "Someone who matches your intensity, so the exchange feels balanced",
-              "Someone standing directly behind the camera at the same height as the lens",
+              "A full performance to play against",
+              "Matching your intensity, line for line",
+              "Standing directly behind the camera",
             ],
             correctIndex: 0,
             explanation:
@@ -5663,9 +5663,9 @@ SAG-AFTRA. (n.d.). *Self-tape guidelines for members*. https://www.sagaftra.org/
             prompt: "Where should the reader be placed?",
             options: [
               "Just to one side of the lens",
-              "Directly behind the camera, so your eyeline goes straight into the lens",
-              "Out of the room entirely, so their voice does not appear on the recording",
-              "Beside you in frame, so the viewer can see the exchange happening",
+              "Directly behind the camera",
+              "Out of the room entirely",
+              "Beside you, in frame",
             ],
             correctIndex: 0,
             explanation:
@@ -5676,9 +5676,9 @@ SAG-AFTRA. (n.d.). *Self-tape guidelines for members*. https://www.sagaftra.org/
             prompt: "What is a slate?",
             options: [
               "The short identification piece at the head of a tape",
-              "The board held in front of the camera at the start of a professional take",
-              "The list of scenes a performer has been asked to prepare for an audition",
-              "The moment a performer settles into position before the scene begins",
+              "The clapper board held up at the start of a take",
+              "The list of scenes you were asked to prepare",
+              "The moment you settle in before the scene begins",
             ],
             correctIndex: 0,
             explanation:
@@ -5689,9 +5689,9 @@ SAG-AFTRA. (n.d.). *Self-tape guidelines for members*. https://www.sagaftra.org/
             prompt: "How should a slate be delivered?",
             options: [
               "As yourself, briefly, exactly as instructed",
-              "In character, so the viewer sees the performance from the first second",
-              "With as much personality as possible, since it is often the first impression",
-              "At length, covering training and credits, so the viewer has context",
+              "In character, from the very first second",
+              "With as much personality as you can muster",
+              "At length, covering training and credits",
             ],
             correctIndex: 0,
             explanation:
@@ -5702,8 +5702,8 @@ SAG-AFTRA. (n.d.). *Self-tape guidelines for members*. https://www.sagaftra.org/
             prompt: "What is headroom?",
             options: [
               "The gap between the top of the head and the top of the frame",
-              "The vertical space a performer has to move in before leaving the shot",
-              "The margin of extra recording time left at the start and end of a take",
+              "The space you can move in before leaving the shot",
+              "The spare recording time at the start and end of a take",
               "The additional exposure latitude a camera has before the image clips",
             ],
             correctIndex: 0,
@@ -5715,9 +5715,9 @@ SAG-AFTRA. (n.d.). *Self-tape guidelines for members*. https://www.sagaftra.org/
             prompt: "What four things do the negotiated self-tape protections cover?",
             options: [
               "Pages, notice, memorization, and technical standard",
-              "Pay, travel, hours, and the right to a reader supplied by the production",
-              "Framing, lighting, sound, and file format, which are specified in the agreement",
-              "Casting fees, submission platforms, representation, and residuals",
+              "Pay, travel, hours, and a reader supplied by production",
+              "Framing, lighting, sound, and file format",
+              "Casting fees, platforms, representation, and residuals",
             ],
             correctIndex: 0,
             explanation:
@@ -5728,9 +5728,9 @@ SAG-AFTRA. (n.d.). *Self-tape guidelines for members*. https://www.sagaftra.org/
             prompt: "Why does this course quote no numbers for the self-tape protections?",
             options: [
               "The terms change each bargaining cycle",
-              "The numbers are confidential and available only to union members",
-              "The protections vary by production, so no general figure exists",
-              "The course covers international work, and the terms differ by country",
+              "The numbers are confidential to members",
+              "The protections vary by production",
+              "The terms differ from country to country",
             ],
             correctIndex: 0,
             explanation:
@@ -5741,9 +5741,9 @@ SAG-AFTRA. (n.d.). *Self-tape guidelines for members*. https://www.sagaftra.org/
             prompt: "What is the lesson's advice about an unreasonable self-tape request?",
             options: [
               "Read the current terms before accepting it as normal",
-              "Refuse it, since any request beyond two pages is outside the protections",
-              "Accept it, because declining an audition damages a relationship with casting",
-              "Negotiate directly with the production, which is what the protections allow",
+              "Refuse it, since anything over two pages breaks the rules",
+              "Accept it, since declining hurts your standing with casting",
+              "Negotiate it directly with the production",
             ],
             correctIndex: 0,
             explanation:
@@ -5754,9 +5754,9 @@ SAG-AFTRA. (n.d.). *Self-tape guidelines for members*. https://www.sagaftra.org/
             prompt: "Which two technical failures does the lesson call avoidable at no cost?",
             options: [
               "Bad sound and being backlit",
-              "Poor framing and a distracting background, both of which need equipment to fix",
-              "Camera shake and focus drift, which require a tripod and a second operator",
-              "Slate errors and file naming errors, both of which come from misreading instructions",
+              "Poor framing and a busy background",
+              "Camera shake and focus drift",
+              "Slate errors and misnamed files",
             ],
             correctIndex: 0,
             explanation:
@@ -5767,9 +5767,9 @@ SAG-AFTRA. (n.d.). *Self-tape guidelines for members*. https://www.sagaftra.org/
             prompt: "What beats a hung sheet as a self-tape background?",
             options: [
               "A bedroom",
-              "A green screen, which allows any background to be added afterward",
-              "A bookshelf, which gives the viewer a sense of the performer's personality",
-              "A window, which provides both a background and a light source at once",
+              "A green screen",
+              "A bookshelf",
+              "A window",
             ],
             correctIndex: 0,
             explanation:
@@ -5780,9 +5780,9 @@ SAG-AFTRA. (n.d.). *Self-tape guidelines for members*. https://www.sagaftra.org/
             prompt: "What orientation should a self-tape be recorded in?",
             options: [
               "Horizontal, unless something specific was requested",
-              "Vertical, because casting viewers now review submissions on phones",
+              "Vertical, since casting now watches on phones",
               "Square, which displays acceptably in both orientations",
-              "Whichever the performer's camera defaults to, since it is later cropped",
+              "Whatever the camera defaults to, since it is cropped later",
             ],
             correctIndex: 0,
             explanation:
@@ -5793,9 +5793,9 @@ SAG-AFTRA. (n.d.). *Self-tape guidelines for members*. https://www.sagaftra.org/
             prompt: "What was the mean correlation between self-rated ability and actual performance across 22 meta-analyses?",
             options: [
               ".29",
-              ".62, which is high enough to make structured self-review unnecessary",
-              ".05, meaning self-ratings are essentially uncorrelated with performance",
-              "It varied so widely that no mean could meaningfully be calculated",
+              ".62",
+              ".05",
+              ".83",
             ],
             correctIndex: 0,
             explanation:
@@ -5806,9 +5806,9 @@ SAG-AFTRA. (n.d.). *Self-tape guidelines for members*. https://www.sagaftra.org/
             prompt: "How does the lesson characterize flawed self-assessment?",
             options: [
               "A documented general pattern, not a moral failing",
-              "A problem specific to inexperienced performers, which training resolves",
-              "A consequence of anxiety, which is why relaxation improves self-review",
-              "An artifact of laboratory studies with no bearing on creative work",
+              "A problem of beginners, which training resolves",
+              "A symptom of anxiety, which relaxation fixes",
+              "A lab artifact with no bearing on creative work",
             ],
             correctIndex: 0,
             explanation:
@@ -5832,9 +5832,9 @@ SAG-AFTRA. (n.d.). *Self-tape guidelines for members*. https://www.sagaftra.org/
             prompt: "Why is \"was I good?\" the wrong question?",
             options: [
               "It is broad, complex, and vague",
-              "It is negative, and negative framing reduces motivation to practice",
-              "It cannot be answered without another person present to compare against",
-              "It has an answer, but only after several weeks have passed",
+              "It is negative, which saps motivation",
+              "It needs someone else to compare against",
+              "It can only be answered weeks later",
             ],
             correctIndex: 0,
             explanation:
@@ -5845,9 +5845,9 @@ SAG-AFTRA. (n.d.). *Self-tape guidelines for members*. https://www.sagaftra.org/
             prompt: "What does the first pass of the protocol do?",
             options: [
               "Watch with the sound off",
-              "Watch normally, so the whole performance is taken in before analysis begins",
-              "Listen without the picture, which isolates the vocal work first",
-              "Write down expectations before viewing, so bias can be measured afterward",
+              "Watch it once, normally",
+              "Listen without the picture",
+              "Write down your expectations",
             ],
             correctIndex: 0,
             explanation:
@@ -5858,9 +5858,9 @@ SAG-AFTRA. (n.d.). *Self-tape guidelines for members*. https://www.sagaftra.org/
             prompt: "What does the second pass isolate?",
             options: [
               "The audio, listened to without the picture",
-              "The physical performance, watched at reduced speed",
-              "The other performer's contribution, viewed separately from your own",
-              "The framing, checked against the technical requirements of the format",
+              "The physical performance, at reduced speed",
+              "The other performer's contribution alone",
+              "The framing, against the format's technical rules",
             ],
             correctIndex: 0,
             explanation:
@@ -5884,9 +5884,9 @@ SAG-AFTRA. (n.d.). *Self-tape guidelines for members*. https://www.sagaftra.org/
             prompt: "What is the fourth pass?",
             options: [
               "Redo the scene changing exactly one thing",
-              "Watch the take a final time and write an overall verdict",
-              "Show the take to someone else and record their reaction",
-              "Compare the take against a professional performance of the same material",
+              "Watch a final time and write a verdict",
+              "Show it to someone and note their reaction",
+              "Compare it against a professional's take",
             ],
             correctIndex: 0,
             explanation:
@@ -5897,9 +5897,9 @@ SAG-AFTRA. (n.d.). *Self-tape guidelines for members*. https://www.sagaftra.org/
             prompt: "Why must the checklist answers be written down before re-watching?",
             options: [
               "Memory reshapes itself to the outcome",
-              "Written answers can be shown to a teacher later for verification",
-              "Writing slows the process down, which improves the quality of attention",
-              "The act of writing is what converts an observation into a decision",
+              "A teacher can check written answers later",
+              "Writing slows you down and sharpens attention",
+              "Writing turns an observation into a decision",
             ],
             correctIndex: 0,
             explanation:
@@ -5910,9 +5910,9 @@ SAG-AFTRA. (n.d.). *Self-tape guidelines for members*. https://www.sagaftra.org/
             prompt: "What kind of question does the protocol require?",
             options: [
               "Observable rather than evaluative",
-              "Open rather than closed, so the answer captures nuance",
-              "Comparative, so each take is judged against the previous one",
-              "Emotional, since the point of review is to check what the scene felt like",
+              "Open rather than closed, for nuance",
+              "Comparative, judged against the last take",
+              "Emotional, about how the scene felt",
             ],
             correctIndex: 0,
             explanation:
@@ -5923,9 +5923,9 @@ SAG-AFTRA. (n.d.). *Self-tape guidelines for members*. https://www.sagaftra.org/
             prompt: "What two jobs must be kept completely separate?",
             options: [
               "Performing and judging",
-              "Analyzing the script and learning the lines",
-              "Recording the take and framing the shot",
-              "Choosing the material and choosing the reader",
+              "Analyzing and memorizing",
+              "Recording and framing",
+              "Choosing material and readers",
             ],
             correctIndex: 0,
             explanation:
@@ -5936,9 +5936,9 @@ SAG-AFTRA. (n.d.). *Self-tape guidelines for members*. https://www.sagaftra.org/
             prompt: "What does the sound-off pass show you?",
             options: [
               "What a stranger sees on your face and body",
-              "Whether the technical quality of the picture is good enough to submit",
-              "Whether the physical shape matches across the different takes",
-              "Which moments the editor would be most likely to select",
+              "Whether the picture quality is good enough to submit",
+              "Whether the physical shape matches across takes",
+              "Which moments an editor would pick",
             ],
             correctIndex: 0,
             explanation:
@@ -5949,9 +5949,9 @@ SAG-AFTRA. (n.d.). *Self-tape guidelines for members*. https://www.sagaftra.org/
             prompt: "What is the stated limit of the self-critique protocol?",
             options: [
               "It cannot tell you what you cannot yet perceive",
-              "It only works for screen material, since stage work cannot be recorded usefully",
-              "It requires at least a year of experience before the questions make sense",
-              "It becomes unreliable after several weeks of repeated use",
+              "It only works for screen material, not stage",
+              "It needs a year of experience to make sense",
+              "It becomes unreliable after a few weeks of use",
             ],
             correctIndex: 0,
             explanation:
@@ -5975,9 +5975,9 @@ SAG-AFTRA. (n.d.). *Self-tape guidelines for members*. https://www.sagaftra.org/
             prompt: "What is a one-change take?",
             options: [
               "A second attempt altering exactly one thing",
-              "A take in which the performer changes something without telling the reader",
-              "A recording made after a single note has been given by an outside observer",
-              "The final take of a session, incorporating every adjustment made so far",
+              "A take where you change something without telling the reader",
+              "A take made after a single outside note",
+              "The final take, with every adjustment so far",
             ],
             correctIndex: 0,
             explanation:
@@ -6014,9 +6014,9 @@ SAG-AFTRA. (n.d.). *Self-tape guidelines for members*. https://www.sagaftra.org/
             prompt: "What is self-assessment accuracy, in the lesson's vocabulary?",
             options: [
               "How closely a self-rating tracks measured performance",
-              "How consistently a performer rates the same take on separate viewings",
-              "How well a performer predicts whether they will be cast in a role",
-              "How closely a performer's judgment matches a teacher's judgment",
+              "How consistently you rate the same take twice",
+              "How well you predict whether you will be cast",
+              "How closely your judgment matches a teacher's",
             ],
             correctIndex: 0,
             explanation:
@@ -6027,9 +6027,9 @@ SAG-AFTRA. (n.d.). *Self-tape guidelines for members*. https://www.sagaftra.org/
             prompt: "What was the range of individual effects behind the .29 mean?",
             options: [
               ".09 to .63",
-              ".20 to .40, which is why the mean is a good summary of the literature",
-              "Zero to 1.0, meaning the mean carries almost no information",
-              "The range was not reported, only the mean and standard deviation",
+              ".20 to .40",
+              "Zero to 1.0",
+              "Not reported",
             ],
             correctIndex: 0,
             explanation:
@@ -6040,9 +6040,9 @@ SAG-AFTRA. (n.d.). *Self-tape guidelines for members*. https://www.sagaftra.org/
             prompt: "Which is an evaluative question the protocol tells you never to ask?",
             options: [
               "Am I any good?",
-              "Did I know what I wanted in each unit of the scene?",
-              "Was the physical scale appropriate to the size of the frame?",
-              "Did a visible thought arrive before I spoke at any point?",
+              "Did I want something?",
+              "Was the scale right?",
+              "Did a thought arrive first?",
             ],
             correctIndex: 0,
             explanation:
@@ -6066,9 +6066,9 @@ SAG-AFTRA. (n.d.). *Self-tape guidelines for members*. https://www.sagaftra.org/
             prompt: "What did the 2019 replication find about the best violinists?",
             options: [
               "They had accumulated less practice than the good ones",
-              "They had accumulated roughly twice as much practice as the good ones",
-              "They had started younger, which explained most of the difference",
-              "They had practiced the same amount but with better quality supervision",
+              "They had roughly twice the practice of the good ones",
+              "They had started younger, which explained the gap",
+              "They practiced the same amount under better supervision",
             ],
             correctIndex: 0,
             explanation:
@@ -6079,9 +6079,9 @@ SAG-AFTRA. (n.d.). *Self-tape guidelines for members*. https://www.sagaftra.org/
             prompt: "How did the share of variance explained change in the 2019 replication?",
             options: [
               "It fell from 48 percent to 26 percent",
-              "It rose from 26 percent to 48 percent, strengthening the original claim",
-              "It stayed the same, but the direction of the effect reversed",
-              "It could not be calculated, because the sample was too small",
+              "It rose from 26 to 48 percent",
+              "It stayed level, but the effect reversed",
+              "It could not be calculated",
             ],
             correctIndex: 0,
             explanation:
@@ -6092,9 +6092,9 @@ SAG-AFTRA. (n.d.). *Self-tape guidelines for members*. https://www.sagaftra.org/
             prompt: "What did the replication find about teacher-designed practice?",
             options: [
               "No advantage over self-directed practice",
-              "A substantial advantage, which is why solo practice is discouraged",
-              "It could not be measured, because the original study did not record it",
-              "A disadvantage, meaning self-directed practice was clearly superior",
+              "A substantial advantage over solo practice",
+              "It could not be measured at all",
+              "A clear disadvantage against solo work",
             ],
             correctIndex: 0,
             explanation:
@@ -6105,9 +6105,9 @@ SAG-AFTRA. (n.d.). *Self-tape guidelines for members*. https://www.sagaftra.org/
             prompt: "Which two conclusions does the lesson draw from the replication?",
             options: [
               "Hours guarantee nothing, and solo practice was not worse",
-              "Practice is ineffective, and formal training is therefore essential",
-              "The original study was fraudulent, and its framework should be discarded",
-              "Practice only works with a teacher, and self-directed work should be avoided",
+              "Practice is ineffective, so formal training is essential",
+              "The original study was fraudulent and should be discarded",
+              "Practice works only with a teacher, never alone",
             ],
             correctIndex: 0,
             explanation:
@@ -6117,10 +6117,10 @@ SAG-AFTRA. (n.d.). *Self-tape guidelines for members*. https://www.sagaftra.org/
           {
             prompt: "Which of these can be practiced productively alone?",
             options: [
-              "Cold reading",
-              "Playing off another person, which is the core skill of scene work",
-              "Timing to an audience, which is what live performance develops",
-              "Diagnosing what you cannot yet perceive in your own work",
+              "Cold reading unfamiliar material",
+              "Playing off a partner",
+              "Timing to an audience",
+              "Spotting your blind spots",
             ],
             correctIndex: 0,
             explanation:
@@ -6131,9 +6131,9 @@ SAG-AFTRA. (n.d.). *Self-tape guidelines for members*. https://www.sagaftra.org/
             prompt: "What is cold reading?",
             options: [
               "Performing unfamiliar material after very short preparation",
-              "Reading a script silently before any decision about performance is made",
-              "Delivering lines without any emotional commitment as a technical exercise",
-              "Reading a scene aloud with another performer for the first time",
+              "Reading a script silently before making any choices",
+              "Delivering lines with no emotional commitment at all",
+              "Reading a scene aloud with a partner for the first time",
             ],
             correctIndex: 0,
             explanation:
@@ -6144,9 +6144,9 @@ SAG-AFTRA. (n.d.). *Self-tape guidelines for members*. https://www.sagaftra.org/
             prompt: "What is repertoire, as this lesson uses it?",
             options: [
               "A small maintained set of prepared pieces",
-              "The complete list of roles a performer has played professionally",
-              "The range of accents and physical skills a performer can produce on request",
-              "The catalog of plays a performer has studied during training",
+              "Every role you have played professionally",
+              "The accents and physical skills you can produce",
+              "The plays you studied during training",
             ],
             correctIndex: 0,
             explanation:
@@ -6157,9 +6157,9 @@ SAG-AFTRA. (n.d.). *Self-tape guidelines for members*. https://www.sagaftra.org/
             prompt: "Which thing does the lesson say cannot be practiced alone?",
             options: [
               "Playing off another person",
-              "Learning lines, which requires a partner to test you on them",
-              "Physical vocabulary, which needs a movement teacher's correction",
-              "Self-tape technique, which requires a second person to operate the camera",
+              "Learning lines, which needs a tester",
+              "Physical vocabulary",
+              "Self-tape technique, which needs a camera operator",
             ],
             correctIndex: 0,
             explanation:
@@ -6170,9 +6170,9 @@ SAG-AFTRA. (n.d.). *Self-tape guidelines for members*. https://www.sagaftra.org/
             prompt: "What is the lesson's honest recommendation about working with others?",
             options: [
               "Get into rooms with other people whenever you can",
-              "Wait until your solo work is strong enough to be worth someone else's time",
-              "Pay for coaching, which is the only reliable form of external feedback",
-              "Rely on online communities, which can substitute for a rehearsal room",
+              "Wait until your solo work is worth someone's time",
+              "Pay for coaching, the only reliable feedback",
+              "Lean on online communities instead of a room",
             ],
             correctIndex: 0,
             explanation:
@@ -6183,9 +6183,9 @@ SAG-AFTRA. (n.d.). *Self-tape guidelines for members*. https://www.sagaftra.org/
             prompt: "What is the closest available substitute for a teacher's memory of your work?",
             options: [
               "A written practice log",
-              "A folder of recorded takes kept in chronological order",
-              "A regular partner who watches your work over a period of months",
-              "A checklist filled in immediately after every recorded session",
+              "A folder of recorded takes",
+              "A regular watching partner",
+              "A post-session checklist",
             ],
             correctIndex: 0,
             explanation:
@@ -6209,9 +6209,9 @@ SAG-AFTRA. (n.d.). *Self-tape guidelines for members*. https://www.sagaftra.org/
             prompt: "Which solo practice item does the lesson call purely mechanical?",
             options: [
               "Learning lines",
-              "Analysis, because a scene breakdown has a defensible answer",
-              "Physical vocabulary, because the effort combinations are fixed",
-              "Cold reading, because the material is unfamiliar every time",
+              "Analysis",
+              "Physical vocabulary",
+              "Cold reading",
             ],
             correctIndex: 0,
             explanation:
@@ -6222,9 +6222,9 @@ SAG-AFTRA. (n.d.). *Self-tape guidelines for members*. https://www.sagaftra.org/
             prompt: "Why is analysis described as checkable?",
             options: [
               "It has an answer you can defend",
-              "It can be marked automatically against a stored model answer",
-              "It produces a written document that a teacher can review later",
-              "It is the only solo activity that produces a measurable score",
+              "It can be marked by machine",
+              "It produces a document to review",
+              "It yields a measurable score",
             ],
             correctIndex: 0,
             explanation:
@@ -6248,9 +6248,9 @@ SAG-AFTRA. (n.d.). *Self-tape guidelines for members*. https://www.sagaftra.org/
             prompt: "Which of these is on the list of things a performer can practice alone?",
             options: [
               "Self-tape technique",
-              "Adjusting scale in response to a live audience's reaction",
-              "Receiving and executing a director's note under time pressure",
-              "Matching physical action against another performer's timing",
+              "Scaling to a live audience",
+              "Taking a director's note",
+              "Timing to a partner",
             ],
             correctIndex: 0,
             explanation:
@@ -6274,9 +6274,9 @@ SAG-AFTRA. (n.d.). *Self-tape guidelines for members*. https://www.sagaftra.org/
             prompt: "What is a practice log for?",
             options: [
               "Recording what was changed and what resulted",
-              "Proving to an agent that a performer has trained consistently",
-              "Tracking total hours toward a target for expertise",
-              "Listing the material a performer has covered, for a resume",
+              "Proving to an agent that you train consistently",
+              "Tracking hours toward an expertise target",
+              "Listing covered material for a resume",
             ],
             correctIndex: 0,
             explanation:
@@ -6287,9 +6287,9 @@ SAG-AFTRA. (n.d.). *Self-tape guidelines for members*. https://www.sagaftra.org/
             prompt: "What should a headshot look like?",
             options: [
               "Like you on an ordinary day",
-              "Like the most flattering version of you achievable with lighting and retouching",
-              "Like the type of role you most want to be considered for",
-              "Like a character, so that casting can see your range immediately",
+              "Like your most flattering, retouched self",
+              "Like the role you most want",
+              "Like a character, to show range",
             ],
             correctIndex: 0,
             explanation:
@@ -6300,9 +6300,9 @@ SAG-AFTRA. (n.d.). *Self-tape guidelines for members*. https://www.sagaftra.org/
             prompt: "Why is listing a skill you cannot perform a self-inflicted disaster?",
             options: [
               "You may be asked to perform it on the day",
-              "Agencies verify every claim, so an inaccurate resume is discovered immediately",
-              "Union rules prohibit inaccurate skill claims and impose penalties for them",
-              "Casting software filters submissions by skill, so an error costs you auditions",
+              "Agencies verify every claim immediately",
+              "Union rules penalize inaccurate claims",
+              "Casting software filters out the error",
             ],
             correctIndex: 0,
             explanation:
@@ -6313,9 +6313,9 @@ SAG-AFTRA. (n.d.). *Self-tape guidelines for members*. https://www.sagaftra.org/
             prompt: "How should a reel be built?",
             options: [
               "Short and front-loaded with your strongest material",
-              "Chronologically, so a viewer can see how the work has developed over time",
-              "Comprehensively, so that every credit is represented at least briefly",
-              "With the strongest material last, so the reel builds toward its best moment",
+              "Chronologically, to show your development",
+              "Comprehensively, with every credit represented",
+              "Strongest material last, building to a peak",
             ],
             correctIndex: 0,
             explanation:
@@ -6326,8 +6326,8 @@ SAG-AFTRA. (n.d.). *Self-tape guidelines for members*. https://www.sagaftra.org/
             prompt: "What does representation do, and what does it not do?",
             options: [
               "It provides access and negotiates; it does not create demand for you",
-              "It guarantees a minimum number of auditions in exchange for a share of earnings",
-              "It manages a performer's career decisions, including which roles to accept",
+              "It guarantees auditions in exchange for a share of earnings",
+              "It manages every career decision, including which roles to take",
               "It replaces the need for a self-tape setup, since submissions go through the agency",
             ],
             correctIndex: 0,
@@ -6339,9 +6339,9 @@ SAG-AFTRA. (n.d.). *Self-tape guidelines for members*. https://www.sagaftra.org/
             prompt: "What is the tell that a representation offer is not legitimate?",
             options: [
               "It asks for money up front",
-              "It offers to represent you without having seen any of your recorded work",
-              "It represents a large number of performers rather than a select few",
-              "It contacts you rather than waiting for you to submit to them",
+              "It signs you sight unseen",
+              "It represents a large roster",
+              "It contacts you first",
             ],
             correctIndex: 0,
             explanation:
@@ -6365,9 +6365,9 @@ SAG-AFTRA. (n.d.). *Self-tape guidelines for members*. https://www.sagaftra.org/
             prompt: "Which union does the lesson name as covering most professional theater in the United States?",
             options: [
               "Actors' Equity Association",
-              "SAG-AFTRA, which covers all performance work regardless of medium",
-              "The Casting Society, which sets standards for auditions and representation",
-              "The Writers Guild, which negotiates on behalf of performers in stage productions",
+              "SAG-AFTRA, which covers all media",
+              "The Casting Society",
+              "The Writers Guild",
             ],
             correctIndex: 0,
             explanation:
@@ -6378,9 +6378,9 @@ SAG-AFTRA. (n.d.). *Self-tape guidelines for members*. https://www.sagaftra.org/
             prompt: "What does SAG-AFTRA cover, per the lesson?",
             options: [
               "Film, television, and much commercial and voice work",
-              "Professional theater, including regional and touring productions",
-              "All performance work in the United States, including stage and screen",
-              "Only television, with film covered by a separate agreement entirely",
+              "Professional theater, including touring",
+              "All US performance work, stage and screen",
+              "Only television, with film under a separate deal",
             ],
             correctIndex: 0,
             explanation:
@@ -6391,9 +6391,9 @@ SAG-AFTRA. (n.d.). *Self-tape guidelines for members*. https://www.sagaftra.org/
             prompt: "Where should you read union membership rules and contract terms?",
             options: [
               "On the union's own site",
-              "In this course, which summarizes the current terms accurately",
-              "From an agent, who deals with the contracts professionally",
-              "In trade press coverage, which reports changes as they are negotiated",
+              "In this course's summary",
+              "From your agent",
+              "In the trade press",
             ],
             correctIndex: 0,
             explanation:
@@ -6404,9 +6404,9 @@ SAG-AFTRA. (n.d.). *Self-tape guidelines for members*. https://www.sagaftra.org/
             prompt: "Why does the course refuse to quote rates?",
             options: [
               "They change, and a stale number is worse than none",
-              "They are confidential and available only through representation",
-              "They vary so much between performers that no figure would be meaningful",
-              "Publishing them would breach union agreements covering the material",
+              "They are confidential, shared only through agents",
+              "They vary too much between performers to mean anything",
+              "Publishing them would breach union agreements",
             ],
             correctIndex: 0,
             explanation:
@@ -6417,9 +6417,9 @@ SAG-AFTRA. (n.d.). *Self-tape guidelines for members*. https://www.sagaftra.org/
             prompt: "Why does the course refuse to quote statistics about how many performers work?",
             options: [
               "The figures depend entirely on who is counted",
-              "The data is collected only by unions and is not published",
-              "The numbers are so discouraging that publishing them would be irresponsible",
-              "Employment patterns changed recently, so older figures are all obsolete",
+              "The data is collected only by unions",
+              "The numbers are too discouraging to publish",
+              "Employment shifted, so older figures are obsolete",
             ],
             correctIndex: 0,
             explanation:
@@ -6430,9 +6430,9 @@ SAG-AFTRA. (n.d.). *Self-tape guidelines for members*. https://www.sagaftra.org/
             prompt: "What does the course say about estimating your chances?",
             options: [
               "Nobody has one",
-              "They improve measurably with each year of training completed",
-              "They can be estimated from the number of performers competing for a role",
-              "They depend mainly on the quality of representation a performer secures",
+              "Training improves them",
+              "Count the competition",
+              "Agents decide them",
             ],
             correctIndex: 0,
             explanation:
@@ -6444,7 +6444,7 @@ SAG-AFTRA. (n.d.). *Self-tape guidelines for members*. https://www.sagaftra.org/
             options: [
               "They built a life that does not require the next job on schedule",
               "They are the most talented, which is why persistence alone is not enough",
-              "They started youngest, which gives the longest window for a career to develop",
+              "They started youngest, for the longest runway",
               "They specialized early in one medium rather than working across several",
             ],
             correctIndex: 0,
@@ -6456,9 +6456,9 @@ SAG-AFTRA. (n.d.). *Self-tape guidelines for members*. https://www.sagaftra.org/
             prompt: "How does the lesson frame the description of the profession's difficulty?",
             options: [
               "As the actual shape of the profession, not discouragement",
-              "As a warning intended to filter out learners who are not committed",
-              "As a temporary condition caused by changes in how work is commissioned",
-              "As something that varies enough by region to be worth relocating for",
+              "As a warning to filter out the uncommitted",
+              "As a temporary result of new commissioning",
+              "As varying enough by region to justify moving",
             ],
             correctIndex: 0,
             explanation:
@@ -6521,9 +6521,9 @@ SAG-AFTRA. (n.d.). *Self-tape guidelines for members*. https://www.sagaftra.org/
             prompt: "How should a resume be written?",
             options: [
               "Credits, training, and skills, honestly stated",
-              "With the strongest credits repeated in more than one section for emphasis",
-              "With training omitted once a performer has professional credits to list",
-              "With skills stated aspirationally, since they can be learned before a booking",
+              "With top credits repeated for emphasis",
+              "With training dropped once you have credits",
+              "With skills stated aspirationally",
             ],
             correctIndex: 0,
             explanation:
@@ -6534,9 +6534,9 @@ SAG-AFTRA. (n.d.). *Self-tape guidelines for members*. https://www.sagaftra.org/
             prompt: "Where do the enforceable protections in this field live?",
             options: [
               "In the unions",
-              "In casting platform terms of service, which govern most submissions",
-              "In individual contracts negotiated by a performer's representation",
-              "In general employment law, which covers performers like any other worker",
+              "In platform terms",
+              "In agent contracts",
+              "In employment law",
             ],
             correctIndex: 0,
             explanation:
@@ -6547,9 +6547,9 @@ SAG-AFTRA. (n.d.). *Self-tape guidelines for members*. https://www.sagaftra.org/
             prompt: "What is the piece of a performer's kit most within their own control?",
             options: [
               "The self-tape setup",
-              "The headshot, since the performer chooses the photographer and the images",
-              "The resume, since its contents are entirely the performer's own decision",
-              "The reel, since the performer selects which clips to include",
+              "The headshot",
+              "The resume",
+              "The reel",
             ],
             correctIndex: 0,
             explanation:
@@ -6560,9 +6560,9 @@ SAG-AFTRA. (n.d.). *Self-tape guidelines for members*. https://www.sagaftra.org/
             prompt: "Why does a self-tape reader need to stay under your level?",
             options: [
               "The tape is about you",
-              "A loud reader overloads the microphone and makes the dialogue unusable",
-              "Union rules limit how much a non-professional reader may contribute",
-              "A committed reader draws the viewer's eye toward the edge of the frame",
+              "A loud reader overloads the mic",
+              "Union rules limit readers",
+              "A committed reader pulls focus",
             ],
             correctIndex: 0,
             explanation:
@@ -6573,9 +6573,9 @@ SAG-AFTRA. (n.d.). *Self-tape guidelines for members*. https://www.sagaftra.org/
             prompt: "What is the reason the self-tape is called the front door of most casting?",
             options: [
               "It is where most casting processes now begin",
-              "It is the only stage of casting covered by negotiated protections",
-              "It is the point at which representation first becomes necessary",
-              "It replaced the reel as the material a performer submits for consideration",
+              "It is the only stage with union protections",
+              "It is where an agent first becomes necessary",
+              "It replaced the reel as the main submission",
             ],
             correctIndex: 0,
             explanation:
@@ -6601,7 +6601,7 @@ SAG-AFTRA. (n.d.). *Self-tape guidelines for members*. https://www.sagaftra.org/
               "It substitutes for a structured review; it does not replace trained eyes",
               "It substitutes for rehearsal; it does not replace performance in front of people",
               "It substitutes for technical training; it does not replace analysis of the script",
-              "It substitutes for a teacher entirely, provided it is run consistently over time",
+              "It substitutes for a teacher entirely, if run consistently",
             ],
             correctIndex: 0,
             explanation:
@@ -6612,9 +6612,9 @@ SAG-AFTRA. (n.d.). *Self-tape guidelines for members*. https://www.sagaftra.org/
             prompt: "Why is the replication result relevant to somebody practicing alone specifically?",
             options: [
               "Self-directed practice showed no disadvantage",
-              "It proves that practicing alone produces better results than working with a teacher",
-              "It shows that solo practice is only effective above a threshold of total hours",
-              "It establishes that solo practice cannot produce expert-level performance",
+              "It proves solo practice beats working with a teacher",
+              "Solo practice works only above an hours threshold",
+              "Solo practice cannot reach expert level",
             ],
             correctIndex: 0,
             explanation:
@@ -6625,9 +6625,9 @@ SAG-AFTRA. (n.d.). *Self-tape guidelines for members*. https://www.sagaftra.org/
             prompt: "What is the practical status of accumulated practice hours, after the replication?",
             options: [
               "Not a purchase order for a career",
-              "The single best predictor of whether a performer will work professionally",
-              "Irrelevant, since the replication showed practice has no effect at all",
-              "Meaningful only when the hours are supervised by a qualified teacher",
+              "The best predictor of a career",
+              "Irrelevant, since practice has no effect",
+              "Meaningful only when supervised",
             ],
             correctIndex: 0,
             explanation:
@@ -6650,9 +6650,9 @@ SAG-AFTRA. (n.d.). *Self-tape guidelines for members*. https://www.sagaftra.org/
             prompt: "What is the one thing this course states, in its first lesson, that it cannot do?",
             options: [
               "Judge your performance",
-              "Explain how a stage performance differs from a performance made for a camera",
-              "Describe the technical requirements of a self-tape that will not be dismissed",
-              "Set out how work is found and what representation does and does not do",
+              "Explain stage versus screen",
+              "Set self-tape requirements",
+              "Explain how work is found",
             ],
             correctIndex: 0,
             explanation:
@@ -6663,9 +6663,9 @@ SAG-AFTRA. (n.d.). *Self-tape guidelines for members*. https://www.sagaftra.org/
             prompt: "Why does the missing reviewer matter, in terms of how skills are acquired?",
             options: [
               "Feedback is a condition of practice, not a bonus",
-              "Learners without an audience lose motivation, which is what stalls progress",
-              "Unsupervised practice reinforces errors faster than it reinforces correct habits",
-              "Assessment cannot be validated without a second observer scoring the same work",
+              "Learners without an audience lose motivation",
+              "Unsupervised practice reinforces errors faster",
+              "Assessment needs a second observer to be valid",
             ],
             correctIndex: 0,
             explanation:
@@ -6676,9 +6676,9 @@ SAG-AFTRA. (n.d.). *Self-tape guidelines for members*. https://www.sagaftra.org/
             prompt: "A character's want must be specific enough to do what?",
             options: [
               "Tell whether they got it",
-              "Explain the character's behavior across the whole of the script",
-              "Be agreed with the other performer before the scene is rehearsed",
-              "Be summarized for a director in a single sentence during a note",
+              "Explain the whole script",
+              "Be agreed with your partner",
+              "Fit in a single sentence",
             ],
             correctIndex: 0,
             explanation:
@@ -6689,9 +6689,9 @@ SAG-AFTRA. (n.d.). *Self-tape guidelines for members*. https://www.sagaftra.org/
             prompt: "What marks the end of a unit inside a scene?",
             options: [
               "Something changes",
-              "The camera moves to a new position for the next portion of the coverage",
-              "A page of the script ends and a different character begins speaking",
-              "The performer takes a breath, which is where the natural divisions fall",
+              "The camera moves",
+              "A page ends",
+              "The performer breathes",
             ],
             correctIndex: 0,
             explanation:
@@ -6702,9 +6702,9 @@ SAG-AFTRA. (n.d.). *Self-tape guidelines for members*. https://www.sagaftra.org/
             prompt: "Convert this result note into something playable: \"be more upset.\"",
             options: [
               "Make her understand what she has done",
-              "Let the emotion build through the scene until it becomes visible on the face",
-              "Raise the volume and shorten the breath so the audience reads distress",
-              "Recall a comparable event from your own life and hold it during the take",
+              "Let the emotion build until it shows",
+              "Raise the volume and shorten the breath",
+              "Recall a comparable event from your life",
             ],
             correctIndex: 0,
             explanation:
@@ -6715,9 +6715,9 @@ SAG-AFTRA. (n.d.). *Self-tape guidelines for members*. https://www.sagaftra.org/
             prompt: "Why is a played action more durable across many takes than a summoned emotion?",
             options: [
               "It regenerates on its own each take",
-              "It uses less energy, so the performer stays fresher through a long shooting day",
-              "It is written in the script, so the performer has less to remember",
-              "It produces identical takes, which is what an editor needs for matching",
+              "It uses less energy over a long day",
+              "It is written in the script",
+              "It produces identical takes for matching",
             ],
             correctIndex: 0,
             explanation:
@@ -6728,9 +6728,9 @@ SAG-AFTRA. (n.d.). *Self-tape guidelines for members*. https://www.sagaftra.org/
             prompt: "What does the field-study evidence suggest performers mostly feel during a show?",
             options: [
               "The emotions of performing",
-              "The character's emotions, reproduced through techniques of emotional recall",
-              "Nothing, because trained performers suppress feeling in order to stay accurate",
-              "A blend that shifts toward the character's the longer a production runs",
+              "The character's emotions",
+              "Nothing at all",
+              "A drifting blend of both",
             ],
             correctIndex: 0,
             explanation:
@@ -6754,9 +6754,9 @@ SAG-AFTRA. (n.d.). *Self-tape guidelines for members*. https://www.sagaftra.org/
             prompt: "Why are the boundaries between adjacent shot sizes fuzzy?",
             options: [
               "They are not standardized",
-              "Digital sensors changed the field of view, so the older names no longer fit",
-              "Performers move within a take, so the size changes continuously",
-              "Focus falls off gradually, so no precise boundary can be drawn",
+              "Sensors changed the field of view",
+              "Performers move within a take",
+              "Focus falls off gradually",
             ],
             correctIndex: 0,
             explanation:
@@ -6767,9 +6767,9 @@ SAG-AFTRA. (n.d.). *Self-tape guidelines for members*. https://www.sagaftra.org/
             prompt: "What is a master shot?",
             options: [
               "A continuous take of the whole scene",
-              "The take the director selects to appear in the finished cut",
-              "The widest lens available, used to establish the geography of a location",
-              "The highest-resolution copy of the footage, from which other versions are made",
+              "The take chosen for the final cut",
+              "The widest lens, used to set geography",
+              "The highest-resolution copy of the footage",
             ],
             correctIndex: 0,
             explanation:
@@ -6780,9 +6780,9 @@ SAG-AFTRA. (n.d.). *Self-tape guidelines for members*. https://www.sagaftra.org/
             prompt: "What does \"smaller for the close-up\" actually mean?",
             options: [
               "Less physical amplitude, not less commitment",
-              "Less energy overall, which is why screen work is more restrained than stage work",
-              "Fewer choices, because a tight frame cannot show a complex sequence",
-              "A quieter delivery, since the microphone is placed closer to the performer",
+              "Less energy overall, as screen work is restrained",
+              "Fewer choices, since a tight frame shows less",
+              "A quieter delivery for a closer microphone",
             ],
             correctIndex: 0,
             explanation:
@@ -6793,9 +6793,9 @@ SAG-AFTRA. (n.d.). *Self-tape guidelines for members*. https://www.sagaftra.org/
             prompt: "Which scale error does the course call more often fatal?",
             options: [
               "Playing too small in a wide shot",
-              "Playing too big in a close-up, since insincerity is unrecoverable on screen",
-              "Matching too precisely, which makes a performance mechanical",
-              "Speaking at conversational level when the microphone is placed far away",
+              "Playing too big in a close-up",
+              "Matching takes too precisely",
+              "Speaking softly to a distant mic",
             ],
             correctIndex: 0,
             explanation:
@@ -6806,9 +6806,9 @@ SAG-AFTRA. (n.d.). *Self-tape guidelines for members*. https://www.sagaftra.org/
             prompt: "State the honest version of the Kuleshov effect.",
             options: [
               "The footage is lost, but a 2016 replication found viewers do read a face by its context",
-              "It was proved in the original experiment and has been confirmed ever since",
+              "It was proved by the original footage and confirmed by every study since then",
               "It has been refuted, and viewers read a neutral face as neutral regardless of context",
-              "It applies only to viewers who have been trained in film editing",
+              "It applies only to viewers who have been trained in film editing techniques",
             ],
             correctIndex: 0,
             explanation:
@@ -6819,9 +6819,9 @@ SAG-AFTRA. (n.d.). *Self-tape guidelines for members*. https://www.sagaftra.org/
             prompt: "What does the Kuleshov evidence NOT license a performer to do?",
             options: [
               "Do nothing and rely on the editor",
-              "Receive what the other performer is doing without displaying a reaction",
-              "Trust that surrounding shots contribute to how a face is read",
-              "Play a listening beat without labeling the emotion in advance",
+              "Receive without displaying a reaction",
+              "Trust surrounding shots to shape the read",
+              "Listen without labeling the emotion",
             ],
             correctIndex: 0,
             explanation:
@@ -6832,9 +6832,9 @@ SAG-AFTRA. (n.d.). *Self-tape guidelines for members*. https://www.sagaftra.org/
             prompt: "Which difference between takes will stop an editor cutting?",
             options: [
               "A prop in the wrong hand",
-              "A slightly stronger emotional level in one of the two takes",
-              "A different pause length before the last line of the exchange",
-              "A change in the performer's breathing during the listening passage",
+              "A stronger emotional level",
+              "A longer pause before a line",
+              "A change in breathing",
             ],
             correctIndex: 0,
             explanation:
@@ -6845,9 +6845,9 @@ SAG-AFTRA. (n.d.). *Self-tape guidelines for members*. https://www.sagaftra.org/
             prompt: "How do you hit a mark without looking at it?",
             options: [
               "Peripheral vision and step counting",
-              "By having the other performer signal when you have arrived at the position",
-              "By slowing at the end of the move until the focus puller confirms the distance",
-              "By memorizing the floor pattern and recognizing it as you approach",
+              "A partner's signal on arrival",
+              "Slowing until focus confirms it",
+              "Memorizing the floor pattern",
             ],
             correctIndex: 0,
             explanation:
@@ -6858,9 +6858,9 @@ SAG-AFTRA. (n.d.). *Self-tape guidelines for members*. https://www.sagaftra.org/
             prompt: "Why can drifting your eyes to where your partner really is ruin a shot?",
             options: [
               "The eyeline is placed for the cut, not for the room",
-              "The focus is set on the original position, so any change makes the shot soft",
-              "It breaks the frame line, and anything outside the frame did not happen",
-              "It changes the lighting on the face, which cannot be matched in the edit",
+              "The focus is set on the original position",
+              "It breaks the frame line, and outside the frame nothing happened",
+              "It changes the light on the face, which cannot be matched",
             ],
             correctIndex: 0,
             explanation:
@@ -6871,9 +6871,9 @@ SAG-AFTRA. (n.d.). *Self-tape guidelines for members*. https://www.sagaftra.org/
             prompt: "In Murch's ordering of what a cut should serve, what comes first and what comes last?",
             options: [
               "Emotion first, spatial continuity last",
-              "Story first, emotion last, since narrative clarity outranks feeling",
-              "Rhythm first, eye trace last, since pace is what an audience notices",
-              "Spatial continuity first, emotion last, since a broken space cannot be read",
+              "Story first, emotion last",
+              "Rhythm first, eye trace last",
+              "Spatial continuity first, emotion last",
             ],
             correctIndex: 0,
             explanation:
@@ -6884,9 +6884,9 @@ SAG-AFTRA. (n.d.). *Self-tape guidelines for members*. https://www.sagaftra.org/
             prompt: "What is the failure mode of enlarging a performance for the stage?",
             options: [
               "Size without specificity",
-              "Vocal injury, which is the main risk of playing at a larger scale nightly",
-              "Losing the other performer's timing, because larger moves take longer",
-              "Becoming unable to reduce again when the same performer works on camera",
+              "Vocal injury from nightly scale",
+              "Losing a partner's timing",
+              "Being unable to scale back down",
             ],
             correctIndex: 0,
             explanation:
@@ -6897,9 +6897,9 @@ SAG-AFTRA. (n.d.). *Self-tape guidelines for members*. https://www.sagaftra.org/
             prompt: "What does stage work give a performer that screen work cannot?",
             options: [
               "Repetition with an audience, night after night",
-              "Freedom from technical constraint, since no equipment is involved",
-              "Certainty about the finished result, because nothing is edited afterward",
-              "A longer rehearsal period, which allows every choice to be tested",
+              "Freedom from all technical constraint",
+              "Certainty about the result, with no edit",
+              "A longer rehearsal to test every choice",
             ],
             correctIndex: 0,
             explanation:
@@ -6910,9 +6910,9 @@ SAG-AFTRA. (n.d.). *Self-tape guidelines for members*. https://www.sagaftra.org/
             prompt: "Why does out-of-order shooting demand a written map of the story?",
             options: [
               "Nothing in the day reminds you where you are in the arc",
-              "Directors require it before a performer can be scheduled for a difficult scene",
-              "Continuity departments use it to check the performer's physical choices",
-              "It is the only way to learn a full script within a compressed schedule",
+              "Directors require one before a hard scene is scheduled",
+              "Continuity uses it to check physical choices",
+              "It is the only way to learn a script fast",
             ],
             correctIndex: 0,
             explanation:
@@ -6936,9 +6936,9 @@ SAG-AFTRA. (n.d.). *Self-tape guidelines for members*. https://www.sagaftra.org/
             prompt: "Why does television reward preparation that remains a decision?",
             options: [
               "A decision can be changed in one breath",
-              "Decisions can be shown to a director before the take, which saves time",
-              "Fixed performances are harder to memorize on a compressed schedule",
-              "Episodic directors prefer performers who have made no choices in advance",
+              "Decisions can be shown to a director early",
+              "Fixed performances are harder to memorize",
+              "Episodic directors prefer unprepared actors",
             ],
             correctIndex: 0,
             explanation:
@@ -6962,9 +6962,9 @@ SAG-AFTRA. (n.d.). *Self-tape guidelines for members*. https://www.sagaftra.org/
             prompt: "Why is paraphrasing a line in a commercial a different kind of error than in a drama?",
             options: [
               "The wording has usually passed legal review",
-              "Commercial writers are paid by the word and object to any cuts",
-              "The copy is timed precisely, so a longer word makes the spot overrun",
-              "Clients memorize the script and notice any deviation on the day",
+              "Commercial writers are paid by the word",
+              "The copy is timed, so extra words overrun",
+              "Clients notice any deviation on the day",
             ],
             correctIndex: 0,
             explanation:
@@ -6975,9 +6975,9 @@ SAG-AFTRA. (n.d.). *Self-tape guidelines for members*. https://www.sagaftra.org/
             prompt: "Notes arrive from the client, the agency, and the director, and they contradict each other. What do you do?",
             options: [
               "Execute the last one, pleasantly",
-              "Ask them to agree before the next take is recorded",
-              "Blend all three into a reading that partly satisfies each note",
-              "Follow the director, who outranks the other two on set",
+              "Ask them to agree before the next take",
+              "Blend all three into one reading",
+              "Follow the director, who outranks them",
             ],
             correctIndex: 0,
             explanation:
@@ -6988,9 +6988,9 @@ SAG-AFTRA. (n.d.). *Self-tape guidelines for members*. https://www.sagaftra.org/
             prompt: "What viewing condition should short-form vertical work be planned for?",
             options: [
               "Sound off",
-              "Full attention on a large screen, since viewers seek this material out",
-              "Headphones, which is why quiet vocal detail carries better than volume",
-              "Repeated viewing, since short pieces are watched several times over",
+              "Full attention",
+              "Headphones",
+              "Repeat viewing",
             ],
             correctIndex: 0,
             explanation:
@@ -7001,8 +7001,8 @@ SAG-AFTRA. (n.d.). *Self-tape guidelines for members*. https://www.sagaftra.org/
             prompt: "Why does a vertical frame push a performance toward close-up technique?",
             options: [
               "It is narrow, holds one person, and is watched at arm's length",
-              "It is taller, so more of the body is visible and gesture becomes larger",
-              "Phone cameras use wide lenses, which exaggerate whatever is nearest",
+              "It is taller, so more of the body shows and gesture grows",
+              "Phone cameras use wide lenses that exaggerate what is near",
               "Short-form editing cuts faster, so reactions must be bigger to register",
             ],
             correctIndex: 0,
@@ -7014,9 +7014,9 @@ SAG-AFTRA. (n.d.). *Self-tape guidelines for members*. https://www.sagaftra.org/
             prompt: "Why is \"talk to one person\" the standard fix for bad narration?",
             options: [
               "Addressing an audience produces announcing",
-              "One listener is easier to picture, which reduces the performer's nerves",
-              "It slows the delivery, which is the most common fault in narration",
-              "It keeps the eyeline consistent when a camera is present",
+              "One listener is easier to picture",
+              "It slows the delivery, the common fault",
+              "It keeps the eyeline consistent on camera",
             ],
             correctIndex: 0,
             explanation:
@@ -7027,9 +7027,9 @@ SAG-AFTRA. (n.d.). *Self-tape guidelines for members*. https://www.sagaftra.org/
             prompt: "What does \"emphasis is meaning\" ask a narrator to do?",
             options: [
               "Land on the words carrying the new information",
-              "Increase the volume on the most important sentence in each paragraph",
-              "Stress every noun, since nouns carry the content of a sentence",
-              "Keep stress even, so the listener decides what matters",
+              "Raise the volume on the key sentence",
+              "Stress every noun, since nouns carry content",
+              "Keep stress even, so the listener decides",
             ],
             correctIndex: 0,
             explanation:
@@ -7040,9 +7040,9 @@ SAG-AFTRA. (n.d.). *Self-tape guidelines for members*. https://www.sagaftra.org/
             prompt: "What is the operative question in a heavy dramatic scene?",
             options: [
               "What is this person doing to stay functional?",
-              "How much does this hurt, compared with the character's worst moment?",
-              "Which earlier scene does this one pay off, and how hard?",
-              "How long can the silence run before an audience disengages?",
+              "How much does this hurt, compared with the worst?",
+              "Which earlier scene does this one pay off?",
+              "How long can the silence run?",
             ],
             correctIndex: 0,
             explanation:
@@ -7066,9 +7066,9 @@ SAG-AFTRA. (n.d.). *Self-tape guidelines for members*. https://www.sagaftra.org/
             prompt: "Why does signaling amusement kill a comic scene?",
             options: [
               "It closes the gap the laugh depends on",
-              "It breaks the rhythm the writer engineered into the line",
-              "It distracts the other performer, who then loses their timing",
-              "It reads as a technical fault to an editor and makes the take unusable",
+              "It breaks the rhythm the writer built",
+              "It distracts the other performer",
+              "It reads as a technical fault to an editor",
             ],
             correctIndex: 0,
             explanation:
@@ -7092,9 +7092,9 @@ SAG-AFTRA. (n.d.). *Self-tape guidelines for members*. https://www.sagaftra.org/
             prompt: "What separates trained stillness from untrained stillness on camera?",
             options: [
               "Available weight rather than frozen tension",
-              "Duration, since trained performers can hold a position much longer",
-              "Planning, since trained stillness is rehearsed and untrained stillness is not",
-              "Complete absence of movement, which untrained stillness never achieves",
+              "Duration, since trained performers hold longer",
+              "Planning, since trained stillness is rehearsed",
+              "Complete absence of movement",
             ],
             correctIndex: 0,
             explanation:
@@ -7105,9 +7105,9 @@ SAG-AFTRA. (n.d.). *Self-tape guidelines for members*. https://www.sagaftra.org/
             prompt: "Where does character live in a movement?",
             options: [
               "In the how: speed, weight, directness, continuity",
-              "In the what, since the chosen action defines who the character is",
-              "In the timing relative to the line, which is what an audience reads",
-              "In the part of the body that finishes the movement rather than starts it",
+              "In the what, since the chosen action defines the character",
+              "In the timing relative to the line",
+              "In the part of the body that finishes the movement",
             ],
             correctIndex: 0,
             explanation:
@@ -7118,9 +7118,9 @@ SAG-AFTRA. (n.d.). *Self-tape guidelines for members*. https://www.sagaftra.org/
             prompt: "What are the two most common fatal technical flaws in a self-tape?",
             options: [
               "Bad sound and being backlit",
-              "Loose framing and a distracting background, which need equipment to fix",
-              "Camera shake and drifting focus, which require a tripod and an operator",
-              "File naming errors and an over-long slate, which come from misreading instructions",
+              "Loose framing and a busy background",
+              "Camera shake and drifting focus",
+              "Misnamed files and an over-long slate",
             ],
             correctIndex: 0,
             explanation:
@@ -7131,9 +7131,9 @@ SAG-AFTRA. (n.d.). *Self-tape guidelines for members*. https://www.sagaftra.org/
             prompt: "Why does this course quote no page limits or notice periods for union self-tapes?",
             options: [
               "Those terms are renegotiated each bargaining cycle",
-              "They are confidential and disclosed only to union members",
-              "They vary by production, so no general figure exists at all",
-              "They differ by country, and the course has an international audience",
+              "They are confidential and disclosed only to members",
+              "They vary by production, so no general figure exists",
+              "They differ by country, and the audience is global",
             ],
             correctIndex: 0,
             explanation:
@@ -7157,9 +7157,9 @@ SAG-AFTRA. (n.d.). *Self-tape guidelines for members*. https://www.sagaftra.org/
             prompt: "Why must the four-pass checklist answers be written down before re-watching?",
             options: [
               "Memory reshapes itself to the outcome",
-              "Written answers can be shown to a teacher for verification afterward",
-              "Writing slows the process, which improves the quality of attention",
-              "The act of writing is what converts an observation into a usable decision",
+              "A teacher can check written answers later",
+              "Writing slows you down and sharpens attention",
+              "Writing turns an observation into a decision",
             ],
             correctIndex: 0,
             explanation:
@@ -7183,9 +7183,9 @@ SAG-AFTRA. (n.d.). *Self-tape guidelines for members*. https://www.sagaftra.org/
             prompt: "Which of these cannot be practiced alone?",
             options: [
               "Playing off another person",
-              "Cold reading unfamiliar material after sixty seconds of preparation",
-              "Building a neutral physical baseline with a mirror and a camera",
-              "Framing, lighting, and recording a technically clean self-tape",
+              "Cold reading unfamiliar material",
+              "Building a neutral baseline alone",
+              "Recording a clean self-tape",
             ],
             correctIndex: 0,
             explanation:
@@ -7196,9 +7196,9 @@ SAG-AFTRA. (n.d.). *Self-tape guidelines for members*. https://www.sagaftra.org/
             prompt: "What is the tell that a representation offer is not legitimate?",
             options: [
               "It asks for money up front",
-              "It approaches you rather than waiting for a submission",
-              "It represents many performers rather than a small select list",
-              "It offers representation without having seen recorded work",
+              "It approaches you first",
+              "It represents many performers",
+              "It signs you without seeing your work",
             ],
             correctIndex: 0,
             explanation:

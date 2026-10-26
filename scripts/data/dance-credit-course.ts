@@ -133,9 +133,9 @@ U.S. Copyright Office. (2021). *Compendium of U.S. Copyright Office practices* (
             prompt: "Under the Copyright Act of 1909, which registration class did a dance have to fit to be registered at all?",
             options: [
               "Class D",
-              "Class G, the class the Act reserved for works of art and for models or designs for works of art",
-              "Class K, the class the Act reserved for prints and for pictorial illustrations of every kind",
-              "Class E, the class the Act reserved for musical compositions including any accompanying words",
+              "Class G",
+              "Class K",
+              "Class E",
             ],
             correctIndex: 0,
             explanation:
@@ -146,9 +146,9 @@ U.S. Copyright Office. (2021). *Compendium of U.S. Copyright Office practices* (
             prompt: "What kind of works did Class D cover?",
             options: [
               "Dramatic or dramatico-musical compositions",
-              "Lectures, sermons and addresses that had been prepared specifically for oral delivery",
-              "Drawings or plastic works of a scientific or technical character, including engineering models",
-              "Books, including composite and cyclopaedic works, directories, gazetteers and other compilations",
+              "Lectures, sermons and addresses for delivery",
+              "Scientific or technical drawings and models",
+              "Books, including directories and gazetteers",
             ],
             correctIndex: 0,
             explanation:
@@ -159,9 +159,9 @@ U.S. Copyright Office. (2021). *Compendium of U.S. Copyright Office practices* (
             prompt: "How many classes did section 5 of the 1909 Act list?",
             options: [
               "Eleven",
-              "Eight, matching the eight categories of authorship that the 1976 Act would later enumerate",
-              "Four, one each for books, periodicals, dramatic compositions and musical compositions",
-              "Fourteen, including a separate class for choreography added by amendment in 1959",
+              "Eight",
+              "Four",
+              "Fourteen",
             ],
             correctIndex: 0,
             explanation:
@@ -171,10 +171,10 @@ U.S. Copyright Office. (2021). *Compendium of U.S. Copyright Office practices* (
           {
             prompt: "Does the 1909 Act mention dance or choreography anywhere in its list of classes?",
             options: [
-              "No",
-              "Yes, as a subcategory of works of art under class (g) of section 5",
-              "Yes, but only for dances performed with musical accompaniment written by the choreographer",
-              "Yes, in a proviso added to section 5 by regulation in 1959 to cover dramatic dance",
+              "No, it names neither",
+              "Yes, under class (g)",
+              "Yes, if set to music",
+              "Yes, in a 1959 proviso",
             ],
             correctIndex: 0,
             explanation:
@@ -185,9 +185,9 @@ U.S. Copyright Office. (2021). *Compendium of U.S. Copyright Office practices* (
             prompt: "What does the proviso at the end of section 5 of the 1909 Act say?",
             options: [
               "The class list does not limit the subject matter of copyright",
-              "An applicant who registers in the wrong class forfeits protection until the error is corrected",
-              "The Register of Copyrights may add new classes whenever a new art form becomes commercially significant",
-              "Works not named in any class may be registered only with the written consent of the Librarian of Congress",
+              "A wrong-class registration forfeits protection until corrected",
+              "The Register may add a class for any new commercial art form",
+              "Unlisted works need the Librarian of Congress's written consent",
             ],
             correctIndex: 0,
             explanation:
@@ -198,9 +198,9 @@ U.S. Copyright Office. (2021). *Compendium of U.S. Copyright Office practices* (
             prompt: "Which section of the 1909 Act does that proviso point to as the broader definition of copyrightable subject matter?",
             options: [
               "Section 4",
-              "Section 102, which lists eight categories of works of authorship including choreographic works",
-              "Section 202.7, the regulation that assigned choreographic works of a dramatic character to Class D",
-              "Section 705, which governs records searches conducted by the Copyright Office on request",
+              "Section 102",
+              "Section 202.7",
+              "Section 705",
             ],
             correctIndex: 0,
             explanation:
@@ -211,9 +211,9 @@ U.S. Copyright Office. (2021). *Compendium of U.S. Copyright Office practices* (
             prompt: "Because dance was excluded by practice rather than by statutory text, what follows about the exclusion?",
             options: [
               "It was made in a space the statute left open",
-              "It could be reversed by any federal district court hearing an infringement suit brought by a choreographer",
-              "It was reviewed and re-approved by Congress at each renewal of the copyright term after 1909",
-              "It applied only to dances performed for paying audiences rather than to those made for the stage generally",
+              "Any district court could reverse it in a suit",
+              "Congress re-approved it at each term renewal",
+              "It reached only dances shown to paying crowds",
             ],
             correctIndex: 0,
             explanation:
@@ -224,9 +224,9 @@ U.S. Copyright Office. (2021). *Compendium of U.S. Copyright Office practices* (
             prompt: "According to Compendium section 2122.3, a choreographic work was eligible under the 1909 Act only to the extent that it qualified as what?",
             options: [
               "A dramatic composition",
-              "A compilation of movements arranged into an original selection and sequence by its author",
-              "A pantomime performed silently before an audience without any musical accompaniment",
-              "A motion picture, because film was the only deposit format the Office would then accept",
+              "A compilation of movements",
+              "A silent pantomime",
+              "A motion picture on film",
             ],
             correctIndex: 0,
             explanation:
@@ -237,9 +237,9 @@ U.S. Copyright Office. (2021). *Compendium of U.S. Copyright Office practices* (
             prompt: "What three things could a dance do to satisfy the dramatic-composition requirement?",
             options: [
               "Tell a story, develop a character, or express a theme or emotion",
-              "Fill a full evening, employ professional dancers, and be performed for a paying public audience",
-              "Be published, carry a copyright notice, and be accompanied by an original musical score",
-              "Use recognised technique, be taught in a school, and be revived at least once after its premiere",
+              "Fill an evening, use professionals, and play to a paying public",
+              "Be published, carry a notice, and come with an original score",
+              "Use recognised technique, be taught in a school, and be revived",
             ],
             correctIndex: 0,
             explanation:
@@ -250,9 +250,9 @@ U.S. Copyright Office. (2021). *Compendium of U.S. Copyright Office practices* (
             prompt: "Which regulation is quoted as the source of the Class D rule for choreographic works?",
             options: [
               "37 C.F.R. 202.7 (1959)",
-              "37 C.F.R. 202.1 (1978), the regulation listing material not subject to copyright",
-              "17 C.F.R. 805.5 (2021), the Compendium provision on social dances and simple routines",
-              "37 C.F.R. 202.5 (2016), the regulation governing requests for reconsideration of a refusal",
+              "37 C.F.R. 202.1 (1978)",
+              "17 C.F.R. 805.5 (2021)",
+              "37 C.F.R. 202.5 (2016)",
             ],
             correctIndex: 0,
             explanation:
@@ -263,9 +263,9 @@ U.S. Copyright Office. (2021). *Compendium of U.S. Copyright Office practices* (
             prompt: "What did 37 C.F.R. 202.7 (1959) expressly exclude from registration in Class D?",
             options: [
               "Ballroom and social dances, and works that tell no story",
-              "Any choreographic work whose author was not a citizen or resident of the United States at first publication",
-              "Works fixed in a notation system rather than in a textual description approved by the Office",
-              "Dances created for motion pictures, which the regulation routed to the class for photoplays instead",
+              "Any dance by an author who was not a United States citizen",
+              "Works fixed in notation rather than in a textual description",
+              "Dances made for film, which went to the photoplay class",
             ],
             correctIndex: 0,
             explanation:
@@ -276,9 +276,9 @@ U.S. Copyright Office. (2021). *Compendium of U.S. Copyright Office practices* (
             prompt: "The course says a test that admits story and refuses everything else sorts by what?",
             options: [
               "Form",
-              "The commercial success of the work in the season it premiered",
-              "The professional training of the dancers who first performed it",
-              "The size of the theatre in which the work was first presented to the public",
+              "Fame",
+              "Size",
+              "Cost",
             ],
             correctIndex: 0,
             explanation:
@@ -289,9 +289,9 @@ U.S. Copyright Office. (2021). *Compendium of U.S. Copyright Office practices* (
             prompt: "How does this course state its central claim about the Class D rule?",
             options: [
               "A facially neutral rule had unequal effects",
-              "Copyright examiners applied the story requirement more strictly to Black applicants than to white ones",
-              "Congress deliberately drafted the 1909 Act to exclude the dance forms of Black Americans",
-              "Courts refused to hear infringement claims brought by Black choreographers before 1978",
+              "Examiners judged Black applicants more strictly",
+              "Congress wrote the Act to exclude Black dance",
+              "Courts barred Black choreographers' suits",
             ],
             correctIndex: 0,
             explanation:
@@ -302,9 +302,9 @@ U.S. Copyright Office. (2021). *Compendium of U.S. Copyright Office practices* (
             prompt: "For how long did the 1909 Act govern American copyright?",
             options: [
               "Sixty-nine years",
-              "Eighty-six years, running from the decision in Fuller v. Bemis to the effective date of the 1976 Act",
-              "Fifty-two years, until the Copyright Office issued its revised regulations in 1959 and 1961",
-              "Ninety-four years, until the Compendium's third edition took effect and replaced the older practice",
+              "Eighty-six years",
+              "Fifty-two years",
+              "Ninety-four years",
             ],
             correctIndex: 0,
             explanation:
@@ -315,9 +315,9 @@ U.S. Copyright Office. (2021). *Compendium of U.S. Copyright Office practices* (
             prompt: "Which of these is class (f) in section 5 of the 1909 Act?",
             options: [
               "Maps",
-              "Photographs, which the Act placed in its own separate class after the drawings class",
-              "Reproductions of a work of art, listed immediately after the works of art class itself",
-              "Periodicals, including newspapers, which the Act listed second among all eleven classes",
+              "Photographs",
+              "Periodicals",
+              "Lectures",
             ],
             correctIndex: 0,
             explanation:
@@ -328,9 +328,9 @@ U.S. Copyright Office. (2021). *Compendium of U.S. Copyright Office practices* (
             prompt: "What does the course mean by administrative practice?",
             options: [
               "Rules an agency builds in the gap a statute leaves",
-              "The written instructions Congress gives an agency when it delegates authority in a committee report",
-              "The internal filing procedures an agency uses to route applications between its own examining divisions",
-              "A body of judicial precedent that binds an agency only after it has been affirmed on appeal twice",
+              "Written instructions Congress puts in a committee report",
+              "An agency's internal routing of applications between divisions",
+              "Judicial precedent that binds an agency only once affirmed",
             ],
             correctIndex: 0,
             explanation:
@@ -341,9 +341,9 @@ U.S. Copyright Office. (2021). *Compendium of U.S. Copyright Office practices* (
             prompt: "A choreographer in 1950 wanted to register an abstract plotless work. What would the rule have told them?",
             options: [
               "It could not be registered, because it told no story",
-              "It could be registered if the choreographer deposited a Labanotation score rather than a description",
-              "It could be registered in Class G as a work of art, since abstraction is the hallmark of that class",
-              "It could be registered once the work had been publicly performed at least three times with notice",
+              "It could be registered if a Labanotation score were deposited",
+              "It could be registered in Class G as a work of art",
+              "It could be registered after three public performances",
             ],
             correctIndex: 0,
             explanation:
@@ -354,9 +354,9 @@ U.S. Copyright Office. (2021). *Compendium of U.S. Copyright Office practices* (
             prompt: "Why does the course say the phrase Class D contains the whole argument?",
             options: [
               "Because a dance had to pass as a play to be registered",
-              "Because the letter D was assigned to dance in the Copyright Office's internal filing system",
-              "Because Class D applications were reviewed by a separate panel with authority to refuse on aesthetic grounds",
-              "Because works registered in Class D received a shorter term of protection than works in other classes",
+              "Because the Office filed all dance applications under D",
+              "Because a separate Class D panel could refuse on taste",
+              "Because Class D works received a shorter term of protection",
             ],
             correctIndex: 0,
             explanation:
@@ -367,9 +367,9 @@ U.S. Copyright Office. (2021). *Compendium of U.S. Copyright Office practices* (
             prompt: "What question does the course say is worth asking whenever a rule is made in the space a statute leaves open?",
             options: [
               "Who was in the room",
-              "Whether the rule was published for public comment before it was applied to any pending application",
-              "How many applications were refused under the rule in the first full year after it took effect",
-              "Whether a court has ever been asked to review the rule under the standards for agency action",
+              "Whether it was published",
+              "How many it refused",
+              "Whether a court reviewed it",
             ],
             correctIndex: 0,
             explanation:
@@ -380,9 +380,9 @@ U.S. Copyright Office. (2021). *Compendium of U.S. Copyright Office practices* (
             prompt: "What is a proviso, as the term is used in section 5 of the 1909 Act?",
             options: [
               "A clause qualifying what precedes it",
-              "A conditional grant of protection that lapses unless the applicant renews it within twenty-eight years",
-              "A cross-reference directing an applicant to a regulation issued by the Register of Copyrights",
-              "A statement of congressional purpose printed before the operative text of a statutory section",
+              "A grant that lapses unless it is renewed",
+              "A cross-reference to an Office regulation",
+              "A statement of purpose before the text",
             ],
             correctIndex: 0,
             explanation:
@@ -393,9 +393,9 @@ U.S. Copyright Office. (2021). *Compendium of U.S. Copyright Office practices* (
             prompt: "What is the citation for Fuller v. Bemis?",
             options: [
               "50 F. 926 (C.C.S.D.N.Y. 1892)",
-              "789 F.2d 157 (2d Cir. 1986), the appeal that set the substantial-similarity standard for choreography",
-              "No. 22-55890 (9th Cir. 2023), the appeal brought against the maker of the videogame Fortnite",
-              "16 F. Cas. 1132 (C.C.S.D.N.Y. 1868), the railroad-scene case about a dramatic composition",
+              "789 F.2d 157 (2d Cir. 1986)",
+              "No. 22-55890 (9th Cir. 2023)",
+              "16 F. Cas. 1132 (C.C.S.D.N.Y. 1868)",
             ],
             correctIndex: 0,
             explanation:
@@ -406,9 +406,9 @@ U.S. Copyright Office. (2021). *Compendium of U.S. Copyright Office practices* (
             prompt: "In what year was Fuller v. Bemis decided?",
             options: [
               "1892",
-              "1909, the year Congress enacted the copyright statute that governed for the next sixty-nine years",
-              "1959, the year of the regulation assigning choreographic works of a dramatic character to Class D",
-              "1961, the year the Copyright Office printed its study of copyright in choreographic works",
+              "1909",
+              "1959",
+              "1961",
             ],
             correctIndex: 0,
             explanation:
@@ -419,9 +419,9 @@ U.S. Copyright Office. (2021). *Compendium of U.S. Copyright Office practices* (
             prompt: "Who was Loie Fuller?",
             options: [
               "A white American dancer known for serpentine dances",
-              "A Black American choreographer whose company toured Europe throughout the 1930s and 1940s",
-              "A French notator who developed one of the earliest published systems for recording stage dances",
-              "An English theatrical producer who registered dozens of dances in Class D before the First World War",
+              "A Black choreographer who toured Europe",
+              "A French notator of stage dances",
+              "An English producer of Class D dances",
             ],
             correctIndex: 0,
             explanation:
@@ -432,9 +432,9 @@ U.S. Copyright Office. (2021). *Compendium of U.S. Copyright Office practices* (
             prompt: "How did the court in Fuller v. Bemis characterise the dance before it?",
             options: [
               "Pleasing, but hardly dramatic",
-              "Original and skilful, but too short to constitute a complete dramatic composition under the statute",
-              "Dramatic in form but insufficiently fixed, because the deposit was a written description rather than film",
-              "Derivative of earlier serpentine dances performed on the European stage in the preceding decade",
+              "Original, but too short to be dramatic",
+              "Dramatic in form, but not fixed on film",
+              "Derivative of earlier European dances",
             ],
             correctIndex: 0,
             explanation:
@@ -445,9 +445,9 @@ U.S. Copyright Office. (2021). *Compendium of U.S. Copyright Office practices* (
             prompt: "What phrase did the court use to describe what Fuller's dance conveyed?",
             options: [
               "The poetry of motion in a singularly graceful fashion",
-              "A vivid dramatic narrative built from movements chosen for their expressive force alone",
-              "A theme of longing developed through the repetition of a single gesture across the whole work",
-              "An impression of character sufficient to bring the work within the class for dramatic compositions",
+              "A vivid dramatic narrative built from expressive movement",
+              "A theme of longing developed through one repeated gesture",
+              "An impression of character enough to make it dramatic",
             ],
             correctIndex: 0,
             explanation:
@@ -458,9 +458,9 @@ U.S. Copyright Office. (2021). *Compendium of U.S. Copyright Office practices* (
             prompt: "How did Fuller file the dance she sued over?",
             options: [
               "As a written description",
-              "As a Labanotation score prepared by a professional notator and certified by the Office",
-              "As a motion picture deposited with the Copyright Office in two complete prints",
-              "As a series of staged photographs showing each successive position of the dancer",
+              "As a certified Labanotation score",
+              "As a motion picture in two prints",
+              "As a series of staged photographs",
             ],
             correctIndex: 0,
             explanation:
@@ -471,9 +471,9 @@ U.S. Copyright Office. (2021). *Compendium of U.S. Copyright Office practices* (
             prompt: "Why does a course about Black creators in dance open its legal argument with a white plaintiff's case?",
             options: [
               "Because her loss became the general test",
-              "Because she was the first person of any background to attempt to register a dance with the Office",
-              "Because her company was the first to employ Black dancers on the American concert stage",
-              "Because the court's opinion expressly discussed which racial traditions could satisfy the dramatic test",
+              "Because she was the first to try",
+              "Because she hired Black dancers first",
+              "Because the court discussed race",
             ],
             correctIndex: 0,
             explanation:
@@ -484,9 +484,9 @@ U.S. Copyright Office. (2021). *Compendium of U.S. Copyright Office practices* (
             prompt: "For how long did the rule from Fuller v. Bemis govern registration practice?",
             options: [
               "Eighty-six years",
-              "Sixty-nine years, the full span during which the Copyright Act of 1909 was the governing statute",
-              "Forty-three years, until the Copyright Office issued the regulation that created Class D for dance",
-              "Twenty-eight years, the length of the original copyright term under the 1909 Act before renewal",
+              "Sixty-nine years",
+              "Forty-three years",
+              "Twenty-eight years",
             ],
             correctIndex: 0,
             explanation:
@@ -497,9 +497,9 @@ U.S. Copyright Office. (2021). *Compendium of U.S. Copyright Office practices* (
             prompt: "What does Study No. 28 report about pre-1978 deposits of choreographic works?",
             options: [
               "Some were deposited, and in one case at least a motion picture",
-              "Several hundred were deposited, the large majority of them as Labanotation scores prepared by the Dance Notation Bureau",
-              "None were ever accepted, because the Office refused every choreographic application filed under the 1909 Act",
-              "Deposits were accepted only from choreographers working for companies with a permanent New York season",
+              "Several hundred were deposited, most as Dance Notation Bureau scores",
+              "None were ever accepted, because the Office refused every application",
+              "Deposits came only from companies with a permanent New York season",
             ],
             correctIndex: 0,
             explanation:
@@ -510,9 +510,9 @@ U.S. Copyright Office. (2021). *Compendium of U.S. Copyright Office practices* (
             prompt: "What point does the course make from the thinness of that deposit record?",
             options: [
               "The register was thin for choreographers of every background",
-              "Black choreographers registered at a measurably lower rate than white choreographers before 1978",
-              "The Copyright Office destroyed most pre-1978 choreographic deposits when it moved its holdings",
-              "Registration was effectively closed to anyone who had not published a written score commercially",
+              "Black choreographers registered at a measurably lower rate before 1978",
+              "The Office destroyed most pre-1978 choreographic deposits in a move",
+              "Registration was closed to anyone without a commercially published score",
             ],
             correctIndex: 0,
             explanation:
@@ -523,9 +523,9 @@ U.S. Copyright Office. (2021). *Compendium of U.S. Copyright Office practices* (
             prompt: "Where, then, does this course say the real disparity lies?",
             options: [
               "In every other kind of record, and in access to notation",
-              "In the number of infringement suits Black choreographers were able to bring in federal court",
-              "In the length of the copyright term granted to works registered by different applicants",
-              "In whether the Copyright Office assigned an application to Class D or to Class G",
+              "In the number of federal infringement suits they could bring",
+              "In the length of the term granted to different applicants",
+              "In whether the Office put a work in Class D or Class G",
             ],
             correctIndex: 0,
             explanation:
@@ -536,9 +536,9 @@ U.S. Copyright Office. (2021). *Compendium of U.S. Copyright Office practices* (
             prompt: "For whom was Study No. 28 prepared?",
             options: [
               "A Senate Judiciary subcommittee",
-              "The Second Circuit, which had asked the Copyright Office to brief it on choreographic registration",
-              "The Dance Notation Bureau, which commissioned it as part of its campaign for statutory reform",
-              "The Register of Copyrights, for internal use only, and it was not published until the 1976 Act passed",
+              "The Second Circuit, at its request",
+              "The Dance Notation Bureau",
+              "The Register, for internal use only",
             ],
             correctIndex: 0,
             explanation:
@@ -549,9 +549,9 @@ U.S. Copyright Office. (2021). *Compendium of U.S. Copyright Office practices* (
             prompt: "What inconsistency does the course flag about Study No. 28 itself?",
             options: [
               "The Copyright Office cites it as both 1960 and 1961",
-              "Two different authors are credited on the title page and in the Compendium's citation of it",
-              "The published version omits the section on notation that the table of contents lists",
-              "The Office withdrew it in 1976 and has never restored it to its history collection online",
+              "Two different authors are credited for it in two places",
+              "The published version omits a section its contents list",
+              "The Office withdrew it in 1976 and never restored it online",
             ],
             correctIndex: 0,
             explanation:
@@ -562,9 +562,9 @@ U.S. Copyright Office. (2021). *Compendium of U.S. Copyright Office practices* (
             prompt: "What is a deposit, in copyright registration?",
             options: [
               "The copy filed as the fixed form of the work",
-              "The fee an applicant pays to the Copyright Office when submitting a registration application",
-              "The bond a plaintiff posts before bringing an infringement action in federal district court",
-              "The certificate the Office issues once it has approved a registration application",
+              "The fee paid to the Office with an application",
+              "The bond a plaintiff posts before suing",
+              "The certificate issued once a work is approved",
             ],
             correctIndex: 0,
             explanation:
@@ -575,9 +575,9 @@ U.S. Copyright Office. (2021). *Compendium of U.S. Copyright Office practices* (
             prompt: "Which two deposit formats does Study No. 28 name for choreographic works?",
             options: [
               "Textual description and the Laban system of notation",
-              "Benesh notation and staged photographs showing each successive position of the dancers",
-              "Sound recordings of the accompanying music and a written synopsis of the plot",
-              "Costume designs and floor plans marking the path of each dancer through the stage space",
+              "Benesh notation and staged photographs of each position",
+              "Sound recordings of the music and a written plot synopsis",
+              "Costume designs and floor plans tracing each dancer's path",
             ],
             correctIndex: 0,
             explanation:
@@ -588,9 +588,9 @@ U.S. Copyright Office. (2021). *Compendium of U.S. Copyright Office practices* (
             prompt: "What is a generalised holding, as the course uses the term?",
             options: [
               "When one case's reasoning becomes the routine test",
-              "When an appellate court expressly overrules a decision it had issued in an earlier term",
-              "When a statute codifies a rule that had previously existed only in judicial decisions",
-              "When an agency publishes a rule after taking public comment on a proposed version of it",
+              "When an appeals court overrules one of its own earlier decisions",
+              "When a statute codifies a rule that existed only in case law",
+              "When an agency adopts a rule after taking public comment",
             ],
             correctIndex: 0,
             explanation:
@@ -601,9 +601,9 @@ U.S. Copyright Office. (2021). *Compendium of U.S. Copyright Office practices* (
             prompt: "What is a serpentine dance?",
             options: [
               "A form built on swirling silk and coloured light",
-              "A processional social dance in which participants follow a leader in a winding line",
-              "A West African ceremonial form documented by anthropologists working in the Caribbean",
-              "A ballroom figure in which partners trace an S-shaped path across the floor",
+              "A processional social dance in a winding line",
+              "A West African ceremonial form from Caribbean field notes",
+              "A ballroom figure tracing an S-shaped path",
             ],
             correctIndex: 0,
             explanation:
@@ -614,9 +614,9 @@ U.S. Copyright Office. (2021). *Compendium of U.S. Copyright Office practices* (
             prompt: "The course says the pre-1978 archive of American dance is not in the Copyright Office's files. Where does it say to look instead?",
             options: [
               "In archives and finding aids",
-              "In the published catalogues of the commercial music publishers who printed the accompanying scores",
-              "In the surviving programmes held by the theatres where the works were first performed",
-              "In the personal correspondence of the critics who reviewed the works when they premiered",
+              "In music publishers' catalogues",
+              "In surviving theatre programmes",
+              "In critics' private letters",
             ],
             correctIndex: 0,
             explanation:
@@ -627,9 +627,9 @@ U.S. Copyright Office. (2021). *Compendium of U.S. Copyright Office practices* (
             prompt: "What is Labanotation, as first mentioned in this section?",
             options: [
               "A system for writing movement down",
-              "A method of filming dance from three fixed camera angles for archival preservation",
-              "A vocabulary of standard step names used by the Copyright Office to index Class D deposits",
-              "A technique for teaching repertory to a company without a rehearsal director present",
+              "A way to film dance from three angles",
+              "The Office's index of standard step names",
+              "A way to teach repertory without a director",
             ],
             correctIndex: 0,
             explanation:
@@ -640,9 +640,9 @@ U.S. Copyright Office. (2021). *Compendium of U.S. Copyright Office practices* (
             prompt: "Which statement about Fuller v. Bemis and race is accurate?",
             options: [
               "The opinion says nothing about race, and the rule it set fell unevenly anyway",
-              "The opinion expressly reasoned that vernacular traditions could not satisfy the dramatic requirement",
-              "The court applied a standard it had previously relaxed for a white applicant in an earlier case",
-              "The plaintiff argued that her dance drew on Black social forms and the court rejected that argument",
+              "The opinion reasoned that vernacular traditions could not be dramatic",
+              "The court applied a standard it had relaxed earlier for a white applicant",
+              "The plaintiff argued her dance drew on Black forms, and the court rejected it",
             ],
             correctIndex: 0,
             explanation:
@@ -653,9 +653,9 @@ U.S. Copyright Office. (2021). *Compendium of U.S. Copyright Office practices* (
             prompt: "Which class in section 5 of the 1909 Act covered lectures and sermons?",
             options: [
               "Class C",
-              "Class D, which the Copyright Office also used for choreographic works of a dramatic character",
-              "Class A, which covered books including composite and cyclopaedic works and directories",
-              "Class E, which covered musical compositions of every kind under the same statute",
+              "Class D",
+              "Class A",
+              "Class E",
             ],
             correctIndex: 0,
             explanation:
@@ -666,9 +666,9 @@ U.S. Copyright Office. (2021). *Compendium of U.S. Copyright Office practices* (
             prompt: "Under the pre-1978 rule, what happened to a dance built on rhythm and participation rather than narrative?",
             options: [
               "It failed the test and could not be registered",
-              "It was registered in a separate class the Office created for non-dramatic movement works",
-              "It was registered provisionally, subject to a later showing that it conveyed a theme",
-              "It was registered as a musical composition, since rhythm was its organising principle",
+              "It went into a class for non-dramatic movement",
+              "It was registered provisionally, pending a theme",
+              "It was registered as music, for its rhythm",
             ],
             correctIndex: 0,
             explanation:
@@ -679,9 +679,9 @@ U.S. Copyright Office. (2021). *Compendium of U.S. Copyright Office practices* (
             prompt: "Where does the exact Class D language quoted in this course come from?",
             options: [
               "The practice manual, quoting the 1959 regulation",
-              "The text of section 5 of the 1909 Act, which uses the phrase choreographic work",
-              "The opinion in Fuller v. Bemis, which coined the phrase dramatic character",
-              "A Senate committee report accompanying the general revision of 1976",
+              "Section 5 of the 1909 Act, which says choreographic work",
+              "The opinion in Fuller v. Bemis, which coined the phrase",
+              "A Senate committee report accompanying the 1976 revision",
             ],
             correctIndex: 0,
             explanation:
@@ -692,9 +692,9 @@ U.S. Copyright Office. (2021). *Compendium of U.S. Copyright Office practices* (
             prompt: "What follows from the fact that section 5's proviso protects an applicant who registers in the wrong class?",
             options: [
               "Classification was never meant to decide what could be protected",
-              "An applicant could bypass the Copyright Office entirely by choosing any class at random",
-              "The Copyright Office had no authority to refuse an application on any ground",
-              "A work registered in the wrong class received a shorter term of protection",
+              "An applicant could pick any class at random and skip the Office",
+              "The Office had no authority to refuse an application on any ground",
+              "A work registered in the wrong class received a shorter term",
             ],
             correctIndex: 0,
             explanation:
@@ -705,9 +705,9 @@ U.S. Copyright Office. (2021). *Compendium of U.S. Copyright Office practices* (
             prompt: "Which of these is class (k) in section 5 of the 1909 Act?",
             options: [
               "Prints and pictorial illustrations",
-              "Reproductions of a work of art, listed as a class distinct from works of art themselves",
-              "Drawings or plastic works of a scientific or technical character",
-              "Lectures, sermons and addresses prepared for oral delivery to an audience",
+              "Reproductions of a work of art",
+              "Scientific or technical drawings",
+              "Lectures, sermons and addresses",
             ],
             correctIndex: 0,
             explanation:
@@ -718,9 +718,9 @@ U.S. Copyright Office. (2021). *Compendium of U.S. Copyright Office practices* (
             prompt: "What is the difference between the 1909 Act's silence about dance and an express prohibition?",
             options: [
               "Silence left room for discretion; a prohibition would not have",
-              "Silence meant a court could not hear an infringement suit about a dance at all",
-              "Silence meant the Copyright Office was legally obliged to register any dance filed",
-              "There is no practical difference, because both produced identical refusals",
+              "Silence meant no court could hear an infringement suit about a dance",
+              "Silence meant the Office was legally obliged to register any dance filed",
+              "There is no practical difference, because both produced the same refusals",
             ],
             correctIndex: 0,
             explanation:
@@ -731,9 +731,9 @@ U.S. Copyright Office. (2021). *Compendium of U.S. Copyright Office practices* (
             prompt: "Which edition of the Compendium of U.S. Copyright Office Practices does this course quote?",
             options: [
               "The third",
-              "The second, which the Second Circuit quoted in its 1986 choreography opinion",
-              "The first, issued shortly after the 1909 Act took effect",
-              "A draft fourth edition circulated for public comment but never adopted",
+              "The second",
+              "The first",
+              "A draft fourth",
             ],
             correctIndex: 0,
             explanation:
@@ -744,9 +744,9 @@ U.S. Copyright Office. (2021). *Compendium of U.S. Copyright Office practices* (
             prompt: "Under the 1909 regime, could a dance be registered if it conveyed an emotion but told no story?",
             options: [
               "Yes, expressing a theme or emotion satisfied the test",
-              "No, only a work with a narrative sequence of events could reach Class D",
-              "No, unless the choreographer also deposited the accompanying musical score",
-              "Yes, but only for works first published outside the United States",
+              "No, only a narrative could reach Class D",
+              "No, not without the musical score",
+              "Yes, but only if published abroad",
             ],
             correctIndex: 0,
             explanation:
@@ -757,8 +757,8 @@ U.S. Copyright Office. (2021). *Compendium of U.S. Copyright Office practices* (
             prompt: "In Fuller v. Bemis, how did the court treat the arrangement of drapery, lights and shadows?",
             options: [
               "As part of a series of graceful movements it found not dramatic",
-              "As lighting design separately copyrightable as a pictorial work",
-              "As sufficient to convey a dramatic theme after all",
+              "As lighting design, separately copyrightable as a pictorial work",
+              "As enough, after all, to convey a dramatic theme through staging",
               "As irrelevant, holding that only movement itself could be examined",
             ],
             correctIndex: 0,
@@ -770,9 +770,9 @@ U.S. Copyright Office. (2021). *Compendium of U.S. Copyright Office practices* (
             prompt: "What kind of court decided Fuller v. Bemis?",
             options: [
               "A federal circuit court in the Southern District of New York",
-              "The Supreme Court of the United States, on a writ of error from a state court",
-              "The New York state trial court of general jurisdiction in Manhattan",
-              "The Copyright Office Review Board, exercising its reconsideration authority",
+              "The Supreme Court, on a writ of error from a state court",
+              "The New York state trial court of general jurisdiction",
+              "The Copyright Office Review Board, on reconsideration",
             ],
             correctIndex: 0,
             explanation:
@@ -783,9 +783,9 @@ U.S. Copyright Office. (2021). *Compendium of U.S. Copyright Office practices* (
             prompt: "What does this course say about the claim that Black choreographers were absent from a register full of white ones?",
             options: [
               "It describes a register that did not exist",
-              "It is the strongest available version of the course's argument about credit",
-              "It is accurate for the period after 1978 but not for the period before it",
-              "It can be settled by counting the Class D deposits the Office still holds",
+              "It is the course's strongest argument",
+              "It holds after 1978 only",
+              "Counting deposits can settle it",
             ],
             correctIndex: 0,
             explanation:
@@ -796,8 +796,8 @@ U.S. Copyright Office. (2021). *Compendium of U.S. Copyright Office practices* (
             prompt: "Why does the course make the fairness point about deposit numbers before it makes the racial one?",
             options: [
               "Because an argument that survives the strongest objection is the durable one",
-              "Because the racial argument turns out to be unsupported by any evidence at all",
-              "Because the Copyright Office asked that the point be made in that order",
+              "Because the racial argument turns out to have no supporting evidence",
+              "Because the Copyright Office asked that the points come in that order",
               "Because deposit counts are the only reliable evidence in the whole field",
             ],
             correctIndex: 0,
@@ -809,9 +809,9 @@ U.S. Copyright Office. (2021). *Compendium of U.S. Copyright Office practices* (
             prompt: "How should a careful reader treat the differing 1960 and 1961 dates for Study No. 28?",
             options: [
               "Report both, since both are the Copyright Office's own",
-              "Pick 1961, because the later date supersedes the earlier one automatically",
-              "Pick 1960, because chapter 2100 is the more recently revised of the two chapters",
-              "Omit the study entirely, because a source that cannot date itself is unusable",
+              "Pick 1961, because the later date supersedes the earlier one",
+              "Pick 1960, because chapter 2100 was revised more recently",
+              "Omit the study, because a source that cannot date itself is unusable",
             ],
             correctIndex: 0,
             explanation:
@@ -911,9 +911,9 @@ U.S. Copyright Office. (2021). *Compendium of U.S. Copyright Office practices* (
             prompt: "On what date did the Copyright Act of 1976 take effect?",
             options: [
               "1 January 1978",
-              "1 January 1976, immediately upon the President signing the revision bill into law",
-              "1 January 1972, the year the Copyright Office began accepting choreographic applications",
-              "1 January 1959, the date the Class D regulation for choreographic works was promulgated",
+              "1 January 1976",
+              "1 January 1972",
+              "1 January 1959",
             ],
             correctIndex: 0,
             explanation:
@@ -924,9 +924,9 @@ U.S. Copyright Office. (2021). *Compendium of U.S. Copyright Office practices* (
             prompt: "Which numbered category of 17 U.S.C. 102(a) covers choreography?",
             options: [
               "The fourth",
-              "The third, which covers dramatic works including any accompanying music",
-              "The sixth, which covers motion pictures and other audiovisual works",
-              "The fifth, which covers pictorial, graphic, and sculptural works",
+              "The third",
+              "The sixth",
+              "The fifth",
             ],
             correctIndex: 0,
             explanation:
@@ -937,9 +937,9 @@ U.S. Copyright Office. (2021). *Compendium of U.S. Copyright Office practices* (
             prompt: "What exact phrase does 102(a)(4) use?",
             options: [
               "Pantomimes and choreographic works",
-              "Choreographic works of a dramatic character, whether expressed in music or action combined",
-              "Dance and movement compositions intended for performance by skilled individuals",
-              "Choreography, pantomime, and other organised forms of human bodily movement",
+              "Choreographic works of a dramatic character",
+              "Dance and movement compositions",
+              "Choreography and organised movement",
             ],
             correctIndex: 0,
             explanation:
@@ -950,9 +950,9 @@ U.S. Copyright Office. (2021). *Compendium of U.S. Copyright Office practices* (
             prompt: "How many categories of works of authorship does 17 U.S.C. 102(a) list?",
             options: [
               "Eight",
-              "Eleven, the same number of classes the 1909 Act had listed in its section 5",
-              "Five, expanded to eight by the amendments that added sound recordings and architectural works",
-              "Four, with the remaining subject matter left to the general definition in the opening sentence",
+              "Eleven",
+              "Five",
+              "Four",
             ],
             correctIndex: 0,
             explanation:
@@ -963,9 +963,9 @@ U.S. Copyright Office. (2021). *Compendium of U.S. Copyright Office practices* (
             prompt: "What does the sequencing of categories (3) and (4) tell you about the history?",
             options: [
               "Choreography is no longer required to borrow the drama category",
-              "Choreographic works receive a shorter term of protection than dramatic works do",
-              "A choreographic work must be registered in the dramatic category if it contains a narrative",
-              "The categories were listed in the order in which Congress first extended protection to each",
+              "Choreography gets a shorter term of protection than drama does",
+              "A dance with a narrative must still register as a dramatic work",
+              "Congress listed them in the order it first extended protection",
             ],
             correctIndex: 0,
             explanation:
@@ -976,9 +976,9 @@ U.S. Copyright Office. (2021). *Compendium of U.S. Copyright Office practices* (
             prompt: "What does 17 U.S.C. 102(b) exclude from copyright protection?",
             options: [
               "Ideas, procedures, processes, systems and methods of operation",
-              "Works whose author has not registered them with the Copyright Office before publication",
-              "Performances by individual dancers, as distinct from the arrangement of movements they perform",
-              "Works first published outside the United States without a copyright notice attached",
+              "Works not registered with the Office before they are published",
+              "Performances by dancers, as distinct from the movements arranged",
+              "Works first published abroad without a copyright notice",
             ],
             correctIndex: 0,
             explanation:
@@ -989,9 +989,9 @@ U.S. Copyright Office. (2021). *Compendium of U.S. Copyright Office practices* (
             prompt: "Which word in 102(b) does the course tell you to hold on to, because it returns later?",
             options: [
               "System",
-              "Discovery, because a choreographer who discovers a new movement possibility cannot own it",
-              "Principle, because the organising principle of a dance is what the courts test for similarity",
-              "Embodied, because a dance is embodied by definition and so falls outside the section",
+              "Discovery",
+              "Principle",
+              "Embodied",
             ],
             correctIndex: 0,
             explanation:
@@ -1002,9 +1002,9 @@ U.S. Copyright Office. (2021). *Compendium of U.S. Copyright Office practices* (
             prompt: "What does the legislative history say choreographic works do not include?",
             options: [
               "Social dance steps and simple routines",
-              "Improvised sequences, unless the improvisation was recorded on video at the first performance",
-              "Works of fewer than three minutes' duration performed by a single dancer without accompaniment",
-              "Movement created for animals, machines or other objects rather than for human performers",
+              "Improvised sequences unless videotaped",
+              "Solo works of under three minutes",
+              "Movement made for animals or machines",
             ],
             correctIndex: 0,
             explanation:
@@ -1015,9 +1015,9 @@ U.S. Copyright Office. (2021). *Compendium of U.S. Copyright Office practices* (
             prompt: "Which House report carries that clause?",
             options: [
               "H.R. Rep. No. 94-1476, at 54 (1976)",
-              "H.R. Rep. No. 60-2222, at 12 (1909), the report accompanying the earlier general revision",
-              "S. Rep. No. 94-473, at 102 (1975), at the page discussing the fixation requirement",
-              "H.R. Rep. No. 94-1733, at 54 (1976), the conference report on the final version of the bill",
+              "H.R. Rep. No. 60-2222, at 12 (1909)",
+              "S. Rep. No. 94-473, at 102 (1975)",
+              "H.R. Rep. No. 94-1733, at 54 (1976)",
             ],
             correctIndex: 0,
             explanation:
@@ -1028,9 +1028,9 @@ U.S. Copyright Office. (2021). *Compendium of U.S. Copyright Office practices* (
             prompt: "Which Senate report carries the same clause?",
             options: [
               "S. Rep. No. 94-473, at 52 (1975)",
-              "S. Rep. No. 94-473, at 54 (1976), the page number it shares with the House report",
-              "S. Rep. No. 86-240, at 28 (1960), the report transmitting the copyright revision studies",
-              "S. Rep. No. 94-1476, at 52 (1975), issued jointly with the House committee on the judiciary",
+              "S. Rep. No. 94-473, at 54 (1976)",
+              "S. Rep. No. 86-240, at 28 (1960)",
+              "S. Rep. No. 94-1476, at 52 (1975)",
             ],
             correctIndex: 0,
             explanation:
@@ -1041,9 +1041,9 @@ U.S. Copyright Office. (2021). *Compendium of U.S. Copyright Office practices* (
             prompt: "What kind of claim is the exclusion of simple routines?",
             options: [
               "A claim about complexity",
-              "A claim about who the intended performers of the work are and who watches them",
-              "A claim about whether the work was fixed in a medium the Office will accept as a deposit",
-              "A claim about whether the author intended the work to be performed for commercial gain",
+              "A claim about performers",
+              "A claim about fixation",
+              "A claim about profit",
             ],
             correctIndex: 0,
             explanation:
@@ -1054,9 +1054,9 @@ U.S. Copyright Office. (2021). *Compendium of U.S. Copyright Office practices* (
             prompt: "What kind of claim is the exclusion of social dances?",
             options: [
               "A claim about function",
-              "A claim about the number of distinct movements the work contains from beginning to end",
-              "A claim about whether the choreographer was paid for the work at the time it was made",
-              "A claim about whether the work has been performed in more than one country",
+              "A claim about length",
+              "A claim about payment",
+              "A claim about touring",
             ],
             correctIndex: 0,
             explanation:
@@ -1067,9 +1067,9 @@ U.S. Copyright Office. (2021). *Compendium of U.S. Copyright Office practices* (
             prompt: "Does the Copyright Office treat the line between a choreographic work and a simple routine as a bright line?",
             options: [
               "No, it calls it a continuum",
-              "Yes, and it sets the threshold at a minimum of thirty distinct movements",
-              "Yes, and the threshold is stated in the legislative history rather than in the practice manual",
-              "No, because the question is left entirely to the courts and no examiner may decide it",
+              "Yes, at thirty distinct movements",
+              "Yes, as set in the legislative history",
+              "No, only courts may decide it",
             ],
             correctIndex: 0,
             explanation:
@@ -1080,9 +1080,9 @@ U.S. Copyright Office. (2021). *Compendium of U.S. Copyright Office practices* (
             prompt: "What is the strongest stated policy argument for excluding social dances from protection?",
             options: [
               "Everyone who performed the dance in public would infringe",
-              "Social dances change too quickly for the Office to identify a single author to register",
-              "Social dances are usually created collectively, and joint authorship rules make ownership unworkable",
-              "Protecting social dances would require the Office to hire examiners trained in every dance tradition",
+              "Social dances change too fast for the Office to name an author",
+              "Collective creation makes joint ownership unworkable",
+              "The Office would need examiners for every tradition",
             ],
             correctIndex: 0,
             explanation:
@@ -1093,9 +1093,9 @@ U.S. Copyright Office. (2021). *Compendium of U.S. Copyright Office practices* (
             prompt: "How does the course frame its argument once it has granted that policy point?",
             options: [
               "It asks who bears the cost of the rule and who collects its benefits",
-              "It concludes that the rule is indefensible and should be repealed by Congress at the next revision",
-              "It argues that examiners should apply the rule more leniently to vernacular forms than to concert works",
-              "It treats the policy point as a pretext offered after the fact to justify a decision already made",
+              "It calls the rule indefensible and urges repeal",
+              "It urges leniency for vernacular forms",
+              "It treats the policy point as a pretext",
             ],
             correctIndex: 0,
             explanation:
@@ -1106,9 +1106,9 @@ U.S. Copyright Office. (2021). *Compendium of U.S. Copyright Office practices* (
             prompt: "Which three adjectives does the course say describe a great deal of Black American dance innovation, and also describe what the rule excludes?",
             options: [
               "Short, vernacular and social",
-              "Improvised, unaccompanied and untrained, none of which the statute mentions anywhere",
-              "Narrative, theatrical and evening-length, which the statute protects rather than excludes",
-              "Notated, licensed and staged, which describes the works that generate royalty income",
+              "Improvised, unaccompanied and untrained",
+              "Narrative, theatrical and evening-length",
+              "Notated, licensed and staged",
             ],
             correctIndex: 0,
             explanation:
@@ -1119,9 +1119,9 @@ U.S. Copyright Office. (2021). *Compendium of U.S. Copyright Office practices* (
             prompt: "What is disparate effect, as this course uses the term?",
             options: [
               "Unequal results produced by a rule that names no group",
-              "A deliberate difference in how an agency applies a rule depending on who is applying",
-              "A difference between the text of a statute and the summary an agency publishes about it",
-              "A pattern of judicial decisions that departs from the standard an appellate court announced",
+              "A deliberate difference in how an agency applies a rule to people",
+              "A gap between a statute and an agency's published summary of it",
+              "Court decisions departing from a standard set on appeal",
             ],
             correctIndex: 0,
             explanation:
@@ -1131,10 +1131,10 @@ U.S. Copyright Office. (2021). *Compendium of U.S. Copyright Office practices* (
           {
             prompt: "Under the 1976 Act, must a choreographic work tell a story to be registrable?",
             options: [
-              "No",
-              "Yes, but the requirement now applies only to works of more than one act",
-              "Yes, because 102(a)(3) and 102(a)(4) are read together as a single dramatic category",
-              "Only if the choreographer seeks to register the work in the same class as the accompanying music",
+              "No, a story is no longer required",
+              "Yes, but only for works of more than one act",
+              "Yes, since (3) and (4) are read together",
+              "Only if registered with its accompanying music",
             ],
             correctIndex: 0,
             explanation:
@@ -1145,9 +1145,9 @@ U.S. Copyright Office. (2021). *Compendium of U.S. Copyright Office practices* (
             prompt: "Which category does 102(a)(2) cover?",
             options: [
               "Musical works, including any accompanying words",
-              "Dramatic works, including any accompanying music, and the librettos written for them",
-              "Sound recordings, which the Act made a category of authorship separate from musical works",
-              "Literary works, a category broad enough to include computer programs and compilations",
+              "Dramatic works, including any accompanying music",
+              "Sound recordings, separate from musical works",
+              "Literary works, including computer programs",
             ],
             correctIndex: 0,
             explanation:
@@ -1158,9 +1158,9 @@ U.S. Copyright Office. (2021). *Compendium of U.S. Copyright Office practices* (
             prompt: "What does 102(a) require of a work before protection subsists at all?",
             options: [
               "That it be original and fixed in a tangible medium",
-              "That it be registered with the Copyright Office and a deposit copy accepted by an examiner",
-              "That it be published with a notice identifying the copyright owner and the year of publication",
-              "That it fall within one of the eight enumerated categories, which are an exhaustive list",
+              "That it be registered and its deposit accepted",
+              "That it be published with a copyright notice",
+              "That it fall within an exhaustive list of eight",
             ],
             correctIndex: 0,
             explanation:
@@ -1171,9 +1171,9 @@ U.S. Copyright Office. (2021). *Compendium of U.S. Copyright Office practices* (
             prompt: "What does Compendium 805.3(C) say about improvisation?",
             options: [
               "An improvised dance cannot be copyrighted unless the improvisation was fixed",
-              "An improvised dance may be registered if the choreographer files a description of the rules governing it",
-              "Improvisation within a fixed work destroys the fixation and voids any registration already granted",
-              "Improvised dances are registrable only when performed by the choreographer personally",
+              "It may be registered if a description of its rules is filed",
+              "Improvising inside a fixed work voids any registration",
+              "It is registrable only when the choreographer performs it",
             ],
             correctIndex: 0,
             explanation:
@@ -1184,9 +1184,9 @@ U.S. Copyright Office. (2021). *Compendium of U.S. Copyright Office practices* (
             prompt: "Why does the fixation requirement bite harder for dance than for a novel?",
             options: [
               "The natural output of choreographing is a performance, which vanishes",
-              "Because the Copyright Office applies a stricter fixation standard to movement than to text",
-              "Because a dance has no author until it has been performed publicly at least once",
-              "Because the statute requires a higher level of detail in a deposit for movement works",
+              "Because the Office applies a stricter fixation standard to movement",
+              "Because a dance has no author until it is publicly performed",
+              "Because the statute demands more detail in a deposit for movement",
             ],
             correctIndex: 0,
             explanation:
@@ -1197,9 +1197,9 @@ U.S. Copyright Office. (2021). *Compendium of U.S. Copyright Office practices* (
             prompt: "A dance transmitted only body to body in a studio, never notated or filmed, was in law what?",
             options: [
               "Not a work",
-              "A work of joint authorship shared between the choreographer and every dancer who learned it",
-              "An unpublished work protected by common law copyright until the moment of first performance",
-              "A work whose protection began when a critic first described it in a published review",
+              "A joint work",
+              "A work for hire",
+              "A published work",
             ],
             correctIndex: 0,
             explanation:
@@ -1210,9 +1210,9 @@ U.S. Copyright Office. (2021). *Compendium of U.S. Copyright Office practices* (
             prompt: "Which notation systems does Circular 52 name by name as acceptable fixations?",
             options: [
               "Labanotation and Benesh Dance Notation",
-              "Feuillet notation and the Stepanov system, the two earliest published movement notations",
-              "Eshkol-Wachman movement notation and the Sutton movement writing system",
-              "Any system approved in advance by the Register of Copyrights on a case-by-case basis",
+              "Feuillet notation and the Stepanov system",
+              "Eshkol-Wachman notation and Sutton writing",
+              "Any system the Register approves in advance",
             ],
             correctIndex: 0,
             explanation:
@@ -1223,9 +1223,9 @@ U.S. Copyright Office. (2021). *Compendium of U.S. Copyright Office practices* (
             prompt: "Besides notation, what formats does Circular 52 list as acceptable fixations?",
             options: [
               "Video recordings, textual descriptions, photographs, or drawings",
-              "Audio recordings of the accompanying music together with a cast list and running order",
-              "Costume designs, lighting plots and floor plans marking each dancer's path across the stage",
-              "Rehearsal call sheets signed by the choreographer and countersigned by the company manager",
+              "Audio of the music together with a cast list and a running order",
+              "Costume designs, lighting plots and floor plans of each path",
+              "Rehearsal call sheets signed by the choreographer",
             ],
             correctIndex: 0,
             explanation:
@@ -1236,9 +1236,9 @@ U.S. Copyright Office. (2021). *Compendium of U.S. Copyright Office practices* (
             prompt: "What standard of detail must a fixation meet?",
             options: [
               "Enough to permit consistent and uniform performance",
-              "Enough for a court to determine the work's total running time to within ten seconds",
-              "Enough for an examiner to identify every dancer who appeared in the first performance",
-              "Enough to reconstruct the accompanying music as well as the movement",
+              "Enough for a court to time the work to within ten seconds",
+              "Enough to identify every dancer in the first performance",
+              "Enough to reconstruct the accompanying music too",
             ],
             correctIndex: 0,
             explanation:
@@ -1249,9 +1249,9 @@ U.S. Copyright Office. (2021). *Compendium of U.S. Copyright Office practices* (
             prompt: "What does Compendium 805.3(D)(1) say about a dance notation system itself?",
             options: [
               "It is a system and not eligible for copyright protection",
-              "It belongs to the notator who developed it for as long as the notator lives plus seventy years",
-              "It may be registered as a literary work if it is published together with a manual explaining it",
-              "It may be registered as a pictorial work because its symbols are graphic in character",
+              "It belongs to its notator for life plus seventy years",
+              "It may register as a literary work if published with a manual",
+              "It may be registered as a pictorial work for its symbols",
             ],
             correctIndex: 0,
             explanation:
@@ -1262,9 +1262,9 @@ U.S. Copyright Office. (2021). *Compendium of U.S. Copyright Office practices* (
             prompt: "How many social dance types does Circular 52 list as unprotected?",
             options: [
               "Five",
-              "Six, matching the number in the Copyright Office's internal practice manual exactly",
-              "Four, since square dances and line dances are treated as a single entry in the circular",
-              "Eleven, one for each class the 1909 Act had listed in its own section 5",
+              "Six",
+              "Four",
+              "Eleven",
             ],
             correctIndex: 0,
             explanation:
@@ -1275,9 +1275,9 @@ U.S. Copyright Office. (2021). *Compendium of U.S. Copyright Office practices* (
             prompt: "Which entry appears on the Compendium's social-dance list but not on Circular 52's?",
             options: [
               "Break dances",
-              "Swing dances, which the circular omits although the practice manual includes them",
-              "Folk dances, which the circular treats as a category of choreographic work instead",
-              "Line dances, which the circular routes to the ordinary motor activities category",
+              "Swing dances",
+              "Folk dances",
+              "Line dances",
             ],
             correctIndex: 0,
             explanation:
@@ -1288,9 +1288,9 @@ U.S. Copyright Office. (2021). *Compendium of U.S. Copyright Office practices* (
             prompt: "How does the course characterise that difference between the two lists?",
             options: [
               "A documentary fact, not a conspiracy",
-              "Evidence that the Copyright Office deliberately concealed its treatment of breaking from applicants",
-              "A drafting error the Office corrected in the most recent revision of the circular",
-              "Proof that examiners were instructed to refuse applications from Black choreographers",
+              "Proof the Office hid its treatment of breaking",
+              "A drafting error since corrected",
+              "Proof of orders to refuse Black applicants",
             ],
             correctIndex: 0,
             explanation:
@@ -1301,9 +1301,9 @@ U.S. Copyright Office. (2021). *Compendium of U.S. Copyright Office practices* (
             prompt: "Who created breaking, as the course describes it?",
             options: [
               "Black and Puerto Rican young people in the Bronx",
-              "Professional concert choreographers who adapted social steps for the theatrical stage",
-              "Touring companies who developed it during residencies in European opera houses",
-              "Dancers trained in the studios that taught the Dunham technique in the 1950s",
+              "Concert choreographers adapting social steps for the stage",
+              "Touring companies in residence at European opera houses",
+              "Dancers trained in Dunham technique studios in the 1950s",
             ],
             correctIndex: 0,
             explanation:
@@ -1314,9 +1314,9 @@ U.S. Copyright Office. (2021). *Compendium of U.S. Copyright Office practices* (
             prompt: "Who is Butler Beauchamp?",
             options: [
               "A hypothetical wide receiver in the Copyright Office's own example",
-              "A choreographer whose application for an endzone routine the Review Board refused in 2013",
-              "The examiner who wrote the Copyright Office's guidance on social dances and simple routines",
-              "A plaintiff whose suit against a videogame company was dismissed and then revived on appeal",
+              "A choreographer whose endzone routine the Review Board refused",
+              "The examiner who wrote the Office's guidance on social dances",
+              "A plaintiff whose suit against a videogame maker was revived",
             ],
             correctIndex: 0,
             explanation:
@@ -1327,9 +1327,9 @@ U.S. Copyright Office. (2021). *Compendium of U.S. Copyright Office practices* (
             prompt: "What does the Beauchamp example illustrate?",
             options: [
               "The de minimis refusal for a routine of a few movements",
-              "The social-dance refusal for a form intended to be performed by the general public",
-              "The fixation refusal for a routine that was never notated, filmed or described in writing",
-              "The refusal of routines intended for performance by machines rather than by humans",
+              "The social-dance refusal for a form the public performs",
+              "The fixation refusal for a routine never filmed or notated",
+              "The refusal of routines meant to be performed by machines",
             ],
             correctIndex: 0,
             explanation:
@@ -1340,9 +1340,9 @@ U.S. Copyright Office. (2021). *Compendium of U.S. Copyright Office practices* (
             prompt: "How does Circular 52 treat a celebratory endzone dance move?",
             options: [
               "As a commonplace movement that does not qualify",
-              "As a social dance, grouped with ballroom, folk, line, square and swing dances",
-              "As a compilation, registrable only if the selection and arrangement is original",
-              "As a routine not performed by humans, alongside dressage and trained-animal skits",
+              "As a social dance, grouped with ballroom and swing",
+              "As a compilation, registrable if arranged originally",
+              "As a routine not performed by humans, like dressage",
             ],
             correctIndex: 0,
             explanation:
@@ -1353,9 +1353,9 @@ U.S. Copyright Office. (2021). *Compendium of U.S. Copyright Office practices* (
             prompt: "What is de minimis, as used in this section?",
             options: [
               "Too slight to count",
-              "Too widely performed to be attributed to any single author with confidence",
-              "Too improvised to be captured accurately in any notation system now in use",
-              "Too closely derived from an existing work to qualify as an original contribution",
+              "Too widely performed",
+              "Too improvised to notate",
+              "Too closely derived",
             ],
             correctIndex: 0,
             explanation:
@@ -1366,9 +1366,9 @@ U.S. Copyright Office. (2021). *Compendium of U.S. Copyright Office practices* (
             prompt: "The course says two conditions can each independently sink a choreographic claim. What are they?",
             options: [
               "It must be fixed, and it must be neither too short nor too social",
-              "It must be published with notice, and it must be registered before any infringement occurs",
-              "It must be original, and the choreographer must own the music it is set to",
-              "It must be notated, and the notation must be certified by the Dance Notation Bureau",
+              "It must be published with notice, and registered before infringement",
+              "It must be original, and its choreographer must own the music",
+              "It must be notated, and certified by the Dance Notation Bureau",
             ],
             correctIndex: 0,
             explanation:
@@ -1379,9 +1379,9 @@ U.S. Copyright Office. (2021). *Compendium of U.S. Copyright Office practices* (
             prompt: "What is an operative rule, as distinct from a public circular?",
             options: [
               "The standard examiners actually apply, found in the practice manual",
-              "The text of the statute as enacted, before any agency has interpreted it",
-              "A rule that has been tested in litigation and affirmed by a federal appellate court",
-              "A rule published for public comment and adopted in the Code of Federal Regulations",
+              "The text of the statute as enacted, before any agency reads it",
+              "A rule tested in litigation and affirmed by an appeals court",
+              "A rule adopted after public comment and printed in the C.F.R.",
             ],
             correctIndex: 0,
             explanation:
@@ -1392,9 +1392,9 @@ U.S. Copyright Office. (2021). *Compendium of U.S. Copyright Office practices* (
             prompt: "Circular 52 says it is what, in its own words?",
             options: [
               "An introduction to the Office's practices and procedures",
-              "The authoritative statement of copyright law for choreographic works and pantomimes",
-              "A binding regulation issued under the Register of Copyrights' rulemaking authority",
-              "A summary of the case law on choreographic infringement decided since 1978",
+              "The authoritative statement of the law on choreography",
+              "A binding regulation under the Register's rulemaking power",
+              "A summary of choreography infringement cases since 1978",
             ],
             correctIndex: 0,
             explanation:
@@ -1404,10 +1404,10 @@ U.S. Copyright Office. (2021). *Compendium of U.S. Copyright Office practices* (
           {
             prompt: "For a work created after 1 January 1978, may a choreographic work be an abstract composition?",
             options: [
-              "Yes",
-              "No, the dramatic-character requirement survived the 1976 Act unchanged",
-              "Only if it is fixed in a notation score rather than in a video recording",
-              "Only if the choreographer files a written statement explaining the work's theme",
+              "Yes, it may be abstract",
+              "No, it still needs a story",
+              "Only if fixed in notation",
+              "Only with a written theme",
             ],
             correctIndex: 0,
             explanation:
@@ -1418,9 +1418,9 @@ U.S. Copyright Office. (2021). *Compendium of U.S. Copyright Office practices* (
             prompt: "Why does the course say the technology of preservation sits outside the system of ownership it makes possible?",
             options: [
               "Because a notation system cannot itself be copyrighted",
-              "Because notators are employed by archives rather than by the choreographers whose work they record",
-              "Because a notated score is deposited with the Office and becomes a public record open to anyone",
-              "Because notation was invented before copyright protection extended to choreography at all",
+              "Because notators work for archives, not choreographers",
+              "Because a deposited score becomes an open public record",
+              "Because notation was invented before dance was protected",
             ],
             correctIndex: 0,
             explanation:
@@ -1431,9 +1431,9 @@ U.S. Copyright Office. (2021). *Compendium of U.S. Copyright Office practices* (
             prompt: "Which category does 102(a)(8) cover?",
             options: [
               "Architectural works",
-              "Sound recordings, which the Act separated from the musical works they capture",
-              "Motion pictures and other audiovisual works of every description",
-              "Pictorial, graphic, and sculptural works, including models and diagrams",
+              "Sound recordings",
+              "Motion pictures",
+              "Pictorial works",
             ],
             correctIndex: 0,
             explanation:
@@ -1444,9 +1444,9 @@ U.S. Copyright Office. (2021). *Compendium of U.S. Copyright Office practices* (
             prompt: "What does 102(a) say about the medium in which a work may be fixed?",
             options: [
               "Any tangible medium now known or later developed",
-              "Only media the Copyright Office has approved by regulation as suitable deposits",
-              "Only media from which the work can be perceived without the aid of a machine",
-              "Only print, notation and photographic media, since digital media came later",
+              "Only media the Office approves by regulation",
+              "Only media readable without a machine",
+              "Only print, notation and photography",
             ],
             correctIndex: 0,
             explanation:
@@ -1457,9 +1457,9 @@ U.S. Copyright Office. (2021). *Compendium of U.S. Copyright Office practices* (
             prompt: "What does the Copyright Office say a registration specialist considers when applying the choreography test?",
             options: [
               "The intrinsic nature of the work, elements and whole together",
-              "The professional reputation of the choreographer and of the company performing it",
-              "Whether a comparable work has previously been registered by another applicant",
-              "The number of public performances the work received in its first season",
+              "The reputation of the choreographer and the company",
+              "Whether a comparable work was registered before",
+              "How many times the work was performed in its first season",
             ],
             correctIndex: 0,
             explanation:
@@ -1470,9 +1470,9 @@ U.S. Copyright Office. (2021). *Compendium of U.S. Copyright Office practices* (
             prompt: "Who are registrable choreographic works typically intended to be performed by, according to Circular 52?",
             options: [
               "Skilled performers before an audience",
-              "Members of the general public for their own enjoyment as participants",
-              "Company members under contract to a professional dance organisation",
-              "Trained animals, machines or other objects directed by a human choreographer",
+              "The general public, for its own enjoyment",
+              "Company members under contract",
+              "Trained animals or machines",
             ],
             correctIndex: 0,
             explanation:
@@ -1483,9 +1483,9 @@ U.S. Copyright Office. (2021). *Compendium of U.S. Copyright Office practices* (
             prompt: "Does the course claim Congress intended the 1976 exclusions to fall on Black dance forms?",
             options: [
               "No, it says the reports mention no community at all",
-              "Yes, and it cites the committee reports as evidence of that intent",
-              "Yes, but only in respect of the simple-routine exclusion rather than the social one",
-              "It declines to say, treating the question as unanswerable from any source",
+              "Yes, citing the committee reports as proof",
+              "Yes, but only for the simple-routine exclusion",
+              "It declines to say, calling it unanswerable",
             ],
             correctIndex: 0,
             explanation:
@@ -1496,9 +1496,9 @@ U.S. Copyright Office. (2021). *Compendium of U.S. Copyright Office practices* (
             prompt: "According to Circular 52, which of these is not registrable as a choreographic work?",
             options: [
               "A yoga sequence",
-              "An abstract composition made for skilled dancers and fixed on video",
-              "A derivative work adding substantial new material to an existing dance",
-              "A narrative ballet fixed in Benesh Dance Notation by a professional notator",
+              "An abstract work fixed on video",
+              "A substantial derivative dance",
+              "A narrative ballet in Benesh",
             ],
             correctIndex: 0,
             explanation:
@@ -1509,9 +1509,9 @@ U.S. Copyright Office. (2021). *Compendium of U.S. Copyright Office practices* (
             prompt: "What does Circular 52 say about routines intended for performance by animals or machines?",
             options: [
               "They are not copyrightable as choreography or pantomime",
-              "They are registrable if a human choreographer devised the sequence of movements",
-              "They are registrable as compilations if the arrangement is sufficiently original",
-              "They are treated as social dances and refused on that ground instead",
+              "They are registrable if a human devised the sequence",
+              "They are registrable as original compilations",
+              "They are refused as social dances instead",
             ],
             correctIndex: 0,
             explanation:
@@ -1522,9 +1522,9 @@ U.S. Copyright Office. (2021). *Compendium of U.S. Copyright Office practices* (
             prompt: "Which of these does Circular 52 name as an example of a commonplace movement?",
             options: [
               "The basic waltz step",
-              "A five-minute composed work for a company of professional dancers",
-              "A ballet fixed in Labanotation and deposited with the Copyright Office",
-              "A theatrical production that incorporates an adapted social dance",
+              "A five-minute company work",
+              "A ballet in Labanotation",
+              "A staged social dance",
             ],
             correctIndex: 0,
             explanation:
@@ -1535,9 +1535,9 @@ U.S. Copyright Office. (2021). *Compendium of U.S. Copyright Office practices* (
             prompt: "What does the course say happens to a choreographer who reads Circular 52 first?",
             options: [
               "They meet a list that omits an entry the operative manual contains",
-              "They are told the circular is legally binding on the Office's examiners",
-              "They receive the same list the practice manual gives, word for word",
-              "They are directed to the legislative history rather than to the manual",
+              "They are told the circular binds the examiners",
+              "They get the manual's list word for word",
+              "They are sent to the legislative history",
             ],
             correctIndex: 0,
             explanation:
@@ -1630,9 +1630,9 @@ Hanagami v. Epic Games, Inc., No. 22-55890 (9th Cir. Nov. 1, 2023). https://cdn.
             prompt: "What is the citation for Horgan v. Macmillan?",
             options: [
               "789 F.2d 157 (2d Cir. 1986)",
-              "50 F. 926 (C.C.S.D.N.Y. 1892), the case that established the dramatic-composition requirement",
-              "No. 22-55890 (9th Cir. 2023), the appeal about an animation sold in a videogame",
-              "789 F. Supp. 157 (S.D.N.Y. 1985), the district court decision that denied the injunction",
+              "50 F. 926 (C.C.S.D.N.Y. 1892)",
+              "No. 22-55890 (9th Cir. 2023)",
+              "789 F. Supp. 157 (S.D.N.Y. 1985)",
             ],
             correctIndex: 0,
             explanation:
@@ -1643,9 +1643,9 @@ Hanagami v. Epic Games, Inc., No. 22-55890 (9th Cir. Nov. 1, 2023). https://cdn.
             prompt: "Which court decided Horgan v. Macmillan on appeal?",
             options: [
               "The Second Circuit",
-              "The Ninth Circuit, sitting in Anchorage after argument in August of that year",
-              "The Central District of California, whose dismissal was later reversed on appeal",
-              "The Copyright Office Review Board, acting under its reconsideration procedure",
+              "The Ninth Circuit",
+              "The Central District of California",
+              "The Copyright Office Review Board",
             ],
             correctIndex: 0,
             explanation:
@@ -1656,9 +1656,9 @@ Hanagami v. Epic Games, Inc., No. 22-55890 (9th Cir. Nov. 1, 2023). https://cdn.
             prompt: "Whose choreography was at issue in Horgan?",
             options: [
               "George Balanchine's",
-              "Agnes de Mille's, whose work on Oklahoma! the opinion discusses in a footnote",
-              "Donald McKayle's, whose Angelitos Negros was notated in Labanotation",
-              "Alvin Ailey's, whose company had performed the ballet in its own season",
+              "Agnes de Mille's",
+              "Donald McKayle's",
+              "Alvin Ailey's",
             ],
             correctIndex: 0,
             explanation:
@@ -1669,9 +1669,9 @@ Hanagami v. Epic Games, Inc., No. 22-55890 (9th Cir. Nov. 1, 2023). https://cdn.
             prompt: "What did Balanchine deposit as the fixation of his choreography?",
             options: [
               "A videotape of a dress rehearsal",
-              "A Labanotation score prepared by a notator engaged by the New York City Ballet",
-              "A written scene-by-scene description of the ballet with diagrams of the stage patterns",
-              "A set of production photographs taken at the premiere and annotated by the ballet master",
+              "A commissioned Labanotation score",
+              "A written scene-by-scene description",
+              "A set of annotated premiere photos",
             ],
             correctIndex: 0,
             explanation:
@@ -1682,9 +1682,9 @@ Hanagami v. Epic Games, Inc., No. 22-55890 (9th Cir. Nov. 1, 2023). https://cdn.
             prompt: "In what month and year did Balanchine register the choreography?",
             options: [
               "December 1981",
-              "January 1978, the month the 1976 Act took effect and choreography became a category",
-              "February 2021, the month a later choreographer's registration in this course issued",
-              "April 1986, the month the Second Circuit issued its opinion in the case",
+              "January 1978",
+              "February 2021",
+              "April 1986",
             ],
             correctIndex: 0,
             explanation:
@@ -1695,9 +1695,9 @@ Hanagami v. Epic Games, Inc., No. 22-55890 (9th Cir. Nov. 1, 2023). https://cdn.
             prompt: "What does the course say Balanchine's choice of deposit format shows?",
             options: [
               "Even the best-resourced estate fixed a dance by filming a rehearsal",
-              "That notation was legally required for ballet works but optional for modern dance works",
-              "That the Copyright Office would not accept notation scores as deposits before 1986",
-              "That the estate wanted to protect the performance rather than the choreography itself",
+              "Notation was required for ballet but optional for modern dance",
+              "The Office would not accept notation scores as deposits before 1986",
+              "The estate meant to protect the performance, not the choreography",
             ],
             correctIndex: 0,
             explanation:
@@ -1708,9 +1708,9 @@ Hanagami v. Epic Games, Inc., No. 22-55890 (9th Cir. Nov. 1, 2023). https://cdn.
             prompt: "What allegedly infringing material was at issue in Horgan?",
             options: [
               "Still photographs in a book",
-              "A televised broadcast of a rival company performing the same ballet in the same season",
-              "A published Labanotation score prepared without the estate's permission",
-              "A film adaptation of the ballet produced for release in cinemas",
+              "A televised broadcast by a rival company",
+              "An unauthorised Labanotation score",
+              "A film adaptation made for cinemas",
             ],
             correctIndex: 0,
             explanation:
@@ -1721,9 +1721,9 @@ Hanagami v. Epic Games, Inc., No. 22-55890 (9th Cir. Nov. 1, 2023). https://cdn.
             prompt: "What was the district court's reason for denying relief?",
             options: [
               "The performance could not be recreated from the photographs",
-              "The photographs were taken with the company's permission and so were licensed",
-              "The registration was invalid because the deposit was a videotape rather than a score",
-              "The book was a work of criticism and therefore protected as fair use",
+              "The photographs were taken with permission and so were licensed",
+              "The registration failed because the deposit was a videotape",
+              "The book was criticism and therefore protected as fair use",
             ],
             correctIndex: 0,
             explanation:
@@ -1734,9 +1734,9 @@ Hanagami v. Epic Games, Inc., No. 22-55890 (9th Cir. Nov. 1, 2023). https://cdn.
             prompt: "What analogy did the district court use for its reasoning?",
             options: [
               "Every twenty-fifth chord of a Beethoven symphony",
-              "A single frame taken from a two-hour motion picture and printed in a magazine",
-              "A photograph of a sculpture taken from one angle only, which cannot show the whole",
-              "A page of a novel reprinted without the chapters that precede and follow it",
+              "A single frame printed from a two-hour film",
+              "A photograph of a sculpture from one angle",
+              "A page of a novel reprinted without its chapter",
             ],
             correctIndex: 0,
             explanation:
@@ -1747,9 +1747,9 @@ Hanagami v. Epic Games, Inc., No. 22-55890 (9th Cir. Nov. 1, 2023). https://cdn.
             prompt: "What standard did the Second Circuit hold applies instead?",
             options: [
               "Substantial similarity",
-              "Whether an ordinary observer could reconstruct the original from the accused copy",
-              "Whether the accused work was created with access to a registered deposit copy",
-              "Whether the copied portion exceeds a fixed proportion of the original work's running time",
+              "Possible recreation",
+              "Access to a deposit",
+              "A fixed proportion",
             ],
             correctIndex: 0,
             explanation:
@@ -1760,9 +1760,9 @@ Hanagami v. Epic Games, Inc., No. 22-55890 (9th Cir. Nov. 1, 2023). https://cdn.
             prompt: "Did the Second Circuit hold that the book infringed?",
             options: [
               "No, it reversed and remanded",
-              "Yes, and it entered a permanent injunction against further distribution of the book",
-              "Yes, but it left the calculation of damages to the district court on remand",
-              "No, it affirmed the denial of the injunction on a different ground from the district court's",
+              "Yes, and it permanently enjoined the book",
+              "Yes, leaving damages to the district court",
+              "No, it affirmed on a different ground",
             ],
             correctIndex: 0,
             explanation:
@@ -1773,9 +1773,9 @@ Hanagami v. Epic Games, Inc., No. 22-55890 (9th Cir. Nov. 1, 2023). https://cdn.
             prompt: "According to footnote 4 of Horgan, what did Agnes de Mille initially receive for her work on Oklahoma!?",
             options: [
               "Fifteen thousand dollars and no royalties",
-              "A weekly stager's fee plus expenses for the duration of the Broadway run",
-              "A share of the show's gross receipts once it had recouped its production costs",
-              "A licence fee of several thousand dollars renewed at each revival of the production",
+              "A weekly stager's fee plus expenses for the run",
+              "A share of gross receipts after recoupment",
+              "A licence fee renewed at every revival",
             ],
             correctIndex: 0,
             explanation:
@@ -1786,9 +1786,9 @@ Hanagami v. Epic Games, Inc., No. 22-55890 (9th Cir. Nov. 1, 2023). https://cdn.
             prompt: "What figure does that footnote give for what Oklahoma! is estimated to have earned?",
             options: [
               "Over sixty million dollars in fifteen years",
-              "Over six million dollars across its original Broadway run alone",
-              "Over sixty million dollars in the first five years of its national tour",
-              "An amount the opinion declines to estimate, saying the record does not support one",
+              "Over six million dollars on Broadway alone",
+              "Over sixty million dollars in its first five years on tour",
+              "An amount the opinion declines to estimate at all",
             ],
             correctIndex: 0,
             explanation:
@@ -1799,9 +1799,9 @@ Hanagami v. Epic Games, Inc., No. 22-55890 (9th Cir. Nov. 1, 2023). https://cdn.
             prompt: "How does the course tell you to handle that sixty million dollar figure?",
             options: [
               "As evidence of belief, not as an audited number",
-              "As the most reliable financial data available on any Broadway production of the period",
-              "As a fabrication the court should not have repeated, and therefore not worth teaching",
-              "As a figure the Copyright Office independently verified before the 1976 revision",
+              "As the most reliable Broadway financial data of the period",
+              "As a fabrication the court should never have repeated",
+              "As a figure the Office verified before the 1976 revision",
             ],
             correctIndex: 0,
             explanation:
@@ -1812,9 +1812,9 @@ Hanagami v. Epic Games, Inc., No. 22-55890 (9th Cir. Nov. 1, 2023). https://cdn.
             prompt: "What does footnote 8 of Horgan record?",
             options: [
               "Appellees questioned the validity of Balanchine's copyright",
-              "The estate had failed to renew the registration within the statutory renewal period",
-              "The Copyright Office had refused an earlier application for the same choreography",
-              "The videotape deposit had been destroyed before the litigation began",
+              "The estate had failed to renew the registration in time",
+              "The Office had refused an earlier application for the same work",
+              "The videotape deposit had been destroyed before the suit began",
             ],
             correctIndex: 0,
             explanation:
@@ -1825,9 +1825,9 @@ Hanagami v. Epic Games, Inc., No. 22-55890 (9th Cir. Nov. 1, 2023). https://cdn.
             prompt: "What point does the course draw from footnote 8?",
             options: [
               "Even the best-defended choreographic registration was open to attack",
-              "That courts routinely invalidated choreographic registrations throughout the 1980s",
-              "That the Copyright Office should have refused the application when it was filed",
-              "That preexisting material must always be disclosed or the deposit is rejected outright",
+              "Courts routinely invalidated choreographic registrations in the 1980s",
+              "The Copyright Office should have refused the application when filed",
+              "Undisclosed preexisting material always means the deposit is rejected",
             ],
             correctIndex: 0,
             explanation:
@@ -1839,8 +1839,8 @@ Hanagami v. Epic Games, Inc., No. 22-55890 (9th Cir. Nov. 1, 2023). https://cdn.
             options: [
               "Sending a case back to be decided under the correct standard",
               "An order restraining conduct while the case is still being litigated",
-              "A decision by an agency panel that constitutes final agency action",
-              "A request that an appellate court reconsider its own decision before it issues",
+              "A decision by an agency panel that is final agency action on a claim",
+              "A request that an appeals court reconsider its decision before issuing it",
             ],
             correctIndex: 0,
             explanation:
@@ -1851,9 +1851,9 @@ Hanagami v. Epic Games, Inc., No. 22-55890 (9th Cir. Nov. 1, 2023). https://cdn.
             prompt: "What is preexisting material, in the sense used in footnote 8?",
             options: [
               "Earlier work incorporated in a new one",
-              "Material an applicant deposits alongside the work to establish its date of creation",
-              "Choreography created before 1978 and therefore governed by the old dramatic test",
-              "The music a choreographic work is set to, which must be licensed separately",
+              "Material deposited to prove a creation date",
+              "Choreography made before 1978, under the old test",
+              "Music the work is set to, licensed separately",
             ],
             correctIndex: 0,
             explanation:
@@ -1864,9 +1864,9 @@ Hanagami v. Epic Games, Inc., No. 22-55890 (9th Cir. Nov. 1, 2023). https://cdn.
             prompt: "What did the district court in Horgan refuse to grant?",
             options: [
               "A preliminary injunction",
-              "A motion to dismiss the complaint for failure to state a claim",
-              "Leave to amend the registration to disclose preexisting material",
-              "A request that the Copyright Office reconsider its acceptance of the deposit",
+              "A motion to dismiss the complaint",
+              "Leave to amend the registration",
+              "A reconsideration by the Copyright Office",
             ],
             correctIndex: 0,
             explanation:
@@ -1877,9 +1877,9 @@ Hanagami v. Epic Games, Inc., No. 22-55890 (9th Cir. Nov. 1, 2023). https://cdn.
             prompt: "On what date was Horgan v. Macmillan decided?",
             options: [
               "28 April 1986",
-              "1 November 2023, the date the Ninth Circuit filed its choreography opinion",
-              "14 July 2016, the date the Review Board affirmed a refusal to register",
-              "20 February 2021, the date a choreographer's registration issued in a later case",
+              "1 November 2023",
+              "14 July 2016",
+              "20 February 2021",
             ],
             correctIndex: 0,
             explanation:
@@ -1890,9 +1890,9 @@ Hanagami v. Epic Games, Inc., No. 22-55890 (9th Cir. Nov. 1, 2023). https://cdn.
             prompt: "Who requested reconsideration in the Five-Petal Flower matter?",
             options: [
               "Pilobolus, Inc.",
-              "Epic Games, Inc., seeking to register the animation it had sold to players",
-              "The New York City Ballet, on behalf of the estate of its founding choreographer",
-              "The Dance Notation Bureau, on behalf of the choreographers whose scores it holds",
+              "Epic Games, Inc.",
+              "The New York City Ballet",
+              "The Dance Notation Bureau",
             ],
             correctIndex: 0,
             explanation:
@@ -1903,9 +1903,9 @@ Hanagami v. Epic Games, Inc., No. 22-55890 (9th Cir. Nov. 1, 2023). https://cdn.
             prompt: "On what date did the Review Board decide Five-Petal Flower?",
             options: [
               "14 July 2016",
-              "20 June 2013, the date the application itself was originally filed with the Office",
-              "1 November 2023, the date an appellate court reversed a dismissal in a related area",
-              "28 April 1986, the date the leading circuit decision on choreographic infringement issued",
+              "20 June 2013",
+              "1 November 2023",
+              "28 April 1986",
             ],
             correctIndex: 0,
             explanation:
@@ -1916,9 +1916,9 @@ Hanagami v. Epic Games, Inc., No. 22-55890 (9th Cir. Nov. 1, 2023). https://cdn.
             prompt: "How long was the work refused registration in Five-Petal Flower?",
             options: [
               "Fourteen seconds",
-              "Two seconds, comprising eight bodily movements set to four beats of music",
-              "Five minutes, a full composed work made for performance by skilled dancers",
-              "Ninety seconds, the length of the silhouette sequence as broadcast on television",
+              "Two seconds",
+              "Five minutes",
+              "Ninety seconds",
             ],
             correctIndex: 0,
             explanation:
@@ -1929,9 +1929,9 @@ Hanagami v. Epic Games, Inc., No. 22-55890 (9th Cir. Nov. 1, 2023). https://cdn.
             prompt: "What was the outcome of the Five-Petal Flower reconsideration?",
             options: [
               "The refusal was affirmed",
-              "The refusal was reversed and the work was registered as a choreographic work",
-              "The matter was remanded to the Registration Program for a third examination",
-              "The Board declined to decide, holding that the applicant had filed out of time",
+              "The refusal was reversed",
+              "It was remanded again",
+              "The request was late",
             ],
             correctIndex: 0,
             explanation:
@@ -1942,9 +1942,9 @@ Hanagami v. Epic Games, Inc., No. 22-55890 (9th Cir. Nov. 1, 2023). https://cdn.
             prompt: "What argument did Pilobolus make that the Board declined to consider?",
             options: [
               "That its whole repertoire was celebrated and stylistically distinctive",
-              "That the work had been fixed in Labanotation as well as on video",
-              "That the silhouette technique had never been used by any other company",
-              "That the work formed part of a longer piece already registered with the Office",
+              "That the work had also been fixed in Labanotation",
+              "That no other company had ever used the silhouette technique",
+              "That the work was part of a longer piece already registered",
             ],
             correctIndex: 0,
             explanation:
@@ -1955,9 +1955,9 @@ Hanagami v. Epic Games, Inc., No. 22-55890 (9th Cir. Nov. 1, 2023). https://cdn.
             prompt: "Why does the course call Pilobolus the control case?",
             options: [
               "A celebrated predominantly white company lost under the same rule",
-              "Its work was the first choreographic application the Review Board ever considered",
-              "It was the only choreography refusal the Office issued between 1978 and 2016",
-              "Its founders had helped draft the legislative history the Office relies on",
+              "It was the first choreography application the Review Board ever heard",
+              "It was the only choreography refusal the Office issued from 1978 to 2016",
+              "Its founders helped draft the legislative history the Office relies on",
             ],
             correctIndex: 0,
             explanation:
@@ -1968,9 +1968,9 @@ Hanagami v. Epic Games, Inc., No. 22-55890 (9th Cir. Nov. 1, 2023). https://cdn.
             prompt: "Who was the plaintiff in Hanagami v. Epic Games?",
             options: [
               "Kyle Hanagami, a choreographer",
-              "Pilobolus, Inc., the company whose fourteen-second work had been refused registration",
-              "The executor of a choreographer's estate, suing over photographs printed in a book",
-              "A videogame publisher seeking a declaration that its animations did not infringe",
+              "Pilobolus, Inc., a dance company",
+              "A choreographer's estate",
+              "A videogame publisher",
             ],
             correctIndex: 0,
             explanation:
@@ -1981,9 +1981,9 @@ Hanagami v. Epic Games, Inc., No. 22-55890 (9th Cir. Nov. 1, 2023). https://cdn.
             prompt: "What is the docket number of the Ninth Circuit's opinion in Hanagami?",
             options: [
               "No. 22-55890",
-              "No. 85-7954, the docket number of the choreography appeal decided in the Second Circuit",
-              "No. 2:22-cv-02063-SVW-MRW, which is the number the case carried on appeal",
-              "Correspondence ID 1-N27VRB, assigned when the registration application was filed",
+              "No. 85-7954",
+              "No. 2:22-cv-02063-SVW-MRW",
+              "Correspondence ID 1-N27VRB",
             ],
             correctIndex: 0,
             explanation:
@@ -1994,9 +1994,9 @@ Hanagami v. Epic Games, Inc., No. 22-55890 (9th Cir. Nov. 1, 2023). https://cdn.
             prompt: "When was the Ninth Circuit's opinion in Hanagami filed?",
             options: [
               "1 November 2023",
-              "16 August 2023, the date the appeal was argued and submitted in Anchorage",
-              "20 February 2021, the date the plaintiff's choreography registration issued",
-              "14 July 2016, the date the Copyright Office Review Board affirmed a refusal",
+              "16 August 2023",
+              "20 February 2021",
+              "14 July 2016",
             ],
             correctIndex: 0,
             explanation:
@@ -2007,9 +2007,9 @@ Hanagami v. Epic Games, Inc., No. 22-55890 (9th Cir. Nov. 1, 2023). https://cdn.
             prompt: "What did the Ninth Circuit hold is protectable in a choreographic work?",
             options: [
               "The choreographer's selection and arrangement of unprotectable elements",
-              "Each individual pose, provided the pose is original to the choreographer who devised it",
-              "Any sequence of at least eight bodily movements set to a recognisable musical phrase",
-              "The performance itself, as fixed on video, rather than the underlying arrangement",
+              "Each individual pose, if original to the choreographer",
+              "Any sequence of eight movements set to a musical phrase",
+              "The performance as fixed on video, not the arrangement",
             ],
             correctIndex: 0,
             explanation:
@@ -2020,9 +2020,9 @@ Hanagami v. Epic Games, Inc., No. 22-55890 (9th Cir. Nov. 1, 2023). https://cdn.
             prompt: "Besides poses, which elements did the Ninth Circuit say a choreographic work may include?",
             options: [
               "Body position, transitions, use of space, timing, energy and repetition",
-              "Costume, lighting, set design and the musical accompaniment chosen by the choreographer",
-              "The training and technique of the dancers engaged to perform the work in its first season",
-              "The narrative, the characters and the theme, which the 1909 Act had required",
+              "Costume, lighting, set design and the chosen musical accompaniment",
+              "The training and technique of the dancers in the first season",
+              "The narrative, the characters and the theme the 1909 Act required",
             ],
             correctIndex: 0,
             explanation:
@@ -2033,9 +2033,9 @@ Hanagami v. Epic Games, Inc., No. 22-55890 (9th Cir. Nov. 1, 2023). https://cdn.
             prompt: "What error did the Ninth Circuit find in the district court's treatment of the copied portion?",
             options: [
               "It dismissed merely because the portion was short",
-              "It applied the substantial similarity test rather than asking whether the work could be recreated",
-              "It refused to consider the registration valid because the deposit was a video recording",
-              "It treated the emote as a social dance rather than as a composed choreographic work",
+              "It applied substantial similarity instead of asking about recreation",
+              "It held the registration invalid because the deposit was a video",
+              "It treated the emote as a social dance",
             ],
             correctIndex: 0,
             explanation:
@@ -2046,9 +2046,9 @@ Hanagami v. Epic Games, Inc., No. 22-55890 (9th Cir. Nov. 1, 2023). https://cdn.
             prompt: "How did the district court describe the material Epic allegedly copied?",
             options: [
               "A two-second combination of eight bodily movements set to four beats",
-              "A fourteen-second silhouette sequence performed against a plain blue screen",
-              "A five-minute composed work intended for performance by skilled dancers",
-              "A social dance step of the kind the legislative history expressly excludes",
+              "A fourteen-second silhouette sequence against a blue screen",
+              "A five-minute composed work for skilled dancers",
+              "A social dance step the legislative history excludes",
             ],
             correctIndex: 0,
             explanation:
@@ -2059,9 +2059,9 @@ Hanagami v. Epic Games, Inc., No. 22-55890 (9th Cir. Nov. 1, 2023). https://cdn.
             prompt: "What is an emote, in this context?",
             options: [
               "A short purchasable animation that makes a player's avatar move",
-              "A notation symbol indicating the emotional quality a passage should be performed with",
-              "A brief choreographic phrase a company uses to warm up before a performance",
-              "A tag the Copyright Office applies to applications claiming expressive gesture",
+              "A notation symbol for the emotional quality of a passage",
+              "A brief phrase a company uses to warm up before a show",
+              "A tag the Office puts on claims of expressive gesture",
             ],
             correctIndex: 0,
             explanation:
@@ -2072,9 +2072,9 @@ Hanagami v. Epic Games, Inc., No. 22-55890 (9th Cir. Nov. 1, 2023). https://cdn.
             prompt: "Was Hanagami's choreography registered with the Copyright Office?",
             options: [
               "Yes, the registration issued on 20 February 2021",
-              "No, the Office refused it and he sued without a registration in hand",
-              "Yes, but only after the Review Board reversed an initial refusal on reconsideration",
-              "No, but the court excused the requirement because the work had been published online",
+              "No, the Office refused it and he sued without one",
+              "Yes, but only after the Review Board reversed a refusal",
+              "No, but the court excused it as published online",
             ],
             correctIndex: 0,
             explanation:
@@ -2085,9 +2085,9 @@ Hanagami v. Epic Games, Inc., No. 22-55890 (9th Cir. Nov. 1, 2023). https://cdn.
             prompt: "Why does this course not print the dates or wording of the Copyright Office letters refusing other Fortnite plaintiffs' applications?",
             options: [
               "It could not retrieve them from a primary source",
-              "Those letters are sealed by court order and cannot lawfully be quoted in teaching material",
-              "The Copyright Office destroys refusal correspondence after five years have elapsed",
-              "The plaintiffs withdrew their applications before any refusal was issued",
+              "The letters are sealed by court order",
+              "The Office destroys refusals after five years",
+              "The plaintiffs withdrew before any refusal",
             ],
             correctIndex: 0,
             explanation:
@@ -2098,9 +2098,9 @@ Hanagami v. Epic Games, Inc., No. 22-55890 (9th Cir. Nov. 1, 2023). https://cdn.
             prompt: "Which claim does the course expressly reject as unsupported?",
             options: [
               "That the Office refused those applications because the applicants were Black",
-              "That short vernacular steps are excluded by a rule stated in 1976 legislative history",
-              "That the categories short, vernacular and social map onto Black cultural production",
-              "That a facially neutral rule can transfer value away from particular kinds of makers",
+              "That short vernacular steps are excluded by a rule in 1976 legislative history",
+              "That the categories short, vernacular and social map onto Black cultural forms",
+              "That a facially neutral rule can move value away from particular kinds of makers",
             ],
             correctIndex: 0,
             explanation:
@@ -2111,9 +2111,9 @@ Hanagami v. Epic Games, Inc., No. 22-55890 (9th Cir. Nov. 1, 2023). https://cdn.
             prompt: "What argument does the evidence support instead?",
             options: [
               "A neutral rule about duration and form transfers value unevenly",
-              "That examiners should be required to consider an applicant's whole repertoire",
-              "That the Ninth Circuit's holding will be reversed once the Supreme Court considers it",
-              "That vernacular steps should be registrable whenever they can be traced to one author",
+              "Examiners should weigh an applicant's whole repertoire",
+              "The Supreme Court will reverse the Ninth Circuit's holding",
+              "Vernacular steps should register when traced to one author",
             ],
             correctIndex: 0,
             explanation:
@@ -2124,9 +2124,9 @@ Hanagami v. Epic Games, Inc., No. 22-55890 (9th Cir. Nov. 1, 2023). https://cdn.
             prompt: "Under which regulation is a Review Board decision final agency action?",
             options: [
               "37 C.F.R. 202.5(g)",
-              "37 C.F.R. 202.7 (1959), the regulation that assigned dramatic choreography to Class D",
-              "17 U.S.C. 102(b), which excludes systems and methods of operation from protection",
-              "37 C.F.R. 202.1(a), which lists material not subject to copyright at all",
+              "37 C.F.R. 202.7 (1959)",
+              "17 U.S.C. 102(b)",
+              "37 C.F.R. 202.1(a)",
             ],
             correctIndex: 0,
             explanation:
@@ -2137,9 +2137,9 @@ Hanagami v. Epic Games, Inc., No. 22-55890 (9th Cir. Nov. 1, 2023). https://cdn.
             prompt: "What is a quantum of authorship?",
             options: [
               "How much creative choice a work contains",
-              "The number of separate movements a work contains from beginning to end",
-              "The proportion of a work that a defendant is alleged to have copied",
-              "The share of a royalty payment attributable to the choreographer rather than the composer",
+              "How many separate movements a work contains",
+              "How much of a work a defendant allegedly copied",
+              "The choreographer's share of a royalty payment",
             ],
             correctIndex: 0,
             explanation:
@@ -2150,9 +2150,9 @@ Hanagami v. Epic Games, Inc., No. 22-55890 (9th Cir. Nov. 1, 2023). https://cdn.
             prompt: "What did the book in Horgan v. Macmillan contain photographs of?",
             options: [
               "A ballet in performance",
-              "A rehearsal videotape deposited with the Copyright Office as a fixation",
-              "A Labanotation score of the choreography, reproduced page by page",
-              "An opera production staged by a company at a major American house",
+              "A rehearsal videotape",
+              "A Labanotation score",
+              "An opera production",
             ],
             correctIndex: 0,
             explanation:
@@ -2163,9 +2163,9 @@ Hanagami v. Epic Games, Inc., No. 22-55890 (9th Cir. Nov. 1, 2023). https://cdn.
             prompt: "What does the course say Balanchine's deposit choice tells you about notation?",
             options: [
               "It was always accepted and was simply expensive",
-              "It was legally unavailable as a deposit format until after 1986",
-              "It was required for ballet and optional for modern dance works",
-              "It was cheaper than video, which is why most estates avoided film",
+              "It was unavailable as a deposit format until after 1986",
+              "It was required for ballet and optional for modern dance",
+              "It was cheaper than video, so most estates avoided film",
             ],
             correctIndex: 0,
             explanation:
@@ -2176,9 +2176,9 @@ Hanagami v. Epic Games, Inc., No. 22-55890 (9th Cir. Nov. 1, 2023). https://cdn.
             prompt: "What is a preliminary injunction?",
             options: [
               "An order restraining conduct while a case proceeds",
-              "A final judgment entered after a trial on the merits of a copyright claim",
-              "An agency order refusing a registration application on reconsideration",
-              "A decision sending a case back to a lower court for a new decision",
+              "A final judgment entered after a trial on the merits",
+              "An agency order refusing registration on reconsideration",
+              "A decision sending a case back to a lower court",
             ],
             correctIndex: 0,
             explanation:
@@ -2189,9 +2189,9 @@ Hanagami v. Epic Games, Inc., No. 22-55890 (9th Cir. Nov. 1, 2023). https://cdn.
             prompt: "Why does the course caution against treating the Oklahoma! earnings figure as settled?",
             options: [
               "It is a court repeating a law review comment",
-              "The opinion attributes it to the defendant's expert witness at trial",
-              "The figure appears only in the district court's opinion, which was reversed",
-              "The producers of the show publicly disputed it at the time it was published",
+              "The opinion credits it to the defendant's expert witness",
+              "It appears only in the district court's reversed opinion",
+              "The show's producers disputed it publicly at the time",
             ],
             correctIndex: 0,
             explanation:
@@ -2202,9 +2202,9 @@ Hanagami v. Epic Games, Inc., No. 22-55890 (9th Cir. Nov. 1, 2023). https://cdn.
             prompt: "What did the Ninth Circuit decline to decide in Hanagami?",
             options: [
               "Whether the work was entitled to broad or only thin protection",
-              "Whether the choreography had been validly registered with the Copyright Office",
+              "Whether the choreography had been validly registered with the Office",
               "Whether the emote had been sold to players of the game for money",
-              "Whether choreography is a category of authorship under the statute at all",
+              "Whether choreography is a statutory category of authorship at all",
             ],
             correctIndex: 0,
             explanation:
@@ -2215,9 +2215,9 @@ Hanagami v. Epic Games, Inc., No. 22-55890 (9th Cir. Nov. 1, 2023). https://cdn.
             prompt: "What did the Review Board say about the accolades Pilobolus cited?",
             options: [
               "It may not consider the company's entire repertoire",
-              "It gave them substantial weight but found them outweighed by the work's brevity",
-              "It treated them as evidence that the work was intended for skilled performers",
-              "It held that accolades are relevant only to the fixation requirement",
+              "It weighed them heavily but found them outweighed by brevity",
+              "It took them as proof the work was meant for skilled performers",
+              "It held accolades relevant only to the fixation requirement",
             ],
             correctIndex: 0,
             explanation:
@@ -2228,9 +2228,9 @@ Hanagami v. Epic Games, Inc., No. 22-55890 (9th Cir. Nov. 1, 2023). https://cdn.
             prompt: "What was the subject of the fourteen-second video the Review Board refused?",
             options: [
               "Silhouettes forming a flower shape against a blue screen",
-              "A pair of dancers performing an extended duet on a bare stage",
-              "A player's avatar performing a purchasable animation inside a videogame",
-              "A sequence of eight bodily movements set to four beats of music",
+              "A pair of dancers in an extended duet on a bare stage",
+              "A player's avatar performing a purchasable videogame animation",
+              "A sequence of eight bodily movements set to four beats",
             ],
             correctIndex: 0,
             explanation:
@@ -2340,9 +2340,9 @@ New York Public Library, Jerome Robbins Dance Division. (2025). *Eleo Pomare Dan
             prompt: "What is the call number of the Alvin Ailey American Dance Theater Collection?",
             options: [
               "ML31.A38",
-              "ML31.D985, the call number of the Katherine Dunham Collection in the same division",
-              "MGZEB 25-0002, assigned by the Jerome Robbins Dance Division to a photographs collection",
-              "mu024021, which is the identifier of the collection's online finding aid rather than the papers",
+              "ML31.D985",
+              "MGZEB 25-0002",
+              "mu024021",
             ],
             correctIndex: 0,
             explanation:
@@ -2353,9 +2353,9 @@ New York Public Library, Jerome Robbins Dance Division. (2025). *Eleo Pomare Dan
             prompt: "How large is the Ailey collection?",
             options: [
               "161 linear feet",
-              "15 linear feet, in thirty-three containers, plus digital materials",
-              "1.29 linear feet, held in four boxes at a performing arts library",
-              "256.78 cubic feet, the standard measure used for notation score collections",
+              "15 linear feet",
+              "1.29 linear feet",
+              "256.78 cubic feet",
             ],
             correctIndex: 0,
             explanation:
@@ -2366,9 +2366,9 @@ New York Public Library, Jerome Robbins Dance Division. (2025). *Eleo Pomare Dan
             prompt: "How many items does the Ailey collection contain?",
             options: [
               "34,115",
-              "5,184 items plus digital materials, held across thirty-three separate containers",
-              "313, which is the number of containers rather than the number of items in the collection",
-              "800, the number of Labanotation scores in the largest notation library in the country",
+              "5,184",
+              "313",
+              "800",
             ],
             correctIndex: 0,
             explanation:
@@ -2379,9 +2379,9 @@ New York Public Library, Jerome Robbins Dance Division. (2025). *Eleo Pomare Dan
             prompt: "How did the Ailey collection come to the Library of Congress?",
             options: [
               "As gifts from the company in 2006, 2014, 2022 and 2024",
-              "By purchase in 2001, funded by a one million dollar grant from a private foundation",
-              "As a gift from a private collector in 2010, processed fifteen years later",
-              "By transfer from the New York Public Library when its dance division was reorganised",
+              "By purchase in 2001, with a foundation grant",
+              "As a private collector's gift in 2010",
+              "By transfer from the New York Public Library",
             ],
             correctIndex: 0,
             explanation:
@@ -2392,9 +2392,9 @@ New York Public Library, Jerome Robbins Dance Division. (2025). *Eleo Pomare Dan
             prompt: "Which file unit begins at box 178 of the Ailey collection?",
             options: [
               "Contracts",
-              "Choreographic Works, arranged alphabetically by the title of each dance",
-              "Photographs of performances and related professional shoots, 1950 to 2021",
-              "Music, holding complete choral scores with each arranger named",
+              "Choreographic Works",
+              "Photographs",
+              "Music",
             ],
             correctIndex: 0,
             explanation:
@@ -2405,9 +2405,9 @@ New York Public Library, Jerome Robbins Dance Division. (2025). *Eleo Pomare Dan
             prompt: "Which folder holds Talley Beatty's contracts?",
             options: [
               "178/1",
-              "178/5, the folder holding a set of contracts dated 1973 to 1974",
-              "178/7, the folder whose contents are dated 1972 and undated",
-              "221/5, the folder holding correspondence and program drafts for a single work",
+              "178/5",
+              "178/7",
+              "221/5",
             ],
             correctIndex: 0,
             explanation:
@@ -2418,9 +2418,9 @@ New York Public Library, Jerome Robbins Dance Division. (2025). *Eleo Pomare Dan
             prompt: "What does the finding aid note was laid in with Talley Beatty's contracts?",
             options: [
               "A royalties schedule",
-              "Correspondence, as with the folders for John Butler and Katherine Dunham",
-              "Check records, as with the folders for Patrick Dupond and Lucas Hoving",
-              "A Labanotation score of one of the works the contracts cover",
+              "Correspondence",
+              "Check records",
+              "A Labanotation score",
             ],
             correctIndex: 0,
             explanation:
@@ -2431,9 +2431,9 @@ New York Public Library, Jerome Robbins Dance Division. (2025). *Eleo Pomare Dan
             prompt: "Why does the course call the Beatty folder the artifact for this material?",
             options: [
               "Because the course is about who got paid",
-              "Because it is the only folder in the collection describing a Black choreographer",
-              "Because it contains the earliest document in the entire Ailey collection",
-              "Because a royalties schedule is legally equivalent to a copyright registration",
+              "Because it names the only Black choreographer",
+              "Because it holds the oldest document",
+              "Because a royalties schedule is a registration",
             ],
             correctIndex: 0,
             explanation:
@@ -2444,9 +2444,9 @@ New York Public Library, Jerome Robbins Dance Division. (2025). *Eleo Pomare Dan
             prompt: "Which folder in box 178 holds Janet Collins's contracts, and for what years?",
             options: [
               "178/5, dated 1973 to 1974",
-              "178/1, dated 1965 to 1974, with a schedule of royalties laid in with the papers",
-              "178/6, dated 1972, recording an agreement with a notation organisation",
-              "178/11, dated 1976 and 1985, and closed to researchers until the year 2100",
+              "178/1, dated 1965 to 1974",
+              "178/6, dated 1972",
+              "178/11, dated 1976 and 1985",
             ],
             correctIndex: 0,
             explanation:
@@ -2457,9 +2457,9 @@ New York Public Library, Jerome Robbins Dance Division. (2025). *Eleo Pomare Dan
             prompt: "What sits in folder 178/6?",
             options: [
               "Dance Notation Group, 1972",
-              "Dunham, Katherine, 1972 and undated, with correspondence laid in",
-              "Butler, John, 1972-1974, also with correspondence laid in",
-              "Beck, Joseph, 1984, one of several individual dancer contracts in the box",
+              "Dunham, Katherine, 1972",
+              "Butler, John, 1972-1974",
+              "Beck, Joseph, 1984",
             ],
             correctIndex: 0,
             explanation:
@@ -2470,9 +2470,9 @@ New York Public Library, Jerome Robbins Dance Division. (2025). *Eleo Pomare Dan
             prompt: "Until when is Judith Jamison's contract folder restricted?",
             options: [
               "2100",
-              "2064, seventy-five years after the death of the company's founding choreographer",
-              "2025, at which point the finding aid says the restriction lapses automatically",
-              "It is not restricted; the whole collection is open to research without conditions",
+              "2064",
+              "2025",
+              "Never",
             ],
             correctIndex: 0,
             explanation:
@@ -2483,9 +2483,9 @@ New York Public Library, Jerome Robbins Dance Division. (2025). *Eleo Pomare Dan
             prompt: "What is the general restriction rule the Ailey finding aid states for contracts?",
             options: [
               "Restricted until seventy-five years after the death of the individual",
-              "Restricted until fifty years after the date the contract was signed by both parties",
-              "Restricted until the company that holds the copyright grants written permission",
-              "Restricted to researchers holding a letter of introduction from an accredited institution",
+              "Restricted until fifty years after both parties signed the contract",
+              "Restricted until the copyright holder grants written permission",
+              "Restricted to researchers with an institutional letter of introduction",
             ],
             correctIndex: 0,
             explanation:
@@ -2496,9 +2496,9 @@ New York Public Library, Jerome Robbins Dance Division. (2025). *Eleo Pomare Dan
             prompt: "What question does the course ask of the restricted contract folder?",
             options: [
               "Whom did the record serve",
-              "Whether the Library had legal authority to accept a restricted gift at all",
-              "Whether the contract was ever registered with the Copyright Office as a deposit",
-              "Whether the restriction can be lifted by the estate of the individual named",
+              "Whether the Library could accept it",
+              "Whether the contract was ever registered",
+              "Whether the estate can lift it",
             ],
             correctIndex: 0,
             explanation:
@@ -2509,9 +2509,9 @@ New York Public Library, Jerome Robbins Dance Division. (2025). *Eleo Pomare Dan
             prompt: "Which two folders hold what survives of the choreography of Revelations?",
             options: [
               "221/5 and 288/15",
-              "239/8-10 and 240/1-15, which hold the material for the work title by title",
-              "178/1 and 178/5, in the box of contracts within the administrative records",
-              "112/7 and 113/1, which hold photographs of the work in performance",
+              "239/8-10 and 240/1-15",
+              "178/1 and 178/5",
+              "112/7 and 113/1",
             ],
             correctIndex: 0,
             explanation:
@@ -2524,7 +2524,7 @@ New York Public Library, Jerome Robbins Dance Division. (2025). *Eleo Pomare Dan
               "Choral scores, title by title, with each arranger named",
               "Costumes and props, including a men's net tank and a parasol",
               "Correspondence and program drafts dated 1960 and undated",
-              "Photographs of performances at different points in the company's history",
+              "Photographs of performances across the company's history",
             ],
             correctIndex: 0,
             explanation:
@@ -2535,9 +2535,9 @@ New York Public Library, Jerome Robbins Dance Division. (2025). *Eleo Pomare Dan
             prompt: "Who arranged the complete choral scores held at 239/8-10?",
             options: [
               "Hall Johnson",
-              "Howard Roberts, who arranged several of the individual spirituals in the same run",
-              "Daryl Waters, who arranged a reprise held later in the same sequence of folders",
-              "James Miller, whose 1943 arrangement is the earliest dated item in the music unit",
+              "Howard Roberts",
+              "Daryl Waters",
+              "James Miller",
             ],
             correctIndex: 0,
             explanation:
@@ -2548,9 +2548,9 @@ New York Public Library, Jerome Robbins Dance Division. (2025). *Eleo Pomare Dan
             prompt: "What is the asymmetry the course draws from the Revelations material?",
             options: [
               "The music is preserved as notation and the dance is not",
-              "The music was registered with the Copyright Office and the choreography was refused",
-              "The music arrangers were paid royalties and the choreographer was not",
-              "The music folders are open to research and the choreography folders are restricted",
+              "The music was registered and the choreography was refused",
+              "The arrangers were paid royalties and the choreographer was not",
+              "The music is open to research and the choreography is restricted",
             ],
             correctIndex: 0,
             explanation:
@@ -2561,9 +2561,9 @@ New York Public Library, Jerome Robbins Dance Division. (2025). *Eleo Pomare Dan
             prompt: "How many times does the word Labanotation appear in the Ailey finding aid?",
             options: [
               "It does not appear",
-              "Once, in the entry for a 1972 contract with a notation organisation",
-              "Twice, in the entries for two separate scores of Ailey works",
-              "Eleven times, once for each of the works the Bureau holds a score for",
+              "Once, for a 1972 contract",
+              "Twice, for two scores",
+              "Eleven times",
             ],
             correctIndex: 0,
             explanation:
@@ -2574,9 +2574,9 @@ New York Public Library, Jerome Robbins Dance Division. (2025). *Eleo Pomare Dan
             prompt: "What does laid in mean in an archival description?",
             options: [
               "A loose document found inside a folder",
-              "An item transferred from another collection and interfiled with the original material",
-              "A document created by the archivist to summarise what a folder contains",
-              "A restricted item removed from a folder and stored separately until the restriction lapses",
+              "An item interfiled from another collection",
+              "An archivist's summary of a folder",
+              "A restricted item stored apart",
             ],
             correctIndex: 0,
             explanation:
@@ -2587,9 +2587,9 @@ New York Public Library, Jerome Robbins Dance Division. (2025). *Eleo Pomare Dan
             prompt: "What are linear feet, as archives use the term?",
             options: [
               "A measure of shelf space a collection occupies",
-              "The total length of film and videotape held in a collection when unspooled",
-              "The number of folders in a collection divided by the number of containers",
-              "The distance between the earliest and latest dates in a collection's span",
+              "The total length of film and tape when unspooled",
+              "Folders in a collection divided by containers",
+              "The distance between a collection's earliest and latest dates",
             ],
             correctIndex: 0,
             explanation:
@@ -2600,9 +2600,9 @@ New York Public Library, Jerome Robbins Dance Division. (2025). *Eleo Pomare Dan
             prompt: "What is the call number of the Katherine Dunham Collection?",
             options: [
               "ML31.D985",
-              "ML31.A38, the call number of the other Music Division dance collection in this section",
-              "mu018008, which identifies the online finding aid rather than the physical collection",
-              "MGZEB 25-0002, assigned by a performing arts library to a collection of photographs",
+              "ML31.A38",
+              "mu018008",
+              "MGZEB 25-0002",
             ],
             correctIndex: 0,
             explanation:
@@ -2613,9 +2613,9 @@ New York Public Library, Jerome Robbins Dance Division. (2025). *Eleo Pomare Dan
             prompt: "How large is the Katherine Dunham Collection?",
             options: [
               "15 linear feet, in thirty-three containers",
-              "161 linear feet, in three hundred and thirteen containers plus mapcase folders",
-              "1.29 linear feet, in four boxes at the Jerome Robbins Dance Division",
-              "5,184 linear feet, which is also the number of items the collection contains",
+              "161 linear feet, in 313 containers",
+              "1.29 linear feet, in four boxes",
+              "5,184 linear feet, in a hundred boxes",
             ],
             correctIndex: 0,
             explanation:
@@ -2626,9 +2626,9 @@ New York Public Library, Jerome Robbins Dance Division. (2025). *Eleo Pomare Dan
             prompt: "What provenance does the Dunham finding aid record?",
             options: [
               "Purchase; Katherine Dunham; 2001",
-              "Gifts from the company in 2006, 2014, 2022 and 2024, with further accruals expected",
-              "Gift of Glenn Conner in 2010, processed by Amy Lau in 2025",
-              "Transfer from the Missouri Historical Society and Southern Illinois in the 1970s",
+              "Gifts from the company in 2006 and 2014",
+              "Gift of Glenn Conner; 2010",
+              "Transfer from Missouri in the 1970s",
             ],
             correctIndex: 0,
             explanation:
@@ -2639,8 +2639,8 @@ New York Public Library, Jerome Robbins Dance Division. (2025). *Eleo Pomare Dan
             prompt: "What funded the Library of Congress's acquisition of the Dunham archives?",
             options: [
               "A one million dollar Doris Duke Charitable Foundation grant",
-              "A Julius Rosenwald Fund fellowship awarded to the choreographer in 1934",
-              "An appropriation from Congress made after the choreographer's death in 2006",
+              "A Julius Rosenwald Fund fellowship awarded to her in 1934",
+              "A congressional appropriation made after her death in 2006",
               "A gift from the Katherine Dunham Centers in East St. Louis",
             ],
             correctIndex: 0,
@@ -2652,9 +2652,9 @@ New York Public Library, Jerome Robbins Dance Division. (2025). *Eleo Pomare Dan
             prompt: "In what year was that grant awarded?",
             options: [
               "2000",
-              "2001, the same year the purchase itself was recorded in the collection's provenance",
-              "2006, the year the remaining items transferred after the choreographer's death",
-              "1934, the year of the fellowship application preserved in the collection",
+              "2001",
+              "2006",
+              "1934",
             ],
             correctIndex: 0,
             explanation:
@@ -2667,7 +2667,7 @@ New York Public Library, Jerome Robbins Dance Division. (2025). *Eleo Pomare Dan
               "The Missouri Historical Society and Southern Illinois",
               "The Jerome Robbins Dance Division of the New York Public Library",
               "The Dance Notation Bureau's score library in New York",
-              "The Katherine Dunham Centers in East St. Louis, which retained them",
+              "The Katherine Dunham Centers in East St. Louis",
             ],
             correctIndex: 0,
             explanation:
@@ -2679,8 +2679,8 @@ New York Public Library, Jerome Robbins Dance Division. (2025). *Eleo Pomare Dan
             options: [
               "A copy of her 1934 Julius Rosenwald fellowship application",
               "One item dated 2003 relating to a dance notation organisation",
-              "Two early souvenir programmes from a summer dance festival, with contracts and flyers",
-              "The typescript of her thesis in social anthropology submitted at the University of Chicago",
+              "Two souvenir programmes from a summer dance festival",
+              "The typescript of her University of Chicago thesis in anthropology",
             ],
             correctIndex: 0,
             explanation:
@@ -2691,9 +2691,9 @@ New York Public Library, Jerome Robbins Dance Division. (2025). *Eleo Pomare Dan
             prompt: "What did the Rosenwald fellowship pay for, according to the collection chronology?",
             options: [
               "Fieldwork on the dances of the West Indies",
-              "Tuition for a master's degree in social anthropology at the University of Chicago",
-              "The founding of the Katherine Dunham School of Arts and Research in New York",
-              "The purchase and preservation of her papers by a federal library",
+              "Tuition for a master's degree at the University of Chicago",
+              "Founding her School of Arts and Research in New York",
+              "The purchase of her papers by a federal library",
             ],
             correctIndex: 0,
             explanation:
@@ -2704,9 +2704,9 @@ New York Public Library, Jerome Robbins Dance Division. (2025). *Eleo Pomare Dan
             prompt: "Which degree does the Library of Congress chronology record for Dunham?",
             options: [
               "A bachelor's in social anthropology in 1936",
-              "A master's from the University of Chicago awarded in 1947",
-              "A doctorate in anthropology completed after her fieldwork in Haiti",
-              "No degree at any point, since the chronology records only her fellowship",
+              "A master's from the University of Chicago in 1947",
+              "A doctorate in anthropology after the Haiti fieldwork",
+              "No degree at all, only a fellowship",
             ],
             correctIndex: 0,
             explanation:
@@ -2717,9 +2717,9 @@ New York Public Library, Jerome Robbins Dance Division. (2025). *Eleo Pomare Dan
             prompt: "What is in box-folder 10/13 of the Dunham collection?",
             options: [
               "One item, dated 2003, relating to the Dance Notation Bureau",
-              "Five items relating to a philanthropic fellowship awarded in the 1930s",
-              "A complete Labanotation score of one of her Caribbean works",
-              "Contracts with the Metropolitan Opera relating to her 1963 production work",
+              "Five items relating to a 1930s philanthropic fellowship",
+              "A complete Labanotation score of one Caribbean work",
+              "Metropolitan Opera contracts for her 1963 production work",
             ],
             correctIndex: 0,
             explanation:
@@ -2730,9 +2730,9 @@ New York Public Library, Jerome Robbins Dance Division. (2025). *Eleo Pomare Dan
             prompt: "What does the Dunham chronology record for 1960?",
             options: [
               "The company disbanded, ending the continuity of trained dancers",
-              "The company completed its first European tour and returned to the United States",
-              "The Library of Congress acquired the first tranche of the collection's moving images",
-              "She received a grant to conduct fieldwork in Haiti and the West Indies",
+              "The company finished its first European tour and came home",
+              "The Library acquired the collection's first moving images",
+              "She received a grant for fieldwork in Haiti and the West Indies",
             ],
             correctIndex: 0,
             explanation:
@@ -2743,9 +2743,9 @@ New York Public Library, Jerome Robbins Dance Division. (2025). *Eleo Pomare Dan
             prompt: "How many name-title authority entries for choreographic works does the Dunham finding aid's index carry?",
             options: [
               "One",
-              "Nine, one for each series into which the collection is organised",
-              "Thirty-three, one for each container in the collection",
-              "None, because the Library does not index choreographic works as titles",
+              "Nine",
+              "Thirty-three",
+              "None",
             ],
             correctIndex: 0,
             explanation:
@@ -2756,9 +2756,9 @@ New York Public Library, Jerome Robbins Dance Division. (2025). *Eleo Pomare Dan
             prompt: "What is the call number of the Eleo Pomare Dance Company photographs?",
             options: [
               "MGZEB 25-0002",
-              "ML31.D985, assigned by the Music Division of the Library of Congress",
-              "mu024021, the identifier of a finding aid rather than of a physical collection",
-              "SPEC.TRI.0022, assigned by a university library to a notation collection",
+              "ML31.D985",
+              "mu024021",
+              "SPEC.TRI.0022",
             ],
             correctIndex: 0,
             explanation:
@@ -2769,9 +2769,9 @@ New York Public Library, Jerome Robbins Dance Division. (2025). *Eleo Pomare Dan
             prompt: "How large is the Pomare photographs collection?",
             options: [
               "1.29 linear feet, in four boxes",
-              "15 linear feet, in thirty-three containers, plus digital materials",
-              "161 linear feet, in three hundred and thirteen containers",
-              "5,184 items, plus a run of choral scores held in two separate boxes",
+              "15 linear feet, in 33 containers",
+              "161 linear feet, in 313 containers",
+              "5,184 items, in two separate boxes",
             ],
             correctIndex: 0,
             explanation:
@@ -2782,9 +2782,9 @@ New York Public Library, Jerome Robbins Dance Division. (2025). *Eleo Pomare Dan
             prompt: "Who gave the Pomare photographs to the library, and in what year?",
             options: [
               "Glenn Conner, in 2010",
-              "The choreographer himself, by purchase in 2001",
-              "The Alvin Ailey American Dance Theater, as one of a series of gifts",
-              "The Doris Duke Charitable Foundation, as part of a funded legacy project",
+              "Eleo Pomare, by purchase in 2001",
+              "The Ailey company, as a gift",
+              "The Doris Duke Foundation",
             ],
             correctIndex: 0,
             explanation:
@@ -2795,9 +2795,9 @@ New York Public Library, Jerome Robbins Dance Division. (2025). *Eleo Pomare Dan
             prompt: "When was the Pomare collection processed?",
             options: [
               "2025, by Amy Lau",
-              "2010, immediately upon receipt of the gift from the donor",
-              "2008, by the archivist who began work on the Ailey collection that year",
-              "2019, when the finding aid for the Dunham collection was last revised",
+              "2010, on receipt",
+              "2008, with Ailey's",
+              "2019, with Dunham's",
             ],
             correctIndex: 0,
             explanation:
@@ -2808,9 +2808,9 @@ New York Public Library, Jerome Robbins Dance Division. (2025). *Eleo Pomare Dan
             prompt: "What does processed mean in an archival context?",
             options: [
               "Described, arranged and made findable",
-              "Digitised and published on the repository's website for remote access",
-              "Reviewed for restricted material and cleared for public access",
-              "Physically conserved, rehoused in acid-free containers and shelved",
+              "Digitised and posted online",
+              "Cleared of restricted items",
+              "Conserved in acid-free boxes",
             ],
             correctIndex: 0,
             explanation:
@@ -2821,9 +2821,9 @@ New York Public Library, Jerome Robbins Dance Division. (2025). *Eleo Pomare Dan
             prompt: "What is provenance, in a finding aid?",
             options: [
               "The record of how a collection came to the repository",
-              "The list of subject headings under which a collection is indexed in the catalogue",
-              "The span of dates covered by the material a collection contains",
-              "The name of the archivist who arranged and described the collection",
+              "The subject headings under which the collection is indexed",
+              "The span of dates covered by the collection's material",
+              "The name of the archivist who arranged the collection",
             ],
             correctIndex: 0,
             explanation:
@@ -2834,9 +2834,9 @@ New York Public Library, Jerome Robbins Dance Division. (2025). *Eleo Pomare Dan
             prompt: "What point does the course make about a private foundation paying for a national library's acquisition?",
             options: [
               "It is how American cultural archiving works, and reading it honestly matters",
-              "It rendered the acquisition improper, since federal collections must be publicly funded",
-              "It gave the foundation a continuing right to control access to the collection",
-              "It explains why the collection is restricted until seventy-five years after death",
+              "It made the acquisition improper, since federal collections need public funds",
+              "It gave the foundation a continuing right to control access to the papers",
+              "It explains why the collection is closed until seventy-five years after death",
             ],
             correctIndex: 0,
             explanation:
@@ -2847,9 +2847,9 @@ New York Public Library, Jerome Robbins Dance Division. (2025). *Eleo Pomare Dan
             prompt: "Why does the course say a lost repertory is worse than a burned manuscript?",
             options: [
               "There is nothing to recover once the transmission chain breaks",
-              "Because a burned manuscript can always be reconstructed from the copyright deposit",
-              "Because dance companies rarely keep duplicate copies of their own repertory",
-              "Because the Copyright Office destroyed the deposits it once held for dance works",
+              "A burned manuscript can always be rebuilt from the copyright deposit",
+              "Dance companies rarely keep duplicate copies of their own repertory",
+              "The Copyright Office destroyed the dance deposits it once held",
             ],
             correctIndex: 0,
             explanation:
@@ -2860,9 +2860,9 @@ New York Public Library, Jerome Robbins Dance Division. (2025). *Eleo Pomare Dan
             prompt: "What are the inclusive dates of the Alvin Ailey American Dance Theater Collection?",
             options: [
               "1910 to 2024",
-              "1920 to 2006, the span of the other Music Division dance collection in this section",
-              "Circa 1956 to the 2000s, the span of a photographs collection at another library",
-              "1965 to 2011, the span of one artist's tenure with the company",
+              "1920 to 2006",
+              "Circa 1956 to the 2000s",
+              "1965 to 2011",
             ],
             correctIndex: 0,
             explanation:
@@ -2873,9 +2873,9 @@ New York Public Library, Jerome Robbins Dance Division. (2025). *Eleo Pomare Dan
             prompt: "Which series of the Ailey collection contains the Contracts file unit?",
             options: [
               "Administrative Records",
-              "Choreographic Works, which is arranged alphabetically by the title of each dance",
-              "Photographs, which holds images of performances and professional shoots",
-              "Music, which holds choral scores with each arranger named on the folder",
+              "Choreographic Works",
+              "Photographs",
+              "Music",
             ],
             correctIndex: 0,
             explanation:
@@ -2886,9 +2886,9 @@ New York Public Library, Jerome Robbins Dance Division. (2025). *Eleo Pomare Dan
             prompt: "What is a file unit, in archival description?",
             options: [
               "A group of folders within a series",
-              "A single sheet of paper described individually in a finding aid",
-              "The entire body of material a repository holds from one creator",
-              "A restricted portion of a collection stored separately from the rest",
+              "A single described sheet",
+              "One creator's whole holdings",
+              "A restricted, separate part",
             ],
             correctIndex: 0,
             explanation:
@@ -2899,9 +2899,9 @@ New York Public Library, Jerome Robbins Dance Division. (2025). *Eleo Pomare Dan
             prompt: "How many mapcase folders does the Ailey collection contain?",
             options: [
               "Twenty-seven",
-              "Three hundred and thirteen, which is the collection's container count",
-              "One hundred and sixty-one, which is its extent in linear feet",
-              "Thirty-three, which is the container count of a different dance collection",
+              "Three hundred and thirteen",
+              "One hundred and sixty-one",
+              "Thirty-three",
             ],
             correctIndex: 0,
             explanation:
@@ -2912,9 +2912,9 @@ New York Public Library, Jerome Robbins Dance Division. (2025). *Eleo Pomare Dan
             prompt: "Which subject heading does the Dunham finding aid use to index the collection?",
             options: [
               "African American women choreographers",
-              "Copyright registrations and deposits for choreographic works",
-              "Labanotation scores and dance notation systems",
-              "Metropolitan Opera performances and cast records",
+              "Copyright registrations for dance",
+              "Dance notation systems",
+              "Metropolitan Opera cast records",
             ],
             correctIndex: 0,
             explanation:
@@ -2925,9 +2925,9 @@ New York Public Library, Jerome Robbins Dance Division. (2025). *Eleo Pomare Dan
             prompt: "Which choreographic work is named in the Dunham finding aid's title index?",
             options: [
               "Floyd's guitar blues",
-              "L'Ag'Ya, her first full-length ballet, produced in Chicago",
-              "Southland, of which the collection holds rehearsal footage",
-              "Angelitos Negros, the work notated in Labanotation in 2011",
+              "L'Ag'Ya, produced in Chicago",
+              "Southland, from rehearsal film",
+              "Angelitos Negros, notated 2011",
             ],
             correctIndex: 0,
             explanation:
@@ -2938,8 +2938,8 @@ New York Public Library, Jerome Robbins Dance Division. (2025). *Eleo Pomare Dan
             prompt: "Why does the course say an unprocessed collection is not a secret?",
             options: [
               "It is simply not yet described, and description is what makes it usable",
-              "It is stored openly on the shelves and anyone may consult it on request",
-              "The repository publishes a list of unprocessed accessions every year",
+              "It is shelved openly and anyone may consult it on request",
+              "The repository publishes an annual list of unprocessed accessions",
               "Its contents are already indexed in the national union catalogue",
             ],
             correctIndex: 0,
@@ -3043,9 +3043,9 @@ Library of Congress, Music Division. (2024). *Alvin Ailey American Dance Theater
             prompt: "Who choreographed Angelitos Negros?",
             options: [
               "Donald McKayle",
-              "Doris Humphrey, whose Air for the G String appears in the same catalog of score excerpts",
-              "Mark Morris, whose All Fours was notated by Sandra Aberkalns in 2004",
-              "Talley Beatty, whose contracts survive in the Ailey collection with a royalties schedule",
+              "Doris Humphrey",
+              "Mark Morris",
+              "Talley Beatty",
             ],
             correctIndex: 0,
             explanation:
@@ -3056,9 +3056,9 @@ Library of Congress, Music Division. (2024). *Alvin Ailey American Dance Theater
             prompt: "In what year was Angelitos Negros made?",
             options: [
               "1972",
-              "2011, which is the year the score of the work was written rather than the year of the work",
-              "1928, the year of the earliest work listed in the same catalog of score excerpts",
-              "2003, the year of the single Dance Notation Bureau item in another collection",
+              "2011",
+              "1928",
+              "2003",
             ],
             correctIndex: 0,
             explanation:
@@ -3069,9 +3069,9 @@ Library of Congress, Music Division. (2024). *Alvin Ailey American Dance Theater
             prompt: "Who notated Angelitos Negros?",
             options: [
               "Mary Corey",
-              "Sandra Aberkalns, who notated a work by Mark Morris listed in the same catalog",
-              "Jane Marriett, who notated a Doris Humphrey work listed in the same catalog",
-              "K. Wright Dunkley, who notated a Joan Woodbury work listed in the same catalog",
+              "Sandra Aberkalns",
+              "Jane Marriett",
+              "K. Wright Dunkley",
             ],
             correctIndex: 0,
             explanation:
@@ -3082,9 +3082,9 @@ Library of Congress, Music Division. (2024). *Alvin Ailey American Dance Theater
             prompt: "In what year was the score of Angelitos Negros written?",
             options: [
               "2011",
-              "1972, the year the work itself was made and first performed",
-              "1975, when the notation of an earlier Doris Humphrey work was completed",
-              "2004, when the notation of a Mark Morris work in the same catalog was completed",
+              "1972",
+              "1975",
+              "2004",
             ],
             correctIndex: 0,
             explanation:
@@ -3095,9 +3095,9 @@ Library of Congress, Music Division. (2024). *Alvin Ailey American Dance Theater
             prompt: "What does the Dance Notation Bureau charge to request a score or DVD for examination?",
             options: [
               "Twenty dollars per dance",
-              "Two hundred and ninety-five dollars for universities and educational institutes",
-              "Three hundred and ninety-five dollars for professional dance companies",
-              "One hundred dollars, rising with the complexity of the work being examined",
+              "Two hundred and ninety-five dollars for universities",
+              "Three hundred and ninety-five dollars",
+              "One hundred dollars",
             ],
             correctIndex: 0,
             explanation:
@@ -3108,9 +3108,9 @@ Library of Congress, Music Division. (2024). *Alvin Ailey American Dance Theater
             prompt: "What is the Bureau's service fee for a university or educational institute?",
             options: [
               "Two hundred and ninety-five dollars",
-              "Three hundred and ninety-five dollars, which is the figure charged to dance companies",
-              "Twenty dollars per dance, the same as the fee for requesting a score for examination",
-              "Between thirty and one hundred dollars, depending on the number of performances",
+              "Three hundred and ninety-five dollars",
+              "Twenty dollars per dance",
+              "Thirty to one hundred dollars per show",
             ],
             correctIndex: 0,
             explanation:
@@ -3121,9 +3121,9 @@ Library of Congress, Music Division. (2024). *Alvin Ailey American Dance Theater
             prompt: "What is the Bureau's service fee for a dance company?",
             options: [
               "Three hundred and ninety-five dollars",
-              "Two hundred and ninety-five dollars, the figure charged to educational institutions",
-              "One thousand five hundred dollars per week, plus the expenses of the person staging it",
-              "Several thousand dollars, depending on the choreographer and the work's complexity",
+              "Two hundred and ninety-five dollars",
+              "Fifteen hundred dollars a week",
+              "Several thousand dollars",
             ],
             correctIndex: 0,
             explanation:
@@ -3134,9 +3134,9 @@ Library of Congress, Music Division. (2024). *Alvin Ailey American Dance Theater
             prompt: "What range does the Bureau give for licence fees?",
             options: [
               "One hundred dollars to several thousand",
-              "Thirty to one hundred dollars, which is the range for each public performance given",
-              "Fifteen hundred to two thousand dollars, charged for each week of rehearsal",
-              "Twenty dollars per dance, which is the fee charged when a score is first requested",
+              "Thirty to one hundred dollars a show",
+              "Fifteen hundred to two thousand a week",
+              "Twenty dollars per dance",
             ],
             correctIndex: 0,
             explanation:
@@ -3147,9 +3147,9 @@ Library of Congress, Music Division. (2024). *Alvin Ailey American Dance Theater
             prompt: "What per-performance royalty range does the Bureau give?",
             options: [
               "Thirty to one hundred dollars",
-              "One hundred dollars to several thousand, depending on the choreographer and complexity",
-              "Two hundred and ninety-five to three hundred and ninety-five dollars, depending on the licensee",
-              "Fifteen hundred to two thousand dollars, plus the expenses of the person staging the work",
+              "One hundred dollars to several thousand",
+              "Between 295 and 395 dollars",
+              "Fifteen hundred to two thousand dollars",
             ],
             correctIndex: 0,
             explanation:
@@ -3160,9 +3160,9 @@ Library of Congress, Music Division. (2024). *Alvin Ailey American Dance Theater
             prompt: "What does the Bureau say a stager generally costs?",
             options: [
               "Fifteen hundred to two thousand dollars per week, plus expenses",
-              "Thirty to one hundred dollars for each public performance of the staged work",
-              "A flat fee of three hundred and ninety-five dollars for a professional company",
-              "A percentage of box office receipts negotiated separately with each company",
+              "Thirty to one hundred dollars per public performance",
+              "A flat three hundred and ninety-five dollars",
+              "A negotiated share of box office receipts",
             ],
             correctIndex: 0,
             explanation:
@@ -3173,9 +3173,9 @@ Library of Congress, Music Division. (2024). *Alvin Ailey American Dance Theater
             prompt: "When is the stager's fee due?",
             options: [
               "One week before the first rehearsal",
-              "One week before the first public performance, alongside the per-performance royalty",
-              "On the day the score is first borrowed from the Bureau for examination",
-              "Within thirty days of the final performance of the licensed run",
+              "One week before the first public performance",
+              "When the score is first borrowed",
+              "Thirty days after the final performance",
             ],
             correctIndex: 0,
             explanation:
@@ -3186,9 +3186,9 @@ Library of Congress, Music Division. (2024). *Alvin Ailey American Dance Theater
             prompt: "What is a stager?",
             options: [
               "The specialist who reads a score and teaches the work to a company",
-              "The archivist who writes a dance down in a notation system for the first time",
-              "The producer who books a licensed work into a theatre and sells tickets for it",
-              "The examiner who decides whether a notated deposit is detailed enough to register",
+              "The archivist who first writes a dance down in notation",
+              "The producer who books a licensed work into a theatre",
+              "The examiner who judges whether a deposit can register",
             ],
             correctIndex: 0,
             explanation:
@@ -3199,9 +3199,9 @@ Library of Congress, Music Division. (2024). *Alvin Ailey American Dance Theater
             prompt: "What three functions does the course say a notated score performs at once?",
             options: [
               "Fixation, transmission and revenue",
-              "Registration, publication and renewal of the copyright in the work",
-              "Preservation, restoration and exhibition of a company's historical repertory",
-              "Description, arrangement and access, which are the three functions of a finding aid",
+              "Registration, publication and renewal",
+              "Preservation, restoration and exhibition",
+              "Description, arrangement and access",
             ],
             correctIndex: 0,
             explanation:
@@ -3212,9 +3212,9 @@ Library of Congress, Music Division. (2024). *Alvin Ailey American Dance Theater
             prompt: "What does the course say a choreographer who was never notated lost?",
             options: [
               "All three functions at once",
-              "Only the revenue function, since copyright could still attach through video fixation",
-              "Only the transmission function, since companies kept repertory by oral instruction",
-              "Nothing legally significant, since notation was never an accepted deposit format",
+              "Only revenue, since video could still fix it",
+              "Only transmission, kept by oral instruction",
+              "Nothing legally significant",
             ],
             correctIndex: 0,
             explanation:
@@ -3225,9 +3225,9 @@ Library of Congress, Music Division. (2024). *Alvin Ailey American Dance Theater
             prompt: "How many Labanotation scores does the Dance Notation Bureau say its library holds?",
             options: [
               "More than eight hundred",
-              "More than eight thousand, held across a collection of 256.78 cubic feet",
-              "Exactly one hundred and sixty-one, matching the linear feet of a major dance archive",
-              "It does not say, and the figure could not be established from any published source",
+              "More than eight thousand",
+              "Exactly one hundred and sixty-one",
+              "It does not say",
             ],
             correctIndex: 0,
             explanation:
@@ -3238,9 +3238,9 @@ Library of Congress, Music Division. (2024). *Alvin Ailey American Dance Theater
             prompt: "Which choreographers does the Bureau name as examples on its library page?",
             options: [
               "Petipa and William Forsythe",
-              "Donald McKayle and Mary Corey, the choreographer and notator of a work in its catalog",
-              "Alvin Ailey and Katherine Dunham, both of whom appear in its catalog filter",
-              "Doris Humphrey and Mark Morris, whose works appear among its video score excerpts",
+              "Donald McKayle and Mary Corey",
+              "Alvin Ailey and Katherine Dunham",
+              "Doris Humphrey and Mark Morris",
             ],
             correctIndex: 0,
             explanation:
@@ -3251,9 +3251,9 @@ Library of Congress, Music Division. (2024). *Alvin Ailey American Dance Theater
             prompt: "What does the Bureau's own catalog filter show about Black choreographers?",
             options: [
               "It lists several of them, including Dunham, Beatty, McKayle, Ailey, Dove and Jones",
-              "It lists none of them, which confirms that the notation record excludes Black choreographers",
-              "It lists only Donald McKayle, whose Angelitos Negros is the sole notated example",
-              "It does not filter by choreographer at all, so nothing can be established from it",
+              "It lists none of them, which confirms they were excluded from notation",
+              "It lists only Donald McKayle, for Angelitos Negros",
+              "It does not filter by choreographer at all",
             ],
             correctIndex: 0,
             explanation:
@@ -3290,9 +3290,9 @@ Library of Congress, Music Division. (2024). *Alvin Ailey American Dance Theater
             prompt: "What contrast does the course draw between being remembered as biography and as property?",
             options: [
               "The archive is comparatively generous and the registry is not",
-              "The registry preserves more detail than the archive, but restricts access to it",
-              "Biography is preserved by private foundations and property by federal libraries",
-              "Property survives longer than biography because a score outlasts a paper record",
+              "The registry keeps more detail but restricts it",
+              "Foundations keep biography, federal libraries property",
+              "Property outlasts biography because scores outlast paper",
             ],
             correctIndex: 0,
             explanation:
@@ -3303,9 +3303,9 @@ Library of Congress, Music Division. (2024). *Alvin Ailey American Dance Theater
             prompt: "Why does the course say Alvin Ailey is not an uncredited creator?",
             options: [
               "His collection at the Library of Congress runs to 161 linear feet",
-              "He registered every one of his works with the Copyright Office before 1978",
-              "The Dance Notation Bureau holds Labanotation scores of his complete repertory",
-              "His choreography for Revelations survives in full in two boxes of the collection",
+              "He registered every work with the Copyright Office before 1978",
+              "The Bureau holds scores of his complete repertory",
+              "Revelations survives in full in two boxes",
             ],
             correctIndex: 0,
             explanation:
@@ -3316,9 +3316,9 @@ Library of Congress, Music Division. (2024). *Alvin Ailey American Dance Theater
             prompt: "Why is Ailey in this course at all, then?",
             options: [
               "His archive is where other Black choreographers' contracts survive",
-              "He was the first Black choreographer to receive a copyright registration for a dance",
-              "His company commissioned the earliest Labanotation score of a Black choreographer's work",
-              "He testified before Congress during the revision that produced the 1976 Act",
+              "He was the first Black choreographer with a dance copyright registration",
+              "His company commissioned the first notated score of a Black choreographer",
+              "He testified to Congress before the 1976 Act",
             ],
             correctIndex: 0,
             explanation:
@@ -3329,9 +3329,9 @@ Library of Congress, Music Division. (2024). *Alvin Ailey American Dance Theater
             prompt: "On what date did Janet Collins debut at the Metropolitan Opera?",
             options: [
               "13 November 1951",
-              "7 January 1933, at the world premiere of an opera by Louis Gruenberg",
-              "25 May 1954, at a touring performance in Toronto that closed her Met career",
-              "17 November 1951, the second performance of that season's new production",
+              "7 January 1933",
+              "25 May 1954",
+              "17 November 1951",
             ],
             correctIndex: 0,
             explanation:
@@ -3342,9 +3342,9 @@ Library of Congress, Music Division. (2024). *Alvin Ailey American Dance Theater
             prompt: "In which opera did Janet Collins make her Met debut?",
             options: [
               "Aida",
-              "The Emperor Jones, in which a Black dancer had made a role debut in 1933",
-              "Carmen, which she also danced on tour during the 1953-54 season",
-              "Pagliacci, which shared the bill on the night of the world premiere in 1933",
+              "The Emperor Jones",
+              "Carmen",
+              "Pagliacci",
             ],
             correctIndex: 0,
             explanation:
@@ -3355,9 +3355,9 @@ Library of Congress, Music Division. (2024). *Alvin Ailey American Dance Theater
             prompt: "What credit line does the Met's performance record give Janet Collins?",
             options: [
               "Dance",
-              "Prima ballerina, marked as a debut in the cast list for opening night",
-              "Choreographer, sharing the credit with the production's ballet master",
-              "Congo Witch Doctor, the role credit given to a Black dancer in an earlier season",
+              "Prima ballerina",
+              "Choreographer",
+              "Congo Witch Doctor",
             ],
             correctIndex: 0,
             explanation:
@@ -3368,9 +3368,9 @@ Library of Congress, Music Division. (2024). *Alvin Ailey American Dance Theater
             prompt: "Who is credited as choreographer of the production Janet Collins debuted in?",
             options: [
               "Zachary Solov",
-              "Margaret Webster, credited on the same record for the production itself",
-              "Rolf Gérard, credited on the same record for the designs",
-              "Janet Collins, who is credited both as dancer and as choreographer",
+              "Margaret Webster",
+              "Rolf Gérard",
+              "Janet Collins herself",
             ],
             correctIndex: 0,
             explanation:
@@ -3381,9 +3381,9 @@ Library of Congress, Music Division. (2024). *Alvin Ailey American Dance Theater
             prompt: "How many records does Janet Collins's name appear in within the Met performance database?",
             options: [
               "105",
-              "Nine, which is the number in the two months following her debut",
-              "Sixteen, which is the number in the final calendar year she appeared",
-              "Two, one for her debut and one for her final touring performance",
+              "Nine",
+              "Sixteen",
+              "Two",
             ],
             correctIndex: 0,
             explanation:
@@ -3394,9 +3394,9 @@ Library of Congress, Music Division. (2024). *Alvin Ailey American Dance Theater
             prompt: "What is the last performance record in the database for Janet Collins?",
             options: [
               "A touring Aida in Toronto on 25 May 1954",
-              "A performance at the Metropolitan Opera House on 13 November 1951",
-              "A Carmen at the Boston Opera House on 28 April 1954",
-              "An Aida at the Public Auditorium in Cleveland on 22 April 1954",
+              "A performance at the Met on 13 November 1951",
+              "A Carmen in Boston on 28 April 1954",
+              "An Aida in Cleveland on 22 April 1954",
             ],
             correctIndex: 0,
             explanation:
@@ -3407,9 +3407,9 @@ Library of Congress, Music Division. (2024). *Alvin Ailey American Dance Theater
             prompt: "Who danced the Congo Witch Doctor at the Met in 1933?",
             options: [
               "Hemsley Winfield",
-              "Leonardo Barres, who is named in the record as taking the part after the first dancer died",
-              "Lawrence Tibbett, who sang the title role in the same production",
-              "Janet Collins, eighteen years before her better-known appearance in another opera",
+              "Leonardo Barres",
+              "Lawrence Tibbett",
+              "Janet Collins",
             ],
             correctIndex: 0,
             explanation:
@@ -3420,9 +3420,9 @@ Library of Congress, Music Division. (2024). *Alvin Ailey American Dance Theater
             prompt: "On what date was that performance?",
             options: [
               "7 January 1933",
-              "13 November 1951, the opening night of a new production of Aida",
-              "18 March 1933, the date of the last performance of the run that season",
-              "15 January 1934, the date recorded in a letter from the Met's assistant manager",
+              "13 November 1951",
+              "18 March 1933",
+              "15 January 1934",
             ],
             correctIndex: 0,
             explanation:
@@ -3433,9 +3433,9 @@ Library of Congress, Music Division. (2024). *Alvin Ailey American Dance Theater
             prompt: "What does the 1934 letter from the Met's assistant manager describe?",
             options: [
               "A group of dancers led by Hemsley Winfield, engaged for the production",
-              "The Met's decision to engage its first Black company member on a seasonal contract",
-              "A dispute over the royalties owed to the choreographer of the production",
-              "The Copyright Office's refusal to register the choreography for the opera",
+              "The Met engaging its first Black company member for a full season",
+              "A dispute over royalties owed to the production's choreographer",
+              "The Copyright Office refusing to register the opera's choreography",
             ],
             correctIndex: 0,
             explanation:
@@ -3446,9 +3446,9 @@ Library of Congress, Music Division. (2024). *Alvin Ailey American Dance Theater
             prompt: "How does the course reconcile the Winfield and Collins claims?",
             options: [
               "Winfield was engaged for one production, Collins across seasons",
-              "Winfield's credit was for choreography and Collins's was for performance",
-              "Winfield performed on tour only and Collins performed at the opera house itself",
-              "Winfield's engagement predates the database and cannot be compared with hers",
+              "Winfield's credit was for choreography, Collins's for performance",
+              "Winfield danced only on tour, Collins at the opera house",
+              "Winfield's engagement predates the database",
             ],
             correctIndex: 0,
             explanation:
@@ -3459,9 +3459,9 @@ Library of Congress, Music Division. (2024). *Alvin Ailey American Dance Theater
             prompt: "What detail about Janet Collins does the course say it actually cares about?",
             options: [
               "She is named 105 times and credited as an author nowhere",
-              "She was the first Black artist to appear on the Metropolitan Opera stage",
-              "She left the company after three seasons rather than the five usually reported",
-              "Her contract with another company survives in a federal archive",
+              "She was the first Black artist on the Met stage",
+              "She left after three seasons, not the usual five",
+              "She choreographed the opening-night ballet herself",
             ],
             correctIndex: 0,
             explanation:
@@ -3472,9 +3472,9 @@ Library of Congress, Music Division. (2024). *Alvin Ailey American Dance Theater
             prompt: "What does Virgil Thomson's Herald Tribune review of that opening night say about Collins?",
             options: [
               "It praises her personal beauty while dismissing the ballets around her",
-              "It credits her with the choreography of the triumphal scene",
-              "It describes her debut as the most significant event of the season",
-              "It does not mention her, which is the point the course draws from it",
+              "It credits her with choreographing the triumphal scene",
+              "It calls her debut the season's most significant event",
+              "It does not mention her at all",
             ],
             correctIndex: 0,
             explanation:
@@ -3485,9 +3485,9 @@ Library of Congress, Music Division. (2024). *Alvin Ailey American Dance Theater
             prompt: "In what year did Judith Jamison join Alvin Ailey American Dance Theater?",
             options: [
               "1965",
-              "1984, the year her first choreographic work premiered in Kansas City",
-              "1989, the year she became artistic director of the company",
-              "1993, the year her autobiography was published and Hymn premiered",
+              "1984",
+              "1989",
+              "1993",
             ],
             correctIndex: 0,
             explanation:
@@ -3498,9 +3498,9 @@ Library of Congress, Music Division. (2024). *Alvin Ailey American Dance Theater
             prompt: "What was Judith Jamison's first choreographic work, and when did it premiere?",
             options: [
               "Divining, in 1984",
-              "Hymn, in 1993, choreographed in honour of the company's founder",
-              "Sweet Release, in 1996, premiered at Lincoln Center with a jazz orchestra",
-              "Dancing Spirit, in 1993, which was published rather than premiered",
+              "Hymn, in 1993",
+              "Sweet Release, in 1996",
+              "Dancing Spirit, in 1993",
             ],
             correctIndex: 0,
             explanation:
@@ -3511,9 +3511,9 @@ Library of Congress, Music Division. (2024). *Alvin Ailey American Dance Theater
             prompt: "When did Judith Jamison become artistic director of the company?",
             options: [
               "1989, after Ailey's death",
-              "1984, the year she premiered her first choreographic work for the company",
-              "1999, the year she received a Kennedy Center Honor",
-              "2011, the year she stepped down from leading the company",
+              "1984, after her first premiere",
+              "1999, after a Kennedy Center Honor",
+              "2011, after a decade as a soloist",
             ],
             correctIndex: 0,
             explanation:
@@ -3524,9 +3524,9 @@ Library of Congress, Music Division. (2024). *Alvin Ailey American Dance Theater
             prompt: "When did Judith Jamison die?",
             options: [
               "9 November 2024",
-              "1 December 1989, the date the company's founding choreographer died in New York",
-              "9 November 2011, the year she stepped down as artistic director of the company",
-              "The date is disputed and this course declines to print one",
+              "1 December 1989",
+              "9 November 2011",
+              "The date is disputed",
             ],
             correctIndex: 0,
             explanation:
@@ -3537,9 +3537,9 @@ Library of Congress, Music Division. (2024). *Alvin Ailey American Dance Theater
             prompt: "In what year did Judith Jamison receive a Kennedy Center Honor?",
             options: [
               "1999",
-              "1988, the year the company's founding choreographer received the same honour",
-              "2002, the year she and the dance foundation received the National Medal of Arts",
-              "1993, the year her autobiography Dancing Spirit was published",
+              "1988",
+              "2002",
+              "1993",
             ],
             correctIndex: 0,
             explanation:
@@ -3576,9 +3576,9 @@ Library of Congress, Music Division. (2024). *Alvin Ailey American Dance Theater
             prompt: "When is the per-performance royalty due?",
             options: [
               "One week before the first public performance",
-              "One week before the first rehearsal, alongside the fee charged by the stager",
-              "On the day the score is borrowed from the Bureau for examination",
-              "Within thirty days after the final performance of the licensed run",
+              "One week before the first rehearsal",
+              "When the score is borrowed for examination",
+              "Thirty days after the final performance",
             ],
             correctIndex: 0,
             explanation:
@@ -3589,9 +3589,9 @@ Library of Congress, Music Division. (2024). *Alvin Ailey American Dance Theater
             prompt: "How long after its premiere was Angelitos Negros notated?",
             options: [
               "Thirty-nine years",
-              "Forty-three years, the gap between a company disbanding and a notation folder being dated",
-              "Seventeen years, the gap between a choreographer's death and a collection being processed",
-              "Fifteen years, the gap between a gift arriving at a library and its description",
+              "Forty-three years",
+              "Seventeen years",
+              "Fifteen years",
             ],
             correctIndex: 0,
             explanation:
@@ -3615,9 +3615,9 @@ Library of Congress, Music Division. (2024). *Alvin Ailey American Dance Theater
             prompt: "Why does the course price a Labanotation score at all?",
             options: [
               "To show that a score is a revenue instrument as well as a record",
-              "To show that notation is unaffordable for every company in the United States",
-              "To show that the Bureau profits more than the choreographers whose works it holds",
-              "To show that copyright registration fees are the main barrier to protection",
+              "To show notation is unaffordable for every US company",
+              "To show the Bureau out-earns the choreographers it holds",
+              "To show registration fees are the main barrier",
             ],
             correctIndex: 0,
             explanation:
@@ -3628,9 +3628,9 @@ Library of Congress, Music Division. (2024). *Alvin Ailey American Dance Theater
             prompt: "Who was the general manager of the Metropolitan Opera when Janet Collins debuted?",
             options: [
               "Rudolf Bing",
-              "Zachary Solov, who is credited on the same record as the production's choreographer",
-              "Edward Ziegler, who wrote the 1934 letter about an earlier production",
-              "Margaret Webster, who is credited on the same record for the production",
+              "Zachary Solov",
+              "Edward Ziegler",
+              "Margaret Webster",
             ],
             correctIndex: 0,
             explanation:
@@ -3641,9 +3641,9 @@ Library of Congress, Music Division. (2024). *Alvin Ailey American Dance Theater
             prompt: "What kind of performance was the 7 January 1933 Emperor Jones at the Met?",
             options: [
               "A world premiere, given as a matinee broadcast",
-              "A revival mounted for the company's spring touring season that year",
-              "A gala concert performance without staging or costumes of any kind",
-              "A student matinee performed by members of the company's training programme",
+              "A spring touring revival that year",
+              "An unstaged gala concert performance",
+              "A student matinee by the training programme",
             ],
             correctIndex: 0,
             explanation:
@@ -3654,9 +3654,9 @@ Library of Congress, Music Division. (2024). *Alvin Ailey American Dance Theater
             prompt: "Who sang the title role opposite Hemsley Winfield in 1933?",
             options: [
               "Lawrence Tibbett",
-              "Leonardo Barres, who later took over the dancing role Winfield had created",
-              "Louis Gruenberg, who was also the composer of the opera itself",
-              "Marek Windheim, who sang the role of Henry Smithers that evening",
+              "Leonardo Barres",
+              "Louis Gruenberg",
+              "Marek Windheim",
             ],
             correctIndex: 0,
             explanation:
@@ -3667,9 +3667,9 @@ Library of Congress, Music Division. (2024). *Alvin Ailey American Dance Theater
             prompt: "In what year did Judith Jamison step down from leading Alvin Ailey American Dance Theater?",
             options: [
               "2011",
-              "1989, the year she took the post following the death of the company's founder",
-              "1999, the year she received a Kennedy Center Honor for her work",
-              "2024, the year of her death in New York at the age of eighty-one",
+              "1989",
+              "1999",
+              "2024",
             ],
             correctIndex: 0,
             explanation:
@@ -3680,9 +3680,9 @@ Library of Congress, Music Division. (2024). *Alvin Ailey American Dance Theater
             prompt: "What is a qualified superlative, as the course uses the term?",
             options: [
               "A first that holds only once you specify what counts",
-              "A claim about achievement that a named institution has formally certified",
-              "A comparison between two artists working in entirely different periods",
-              "A record that an archive has restricted until a fixed future date",
+              "A first a named institution has formally certified",
+              "A comparison of artists from different periods",
+              "A record an archive has restricted until a set date",
             ],
             correctIndex: 0,
             explanation:
@@ -3708,9 +3708,9 @@ Library of Congress, Music Division. (2024). *Alvin Ailey American Dance Theater
             prompt: "Before 1978, what did a dance have to do to be registrable?",
             options: [
               "Pass as a dramatic composition",
-              "Be fixed in one of the notation systems the Copyright Office had formally approved",
-              "Be performed publicly with a copyright notice displayed in the printed programme",
-              "Be composed for skilled dancers rather than for members of the general public",
+              "Use an approved notation system",
+              "Carry a notice in the printed programme",
+              "Be made for skilled dancers",
             ],
             correctIndex: 0,
             explanation:
@@ -3721,9 +3721,9 @@ Library of Congress, Music Division. (2024). *Alvin Ailey American Dance Theater
             prompt: "Where did the story requirement come from?",
             options: [
               "A case a white dancer lost in 1892",
-              "A regulation the Copyright Office promulgated in 1959 without any judicial precedent",
-              "Language written into section 5 of the 1909 Act by Congress",
-              "A committee report accompanying the general revision that produced the 1976 Act",
+              "A 1959 Copyright Office regulation",
+              "Section 5 of the 1909 Act",
+              "A 1976 committee report",
             ],
             correctIndex: 0,
             explanation:
@@ -3734,9 +3734,9 @@ Library of Congress, Music Division. (2024). *Alvin Ailey American Dance Theater
             prompt: "What does 17 U.S.C. 102(a)(4) cover?",
             options: [
               "Pantomimes and choreographic works",
-              "Dramatic works, including any accompanying music written for them",
-              "Motion pictures and other audiovisual works, including videogame animations",
-              "Sound recordings, which the same Act made a category of authorship",
+              "Dramatic works and accompanying music",
+              "Motion pictures and audiovisual works",
+              "Sound recordings",
             ],
             correctIndex: 0,
             explanation:
@@ -3747,9 +3747,9 @@ Library of Congress, Music Division. (2024). *Alvin Ailey American Dance Theater
             prompt: "What is the effective date on which choreography became a category of authorship?",
             options: [
               "1 January 1978",
-              "19 October 1976, the date the President signed the general revision into law",
-              "1 January 1959, the date of the regulation creating Class D for dramatic choreography",
-              "28 April 1986, the date the leading appellate opinion on choreography was decided",
+              "19 October 1976",
+              "1 January 1959",
+              "28 April 1986",
             ],
             correctIndex: 0,
             explanation:
@@ -3760,9 +3760,9 @@ Library of Congress, Music Division. (2024). *Alvin Ailey American Dance Theater
             prompt: "What does Compendium 805.3(C) say about an improvised dance?",
             options: [
               "It cannot be copyrighted unless the improvisation was fixed",
-              "It can be copyrighted if the choreographer names the theme the dancers improvise on",
-              "It can be copyrighted only if it is performed by the choreographer personally",
-              "It cannot be copyrighted under any circumstances, fixed or unfixed",
+              "It can be if the choreographer names the theme",
+              "It can be only if the choreographer performs it",
+              "It cannot be under any circumstances",
             ],
             correctIndex: 0,
             explanation:
@@ -3773,9 +3773,9 @@ Library of Congress, Music Division. (2024). *Alvin Ailey American Dance Theater
             prompt: "Which entry appears on the Compendium's unprotected social-dance list but not on Circular 52's?",
             options: [
               "Break dances",
-              "Line dances, which appear only in the practice manual and not in the public circular",
-              "Ballroom dances, which the circular treats as commonplace movements instead",
-              "Square dances, which the circular routes to the compilations discussion",
+              "Line dances",
+              "Ballroom dances",
+              "Square dances",
             ],
             correctIndex: 0,
             explanation:
@@ -3786,9 +3786,9 @@ Library of Congress, Music Division. (2024). *Alvin Ailey American Dance Theater
             prompt: "Who created the form named in the practice manual's list but not in the circular's?",
             options: [
               "Black and Puerto Rican young people in the Bronx",
-              "Ballroom instructors formalising couple dances for competition in the 1930s",
-              "Concert choreographers adapting social steps for the theatrical stage",
-              "Touring companies developing new material during European residencies",
+              "Ballroom instructors formalising competition dances",
+              "Concert choreographers adapting social steps",
+              "Touring companies on European residencies",
             ],
             correctIndex: 0,
             explanation:
@@ -3799,9 +3799,9 @@ Library of Congress, Music Division. (2024). *Alvin Ailey American Dance Theater
             prompt: "What did Balanchine deposit when registering The Nutcracker choreography?",
             options: [
               "A videotape of a dress rehearsal",
-              "A Labanotation score commissioned from the Dance Notation Bureau in 1981",
-              "A written scene-by-scene description with diagrams of the stage patterns",
-              "Sixty still photographs taken during a New York City Ballet performance",
+              "A commissioned Labanotation score",
+              "A written scene-by-scene description",
+              "Sixty still photographs",
             ],
             correctIndex: 0,
             explanation:
@@ -3812,9 +3812,9 @@ Library of Congress, Music Division. (2024). *Alvin Ailey American Dance Theater
             prompt: "What standard did the Second Circuit restore in Horgan v. Macmillan?",
             options: [
               "Substantial similarity",
-              "Whether the original could be recreated from the allegedly infringing copy",
-              "Whether the defendant had access to the registered deposit copy",
-              "Whether the copied portion exceeded a set proportion of the original work",
+              "The recreate-from-the-copy test",
+              "Access to the deposit copy",
+              "A set proportion copied",
             ],
             correctIndex: 0,
             explanation:
@@ -3825,9 +3825,9 @@ Library of Congress, Music Division. (2024). *Alvin Ailey American Dance Theater
             prompt: "Did the Second Circuit find that the book infringed Balanchine's copyright?",
             options: [
               "No, it reversed and remanded",
-              "Yes, and it ordered the book withdrawn from distribution",
-              "Yes, but it left the amount of damages for the district court to determine",
-              "No, and it dismissed the case with prejudice on the merits",
+              "Yes, and it ordered the book withdrawn",
+              "Yes, with damages left for remand",
+              "No, it dismissed with prejudice",
             ],
             correctIndex: 0,
             explanation:
@@ -3838,9 +3838,9 @@ Library of Congress, Music Division. (2024). *Alvin Ailey American Dance Theater
             prompt: "What did Horgan's footnote 8 record about Balanchine's registration?",
             options: [
               "Appellees questioned its validity over undisclosed preexisting material",
-              "It had expired because the estate failed to renew it within the statutory period",
-              "The Copyright Office had initially refused it and reversed on reconsideration",
-              "It covered the videotape as an audiovisual work rather than the choreography",
+              "It had expired for want of renewal",
+              "The Office refused it, then reversed",
+              "It covered the videotape, not the choreography",
             ],
             correctIndex: 0,
             explanation:
@@ -3851,9 +3851,9 @@ Library of Congress, Music Division. (2024). *Alvin Ailey American Dance Theater
             prompt: "Which company's fourteen-second work did the Copyright Office Review Board refuse to register in 2016?",
             options: [
               "Pilobolus",
-              "Alvin Ailey American Dance Theater, in a claim over an excerpt from Revelations",
-              "Epic Games, in a claim over an animation sold to players of its videogame",
-              "The New York City Ballet, in a claim over a section of its Nutcracker production",
+              "Alvin Ailey",
+              "Epic Games",
+              "New York City Ballet",
             ],
             correctIndex: 0,
             explanation:
@@ -3864,9 +3864,9 @@ Library of Congress, Music Division. (2024). *Alvin Ailey American Dance Theater
             prompt: "Why does the course treat the Pilobolus refusal as a control case?",
             options: [
               "A celebrated predominantly white company lost under the same rule",
-              "It was the first refusal the Review Board ever issued for a choreographic claim",
-              "The company had registered dozens of works successfully before that one",
-              "It concerned a social dance rather than a composed concert work",
+              "It was the Review Board's first choreography refusal",
+              "The company had registered dozens of works before",
+              "It concerned a social dance, not a concert work",
             ],
             correctIndex: 0,
             explanation:
@@ -3878,8 +3878,8 @@ Library of Congress, Music Division. (2024). *Alvin Ailey American Dance Theater
             options: [
               "The selection and arrangement of otherwise unprotectable elements",
               "Each individual pose, provided it was devised by the choreographer",
-              "The performance as recorded, rather than the underlying arrangement of movement",
-              "Only sequences long enough to exceed the simple-routine threshold in the statute",
+              "The performance as recorded, not the arrangement",
+              "Only sequences past a statutory duration threshold",
             ],
             correctIndex: 0,
             explanation:
@@ -3903,9 +3903,9 @@ Library of Congress, Music Division. (2024). *Alvin Ailey American Dance Theater
             prompt: "Which folder in the Ailey collection has a royalties schedule laid in?",
             options: [
               "178/1, Talley Beatty's contracts",
-              "178/5, Janet Collins's contracts for 1973 and 1974",
-              "178/7, Katherine Dunham's contracts for 1972 and undated",
-              "221/5, holding correspondence and programme drafts for a single work",
+              "178/5, Janet Collins's contracts",
+              "178/7, Katherine Dunham's contracts",
+              "221/5, programme drafts for one work",
             ],
             correctIndex: 0,
             explanation:
@@ -3916,9 +3916,9 @@ Library of Congress, Music Division. (2024). *Alvin Ailey American Dance Theater
             prompt: "Until what year is Judith Jamison's contract folder restricted?",
             options: [
               "2100",
-              "2064, seventy-five years after the death of the company's founder",
-              "2099, seventy-five years after the date of the contracts themselves",
-              "It is not restricted, since the collection is open to research",
+              "2064",
+              "2099",
+              "It is not restricted",
             ],
             correctIndex: 0,
             explanation:
@@ -3943,8 +3943,8 @@ Library of Congress, Music Division. (2024). *Alvin Ailey American Dance Theater
             options: [
               "None; the word does not appear in the finding aid",
               "Once, in the description of a 1972 contract with a notation organisation",
-              "Six times, once for each work of Ailey's that was notated",
-              "More than eight hundred times, matching the size of the notation library",
+              "Six times, once per notated work",
+              "More than eight hundred times",
             ],
             correctIndex: 0,
             explanation:
@@ -3968,7 +3968,7 @@ Library of Congress, Music Division. (2024). *Alvin Ailey American Dance Theater
             prompt: "What does the Dunham collection's 1960 chronology entry record?",
             options: [
               "The company disbanded, ending a chain of trained dancers",
-              "The Library of Congress purchased the first tranche of her archive",
+              "The Library bought the first part of her archive",
               "She completed grant-funded fieldwork in Haiti and received a degree",
               "Her papers were transferred to the Missouri Historical Society",
             ],
@@ -3983,7 +3983,7 @@ Library of Congress, Music Division. (2024). *Alvin Ailey American Dance Theater
               "A bachelor's in social anthropology in 1936",
               "A master's from the University of Chicago in 1947",
               "A doctorate awarded after her Caribbean fieldwork was completed",
-              "An honorary degree conferred at the founding of her school in New York",
+              "An honorary degree from her own school",
             ],
             correctIndex: 0,
             explanation:
@@ -3994,9 +3994,9 @@ Library of Congress, Music Division. (2024). *Alvin Ailey American Dance Theater
             prompt: "How large is the Eleo Pomare Dance Company photographs collection?",
             options: [
               "1.29 linear feet",
-              "15 linear feet, in thirty-three containers plus digital materials",
-              "161 linear feet, in three hundred and thirteen containers",
-              "256.78 cubic feet, the standard measure for notation score collections",
+              "15 linear feet",
+              "161 linear feet",
+              "256.78 cubic feet",
             ],
             correctIndex: 0,
             explanation:
@@ -4007,9 +4007,9 @@ Library of Congress, Music Division. (2024). *Alvin Ailey American Dance Theater
             prompt: "When was the Pomare collection given, and when was it processed?",
             options: [
               "Given in 2010, processed in 2025",
-              "Given in 2001 by purchase, processed immediately on receipt",
-              "Given in 2006 as one of four accessions from the company",
-              "Given in 2025 and processed the same year by the receiving division",
+              "Given in 2001, processed on receipt",
+              "Given in 2006, one of four accessions",
+              "Given and processed in 2025",
             ],
             correctIndex: 0,
             explanation:
@@ -4020,9 +4020,9 @@ Library of Congress, Music Division. (2024). *Alvin Ailey American Dance Theater
             prompt: "Who notated Angelitos Negros, and in what year?",
             options: [
               "Mary Corey, in 2011",
-              "Sandra Aberkalns, in 2004, for a work by a different choreographer",
-              "Jane Marriett, in 1975, for a work first made in 1928",
-              "Donald McKayle himself, in 1972, at the time of the premiere",
+              "Sandra Aberkalns, in 2004",
+              "Jane Marriett, in 1975",
+              "Donald McKayle, in 1972",
             ],
             correctIndex: 0,
             explanation:
@@ -4033,9 +4033,9 @@ Library of Congress, Music Division. (2024). *Alvin Ailey American Dance Theater
             prompt: "What does the Dance Notation Bureau charge a dance company as its service fee?",
             options: [
               "Three hundred and ninety-five dollars",
-              "Twenty dollars per dance, the same as the fee to borrow a score for examination",
-              "Two hundred and ninety-five dollars, the figure it charges educational institutions",
-              "One hundred dollars, the bottom of the range it gives for licence fees",
+              "Twenty dollars per dance",
+              "Two hundred and ninety-five dollars",
+              "One hundred dollars",
             ],
             correctIndex: 0,
             explanation:
@@ -4046,9 +4046,9 @@ Library of Congress, Music Division. (2024). *Alvin Ailey American Dance Theater
             prompt: "What per-performance royalty does the Bureau say is typical?",
             options: [
               "Thirty to one hundred dollars",
-              "One hundred dollars to several thousand, depending on the choreographer",
-              "Fifteen hundred to two thousand dollars, plus expenses, for each week",
-              "Twenty dollars per dance, payable when the score is first requested",
+              "One hundred dollars to several thousand",
+              "Fifteen hundred to two thousand a week",
+              "Twenty dollars per dance",
             ],
             correctIndex: 0,
             explanation:
@@ -4059,9 +4059,9 @@ Library of Congress, Music Division. (2024). *Alvin Ailey American Dance Theater
             prompt: "Which of the Bureau's fees is by far the largest single line?",
             options: [
               "The stager's weekly fee",
-              "The per-performance royalty owed for each public showing of the work",
-              "The service fee charged to a professional dance company",
-              "The fee to borrow a score or DVD for examination before deciding",
+              "The per-performance royalty",
+              "The company service fee",
+              "The examination fee",
             ],
             correctIndex: 0,
             explanation:
@@ -4072,9 +4072,9 @@ Library of Congress, Music Division. (2024). *Alvin Ailey American Dance Theater
             prompt: "How many Labanotation scores does the Dance Notation Bureau say it holds?",
             options: [
               "More than eight hundred",
-              "Exactly one hundred and five, matching a count that appears elsewhere in this course",
-              "More than thirty-four thousand, matching the item count of a major dance archive",
-              "Fewer than one hundred, which is why the notation record is so thin",
+              "Exactly one hundred and five",
+              "More than thirty-four thousand",
+              "Fewer than one hundred",
             ],
             correctIndex: 0,
             explanation:
@@ -4085,9 +4085,9 @@ Library of Congress, Music Division. (2024). *Alvin Ailey American Dance Theater
             prompt: "What is the honest shape of this course's finding about notation coverage?",
             options: [
               "Confirmed presence, unknown proportion",
-              "Proven absence, since no Black choreographer appears in the Bureau's catalog",
-              "Complete coverage, since every major choreographer has at least one score",
-              "Unknowable, since the Bureau does not publish any information about its holdings",
+              "Proven absence of Black choreographers",
+              "Complete coverage of every major name",
+              "Unknowable from published information",
             ],
             correctIndex: 0,
             explanation:
@@ -4098,9 +4098,9 @@ Library of Congress, Music Division. (2024). *Alvin Ailey American Dance Theater
             prompt: "What credit line does the Met's own record give Janet Collins?",
             options: [
               "Dance",
-              "Prima ballerina, the phrase most often repeated about her Met career",
-              "Choreographer, shared with the production's credited ballet master",
-              "Company member, distinguishing her from guests engaged for one production",
+              "Prima ballerina",
+              "Choreographer",
+              "Company member",
             ],
             correctIndex: 0,
             explanation:
@@ -4111,9 +4111,9 @@ Library of Congress, Music Division. (2024). *Alvin Ailey American Dance Theater
             prompt: "Who is credited as choreographer of the 1951 Aida in which Janet Collins debuted?",
             options: [
               "Zachary Solov",
-              "Janet Collins herself, in addition to her credit as a dancer",
-              "Margaret Webster, who is credited on the same record for the production",
-              "Rudolf Bing, the general manager who mounted the new production that season",
+              "Janet Collins herself",
+              "Margaret Webster",
+              "Rudolf Bing",
             ],
             correctIndex: 0,
             explanation:
@@ -4124,9 +4124,9 @@ Library of Congress, Music Division. (2024). *Alvin Ailey American Dance Theater
             prompt: "Which Black dancer holds a named role credit at the Met from 1933?",
             options: [
               "Hemsley Winfield",
-              "Janet Collins, whose Met records begin eighteen years earlier than usually reported",
-              "Leonardo Barres, who is named in the record as the first to dance the role",
-              "Talley Beatty, whose contracts survive in a federal archive from the same period",
+              "Janet Collins",
+              "Leonardo Barres",
+              "Talley Beatty",
             ],
             correctIndex: 0,
             explanation:
@@ -4152,7 +4152,7 @@ Library of Congress, Music Division. (2024). *Alvin Ailey American Dance Theater
               "9 November 2024, on the Ailey organization's own statement",
               "9 November 2024, on the authority of a tertiary encyclopaedia entry alone",
               "1 December 1989, the date recorded in a Library of Congress chronology",
-              "The course does not print a date, because none could be confirmed",
+              "No date, since none could be confirmed",
             ],
             correctIndex: 0,
             explanation:
@@ -4176,9 +4176,9 @@ Library of Congress, Music Division. (2024). *Alvin Ailey American Dance Theater
             prompt: "What does Study No. 28 tell us about the size of the pre-1978 choreographic deposit record?",
             options: [
               "It was thin for choreographers of every background",
-              "It contained several thousand notated scores by the leading choreographers of the era",
-              "It was closed entirely, since the Office refused every choreographic application",
-              "It consisted only of motion pictures, since written descriptions were not accepted",
+              "It held thousands of scores by leading choreographers",
+              "It was closed, as every application was refused",
+              "It held only motion pictures",
             ],
             correctIndex: 0,
             explanation:
@@ -4189,9 +4189,9 @@ Library of Congress, Music Division. (2024). *Alvin Ailey American Dance Theater
             prompt: "What is the strongest stated policy reason for excluding social dances from copyright?",
             options: [
               "Everyone performing the dance in public would infringe",
-              "Social dances change too rapidly for any registration record to stay accurate",
-              "Social dances have no identifiable author to whom a registration could issue",
-              "Social dances are performed for free and so generate no economic value to protect",
+              "Social dances change too fast to register",
+              "Social dances have no identifiable author",
+              "Social dances are free and so have no value",
             ],
             correctIndex: 0,
             explanation:
@@ -4202,9 +4202,9 @@ Library of Congress, Music Division. (2024). *Alvin Ailey American Dance Theater
             prompt: "Which two exclusions does the 1976 legislative history state?",
             options: [
               "Social dance steps and simple routines",
-              "Improvised sequences and works performed by animals or machines",
-              "Athletic movements and yoga sequences of every kind",
-              "Individual steps and derivative versions of preexisting works",
+              "Improvisation and works by animals",
+              "Athletic movements and yoga",
+              "Individual steps and derivative works",
             ],
             correctIndex: 0,
             explanation:
@@ -4215,9 +4215,9 @@ Library of Congress, Music Division. (2024). *Alvin Ailey American Dance Theater
             prompt: "Why can a notation system itself not be copyrighted?",
             options: [
               "Section 102(b) excludes systems from protection",
-              "Because notation systems were all published before the modern copyright term began",
-              "Because the Copyright Office holds the rights to every approved deposit format",
-              "Because a notation system is a compilation of unprotectable individual symbols",
+              "Notation systems all predate the modern term",
+              "The Office owns every approved deposit format",
+              "A system is a compilation of bare symbols",
             ],
             correctIndex: 0,
             explanation:
@@ -4241,7 +4241,7 @@ Library of Congress, Music Division. (2024). *Alvin Ailey American Dance Theater
             prompt: "How does the course describe the difference between the register and the archive?",
             options: [
               "The archive is comparatively generous and the registry is not",
-              "The archive is closed to researchers and the registry is open to anyone",
+              "The archive is closed and the registry open",
               "The registry preserves choreography and the archive preserves only music",
               "Both are equally thin, which is why no reliable record of dance exists",
             ],
@@ -4280,9 +4280,9 @@ Library of Congress, Music Division. (2024). *Alvin Ailey American Dance Theater
             prompt: "What was Loie Fuller's dance filed as, in the case that set the story requirement?",
             options: [
               "A written description",
-              "A Labanotation score prepared by a professional notator of the period",
-              "A motion picture deposited in two complete prints with the Office",
-              "A series of photographs showing each successive position of the dancer",
+              "A Labanotation score",
+              "A motion picture in two prints",
+              "A series of photographs",
             ],
             correctIndex: 0,
             explanation:
