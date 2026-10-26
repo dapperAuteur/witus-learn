@@ -4275,9 +4275,9 @@ Internal Revenue Service. (2026g). *Free tax return preparation for qualifying t
           },
           {
             prompt: "What does an unused non-refundable credit become once the tax reaches zero?",
-            options: ["Zero tax and a 600 overpayment", "Zero tax and no payment beyond that", "A tax of 600 carried to the following year", "A refund of the full 1,000 whatever the tax was"],
+            options: ["Nothing; the unused part is simply lost", "An overpayment refunded to the filer", "A deduction against next year's income", "A refund of the full credit whatever the tax"],
             correctIndex: 0,
-            explanation: "The same amount as a non-refundable credit would leave 600 unused and unpaid.",
+            explanation: "A non-refundable credit can take the tax to zero and no further, under the section 26(a) cap. The unused part is not paid out; paying out the excess is what a refundable credit does.",
             sourceLessonSlug: "refundable-or-not",
           },
           {
