@@ -1,0 +1,10 @@
+{
+  // The type-check `next build` runs on Vercel. It extends tsconfig.json but leaves out the folders the
+  // app never imports: scripts/ (325 course data files, about 53 MB of TypeScript), tests/, content/ and
+  // plans/. Type-checking those inside the build pushed the TypeScript step past Vercel's 45-minute limit
+  // on a 4-core, 8 GB machine (2026-10-25). They are still checked on every pull request by `pnpm typecheck`
+  // (tsc --noEmit on the full tsconfig.json) in .github/workflows/ci.yml. Anything src/ imports from scripts/
+  // is still pulled in transitively, so the app's own types are checked in full.
+  "extends": "./tsconfig.json",
+  "exclude": ["node_modules", "scripts", "tests", "content", "plans", "e2e", "playwright.config.ts"]
+}
