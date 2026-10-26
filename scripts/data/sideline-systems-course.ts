@@ -1966,5 +1966,342 @@ TeamWork Online, a job board that lists Hawk-Eye's roles, labels Hawk-Eye's SEC 
         ],
       },
     },
+    // ══════════════════════════════════════════════════════════════════════
+    // SECTION 6: Getting hired
+    // ══════════════════════════════════════════════════════════════════════
+    {
+      slug: "where-and-when-postings-open",
+      title: "19 · Where postings live, and when they open",
+      section: "6 · Getting hired",
+      recallContent: [
+        {
+          prompt: "Why can the Sofia analyst's pay be turned into an hourly figure, but not the Italy daily rate?",
+          answer: "The Sofia posting states 8-hour shifts, so 80 EUR a shift is 10 EUR an hour; the Italy postings give no total hours for the day.",
+        },
+        {
+          prompt: "What do Hawk-Eye's Italy postings call the casual technician role?",
+          answer: "\"a great entry level route into full time employment with Hawk-Eye Innovations ltd\" (Hawk-Eye Innovations, 2026e).",
+        },
+      ],
+      body: `${QR}
+
+**Where the postings were on October 26, 2026.** This is what each board held on the day this course's research read it. Boards change daily, so treat the table as a map of where to look, not a list of open jobs.
+
+| Where | What it held that day | Source |
+|---|---|---|
+| The NFL's Greenhouse board | 42 postings through its public feed, none of them an injury video review, replay or officiating technology role. It hires for "one of our 32 NFL teams, NFL League office in New York City, NFL Films office based in Mt. Laurel, New Jersey, the NFL Media offices in Inglewood, California or one of our international offices" | NFL (n.d.-g, n.d.-h) |
+| SHRM HireVets | Copies of the NFL injury video review operator posting, for New Orleans and for Tampa Bay | NFL (2026b, 2026c) |
+| Hawk-Eye's careers site and its Ashby job board | 25 postings, one of them in the US | Hawk-Eye Innovations (n.d.-h, n.d.-i) |
+| startup.jobs | The closed Rutgers posting, and a list of Hawk-Eye as "Hiring for 25 positions" | Hawk-Eye Innovations (n.d.-f); startup.jobs (n.d.) |
+| TeamWork Online | Hawk-Eye's roles, each with a career level, and a "Get job alerts" button | TeamWork Online (n.d.) |
+| The NBA's Workday board | A search for "officiating" gave eight results, five of them League Technology Representative postings, each for a different G League arena | NBA (2026) |
+| KINEXON's board | Tracking operators for handball and football, in Germany | KINEXON (2026a, 2026b) |
+
+**The employer's board and the copy.** The NFL operator posting was read in copies. The New Orleans copy links to an NFL Greenhouse job, and on October 26, 2026 that job returned "not found" from Greenhouse (NFL, 2026b; NFL, n.d.-h). A copy can outlive the job it copied.
+
+Dates can disagree too. startup.jobs showed the Firenze technician as "7 months ago," while Hawk-Eye's own board gave a publish date of October 19, 2026 (startup.jobs, n.d.; Hawk-Eye Innovations, n.d.-i). Reasoned: the employer's board shows the latest publish date, and a copy's age can be older, so read any single date as "last published," not as the day hiring opened.
+
+**When they open: the dated evidence.**
+
+| Posting | Dates, as posted | Source |
+|---|---|---|
+| NFL operator, Tampa Bay copy | Created April 6, 2026 | NFL (2026c) |
+| NFL operator, New Orleans copy | Created April 15, 2026, with an expiration date of April 24, 2026; its source job not found by October 26, 2026 | NFL (2026b) |
+| KINEXON Hamburg handball operator | Published August 4, 2026; start "Saison 2026/2027" | KINEXON (2026b) |
+| NFL Media seasonal TOC operator | First published August 14, 2026; "Up to 29 hours per week up to 7 months" | NFL (2026e) |
+| Hawk-Eye Netherlands operator | Published September 2, 2026 | Hawk-Eye Innovations (2026d) |
+| NBA G League representatives | Posting window October 14 to October 31, 2026, for the 2026-27 season | NBA (2026) |
+| Hawk-Eye tennis student placements | Published October 15, 2026; assessment date December 16, 2026; start summer 2027 | Hawk-Eye Innovations (2026i) |
+| Hawk-Eye SEC coordinator | Published October 16, 2026; deadline October 30, 2026 | Hawk-Eye Innovations (2026g) |
+| Hawk-Eye Italy technicians | Published October 19 and 22, 2026; start "Immediate" | Hawk-Eye Innovations (2026e, 2026f) |
+
+Genius Sports adds a line on the data side: its analysts get "fewer tasks in the summer (following the sports schedule)" (Genius Sports, 2026a).
+
+**The SEC posting is a record.** It set a deadline of October 30, 2026, at 7:00 PM EDT (Hawk-Eye Innovations, 2026g). This course quotes it for what the job asked. If you want that job, look for a newer posting on Hawk-Eye's board; do not apply to the 2026 one.
+
+**The pattern, reasoned.** The US league game-day postings read here went up before their seasons. The NFL operator copies were created in April 2026, for a role that covers "all preseason, regular season, and postseason home games" (NFL, 2026b). The G League postings opened in October 2026 for the 2026-27 season (NBA, 2026). By late October the NFL copy's source job was gone and the G League window was closing. European football hiring ran during the season, with "Immediate" starts. That is a pattern drawn from a handful of postings, and one year's dates are not a calendar. Whether the NFL posts these roles every spring, this course cannot yet say: the copies read are from one year. Copies for two clubs were read, and whether every stadium has its own posting, this course could not confirm.
+
+**Vendors in the US.** On October 26, 2026, Hawk-Eye's board had no technician role for an NFL, MLB or Big Ten venue, so this course cannot say when those roles open (Hawk-Eye Innovations, n.d.-i). Its UK form, by contrast, is always open (lesson 17).
+
+**Staying on top of it.** TeamWork Online's Hawk-Eye page offers "Get job alerts," with the line "Stay up to date on new jobs from Hawk-Eye Innovations" (TeamWork Online, n.d.). How those alerts work, how often they come, what they filter and whether they cost anything, this course could not read: TeamWork Online's own home and help pages did not load for this course's research. Reasoned from the dates above: check the employer's own board, check it again in the months before a season starts, and keep a copy of any posting you apply to, since the original may be gone by the interview.
+
+:::reveal When were the two NFL operator copies read for this course created? ||| Tampa Bay on April 6, 2026, and New Orleans on April 15, 2026 (NFL, 2026c, 2026b).
+
+:::reveal An aggregator says a posting is "7 months ago"; the employer's board says October 19. How do you read the dates? ||| Treat each as "last published," not the day hiring opened. The employer's board shows the latest publish date.
+
+:::reveal Is the 2026 SEC coordinator posting an open ad? ||| No. Its deadline was October 30, 2026. The course quotes it as a record; look for a newer posting.
+
+## Sources
+- ${NFL_BOARD} Locator: the board's opening paragraph naming its hiring units.
+- ${NFL_BOARD_API} Locator: the posting list, 42 postings, read October 26, 2026; job 5188007008 returned "not found."
+- ${NFL_IVR} Locator: the page data's created and expiration dates; the link to the NFL Greenhouse job; "Summary".
+- ${NFL_IVR_TB} Locator: the created date; "Summary".
+- ${NFL_TOC} Locator: schedule line; first publish date.
+- ${HE_CAREERS} Locator: "Open Positions (25)".
+- ${HE_BOARD_API} Locator: the posting list with publish dates, read October 26, 2026.
+- ${HE_RUTGERS} Locator: the "no longer available" banner.
+- ${STARTUP_JOBS} Locator: the Hawk-Eye list, "Hiring for 25 positions" and each posting's age.
+- ${TEAMWORK} Locator: "Get job alerts" and its line; career level on each listing.
+- ${NBA_VAN_ANDEL} Locator: posting window; season.
+- ${KINEXON_HH} Locator: publish date; start "Saison 2026/2027".
+- ${HE_NL} Locator: publish date.
+- ${HE_STUDENT} Locator: publish date; "Assessment Date(s)"; start date.
+- ${HE_SEC_COORD} Locator: publish date; "Deadline to Apply".
+- ${HE_FIRENZE} Locator: publish date; start "Immediate".
+- ${HE_BOLZANO} Locator: publish date.
+- ${GENIUS_ANALYST} Locator: the line on summer tasks.`,
+    },
+    {
+      slug: "what-to-practice",
+      title: "20 · What to practice before you apply",
+      section: "6 · Getting hired",
+      recallContent: [
+        {
+          prompt: "What was the NBA G League representatives' posting window?",
+          answer: "October 14 to October 31, 2026, for the 2026-27 season (NBA, 2026).",
+        },
+        {
+          prompt: "What did Greenhouse return on October 26, 2026 for the NFL job the New Orleans copy links to?",
+          answer: "\"Not found\": a copy can outlive the job it copied (NFL, n.d.-h).",
+        },
+      ],
+      body: `${QR}
+
+**Start from the postings' own lists.** The NFL operator posting asks for Windows 10 proficiency, Wi-Fi setup and troubleshooting, hardware diagnosis, "Strong knowledge of all peripheral connectivity," "Audio equipment (headsets and belt packs)," and "Audio and video path troubleshooting and testing," with "training will be provided" (NFL, 2026b). Hawk-Eye's UK form lists as desirable "Networking," "Broadcast," "Live events," "Video routing knowledge," "Experience with Audio Over IP devices" and "Working with Fibre Optics" (Hawk-Eye Innovations, n.d.-g). The Rutgers posting wanted "Ideally a broadcast/engineering background with an understanding of signal flow" (Hawk-Eye Innovations, n.d.-f). This lesson maps each ask to a place to practice it.
+
+**Signal flow, fiber and the network: practice them in CREW-00.** This course does not reteach them. This course matched each posting line to the CREW-00 lesson that teaches it.
+
+| The posting asks | Practice in CREW-00, *Cables and Connectors* |
+|---|---|
+| "an understanding of signal flow"; "Audio and video path troubleshooting and testing" | "4 · SDI on coax and the BNC"; "7 · Reference, timecode and return video" |
+| "Working with Fibre Optics"; a fiber link to every switch (lesson 13) | "11 · Single-mode, multimode and the color codes"; "12 · LC, SC and ST, and the polish on the end"; "13 · Inspect before you connect" |
+| "Networking"; "Strong knowledge of all peripheral connectivity" | "19 · Network cable: categories, the 100-meter channel, etherCON and PoE" |
+| "Experience with Audio Over IP devices"; Dante comms (lesson 13) | "20 · Dante, ST 2110, and why a media network is not the office network" |
+| "Audio equipment (headsets and belt packs)" | "17 · Same plug, different signal: intercom and DMX on XLR," which covers wired intercom beltpacks, not two-way radios |
+| "rigging cameras and running cables"; troubleshooting | "27 · Coil, label and run"; "28 · Test, then find the fault" |
+
+**Windows: the version in the posting.** The NFL posting names Windows 10. Microsoft says "Windows 10 has reached the end of support on October 14, 2025," after which Microsoft no longer provides technical support, software updates or security updates (Microsoft, n.d.-c). Its lifecycle page says version 22H2 "will be the final version of Windows 10" (Microsoft, n.d.-b), and consumer Extended Security Updates "can protect your Windows 10 device till October 12, 2027" (Microsoft, n.d.-c). Reasoned: a posting that still names Windows 10 a year after its end of support points either to an older system image or to posting text nobody updated. Practice on current Windows, and be ready to meet Windows 10.
+
+**Wi-Fi, by Microsoft's own steps.** Microsoft's guide to fixing Wi-Fi covers Windows 10 and Windows 11 and gives these steps in order (Microsoft, n.d.-a):
+
+1. Check the connection status.
+2. Check Airplane mode.
+3. Forget the network and reconnect.
+4. Restart the modem and router.
+5. Try another frequency band, 2.4 GHz or 5 GHz.
+6. Try another device.
+7. Run network commands.
+8. Reinstall the network adapter driver.
+9. Ping the default gateway.
+
+Step 7's commands are run as administrator, in this order: \`netsh winsock reset\`, \`netsh int ip reset\`, \`ipconfig /release\`, \`ipconfig /renew\`, \`ipconfig /flushdns\`. For step 9, run \`ipconfig\`, find the "Default gateway" address, then \`ping\` it (Microsoft, n.d.-a). Practice the whole list at home on your own computer until you can work it without the page. One caution, reasoned: at a venue the network belongs to someone else, so step 4 on a stadium's router is not yours to take. Report it and let the owner decide.
+
+**Typing.** The NFL posting asks for touch typing at a "minimum 40 words per minute" (NFL, 2026b). That is one employer's figure on one date, not a rule for the trade. The posting names a speed, not a test, so time yourself on any typing test and practice until you clear it with room to spare.
+
+**The body.** The NFL posting asks you to lift "up to 30 pounds" and to sit for long periods (NFL, 2026b). Hawk-Eye's UK roles involve "physically demanding work, such as rigging cameras and running cables" (Hawk-Eye Innovations, n.d.-g), and the G League posting lists "work at heights" (NBA, 2026). These are in the job's own text, so read them before you apply.
+
+**Documentation.** The postings ask for written work: a checklist "reporting any uncompleted checks and specifying the reason" and "your sections in the match report" (Hawk-Eye Innovations, 2026f); game reports in the Game Management System and hours in a timekeeping system (NFL, 2026b); and, at the SEC desk, documentation for "checklists, post-event reporting, and disaster recovery protocols" (Hawk-Eye Innovations, 2026g). Lessons 14 and 15 showed where each fits in the day. A way to practice, reasoned: after any job you work, write a short report of what you checked, what you could not check and why, what failed, and what you did about it. It is the same shape the postings ask for.
+
+**Focus.** The NFL posting says operators "Must be able to focus on the task at hand, not the game" (NFL, 2026b). A fan's habit of following the play is the one habit this job asks you to drop.
+
+:::reveal On what date did Windows 10 reach its end of support, per Microsoft? ||| October 14, 2025 (Microsoft, n.d.-c).
+
+:::reveal What is the last step in Microsoft's Wi-Fi guide, and how do you do it? ||| Ping the default gateway: run ipconfig, find the "Default gateway" address, then ping it (Microsoft, n.d.-a).
+
+:::reveal Which CREW-00 lesson do you practice for "headsets and belt packs," and what does it not cover? ||| "17 · Same plug, different signal: intercom and DMX on XLR." It covers wired intercom beltpacks, not two-way radios.
+
+## Sources
+- ${NFL_IVR} Locator: "Qualifications"; "Physical Demands/Travel"; "Responsibilities" (reports and hours).
+- ${HE_UK_EOI} Locator: "Desirable"; "What You Can Expect to Be Doing".
+- ${HE_RUTGERS} Locator: the requirements list.
+- ${MS_W10_END} Locator: opening paragraph; the Extended Security Updates paragraph.
+- ${MS_LIFECYCLE} Locator: the retirement table and the 22H2 note.
+- ${MS_WIFI} Locator: "General troubleshooting," steps 1 to 9; step 7 (network commands); step 9 (default gateway).
+- ${NBA_VAN_ANDEL} Locator: the requirements list.
+- ${HE_BOLZANO} Locator: "Key Responsibilities" (checklist; match report).
+- ${HE_SEC_COORD} Locator: "Workflow Refinement".`,
+    },
+    {
+      slug: "applying-and-how-you-are-employed",
+      title: "21 · Applying, the interview, and how you are employed",
+      section: "6 · Getting hired",
+      recallContent: [
+        {
+          prompt: "What typing speed did the NFL operator posting ask for?",
+          answer: "Touch typing at a \"minimum 40 words per minute\" (NFL, 2026b).",
+        },
+        {
+          prompt: "Which network commands does step 7 of Microsoft's Wi-Fi guide run, and how?",
+          answer: "As administrator, in order: netsh winsock reset, netsh int ip reset, ipconfig /release, ipconfig /renew, ipconfig /flushdns (Microsoft, n.d.-a).",
+        },
+      ],
+      body: `${QR}
+
+**What the forms ask.** Hawk-Eye's UK expression of interest asks for a name, an email address, a resume, a location, "When can you start a new role?", whether the applicant needs "visa sponsorship to work for Hawk-Eye in the UK," and "any relevant experience in broadcast or live sports" (Hawk-Eye Innovations, n.d.-g). Its Italy postings say "Please attach your CV in English" (Hawk-Eye Innovations, 2026e, 2026f). Its student placements set "Assessment Date(s): December 16th, 2026" (Hawk-Eye Innovations, 2026i). Reasoned: the experience question asks for broadcast or live sports, so the truck and arena days a crew member already has are the experience to list. For the resume itself, see *Break Into Sports & Media Broadcasting* lesson "5 · Résumé, portfolio, and personal brand".
+
+**One posted process.** Sportradar's postings spell out a hiring process: "Initial Screening: A call with the management team to understand your background and expectations," and, at the end, "Receive feedback and, if successful, an offer!" (Sportradar, 2026a, 2026b). It is one data company's process, and this course does not assume that the replay vendors or the leagues hire the same way.
+
+**The interview, reasoned.** This part is the course's reasoning from the postings, not a list of any employer's questions. Lesson 8 gave the answer for the medical booth: keep the system and the radios working, tag and play back what the licensed staff ask for, and leave every medical call to them. Two posting lines say what else to be ready to show. The SEC desk wants "A strong background in providing remote technical or operational support" (Hawk-Eye Innovations, 2026g), and the Rutgers posting asks for troubleshooting (Hawk-Eye Innovations, n.d.-f). So be ready to walk through one fault you found and fixed, step by step, and the report you wrote after it (lesson 20).
+
+**How you are employed: what the postings state.** The postings use many arrangements, and each one changes what an offer means.
+
+| Posting | The arrangement, as posted |
+|---|---|
+| Hawk-Eye Rutgers technician | "Part Time (contractor)"; "a temporary role"; "employed through a third-party managed service provider"; "you may be eligible to enrol in benefits, at your cost, through the managed service provider" (Hawk-Eye Innovations, n.d.-f) |
+| Hawk-Eye Italy technicians | Firenze "Freelance, Casual"; Bolzano "Freelance"; both call the worker "the consultant" (Hawk-Eye Innovations, 2026e, 2026f) |
+| Hawk-Eye Sofia analyst | "Contract: Consultant"; consultants "are expected to be available for at least 4 days per week" (Hawk-Eye Innovations, 2026h) |
+| Hawk-Eye Netherlands operator | "Part-time (24 hrs per week), 6-Month Fixed-Term contract" (Hawk-Eye Innovations, 2026d) |
+| NBA G League representative | "Project Employee"; a "temporary position" not to exceed 10 months (NBA, 2026) |
+| Genius Sports analyst | "A fully remote hourly paid Service Provider position," with "Around 40-80 hours of tasks per month"; you supply a computer with "at least 512GB storage" and a connection of "at least 50 Mbps download and 10 Mbps upload" (Genius Sports, 2026a) |
+| KINEXON Hamburg operator | "Freelancer oder im Rahmen eines Minijobs" (KINEXON, 2026b), quoted in German because this course's translation is unchecked (lesson 17) |
+| Hawk-Eye SEC coordinator | "Full time," with healthcare, paid vacation and paid sick leave (Hawk-Eye Innovations, 2026g) |
+| NFL injury video review operator | Not stated (NFL, 2026b) |
+
+**The NFL operator's open question.** The posting asks operators to report hours "in timekeeping system" and gives a salary line, but it does not say whether the operator is an NFL employee, a contractor or a staffing provider's worker. This course does not guess.
+
+**Three questions the postings answer differently, reasoned.** Read across the table, and three questions decide what an offer is worth:
+
+1. **Who employs you?** The vendor directly, a staffing provider, or you yourself as a freelancer, consultant or service provider. At Rutgers the staffing provider was the employer, so "$28 per hour" was that provider's offer for work at a Hawk-Eye system.
+2. **What is the pay unit, and what does it cover?** Lesson 18 showed six units across seven postings.
+3. **What comes with it?** The Rutgers benefits were "at your cost"; the SEC role listed healthcare and paid leave; Genius Sports asks you to supply the computer and the connection.
+
+Ask the employer all three before you accept. Questions of tax, contracts and benefits law belong to a qualified adviser where you live; this course does not answer them. For freelancing and building credits in broadcasting more widely, see *Break Into Sports & Media Broadcasting* lessons "14 · Internships, freelancing, and building credits" and "15 · Unions, networking, and landing the first job".
+
+**Keep your copy.** Reasoned from lesson 19: the original posting may be gone by the interview, as the NFL's was by October. Save the posting you apply to, with its date, and you will know exactly what the employer asked and offered.
+
+:::reveal Through whom was the Rutgers technician employed, and how were benefits offered? ||| Through a third-party managed service provider; benefits "at your cost," through that provider (Hawk-Eye Innovations, n.d.-f).
+
+:::reveal What must you supply yourself for Genius Sports' remote analyst role? ||| Your own computer with at least 512GB of storage and a connection of at least 50 Mbps down and 10 Mbps up (Genius Sports, 2026a).
+
+:::reveal What three questions does lesson 21 say to ask before accepting an offer? ||| Who employs you; what the pay unit is and what it covers; and what comes with it, such as benefits or the equipment you must supply.
+
+## Sources
+- ${HE_UK_EOI} Locator: the form fields.
+- ${HE_FIRENZE} Locator: the CV line; employment type; "Working day expectations" (the consultant).
+- ${HE_BOLZANO} Locator: the CV line; employment type.
+- ${HE_STUDENT} Locator: "Assessment Date(s)".
+- ${SPORTRADAR_PT} Locator: "Our Recruitment Process".
+- ${SPORTRADAR_TRAINEE} Locator: "Our Recruitment Process".
+- ${HE_SEC_COORD} Locator: the requirements list; employment type; "Salary & Benefits Disclosure".
+- ${HE_RUTGERS} Locator: employment type; the managed service provider and benefits lines; the requirements list.
+- ${HE_SOFIA} Locator: contract line; availability line.
+- ${HE_NL} Locator: contract line.
+- ${NBA_VAN_ANDEL} Locator: the posting title and the temporary position line.
+- ${GENIUS_ANALYST} Locator: the opening line; hours of tasks; equipment and connection requirements.
+- ${KINEXON_HH} Locator: "Rahmenbedingungen".
+- ${NFL_IVR} Locator: "Responsibilities" (timekeeping); "Salary".`,
+    },
+    {
+      slug: "section-6-quiz",
+      title: "Section 6 quiz \u00b7 Getting hired",
+      section: "6 \u00b7 Getting hired",
+      body: "A graded check on where postings live and when they open, what to practice before you apply, the application and interview, and how the postings say you are employed. Each answer links back to the lesson that teaches it.",
+      quiz: {
+        passingScore: 80,
+        questionsPerAttempt: 5,
+        shuffleOptions: true,
+        questions: [
+          { prompt: "How should you treat lesson 19's table of boards?", options: ["As a list of open jobs today", "As a map of where to look", "As a ranking of best employers", "As the only boards that exist"], correctIndex: 1, explanation: "Lesson 19: boards change daily, so the table is a map of where to look, not a list of open jobs.", sourceLessonSlug: "where-and-when-postings-open" },
+          { prompt: "How many postings did the NFL's Greenhouse feed list on October 26, 2026?", options: ["25", "8", "42", "5"], correctIndex: 2, explanation: "NFL (n.d.-h): 42 postings; 25 was Hawk-Eye's count.", sourceLessonSlug: "where-and-when-postings-open" },
+          { prompt: "Was an injury video review role among the NFL's Greenhouse postings that day?", options: ["Yes; one for every one of the 32 clubs", "Yes; but only for the New Orleans club", "Yes; listed under NFL Films in New Jersey", "No; no replay or review role was listed"], correctIndex: 3, explanation: "NFL (n.d.-h): none of the 42 was an injury video review, replay or officiating technology role.", sourceLessonSlug: "where-and-when-postings-open" },
+          { prompt: "Which of these is a hiring unit the NFL's Greenhouse board names?", options: ["The NFL Films office in Mt. Laurel, NJ", "The Hawk-Eye office in Atlanta, Georgia", "The SEC office in Birmingham, Alabama", "The Big Ten office in Rosemont, Illinois"], correctIndex: 0, explanation: "NFL (n.d.-g): the 32 teams, the League office in New York City, NFL Films in Mt. Laurel, NFL Media in Inglewood, and international offices.", sourceLessonSlug: "where-and-when-postings-open" },
+          { prompt: "Where were copies of the NFL operator posting read?", options: ["startup.jobs", "SHRM HireVets", "TeamWork Online", "NBA Workday"], correctIndex: 1, explanation: "NFL (2026b, 2026c): copies on SHRM HireVets, for New Orleans and Tampa Bay.", sourceLessonSlug: "where-and-when-postings-open" },
+          { prompt: "For which two clubs were NFL operator copies read?", options: ["Dallas and Green Bay", "New York and Los Angeles", "New Orleans and Tampa Bay", "Chicago and Kansas City"], correctIndex: 2, explanation: "NFL (2026b, 2026c): the New Orleans Saints and the Tampa Bay Buccaneers copies.", sourceLessonSlug: "where-and-when-postings-open" },
+          { prompt: "What did the NBA Workday search for \"officiating\" return?", options: ["One result, for the NBA Replay Center", "No results, since the board was closed", "Thirty results, one for every NBA team", "Eight results, five of them G League reps"], correctIndex: 3, explanation: "NBA (2026): eight results, five of them League Technology Representative postings, each for a different G League arena.", sourceLessonSlug: "where-and-when-postings-open" },
+          { prompt: "What does TeamWork Online show beside each Hawk-Eye role?", options: ["A career level", "A pay estimate", "A closing date", "A star rating"], correctIndex: 0, explanation: "TeamWork Online (n.d.): each listing carries a career level, such as \"Entry Level\" or \"Intern.\"", sourceLessonSlug: "where-and-when-postings-open" },
+          { prompt: "How did startup.jobs describe Hawk-Eye?", options: ["\"Not hiring at this time\"", "\"Hiring for 25 positions\"", "\"Hiring for 42 positions\"", "\"Hiring in the US only\""], correctIndex: 1, explanation: "startup.jobs (n.d.): \"Hiring for 25 positions.\"", sourceLessonSlug: "where-and-when-postings-open" },
+          { prompt: "What did Greenhouse return for the NFL job the New Orleans copy links to?", options: ["A new pay range", "A filled notice", "\"Not found\"", "A login screen"], correctIndex: 2, explanation: "NFL (2026b; n.d.-h): the source job returned \"not found\" from Greenhouse on October 26, 2026.", sourceLessonSlug: "where-and-when-postings-open" },
+          { prompt: "What does lesson 19 draw from the \"not found\" source job?", options: ["The NFL ended the role for good in 2026", "HireVets invented the posting entirely", "The posting was moved to Hawk-Eye's board", "A copy can outlive the job it copied"], correctIndex: 3, explanation: "Lesson 19: the copy was still up after its source job was gone.", sourceLessonSlug: "where-and-when-postings-open" },
+          { prompt: "How did startup.jobs date the Firenze technician posting?", options: ["\"7 months ago\"", "\"Yesterday\"", "\"Closed\"", "\"2 years ago\""], correctIndex: 0, explanation: "startup.jobs (n.d.): \"7 months ago,\" while Hawk-Eye's own board gave October 19, 2026.", sourceLessonSlug: "where-and-when-postings-open" },
+          { prompt: "What publish date did Hawk-Eye's own board give the Firenze posting?", options: ["March 19, 2026", "October 19, 2026", "October 30, 2026", "April 15, 2026"], correctIndex: 1, explanation: "Hawk-Eye Innovations (n.d.-i): October 19, 2026.", sourceLessonSlug: "where-and-when-postings-open" },
+          { prompt: "How does lesson 19 say to read a single posting date?", options: ["As the deadline, after which no one is hired", "As the day the employer filled the position", "As last published, not as the day hiring opened", "As the start date for the job's first shift"], correctIndex: 2, explanation: "Reasoned: the employer's board shows the latest publish date and a copy's age can be older, so read a date as \"last published.\"", sourceLessonSlug: "where-and-when-postings-open" },
+          { prompt: "When was the Tampa Bay copy of the NFL operator posting created?", options: ["April 24, 2026", "June 26, 2026", "March 1, 2026", "April 6, 2026"], correctIndex: 3, explanation: "NFL (2026c): created April 6, 2026.", sourceLessonSlug: "where-and-when-postings-open" },
+          { prompt: "What expiration date did the New Orleans copy carry?", options: ["April 24, 2026", "October 30, 2026", "December 16, 2026", "August 14, 2026"], correctIndex: 0, explanation: "NFL (2026b): created April 15, 2026, with an expiration date of April 24, 2026.", sourceLessonSlug: "where-and-when-postings-open" },
+          { prompt: "When was KINEXON's Hamburg handball operator posting published?", options: ["October 19, 2026", "August 4, 2026", "April 6, 2026", "January 2, 2026"], correctIndex: 1, explanation: "KINEXON (2026b): published August 4, 2026, for a start in the 2026/2027 season.", sourceLessonSlug: "where-and-when-postings-open" },
+          { prompt: "How long does NFL Media's seasonal TOC operator role run, as posted?", options: ["A full 40-hour week, all year round", "One game day a week, for ten weeks", "Up to 29 hours a week, up to 7 months", "Up to 12 hours a week, for 2 months"], correctIndex: 2, explanation: "NFL (2026e): \"Up to 29 hours per week up to 7 months.\"", sourceLessonSlug: "where-and-when-postings-open" },
+          { prompt: "When was Hawk-Eye's Netherlands operator posting published?", options: ["October 22, 2026", "August 25, 2026", "April 15, 2026", "September 2, 2026"], correctIndex: 3, explanation: "Hawk-Eye Innovations (2026d): published September 2, 2026.", sourceLessonSlug: "where-and-when-postings-open" },
+          { prompt: "What season were the G League representative postings for?", options: ["The 2026-27 G League season", "The 2025-26 NBA playoffs", "The 2027 summer league", "The 2026 WNBA season"], correctIndex: 0, explanation: "NBA (2026): a posting window of October 14 to 31, 2026, for the 2026-27 season.", sourceLessonSlug: "where-and-when-postings-open" },
+          { prompt: "What assessment date did Hawk-Eye's student placements set?", options: ["October 30, 2026", "December 16, 2026", "April 24, 2026", "January 7, 2027"], correctIndex: 1, explanation: "Hawk-Eye Innovations (2026i): \"Assessment Date(s): December 16th, 2026,\" for a summer 2027 start.", sourceLessonSlug: "where-and-when-postings-open" },
+          { prompt: "When do the student placements start?", options: ["Immediately", "Spring 2026", "Summer 2027", "Winter 2026"], correctIndex: 2, explanation: "Hawk-Eye Innovations (2026i): published October 15, 2026, start summer 2027.", sourceLessonSlug: "where-and-when-postings-open" },
+          { prompt: "What start did the Italy technician postings give?", options: ["\"Summer 2027\"", "\"Saison 2027\"", "\"Next spring\"", "\"Immediate\""], correctIndex: 3, explanation: "Hawk-Eye Innovations (2026e, 2026f): published October 19 and 22, 2026, start \"Immediate.\"", sourceLessonSlug: "where-and-when-postings-open" },
+          { prompt: "What does Genius Sports say about its analysts' summer?", options: ["Fewer tasks, following the sports schedule", "Double hours, to cover summer tournaments", "No change at all across the whole year", "Mandatory leave, unpaid, for two months"], correctIndex: 0, explanation: "Genius Sports (2026a): \"fewer tasks in the summer (following the sports schedule).\"", sourceLessonSlug: "where-and-when-postings-open" },
+          { prompt: "Why does lesson 19 call the 2026 SEC posting a record?", options: ["It was never a real job posting", "Its deadline was October 30, 2026", "The SEC ended its Hawk-Eye work", "It was only shown to students"], correctIndex: 1, explanation: "Hawk-Eye Innovations (2026g): deadline October 30, 2026, at 7:00 PM EDT. Look for a newer posting instead.", sourceLessonSlug: "where-and-when-postings-open" },
+          { prompt: "If you want the SEC coordinator job, what does lesson 19 say to do?", options: ["Apply to the 2026 posting after its deadline", "Email the SEC commissioner's office directly", "Look for a newer posting on Hawk-Eye's board", "Wait for the course to reopen the posting"], correctIndex: 2, explanation: "Lesson 19: do not apply to the 2026 posting; look for a newer one on Hawk-Eye's board.", sourceLessonSlug: "where-and-when-postings-open" },
+          { prompt: "By lesson 19's reasoning, when did the US league game-day postings go up?", options: ["Midway through their seasons", "After their seasons had ended", "On the day of the first game", "Before their seasons began"], correctIndex: 3, explanation: "Reasoned: the NFL copies in April 2026 and the G League postings in October 2026, each before its season.", sourceLessonSlug: "where-and-when-postings-open" },
+          { prompt: "How did European football hiring differ in the dates read?", options: ["It ran during the season, with immediate starts", "It closed a full year before the season began", "It hired only students, for the next summer", "It hired only through US staffing providers"], correctIndex: 0, explanation: "Reasoned from the Italy postings: published in October with \"Immediate\" starts, during the season.", sourceLessonSlug: "where-and-when-postings-open" },
+          { prompt: "Why does lesson 19 not call its pattern a calendar?", options: ["The NFL has forbidden publishing its calendar", "It comes from a handful of postings in one year", "Each posting's date was wrong when it was read", "The pattern reverses itself in odd-numbered years"], correctIndex: 1, explanation: "Lesson 19: a pattern from a handful of postings; one year's dates are not a calendar.", sourceLessonSlug: "where-and-when-postings-open" },
+          { prompt: "Why can't lesson 19 say whether every NFL stadium has its own operator posting?", options: ["The NFL publishes no posting at all", "Every club hires from one posting", "Copies for only two clubs were read", "The clubs refused to be contacted"], correctIndex: 2, explanation: "Lesson 19: copies for two clubs were read, and the course could not confirm whether every stadium has its own.", sourceLessonSlug: "where-and-when-postings-open" },
+          { prompt: "Why can't lesson 19 say when Hawk-Eye's US venue roles open?", options: ["Hawk-Eye has no US business at all", "Hawk-Eye posts its US roles in print", "The board blocked the course's reading", "None was open on its board that day"], correctIndex: 3, explanation: "Hawk-Eye Innovations (n.d.-i): no technician role for an NFL, MLB or Big Ten venue was open on October 26, 2026.", sourceLessonSlug: "where-and-when-postings-open" },
+          { prompt: "What does TeamWork Online's Hawk-Eye page offer to keep up with new roles?", options: ["\"Get job alerts\"", "A weekly webinar", "A printed digest", "A recruiter call"], correctIndex: 0, explanation: "TeamWork Online (n.d.): \"Get job alerts,\" with \"Stay up to date on new jobs from Hawk-Eye Innovations.\"", sourceLessonSlug: "where-and-when-postings-open" },
+          { prompt: "Why does lesson 19 not explain how TeamWork Online's alerts work?", options: ["The alerts were discontinued in 2026", "Its home and help pages did not load", "Hawk-Eye asked the course not to say", "The alerts are only sent by post"], correctIndex: 1, explanation: "Lesson 19: TeamWork Online's own home and help pages did not load for the course's research.", sourceLessonSlug: "where-and-when-postings-open" },
+          { prompt: "Why keep a copy of any posting you apply to, per lesson 19?", options: ["Employers require a printed copy to enter", "Copies are needed to claim travel costs", "The original may be gone by the interview", "The law requires applicants to keep one"], correctIndex: 2, explanation: "Reasoned from the dates: the NFL source job was gone by late October, so save the posting with its date.", sourceLessonSlug: "where-and-when-postings-open" },
+          { prompt: "Where does lesson 20 send you to practice signal flow, fiber and the network?", options: ["CREW-05, Arena transmission", "A vendor's operator course", "The NFL's training seminar", "CREW-00, Cables and Connectors"], correctIndex: 3, explanation: "Lesson 20: this course does not reteach them; practice them in CREW-00's lessons.", sourceLessonSlug: "what-to-practice" },
+          { prompt: "Which posting line maps to CREW-00's SDI and return video lessons?", options: ["Audio and video path troubleshooting", "Willingness to drive our vans to grounds", "Fluent in Dutch and English", "A CV attached in English"], correctIndex: 0, explanation: "Lesson 20 maps \"an understanding of signal flow\" and \"Audio and video path troubleshooting and testing\" to CREW-00 lessons 4 and 7.", sourceLessonSlug: "what-to-practice" },
+          { prompt: "Which CREW-00 lessons match \"Working with Fibre Optics\"?", options: ["17 and 27, the intercom and coiling only", "11, 12 and 13, fiber types to inspection", "19 and 20, network cable and Dante", "4 and 7, SDI and reference video"], correctIndex: 1, explanation: "Lesson 20: \"11 · Single-mode, multimode and the color codes,\" \"12 · LC, SC and ST\" and \"13 · Inspect before you connect.\"", sourceLessonSlug: "what-to-practice" },
+          { prompt: "Which CREW-00 lesson matches \"Experience with Audio Over IP devices\"?", options: ["11, single-mode fiber", "4, SDI on coax", "20, Dante and ST 2110", "27, coil, label, run"], correctIndex: 2, explanation: "Lesson 20: \"20 · Dante, ST 2110, and why a media network is not the office network.\"", sourceLessonSlug: "what-to-practice" },
+          { prompt: "Which CREW-00 lesson matches \"Networking\" and \"peripheral connectivity\"?", options: ["12, LC, SC and ST ends", "7, reference and timecode", "17, intercom on XLR", "19, network cable and PoE"], correctIndex: 3, explanation: "Lesson 20: \"19 · Network cable: categories, the 100-meter channel, etherCON and PoE.\"", sourceLessonSlug: "what-to-practice" },
+          { prompt: "What does CREW-00 lesson 17 not cover that the NFL booth uses?", options: ["Two-way radios", "Wired beltpacks", "XLR connectors", "Party-line intercom"], correctIndex: 0, explanation: "Lesson 20: lesson 17 covers wired intercom beltpacks, not two-way radios.", sourceLessonSlug: "what-to-practice" },
+          { prompt: "Which CREW-00 lessons match \"rigging cameras and running cables\" and troubleshooting?", options: ["11 and 12, fiber types and polish", "27 and 28, coiling and fault-finding", "19 and 20, network and Dante", "4 and 7, SDI and return video"], correctIndex: 1, explanation: "Lesson 20: \"27 · Coil, label and run\" and \"28 · Test, then find the fault.\"", sourceLessonSlug: "what-to-practice" },
+          { prompt: "Who matched each posting line to a CREW-00 lesson?", options: ["The NFL, in its posting's training note", "Hawk-Eye, on its expression of interest", "This course, by what the lessons teach", "CREW-00's own authors, in its header"], correctIndex: 2, explanation: "Lesson 20: this course matched each posting line to the CREW-00 lesson that teaches it.", sourceLessonSlug: "what-to-practice" },
+          { prompt: "When did Windows 10 reach its end of support, per Microsoft?", options: ["October 12, 2027", "October 14, 2026", "July 29, 2015", "October 14, 2025"], correctIndex: 3, explanation: "Microsoft (n.d.-c): \"Windows 10 has reached the end of support on October 14, 2025.\"", sourceLessonSlug: "what-to-practice" },
+          { prompt: "What stopped for Windows 10 after its end of support, per Microsoft?", options: ["Support, software and security updates", "Sales of new PCs with any Windows on them", "All internet access from Windows 10 PCs", "Every program written for Windows 10"], correctIndex: 0, explanation: "Microsoft (n.d.-c): no more technical support, software updates or security updates.", sourceLessonSlug: "what-to-practice" },
+          { prompt: "Which version does Microsoft call the final version of Windows 10?", options: ["21H1", "22H2", "1909", "24H2"], correctIndex: 1, explanation: "Microsoft (n.d.-b): version 22H2 \"will be the final version of Windows 10.\"", sourceLessonSlug: "what-to-practice" },
+          { prompt: "Until when can consumer Extended Security Updates protect Windows 10, per Microsoft?", options: ["October 14, 2025", "December 31, 2026", "October 12, 2027", "April 15, 2026"], correctIndex: 2, explanation: "Microsoft (n.d.-c): consumer ESU \"can protect your Windows 10 device till October 12, 2027.\"", sourceLessonSlug: "what-to-practice" },
+          { prompt: "By lesson 20's reasoning, what does a 2026 posting naming Windows 10 suggest?", options: ["That Windows 10 is still fully supported", "That the league bans all newer Windows", "That the role uses no computers at all", "An older system image or unedited text"], correctIndex: 3, explanation: "Reasoned: a year after end of support, it points to an older system image or posting text nobody updated.", sourceLessonSlug: "what-to-practice" },
+          { prompt: "What does lesson 20 advise about Windows versions?", options: ["Practice current Windows; be ready for 10", "Practice only Windows 10, nothing newer", "Skip Windows; the booth runs on Linux", "Buy an Extended Security Update first"], correctIndex: 0, explanation: "Lesson 20: practice on current Windows, and be ready to meet Windows 10.", sourceLessonSlug: "what-to-practice" },
+          { prompt: "Which Windows versions does Microsoft's Wi-Fi guide cover?", options: ["Windows 7 and Windows 8", "Windows 10 and Windows 11", "Windows 11 only", "Windows Server only"], correctIndex: 1, explanation: "Microsoft (n.d.-a): the guide applies to Windows 10 and Windows 11.", sourceLessonSlug: "what-to-practice" },
+          { prompt: "What is the first step in Microsoft's Wi-Fi guide?", options: ["Reinstall the adapter driver", "Ping the default gateway", "Check the connection status", "Restart the modem and router"], correctIndex: 2, explanation: "Microsoft (n.d.-a), step 1: check the connection status.", sourceLessonSlug: "what-to-practice" },
+          { prompt: "Which step of Microsoft's Wi-Fi guide comes second?", options: ["Try another device", "Run network commands", "Forget the network", "Check Airplane mode"], correctIndex: 3, explanation: "Microsoft (n.d.-a), step 2: check Airplane mode.", sourceLessonSlug: "what-to-practice" },
+          { prompt: "Which frequency bands does Microsoft's guide suggest trying?", options: ["2.4 GHz and 5 GHz", "900 MHz and 60 GHz", "3.5 GHz and 28 GHz", "1.2 GHz and 10 GHz"], correctIndex: 0, explanation: "Microsoft (n.d.-a), step 5: try another frequency band, 2.4 GHz or 5 GHz.", sourceLessonSlug: "what-to-practice" },
+          { prompt: "How must the step 7 network commands be run?", options: ["As a guest user, in any order", "As administrator, in a set order", "From the router's web page only", "On a second computer, remotely"], correctIndex: 1, explanation: "Microsoft (n.d.-a), step 7: run as administrator, in this order.", sourceLessonSlug: "what-to-practice" },
+          { prompt: "Which command comes first in step 7 of Microsoft's guide?", options: ["ipconfig /flushdns", "ipconfig /renew", "netsh winsock reset", "ping the gateway"], correctIndex: 2, explanation: "Microsoft (n.d.-a): netsh winsock reset, netsh int ip reset, ipconfig /release, ipconfig /renew, ipconfig /flushdns.", sourceLessonSlug: "what-to-practice" },
+          { prompt: "Which command comes last in step 7 of Microsoft's guide?", options: ["netsh winsock reset", "ipconfig /release", "netsh int ip reset", "ipconfig /flushdns"], correctIndex: 3, explanation: "Microsoft (n.d.-a): the order ends with ipconfig /flushdns.", sourceLessonSlug: "what-to-practice" },
+          { prompt: "What is the last step of Microsoft's Wi-Fi guide?", options: ["Ping the default gateway", "Restart the computer", "Call the stadium help desk", "Replace the router"], correctIndex: 0, explanation: "Microsoft (n.d.-a), step 9: ping the default gateway.", sourceLessonSlug: "what-to-practice" },
+          { prompt: "How do you find the default gateway's address for step 9?", options: ["Read the sticker under the stadium's desk", "Run ipconfig and read \"Default gateway\"", "Ask the broadcaster for its truck address", "Run netsh winsock reset and read it back"], correctIndex: 1, explanation: "Microsoft (n.d.-a): run ipconfig, find the \"Default gateway\" address, then ping it.", sourceLessonSlug: "what-to-practice" },
+          { prompt: "By lesson 20's reasoning, why is restarting a stadium's router not yours to do?", options: ["Routers in stadiums cannot ever be restarted", "Microsoft's guide forbids step 4 at venues", "The venue's network belongs to someone else", "The league fines anyone who touches a router"], correctIndex: 2, explanation: "Reasoned: at a venue the network belongs to someone else; report it and let the owner decide.", sourceLessonSlug: "what-to-practice" },
+          { prompt: "What does lesson 20 say about the posting's 40 words per minute?", options: ["The trade's standard for all crews", "A legal minimum for league work", "A speed for the league's test only", "One employer's figure on one date"], correctIndex: 3, explanation: "Lesson 20: one employer's figure on one date, not a rule for the trade.", sourceLessonSlug: "what-to-practice" },
+          { prompt: "Which typing test does the NFL posting name?", options: ["None; it names only a speed", "The league's own online test", "A test given at the stadium", "A test from a staffing firm"], correctIndex: 0, explanation: "Lesson 20: the posting names a speed, not a test; time yourself on any typing test.", sourceLessonSlug: "what-to-practice" },
+          { prompt: "Which physical ask does the G League posting list?", options: ["Lift 100 pounds", "Work at heights", "Run two miles", "Swim fifty yards"], correctIndex: 1, explanation: "NBA (2026): \"work at heights.\"", sourceLessonSlug: "what-to-practice" },
+          { prompt: "What physical work do Hawk-Eye's UK roles mention?", options: ["Mowing and marking the pitch lines", "Carrying players off on stretchers", "Rigging cameras and running cables", "Driving the team bus to matches"], correctIndex: 2, explanation: "Hawk-Eye Innovations (n.d.-g): \"physically demanding work, such as rigging cameras and running cables.\"", sourceLessonSlug: "what-to-practice" },
+          { prompt: "Besides lifting, what physical demand does the NFL posting name?", options: ["Climbing the light towers", "Running the sideline chains", "Standing in the rain all game", "Sitting for long periods"], correctIndex: 3, explanation: "NFL (2026b): lift \"up to 30 pounds\" and sit for long periods.", sourceLessonSlug: "what-to-practice" },
+          { prompt: "What documentation does the SEC desk produce, as posted?", options: ["Checklists, post-event reports, recovery plans", "Player injury reports written for the team doctors", "The referees' disciplinary match reports", "Broadcast rundowns for the TV networks"], correctIndex: 0, explanation: "Hawk-Eye Innovations (2026g): documentation for \"checklists, post-event reporting, and disaster recovery protocols.\"", sourceLessonSlug: "what-to-practice" },
+          { prompt: "Where does the NFL operator record working hours?", options: ["On the club's paper log", "In a timekeeping system", "In the game report only", "On the referee's card"], correctIndex: 1, explanation: "NFL (2026b): \"Responsible for accurately reporting working hours in timekeeping system.\"", sourceLessonSlug: "what-to-practice" },
+          { prompt: "What practice does lesson 20 suggest for documentation?", options: ["Copy a vendor's internal procedures", "Memorize the NFL's medical protocol", "Write a short report after every job", "Keep notes only when something fails"], correctIndex: 2, explanation: "Reasoned: after any job, report what you checked, what you could not check and why, what failed, and what you did.", sourceLessonSlug: "what-to-practice" },
+          { prompt: "What habit does lesson 20 say the job asks you to drop?", options: ["Writing down every small fault", "Checking the radios before use", "Asking the remote desk for help", "Following the play like a fan"], correctIndex: 3, explanation: "NFL (2026b): \"Must be able to focus on the task at hand, not the game.\"", sourceLessonSlug: "what-to-practice" },
+          { prompt: "Which of these is in the NFL posting's skills list?", options: ["Hardware diagnosis", "Video editing work", "Play calling", "Ticket sales"], correctIndex: 0, explanation: "NFL (2026b): Windows 10, Wi-Fi setup and troubleshooting, hardware diagnosis and peripheral connectivity, among others.", sourceLessonSlug: "what-to-practice" },
+          { prompt: "What experience does Hawk-Eye's UK form ask about?", options: ["Coaching or refereeing", "Broadcast or live sports", "Medicine or nursing", "Retail or hospitality"], correctIndex: 1, explanation: "Hawk-Eye Innovations (n.d.-g): \"any relevant experience in broadcast or live sports.\"", sourceLessonSlug: "applying-and-how-you-are-employed" },
+          { prompt: "By lesson 21's reasoning, what experience should a crew member list on that form?", options: ["Their years as a sports fan", "Their fantasy league results", "Their truck and arena days", "Their gym and fitness record"], correctIndex: 2, explanation: "Reasoned: the form asks for broadcast or live sports, so a crew member's truck and arena days are the experience to list.", sourceLessonSlug: "applying-and-how-you-are-employed" },
+          { prompt: "What start question does the UK form ask?", options: ["Which football club do you support?", "How far will you commute?", "Who referred you to us?", "When can you start a new role?"], correctIndex: 3, explanation: "Hawk-Eye Innovations (n.d.-g): \"When can you start a new role?\"", sourceLessonSlug: "applying-and-how-you-are-employed" },
+          { prompt: "Which of these is a field on the UK expression of interest form?", options: ["Location", "Salary", "Photo", "Club"], correctIndex: 0, explanation: "Hawk-Eye Innovations (n.d.-g): name, email, resume, location, start date, visa sponsorship and relevant experience.", sourceLessonSlug: "applying-and-how-you-are-employed" },
+          { prompt: "In which language must Italy applicants attach a CV?", options: ["Italian", "English", "French", "German"], correctIndex: 1, explanation: "Hawk-Eye Innovations (2026e, 2026f): \"Please attach your CV in English.\"", sourceLessonSlug: "applying-and-how-you-are-employed" },
+          { prompt: "Where does lesson 21 send you for help with the resume itself?", options: ["CREW-00 lesson 28 on fault-finding", "CREW-05 lesson 5 on network jobs", "Broadcasting lesson 5 on the resume", "This course's lesson 8 on licensing"], correctIndex: 2, explanation: "Lesson 21: Break Into Sports & Media Broadcasting lesson \"5 · Résumé, portfolio, and personal brand.\"", sourceLessonSlug: "applying-and-how-you-are-employed" },
+          { prompt: "What is Sportradar's first stated hiring step?", options: ["A paid trial shift at a stadium", "A written exam on sports rules", "A typing test at 40 words a minute", "A screening call with management"], correctIndex: 3, explanation: "Sportradar (2026a, 2026b): \"Initial Screening: A call with the management team to understand your background and expectations.\"", sourceLessonSlug: "applying-and-how-you-are-employed" },
+          { prompt: "How does Sportradar describe its last hiring step?", options: ["Feedback and, if successful, an offer", "A six-month unpaid probation period", "A background check by the league office", "A panel interview with three referees"], correctIndex: 0, explanation: "Sportradar (2026a, 2026b): \"Receive feedback and, if successful, an offer!\"", sourceLessonSlug: "applying-and-how-you-are-employed" },
+          { prompt: "Why does lesson 21 not apply Sportradar's process to replay jobs?", options: ["Sportradar's process is secret by law", "It is one data company's process only", "Replay jobs never hold any interviews", "The NFL uses Sportradar to hire for it"], correctIndex: 1, explanation: "Lesson 21: it is one data company's process; the course does not assume replay vendors or leagues hire the same way.", sourceLessonSlug: "applying-and-how-you-are-employed" },
+          { prompt: "What answer does lesson 21 carry over from lesson 8 for the medical booth?", options: ["Flag any injury you see to the referee", "Tell the coach what the replay showed", "Keep systems working; leave medical calls", "Decide when a player may go back in"], correctIndex: 2, explanation: "Lesson 8: keep the system and radios working, tag and play back what licensed staff ask, and leave every medical call to them.", sourceLessonSlug: "applying-and-how-you-are-employed" },
+          { prompt: "What does lesson 21 suggest being ready to walk through in an interview?", options: ["The NFL's concussion protocol, step by step", "A vendor's operator screens, from memory", "The full rulebook of every league you know", "A fault you fixed, and the report after it"], correctIndex: 3, explanation: "Reasoned from the SEC and Rutgers postings: one fault found and fixed, step by step, and the report written after it.", sourceLessonSlug: "applying-and-how-you-are-employed" },
+          { prompt: "Is lesson 21's interview advice a list of an employer's questions?", options: ["No; it is reasoned from the postings", "Yes; it is the NFL's published list", "Yes; Hawk-Eye's interview guide", "Yes; TeamWork Online's question bank"], correctIndex: 0, explanation: "Lesson 21: the part is the course's reasoning from the postings, not any employer's questions.", sourceLessonSlug: "applying-and-how-you-are-employed" },
+          { prompt: "How were benefits offered to the Rutgers technician?", options: ["Free, paid in full by Hawk-Eye itself", "At their own cost, through the provider", "Through Rutgers University's own plan", "Not at all, under any arrangement"], correctIndex: 1, explanation: "Hawk-Eye Innovations (n.d.-f): \"you may be eligible to enrol in benefits, at your cost, through the managed service provider.\"", sourceLessonSlug: "applying-and-how-you-are-employed" },
+          { prompt: "What do the Italy postings call the worker?", options: ["The employee", "The volunteer", "The consultant", "The trainee"], correctIndex: 2, explanation: "Hawk-Eye Innovations (2026e, 2026f): \"the consultant,\" in the working-day section.", sourceLessonSlug: "applying-and-how-you-are-employed" },
+          { prompt: "How was the Bolzano technician's arrangement described?", options: ["\"Permanent\"", "\"Internship\"", "\"Salaried\"", "\"Freelance\""], correctIndex: 3, explanation: "Hawk-Eye Innovations (2026f): \"Freelance.\"", sourceLessonSlug: "applying-and-how-you-are-employed" },
+          { prompt: "How many hours of tasks a month does the Genius Sports analyst posting give?", options: ["Around 40 to 80", "Exactly 160", "Around 10 to 20", "At least 200"], correctIndex: 0, explanation: "Genius Sports (2026a): \"Around 40-80 hours of tasks per month.\"", sourceLessonSlug: "applying-and-how-you-are-employed" },
+          { prompt: "What storage must the Genius Sports analyst's own computer have?", options: ["At least 64GB", "At least 512GB", "At least 2TB", "At least 128GB"], correctIndex: 1, explanation: "Genius Sports (2026a): a computer with \"at least 512GB storage.\"", sourceLessonSlug: "applying-and-how-you-are-employed" },
+          { prompt: "What connection does Genius Sports ask its analysts to have?", options: ["At least 5 Mbps down and 1 Mbps up", "A wired fiber line of 1 Gbps or more", "At least 50 Mbps down and 10 Mbps up", "Any mobile phone hotspot will do"], correctIndex: 2, explanation: "Genius Sports (2026a): \"at least 50 Mbps download and 10 Mbps upload.\"", sourceLessonSlug: "applying-and-how-you-are-employed" },
+          { prompt: "Why does lesson 21 quote KINEXON's employment line in German?", options: ["KINEXON forbids any translation of it", "The phrase has no English equivalent", "German law requires quoting it as is", "The course's translation is unchecked"], correctIndex: 3, explanation: "Lesson 21, after lesson 17: the course's translation has not been checked by a German reader.", sourceLessonSlug: "applying-and-how-you-are-employed" },
+          { prompt: "How did the G League posting describe its arrangement?", options: ["A temporary Project Employee role", "A freelance consultant contract", "A permanent full-time position", "An unpaid volunteer placement"], correctIndex: 0, explanation: "NBA (2026): \"Project Employee\"; a \"temporary position\" not to exceed 10 months.", sourceLessonSlug: "applying-and-how-you-are-employed" },
+          { prompt: "How long was the Netherlands operator's contract, as posted?", options: ["Twelve months, rolling", "Six months, fixed term", "One season, freelance", "Open-ended, permanent"], correctIndex: 1, explanation: "Hawk-Eye Innovations (2026d): \"6-Month Fixed-Term contract,\" 24 hours a week.", sourceLessonSlug: "applying-and-how-you-are-employed" },
+          { prompt: "Which posting in lesson 21's table lists healthcare and paid sick leave?", options: ["The Sofia analyst", "The Italy technicians", "The SEC coordinator", "The Genius Sports analyst"], correctIndex: 2, explanation: "Hawk-Eye Innovations (2026g): \"Full time,\" with healthcare, paid vacation and paid sick leave.", sourceLessonSlug: "applying-and-how-you-are-employed" },
+          { prompt: "What two things does the NFL operator posting give, without stating employment type?", options: ["A union card and a pension plan", "A company car and a phone allowance", "A signing bonus and a relocation fund", "A timekeeping duty and a salary line"], correctIndex: 3, explanation: "NFL (2026b): operators report hours \"in timekeeping system,\" and the posting has a salary line, but it does not state the employment type.", sourceLessonSlug: "applying-and-how-you-are-employed" },
+          { prompt: "What does lesson 21 do about the NFL operator's employment type?", options: ["Leaves it open and does not guess", "Calls it an NFL staff job outright", "Calls it a staffing provider's job", "Calls it a freelance contract role"], correctIndex: 0, explanation: "Lesson 21: the posting does not say whether the operator is an NFL employee, a contractor or a staffing provider's worker, and the course does not guess.", sourceLessonSlug: "applying-and-how-you-are-employed" },
+          { prompt: "What is the first of lesson 21's three questions about an offer?", options: ["How far is the venue?", "Who employs you?", "Which team will play?", "Who else applied?"], correctIndex: 1, explanation: "Lesson 21: who employs you; what the pay unit is and covers; and what comes with it.", sourceLessonSlug: "applying-and-how-you-are-employed" },
+          { prompt: "At Rutgers, whose offer was \"$28 per hour,\" by lesson 21?", options: ["The Big Ten's own office", "Rutgers University's", "The staffing provider's", "The NFL's league office"], correctIndex: 2, explanation: "Lesson 21: the staffing provider was the employer, so the pay was that provider's offer for work at a Hawk-Eye system.", sourceLessonSlug: "applying-and-how-you-are-employed" },
+          { prompt: "Which posting asks you to supply your own computer and connection?", options: ["Hawk-Eye's SEC live coordinator role", "The NFL's injury video operator role", "The NBA's G League representative role", "Genius Sports' remote analyst role"], correctIndex: 3, explanation: "Genius Sports (2026a): your own computer and an internet connection meeting its minimums.", sourceLessonSlug: "applying-and-how-you-are-employed" },
+          { prompt: "Who should answer tax, contract and benefits law questions, per lesson 21?", options: ["A qualified adviser where you live", "The vendor's on-site technician", "This course's quiz explanations", "A fellow crew member at the venue"], correctIndex: 0, explanation: "Lesson 21: those questions belong to a qualified adviser where you live; the course does not answer them.", sourceLessonSlug: "applying-and-how-you-are-employed" },
+          { prompt: "Where does lesson 21 point for freelancing and building credits in broadcasting?", options: ["CREW-00 lessons 19 and 20", "Broadcasting lessons 14 and 15", "This course's lessons 2 and 3", "CREW-05 lessons 4 and 5"], correctIndex: 1, explanation: "Lesson 21: \"14 · Internships, freelancing, and building credits\" and \"15 · Unions, networking, and landing the first job.\"", sourceLessonSlug: "applying-and-how-you-are-employed" },
+          { prompt: "How many pay units did lesson 18 show, which lesson 21 recalls?", options: ["Two, hourly and yearly", "One, since all are hourly", "Six, across seven postings", "Ten, one for each league"], correctIndex: 2, explanation: "Lesson 21 recalls lesson 18: six units, including \"not stated,\" across seven postings.", sourceLessonSlug: "applying-and-how-you-are-employed" },
+          { prompt: "What does the Sofia posting expect of its consultants' availability?", options: ["Only on match weekends", "One day each fortnight", "Only during tournaments", "At least 4 days per week"], correctIndex: 3, explanation: "Hawk-Eye Innovations (2026h): consultants \"are expected to be available for at least 4 days per week.\"", sourceLessonSlug: "applying-and-how-you-are-employed" },
+        ],
+      },
+    },
   ],
 };
