@@ -23,7 +23,7 @@ member is handed and the thing every CREW course assumes.
 3. **Camera cables:** triax and the SMPTE ST 311 hybrid fiber cable with ST 304 connectors (two single-mode
    fibers for video, copper for power and data); tactical fiber; what a camera control unit does at the other end.
 4. **Fiber:** single-mode versus multimode, LC, SC and ST, inspection and cleaning, loss budgets, bend radius,
-   laser safety; link to CREW-05's fiber section rather than repeat it.
+   laser safety; link to CREW-05's three fiber lessons rather than repeat them.
 5. **Audio over copper:** balanced XLR (3-pin), TRS and TS, the 4-pin XLR of intercom, 5-pin DMX beside it and
    why they must not be swapped; AES3 digital audio on 110-ohm XLR and AES3-id on 75-ohm BNC; word clock; MADI.
 6. **Audio and video over the network:** Cat5e, Cat6 and Cat6a; what Dante needs from a switch; ST 2110 on the
@@ -48,10 +48,11 @@ CREW-02 and CREW-05. Public, held until the reviewers sign off.
 
 ## 4. Connections
 
-- `sound-craft` (CREW-02): Dante named; three fiber lessons (`fiber-on-the-map`, `where-to-learn-fiber`,
-  `a-fiber-kit-and-first-lab`): link, do not repeat.
-- `arena-transmission` (CREW-05): ST 2110, multicast, fiber handling, PTP. This course is the copper and
-  connector floor under it.
+- `sound-craft` (CREW-02): cable care in `kit-and-site-survey`; no Dante, no fiber (corrected 2026-10-26: an
+  earlier draft of this brief said otherwise).
+- `arena-transmission` (CREW-05): ST 2110, multicast, fiber handling, PTP, and the three fiber lessons
+  (`fiber-on-the-map`, `where-to-learn-fiber`, `a-fiber-kit-and-first-lab`): link, do not repeat. This course is
+  the copper and connector floor under it.
 - `cinema-look-camera-rig` (CREW-04): XLR and HDMI named in passing. `renting-out-production-gear` (CREW-06):
   XLR and HDMI in inventory lists. `stage-and-broadcast-rigging` (CREW-01): cable runs over rigging.
 - `broadcasting-break-in`: `signal-flow-and-audio` (prerequisite).
