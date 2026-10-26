@@ -42,6 +42,18 @@ jobs:
       - name: Install
         run: pnpm install --frozen-lockfile
 
+      # tsconfig.json has `incremental: true`, so tsc writes tsconfig.tsbuildinfo and on the next run
+      # re-checks only files that changed. CI threw that file away every run and re-checked all 325
+      # course data files each time (2026-10-25). Restoring the newest build-info keeps PR checks to
+      # what changed; a fresh key per commit saves the updated file for the next run.
+      - name: Restore type-check build info
+        uses: actions/cache@v4
+        with:
+          path: tsconfig.tsbuildinfo
+          key: tsbuildinfo-${{ runner.os }}-${{ hashFiles('pnpm-lock.yaml', 'tsconfig.json') }}-${{ github.sha }}
+          restore-keys: |
+            tsbuildinfo-${{ runner.os }}-${{ hashFiles('pnpm-lock.yaml', 'tsconfig.json') }}-
+
       # Runs `next typegen` before `tsc --noEmit`, so route types exist on a fresh checkout.
       - name: Typecheck
         run: pnpm typecheck

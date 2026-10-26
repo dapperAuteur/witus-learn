@@ -249,6 +249,7 @@ const BACKLOG: Record<string, string> = {
   "sound-craft": "UNMAPPED for now: a career-craft course; NGSS waves (PS4) is the candidate once the lessons are written",
   "light-on-set": "UNMAPPED for now: a career-craft course; NGSS waves and light (PS4) is the candidate once the lessons are written",
   "cinema-look-camera-rig": "UNMAPPED for now: a career-craft course (CREW-04), all eight sections written 2026-10-22; NGSS waves and light (PS4) for depth of field and wireless transmission, or a CTE A/V technology framework, are the candidates to map next",
+  "cables-and-connectors": "UNMAPPED for now: a career-craft course (CREW-00), all nine sections written 2026-10-26; NGSS waves and electromagnetic radiation (PS4) or a CTE A/V technology framework are the candidates to map next",
   "arena-transmission": "UNMAPPED for now: a career-craft course (CREW-05), all seven sections written; a CTE information technology or A/V technology framework (networking) is the candidate mapping, not yet analysed",
   "renting-out-production-gear": "UNMAPPED for now: a career-craft business course; a CTE framework (business management, or arts, A/V technology and communications) or a personal-finance standard is the candidate, not yet searched",
   "raising-animals-for-yarn": "OUT OF SCOPE, practical husbandry, no academic standard claimed (BAM's brief of 2026-10-06, like knot-tying)",

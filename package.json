@@ -4,7 +4,7 @@
   "private": true,
   "scripts": {
     "audit:course": "tsx scripts/audit-course.ts",
-    "build": "next build --webpack",
+    "build": "NODE_OPTIONS=--max-old-space-size=6144 next build --webpack",
     "check:assessment-fit": "tsx scripts/check-assessment-fit.ts",
     "check:citations": "tsx scripts/check-citations.ts",
     "check:course-index": "tsx scripts/gen-course-index.ts --check",

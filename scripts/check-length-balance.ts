@@ -59,7 +59,6 @@ function rankOf(lens: number[], correct: number): number {
  * the progress bar. Do not add to this list to make new content pass.
  */
 const GRANDFATHERED: Record<string, number> = {
-  "scripts/data/acting-course.ts": 1.00,
   "scripts/data/ai-l2-detecting-ai-course.ts": 1.00,
   "scripts/data/banking-and-the-unbanked-course.ts": 1.00,
   "scripts/data/cash-flow-timing-course.ts": 1.00,
@@ -67,7 +66,6 @@ const GRANDFATHERED: Record<string, number> = {
   "scripts/data/construction-safety-course.ts": 0.97,
   "scripts/data/credit-decisions-course.ts": 1.00,
   "scripts/data/crochet-course.ts": 0.53,
-  "scripts/data/dance-credit-course.ts": 0.97,
   "scripts/data/deaf-america-course.ts": 0.86,
   "scripts/data/drew-blood-bank-course.ts": 1.00,
   "scripts/data/esther-lederberg-course.ts": 1.00,
@@ -75,14 +73,8 @@ const GRANDFATHERED: Record<string, number> = {
   "scripts/data/how-the-trades-work-course.ts": 1.00,
   "scripts/data/how-we-know-whats-out-there-course.ts": 1.00,
   "scripts/data/keeping-a-house-course.ts": 1.00,
-  "scripts/data/naacp-learned-to-win-course.ts": 0.90,
   "scripts/data/photography-credit-course.ts": 1.00,
-  "scripts/data/read-the-plan-and-the-code-course.ts": 1.00,
-  "scripts/data/retirement-accounts-course.ts": 1.00,
-  "scripts/data/she-took-the-seat-course.ts": 1.00,
-  "scripts/data/shirley-graham-course.ts": 0.95,
   "scripts/data/survival-course.ts": 1.00,
-  "scripts/data/taxes-and-filing-course.ts": 1.00,
   "scripts/data/the-match-course.ts": 0.97,
   "scripts/data/the-river-and-the-watershed-course.ts": 0.85,
   "scripts/data/well-coaching-psychology-course.ts": 0.58,

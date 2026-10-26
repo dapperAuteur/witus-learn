@@ -57,6 +57,7 @@ import { CROCHET_COURSE } from "./data/crochet-course";
 import { CROQUET_COURSE } from "./data/croquet-course";
 import { SURVIVAL_COURSE } from "./data/survival-course";
 import { MANURE_AND_COMPOST_COURSE } from "./data/manure-and-compost-course";
+import { CABLES_AND_CONNECTORS_COURSE } from "./data/cables-and-connectors-course";
 import { STAGE_AND_BROADCAST_RIGGING_COURSE } from "./data/stage-and-broadcast-rigging-course";
 import { SOUND_CRAFT_COURSE } from "./data/sound-craft-course";
 import { LIGHT_ON_SET_COURSE } from "./data/light-on-set-course";
@@ -3483,6 +3484,28 @@ async function main() {
   // light for stage, set and broadcast crews. Public, each held until a named qualified reviewer has read
   // the lessons marked QR (research tier 2 where the brief says so). Briefs and dossiers:
   // plans/future-courses/careers-and-media/.
+  // CREW-00, approved by BAM 2026-10-26 (cloud-briefs/crew-00/00-approved-brief.md): the series'
+  // foundation, what each cable on a truck, stage or arena floor carries, its connectors, reach, faults
+  // and what must never be plugged into it. Public, held for a qualified reviewer: a broadcast engineer
+  // for sections 1 to 6, 8 and 9, and a stage electrician for section 7. Research tier 2: section 7 is
+  // electrical safety. Written in two passes on 2026-10-26: all nine sections, 29 lessons, the
+  // hands-on capstone (held for a practitioner's model-answer video) and the final quiz.
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "cables-and-connectors",
+    course: CABLES_AND_CONNECTORS_COURSE,
+    category: "Careers & Media",
+    additionalCategories: ["Trade Skills", "Sports"],
+    seriesSlug: "the-crew-behind-the-show",
+    seriesTitle: "The Crew Behind the Show",
+    seriesOrder: 0,
+    seriesCode: "CREW",
+    seriesPosition: "00",
+    navigationMode: "linear",
+    publishHoldReason:
+      "Held: needs a qualified reviewer (a broadcast engineer, and a stage electrician for the power section) to read every lesson marked QR, with authority to change or cut it. Research tier 2: electrical safety, and laser safety in the fiber lessons.",
+  });
   await seedAuthoredCourse(db, {
     tenantId: learnWitus,
     instructorId,

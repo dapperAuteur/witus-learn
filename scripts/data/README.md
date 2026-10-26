@@ -158,6 +158,7 @@
 - [`knot-tying`](./knots-course.ts) Knot-Tying & Rope Work · FIBRE-01 (from-fiber-to-fabric)
 - [`making-string`](./making-string-course.ts) Making String · FIBRE-00 (from-fiber-to-fabric)
 - [`arena-transmission`](./arena-transmission-course.ts) Arena transmission: how a game leaves the building · CREW-05 (the-crew-behind-the-show) · listed here as an extra category; primary: Careers & Media
+- [`cables-and-connectors`](./cables-and-connectors-course.ts) Cables and Connectors · CREW-00 (the-crew-behind-the-show) · listed here as an extra category; primary: Careers & Media
 - [`cinema-look-camera-rig`](./cinema-look-camera-rig-course.ts) Cinema-look camera rig · CREW-04 (the-crew-behind-the-show) · listed here as an extra category; primary: Careers & Media
 - [`light-on-set`](./light-on-set-course.ts) Light on Set · CREW-03 (the-crew-behind-the-show) · listed here as an extra category; primary: Careers & Media
 - [`raising-animals-for-yarn`](./raising-animals-for-yarn-course.ts) Raising Animals for Yarn · LOOP-03 (the-calorie-loop) · listed here as an extra category; primary: Farm & Garden
@@ -188,6 +189,7 @@
 - [`acting`](./acting-course.ts) Acting: The Frame, the Stage, and the Read · PERFORM-00 (perform)
 - [`arena-transmission`](./arena-transmission-course.ts) Arena transmission: how a game leaves the building · CREW-05 (the-crew-behind-the-show) · also in: Sports, Trade Skills
 - [`broadcasting-break-in`](./broadcasting-course.ts) Break Into Sports & Media Broadcasting
+- [`cables-and-connectors`](./cables-and-connectors-course.ts) Cables and Connectors · CREW-00 (the-crew-behind-the-show) · also in: Trade Skills, Sports
 - [`cinema-look-camera-rig`](./cinema-look-camera-rig-course.ts) Cinema-look camera rig · CREW-04 (the-crew-behind-the-show) · also in: Sports, Trade Skills
 - [`how-the-trades-work`](./how-the-trades-work-course.ts) How the Trades Work: Journeyman, Apprentice, and Who Actually Decides · private · also in: Money & Property
 - [`light-on-set`](./light-on-set-course.ts) Light on Set · CREW-03 (the-crew-behind-the-show) · also in: Trade Skills
@@ -288,6 +290,7 @@
 - [`pickleball`](./pickleball-course.ts) Pickleball: Play It, Question It, Build With It
 - [`tennis`](./tennis-course.ts) Tennis: Play It, Read It, Work In It
 - [`arena-transmission`](./arena-transmission-course.ts) Arena transmission: how a game leaves the building · CREW-05 (the-crew-behind-the-show) · listed here as an extra category; primary: Careers & Media
+- [`cables-and-connectors`](./cables-and-connectors-course.ts) Cables and Connectors · CREW-00 (the-crew-behind-the-show) · listed here as an extra category; primary: Careers & Media
 - [`cinema-look-camera-rig`](./cinema-look-camera-rig-course.ts) Cinema-look camera rig · CREW-04 (the-crew-behind-the-show) · listed here as an extra category; primary: Careers & Media
 
 ### Travel & Living Abroad

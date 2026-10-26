@@ -191,10 +191,10 @@ The Construction Math reference is to this catalog's own course file, lesson 8 (
           {
             prompt: "Which two documents does this course say govern a house?",
             options: [
-              "The drawing set and the adopted code",
-              "The mortgage agreement and the deed recorded with the county, which together fix what may lawfully be built",
-              "The contractor's written estimate and the homeowner's insurance policy, read side by side",
-              "The manufacturer's warranty on the roof covering and the utility's service agreement",
+              "The drawing set for this one building and the code its jurisdiction adopted",
+              "The mortgage agreement and the recorded deed",
+              "The contractor's estimate and the homeowner's insurance policy",
+              "The roof warranty and the utility's service agreement",
             ],
             correctIndex: 0,
             explanation:
@@ -204,10 +204,10 @@ The Construction Math reference is to this catalog's own course file, lesson 8 (
           {
             prompt: "What question does a drawing set answer?",
             options: [
-              "What is this particular building",
+              "What is this particular building, as prepared and revised for one project",
               "What is the least any building in this jurisdiction is allowed to be, expressed as enforceable minimums",
-              "Which contractor is licensed to perform the work described, and in which trades",
-              "Whether the finished structure will appraise at or above the amount borrowed to build it",
+              "Which contractor is licensed to perform the work",
+              "Whether the finished house will appraise",
             ],
             correctIndex: 0,
             explanation:
@@ -219,7 +219,7 @@ The Construction Math reference is to this catalog's own course file, lesson 8 (
             options: [
               "The minimum any building here must meet",
               "Where the windows go in this house and what size the footing under this particular pier is",
-              "Which sheets belong in the set and in what order the draftsman prepared them",
+              "Which sheets go in the set",
               "How much the work described on the drawings should cost in this market this year",
             ],
             correctIndex: 0,
@@ -243,10 +243,10 @@ The Construction Math reference is to this catalog's own course file, lesson 8 (
           {
             prompt: "Which sentence in Construction Math does this course exist to answer?",
             options: [
-              "Its lesson 8 Sources note",
-              "Its lesson 7 statement that a flexible tape may be graduated in tenths and hundredths of a foot",
+              "Its lesson 8 Sources note, which defers the governing spacing to the drawings and the adopted code",
+              "Its lesson 7 note on tapes graduated in tenths of a foot",
               "Its lesson 13 note that a circle's area uses the radius rather than the diameter",
-              "Its header comment stating that nothing in the file is reproduced from an NCCER workbook",
+              "Its header note on the NCCER workbook",
             ],
             correctIndex: 0,
             explanation:
@@ -256,10 +256,10 @@ The Construction Math reference is to this catalog's own course file, lesson 8 (
           {
             prompt: "What layout does Construction Math lesson 8 teach without citing a code?",
             options: [
-              "16 inches on center",
-              "A 24 inch spacing derived from the span tables published for engineered floor systems",
+              "16 inches on center, shown with its arithmetic as a common layout",
+              "A 24 inch spacing from engineered floor span tables",
               "A 12 inch spacing measured from the outside face of the plate rather than from a centre",
-              "A spacing chosen to suit the width of the sheathing actually delivered to the site",
+              "A spacing chosen to suit the sheathing delivered",
             ],
             correctIndex: 0,
             explanation:
@@ -269,10 +269,10 @@ The Construction Math reference is to this catalog's own course file, lesson 8 (
           {
             prompt: "Why is the first stud mark on a 16 inch on-center wall made at 15 1/4 inches?",
             options: [
-              "Half a stud's thickness backs it off",
+              "Half a stud's thickness backs it off, so the centre lands at 16",
               "Because the plate is cut 3/4 of an inch short at each end to allow the sheathing to lap past it",
               "Because a tape hooked at the end of a plate reads 3/4 of an inch heavy under a 10 pound load",
-              "Because the sheet edge lands 3/4 of an inch inside the framing on every standard panel",
+              "Because the sheet edge sits 3/4 inch inside",
             ],
             correctIndex: 0,
             explanation:
@@ -282,10 +282,10 @@ The Construction Math reference is to this catalog's own course file, lesson 8 (
           {
             prompt: "Give one reason beyond copyright that this course teaches you to find a code provision rather than printing one.",
             options: [
-              "A printed number expires quietly",
-              "Because printed tables are harder to read on a phone than a link to the publisher's own website is",
-              "Because most learners already own a current copy of the model code their state adopted",
-              "Because a jurisdiction will not answer a question from anyone who has not bought the book first",
+              "A printed number expires quietly once the adopted edition or its amendments move",
+              "Because printed tables are hard to read on a phone",
+              "Because most learners already own the model code",
+              "Because a jurisdiction answers only those who bought the book",
             ],
             correctIndex: 0,
             explanation:
@@ -308,10 +308,10 @@ The Construction Math reference is to this catalog's own course file, lesson 8 (
           {
             prompt: "Which is true of a drawing that meets the adopted code?",
             options: [
-              "It can still be the wrong house for you",
-              "It is automatically approved for a permit in any jurisdiction that adopted the same model code",
+              "It can still be the wrong house for you, since the code only sets a floor",
+              "It is automatically approved for a permit anywhere",
               "It no longer needs a written specification, because the code supplies the missing workmanship rules",
-              "It cannot fail an inspection, because the inspector checks against the same code it met",
+              "It cannot fail an inspection",
             ],
             correctIndex: 0,
             explanation:
@@ -321,9 +321,9 @@ The Construction Math reference is to this catalog's own course file, lesson 8 (
           {
             prompt: "What sits on top of the model text in a jurisdiction that has adopted a code?",
             options: [
-              "The jurisdiction's own amendments",
+              "The jurisdiction's own amendments, which govern over the model text",
               "The publisher's errata sheets, which correct printing mistakes in the edition that was adopted",
-              "The designer's general notes, which govern wherever the adopted text is silent",
+              "The designer's general notes",
               "The inspector's written field directions, which become part of the code once issued",
             ],
             correctIndex: 0,
@@ -334,10 +334,10 @@ The Construction Math reference is to this catalog's own course file, lesson 8 (
           {
             prompt: "Which sections of this course cover the adopted code?",
             options: [
-              "Sections 4 and 5",
-              "Sections 2 and 3, which read the drawing set sheet by sheet from the Navy manual",
-              "Section 6 alone, since the permit is the only place the code is actually enforced",
-              "Section 7 alone, since the code is only ever reached through the learner's own address",
+              "Sections 4 and 5, which take up the model code and its adoption",
+              "Sections 2 and 3, on the drawing set",
+              "Section 6 alone, on the permit",
+              "Section 7 alone, on your own address",
             ],
             correctIndex: 0,
             explanation:
@@ -362,8 +362,8 @@ The Construction Math reference is to this catalog's own course file, lesson 8 (
             options: [
               "Honest, and leaving the learner holding nothing",
               "Mistaken, since the spacing in question is fixed nationally and does not vary by jurisdiction",
-              "Unnecessary, since the arithmetic in that lesson already settles the governing spacing",
-              "Temporary, since the spacing table was due to be printed in a later revision of that course",
+              "Unnecessary",
+              "Temporary, pending a later revision",
             ],
             correctIndex: 0,
             explanation:
@@ -376,7 +376,7 @@ The Construction Math reference is to this catalog's own course file, lesson 8 (
               "A code a private organisation writes and sells",
               "A federal regulation published in the Code of Federal Regulations and enforced nationwide",
               "A draft code a state agency circulates for comment before it writes its own from scratch",
-              "A code that applies only to model homes and other structures built for display",
+              "A code for model homes only",
             ],
             correctIndex: 0,
             explanation:
@@ -386,10 +386,10 @@ The Construction Math reference is to this catalog's own course file, lesson 8 (
           {
             prompt: "What is adoption, in the sense this course uses the word?",
             options: [
-              "A government making an edition enforceable",
-              "A publisher releasing the next edition of a model code after its committee cycle closes",
-              "A contractor agreeing in writing to build to a standard the owner has selected",
-              "A building department deciding to keep a reference copy of a code on its counter",
+              "A government making a named edition of a model code enforceable in its territory",
+              "A publisher releasing the next edition",
+              "A contractor agreeing in writing to build to a standard",
+              "A building department keeping a reference copy",
             ],
             correctIndex: 0,
             explanation:
@@ -412,10 +412,10 @@ The Construction Math reference is to this catalog's own course file, lesson 8 (
           {
             prompt: "Why will this course not say whether your job needs a permit?",
             options: [
-              "Only the issuing jurisdiction can answer",
+              "Only the issuing jurisdiction can answer, for your address and your work",
               "Because permit requirements are federal, and a state course has no authority to interpret them",
-              "Because the answer depends on the contractor's licence class rather than on the work itself",
-              "Because a permit is required for every job, so the question never actually arises",
+              "Because it depends on the contractor's licence class",
+              "Because every job needs one",
             ],
             correctIndex: 0,
             explanation:
@@ -425,10 +425,10 @@ The Construction Math reference is to this catalog's own course file, lesson 8 (
           {
             prompt: "What does this course cite instead of code text?",
             options: [
-              "Addresses",
+              "Addresses: rule, section, edition and printing",
               "Photographs of the relevant pages, which carry the text without reproducing it in type",
               "Close paraphrases written in the course's own words, so no sentence is reproduced",
-              "Summaries prepared by trade associations, which are free to circulate",
+              "Trade association summaries",
             ],
             correctIndex: 0,
             explanation:
@@ -438,10 +438,10 @@ The Construction Math reference is to this catalog's own course file, lesson 8 (
           {
             prompt: "What does 17 U.S.C. 105 say about works of the United States Government?",
             options: [
-              "Copyright protection is not available for them",
-              "They may be reproduced for non-commercial purposes only, with attribution to the issuing agency",
-              "They enter the public domain seventy years after the death of the officer who prepared them",
-              "They are protected, but agencies are directed to license them at no charge on request",
+              "Copyright protection under this title is not available for any of them",
+              "Non-commercial reproduction only, with attribution",
+              "They enter the public domain after seventy years",
+              "They are protected but licensed free on request",
             ],
             correctIndex: 0,
             explanation:
@@ -451,10 +451,10 @@ The Construction Math reference is to this catalog's own course file, lesson 8 (
           {
             prompt: "What line do the Navy nonresident training manuals used here carry on their front matter?",
             options: [
-              "Distribution Statement A",
+              "Distribution Statement A: approved for public release, distribution unlimited",
               "A notice reserving all rights to the Naval Education and Training Command and its contractors",
-              "A licence permitting reproduction for classroom use by accredited institutions only",
-              "A restriction limiting distribution to Department of Defense components and their contractors",
+              "A licence for classroom use only",
+              "A restriction to Department of Defense components",
             ],
             correctIndex: 0,
             explanation:
@@ -467,7 +467,7 @@ The Construction Math reference is to this catalog's own course file, lesson 8 (
               "NAVEDTRA 14043 and NAVEDTRA 14040",
               "NAVEDTRA 14044 and NAVEDTRA 14069, the second and third volumes of the Builder series",
               "NAVEDTRA 10629-1, Engineering Aid 3 & 2 Volume 3, together with MIL-HDBK-1006/1",
-              "NAVEDTRA 14027 and NAVEDTRA 14256, the Steelworker and Utilitiesman manuals",
+              "NAVEDTRA 14027 and 14256",
             ],
             correctIndex: 0,
             explanation:
@@ -490,10 +490,10 @@ The Construction Math reference is to this catalog's own course file, lesson 8 (
           {
             prompt: "Why does the course say dates are part of the content?",
             options: [
-              "A state can readopt or amend without telling you",
-              "Because model code publishers release a new edition every year on a fixed schedule",
-              "Because a permit expires on a schedule set by the state rather than by the local office",
-              "Because a drawing set is only valid for the calendar year in which it was sealed",
+              "A state can readopt or amend without telling you, so every fact carries its check date",
+              "Because publishers release a new edition every year",
+              "Because permits expire on a state schedule",
+              "Because a drawing set is valid for one year",
             ],
             correctIndex: 0,
             explanation:
@@ -505,8 +505,8 @@ The Construction Math reference is to this catalog's own course file, lesson 8 (
             options: [
               "The government whose rules govern an address",
               "The geographic area a single building inspector is assigned to cover during a working week",
-              "The trade association whose technical bulletins a designer chose to follow on a project",
-              "The court that would hear a dispute between an owner and a contractor over the work",
+              "A trade association",
+              "A court of law",
             ],
             correctIndex: 0,
             explanation:
@@ -531,7 +531,7 @@ The Construction Math reference is to this catalog's own course file, lesson 8 (
             options: [
               "Wrong code claims spreading",
               "A faster answer that is usually correct, since paraphrases simplify rather than change meaning",
-              "A licensing problem, because paraphrasing a copyrighted code is itself an infringement",
+              "A licence problem",
               "An answer that binds the jurisdiction, because the paraphrase was published in good faith",
             ],
             correctIndex: 0,
@@ -542,10 +542,10 @@ The Construction Math reference is to this catalog's own course file, lesson 8 (
           {
             prompt: "Which of these will a learner be able to do at the end of the course?",
             options: [
-              "Find the rule that made a code law at their address",
-              "Determine without contacting anyone whether a planned renovation requires a permit",
-              "Certify that a set of drawings complies with the residential code their state adopted",
-              "Issue a written finding that a house is safe to occupy after a remodel",
+              "Find the rule that made a code law at their address, with its date",
+              "Decide alone whether a renovation needs a permit",
+              "Certify a set of drawings as code compliant",
+              "Declare a house safe to occupy",
             ],
             correctIndex: 0,
             explanation:
@@ -557,8 +557,8 @@ The Construction Math reference is to this catalog's own course file, lesson 8 (
             options: [
               "Which of the two documents someone is quoting",
               "Whether the contractor or the owner selected the materials the finished work actually used",
-              "Whether the work was done in the order the schedule set out at the start of the project",
-              "How much of the original estimate the change orders have added since the job began",
+              "The order the work was done in",
+              "The cost of the change orders",
             ],
             correctIndex: 0,
             explanation:
@@ -584,7 +584,7 @@ The Construction Math reference is to this catalog's own course file, lesson 8 (
               "None of the things that actually govern your wall",
               "A convenient shortcut that most learners would prefer to a search of their state's rules",
               "An accurate statement of the national minimum, since the model codes agree on that figure",
-              "A reasonable substitute for the drawings, since drawings follow the table anyway",
+              "A substitute for the drawings",
             ],
             correctIndex: 0,
             explanation:
@@ -594,10 +594,10 @@ The Construction Math reference is to this catalog's own course file, lesson 8 (
           {
             prompt: "Who prepares the drawing set's answer to what a particular building is?",
             options: [
-              "The designer of that project",
-              "The model code committee that writes the edition the jurisdiction later adopts",
-              "The building department, which drafts a set for each permit it issues",
-              "The state agency that files the adoption rule in the administrative code",
+              "The designer of that project, preparing a set specific to it",
+              "The model code committee",
+              "The building department",
+              "The state agency that files the adoption rule",
             ],
             correctIndex: 0,
             explanation:
@@ -607,10 +607,10 @@ The Construction Math reference is to this catalog's own course file, lesson 8 (
           {
             prompt: "Which document does the course say does not know where your window goes?",
             options: [
-              "The adopted code",
+              "The adopted code, which is about every house in the jurisdiction",
               "The floor plan, which shows widths and locations of doors and windows at that level",
-              "The elevation, which keys each window to a letter in the window schedule",
-              "The specification, which fixes the quality of the window to be supplied",
+              "The elevation",
+              "The specification",
             ],
             correctIndex: 0,
             explanation:
@@ -635,7 +635,7 @@ The Construction Math reference is to this catalog's own course file, lesson 8 (
             options: [
               "The written document beside the drawings",
               "The list of code sections a designer relied on when preparing a set of drawings",
-              "The schedule of values a contractor submits to support a request for payment",
+              "The schedule of values",
               "The manufacturer's data sheet for a product installed in the finished building",
             ],
             correctIndex: 0,
@@ -646,10 +646,10 @@ The Construction Math reference is to this catalog's own course file, lesson 8 (
           {
             prompt: "What is an amendment, in the vocabulary of section 1?",
             options: [
-              "A change a government writes into a model code",
-              "A correction the publisher issues to a printing after errors are found in it",
-              "A revision a designer makes to a sheet after the permit has been issued",
-              "A waiver an inspector grants on site when the adopted text cannot be met",
+              "A change a government writes into a model code on adopting it",
+              "A publisher's correction to a printing",
+              "A designer's revision after the permit",
+              "An inspector's on-site waiver",
             ],
             correctIndex: 0,
             explanation:
@@ -674,8 +674,8 @@ The Construction Math reference is to this catalog's own course file, lesson 8 (
             options: [
               "Telling someone where to read it",
               "Reproducing the section's text in a handout so a crew does not have to look it up",
-              "Selling a compiled copy of the sections a project relies on to the owner",
-              "Publishing a close paraphrase of the section under the course's own name",
+              "Selling a compiled copy",
+              "Paraphrasing it",
             ],
             correctIndex: 0,
             explanation:
@@ -685,9 +685,9 @@ The Construction Math reference is to this catalog's own course file, lesson 8 (
           {
             prompt: "What does the course say about being told a permit will be approved?",
             options: [
-              "It does not tell you that",
+              "It does not tell you that, nor approve or issue one",
               "It tells you that approval follows automatically once the drawings match the adopted edition",
-              "It tells you that approval is guaranteed for work below a fixed dollar threshold",
+              "Approval is guaranteed",
               "It tells you that approval is the inspector's decision rather than the department's",
             ],
             correctIndex: 0,
@@ -698,10 +698,10 @@ The Construction Math reference is to this catalog's own course file, lesson 8 (
           {
             prompt: "Which body of material does the course say none of its content comes from?",
             options: [
-              "Trade books",
-              "Federal publications, which carry restrictions that make them unusable in a tracked repository",
-              "State administrative rules, which are too jurisdiction-specific to teach from",
-              "Building department web pages, which are not authoritative enough to cite",
+              "Trade books, as against the Navy manuals and public rules it uses",
+              "Federal publications",
+              "State administrative rules",
+              "Building department web pages",
             ],
             correctIndex: 0,
             explanation:
@@ -713,8 +713,8 @@ The Construction Math reference is to this catalog's own course file, lesson 8 (
             options: [
               "Know what each sheet is for and where the numbers live",
               "Certify the set as complete and suitable for submission to a building department",
-              "Reproduce the set at a different scale for use by a subcontractor on site",
-              "Determine the finished market value of the building the set describes",
+              "Redraw the set at another scale",
+              "Value the building",
             ],
             correctIndex: 0,
             explanation:
@@ -739,7 +739,7 @@ The Construction Math reference is to this catalog's own course file, lesson 8 (
             options: [
               "Liking it does not make it compliant",
               "It cannot happen, because an inspector checks appearance only after the code items pass",
-              "It means the drawings must have been revised without the department being told",
+              "The drawings were revised",
               "It means the adopted code in that jurisdiction is stricter than the model text",
             ],
             correctIndex: 0,
@@ -750,10 +750,10 @@ The Construction Math reference is to this catalog's own course file, lesson 8 (
           {
             prompt: "What does section 6 of this course cover?",
             options: [
-              "The permit and the inspection sequence",
-              "The written specification and the sixteen divisions it is organised into",
-              "Scale, dimensions, and the reason a drawing should never be measured",
-              "The learner's own state adoption rule and what to write down about it",
+              "The permit and the inspection sequence, when somebody comes to look at the work",
+              "The specification and its divisions",
+              "Scale and dimensions",
+              "The learner's own state adoption rule",
             ],
             correctIndex: 0,
             explanation:
@@ -765,8 +765,8 @@ The Construction Math reference is to this catalog's own course file, lesson 8 (
             options: [
               "It sets a floor, not a description",
               "It describes the typical house in the jurisdiction and expects yours to match it closely",
-              "It is drafted from the drawings most commonly submitted to that building department",
-              "It replaces the drawings entirely once a permit has been issued for the work",
+              "It mirrors local drawings",
+              "It replaces the drawings",
             ],
             correctIndex: 0,
             explanation:
@@ -791,7 +791,7 @@ The Construction Math reference is to this catalog's own course file, lesson 8 (
             options: [
               "A public state administrative rule",
               "A privately published model code sold by the organisation that drafted it",
-              "A federal regulation published in the Code of Federal Regulations",
+              "A federal regulation",
               "An internal guidance memorandum issued to inspectors by a building department",
             ],
             correctIndex: 0,
@@ -802,10 +802,10 @@ The Construction Math reference is to this catalog's own course file, lesson 8 (
           {
             prompt: "What does the course say a method has that a number does not?",
             options: [
-              "It keeps working after the answer moves",
-              "It can be printed in a tracked repository without raising a rights question of any kind",
-              "It produces the same result in every jurisdiction, which a number cannot",
-              "It is faster to apply than looking a number up in a table would be",
+              "It keeps working after the answer moves, so you can find it again",
+              "It can be printed without a rights question",
+              "It gives one result in every jurisdiction",
+              "It is faster than a table",
             ],
             correctIndex: 0,
             explanation:
@@ -817,8 +817,8 @@ The Construction Math reference is to this catalog's own course file, lesson 8 (
             options: [
               "Drawings, specification, adopted code",
               "Permit application, inspection record, and certificate of occupancy issued at the end",
-              "Estimate, contract, and change orders agreed as the work proceeds",
-              "Site plan, plot plan, and foundation plan, in the order a set presents them",
+              "Bid, contract, invoice",
+              "Site, plot, foundation plan",
             ],
             correctIndex: 0,
             explanation:
@@ -940,10 +940,10 @@ U.S. Navy. (1993, March). *Builder 3 & 2, Volume 1* (NAVEDTRA 14043) [Nonresiden
           {
             prompt: "How does the Navy manual describe what a set of related drawings gives the builder?",
             options: [
-              "A complete, sequential, graphic description",
-              "An approximate visual record of the designer's intent, to be confirmed on site before work begins",
-              "A legally binding statement of the minimum the adopted code requires of the structure",
-              "A set of alternatives from which the crew leader selects the one best suited to the site",
+              "A complete, sequential, graphic description of each phase of construction",
+              "An approximate record of the designer's intent",
+              "A binding statement of the code minimum",
+              "A set of alternatives for the crew leader",
             ],
             correctIndex: 0,
             explanation:
@@ -953,10 +953,10 @@ U.S. Navy. (1993, March). *Builder 3 & 2, Volume 1* (NAVEDTRA 14043) [Nonresiden
           {
             prompt: "What does a set of drawings usually begin by showing?",
             options: [
-              "The site and its adjoining areas",
+              "The site and its adjoining areas, with boundaries and contours",
               "The foundation walls and footings, since nothing above them can be located until they are fixed",
-              "The finished elevations, because the appearance of the building governs every later choice",
-              "The bill of materials, so the quantities can be ordered before the layout is settled",
+              "The finished elevations",
+              "The bill of materials",
             ],
             correctIndex: 0,
             explanation:
@@ -967,7 +967,7 @@ U.S. Navy. (1993, March). *Builder 3 & 2, Volume 1* (NAVEDTRA 14043) [Nonresiden
             prompt: "Which three main groups of drawings does a construction drawing set incorporate?",
             options: [
               "Architectural, electrical and mechanical",
-              "Structural, civil and landscape, prepared by three separate design disciplines",
+              "Structural, civil and landscape",
               "Preliminary, contract and as-built, produced at three stages of the project",
               "Plan, elevation and section, which are the three ways of viewing the structure",
             ],
@@ -992,10 +992,10 @@ U.S. Navy. (1993, March). *Builder 3 & 2, Volume 1* (NAVEDTRA 14043) [Nonresiden
           {
             prompt: "Which of these does the manual say construction drawings normally include?",
             options: [
-              "The specifications",
-              "The building permit issued by the authority having jurisdiction over the site",
-              "The contractor's schedule of values, broken down by division of the work",
-              "The manufacturer's installation instructions for every product named on the sheets",
+              "The specifications, alongside detail and assembly drawings and a bill of materials",
+              "The building permit",
+              "The contractor's schedule of values",
+              "The manufacturers' installation instructions",
             ],
             correctIndex: 0,
             explanation:
@@ -1007,8 +1007,8 @@ U.S. Navy. (1993, March). *Builder 3 & 2, Volume 1* (NAVEDTRA 14043) [Nonresiden
             options: [
               "The loads members carry and the strength they need",
               "The order in which the trades will be scheduled onto the site once the permit issues",
-              "The commercial terms under which materials will be purchased for the project",
-              "The final appearance of the structure, including the finishes and the colour scheme",
+              "The commercial terms for materials",
+              "The finishes and colour scheme",
             ],
             correctIndex: 0,
             explanation:
@@ -1020,7 +1020,7 @@ U.S. Navy. (1993, March). *Builder 3 & 2, Volume 1* (NAVEDTRA 14043) [Nonresiden
             options: [
               "Draftsmen preparing the construction drawings",
               "Inspectors deciding which stages of the work will require a visit to the site",
-              "Estimators pricing the work before the owner commits to a contract",
+              "Estimators pricing the work",
               "Suppliers determining which products will be stocked for the project",
             ],
             correctIndex: 0,
@@ -1044,10 +1044,10 @@ U.S. Navy. (1993, March). *Builder 3 & 2, Volume 1* (NAVEDTRA 14043) [Nonresiden
           {
             prompt: "Whom does a site plan furnish essential data for, by showing existing and finished contours?",
             options: [
-              "The graders",
-              "The electricians, who set the service entrance from the finished grade at the meter",
-              "The masons, who lay the first course at the finished contour on each elevation",
-              "The roofers, who set the pitch from the difference between the two contour sets",
+              "The graders, for grading the site from existing to finished contours",
+              "The electricians",
+              "The masons",
+              "The roofers, who set the pitch",
             ],
             correctIndex: 0,
             explanation:
@@ -1059,8 +1059,8 @@ U.S. Navy. (1993, March). *Builder 3 & 2, Volume 1* (NAVEDTRA 14043) [Nonresiden
             options: [
               "Survey marks, elevations and grading requirements",
               "The arrangement of rooms at each level, with the widths and locations of doors and windows",
-              "The concealed features of the structure revealed by a vertical cut through it",
-              "The quantity of each material required to complete the work described",
+              "Concealed features in a vertical cut",
+              "Material quantities",
             ],
             correctIndex: 0,
             explanation:
@@ -1070,10 +1070,10 @@ U.S. Navy. (1993, March). *Builder 3 & 2, Volume 1* (NAVEDTRA 14043) [Nonresiden
           {
             prompt: "What are batter boards and line stakes used with?",
             options: [
-              "The plot plan",
+              "The plot plan, to set the building's corners",
               "The finish schedule, to mark out which surfaces receive which material in each room",
               "The framing plan, to mark joist positions along the sill before the joists are set",
-              "The revision block, to record which sheet a field change was taken from",
+              "The revision block",
             ],
             correctIndex: 0,
             explanation:
@@ -1096,10 +1096,10 @@ U.S. Navy. (1993, March). *Builder 3 & 2, Volume 1* (NAVEDTRA 14043) [Nonresiden
           {
             prompt: "What does an architectural or structural floor plan show?",
             options: [
-              "The structural characteristics at that level",
-              "The plumbing and heating systems and other non-electrical mechanical components at that level",
-              "The lighting system and any other electrical systems installed at that level",
-              "The finish material specified for the walls, floors and ceilings at that level",
+              "The structural characteristics at the level of the plane of projection",
+              "The plumbing and heating systems at that level",
+              "The lighting and electrical systems at that level",
+              "The finish materials at that level",
             ],
             correctIndex: 0,
             explanation:
@@ -1110,9 +1110,9 @@ U.S. Navy. (1993, March). *Builder 3 & 2, Volume 1* (NAVEDTRA 14043) [Nonresiden
             prompt: "What does a mechanical floor plan show?",
             options: [
               "Plumbing, heating and other non-electrical systems",
-              "The lighting circuits, switches and outlets serving the rooms at that level",
+              "The lighting circuits at that level",
               "The sizes and spacing of the joists and girders carrying the floor at that level",
-              "The doors, windows and partitions arranged at that level, with their dimensions",
+              "The doors, windows and partitions",
             ],
             correctIndex: 0,
             explanation:
@@ -1125,7 +1125,7 @@ U.S. Navy. (1993, March). *Builder 3 & 2, Volume 1* (NAVEDTRA 14043) [Nonresiden
               "The size, number and location of structural members",
               "The contours of the site before and after grading, with the building outline overlaid",
               "The quality of workmanship required for the installation of doors and windows",
-              "The relationship of the finished building to the boundaries of the lot it sits on",
+              "The building's relation to the lot lines",
             ],
             correctIndex: 0,
             explanation:
@@ -1148,10 +1148,10 @@ U.S. Navy. (1993, March). *Builder 3 & 2, Volume 1* (NAVEDTRA 14043) [Nonresiden
           {
             prompt: "What do wall framing plans show?",
             options: [
-              "How openings are framed, and ceiling heights",
-              "The finish material applied to each wall surface once the framing has been closed in",
-              "The load path from the rafter plate down to the spread footing under each column",
-              "The location of every electrical box and switch to be set in the wall cavity",
+              "How openings are framed, and ceiling heights, so studs and posts can be cut",
+              "The finish on each wall surface",
+              "The load path down to each footing",
+              "The location of every electrical box",
             ],
             correctIndex: 0,
             explanation:
@@ -1163,8 +1163,8 @@ U.S. Navy. (1993, March). *Builder 3 & 2, Volume 1* (NAVEDTRA 14043) [Nonresiden
             options: [
               "An item drawn at a larger scale",
               "A sheet listing every item in the project by mark, with its characteristics in columns",
-              "A sketch prepared by the crew leader on site to convey an idea to the crew",
-              "A view of the building cut vertically to show its concealed construction",
+              "A field sketch",
+              "A vertical cut",
             ],
             correctIndex: 0,
             explanation:
@@ -1175,7 +1175,7 @@ U.S. Navy. (1993, March). *Builder 3 & 2, Volume 1* (NAVEDTRA 14043) [Nonresiden
             prompt: "What does the manual say an assembly drawing provides?",
             options: [
               "A check on the accuracy of the design drawings",
-              "The legal record of what was built, prepared after the work has been completed",
+              "The legal record of what was built",
               "The only dimensions a builder may rely on, since detail drawings are not to scale",
               "An approved alternative to the specification where the two would otherwise conflict",
             ],
@@ -1200,10 +1200,10 @@ U.S. Navy. (1993, March). *Builder 3 & 2, Volume 1* (NAVEDTRA 14043) [Nonresiden
           {
             prompt: "What does the manual say general drawings are drawn on?",
             options: [
-              "A relatively small scale",
-              "A full-size layout taken directly from the plot plan and the survey marks",
-              "The same scale as the details, so that references between them stay exact",
-              "A scale chosen by the crew leader to suit the paper available on site",
+              "A relatively small scale, for its plans and elevations",
+              "A full-size layout",
+              "The same scale as the details",
+              "A scale the crew leader picks",
             ],
             correctIndex: 0,
             explanation:
@@ -1213,10 +1213,10 @@ U.S. Navy. (1993, March). *Builder 3 & 2, Volume 1* (NAVEDTRA 14043) [Nonresiden
           {
             prompt: "What is a plan, as a type of view?",
             options: [
-              "A view from above",
-              "A side or front view of the structure projected on a vertical plane",
+              "A view from above the structure",
+              "A side or front view",
               "A vertical cut through the structure showing its concealed construction",
-              "An enlarged view of one item taken from a general drawing",
+              "An enlarged view",
             ],
             correctIndex: 0,
             explanation:
@@ -1228,7 +1228,7 @@ U.S. Navy. (1993, March). *Builder 3 & 2, Volume 1* (NAVEDTRA 14043) [Nonresiden
             options: [
               "Faces projected on vertical planes",
               "Horizontal slices taken at each floor level and viewed from above",
-              "Enlarged drawings showing how parts are connected and placed",
+              "Enlarged details",
               "Tabular listings of the materials that make up each exterior surface",
             ],
             correctIndex: 0,
@@ -1241,8 +1241,8 @@ U.S. Navy. (1993, March). *Builder 3 & 2, Volume 1* (NAVEDTRA 14043) [Nonresiden
             options: [
               "Height, materials, fastenings and concealed features",
               "Boundaries, contours, roads, utilities and the trees standing near the structure",
-              "The quantity of each material needed, listed by stock number and unit",
-              "The interior finish specified for each room, floor by floor",
+              "Material quantities by stock number",
+              "Room finishes",
             ],
             correctIndex: 0,
             explanation:
@@ -1265,10 +1265,10 @@ U.S. Navy. (1993, March). *Builder 3 & 2, Volume 1* (NAVEDTRA 14043) [Nonresiden
           {
             prompt: "At what scale are sectional views drawn?",
             options: [
-              "Large",
-              "Small, so that the whole building can be shown on one sheet in a single cut",
-              "The same as the general drawings, so that the two can be read together",
-              "Whatever scale remains available once the plans and elevations are laid out",
+              "Large, which aids reading and shows what plans and elevations cannot",
+              "Small, to fit the whole building",
+              "The same as the general drawings",
+              "Whatever scale is left over",
             ],
             correctIndex: 0,
             explanation:
@@ -1281,7 +1281,7 @@ U.S. Navy. (1993, March). *Builder 3 & 2, Volume 1* (NAVEDTRA 14043) [Nonresiden
               "The average condition throughout a structure",
               "The single worst case in the structure, so the detail covers every lesser condition",
               "A condition found in most buildings of that type in the jurisdiction",
-              "The condition the designer expects an inspector to look at first",
+              "What an inspector sees first",
             ],
             correctIndex: 0,
             explanation:
@@ -1293,8 +1293,8 @@ U.S. Navy. (1993, March). *Builder 3 & 2, Volume 1* (NAVEDTRA 14043) [Nonresiden
             options: [
               "How parts are connected and placed",
               "The boundaries and contours of the site on which the structure is placed",
-              "The average condition repeated throughout the structure",
-              "The quantities of material each trade must supply for the work",
+              "The average condition",
+              "Material quantities",
             ],
             correctIndex: 0,
             explanation:
@@ -1317,10 +1317,10 @@ U.S. Navy. (1993, March). *Builder 3 & 2, Volume 1* (NAVEDTRA 14043) [Nonresiden
           {
             prompt: "Which constructions does the manual say are customarily shown in detail drawings?",
             options: [
-              "Doors, windows and eaves",
-              "Footings, piers and pilasters, since their reinforcement cannot be shown in plan",
-              "Roof trusses, since their web members are too small to appear on a framing plan",
-              "Site utilities, since their depths cannot be shown on a plan view",
+              "The construction of doors, windows and eaves",
+              "Footings and piers",
+              "Roof trusses",
+              "Site utilities",
             ],
             correctIndex: 0,
             explanation:
@@ -1332,8 +1332,8 @@ U.S. Navy. (1993, March). *Builder 3 & 2, Volume 1* (NAVEDTRA 14043) [Nonresiden
             options: [
               "So references from the general drawing are easy",
               "So that the trades can be issued only the details that concern their own scope of work",
-              "So that the sheet can be revised without affecting any of the general drawings",
-              "So that the scale used for the details need only be stated once on the sheet",
+              "So the sheet can be revised alone",
+              "So the scale is stated once",
             ],
             correctIndex: 0,
             explanation:
@@ -1343,9 +1343,9 @@ U.S. Navy. (1993, March). *Builder 3 & 2, Volume 1* (NAVEDTRA 14043) [Nonresiden
           {
             prompt: "In the manual's worked example, what are the plan dimensions of the main foundation?",
             options: [
-              "28 feet by 22 feet",
+              "28 feet lengthwise by 22 feet crosswise",
               "24 feet by 18 feet, measured to the outside face of the spread footings under the walls",
-              "32 feet by 26 feet, measured between the centres of the end pilasters",
+              "32 feet by 26 feet",
               "22 feet by 16 feet, measured to the inside face of the 12 inch masonry units",
             ],
             correctIndex: 0,
@@ -1369,10 +1369,10 @@ U.S. Navy. (1993, March). *Builder 3 & 2, Volume 1* (NAVEDTRA 14043) [Nonresiden
           {
             prompt: "What supports the ends of the girder in the manual's foundation plan?",
             options: [
-              "Two concrete pilasters",
-              "Two 18 by 18 inch spread footings cast integrally with the end foundation walls",
-              "Two built-up corner posts made from ordinary studs nailed together",
-              "Two steel bar joists bearing on the end walls at the ledger",
+              "Two 4 by 12 inch concrete pilasters against the end walls",
+              "Two 18 by 18 inch spread footings",
+              "Two built-up corner posts",
+              "Two steel bar joists",
             ],
             correctIndex: 0,
             explanation:
@@ -1384,8 +1384,8 @@ U.S. Navy. (1993, March). *Builder 3 & 2, Volume 1* (NAVEDTRA 14043) [Nonresiden
             options: [
               "The walls rest on spread footings",
               "The walls are to be built only after the interior piers have been set and cured",
-              "The walls shown are existing and are to remain in place during the work",
-              "The walls are drawn at a different scale from the rest of the plan",
+              "The walls are existing",
+              "A different scale",
             ],
             correctIndex: 0,
             explanation:
@@ -1398,7 +1398,7 @@ U.S. Navy. (1993, March). *Builder 3 & 2, Volume 1* (NAVEDTRA 14043) [Nonresiden
               "12 by 8 by 16 inch masonry units",
               "Standard 2 1/2 by 4 by 8 inch face brick laid directly on the concrete footing",
               "4 by 8 by 16 inch masonry units backing a brick veneer above grade",
-              "Cast-in-place concrete formed to the full height of the foundation wall",
+              "Cast-in-place concrete",
             ],
             correctIndex: 0,
             explanation:
@@ -1421,10 +1421,10 @@ U.S. Navy. (1993, March). *Builder 3 & 2, Volume 1* (NAVEDTRA 14043) [Nonresiden
           {
             prompt: "In section B-B, how thick are the side walls?",
             options: [
-              "8 inches",
-              "12 inches for their full height, matching the lower portion of the lengthwise walls",
-              "10 inches, matching the thickness of the concrete footing beneath them",
-              "24 inches, which is the width of the footing they are centred on",
+              "8 inches, centred on a 24 inch concrete footing",
+              "12 inches full height",
+              "10 inches, like the footing",
+              "24 inches",
             ],
             correctIndex: 0,
             explanation:
@@ -1435,8 +1435,8 @@ U.S. Navy. (1993, March). *Builder 3 & 2, Volume 1* (NAVEDTRA 14043) [Nonresiden
             prompt: "What do the hidden lines on the 12 inch wide units in section B-B tell you?",
             options: [
               "The wall beyond the pilaster is 8 inches thick",
-              "The units shown are to be omitted and replaced with cast-in-place concrete",
-              "The units continue below the level of the cut to the top of the footing",
+              "The units are to be omitted",
+              "The units continue below the cut",
               "The units are drawn from a detail on another sheet rather than from the section",
             ],
             correctIndex: 0,
@@ -1450,7 +1450,7 @@ U.S. Navy. (1993, March). *Builder 3 & 2, Volume 1* (NAVEDTRA 14043) [Nonresiden
               "Centre support for the girder",
               "A bearing ledge for the brick veneer to start from at the corner of the building",
               "Additional resistance to the frost heave that would otherwise lift the end wall",
-              "A chase for the plumbing and heating lines rising from the crawl space",
+              "A plumbing chase",
             ],
             correctIndex: 0,
             explanation:
@@ -1473,10 +1473,10 @@ U.S. Navy. (1993, March). *Builder 3 & 2, Volume 1* (NAVEDTRA 14043) [Nonresiden
           {
             prompt: "What is the roof slope in the manual's elevations?",
             options: [
-              "4 inches of rise per 12 inches of length",
-              "6 inches of rise per 12 inches of length, which suits the composition shingles specified",
-              "A slope equal to half that of the bottom chord, as in a scissors truss",
-              "19.2 inches of rise across each 96 inch sheet of roof sheathing",
+              "4 inches of rise per 12 inches of length, on a gable roof",
+              "6 inches of rise per 12 of length",
+              "Half the bottom chord's slope",
+              "19.2 inches of rise per sheet",
             ],
             correctIndex: 0,
             explanation:
@@ -1486,10 +1486,10 @@ U.S. Navy. (1993, March). *Builder 3 & 2, Volume 1* (NAVEDTRA 14043) [Nonresiden
           {
             prompt: "How is each window identified on the manual's elevations?",
             options: [
-              "By a capital letter",
+              "By a capital letter keyed to the window schedule",
               "By a number keyed to the floor on which the window is located in the finished building",
-              "By its rough opening dimensions, written beside it in feet and inches",
-              "By the manufacturer's catalogue number, taken from the specification",
+              "By its rough opening size",
+              "By a catalogue number",
             ],
             correctIndex: 0,
             explanation:
@@ -1502,7 +1502,7 @@ U.S. Navy. (1993, March). *Builder 3 & 2, Volume 1* (NAVEDTRA 14043) [Nonresiden
               "Feet and inches with fractions",
               "Conversion between the international foot and the retired United States survey foot",
               "Calculation of the design live load carried by each horizontal member shown",
-              "Interpolation between the contour intervals drawn on the site plan",
+              "Contour interpolation",
             ],
             correctIndex: 0,
             explanation:
@@ -1525,10 +1525,10 @@ U.S. Navy. (1993, March). *Builder 3 & 2, Volume 1* (NAVEDTRA 14043) [Nonresiden
           {
             prompt: "What sizes does the manual say are used in specifying lumber on framing plans?",
             options: [
-              "Nominal",
-              "Actual dressed sizes, so the layout arithmetic works without converting from a nominal size",
-              "Metric sizes, since framing plans follow the international standards for lumber",
-              "Whatever the supplier has stocked, recorded on the plan after delivery",
+              "Nominal sizes, which differ from actual",
+              "Actual dressed sizes",
+              "Metric sizes",
+              "Supplier's stock sizes",
             ],
             correctIndex: 0,
             explanation:
@@ -1539,8 +1539,8 @@ U.S. Navy. (1993, March). *Builder 3 & 2, Volume 1* (NAVEDTRA 14043) [Nonresiden
             prompt: "What does the framing plan note \"1 in. x 6 in. joists @ 2'-0\\\" cc\" mean?",
             options: [
               "Spaced 2 feet centre to centre",
-              "Spanning 2 feet 0 inches between the supports at each end of the member",
-              "Doubled at every second location along the run of the floor",
+              "Spanning 2 feet",
+              "Doubled",
               "Cut 2 feet 0 inches longer than the clear opening, to bear on the sill at each end",
             ],
             correctIndex: 0,
@@ -1553,7 +1553,7 @@ U.S. Navy. (1993, March). *Builder 3 & 2, Volume 1* (NAVEDTRA 14043) [Nonresiden
             options: [
               "The same way as floor framing plans",
               "As a series of sections cut through the roof at each bearing point along the ridge",
-              "As elevations of the completed roof with the covering shown in place",
+              "As elevations",
               "As details, since rafters are too small to show on a general drawing",
             ],
             correctIndex: 0,
@@ -1577,10 +1577,10 @@ U.S. Navy. (1993, March). *Builder 3 & 2, Volume 1* (NAVEDTRA 14043) [Nonresiden
           {
             prompt: "What is a pilaster?",
             options: [
-              "A thickened portion of a wall carrying a load",
-              "A short vertical member resting directly on a footing or driven into the ground",
-              "A horizontal member carrying the weight of masonry above an opening",
-              "A lengthwise member supporting the peak ends of the rafters in a roof",
+              "A thickened portion of a wall carrying a load, such as the girder",
+              "A short vertical member on a footing",
+              "A member over an opening",
+              "A ridge member under the rafters",
             ],
             correctIndex: 0,
             explanation:
@@ -1592,8 +1592,8 @@ U.S. Navy. (1993, March). *Builder 3 & 2, Volume 1* (NAVEDTRA 14043) [Nonresiden
             options: [
               "The centres of adjacent members",
               "The facing surfaces of adjacent members, which is what a tape hooked on a stud reads",
-              "The centre of the first member and the end of the plate it is set on",
-              "The edges of the sheathing that will span across the members",
+              "Member and plate end",
+              "The sheathing edges",
             ],
             correctIndex: 0,
             explanation:
@@ -1605,7 +1605,7 @@ U.S. Navy. (1993, March). *Builder 3 & 2, Volume 1* (NAVEDTRA 14043) [Nonresiden
             options: [
               "A dashed line showing what is behind the view",
               "A light construction line the draftsman leaves in place to guide later revisions",
-              "A line showing the path of a utility that has not yet been installed",
+              "A future utility path",
               "A line drawn outside the border to mark the zone the drawing belongs to",
             ],
             correctIndex: 0,
@@ -1630,9 +1630,9 @@ U.S. Navy. (1993, March). *Builder 3 & 2, Volume 1* (NAVEDTRA 14043) [Nonresiden
             prompt: "What does the course call the idea that an assembly drawing checks the design drawings?",
             options: [
               "The set is built to disagree with itself where there is a mistake",
-              "A redundancy that modern computer-aided drafting has made unnecessary in practice",
-              "A reason to treat the assembly drawing as the governing document in any conflict",
-              "A courtesy the draftsman extends to the estimator rather than to the builder",
+              "A redundancy CAD has made unnecessary",
+              "A reason the assembly drawing governs",
+              "A courtesy to the estimator",
             ],
             correctIndex: 0,
             explanation:
@@ -1643,9 +1643,9 @@ U.S. Navy. (1993, March). *Builder 3 & 2, Volume 1* (NAVEDTRA 14043) [Nonresiden
             prompt: "What does the course say knowing the sequence of a set gives you?",
             options: [
               "Most of knowing where to look",
-              "The authority to determine which sheet governs when two of them disagree",
+              "The final word",
               "A complete substitute for reading the written specification that accompanies it",
-              "The ability to produce a takeoff without reading any dimension on the sheets",
+              "A takeoff for free",
             ],
             correctIndex: 0,
             explanation:
@@ -1658,7 +1658,7 @@ U.S. Navy. (1993, March). *Builder 3 & 2, Volume 1* (NAVEDTRA 14043) [Nonresiden
               "Looking down on the roof before the sheathing",
               "Standing at the ridge and looking along the run of the rafters toward each gable end",
               "The completed roof with its covering in place, as it will appear from the street",
-              "A vertical cut taken through the ridge, showing the rafters in section",
+              "A cut through the ridge",
             ],
             correctIndex: 0,
             explanation:
@@ -1789,10 +1789,10 @@ U.S. Navy. (2003). *Blueprint reading and sketching* (NAVEDTRA 14040) [Nonreside
           {
             prompt: "Where is the title block located on drawings prepared according to MIL-STDs?",
             options: [
-              "Lower-right corner",
-              "Upper right corner, directly beneath the revision block and above the legend",
-              "Along the lower border, in the squares used for zone reference numbers",
-              "On the reverse of the sheet, so it is visible when the drawing is rolled",
+              "Lower-right corner, with any revision block in the upper right",
+              "Upper right corner",
+              "Along the lower border",
+              "On the reverse of the sheet",
             ],
             correctIndex: 0,
             explanation:
@@ -1802,10 +1802,10 @@ U.S. Navy. (2003). *Blueprint reading and sketching* (NAVEDTRA 14040) [Nonreside
           {
             prompt: "Which of these does the title block contain?",
             options: [
-              "The scale",
+              "The scale, along with the drawing number",
               "The list of every revision made to the sheet, each identified by a letter and a description",
-              "The legend defining the symbols and special marks used on that sheet",
-              "The schedule of doors and windows keyed to the marks on the plan",
+              "The symbol legend",
+              "The door schedule",
             ],
             correctIndex: 0,
             explanation:
@@ -1818,7 +1818,7 @@ U.S. Navy. (2003). *Blueprint reading and sketching* (NAVEDTRA 14040) [Nonreside
               "The information is not required or is elsewhere",
               "The information in that space has been superseded by a later revision of the sheet",
               "The space is reserved for the authority having jurisdiction to stamp when it approves",
-              "The sheet is a preliminary issue and the space will be completed before construction",
+              "A preliminary issue",
             ],
             correctIndex: 0,
             explanation:
@@ -1841,10 +1841,10 @@ U.S. Navy. (2003). *Blueprint reading and sketching* (NAVEDTRA 14040) [Nonreside
           {
             prompt: "What does the number block show on a drawing with more than one sheet?",
             options: [
-              "The sheet number and the number of sheets",
-              "The number of revisions made to that sheet since the original issue of the set",
-              "The zone reference in which the drawing number itself appears on the sheet",
-              "The scale at which each of the other sheets in the series was drawn",
+              "The sheet number and the number of sheets in the series",
+              "The revision count for that sheet",
+              "The drawing number's zone",
+              "Each sheet's scale",
             ],
             correctIndex: 0,
             explanation:
@@ -1854,9 +1854,9 @@ U.S. Navy. (2003). *Blueprint reading and sketching* (NAVEDTRA 14040) [Nonreside
           {
             prompt: "Where is the revision block, when a drawing has one?",
             options: [
-              "Upper right corner",
-              "Lower-right corner, immediately above the drawing number within the title block",
-              "Along the right-hand side of the first sheet, three inches below the notes",
+              "Upper right corner, with the legend below it",
+              "Lower-right corner",
+              "Beside the notes",
               "In the same block as the bill of material, so quantities and revisions stay together",
             ],
             correctIndex: 0,
@@ -1870,7 +1870,7 @@ U.S. Navy. (2003). *Blueprint reading and sketching* (NAVEDTRA 14040) [Nonreside
               "By a letter and a brief description",
               "By the date of the change and the initials of the draftsman who made it on the sheet",
               "By a cloud drawn around the changed area with an arrowhead pointing into it",
-              "By a new drawing number issued in place of the original one",
+              "By a new drawing number",
             ],
             correctIndex: 0,
             explanation:
@@ -1893,10 +1893,10 @@ U.S. Navy. (2003). *Blueprint reading and sketching* (NAVEDTRA 14040) [Nonreside
           {
             prompt: "What does the course say about a set with no entries in its revision block?",
             options: [
-              "It may simply be the original",
-              "It has been superseded, since every set in construction is revised at least once",
-              "It is invalid for construction, because an unrevised sheet cannot have been checked",
-              "It was prepared by computer-aided drafting, which records revisions elsewhere",
+              "It may simply be the original, though that does not prove it current",
+              "It has been superseded",
+              "It is invalid for construction",
+              "It was drafted by computer",
             ],
             correctIndex: 0,
             explanation:
@@ -1908,8 +1908,8 @@ U.S. Navy. (2003). *Blueprint reading and sketching* (NAVEDTRA 14040) [Nonreside
             options: [
               "The same as letters on a map border",
               "They record which of the sixteen specification divisions governs the work shown in that area",
-              "They number the revisions in the order the draftsman made them on the sheet",
-              "They indicate the sequence in which the parts shown are to be assembled",
+              "They number revisions",
+              "They give assembly order",
             ],
             correctIndex: 0,
             explanation:
@@ -1920,7 +1920,7 @@ U.S. Navy. (2003). *Blueprint reading and sketching* (NAVEDTRA 14040) [Nonreside
             prompt: "What does the scale block show?",
             options: [
               "The drawing's size compared with the actual size",
-              "The number of sheets in the series and which of them this one is",
+              "The sheet count",
               "The range of dimensions that may be measured directly off the printed sheet",
               "The graduation of the rule the draftsman used when preparing the original",
             ],
@@ -1945,10 +1945,10 @@ U.S. Navy. (2003). *Blueprint reading and sketching* (NAVEDTRA 14040) [Nonreside
           {
             prompt: "If the scale is shown as 3\" = 1\", how is each line on the print drawn?",
             options: [
-              "Three times its actual length",
-              "One third of its actual length, so the whole object fits within the sheet border",
-              "At its actual length, with the ratio applying only to the detail views",
-              "At whatever length the draftsman found convenient, since the block records the intent",
+              "Three times its actual length, the enlarging case for a small part",
+              "One third of its actual length",
+              "At its actual length",
+              "Whatever the draftsman found convenient",
             ],
             correctIndex: 0,
             explanation:
@@ -1960,8 +1960,8 @@ U.S. Navy. (2003). *Blueprint reading and sketching* (NAVEDTRA 14040) [Nonreside
             options: [
               "To fit the object and the space on the sheet",
               "Because the adopted building code prescribes a minimum scale for each type of drawing",
-              "Because the building department will reject a sheet drawn at any other ratio",
-              "Because the printer available to the drafting office supports only certain ratios",
+              "The department demands it",
+              "The printer's limits",
             ],
             correctIndex: 0,
             explanation:
@@ -1972,7 +1972,7 @@ U.S. Navy. (2003). *Blueprint reading and sketching* (NAVEDTRA 14040) [Nonreside
             prompt: "What is the manual's four-word rule about measuring?",
             options: [
               "Never measure a drawing; use dimensions",
-              "Measure twice from a single zero and cut once, to keep errors from accumulating",
+              "Measure twice, cut once",
               "Measure only on sheets whose scale block states a ratio rather than a size in words",
               "Measure only the overall dimensions, and take partial dimensions from the schedule",
             ],
@@ -1997,10 +1997,10 @@ U.S. Navy. (2003). *Blueprint reading and sketching* (NAVEDTRA 14040) [Nonreside
           {
             prompt: "Which of these is NOT one of the manual's reasons for never measuring a drawing?",
             options: [
-              "The scale block may have been left blank",
-              "The print may have been reduced in size from the original drawing before it reached you",
-              "You might not take the scale of the drawing into consideration when you measure",
-              "Paper stretches and shrinks as the humidity around it changes",
+              "The scale block may have been left blank by the draftsman",
+              "The print may have been reduced",
+              "You might ignore the scale",
+              "Paper moves with humidity",
             ],
             correctIndex: 0,
             explanation:
@@ -2011,9 +2011,9 @@ U.S. Navy. (2003). *Blueprint reading and sketching* (NAVEDTRA 14040) [Nonreside
             prompt: "What does the manual say always remains the same?",
             options: [
               "The written dimensions",
-              "The ratio printed in the scale block, whatever is done to the sheet afterwards",
+              "The ratio",
               "The distance between the border lines, which can be used to check for reduction",
-              "The relationship between the overall dimension and the sum of the partials",
+              "The borders",
             ],
             correctIndex: 0,
             explanation:
@@ -2025,7 +2025,7 @@ U.S. Navy. (2003). *Blueprint reading and sketching* (NAVEDTRA 14040) [Nonreside
             options: [
               "One unit on the map equals 500 like units on the ground",
               "One inch on the map equals 500 feet on the ground, whatever the units of the original",
-              "The map covers 500 acres within the area enclosed by its border lines",
+              "The map covers 500 acres",
               "The drawing was reduced to one five-hundredth of the original sheet size",
             ],
             correctIndex: 0,
@@ -2049,10 +2049,10 @@ U.S. Navy. (2003). *Blueprint reading and sketching* (NAVEDTRA 14040) [Nonreside
           {
             prompt: "What check does the Builder manual say is very important when dimensioning floor plans?",
             options: [
-              "Overall against the sum of the partials",
-              "Each partial dimension against the same dimension scaled off the sheet with an architect's scale",
-              "The plan dimensions against the corresponding dimensions shown on the elevations",
-              "The dimensions against the quantities listed in the bill of material",
+              "The overall dimension against the sum of the partial dimensions",
+              "Each partial against the scaled sheet",
+              "Plans against elevations",
+              "Dimensions against the bill of material",
             ],
             correctIndex: 0,
             explanation:
@@ -2062,10 +2062,10 @@ U.S. Navy. (2003). *Blueprint reading and sketching* (NAVEDTRA 14040) [Nonreside
           {
             prompt: "What tool does the course say finds a dimension-string error?",
             options: [
-              "A pencil",
+              "A pencil, since adding the string is arithmetic",
               "An architect's scale, laid along the string and compared against the overall dimension",
-              "A tape measure, hooked at the border line and pulled the full width of the sheet",
-              "A copy of the adopted code, which fixes the permissible tolerance on a dimension",
+              "A tape measure",
+              "A code book",
             ],
             correctIndex: 0,
             explanation:
@@ -2078,7 +2078,7 @@ U.S. Navy. (2003). *Blueprint reading and sketching* (NAVEDTRA 14040) [Nonreside
               "The scale, and whether it is current",
               "The name of the designer, and the date the building department approved the set",
               "The overall dimensions, and the finish schedule that governs each room shown",
-              "The specification division that applies, and the part of the section within it",
+              "The spec division",
             ],
             correctIndex: 0,
             explanation:
@@ -2101,10 +2101,10 @@ U.S. Navy. (2003). *Blueprint reading and sketching* (NAVEDTRA 14040) [Nonreside
           {
             prompt: "What is a general note?",
             options: [
-              "A note with no leader and arrowhead",
-              "A note printed in the title block rather than on the face of the drawing itself",
-              "A note that applies to every sheet in the set rather than to one sheet",
-              "A note added by the contractor rather than by the draftsman who prepared the sheet",
+              "A note on the drawing not accompanied by a leader and arrowhead",
+              "A note in the title block",
+              "A note for every sheet",
+              "A contractor's note",
             ],
             correctIndex: 0,
             explanation:
@@ -2116,8 +2116,8 @@ U.S. Navy. (2003). *Blueprint reading and sketching* (NAVEDTRA 14040) [Nonreside
             options: [
               "By a mark placed next to the symbol",
               "By its position in the plan, since schedule lines are listed in the order doors appear",
-              "By its rough opening dimensions, which are unique to each door in the building",
-              "By a leader line drawn from the symbol across the sheet to the schedule",
+              "By its rough opening",
+              "By a leader line",
             ],
             correctIndex: 0,
             explanation:
@@ -2129,7 +2129,7 @@ U.S. Navy. (2003). *Blueprint reading and sketching* (NAVEDTRA 14040) [Nonreside
             options: [
               "A quantity check on doors of the same design",
               "A comparison between the doors specified and the doors actually delivered to the site",
-              "A record of how many doors have been installed at each stage of the work",
+              "An installation count",
               "A calculation of the total cost of the doors from the unit price of each design",
             ],
             correctIndex: 0,
@@ -2153,10 +2153,10 @@ U.S. Navy. (2003). *Blueprint reading and sketching* (NAVEDTRA 14040) [Nonreside
           {
             prompt: "What does the Remarks column of a door schedule allow?",
             options: [
-              "Identification by type, style and material",
-              "A record of any field change made to the door after the set was issued for construction",
-              "A cross-reference to the specification division that governs the door's installation",
-              "A note of which trade is responsible for supplying the door to the site",
+              "Identification by type, such as panel or flush, style and material",
+              "A record of field changes",
+              "A cross-reference to the specification",
+              "The supplying trade",
             ],
             correctIndex: 0,
             explanation:
@@ -2168,8 +2168,8 @@ U.S. Navy. (2003). *Blueprint reading and sketching* (NAVEDTRA 14040) [Nonreside
             options: [
               "Next to the window symbol on the plan or elevation",
               "Inside the title block, beside the drawing number for the sheet the window appears on",
-              "In the revision block, so a change of window is recorded with the revision letter",
-              "Along the lower border, in the zone square containing the window",
+              "In the revision block",
+              "In a border zone square",
             ],
             correctIndex: 0,
             explanation:
@@ -2181,7 +2181,7 @@ U.S. Navy. (2003). *Blueprint reading and sketching* (NAVEDTRA 14040) [Nonreside
             options: [
               "Interior finish material for each room and floor",
               "The order in which the finish trades are to be brought onto the site after the rough-in",
-              "The exterior cladding and roof covering shown on the elevations",
+              "Exterior cladding",
               "The tolerance permitted on a finished surface before it must be redone",
             ],
             correctIndex: 0,
@@ -2205,10 +2205,10 @@ U.S. Navy. (2003). *Blueprint reading and sketching* (NAVEDTRA 14040) [Nonreside
           {
             prompt: "Where does the Builder manual say notes are generally placed?",
             options: [
-              "At least 3 inches below the Revision block",
-              "Immediately above the title block in the lower-right corner of the first sheet",
-              "Along the lower border, between the zone squares used for part references",
-              "On a separate sheet bound at the front of the set with the specification",
+              "At least 3 inches below the Revision block, on the first sheet's right side",
+              "Just above the title block",
+              "Along the lower border",
+              "On a separate front sheet",
             ],
             correctIndex: 0,
             explanation:
@@ -2220,8 +2220,8 @@ U.S. Navy. (2003). *Blueprint reading and sketching* (NAVEDTRA 14040) [Nonreside
             options: [
               "To clarify a detail or explain how a phase is performed",
               "To record the revisions made to the sheet since it was first issued for construction",
-              "To list the quantities of each material the drawing requires to be supplied",
-              "To state which specification division governs each part of the work shown",
+              "To list material quantities",
+              "To name the governing division",
             ],
             correctIndex: 0,
             explanation:
@@ -2231,9 +2231,9 @@ U.S. Navy. (2003). *Blueprint reading and sketching* (NAVEDTRA 14040) [Nonreside
           {
             prompt: "When does the Builder manual say to read all the notes?",
             options: [
-              "While planning a project",
+              "While planning a project, with the specifications",
               "After the rough-in is complete, so the notes can be checked against what was built",
-              "Only when the drawings and the specification appear to conflict on a point",
+              "Only during a conflict",
               "At the final inspection, when the whole set is reviewed against the finished work",
             ],
             correctIndex: 0,
@@ -2257,10 +2257,10 @@ U.S. Navy. (2003). *Blueprint reading and sketching* (NAVEDTRA 14040) [Nonreside
           {
             prompt: "Where is a legend placed on a blueprint?",
             options: [
-              "Upper right corner, below the revision block",
-              "Lower-right corner, immediately beside the drawing number in the title block",
-              "Along the lower border, so it can be read without unrolling the sheet fully",
-              "On the reverse of the sheet, with the drawing number repeated beside it",
+              "Upper right corner, below the revision block, if a legend is used",
+              "Lower-right corner",
+              "Along the lower border",
+              "On the reverse of the sheet",
             ],
             correctIndex: 0,
             explanation:
@@ -2271,9 +2271,9 @@ U.S. Navy. (2003). *Blueprint reading and sketching* (NAVEDTRA 14040) [Nonreside
             prompt: "Why does the Builder manual say specifications exist?",
             options: [
               "Many aspects of construction cannot be shown graphically",
-              "Because a drawing may be reduced or distorted in printing, while written text cannot be",
+              "Drawings distort in printing",
               "Because the adopted building code requires a written statement for every permit application",
-              "Because the sixteen divisions give an order the drawings themselves have no way to carry",
+              "The divisions give an order",
             ],
             correctIndex: 0,
             explanation:
@@ -2286,7 +2286,7 @@ U.S. Navy. (2003). *Blueprint reading and sketching* (NAVEDTRA 14040) [Nonreside
               "Who is responsible for supplying the materials",
               "How far apart the joists supporting a given floor are to be spaced in the finished work",
               "What the finished building will look like from the street once the cladding is on",
-              "Which sheets in the set have been revised since the permit was applied for",
+              "Which sheets were revised",
             ],
             correctIndex: 0,
             explanation:
@@ -2310,9 +2310,9 @@ U.S. Navy. (2003). *Blueprint reading and sketching* (NAVEDTRA 14040) [Nonreside
             prompt: "What do project specifications cover?",
             options: [
               "General conditions, scope, materials and workmanship",
-              "The contours of the site before and after grading, with the finished building overlaid",
-              "The revision history of every sheet in the set, recorded by letter and description",
-              "The inspections the jurisdiction will require and the order they will occur in",
+              "Site contours before and after grading",
+              "The revision history of each sheet",
+              "The required inspections",
             ],
             correctIndex: 0,
             explanation:
@@ -2322,10 +2322,10 @@ U.S. Navy. (2003). *Blueprint reading and sketching* (NAVEDTRA 14040) [Nonreside
           {
             prompt: "How does the manual describe the relationship between drawings and project specifications?",
             options: [
-              "Inseparable",
+              "Inseparable, each covering what the other does not",
               "Interchangeable, since either document can be used alone to complete the work described",
-              "Sequential, since the specification is written only after the drawings are finished",
-              "Independent, since each is prepared by a different discipline for a different reader",
+              "Sequential",
+              "Independent",
             ],
             correctIndex: 0,
             explanation:
@@ -2338,7 +2338,7 @@ U.S. Navy. (2003). *Blueprint reading and sketching* (NAVEDTRA 14040) [Nonreside
               "The specifications",
               "The drawings, because they are the document the building department reviewed and stamped",
               "Whichever document carries the later date in its title block or on its cover",
-              "Neither, because a conflict voids both until the designer issues a revision",
+              "Neither",
             ],
             correctIndex: 0,
             explanation:
@@ -2361,10 +2361,10 @@ U.S. Navy. (2003). *Blueprint reading and sketching* (NAVEDTRA 14040) [Nonreside
           {
             prompt: "What does the course say is the useful part of the precedence rule?",
             options: [
-              "The habit of finding where the decision is written",
-              "The certainty that a written document always beats a drawn one in any construction dispute",
-              "The ability to disregard a drawing once a conflict with the specification is noticed",
-              "The knowledge that conflicts are rare enough not to be worth planning for",
+              "The habit of finding where the decision is written, rather than guessing",
+              "Certainty that writing beats drawing",
+              "Licence to disregard a drawing",
+              "Knowing conflicts are rare",
             ],
             correctIndex: 0,
             explanation:
@@ -2374,10 +2374,10 @@ U.S. Navy. (2003). *Blueprint reading and sketching* (NAVEDTRA 14040) [Nonreside
           {
             prompt: "Into how many basic divisions is the specification format organised?",
             options: [
-              "16",
-              "9, one for each chapter of the Builder manual's coverage of construction work",
+              "16, used across military and civilian construction",
+              "9",
               "11, matching the subparts of the federal manufactured home construction standard",
-              "3, corresponding to General, Products and Execution within each section",
+              "3, one per part",
             ],
             correctIndex: 0,
             explanation:
@@ -2387,9 +2387,9 @@ U.S. Navy. (2003). *Blueprint reading and sketching* (NAVEDTRA 14040) [Nonreside
           {
             prompt: "Which division covers Masonry?",
             options: [
-              "Division 4",
+              "Division 4, including brick, stone and mortar",
               "Division 3, which the manual describes as covering precast and cast-in-place concrete and formwork",
-              "Division 5, which the manual describes as covering structural steel and open-web joists",
+              "Division 5",
               "Division 7, which the manual describes as covering waterproofing and roofing materials",
             ],
             correctIndex: 0,
@@ -2413,10 +2413,10 @@ U.S. Navy. (2003). *Blueprint reading and sketching* (NAVEDTRA 14040) [Nonreside
           {
             prompt: "Which division covers Thermal and Moisture Protection?",
             options: [
-              "Division 7",
-              "Division 8, which covers doors, windows, finish hardware, glass and glazing",
-              "Division 15, which covers plumbing, heating, air conditioning and fire protection",
-              "Division 1, which covers requirements of a general nature such as inspection",
+              "Division 7, including insulation, roofing and flashing",
+              "Division 8, doors and windows",
+              "Division 15, plumbing and heating",
+              "Division 1, general requirements",
             ],
             correctIndex: 0,
             explanation:
@@ -2426,10 +2426,10 @@ U.S. Navy. (2003). *Blueprint reading and sketching* (NAVEDTRA 14040) [Nonreside
           {
             prompt: "Which division covers Electrical Systems?",
             options: [
-              "Division 16",
+              "Division 16, the last of the sixteen",
               "Division 14, which covers dumbwaiters, elevators, moving stairs and material handling",
-              "Division 11, which covers medical, laboratory, food service and kitchen equipment",
-              "Division 13, which covers prefabricated structures, integrated ceilings and pools",
+              "Division 11",
+              "Division 13",
             ],
             correctIndex: 0,
             explanation:
@@ -2439,9 +2439,9 @@ U.S. Navy. (2003). *Blueprint reading and sketching* (NAVEDTRA 14040) [Nonreside
           {
             prompt: "What are the three parts of a technical specification section?",
             options: [
-              "General, Products, Execution",
+              "General, Products, Execution, as Parts 1 to 3",
               "Scope, Quality, Protection, taken from the four factors a project specification covers",
-              "Preliminary, Contract, Standard, matching the plan types the manual lists",
+              "Preliminary, Contract, Standard",
               "Architectural, Electrical, Mechanical, matching the three groups of drawings",
             ],
             correctIndex: 0,
@@ -2465,10 +2465,10 @@ U.S. Navy. (2003). *Blueprint reading and sketching* (NAVEDTRA 14040) [Nonreside
           {
             prompt: "In a specification section, where do you look for how the work must be done?",
             options: [
-              "Part 3, Execution",
-              "Part 2, Products, which addresses the equipment and materials to be included in the work",
-              "Part 1, General, which the manual describes as requirements of a general nature",
-              "The schedule on the drawings, which presents the data without referring to the specification",
+              "Part 3, Execution, the detailed requirements for performing the work",
+              "Part 2, Products",
+              "Part 1, General",
+              "The schedule on the drawings",
             ],
             correctIndex: 0,
             explanation:
@@ -2480,8 +2480,8 @@ U.S. Navy. (2003). *Blueprint reading and sketching* (NAVEDTRA 14040) [Nonreside
             options: [
               "Find something in a specification you have never seen",
               "Determine which specification governs when two project documents disagree on a point",
-              "Price the work in the order the trades will actually perform it on the site",
-              "Identify which sheets in the drawing set have been revised since the original issue",
+              "Price the work by trade",
+              "Spot revised sheets",
             ],
             correctIndex: 0,
             explanation:
@@ -2494,7 +2494,7 @@ U.S. Navy. (2003). *Blueprint reading and sketching* (NAVEDTRA 14040) [Nonreside
               "The rule for which document governs a conflict",
               "The sequence in which the sheets of a set are bound, from site plan to details",
               "The ranking of the sixteen divisions from general requirements to electrical systems",
-              "The order in which revisions are lettered as a sheet is reissued",
+              "Revision lettering order",
             ],
             correctIndex: 0,
             explanation:
@@ -2517,10 +2517,10 @@ U.S. Navy. (2003). *Blueprint reading and sketching* (NAVEDTRA 14040) [Nonreside
           {
             prompt: "Which of these does a drawing carry rather than a schedule?",
             options: [
-              "The symbol the mark sits beside",
-              "The material and style of each door listed in the Remarks column of the table",
-              "The count of doors of the same design required for the project",
-              "The interior finish specified for the walls, floors and ceilings of each room",
+              "The symbol the mark sits beside on the plan or elevation",
+              "Each door's material and style",
+              "The count of each door design",
+              "Each room's interior finish",
             ],
             correctIndex: 0,
             explanation:
@@ -2532,8 +2532,8 @@ U.S. Navy. (2003). *Blueprint reading and sketching* (NAVEDTRA 14040) [Nonreside
             options: [
               "Schedules, notes and the specification",
               "The site plan, the plot plan and the foundation plan, which frame the building on its lot",
-              "The title block, the revision block and the zone numbers along the border",
-              "The bill of material, the application block and the finish marks on machined surfaces",
+              "Title and revision blocks",
+              "Bills of material",
             ],
             correctIndex: 0,
             explanation:
@@ -2543,7 +2543,7 @@ U.S. Navy. (2003). *Blueprint reading and sketching* (NAVEDTRA 14040) [Nonreside
           {
             prompt: "Which document does the manual say a schedule saves the builder from having to consult?",
             options: [
-              "The specification",
+              "The specification, for the pertinent data",
               "The adopted building code, whose tables would otherwise have to be checked for each item",
               "The revision block, which would otherwise have to be read for every item on the sheet",
               "The plot plan, which would otherwise have to be consulted for each opening's location",
@@ -2569,10 +2569,10 @@ U.S. Navy. (2003). *Blueprint reading and sketching* (NAVEDTRA 14040) [Nonreside
           {
             prompt: "What is Division 1 of a specification commonly called?",
             options: [
-              "Boilerplate",
-              "Front matter, because it is bound ahead of the technical sections in the project manual",
-              "The schedule of values, because it is what payment applications are measured against",
-              "General conditions, which the manual lists as one of the factors a project specification covers",
+              "Boilerplate, being common to all projects under a contract",
+              "Front matter",
+              "The schedule of values",
+              "General conditions",
             ],
             correctIndex: 0,
             explanation:
@@ -2582,10 +2582,10 @@ U.S. Navy. (2003). *Blueprint reading and sketching* (NAVEDTRA 14040) [Nonreside
           {
             prompt: "Which divisions contain the technical sections for a specific project?",
             options: [
-              "2 through 16",
+              "2 through 16, after the Division 1 boilerplate",
               "1 through 16, since every division carries technical content for the project in hand",
-              "1 alone, since the other divisions are boilerplate common to all contracts",
-              "6 through 9, which cover the wood, thermal, opening and finish work of a house",
+              "1 alone",
+              "6 through 9",
             ],
             correctIndex: 0,
             explanation:
@@ -2595,10 +2595,10 @@ U.S. Navy. (2003). *Blueprint reading and sketching* (NAVEDTRA 14040) [Nonreside
           {
             prompt: "Where does the course say the scale really lives?",
             options: [
-              "In the title block",
+              "In the title block, lower-right corner",
               "In the border squares, which are spaced at a fixed distance on every sheet in a set",
               "In the specification, which states the scale each drawing type must be drawn at",
-              "In the schedule, which lists each sheet with the ratio used to draw it",
+              "In the schedule",
             ],
             correctIndex: 0,
             explanation:
@@ -2621,10 +2621,10 @@ U.S. Navy. (2003). *Blueprint reading and sketching* (NAVEDTRA 14040) [Nonreside
           {
             prompt: "What does the drafting record in a title block belong to?",
             options: [
-              "The title block's list of contents",
-              "The revision block, alongside the letter and brief description of each change",
-              "The bill of material block, alongside the stock numbers and quantities required",
-              "The legend, alongside the symbols and special marks used on the sheet",
+              "The title block's list of contents, with the scale and date",
+              "The revision block",
+              "The bill of material block",
+              "The legend",
             ],
             correctIndex: 0,
             explanation:
@@ -2762,10 +2762,10 @@ Legal Information Institute. (n.d.-b). *675 IAC 14-4.4-1: Adoption by reference;
           {
             prompt: "What are the two separate things people mean when they say \"the code\"?",
             options: [
-              "A model code, and an adoption",
-              "A national standard and a local interpretation of it written by the building department",
-              "The printed book and the digital edition sold by the same publisher on subscription",
-              "The drawings approved for a project and the inspections carried out against them",
+              "A model code, and an adoption that makes it binding on your house",
+              "A national standard and a local interpretation",
+              "The printed and digital editions",
+              "The approved drawings and inspections",
             ],
             correctIndex: 0,
             explanation:
@@ -2775,10 +2775,10 @@ Legal Information Institute. (n.d.-b). *675 IAC 14-4.4-1: Adoption by reference;
           {
             prompt: "Who publishes the International Residential Code?",
             options: [
-              "The International Code Council",
+              "The International Code Council, a private organisation",
               "The National Fire Protection Association, which also publishes the National Electrical Code",
-              "The Fire Prevention and Building Safety Commission of the adopting state",
-              "The United States Department of Housing and Urban Development",
+              "The adopting state's commission",
+              "HUD",
             ],
             correctIndex: 0,
             explanation:
@@ -2791,7 +2791,7 @@ Legal Information Institute. (n.d.-b). *675 IAC 14-4.4-1: Adoption by reference;
               "The National Fire Protection Association",
               "The International Code Council, which publishes the residential code in the same family",
               "The Indiana Department of Homeland Security, which keeps a reference copy for the public",
-              "The Occupational Safety and Health Administration, which enforces it on jobsites",
+              "OSHA, which enforces it",
             ],
             correctIndex: 0,
             explanation:
@@ -2814,10 +2814,10 @@ Legal Information Institute. (n.d.-b). *675 IAC 14-4.4-1: Adoption by reference;
           {
             prompt: "What form can an adoption take, besides a state administrative rule?",
             options: [
-              "A statute or a local ordinance",
-              "A publisher's licence granting the state the right to enforce the edition it bought",
-              "A building department policy memorandum circulated to its own inspectors",
-              "A note in the general conditions of a project specification",
+              "A statute, a local ordinance, or a rule of another body",
+              "A publisher's licence to the state",
+              "A department policy memorandum",
+              "A note in a specification",
             ],
             correctIndex: 0,
             explanation:
@@ -2827,10 +2827,10 @@ Legal Information Institute. (n.d.-b). *675 IAC 14-4.4-1: Adoption by reference;
           {
             prompt: "Why could this course quote a Navy training manual for two whole sections?",
             options: [
-              "Federal works carry no copyright",
+              "Federal works carry no copyright, under 17 U.S.C. 105",
               "Because training manuals are exempt from copyright when used for educational purposes",
-              "Because the Navy grants a standing licence to non-commercial publishers on request",
-              "Because a manual more than thirty years old has passed into the public domain by age",
+              "The Navy licenses it on request",
+              "The manual is old enough",
             ],
             correctIndex: 0,
             explanation:
@@ -2840,10 +2840,10 @@ Legal Information Institute. (n.d.-b). *675 IAC 14-4.4-1: Adoption by reference;
           {
             prompt: "In 675 IAC 14-4.4-1, what is 675?",
             options: [
-              "The title",
+              "The title, belonging to the building safety commission",
               "The article covering one and two family dwellings within the administrative code",
               "The rule number within the article, assigned when the rule replaced an earlier one",
-              "The section within the rule, which carries the adoption by reference",
+              "The section",
             ],
             correctIndex: 0,
             explanation:
@@ -2866,10 +2866,10 @@ Legal Information Institute. (n.d.-b). *675 IAC 14-4.4-1: Adoption by reference;
           {
             prompt: "In 675 IAC 14-4.4-1, what is 4.4?",
             options: [
-              "The rule",
-              "The section within the rule, which states the adoption, title and purpose",
-              "The article, grouping the residential rules within the title",
-              "The paragraph inside the section that carries the edition and printing",
+              "The rule, with the final 1 being the section inside it",
+              "The section",
+              "The article",
+              "A paragraph in the section",
             ],
             correctIndex: 0,
             explanation:
@@ -2881,8 +2881,8 @@ Legal Information Institute. (n.d.-b). *675 IAC 14-4.4-1: Adoption by reference;
             options: [
               "Indiana Administrative Code",
               "International Approved Code, the designation given to an adopted model code",
-              "Indiana Amended Code, meaning the model text after the state's revisions",
-              "Inspection and Approval Criteria, the checklist an inspector works from",
+              "Indiana Amendments",
+              "Approval Criteria",
             ],
             correctIndex: 0,
             explanation:
@@ -2892,10 +2892,10 @@ Legal Information Institute. (n.d.-b). *675 IAC 14-4.4-1: Adoption by reference;
           {
             prompt: "Which course already teaches reading a citation as an address?",
             options: [
-              "Basic Construction Safety",
+              "Basic Construction Safety, on 29 CFR 1926.501",
               "Construction Math, in its lesson on reading a rule and a tape measure",
               "Housing Decisions, in its capstone on reading one document about your own housing",
-              "The Name on the Door, in its lesson on what a licence gates",
+              "The Name on the Door",
             ],
             correctIndex: 0,
             explanation:
@@ -2919,9 +2919,9 @@ Legal Information Institute. (n.d.-b). *675 IAC 14-4.4-1: Adoption by reference;
             prompt: "On the listing read for this course, which residential rules in Article 14 were marked (Repealed)?",
             options: [
               "14-1, 14-2, 14-3, 14-4, 14-4.1 and 14-4.3",
-              "Only 14-4.3, which the newer 2020 Indiana Residential Code directly replaced in the article",
-              "None of them, because a repealed rule is removed from the listing entirely",
-              "All of them including 14-4.4, which was pending readoption at the time of the check",
+              "Only 14-4.3",
+              "None of them",
+              "All of them, including 14-4.4",
             ],
             correctIndex: 0,
             explanation:
@@ -2931,10 +2931,10 @@ Legal Information Institute. (n.d.-b). *675 IAC 14-4.4-1: Adoption by reference;
           {
             prompt: "What does a rule with an unrepealed higher-decimal sibling suggest?",
             options: [
-              "It has been replaced",
+              "It has been replaced by its sibling",
               "It applies to a different class of structure than the higher-numbered rule does",
-              "It is still current, because a repeal is always recorded on the older rule itself",
-              "It was filed later than its sibling, because decimals count backward in a listing",
+              "It is still current",
+              "It was filed later",
             ],
             correctIndex: 0,
             explanation:
@@ -2947,7 +2947,7 @@ Legal Information Institute. (n.d.-b). *675 IAC 14-4.4-1: Adoption by reference;
               "What that publisher last processed",
               "What the state adopted most recently, because a listing is the state's own register",
               "Which rules an inspector will actually enforce in a given jurisdiction this year",
-              "Which edition of the model code the publisher recommends that a reader buy",
+              "The publisher's advice",
             ],
             correctIndex: 0,
             explanation:
@@ -2971,9 +2971,9 @@ Legal Information Institute. (n.d.-b). *675 IAC 14-4.4-1: Adoption by reference;
             prompt: "What is adoption by reference?",
             options: [
               "Naming an outside document rather than reprinting it",
-              "Requiring every contractor in the jurisdiction to purchase a copy of the adopted book",
-              "Directing inspectors to enforce a standard that the state has not itself published",
-              "Citing a model code in a project specification so it governs that one job",
+              "Requiring contractors to buy the book",
+              "Enforcing an unpublished standard",
+              "Citing a code in one job's specification",
             ],
             correctIndex: 0,
             explanation:
@@ -2985,8 +2985,8 @@ Legal Information Institute. (n.d.-b). *675 IAC 14-4.4-1: Adoption by reference;
             options: [
               "The International Residential Code for One and Two Family Dwellings",
               "The International Building Code, which governs structures other than dwellings in the same state",
-              "The National Electrical Code, which is adopted in a separate article of the same title",
-              "The Manufactured Home Construction and Safety Standards published by HUD",
+              "The National Electrical Code",
+              "The HUD manufactured home standards",
             ],
             correctIndex: 0,
             explanation:
@@ -2996,9 +2996,9 @@ Legal Information Institute. (n.d.-b). *675 IAC 14-4.4-1: Adoption by reference;
           {
             prompt: "Which edition does the rule adopt?",
             options: [
-              "2018",
+              "2018, first printing August 2017",
               "2020, which is the year the rule gives in the name it assigns to the result",
-              "2017, which is the year of the printing the rule names",
+              "2017",
               "2019, which is the year the rule was filed with the state",
             ],
             correctIndex: 0,
@@ -3022,10 +3022,10 @@ Legal Information Institute. (n.d.-b). *675 IAC 14-4.4-1: Adoption by reference;
           {
             prompt: "What does the rule name the result of the adoption?",
             options: [
-              "The 2020 Indiana Residential Code",
-              "The 2018 Indiana Residential Code, matching the edition of the model code adopted",
-              "The Indiana One and Two Family Dwelling Code, matching the name of the article",
-              "The Indiana Residential Code, with no year, so the name survives future readoptions",
+              "The 2020 Indiana Residential Code, a different number from the edition",
+              "The 2018 Indiana Residential Code",
+              "The One and Two Family Dwelling Code",
+              "The Indiana Residential Code, with no year",
             ],
             correctIndex: 0,
             explanation:
@@ -3037,8 +3037,8 @@ Legal Information Institute. (n.d.-b). *675 IAC 14-4.4-1: Adoption by reference;
             options: [
               "The 2018 model code plus Indiana's revisions",
               "The 2020 model code minus the sections Indiana chose not to enforce in its territory",
-              "The 2018 model code alone, since a state may adopt but may not alter the text",
-              "Two separate documents, one for one-family and one for two-family dwellings",
+              "The 2018 model code alone",
+              "Two separate documents",
             ],
             correctIndex: 0,
             explanation:
@@ -3051,7 +3051,7 @@ Legal Information Institute. (n.d.-b). *675 IAC 14-4.4-1: Adoption by reference;
               "It does not say in that state what the book says",
               "It is enforced exactly as printed, with the amendment applying only to later editions",
               "It is deleted entirely, because a state amendment cancels the section it addresses",
-              "It is enforced at the inspector's discretion, since the two texts conflict",
+              "Inspector's discretion",
             ],
             correctIndex: 0,
             explanation:
@@ -3075,9 +3075,9 @@ Legal Information Institute. (n.d.-b). *675 IAC 14-4.4-1: Adoption by reference;
             prompt: "What purpose does the rule state for itself?",
             options: [
               "Minimum requirements for safety, and safeguarding property and welfare",
-              "Uniform design standards so that a drawing approved in one county is accepted in another",
-              "Protection of the publisher's rights in the model code the state has adopted",
-              "A framework for licensing the contractors who perform residential construction",
+              "Uniform design standards across counties",
+              "Protecting the publisher's rights",
+              "Licensing residential contractors",
             ],
             correctIndex: 0,
             explanation:
@@ -3087,10 +3087,10 @@ Legal Information Institute. (n.d.-b). *675 IAC 14-4.4-1: Adoption by reference;
           {
             prompt: "Which two words does the course say are worth keeping from the purpose statement?",
             options: [
-              "Minimum and affordability",
+              "Minimum and affordability, named beside safety",
               "Design and construction, since those are the activities the rule regulates and controls",
-              "Property and welfare, since those are what the rule exists to safeguard",
-              "Quality and materials, since those are what the rule controls in residential structures",
+              "Property and welfare",
+              "Quality and materials",
             ],
             correctIndex: 0,
             explanation:
@@ -3103,7 +3103,7 @@ Legal Information Institute. (n.d.-b). *675 IAC 14-4.4-1: Adoption by reference;
               "It is a floor, not a description of good work",
               "It is the least a jurisdiction may adopt before the state will withhold its approval",
               "It is the smallest set of provisions an inspector is permitted to check on a visit",
-              "It applies only to the least expensive class of residential structure",
+              "It applies to cheap houses",
             ],
             correctIndex: 0,
             explanation:
@@ -3127,9 +3127,9 @@ Legal Information Institute. (n.d.-b). *675 IAC 14-4.4-1: Adoption by reference;
             prompt: "Why does the course say that \"where it may be reviewed\" sentence is worth finding in your own state's rule?",
             options: [
               "It answers how to read a code you cannot buy",
-              "It establishes which office has authority to interpret the code for your jurisdiction",
-              "It proves the state owns a copy of the edition it adopted, which validates the adoption",
-              "It determines which building department will issue the permit for your address",
+              "It names the interpreting office",
+              "It proves the state owns a copy",
+              "It names your permit office",
             ],
             correctIndex: 0,
             explanation:
@@ -3139,10 +3139,10 @@ Legal Information Institute. (n.d.-b). *675 IAC 14-4.4-1: Adoption by reference;
           {
             prompt: "When does the mirror show 675 IAC 14-4.4-1 as filed?",
             options: [
-              "26 November 2019",
+              "26 November 2019, at 11:43 a.m.",
               "25 December 2019, which is the date carried in the Indiana Register document number",
-              "20 September 2026, which is the date this course checked the rule",
-              "August 2017, which is the date of the printing the rule adopts",
+              "20 September 2026",
+              "August 2017",
             ],
             correctIndex: 0,
             explanation:
@@ -3155,7 +3155,7 @@ Legal Information Institute. (n.d.-b). *675 IAC 14-4.4-1: Adoption by reference;
               "Going back to the state's own record",
               "Proving to an inspector that the work was permitted under the edition then in force",
               "Identifying which printing of the model code the state purchased for its files",
-              "Telling a reader how many revisions the rule has been through since adoption",
+              "Counting revisions",
             ],
             correctIndex: 0,
             explanation:
@@ -3178,10 +3178,10 @@ Legal Information Institute. (n.d.-b). *675 IAC 14-4.4-1: Adoption by reference;
           {
             prompt: "What is the second of the four questions?",
             options: [
-              "Which edition, and which printing",
-              "Which agency of the state made the rule and under what statutory authority",
-              "Which trades are covered by this rule rather than by a rule in another article",
-              "Which counties within the state have adopted amendments of their own",
+              "Which edition, and which printing, of that model code",
+              "Which agency made the rule",
+              "Which trades the rule covers",
+              "Which counties amended it",
             ],
             correctIndex: 0,
             explanation:
@@ -3193,8 +3193,8 @@ Legal Information Institute. (n.d.-b). *675 IAC 14-4.4-1: Adoption by reference;
             options: [
               "What the state named it, and what the state changed",
               "Whether the model code publisher has released a newer edition since the adoption",
-              "How much a copy of the adopted edition costs from the publisher",
-              "Which inspector in the jurisdiction is assigned to residential work",
+              "What the book costs",
+              "Who the inspector is",
             ],
             correctIndex: 0,
             explanation:
@@ -3207,7 +3207,7 @@ Legal Information Institute. (n.d.-b). *675 IAC 14-4.4-1: Adoption by reference;
               "When it was filed, and where the book can be read",
               "Whether the rule has ever been challenged in court by the publisher of the model code",
               "How many other states adopted the same edition in the same year",
-              "What the rule cost the state in licence fees to the publisher",
+              "What it cost in licence fees",
             ],
             correctIndex: 0,
             explanation:
@@ -3231,9 +3231,9 @@ Legal Information Institute. (n.d.-b). *675 IAC 14-4.4-1: Adoption by reference;
             prompt: "What does the course say is the point of the adoption rule being short?",
             options: [
               "The document that makes a long book enforceable fits on a screen",
-              "A short rule is easier for a state agency to readopt when the cycle comes around",
-              "The brevity shows the state made few changes to the model text it adopted",
-              "A short rule cannot be challenged as easily as a long one in an administrative appeal",
+              "It is easier to readopt",
+              "The state made few changes",
+              "It is harder to challenge on appeal",
             ],
             correctIndex: 0,
             explanation:
@@ -3245,8 +3245,8 @@ Legal Information Institute. (n.d.-b). *675 IAC 14-4.4-1: Adoption by reference;
             options: [
               "A particular issue of an edition",
               "The act of reproducing the code text for distribution to inspectors and contractors",
-              "The number of copies the state purchased when it adopted the edition",
-              "The format in which the code is made available, whether bound, loose-leaf or digital",
+              "The copies bought",
+              "Bound or digital format",
             ],
             correctIndex: 0,
             explanation:
@@ -3257,7 +3257,7 @@ Legal Information Institute. (n.d.-b). *675 IAC 14-4.4-1: Adoption by reference;
             prompt: "What is a state amendment, in the vocabulary of section 4?",
             options: [
               "A change the adopting government writes into the model text",
-              "A correction the model code publisher issues between printings of an edition",
+              "A publisher's correction",
               "A variance an inspector grants for one building when the adopted text cannot be met",
               "A later rule that repeals the adoption entirely and replaces it at a new decimal",
             ],
@@ -3283,9 +3283,9 @@ Legal Information Institute. (n.d.-b). *675 IAC 14-4.4-1: Adoption by reference;
             prompt: "Which of these is NOT part of the Indiana citation this course reads?",
             options: [
               "A paragraph designator in parentheses",
-              "A title number identifying the agency whose rules are collected under it",
-              "An article number grouping the rules about one and two family dwellings",
-              "A rule number carrying a decimal that records a series of replacements",
+              "A title number",
+              "An article number",
+              "A rule number with a decimal",
             ],
             correctIndex: 0,
             explanation:
@@ -3295,10 +3295,10 @@ Legal Information Institute. (n.d.-b). *675 IAC 14-4.4-1: Adoption by reference;
           {
             prompt: "Where does the course say everything binding on your house lives?",
             options: [
-              "In the adoption",
+              "In the adoption, not the model code",
               "In the model code, since the adoption merely records a decision already made elsewhere",
-              "In the permit, since nothing is enforceable until a permit has been issued",
-              "In the drawings, since they are what the inspector actually compares the work against",
+              "In the permit",
+              "In the drawings",
             ],
             correctIndex: 0,
             explanation:
@@ -3310,7 +3310,7 @@ Legal Information Institute. (n.d.-b). *675 IAC 14-4.4-1: Adoption by reference;
             options: [
               "The Fire Prevention and Building Safety Commission",
               "The Department of Homeland Security, which houses the copy available for public review",
-              "The International Code Council, which publishes the codes the title adopts",
+              "The International Code Council",
               "The Indiana General Assembly, which enacts the statutes the rules are made under",
             ],
             correctIndex: 0,
@@ -3335,9 +3335,9 @@ Legal Information Institute. (n.d.-b). *675 IAC 14-4.4-1: Adoption by reference;
             prompt: "What kind of document can an address be handed to?",
             options: [
               "A librarian, a building official or a search box",
-              "Only the agency that filed the rule, since no one else may confirm its contents",
-              "Only the publisher, since the address refers to a book it sells",
-              "Only a licensed designer, who is qualified to interpret the section it points to",
+              "Only the filing agency",
+              "Only the publisher",
+              "Only a licensed designer",
             ],
             correctIndex: 0,
             explanation:
@@ -3348,9 +3348,9 @@ Legal Information Institute. (n.d.-b). *675 IAC 14-4.4-1: Adoption by reference;
             prompt: "What is an administrative code?",
             options: [
               "The published rules made by a state's agencies",
-              "The set of model codes a state has adopted, bound together for its inspectors",
+              "A state's bound model codes",
               "The internal procedures a building department follows in reviewing an application",
-              "The federal regulations that apply to construction work in every state",
+              "Federal regulations",
             ],
             correctIndex: 0,
             explanation:
@@ -3360,10 +3360,10 @@ Legal Information Institute. (n.d.-b). *675 IAC 14-4.4-1: Adoption by reference;
           {
             prompt: "What does (Repealed) beside a rule in a listing mean?",
             options: [
-              "It is no longer in force",
+              "It is no longer in force, usually replaced",
               "It has been challenged and suspended pending a decision by a reviewing court",
               "Its text has been moved to a different article of the same administrative title",
-              "The publisher has not yet processed the current version of the rule",
+              "Not yet processed",
             ],
             correctIndex: 0,
             explanation:
@@ -3386,10 +3386,10 @@ Legal Information Institute. (n.d.-b). *675 IAC 14-4.4-1: Adoption by reference;
           {
             prompt: "What does the course say about the phrase \"the code says\"?",
             options: [
-              "It usually needs three questions asked of it",
-              "It is reliable when spoken by anyone who has actually purchased the current edition",
-              "It should be accepted from a building official and questioned from anyone else",
-              "It has no meaning at all, because codes are not law until a permit issues",
+              "It usually needs three questions: which edition, section and jurisdiction",
+              "It is reliable from a book owner",
+              "It is fine from an official",
+              "It means nothing until a permit issues",
             ],
             correctIndex: 0,
             explanation:
@@ -3399,10 +3399,10 @@ Legal Information Institute. (n.d.-b). *675 IAC 14-4.4-1: Adoption by reference;
           {
             prompt: "What does the course say a memorised code answer does not survive?",
             options: [
-              "The next readoption",
-              "A move from one county to another within the same state",
+              "The next readoption of the code",
+              "A county move",
               "A revision to the drawings after the permit has been issued",
-              "A change of inspector part way through a project",
+              "A new inspector",
             ],
             correctIndex: 0,
             explanation:
@@ -3415,7 +3415,7 @@ Legal Information Institute. (n.d.-b). *675 IAC 14-4.4-1: Adoption by reference;
               "20 September 2026, on the Legal Information Institute's mirror",
               "25 December 2019, in the Indiana Register document that published the final rule",
               "20 September 2026, on the Indiana Administrative Rules and Policies portal",
-              "26 November 2019, at the Indiana Department of Homeland Security",
+              "26 November 2019, at Homeland Security",
             ],
             correctIndex: 0,
             explanation:
@@ -3439,9 +3439,9 @@ Legal Information Institute. (n.d.-b). *675 IAC 14-4.4-1: Adoption by reference;
             prompt: "Why does the course call the adoption rule the most teachable document in the series?",
             options: [
               "It is free, official, short, and about your own house",
-              "It contains the stud spacing table that Construction Math deferred to in its layout lesson",
-              "It is the only document a building department will accept in place of a permit application",
-              "It is published by the same organisation that writes the model code it adopts",
+              "It holds the stud spacing table",
+              "It can replace a permit application",
+              "The code publisher wrote it",
             ],
             correctIndex: 0,
             explanation:
@@ -3453,8 +3453,8 @@ Legal Information Institute. (n.d.-b). *675 IAC 14-4.4-1: Adoption by reference;
             options: [
               "A place the public can read it",
               "The price the state paid for the copies it distributed to local building departments",
-              "The sections of the book the state considered but decided not to enforce",
-              "The date on which the incorporated edition will cease to be enforceable",
+              "Unenforced sections",
+              "An expiry date",
             ],
             correctIndex: 0,
             explanation:
@@ -3585,9 +3585,9 @@ Legal Information Institute. (n.d.-b). *675 IAC 14-4.4-1: Adoption by reference;
             prompt: "Which three years can be in play at once when someone talks about the code?",
             options: [
               "Now, the state's title year, and the edition year",
-              "The year the permit issued, the year the work was inspected, and the year of final approval",
-              "The year the house was built, the year it was last remodelled, and the year it was sold",
-              "The year the rule was filed, the year it takes effect, and the year it must be readopted",
+              "Permit, inspection and approval",
+              "Built, remodelled and sold",
+              "Filed, effective and readoption years",
             ],
             correctIndex: 0,
             explanation:
@@ -3598,8 +3598,8 @@ Legal Information Institute. (n.d.-b). *675 IAC 14-4.4-1: Adoption by reference;
             prompt: "What year is in the title of Indiana's residential rule, and what edition does it adopt?",
             options: [
               "Titled 2020, adopting the 2018 edition",
-              "Titled 2018, adopting the 2020 edition, which the state renamed on adoption",
-              "Titled 2019, adopting the 2017 printing that the rule names specifically",
+              "Titled 2018, adopting 2020",
+              "Titled 2019, adopting 2017",
               "Titled 2026, adopting the most recent edition available at the time of readoption",
             ],
             correctIndex: 0,
@@ -3610,10 +3610,10 @@ Legal Information Institute. (n.d.-b). *675 IAC 14-4.4-1: Adoption by reference;
           {
             prompt: "Which article of Indiana title 675 collects the electrical codes?",
             options: [
-              "Article 17",
+              "Article 17, headed Electrical Codes",
               "Article 14, which also carries the residential rules for one and two family dwellings",
               "Article 4.4, which is the current residential rule within the title",
-              "Article 1.8, which is the current electrical rule within the title",
+              "Article 1.8",
             ],
             correctIndex: 0,
             explanation:
@@ -3636,10 +3636,10 @@ Legal Information Institute. (n.d.-b). *675 IAC 14-4.4-1: Adoption by reference;
           {
             prompt: "What is 675 IAC 17-1.8 titled?",
             options: [
-              "Indiana Electrical Code, 2009 Edition",
-              "Indiana Electrical Code, 2008 Edition, matching the edition of the model code it adopts",
-              "Indiana Electrical Code, 2026 Edition, following the state's usual naming convention",
-              "National Electrical Code, First Printing, as adopted by the commission",
+              "Indiana Electrical Code, 2009 Edition, which adopts the 2008 edition",
+              "Indiana Electrical Code, 2008 Edition",
+              "Indiana Electrical Code, 2026 Edition",
+              "National Electrical Code, First Printing",
             ],
             correctIndex: 0,
             explanation:
@@ -3650,9 +3650,9 @@ Legal Information Institute. (n.d.-b). *675 IAC 14-4.4-1: Adoption by reference;
             prompt: "Which edition does 675 IAC 17-1.8-1 adopt by reference?",
             options: [
               "The 2008 National Electrical Code, first printing",
-              "The 2009 National Electrical Code, matching the year in the title of the rule",
+              "The 2009 National Electrical Code",
               "The 2023 National Electrical Code, as reported by search summaries seen in September 2026",
-              "The 2018 International Residential Code, first printing August 2017",
+              "The 2018 residential code",
             ],
             correctIndex: 0,
             explanation:
@@ -3664,7 +3664,7 @@ Legal Information Institute. (n.d.-b). *675 IAC 14-4.4-1: Adoption by reference;
             options: [
               "What the publisher most recently printed",
               "Which requirements the state rule points at for electrical work in the jurisdiction",
-              "Which sections the state amended when it adopted the edition it enforces",
+              "The state's amendments",
               "Which edition an inspector would check the work against on a residential job",
             ],
             correctIndex: 0,
@@ -3678,7 +3678,7 @@ Legal Information Institute. (n.d.-b). *675 IAC 14-4.4-1: Adoption by reference;
               "A publisher's mirror of the administrative code",
               "The Indiana Register, through the state's own rules and policies portal",
               "A printed copy held at the Indiana Department of Homeland Security",
-              "The International Code Council's digital codes library",
+              "The International Code Council's own digital codes library",
             ],
             correctIndex: 0,
             explanation:
@@ -3688,10 +3688,10 @@ Legal Information Institute. (n.d.-b). *675 IAC 14-4.4-1: Adoption by reference;
           {
             prompt: "What happened when this course tried to read Indiana's official rules portal?",
             options: [
-              "Four requests returned an empty page shell",
-              "The portal required a paid subscription before the text of any rule could be displayed",
-              "The portal returned the rule text but without any filing date or register number",
-              "The portal redirected to the publisher of the model code the rule adopts",
+              "Four requests returned an empty page shell with no rule text",
+              "The portal required a subscription",
+              "The text came without a filing date",
+              "It redirected to the code publisher",
             ],
             correctIndex: 0,
             explanation:
@@ -3702,9 +3702,9 @@ Legal Information Institute. (n.d.-b). *675 IAC 14-4.4-1: Adoption by reference;
             prompt: "Which claim does the course record as reported rather than assert as fact?",
             options: [
               "That a newer rule 675 IAC 17-1.9 adopts the 2023 edition",
-              "That 675 IAC 17-1.8 is titled Indiana Electrical Code, 2009 Edition",
+              "That 17-1.8 is titled 2009 Edition",
               "That rules 675 IAC 17-1 through 17-1.7 are marked (Repealed) on the listing",
-              "That 675 IAC 14-4.4-1 adopts the 2018 edition, first printing August 2017",
+              "That 14-4.4-1 adopts the 2018 edition",
             ],
             correctIndex: 0,
             explanation:
@@ -3717,7 +3717,7 @@ Legal Information Institute. (n.d.-b). *675 IAC 14-4.4-1: Adoption by reference;
               "So an Indiana reader goes and checks them",
               "Because a report from a search summary is sufficient evidence for a teaching claim",
               "Because the course expects them to be confirmed before any learner reads the lesson",
-              "Because recording them satisfies the requirement to cite a source for every claim",
+              "To satisfy citation rules",
             ],
             correctIndex: 0,
             explanation:
@@ -3740,10 +3740,10 @@ Legal Information Institute. (n.d.-b). *675 IAC 14-4.4-1: Adoption by reference;
           {
             prompt: "Why does the gap between the title year and the edition year exist at all?",
             options: [
-              "Review, amendment and filing all take time",
-              "Because publishers deliberately post-date their editions to extend the selling period",
-              "Because state agencies are required to name a rule for the year it takes effect",
-              "Because an adoption may not name an edition published in the same calendar year",
+              "Review, amendment and filing take time; it is not an Indiana quirk",
+              "Publishers post-date editions",
+              "Rules are named for their effective year",
+              "Same-year editions may not be adopted",
             ],
             correctIndex: 0,
             explanation:
@@ -3755,8 +3755,8 @@ Legal Information Institute. (n.d.-b). *675 IAC 14-4.4-1: Adoption by reference;
             options: [
               "Never assume your state enforces the newest edition",
               "Always buy the edition your state adopted rather than the one currently on sale",
-              "Always ask the building department before reading the adoption rule yourself",
-              "Always treat a publisher's mirror as equivalent to the state's own register",
+              "Always ask the department first",
+              "Trust a mirror as the register",
             ],
             correctIndex: 0,
             explanation:
@@ -3766,9 +3766,9 @@ Legal Information Institute. (n.d.-b). *675 IAC 14-4.4-1: Adoption by reference;
           {
             prompt: "What does lesson 9 say is part of the answer, not just a note about it?",
             options: [
-              "The date you checked",
+              "The date you checked the source",
               "The price of the edition the state adopted, since it affects who can read the code",
-              "The name of the inspector who confirmed the requirement on site",
+              "The inspector's name",
               "The number of sections of amendments the state wrote into the model text",
             ],
             correctIndex: 0,
@@ -3792,10 +3792,10 @@ Legal Information Institute. (n.d.-b). *675 IAC 14-4.4-1: Adoption by reference;
           {
             prompt: "What is a readoption?",
             options: [
-              "A state reviewing a rule and adopting it again",
-              "A publisher reissuing an edition after correcting errors found in the first printing",
-              "A second jurisdiction adopting a rule another jurisdiction has already adopted",
-              "An inspector applying a repealed rule to work permitted while it was in force",
+              "A state reviewing a rule and adopting it again, with or without changes",
+              "A publisher's corrected reissue",
+              "A second jurisdiction's adoption",
+              "Applying a repealed rule",
             ],
             correctIndex: 0,
             explanation:
@@ -3805,10 +3805,10 @@ Legal Information Institute. (n.d.-b). *675 IAC 14-4.4-1: Adoption by reference;
           {
             prompt: "What does the course tell you to do with a \"the code says\" claim?",
             options: [
-              "Ask three questions about it",
+              "Ask three questions about it, starting with the edition",
               "Accept it if the speaker owns a copy of the edition the jurisdiction has adopted",
-              "Check it against the publisher's newest edition, which supersedes older ones",
-              "Report it to the building department so the department can confirm or deny it",
+              "Check the newest edition",
+              "Report it to the department",
             ],
             correctIndex: 0,
             explanation:
@@ -3820,7 +3820,7 @@ Legal Information Institute. (n.d.-b). *675 IAC 14-4.4-1: Adoption by reference;
             options: [
               "Whether the jurisdiction amended that section",
               "Which edition of the model code the claim is drawn from in the first place",
-              "Which section number within the code the requirement actually sits at",
+              "Which section number",
               "Which trade the requirement belongs to in the adopted code's organisation",
             ],
             correctIndex: 0,
@@ -3845,9 +3845,9 @@ Legal Information Institute. (n.d.-b). *675 IAC 14-4.4-1: Adoption by reference;
             prompt: "What does the course say about someone who cannot answer any of the three questions?",
             options: [
               "They have told you something useful about the claim",
-              "They are probably right anyway, since the questions are technical rather than substantive",
-              "They should be reported to the licensing authority for the trade they work in",
-              "They are describing an amendment, which is why the section number is missing",
+              "They are probably right anyway",
+              "They should be reported",
+              "They are describing an amendment",
             ],
             correctIndex: 0,
             explanation:
@@ -3859,8 +3859,8 @@ Legal Information Institute. (n.d.-b). *675 IAC 14-4.4-1: Adoption by reference;
             options: [
               "The state's amendments are in it in full text",
               "It reprints the model code in full, which is why the state may distribute it without charge",
-              "It lists every section of the model code that an inspector is permitted to enforce",
-              "It is updated continuously, so it always reflects the newest published edition",
+              "It lists enforceable sections",
+              "It is always the newest edition",
             ],
             correctIndex: 0,
             explanation:
@@ -3872,7 +3872,7 @@ Legal Information Institute. (n.d.-b). *675 IAC 14-4.4-1: Adoption by reference;
             options: [
               "It reports them and describes no terms",
               "It confirms that both publishers provide free read-only access without registration",
-              "It advises against using them, because the terms forbid any practical use",
+              "It advises against them",
               "It states the terms in full, having read them on each publisher's own site",
             ],
             correctIndex: 0,
@@ -3897,9 +3897,9 @@ Legal Information Institute. (n.d.-b). *675 IAC 14-4.4-1: Adoption by reference;
             prompt: "Which of these does the course tell you not to do with code text you find?",
             options: [
               "Build a private compilation of the sections you use",
-              "Note the section numbers so you can find the same provisions again later",
-              "Ask a building official whether a particular section applies to your work",
-              "Read your state's amendments to the section in the adoption rule",
+              "Note the section numbers",
+              "Ask an official about a section",
+              "Read your state's amendments",
             ],
             correctIndex: 0,
             explanation:
@@ -3911,8 +3911,8 @@ Legal Information Institute. (n.d.-b). *675 IAC 14-4.4-1: Adoption by reference;
             options: [
               "A reproduction that has stopped matching the adopted edition",
               "A printed sheet whose dimensions no longer match the building as it was actually built",
-              "An adoption rule that a state has allowed to lapse without readopting it",
-              "A reference copy kept at a building department counter rather than at a library",
+              "A lapsed adoption rule",
+              "A department's counter copy",
             ],
             correctIndex: 0,
             explanation:
@@ -3922,10 +3922,10 @@ Legal Information Institute. (n.d.-b). *675 IAC 14-4.4-1: Adoption by reference;
           {
             prompt: "Which federal regulation does the course name as a complete, free building code?",
             options: [
-              "24 CFR part 3280",
+              "24 CFR part 3280, in subparts A through K",
               "29 CFR part 1926, the Safety and Health Regulations for Construction",
               "40 CFR part 745 subpart E, the lead renovation, repair and painting rule",
-              "17 U.S.C. 105, which places federal works outside copyright",
+              "17 U.S.C. 105",
             ],
             correctIndex: 0,
             explanation:
@@ -3935,7 +3935,7 @@ Legal Information Institute. (n.d.-b). *675 IAC 14-4.4-1: Adoption by reference;
           {
             prompt: "What does 24 CFR 3280.1 say the standard covers?",
             options: [
-              "Equipment and installations in manufactured homes used as dwellings",
+              "Equipment and installations in manufactured homes",
               "All residential structures within the jurisdiction of a state that has adopted it",
               "Site preparation and foundation work for any dwelling placed on a permanent foundation",
               "The transportation of building materials to a construction site by road",
@@ -3948,10 +3948,10 @@ Legal Information Institute. (n.d.-b). *675 IAC 14-4.4-1: Adoption by reference;
           {
             prompt: "How many subparts does 24 CFR part 3280 have?",
             options: [
-              "Eleven",
-              "Sixteen, one for each division of the standard specification format",
-              "Three, corresponding to General, Products and Execution",
-              "Nine, matching the chapters of the Builder manual",
+              "Eleven, lettered A through K",
+              "Sixteen",
+              "Three",
+              "Nine",
             ],
             correctIndex: 0,
             explanation:
@@ -3962,9 +3962,9 @@ Legal Information Institute. (n.d.-b). *675 IAC 14-4.4-1: Adoption by reference;
             prompt: "What caveat must travel with every citation of 24 CFR part 3280?",
             options: [
               "It governs manufactured homes, not site-built houses",
-              "It applies only in states that have not adopted a residential code of their own",
+              "It applies only without a state code",
               "It has been superseded by the model residential codes in every state that adopted them",
-              "It may be read but not cited, because the subparts are revised without notice",
+              "It may be read but not cited",
             ],
             correctIndex: 0,
             explanation:
@@ -3976,7 +3976,7 @@ Legal Information Institute. (n.d.-b). *675 IAC 14-4.4-1: Adoption by reference;
             options: [
               "It shows you the shape of a code",
               "It contains the same requirements as the model residential codes, in free form",
-              "It is the document a building department checks a site-built house against",
+              "Departments check it",
               "It lists the amendments every state has written into its own residential code",
             ],
             correctIndex: 0,
@@ -3988,9 +3988,9 @@ Legal Information Institute. (n.d.-b). *675 IAC 14-4.4-1: Adoption by reference;
             prompt: "What is a reference copy?",
             options: [
               "A copy of an incorporated code kept where the public may read it",
-              "A copy of the drawings kept on site for the inspector's use during the work",
-              "A duplicate of the adoption rule filed with the local building department",
-              "The publisher's archival copy of the printing a state adopted",
+              "Drawings kept on site",
+              "A filed duplicate of the rule",
+              "The publisher's archive copy",
             ],
             correctIndex: 0,
             explanation:
@@ -4014,9 +4014,9 @@ Legal Information Institute. (n.d.-b). *675 IAC 14-4.4-1: Adoption by reference;
             prompt: "What does the course say makes up an address, in code terms?",
             options: [
               "Rule number, article, edition, printing and section",
-              "The publisher, the price, the format and the year of purchase",
+              "Publisher, price and format",
               "The jurisdiction, the inspector, the permit number and the date of the visit",
-              "The title block, the revision letter, the sheet number and the scale",
+              "Title block and sheet number",
             ],
             correctIndex: 0,
             explanation:
@@ -4026,9 +4026,9 @@ Legal Information Institute. (n.d.-b). *675 IAC 14-4.4-1: Adoption by reference;
           {
             prompt: "Who does the course say answers the three questions for a living?",
             options: [
-              "A building official",
+              "A building official at the department",
               "A model code publisher's technical support staff, on a subscriber helpline",
-              "A home inspector engaged before the purchase of an existing house",
+              "A home inspector",
               "A librarian at a public library that keeps a reference copy of the code",
             ],
             correctIndex: 0,
@@ -4039,7 +4039,7 @@ Legal Information Institute. (n.d.-b). *675 IAC 14-4.4-1: Adoption by reference;
           {
             prompt: "What is free access, as the course defines the term?",
             options: [
-              "A publisher letting the public read a standard online on its own terms",
+              "A publisher letting the public read a standard online",
               "A state requirement that any adopted code be provided to residents without charge",
               "The right to reproduce an adopted code because it has become law",
               "A library's lending of a reference copy of an incorporated code",
@@ -4053,9 +4053,9 @@ Legal Information Institute. (n.d.-b). *675 IAC 14-4.4-1: Adoption by reference;
             prompt: "What is a manufactured home, in the vocabulary of section 5?",
             options: [
               "A dwelling built to the federal standard at 24 CFR part 3280",
-              "Any dwelling assembled from components produced away from the site where it stands",
-              "A dwelling built under a state residential code adopted by reference from a model code",
-              "A dwelling that has been moved to a new lot after its original construction",
+              "Any dwelling built off site",
+              "A dwelling under a state residential code",
+              "A dwelling moved to a new lot",
             ],
             correctIndex: 0,
             explanation:
@@ -4067,8 +4067,8 @@ Legal Information Institute. (n.d.-b). *675 IAC 14-4.4-1: Adoption by reference;
             options: [
               "It turns an address into a stale copy",
               "It is acceptable provided the section number and edition travel with the text",
-              "It is the fastest way to settle a dispute about a requirement on a job",
-              "It is permitted because a short extract is too brief to matter",
+              "It settles disputes fast",
+              "Short extracts are fine",
             ],
             correctIndex: 0,
             explanation:
@@ -4079,7 +4079,7 @@ Legal Information Institute. (n.d.-b). *675 IAC 14-4.4-1: Adoption by reference;
             prompt: "What kind of rule is lesson 10, in the course's own terms?",
             options: [
               "The course's operating rule, turned into a tool",
-              "A summary of the access terms published by the two major model code publishers",
+              "A summary of access terms",
               "An exception to the citation discipline, allowed because the material is federal",
               "A statement of the legal position on reproducing codes incorporated into law",
             ],
@@ -4104,10 +4104,10 @@ Legal Information Institute. (n.d.-b). *675 IAC 14-4.4-1: Adoption by reference;
           {
             prompt: "What does the course call the difference between a book and an adoption?",
             options: [
-              "The book is a product; the adoption is the law",
-              "The book is current; the adoption is historical, recording what was once enforced",
-              "The book is free; the adoption is sold by the state that filed it",
-              "The book is amended; the adoption is the unamended model text",
+              "The book is a product; the adoption is the law, which is free to read",
+              "The book is current; the adoption is historical",
+              "The book is free; the adoption is sold",
+              "The book is amended; the adoption is not",
             ],
             correctIndex: 0,
             explanation:
@@ -4119,8 +4119,8 @@ Legal Information Institute. (n.d.-b). *675 IAC 14-4.4-1: Adoption by reference;
             options: [
               "The year a publisher assigns to an edition of its book",
               "The year a state's rule adopting that edition takes effect in the jurisdiction",
-              "The year the state files the rule with its own administrative register",
-              "The year the building department begins enforcing the edition on permits",
+              "The year the rule is filed",
+              "The year enforcement begins",
             ],
             correctIndex: 0,
             explanation:
@@ -4133,7 +4133,7 @@ Legal Information Institute. (n.d.-b). *675 IAC 14-4.4-1: Adoption by reference;
               "The official record a state files its rules into",
               "The index a publisher keeps of the rules it has processed for its mirror",
               "The log a building department keeps of permits issued and inspections performed",
-              "The list of states that have adopted a given edition of a model code",
+              "A list of adopting states",
             ],
             correctIndex: 0,
             explanation:
@@ -4156,10 +4156,10 @@ Legal Information Institute. (n.d.-b). *675 IAC 14-4.4-1: Adoption by reference;
           {
             prompt: "Why does the course say the gap is not an Indiana quirk?",
             options: [
-              "It is what adoption looks like everywhere",
-              "Because every state adopts the same edition of each model code in the same year",
-              "Because model code publishers coordinate their release dates with the states",
-              "Because federal law sets the interval between publication and adoption",
+              "It is what adoption looks like everywhere, since it all takes time",
+              "All states adopt together",
+              "Publishers coordinate with states",
+              "Federal law sets the interval",
             ],
             correctIndex: 0,
             explanation:
@@ -4171,8 +4171,8 @@ Legal Information Institute. (n.d.-b). *675 IAC 14-4.4-1: Adoption by reference;
             options: [
               "Write down the date you checked",
               "Record the price of the edition your jurisdiction adopted for later reference",
-              "Record the name of the official who confirmed the requirement to you",
-              "Record the sections of the model code your project relies on, with their text",
+              "Note who told you",
+              "Record the code text",
             ],
             correctIndex: 0,
             explanation:
@@ -4185,7 +4185,7 @@ Legal Information Institute. (n.d.-b). *675 IAC 14-4.4-1: Adoption by reference;
               "They are the part most likely to catch you out",
               "They are usually minor editorial corrections that do not change any requirement",
               "They are kept confidential until a permit application is submitted",
-              "They apply only to structures built after the rule was filed",
+              "They apply only to new work",
             ],
             correctIndex: 0,
             explanation:
@@ -4208,10 +4208,10 @@ Legal Information Institute. (n.d.-b). *675 IAC 14-4.4-1: Adoption by reference;
           {
             prompt: "What does the course tell you to do before relying on a publisher's free-access offering?",
             options: [
-              "Read the terms you actually see",
-              "Confirm with the state that the offering satisfies the adoption rule's review requirement",
-              "Ask the building department whether the offering shows the adopted edition",
-              "Assume the offering permits printing for personal use, as is customary",
+              "Read the terms you actually see, by going and looking",
+              "Confirm it with the state",
+              "Ask the building department",
+              "Assume personal printing is allowed",
             ],
             correctIndex: 0,
             explanation:
@@ -4223,8 +4223,8 @@ Legal Information Institute. (n.d.-b). *675 IAC 14-4.4-1: Adoption by reference;
             options: [
               "What governs a house framed on a lot in your town",
               "What the sections of a building code typically contain and how they are arranged",
-              "How a federal standard organises definitions, scope and testing requirements",
-              "What a plumbing subpart of a code covers in a dwelling built to that standard",
+              "How a federal standard is organised",
+              "What a plumbing subpart covers",
             ],
             correctIndex: 0,
             explanation:
@@ -4236,7 +4236,7 @@ Legal Information Institute. (n.d.-b). *675 IAC 14-4.4-1: Adoption by reference;
             options: [
               "Named the failures and stopped",
               "Cited the summaries it found, since a summary is a secondary source rather than a guess",
-              "Described the terms with a note that they had not been verified directly",
+              "Hedged them",
               "Left the subject out of the course entirely, since nothing about it was verified",
             ],
             correctIndex: 0,
@@ -4261,9 +4261,9 @@ Legal Information Institute. (n.d.-b). *675 IAC 14-4.4-1: Adoption by reference;
             prompt: "What do the repealed titles in Article 17 record?",
             options: [
               "A series of earlier Indiana electrical code editions",
-              "The sections of the National Electrical Code that Indiana declined to adopt over time",
-              "The counties that adopted their own electrical amendments before the state acted",
-              "The printings of each edition the commission considered before choosing one",
+              "Sections Indiana declined to adopt",
+              "Counties with their own amendments",
+              "Printings the commission considered",
             ],
             correctIndex: 0,
             explanation:
@@ -4275,8 +4275,8 @@ Legal Information Institute. (n.d.-b). *675 IAC 14-4.4-1: Adoption by reference;
             options: [
               "It goes stale without announcing it",
               "It is automatically superseded in law, so relying on it carries no practical risk",
-              "It remains valid for work permitted while the earlier edition was in force",
-              "It becomes freely reproducible, since the publisher no longer sells that edition",
+              "It stays valid",
+              "It becomes free to copy",
             ],
             correctIndex: 0,
             explanation:
@@ -4286,8 +4286,8 @@ Legal Information Institute. (n.d.-b). *675 IAC 14-4.4-1: Adoption by reference;
           {
             prompt: "What does lesson 10 say about copying sections into a handout?",
             options: [
-              "Do not do it",
-              "Do it only where the handout names the edition and the date the text was copied",
+              "Do not do it; it makes a stale copy",
+              "Only with a date",
               "Do it for training use, which is what the publishers' free access exists to support",
               "Do it only for sections the state amended, since those are the state's own words",
             ],
@@ -4431,9 +4431,9 @@ County of Santa Cruz. (n.d.-a). *Inspections*. Community Development and Infrast
             prompt: "Who can tell you whether your job needs a permit?",
             options: [
               "The building department with jurisdiction over your address",
-              "The state agency that filed the rule adopting the residential code for the whole state",
-              "The publisher of the model code, whose technical staff answer questions from the public",
-              "Any licensed contractor in the state, since licensing requires knowledge of permit rules",
+              "The state agency that filed the rule",
+              "The model code publisher's staff",
+              "Any licensed contractor in the state",
             ],
             correctIndex: 0,
             explanation:
@@ -4445,8 +4445,8 @@ County of Santa Cruz. (n.d.-a). *Inspections*. Community Development and Infrast
             options: [
               "What a permit costs in your jurisdiction",
               "What a permit is, structurally, and how it connects an adopted code to a building",
-              "What an inspector compares the work against when a jurisdiction publishes that",
-              "Why inspections are placed where they are in a construction sequence",
+              "The inspection standard",
+              "Inspection timing logic",
             ],
             correctIndex: 0,
             explanation:
@@ -4459,7 +4459,7 @@ County of Santa Cruz. (n.d.-a). *Inspections*. Community Development and Infrast
               "The permitted set of documents and the adopted codes",
               "The contractor's schedule and the owner's written description of the intended work",
               "The manufacturer's installation instructions and the warranty on each product used",
-              "The model code as published and the publisher's own commentary on it",
+              "The model code and its commentary",
             ],
             correctIndex: 0,
             explanation:
@@ -4482,10 +4482,10 @@ County of Santa Cruz. (n.d.-a). *Inspections*. Community Development and Infrast
           {
             prompt: "What is an inspection, structurally?",
             options: [
-              "A comparison against two named documents",
-              "A general safety audit of the building and the site on which it stands",
-              "An opinion about the quality of the work relative to normal practice in the trade",
-              "A review of the contractor's licence and insurance before work may proceed",
+              "A comparison against two named documents: the permitted set and the code",
+              "A general safety audit",
+              "An opinion on work quality",
+              "A licence and insurance review",
             ],
             correctIndex: 0,
             explanation:
@@ -4496,9 +4496,9 @@ County of Santa Cruz. (n.d.-a). *Inspections*. Community Development and Infrast
             prompt: "Why did the course use one named county rather than a national summary?",
             options: [
               "One real example teaches better than a vague average",
-              "Because that county's rules apply in every state that has adopted the same model code",
+              "Its rules apply nationally",
               "Because national summaries of inspection practice are copyrighted and could not be used",
-              "Because the county is the only jurisdiction that publishes its inspection list at all",
+              "It alone publishes a list",
             ],
             correctIndex: 0,
             explanation:
@@ -4509,7 +4509,7 @@ County of Santa Cruz. (n.d.-a). *Inspections*. Community Development and Infrast
             prompt: "What does the course say your own jurisdiction may do differently?",
             options: [
               "Sequence, name and require different inspections",
-              "Enforce a code that no state agency has ever adopted by reference",
+              "Enforce an unadopted code",
               "Inspect work only after it has been concealed by the following trade",
               "Issue permits without reviewing any drawings or specifications at all",
             ],
@@ -4535,9 +4535,9 @@ County of Santa Cruz. (n.d.-a). *Inspections*. Community Development and Infrast
             prompt: "What does an inspection regime therefore have to do?",
             options: [
               "Catch work at the last moment it can still be seen",
-              "Require that every trade complete its work before any other trade begins on site",
-              "Visit the site at fixed intervals regardless of what stage the work has reached",
-              "Rely on the contractor's own records of what was installed behind each surface",
+              "Make each trade finish before the next",
+              "Visit at fixed intervals",
+              "Rely on the contractor's records",
             ],
             correctIndex: 0,
             explanation:
@@ -4549,8 +4549,8 @@ County of Santa Cruz. (n.d.-a). *Inspections*. Community Development and Infrast
             options: [
               "Which edition does this jurisdiction enforce",
               "Whether the wall between the kitchen and the living room is load bearing",
-              "How long the department will take to review an application of this kind",
-              "Whether the work as planned will pass its first inspection",
+              "How long review takes",
+              "Whether it will pass",
             ],
             correctIndex: 0,
             explanation:
@@ -4560,10 +4560,10 @@ County of Santa Cruz. (n.d.-a). *Inspections*. Community Development and Infrast
           {
             prompt: "Which is the first of the four habits for asking a building department a question?",
             options: [
-              "Say your address",
+              "Say your address, since the answer depends on it",
               "Cite the section of the adopted code you believe governs the work you are planning",
               "State the outcome you want, so the office knows what you are trying to achieve",
-              "Ask for the name of the inspector who will be assigned to your project",
+              "Ask the inspector's name",
             ],
             correctIndex: 0,
             explanation:
@@ -4587,9 +4587,9 @@ County of Santa Cruz. (n.d.-a). *Inspections*. Community Development and Infrast
             prompt: "What does the course say to ask the department for, rather than tell it?",
             options: [
               "What the department needs from you",
-              "Whether the rule you have read applies to the work you are planning",
-              "Which inspector is most likely to approve the work as designed",
-              "How other projects in the area handled the same question",
+              "Whether your rule applies",
+              "The friendliest inspector",
+              "How neighbours handled it",
             ],
             correctIndex: 0,
             explanation:
@@ -4600,9 +4600,9 @@ County of Santa Cruz. (n.d.-a). *Inspections*. Community Development and Infrast
             prompt: "What should you record after a conversation with a building department?",
             options: [
               "What you were told, the date, and who told you",
-              "The section of the adopted code the official referred to, and nothing more",
+              "The code section cited",
               "The time the call took and the number of transfers before you reached the right desk",
-              "Nothing, since only a written application creates any record that matters",
+              "Nothing at all",
             ],
             correctIndex: 0,
             explanation:
@@ -4614,7 +4614,7 @@ County of Santa Cruz. (n.d.-a). *Inspections*. Community Development and Infrast
             options: [
               "That is the course telling you where the answer lives",
               "That is a gap the course intends to close in a later revision of the material",
-              "That is a sign the question was badly formed and should be narrowed first",
+              "A badly formed question",
               "That is a legal disclaimer rather than a statement about where authority sits",
             ],
             correctIndex: 0,
@@ -4625,7 +4625,7 @@ County of Santa Cruz. (n.d.-a). *Inspections*. Community Development and Infrast
           {
             prompt: "What is a permitted set?",
             options: [
-              "The documents the department reviewed and approved",
+              "The documents the department approved",
               "The set of drawings the contractor keeps on site for reference during the work",
               "The drawings as revised to record what was actually built",
               "The sheets that the code requires to be prepared for any permit application",
@@ -4638,10 +4638,10 @@ County of Santa Cruz. (n.d.-a). *Inspections*. Community Development and Infrast
           {
             prompt: "What is concealed work?",
             options: [
-              "Work a later stage covers",
-              "Work performed without a permit, which the department has no record of",
-              "Work inside a wall cavity that the drawings do not show in any view",
-              "Work an inspector has already approved and signed off",
+              "Work a later stage covers, inspectable only before that stage",
+              "Unpermitted work",
+              "Work the drawings omit",
+              "Work already approved",
             ],
             correctIndex: 0,
             explanation:
@@ -4651,10 +4651,10 @@ County of Santa Cruz. (n.d.-a). *Inspections*. Community Development and Infrast
           {
             prompt: "Which inspection comes first in Santa Cruz County's published list?",
             options: [
-              "Foundation",
+              "Foundation, once forms and steel are in position",
               "Rough frame, rough plumbing, rough electrical, rough mechanical and gas line together",
-              "Under floor insulation, before the floor sheathing is installed over it",
-              "Concrete slab or under floor, before the concrete is poured",
+              "Under floor insulation",
+              "Concrete slab",
             ],
             correctIndex: 0,
             explanation:
@@ -4667,7 +4667,7 @@ County of Santa Cruz. (n.d.-a). *Inspections*. Community Development and Infrast
               "Setbacks and excavation depth and size",
               "The species and grade of the lumber delivered for the framing that will follow",
               "The nailing of the roof sheathing including strapping and drag nailing",
-              "The water-holding of the shower pan before the lath is installed",
+              "Shower pan water-holding",
             ],
             correctIndex: 0,
             explanation:
@@ -4690,10 +4690,10 @@ County of Santa Cruz. (n.d.-a). *Inspections*. Community Development and Infrast
           {
             prompt: "When is the under floor insulation inspection made?",
             options: [
-              "Before the floor sheathing is installed",
-              "After the floor sheathing is installed, so the inspector can walk on the finished deck",
-              "At the same time as the wall and ceiling insulation inspection",
-              "After the drywall has been hung but before it is taped and finished",
+              "Before the floor sheathing is installed, or with access provided",
+              "After the sheathing, to walk the deck",
+              "With the wall insulation",
+              "After the drywall is hung",
             ],
             correctIndex: 0,
             explanation:
@@ -4706,7 +4706,7 @@ County of Santa Cruz. (n.d.-a). *Inspections*. Community Development and Infrast
               "That roof framing matches the approved plans",
               "That the roofing material has been installed to the manufacturer's instructions",
               "That the attic insulation has been installed to the depth shown on the plans",
-              "That the rafters have been cut to the rise per foot stated in the elevations",
+              "Rafter cuts",
             ],
             correctIndex: 0,
             explanation:
@@ -4717,9 +4717,9 @@ County of Santa Cruz. (n.d.-a). *Inspections*. Community Development and Infrast
             prompt: "When is the exterior shear and hold-down inspection made?",
             options: [
               "After plywood, hold-downs, shear walls, straps and clips are installed",
-              "After the siding or stucco lath has gone on and the building is water-tight",
-              "Before the foundation is poured, while the anchor bolts are still exposed",
-              "After the rough frame inspection has been signed off by the inspector",
+              "After the siding or stucco lath has gone on and the whole building is water-tight",
+              "Before the foundation pour",
+              "After rough frame sign-off",
             ],
             correctIndex: 0,
             explanation:
@@ -4743,9 +4743,9 @@ County of Santa Cruz. (n.d.-a). *Inspections*. Community Development and Infrast
             prompt: "Which trades are covered by the combined rough inspection in that county's list?",
             options: [
               "Frame, plumbing, electrical, mechanical and gas line",
-              "Frame and plumbing only, with electrical and mechanical inspected separately later",
-              "Plumbing and electrical only, since framing is covered by the shear inspections",
-              "Mechanical and gas line only, since the other trades are inspected before sheathing",
+              "Frame and plumbing only",
+              "Plumbing and electrical only",
+              "Mechanical and gas line only",
             ],
             correctIndex: 0,
             explanation:
@@ -4755,10 +4755,10 @@ County of Santa Cruz. (n.d.-a). *Inspections*. Community Development and Infrast
           {
             prompt: "What comes between the rough inspection and the drywall inspection in that list?",
             options: [
-              "Wall and ceiling insulation",
+              "Wall and ceiling insulation, after rough frame approval",
               "Exterior lath, applied after the rough frame has been signed off",
-              "Shower pan, installed and tested for water holding",
-              "Scratch coat, applied and allowed to dry for 48 hours",
+              "Shower pan",
+              "Scratch coat",
             ],
             correctIndex: 0,
             explanation:
@@ -4771,7 +4771,7 @@ County of Santa Cruz. (n.d.-a). *Inspections*. Community Development and Infrast
               "Drywall makes the rough-in unexaminable",
               "Because the drywall trade requires a signed inspection record before it may be scheduled",
               "Because the rough trades are contracted separately and are paid at that inspection",
-              "Because insulation cannot be installed until the rough work has been approved",
+              "Insulation must wait",
             ],
             correctIndex: 0,
             explanation:
@@ -4782,9 +4782,9 @@ County of Santa Cruz. (n.d.-a). *Inspections*. Community Development and Infrast
             prompt: "What basic rule does Santa Cruz County publish about covering work?",
             options: [
               "Do not cover any portion of the work without the approval of your inspector",
-              "Schedule each inspection at least 48 hours before the following trade is due on site",
-              "Photograph any work that must be covered before it can be inspected",
-              "Obtain written permission from the department before beginning any concealed work",
+              "Schedule 48 hours ahead",
+              "Photograph work before covering it",
+              "Get written permission first",
             ],
             correctIndex: 0,
             explanation:
@@ -4809,8 +4809,8 @@ County of Santa Cruz. (n.d.-a). *Inspections*. Community Development and Infrast
             options: [
               "All agency holds cleared and the final inspection completed",
               "The owner must take occupancy of the building and confirm the work is satisfactory",
-              "The contractor must submit a record set showing the work as actually built",
-              "The drywall and lath inspections must both be signed off by the same inspector",
+              "A record set is submitted",
+              "One inspector signs both",
             ],
             correctIndex: 0,
             explanation:
@@ -4820,7 +4820,7 @@ County of Santa Cruz. (n.d.-a). *Inspections*. Community Development and Infrast
           {
             prompt: "What does the existence of agency holds tell you?",
             options: [
-              "The building department may not be the only office involved",
+              "The building department may not be the only office",
               "The permit cannot be issued until every other agency has approved the drawings",
               "The inspector may place a hold on work that fails an inspection",
               "The permit expires automatically if a hold is not cleared within a fixed period",
@@ -4833,9 +4833,9 @@ County of Santa Cruz. (n.d.-a). *Inspections*. Community Development and Infrast
           {
             prompt: "What does the course say the end of the work is not the same as?",
             options: [
-              "The end of the permit",
+              "The end of the permit, which has a status of its own",
               "The end of the inspection sequence, which continues after occupancy",
-              "The end of the warranty period on the products installed",
+              "The warranty's end",
               "The end of the contractor's responsibility for the work performed",
             ],
             correctIndex: 0,
@@ -4847,9 +4847,9 @@ County of Santa Cruz. (n.d.-a). *Inspections*. Community Development and Infrast
             prompt: "When is the final inspection made in that county's list?",
             options: [
               "After finish grading, with the building ready for occupancy",
-              "After the drywall has been signed off and the interior finishes have begun",
-              "After the shower pan has been installed and its water holding verified",
-              "Before the scratch coat is applied, since the exterior is then complete",
+              "After drywall sign-off",
+              "After the shower pan test",
+              "Before the scratch coat",
             ],
             correctIndex: 0,
             explanation:
@@ -4860,9 +4860,9 @@ County of Santa Cruz. (n.d.-a). *Inspections*. Community Development and Infrast
             prompt: "What is the first of the three things the course says to do with a one-county list?",
             options: [
               "Expect the logic, not the list",
-              "Assume the same order applies wherever the same model code has been adopted",
+              "Copy it",
               "Treat the list as a minimum, adding any inspection your contractor recommends",
-              "Compare the list against the adopted code to see which items it omits",
+              "Check its gaps",
             ],
             correctIndex: 0,
             explanation:
@@ -4873,7 +4873,7 @@ County of Santa Cruz. (n.d.-a). *Inspections*. Community Development and Infrast
             prompt: "What does the course call the cheapest single document you can obtain about your own project?",
             options: [
               "Your jurisdiction's published inspection list",
-              "The adoption rule that names the edition of the code your state enforces",
+              "The adoption rule",
               "The permitted set of drawings and specifications the department reviewed",
               "The model code edition your state adopted, bought in its cheapest format",
             ],
@@ -4899,9 +4899,9 @@ County of Santa Cruz. (n.d.-a). *Inspections*. Community Development and Infrast
             prompt: "What is a rough-in?",
             options: [
               "The stage at which services are installed but not covered",
-              "The first visit an inspector makes to a site after the permit has been issued",
-              "The condition of a building before the roof, windows and doors are installed",
-              "The preliminary drawing set prepared before the final documents are permitted",
+              "An inspector's first visit",
+              "A building with no roof yet",
+              "A preliminary drawing set",
             ],
             correctIndex: 0,
             explanation:
@@ -4913,8 +4913,8 @@ County of Santa Cruz. (n.d.-a). *Inspections*. Community Development and Infrast
             options: [
               "An inspector's approval of a stage",
               "The owner's written acceptance of the completed work from the contractor",
-              "The department's approval of the drawings when the permit is issued",
-              "The final release of utilities for gas and electric service",
+              "Plan approval",
+              "Utility release",
             ],
             correctIndex: 0,
             explanation:
@@ -4926,7 +4926,7 @@ County of Santa Cruz. (n.d.-a). *Inspections*. Community Development and Infrast
             options: [
               "An inspection of sheathing, nailing, hold-downs, straps and clips",
               "An inspection of the reinforcement steel and anchor bolts before concrete is poured",
-              "An inspection of the insulation before the drywall and tile backer go on",
+              "An insulation inspection",
               "An inspection of the shower pan's ability to hold water before it is lathed",
             ],
             correctIndex: 0,
@@ -4950,10 +4950,10 @@ County of Santa Cruz. (n.d.-a). *Inspections*. Community Development and Infrast
           {
             prompt: "What does the course say the inspection list should be read for?",
             options: [
-              "The logic",
-              "The exact sequence, which will be the same in any jurisdiction of comparable size",
-              "The names of the inspections, which are standardised nationally by the model codes",
-              "The intervals between inspections, which set the pace of a project",
+              "The logic: concealment last, inspection just before it",
+              "The exact sequence",
+              "The inspection names",
+              "The intervals",
             ],
             correctIndex: 0,
             explanation:
@@ -4965,8 +4965,8 @@ County of Santa Cruz. (n.d.-a). *Inspections*. Community Development and Infrast
             options: [
               "Installation and verification that it holds water",
               "Installation of the shower lath and paper over the pan and surrounding wall",
-              "Completion of the rough plumbing inspection for the whole building",
-              "Application of the scratch coat and the 48 hour drying period",
+              "Rough plumbing sign-off",
+              "The scratch coat",
             ],
             correctIndex: 0,
             explanation:
@@ -4978,7 +4978,7 @@ County of Santa Cruz. (n.d.-a). *Inspections*. Community Development and Infrast
             options: [
               "A 48 hour drying period after application",
               "The exterior lath inspection to be scheduled at the same visit",
-              "The final grading around the building to be completed",
+              "Final grading",
               "The interior drywall to be signed off by the inspector",
             ],
             correctIndex: 0,
@@ -4989,7 +4989,7 @@ County of Santa Cruz. (n.d.-a). *Inspections*. Community Development and Infrast
           {
             prompt: "What is an agency hold?",
             options: [
-              "A condition placed on a permit by an office other than the building department",
+              "A condition another office places on a permit",
               "A stop-work order issued by an inspector after work fails an inspection",
               "A delay in issuing a permit while the drawings are under review",
               "A requirement that utilities be withheld until the owner takes occupancy",
@@ -5002,7 +5002,7 @@ County of Santa Cruz. (n.d.-a). *Inspections*. Community Development and Infrast
           {
             prompt: "What does the course say about a change made on site without changing the permitted set?",
             options: [
-              "It is a difference from what the inspector checks against",
+              "It differs from what the inspector checks",
               "It is acceptable provided the change meets the adopted code independently",
               "It is recorded by the inspector in the revision block of the affected sheet",
               "It voids the permit immediately and requires a new application",
@@ -5017,7 +5017,7 @@ County of Santa Cruz. (n.d.-a). *Inspections*. Community Development and Infrast
             options: [
               "A California county's published typical inspections page",
               "The residential code edition the state of Indiana adopted by reference",
-              "The federal manufactured home construction and safety standards",
+              "The federal HUD standard",
               "A Navy nonresident training course on construction administration",
             ],
             correctIndex: 0,
@@ -5029,9 +5029,9 @@ County of Santa Cruz. (n.d.-a). *Inspections*. Community Development and Infrast
             prompt: "What does the final refusal in lesson 12 say the list is NOT?",
             options: [
               "A statement that any particular job needs a permit",
-              "A description of how one county inspects work performed under a permit it issued",
-              "An account read on a named date from that county's own published pages",
-              "An example chosen to show the logic of an inspection sequence",
+              "How one county inspects its permits",
+              "A dated account from county pages",
+              "An example of inspection logic",
             ],
             correctIndex: 0,
             explanation:
@@ -5041,10 +5041,10 @@ County of Santa Cruz. (n.d.-a). *Inspections*. Community Development and Infrast
           {
             prompt: "What does the course say the word \"final\" applies to that is not the work?",
             options: [
-              "The permit's status",
+              "The permit's status, once holds are cleared",
               "The inspection record, which is closed once the last visit is complete",
-              "The drawing set, which is reissued as a final version at completion",
-              "The adopted code, which is superseded when the next edition is adopted",
+              "The drawing set",
+              "The adopted code",
             ],
             correctIndex: 0,
             explanation:
@@ -5054,10 +5054,10 @@ County of Santa Cruz. (n.d.-a). *Inspections*. Community Development and Infrast
           {
             prompt: "What comes after the drywall inspection in the county's published order?",
             options: [
-              "Exterior lath",
+              "Exterior lath, item 9 on the list",
               "Wall and ceiling insulation, which is inspected once the drywall is in place",
               "Rough frame, which is repeated after the drywall is hung",
-              "Foundation, which is re-inspected before finish grading",
+              "Foundation",
             ],
             correctIndex: 0,
             explanation:
@@ -5081,9 +5081,9 @@ County of Santa Cruz. (n.d.-a). *Inspections*. Community Development and Infrast
             prompt: "What is an authority having jurisdiction?",
             options: [
               "The office whose decision governs at a given address",
-              "The state agency that adopted the model code the jurisdiction enforces",
-              "The designer who prepared and sealed the permitted set of documents",
-              "The publisher whose model code the jurisdiction has incorporated by reference",
+              "The state adopting agency",
+              "The sealing designer",
+              "The code publisher",
             ],
             correctIndex: 0,
             explanation:
@@ -5095,8 +5095,8 @@ County of Santa Cruz. (n.d.-a). *Inspections*. Community Development and Infrast
             options: [
               "An opinion about whether the house is nice",
               "A comparison of the work against the permitted set of building documents",
-              "A comparison of the work against the codes the jurisdiction has adopted",
-              "A visit made at a point where the work can still be seen",
+              "A check against adopted codes",
+              "A timely visit",
             ],
             correctIndex: 0,
             explanation:
@@ -5109,7 +5109,7 @@ County of Santa Cruz. (n.d.-a). *Inspections*. Community Development and Infrast
               "A wrong sentence here costs somebody money",
               "Because the sources for permit practice are all privately published and cannot be quoted",
               "Because permits are governed federally and a state course has no standing to describe them",
-              "Because inspection practice changes too often for any written account to remain accurate",
+              "Practice changes too often",
             ],
             correctIndex: 0,
             explanation:
@@ -5133,9 +5133,9 @@ County of Santa Cruz. (n.d.-a). *Inspections*. Community Development and Infrast
             prompt: "What did the course say about asking for a published page or handout?",
             options: [
               "It is normal, and a written source beats a remembered call",
-              "It is unnecessary, because a verbal answer from an official is binding on the department",
-              "It should be avoided, because it slows the office down for no practical gain",
-              "It is only appropriate once an application has actually been submitted",
+              "Unnecessary, since verbal answers bind",
+              "Best avoided, as it slows the office",
+              "Only after an application",
             ],
             correctIndex: 0,
             explanation:
@@ -5147,8 +5147,8 @@ County of Santa Cruz. (n.d.-a). *Inspections*. Community Development and Infrast
             options: [
               "Someone applies, the department reviews, and work is looked at before it is covered",
               "The state agency inspects each structure against the edition it adopted when it filed the rule",
-              "The model code publisher certifies that the finished work matches the edition sold",
-              "The designer certifies compliance and the department records the certificate",
+              "The publisher certifies the work",
+              "The designer certifies compliance",
             ],
             correctIndex: 0,
             explanation:
@@ -5161,7 +5161,7 @@ County of Santa Cruz. (n.d.-a). *Inspections*. Community Development and Infrast
               "Reinforcing inside concrete",
               "Finish grading around the outside of the completed building",
               "The scratch coat applied over the exterior lath and paper",
-              "The composition shingles laid over the roof sheathing",
+              "Roof shingles",
             ],
             correctIndex: 0,
             explanation:
@@ -5368,9 +5368,9 @@ Legal Information Institute. (n.d.-b). *675 IAC 14-4.4-1: Adoption by reference;
             prompt: "What are you looking for when you hunt for your own state's adoption rule?",
             options: [
               "A public document naming a model code by title, edition and printing",
-              "A privately published commentary explaining which provisions your state enforces",
-              "A building department page listing the inspections required for residential work",
-              "A copy of the model code itself, in the edition your jurisdiction enforces",
+              "A private commentary on what is enforced",
+              "A department's inspection list",
+              "A copy of the model code itself",
             ],
             correctIndex: 0,
             explanation:
@@ -5382,8 +5382,8 @@ Legal Information Institute. (n.d.-b). *675 IAC 14-4.4-1: Adoption by reference;
             options: [
               "That every state publishes its adoption rule free",
               "That state adoption rules name an edition and a printing of the model code",
-              "That a state may write amendments into a model code when it adopts it",
-              "That an adoption rule is a public document rather than a private one",
+              "That states may amend",
+              "That rules are public",
             ],
             correctIndex: 0,
             explanation:
@@ -5395,7 +5395,7 @@ Legal Information Institute. (n.d.-b). *675 IAC 14-4.4-1: Adoption by reference;
             options: [
               "Write that down as a finding about your state",
               "Use Indiana's rule instead, since most states adopt the same editions in the same years",
-              "Assume no adoption exists and that the model code applies directly",
+              "Assume there is no adoption",
               "Ask a contractor to state the requirement from memory and record that instead",
             ],
             correctIndex: 0,
@@ -5406,7 +5406,7 @@ Legal Information Institute. (n.d.-b). *675 IAC 14-4.4-1: Adoption by reference;
           {
             prompt: "Which search terms does the course suggest for finding a state adoption rule?",
             options: [
-              "Your state's name, administrative code, residential code adopted",
+              "State name, administrative code, residential code adopted",
               "Your city's name, building permit, cost, and the current calendar year",
               "The model code publisher's name, free access, and the newest edition year",
               "Your county's name, inspection sequence, and rough-in requirements",
@@ -5420,9 +5420,9 @@ Legal Information Institute. (n.d.-b). *675 IAC 14-4.4-1: Adoption by reference;
             prompt: "How should you treat a state agency's codes page?",
             options: [
               "As a pointer to the rule, not a substitute for it",
-              "As the authoritative statement of what the jurisdiction enforces, since the agency made the rule",
-              "As equivalent to the register, because both are published by the state",
-              "As unusable, because an agency page is not part of the administrative code",
+              "As the authoritative statement",
+              "As equal to the register",
+              "As unusable",
             ],
             correctIndex: 0,
             explanation:
@@ -5432,10 +5432,10 @@ Legal Information Institute. (n.d.-b). *675 IAC 14-4.4-1: Adoption by reference;
           {
             prompt: "What do you need if your state has an adoption and your city has an ordinance?",
             options: [
-              "Both",
+              "Both, since the local amendment sits on top of the state adoption",
               "Only the city ordinance, because the more local document always governs entirely",
-              "Only the state adoption, because a city may not amend a state-adopted code",
-              "Neither, because a conflict between them voids both until it is resolved",
+              "Only the state adoption",
+              "Neither",
             ],
             correctIndex: 0,
             explanation:
@@ -5445,9 +5445,9 @@ Legal Information Institute. (n.d.-b). *675 IAC 14-4.4-1: Adoption by reference;
           {
             prompt: "What is a local amendment?",
             options: [
-              "A change a city or county writes on top of a state-adopted code",
+              "A city or county change on top of a state code",
               "A change the model code publisher makes between printings of one edition",
-              "A variance an inspector grants for a single building on a single site",
+              "An inspector's variance",
               "A change a state makes when it readopts a rule at the next decimal",
             ],
             correctIndex: 0,
@@ -5471,10 +5471,10 @@ Legal Information Institute. (n.d.-b). *675 IAC 14-4.4-1: Adoption by reference;
           {
             prompt: "How many items does the course say to write down, and where do they fit?",
             options: [
-              "Six, on one index card",
-              "Four, matching the four questions to ask of any adoption rule in lesson 8",
-              "Three, matching the three questions to ask of a claim about the code",
-              "Sixteen, matching the divisions of a specification",
+              "Six, on one index card, from citation to date and source",
+              "Four, one per lesson 8 question",
+              "Three, one per question",
+              "Sixteen",
             ],
             correctIndex: 0,
             explanation:
@@ -5486,8 +5486,8 @@ Legal Information Institute. (n.d.-b). *675 IAC 14-4.4-1: Adoption by reference;
             options: [
               "The date checked and the source read",
               "The full citation of the rule, read the way section 4 taught",
-              "The section range in which the amendments are found",
-              "The name the government gives to the result of the adoption",
+              "The amendment range",
+              "The result's name",
             ],
             correctIndex: 0,
             explanation:
@@ -5499,7 +5499,7 @@ Legal Information Institute. (n.d.-b). *675 IAC 14-4.4-1: Adoption by reference;
             options: [
               "The mirror that looks official",
               "The building department that answers a code question by memory rather than by document",
-              "The model code edition that is newer than the one the state adopted",
+              "A newer edition",
               "The local ordinance that conflicts with the state adoption on the same point",
             ],
             correctIndex: 0,
@@ -5524,9 +5524,9 @@ Legal Information Institute. (n.d.-b). *675 IAC 14-4.4-1: Adoption by reference;
             prompt: "What does the course suggest if a state site gives you a blank page?",
             options: [
               "Try another browser, a PDF version, or a mirror, and record which you read",
-              "Report the failure to the agency and wait for the site to be repaired",
-              "Rely on the search summaries, which describe the rule's contents accurately",
-              "Assume the rule has been repealed and look for a newer one at the next decimal",
+              "Report it and wait",
+              "Rely on search summaries",
+              "Assume the rule was repealed",
             ],
             correctIndex: 0,
             explanation:
@@ -5538,8 +5538,8 @@ Legal Information Institute. (n.d.-b). *675 IAC 14-4.4-1: Adoption by reference;
             options: [
               "Which code editions is this jurisdiction currently enforcing",
               "Whether the wall you want to remove is carrying any load from the floor above",
-              "How long the department usually takes to approve a residential application",
-              "Whether the contractor you have chosen is licensed for the work",
+              "How long approval takes",
+              "Whether the contractor is licensed",
             ],
             correctIndex: 0,
             explanation:
@@ -5551,7 +5551,7 @@ Legal Information Institute. (n.d.-b). *675 IAC 14-4.4-1: Adoption by reference;
             options: [
               "Whether a specific job needs a permit",
               "Whether the city has adopted amendments on top of the state code",
-              "Where the adopted code can be read without buying it",
+              "Where to read the code",
               "Which editions the jurisdiction currently enforces for dwellings",
             ],
             correctIndex: 0,
@@ -5576,9 +5576,9 @@ Legal Information Institute. (n.d.-b). *675 IAC 14-4.4-1: Adoption by reference;
             prompt: "What is a documentary answer?",
             options: [
               "An answer a question has because a document states it",
-              "An answer an official gives in writing rather than over the telephone",
-              "An answer recorded in a permit file after an inspection has been completed",
-              "An answer taken from a model code rather than from a state amendment",
+              "An official's written answer",
+              "An answer in a permit file",
+              "An answer from a model code",
             ],
             correctIndex: 0,
             explanation:
@@ -5590,8 +5590,8 @@ Legal Information Institute. (n.d.-b). *675 IAC 14-4.4-1: Adoption by reference;
             options: [
               "About half an hour, and no money",
               "About two days, because most state registers take that long to respond to a request",
-              "About an hour, plus the price of a single-section download from the publisher",
-              "About a week, because the building department must reply in writing first",
+              "An hour and a fee",
+              "About a week",
             ],
             correctIndex: 0,
             explanation:
@@ -5601,10 +5601,10 @@ Legal Information Institute. (n.d.-b). *675 IAC 14-4.4-1: Adoption by reference;
           {
             prompt: "What does the worked Indiana answer record in its last item?",
             options: [
-              "A limitation",
+              "A limitation: it was read on a mirror",
               "The price the state paid to license the edition it adopted for public review",
               "The name of the official who confirmed the adoption was still current",
-              "The number of amendments the state wrote into the model text",
+              "The amendment count",
             ],
             correctIndex: 0,
             explanation:
@@ -5627,10 +5627,10 @@ Legal Information Institute. (n.d.-b). *675 IAC 14-4.4-1: Adoption by reference;
           {
             prompt: "What does the course say to write instead of leaving an item blank?",
             options: [
-              "Not found on a date, and where you searched",
-              "The corresponding item from Indiana's rule, marked as an example",
-              "A best estimate, flagged so it can be corrected later",
-              "The item from your city's ordinance if the state rule does not carry it",
+              "Not found on a date, and where you searched, since a gap is usable",
+              "Indiana's item, as an example",
+              "A flagged best estimate",
+              "Your city ordinance's item",
             ],
             correctIndex: 0,
             explanation:
@@ -5640,10 +5640,10 @@ Legal Information Institute. (n.d.-b). *675 IAC 14-4.4-1: Adoption by reference;
           {
             prompt: "What does the fill-in exercise check?",
             options: [
-              "The vocabulary of the method",
-              "Your own state's adopted edition, graded against a table of all fifty states",
+              "The vocabulary of the method, not your answer",
+              "Your state's edition",
               "Your arithmetic on the dimensions taken from the Navy manual's worked example",
-              "The order of the inspections published by your own building department",
+              "Your inspection order",
             ],
             correctIndex: 0,
             explanation:
@@ -5653,9 +5653,9 @@ Legal Information Institute. (n.d.-b). *675 IAC 14-4.4-1: Adoption by reference;
           {
             prompt: "Which word does the course say separates houses from everything else in a search?",
             options: [
-              "Residential",
+              "Residential, as in residential code",
               "Building, because building codes cover dwellings and other structures together",
-              "Adopted, because adoption is what makes a code apply to a structure",
+              "Adopted",
               "Dwelling, because it is the word every state uses in its rule titles",
             ],
             correctIndex: 0,
@@ -5666,7 +5666,7 @@ Legal Information Institute. (n.d.-b). *675 IAC 14-4.4-1: Adoption by reference;
           {
             prompt: "What kind of agency does the course suggest looking for if the rule itself is elusive?",
             options: [
-              "A state fire prevention, building safety or community affairs agency",
+              "A state fire, building safety or community affairs agency",
               "The office of the attorney general, which publishes opinions on code questions",
               "The state licensing board for contractors and design professionals",
               "The regional office of the model code publisher serving your state",
@@ -5680,9 +5680,9 @@ Legal Information Institute. (n.d.-b). *675 IAC 14-4.4-1: Adoption by reference;
             prompt: "What counts as done, at the end of the exercise?",
             options: [
               "Six traceable items and one question you could ask tomorrow",
-              "A copy of the adopted edition obtained through a publisher's free access offering",
-              "A written reply from the building department confirming the edition enforced",
-              "An annotated copy of the state's amendments to the model text",
+              "A copy of the adopted edition",
+              "A written reply from the department",
+              "An annotated copy of the amendments",
             ],
             correctIndex: 0,
             explanation:
@@ -5694,8 +5694,8 @@ Legal Information Institute. (n.d.-b). *675 IAC 14-4.4-1: Adoption by reference;
             options: [
               "The 2020 Indiana Residential Code",
               "The Indiana One and Two Family Dwelling Code, taken from the article heading",
-              "The 2018 International Residential Code for One and Two Family Dwellings",
-              "675 IAC 14-4.4-1, Adoption by reference; title; purpose",
+              "The model code's title",
+              "675 IAC 14-4.4-1",
             ],
             correctIndex: 0,
             explanation:
@@ -5708,7 +5708,7 @@ Legal Information Institute. (n.d.-b). *675 IAC 14-4.4-1: Adoption by reference;
               "In the rest of rule 675 IAC 14-4.4",
               "In a separate article of title 675 dealing with residential amendments",
               "In the city ordinances of each Indiana jurisdiction that adopted the rule",
-              "In the printing of the model code the rule names",
+              "In the printing",
             ],
             correctIndex: 0,
             explanation:
@@ -5719,9 +5719,9 @@ Legal Information Institute. (n.d.-b). *675 IAC 14-4.4-1: Adoption by reference;
             prompt: "What is an adoption rule, as the exercise's vocabulary defines it?",
             options: [
               "The public document making a named edition enforceable in a jurisdiction",
-              "The internal policy a building department follows when reviewing an application",
-              "The page a state agency publishes listing the codes currently in effect",
-              "The ordinance a city passes to create a building department",
+              "A department's internal review policy",
+              "An agency's list of codes in effect",
+              "A city ordinance creating a department",
             ],
             correctIndex: 0,
             explanation:
@@ -5732,7 +5732,7 @@ Legal Information Institute. (n.d.-b). *675 IAC 14-4.4-1: Adoption by reference;
             prompt: "What is a recorded gap?",
             options: [
               "A written note of what was not found, where you searched, and when",
-              "The interval between a code being published and a state adopting it",
+              "The interval between a code being published and a state finally adopting it",
               "The difference between the year in a state's rule name and the edition adopted",
               "A section of a model code a state chose not to adopt",
             ],
@@ -5745,9 +5745,9 @@ Legal Information Institute. (n.d.-b). *675 IAC 14-4.4-1: Adoption by reference;
             prompt: "What is a codes page?",
             options: [
               "An agency page listing the codes in effect",
-              "The page of a model code listing the sections a jurisdiction has amended",
+              "A model code's amended list",
               "The page of a permit application on which the adopted edition is declared",
-              "The index of an administrative code title showing its articles and rules",
+              "A title's index",
             ],
             correctIndex: 0,
             explanation:
@@ -5771,9 +5771,9 @@ Legal Information Institute. (n.d.-b). *675 IAC 14-4.4-1: Adoption by reference;
             prompt: "What kind of search result does lesson 13 say you want?",
             options: [
               "A result on a state domain or a legal-publisher mirror of the state's rules",
-              "A result from a trade publication summarising the state's current code position",
-              "A result from the model code publisher's site listing adopting jurisdictions",
-              "A result from a contractor's website explaining the local requirements",
+              "A trade publication summary",
+              "The publisher's adopter list",
+              "A contractor's website",
             ],
             correctIndex: 0,
             explanation:
@@ -5785,8 +5785,8 @@ Legal Information Institute. (n.d.-b). *675 IAC 14-4.4-1: Adoption by reference;
             options: [
               "Recording an adoption in six items you can carry and re-check",
               "Checking a dimension string against the overall dimension on a floor plan",
-              "Asking three questions of any claim about what the code says",
-              "Confirming that work has been approved before it is covered",
+              "Three questions of a claim",
+              "Checking before covering",
             ],
             correctIndex: 0,
             explanation:
@@ -5799,7 +5799,7 @@ Legal Information Institute. (n.d.-b). *675 IAC 14-4.4-1: Adoption by reference;
               "It will be wrong eventually",
               "It will remain accurate until the next model code edition is published",
               "It will be confirmed by the building department when you ask your question",
-              "It will apply to any address within the same state",
+              "Statewide",
             ],
             correctIndex: 0,
             explanation:
@@ -5809,7 +5809,7 @@ Legal Information Institute. (n.d.-b). *675 IAC 14-4.4-1: Adoption by reference;
           {
             prompt: "What does the course say a mirror usually is, even though it is a copy?",
             options: [
-              "Accurate, and often more readable than the state's own site",
+              "Accurate, and often more readable",
               "Out of date by at least one full readoption cycle in most states",
               "Restricted to subscribers, which is why the state's register is preferred",
               "Unofficial to the point that it should not be cited at all",
@@ -5823,9 +5823,9 @@ Legal Information Institute. (n.d.-b). *675 IAC 14-4.4-1: Adoption by reference;
             prompt: "Why could this course quote a 1993 Navy manual but not read Indiana's own register?",
             options: [
               "The manual is a file and the register is a browser application",
-              "The manual is public domain and the register is copyrighted by the state",
-              "The manual was fetched from a state domain and the register was not",
-              "The manual is current and the register had been taken offline",
+              "The register is copyrighted",
+              "Only the manual was on a state domain",
+              "The register was offline",
             ],
             correctIndex: 0,
             explanation:
@@ -5837,8 +5837,8 @@ Legal Information Institute. (n.d.-b). *675 IAC 14-4.4-1: Adoption by reference;
             options: [
               "Where the amendments are, by section range if the rule states one",
               "The name of the inspector assigned to residential work in the jurisdiction",
-              "The fee charged for a residential permit in the jurisdiction",
-              "The order in which the jurisdiction performs its inspections",
+              "The permit fee",
+              "The inspection order",
             ],
             correctIndex: 0,
             explanation:
@@ -5849,7 +5849,7 @@ Legal Information Institute. (n.d.-b). *675 IAC 14-4.4-1: Adoption by reference;
             prompt: "What does the course say about asking whether a specific job needs a permit?",
             options: [
               "Ask it, but not as part of this exercise",
-              "Do not ask it, because a department may not answer a hypothetical question",
+              "Never ask it",
               "Ask it first, because the answer determines whether the rest of the exercise matters",
               "Ask the state agency rather than the local department, which cannot bind itself",
             ],
@@ -5875,9 +5875,9 @@ Legal Information Institute. (n.d.-b). *675 IAC 14-4.4-1: Adoption by reference;
             prompt: "What does the exercise ask you to produce besides the six items?",
             options: [
               "One question for your building department",
-              "A sketch of your own house showing the walls you intend to change",
-              "A copy of the section of the adopted code that governs your planned work",
-              "A list of the inspections your project will require",
+              "A sketch of your house",
+              "A copy of the governing section",
+              "A list of inspections",
             ],
             correctIndex: 0,
             explanation:
@@ -5889,8 +5889,8 @@ Legal Information Institute. (n.d.-b). *675 IAC 14-4.4-1: Adoption by reference;
             options: [
               "2018 edition, first printing August 2017",
               "2020 edition, first printing November 2019, matching the rule's filing date",
-              "2017 edition, second printing, published by the International Code Council",
-              "2026 edition, as reported by search summaries seen during the build",
+              "2017 edition, second printing",
+              "2026 edition",
             ],
             correctIndex: 0,
             explanation:
@@ -5903,7 +5903,7 @@ Legal Information Institute. (n.d.-b). *675 IAC 14-4.4-1: Adoption by reference;
               "Better search terms, looking for the agency, and a PDF or mirror",
               "Calling the department, emailing the agency, and visiting the counter in person",
               "Buying the edition, reading the commentary, and checking the publisher's website",
-              "Asking a contractor, asking an inspector, and asking a designer",
+              "Asking around",
             ],
             correctIndex: 0,
             explanation:
@@ -5913,7 +5913,7 @@ Legal Information Institute. (n.d.-b). *675 IAC 14-4.4-1: Adoption by reference;
           {
             prompt: "What does the course mean by \"traceable to a document you actually opened\"?",
             options: [
-              "You read the source yourself rather than a summary of it",
+              "You read the source, not a summary",
               "You obtained a certified copy of the rule from the state agency",
               "You recorded the URL of every search result the query returned",
               "You confirmed the item with an official before writing it down",
@@ -5926,10 +5926,10 @@ Legal Information Institute. (n.d.-b). *675 IAC 14-4.4-1: Adoption by reference;
           {
             prompt: "Which of these is the citation in the worked Indiana answer?",
             options: [
-              "675 IAC 14-4.4-1",
-              "The 2020 Indiana Residential Code, which is the name the state gives the result",
-              "The 2018 International Residential Code for One and Two Family Dwellings",
-              "Title 675, Article 14, One and Two Family Dwelling Code",
+              "675 IAC 14-4.4-1, Adoption by reference; title; purpose",
+              "The 2020 Indiana Residential Code",
+              "The 2018 International Residential Code",
+              "Title 675, Article 14",
             ],
             correctIndex: 0,
             explanation:
@@ -5941,8 +5941,8 @@ Legal Information Institute. (n.d.-b). *675 IAC 14-4.4-1: Adoption by reference;
             options: [
               "Somebody else's example",
               "A summary of the model codes most commonly adopted across the United States",
-              "An account of how one building department inspects residential work",
-              "A reading of the federal standard for manufactured homes",
+              "One county",
+              "A HUD reading",
             ],
             correctIndex: 0,
             explanation:
@@ -5954,7 +5954,7 @@ Legal Information Institute. (n.d.-b). *675 IAC 14-4.4-1: Adoption by reference;
             options: [
               "A real finding about your state, worth writing down",
               "A sign that the search terms were wrong and should be tried again from scratch",
-              "Grounds for using another state's rule as a substitute",
+              "Grounds to borrow a rule",
               "Evidence that the state has not adopted a residential code at all",
             ],
             correctIndex: 0,
@@ -5980,10 +5980,10 @@ Legal Information Institute. (n.d.-b). *675 IAC 14-4.4-1: Adoption by reference;
           {
             prompt: "What does this course refuse to tell a learner about their own project?",
             options: [
-              "Whether it needs a permit",
-              "Which document governs when the drawings and the specification conflict on a job",
-              "How to read a section of a drawing set and find the dimensions in it",
-              "How to find the public rule that adopted a code in their state",
+              "Whether it needs a permit, which only its building department can say",
+              "Which document wins a conflict",
+              "How to read a section",
+              "How to find the adoption rule",
             ],
             correctIndex: 0,
             explanation:
@@ -5995,8 +5995,8 @@ Legal Information Institute. (n.d.-b). *675 IAC 14-4.4-1: Adoption by reference;
             options: [
               "Federal works carry no copyright",
               "Because the Navy licenses its training material for educational reuse on request",
-              "Because a manual published in 1993 has outlived its copyright term",
-              "Because a model code becomes uncopyrightable only after a state adopts it",
+              "The manual is too old",
+              "Adoption frees the code",
             ],
             correctIndex: 0,
             explanation:
@@ -6009,7 +6009,7 @@ Legal Information Institute. (n.d.-b). *675 IAC 14-4.4-1: Adoption by reference;
               "The drawing set and the adopted code",
               "The permit application and the certificate of occupancy issued at completion",
               "The contract and the schedule of values agreed between owner and builder",
-              "The title block and the revision block on the first sheet of the set",
+              "Two sheet blocks",
             ],
             correctIndex: 0,
             explanation:
@@ -6032,10 +6032,10 @@ Legal Information Institute. (n.d.-b). *675 IAC 14-4.4-1: Adoption by reference;
           {
             prompt: "What does a drawing set begin by showing, in most cases?",
             options: [
-              "The site and its adjoining areas",
-              "The foundation plan, taken on a plane slightly below the top of the foundation wall",
-              "The framing plans for the floors, walls and roof of the structure",
-              "The schedules for doors, windows and interior finishes",
+              "The site and its adjoining areas, with boundaries and contours",
+              "The foundation plan",
+              "The framing plans",
+              "The schedules",
             ],
             correctIndex: 0,
             explanation:
@@ -6047,8 +6047,8 @@ Legal Information Institute. (n.d.-b). *675 IAC 14-4.4-1: Adoption by reference;
             options: [
               "Sizes and spacing of joists, girders and columns",
               "The species and moisture content of the lumber to be delivered for the floor",
-              "The order in which the members are to be installed once the sill is set",
-              "The interior finish to be applied to the ceiling below the floor",
+              "The installation order",
+              "The ceiling finish below",
             ],
             correctIndex: 0,
             explanation:
@@ -6061,7 +6061,7 @@ Legal Information Institute. (n.d.-b). *675 IAC 14-4.4-1: Adoption by reference;
               "A section is cut; an elevation is a face",
               "A section is drawn from above and an elevation from the side of the structure",
               "A section is a general drawing and an elevation is a large-scale detail",
-              "A section is drawn by the engineer and an elevation by the architect",
+              "Who draws each",
             ],
             correctIndex: 0,
             explanation:
@@ -6084,10 +6084,10 @@ Legal Information Institute. (n.d.-b). *675 IAC 14-4.4-1: Adoption by reference;
           {
             prompt: "Where is the title block, and where is the revision block?",
             options: [
-              "Title lower-right, revision upper right",
-              "Title upper right, revision lower-right, with the legend beside the title block",
-              "Both in the lower-right corner, with the revision block above the title block",
-              "Both along the lower border, between the zone reference squares",
+              "Title in the lower-right corner, revision in the upper right",
+              "Title upper right, revision lower-right",
+              "Both lower-right",
+              "Both along the lower border",
             ],
             correctIndex: 0,
             explanation:
@@ -6098,8 +6098,8 @@ Legal Information Institute. (n.d.-b). *675 IAC 14-4.4-1: Adoption by reference;
             prompt: "What is the Navy manual's rule about measuring a drawing?",
             options: [
               "Never measure a drawing; use dimensions",
-              "Measure only at the stated scale, and only on an original rather than a copy",
-              "Measure only the overall dimensions and take the partials from the schedule",
+              "Measure only originals",
+              "Measure only overalls",
               "Measure only with an architect's scale matched to the ratio in the title block",
             ],
             correctIndex: 0,
@@ -6110,10 +6110,10 @@ Legal Information Institute. (n.d.-b). *675 IAC 14-4.4-1: Adoption by reference;
           {
             prompt: "If a drawing's scale is shown as 1\" = 2\", how long is each line on the print?",
             options: [
-              "Half its actual length",
+              "Half its actual length, the reducing case",
               "Twice its actual length, so that small parts can be read without magnification",
               "Equal to its actual length, since both figures are given in inches",
-              "Dependent on the sheet size, which the scale block does not record",
+              "Dependent on the sheet size",
             ],
             correctIndex: 0,
             explanation:
@@ -6136,10 +6136,10 @@ Legal Information Institute. (n.d.-b). *675 IAC 14-4.4-1: Adoption by reference;
           {
             prompt: "Under the Navy manual's rule, which document takes precedence in a conflict?",
             options: [
-              "The specifications",
-              "The drawings, which are the document a building department reviews and stamps",
-              "Whichever of the two carries the later date on its cover or title block",
-              "The schedules, which present the data without reference to either",
+              "The specifications, though a private contract states its own order",
+              "The drawings, as the stamped document",
+              "Whichever is dated later",
+              "The schedules",
             ],
             correctIndex: 0,
             explanation:
@@ -6149,10 +6149,10 @@ Legal Information Institute. (n.d.-b). *675 IAC 14-4.4-1: Adoption by reference;
           {
             prompt: "In a specification section, which part carries how the work must be done?",
             options: [
-              "Part 3, Execution",
+              "Part 3, Execution, how it must be performed",
               "Part 2, Products, which addresses the materials and equipment included in the work",
-              "Part 1, General, which carries requirements of a general nature for the section",
-              "Division 1, the boilerplate common to all projects under a contract",
+              "Part 1, General",
+              "Division 1",
             ],
             correctIndex: 0,
             explanation:
@@ -6164,7 +6164,7 @@ Legal Information Institute. (n.d.-b). *675 IAC 14-4.4-1: Adoption by reference;
             options: [
               "A model code, and an adoption",
               "A state code and a federal code, which apply to different classes of structure",
-              "The published edition and the publisher's commentary on it",
+              "The book",
               "The permitted drawings and the inspections carried out against them",
             ],
             correctIndex: 0,
@@ -6189,9 +6189,9 @@ Legal Information Institute. (n.d.-b). *675 IAC 14-4.4-1: Adoption by reference;
             prompt: "Why does an administrative code article run 14-4, 14-4.1, 14-4.2, 14-4.3?",
             options: [
               "A replacement is written at the next decimal and the old rule repealed",
-              "Each decimal covers a different class of structure within the same article",
-              "The decimals number the state amendments made to a single adopted edition",
-              "The publisher renumbers the rules as it processes them for its mirror",
+              "Each decimal is a class of structure",
+              "The decimals number amendments",
+              "The publisher renumbers them",
             ],
             correctIndex: 0,
             explanation:
@@ -6202,9 +6202,9 @@ Legal Information Institute. (n.d.-b). *675 IAC 14-4.4-1: Adoption by reference;
             prompt: "Which edition does Indiana's residential adoption rule name?",
             options: [
               "2018, first printing August 2017",
-              "2020, matching the name the state gives to the resulting code",
+              "2020, like the name",
               "2021, the newest edition available when the rule was filed in November 2019",
-              "2026, following the state's most recent readoption cycle",
+              "2026",
             ],
             correctIndex: 0,
             explanation:
@@ -6217,7 +6217,7 @@ Legal Information Institute. (n.d.-b). *675 IAC 14-4.4-1: Adoption by reference;
               "The state's own amendments govern over the model text",
               "The state adopted only the sections it listed and left the rest unenforced",
               "The publisher's errata are excluded from the edition the state adopted",
-              "The rule may be revised later without a new adoption being filed",
+              "Later revision needs no filing",
             ],
             correctIndex: 0,
             explanation:
@@ -6241,9 +6241,9 @@ Legal Information Institute. (n.d.-b). *675 IAC 14-4.4-1: Adoption by reference;
             prompt: "What is 675 IAC 17-1.8 titled, and what edition does its first section adopt?",
             options: [
               "Titled 2009 Edition, adopting the 2008 National Electrical Code",
-              "Titled 2008 Edition, adopting the 2009 National Electrical Code in its first printing",
-              "Titled 2026 Edition, adopting the 2023 National Electrical Code",
-              "Titled 2005 Edition, adopting the 2005 National Electrical Code",
+              "Titled 2008, adopting the 2009 edition",
+              "Titled 2026, adopting the 2023 edition",
+              "Titled 2005, adopting 2005",
             ],
             correctIndex: 0,
             explanation:
@@ -6254,9 +6254,9 @@ Legal Information Institute. (n.d.-b). *675 IAC 14-4.4-1: Adoption by reference;
             prompt: "Why does buying the newest edition of a model code not answer the question?",
             options: [
               "It tells you what the publisher printed, not what your jurisdiction enforces",
-              "Because a purchased copy may not be used to determine compliance with a permit",
+              "A bought copy cannot show compliance",
               "Because the newest edition omits the amendments the publisher made in earlier printings",
-              "Because a building department will not accept a code reference from a private copy",
+              "Departments reject private copies",
             ],
             correctIndex: 0,
             explanation:
@@ -6267,7 +6267,7 @@ Legal Information Institute. (n.d.-b). *675 IAC 14-4.4-1: Adoption by reference;
             prompt: "What happened when this course tried to read Indiana's official rules portal?",
             options: [
               "Four requests returned an empty page shell",
-              "The portal required payment before the rule text would be displayed",
+              "It required payment",
               "The portal returned the rule but with no filing date or register number attached",
               "The portal had been retired and redirected to the model code publisher",
             ],
@@ -6280,9 +6280,9 @@ Legal Information Institute. (n.d.-b). *675 IAC 14-4.4-1: Adoption by reference;
             prompt: "What three questions does the course say to ask of any \"the code says\" claim?",
             options: [
               "Which edition, which section, which jurisdiction adopted and amended it",
-              "Who told you, when they told you, and whether they work in the trade",
-              "What it costs, how long it takes, and whether a permit is required",
-              "Which sheet shows it, which revision, and which scale it is drawn at",
+              "Who told you, and when",
+              "Cost, time, and permit need",
+              "Which sheet, revision and scale",
             ],
             correctIndex: 0,
             explanation:
@@ -6307,8 +6307,8 @@ Legal Information Institute. (n.d.-b). *675 IAC 14-4.4-1: Adoption by reference;
             options: [
               "It governs manufactured homes, not site-built houses",
               "It applies only where no state residential code has been adopted by reference",
-              "It may be read but not cited, because its subparts change without notice",
-              "It covers only the electrical and plumbing systems of a dwelling",
+              "It may be read, not cited",
+              "It covers only services",
             ],
             correctIndex: 0,
             explanation:
@@ -6321,7 +6321,7 @@ Legal Information Institute. (n.d.-b). *675 IAC 14-4.4-1: Adoption by reference;
               "The permitted set of documents and the adopted codes",
               "The contractor's schedule of work and the owner's written instructions",
               "The model code as published and the publisher's commentary on it",
-              "The site plan and the plot plan prepared for the project",
+              "The site and plot plans",
             ],
             correctIndex: 0,
             explanation:
@@ -6344,10 +6344,10 @@ Legal Information Institute. (n.d.-b). *675 IAC 14-4.4-1: Adoption by reference;
           {
             prompt: "Why does the rough-in inspection come before the drywall?",
             options: [
-              "Drywall makes the rough-in unexaminable",
-              "Because the drywall contractor requires a signed record before scheduling the work",
-              "Because insulation may not be installed until the rough work is approved and paid",
-              "Because the department inspects trades in the order they were permitted",
+              "Drywall makes the rough-in unexaminable once the walls are closed",
+              "The drywall trade needs a record",
+              "Insulation waits for payment",
+              "Trades go in permit order",
             ],
             correctIndex: 0,
             explanation:
@@ -6358,9 +6358,9 @@ Legal Information Institute. (n.d.-b). *675 IAC 14-4.4-1: Adoption by reference;
             prompt: "State the basic rule Santa Cruz County publishes about covering work.",
             options: [
               "Do not cover any portion of the work without the approval of your inspector",
-              "Notify the department at least 48 hours before any work is concealed",
-              "Photograph all concealed work and retain the images until final inspection",
-              "Obtain a written release from the department before any trade begins closing walls",
+              "Give 48 hours' notice",
+              "Photograph concealed work",
+              "Get a written release first",
             ],
             correctIndex: 0,
             explanation:
@@ -6370,7 +6370,7 @@ Legal Information Institute. (n.d.-b). *675 IAC 14-4.4-1: Adoption by reference;
           {
             prompt: "What must happen before a permit reaches final status in that county?",
             options: [
-              "All agency holds cleared and the final inspection completed",
+              "All agency holds cleared, final inspection completed",
               "The owner must take occupancy and confirm the work is satisfactory",
               "The contractor must submit a record set showing the work as built",
               "The utilities must be released before the final inspection is scheduled",
@@ -6384,9 +6384,9 @@ Legal Information Institute. (n.d.-b). *675 IAC 14-4.4-1: Adoption by reference;
             prompt: "Which six items does the course say to write down about your own adoption rule?",
             options: [
               "Citation, model code, edition and printing, name, amendments, date and source",
-              "Address, jurisdiction, department, inspector, permit number and fee",
+              "Address, jurisdiction, department, assigned inspector, permit number and the permit fee",
               "Title, article, rule, section, paragraph and subparagraph",
-              "Scale, revision, sheet number, drawing number, date and preparing organisation",
+              "Scale, revision, sheet and drawing number",
             ],
             correctIndex: 0,
             explanation:
@@ -6398,7 +6398,7 @@ Legal Information Institute. (n.d.-b). *675 IAC 14-4.4-1: Adoption by reference;
             options: [
               "The mirror that looks official, and the portal that shows you nothing",
               "The agency page that is out of date, and the ordinance that conflicts with the state rule",
-              "The edition that is newer than the adoption, and the printing that is not named",
+              "A newer edition and an unnamed printing",
               "The contractor who quotes from memory, and the inspector who will not put it in writing",
             ],
             correctIndex: 0,
@@ -6422,7 +6422,7 @@ Legal Information Institute. (n.d.-b). *675 IAC 14-4.4-1: Adoption by reference;
           {
             prompt: "What does the last item of the worked Indiana answer record?",
             options: [
-              "That the rule was read on a mirror, not the state's register",
+              "That it was read on a mirror",
               "That the amendments run through section 245 of the same rule",
               "That the state named the result the 2020 Indiana Residential Code",
               "That the edition adopted is the 2018 one, first printing August 2017",
@@ -6438,7 +6438,7 @@ Legal Information Institute. (n.d.-b). *675 IAC 14-4.4-1: Adoption by reference;
               "A check on the accuracy of the design drawings",
               "A legal record of the work as it was finally constructed on the site",
               "A substitute for the specification where the two would otherwise conflict",
-              "A set of dimensions that may be scaled directly off the sheet",
+              "Scalable dimensions",
             ],
             correctIndex: 0,
             explanation:
@@ -6449,8 +6449,8 @@ Legal Information Institute. (n.d.-b). *675 IAC 14-4.4-1: Adoption by reference;
             prompt: "What does a diagonal line across a space in a title block mean?",
             options: [
               "The information is not required or is given elsewhere",
-              "The information has been superseded by a later revision to the sheet",
-              "The space is reserved for the reviewing authority's approval stamp",
+              "It is superseded",
+              "It awaits a stamp",
               "The sheet is preliminary and the space will be completed before construction",
             ],
             correctIndex: 0,
@@ -6474,10 +6474,10 @@ Legal Information Institute. (n.d.-b). *675 IAC 14-4.4-1: Adoption by reference;
           {
             prompt: "What does the course say about the year in a state's name for its own code?",
             options: [
-              "It is not necessarily the edition year",
-              "It is always the year the rule takes effect in the jurisdiction",
-              "It is always the year of the model code edition the rule adopts",
-              "It is assigned by the model code publisher rather than by the state",
+              "It is not necessarily the edition year, as Indiana shows twice",
+              "It is always the effective year",
+              "It is always the edition year",
+              "The publisher assigns it",
             ],
             correctIndex: 0,
             explanation:
@@ -6489,7 +6489,7 @@ Legal Information Institute. (n.d.-b). *675 IAC 14-4.4-1: Adoption by reference;
             options: [
               "Details, assemblies, the bill of materials and the specifications",
               "The permit application, the inspection record and the certificate of occupancy",
-              "The site plan alone, with everything else supplied by the specification",
+              "The site plan alone",
               "The schedules and notes, with the specification issued separately by the owner",
             ],
             correctIndex: 0,
@@ -6501,9 +6501,9 @@ Legal Information Institute. (n.d.-b). *675 IAC 14-4.4-1: Adoption by reference;
             prompt: "What kind of question does the course say has a documentary answer?",
             options: [
               "Which editions this jurisdiction is currently enforcing",
-              "Whether the work you are planning will pass its first inspection",
+              "Whether it will pass",
               "How much a residential permit will cost for a project of your size",
-              "Whether a wall you want to remove is carrying load",
+              "Whether a wall bears load",
             ],
             correctIndex: 0,
             explanation:
@@ -6516,7 +6516,7 @@ Legal Information Institute. (n.d.-b). *675 IAC 14-4.4-1: Adoption by reference;
               "The average condition throughout a structure",
               "The single most heavily loaded location, which governs the rest of the structure",
               "The condition most often found in buildings of that type in the jurisdiction",
-              "A cut taken at a standard location prescribed by the adopted code",
+              "A code-set cut",
             ],
             correctIndex: 0,
             explanation:
@@ -6541,8 +6541,8 @@ Legal Information Institute. (n.d.-b). *675 IAC 14-4.4-1: Adoption by reference;
             options: [
               "None of the things that actually govern your wall",
               "A useful national baseline that most jurisdictions enforce without amendment",
-              "A reproduction permitted because a table carries no protectable expression",
-              "A substitute for reading the drawings, which follow the table anyway",
+              "A permitted reproduction",
+              "A drawing substitute",
             ],
             correctIndex: 0,
             explanation:
