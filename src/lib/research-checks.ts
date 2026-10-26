@@ -8782,6 +8782,33 @@ export const RESEARCH_CHECKS: ResearchCheck[] = [
     needs: ["The reviewer's confirmation or corrections", "Or a published broadcast operations procedure with locator"],
     where: ["The qualified reviewer", "SMPTE or SVG operations material"],
   },
+  // ── Cables and Connectors (CREW-00), filed 2026-10-26 ──────────────────────────────────────────────
+  {
+    key: "crew00-mismatch-arithmetic",
+    title: "The 75 against 50 ohm mismatch arithmetic",
+    course: "cables-and-connectors",
+    lesson: "it-fits-and-it-reflects",
+    quote: "This is standard transmission-line arithmetic, not a figure from a source read for this course, and the reviewer will confirm it.",
+    severity: "medium",
+    question: "Is it right that a 50-ohm part in a 75-ohm line gives a reflection coefficient of 0.2, a VSWR of 1.5 and about 14 dB of return loss, worse than the 15 dB Belden specifies for 1694A at 4.5 to 6 GHz?",
+    claim: "Lesson 2 works (75 - 50) / (75 + 50) = 0.2, VSWR 1.5, and reads 13.98 dB from Canare's conversion table, then compares it with Belden 1694A's 15 dB minimum return loss.",
+    stakes: "Medium: the lesson's argument that a 50-ohm barrel in an SDI path matters rests on this arithmetic. The Canare and Belden numbers are verified; the formula is not from a fetched source.",
+    needs: ["A maker's or textbook's statement of the reflection-coefficient and VSWR formulas with locator, or the reviewer's sign-off"],
+    where: ["The qualified reviewer (a broadcast engineer)", "Amphenol RF's FAQ on 50 and 75 ohm connectors (403 on 2026-10-26; open in a browser)", "A coax maker's application note on return loss"],
+  },
+  {
+    key: "crew00-bnc-mating-damage",
+    title: "Does mating a 50-ohm BNC plug with a 75-ohm BNC jack damage either?",
+    course: "cables-and-connectors",
+    lesson: "it-fits-and-it-reflects",
+    quote: "Whether pushing a 50-ohm plug into a current 75-ohm jack can damage it is a question this course leaves open.",
+    severity: "medium",
+    question: "Does pushing a 50-ohm BNC plug into a current 75-ohm BNC jack (or the reverse) damage either connector, or is that only true of older parts?",
+    claim: "Lesson 2 cites DDK (the two intermate) and one reseller's page (75-ohm BNCs mate with 50-ohm ones \"with no damage\"), and leaves the damage question open.",
+    stakes: "Medium: a learner may mix parts freely, or refuse a safe adapter, on the strength of forum claims.",
+    needs: ["A connector maker's statement (Amphenol, Canare, Trompeter) with locator"],
+    where: ["Amphenol RF FAQ \"Can I use 50 ohm connectors in a 75 ohm system?\" (403 on 2026-10-26)", "Canare's connector catalog notes", "The qualified reviewer"],
+  },
 ];
 
 export function getResearchCheck(key: string): ResearchCheck | undefined {
