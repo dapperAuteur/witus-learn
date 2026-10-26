@@ -19,38 +19,68 @@ import type { AuthoredCourse } from "./authored-course";
 //           in the lesson. A lines are never taught. Each file's "Teach this, not that" list is taught
 //           as corrections where the lesson needs it.
 //
-// BUILD STATUS: pass 1 of 2 (2026-10-26) wrote sections 1 to 5, 18 teaching lessons and five section
-// quizzes: why the cable matters; video over copper; camera cables; fiber; audio over copper. Pass 2
-// writes sections 6 to 9 (network, power, control and data, craft), the capstone and the final quiz.
+// BUILD STATUS: complete, in two passes on 2026-10-26. Pass 1 wrote sections 1 to 5 (lessons 1 to 18):
+// why the cable matters; video over copper; camera cables; fiber; audio over copper. Pass 2 wrote
+// sections 6 to 9 (lessons 19 to 29): audio and video over the network; power; control, comms and
+// data; craft, ending in the hands-on capstone (lesson 29). Nine section quizzes and a final (pool 44,
+// serves 10, passes at 80). 29 teaching lessons, one over the brief's "about 24 to 28": section 7
+// (electrical safety) was given four lessons rather than crowding the stop list into a third.
 //
 // VISIBILITY: PUBLIC, and HELD ("Coming soon") until a NAMED qualified reviewer, a broadcast engineer,
 // has read every lesson marked QR with authority to change or cut it (a stage electrician joins for
 // section 7). The publishHoldReason in scripts/seed-courses.ts says so.
 //
-// MARKED LESSONS (pass 1). Each starts its body with a "> **Before release:**" line naming who must act.
+// MARKED LESSONS. Each starts its body with a "> **Before release:**" line naming who must act.
 //   QR (a broadcast engineer): 2 (the 75 against 50 ohm arithmetic), 5 (three published reaches for
 //   one cable, one worked out), 7 (reference termination and the timecode connectors), 8 (all of a
 //   triax system's signals and power on one cable), 9 (the hybrid cable's power, bend radius), 10
 //   (tactical fiber carries no power), 13 (the cleaning rule), 14 (the loss-budget arithmetic and the
 //   short-link overload), 15 (laser safety), 16 (the common-mode wording, pin 3 as the cold leg), 17
 //   (never patch party-line into audio; DMX cable), 18 (AES3 run lengths and conversion).
+//   QR (a broadcast engineer), pass 2: 19 (category reasoning, PoE loss), 20 (the makers' switch
+//   list in place of Audinate's, ST 2110 on copper), 25 (DMX limits, the Sony 9-pin pin-out, GPI),
+//   26 (RF connectors, the BNC in both worlds), 27 (coil to the bend radius, cable protectors under
+//   the ADA), 28 (testers and the fault-finding order).
+//   QR (a stage electrician): 21, 22, 23 and 24, all of section 7.
+//   Practitioner: 29, the capstone (a recorded model-answer video).
 //   Unmarked: 1, 3, 4, 6, 11, 12 (definitions and spec-sheet facts read directly from the sources).
+//
+// SECTION 7 teaches what the power connectors are, what the rules say about who may do what, and when
+// to stop and call a licensed electrician; it never teaches tying in, opening a panel, landing a feeder
+// or building a cable. Corrections taught from research file 03: cam connection order is ground,
+// neutral, then the hots (reverse to disconnect), from Lex's label, and never live; classic powerCON
+// must not be connected or disconnected under load while TRUE1 is rated for it, so learners read the
+// exact part's page; the hot colors are reasoning by elimination, not a sourced rule; NEC Article 530
+// is described by subject and neither of NFPA's two titles is asserted.
 //
 // LINK, DO NOT REPEAT. CREW-05's fiber lessons ("20 · Fiber on the map", "21 · Where to learn fiber,
 // and what certifies it", "22 · A fiber kit and a first lab"), its "12 · ST 2110: separate streams" and
-// "17 · One clock: PTP"; CREW-04's "7 · Outputs, timecode and genlock"; broadcasting-break-in's
-// "6 · Signal flow and audio fundamentals". Each is named by title where this course stops.
+// "17 · One clock: PTP", "6 · What the job asks you to know about IP", "9 · Why multicast is on every
+// posting", "14 · Bandwidth math" and "24 · Source, transport or receiver?"; CREW-04's "7 · Outputs,
+// timecode and genlock"; Light on Set's "26 · Cords, plugs and circuits" and "27 · What the rules
+// forbid"; Basic Construction Safety's "10 · Subpart K: electricity on a jobsite"; Knot-Tying's
+// "28 · Coiling cable over-under"; Sound Craft's "15 · The kit and the site survey";
+// broadcasting-break-in's "6 · Signal flow and audio fundamentals" and "9 · Encoding, streaming, and
+// the FCC basics". Each is named by title where this course stops.
 // Correction to the brief (both research files): the three fiber lessons are in CREW-05, not CREW-02,
 // and sound-craft names no Dante.
 //
 // RIGHTS (the source-hosting rule in CLAUDE.md, decided per source):
-//  - Tier A, may be hosted later: the FDA laser page (a U.S. government work).
+//  - Tier A, may be hosted later: U.S. government works: the FDA laser page, the 29 C.F.R. sections
+//    (eCFR text), 47 C.F.R. § 15.236 (govinfo), the CPSC fact sheets and the Access Board's 2010 ADA
+//    Standards.
 //  - Tier B, link only, never rehost: every maker's spec sheet, manual, product page and knowledge
 //    base (AJA, Belden, Blackmagic Design, Camplex, Canare, Clear-Com, Coaxicom, DDK, ENTTEC, HDMI
 //    Licensing Administrator, Ikegami, LEMO, Mackie, Markertek, QSC, Rane, RME, Rohde & Schwarz,
 //    Schoeps, Semtech, Sennheiser, Sony via its dealer's copy, VESA), the Fischer and LEMO white
 //    papers, ProSoundWeb, the FOA's reference pages, SMPTE's free overview documents (OV 297-0 and
-//    OV 2082-0) and ESTA's published-documents listing.
+//    OV 2082-0) and ESTA's published-documents listing. Pass 2 adds, all Tier B: Siemon, Fluke
+//    Networks, Neutrik, Texas Instruments, Shure, Symetrix, EAW, Brainboxes, Biamp, Cambrionix,
+//    Interpower, Leviton, Union Connector, Eaton (a distributor's copy), Lex, Southwire, Rolls,
+//    LEWITT (Tobias), Texas A&M PerfTech, NFPA's free chart and panel statement, ETCP and ESTA's
+//    handbook, Brookhaven National Laboratory's fact sheet, the Minnesota DLI filming sheet, the
+//    Oregon license directory, the LII reproduction of Or. Admin. R. 918-282-0230, and the FOA's
+//    testing pages.
 //  - Tier C, cite only: the SMPTE, AES, TIA, IEC and NFPA standards themselves, which are paywalled.
 //    No lesson quotes or reconstructs their text; every fact about a standard comes from a free page
 //    that states it. No ESTA standard was downloaded (downloading accepts its EULA).
@@ -62,7 +92,8 @@ import type { AuthoredCourse } from "./authored-course";
 // file 02 whose letters collide with file 01's: Belden's Category 5e sheet (file 02's "Belden, 2026")
 // becomes Belden (2026c), and Blackmagic Design's ATEM and HyperDeck tech specs (file 02's n.d.-a and
 // n.d.-b) become (n.d.-c) and (n.d.-d), since this course already uses file 01's URSA pages as
-// (n.d.-a) and (n.d.-b).
+// (n.d.-a) and (n.d.-b). File 02's single Neutrik page (etherCON NE8MX6) becomes Neutrik (n.d.-h),
+// after file 03's Neutrik (n.d.-a) to (n.d.-g).
 //
 // STANDARDS: unmapped for now (BACKLOG entry in scripts/check-standards-coverage.ts).
 //
@@ -345,7 +376,7 @@ const QR_ELEC = "> **Before release:** needs a qualified reviewer (QR): a stage 
 export const CABLES_AND_CONNECTORS_COURSE: AuthoredCourse = {
   title: "Cables and Connectors",
   description:
-    "The first thing a new crew member is handed, and the thing every course in The Crew Behind the Show assumes. Pick up a cable on a broadcast truck, a stage or an arena floor and say what it carries, what connector is on each end and why, how far it can run, what breaks it, and what must never be plugged into it. The course reads makers' spec sheets and free reference pages to teach impedance and why a cable that fits can still be wrong; SDI on 75-ohm coax and BNC from SD to 12G, and where HDMI and DisplayPort stop; reference, timecode and return video; triax, the SMPTE hybrid fiber camera cable and tactical fiber; single-mode and multimode fiber, LC, SC and ST, inspection, loss budgets and laser safety; and balanced audio, the XLR family that carries mic audio, party-line intercom and DMX, AES3, word clock and MADI. Later sections cover network cable, power connectors and who may connect them, control and data lines, and the craft of coiling, labeling and testing, ending in a hands-on capstone on video. Vendor products are worked examples, not endorsements. Every lesson that needs a broadcast engineer's sign-off says so at the top.",
+    "The first thing a new crew member is handed, and the thing every course in The Crew Behind the Show assumes. Pick up a cable on a broadcast truck, a stage or an arena floor and say what it carries, what connector is on each end and why, how far it can run, what breaks it, and what must never be plugged into it. The course reads makers' spec sheets and free reference pages to teach impedance and why a cable that fits can still be wrong; SDI on 75-ohm coax and BNC from SD to 12G, and where HDMI and DisplayPort stop; reference, timecode and return video; triax, the SMPTE hybrid fiber camera cable and tactical fiber; single-mode and multimode fiber, LC, SC and ST, inspection, loss budgets and laser safety; and balanced audio, the XLR family that carries mic audio, party-line intercom and DMX, AES3, word clock and MADI. Then network cable, Dante and ST 2110; power connectors, what the rules say about who may connect what, and when to stop and call a licensed electrician; DMX, RS-422, tally, USB and 50-ohm RF coax; and the craft of coiling, labeling, testing and fault-finding, ending in a hands-on capstone on video. Vendor products are worked examples, not endorsements. Every lesson that needs a broadcast engineer's or a stage electrician's sign-off says so at the top.",
   lessons: [
     // ══════════════════════════════════════════════════════════════════════
     // SECTION 1: Why the cable matters
@@ -3101,6 +3132,66 @@ You pass when all ten are named correctly, each of the five questions is answere
           { prompt: "What does the capstone say about the mock load-in's venue and people?", options: ["They are real and named", "They are invented", "They are a CREW-05 arena", "They are from a union"], correctIndex: 1, explanation: "It is an invented walk-through with no real venue or people in it.", sourceLessonSlug: "capstone-ten-cables-on-camera" },
           { prompt: "Which kit item does the capstone tie to lesson 27?", options: ["The GFCI cord set", "The fiber cleaner", "Labels and a marker", "The DMX terminator"], correctIndex: 2, explanation: "Labels and a marker come from lesson 27's labeling practice.", sourceLessonSlug: "capstone-ten-cables-on-camera" },
           { prompt: "Which cable in the capstone set keeps its dust caps on?", options: ["The USB cable", "The power cord", "The XLR mic cord", "The fiber cord"], correctIndex: 3, explanation: "The fiber patch cord stays capped and is inspected from the outside.", sourceLessonSlug: "capstone-ten-cables-on-camera" },
+        ],
+      },
+    },
+    // ══════════════════════════════════════════════════════════════════════
+    // FINAL
+    // ══════════════════════════════════════════════════════════════════════
+    {
+      slug: "final-quiz",
+      title: "Final quiz · Cables and Connectors",
+      section: "Final assessment",
+      body: "Ten questions drawn from the whole course, from impedance and SDI to power, control lines and the craft of coiling, testing and fault-finding. Each answer links back to the lesson that teaches it.",
+      quiz: {
+        passingScore: 80,
+        questionsPerAttempt: 10,
+        shuffleOptions: true,
+        questions: [
+          { prompt: "In this course, which impedance does video coax use?", options: ["75 ohms", "50 ohms", "110 ohms", "100 ohms"], correctIndex: 0, explanation: "Coaxicom (2015): 75 ohms for video, 50 ohms mainly for data. Lesson 1.", sourceLessonSlug: "what-a-cable-carries" },
+          { prompt: "What does a 50-ohm BNC part do in a 75-ohm video line?", options: ["It cannot be mated", "It fits, and reflects", "It shorts the signal", "It makes no difference"], correctIndex: 1, explanation: "DDK says the two intermate, and a mismatch reflects signal back toward the sender. Lesson 2.", sourceLessonSlug: "it-fits-and-it-reflects" },
+          { prompt: "As frequency rises, what happens to a coax's loss per 100 feet?", options: ["It falls", "It holds", "It rises", "It halves"], correctIndex: 2, explanation: "Coaxicom (2015): attenuation \"increases as frequency increases.\" Lesson 3.", sourceLessonSlug: "loss-shielding-and-the-spec-sheet" },
+          { prompt: "Which SMPTE standard defines 12G-SDI on coax?", options: ["ST 292-1", "ST 424", "ST 259", "ST 2082-1"], correctIndex: 3, explanation: "SMPTE (2018): ST 2082-1. ST 292-1 is HD-SDI, ST 424 3G, ST 259 SD. Lesson 4.", sourceLessonSlug: "sdi-on-coax-and-the-bnc" },
+          { prompt: "What decides how far an SDI signal really runs, per Canare's warning?", options: ["The receiver's equalization", "The color of the BNC boot", "The camera's frame rate", "The cable's jacket print"], correctIndex: 0, explanation: "Canare (n.d.-d): actual distances depend on the equalized distance of the receiver. Lesson 5.", sourceLessonSlug: "how-far-sdi-runs" },
+          { prompt: "Past a few meters at Ultra High Speed, what does HDMI LA say is likely needed?", options: ["A thicker passive cable", "Active, powered cables", "A 75-ohm coax adapter", "A shielded RJ45 cable"], correctIndex: 1, explanation: "HDMI LA (n.d.): powered, active HDMI cables are likely the only way to meet Ultra High Speed requirements beyond a few meters. Lesson 6.", sourceLessonSlug: "hdmi-and-displayport-where-they-stop" },
+          { prompt: "What kinds of reference does Sony's CCU accept on REFERENCE IN?", options: ["LTC and word clock signals", "PTP and NTP network time", "Tri-level sync, black burst", "Genlock carried over HDMI"], correctIndex: 2, explanation: "Sony Corporation (2017): HD tri-level sync and SD black burst, both at 75 ohms. Lesson 7.", sourceLessonSlug: "reference-timecode-and-return-video" },
+          { prompt: "Which three jobs does Sony give a CCU?", options: ["Recording, editing, playout", "Routing, mixing, streaming", "Lighting, rigging, power", "Processing, interface, power"], correctIndex: 3, explanation: "Sony Corporation (2017, p. 3): signal processing, an interface for external equipment, and power for the camera. Lesson 8.", sourceLessonSlug: "the-ccu-and-triax" },
+          { prompt: "What fibers does an ST 311 hybrid camera cable such as LF-2SM9N carry?", options: ["Two single-mode fibers", "Two multimode fibers", "Four OM3 fibers", "One plastic fiber"], correctIndex: 0, explanation: "Canare (n.d.-c): two single-mode 9/125 fibers. Lesson 9.", sourceLessonSlug: "the-smpte-hybrid-camera-cable" },
+          { prompt: "What does tactical fiber lack that a SMPTE hybrid cable has, by lesson 10's reasoning?", options: ["Single-mode fibers", "Copper for power", "Aramid strength", "An outer jacket"], correctIndex: 1, explanation: "Tactical fiber carries fiber and strength members, no power copper; the lesson reasons this for the reviewer to confirm. Lesson 10.", sourceLessonSlug: "tactical-fiber" },
+          { prompt: "Which jacket color marks single-mode fiber, per FOA?", options: ["Aqua", "Orange", "Yellow", "Violet"], correctIndex: 2, explanation: "FOA (n.d.-d): yellow for single-mode; aqua for OM3 and OM4. Lesson 11.", sourceLessonSlug: "single-mode-multimode-and-color-codes" },
+          { prompt: "Which fiber connector has a 1.25 mm ferrule?", options: ["ST", "SC", "FC", "LC"], correctIndex: 3, explanation: "FOA (n.d.-f): LC is 1.25 mm; ST, SC and FC share 2.5 mm. Lesson 12.", sourceLessonSlug: "lc-sc-st-and-the-polish" },
+          { prompt: "What does Camplex say a 1 µm dust particle on a single-mode core can block?", options: ["Up to 1% of the light", "All of the light", "Half of the light", "None of the light"], correctIndex: 0, explanation: "Camplex (2019b, p. 1): up to 1%, about 0.05 dB; a 9 µm speck can block the core completely. Lesson 13.", sourceLessonSlug: "inspect-before-you-connect" },
+          { prompt: "What does a fiber loss budget count, per FOA's rule on connectors and connections?", options: ["Connectors are lossless parts", "Count mated pairs, not connectors", "Loss lives only in the fiber", "Splices never add any loss"], correctIndex: 1, explanation: "Loss happens where two ends mate, so a budget counts mated pairs. Lesson 14.", sourceLessonSlug: "loss-budgets-and-bend-radius" },
+          { prompt: "What does FOA say to test a fiber with before inspecting it?", options: ["A visual fault locator", "A quick look by eye", "An optical power meter", "A bright flashlight"], correctIndex: 2, explanation: "FOA (n.d.-g, n.d.-h): test with a power meter, never look into a fiber end. Lesson 15.", sourceLessonSlug: "laser-safety" },
+          { prompt: "On a 3-pin XLR, which pin does the AES standard make hot?", options: ["Pin 1", "Pin 3", "The shell", "Pin 2"], correctIndex: 3, explanation: "Macatee (2002, p. 1): the AES \"pin 2 is hot\" standard; pin 1 is the shield. Lesson 16.", sourceLessonSlug: "balanced-lines-the-xlr-and-phantom-power" },
+          { prompt: "What sits on pin 2 of a Clear-Com party-line 3-pin XLR?", options: ["+30 V DC", "Audio", "Ground", "Data"], correctIndex: 0, explanation: "Clear-Com (2019d, 2024a): pin 1 ground, pin 2 voltage (+30 V DC), pin 3 audio. Lesson 17.", sourceLessonSlug: "same-plug-different-signal" },
+          { prompt: "What connector and impedance does Rane's table give AES3id?", options: ["XLR-3 at 110 ohms", "BNC at 75 ohms", "RCA at 75 ohms", "RJ45 at 100 ohms"], correctIndex: 1, explanation: "Bohn (2014, p. 2): AES3id on BNC at 75 ohms; AES3 on XLR-3 at 110; S/PDIF on RCA at 75. Lesson 18.", sourceLessonSlug: "aes3-word-clock-and-madi" },
+          { prompt: "How many MADI channels at 96 kHz?", options: ["56", "64", "28", "32"], correctIndex: 2, explanation: "Clear-Com (2019b): 28 channels at 64 to 96 kHz; 56 or 64 at 32 to 48 kHz. Lesson 18.", sourceLessonSlug: "aes3-word-clock-and-madi" },
+          { prompt: "How long may a twisted-pair channel be, cords included, per Fluke?", options: ["90 meters", "55 meters", "5 meters", "100 meters"], correctIndex: 3, explanation: "Fluke Networks (2016): no more than 100 meters; the permanent link at most 90. Lesson 19.", sourceLessonSlug: "network-cable-categories-and-poe" },
+          { prompt: "What does Neutrik say about its NE8MX6 and the NE8FDY-C6 chassis?", options: ["They do not intermate", "They mate with no limits", "They mate only for PoE", "They are the same part"], correctIndex: 0, explanation: "Neutrik (n.d.-h): the NE8MX6 \"Does not intermate with the CAT6 chassis connectors NE8FDY-C6 and NE8FDY-C6-B.\" Lesson 19.", sourceLessonSlug: "network-cable-categories-and-poe" },
+          { prompt: "What does Sennheiser say to switch off on Dante switch ports?", options: ["IGMP snooping and querier", "Energy Efficient Ethernet", "DSCP Quality of Service", "Gigabit link negotiation"], correctIndex: 1, explanation: "Sennheiser (n.d.): EEE can cause poor synchronization and audio dropouts; disable it on Dante ports. Lesson 20.", sourceLessonSlug: "dante-st-2110-and-the-media-network" },
+          { prompt: "What does lesson 20 reason ST 2110 video needs on copper?", options: ["Category 5e at 1 Gbps", "Category 6 at 100 Mbps", "Category 6A at 10 Gbps", "Category 5 at 10 Gbps"], correctIndex: 2, explanation: "One uncompressed HD picture is about 2.486 Gbps, so it needs 10 Gbps, which Siemon rates over 100 m of Category 6A. Lesson 20.", sourceLessonSlug: "dante-st-2110-and-the-media-network" },
+          { prompt: "What does the 6 in NEMA L6-30 tell you?", options: ["30 A current", "Locking shape", "Three-phase power", "250 V AC grounded"], correctIndex: 3, explanation: "Interpower (n.d.): 6 is 250 V AC grounded; L means locking and 30 is the amperage. Lesson 21.", sourceLessonSlug: "straight-blade-locking-stage-pin-and-powercon" },
+          { prompt: "Which powerCON is rated to connect or disconnect under load?", options: ["The TRUE1 NAC3FX-W", "The classic blue NAC3FCA", "The classic grey NAC3FCB", "The NAC3MPA-1 chassis"], correctIndex: 0, explanation: "Neutrik (n.d.-d): TRUE1 has breaking capacity; the classic parts must not be connected or disconnected under load. Lesson 21.", sourceLessonSlug: "straight-blade-locking-stage-pin-and-powercon" },
+          { prompt: "Which cam connector goes on first, by Lex's label?", options: ["Neutral", "Equipment ground", "Phase A hot", "Any of the hots"], correctIndex: 1, explanation: "Lex Products (2020, p. 6): equipment grounding conductor first, then neutral, then the hots. Lesson 22.", sourceLessonSlug: "cam-feeders-and-the-gender-trap" },
+          { prompt: "When does Lex say cam connections may be made?", options: ["Any time, in order", "While the load is low", "Only when not live", "When a GFCI is fitted"], correctIndex: 2, explanation: "Lex Products (2020, p. 7): \"DO NOT ATTEMPT CONNECTION WHILE CIRCUITS ARE LIVE.\" Lesson 22.", sourceLessonSlug: "cam-feeders-and-the-gender-trap" },
+          { prompt: "Which state issues a Limited Journeyman Stage Electrician license, per lesson 23?", options: ["Minnesota", "Nevada", "Texas", "Oregon"], correctIndex: 3, explanation: "Oregon Secretary of State (2026): the ST license, through the DCBS Building Codes Division. Lesson 23.", sourceLessonSlug: "the-law-and-the-license" },
+          { prompt: "What should you do when any item on lesson 24's stop list applies?", options: ["Stop and call the electrician", "Fix it, then log it", "Work around it quietly", "Finish the cue first"], correctIndex: 0, explanation: "Stop, keep people clear, and call the venue's electrician or the qualified person responsible for the power. Lesson 24.", sourceLessonSlug: "gfci-wet-locations-and-when-to-stop" },
+          { prompt: "Which OSHA rule sets the GFCI duty on construction sites?", options: ["§ 1910.399", "§ 1926.404(b)(1)", "§ 1910.37(a)(3)", "47 C.F.R. § 15.236"], correctIndex: 1, explanation: "29 C.F.R. § 1926.404(b)(1); general industry's construction-like rule is § 1910.304(b)(3)(ii). Lesson 24.", sourceLessonSlug: "gfci-wet-locations-and-when-to-stop" },
+          { prompt: "How many DMX devices does ProSoundWeb allow on a line without a repeater?", options: ["63", "512", "32", "10"], correctIndex: 2, explanation: "Leerman (2013, p. 2): 32 devices; 63 with a repeater, which counts as one. Lesson 25.", sourceLessonSlug: "dmx-rs-422-tally-and-usb" },
+          { prompt: "Which twisted-pair serial standard controls HyperDeck recorders?", options: ["RS-232", "USB 2.0", "DMX512", "RS-422"], correctIndex: 3, explanation: "Blackmagic Design (n.d.-d): \"RS-422 deck control.\" Lesson 25.", sourceLessonSlug: "dmx-rs-422-tally-and-usb" },
+          { prompt: "How long may a passive USB 2.0 cable be, per Biamp and Cambrionix?", options: ["5 meters", "2 meters", "3 meters", "10 meters"], correctIndex: 0, explanation: "Both give 5 m for USB 2.0; faster USB is shorter. Lesson 25.", sourceLessonSlug: "dmx-rs-422-tally-and-usb" },
+          { prompt: "Which impedance do antenna and RF test cables use in this course?", options: ["75 ohms", "50 ohms", "110 ohms", "120 ohms"], correctIndex: 1, explanation: "Antenna and RF test gear are 50 ohms; video, word clock and AES3id are 75. Lesson 26.", sourceLessonSlug: "rf-coax-wireless-mics-and-ifb" },
+          { prompt: "Who picks wireless mic frequencies on a show, per lesson 26?", options: ["The camera operator", "The lighting director", "The RF coordinator", "The stage manager"], correctIndex: 2, explanation: "The course teaches no frequency; a frequency plan belongs to the show's RF coordinator. Lesson 26.", sourceLessonSlug: "rf-coax-wireless-mics-and-ifb" },
+          { prompt: "What coiling method do Tobias and PerfTech both teach?", options: ["Elbow wrapping", "Figure-8 only", "Single loop", "Over-under"], correctIndex: 3, explanation: "Tobias (2023) and Moeller (2014) both teach over-under. Lesson 27.", sourceLessonSlug: "coil-label-and-run" },
+          { prompt: "What is the test for a cable protector on an accessible route, by lesson 27's reasoning?", options: ["The § 303 level limits", "The vendor's ADA label", "Its color and its width", "Its weight in pounds"], correctIndex: 0, explanation: "A protector is a change in level, so the ADA § 303 limits apply; a vendor's label is not evidence. Lesson 27.", sourceLessonSlug: "coil-label-and-run" },
+          { prompt: "Which fault can a DC continuity tester miss on network cable?", options: ["Opens", "Split pairs", "Shorts", "Crossed wires"], correctIndex: 1, explanation: "Fluke Networks (2018): a split pair passes a DC continuity test and fails near-end crosstalk. Lesson 28.", sourceLessonSlug: "test-then-find-the-fault" },
+          { prompt: "What fault-finding order do the FOA's pages state for a fiber link?", options: ["Source, cables, then receiver", "Cables, receiver, then source", "Receiver, transmitter, then cables", "Transmitter, receiver, then cables"], correctIndex: 2, explanation: "FOA (2019): measure at the receiver, then the transmitter, then test the cables at every connection. Lesson 28.", sourceLessonSlug: "test-then-find-the-fault" },
+          { prompt: "What is the copper version of the FOA's known-good test jumper, by lesson 28's analogy?", options: ["A new connector", "A 75-ohm terminator", "A longer run", "A known-good cable"], correctIndex: 3, explanation: "Swapping in a known-good cable; the lesson labels it the course's analogy. Lesson 28.", sourceLessonSlug: "test-then-find-the-fault" },
+          { prompt: "In the capstone, how many cables do you film?", options: ["Ten", "Five", "Eight", "Twelve"], correctIndex: 0, explanation: "Identify, test and coil ten cables on camera, naming each. Lesson 29.", sourceLessonSlug: "capstone-ten-cables-on-camera" },
+          { prompt: "In the capstone, what must you never do with the fiber patch cord?", options: ["Name its connector", "Look into its end", "Read its jacket", "Coil it over-under"], correctIndex: 1, explanation: "Never look into a fiber; name its connector and polish from the outside. Lesson 29.", sourceLessonSlug: "capstone-ten-cables-on-camera" },
+          { prompt: "Where does lesson 24 put a GFCI cord set so it counts as protection?", options: ["At the far end of a run", "Anywhere along the cords", "Nearest the power source", "Inside the distro panel"], correctIndex: 2, explanation: "29 C.F.R. § 1910.304(b)(3)(ii)(A), Note 2: connected to the receptacle closest to the source of power. Lesson 24.", sourceLessonSlug: "gfci-wet-locations-and-when-to-stop" },
+          { prompt: "What protects you from bare fiber shards, per FOA?", options: ["A video microscope", "An infrared filter", "An optical meter", "Side-shield glasses"], correctIndex: 3, explanation: "FOA (n.d.-g): safety glasses with side shields, a black work mat, a sealed scrap container. Lesson 15.", sourceLessonSlug: "laser-safety" },
         ],
       },
     },

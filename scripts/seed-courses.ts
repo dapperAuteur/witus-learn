@@ -3488,8 +3488,8 @@ async function main() {
   // foundation, what each cable on a truck, stage or arena floor carries, its connectors, reach, faults
   // and what must never be plugged into it. Public, held for a qualified reviewer: a broadcast engineer
   // for sections 1 to 6, 8 and 9, and a stage electrician for section 7. Research tier 2: section 7 is
-  // electrical safety. Pass 1 (2026-10-26) wrote sections 1 to 5; sections 6 to 9, the hands-on
-  // capstone and the final quiz follow.
+  // electrical safety. Written in two passes on 2026-10-26: all nine sections, 29 lessons, the
+  // hands-on capstone (held for a practitioner's model-answer video) and the final quiz.
   await seedAuthoredCourse(db, {
     tenantId: learnWitus,
     instructorId,
