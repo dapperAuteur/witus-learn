@@ -11,3 +11,5 @@ allowBuilds:
   esbuild: true
   sharp: true
   unrs-resolver: true
+patchedDependencies:
+  '@react-pdf/hyphenate@0.1.0': patches/@react-pdf__hyphenate@0.1.0.patch

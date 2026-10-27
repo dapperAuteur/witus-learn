@@ -128,7 +128,11 @@ export default async function ManageCoursePage({ params }: { params: Promise<{ c
   const courseLive = courseStage(course) === "live";
   const showLaunchTodos = !courseLive || launchTodos.some((t) => t.status === "open");
 
-  // Admins (platform owner / brand_admin) may reassign the course's instructor.
+  // Admins (platform owner / brand_admin) may reassign the course's instructor. This is the same
+  // test isTenantAdmin (src/lib/api.ts) makes, computed from the rows already loaded above; the
+  // course export routes (/api/admin/courses/[id]/epub and /pdf) gate on isTenantAdmin, so the
+  // download links below show only to a viewer those routes would serve, never to a teacher who
+  // would get a 403.
   const isAdmin = owner || membership === "brand_admin";
   const instructors = isAdmin ? await listTenantInstructors(sdb.tenantId) : [];
 
@@ -142,6 +146,18 @@ export default async function ManageCoursePage({ params }: { params: Promise<{ c
           <Link href={`${courseHref}/script`} className="underline" style={{ color: "var(--accent)" }}>
             📄 Recording script
           </Link>
+          {/* Admin-only reading copies (e-reader or paper), built from the published lessons. Plain
+              anchors, not <Link>: these are file downloads, and a prefetch would render a book. */}
+          {isAdmin ? (
+            <>
+              <a href={`/api/admin/courses/${course.slug ?? course.id}/epub`} download className="underline" style={{ color: "var(--accent)" }}>
+                Download EPUB
+              </a>
+              <a href={`/api/admin/courses/${course.slug ?? course.id}/pdf`} download className="underline" style={{ color: "var(--accent)" }}>
+                Download PDF
+              </a>
+            </>
+          ) : null}
           <Link href={`${courseHref}/submissions`} className="underline" style={{ color: "var(--accent)" }}>
             Submissions
           </Link>
