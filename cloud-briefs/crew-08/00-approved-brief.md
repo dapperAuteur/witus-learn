@@ -78,3 +78,6 @@ Systems coordinator ($26 to $30), FAST Video Systems Operator ($26 to $26.50). F
 Video Operator ($40 to $50; "chip, color correct, and monitor video levels"), Studio Technician/Technical Director
 ($31.55 to $52.64), Show Director ($65.38 to $77.16), Playout Operator ($36 to $43.75; "count back to directors and
 roll elements"; EVS a plus), 2027 Live Sports Virtual Enhancement Operator internship ($20; first-and-ten line).
+**Correction (2026-10-26, research file 02):** the Fox A2, audio, Viz, senior video, playout and TD postings are Fox
+News Media control rooms (New York, Washington), not sports trucks; lessons label them as news jobs. Only the
+internship is Fox Sports work.
