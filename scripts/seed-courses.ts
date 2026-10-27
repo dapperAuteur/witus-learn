@@ -3649,9 +3649,9 @@ async function main() {
   // the V1 and V2; replay, playout and the TOC; graphics and the virtual enhancement operator; the floor
   // crew), how they talk on comms, and how the jobs are posted and paid. Employers (NFL Media, Fox) and
   // makers are cited worked examples; the Fox operator and director postings are news control-room jobs.
-  // Public, held for a qualified reviewer with sports truck credits. Research tier 1. Pass 1
-  // (2026-10-26) wrote sections 1 to 5; sections 6 to 9 (the floor, how it fits together, getting hired,
-  // the capstone) and the final quiz follow.
+  // Public, held for a qualified reviewer with sports truck credits. Research tier 1. Complete in two
+  // passes (2026-10-26): pass 1 wrote sections 1 to 5, pass 2 sections 6 to 9 (the floor, how it fits
+  // together, getting hired, the capstone) and the final quiz; 30 lessons. Not yet in STAGED_COURSES.
   await seedAuthoredCourse(db, {
     tenantId: learnWitus,
     instructorId,
