@@ -261,6 +261,23 @@ const CFR_73_682 = `Transmission of commercial advertisements by television broa
 const CFR_73_8000 = `Incorporation by reference, 47 C.F.R. § 73.8000 (2026). Electronic Code of Federal Regulations, up to date as of October 23, 2026. ${RETRIEVED} https://www.ecfr.gov/api/renderer/v1/content/enhanced/current/title-47?part=73&section=73.8000`;
 const EBU_2023 = `European Broadcasting Union. (2023). *Loudness normalisation and permitted maximum level of audio signals* (EBU R 128-2023) [PDF]. ${RETRIEVED} https://tech.ebu.ch/docs/r/r128.pdf`;
 
+// The floor, the checks and getting hired (research file 03; pass 2)
+const NFL_UTILITY = `National Football League. (2026m, October 23). *Seasonal part-time utility* [Job posting]. Greenhouse. ${RETRIEVED} https://job-boards.greenhouse.io/nflcareers/jobs/5461351008`;
+const NFL_RZ_PA = `National Football League. (2026j, October 16). *Seasonal part-time RedZone production assistant* [Job posting]. Greenhouse. ${RETRIEVED} https://job-boards.greenhouse.io/nflcareers/jobs/5455482008`;
+const NFL_PT_SEGMENT = `National Football League. (2026c, October 12). *Part-time segment producer* [Job posting]. Greenhouse. ${RETRIEVED} https://job-boards.greenhouse.io/nflcareers/jobs/5446043008`;
+const NFL_FILMS_AP = `National Football League. (2026d, October 13). *Seasonal associate producer* [Job posting]. Greenhouse. ${RETRIEVED} https://job-boards.greenhouse.io/nflcareers/jobs/5427059008`;
+const DGA_SAFETY = `Directors Guild of America. (n.d.-b). *Safety Pass training*. ${RETRIEVED} https://www.dga.org/News/Guild-News/Safety_Issues_Section/Safety-Pass-Training`;
+const DGA_2017 = `Directors Guild of America. (2017, May 18). *New safety training requirements for AD/UPM and AD/SM members*. ${RETRIEVED} https://www.dga.org/News/Guild-News/2017/June2017/NewSafetyTrainingRequirements0517`;
+const DGA_2026B = `Directors Guild of America. (2026b). *Network AD, SM and PA rates: ABC* [Rate card, effective July 1, 2026 to June 30, 2027, PDF]. ${RETRIEVED} https://edge.sitecorecloud.io/directorsguf4d4-dga2c79-dgaprod1615-f6e3/media/Files/Contracts/Network-Rate-Cards/DGANetworkRates2026-2027_ABC.pdf`;
+const DGA_2026C = `Directors Guild of America. (2026c). *Network AD, SM and PA rates: CBS* [Rate card, effective July 1, 2026 to June 30, 2027, PDF]. ${RETRIEVED} https://edge.sitecorecloud.io/directorsguf4d4-dga2c79-dgaprod1615-f6e3/media/Files/Contracts/Network-Rate-Cards/DGANetworkRates2026-2027_CBS.pdf`;
+const DGA_2026D = `Directors Guild of America. (2026d). *Network AD, SM and PA rates: NBC* [Rate card, effective July 1, 2026 to June 30, 2027, PDF]. ${RETRIEVED} https://edge.sitecorecloud.io/directorsguf4d4-dga2c79-dgaprod1615-f6e3/media/Files/Contracts/Network-Rate-Cards/DGANetworkRates2026-2027_NBC.pdf`;
+const MCPS_A = `Montgomery County Public Schools. (n.d.-a). *Notes to the director* [Classroom handout, Lights, Camera, Media Literacy! Unit 6, PDF]. ${RETRIEVED} https://ww2.montgomeryschoolsmd.org/info/LCL/LCLCoursesOnlinePDF/LCML!/LCML!%20HANDOUTS/LCML!%20Unit%206.%20Television/LCML!%20Director%20notes%20game%20show.pdf`;
+const MCPS_B = `Montgomery County Public Schools. (n.d.-b). *Television production roles* [Classroom handout, Lights, Camera, Media Literacy! Unit 6, PDF]. ${RETRIEVED} https://ww2.montgomeryschoolsmd.org/info/LCL/LCLCoursesOnlinePDF/LCML!/LCML!%20HANDOUTS/LCML!%20Unit%206.%20Television/LCML!%20Television%20Production%20Roles.pdf`;
+const NABET_ABOUT = `NABET-CWA. (n.d.-a). *About us*. National Association of Broadcast Employees and Technicians, Communications Workers of America. ${RETRIEVED} https://nabetcwa.org/about-us`;
+const NABET_HOME = `NABET-CWA. (n.d.-b). *NABET-CWA* [Home page]. ${RETRIEVED} https://nabetcwa.org/`;
+const NABET_HIRE = `NABET-CWA. (n.d.-c). *Members for hire*. ${RETRIEVED} https://nabetcwa.org/members-hire`;
+const MTVG_CREW = `Mobile TV Group. (n.d.-d). *Crew forms & information*. ${RETRIEVED} https://www.mobiletvgroup.com/crew/`;
+
 /** The marker every lesson needing a qualified reviewer opens with (authoring checklist, section 3). */
 const QR =
   "> **Before release:** needs a qualified reviewer (QR): a sports broadcast crew member who has held this chair (A1, V1, replay operator or technical director).";
@@ -1793,6 +1810,324 @@ Reasoned from "on-site in Tempe" and "Work closely with remote Sports Production
           { prompt: "Does the Fox internship posting say where the line itself is inserted?", options: ["Yes, in the stadium", "Yes, in the truck", "Yes, in New York", "No, it does not say"], correctIndex: 3, explanation: "Lesson 17: the posting does not say, so the course does not either. It reasons only that the interns work at the Tempe center while the game is produced elsewhere.", sourceLessonSlug: "the-first-and-ten-line" },
           { prompt: "Reasoned in lesson 17, what is the yellow line on a broadcast?", options: ["A graphic for viewers", "The official line to gain", "A referee's measurement", "A league rule marker"], correctIndex: 0, explanation: "Lesson 17: the yellow line is a graphic for viewers; the official line to gain is measured by a separate officiating system.", sourceLessonSlug: "the-first-and-ten-line" },
           { prompt: "Which lesson teaches the NFL's official line-to-gain measurement?", options: ["CREW-05 lesson 4", "CREW-07 lesson 9", "CREW-00 lesson 25", "CREW-04 lesson 22"], correctIndex: 1, explanation: "Lesson 17 links CREW-07's \"9 · NFL: challenges, the command center and the line to gain.\"", sourceLessonSlug: "the-first-and-ten-line" },
+        ],
+      },
+    },
+    // ══════════════════════════════════════════════════════════════════════
+    // SECTION 6: The floor and the support crew
+    // ══════════════════════════════════════════════════════════════════════
+    {
+      slug: "the-utility-as-posted",
+      title: "18 · The utility, as posted",
+      section: "6 · The floor and the support crew",
+      recallContent: [
+        {
+          prompt: "What does lesson 17 say the yellow line on a broadcast is, and what is it not?",
+          answer: "A graphic for viewers. It is not the NFL's official line to gain, which a separate officiating system measures (CREW-07 lesson 9).",
+        },
+        {
+          prompt: "Where does Fox's 2027 virtual enhancement internship put its interns, and what does it pay?",
+          answer: "On site in Tempe, Arizona, at \"$20.00 per hour\" (Fox Corporation, 2026a). It is Fox Sports work.",
+        },
+      ],
+      body: `${QR}
+
+**Where this sits.** *Break Into Sports & Media Broadcasting* lesson "3 · The utility technician: your fastest way in (and why knots matter)" describes the utility as the crew's general-support hand and teaches knots. CREW-01, *Rigging for Stage and Broadcast Crews*, lesson "2 · The broadcast utility tech near the rig" sets out what carries over to anyone who works near a rig. This lesson adds what one employer posted for the job and repeats neither.
+
+**One posting, read closely.** NFL Media's "Seasonal Part-Time Utility," at its studios in Inglewood, California, was first published October 23, 2026 (National Football League [NFL], 2026m; NFL, n.d.). It opens: "As a member of the stage crew the Utility position performs a wide range of tasks in support of the overall program production process. Under supervision of the Stage Manager, Director, and Operations team, Utilities work with technical staff" (NFL, 2026m). What it lists, grouped by area:
+
+| Area | As posted |
+|---|---|
+| The set | "Moving large set pieces and monitors during stage resets"; "Set talent marks on floor at the direction of Stage Manager and Director" |
+| Cameras | "Support Camera Operators in the setup of studio cameras and over-under cable pulls"; "Ability to troubleshoot cameras on stage (tally, prompter etc.)"; "Ability to change camera lenses" |
+| Signal | "Understanding of signal path, routers, patch bays and bulkhead connectivity"; "Work with video engineer to determine correct camera routing" |
+| Start and end of day | "Maintain continuity of all related camera equipment, including studio fax out and strike at end of day" |
+| Stand-ins | "Assist production crew (i.e., Lighting, Director, etc.) as talent stand-ins on set" |
+| Safety and trucks | "Pro-actively keep the studio floor safe for all tech traffic"; "Loading and off-loading of equipment trucks" |
+
+**What it asks.** The required qualifications are a "Minimum of 5 years' experience working on a sound stage," the "Ability to lift 60lbs and set/strike studio gear" and the "Ability to over-under cables" (NFL, 2026m). The hours are "Less than 29 hours/week when needed," including early mornings, late nights, weekends and holidays. The pay line reads $46.54 USD at both ends of the range, with no unit; like every NFL figure in this course, it is printed as posted (lesson 4).
+
+**Five years is this posting's ask.** That requirement belongs to one network studio posting on one date. It is not an industry rule, and this course does not teach it as one. *Break Into Sports & Media Broadcasting* lesson 3 calls utility "the most common paid entry point on a live sports crew" without a source, and that line has its own research check. No source read for this course shows a utility posting for a remote sports truck, so this course does not say what a truck's utility job asks.
+
+**The school side.** ESPN's 2018 manual for schools that produce games for ESPN3 and ESPN+ lists "Grips/Camera Asst/Utilities," whose job is: "Pre Game: assist with the setting up of camera cables, audio cables, building and setting cameras and any other details that need to be handled during set up" (ESPN, 2018, p. 22). Its sample basketball schedule opens with "2:00PM CREW CALL - everyone including 3 Utilities hired by Union Venue" (p. 27). Reasoned from that line: on that one sample game, the venue's union supplied the utilities, not the production crew. One sample schedule is not a rule.
+
+**Utilities and parabs.** Lesson 5 read a 2022 trade report in which ESPN "agreed to supply two A2s as parab operators, replacing two of the four utility personnel previously assigned to four parabs per game," and in which utility workers "are usually relied on for such tasks as cable management behind cameras and other semi-technical jobs" (Daley, 2022). That is one network's change in one season, as trade press reported it.
+
+**Reasoned: what the job touches.** Put the posting and the manual side by side. The utility works for the floor (the stage manager and the director), for the cameras (cables, lenses, tally and prompter) and for the signal (routing, patch bays and bulkheads), and is there at the start and the end of the day. That is why one posting asks for signal path knowledge beside a 60-pound lift. The word "fax" in "studio fax out" is taken up in lesson 24.
+
+:::reveal Under whose supervision does NFL Media's utility work? ||| "the Stage Manager, Director, and Operations team" (NFL, 2026m).
+
+:::reveal How much sound stage experience does that posting require, and how does this course treat it? ||| A minimum of five years. It is that posting's ask on that date, not a rule for every utility job.
+
+:::reveal In ESPN's sample schedule, who hired the three utilities? ||| The venue's union: "3 Utilities hired by Union Venue" (ESPN, 2018, p. 27).
+
+## Sources
+- ${NFL_UTILITY} Locator: opening paragraph; "Responsibilities"; "Required Qualifications"; hours paragraph; pay range paragraph.
+- ${NFL_BOARD_API} Locator: \`first_published\` field for job 5461351008.
+- ${ESPN_2018} Locator: "Grips/Camera Asst/Utilities," p. 22; "Sample Basketball Operations/Production Schedule," p. 27.
+- ${DALEY_2022} Locator: paragraphs 4 and 6.`,
+    },
+    {
+      slug: "camera-operators",
+      title: "19 · Camera operators",
+      section: "6 · The floor and the support crew",
+      recallContent: [
+        {
+          prompt: "Which camera tasks does NFL Media's utility posting list?",
+          answer: "Support camera operators in studio camera setup and over-under cable pulls, troubleshoot cameras on stage (tally, prompter), and change lenses (NFL, 2026m).",
+        },
+        {
+          prompt: "In ESPN's manual, what do grips, camera assistants and utilities do before the game?",
+          answer: "\"assist with the setting up of camera cables, audio cables, building and setting cameras\" and any other set-up details (ESPN, 2018, p. 22).",
+        },
+      ],
+      body: `${QR}
+
+**Where this sits.** CREW-04, *Cinema-look camera rig*, follows a camera operator's own rig into the truck in "22 · What the truck does with your picture" and "24 · Tally, intercom, return video and the questions to ask." This lesson reads what a network's manual asks of the camera chair on a game.
+
+**ESPN's camera operator.** ESPN's 2018 manual lists the job in one line: "Camera operator; builds, operates, and tears down all camera equipment/cabling" (ESPN, 2018, p. 20). It asks more later: operators "Must have a complete understanding of the operation of your camera unit, including the ability to white balance, zoom, pan, tilt and focus. Knowledge of the standard camera assignments that are unique to each sport." (p. 22). Its minimum crew has "four cameras with an operator for each," and its minimum gear includes "Two handhelds, two handheld buildups (hard cam configuration)" (p. 2).
+
+**Cameras have numbers and places.** ESPN numbers each camera by its position, sport by sport. For baseball with five cameras the manual gives (ESPN, 2018, p. 7):
+
+| Camera | Position |
+|---|---|
+| 1 | Low 3rd |
+| 2 | High Home |
+| 3 | High 1st |
+| 4 | Centerfield |
+| 5 | Low 1st |
+
+Reasoned: when ESPN's director says "ready 2" (lesson 23), the number names a camera at a position like these, so an operator who knows the standard assignments knows what shot the director expects.
+
+An older, undated university handout says that for "unscripted programs such as talk shows and sports broadcasts," camera operators "have an assigned area or type of shot" (Vinovich, n.d.). The same handout says a sports director "may have as many as 12 cameras from which to select or up to 25 cameras during an event such as the Super Bowl." That is an old figure from an undated handout, not today's count.
+
+**The camera meeting.** ESPN's director should "Create a coaches "headshot" sheet for camera operators. Always have a pre-game camera meeting" (ESPN, 2018, p. 24). The sample schedule for an 8:00 p.m. game has "6:00 PM Camera Meeting on site" and "7:15PM All Cameras at Game Positions- Bumps/Rehearsal" (p. 27).
+
+**Who else touches the picture.** ESPN's crew list also has a video engineer, who "controls all incoming video signals; line patching and routing; "painting" cam video levels" (ESPN, 2018, p. 20). Lessons 9 and 10 read the V1's shading. On a camera isolate system, the video operator or the TD talks privately with one camera operator (Clear-Com, 2020c, p. 18; lesson 11). Reasoned from these: the operator frames, zooms and focuses, and in ESPN's list white balances; the levels are painted or shaded from the control room.
+
+**A classroom rule.** A school classroom handout tells its student camera operators: "NEVER adjust shots when your camera is shown on the monitor!" (Montgomery County Public Schools [MCPS], n.d.-b). It is a classroom handout, not a network rule. On a show, the tally light that CREW-04 lesson 24 describes is how an operator knows the camera is on air.
+
+**Robotic cameras.** Not every camera has an operator beside it. Lesson 11 read the robotics in the postings, and FOX 5 DC's per diem technician, a local news job, may work as "robotic camera" (Fox Television Stations, 2026).
+
+:::reveal Which camera skills does ESPN's manual require of an operator? ||| White balance, zoom, pan, tilt and focus, plus knowing each sport's standard camera assignments (ESPN, 2018, p. 22).
+
+:::reveal In ESPN's five-camera baseball plan, where is camera 2? ||| High Home (ESPN, 2018, p. 7).
+
+:::reveal What does ESPN's director prepare for camera operators before the game? ||| A coaches "headshot" sheet, and always a pre-game camera meeting (ESPN, 2018, p. 24).
+
+## Sources
+- ${ESPN_2018} Locator: "Equipment Standards," p. 2; "Camera Placements," p. 7; "Production personnel positions and responsibilities," p. 20; "Camera Operators," p. 22; "Director Responsibilities," p. 24; "Sample Basketball Operations/Production Schedule," p. 27.
+- ${VINOVICH} Locator: "Below-the-line personnel," item 3; "Director (DGA)".
+- ${CC_2020C} Locator: "Cameras," p. 18.
+- ${MCPS_B} Locator: "Cameras". A classroom handout.
+- ${FTS_TECH} Locator: "What You'll Do". A local news job.`,
+    },
+    {
+      slug: "the-stage-manager",
+      title: "20 · The stage manager on the floor",
+      section: "6 · The floor and the support crew",
+      recallContent: [
+        {
+          prompt: "How does ESPN's manual describe a camera operator in its one-line list?",
+          answer: "\"builds, operates, and tears down all camera equipment/cabling\" (ESPN, 2018, p. 20).",
+        },
+        {
+          prompt: "When does ESPN's sample schedule hold the camera meeting, and when are cameras at game positions?",
+          answer: "The camera meeting at 6:00 p.m.; all cameras at game positions for bumps and rehearsal at 7:15 p.m., for an 8:00 p.m. game (ESPN, 2018, p. 27).",
+        },
+      ],
+      body: `${QR}
+
+**The guild's written description.** Article 2 of the DGA's Freelance Live and Tape Television Agreement has a section for the stage manager (SM). As lesson 1 says, it is the guild's written description of the job, not the network sports contract. During rehearsals and performances the SM "shall serve as the sole liaison between the Director or Producer-Director, Associate Director and all persons and facilities in the studio, on location or on the stage" (DGA, 2020b, p. 17). The SM's floor duties include (pp. 17 to 18):
+
+- "Relaying stage directions of the Associate Director, Director or Producer-Director"
+- "Marking all positions on the set for performers"
+- "Holding cards which give directions from the Director, Producer-Director or Associate Director and timing information to the cast"
+- "Give all cues from the floor or, if on location, the equivalent thereof"
+
+Two more lines settle what the SM owns: "It shall be the sole responsibility of the Stage Manager to make up and put before the camera the slate," and "The use of telex, IFB or other related communications or intercommunication device(s) will not replace the use of the Stage Manager." (DGA, 2020b, p. 18).
+
+**ESPN's version.** ESPN's crew list says: "Stage Mgr. manages the announce booth, read cards, and booth traffic" (ESPN, 2018, p. 20). On a small crew ESPN folds the engineer in charge (EIC), the A2 and the SM into one person: "During the Broadcast you will be able to function as EIC and Stage Manager. You are the eyes and ears for your Producer/Director on the court or field. If any issues need to be handled you will be the first line of defense." (pp. 21 to 22). The sample schedule calls the "Stage Manager / Booth Coordinator" at 5:30 p.m., later than the 2:00 p.m. main crew call (p. 27).
+
+**Stage managers on the job.** The DGA's write-up of a 2025 stage managers' panel reports their own words. One panelist, whose credits include many network sports telecasts, spoke about how "Stage Managers still play an important role even as new technology is introduced," recalling a Super Bowl at which a virtual monitor failed and he handed cards to the presenter. Another said: "I will always point out the need to make sure everyone is safe." Another prepares by getting "a floor plan" and learning "how do I get from here to the control room" (DGA, 2025). Lesson 3 quoted the same panel: with the producer and the director in a truck, "you are the leader on the ground."
+
+**Hand signals and counts.** An older, undated university handout calls the job "Floor Manager/Stage Director (DGA)" and says the floor manager relays the director's commands "via hand signals since his or her voice would pick up on the live microphones" (Vinovich, n.d.). A school classroom handout tells its student floor manager to "Repeat all director calls, such as time countdown, for the studio" and, "At one minute before on air, hold a stand-by signal with your hand" (Montgomery County Public Schools [MCPS], n.d.-b). Both are teaching documents, not network rules.
+
+**Who the SM works with.** NFL Media's utility works "Under supervision of the Stage Manager" (National Football League [NFL], 2026m; lesson 18). Fox News Media's audio operator, a news control-room job, performs "facility checks with A2 and Stage Manager for all mic and IFB positions in the studio before daily production begins" (Fox News Media, 2026b). FOX 5 DC's per diem technician, a local news job, lists "floor director" among its functions and asks for "experience with floor directing" (Fox Television Stations, 2026).
+
+**Three titles.** "Stage manager" (the DGA, ESPN, NFL Media and Fox News), "floor manager" (the two handouts) and "floor director" (FOX 5 DC) name overlapping floor jobs. No source read for this course says the three titles are the same job, so this course uses each source's own title.
+
+:::reveal Under the DGA's Article 2, can an IFB or an intercom replace the stage manager? ||| No: "The use of telex, IFB or other related communications or intercommunication device(s) will not replace the use of the Stage Manager" (DGA, 2020b, p. 18).
+
+:::reveal What does ESPN's manual say the stage manager manages? ||| "the announce booth, read cards, and booth traffic" (ESPN, 2018, p. 20).
+
+:::reveal Why does the older handout say the floor manager uses hand signals? ||| Because his or her voice "would pick up on the live microphones" (Vinovich, n.d.).
+
+## Sources
+- ${DGA_ART2} Locator: Art. 2, Sec. C, p. 17, opening clause and item 3(a); p. 18, items 3(e), 3(g), 3(h), 5 and 6.
+- ${ESPN_2018} Locator: "Production personnel positions and responsibilities," p. 20; "EIC/Audio Assist," pp. 21 to 22; "Sample Basketball Operations/Production Schedule," p. 27.
+- ${DGA_2025} Locator: panel write-up, the panelists' remarks on technology, safety and preparation.
+- ${VINOVICH} Locator: "Below-the-line personnel," item 8.
+- ${MCPS_B} Locator: "Floor Manager". A classroom handout.
+- ${NFL_UTILITY} Locator: opening paragraph.
+- ${FNM_AUDIO_OP} Locator: "A Snapshot of Your Responsibilities". A news control-room job.
+- ${FTS_TECH} Locator: "What You'll Do"; qualifications. A local news job.`,
+    },
+    {
+      slug: "the-lighting-director",
+      title: "21 · The lighting director",
+      section: "6 · The floor and the support crew",
+      recallContent: [
+        {
+          prompt: "Under the DGA's Article 2, who has sole responsibility for the slate?",
+          answer: "The stage manager, who makes it up and puts it before the camera (DGA, 2020b, p. 18).",
+        },
+        {
+          prompt: "What does ESPN's combined EIC and stage manager become on the court or field?",
+          answer: "\"the eyes and ears for your Producer/Director\" and \"the first line of defense\" (ESPN, 2018, pp. 21 to 22).",
+        },
+      ],
+      body: `${QR}
+
+**Where this sits.** CREW-03, *Light on Set*, teaches lighting itself; its lessons "2 · Who lights, and where training begins" and "23 · The television studio" cover who lights and the studio. This lesson reads one posting for the lighting director (LD) on a sports network's stages.
+
+**NFL Media's lighting director.** NFL Media's "Seasonal Part-Time Lighting Director" was first published August 4, 2026 (National Football League [NFL], 2026i; NFL, n.d.). The LD will "Collaborate with show Directors, Producers, Scenic, and Video teams" and implement and maintain "the specific look of various productions between multiple stages and remote locations." The duties:
+
+| Duty | As posted |
+|---|---|
+| The console | "Operation of ETC EOS consoles to playback and modify existing lighting looks" |
+| Start of shift | "Perform tech checks at the beginning of each shift to check for burnouts, repositioning of equipment and overall stage & grid maintenance" |
+| On air | "Monitor show productions from shading room and consult with video operator as necessary" |
+| Problems | "Report technical and/or equipment issues to Studio Operations and Engineering teams" |
+
+**What it asks.** Required: "5-10 years of experience working in a studio environment; live & recorded productions" and "Knowledge and understanding of lighting data protocols and networks, DMX-512, SACN and ETC NET3." The qualifications include the "Ability to draft, read, and interpret lighting plots"; "Auto-Cad, Vectorworks, ETC Concert and Lightwright experience"; "Advanced ETC EOS programming training"; and "Advanced ETC NET3 Networking training." The physical demands: the "Ability to work high above the ground, on lifts and/or ladders," and "Must be able to lift 75lbs for up to 30 minutes at a time." The hours are "Less than 29 hours/week when needed." The pay line reads $68.99 USD at both ends, with no unit, printed as posted (NFL, 2026i). ETC is a lighting maker, named here only because the posting names it. DMX on an XLR cable is in CREW-00 lesson "17 · Same plug, different signal: intercom and DMX on XLR."
+
+**Light and the picture.** The LD watches the show "from shading room" with the video operator (lesson 3). Fox News Media's senior video operator, a news control-room job, will "Collaborate with directors, lighting, and make-up to troubleshoot and make adjustments to ensure the best possible on-air look" (Fox News Media, 2026d). Reasoned from both postings: the lighting chair and the video chair share the look. What the LD lights, the V1 shades (lessons 9 and 10), so a change in one shows up in the other.
+
+**A studio chair.** An older, undated university handout says the TV lighting director "is concerned mainly with lighting a particular set that is used repeatedly on a show" and works "predominately in a studio and rarely work outdoors on location" (Vinovich, n.d.). ESPN's school-production crew list names no lighting director; its director's checklist says only "Notice the arena lighting. Where are the dark areas." (ESPN, 2018, pp. 20 and 24). Reasoned from these three sources: in every source read for this course, the lighting director is a studio chair. No source read for this course describes a lighting director on a remote sports truck crew, so this course does not say whether trucks carry one.
+
+:::reveal What does NFL Media's lighting director check at the start of each shift? ||| Burnouts, equipment that has been repositioned, and overall stage and grid maintenance (NFL, 2026i).
+
+:::reveal Which lighting data protocols does the NFL posting name? ||| DMX-512, sACN (written "SACN" in the posting) and ETC NET3 (NFL, 2026i).
+
+:::reveal What does ESPN's manual tell the director about arena lighting? ||| "Notice the arena lighting. Where are the dark areas." (ESPN, 2018, p. 24).
+
+## Sources
+- ${NFL_LD} Locator: opening paragraph; "Responsibilities"; "Required Qualifications"; "Qualifications"; "Physical Demands"; hours and pay range paragraphs.
+- ${NFL_BOARD_API} Locator: \`first_published\` field for job 5378747008.
+- ${FNM_SENIOR_VIDEO} Locator: "A Snapshot of Your Responsibilities". A news control-room job.
+- ${VINOVICH} Locator: "Lighting Director (IBEW)".
+- ${ESPN_2018} Locator: "Production personnel positions and responsibilities," p. 20; "Director Responsibilities," p. 24.`,
+    },
+    {
+      slug: "section-6-quiz",
+      title: "Section 6 quiz · The floor and the support crew",
+      section: "6 · The floor and the support crew",
+      body: "A graded check on the utility, camera operators, the stage manager and the lighting director. Each answer links back to the lesson that teaches it.",
+      quiz: {
+        passingScore: 80,
+        questionsPerAttempt: 5,
+        shuffleOptions: true,
+        questions: [
+          { prompt: "Which employer's utility posting does lesson 18 read closely?", options: ["NFL Media's studios", "Fox News's newsroom", "ESPN's school crews", "Game Creek's trucks"], correctIndex: 0, explanation: "Lesson 18 reads NFL Media's \"Seasonal Part-Time Utility\" at its Inglewood studios (NFL, 2026m).", sourceLessonSlug: "the-utility-as-posted" },
+          { prompt: "When was NFL Media's utility posting first published?", options: ["June 26, 2026", "October 23, 2026", "August 4, 2026", "September 29, 2026"], correctIndex: 1, explanation: "NFL (n.d.): first published October 23, 2026. June 26 is the Audio 2 and V1 date, August 4 the lighting director's.", sourceLessonSlug: "the-utility-as-posted" },
+          { prompt: "Where are the studios that NFL Media's utility posting is for?", options: ["Tempe, Arizona, USA", "Secaucus, New Jersey", "Inglewood, California", "Stamford, Connecticut"], correctIndex: 2, explanation: "NFL (2026m): NFL Media's studios in Inglewood, California.", sourceLessonSlug: "the-utility-as-posted" },
+          { prompt: "Under whose supervision does NFL Media's utility work?", options: ["The A1 and the A2 alone", "The talent and their agents", "The league's game officials", "SM, director and operations"], correctIndex: 3, explanation: "NFL (2026m): \"Under supervision of the Stage Manager, Director, and Operations team.\"", sourceLessonSlug: "the-utility-as-posted" },
+          { prompt: "What does the NFL utility move during stage resets?", options: ["Large set pieces and monitors", "Satellite and fiber bookings", "Replay clips and playlists", "Graphics templates and fonts"], correctIndex: 0, explanation: "NFL (2026m): \"Moving large set pieces and monitors during stage resets.\"", sourceLessonSlug: "the-utility-as-posted" },
+          { prompt: "At whose direction does the NFL utility set talent marks?", options: ["The A1 and the TOC operator", "Stage manager and director", "The sponsor and the league", "The talent and their agent"], correctIndex: 1, explanation: "NFL (2026m): \"Set talent marks on floor at the direction of Stage Manager and Director.\"", sourceLessonSlug: "the-utility-as-posted" },
+          { prompt: "Which cable skill does the NFL utility posting name twice?", options: ["Soldering XLR connectors", "Splicing fiber in the field", "Over-under cable pulls", "Terminating triax heads"], correctIndex: 2, explanation: "NFL (2026m): \"over-under cable pulls\" in the duties and the \"Ability to over-under cables\" in the requirements.", sourceLessonSlug: "the-utility-as-posted" },
+          { prompt: "What camera problems must the NFL utility be able to troubleshoot on stage?", options: ["Shading and gamma", "Lens metadata files", "Fiber transmission", "Tally and prompter"], correctIndex: 3, explanation: "NFL (2026m): \"Ability to troubleshoot cameras on stage (tally, prompter etc.).\" Shading belongs to the V1 (lesson 9).", sourceLessonSlug: "the-utility-as-posted" },
+          { prompt: "Which camera part does the NFL utility posting say the utility must be able to change?", options: ["Camera lenses", "Camera sensors", "Scene files", "Fiber cores"], correctIndex: 0, explanation: "NFL (2026m): \"Ability to change camera lenses.\"", sourceLessonSlug: "the-utility-as-posted" },
+          { prompt: "With whom does the NFL utility work to find the correct camera routing?", options: ["The play-by-play voice", "The video engineer", "The graphics designer", "The team's equipment staff"], correctIndex: 1, explanation: "NFL (2026m): \"Work with video engineer to determine correct camera routing.\"", sourceLessonSlug: "the-utility-as-posted" },
+          { prompt: "Which signal knowledge does the NFL utility posting ask for?", options: ["Loudness, LKFS and true peak", "SCTE-35 cues and ad breaks", "Routers, patch bays, bulkheads", "Viz templates and data feeds"], correctIndex: 2, explanation: "NFL (2026m): \"Understanding of signal path, routers, patch bays and bulkhead connectivity.\"", sourceLessonSlug: "the-utility-as-posted" },
+          { prompt: "What does the NFL utility maintain at the end of the day?", options: ["The crew's payroll records", "The show's rundown archive", "The talent's IFB earpieces", "Camera continuity and strike"], correctIndex: 3, explanation: "NFL (2026m): \"Maintain continuity of all related camera equipment, including studio fax out and strike at end of day.\"", sourceLessonSlug: "the-utility-as-posted" },
+          { prompt: "In what role may the NFL utility assist the crew on set?", options: ["As talent stand-ins", "As the show's director", "As the A1 at the desk", "As a game referee"], correctIndex: 0, explanation: "NFL (2026m): \"Assist production crew (i.e., Lighting, Director, etc.) as talent stand-ins on set.\"", sourceLessonSlug: "the-utility-as-posted" },
+          { prompt: "What must the NFL utility keep safe for all tech traffic?", options: ["The parking lot", "The studio floor", "The press box", "The team bench"], correctIndex: 1, explanation: "NFL (2026m): \"Pro-actively keep the studio floor safe for all tech traffic.\"", sourceLessonSlug: "the-utility-as-posted" },
+          { prompt: "Which job with equipment trucks does the NFL utility posting list?", options: ["Driving them on tour", "Wiring their generators", "Loading and off-loading", "Booking their satellites"], correctIndex: 2, explanation: "NFL (2026m): \"Loading and off-loading of equipment trucks.\"", sourceLessonSlug: "the-utility-as-posted" },
+          { prompt: "How much sound stage experience does NFL Media's utility posting require?", options: ["None at all", "At least 1 year", "At least 10 years", "At least 5 years"], correctIndex: 3, explanation: "NFL (2026m): \"Minimum of 5 years' experience working on a sound stage.\"", sourceLessonSlug: "the-utility-as-posted" },
+          { prompt: "How much must the NFL utility be able to lift?", options: ["60 pounds", "25 pounds", "75 pounds", "100 pounds"], correctIndex: 0, explanation: "NFL (2026m): \"Ability to lift 60lbs and set/strike studio gear.\" The 75 is the lighting director's figure (lesson 21).", sourceLessonSlug: "the-utility-as-posted" },
+          { prompt: "What hours does the NFL utility posting give?", options: ["40 a week, all year round", "Under 29 a week, as needed", "60 a week in the season", "Weekends only, 8 a day"], correctIndex: 1, explanation: "NFL (2026m): \"Less than 29 hours/week when needed,\" including early mornings, late nights, weekends and holidays.", sourceLessonSlug: "the-utility-as-posted" },
+          { prompt: "How does this course print the NFL utility's posted pay?", options: ["$46.54 an hour", "$46,540 a year", "$46.54 USD, no unit", "$46.54 a day"], correctIndex: 2, explanation: "Lesson 18: the pay line reads $46.54 USD at both ends with no unit; the course adds none.", sourceLessonSlug: "the-utility-as-posted" },
+          { prompt: "How does lesson 18 treat the posting's five-year requirement?", options: ["As an industry rule", "As a union minimum", "As a federal standard", "As that posting's ask"], correctIndex: 3, explanation: "Lesson 18: it belongs to one network studio posting on one date; it is not an industry rule.", sourceLessonSlug: "the-utility-as-posted" },
+          { prompt: "Why does lesson 18 not say what a truck utility job asks?", options: ["No truck posting was read", "Trucks have no utilities", "Unions forbid saying so", "It is the same as studio"], correctIndex: 0, explanation: "Lesson 18: no source read for this course shows a utility posting for a remote sports truck.", sourceLessonSlug: "the-utility-as-posted" },
+          { prompt: "In ESPN's sample schedule, who hired the three utilities?", options: ["ESPN in Bristol", "The venue's union", "The visiting team", "The truck vendor"], correctIndex: 1, explanation: "ESPN (2018, p. 27): \"3 Utilities hired by Union Venue.\"", sourceLessonSlug: "the-utility-as-posted" },
+          { prompt: "What does lesson 18 conclude from that one schedule line?", options: ["Unions hire all utilities", "ESPN never hires utilities", "It is one game, not a rule", "Venues ban network crews"], correctIndex: 2, explanation: "Reasoned in lesson 18: on that one sample game the venue's union supplied the utilities; one sample schedule is not a rule.", sourceLessonSlug: "the-utility-as-posted" },
+          { prompt: "What did ESPN's 2022 change put A2s in place of, on the parabs?", options: ["Two of four camera ops", "Two of four replay ops", "Two of four floor managers", "Two of four utilities"], correctIndex: 3, explanation: "Daley (2022): ESPN supplied two A2s as parab operators, replacing two of the four utility personnel previously assigned to four parabs per game.", sourceLessonSlug: "the-utility-as-posted" },
+          { prompt: "What does the 2022 report say utility workers are usually relied on for?", options: ["Cable management behind cameras", "Mixing the announcers' audio", "Calling shots to the cameras", "Shading the cameras on air"], correctIndex: 0, explanation: "Daley (2022): \"cable management behind cameras and other semi-technical jobs.\"", sourceLessonSlug: "the-utility-as-posted" },
+          { prompt: "Which cables do ESPN's grips, camera assistants and utilities help set up?", options: ["Fiber and satellite feeds", "Camera and audio cables", "Power and lighting rigs", "Rigging and truss chains"], correctIndex: 1, explanation: "ESPN (2018, p. 22): \"assist with the setting up of camera cables, audio cables, building and setting cameras.\"", sourceLessonSlug: "the-utility-as-posted" },
+          { prompt: "Reasoned in lesson 18, which three things does the utility work for?", options: ["Ads, sponsors and talent", "Scripts, notes and logs", "Floor, cameras and signal", "Stats, scores and clocks"], correctIndex: 2, explanation: "Lesson 18: the floor (the SM and the director), the cameras (cables, lenses, tally and prompter) and the signal (routing, patch bays and bulkheads).", sourceLessonSlug: "the-utility-as-posted" },
+          { prompt: "How does ESPN's position list describe the camera operator?", options: ["Paints all the video levels", "Calls the shots to the TD", "Rolls the replays on cue", "Builds, operates, tears down"], correctIndex: 3, explanation: "ESPN (2018, p. 20): \"builds, operates, and tears down all camera equipment/cabling.\" Painting levels is the video engineer's.", sourceLessonSlug: "camera-operators" },
+          { prompt: "Which of these is on ESPN's list of camera operator skills?", options: ["White balance", "Audio mixing", "Clip editing", "Line patching"], correctIndex: 0, explanation: "ESPN (2018, p. 22): white balance, zoom, pan, tilt and focus. Line patching belongs to the video engineer (p. 20).", sourceLessonSlug: "camera-operators" },
+          { prompt: "Besides camera skills, what knowledge does ESPN ask of operators?", options: ["Each league's pay scale for crew", "Each sport's camera assignments", "Each truck's intercom wiring", "Each sponsor's logo guidelines"], correctIndex: 1, explanation: "ESPN (2018, p. 22): \"Knowledge of the standard camera assignments that are unique to each sport.\"", sourceLessonSlug: "camera-operators" },
+          { prompt: "How many cameras, with how many operators, does ESPN's minimum crew have?", options: ["Two, both unmanned", "Six, one operator each", "Four, one operator each", "Eight, two per operator"], correctIndex: 2, explanation: "ESPN (2018, p. 2): \"four cameras with an operator for each.\"", sourceLessonSlug: "camera-operators" },
+          { prompt: "Which camera build does ESPN's minimum gear include?", options: ["Cable cams on wires", "Drone cameras aloft", "Robotic rail dollies", "Handheld buildups"], correctIndex: 3, explanation: "ESPN (2018, p. 2): \"Two handhelds, two handheld buildups (hard cam configuration).\"", sourceLessonSlug: "camera-operators" },
+          { prompt: "What does ESPN call a handheld buildup's configuration?", options: ["Hard cam", "Soft cam", "Robo cam", "Sky cam"], correctIndex: 0, explanation: "ESPN (2018, p. 2): \"handheld buildups (hard cam configuration).\"", sourceLessonSlug: "camera-operators" },
+          { prompt: "How does ESPN number cameras?", options: ["By serial number", "By position, per sport", "By operator's age", "By order of purchase"], correctIndex: 1, explanation: "ESPN (2018, p. 7) numbers each camera by its position, sport by sport.", sourceLessonSlug: "camera-operators" },
+          { prompt: "In ESPN's five-camera baseball plan, where is camera 1?", options: ["High Home", "Centerfield", "Low 3rd", "Low 1st"], correctIndex: 2, explanation: "ESPN (2018, p. 7): 1 Low 3rd, 2 High Home, 3 High 1st, 4 Centerfield, 5 Low 1st.", sourceLessonSlug: "camera-operators" },
+          { prompt: "In ESPN's five-camera baseball plan, which camera is in centerfield?", options: ["Camera 1", "Camera 2", "Camera 5", "Camera 4"], correctIndex: 3, explanation: "ESPN (2018, p. 7): camera 4 is Centerfield.", sourceLessonSlug: "camera-operators" },
+          { prompt: "In ESPN's five-camera baseball plan, where is camera 3?", options: ["High 1st", "Low 3rd", "High Home", "Low 1st"], correctIndex: 0, explanation: "ESPN (2018, p. 7): camera 3 is High 1st.", sourceLessonSlug: "camera-operators" },
+          { prompt: "Reasoned in lesson 19, what does the number in \"ready 2\" name?", options: ["A replay clip on a server", "A camera at a position", "A graphic in the playlist", "A channel on the intercom"], correctIndex: 1, explanation: "Lesson 19: the number names a camera at a position, so an operator who knows the standard assignments knows the shot expected.", sourceLessonSlug: "camera-operators" },
+          { prompt: "What does the older handout say camera operators have on unscripted sports shows?", options: ["A script for every shot", "No fixed position at all", "An assigned area or shot", "A shot list from talent"], correctIndex: 2, explanation: "Vinovich (n.d.): camera operators \"have an assigned area or type of shot.\"", sourceLessonSlug: "camera-operators" },
+          { prompt: "How many cameras does the older handout say a Super Bowl director may have?", options: ["Exactly 4", "Up to 12", "Over 100", "Up to 25"], correctIndex: 3, explanation: "Vinovich (n.d.): as many as 12 in sports, or up to 25 during an event such as the Super Bowl.", sourceLessonSlug: "camera-operators" },
+          { prompt: "How does lesson 19 treat the handout's camera counts?", options: ["As an old, undated figure", "As the current NFL count", "As ESPN's school minimum", "As a union crew rule"], correctIndex: 0, explanation: "Lesson 19: an old figure from an undated handout, not today's count.", sourceLessonSlug: "camera-operators" },
+          { prompt: "What does ESPN's director create for camera operators?", options: ["A lens and filter chart", "A coaches headshot sheet", "A payroll and hours sheet", "A replay clip playlist"], correctIndex: 1, explanation: "ESPN (2018, p. 24): \"Create a coaches \"headshot\" sheet for camera operators.\"", sourceLessonSlug: "camera-operators" },
+          { prompt: "Which meeting does ESPN tell the director always to have?", options: ["A post-game sponsor meeting", "A weekly union meeting", "A pre-game camera meeting", "A halftime talent meeting"], correctIndex: 2, explanation: "ESPN (2018, p. 24): \"Always have a pre-game camera meeting.\"", sourceLessonSlug: "camera-operators" },
+          { prompt: "When is the camera meeting in ESPN's sample schedule?", options: ["2:00 p.m.", "4:30 p.m.", "7:00 p.m.", "6:00 p.m."], correctIndex: 3, explanation: "ESPN (2018, p. 27): \"6:00 PM Camera Meeting on site.\" 2:00 is the crew call, 4:30 the full show fax and 7:00 the transmission check-in.", sourceLessonSlug: "camera-operators" },
+          { prompt: "What happens at 7:15 p.m. in ESPN's sample schedule?", options: ["Cameras at game positions", "The main crew is called", "The full show fax runs", "Transmission check-in"], correctIndex: 0, explanation: "ESPN (2018, p. 27): \"7:15PM All Cameras at Game Positions- Bumps/Rehearsal.\"", sourceLessonSlug: "camera-operators" },
+          { prompt: "Who on ESPN's crew list paints the camera video levels?", options: ["The camera operator", "The video engineer", "The stage manager", "The graphics op"], correctIndex: 1, explanation: "ESPN (2018, p. 20): the video engineer controls incoming video, line patching and routing, and \"painting\" cam video levels.", sourceLessonSlug: "camera-operators" },
+          { prompt: "Who usually talks privately with one camera on a camera isolate system?", options: ["The producer or the AD", "The A1 or the A2 alone", "The video operator or TD", "The talent on the set"], correctIndex: 2, explanation: "Clear-Com (2020c, p. 18): \"usually the video operator or technical director.\"", sourceLessonSlug: "camera-operators" },
+          { prompt: "What does the school handout tell camera operators never to do?", options: ["Talk to the director on headset", "White balance before the show", "Wear a headset during the show", "Adjust shots while on the monitor"], correctIndex: 3, explanation: "MCPS (n.d.-b): \"NEVER adjust shots when your camera is shown on the monitor!\" A classroom handout, not a network rule.", sourceLessonSlug: "camera-operators" },
+          { prompt: "How does lesson 19 classify the \"NEVER adjust shots\" line?", options: ["A classroom handout's rule", "A DGA contract clause", "An ESPN network policy", "A federal safety rule"], correctIndex: 0, explanation: "Lesson 19: it is a classroom handout, not a network rule.", sourceLessonSlug: "camera-operators" },
+          { prompt: "On a show, what tells an operator the camera is on air, per lesson 19?", options: ["The zoom rocker", "The tally light", "The lens hood", "The battery LED"], correctIndex: 1, explanation: "Lesson 19 points to the tally light that CREW-04 lesson 24 describes.", sourceLessonSlug: "camera-operators" },
+          { prompt: "Which FOX 5 DC function shows that not every camera has an operator beside it?", options: ["Floor director", "Audio operator", "Robotic camera", "Master control"], correctIndex: 2, explanation: "Lesson 19: FOX 5 DC's per diem technician, a local news job, may work as \"robotic camera\" (Fox Television Stations, 2026).", sourceLessonSlug: "camera-operators" },
+          { prompt: "Under Article 2, what is the stage manager between the director and the floor?", options: ["A backup director", "A union steward", "A sponsor's agent", "The sole liaison"], correctIndex: 3, explanation: "DGA (2020b, p. 17): the SM \"shall serve as the sole liaison\" between the director, the AD and all persons and facilities in the studio, on location or on the stage.", sourceLessonSlug: "the-stage-manager" },
+          { prompt: "Whose stage directions does the SM relay under Article 2?", options: ["The AD's and the director's", "The sponsor's and the league's", "The talent agent's and coach's", "The A1's and the V1's only"], correctIndex: 0, explanation: "DGA (2020b, p. 17): \"Relaying stage directions of the Associate Director, Director or Producer-Director.\"", sourceLessonSlug: "the-stage-manager" },
+          { prompt: "Which floor task does Article 2 give the stage manager?", options: ["Shading the studio cameras", "Marking performers' positions", "Mixing the program audio", "Building graphics templates"], correctIndex: 1, explanation: "DGA (2020b, p. 18): \"Marking all positions on the set for performers.\"", sourceLessonSlug: "the-stage-manager" },
+          { prompt: "What do the SM's cards give the cast, under Article 2?", options: ["Scores and statistics", "Pay and call times", "Directions and timing", "Lyrics and scripts"], correctIndex: 2, explanation: "DGA (2020b, p. 18): cards \"which give directions from the Director, Producer-Director or Associate Director and timing information to the cast.\"", sourceLessonSlug: "the-stage-manager" },
+          { prompt: "Under Article 2, who gives all cues from the floor?", options: ["The technical director", "The A2 on the floor", "The floor utility", "The stage manager"], correctIndex: 3, explanation: "DGA (2020b, p. 18): \"Give all cues from the floor or, if on location, the equivalent thereof.\"", sourceLessonSlug: "the-stage-manager" },
+          { prompt: "Under Article 2, whose sole responsibility is the slate?", options: ["The stage manager's", "The director's own", "The AD's alone", "The camera operator's"], correctIndex: 0, explanation: "DGA (2020b, p. 18): \"It shall be the sole responsibility of the Stage Manager to make up and put before the camera the slate.\"", sourceLessonSlug: "the-stage-manager" },
+          { prompt: "What does Article 2 say telex, IFB or intercom will not do?", options: ["Reach the talent on air", "Replace the stage manager", "Work in a remote truck", "Carry the director's voice"], correctIndex: 1, explanation: "DGA (2020b, p. 18): they \"will not replace the use of the Stage Manager.\"", sourceLessonSlug: "the-stage-manager" },
+          { prompt: "Why does lesson 20 call Article 2 a written description and not the sports contract?", options: ["Article 2 was repealed in 2020", "Stage managers have no union", "Sports runs under other deals", "ESPN wrote Article 2 itself"], correctIndex: 2, explanation: "Lessons 1 and 20: network sports work runs under separate agreements whose duty text was not read for this course.", sourceLessonSlug: "the-stage-manager" },
+          { prompt: "What does ESPN's crew list say the stage manager manages?", options: ["Replay room and its servers", "Truck power and generators", "Graphics and the score bug", "Announce booth and booth traffic"], correctIndex: 3, explanation: "ESPN (2018, p. 20): \"manages the announce booth, read cards, and booth traffic.\"", sourceLessonSlug: "the-stage-manager" },
+          { prompt: "On a small ESPN crew, which two jobs does one person combine with the SM?", options: ["EIC and A2", "TD and AD", "V1 and V2", "PA and BC"], correctIndex: 0, explanation: "ESPN (2018, pp. 21 to 22): the EIC/Audio Assist \"will be able to function as EIC and Stage Manager.\"", sourceLessonSlug: "the-stage-manager" },
+          { prompt: "What does ESPN's combined EIC and SM become for the producer and director?", options: ["Their final word", "Their eyes and ears", "Their backup voice", "Their stand-in"], correctIndex: 1, explanation: "ESPN (2018, pp. 21 to 22): \"You are the eyes and ears for your Producer/Director on the court or field.\"", sourceLessonSlug: "the-stage-manager" },
+          { prompt: "Which line of defense does ESPN call the combined EIC and SM?", options: ["The last", "The second", "The first", "The only"], correctIndex: 2, explanation: "ESPN (2018, p. 22): \"If any issues need to be handled you will be the first line of defense.\"", sourceLessonSlug: "the-stage-manager" },
+          { prompt: "When does ESPN's sample schedule call the stage manager?", options: ["2:00 p.m.", "6:00 p.m.", "7:15 p.m.", "5:30 p.m."], correctIndex: 3, explanation: "ESPN (2018, p. 27): \"5:30PM CREW CALL - Stage Manager / Booth Coordinator,\" later than the 2:00 p.m. main call.", sourceLessonSlug: "the-stage-manager" },
+          { prompt: "Who shares the stage manager's 5:30 p.m. call in ESPN's sample?", options: ["The booth coordinator", "The camera operators", "The three utilities", "The TD and the AD"], correctIndex: 0, explanation: "ESPN (2018, p. 27): \"Stage Manager / Booth Coordinator.\"", sourceLessonSlug: "the-stage-manager" },
+          { prompt: "In the 2025 DGA panel account, what failed at a Super Bowl before the SM handed over cards?", options: ["A wireless mic", "A virtual monitor", "A camera's tally", "The truck's power"], correctIndex: 1, explanation: "DGA (2025): a virtual monitor failed and the stage manager handed cards to the presenter.", sourceLessonSlug: "the-stage-manager" },
+          { prompt: "What did one DGA panelist say they will always point out?", options: ["That the script is final", "That the clock is accurate", "That everyone must be safe", "That the cards are ready"], correctIndex: 2, explanation: "DGA (2025): \"I will always point out the need to make sure everyone is safe.\"", sourceLessonSlug: "the-stage-manager" },
+          { prompt: "How does one DGA panelist prepare for a show?", options: ["Reads the rate card twice", "Meets the sponsors first", "Calls the league office", "Gets a floor plan and route"], correctIndex: 3, explanation: "DGA (2025): getting \"a floor plan\" and learning \"how do I get from here to the control room.\"", sourceLessonSlug: "the-stage-manager" },
+          { prompt: "Why does the older handout say the floor manager uses hand signals?", options: ["The voice would be on the mics", "The headsets often fail", "The talent cannot hear", "Its union contract says so"], correctIndex: 0, explanation: "Vinovich (n.d.): the voice \"would pick up on the live microphones.\"", sourceLessonSlug: "the-stage-manager" },
+          { prompt: "What does the school handout tell the floor manager to repeat?", options: ["All the talent's lines", "All the director's calls", "All the camera numbers", "All the sponsor's spots"], correctIndex: 1, explanation: "MCPS (n.d.-b): \"Repeat all director calls, such as time countdown, for the studio.\"", sourceLessonSlug: "the-stage-manager" },
+          { prompt: "One minute before air, what does the school handout's floor manager hold?", options: ["A countdown clock card", "The talent's microphone", "A stand-by hand signal", "The camera's lens cap"], correctIndex: 2, explanation: "MCPS (n.d.-b): \"At one minute before on air, hold a stand-by signal with your hand.\"", sourceLessonSlug: "the-stage-manager" },
+          { prompt: "With whom does Fox News Media's audio operator do facility checks?", options: ["The TD and the AD", "The V1 and the LD", "The TOC and master", "The A2 and the SM"], correctIndex: 3, explanation: "Fox News Media (2026b), a news control-room job: \"facility checks with A2 and Stage Manager for all mic and IFB positions.\"", sourceLessonSlug: "the-stage-manager" },
+          { prompt: "Which floor title does the FOX 5 DC posting use?", options: ["Floor director", "Floor manager", "Stage director", "Floor captain"], correctIndex: 0, explanation: "Fox Television Stations (2026), a local news job: \"floor director.\" Floor manager is the handouts' title.", sourceLessonSlug: "the-stage-manager" },
+          { prompt: "Which sources use the title \"floor manager,\" per lesson 20?", options: ["The DGA's Article 2", "The two handouts", "NFL Media's postings", "The FOX 5 DC post"], correctIndex: 1, explanation: "Lesson 20: \"floor manager\" comes from the older university handout and the school handout.", sourceLessonSlug: "the-stage-manager" },
+          { prompt: "How does lesson 20 handle the three floor titles?", options: ["Treats all three as one", "Uses only \"floor director\"", "Uses each source's title", "Drops the floor titles"], correctIndex: 2, explanation: "Lesson 20: no source read says the three titles are the same job, so the course uses each source's own title.", sourceLessonSlug: "the-stage-manager" },
+          { prompt: "When was NFL Media's lighting director posting first published?", options: ["June 26, 2026", "October 23, 2026", "July 10, 2026", "August 4, 2026"], correctIndex: 3, explanation: "NFL (n.d.): first published August 4, 2026 (NFL, 2026i).", sourceLessonSlug: "the-lighting-director" },
+          { prompt: "With which teams does NFL Media's lighting director collaborate?", options: ["Directors, producers, scenic, video", "Sponsors, sales and marketing staff", "Coaches, players and team doctors", "League officials and the referees"], correctIndex: 0, explanation: "NFL (2026i): \"Collaborate with show Directors, Producers, Scenic, and Video teams.\"", sourceLessonSlug: "the-lighting-director" },
+          { prompt: "Where does the NFL lighting director keep each production's look?", options: ["Across the 32 teams' stadiums", "Across stages and remote sites", "Across each sponsor's ads", "Across every talent's wardrobe"], correctIndex: 1, explanation: "NFL (2026i): \"the specific look of various productions between multiple stages and remote locations.\"", sourceLessonSlug: "the-lighting-director" },
+          { prompt: "Which console does the NFL lighting director posting name?", options: ["Calrec Apollo", "SSL S500", "ETC EOS", "Viz Trio"], correctIndex: 2, explanation: "NFL (2026i): \"Operation of ETC EOS consoles.\" Calrec and SSL make audio desks; Viz Trio plays graphics.", sourceLessonSlug: "the-lighting-director" },
+          { prompt: "What does the NFL lighting director do with ETC EOS consoles?", options: ["Mix the announcers' audio", "Route the camera signals", "Build the opening graphics", "Play back and modify looks"], correctIndex: 3, explanation: "NFL (2026i): \"playback and modify existing lighting looks.\"", sourceLessonSlug: "the-lighting-director" },
+          { prompt: "When does the NFL lighting director perform tech checks?", options: ["At the start of each shift", "Once a season, in summer", "After each broadcast", "During each commercial"], correctIndex: 0, explanation: "NFL (2026i): \"Perform tech checks at the beginning of each shift.\"", sourceLessonSlug: "the-lighting-director" },
+          { prompt: "Which of these does the NFL lighting director check for at the start of a shift?", options: ["Ratings", "Burnouts", "Payroll", "Weather"], correctIndex: 1, explanation: "NFL (2026i): \"check for burnouts, repositioning of equipment and overall stage & grid maintenance.\"", sourceLessonSlug: "the-lighting-director" },
+          { prompt: "Which NFL lighting director duty ties the lighting chair to the video chair?", options: ["Booking the satellite feeds", "Setting the talent's IFB", "Monitoring from shading room", "Building the score bug"], correctIndex: 2, explanation: "NFL (2026i): \"Monitor show productions from shading room and consult with video operator as necessary.\"", sourceLessonSlug: "the-lighting-director" },
+          { prompt: "To whom does the NFL lighting director report technical issues?", options: ["The league's officials", "The talent's agents", "The sponsor's staff", "Studio Ops and Engineering"], correctIndex: 3, explanation: "NFL (2026i): \"Report technical and/or equipment issues to Studio Operations and Engineering teams.\"", sourceLessonSlug: "the-lighting-director" },
+          { prompt: "How much studio experience does the NFL lighting director posting require?", options: ["5 to 10 years", "1 to 2 years", "None required", "20 or more years"], correctIndex: 0, explanation: "NFL (2026i): \"5-10 years of experience working in a studio environment; live & recorded productions.\"", sourceLessonSlug: "the-lighting-director" },
+          { prompt: "Which data protocols does the NFL lighting director posting name?", options: ["Dante, AES67 and MADI", "DMX-512, sACN, ETC NET3", "SCTE-35 and SMPTE 2110", "RS-422 and GPI tally"], correctIndex: 1, explanation: "NFL (2026i): \"DMX-512, SACN and ETC NET3.\" Dante and AES67 are audio networking (lesson 7).", sourceLessonSlug: "the-lighting-director" },
+          { prompt: "What drawing skill does the NFL lighting director posting ask for?", options: ["Truck floor plans", "Camera storyboards", "Lighting plots", "Graphics layouts"], correctIndex: 2, explanation: "NFL (2026i): \"Ability to draft, read, and interpret lighting plots.\"", sourceLessonSlug: "the-lighting-director" },
+          { prompt: "Which software does the NFL lighting director posting list?", options: ["After Effects and Photoshop", "Pro Tools and Logic Pro", "iNews and IPDirector", "Vectorworks and Lightwright"], correctIndex: 3, explanation: "NFL (2026i): \"Auto-Cad, Vectorworks, ETC Concert and Lightwright experience.\" After Effects is the graphics designer's (lesson 15).", sourceLessonSlug: "the-lighting-director" },
+          { prompt: "Where must the NFL lighting director be able to work?", options: ["High above ground, on lifts", "At floor level only, seated", "Up to six feet, no higher", "From the shading room only"], correctIndex: 0, explanation: "NFL (2026i): \"Ability to work high above the ground, on lifts and/or ladders.\"", sourceLessonSlug: "the-lighting-director" },
+          { prompt: "How much must the NFL lighting director be able to lift, and for how long?", options: ["25 lbs, up to 10 minutes", "75 lbs, up to 30 minutes", "60 lbs, for a full shift", "100 lbs, up to an hour"], correctIndex: 1, explanation: "NFL (2026i): \"Must be able to lift 75lbs for up to 30 minutes at a time.\" The 60 pounds is the utility's (lesson 18).", sourceLessonSlug: "the-lighting-director" },
+          { prompt: "How does this course print the NFL lighting director's posted pay?", options: ["$68.99 an hour", "$68,990 a year", "$68.99 USD, no unit", "$68.99 a day"], correctIndex: 2, explanation: "Lesson 21: the pay line reads $68.99 USD at both ends with no unit, printed as posted.", sourceLessonSlug: "the-lighting-director" },
+          { prompt: "Why does lesson 21 name ETC?", options: ["It is the best maker", "The DGA requires it", "ESPN's manual uses it", "The posting names it"], correctIndex: 3, explanation: "Lesson 21: ETC is a lighting maker, named only because the posting names it.", sourceLessonSlug: "the-lighting-director" },
+          { prompt: "What does Fox News Media's senior video operator work with lighting to ensure?", options: ["The best on-air look", "The show's rundown", "The crew's schedules", "The talent's scripts"], correctIndex: 0, explanation: "Fox News Media (2026d), a news control-room job: \"Collaborate with directors, lighting, and make-up\" to \"ensure the best possible on-air look.\"", sourceLessonSlug: "the-lighting-director" },
+          { prompt: "Reasoned in lesson 21, how do the lighting and video chairs relate?", options: ["They never speak", "They share the look", "They swap each week", "One hires the other"], correctIndex: 1, explanation: "Lesson 21: the LD lights and the V1 shades, so a change in one shows up in the other.", sourceLessonSlug: "the-lighting-director" },
+          { prompt: "What does the older handout say a TV lighting director mainly lights?", options: ["Outdoor stadium games", "Touring concert stages", "A set used repeatedly", "Film location shoots"], correctIndex: 2, explanation: "Vinovich (n.d.): \"lighting a particular set that is used repeatedly on a show,\" mostly in a studio.", sourceLessonSlug: "the-lighting-director" },
+          { prompt: "Does ESPN's school-production crew list name a lighting director?", options: ["Yes, one per game", "Yes, two per game", "Yes, from the venue", "No, it names none"], correctIndex: 3, explanation: "ESPN (2018, p. 20) names no lighting director; the director's checklist says only \"Notice the arena lighting.\"", sourceLessonSlug: "the-lighting-director" },
+          { prompt: "What does ESPN's director checklist ask about arena lighting?", options: ["Where the dark areas are", "Who the venue's LD is", "What the bulbs cost", "When the lights go out"], correctIndex: 0, explanation: "ESPN (2018, p. 24): \"Notice the arena lighting. Where are the dark areas.\"", sourceLessonSlug: "the-lighting-director" },
+          { prompt: "Why does lesson 21 not say whether trucks carry a lighting director?", options: ["Trucks are lit by the venue", "No source read shows one", "The DGA bars the role", "ESPN forbids truck LDs"], correctIndex: 1, explanation: "Lesson 21: no source read for the course describes a lighting director on a remote sports truck crew.", sourceLessonSlug: "the-lighting-director" },
+          { prompt: "Which course teaches lighting itself, per lesson 21?", options: ["CREW-02 (Sound Craft)", "CREW-00 (Cables)", "CREW-03 (Light on Set)", "CREW-04 (Camera Rig)"], correctIndex: 2, explanation: "Lesson 21 links CREW-03, Light on Set, lessons 2 and 23.", sourceLessonSlug: "the-lighting-director" },
         ],
       },
     },
