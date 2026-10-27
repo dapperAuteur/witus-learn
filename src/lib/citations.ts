@@ -77,6 +77,9 @@ export const STAGED_COURSES: string[] = [
   "cinema-look-camera-rig",
   "arena-transmission",
   "renting-out-production-gear",
+  // CREW-07 and CREW-08, staged 2026-10-27 after their seed (research checks crew07-* and crew08-*).
+  "sideline-systems",
+  "the-show-crew",
   // Newly created, never reviewed by anyone
   "read-the-statements",
   "map-and-compass",
