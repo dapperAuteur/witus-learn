@@ -159,10 +159,23 @@ const FNM_A2 = `Fox News Media. (2026a, October 19). *Freelance A2/audio assista
 const FNM_AUDIO_OP = `Fox News Media. (2026b, September 22). *Freelance audio operator* [Job posting]. Fox Corporation, Workday. ${RETRIEVED} https://fox.wd1.myworkdayjobs.com/Domestic/job/Washington-District-of-Columbia-USA/Freelance-Audio-Operator_R50033869`;
 const FNM_BPE = `Fox News Media. (2026g, October 21). *Broadcast production engineer* [Job posting]. Fox Corporation, Workday. ${RETRIEVED} https://fox.wd1.myworkdayjobs.com/Domestic/job/Washington-District-of-Columbia-USA/Broadcast-Production-Engineer_R50025362`;
 const ESPN_AUDIO_OP = `ESPN. (n.d.). *Studio audio operator* [Job posting, filled; aggregator copy]. EntertainmentCareers.Net. ${RETRIEVED} https://www.entertainmentcareers.net/espn/studio-audio-operator/job/484628`;
-const FOX_BOARD = `Fox Corporation. (n.d.). [Workday job board, searched for "A1", "audio", "intercom", "IFB" and "mixer"]. ${RETRIEVED} https://fox.wd1.myworkdayjobs.com/Domestic`;
-const DISNEY_BOARD = `The Walt Disney Company. (n.d.). [Workday job board, searched for "A1 audio"]. ${RETRIEVED} https://disney.wd5.myworkdayjobs.com/disneycareer`;
-const WBD_BOARD = `Warner Bros. Discovery. (n.d.). [Workday job board, searched for "A1"]. ${RETRIEVED} https://warnerbros.wd5.myworkdayjobs.com/global`;
+const FOX_BOARD = `Fox Corporation. (n.d.). [Workday job board, keyword search]. ${RETRIEVED} https://fox.wd1.myworkdayjobs.com/Domestic`;
+const DISNEY_BOARD = `The Walt Disney Company. (n.d.). [Workday job board, keyword search]. ${RETRIEVED} https://disney.wd5.myworkdayjobs.com/disneycareer`;
+const WBD_BOARD = `Warner Bros. Discovery. (n.d.). [Workday job board, keyword search]. ${RETRIEVED} https://warnerbros.wd5.myworkdayjobs.com/global`;
 
+const NBA_BOARD = `National Basketball Association. (n.d.). [Workday job board, keyword search]. ${RETRIEVED} https://nba.wd108.myworkdayjobs.com/nbacareers`;
+
+// Video (research file 02)
+const NFL_V1 = `National Football League. (2026n, June 26). *Seasonal part-time V1/shading operator* [Job posting]. Greenhouse. ${RETRIEVED} https://job-boards.greenhouse.io/nflcareers/jobs/5281443008`;
+const FNM_SENIOR_VIDEO = `Fox News Media. (2026d, August 25). *Freelance senior video operator* [Job posting]. Fox Corporation, Workday. ${RETRIEVED} https://fox.wd1.myworkdayjobs.com/Domestic/job/New-York-New-York-USA/Freelance-Senior-Video-Operator_R50033722`;
+const NBC_V1 = `NBC Sports. (2025). *Video operator* [Job posting, removed by the employer January 5, 2026; aggregator copy]. EntertainmentCareers.Net. ${RETRIEVED} https://www.entertainmentcareers.net/nbc-sports/video-operator/job/503017`;
+const TURNER_2022 = `Turner Sports. (2022). *V2, sports* [Job posting, removed by the employer October 3, 2022; aggregator copy]. EntertainmentCareers.Net. ${RETRIEVED} https://www.entertainmentcareers.net/turner-sports/v2-sports/job/417751/`;
+const TURNER_2023 = `Turner Sports. (2023). *V2, sports* [Job posting, removed by the employer June 21, 2023; aggregator copy]. EntertainmentCareers.Net. ${RETRIEVED} https://www.entertainmentcareers.net/turner-sports/v2-sports/job/435506`;
+const ABC_MAINT = `ABC News. (2026, September 15). *Broadcast maintenance technician (expression of interest) (as-needed)* [Job posting, req. 10160861]. The Walt Disney Company, Workday. ${RETRIEVED} https://disney.wd5.myworkdayjobs.com/disneycareer/job/Washington-DC-USA/Broadcast-Maintenance-Technician--Expression-of-Interest----As-Needed--_10160861`;
+const LEADER_GUIDE = `Leader Electronics Corporation. (2026). *Leader scopes: On-set production guide* [Application guide; content as of March 2026; PDF]. LeaderPhabrix. ${RETRIEVED} https://leaderphabrix.com/pdfs/guides/Leader%20Scopes%20-%20On-Set%20Production.pdf`;
+const LEADER_LV5600W = `LeaderPhabrix. (n.d.). *Leader LV5600W waveform monitor* [Product page]. ${RETRIEVED} https://leaderphabrix.com/products/lv5600w-waveform-monitor/`;
+const GV_CREATIVE_GRADING = `Grass Valley. (n.d.-b). *Creative Grading* [Product page]. ${RETRIEVED} https://www.grassvalley.com/products/cameras/creative-grading/`;
+const EVS_XTVIA = `EVS. (n.d.-b). *XT-VIA: Live production server* [Product page]. ${RETRIEVED} https://evs.com/products/live-production-servers/xt-via`;
 // Audio trade press (research file 01). Every article is one dated account; no lesson names its people.
 const DALEY_2018 = `Daley, D. (2018, September 21). *Inside NBC Sports' all-encompassing audio production for Sunday Night Football*. Sports Video Group. ${RETRIEVED} https://www.sportsvideo.org/2018/09/21/inside-nbc-sports-all-encompassing-audio-production-for-sunday-night-football/`;
 const DALEY_2022 = `Daley, D. (2022, October 5). *Small changes make substantial differences in NFL audio*. Sports Video Group. ${RETRIEVED} https://www.sportsvideo.org/2022/10/05/small-changes-make-substantial-differences-in-nfl-audio/`;
@@ -926,6 +939,296 @@ No source read for this course gives a digital peak target for a live mix, so th
           { prompt: "What target level does EBU R 128 set?", options: ["-24.0 LKFS", "-23.0 LUFS", "-18.0 LUFS", "-27.0 LKFS"], correctIndex: 1, explanation: "EBU (2023, p. 3): \"a Target Level of -23.0 LUFS.\" The US A/85 target is -24 LKFS.", sourceLessonSlug: "levels-formats-and-loudness" },
           { prompt: "What tolerance does EBU R 128 permit where the target is not practical, as in live programs?", options: ["±3.0 LU", "±0.5 LU", "±1.0 LU", "±2.0 LU"], correctIndex: 2, explanation: "EBU (2023, p. 3): \"a tolerance of ±1.0 LU is permitted.\" A/85's measurement tolerance is about ±2 dB.", sourceLessonSlug: "levels-formats-and-loudness" },
           { prompt: "Reasoned in lesson 8, how do US and European loudness targets differ?", options: ["Same target, measured differently", "Same target, measured the same", "No target in either place", "Different targets, measured alike"], correctIndex: 3, explanation: "Lesson 8: -24 LKFS against -23 LUFS, and \"'LUFS' is equivalent to 'LKFS'\" (EBU, 2023, p. 3).", sourceLessonSlug: "levels-formats-and-loudness" },
+        ],
+      },
+    },
+    // ══════════════════════════════════════════════════════════════════════
+    // SECTION 3: Video, the V1 and the V2
+    // ══════════════════════════════════════════════════════════════════════
+    {
+      slug: "the-v1-as-posted",
+      title: "9 · The V1, as posted",
+      section: "3 · Video: the V1 and the V2",
+      recallContent: [
+        {
+          prompt: "What target loudness does ATSC A/85 give for content without metadata and no prior arrangement?",
+          answer: "-24 LKFS, with a measurement tolerance of up to about ±2 dB and a maximum true peak of -2 dBTP (Advanced Television Systems Committee [ATSC], 2026a).",
+        },
+        {
+          prompt: "What does the FCC rule make A/85 binding for, and which edition?",
+          answer: "The transmission of commercial advertisements, under A/85:2013 (47 C.F.R. § 73.682(e)(1); § 73.8000).",
+        },
+      ],
+      body: `${QR}
+
+**The video chair.** Shading itself, what an operator does with a remote control panel (RCP) to match each camera's exposure and color, is taught in CREW-04 lesson "23 · Shading and matching color." The camera control unit (CCU) is defined in CREW-00 lesson "8 · The camera control unit and triax." This lesson reads what employers ask of the chair that does it, the V1.
+
+**NFL Media's V1.** NFL Media's "Seasonal Part-Time V1/Shading Operator" seeks an operator "to lead in-studio and remote camera shading for live and pre-recorded news and sports productions across all platforms" (National Football League [NFL], 2026n). The role is "responsible for ensuring consistent, high-quality visual output across all camera feeds by managing real-time shading, color correction, and signal integrity," and partners "with Technical Directors, Engineering, and production teams to deliver a seamless, broadcast-ready product." Its duties include:
+
+| Duty | As posted |
+|---|---|
+| Shade live | "Perform real-time shading of multiple camera sources during live and recorded productions, ensuring consistent color, exposure, and visual quality" |
+| Run the camera chains | "Configure and manage camera shading systems, including Sony broadcast camera chains, CCUs, and RCPs" |
+| Four controls | "Adjust iris, gamma, black levels, and color balance across multiple camera feeds to maintain a cohesive on-air look" |
+| Incoming feeds | "Color correct inbound video feeds using Selenio Network Processor Manager" |
+| Routing | "Manage video signal routing for shading and production workflows using Imagine Magellan Control systems" |
+| Scopes | "Monitor and troubleshoot video signals using waveform monitors, vectorscopes, and diagnostic tools to maintain broadcast standards" |
+| Changing light | "Adjust shading dynamically based on changing lighting conditions, production requirements, or environmental factors" |
+| Setup | "Support setup, calibration, and testing of cameras, shading systems, and video infrastructure for studio and remote productions" |
+
+It also supports "robotic camera systems (Panasonic, Telemetrics), Ultimatte systems, and OLED display integrations." It requires 5 to 10 or more "years of experience in camera shading or broadcast video operations in studio and/or remote production environments"; "Extensive experience with Sony broadcast camera systems, including studio and ENG configurations"; "Strong understanding of broadcast video formats, including 1080p, 1080i, and 720p"; "Working knowledge of SMPTE 2110 or IP-based video workflows"; and experience "shading, color correcting, and routing video using frame synchronizers and production systems (e.g., Imagine, Cobalt)." It prefers "Knowledge of HDR and emerging broadcast technologies." The first attribute it names is "Exceptional attention to detail with a strong eye for color accuracy and visual consistency" (NFL, 2026n). The terms are up to 29 hours a week, "Seasonal employment up to 7 months," lifting "up to 25 lbs." The pay line, first published June 26, 2026, reads $77.91 USD at both ends, with no unit; like every NFL figure in this course, it is printed as posted.
+
+**A news control-room video operator.** Fox News Media's "Freelance Senior Video Operator" is a news control-room job in New York, posted August 25, 2026, "reporting to the Technical Production Manager" (Fox News Media, 2026d). The operator will "ensure video levels and lighting are the best possible quality on air," will "Chip, color correct, and monitor video levels on all studio cameras, video monitors, and remote cameras," and will "Collaborate with directors, lighting, and make-up to troubleshoot and make adjustments to ensure the best possible on-air look for our talent and set." Other duties: "Frame and monitor all remote Fox wire cameras as needed," and "Patch cameras to different in-house areas as needed and build, change, and update scene files to show as needed." It asks for Ikegami and Sony HD cameras with their color correction units and for robotic camera operations, with "Lawo Color correctors" a plus. Pay: $40.00 to $50.00 per hour. The posting uses "chip" without defining it, and no source read for this course defines it, so this course quotes the word and leaves its meaning to the reviewer.
+
+**A sports V1, closed.** NBC Sports posted a per-event "Video Operator (V1)" in Stamford, Connecticut; the copy read for this course shows it was removed by the employer on January 5, 2026 (NBC Sports, 2025). The V1 works "under the direction of the Producer, Director, Technical Manager and/or other production or management representatives to provide images for the telecast." Duties include "Provide all CCU information to all departments involved with the telecast," "Maintain images to broadcast standards," and "Work closely with Studio Director, Building Engineer to set camera look and shading for all cameras, both robotic and manned in coordination with the game script." It asks for experience "using camera control units, color correction devices, waveform monitors, vector scopes, camera chipping and patch bays," and for familiarity with a Cobalt color corrector system and a Cerebrum routing system.
+
+**Reasoned: the same kit.** The NFL, Fox News and NBC postings name the same core tools: camera control units or RCPs, color correctors, and waveform and vector scopes. Two of them use the title V1, "V1/Shading Operator" at the NFL and "Video Operator (V1)" at NBC, with shading as the core duty.
+
+**Who the V1 works beside.** NFL Media's lighting director will "Monitor show productions from shading room and consult with video operator as necessary" (NFL, 2026i), and the Fox News operator works with "directors, lighting, and make-up." Reasoned from both: the shader's picture depends on the light on the set, so the two chairs talk.
+
+:::reveal Which four controls does NFL Media's V1 posting name? ||| Iris, gamma, black levels and color balance, adjusted "across multiple camera feeds to maintain a cohesive on-air look" (NFL, 2026n).
+
+:::reveal What kind of job is Fox News Media's senior video operator, and what pay does it state? ||| A news control-room job in New York, at $40.00 to $50.00 per hour (Fox News Media, 2026d).
+
+:::reveal Which tools do the NFL, Fox News and NBC postings share? ||| Camera control units or RCPs, color correctors, and waveform and vector scopes.
+
+## Sources
+- ${NFL_V1} Locator: opening and second paragraphs; "Responsibilities"; "Required Qualifications"; "Preferred Experience"; "Other Key Attributes / Characteristics," item 1; "Terms / Expected Hours of Work"; "Physical Demands"; "Salary / Pay Range".
+- ${FNM_SENIOR_VIDEO} Locator: "Job Description," "A Snapshot of Your Responsibilities," items 1 to 4, "What You Will Need," pay paragraph. A news control-room job.
+- ${NBC_V1} Locator: opening paragraphs, duty list, qualifications, page header and footer.
+- ${NFL_LD} Locator: "Responsibilities".`,
+    },
+    {
+      slug: "scopes-and-matching-cameras",
+      title: "10 · Scopes and matching cameras",
+      section: "3 · Video: the V1 and the V2",
+      recallContent: [
+        {
+          prompt: "What does NFL Media's V1 posting say the role is responsible for?",
+          answer: "\"ensuring consistent, high-quality visual output across all camera feeds by managing real-time shading, color correction, and signal integrity\" (NFL, 2026n).",
+        },
+        {
+          prompt: "Why does this course quote \"chip\" from the Fox News posting without explaining it?",
+          answer: "The posting does not define it, and no source read for the course does, so its meaning is left to the reviewer.",
+        },
+      ],
+      body: `${QR}
+
+**Why scopes.** Every V1 posting in lesson 9 asks for waveform monitors and vectorscopes. A scope maker's guide explains why: "A waveform monitor on set allows you to detect errors that are not visible on a traditional monitor," because monitors "can look different due to the amount of light reflection on the screen or how the monitor is calibrated" (Leader Electronics Corporation, 2026, p. 8). And: "The classic waveform display is still used on set to ensure that, before production commences, all of the cameras are correctly set up and match each other" (p. 8).
+
+**A note on this guide.** By its own introduction, Leader's guide is written for cinema and high-end television sets and the digital imaging technician who manages the picture there, not for a sports truck. Its basics apply to any camera match; its procedures are not a V1's procedure, so this lesson uses only the basics. It contrasts those sets with "studio-based production where a vision engineer has access to all the cameras, and producers and directors can view camera images live" (Leader Electronics Corporation, 2026).
+
+**The two scopes.**
+
+| Scope | What it shows, in Leader's words |
+|---|---|
+| Waveform monitor | errors "not visible on a traditional monitor"; used to make sure "all of the cameras are correctly set up and match each other" |
+| Vectorscope | "supplements a waveform display to visualize chrominance"; its graticule "roughly represents saturation as distance from the center of the circle and hue as the angle," with "boxes around the circle for the colors in the main bars" |
+
+**Matching cameras.** Multiple cameras "should also match," which "is achieved by checking the RGB balance using a waveform and grey-scale chart" (Leader Electronics Corporation, 2026, pp. 8 to 9). Three settings do most of the work:
+
+- **White balance.** "The ratio between Red, Green and Blue channels of the camera video output must be 1:1:1" (p. 10).
+- **Black balance.** The camera must reproduce "a true black when the lens is closed, otherwise a colorcast (a tint of a particular color) may be seen," which "requires accurate matching of the Red, Green and Blue black levels" (p. 13).
+- **Gamma.** "most cameras have a default Gamma of 0.45" (Leader Electronics Corporation, 2026).
+
+Highlights have two more circuits. Knee correction "compresses the wide dynamic video signals acquired by the imager (CCDs) into the limited video-level range specified by the television standards," and the white clip circuit "clips off or electrically limits the video level of highlights" (Leader Electronics Corporation, 2026).
+
+**From the posting to the scope.** Reasoned from lesson 9 and the guide: the NFL V1's four controls (iris, gamma, black levels and color balance) move the same quantities the scopes show. Brightness shows on the waveform, black and white balance in the red, green and blue levels, and hue and saturation on the vectorscope. Turner Sports' V2 posting pairs the same words: the V2 helps the V1 with the look "in terms of color/tone, iris/brightness, and camera matching" (Turner Sports, 2023). Lesson 11 reads that posting.
+
+**A scope, as its maker describes it.** Leader's LV5600W "features a 7-inch touch screen display in a compact 3RU enclosure" and offers "waveform, vector, picture, audio, and eye pattern displays," with vectorscope marks for "Color Bar Saturation 75 %, 100 %." Its "Serial communication RS-422/485 terminals enable to display camera ID, and tally" (LeaderPhabrix, n.d.).
+
+**A shading panel, as its maker describes it.** Grass Valley calls Creative Grading "a cutting-edge camera shading control panel and tablet application" for its cameras (Grass Valley, n.d.-b); the praise is the maker's. The page says it "minimizes the need for endless menus and layers of settings" by "grouping parameters into logical bundles," helps engineers "quickly adapt to changing light conditions or visual styles," allows "camera shading from any location via IP or cloud," and lets users "capture, compare, and apply different "looks" across multiple cameras instantly." Its "CGP 500 panel features six customizable rotaries, joystick controls, and push-buttons," and the system "can manage up to 99 cameras on a single IP network" (Grass Valley, n.d.-b).
+
+Sony's own product pages could not be read for this course, so this lesson describes no Sony panel, though the NFL posting names Sony camera chains. CREW-00 lesson 8 defines the CCU and RCP from a Sony manual.
+
+**Where this sits.** CREW-04 lesson "23 · Shading and matching color" covers shading cinema-style bodies from an RCP and agreeing the look with the shader. This lesson adds the scope basics under it.
+
+:::reveal What red, green and blue ratio does Leader give for a correct white? ||| 1:1:1 (Leader Electronics Corporation, 2026, p. 10).
+
+:::reveal How does a vectorscope show hue and saturation? ||| Saturation as distance from the center of the circle, hue as the angle (Leader Electronics Corporation, 2026).
+
+:::reveal What does Leader say a waveform monitor catches that a picture monitor may not? ||| Errors that are "not visible on a traditional monitor," because monitors vary with reflection and calibration (Leader Electronics Corporation, 2026, p. 8).
+
+## Sources
+- ${LEADER_GUIDE} Locator: "Introduction"; "Why do we need the classic waveform monitor and vector scope on-set?" pp. 8 to 9; "Camera White Balance," p. 10; "Camera Black Balance," p. 13, with the knee, white clip and gamma passages; "Leader Scope - On-Set Production".
+- ${TURNER_2023} Locator: first bullet.
+- ${LEADER_LV5600W} Locator: product overview, vectorscope specifications and feature list.
+- ${GV_CREATIVE_GRADING} Locator: opening paragraph; "Precision Control Made Simple"; "Features".
+- ${NFL_V1} Locator: "Responsibilities," items 2 and 3.`,
+    },
+    {
+      slug: "v2-robotics-and-the-chain",
+      title: "11 · The V2, robotics and the camera chain",
+      section: "3 · Video: the V1 and the V2",
+      recallContent: [
+        {
+          prompt: "How does Leader say multiple cameras are matched?",
+          answer: "\"by checking the RGB balance using a waveform and grey-scale chart\" (Leader Electronics Corporation, 2026).",
+        },
+        {
+          prompt: "What default gamma does Leader say most cameras have?",
+          answer: "0.45 (Leader Electronics Corporation, 2026).",
+        },
+      ],
+      body: `${QR}
+
+**What one employer said a V2 does.** Turner Sports posted "V2, Sports" in 2022 and again in 2023; both postings are closed (Turner Sports, 2022, 2023). The first line reads: "Video 2 Operator for remote sports broadcast show. Video 2 Operator works closely with the Video 1 to help achieve the desired "look" of the studio cameras in terms of color/tone, iris/brightness, and camera matching" (Turner Sports, 2023). Most of the rest is editing: "Exhibits advanced skill to assemble and create content using non-linear editing software in a fast-paced sport news environment," and "Must have the skill and attitude to train less experienced editors on edit workflows and software." It asks for "Minimum 5 years' experience as a Video II or Video I technician for national network remote sports broadcasts," the ability "to control hue, saturation, luminance, contrast, color space, color temperature, white level, and sync," and a "Strong understanding of audio and video broadcast quality control (video scopes, audio levels, CALM Act compliance, etc.)." The 2023 posting gave $49,489.00 to $91,909.00 salary per year and was removed by the employer on June 21, 2023. The 2022 copy shows no pay.
+
+**Reasoned, and what is missing.** That V2 matched "the studio cameras" and spent most of its time editing, so it may not describe a V2 on a remote truck. On October 26, 2026, no live posting titled V2 or "Video 2" was found on the Fox, Disney, Warner Bros. Discovery, NFL or NBA boards (Fox Corporation, n.d.; National Basketball Association, n.d.; National Football League [NFL], n.d.; The Walt Disney Company, n.d.; Warner Bros. Discovery, n.d.). What a V2 does on a truck today is left to the reviewer, who has held the V1 chair.
+
+**Robotic cameras.** Robotics turns up across the postings:
+
+| Posting | What it says about robotics |
+|---|---|
+| NFL Media V1 | supports "robotic camera systems (Panasonic, Telemetrics)" and prefers "Experience with automated and robotic camera systems" (NFL, 2026n) |
+| Fox News Media senior video operator, a news control-room job | asks for robotic camera operations (Fox News Media, 2026d) |
+| FOX 5 DC studio technician, a local news job | may work as "robotic camera" (Fox Television Stations, 2026) |
+| NBC Sports V1, closed | sets the look "for all cameras, both robotic and manned" (NBC Sports, 2025) |
+| ABC News maintenance technician | maintains "Sony, Panasonic, Canon Studio Camera Systems" and "Telemetrics EVS Studio and field Robotics" (wording as posted); $65.18 per hour; covered by the NABET-CWA and ABC agreement; posted September 15, 2026 (ABC News, 2026) |
+
+A maker's menu shows how far robotics reaches: EVS lists "Media production robotics," including an "Arcam 6-axis robotic camera arm" and an "OmniGlide Robotic camera rover platform" (EVS, n.d.-b).
+
+**Talking to one camera.** Clear-Com says most large installations and virtually all mobile units use camera isolate systems, which let one operator, "usually the video operator or technical director," talk privately with any camera operator for setup or maintenance without interrupting the other cameras' talk with the director (Clear-Com, 2020c, p. 18). That is the video chair's private line to a camera.
+
+**The chain under the V1.** Reasoned from the postings' "Sony broadcast camera chains, CCUs, and RCPs" (NFL, 2026n) and NBC's "video feeds through CCU's to execute camera and video cabling, connections and patching" (NBC Sports, 2025): every camera reaches the shading position through a chain of camera head, cable, CCU and RCP, with routing and color correction around it. The parts are taught in other courses:
+
+| Part | Where it is taught |
+|---|---|
+| The CCU and triax | CREW-00, "8 · The camera control unit and triax" |
+| Hybrid fiber camera cable | CREW-00, "9 · The SMPTE hybrid fiber camera cable" |
+| Reference and return video | CREW-00, "7 · Reference, timecode and return video" |
+| SDI on coax | CREW-00, "4 · SDI on coax and the BNC" |
+| Tally | CREW-00, "25 · DMX, RS-422, tally and USB"; CREW-04, "24 · Tally, intercom, return video and the questions to ask" |
+| The truck's path for one picture | CREW-04, "22 · What the truck does with your picture" |
+
+The NFL V1 posting asks for the IP side too, "Working knowledge of SMPTE 2110 or IP-based video workflows" (NFL, 2026n), which CREW-05, *Arena transmission*, teaches.
+
+:::reveal According to Turner Sports' posting, what does the V2 help the V1 achieve? ||| The desired "look" of the studio cameras "in terms of color/tone, iris/brightness, and camera matching" (Turner Sports, 2023).
+
+:::reveal Why might the Turner posting not describe a V2 on a remote truck? ||| It matched the studio cameras and was mostly an editing job; no live V2 posting was found to compare.
+
+:::reveal On a camera isolate system, who usually talks privately with a camera operator? ||| The video operator or the technical director (Clear-Com, 2020c, p. 18).
+
+## Sources
+- ${TURNER_2023} Locator: first bullet; bullets 2 and 5; qualification bullets; pay paragraph and header.
+- ${TURNER_2022} Locator: header (removal date; no pay shown).
+- ${FOX_BOARD} Locator: search results for "V2" and "video 2".
+- ${DISNEY_BOARD} Locator: search results for "V2" and "video 2".
+- ${WBD_BOARD} Locator: search results for "V2" and "video 2".
+- ${NFL_BOARD_API} Locator: job title list.
+- ${NBA_BOARD} Locator: search results.
+- ${NFL_V1} Locator: "Responsibilities," item 2 and last item; "Required Qualifications"; "Preferred Experience".
+- ${FNM_SENIOR_VIDEO} Locator: "What You Will Need". A news control-room job.
+- ${FTS_TECH} Locator: "What You'll Do". A local news job.
+- ${NBC_V1} Locator: duty list.
+- ${ABC_MAINT} Locator: system list; pay and union paragraphs.
+- ${EVS_XTVIA} Locator: site menu, "Media production robotics".
+- ${CC_2020C} Locator: "Cameras," p. 18.`,
+    },
+    {
+      slug: "section-3-quiz",
+      title: "Section 3 quiz · Video: the V1 and the V2",
+      section: "3 · Video: the V1 and the V2",
+      body: "A graded check on the V1 as posted, scopes and matching cameras, and the V2, robotics and the camera chain. Each answer links back to the lesson that teaches it.",
+      quiz: {
+        passingScore: 80,
+        questionsPerAttempt: 5,
+        shuffleOptions: true,
+        questions: [
+          { prompt: "Which lesson teaches shading itself, so this course does not repeat it?", options: ["CREW-04 lesson 23", "CREW-00 lesson 18", "CREW-02 lesson 17", "CREW-05 lesson 12"], correctIndex: 0, explanation: "Lesson 9 links CREW-04's \"23 · Shading and matching color.\"", sourceLessonSlug: "the-v1-as-posted" },
+          { prompt: "Which lesson defines the camera control unit (CCU) for this course?", options: ["CREW-04 lesson 22", "CREW-00 lesson 8", "CREW-07 lesson 2", "CREW-02 lesson 4"], correctIndex: 1, explanation: "Lesson 9 links CREW-00's \"8 · The camera control unit and triax.\"", sourceLessonSlug: "the-v1-as-posted" },
+          { prompt: "What does NFL Media's V1 posting seek an operator to lead?", options: ["Replay for every NFL game day", "Graphics for studio and remote", "Studio and remote camera shading", "Audio for live news and sports"], correctIndex: 2, explanation: "NFL (2026n): \"to lead in-studio and remote camera shading for live and pre-recorded news and sports productions across all platforms.\"", sourceLessonSlug: "the-v1-as-posted" },
+          { prompt: "What does the NFL V1 posting say the role is responsible for ensuring?", options: ["Every camera operator's safety", "Each replay airs on time", "The loudness of the program", "Consistent output on all feeds"], correctIndex: 3, explanation: "NFL (2026n): \"consistent, high-quality visual output across all camera feeds.\"", sourceLessonSlug: "the-v1-as-posted" },
+          { prompt: "With whom does the NFL V1 posting say the role partners?", options: ["TDs, Engineering and production", "Talent, agents and sponsors", "Officials and the league office", "Fans and the social media team"], correctIndex: 0, explanation: "NFL (2026n): \"partners with Technical Directors, Engineering, and production teams.\"", sourceLessonSlug: "the-v1-as-posted" },
+          { prompt: "Which four controls does the NFL V1 posting name?", options: ["Zoom, focus, pan and tilt", "Iris, gamma, black and color", "Gain, pan, mute and solo", "Hue, key, wipe and dissolve"], correctIndex: 1, explanation: "NFL (2026n): \"Adjust iris, gamma, black levels, and color balance across multiple camera feeds.\"", sourceLessonSlug: "the-v1-as-posted" },
+          { prompt: "Which camera shading systems does the NFL V1 posting name?", options: ["Ikegami heads and Lawo units", "Grass Valley Creative Grading", "Sony chains, CCUs and RCPs", "Panasonic consoles and decks"], correctIndex: 2, explanation: "NFL (2026n): \"Sony broadcast camera chains, CCUs, and RCPs.\"", sourceLessonSlug: "the-v1-as-posted" },
+          { prompt: "What does the NFL V1 use to color correct inbound video feeds?", options: ["Imagine Magellan Control", "Cerebrum Routing System", "Grass Valley K-Frame", "Selenio Network Processor"], correctIndex: 3, explanation: "NFL (2026n): \"Color correct inbound video feeds using Selenio Network Processor Manager.\" Magellan is for routing.", sourceLessonSlug: "the-v1-as-posted" },
+          { prompt: "What does the NFL V1 use to manage video signal routing?", options: ["Imagine Magellan Control", "Selenio Network Processor", "Riedel Artist matrix", "EVS IPDirector suite"], correctIndex: 0, explanation: "NFL (2026n): \"Manage video signal routing for shading and production workflows using Imagine Magellan Control systems.\"", sourceLessonSlug: "the-v1-as-posted" },
+          { prompt: "With what does the NFL V1 monitor and troubleshoot video signals?", options: ["Loudness and PPM meters", "Waveforms and vectorscopes", "Spectrum and RF analyzers", "Tally lights and talkback"], correctIndex: 1, explanation: "NFL (2026n): \"waveform monitors, vectorscopes, and diagnostic tools.\"", sourceLessonSlug: "the-v1-as-posted" },
+          { prompt: "Based on what does the NFL V1 posting say shading is adjusted dynamically?", options: ["The score of the game", "The talent's requests", "Changing light conditions", "The sponsor's logo colors"], correctIndex: 2, explanation: "NFL (2026n): \"Adjust shading dynamically based on changing lighting conditions, production requirements, or environmental factors.\"", sourceLessonSlug: "the-v1-as-posted" },
+          { prompt: "Which robotic camera systems does the NFL V1 posting name?", options: ["Arcam arm and OmniGlide", "Vinten heads and Ikegami", "Sony and Canon robotics", "Panasonic and Telemetrics"], correctIndex: 3, explanation: "NFL (2026n): \"robotic camera systems (Panasonic, Telemetrics).\"", sourceLessonSlug: "the-v1-as-posted" },
+          { prompt: "How much experience does the NFL V1 posting require?", options: ["5 to 10 or more years", "1 year in a control room", "No experience required", "2 years as a utility"], correctIndex: 0, explanation: "NFL (2026n): 5 to \"10+ years of experience in camera shading or broadcast video operations.\"", sourceLessonSlug: "the-v1-as-posted" },
+          { prompt: "Which video formats does the NFL V1 posting list?", options: ["480i, 576i and 720p", "1080p, 1080i and 720p", "4K, 8K and 12K", "HDR10 and Dolby Vision"], correctIndex: 1, explanation: "NFL (2026n): \"Strong understanding of broadcast video formats, including 1080p, 1080i, and 720p.\"", sourceLessonSlug: "the-v1-as-posted" },
+          { prompt: "Which IP video standard does the NFL V1 posting ask working knowledge of?", options: ["SCTE-35", "AES67", "SMPTE 2110", "MADI"], correctIndex: 2, explanation: "NFL (2026n): \"Working knowledge of SMPTE 2110 or IP-based video workflows.\"", sourceLessonSlug: "the-v1-as-posted" },
+          { prompt: "Which systems does the NFL V1 posting give as examples for frame synchronizers?", options: ["Riedel, RTS", "Viz, Ross", "EVS, Chyron", "Imagine, Cobalt"], correctIndex: 3, explanation: "NFL (2026n): \"frame synchronizers and production systems (e.g., Imagine, Cobalt).\"", sourceLessonSlug: "the-v1-as-posted" },
+          { prompt: "What knowledge does the NFL V1 posting list as preferred?", options: ["HDR and emerging technology", "Stereo and 5.1 surround mixing", "NFL and college football rules", "Viz Trio and graphics playout"], correctIndex: 0, explanation: "NFL (2026n): \"Knowledge of HDR and emerging broadcast technologies.\"", sourceLessonSlug: "the-v1-as-posted" },
+          { prompt: "Which attribute does the NFL V1 posting name first?", options: ["Speed on a jog dial", "An eye for color accuracy", "A loud, clear voice", "Strength to lift 75 lbs"], correctIndex: 1, explanation: "NFL (2026n): \"Exceptional attention to detail with a strong eye for color accuracy and visual consistency.\"", sourceLessonSlug: "the-v1-as-posted" },
+          { prompt: "How many hours a week does the NFL V1 posting allow?", options: ["Exactly 40", "Over 60", "Up to 29", "Up to 10"], correctIndex: 2, explanation: "NFL (2026n): a \"part-time position based on operational requirements up to 29 hours per week.\"", sourceLessonSlug: "the-v1-as-posted" },
+          { prompt: "How long is the NFL V1's seasonal employment, per the posting?", options: ["One game only", "Two full years", "Year-round", "Up to 7 months"], correctIndex: 3, explanation: "NFL (2026n): \"Seasonal employment up to 7 months.\"", sourceLessonSlug: "the-v1-as-posted" },
+          { prompt: "How much does the NFL V1 posting say the role must be able to lift?", options: ["Up to 25 lbs", "Up to 60 lbs", "Up to 75 lbs", "Up to 100 lbs"], correctIndex: 0, explanation: "NFL (2026n): lift \"up to 25 lbs.\" Sixty pounds is the utility's and 75 the lighting director's.", sourceLessonSlug: "the-v1-as-posted" },
+          { prompt: "How does this course print the NFL V1's posted pay?", options: ["$77.91 an hour", "$77.91 USD, no unit", "$77,910 a year", "$77.91 a week"], correctIndex: 1, explanation: "Lesson 9: the pay line reads $77.91 USD with no unit, and the course prints it as posted.", sourceLessonSlug: "the-v1-as-posted" },
+          { prompt: "When was the NFL V1 posting first published?", options: ["October 23, 2026", "August 14, 2026", "June 26, 2026", "April 8, 2026"], correctIndex: 2, explanation: "Lesson 9: first published June 26, 2026 (NFL, 2026n).", sourceLessonSlug: "the-v1-as-posted" },
+          { prompt: "What kind of job is Fox News Media's Freelance Senior Video Operator?", options: ["A Fox Sports truck job", "An NFL studio V1 job", "A stadium board job", "A news control-room job"], correctIndex: 3, explanation: "Lesson 9: a news control-room job in New York, posted August 25, 2026 (Fox News Media, 2026d).", sourceLessonSlug: "the-v1-as-posted" },
+          { prompt: "To whom does Fox News Media's senior video operator report?", options: ["The Technical Production Manager", "The Show Director on each shift", "The Lighting Director on the set", "The Senior Audio Engineer on duty"], correctIndex: 0, explanation: "Fox News Media (2026d): \"reporting to the Technical Production Manager.\"", sourceLessonSlug: "the-v1-as-posted" },
+          { prompt: "Which three verbs does the Fox News posting give for video levels on all cameras?", options: ["Frame, focus and zoom", "Chip, color correct, monitor", "Route, record and replay", "Light, gel and diffuse"], correctIndex: 1, explanation: "Fox News Media (2026d): \"Chip, color correct, and monitor video levels on all studio cameras, video monitors, and remote cameras.\"", sourceLessonSlug: "the-v1-as-posted" },
+          { prompt: "With whom does the Fox News senior video operator collaborate on the on-air look?", options: ["Sponsors, agents and talent", "Replay, graphics and audio", "Directors, lighting, make-up", "Utilities, grips and drivers"], correctIndex: 2, explanation: "Fox News Media (2026d): \"Collaborate with directors, lighting, and make-up.\"", sourceLessonSlug: "the-v1-as-posted" },
+          { prompt: "What does the Fox News senior video operator build, change and update?", options: ["Rundowns", "Playlists", "Graphics", "Scene files"], correctIndex: 3, explanation: "Fox News Media (2026d): \"build, change, and update scene files to show as needed.\"", sourceLessonSlug: "the-v1-as-posted" },
+          { prompt: "What pay does the Fox News senior video operator posting state?", options: ["$40.00 to $50.00 per hour", "$36.00 to $43.75 per hour", "$28.00 to $37.50 per hour", "$65.18 per hour, union"], correctIndex: 0, explanation: "Fox News Media (2026d): $40.00 to $50.00 per hour.", sourceLessonSlug: "the-v1-as-posted" },
+          { prompt: "How does this course handle the word \"chip\" in the Fox News posting?", options: ["It defines it as color balance", "It quotes it, undefined", "It defines it as iris only", "It leaves the word out"], correctIndex: 1, explanation: "Lesson 9: no source read defines \"chip,\" so the course quotes the word and leaves its meaning to the reviewer.", sourceLessonSlug: "the-v1-as-posted" },
+          { prompt: "Which camera makers does the Fox News senior video posting ask experience with?", options: ["Canon and Panasonic", "Grass Valley and Red", "Ikegami and Sony", "Blackmagic and Arri"], correctIndex: 2, explanation: "Fox News Media (2026d): \"Ikegami HD Cameras\" and \"SONY HD cameras\" with their color correction units.", sourceLessonSlug: "the-v1-as-posted" },
+          { prompt: "What is the status of NBC Sports' per-event V1 posting, as the copy shows?", options: ["Open until filled", "Reposted for 2027", "Paused for winter", "Removed in January 2026"], correctIndex: 3, explanation: "NBC Sports (2025): removed by the employer on January 5, 2026.", sourceLessonSlug: "the-v1-as-posted" },
+          { prompt: "Under whose direction does NBC's V1 work, per the posting?", options: ["Producer, director, tech manager", "The league office and officials", "The talent and their own agents", "The sponsor's own crew chief"], correctIndex: 0, explanation: "NBC Sports (2025): \"under the direction of the Producer, Director, Technical Manager and/or other production or management representatives.\"", sourceLessonSlug: "the-v1-as-posted" },
+          { prompt: "To whom does NBC's V1 provide all CCU information?", options: ["Only the director", "All departments", "Only the league", "The audio team"], correctIndex: 1, explanation: "NBC Sports (2025): \"Provide all CCU information to all departments involved with the telecast.\"", sourceLessonSlug: "the-v1-as-posted" },
+          { prompt: "In coordination with what does NBC's V1 set the camera look and shading?", options: ["The sponsor list", "The weather report", "The game script", "The league rules"], correctIndex: 2, explanation: "NBC Sports (2025): \"set camera look and shading for all cameras, both robotic and manned in coordination with the game script.\"", sourceLessonSlug: "the-v1-as-posted" },
+          { prompt: "Which routing system does NBC's V1 posting ask familiarity with?", options: ["Imagine Magellan", "Riedel MediorNet", "Ross Ultrix", "Cerebrum"], correctIndex: 3, explanation: "NBC Sports (2025): familiarity with a \"Cerebrum Routing System\" and a Cobalt color corrector system.", sourceLessonSlug: "the-v1-as-posted" },
+          { prompt: "Reasoned in lesson 9, which tools do the NFL, Fox News and NBC postings share?", options: ["CCUs, correctors and scopes", "Jog dials and replay servers", "Intercom panels and IFBs", "Lighting desks and dimmers"], correctIndex: 0, explanation: "Lesson 9: camera control units or RCPs, color correctors, and waveform and vector scopes.", sourceLessonSlug: "the-v1-as-posted" },
+          { prompt: "Reasoned in lesson 9, why do the V1 and the lighting director talk?", options: ["They share one pay rate", "The picture depends on light", "The V1 hires the lighting crew", "The LD runs the camera chain"], correctIndex: 1, explanation: "Lesson 9: NFL Media's LD consults the video operator from the shading room, and the Fox News operator works with lighting; the shader's picture depends on the light.", sourceLessonSlug: "the-v1-as-posted" },
+          { prompt: "What does Leader say a waveform monitor on set lets you detect?", options: ["Errors in the audio mix", "Faults in the intercom", "Errors a monitor hides", "Drops in the RF signal"], correctIndex: 2, explanation: "Leader Electronics Corporation (2026, p. 8): \"errors that are not visible on a traditional monitor.\"", sourceLessonSlug: "scopes-and-matching-cameras" },
+          { prompt: "Why does Leader say picture monitors can mislead?", options: ["They show audio meters", "They run on old cables", "They are always in mono", "Reflection and calibration"], correctIndex: 3, explanation: "Leader Electronics Corporation (2026, p. 8): monitors \"can look different due to the amount of light reflection on the screen or how the monitor is calibrated.\"", sourceLessonSlug: "scopes-and-matching-cameras" },
+          { prompt: "Before production, what does Leader say the classic waveform display is used to ensure?", options: ["Cameras are set up and match", "Every mic is at reference", "The graphics are spelled right", "The truck clock matches master"], correctIndex: 0, explanation: "Leader Electronics Corporation (2026, p. 8): \"all of the cameras are correctly set up and match each other.\"", sourceLessonSlug: "scopes-and-matching-cameras" },
+          { prompt: "For whom does Leader's guide say it is written, by its own introduction?", options: ["Sports truck V1s and V2s", "Cinema sets and the DIT", "Replay operators on trucks", "Audio mixers in studios"], correctIndex: 1, explanation: "Lesson 10: the guide is written for cinema and high-end television sets and the digital imaging technician, not for a sports truck.", sourceLessonSlug: "scopes-and-matching-cameras" },
+          { prompt: "How does lesson 10 use Leader's guide?", options: ["As the V1's full procedure", "As the NFL's own manual", "Its basics only", "Not at all"], correctIndex: 2, explanation: "Lesson 10: the basics apply to any camera match; the procedures are not a V1's procedure.", sourceLessonSlug: "scopes-and-matching-cameras" },
+          { prompt: "In studio-based production, what does Leader say a vision engineer has access to?", options: ["Only the replay feeds", "Only the audio desk", "Only one camera", "All the cameras"], correctIndex: 3, explanation: "Leader Electronics Corporation (2026): \"a vision engineer has access to all the cameras.\"", sourceLessonSlug: "scopes-and-matching-cameras" },
+          { prompt: "What does Leader say the vectorscope visualizes?", options: ["Chrominance", "Loudness", "Timecode", "Bit rate"], correctIndex: 0, explanation: "Leader Electronics Corporation (2026): the vectorscope \"supplements a waveform display to visualize chrominance.\"", sourceLessonSlug: "scopes-and-matching-cameras" },
+          { prompt: "On a vectorscope, what does distance from the center represent?", options: ["Hue", "Saturation", "Brightness", "Timing"], correctIndex: 1, explanation: "Leader Electronics Corporation (2026): \"saturation as distance from the center of the circle and hue as the angle.\"", sourceLessonSlug: "scopes-and-matching-cameras" },
+          { prompt: "On a vectorscope, what does the angle represent?", options: ["Saturation", "Brightness", "Hue", "Gamma"], correctIndex: 2, explanation: "Leader Electronics Corporation (2026): hue is shown \"as the angle.\"", sourceLessonSlug: "scopes-and-matching-cameras" },
+          { prompt: "What are the boxes around a vectorscope's circle for, per Leader?", options: ["Audio channel levels", "Camera ID numbers", "Tally states", "Colors in the main bars"], correctIndex: 3, explanation: "Leader Electronics Corporation (2026): \"boxes around the circle for the colors in the main bars.\"", sourceLessonSlug: "scopes-and-matching-cameras" },
+          { prompt: "How does Leader say multiple cameras are matched?", options: ["RGB balance, waveform, grey chart", "Audio tone and a VU meter check", "Tally lights and a stopwatch count", "A light meter and a gel swatch book"], correctIndex: 0, explanation: "Leader Electronics Corporation (2026): \"by checking the RGB balance using a waveform and grey-scale chart.\"", sourceLessonSlug: "scopes-and-matching-cameras" },
+          { prompt: "What red, green and blue ratio does Leader give for a correct white?", options: ["2:1:1", "1:1:1", "1:2:1", "3:2:1"], correctIndex: 1, explanation: "Leader Electronics Corporation (2026, p. 10): \"must be 1:1:1.\"", sourceLessonSlug: "scopes-and-matching-cameras" },
+          { prompt: "What must a camera reproduce when its lens is closed, per Leader?", options: ["A full white", "A grey card", "A true black", "A color bar"], correctIndex: 2, explanation: "Leader Electronics Corporation (2026, p. 13): \"a true black when the lens is closed.\"", sourceLessonSlug: "scopes-and-matching-cameras" },
+          { prompt: "What may be seen if the red, green and blue black levels do not match?", options: ["A rolling bar", "A frozen frame", "A loud hum", "A colorcast"], correctIndex: 3, explanation: "Leader Electronics Corporation (2026, p. 13): \"otherwise a colorcast (a tint of a particular color) may be seen.\"", sourceLessonSlug: "scopes-and-matching-cameras" },
+          { prompt: "What default gamma does Leader say most cameras have?", options: ["0.45", "2.4", "1.0", "0.18"], correctIndex: 0, explanation: "Leader Electronics Corporation (2026): \"most cameras have a default Gamma of 0.45.\"", sourceLessonSlug: "scopes-and-matching-cameras" },
+          { prompt: "What does Leader say knee correction does?", options: ["Adds noise to dark areas", "Compresses a wide signal", "Boosts the color saturation", "Delays the picture a frame"], correctIndex: 1, explanation: "Leader Electronics Corporation (2026): knee correction \"compresses the wide dynamic video signals acquired by the imager (CCDs) into the limited video-level range.\"", sourceLessonSlug: "scopes-and-matching-cameras" },
+          { prompt: "What does Leader say the white clip circuit does?", options: ["Raises the black level", "Adds a colorcast", "Limits highlight levels", "Sets the gamma curve"], correctIndex: 2, explanation: "Leader Electronics Corporation (2026): it \"clips off or electrically limits the video level of highlights.\"", sourceLessonSlug: "scopes-and-matching-cameras" },
+          { prompt: "Reasoned in lesson 10, how do the NFL V1's four controls relate to the scopes?", options: ["They are set by the A1", "They have no effect on them", "They are only for robotics", "They move what scopes show"], correctIndex: 3, explanation: "Lesson 10: brightness shows on the waveform, black and white balance in the RGB levels, and hue and saturation on the vectorscope.", sourceLessonSlug: "scopes-and-matching-cameras" },
+          { prompt: "Which word does Turner Sports' V2 posting pair with iris?", options: ["Brightness", "Saturation", "Hue", "Sync"], correctIndex: 0, explanation: "Turner Sports (2023): \"iris/brightness.\"", sourceLessonSlug: "scopes-and-matching-cameras" },
+          { prompt: "What screen does Leader say the LV5600W has?", options: ["A 17-inch LCD", "A 7-inch touch screen", "A 3-inch OLED", "No screen at all"], correctIndex: 1, explanation: "LeaderPhabrix (n.d.): \"a 7-inch touch screen display in a compact 3RU enclosure.\"", sourceLessonSlug: "scopes-and-matching-cameras" },
+          { prompt: "Which displays does Leader list for the LV5600W?", options: ["Loudness and RF meters only", "Tally and timecode readouts", "Waveform, vector, picture, more", "Spectrum and network graphs"], correctIndex: 2, explanation: "LeaderPhabrix (n.d.): \"waveform, vector, picture, audio, and eye pattern displays.\"", sourceLessonSlug: "scopes-and-matching-cameras" },
+          { prompt: "Which color bar saturations does the LV5600W's vectorscope mark?", options: ["25 % and 50 %", "50 % and 90 %", "60 % and 80 %", "75 % and 100 %"], correctIndex: 3, explanation: "LeaderPhabrix (n.d.): \"Color Bar Saturation 75 %, 100 %.\"", sourceLessonSlug: "scopes-and-matching-cameras" },
+          { prompt: "What do the LV5600W's RS-422/485 terminals let it display?", options: ["Camera ID and tally", "Loudness and peaks", "IFB and intercom", "Score and clock"], correctIndex: 0, explanation: "LeaderPhabrix (n.d.): they \"enable to display camera ID, and tally.\"", sourceLessonSlug: "scopes-and-matching-cameras" },
+          { prompt: "What does Grass Valley call Creative Grading?", options: ["A replay server and remote", "A shading panel and tablet app", "A graphics engine and plug-in", "An intercom panel and beltpack"], correctIndex: 1, explanation: "Grass Valley (n.d.-b): \"a cutting-edge camera shading control panel and tablet application\"; the praise is the maker's.", sourceLessonSlug: "scopes-and-matching-cameras" },
+          { prompt: "How does Grass Valley say Creative Grading reduces menus?", options: ["By hiding the iris", "By locking the gamma", "By grouping settings", "By using voice control"], correctIndex: 2, explanation: "Grass Valley (n.d.-b): \"grouping parameters into logical bundles.\"", sourceLessonSlug: "scopes-and-matching-cameras" },
+          { prompt: "From where does Grass Valley say Creative Grading allows shading?", options: ["Only from beside the camera", "Only from inside the truck", "Only from the studio floor", "Any location, by IP or cloud"], correctIndex: 3, explanation: "Grass Valley (n.d.-b): \"camera shading from any location via IP or cloud.\"", sourceLessonSlug: "scopes-and-matching-cameras" },
+          { prompt: "What does Grass Valley's snapshot matching let users do across cameras?", options: ["Capture, compare, apply looks", "Record and replay every shot", "Mute and unmute each mic", "Count down to every break"], correctIndex: 0, explanation: "Grass Valley (n.d.-b): users \"can capture, compare, and apply different \"looks\" across multiple cameras instantly.\"", sourceLessonSlug: "scopes-and-matching-cameras" },
+          { prompt: "What controls does Grass Valley list on the CGP 500 panel?", options: ["A jog dial and a T-bar", "Six rotaries and a joystick", "Faders and a talkback key", "A touch screen only"], correctIndex: 1, explanation: "Grass Valley (n.d.-b): \"six customizable rotaries, joystick controls, and push-buttons.\"", sourceLessonSlug: "scopes-and-matching-cameras" },
+          { prompt: "How many cameras does Grass Valley say Creative Grading can manage on one IP network?", options: ["Up to 9", "Up to 29", "Up to 99", "Up to 999"], correctIndex: 2, explanation: "Grass Valley (n.d.-b): \"up to 99 cameras on a single IP network.\"", sourceLessonSlug: "scopes-and-matching-cameras" },
+          { prompt: "Why does lesson 10 describe no Sony shading panel?", options: ["Sony makes no shading panels", "The NFL uses no Sony gear at all", "Sony's panels are now obsolete", "Sony's pages could not be read"], correctIndex: 3, explanation: "Lesson 10: Sony's own product pages could not be read for the course; CREW-00 lesson 8 defines the CCU and RCP from a Sony manual.", sourceLessonSlug: "scopes-and-matching-cameras" },
+          { prompt: "In which years did Turner Sports post \"V2, Sports\"?", options: ["2022 and 2023", "2018 and 2019", "2024 and 2025", "2020 and 2026"], correctIndex: 0, explanation: "Lesson 11: Turner Sports posted it in 2022 and again in 2023; both are closed.", sourceLessonSlug: "v2-robotics-and-the-chain" },
+          { prompt: "Whom does Turner's V2 posting say the V2 works closely with?", options: ["The A1", "The Video 1", "The TD", "The AD"], correctIndex: 1, explanation: "Turner Sports (2023): \"Video 2 Operator works closely with the Video 1.\"", sourceLessonSlug: "v2-robotics-and-the-chain" },
+          { prompt: "Whose cameras' look does Turner's V2 help achieve?", options: ["The field cameras", "The robotic arms", "The studio cameras", "The sideline gimbals"], correctIndex: 2, explanation: "Turner Sports (2023): the desired \"look\" of \"the studio cameras.\"", sourceLessonSlug: "v2-robotics-and-the-chain" },
+          { prompt: "What is most of Turner's V2 posting about?", options: ["Replay", "Audio", "Lighting", "Editing"], correctIndex: 3, explanation: "Turner Sports (2023): it asks for advanced non-linear editing and training other editors.", sourceLessonSlug: "v2-robotics-and-the-chain" },
+          { prompt: "Whom does Turner's V2 posting say the V2 must be able to train?", options: ["Less experienced editors", "New replay operators", "Junior audio assistants", "Camera utilities"], correctIndex: 0, explanation: "Turner Sports (2023): \"train less experienced editors on edit workflows and software.\"", sourceLessonSlug: "v2-robotics-and-the-chain" },
+          { prompt: "What experience does Turner's V2 posting require?", options: ["2 years in local news", "5 years as Video I or II", "1 year as a utility", "10 years as a director"], correctIndex: 1, explanation: "Turner Sports (2023): \"Minimum 5 years' experience as a Video II or Video I technician for national network remote sports broadcasts.\"", sourceLessonSlug: "v2-robotics-and-the-chain" },
+          { prompt: "Which act's compliance does Turner's V2 posting list under quality control?", options: ["The ADA", "The FLSA", "The CALM Act", "The DMCA"], correctIndex: 2, explanation: "Turner Sports (2023): \"video scopes, audio levels, CALM Act compliance, etc.\"", sourceLessonSlug: "v2-robotics-and-the-chain" },
+          { prompt: "What pay did Turner's 2023 V2 posting give?", options: ["$77.91 USD, no unit", "$40.00 to $50.00 per hour", "$20.00 per hour", "$49,489 to $91,909 a year"], correctIndex: 3, explanation: "Turner Sports (2023): \"$49,489.00\" to \"$91,909.00 salary per year.\" The 2022 copy shows no pay.", sourceLessonSlug: "v2-robotics-and-the-chain" },
+          { prompt: "When was Turner's 2023 V2 posting removed by the employer?", options: ["June 21, 2023", "October 3, 2022", "January 5, 2026", "March 4, 2025"], correctIndex: 0, explanation: "Turner Sports (2023): removed June 21, 2023. October 3, 2022 is the 2022 copy's removal date.", sourceLessonSlug: "v2-robotics-and-the-chain" },
+          { prompt: "Reasoned in lesson 11, why might Turner's V2 not describe a V2 on a remote truck?", options: ["It was a radio station job", "Studio cameras, mostly editing", "It paid only by the hour", "It required a union card first"], correctIndex: 1, explanation: "Lesson 11: that V2 matched the studio cameras and spent most of its time editing.", sourceLessonSlug: "v2-robotics-and-the-chain" },
+          { prompt: "What did this course find when it searched five boards for a V2 posting on October 26, 2026?", options: ["Two open V2 jobs at Fox", "One V2 job at the NBA", "No live V2 posting", "V2 jobs at every network"], correctIndex: 2, explanation: "Lesson 11: no live posting titled V2 or \"Video 2\" on the Fox, Disney, Warner Bros. Discovery, NFL or NBA boards.", sourceLessonSlug: "v2-robotics-and-the-chain" },
+          { prompt: "Who does lesson 11 leave to say what a truck V2 does today?", options: ["The NFL's recruiting team", "The 2023 Turner posting", "A camera maker's manual", "The reviewer, a former V1"], correctIndex: 3, explanation: "Lesson 11: it is left to the reviewer, who has held the V1 chair.", sourceLessonSlug: "v2-robotics-and-the-chain" },
+          { prompt: "Which posting may have a local news technician work as \"robotic camera\"?", options: ["FOX 5 DC's technician", "NFL Media's V1", "NBC Sports' V1", "ABC News' engineer"], correctIndex: 0, explanation: "Fox Television Stations (2026): technical director, audio operator, \"robotic camera,\" and/or floor director. A local news job.", sourceLessonSlug: "v2-robotics-and-the-chain" },
+          { prompt: "For which cameras does NBC's closed V1 posting set the look?", options: ["Manned cameras only", "Robotic and manned alike", "Robotic cameras only", "Only the game camera"], correctIndex: 1, explanation: "NBC Sports (2025): \"for all cameras, both robotic and manned.\"", sourceLessonSlug: "v2-robotics-and-the-chain" },
+          { prompt: "Which robotics does ABC News' Washington maintenance posting list, as written?", options: ["Arcam and OmniGlide", "Vinten and Ross", "Telemetrics EVS Studio", "Panasonic AW only"], correctIndex: 2, explanation: "ABC News (2026): \"Telemetrics EVS Studio and field Robotics\" (wording as posted).", sourceLessonSlug: "v2-robotics-and-the-chain" },
+          { prompt: "What pay does ABC News' maintenance technician posting state?", options: ["$40.00 per hour", "$77.91 USD", "$20.00 per hour", "$65.18 per hour"], correctIndex: 3, explanation: "ABC News (2026): \"$65.18 per hour,\" posted September 15, 2026.", sourceLessonSlug: "v2-robotics-and-the-chain" },
+          { prompt: "Which union agreement covers ABC News' maintenance technician, per the posting?", options: ["NABET-CWA and ABC", "IATSE Local 819", "The DGA's FLTTA", "SAG-AFTRA's code"], correctIndex: 0, explanation: "ABC News (2026): covered by the NABET-CWA and ABC collective bargaining agreement.", sourceLessonSlug: "v2-robotics-and-the-chain" },
+          { prompt: "Which robotic products does EVS's menu list under media production robotics?", options: ["Telemetrics heads and Vinten", "Arcam arm and OmniGlide rover", "XT-VIA and LSM-VIA servers", "Cobalt and Selenio correctors"], correctIndex: 1, explanation: "EVS (n.d.-b): an \"Arcam 6-axis robotic camera arm\" and an \"OmniGlide Robotic camera rover platform.\"", sourceLessonSlug: "v2-robotics-and-the-chain" },
+          { prompt: "Where does Clear-Com say camera isolate systems are used?", options: ["Only in radio studios today", "Only on theater stage shows", "Virtually all mobile units", "Only in local news rooms"], correctIndex: 2, explanation: "Clear-Com (2020c, p. 18): most large installations and virtually all mobile units use camera isolate systems.", sourceLessonSlug: "v2-robotics-and-the-chain" },
+          { prompt: "On a camera isolate system, who usually talks privately with a camera operator?", options: ["The talent or the AD", "The A1 or the A2", "The producer or the PA", "The video operator or TD"], correctIndex: 3, explanation: "Clear-Com (2020c, p. 18): \"usually the video operator or technical director.\"", sourceLessonSlug: "v2-robotics-and-the-chain" },
+          { prompt: "What does a camera isolate talk avoid interrupting, per Clear-Com?", options: ["The other cameras and director", "The talent's IFB program feed", "The A1's mix of the crowd", "The commercial break count"], correctIndex: 0, explanation: "Clear-Com (2020c, p. 18): it does not interrupt the other cameras' talk with the director.", sourceLessonSlug: "v2-robotics-and-the-chain" },
+          { prompt: "Reasoned in lesson 11, what chain does every camera reach shading through?", options: ["Mic, preamp, console, router", "Head, cable, CCU and RCP", "Server, playlist, remote, jog", "Engine, template, data, key"], correctIndex: 1, explanation: "Lesson 11: camera head, cable, CCU and RCP, with routing and color correction around it.", sourceLessonSlug: "v2-robotics-and-the-chain" },
+          { prompt: "Which lesson teaches the SMPTE hybrid fiber camera cable?", options: ["CREW-04 lesson 23", "CREW-07 lesson 13", "CREW-00 lesson 9", "CREW-05 lesson 20"], correctIndex: 2, explanation: "Lesson 11 links CREW-00's \"9 · The SMPTE hybrid fiber camera cable.\"", sourceLessonSlug: "v2-robotics-and-the-chain" },
+          { prompt: "Which lesson teaches reference and return video?", options: ["CREW-04 lesson 18", "CREW-02 lesson 8", "CREW-05 lesson 17", "CREW-00 lesson 7"], correctIndex: 3, explanation: "Lesson 11 links CREW-00's \"7 · Reference, timecode and return video.\"", sourceLessonSlug: "v2-robotics-and-the-chain" },
+          { prompt: "Which course teaches the IP side the NFL V1 posting asks for (SMPTE 2110)?", options: ["CREW-05", "CREW-02", "CREW-03", "CREW-01"], correctIndex: 0, explanation: "Lesson 11: CREW-05, *Arena transmission*, teaches SMPTE 2110 and IP video.", sourceLessonSlug: "v2-robotics-and-the-chain" },
+          { prompt: "Which lessons teach tally, per lesson 11's table?", options: ["CREW-02 17 and CREW-03 4", "CREW-00 25 and CREW-04 24", "CREW-05 9 and CREW-07 13", "CREW-01 2 and CREW-06 5"], correctIndex: 1, explanation: "Lesson 11: CREW-00's \"25 · DMX, RS-422, tally and USB\" and CREW-04's \"24 · Tally, intercom, return video and the questions to ask.\"", sourceLessonSlug: "v2-robotics-and-the-chain" },
         ],
       },
     },
