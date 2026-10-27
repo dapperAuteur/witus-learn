@@ -69,6 +69,14 @@ export interface Citation {
  * is no code change after stage 1. The plan for stages 2-5 is in docs/citation-verification-plan.md.
  */
 export const STAGED_COURSES: string[] = [
+  // The Crew Behind the Show, CREW-00 and CREW-04 to CREW-06 (staged 2026-10-26). CREW-04 and CREW-05
+  // were meant to join after their 2026-10-21 merges and did not; CREW-00 joins on shipping. All four
+  // are held for qualified reviewers, and their open questions sit in src/lib/research-checks.ts
+  // (crew00-*, megalodon-*, crew05-*): a verifier should expect hedged sentences, not errors, there.
+  "cables-and-connectors",
+  "cinema-look-camera-rig",
+  "arena-transmission",
+  "renting-out-production-gear",
   // Newly created, never reviewed by anyone
   "read-the-statements",
   "map-and-compass",
