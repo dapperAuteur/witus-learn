@@ -17,19 +17,21 @@ import type { AuthoredCourse } from "./authored-course";
 //           shown in the lesson ("Reasoned from ..."). A lines are never taught. Each file's "Teach this,
 //           not that" list is applied where the lesson needs it.
 //
-// BUILD STATUS: pass 1 of 2 (2026-10-26) wrote sections 1 to 5 (lessons 1 to 17) and their quizzes:
-// the room and the chain of command; audio, the A1 and the A2; video, the V1 and the V2; replay and
-// playout; graphics. Pass 2 writes sections 6 to 9 (the floor and the support crew; how it fits
-// together; getting hired; the capstone) and the final quiz.
+// BUILD STATUS: complete, in two passes (2026-10-26). Pass 1 wrote sections 1 to 5 (lessons 1 to 17)
+// and their quizzes: the room and the chain of command; audio, the A1 and the A2; video, the V1 and the
+// V2; replay and playout; graphics. Pass 2 wrote sections 6 to 9 (lessons 18 to 30) and their quizzes:
+// the floor and the support crew; how it fits together; getting hired; the capstone. The final quiz
+// (pool 45, serving 10, passing 80) sits last, in its own "Final assessment" section, as in CREW-07.
 //
 // VISIBILITY: PUBLIC, and HELD ("Coming soon") until a qualified reviewer, a sports broadcast crew
 // member who has held one of these chairs (A1, V1, replay operator or technical director), has read
 // every lesson marked QR with authority to change or cut it. The publishHoldReason in
 // scripts/seed-courses.ts says so.
 //
-// MARKED LESSONS. Every teaching lesson in pass 1 (1 to 17) opens with the QR marker below: each one
-// describes a chair from postings, manuals and makers' pages, and a person who has held the chair must
-// confirm the description matches the work.
+// MARKED LESSONS. Every teaching lesson (1 to 30) opens with the QR marker below: each one describes a
+// chair from postings, manuals and makers' pages, and a person who has held the chair must confirm the
+// description matches the work. The capstone (30) is written work, modeled on CREW-07's lesson 22, so it
+// carries the QR marker like CREW-07's capstone and no practitioner marker.
 //
 // THE POSTINGS (brief section 5 and the section 6 correction):
 //  - Fox News Media and Fox Television Stations postings (the A2, audio operator, Viz operator, senior
@@ -48,8 +50,12 @@ import type { AuthoredCourse } from "./authored-course";
 //
 // LINK, DO NOT REPEAT. broadcasting-break-in: "1 · The landscape: who does what on a broadcast",
 // "6 · Signal flow and audio fundamentals", "8 · The control room: switcher, graphics, and replay",
-// "12 · Stats, spotting boards, and replay" and "13 · Game day: roles, call times, and where utility
-// fits". CREW-00 (cables-and-connectors): 4, 7, 8, 9, 17, 18, 20, 25 and 26. CREW-02 (sound-craft):
+// "12 · Stats, spotting boards, and replay", "13 · Game day: roles, call times, and where utility
+// fits", "3 · The utility technician: your fastest way in (and why knots matter)", "14 · Internships,
+// freelancing, and building credits" and "15 · Unions, networking, and landing the first job". CREW-01
+// (stage-and-broadcast-rigging): "2 · The broadcast utility tech near the rig". CREW-03 (light-on-set):
+// "2 · Who lights, and where training begins" and "23 · The television studio". CREW-00
+// (cables-and-connectors): 4, 7, 8, 9, 17, 18, 20, 25 and 26. CREW-02 (sound-craft):
 // "17 · Meters, tone and gain". CREW-04 (cinema-look-camera-rig): "22 · What the truck does with your
 // picture", "23 · Shading and matching color" and "24 · Tally, intercom, return video and the questions
 // to ask". CREW-05 (arena-transmission): "4 · Beside the network: replay, tracking and referee comms",
@@ -66,7 +72,8 @@ import type { AuthoredCourse } from "./authored-course";
 //  - Tier A: the Code of Federal Regulations sections (47 C.F.R. §§ 73.682, 73.8000, 74.801, 74.832),
 //    a U.S. government work.
 //  - Tier B, link only, never rehost: everything else. ESPN's 2018 manual (hosted by a conference),
-//    the DGA's agreement excerpts, rate cards and event pages, the university and school handouts, the
+//    the DGA's agreement excerpts, rate cards, safety-training and event pages, the university handouts
+//    and the Montgomery County Public Schools classroom handouts, NABET-CWA's pages, the
 //    job postings and their boards and aggregator copies (NFL Greenhouse; Fox, Disney and Warner Bros.
 //    Discovery Workday; EntertainmentCareers.Net), makers' pages and PDFs (Calrec, Clear-Com, RTS,
 //    Riedel, SSL, Sony, Ross Video, AJA, Audinate, Lawo, Shure, EVS, Vizrt, Chyron, Grass Valley,
@@ -95,7 +102,13 @@ import type { AuthoredCourse } from "./authored-course";
 //    Daley (SVG) follows file 01. EVS, Vizrt, Chyron, Grass Valley and Ross Video's XPression follow
 //    file 02; file 01's Ross Acuity help page becomes Ross Video (n.d.-b) and file 02's XPression page
 //    Ross Video (n.d.-a). Calrec, RTS, Riedel, SSL, AJA and ATSC follow file 01. Mobile TV Group follows
-//    file 03. Workday boards searched on 2026-10-26 are cited as their owners' (n.d.) job boards.
+//    file 03, including its crew page (n.d.-d) in pass 2. Workday boards searched on 2026-10-26 are
+//    cited as their owners' (n.d.) job boards.
+//  - Pass 2 added, from file 03: NFL (2026c, 2026d, 2026j, 2026m); DGA (n.d.-b) safety training, DGA
+//    (2017), and the network rate cards DGA (2026b) ABC, (2026c) CBS and (2026d) NBC; Montgomery County
+//    Public Schools (n.d.-a, n.d.-b), named as classroom handouts in every lesson that cites them; and
+//    NABET-CWA (n.d.-a, n.d.-b, n.d.-c). Costa (2025) and Dachman (2024) were not used: both titles name
+//    a person, and the lessons rest on postings instead.
 //
 // STANDARDS: unmapped for now (BACKLOG entry in scripts/check-standards-coverage.ts).
 //
@@ -117,12 +130,26 @@ import type { AuthoredCourse } from "./authored-course";
 //  - L16: "fill" and "key" undefined in any source read (crew08-fill-key).
 //  - L17: the 1998 debut date (crew08-first-and-ten-debut); which tracking method networks use now
 //    (crew08-tracking-method-now); where Fox inserts the line (crew08-fox-line-where).
+//  - L18: no truck utility posting read (crew08-truck-utility-posting). The NFL studio utility's five
+//    years on a sound stage is taught as that posting's ask, not an industry rule.
+//  - L20: stage manager, floor manager and floor director not equated (crew08-floor-titles).
+//  - L21: no lighting director on a remote truck in any source (crew08-ld-on-trucks).
+//  - L22: no standard truck channel layout (crew08-channel-layout).
+//  - L23: "standby" not in any sports source (crew08-standby-call).
+//  - L24: "fax" not expanded (crew08-fax-expansion; see also crew08-toc-terms).
+//  - L25: the one-play order is reasoned (crew08-one-play-order).
+//  - L26: no chair-by-chair fault map (crew08-who-fixes-what).
+//  - L27: two NFL postings with no pay figure (crew08-missing-pay-figures); the NFL unit question
+//    (crew08-nfl-pay-unit) now names lessons 18, 21, 27 and 30 too.
+//  - L28: NABET-CWA's availability codes undefined (crew08-nabet-codes).
+//  - L29: no published path from utility to a chair (crew08-utility-ladder).
 //
 // House style, matching sideline-systems-course.ts (CREW-07): `section` on every lesson; flush-left
 // single-line `:::reveal q ||| a`; recallContent from the second teaching lesson on, quizzing the
 // lesson before; APA 7 in-line citations and a `## Sources` block on every teaching lesson with a
 // locator on every entry; a quiz per section pooled to round(words / 35), clamped 40 to 100, serving 5,
-// passing 80, shuffled. Option lengths are balanced within each question. American spelling in prose;
+// passing 80, shuffled; the final pools 45 and serves 10. Pass 2's banks were written with the four
+// options of each question within about 8 characters of one another, so no length rank wins. Option lengths are balanced within each question. American spelling in prose;
 // quotations keep their own spelling. No em or en dashes anywhere: where a source used one, the course
 // writes "to" outside the quotation marks.
 
@@ -1520,7 +1547,7 @@ It requires "A minimum of 5 years' experience in a broadcast operations environm
           { prompt: "For which settings does EVS say the Spotbox shot-box channels are also suitable?", options: ["Studios and news/MCR", "Stadium video boards", "Radio and podcasts", "Cinema and DIT carts"], correctIndex: 0, explanation: "EVS (n.d.-b): \"also suitable for studios, news/MCR environments.\"", sourceLessonSlug: "playout-rolling-elements" },
           { prompt: "What does Chyron say its Virtual Placement's internal disc recorder removes the need for?", options: ["A graphics operator", "Extra servers or crew", "A camera tracking rig", "A director's call"], correctIndex: 1, explanation: "Chyron (n.d.-b): near-live replays, \"removing the need for extra servers or additional crew.\" That is the maker's claim.", sourceLessonSlug: "playout-rolling-elements" },
           { prompt: "Which cart playback systems does NFL Media's A2 posting name?", options: ["EVS or Ross Rio", "iNews or Enco servers", "Ovation or 360systems", "Viz Trio or XPression"], correctIndex: 2, explanation: "NFL (2026g): \"cart playback systems such as Ovation or 360systems.\"", sourceLessonSlug: "playout-rolling-elements" },
-          { prompt: "For which elements does ESPN's AD get run times?", options: ["Live shots on the field", "Every replay in the game", "The announcers' ad-libs", "Pre-recorded truck elements"], correctIndex: 3, explanation: "ESPN (2018, p. 25): run times on the tease, open, SOTS, B-roll and \"any pre-recorded element that is built and runs from the truck.\"", sourceLessonSlug: "playout-rolling-elements" },
+          { prompt: "Which elements must playout give the AD a run time for, per ESPN's manual?", options: ["Live shots on the field", "Every replay in the game", "The announcers' ad-libs", "Pre-recorded truck elements"], correctIndex: 3, explanation: "ESPN (2018, p. 25): run times on the tease, open, SOTS, B-roll and \"any pre-recorded element that is built and runs from the truck.\"", sourceLessonSlug: "playout-rolling-elements" },
           { prompt: "Where does ESPN's glossary say commercial breaks are played back?", options: ["Master control", "The replay room", "The audio booth", "The TOC desk"], correctIndex: 0, explanation: "ESPN (2018, p. 33): master control is \"where the shows commercial breaks are played back.\"", sourceLessonSlug: "playout-rolling-elements" },
           { prompt: "What does NFL Media's FAST operator perform on FAST live games?", options: ["Camera shading", "Digital ad insertion", "Parab operation", "Graphics design"], correctIndex: 1, explanation: "NFL (2026e): \"Perform digital ad insertion operations on FAST live games.\"", sourceLessonSlug: "playout-rolling-elements" },
           { prompt: "Which cues does the FAST operator insert for live and recorded programming?", options: ["IFB cues", "Tally cues", "SCTE-35 cues", "GPI cues"], correctIndex: 2, explanation: "NFL (2026e): \"Execute SCTE-35 cue insertion for live and recorded programming.\"", sourceLessonSlug: "playout-rolling-elements" },
@@ -2915,6 +2942,238 @@ For audio, lesson 5 read a crewing firm's view, reported in trade press, that th
           { prompt: "Which topics did one DGA council craft event include?", options: ["Deal memos and PL etiquette", "Lens choice and lighting", "Mixing and loudness specs", "Replay clips and playlists"], correctIndex: 0, explanation: "DGA (2021): \"Understanding your Deal Memo, proper PL etiquette,\" schedules, rundowns and scripts.", sourceLessonSlug: "from-utility-to-a-chair" },
           { prompt: "Which tool does NABET-CWA list beside collective bargaining?", options: ["Free housing", "Job training", "Talent agency", "Gear rental"], correctIndex: 1, explanation: "NABET-CWA (n.d.-a): \"job training,\" with bargaining, contract enforcement, political activity and organizing.", sourceLessonSlug: "from-utility-to-a-chair" },
           { prompt: "Reasoned in lesson 29, what is ESPN's 2018 manual itself?", options: ["A union contract for crews", "A maker's operator manual", "A crew guide for schools", "A league rulebook for refs"], correctIndex: 2, explanation: "Lesson 29: reasoned from its title and minimum standards, a crew guide written for schools that produce games for ESPN's digital outlets.", sourceLessonSlug: "from-utility-to-a-chair" },
+        ],
+      },
+    },
+    // ══════════════════════════════════════════════════════════════════════
+    // SECTION 9: Capstone
+    // ══════════════════════════════════════════════════════════════════════
+    {
+      slug: "capstone-crew-sheet-and-comms-plan",
+      title: "30 · Capstone: a crew sheet and comms plan for one game",
+      section: "9 · Capstone",
+      recallContent: [
+        {
+          prompt: "In the postings read for this course, which job is the entry-level rung?",
+          answer: "The Fox virtual enhancement internship, tagged \"#EntryLevel #EarlyCareer\" (Fox Corporation, 2026a); NFL Media's studio utility asks for five years on a sound stage (NFL, 2026m).",
+        },
+        {
+          prompt: "What does the DGA's Example 3 say about a production assistant's timing work?",
+          answer: "A PA \"doing pre-production timing, prior to the contractually required time for the employment of an Associate Director\" is not prohibited (DGA, 2020b, p. 20).",
+        },
+      ],
+      body: `${QR}
+
+**The task.** Choose one of two written projects:
+
+- **Option A, a crew sheet and comms plan.** For one game or show, list the crew chair by chair, give each chair's call time and pre-air checklist, and write who talks with whom on comms. Every item is cited.
+- **Option B, one role through a game day.** Follow one chair from crew call to strike, step by step, with every step cited.
+
+Either way you work only from sources a reader can open, and you show plainly where the public record stops. Nothing here asks you to run a console or a switcher, so the capstone is written, not filmed.
+
+**Rules for both options.**
+
+1. **Every line is cited,** with a locator a reader can follow: a page, a section of a posting or a paragraph, as in this course's Sources lists.
+2. **Pay is as posted, with its date.** An NFL figure is printed with no unit (lesson 27); a Fox figure says "per hour" because the posting does.
+3. **Label news jobs.** A Fox News Media or Fox Television Stations posting is a news control-room job, and your work says so wherever you cite one (lesson 1).
+4. **Quote the calls; do not invent them.** Use the words a source gives, such as ESPN's "ready 2," then "take two" (lesson 23), and write any other cue in plain words ("the director calls the replay") rather than inventing a call.
+5. **Your channel plan is yours.** If you number intercom channels, label the numbering as your own plan (lesson 22), and cite only who talks with whom.
+6. **Quote "fax"; do not expand it** (lesson 24).
+7. **A gap is written as a gap.** "No source read says..." is a finished line, not a failure.
+8. **No real people.** No real game, crew member or private person is used, and makers are named only as their own pages describe their products.
+
+**Option A: a model opening.** Here are the first rows of a crew sheet for an ESPN3 school basketball game at 8:00 p.m., built from ESPN's 2018 manual. Use it to see the shape; then write yours for a different show, such as a studio show built from NFL Media's postings.
+
+| Chair | Call | Pre-air checklist | Source |
+|---|---|---|---|
+| Producer | 2:00 p.m. crew call | Give copies of the format to "TD, Dir, AP, AD, A1, EVS, RO, GIS, BC, PXP, Analyst, TOC"; "Verify that graphics (clock/score included) conform to standards and are error-free" | ESPN (2018, pp. 23 and 27) |
+| Director | 2:00 p.m. crew call | A coaches "headshot" sheet; the camera meeting at 6:00 p.m.; "Make sure the back-up score bug is built"; review the "traffic" for the opening with the TD, graphics, audio and tape | ESPN (2018, pp. 24 and 27) |
+| AD | 2:00 p.m. crew call | Set the clock to match master control; confirm the length of all breaks; get run times on pre-recorded elements; call "Bristol Transmission" when transmission time opens; transmission check-in at 7:00 p.m. | ESPN (2018, pp. 25 and 27) |
+| TD | 2:00 p.m. crew call | "faxes" the cameras, graphics, audio, communications and replay; switcher set up "with all the correct elements and effects"; "FULL SHOW FAX" at 4:30 p.m. | ESPN (2018, pp. 21 and 27) |
+| Audio | 2:00 p.m. crew call | Camera headsets, control room headset, announcer mics and the IFB system all working | ESPN (2018, p. 21) |
+| Camera operators | 2:00 p.m. crew call; camera meeting 6:00 p.m.; at game positions 7:15 p.m. | Camera check and element view at 4:00 p.m.; back focus "during camera fax" | ESPN (2018, pp. 27 and 31) |
+| Stage manager | 5:30 p.m. crew call, with the booth coordinator | The announce booth, read cards and booth traffic | ESPN (2018, pp. 20 and 27) |
+| Utilities | 2:00 p.m. crew call; three, "hired by Union Venue" | Camera cables, audio cables, building and setting cameras | ESPN (2018, pp. 22 and 27) |
+| RF coordination | | Name the chair only if a source names it for a crew this size (lesson 5) | |
+
+**A model comms plan.** Who talks with whom for the same game, from lesson 22:
+
+| Path | Who | Source |
+|---|---|---|
+| Main station with all-talk | the director or producer | Clear-Com (2020c, pp. 9 to 10) |
+| Camera line | the director with all the camera operators | Clear-Com (2020c, p. 18), as reasoned in lesson 22 |
+| Camera isolate | the video operator or TD with one camera | Clear-Com (2020c, p. 18) |
+| IFB | program audio to the announcers, interrupted by the director or producer | ESPN (2018, p. 32); Clear-Com (2020c, p. 19) |
+| Talkback | the announcers with the producer or director, the engineer and sometimes the A1 | Clear-Com (2020c, p. 21) |
+| The floor | the stage manager, relaying the director and the AD | DGA (2020b, pp. 17 to 18) |
+| Channel numbers | my plan, not a standard | rule 5 |
+
+**Option B: what to follow.** Pick a chair with a full public record: NFL Media's TOC operator (lessons 14 and 24), its studio utility (lesson 18) or its lighting director (lesson 21), or ESPN's associate director (lessons 2, 23 and 24) or technical director (lessons 1 and 24). Write at least ten steps from crew call to strike. A studio posting gives duties, not a clock, so order those steps by the day's phases (before air, on air, after air) and say that the order is yours.
+
+**Decisions while you write.** This is an invented walk-through with no real game, venue or people. Read each beat, decide your call, then reveal the answer.
+
+**Beat 1: the pay line.** You want to add "$46.54/hour" to the utility's row.
+
+:::reveal What is your call on the utility's pay line? ||| Write "$46.54 USD at both ends of the range, unit not stated, first published October 23, 2026" (NFL, 2026m). Never add "an hour" (lesson 27).
+
+**Beat 2: a news job in a sports sheet.** You want to cite Fox's A2 posting for what an A2 does at a game.
+
+:::reveal What is your call on the Fox A2 posting? ||| Cite it, and label it a Fox News Media news control-room job in New York, not a sports truck job (lesson 4).
+
+**Beat 3: "standby."** Your draft has the director say "standby, camera 2" before each shot.
+
+:::reveal What is your call on "standby, camera 2"? ||| Use the words ESPN's manual gives: "ready 2," then "take two" (ESPN, 2018, p. 24; lesson 23).
+
+**Beat 4: "fax."** You want to write "full show facilities check" at 4:30 p.m.
+
+:::reveal What is your call on the 4:30 p.m. line? ||| Write "FULL SHOW FAX," quoted (ESPN, 2018, p. 27), and do not expand "fax" (lesson 24).
+
+**Beat 5: a chat at a game.** Someone tells you the A1 always fixes dead headsets.
+
+:::reveal What is your call on the dead-headset step? ||| Leave it out. A conversation is not a source a reader can open; write the first line and the escalation the sources give instead (lesson 26).
+
+**You pass Option A when:**
+
+- the crew sheet covers at least eight chairs, each with a call time (or "not stated") and at least two pre-air checklist items, each cited with a locator;
+- the comms plan covers at least the director, the cameras, the talent and the announcers, and labels any channel numbering as your plan;
+- every posting is dated, every pay line is as posted, and every news job is labeled;
+- at least one line names a gap in the public record;
+- it ends with a References list in APA 7 style.
+
+**You pass Option B when:**
+
+- the walk-through has at least ten steps for one chair, each cited with a locator;
+- steps from a posting with no clock are ordered by phase, and the order is labeled as yours;
+- the chair's pay and terms are given as posted, with the date;
+- at least one line names a gap in the public record;
+- it ends with a References list in APA 7 style.
+
+:::reveal Why must your Option A sheet be for a different show than the model's? ||| The model already covers ESPN's school basketball game from the 2018 manual. The capstone asks you to build one yourself, for example a studio show from NFL Media's postings.
+
+## Sources
+- ${ESPN_2018} Locator: "Production personnel positions and responsibilities," p. 20; "Technical Director," "Audio" and "EIC/Audio Assist," p. 21; "Grips/Camera Asst/Utilities," p. 22; "Producer Responsibilities," p. 23; "Director Responsibilities," p. 24; "Associate Director Responsibilities," p. 25; "Sample Basketball Operations/Production Schedule," p. 27; glossary, pp. 31 and 32.
+- ${CC_2020C} Locator: section 1.4.1, pp. 9 to 10; "Cameras," p. 18; "2-Wire Interruptible Foldback (IFB) Systems," p. 19; "Commentators," p. 21.
+- ${DGA_ART2} Locator: Art. 2, Sec. C, pp. 17 to 18.
+- ${NFL_UTILITY} Locator: pay range paragraph.
+- ${FNM_A2} Locator: "Job Description". A news control-room job.`,
+    },
+    {
+      slug: "section-9-quiz",
+      title: "Section 9 quiz · Capstone",
+      section: "9 · Capstone",
+      body: "A graded check on the capstone's rules, the model crew sheet and comms plan, the decisions while you write and what it takes to pass. Each answer links back to the lesson that teaches it.",
+      quiz: {
+        passingScore: 80,
+        questionsPerAttempt: 5,
+        shuffleOptions: true,
+        questions: [
+          { prompt: "What are the capstone's two options?", options: ["A filmed demo, or a live test", "A union exam, or a maker's test", "A job letter, or an interview", "Crew sheet, or one role's day"], correctIndex: 3, explanation: "Lesson 30: a crew sheet and comms plan for one game, or one role followed through a game day.", sourceLessonSlug: "capstone-crew-sheet-and-comms-plan" },
+          { prompt: "Why is the capstone written rather than filmed?", options: ["It asks you to run no gear", "Filming crews is never allowed", "Video needs no sources at all", "Leagues ban cameras in trucks"], correctIndex: 0, explanation: "Lesson 30: nothing here asks you to run a console or a switcher.", sourceLessonSlug: "capstone-crew-sheet-and-comms-plan" },
+          { prompt: "What must every line of a capstone carry?", options: ["A photo of the equipment", "A citation with a locator", "A crew member's signature", "A maker's written approval"], correctIndex: 1, explanation: "Rule 1: every line is cited, with a locator a reader can follow.", sourceLessonSlug: "capstone-crew-sheet-and-comms-plan" },
+          { prompt: "What does rule 1 count as a locator?", options: ["The name of who told you", "The date you heard of it", "A page or a posting's section", "A maker's logo on the gear"], correctIndex: 2, explanation: "Rule 1: a page, a section of a posting or a paragraph, as in this course's Sources lists.", sourceLessonSlug: "capstone-crew-sheet-and-comms-plan" },
+          { prompt: "How is an NFL pay figure written in a capstone?", options: ["Converted to an hourly rate", "Rounded to a market rate", "Left out of the sheet", "As posted, with no unit"], correctIndex: 3, explanation: "Rule 2: an NFL figure is printed with no unit (lesson 27).", sourceLessonSlug: "capstone-crew-sheet-and-comms-plan" },
+          { prompt: "Why may a Fox figure say \"per hour\" in a capstone?", options: ["The posting says so", "All pay is hourly", "The DGA requires it", "Lesson 27 adds it"], correctIndex: 0, explanation: "Rule 2: a Fox figure says \"per hour\" because the posting does.", sourceLessonSlug: "capstone-crew-sheet-and-comms-plan" },
+          { prompt: "What must go with every pay line in a capstone?", options: ["A market average", "Its posting date", "A union scale", "An hourly unit"], correctIndex: 1, explanation: "Rule 2: pay is as posted, with its date.", sourceLessonSlug: "capstone-crew-sheet-and-comms-plan" },
+          { prompt: "What must your work say wherever it cites a Fox News Media posting?", options: ["That it pays per game", "That it is a Fox Sports job", "That it is a news job", "That it is now closed"], correctIndex: 2, explanation: "Rule 3: a Fox News Media or Fox Television Stations posting is a news control-room job (lesson 1).", sourceLessonSlug: "capstone-crew-sheet-and-comms-plan" },
+          { prompt: "Which call words does rule 4 give as an example to quote?", options: ["\"standby,\" then \"go\"", "\"cue,\" then \"roll it\"", "\"hold,\" then \"cut\"", "\"ready 2,\" then \"take two\""], correctIndex: 3, explanation: "Rule 4 and lesson 23: ESPN's \"ready 2,\" then \"take two\" (ESPN, 2018, p. 24).", sourceLessonSlug: "capstone-crew-sheet-and-comms-plan" },
+          { prompt: "How should you write a cue that no source words for you?", options: ["In plain words", "As a standard call", "In code letters", "As a hand signal"], correctIndex: 0, explanation: "Rule 4: write any other cue in plain words (\"the director calls the replay\") rather than inventing a call.", sourceLessonSlug: "capstone-crew-sheet-and-comms-plan" },
+          { prompt: "If you number intercom channels, how do you label the numbering?", options: ["As the standard", "As your own plan", "As ESPN's layout", "As the DGA's rule"], correctIndex: 1, explanation: "Rule 5: label the numbering as your own plan (lesson 22), and cite only who talks with whom.", sourceLessonSlug: "capstone-crew-sheet-and-comms-plan" },
+          { prompt: "How do you handle \"fax\" in a capstone?", options: ["Expand it to facilities", "Replace it with \"check\"", "Quote it, don't expand it", "Leave every fax line out"], correctIndex: 2, explanation: "Rule 6 and lesson 24.", sourceLessonSlug: "capstone-crew-sheet-and-comms-plan" },
+          { prompt: "How does rule 7 treat a gap in the public record?", options: ["As a failed sheet", "As a cue to guess", "As a reason to stop", "As a finished line"], correctIndex: 3, explanation: "Rule 7: \"No source read says...\" is a finished line, not a failure.", sourceLessonSlug: "capstone-crew-sheet-and-comms-plan" },
+          { prompt: "What does rule 8 keep out of a capstone?", options: ["Real games and people", "Citations and locators", "Posting dates and pay", "Gaps and open questions"], correctIndex: 0, explanation: "Rule 8: no real game, crew member or private person is used.", sourceLessonSlug: "capstone-crew-sheet-and-comms-plan" },
+          { prompt: "How may makers be named in a capstone?", options: ["As the best on the market", "As their own pages describe", "As the union's approved gear", "As required by the network"], correctIndex: 1, explanation: "Rule 8: makers are named only as their own pages describe their products.", sourceLessonSlug: "capstone-crew-sheet-and-comms-plan" },
+          { prompt: "Which source is the model crew sheet built from?", options: ["NFL Media's postings", "The DGA's rate cards", "ESPN's 2018 manual", "Clear-Com's e-book"], correctIndex: 2, explanation: "Lesson 30: the model is an ESPN3 school basketball game built from ESPN (2018).", sourceLessonSlug: "capstone-crew-sheet-and-comms-plan" },
+          { prompt: "In the model crew sheet, when is the main crew call?", options: ["4:30 p.m.", "5:30 p.m.", "7:00 p.m.", "2:00 p.m."], correctIndex: 3, explanation: "ESPN (2018, p. 27): \"2:00PM CREW CALL.\"", sourceLessonSlug: "capstone-crew-sheet-and-comms-plan" },
+          { prompt: "In the model crew sheet, who shares a 5:30 p.m. call?", options: ["SM and booth coordinator", "The TD and the director", "The camera operators", "The three venue utilities"], correctIndex: 0, explanation: "ESPN (2018, p. 27): \"5:30PM CREW CALL - Stage Manager / Booth Coordinator.\"", sourceLessonSlug: "capstone-crew-sheet-and-comms-plan" },
+          { prompt: "In the model crew sheet, which chair gives copies of the format?", options: ["The director", "The producer", "The AD", "The TD"], correctIndex: 1, explanation: "ESPN (2018, p. 23): the producer gives copies of the format to the chairs it lists.", sourceLessonSlug: "capstone-crew-sheet-and-comms-plan" },
+          { prompt: "In the model, what does the producer give out copies of?", options: ["The rate card", "The crew's pay", "The format", "The comms map"], correctIndex: 2, explanation: "ESPN (2018, p. 23): \"Give copies of format to\" TD, Dir, AP, AD, A1, EVS, RO, GIS, BC, PXP, Analyst and TOC.", sourceLessonSlug: "capstone-crew-sheet-and-comms-plan" },
+          { prompt: "In the model crew sheet, which chair makes sure the back-up score bug is built?", options: ["The producer", "The audio A1", "The utility", "The director"], correctIndex: 3, explanation: "ESPN (2018, p. 24).", sourceLessonSlug: "capstone-crew-sheet-and-comms-plan" },
+          { prompt: "In the model crew sheet, which chair calls Bristol Transmission?", options: ["The AD", "The TD", "The SM", "The A2"], correctIndex: 0, explanation: "ESPN (2018, p. 25): when transmission time opens.", sourceLessonSlug: "capstone-crew-sheet-and-comms-plan" },
+          { prompt: "In the model crew sheet, which chair confirms the length of all breaks?", options: ["The TD", "The AD", "The A1", "The SM"], correctIndex: 1, explanation: "ESPN (2018, p. 25): the AD confirms the \"length of all breaks with master control.\"", sourceLessonSlug: "capstone-crew-sheet-and-comms-plan" },
+          { prompt: "In the model crew sheet, which chair faxes cameras, graphics, audio, comms and replay?", options: ["The AD", "The SM", "The TD", "The A1"], correctIndex: 2, explanation: "ESPN (2018, p. 21).", sourceLessonSlug: "capstone-crew-sheet-and-comms-plan" },
+          { prompt: "In the model crew sheet, when is the full show fax?", options: ["4:00 p.m.", "6:00 p.m.", "7:15 p.m.", "4:30 p.m."], correctIndex: 3, explanation: "ESPN (2018, p. 27): \"4:30PM FULL SHOW FAX.\"", sourceLessonSlug: "capstone-crew-sheet-and-comms-plan" },
+          { prompt: "In the model crew sheet, what does the audio row check?", options: ["Headsets, mics and IFB", "Lenses, filters, tally", "Clocks, bugs and fonts", "Feeds, routes and sync"], correctIndex: 0, explanation: "ESPN (2018, p. 21): camera headsets, the control room headset, announcer mics and the IFB system.", sourceLessonSlug: "capstone-crew-sheet-and-comms-plan" },
+          { prompt: "In the model crew sheet, when must cameras be at game positions?", options: ["6:00 p.m.", "7:15 p.m.", "4:00 p.m.", "2:00 p.m."], correctIndex: 1, explanation: "ESPN (2018, p. 27): \"7:15PM All Cameras at Game Positions- Bumps/Rehearsal.\"", sourceLessonSlug: "capstone-crew-sheet-and-comms-plan" },
+          { prompt: "In the model crew sheet, when do camera operators do back focus?", options: ["During the break", "After the meeting", "During camera fax", "At final whistle"], correctIndex: 2, explanation: "ESPN (2018, p. 31): back focus \"should be performed during camera fax prior to the telecast.\"", sourceLessonSlug: "capstone-crew-sheet-and-comms-plan" },
+          { prompt: "In the model crew sheet, who hired the three utilities?", options: ["ESPN's Bristol", "The home school", "The truck firm", "The venue's union"], correctIndex: 3, explanation: "ESPN (2018, p. 27): \"hired by Union Venue.\"", sourceLessonSlug: "capstone-crew-sheet-and-comms-plan" },
+          { prompt: "In the model crew sheet, which chair handles the announce booth?", options: ["The stage manager", "The game producer", "The floor utility", "The TOC operator"], correctIndex: 0, explanation: "ESPN (2018, p. 20): the stage manager \"manages the announce booth, read cards, and booth traffic.\"", sourceLessonSlug: "capstone-crew-sheet-and-comms-plan" },
+          { prompt: "What does the model's RF row tell you to do?", options: ["Give it to the A1 by default", "Name a chair only if sourced", "Give it to the TD by default", "Leave RF off the sheet entirely"], correctIndex: 1, explanation: "Lesson 30: name the chair that coordinates RF only if a source names it for a crew that size (lesson 5).", sourceLessonSlug: "capstone-crew-sheet-and-comms-plan" },
+          { prompt: "In the model comms plan, who holds the main station with all-talk?", options: ["The camera operators", "The talent on the set", "The director or producer", "The venue's utilities"], correctIndex: 2, explanation: "Clear-Com (2020c, pp. 9 to 10).", sourceLessonSlug: "capstone-crew-sheet-and-comms-plan" },
+          { prompt: "In the model comms plan, who uses the camera isolate?", options: ["The talent on the floor", "The producer and the AD", "The A2 and the utility", "The video operator or TD"], correctIndex: 3, explanation: "Clear-Com (2020c, p. 18).", sourceLessonSlug: "capstone-crew-sheet-and-comms-plan" },
+          { prompt: "In the model comms plan, what reaches the announcers on air?", options: ["IFB, interrupted on cue", "The camera isolate", "The main station all-talk", "A two-way radio net"], correctIndex: 0, explanation: "ESPN (2018, p. 32); Clear-Com (2020c, p. 19): program audio on IFB, interrupted by the director or producer.", sourceLessonSlug: "capstone-crew-sheet-and-comms-plan" },
+          { prompt: "In the model comms plan, who is on the talkback path?", options: ["Cameras, director and the TD", "Announcers, producer, engineer", "Talent, utility and the SM", "Replay, graphics and the AD"], correctIndex: 1, explanation: "Clear-Com (2020c, p. 21): the announcers with the producer or director, the engineer and sometimes the A1.", sourceLessonSlug: "capstone-crew-sheet-and-comms-plan" },
+          { prompt: "In the model comms plan, how are the channel numbers labeled?", options: ["ESPN's standard plan", "The truck's fixed map", "My plan, not a standard", "The DGA's assignment"], correctIndex: 2, explanation: "Lesson 30, rule 5.", sourceLessonSlug: "capstone-crew-sheet-and-comms-plan" },
+          { prompt: "What does lesson 30 suggest your Option A show could be?", options: ["The same ESPN basketball game", "A show you invent with no sources", "A real game with named crew", "A studio show from NFL postings"], correctIndex: 3, explanation: "Lesson 30: build yours for a different show, such as a studio show built from NFL Media's postings.", sourceLessonSlug: "capstone-crew-sheet-and-comms-plan" },
+          { prompt: "Which chairs does Option B suggest following?", options: ["TOC, utility, LD, AD or TD", "Only the play-by-play talent", "Only the show's producer", "Only the sponsor's own rep"], correctIndex: 0, explanation: "Lesson 30: NFL Media's TOC operator, utility or lighting director, or ESPN's AD or TD.", sourceLessonSlug: "capstone-crew-sheet-and-comms-plan" },
+          { prompt: "How do you order Option B steps from a posting with no clock?", options: ["Alphabetically by duty", "By phase, labeled as yours", "By the pay for each duty", "In the order of hiring"], correctIndex: 1, explanation: "Lesson 30: order them by the day's phases (before air, on air, after air) and say that the order is yours.", sourceLessonSlug: "capstone-crew-sheet-and-comms-plan" },
+          { prompt: "In Beat 1, how do you write the utility's pay?", options: ["$46.54 an hour, as standard", "$46.54 a day, union scale", "$46.54 USD, unit not stated", "Leave it off the sheet"], correctIndex: 2, explanation: "Beat 1: \"$46.54 USD at both ends of the range, unit not stated, first published October 23, 2026\" (NFL, 2026m).", sourceLessonSlug: "capstone-crew-sheet-and-comms-plan" },
+          { prompt: "In Beat 2, how do you cite Fox's A2 posting?", options: ["Cite it as a sports truck job", "Never cite a Fox posting", "Cite it with no label at all", "Cite it, labeled as news"], correctIndex: 3, explanation: "Beat 2: it is a Fox News Media news control-room job in New York (lesson 4).", sourceLessonSlug: "capstone-crew-sheet-and-comms-plan" },
+          { prompt: "In Beat 3, what replaces \"standby, camera 2\"?", options: ["\"ready 2,\" then \"take two\"", "\"cue 2,\" then \"roll\"", "\"hold 2,\" then \"cut\"", "\"go 2,\" then \"take\""], correctIndex: 0, explanation: "Beat 3: use the words ESPN's manual gives (ESPN, 2018, p. 24; lesson 23).", sourceLessonSlug: "capstone-crew-sheet-and-comms-plan" },
+          { prompt: "In Beat 4, how do you write the 4:30 p.m. line?", options: ["\"Full facilities check\"", "\"FULL SHOW FAX,\" quoted", "\"Final systems inspection\"", "\"Full show test, all\""], correctIndex: 1, explanation: "Beat 4: quote \"FULL SHOW FAX\" (ESPN, 2018, p. 27) and do not expand \"fax.\"", sourceLessonSlug: "capstone-crew-sheet-and-comms-plan" },
+          { prompt: "In Beat 5, what do you do with \"the A1 always fixes dead headsets\"?", options: ["Keep it, cited", "Keep it, dated", "Leave it out", "Make it a rule"], correctIndex: 2, explanation: "Beat 5: a conversation is not a source a reader can open; write the first line and escalation the sources give (lesson 26).", sourceLessonSlug: "capstone-crew-sheet-and-comms-plan" },
+          { prompt: "How many chairs must an Option A crew sheet cover to pass?", options: ["Exactly three", "At least twenty", "No set number", "At least eight"], correctIndex: 3, explanation: "Lesson 30: at least eight chairs.", sourceLessonSlug: "capstone-crew-sheet-and-comms-plan" },
+          { prompt: "How many checklist items must each chair in Option A have?", options: ["At least two", "Exactly one", "At least ten", "None needed"], correctIndex: 0, explanation: "Lesson 30: at least two pre-air checklist items per chair, each cited.", sourceLessonSlug: "capstone-crew-sheet-and-comms-plan" },
+          { prompt: "How many steps must an Option B walk-through have to pass?", options: ["Exactly five", "At least ten", "At least thirty", "No set number"], correctIndex: 1, explanation: "Lesson 30: at least ten steps for one chair, each cited with a locator.", sourceLessonSlug: "capstone-crew-sheet-and-comms-plan" },
+          { prompt: "Which four must an Option A comms plan cover at least?", options: ["Sponsors, league, venue and union", "Caterers, drivers, guards and fans", "Director, cameras, talent, announcers", "Producers of the other networks"], correctIndex: 2, explanation: "Lesson 30: at least the director, the cameras, the talent and the announcers.", sourceLessonSlug: "capstone-crew-sheet-and-comms-plan" },
+          { prompt: "How must both capstone options end?", options: ["With a maker's logo and contact", "With the crew's home addresses", "With a request for a pay raise", "With an APA 7 References list"], correctIndex: 3, explanation: "Lesson 30: both end with a References list in APA 7 style.", sourceLessonSlug: "capstone-crew-sheet-and-comms-plan" },
+        ],
+      },
+    },
+    {
+      slug: "final-quiz",
+      title: "Final quiz · The Show Crew",
+      section: "Final assessment",
+      body: "Ten questions drawn from the whole course: the room and the chain of command, audio, video, replay and playout, graphics, the floor crew, how the chairs fit together, getting hired, and the capstone. Each answer links back to the lesson that teaches it.",
+      quiz: {
+        passingScore: 80,
+        questionsPerAttempt: 10,
+        shuffleOptions: true,
+        questions: [
+          { prompt: "Whom does ESPN's 2018 manual put first in the chain of command?", options: ["The producer", "The director", "The TD", "The AD"], correctIndex: 0, explanation: "ESPN (2018, p. 21): the producer is \"in charge of the entire broadcast\"; the director is second and the TD third.", sourceLessonSlug: "who-answers-to-whom" },
+          { prompt: "Besides timing, what does the DGA's Article 2 give the AD?", options: ["Mixing the announcers' audio", "Presetting cues for the director", "Shading the cameras on air", "Building graphics templates"], correctIndex: 1, explanation: "DGA (2020b, p. 16): the AD will \"Preset cues as assigned by the Director\" and \"Perform all timing functions.\"", sourceLessonSlug: "who-answers-to-whom" },
+          { prompt: "Where are a show's commercial breaks played back, per ESPN's glossary?", options: ["The replay room", "The TOC desk", "Master control", "The audio room"], correctIndex: 2, explanation: "ESPN (2018, p. 33): \"Master: Slang for \"Master Control\" where the shows commercial breaks are played back.\"", sourceLessonSlug: "the-rundown-and-the-clock" },
+          { prompt: "What does NFL Media's FAST operator trigger on the AD's commands?", options: ["Camera shading changes", "Graphics template builds", "Intercom channel splits", "Breaks and ad insertion"], correctIndex: 3, explanation: "NFL (2026e): SCTE-35 cues \"to ensure seamless break triggering and ad insertion.\"", sourceLessonSlug: "the-rundown-and-the-clock" },
+          { prompt: "How does the trade report describe Game Creek's truck 79?", options: ["An A unit and a B unit", "One fixed single trailer", "Three linked flypacks", "A studio and a van"], correctIndex: 0, explanation: "Costa (2018): a 53-foot expando with an A and a B unit.", sourceLessonSlug: "the-truck-and-the-studio" },
+          { prompt: "In ESPN's closed Audio Operator I posting, what must the A1 be proficient in?", options: ["Dressing talent with mics and IFBs", "Mixing and monitoring all sources", "Configuring intercom and PL systems", "Routing the truck's video signals"], correctIndex: 1, explanation: "ESPN (n.d.): the A1 mixes and monitors all audio sources; the A2 configures intercom and dresses talent.", sourceLessonSlug: "a1-a2-a3-as-posted" },
+          { prompt: "Why does this course give no definition of an A3?", options: ["The A3 is the A1's title", "Unions ban the A3 chair", "No source read defines one", "ESPN merged it with the A2"], correctIndex: 2, explanation: "Lesson 4: NFL Media's posting names \"A3 functions\" without defining them, and no source read does.", sourceLessonSlug: "a1-a2-a3-as-posted" },
+          { prompt: "In the 2018 account, how far above the rest of the mix did one mixer put the announcers?", options: ["About 20 dB", "About 1 dB", "About 60 dB", "About 6 dB"], correctIndex: 3, explanation: "Daley (2018): \"about 6 dB above the rest of the mix,\" one mixer's practice in 2018, not a rule.", sourceLessonSlug: "the-audio-team-on-a-game" },
+          { prompt: "What is a mix-minus feed, in Clear-Com's words?", options: ["Program minus the talent's mic", "Program minus the crowd sound", "Intercom minus the director", "Talkback minus the A1's mic"], correctIndex: 0, explanation: "Clear-Com (2026a): \"the program audio MINUS the microphone of the on-air talent who is talking.\"", sourceLessonSlug: "intercom-panels-and-ifb" },
+          { prompt: "Besides an audio desk, what else does Calrec call a broadcast console?", options: ["Servers", "Routers", "Switchers", "Scopes"], correctIndex: 1, explanation: "Calrec Audio (n.d.-c): \"Broadcast consoles are not just audio desks, but routers.\"", sourceLessonSlug: "consoles-and-audio-follow-video" },
+          { prompt: "What target loudness does ATSC A/85 give, as lesson 8 teaches it?", options: ["-14 LKFS", "-6 dBFS", "-24 LKFS", "0 dBTP"], correctIndex: 2, explanation: "ATSC (2026a): -24 LKFS, with a maximum true peak of -2 dBTP.", sourceLessonSlug: "levels-formats-and-loudness" },
+          { prompt: "Which four controls does NFL Media's V1 posting name?", options: ["Pan, tilt, zoom, focus", "Gain, EQ, pan, mute", "Fill, key, mix, wipe", "Iris, gamma, black, color"], correctIndex: 3, explanation: "NFL (2026n): \"Adjust iris, gamma, black levels, and color balance.\"", sourceLessonSlug: "the-v1-as-posted" },
+          { prompt: "What does this course say \"chip\" means in the Fox News video posting?", options: ["It is left undefined", "Color correction", "A camera's sensor", "A lens change"], correctIndex: 0, explanation: "Lesson 9: the posting, a news job, does not define it and no source read does.", sourceLessonSlug: "the-v1-as-posted" },
+          { prompt: "What ratio of red, green and blue does Leader give for a correct white balance?", options: ["2:1:1", "1:1:1", "1:2:1", "3:2:1"], correctIndex: 1, explanation: "Leader Electronics Corporation (2026, p. 10).", sourceLessonSlug: "scopes-and-matching-cameras" },
+          { prompt: "What does a vectorscope show as the angle around its circle?", options: ["Brightness", "Saturation", "Hue", "Timecode"], correctIndex: 2, explanation: "Leader Electronics Corporation (2026): saturation as distance from the center, hue as the angle.", sourceLessonSlug: "scopes-and-matching-cameras" },
+          { prompt: "Why does this course leave a truck V2's duties to the reviewer?", options: ["V2s no longer exist anywhere", "The V1 does every V2 duty", "Unions keep V2 duties private", "Only closed studio V2 posts read"], correctIndex: 3, explanation: "Lesson 11: the only V2 sources are Turner Sports' closed postings for a studio V2 who mostly edited, and no live V2 posting was found.", sourceLessonSlug: "v2-robotics-and-the-chain" },
+          { prompt: "Is officiating replay run by the truck's replay operator?", options: ["No, that is a separate system", "Yes, on every close play", "Yes, but only in football", "Only when the referee asks"], correctIndex: 0, explanation: "Lesson 12: broadcast replay serves the viewer; officiating replay is a separate system with a separate crew.", sourceLessonSlug: "the-replay-operator" },
+          { prompt: "How does EVS describe the XT-VIA in its own words?", options: ["A matrix intercom frame", "A live production server", "A camera shading panel", "A graphics render engine"], correctIndex: 1, explanation: "EVS (n.d.-b): a \"Live production server.\"", sourceLessonSlug: "the-replay-operator" },
+          { prompt: "How does lesson 13 tell replay and playout apart?", options: ["Replay is audio; playout is video", "Replay is live; playout is taped", "Replay: just shot; playout: prepared", "They are one job with two names"], correctIndex: 2, explanation: "Lesson 13: replay plays back what the cameras just recorded; playout rolls prepared elements on the AD's or director's call.", sourceLessonSlug: "playout-rolling-elements" },
+          { prompt: "With whom does NFL Media's TOC operator talk during live broadcasts?", options: ["The league's game officials", "The talent's on-air IFB", "The truck's catering crew", "NFL Network Master Control"], correctIndex: 3, explanation: "NFL (2026l): \"Communicates with NFL Network Master Control during live broadcasts to ensure signal continuity.\"", sourceLessonSlug: "the-toc-feeds-in-and-out" },
+          { prompt: "When does ESPN's AD call Bristol Transmission?", options: ["When transmission time opens", "After the game has ended", "During each game timeout", "At the 2:00 p.m. crew call"], correctIndex: 0, explanation: "ESPN (2018, p. 25).", sourceLessonSlug: "the-toc-feeds-in-and-out" },
+          { prompt: "What does NFL Media's broadcast associate check in the graphics?", options: ["Colors and fonts", "Spelling and facts", "Timing and length", "Sponsors and logos"], correctIndex: 1, explanation: "NFL (2026h): graphics \"spelled correctly\" and \"factually & grammatically accurate.\"", sourceLessonSlug: "who-builds-checks-and-plays-graphics" },
+          { prompt: "Which three parts do Vizrt, Ross and Chyron each describe, per lesson 16?", options: ["Lenses, filters, mounts", "Mics, mixers, meters", "Templates, data, playout", "Tally, timecode, sync"], correctIndex: 2, explanation: "Lesson 16: templates built ahead, a live data link that fills them, and a playout control that takes them to air.", sourceLessonSlug: "real-time-graphics-systems" },
+          { prompt: "On what date does ESPN's own account put the yellow line's debut?", options: ["January 1, 1996", "October 23, 2026", "June 21, 2027", "September 27, 1998"], correctIndex: 3, explanation: "Hofheimer (2013); the 2017 trade article says the 1998 preseason instead (Dachman, 2017).", sourceLessonSlug: "the-first-and-ten-line" },
+          { prompt: "Is the yellow first-and-ten line the official line to gain?", options: ["No, it is a graphic", "Yes, by NFL rule", "Yes, set by the refs", "Only in the playoffs"], correctIndex: 0, explanation: "Lesson 17: it is a graphic for viewers; a separate officiating system measures the line to gain.", sourceLessonSlug: "the-first-and-ten-line" },
+          { prompt: "What kind of work is Fox's virtual enhancement internship?", options: ["Fox News work", "Fox Sports work", "Local station work", "NFL Media work"], correctIndex: 1, explanation: "Lesson 17: the one Fox Sports posting the course draws on (Fox Corporation, 2026a).", sourceLessonSlug: "the-first-and-ten-line" },
+          { prompt: "What does NFL Media's studio utility posting require in experience?", options: ["None, it is entry level", "1 year as an intern", "5 years on a sound stage", "10 years on a truck"], correctIndex: 2, explanation: "NFL (2026m): that posting's ask on its date, not an industry rule.", sourceLessonSlug: "the-utility-as-posted" },
+          { prompt: "Who usually talks privately with one camera, and on what?", options: ["The talent, on the IFB", "The AD, on the house PA", "The producer, on radio", "Video op or TD, on isolate"], correctIndex: 3, explanation: "Clear-Com (2020c, p. 18): the video operator or technical director, on a camera isolate system.", sourceLessonSlug: "camera-operators" },
+          { prompt: "Under Article 2, what can intercom and IFB not replace?", options: ["The stage manager", "The director's cue", "The talent's mic", "The camera's tally"], correctIndex: 0, explanation: "DGA (2020b, p. 18): they \"will not replace the use of the Stage Manager.\"", sourceLessonSlug: "the-stage-manager" },
+          { prompt: "Which three floor titles does lesson 20 keep apart?", options: ["TD, AD, producer, director", "SM, floor manager, floor director", "A1, A2, A3 and RF manager", "V1, V2, the LD and a shader"], correctIndex: 1, explanation: "Lesson 20: no source read says the three titles are the same job, so each source's own title is used.", sourceLessonSlug: "the-stage-manager" },
+          { prompt: "From where does NFL Media's lighting director watch the show?", options: ["The audio room", "The press box", "The shading room", "The green room"], correctIndex: 2, explanation: "NFL (2026i): \"Monitor show productions from shading room and consult with video operator as necessary.\"", sourceLessonSlug: "the-lighting-director" },
+          { prompt: "What does ESPN's manual tell the director always to say before taking camera 2?", options: ["\"hold 2\"", "\"cue 2\"", "\"go 2\"", "\"ready 2\""], correctIndex: 3, explanation: "ESPN (2018, p. 24): \"ready 2,\" then \"take two.\"", sourceLessonSlug: "calls-and-counts" },
+          { prompt: "Who is usually the coordinator on a commentary box's talkback circuit?", options: ["A producer or director", "The A2 on the floor", "The venue's announcer", "The league's official"], correctIndex: 0, explanation: "Clear-Com (2020c, p. 21): \"an editorial position responsible for the commentators, usually a producer or director.\"", sourceLessonSlug: "comms-who-hears-whom" },
+          { prompt: "Whose output does ESPN's continuity check compare with what master control receives?", options: ["The camera's lens", "The control room's", "The graphics PC's", "The A1's console"], correctIndex: 1, explanation: "ESPN (2018, p. 31).", sourceLessonSlug: "checks-before-air" },
+          { prompt: "Which of these words does this course quote but never expand?", options: ["IFB", "PL", "Fax", "EIC"], correctIndex: 2, explanation: "Lesson 24: no source read expands \"fax.\" IFB, PL and EIC are expanded in lessons 6 and 26.", sourceLessonSlug: "checks-before-air" },
+          { prompt: "How was lesson 25's one-play table built?", options: ["Copied from one network's script", "Taken from a league rulebook", "Recorded live on a truck crew", "Reasoned from each chair's source"], correctIndex: 3, explanation: "Lesson 25: no source follows one play through a truck, so the order is reasoned and the reviewer will check it.", sourceLessonSlug: "one-play-through-every-chair" },
+          { prompt: "In lesson 26, whom does ESPN make the first line so the producer and director keep their posts?", options: ["The engineer in charge", "The camera utility", "The talent's agent", "The league observer"], correctIndex: 0, explanation: "ESPN (2018, p. 21): an EIC who can \"help make fixes or changes.\"", sourceLessonSlug: "when-something-breaks" },
+          { prompt: "How does this course write NFL Media's posted pay?", options: ["As an hourly rate", "As posted, no unit added", "As a yearly salary", "As a union minimum"], correctIndex: 1, explanation: "Lesson 27: a bare figure and \"USD,\" printed as posted.", sourceLessonSlug: "postings-side-by-side" },
+          { prompt: "What is CBS's freelance SM rate for an 8-hour day on the 2026 to 2027 card?", options: ["$612", "$611", "$559", "$389"], correctIndex: 2, explanation: "DGA (2026c): AD $611, SM $559 and production associate $389.", sourceLessonSlug: "postings-side-by-side" },
+          { prompt: "What kind of jobs are Fox's six \"Freelance\" postings?", options: ["Sports truck jobs", "NFL studio jobs", "Stadium board jobs", "News control-room jobs"], correctIndex: 3, explanation: "Lessons 1 and 28: Fox News Media jobs in New York and Washington control rooms.", sourceLessonSlug: "freelance-staff-and-the-season" },
+          { prompt: "Which codes does NABET-CWA's members-for-hire page leave undefined?", options: ["PT, DH, FT, Contract", "AD, SM, PA, TD", "A1, A2, V1, V2", "EIC, TOC, LD, BA"], correctIndex: 0, explanation: "NABET-CWA (n.d.-c); lesson 28.", sourceLessonSlug: "freelance-staff-and-the-season" },
+          { prompt: "What experience does FOX 5 DC require of its per diem technician?", options: ["5 years on an NFL sound stage", "3 years in news, mid or major market", "An internship at Fox Sports first", "A Viz certificate and 1 year live"], correctIndex: 1, explanation: "Fox Television Stations (2026), a local news job.", sourceLessonSlug: "from-utility-to-a-chair" },
+          { prompt: "In the capstone, how do you write a cue that no source words for you?", options: ["As standard call", "As a code word", "In plain words", "Leave it unsaid"], correctIndex: 2, explanation: "Lesson 30, rule 4.", sourceLessonSlug: "capstone-crew-sheet-and-comms-plan" },
+          { prompt: "In the capstone, how is a Fox News Media posting cited?", options: ["As a Fox Sports job", "Never, it is excluded", "With its pay removed", "Labeled as a news job"], correctIndex: 3, explanation: "Lesson 30, rule 3.", sourceLessonSlug: "capstone-crew-sheet-and-comms-plan" },
+          { prompt: "Besides citations, what must both capstone options include?", options: ["A line naming a gap", "A vendor's approval", "A crew member's quote", "A photo of the truck"], correctIndex: 0, explanation: "Lesson 30: at least one line names a gap in the public record.", sourceLessonSlug: "capstone-crew-sheet-and-comms-plan" },
         ],
       },
     },
