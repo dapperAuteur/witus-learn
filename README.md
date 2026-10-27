@@ -1128,8 +1128,8 @@ filter lives inside the panel it filters, so collapsing cannot defeat it.
 
 **Every public course is staged (2026-10-26; CREW-07 and CREW-08 added 2026-10-27 once their seed put them in the
 database, because `pnpm check:citations` fails a staged course that yields zero citations).** `STAGED_COURSES` now lists every course whose lessons
-carry `## Sources` or `## References` in production, except private courses: 324 courses and 9,558
-citations in `/admin/citations`, up from 56 and about 3,900. The list was built from the database
+carry `## Sources` or `## References` in production, except private courses: 326 courses and 10,037
+citations in `/admin/citations` (2026-10-27), up from 56 and about 3,900. The list was built from the database
 (visibility other than private), so the boards above are the whole public catalog, not a sample.
 Private courses stay out because the registry is a committed file in a public repository. A new
 course still joins the list when it ships.
