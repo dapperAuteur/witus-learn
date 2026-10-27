@@ -2553,5 +2553,370 @@ The reason for the last count, in ESPN's words: so "music will sting out, graphi
         ],
       },
     },
+    // ══════════════════════════════════════════════════════════════════════
+    // SECTION 8: Getting hired
+    // ══════════════════════════════════════════════════════════════════════
+    {
+      slug: "postings-side-by-side",
+      title: "27 · The postings side by side",
+      section: "8 · Getting hired",
+      recallContent: [
+        {
+          prompt: "What does ESPN's engineer in charge let the producer and director do?",
+          answer: "Stay at their posts: the EIC makes fixes so \"the Producer or Director doesn't have to leave their post during the broadcast\" (ESPN, 2018, p. 21).",
+        },
+        {
+          prompt: "Where does NFL Media's studio coordinator send faults it cannot fix?",
+          answer: "To Engineering, \"with documented detail\" (NFL, 2026o).",
+        },
+      ],
+      body: `${QR}
+
+**Where this sits.** *Break Into Sports & Media Broadcasting* covers internships, day-calling and credits in "14 · Internships, freelancing, and building credits," and unions and networking in "15 · Unions, networking, and landing the first job." This section does not repeat them. This lesson lays the postings read for this course side by side, with their pay as posted and their dates.
+
+**How to read a pay line.** A posting is what one employer asked on one date, not a market rate (lesson 1). The two employers state pay differently:
+
+- **The NFL.** Every NFL posting read for this course prints a bare dollar figure followed by "USD," with no "per hour," "per week" or "per year." Its pay text says the range "represents the range of salaries or hourly rates that the NFL believes, in good faith, at the time of this posting that it might be willing to pay," and "The NFL expects to hire for this position near the middle of the range" (National Football League [NFL], 2026m). So this course prints each NFL figure as posted and adds no unit. Reasoned from the table below: the NFL Films associate producer's $1,500 to $1,955 cannot be read the same way as the utility's $46.54, which is why no unit is supplied for either.
+- **Fox.** Every Fox posting read states its pay "per hour," "with final offer amount dependent on education, skills, experience, and location" (Fox News Media, 2026a).
+
+**The NFL, as posted.** NFL Media's studio jobs are in Inglewood, California; the NFL Films job is in Mount Laurel, New Jersey. Dates are first-publish dates from the NFL's job board (NFL, n.d.). Where one figure is shown, the posting gives it at both ends of its range.
+
+| Job | Terms as posted | Pay as posted, no unit stated | First published |
+|---|---|---|---|
+| V1/shading operator (lesson 9) | seasonal, part time, up to 7 months | $77.91 USD | June 26, 2026 |
+| Audio 2 (lesson 4) | seasonal, part time, up to 7 months | $65.47 USD | June 26, 2026 |
+| Graphics designer/animator (lesson 15) | seasonal, up to 7 months, 40 hours a week expected | $37 to $80 USD | July 10, 2026 |
+| Lighting director (lesson 21) | seasonal, part time, under 29 hours a week | $68.99 USD | August 4, 2026 |
+| FAST video systems operator (lesson 13) | on call, under 40 hours a week, seasonal | $26 to $26.50 USD | August 11, 2026 |
+| TOC operator (lesson 14) | seasonal, part time, up to 29 hours a week | $60.06 USD | August 14, 2026 |
+| Coordinator, real-time systems (lesson 15) | part time, under 29 hours a week, up to six months | $26 to $30 USD | September 17, 2026 |
+| Associate, real-time systems (lesson 15) | employed by a third-party agency, "not the NFL" | none shown | September 17, 2026 |
+| Senior coordinator, studio technical operations | "Full-time, non-exempt," seasonal up to 7 months | $35 to $43 USD | September 21, 2026 |
+| Broadcast associate (lesson 15) | seasonal, part time, up to 29 hours a week | $31 to $33 USD | September 29, 2026 |
+| RedZone segment producer | seasonal, part time, up to 29 hours a week | $37.50 to $50 USD | September 29, 2026 |
+| Part-time segment producer, NFL Digital Media | no more than 29 hours a week | none shown | October 12, 2026 |
+| Seasonal associate producer, NFL Films | seasonal; nights, weekends and holidays | $1,500 to $1,955 USD | October 13, 2026 |
+| RedZone production assistant | seasonal, part time, up to 7 months | $23.75 to $26.50 USD | October 16, 2026 |
+| Utility (lesson 18) | seasonal, part time, under 29 hours a week | $46.54 USD | October 23, 2026 |
+
+Two NFL postings showed no pay figure in the text read for this course, so this course gives none for them.
+
+**Fox, as posted.** Every Fox posting in this table is a news job except the internship.
+
+| Job | Employer and kind of job | Pay as posted | Posted |
+|---|---|---|---|
+| Freelance show director, New York | Fox News Media, a news control-room job | $65.38 to $77.16 per hour | April 8, 2026 |
+| Freelance Viz operator, New York | Fox News Media, a news control-room job | $40.00 to $50.00 per hour | July 24, 2026 |
+| Freelance senior video operator, New York | Fox News Media, a news control-room job | $40.00 to $50.00 per hour | August 25, 2026 |
+| Freelance playout operator, New York | Fox News Media, a news control-room job | $36.00 to $43.75 per hour | September 9, 2026 |
+| Freelance audio operator, Washington | Fox News Media, a news control-room job | $28.00 to $37.50 per hour | September 22, 2026 |
+| Studio technician/technical director, Washington | Fox Television Stations (FOX 5 DC), a local news job | $31.55 to $52.64 per hour | October 15, 2026 |
+| Freelance A2/audio assistant, New York | Fox News Media, a news control-room job | $36.00 to $43.75 per hour | October 19, 2026 |
+| 2027 Live Sports Virtual Enhancement Operator internship, Tempe | Fox Corporation, Fox Sports work | $20.00 per hour | September 28, 2026 |
+
+**The guild's rate cards, as published.** The DGA publishes network rate cards for associate directors (AD), stage managers (SM) and production associates for freelance employees "in network news, sports, operations, or local," effective July 1, 2026 to June 30, 2027 (Directors Guild of America [DGA], 2026a). Freelance rates:
+
+| Card and period, as headed | AD | SM |
+|---|---|---|
+| NBC (WNBC and KNBC only), "DAILY: 8 hours" | $665 | $612 |
+| NBC, "DAILY FLAT: 12 Hours" | $904 | $828 |
+| NBC, "WEEKLY: 40 hours, 5 days" | $2,955 | $2,727 |
+| ABC (WABC and KABC only), 8-hour day | $665 | $612 |
+| CBS (WCBS and KCBS only), 8-hour day | $611 | $559 |
+
+ABC's card adds a production associate at $419 for an 8-hour day, and CBS's at $389 (DGA, 2026b, 2026c). NBC's staff card pays by the week: AD $1,379 and SM $1,284 at "0 - 6 months," rising to AD $2,345 and SM $2,216 at "Over 30 Months" (DGA, 2026d). Reasoned from the cards' headings: these are guild rates for the networks' own covered staff and freelancers at the stations named, not market rates and not what a regional or streaming crew is paid. The DGA's "PA" is a production associate, a guild category; NFL Media's "production assistant" is a different job title.
+
+:::reveal How does this course print an NFL pay figure, and why? ||| As posted, with no unit: the postings print none, and the NFL's pay text says its ranges may be "salaries or hourly rates" (NFL, 2026m).
+
+:::reveal Which Fox posting in the table is Fox Sports work? ||| The 2027 Live Sports Virtual Enhancement Operator internship, at $20.00 per hour (Fox Corporation, 2026a). The rest are news jobs.
+
+:::reveal What is the NBC freelance AD rate for an 8-hour day on the 2026 to 2027 card? ||| $665 (DGA, 2026d): a guild rate for the stations named, not a market rate.
+
+## Sources
+- ${NFL_UTILITY} Locator: pay range paragraph; hours paragraph.
+- ${NFL_BOARD_API} Locator: \`first_published\` field for each job listed.
+- ${NFL_V1} Locator: "Terms / Expected Hours of Work"; "Salary / Pay Range".
+- ${NFL_AUDIO2} Locator: "Terms / Expected Hours of Work"; "Salary / Pay Range".
+- ${NFL_DESIGNER} Locator: terms and pay paragraphs.
+- ${NFL_LD} Locator: hours and pay range paragraphs.
+- ${NFL_FAST} Locator: "Terms"; "Salary / Pay Range".
+- ${NFL_TOC} Locator: "Expected Hours of Work"; "Salary / Pay Range".
+- ${NFL_RTS_COORD} Locator: terms and pay paragraphs.
+- ${NFL_RTS_ASSOC} Locator: agency paragraph.
+- ${NFL_STUDIO_COORD} Locator: terms and pay paragraphs.
+- ${NFL_BA} Locator: hours and pay paragraphs.
+- ${NFL_SEGMENT_PRODUCER} Locator: hours and pay paragraphs.
+- ${NFL_PT_SEGMENT} Locator: hours paragraph.
+- ${NFL_FILMS_AP} Locator: schedule and pay paragraphs.
+- ${NFL_RZ_PA} Locator: terms and pay paragraphs.
+- ${FNM_DIRECTOR} Locator: pay paragraph. A news control-room job.
+- ${FNM_VIZ} Locator: pay paragraph. A news control-room job.
+- ${FNM_SENIOR_VIDEO} Locator: pay paragraph. A news control-room job.
+- ${FNM_PLAYOUT} Locator: pay paragraph. A news control-room job.
+- ${FNM_AUDIO_OP} Locator: pay paragraph. A news control-room job.
+- ${FTS_TECH} Locator: pay paragraph. A local news job.
+- ${FNM_A2} Locator: pay paragraph. A news control-room job.
+- ${FOX_INTERN} Locator: pay paragraph. Fox Sports work.
+- ${DGA_2026A} Locator: the list of 2026 to 2027 network rate cards.
+- ${DGA_2026B} Locator: freelance daily rates, AD, SM and PA.
+- ${DGA_2026C} Locator: freelance daily rates, AD, SM and PA.
+- ${DGA_2026D} Locator: freelance daily, daily flat and weekly rates; staff weekly rates by months of service.`,
+    },
+    {
+      slug: "freelance-staff-and-the-season",
+      title: "28 · Freelance, staff, unions and the season",
+      section: "8 · Getting hired",
+      recallContent: [
+        {
+          prompt: "How do the Fox postings state pay, and how do the NFL's?",
+          answer: "Fox: \"per hour.\" The NFL: a bare dollar figure and \"USD\" with no unit, which this course prints as posted.",
+        },
+        {
+          prompt: "Why are the DGA's network rate cards not market rates?",
+          answer: "Reasoned from their headings: they are guild rates for the networks' own covered staff and freelancers at the stations named (DGA, 2026b, 2026c, 2026d).",
+        },
+      ],
+      body: `${QR}
+
+**Five ways to be hired.** The postings read for this course use five arrangements:
+
+| Arrangement | As posted |
+|---|---|
+| Freelance | Fox titles six New York and Washington jobs "Freelance" (lesson 27), while its job system lists each as "Part time." Its A2: "This is a freelance-based role and you must be flexible to work on multiple shows over varied hours and days." Its playout freelancer "will replace staff members who are on vacation or sick leave, including holidays and weekend shifts" (Fox News Media, 2026a, 2026c). All are news control-room jobs. |
+| Per diem | FOX 5 DC's technician, a local news job, is "Per Diem Part-Time," "will also be required to join the I.A.T.S.E Local 819 union," and the position "will be for no less than two weeks, with no end date determined at this time" (Fox Television Stations, 2026). |
+| Seasonal | NFL Media's studio jobs are "Seasonal," mostly part time at under 29 hours a week for "up to 7 months"; its senior coordinator is "Full-time, non-exempt" for up to 7 months (National Football League [NFL], 2026g, 2026o). |
+| Agency | NFL Media's associate for real-time systems "will be an employee of that third-party agency and not the NFL. All compensation, benefits, and other terms and conditions of employment are handled by the agency." (NFL, 2026a). |
+| Staff | The DGA's network cards set staff pay by the week, rising with months of service (Directors Guild of America [DGA], 2026d; lesson 27). |
+
+**The truck companies.** Mobile TV Group's crew page tells crew to "Contact the Crewer/Event Coordinator for your region" and has a section for "Crew Newly Hired Directly by Mobile TV Group" (Mobile TV Group, n.d.-d). Its careers page says: "Traveling can be part of your gig" (Mobile TV Group, n.d.-e). Reasoned from the two pages: a truck company books crew through regional coordinators and also hires some crew directly.
+
+**Unions, from what was read.** *Break Into Sports & Media Broadcasting* lesson "15 · Unions, networking, and landing the first job" names the unions and cautions that representation varies. What was read for this course adds:
+
+- NABET-CWA says it "has contracts with ABC, NBC, FOX and other networks, as well as local TV stations across the country," and that its members include "engineers, photographers, editors, directors, technicians, graphic artists, traffic coordinators, clerical workers, truck operators, writers, reporters, anchors, producers and others" (NABET-CWA, n.d.-c).
+- It "represents more than 10,000 workers in broadcasting and related industries," "has 28 locals," and sets dues at "1.67%" of gross wages ("1.33% in some locals with a local dues assessment") (NABET-CWA, n.d.-a).
+- Its home page carried an "ABC Daily Hire Benefits Bulletin" saying that, under the NABET-CWA and ABC master agreement, the company makes annual retirement contributions "for daily hire employees" (NABET-CWA, n.d.-b).
+- Its members-for-hire list marks each member's availability with codes such as "PT," "DH," "FT" and "Contract" (NABET-CWA, n.d.-c). The page does not define the codes, so this course does not define them. Reasoned from the ABC bulletin's wording, "DH" most likely means daily hire.
+- FOX 5 DC's technician must join IATSE Local 819 (above).
+- The DGA says associate directors and stage managers "must complete mandatory safety training courses to remain eligible to work" under three DGA agreements, among them the FLTTA and the National Commercial Agreement, within "90 days from their initial date of DGA-covered employment" (DGA, n.d.-b). The 90-day rule took effect "As of July 1, 2017" (DGA, 2017). Those who miss it "will be suspended from the relevant Qualification List, Eligible to Work List, or Employment Criteria List, or if not on any of these lists will be deemed ineligible to work" (DGA, n.d.-b).
+
+**The season.** NFL Media's studio postings were first published from June 26, 2026 (Audio 2 and V1) through July 10 (graphics), August 4 (lighting director), August 11 (FAST), August 14 (TOC), September 17 (real-time systems), September 21 (studio coordinator), September 29 (broadcast associate and RedZone segment producer), October 16 (RedZone production assistant) and October 23 (utility) (NFL, n.d.). Reasoned from those dates: NFL Media hires seasonal studio crew from late June into the season itself, and an opening first published on October 23 shows the hiring had not stopped by late October.
+
+The RedZone and broadcast associate jobs ask for "Sunday availability from 7:30am - 4:30pm" (NFL, 2026h, 2026j, 2026k). The real-time systems associate supports "the NFL Draft, NFL Combine, International Games, Kickoff, Playoffs, and Super Bowl coverage" (NFL, 2026a). Fox's internship, Fox Sports work, gives a "General Application Deadline: Sunday, January 10, 2027," runs from June 21, 2027 to January 2, 2028, and says "The application period may extend beyond the stated deadline" (Fox Corporation, 2026a). The DGA's rate cards run from July 1 to June 30 (DGA, 2026a).
+
+:::reveal What must FOX 5 DC's per diem technician join? ||| "the I.A.T.S.E Local 819 union" (Fox Television Stations, 2026). It is a local news job.
+
+:::reveal Who employs NFL Media's associate for real-time systems? ||| A third-party agency, "not the NFL," which handles its pay and terms (NFL, 2026a).
+
+:::reveal Within how long must DGA associate directors and stage managers complete the mandatory safety training? ||| 90 days from their first DGA-covered employment, or they are suspended from the relevant list (DGA, n.d.-b).
+
+## Sources
+- ${FNM_A2} Locator: header lines; "Job Description". A news control-room job.
+- ${FNM_PLAYOUT} Locator: header lines; "Job Description". A news control-room job.
+- ${FTS_TECH} Locator: header lines; union and duration paragraphs. A local news job.
+- ${NFL_AUDIO2} Locator: "Terms / Expected Hours of Work".
+- ${NFL_STUDIO_COORD} Locator: terms paragraph.
+- ${NFL_RTS_ASSOC} Locator: agency paragraph; "Responsibilities".
+- ${DGA_2026D} Locator: staff weekly rates.
+- ${MTVG_CREW} Locator: page text.
+- ${MTVG_CAREERS} Locator: page text.
+- ${NABET_HIRE} Locator: introduction; availability column.
+- ${NABET_ABOUT} Locator: page text, size, locals and dues.
+- ${NABET_HOME} Locator: "ABC Daily Hire Benefits Bulletin".
+- ${DGA_SAFETY} Locator: page text, the requirement and the suspension rule.
+- ${DGA_2017} Locator: news item text.
+- ${NFL_BOARD_API} Locator: \`first_published\` field for each job listed.
+- ${NFL_BA} Locator: hours paragraph.
+- ${NFL_RZ_PA} Locator: hours paragraph.
+- ${NFL_SEGMENT_PRODUCER} Locator: hours paragraph.
+- ${FOX_INTERN} Locator: "Summer and Fall 2027 Schedule"; application deadline paragraph. Fox Sports work.
+- ${DGA_2026A} Locator: news item text.`,
+    },
+    {
+      slug: "from-utility-to-a-chair",
+      title: "29 · From utility to a chair, and where to train",
+      section: "8 · Getting hired",
+      recallContent: [
+        {
+          prompt: "How does Fox's A2 posting describe the freelance role?",
+          answer: "\"a freelance-based role\" in which you \"must be flexible to work on multiple shows over varied hours and days\" (Fox News Media, 2026a). It is a news job.",
+        },
+        {
+          prompt: "What does NABET-CWA say its dues are?",
+          answer: "\"1.67%\" of gross wages, or \"1.33% in some locals with a local dues assessment\" (NABET-CWA, n.d.-a).",
+        },
+      ],
+      body: `${QR}
+
+**What the postings say, and what they do not.** No posting read for this course describes a path from utility to a chair; each says only what its own job asks. So this lesson lays the asks side by side and does not draw a ladder that no employer published.
+
+**Experience asked, as posted.** From the least asked to the most:
+
+| Job | Experience asked, as posted | Source |
+|---|---|---|
+| Fox virtual enhancement internship, Fox Sports work | enrolled, sophomore standing or above; tagged "#EntryLevel #EarlyCareer" | Fox Corporation (2026a) |
+| NFL RedZone production assistant | TV production experience "strongly preferred" | National Football League [NFL] (2026j) |
+| NFL Films seasonal associate producer | "Minimum 1-2 years of relevant production, editing, or internship experience" | NFL (2026d) |
+| Fox News Media Viz operator, a news job | "1 year of experience working with Viz in a live control room" | Fox News Media (2026f) |
+| NFL Media FAST video systems operator | "A minimum of 2-years of experience in a Technical Support role" | NFL (2026e) |
+| NFL Media coordinator, real-time systems | "Up to 3 years of experience" | NFL (2026b) |
+| FOX 5 DC technician, a local news job | "3 years of recent experience as a broadcast technician, master control technician, technical director, or similar role in a news environment"; "Previous experience in a medium to major size market is required" | Fox Television Stations (2026) |
+| NFL Media RedZone segment producer | "4-6 years of progressively complex studio or related production experience" | NFL (2026k) |
+| NFL Media utility | "Minimum of 5 years' experience working on a sound stage" | NFL (2026m) |
+| NFL Media TOC operator | "A minimum of 5 years' experience in a broadcast operations environment" | NFL (2026l) |
+| Fox News Media show director, a news job | "5+ years' experience directing live television news & specials" | Fox News Media (2026e) |
+| NFL Media lighting director | "5-10 years of experience working in a studio environment" | NFL (2026i) |
+| NFL Media Audio 2 and V1/shading operator | 5 to 10 or more years | NFL (2026g, 2026n) |
+
+**What the table shows, reasoned.** In the postings read for this course, the entry-level rung is the internship, not the network studio utility job, which asks for five years on a sound stage (lesson 18). The jobs that supervise others ask for more: the RedZone segment producer will "Supervise, train, and mentor Associate Producers & Production Assistants" and oversee "EVS operators in the tape room" (NFL, 2026k). The Fox News show director lists "Technical director skills" as "NICE TO HAVE" and says: "Demo reel and director track should be available upon request." (Fox News Media, 2026e). The guild's own Example 3 says a production assistant "doing pre-production timing, prior to the contractually required time for the employment of an Associate Director" is not prohibited (DGA, 2020b, p. 20), so some timing work can come before the AD's title does.
+
+For audio, lesson 5 read a crewing firm's view, reported in trade press, that the reliable path to the A1 seat runs "from school to A2 to A1, a journey that can take several years" (Daley, 2024b). That is one firm's account, not a posting.
+
+**Where to train, as the sources say.**
+
+- Fox's internship offers "FOX Master Classes," a "Professional Development Series" and "Networking Opportunities." Applicants send "a 1-page resume (PDF preferred)" and a cover letter, and interns need their own housing and transportation (Fox Corporation, 2026a).
+- NFL Media's lighting director lists "Advanced ETC EOS programming training" and "Advanced ETC NET3 Networking training" (NFL, 2026i). Its Audio 2 calls "AES67 with Dante knowledge or certifications a plus" (NFL, 2026g); lesson 7 reads Audinate's three certification levels.
+- The DGA's councils for associate directors, stage managers and production associates hold craft events; one event's topics included "Understanding your Deal Memo, proper PL etiquette," schedules, rundowns and scripts (Directors Guild of America [DGA], 2021).
+- NABET-CWA lists "job training" among the tools it uses, beside collective bargaining, contract enforcement, political activity and organizing (NABET-CWA, n.d.-a).
+- Reasoned from its title and its minimum standards: ESPN's 2018 manual is itself a crew guide, written for schools that produce games for ESPN's digital outlets (ESPN, 2018). This course has read it closely from lesson 1 on.
+
+*Break Into Sports & Media Broadcasting* lessons "14 · Internships, freelancing, and building credits" and "15 · Unions, networking, and landing the first job" carry the general advice; this lesson adds only what the postings and sources read for this course say.
+
+:::reveal In the postings read for this course, which job is the entry-level rung? ||| The Fox virtual enhancement internship, tagged "#EntryLevel #EarlyCareer" (Fox Corporation, 2026a). NFL Media's studio utility asks for five years (NFL, 2026m).
+
+:::reveal Whom does NFL Media's RedZone segment producer supervise and mentor? ||| Associate producers and production assistants; the posting also has the producer oversee "EVS operators in the tape room" (NFL, 2026k).
+
+:::reveal What does the Fox News show director posting ask applicants to have available? ||| A demo reel and a director track, on request (Fox News Media, 2026e). It is a news job.
+
+## Sources
+- ${FOX_INTERN} Locator: "Eligibility Requirements"; hashtags; program benefits; application paragraph. Fox Sports work.
+- ${NFL_RZ_PA} Locator: qualifications.
+- ${NFL_FILMS_AP} Locator: qualifications.
+- ${FNM_VIZ} Locator: "What You Will Need". A news control-room job.
+- ${NFL_FAST} Locator: "Required Qualifications".
+- ${NFL_RTS_COORD} Locator: qualifications.
+- ${FTS_TECH} Locator: qualifications. A local news job.
+- ${NFL_SEGMENT_PRODUCER} Locator: "Responsibilities"; qualifications.
+- ${NFL_UTILITY} Locator: "Required Qualifications".
+- ${NFL_TOC} Locator: "Required Qualifications".
+- ${FNM_DIRECTOR} Locator: qualifications; "NICE TO HAVE". A news control-room job.
+- ${NFL_LD} Locator: "Required Qualifications"; "Qualifications".
+- ${NFL_AUDIO2} Locator: "Required Qualifications".
+- ${NFL_V1} Locator: "Required Qualifications".
+- ${DGA_ART2} Locator: Art. 2, Sec. D, Example 3, p. 20.
+- ${DALEY_2024B} Locator: paragraph on the crewing firm's field-operations manager.
+- ${DGA_2021} Locator: event write-up, topic list.
+- ${NABET_ABOUT} Locator: page text, the union's tools.
+- ${ESPN_2018} Locator: title page; "Equipment Standards," p. 2.`,
+    },
+    {
+      slug: "section-8-quiz",
+      title: "Section 8 quiz · Getting hired",
+      section: "8 · Getting hired",
+      body: "A graded check on the postings side by side with their pay as posted, freelance, staff, unions and the season, and what the postings ask on the way from utility to a chair. Each answer links back to the lesson that teaches it.",
+      quiz: {
+        passingScore: 80,
+        questionsPerAttempt: 5,
+        shuffleOptions: true,
+        questions: [
+          { prompt: "What is one job posting a source for, per lessons 1 and 27?", options: ["The going market rate", "What every network pays", "What one employer asked, once", "The union's minimum scale"], correctIndex: 2, explanation: "Lesson 27, after lesson 1: a posting is what one employer asked on one date, not a market rate.", sourceLessonSlug: "postings-side-by-side" },
+          { prompt: "What follows the dollar figure in every NFL pay line read for this course?", options: ["\"per hour\"", "\"per week\"", "\"per year\"", "\"USD\" and no unit"], correctIndex: 3, explanation: "Lesson 27: a bare dollar figure followed by \"USD,\" with no \"per hour,\" \"per week\" or \"per year.\"", sourceLessonSlug: "postings-side-by-side" },
+          { prompt: "What does the NFL's pay text say its ranges represent?", options: ["Salaries or hourly rates", "Union minimum day rates", "Weekly rates, before tax", "Bonuses for each game"], correctIndex: 0, explanation: "NFL (2026m): \"the range of salaries or hourly rates that the NFL believes, in good faith, at the time of this posting that it might be willing to pay.\"", sourceLessonSlug: "postings-side-by-side" },
+          { prompt: "Where in its range does the NFL say it expects to hire?", options: ["At the very top", "Near the middle", "At the bottom", "Above the range"], correctIndex: 1, explanation: "NFL (2026m): \"The NFL expects to hire for this position near the middle of the range.\"", sourceLessonSlug: "postings-side-by-side" },
+          { prompt: "Which NFL figure shows why no unit can be supplied?", options: ["The utility's $46.54 at both ends", "The TOC operator's $60.06 range", "The Films AP's $1,500 to $1,955", "The V1's $77.91 at both ends"], correctIndex: 2, explanation: "Reasoned in lesson 27: the NFL Films associate producer's $1,500 to $1,955 cannot be read the same way as the utility's $46.54.", sourceLessonSlug: "postings-side-by-side" },
+          { prompt: "How do the Fox postings read for this course state pay?", options: ["Per year, as posted", "Per day, as posted", "With no unit at all", "Per hour, as posted"], correctIndex: 3, explanation: "Lesson 27: every Fox posting read states its pay \"per hour\" (Fox News Media, 2026a).", sourceLessonSlug: "postings-side-by-side" },
+          { prompt: "On what does Fox say the final offer depends?", options: ["Education, skills, experience, location", "The ratings of the shows that season", "The vote of the local union's members", "The number of shows worked that month"], correctIndex: 0, explanation: "Fox News Media (2026a): \"final offer amount dependent on education, skills, experience, and location.\"", sourceLessonSlug: "postings-side-by-side" },
+          { prompt: "Where are NFL Media's studio jobs in lesson 27's table?", options: ["Mount Laurel, New Jersey", "Inglewood, California", "Secaucus, New Jersey", "Tempe, Arizona, USA"], correctIndex: 1, explanation: "Lesson 27: NFL Media's studio jobs are in Inglewood; the NFL Films job is in Mount Laurel, New Jersey.", sourceLessonSlug: "postings-side-by-side" },
+          { prompt: "Where is the NFL Films seasonal associate producer job?", options: ["Inglewood, California", "New York, New York", "Mount Laurel, New Jersey", "Washington, D.C., USA"], correctIndex: 2, explanation: "Lesson 27: NFL Films, in Mount Laurel, New Jersey (NFL, 2026d).", sourceLessonSlug: "postings-side-by-side" },
+          { prompt: "Which NFL jobs in the table were first published earliest?", options: ["The utility and the TOC", "The broadcast associate", "The RedZone assistant", "The V1 and the Audio 2"], correctIndex: 3, explanation: "NFL (n.d.): the V1/shading operator and the Audio 2 were both first published June 26, 2026.", sourceLessonSlug: "postings-side-by-side" },
+          { prompt: "What pay does the NFL V1/shading posting print?", options: ["$77.91 USD", "$65.47 USD", "$60.06 USD", "$68.99 USD"], correctIndex: 0, explanation: "NFL (2026n): $77.91 USD at both ends, no unit. $65.47 is the Audio 2, $60.06 the TOC and $68.99 the lighting director.", sourceLessonSlug: "postings-side-by-side" },
+          { prompt: "What pay does the NFL Audio 2 posting print?", options: ["$77.91 USD", "$65.47 USD", "$46.54 USD", "$60.06 USD"], correctIndex: 1, explanation: "NFL (2026g): $65.47 USD at both ends, no unit.", sourceLessonSlug: "postings-side-by-side" },
+          { prompt: "What pay does the NFL TOC operator posting print?", options: ["$68.99 USD", "$65.47 USD", "$60.06 USD", "$35 to $43 USD"], correctIndex: 2, explanation: "NFL (2026l): $60.06 USD at both ends, first published August 14, 2026.", sourceLessonSlug: "postings-side-by-side" },
+          { prompt: "What range does the NFL graphics designer/animator posting print?", options: ["$26 to $30 USD", "$31 to $33 USD", "$35 to $43 USD", "$37 to $80 USD"], correctIndex: 3, explanation: "NFL (2026f): $37 to $80 USD, no unit.", sourceLessonSlug: "postings-side-by-side" },
+          { prompt: "What range does the NFL senior coordinator for studio technical operations print?", options: ["$35 to $43 USD", "$37 to $80 USD", "$26 to $30 USD", "$23.75 to $26.50"], correctIndex: 0, explanation: "NFL (2026o): $35 to $43 USD, first published September 21, 2026.", sourceLessonSlug: "postings-side-by-side" },
+          { prompt: "How does the NFL describe the senior coordinator's terms?", options: ["Part time, on call", "Full-time, non-exempt", "Per diem, union", "Agency staff only"], correctIndex: 1, explanation: "NFL (2026o): \"Full-time, non-exempt,\" seasonal up to 7 months.", sourceLessonSlug: "postings-side-by-side" },
+          { prompt: "What range does the RedZone segment producer posting print?", options: ["$23.75 to $26.50 USD", "$1,500 to $1,955 USD", "$37.50 to $50 USD", "$26 to $26.50 USD"], correctIndex: 2, explanation: "NFL (2026k): $37.50 to $50 USD, no unit.", sourceLessonSlug: "postings-side-by-side" },
+          { prompt: "What range does the RedZone production assistant posting print?", options: ["$37.50 to $50 USD", "$26 to $30 USD", "$31 to $33 USD", "$23.75 to $26.50 USD"], correctIndex: 3, explanation: "NFL (2026j): $23.75 to $26.50 USD, first published October 16, 2026.", sourceLessonSlug: "postings-side-by-side" },
+          { prompt: "Which range is the NFL Films associate producer's?", options: ["$1,500 to $1,955 USD", "$150 to $195 USD", "$15 to $19.55 USD", "$15,000 to $19,550"], correctIndex: 0, explanation: "NFL (2026d): $1,500 to $1,955 USD, no unit.", sourceLessonSlug: "postings-side-by-side" },
+          { prompt: "What pay does the agency's associate for real-time systems show?", options: ["$26 to $30 USD", "None in the text read", "$37 to $80 USD", "$20.00 per hour"], correctIndex: 1, explanation: "Lesson 27: no pay figure in the text read; the agency handles its terms (NFL, 2026a).", sourceLessonSlug: "postings-side-by-side" },
+          { prompt: "Which other NFL posting showed no pay figure in the text read?", options: ["RedZone segment producer", "The NFL Films producer", "Part-time segment producer", "The TOC operator posting"], correctIndex: 2, explanation: "Lesson 27: the NFL Digital Media part-time segment producer, besides the agency's real-time systems associate.", sourceLessonSlug: "postings-side-by-side" },
+          { prompt: "How many hours a week may NFL Media's FAST operator work?", options: ["Exactly 40, staff", "Over 60 in season", "Under 10, weekends", "Under 40, on call"], correctIndex: 3, explanation: "NFL (2026e): \"On-call position working less than 40 hours per week.\"", sourceLessonSlug: "postings-side-by-side" },
+          { prompt: "What does the Fox News show director posting pay?", options: ["$65.38 to $77.16 per hour", "$40.00 to $50.00 per hour", "$28.00 to $37.50 per hour", "$31.55 to $52.64 per hour"], correctIndex: 0, explanation: "Fox News Media (2026e), a news control-room job: $65.38 to $77.16 per hour, posted April 8, 2026.", sourceLessonSlug: "postings-side-by-side" },
+          { prompt: "Which two Fox News jobs share $40.00 to $50.00 per hour?", options: ["A2 and playout", "Viz and senior video", "Audio and the director", "The intern and the TD"], correctIndex: 1, explanation: "Fox News Media (2026d, 2026f), news control-room jobs. The A2 and playout share $36.00 to $43.75.", sourceLessonSlug: "postings-side-by-side" },
+          { prompt: "Which two Fox News jobs share $36.00 to $43.75 per hour?", options: ["Viz and senior video", "Audio and the director", "A2 and playout", "The intern and the TD"], correctIndex: 2, explanation: "Fox News Media (2026a, 2026c), news control-room jobs.", sourceLessonSlug: "postings-side-by-side" },
+          { prompt: "What does the Fox News audio operator posting pay?", options: ["$36.00 to $43.75 per hour", "$40.00 to $50.00 per hour", "$65.38 to $77.16 per hour", "$28.00 to $37.50 per hour"], correctIndex: 3, explanation: "Fox News Media (2026b), a news control-room job in Washington, posted September 22, 2026.", sourceLessonSlug: "postings-side-by-side" },
+          { prompt: "What does FOX 5 DC's studio technician/TD posting pay?", options: ["$31.55 to $52.64 per hour", "$28.00 to $37.50 per hour", "$36.00 to $43.75 per hour", "$65.38 to $77.16 per hour"], correctIndex: 0, explanation: "Fox Television Stations (2026), a local news job, posted October 15, 2026.", sourceLessonSlug: "postings-side-by-side" },
+          { prompt: "Which Fox posting in lesson 27's table is Fox Sports work?", options: ["The show director", "The 2027 internship", "The A2 freelancer", "The Viz operator"], correctIndex: 1, explanation: "Lesson 27: every Fox posting in the table is a news job except the internship (Fox Corporation, 2026a).", sourceLessonSlug: "postings-side-by-side" },
+          { prompt: "Which Fox posting in lesson 27 was posted earliest?", options: ["The Viz operator", "The A2 freelancer", "The show director", "The playout operator"], correctIndex: 2, explanation: "Fox News Media (2026e): posted April 8, 2026, a news control-room job.", sourceLessonSlug: "postings-side-by-side" },
+          { prompt: "For whom does the DGA publish network rate cards?", options: ["Camera, audio and video crews", "Directors of feature films", "Talent, writers and producers", "ADs, SMs, production associates"], correctIndex: 3, explanation: "DGA (2026a): associate directors, stage managers and production associates in network news, sports, operations or local.", sourceLessonSlug: "postings-side-by-side" },
+          { prompt: "What is NBC's freelance SM rate for an 8-hour day on the 2026 to 2027 card?", options: ["$612", "$665", "$559", "$904"], correctIndex: 0, explanation: "DGA (2026d): AD $665 and SM $612 for \"DAILY: 8 hours.\" $559 is CBS's SM rate and $904 NBC's AD daily flat.", sourceLessonSlug: "postings-side-by-side" },
+          { prompt: "What is NBC's freelance AD rate for a \"DAILY FLAT: 12 Hours\"?", options: ["$665", "$904", "$828", "$611"], correctIndex: 1, explanation: "DGA (2026d): AD $904 and SM $828 for the 12-hour daily flat.", sourceLessonSlug: "postings-side-by-side" },
+          { prompt: "What is NBC's freelance AD rate for \"WEEKLY: 40 hours, 5 days\"?", options: ["$2,727", "$2,345", "$2,955", "$1,379"], correctIndex: 2, explanation: "DGA (2026d): AD $2,955 and SM $2,727. $1,379 and $2,345 are staff AD rates.", sourceLessonSlug: "postings-side-by-side" },
+          { prompt: "What is CBS's freelance AD rate for an 8-hour day?", options: ["$665", "$559", "$389", "$611"], correctIndex: 3, explanation: "DGA (2026c): AD $611, SM $559 and production associate $389.", sourceLessonSlug: "postings-side-by-side" },
+          { prompt: "What does ABC's card add for a production associate's 8-hour day?", options: ["$419", "$389", "$612", "$665"], correctIndex: 0, explanation: "DGA (2026b): a production associate at $419; CBS's is $389.", sourceLessonSlug: "postings-side-by-side" },
+          { prompt: "What does NBC's staff card pay an AD at \"Over 30 Months\"?", options: ["$1,379 a week", "$2,345 a week", "$2,955 a week", "$665 a day"], correctIndex: 1, explanation: "DGA (2026d): AD $2,345 and SM $2,216 a week at \"Over 30 Months\"; $1,379 is the AD's rate at \"0 - 6 months.\"", sourceLessonSlug: "postings-side-by-side" },
+          { prompt: "Reasoned in lesson 27, what are the DGA network rates not?", options: ["Rates for covered staff", "Published by the guild", "Market rates for any crew", "Set for July to June"], correctIndex: 2, explanation: "Lesson 27: guild rates for the networks' covered staff and freelancers at the stations named, not market rates and not what a regional or streaming crew is paid.", sourceLessonSlug: "postings-side-by-side" },
+          { prompt: "How does the DGA's \"PA\" differ from NFL Media's \"production assistant\"?", options: ["It is a payroll accountant", "It is a public address voice", "It is a parab operator", "It is a production associate"], correctIndex: 3, explanation: "Lesson 27: the DGA's PA is a production associate, a guild category; NFL Media's production assistant is a different job title.", sourceLessonSlug: "postings-side-by-side" },
+          { prompt: "How many ways to be hired does lesson 28 set out?", options: ["Five", "Two", "Three", "Seven"], correctIndex: 0, explanation: "Lesson 28: freelance, per diem, seasonal, agency and staff.", sourceLessonSlug: "freelance-staff-and-the-season" },
+          { prompt: "How does Fox's job system list its \"Freelance\" jobs?", options: ["As \"Full time\"", "As \"Part time\"", "As \"Seasonal\"", "As \"Per diem\""], correctIndex: 1, explanation: "Lesson 28: Fox titles six jobs \"Freelance\" while its system lists each as \"Part time.\" All are news control-room jobs.", sourceLessonSlug: "freelance-staff-and-the-season" },
+          { prompt: "What must Fox's A2 freelancer be flexible to do?", options: ["Travel with a sports truck", "Join a union in 90 days", "Work many shows and hours", "Mix only weekend games"], correctIndex: 2, explanation: "Fox News Media (2026a), a news control-room job: \"flexible to work on multiple shows over varied hours and days.\"", sourceLessonSlug: "freelance-staff-and-the-season" },
+          { prompt: "Which shifts does the Fox News playout freelancer cover?", options: ["Only the overnight news block", "Only the summer sports season", "Only special election coverage", "Staff on leave, holidays, weekends"], correctIndex: 3, explanation: "Fox News Media (2026c), a news control-room job: it replaces \"staff members who are on vacation or sick leave, including holidays and weekend shifts.\"", sourceLessonSlug: "freelance-staff-and-the-season" },
+          { prompt: "How does FOX 5 DC describe its technician's employment?", options: ["Per Diem Part-Time", "Seasonal Full-Time", "Agency Contract", "Staff, Salaried"], correctIndex: 0, explanation: "Fox Television Stations (2026), a local news job: \"Per Diem Part-Time.\"", sourceLessonSlug: "freelance-staff-and-the-season" },
+          { prompt: "Which union must FOX 5 DC's technician join?", options: ["The DGA's council", "IATSE Local 819", "NABET-CWA only", "No union at all"], correctIndex: 1, explanation: "Fox Television Stations (2026): \"will also be required to join the I.A.T.S.E Local 819 union.\"", sourceLessonSlug: "freelance-staff-and-the-season" },
+          { prompt: "How long does FOX 5 DC say the position will last?", options: ["Exactly one NFL season", "Up to 7 months, seasonal", "At least two weeks, no end set", "One year, then reviewed"], correctIndex: 2, explanation: "Fox Television Stations (2026): \"no less than two weeks, with no end date determined at this time.\"", sourceLessonSlug: "freelance-staff-and-the-season" },
+          { prompt: "For how long are most NFL Media studio jobs seasonal?", options: ["Up to 3 months", "Exactly 1 year", "Up to 2 years", "Up to 7 months"], correctIndex: 3, explanation: "NFL (2026g, 2026o): \"up to 7 months.\"", sourceLessonSlug: "freelance-staff-and-the-season" },
+          { prompt: "Under how many hours a week are most NFL Media studio jobs?", options: ["29", "20", "35", "40"], correctIndex: 0, explanation: "Lesson 28: mostly part time at under 29 hours a week. The FAST operator is under 40.", sourceLessonSlug: "freelance-staff-and-the-season" },
+          { prompt: "Who handles pay and benefits for the real-time systems associate?", options: ["The NFL's own payroll", "A third-party agency", "The DGA's pension plan", "The team that hosts it"], correctIndex: 1, explanation: "NFL (2026a): \"All compensation, benefits, and other terms and conditions of employment are handled by the agency.\"", sourceLessonSlug: "freelance-staff-and-the-season" },
+          { prompt: "How does the DGA's NBC card pay staff?", options: ["By the hour, flat for all", "By the game, with bonuses", "By the week, rising with service", "By the season, in one sum"], correctIndex: 2, explanation: "DGA (2026d): staff weekly rates rise with months of service.", sourceLessonSlug: "freelance-staff-and-the-season" },
+          { prompt: "Whom does Mobile TV Group tell crew to contact?", options: ["The network's HR desk", "The league's office", "The union steward", "The regional crewer"], correctIndex: 3, explanation: "Mobile TV Group (n.d.-d): \"Contact the Crewer/Event Coordinator for your region.\"", sourceLessonSlug: "freelance-staff-and-the-season" },
+          { prompt: "What does Mobile TV Group's careers page say about travel?", options: ["It can be part of the gig", "It is never required", "It is paid at double rate", "It is only for drivers"], correctIndex: 0, explanation: "Mobile TV Group (n.d.-e): \"Traveling can be part of your gig.\"", sourceLessonSlug: "freelance-staff-and-the-season" },
+          { prompt: "Reasoned in lesson 28, how does a truck company find crew?", options: ["Only through the unions' halls", "Regional coordinators and direct hires", "Only through network HR offices", "Only through online job boards"], correctIndex: 1, explanation: "Lesson 28: its crew page points crew to regional coordinators and has a section for crew newly hired directly (Mobile TV Group, n.d.-d).", sourceLessonSlug: "freelance-staff-and-the-season" },
+          { prompt: "With which networks does NABET-CWA say it has contracts?", options: ["ESPN, TNT and CBS only", "None of the networks", "ABC, NBC, FOX and others", "Only public stations"], correctIndex: 2, explanation: "NABET-CWA (n.d.-c): \"contracts with ABC, NBC, FOX and other networks, as well as local TV stations across the country.\"", sourceLessonSlug: "freelance-staff-and-the-season" },
+          { prompt: "How many workers does NABET-CWA say it represents?", options: ["About 1,000", "Over 100,000", "Exactly 28", "More than 10,000"], correctIndex: 3, explanation: "NABET-CWA (n.d.-a): \"more than 10,000 workers in broadcasting and related industries.\" 28 is its count of locals.", sourceLessonSlug: "freelance-staff-and-the-season" },
+          { prompt: "How many locals does NABET-CWA say it has?", options: ["28", "10", "819", "150"], correctIndex: 0, explanation: "NABET-CWA (n.d.-a): \"has 28 locals.\" 819 is the IATSE local in FOX 5 DC's posting.", sourceLessonSlug: "freelance-staff-and-the-season" },
+          { prompt: "What are NABET-CWA's dues, per its page?", options: ["5% of net wages", "1.67% of gross wages", "$50 a month flat", "10% of each check"], correctIndex: 1, explanation: "NABET-CWA (n.d.-a): \"1.67%,\" or \"1.33% in some locals with a local dues assessment.\"", sourceLessonSlug: "freelance-staff-and-the-season" },
+          { prompt: "For whom does ABC make retirement contributions, per NABET-CWA's bulletin?", options: ["Agency contractors", "Interns and students", "Daily hire employees", "Truck drivers only"], correctIndex: 2, explanation: "NABET-CWA (n.d.-b): annual retirement contributions \"for daily hire employees\" under the NABET-CWA and ABC master agreement.", sourceLessonSlug: "freelance-staff-and-the-season" },
+          { prompt: "Why does lesson 28 not define NABET-CWA's availability codes?", options: ["They are a union secret", "They change every week", "They mean the same thing", "The page does not define them"], correctIndex: 3, explanation: "Lesson 28: the page does not define \"PT,\" \"DH,\" \"FT\" or \"Contract,\" so the course does not.", sourceLessonSlug: "freelance-staff-and-the-season" },
+          { prompt: "Reasoned from the ABC bulletin, what does \"DH\" most likely mean?", options: ["Daily hire", "Day half", "Director hold", "Desk host"], correctIndex: 0, explanation: "Lesson 28: the ABC bulletin uses \"daily hire,\" so \"DH\" most likely means that; the members page itself does not say.", sourceLessonSlug: "freelance-staff-and-the-season" },
+          { prompt: "Who must complete the DGA's mandatory safety training?", options: ["Camera and audio crew", "ADs and stage managers", "Talent and producers", "Utilities and grips"], correctIndex: 1, explanation: "DGA (n.d.-b): associate directors and stage managers, to remain eligible to work.", sourceLessonSlug: "freelance-staff-and-the-season" },
+          { prompt: "Within how long must the DGA safety training be completed?", options: ["30 days", "1 year", "90 days", "2 weeks"], correctIndex: 2, explanation: "DGA (n.d.-b): within \"90 days from their initial date of DGA-covered employment.\"", sourceLessonSlug: "freelance-staff-and-the-season" },
+          { prompt: "When did the DGA's 90-day rule take effect?", options: ["July 1, 2026", "May 18, 2020", "June 30, 2027", "July 1, 2017"], correctIndex: 3, explanation: "DGA (2017): \"As of July 1, 2017.\" July 1, 2026 starts the current rate cards.", sourceLessonSlug: "freelance-staff-and-the-season" },
+          { prompt: "What happens to a DGA member who misses the safety deadline?", options: ["Suspended from the list", "Fined one day's pay", "Given another year", "Moved to staff work"], correctIndex: 0, explanation: "DGA (n.d.-b): \"will be suspended from the relevant Qualification List, Eligible to Work List, or Employment Criteria List.\"", sourceLessonSlug: "freelance-staff-and-the-season" },
+          { prompt: "Reasoned in lesson 28, when does NFL Media hire seasonal studio crew?", options: ["Only in January each year", "Late June into the season", "Only after the Super Bowl", "Only in early spring"], correctIndex: 1, explanation: "Lesson 28: first-publish dates run from June 26 to October 23, 2026 (NFL, n.d.).", sourceLessonSlug: "freelance-staff-and-the-season" },
+          { prompt: "Which NFL Media opening showed hiring had not stopped by late October?", options: ["The V1 shader", "The Audio 2 mixer", "The utility job", "The LD on stage"], correctIndex: 2, explanation: "NFL (n.d.): the utility was first published October 23, 2026.", sourceLessonSlug: "freelance-staff-and-the-season" },
+          { prompt: "Which Sunday hours do the RedZone jobs and the broadcast associate ask for?", options: ["Noon to 11:00 p.m.", "6:00 p.m. to 2:00 a.m.", "9:00 a.m. to 9:00 p.m.", "7:30 a.m. to 4:30 p.m."], correctIndex: 3, explanation: "NFL (2026h, 2026j, 2026k): \"Sunday availability from 7:30am - 4:30pm.\"", sourceLessonSlug: "freelance-staff-and-the-season" },
+          { prompt: "Which events does the real-time systems associate support?", options: ["Draft, Combine, Super Bowl", "Only regular-season games", "Only preseason games", "Only the Pro Bowl games"], correctIndex: 0, explanation: "NFL (2026a): \"the NFL Draft, NFL Combine, International Games, Kickoff, Playoffs, and Super Bowl coverage.\"", sourceLessonSlug: "freelance-staff-and-the-season" },
+          { prompt: "What does the Fox internship say about its application deadline?", options: ["It is never extended", "It may extend past it", "It closes in October", "It is set by the NFL"], correctIndex: 1, explanation: "Fox Corporation (2026a): \"The application period may extend beyond the stated deadline.\"", sourceLessonSlug: "freelance-staff-and-the-season" },
+          { prompt: "Over which dates do the DGA's rate cards run?", options: ["January to December", "September to August", "July 1 to June 30", "April 1 to March 31"], correctIndex: 2, explanation: "DGA (2026a): the 2026 to 2027 cards run from July 1, 2026 to June 30, 2027.", sourceLessonSlug: "freelance-staff-and-the-season" },
+          { prompt: "Does any posting read for this course describe a path from utility to a chair?", options: ["Yes, the NFL's", "Yes, Fox's", "Yes, ESPN's", "No, none of them"], correctIndex: 3, explanation: "Lesson 29: no posting read describes such a path; each says only what its own job asks.", sourceLessonSlug: "from-utility-to-a-chair" },
+          { prompt: "Why does lesson 29 not draw a career ladder?", options: ["No employer published one", "Ladders vary by union", "The DGA forbids it", "ESPN's manual has one"], correctIndex: 0, explanation: "Lesson 29: it lays the asks side by side and does not draw a ladder no employer published.", sourceLessonSlug: "from-utility-to-a-chair" },
+          { prompt: "Which job in lesson 29's table asks the least experience?", options: ["The NFL Media utility", "The Fox Sports internship", "The FOX 5 DC technician", "The NFL TOC operator"], correctIndex: 1, explanation: "Fox Corporation (2026a): enrolled, sophomore standing or above, tagged \"#EntryLevel #EarlyCareer.\"", sourceLessonSlug: "from-utility-to-a-chair" },
+          { prompt: "How is the Fox virtual enhancement internship tagged?", options: ["#Senior #Leadership #Exec", "#Union #PerDiem #Local819", "#EntryLevel #EarlyCareer", "#Remote #FullTime #Staff"], correctIndex: 2, explanation: "Fox Corporation (2026a): \"#EntryLevel #EarlyCareer.\"", sourceLessonSlug: "from-utility-to-a-chair" },
+          { prompt: "What experience does the NFL RedZone production assistant posting prefer?", options: ["Five years on a stage", "A DGA membership card", "A Viz certification", "TV production, strongly"], correctIndex: 3, explanation: "NFL (2026j): TV production experience \"strongly preferred.\"", sourceLessonSlug: "from-utility-to-a-chair" },
+          { prompt: "How much experience does the NFL Films associate producer posting ask?", options: ["1 to 2 years minimum", "5 to 10 years minimum", "None at all needed", "4 to 6 years minimum"], correctIndex: 0, explanation: "NFL (2026d): \"Minimum 1-2 years of relevant production, editing, or internship experience.\"", sourceLessonSlug: "from-utility-to-a-chair" },
+          { prompt: "What experience does the Fox News Viz operator posting ask?", options: ["5 years on a stage", "1 year of Viz, live", "3 years in news TD", "A design degree only"], correctIndex: 1, explanation: "Fox News Media (2026f), a news job: \"1 year of experience working with Viz in a live control room.\"", sourceLessonSlug: "from-utility-to-a-chair" },
+          { prompt: "How much technical support experience does NFL Media's FAST posting ask?", options: ["At least 5 years", "None at all", "At least 2 years", "Up to 10 years"], correctIndex: 2, explanation: "NFL (2026e): \"A minimum of 2-years of experience in a Technical Support role.\"", sourceLessonSlug: "from-utility-to-a-chair" },
+          { prompt: "In lesson 29's table, which NFL job asks \"Up to 3 years of experience\"?", options: ["The TOC operator", "The lighting director", "The utility on stage", "Real-time coordinator"], correctIndex: 3, explanation: "NFL (2026b): the part-time coordinator for real-time systems.", sourceLessonSlug: "from-utility-to-a-chair" },
+          { prompt: "What does FOX 5 DC require beyond 3 years in a news environment?", options: ["Medium to major market work", "A college degree in film", "A DGA membership card", "Five years on a sound stage"], correctIndex: 0, explanation: "Fox Television Stations (2026), a local news job: \"Previous experience in a medium to major size market is required.\"", sourceLessonSlug: "from-utility-to-a-chair" },
+          { prompt: "Which roles count toward FOX 5 DC's 3 years of experience?", options: ["Camera, grip or electrician", "Technician, MCR, TD or similar", "Producer, writer or anchor", "Graphic artist or designer"], correctIndex: 1, explanation: "Fox Television Stations (2026): \"broadcast technician, master control technician, technical director, or similar role in a news environment.\"", sourceLessonSlug: "from-utility-to-a-chair" },
+          { prompt: "How much experience does the RedZone segment producer posting ask?", options: ["1 to 2 years", "10 or more", "4 to 6 years", "None at all"], correctIndex: 2, explanation: "NFL (2026k): \"4-6 years of progressively complex studio or related production experience.\"", sourceLessonSlug: "from-utility-to-a-chair" },
+          { prompt: "Which two NFL Media jobs ask a minimum of 5 years?", options: ["FAST and RedZone PA", "BA and RTS coordinator", "Designer and Films AP", "Utility and TOC operator"], correctIndex: 3, explanation: "NFL (2026m, 2026l): five years on a sound stage, and five in a broadcast operations environment.", sourceLessonSlug: "from-utility-to-a-chair" },
+          { prompt: "How much directing experience does the Fox News show director posting ask?", options: ["5+ years in live news", "1 year in sports trucks", "2 years as a Viz operator", "No set amount at all"], correctIndex: 0, explanation: "Fox News Media (2026e), a news job: \"5+ years' experience directing live television news & specials.\"", sourceLessonSlug: "from-utility-to-a-chair" },
+          { prompt: "How much experience do the NFL Audio 2 and V1 postings ask?", options: ["1 to 2 years at most", "5 to 10 or more years", "None, training given", "Exactly 3 years each"], correctIndex: 1, explanation: "NFL (2026g, 2026n): 5 to 10 or more years.", sourceLessonSlug: "from-utility-to-a-chair" },
+          { prompt: "Reasoned in lesson 29, what is the entry-level rung in the postings read?", options: ["The utility", "The TOC chair", "The internship", "The Viz chair"], correctIndex: 2, explanation: "Lesson 29: the internship, not the network studio utility job, which asks for five years.", sourceLessonSlug: "from-utility-to-a-chair" },
+          { prompt: "Whom does the RedZone segment producer supervise, train and mentor?", options: ["Camera ops and the utilities", "The talent and the analysts", "The league's game officials", "APs and production assistants"], correctIndex: 3, explanation: "NFL (2026k): \"Supervise, train, and mentor Associate Producers & Production Assistants.\"", sourceLessonSlug: "from-utility-to-a-chair" },
+          { prompt: "Whom else does the RedZone segment producer oversee?", options: ["EVS operators in the tape room", "Lighting crew on the stage", "Stage managers on the floor", "Truck drivers at the venue"], correctIndex: 0, explanation: "NFL (2026k): oversee \"EVS operators in the tape room.\"", sourceLessonSlug: "from-utility-to-a-chair" },
+          { prompt: "What should a Fox News show director applicant have available on request?", options: ["A union card and a license", "Demo reel and director track", "A degree and a transcript", "A truck and a crew list"], correctIndex: 1, explanation: "Fox News Media (2026e), a news job: \"Demo reel and director track should be available upon request.\"", sourceLessonSlug: "from-utility-to-a-chair" },
+          { prompt: "What does the DGA's Example 3 allow a production assistant to do before an AD is hired?", options: ["Direct the talent", "Switch the show", "Pre-production timing", "Sign the crew's deals"], correctIndex: 2, explanation: "DGA (2020b, p. 20): a PA \"doing pre-production timing, prior to the contractually required time for the employment of an Associate Director\" is not prohibited.", sourceLessonSlug: "from-utility-to-a-chair" },
+          { prompt: "What path to the A1 seat does a crewing firm describe, in trade press?", options: ["Utility to TD to A1", "V1 to A2 to A1", "Intern to AD to A1", "School to A2 to A1"], correctIndex: 3, explanation: "Daley (2024b): \"from school to A2 to A1, a journey that can take several years.\" One firm's account, not a posting.", sourceLessonSlug: "from-utility-to-a-chair" },
+          { prompt: "What does Fox's internship offer interns?", options: ["FOX Master Classes", "Free team tickets", "A union card", "Paid housing"], correctIndex: 0, explanation: "Fox Corporation (2026a): \"FOX Master Classes,\" a \"Professional Development Series\" and \"Networking Opportunities\"; interns need their own housing.", sourceLessonSlug: "from-utility-to-a-chair" },
+          { prompt: "What do Fox internship applicants send?", options: ["A demo reel and director track", "A 1-page resume and a letter", "A union card and a referral", "A portfolio and a site visit"], correctIndex: 1, explanation: "Fox Corporation (2026a): \"a 1-page resume (PDF preferred)\" and a cover letter.", sourceLessonSlug: "from-utility-to-a-chair" },
+          { prompt: "Which training does NFL Media's lighting director posting list?", options: ["Dante Level 3 certification", "Viz Trio scripting course", "Advanced ETC EOS programming", "EVS LSM operator course"], correctIndex: 2, explanation: "NFL (2026i): \"Advanced ETC EOS programming training\" and \"Advanced ETC NET3 Networking training.\"", sourceLessonSlug: "from-utility-to-a-chair" },
+          { prompt: "Which knowledge or certification does NFL Media's Audio 2 call a plus?", options: ["ETC EOS advanced", "Viz Trio operator", "FAA Part 107 pilot", "AES67 with Dante"], correctIndex: 3, explanation: "NFL (2026g): \"AES67 with Dante knowledge or certifications a plus.\"", sourceLessonSlug: "from-utility-to-a-chair" },
+          { prompt: "Which topics did one DGA council craft event include?", options: ["Deal memos and PL etiquette", "Lens choice and lighting", "Mixing and loudness specs", "Replay clips and playlists"], correctIndex: 0, explanation: "DGA (2021): \"Understanding your Deal Memo, proper PL etiquette,\" schedules, rundowns and scripts.", sourceLessonSlug: "from-utility-to-a-chair" },
+          { prompt: "Which tool does NABET-CWA list beside collective bargaining?", options: ["Free housing", "Job training", "Talent agency", "Gear rental"], correctIndex: 1, explanation: "NABET-CWA (n.d.-a): \"job training,\" with bargaining, contract enforcement, political activity and organizing.", sourceLessonSlug: "from-utility-to-a-chair" },
+          { prompt: "Reasoned in lesson 29, what is ESPN's 2018 manual itself?", options: ["A union contract for crews", "A maker's operator manual", "A crew guide for schools", "A league rulebook for refs"], correctIndex: 2, explanation: "Lesson 29: reasoned from its title and minimum standards, a crew guide written for schools that produce games for ESPN's digital outlets.", sourceLessonSlug: "from-utility-to-a-chair" },
+        ],
+      },
+    },
   ],
 };
