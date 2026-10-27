@@ -165,6 +165,7 @@
 - [`renting-out-production-gear`](./renting-out-production-gear-course.ts) Renting Out Production Gear: the Owner-Operator's Business · CREW-06 (the-crew-behind-the-show) · listed here as an extra category; primary: Careers & Media
 - [`sideline-systems`](./sideline-systems-course.ts) The Sideline's Other Crew · CREW-07 (the-crew-behind-the-show) · listed here as an extra category; primary: Careers & Media
 - [`stage-and-broadcast-rigging`](./stage-and-broadcast-rigging-course.ts) Rigging for Stage and Broadcast Crews · CREW-01 (the-crew-behind-the-show) · listed here as an extra category; primary: Careers & Media
+- [`the-show-crew`](./the-show-crew-course.ts) the-show-crew (course data not in git: generated, or kept outside the repository) · CREW-08 (the-crew-behind-the-show) · listed here as an extra category; primary: Careers & Media
 
 ### Farm & Garden
 
@@ -199,6 +200,7 @@
 - [`soul-train-the-business`](./soul-train-the-business-course.ts) Soul Train: Who Paid, Who Owned, Who Got Paid · private · also in: Culture & History
 - [`sound-craft`](./sound-craft-course.ts) Sound Craft · CREW-02 (the-crew-behind-the-show) · also in: Storytelling
 - [`stage-and-broadcast-rigging`](./stage-and-broadcast-rigging-course.ts) Rigging for Stage and Broadcast Crews · CREW-01 (the-crew-behind-the-show) · also in: Trade Skills
+- [`the-show-crew`](./the-show-crew-course.ts) the-show-crew (course data not in git: generated, or kept outside the repository) · CREW-08 (the-crew-behind-the-show) · also in: Sports, Trade Skills
 - [`voice-acting`](./voice-acting-course.ts) Voice Acting: The Instrument · PERFORM-01 (perform)
 - [`how-a-house-stands-up`](./how-a-house-stands-up-course.ts) How a House Stands Up: The Load Path, the Parts, and What You Can See · series the-house-you-live-in · private · listed here as an extra category; primary: Science & Math
 - [`read-the-plan-and-the-code`](./read-the-plan-and-the-code-course.ts) Reading the Plan and the Code: Drawings, Specifications, and Who Made the Code Law · series the-house-you-live-in · private · listed here as an extra category; primary: Science & Math
@@ -295,6 +297,7 @@
 - [`cables-and-connectors`](./cables-and-connectors-course.ts) Cables and Connectors · CREW-00 (the-crew-behind-the-show) · listed here as an extra category; primary: Careers & Media
 - [`cinema-look-camera-rig`](./cinema-look-camera-rig-course.ts) Cinema-look camera rig · CREW-04 (the-crew-behind-the-show) · listed here as an extra category; primary: Careers & Media
 - [`sideline-systems`](./sideline-systems-course.ts) The Sideline's Other Crew · CREW-07 (the-crew-behind-the-show) · listed here as an extra category; primary: Careers & Media
+- [`the-show-crew`](./the-show-crew-course.ts) the-show-crew (course data not in git: generated, or kept outside the repository) · CREW-08 (the-crew-behind-the-show) · listed here as an extra category; primary: Careers & Media
 
 ### Travel & Living Abroad
 

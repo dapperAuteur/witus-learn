@@ -65,6 +65,7 @@ import { CINEMA_LOOK_CAMERA_RIG_COURSE } from "./data/cinema-look-camera-rig-cou
 import { ARENA_TRANSMISSION_COURSE } from "./data/arena-transmission-course";
 import { RENTING_OUT_PRODUCTION_GEAR_COURSE } from "./data/renting-out-production-gear-course";
 import { SIDELINE_SYSTEMS_COURSE } from "./data/sideline-systems-course";
+import { THE_SHOW_CREW_COURSE } from "./data/the-show-crew-course";
 import { MAP_AND_COMPASS_COURSE } from "./data/map-and-compass-course";
 import { SURVEYING_HOW_LAND_GETS_MEASURED_COURSE } from "./data/surveying-how-land-gets-measured-course";
 import { READING_A_LAND_DESCRIPTION_COURSE } from "./data/reading-a-land-description-course";
@@ -3642,6 +3643,30 @@ async function main() {
     navigationMode: "linear",
     publishHoldReason:
       "Held: needs a qualified reviewer (a tracking or replay systems technician who has worked one of these jobs, and a certified athletic trainer for the medical-review section) to read every lesson marked QR, with authority to change or cut it. Research tier 2: concussion and injury review protocols, described and never taught as medicine.",
+  });
+  // CREW-08, approved by BAM 2026-10-26 (cloud-briefs/crew-08/00-approved-brief.md): the show crew in a
+  // sports truck or studio control room, chair by chair (producer, director, AD and TD; the A1 and A2;
+  // the V1 and V2; replay, playout and the TOC; graphics and the virtual enhancement operator; the floor
+  // crew), how they talk on comms, and how the jobs are posted and paid. Employers (NFL Media, Fox) and
+  // makers are cited worked examples; the Fox operator and director postings are news control-room jobs.
+  // Public, held for a qualified reviewer with sports truck credits. Research tier 1. Pass 1
+  // (2026-10-26) wrote sections 1 to 5; sections 6 to 9 (the floor, how it fits together, getting hired,
+  // the capstone) and the final quiz follow.
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "the-show-crew",
+    course: THE_SHOW_CREW_COURSE,
+    category: "Careers & Media",
+    additionalCategories: ["Sports", "Trade Skills"],
+    seriesSlug: "the-crew-behind-the-show",
+    seriesTitle: "The Crew Behind the Show",
+    seriesOrder: 8,
+    seriesCode: "CREW",
+    seriesPosition: "08",
+    navigationMode: "linear",
+    publishHoldReason:
+      "Held: needs a qualified reviewer (a sports broadcast crew member who has held one of these chairs: an A1, V1, replay operator or technical director) to read every lesson marked QR, with authority to change or cut it. Research tier 1.",
   });
 
   // Tools That Think (TOOLS), BAM's series of analog tools that work without electricity (decisions of
