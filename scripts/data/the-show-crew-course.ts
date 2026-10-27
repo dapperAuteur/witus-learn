@@ -153,6 +153,69 @@ const NFL_STUDIO_COORD = `National Football League. (2026o, September 21). *Seas
 const FNM_DIRECTOR = `Fox News Media. (2026e, April 8). *Freelance show director* [Job posting]. Fox Corporation, Workday. ${RETRIEVED} https://fox.wd1.myworkdayjobs.com/Domestic/job/New-York-New-York-USA/Freelance-Show-Director_R50026603`;
 const FTS_TECH = `Fox Television Stations. (2026, October 15). *Studio technician/technical director* [Job posting]. Fox Corporation, Workday. ${RETRIEVED} https://fox.wd1.myworkdayjobs.com/Domestic/job/Washington-District-of-Columbia-USA/Studio-Technician-Technical-Director_R50034090-1`;
 
+const NFL_BOARD_API = `National Football League. (n.d.). *nflcareers job board* [Greenhouse public job board API]. ${RETRIEVED} https://boards-api.greenhouse.io/v1/boards/nflcareers/jobs?content=true`;
+const NFL_AUDIO2 = `National Football League. (2026g, June 26). *Seasonal part-time audio 2* [Job posting]. Greenhouse. ${RETRIEVED} https://job-boards.greenhouse.io/nflcareers/jobs/5279619008`;
+const FNM_A2 = `Fox News Media. (2026a, October 19). *Freelance A2/audio assistant* [Job posting]. Fox Corporation, Workday. ${RETRIEVED} https://fox.wd1.myworkdayjobs.com/Domestic/job/New-York-New-York-USA/Freelance-A2-Audio-Assistant_R50034126`;
+const FNM_AUDIO_OP = `Fox News Media. (2026b, September 22). *Freelance audio operator* [Job posting]. Fox Corporation, Workday. ${RETRIEVED} https://fox.wd1.myworkdayjobs.com/Domestic/job/Washington-District-of-Columbia-USA/Freelance-Audio-Operator_R50033869`;
+const FNM_BPE = `Fox News Media. (2026g, October 21). *Broadcast production engineer* [Job posting]. Fox Corporation, Workday. ${RETRIEVED} https://fox.wd1.myworkdayjobs.com/Domestic/job/Washington-District-of-Columbia-USA/Broadcast-Production-Engineer_R50025362`;
+const ESPN_AUDIO_OP = `ESPN. (n.d.). *Studio audio operator* [Job posting, filled; aggregator copy]. EntertainmentCareers.Net. ${RETRIEVED} https://www.entertainmentcareers.net/espn/studio-audio-operator/job/484628`;
+const FOX_BOARD = `Fox Corporation. (n.d.). [Workday job board, searched for "A1", "audio", "intercom", "IFB" and "mixer"]. ${RETRIEVED} https://fox.wd1.myworkdayjobs.com/Domestic`;
+const DISNEY_BOARD = `The Walt Disney Company. (n.d.). [Workday job board, searched for "A1 audio"]. ${RETRIEVED} https://disney.wd5.myworkdayjobs.com/disneycareer`;
+const WBD_BOARD = `Warner Bros. Discovery. (n.d.). [Workday job board, searched for "A1"]. ${RETRIEVED} https://warnerbros.wd5.myworkdayjobs.com/global`;
+
+// Audio trade press (research file 01). Every article is one dated account; no lesson names its people.
+const DALEY_2018 = `Daley, D. (2018, September 21). *Inside NBC Sports' all-encompassing audio production for Sunday Night Football*. Sports Video Group. ${RETRIEVED} https://www.sportsvideo.org/2018/09/21/inside-nbc-sports-all-encompassing-audio-production-for-sunday-night-football/`;
+const DALEY_2022 = `Daley, D. (2022, October 5). *Small changes make substantial differences in NFL audio*. Sports Video Group. ${RETRIEVED} https://www.sportsvideo.org/2022/10/05/small-changes-make-substantial-differences-in-nfl-audio/`;
+const DALEY_2023 = `Daley, D. (2023, December 1). *Broadcast audio's A2s are key in sports production*. Sports Video Group. ${RETRIEVED} https://www.sportsvideo.org/2023/12/01/broadcast-audios-a2s-are-key-in-sports-production/`;
+const DALEY_2024A = `Daley, D. (2024a, January 12). *NFL playoffs 2024: Broadcasters to bring out their A(udio) games*. Sports Video Group. ${RETRIEVED} https://www.sportsvideo.org/2024/01/12/nfl-playoffs-2024-broadcasters-to-bring-out-their-audio-games/`;
+const DALEY_2024B = `Daley, D. (2024b, September 11). *Tech focus: Training, part 1 [title continues after a dash] As broadcast sports' A1 cohort ages out, audio looks for solutions*. Sports Video Group. ${RETRIEVED} https://www.sportsvideo.org/2024/09/11/tech-focus-training-part-1-as-broadcast-sports-a1-cohort-ages-out-audio-looks-for-solutions/`;
+const DALEY_2024C = `Daley, D. (2024c, September 11). *Tech focus: Training, part 2 [title continues after a dash] A view from the audio compartment*. Sports Video Group. ${RETRIEVED} https://www.sportsvideo.org/2024/09/11/tech-focus-training-part-2-a-view-from-the-audio-compartment/`;
+const DALEY_2026 = `Daley, D. (2026, October 23). *FOX Sports gives Series sound a refresh with new people on the audio team, new parabolics*. Sports Video Group. ${RETRIEVED} https://www.sportsvideo.org/2026/10/23/fox-sports-gives-series-sound-a-refresh-with-new-people-on-the-audio-team-new-parabolics/`;
+
+// RF coordination, named only (research file 01; CREW-00 lesson 26 owns bands and power)
+const CFR_74_801 = `Definitions, 47 C.F.R. § 74.801 (2026). Electronic Code of Federal Regulations, up to date as of October 23, 2026. ${RETRIEVED} https://www.ecfr.gov/api/renderer/v1/content/enhanced/current/title-47?part=74&section=74.801`;
+const CFR_74_832 = `Licensing requirements and procedures, 47 C.F.R. § 74.832 (2026). Electronic Code of Federal Regulations, up to date as of October 23, 2026. ${RETRIEVED} https://www.ecfr.gov/api/renderer/v1/content/enhanced/current/title-47?part=74&section=74.832`;
+const SHURE = `Shure. (n.d.). *All about wireless: Intermodulation distortion*. ${RETRIEVED} https://www.shure.com/en-US/insights/all-about-wireless-intermodulation-distortion`;
+const YEARY_2018 = `Yeary, J. (2018, April 2). *The new reality of wireless frequency coordination*. TV Technology. ${RETRIEVED} https://www.tvtechnology.com/opinions/the-new-reality-of-wireless-frequency-coordination`;
+
+// Intercom and IFB (research files 01 and 03)
+const CC_ECLIPSE = `Clear-Com. (n.d.-a). *Eclipse HX matrix intercom systems* [Product page]. ${RETRIEVED} https://www.clearcom.com/Products/Products-By-Name/Eclipse-HX`;
+const CC_MATRIX = `Clear-Com. (n.d.-b). *Matrix solutions* [Product category page]. ${RETRIEVED} https://www.clearcom.com/Products/Products-by-Technology/Matrix-Solutions`;
+const CC_PARTYLINE = `Clear-Com. (n.d.-c). *Partyline communications* [Product category page]. ${RETRIEVED} https://www.clearcom.com/Products/Products-by-Technology/Partyline-Communications`;
+const CC_2020A = `Clear-Com. (2020a, September 24). *Destination listen: How to listen to an IFB's composite output (IFB destination's source and the talent interrupt) on a Eclipse matrix's panel*. Clear-Com Solution Finder. ${RETRIEVED} https://clear-com.atlassian.net/wiki/spaces/SF/pages/845054010`;
+const CC_2020B = `Clear-Com. (2020b, April 24). *What is the difference between a partylines (PL) and a fixed groups (FG)? And what is a sort group?* Clear-Com Solution Finder. ${RETRIEVED} https://clear-com.atlassian.net/wiki/spaces/SF/pages/323813421`;
+const CC_2020C = `Clear-Com. (2020c). *A comprehensive guide to Clear-Com analog and digital partyline systems* [E-book, PDF]. ${RETRIEVED} https://clearcom.com/downloadcenter/technicaldocs/ComprehensiveGuidetoPartyline/Comprehensive_Guide_to_Clear_Com_Analog_Digital_Partyline_Ebook.pdf`;
+const CC_2026A = `Clear-Com. (2026a, July 1). *Arcadia: What is IFB and how to make it work*. Clear-Com Solution Finder. ${RETRIEVED} https://clear-com.atlassian.net/wiki/spaces/SF/pages/4179558403`;
+const CC_2026B = `Clear-Com. (2026b, February 18). *Matrix: MCR / sound operator monitoring of IFBs using DynamEC*. Clear-Com Solution Finder. ${RETRIEVED} https://clear-com.atlassian.net/wiki/spaces/SF/pages/4401790989`;
+const RTS_MATRIX = `RTS. (n.d.-a). *Digital matrix intercom systems* [Product page]. ${RETRIEVED} https://rtsintercoms.com/products/digital-matrix-intercom-systems/`;
+const RTS_PARTYLINE = `RTS. (n.d.-b). *Partyline intercom systems* [Product page]. ${RETRIEVED} https://rtsintercoms.com/products/partyline-intercom-systems/`;
+const RIEDEL_ARTIST = `Riedel Communications. (n.d.-a). *Artist* [Product page]. ${RETRIEVED} https://www.riedel.net/intercom/artist/`;
+const RIEDEL_BOLERO = `Riedel Communications. (n.d.-b). *Bolero* [Product page]. ${RETRIEVED} https://www.riedel.net/intercom/bolero/`;
+const RIEDEL_SMARTPANELS = `Riedel Communications. (n.d.-c). *SmartPanels* [Product page]. ${RETRIEVED} https://www.riedel.net/intercom/smartpanels/`;
+
+// Consoles, embedding and audio-follow-video (research file 01)
+const CALREC_ARTEMIS = `Calrec Audio. (n.d.-a). *Artemis* [Product page]. ${RETRIEVED} https://calrec.com/shop/broadcast-audio-consoles/artemis/`;
+const CALREC_HYDRA2 = `Calrec Audio. (n.d.-b). *Hydra2* [Product page]. ${RETRIEVED} https://calrec.com/shop/audio-networking/hydra2/`;
+const CALREC_OB = `Calrec Audio. (n.d.-c). *Outside broadcast (OB)* [Applications page]. ${RETRIEVED} https://calrec.com/outside-broadcast/`;
+const CALREC_PRIMER = `Calrec Audio. (2018). *Calrec audio primer: Basic introduction to Calrec functionality and applications* (Issue 5) [PDF]. ${RETRIEVED} https://calrec.com/wp-content/uploads/2018/01/Calrec-Audio-Primer-926-134-Iss-5.pdf`;
+const SSL_SYSTEM_T = `Solid State Logic. (n.d.-a). *Audio consoles* [System T broadcast product page]. ${RETRIEVED} https://solidstatelogic.com/broadcast/audio-consoles`;
+const SSL_S500 = `Solid State Logic. (n.d.-b). *S500* [Product page]. ${RETRIEVED} https://solidstatelogic.com/products/s500`;
+const AUDINATE = `Audinate. (n.d.). *Dante certification program*. ${RETRIEVED} https://www.getdante.com/resources/training/dante-certification-program/`;
+const AJA_12GAM = `AJA Video Systems. (n.d.-a). *OG-12G-AM: 16-channel AES/EBU audio embedder/disembedder* [Product page]. ${RETRIEVED} https://www.aja.com/products/og-12g-am`;
+const AJA_DANTE = `AJA Video Systems. (n.d.-b). *OG-DANTE-12GAM: openGear 12G-SDI/Dante 64-channel embedder/disembedder* [Product page]. ${RETRIEVED} https://www.aja.com/products/og-dante-12gam`;
+const SONY_AFV = `Sony. (n.d.). *Configuring AFV (audio follow video)* [M2L-X help guide]. ${RETRIEVED} https://helpguide.sony.net/pro/m2l-x/v1/en/contents/AFV_settings.html`;
+const ROSS_ACUITY = `Ross Video. (n.d.-b). *Audio mixer* [Acuity 15.0 help topic, special custom control events]. ${RETRIEVED} https://help.rossvideo.com/acuity/Topics/Operation/CustomControls/Special-AMixer.html`;
+const LAWO_KICK = `Lawo. (n.d.). *KICK: Automated close-ball audio for sports* [Product page]. ${RETRIEVED} https://lawo.com/products/kick/`;
+
+// Loudness (research file 01)
+const ATSC_PAGE = `Advanced Television Systems Committee. (n.d.). *A/85, techniques for establishing and maintaining audio loudness for digital television* [Document page]. ${RETRIEVED} https://www.atsc.org/atsc-documents/a85-techniques-for-establishing-and-maintaining-audio-loudness-for-digital-television/`;
+const ATSC_2013 = `Advanced Television Systems Committee. (2013). *ATSC recommended practice: Techniques for establishing and maintaining audio loudness for digital television* (A/85:2013) [PDF]. ${RETRIEVED} https://www.atsc.org/wp-content/uploads/2021/04/A85-2013.pdf`;
+const ATSC_2026A = `Advanced Television Systems Committee. (2026a). *Annex M: Loudness and true peak quick reference* (A/85:2026-07) [PDF]. ${RETRIEVED} https://www.atsc.org/wp-content/uploads/2026/07/A85-2026-07-Annex-M.pdf`;
+const ATSC_2026B = `Advanced Television Systems Committee. (2026b). *ATSC recommended practice: Techniques for establishing and maintaining audio loudness for digital television* (A/85:2026-07) [PDF]. ${RETRIEVED} https://www.atsc.org/wp-content/uploads/2026/07/A85-2026-07.pdf`;
+const CFR_73_682 = `Transmission of commercial advertisements by television broadcast station, 47 C.F.R. § 73.682(e) (2026). Electronic Code of Federal Regulations, up to date as of October 23, 2026. ${RETRIEVED} https://www.ecfr.gov/api/renderer/v1/content/enhanced/current/title-47?part=73&section=73.682`;
+const CFR_73_8000 = `Incorporation by reference, 47 C.F.R. § 73.8000 (2026). Electronic Code of Federal Regulations, up to date as of October 23, 2026. ${RETRIEVED} https://www.ecfr.gov/api/renderer/v1/content/enhanced/current/title-47?part=73&section=73.8000`;
+const EBU_2023 = `European Broadcasting Union. (2023). *Loudness normalisation and permitted maximum level of audio signals* (EBU R 128-2023) [PDF]. ${RETRIEVED} https://tech.ebu.ch/docs/r/r128.pdf`;
+
 /** The marker every lesson needing a qualified reviewer opens with (authoring checklist, section 3). */
 const QR =
   "> **Before release:** needs a qualified reviewer (QR): a sports broadcast crew member who has held this chair (A1, V1, replay operator or technical director).";
@@ -437,6 +500,432 @@ Each row is a chair in this course: the switcher is the TD's (lesson 1), replay 
           { prompt: "Reasoned in lesson 3, how does a truck hold the same rooms as a studio?", options: ["Stacked in one shared room", "Spread across the stadium", "Split across trailers and sides", "Moved into the press box"], correctIndex: 2, explanation: "Lesson 3: a truck splits production, audio, video, replay, engineering and comms across one or more trailers and expanding sides; a studio puts them down a hallway.", sourceLessonSlug: "the-truck-and-the-studio" },
           { prompt: "Which lesson follows one camera's signal through the truck, so this course does not repeat it?", options: ["CREW-00 lesson 1", "CREW-07 lesson 4", "CREW-05 lesson 27", "CREW-04 lesson 22"], correctIndex: 3, explanation: "Lesson 3 links CREW-04's \"22 · What the truck does with your picture.\"", sourceLessonSlug: "the-truck-and-the-studio" },
           { prompt: "In lesson 3's reasoning, what travels with the rooms from truck to studio?", options: ["The jobs", "The cables", "The trucks", "The fans"], correctIndex: 0, explanation: "Lesson 3: \"The jobs travel with the rooms.\"", sourceLessonSlug: "the-truck-and-the-studio" },
+        ],
+      },
+    },
+    // ══════════════════════════════════════════════════════════════════════
+    // SECTION 2: Audio, the A1 and the A2
+    // ══════════════════════════════════════════════════════════════════════
+    {
+      slug: "a1-a2-a3-as-posted",
+      title: "4 · The A1, the A2 and the A3, as posted",
+      section: "2 · Audio: the A1 and the A2",
+      recallContent: [
+        {
+          prompt: "How does a trade report divide Game Creek's truck 79 between its A and B units?",
+          answer: "The A unit hosts engineering, video, production and audio; the B unit has replay, comms, a V/O booth and 4K support (Costa, 2018).",
+        },
+        {
+          prompt: "From which room does NFL Media's lighting director monitor shows?",
+          answer: "The shading room, consulting with the video operator (National Football League [NFL], 2026i).",
+        },
+      ],
+      body: `${QR}
+
+**Numbered chairs.** Broadcast audio has numbered chairs: the A1, the A2 and, in one posting, the A3. This lesson reads what employers wrote about each one. Lesson 5 adds what mixers and A2s told the trade press.
+
+**What one network wrote down.** The clearest description of both chairs found for this course is a closed ESPN posting for an "Audio Operator I," read in an aggregator's copy. The job provides "audio mixing (A1) and/or audio assist (A2) support for live event , studio productions and pre-recorded material" (ESPN, n.d.). Then it splits the work:
+
+| Chair | ESPN's posting |
+|---|---|
+| A1 | "you must be proficient in mixing and monitoring all audio sources including but not limited to microphones, music, sound effects and natural sound" |
+| A2 | "you must be experienced in the configuration of in-house intercom/PL communications and proficient in dressing talent microphones/IFBs" |
+
+It lists the gear: "audio mixing consoles, outboard equipment, audio & video routing, digital audio delivery servers, microphone & IFBs and their signal flows, mix minus, intercom devices & software, broadcast routers." It asks for "2 years practical Content Production or related experience at the large market or network level in the A1 and/or A2 role" (ESPN, n.d.). The aggregator marks it "This position has been filled," removed by the employer on March 4, 2025, with no pay shown.
+
+**No open A1 posting.** When this course was researched on October 26, 2026, no posting titled A1 was open on the job boards of Fox, Disney or Warner Bros. Discovery, or on the NFL's (Fox Corporation, n.d.; National Football League [NFL], n.d.; The Walt Disney Company, n.d.; Warner Bros. Discovery, n.d.). So this course describes the A1 from that closed posting and from trade press, and a reviewer will recheck the boards before release.
+
+**The NFL's A2 mixes.** NFL Media's "Seasonal Part-Time Audio 2," at its studios in Inglewood, California, opens: "NFL Media Technical Operations is looking for an A2 Audio Mixer" (NFL, 2026g). Its duties include:
+
+- "Mix live and recorded show format productions with heavy emphasis on remotes and server playback."
+- "Test and verify equipment: Networked audio consoles, intercoms, multiple audio and video servers, EVS Playback audio."
+- "Required experience working with cart playback systems such as Ovation or 360systems."
+- "Extensive knowledge and proper setup protocol of communication panels (i.e. Riedel) required."
+- "Work with A1, show director and production teams on the proper audio requirements for each show."
+
+It asks for 5 to 10 or more years "of experience mixing linear and IP content in a television studio environment," prefers "SSL audio boards (specifically S500)," requires stereo and 5.1 surround mixing, and calls "AES67 with Dante knowledge or certifications a plus" (NFL, 2026g). The terms are "Seasonal employment up to 7 months," with "holidays, nights, and weekends." The pay line, first published June 26, 2026, reads $65.47 USD at both ends of the range, with no unit. The NFL's own pay text says its ranges are "salaries or hourly rates," so this course prints the figure as posted and adds no unit.
+
+Reasoned from the title and the first duty: at NFL Media, an A2 mixes. "A2" does not mean "never mixes" everywhere.
+
+**The A3.** The same posting says: "Perform other duties as assigned such as A3 functions" (NFL, 2026g). It does not say what A3 functions are, and no source read for this course defines an A3, so this course does not either.
+
+**Two news control-room postings.** Fox News Media's "Freelance A2/Audio Assistant" is a news control-room job in New York, posted October 19, 2026. The A2 works "directly with the FNC/FBN audio engineer and crew," will "Mic guests as needed for live and as-live production," "Assist in the maintenance of audio equipment under the direction of the A1," "Provide immediate solutions in the event of equipment failure or other audio problems," and "Move and organize furniture and set pieces in the studio prior to and following the shoot." It asks for "knowledge of RF frequencies," "microphone techniques for both field and studio," "the aesthetics of microphone cabling and IFB wiring" and "Knowledge of Yamaha RIO & Calrec Hydra I/O boxes." Pay: $36.00 to $43.75 per hour (Fox News Media, 2026a).
+
+Fox News Media's "Freelance Audio Operator" is a news control-room job in Washington, posted September 22, 2026. The operator will "Operate audio board for live newscasts and productions" and "Perform facility checks with A2 and Stage Manager for all mic and IFB positions in the studio before daily production begins." It asks for the Calrec Sigma, Artemis and SSL System T consoles, "audio patch bays, Hydra BSP, signal flow," and the "Ability to work in a control room for at least 2 hours without a break." Pay: $28.00 to $37.50 per hour (Fox News Media, 2026b).
+
+**Reasoned: the split, as posted.** Across these postings the A1 mixes and monitors every source and answers for the audio; the A2 sets up comms, dresses talent with mics and IFBs, and keeps the gear working under the A1; at NFL Media an A2 also mixes support audio and server playback. Every employer splits it a little differently: the Fox News A2 also moves furniture, and the local news technician in lesson 1 runs audio as one of four chairs.
+
+:::reveal In ESPN's closed posting, what must the A1 be proficient in, and what must the A2 be experienced in? ||| The A1: mixing and monitoring all audio sources. The A2: configuring intercom/PL communications, and dressing talent microphones and IFBs (ESPN, n.d.).
+
+:::reveal Does NFL Media's A2 mix? ||| Yes. The posting asks for "an A2 Audio Mixer," and its first duty is to mix live and recorded shows (NFL, 2026g).
+
+:::reveal Why does this course print the NFL A2's $65.47 with no unit? ||| The posting prints no unit, and the NFL's pay text says its ranges may be "salaries or hourly rates."
+
+## Sources
+- ${ESPN_AUDIO_OP} Locator: opening paragraph; duties and qualifications; page status lines.
+- ${FOX_BOARD} Locator: search results for "A1".
+- ${NFL_BOARD_API} Locator: job titles and \`first_published\` field for job 5279619008.
+- ${DISNEY_BOARD} Locator: search results for "A1 audio".
+- ${WBD_BOARD} Locator: search results for "A1".
+- ${NFL_AUDIO2} Locator: opening paragraph; "Responsibilities," items 1 to 5 and 8; "Required Qualifications," items 1 to 4; "Terms / Expected Hours of Work"; "Salary / Pay Range".
+- ${FNM_A2} Locator: "Job Description," "A Snapshot of Your Responsibilities," "What You Will Need," pay disclosure. A news control-room job.
+- ${FNM_AUDIO_OP} Locator: "A Snapshot of Your Responsibilities," "What You Will Need," pay disclosure. A news control-room job.`,
+    },
+    {
+      slug: "the-audio-team-on-a-game",
+      title: "5 · The audio team on a network game",
+      section: "2 · Audio: the A1 and the A2",
+      recallContent: [
+        {
+          prompt: "What did ESPN's closed Audio Operator I posting ask the A2 to be experienced in?",
+          answer: "Configuring in-house intercom/PL communications, and dressing talent microphones and IFBs (ESPN, n.d.).",
+        },
+        {
+          prompt: "What does NFL Media's Audio 2 posting call the job in its first line?",
+          answer: "\"an A2 Audio Mixer\" (NFL, 2026g).",
+        },
+      ],
+      body: `${QR}
+
+**A note on these sources.** This lesson rests on trade press: Sports Video Group (SVG) articles that report what individual mixers and A2s said, on dates from 2018 to 2026. Each is one dated account, not a rule, and this course names none of the people quoted.
+
+**What the A1 answers for.** In a 2024 SVG piece, a veteran A1 says the A1 "is responsible for both the internal and outside connections to the truck, all the unit's audio monitors, and audio routing and patching," and must know formats including Dante, "Hydra and MADI interfacing, and integrating RF systems" (Daley, 2024c). The piece adds that "depending on the nature of the production, the A1 is also often responsible for intercoms," and quotes the A1: "Over the years, all things intercom became our domain" (Daley, 2024c).
+
+**The submixer and the field.** In 2018 a network mixer told SVG that the submixer "sends me the game at field level, from the parabolic and goal-post microphones," the league provides the player mics, and the A1 mixes "that with the announcers and the crowd" (Daley, 2018). The same mixer put the announcers "in the center channel and about 6 dB above the rest of the mix." That is one mixer's practice in 2018, not a rule. The submixer also "directs the A2s carrying the parabs to keep them focused on the field rather than the play" (Daley, 2018); the parabs are the parabolic microphones of the first quotation.
+
+**Who carries the parabs.** In 2022, ESPN "agreed to supply two A2s as parab operators, replacing two of the four utility personnel previously assigned to four parabs per game." Utility workers "are usually relied on for such tasks as cable management behind cameras and other semi-technical jobs" (Daley, 2022). An ESPN A1 quoted there said "the parab operator is as important to the A1 as the camera operator is to the director." Fox ran "six parabs this season: four on the sidelines, two in the end zones" (Daley, 2022), and in 2024 SVG called six manned parabs "two more than for most NFL telecasts" (Daley, 2024a).
+
+**The crew list.** SVG's 2024 playoff preview listed each network's NFL audio crew by truck as an "A1" and a "submixer," and the Fox and ESPN crews also listed an "RF Manager" (Daley, 2024a). For the 2026 World Series, the Fox audio team listed an A1, a new "FX submixer," an "audio guarantee" on the truck staff, two A2s, a third person assisting on submixing, and a wireless vendor "responsible for wireless audio" (Daley, 2026). The A1 cited "24 mics on the outfield wall," and smaller 16-inch parabs let "the A2s handling them" stand in more places, including aisles, "without interfering with fan sightlines" (Daley, 2026). The articles use "submixer," "audio guarantee" and "RF Manager" as titles without defining them, so this course gives them as titles only.
+
+**What A2s say about the work.** "A2 is a broad term that covers more jobs than just putting out mics," an ESPN remote operations specialist told SVG (Daley, 2023). The same report says "front-line audio workers are largely self-employed," and one A2 said networks now "want a person who can do the booth, who can do the field, who can do RF. The days of doing only one thing are gone." Traveling A2s lead "platoons of local A2s." Multi-skill A2 work "comes without standardized training," so "A2s look to manufacturers' training to learn new products and skills" (Daley, 2023).
+
+**From A2 to A1.** SVG reports a crewing firm's view that "the traditional path to the A1 seat is still the only reliable one: from school to A2 to A1, a journey that can take several years." It also reports that "Many A2s report that they don't find the extra $200 or so a day worth the pressure that comes with mixing a show" (Daley, 2024b). That figure is as reported in trade press, not a posting and not a market rate.
+
+**RF, named here and taught elsewhere.** Federal rules describe a low power auxiliary station as intended "to transmit over distances of approximately 100 meters for uses such as wireless microphones, cue and control communications, and synchronization of TV camera signals" (47 C.F.R. § 74.801, 2026). Those who may hold the license include "A broadcast network entity," "Television program producers," "Large venue owners or operators" and "Professional sound companies" (47 C.F.R. § 74.832, 2026); the last two are ones that "routinely uses 50 or more low power auxiliary station devices" (47 C.F.R. § 74.801, 2026). Many transmitters in one place cause intermodulation, which "occurs when multiple RF signals interact in non-linear transmitter or receiver circuits, generating unwanted frequencies," and managing it "requires careful frequency coordination" (Shure, n.d.). A 2018 trade article gives the steps: "connect the analyzer, gather RF data, pull all data into the coordination software, run the analysis, then make any necessary frequency changes to the transmitters," then run it again to double-check (Yeary, 2018). No source read for this course says who coordinates RF on a smaller show, whether the A1, an A2 or a vendor. Bands and power limits are in CREW-00 lesson "26 · RF coax, wireless mics and IFB."
+
+**Reasoned.** Put the accounts side by side: on a network game the audio chair is a team. An A1 mixes and answers for the audio and often the comms; one or more submixers handle the field and effects; A2s set up, carry parabs, dress talent and run RF; and on big shows an RF manager or a wireless vendor joins them. The seats vary by show.
+
+:::reveal In the 2018 account, what does the submixer send the A1? ||| "the game at field level, from the parabolic and goal-post microphones" (Daley, 2018).
+
+:::reveal Why does this course give "audio guarantee" as a title only? ||| The trade articles use it without defining it, and no source read for this course defines it.
+
+:::reveal What path to the A1 seat does SVG report a crewing firm calling "the only reliable one"? ||| "from school to A2 to A1, a journey that can take several years" (Daley, 2024b).
+
+## Sources
+- ${DALEY_2024C} Locator: "A Position Unlike Any Other".
+- ${DALEY_2018} Locator: paragraphs 1, 4 and 9.
+- ${DALEY_2022} Locator: paragraphs 4, 6 and 7.
+- ${DALEY_2024A} Locator: paragraphs 1 to 4.
+- ${DALEY_2026} Locator: "New Faces on the Team," "Sitting in Klover" and closing paragraph.
+- ${DALEY_2023} Locator: paragraphs 1 and 5, and the A2s' accounts that follow.
+- ${DALEY_2024B} Locator: paragraph on the crewing firm's field-operations manager; paragraph on the A2 pay difference.
+- ${CFR_74_801} Locator: definition of low power auxiliary station; large venue owner and professional sound company.
+- ${CFR_74_832} Locator: paragraph (a), eligible licensees.
+- ${SHURE} Locator: summary and body text on coordination.
+- ${YEARY_2018} Locator: Wireless Workbench paragraph.`,
+    },
+    {
+      slug: "intercom-panels-and-ifb",
+      title: "6 · Intercom, panels and IFB",
+      section: "2 · Audio: the A1 and the A2",
+      recallContent: [
+        {
+          prompt: "In the 2022 trade report, whom did ESPN's two A2 parab operators replace?",
+          answer: "Two of the four utility personnel previously assigned to four parabs per game (Daley, 2022).",
+        },
+        {
+          prompt: "Which titles do the trade articles use without defining them?",
+          answer: "\"Submixer,\" \"audio guarantee\" and \"RF Manager\"; this course gives them as titles only (Daley, 2024a, 2026).",
+        },
+      ],
+      body: `${QR}
+
+**Who owns comms.** ESPN's manual puts the audio chair "in charge of Audio and all communications associated with the broadcast," checking that "Camera Headsets, Control room headset (Producer, Director, 3play, Expression ), Announcer mics and IFB system" all work (ESPN, 2018, p. 21). ESPN's A2 sets up the "PxP & Color headsets," the "IFB system" and the natural sound mics (p. 21), and ESPN's glossary gives the A2 "establishing, monitoring and troubleshooting communications between the control room, studios and remote broadcast sites" (p. 31). Lesson 5 found the same thing in trade press: intercom became the A1's domain.
+
+**Three ways to talk.** Clear-Com, an intercom maker, names three basic forms (Clear-Com, 2020b):
+
+| Form | Clear-Com's words |
+|---|---|
+| Point to point | "This is when we talk privately from one device to another" |
+| Partyline | "A PL is a conference where more than one user can communicate (in a full-duplex fashion) with other users" |
+| Fixed group | pressing the group button means "every 'member' device will automatically hear the talker" |
+
+Party lines "are the most common form of intercom and have been around since the beginning of these production intercoms since the 1960's," and "The PLs are broken down into channels, or separate paths, as needed for separation of conversations" (Clear-Com, 2020b). Clear-Com's glossary says the name PL "came from the original telephone systems" (Clear-Com, 2020c, p. 80); an older university handout expands PL as "Private Line" (Vinovich, n.d.). The sources differ; this course uses the maker's "partyline."
+
+**Party-line and matrix.** Clear-Com's Encore party-line systems "connect over standard, two-conductor shielded mic cables," and "With full-duplex communication, there is no delay or waiting for any user to release the communication line" (Clear-Com, n.d.-c). A matrix is bigger: "Advanced Matrix intercom systems provide a high capacity of point-to-point audio routes to allow the greatest number of communication paths for individuals or groups," and frames "can also be trunked together" (Clear-Com, n.d.-b). Sizes, as each maker states them:
+
+| System | The maker's words |
+|---|---|
+| Clear-Com Eclipse HX | supports "Analog, Dante, MADI, AES67, SMPTE 2110, and Clear-Com's LQ Series" (Clear-Com, n.d.-a) |
+| RTS ADAM | "available in sizes from 16 to 880 users" (RTS, n.d.-a) |
+| RTS ODIN | can "start with 16 ports, extend up to 128 ports, or connect eight units seamlessly for a 1024-port matrix" (RTS, n.d.-a) |
+| Riedel Artist | "up to 1024 ports in just 2RU" (Riedel Communications, n.d.-a) |
+| Riedel Bolero, wireless | "from 1.9 GHz DECT to 2.4 GHz operation"; standalone, "Unlimited point-to-point connections and up to 32 partylines" (Riedel Communications, n.d.-b) |
+
+RTS also says "RTS is the only two-wire protocol that allows two communication channels to be connected on a single standard microphone cable" (RTS, n.d.-b). That is the maker's claim about itself.
+
+**Panels and beltpacks.** Riedel says its SmartPanels "unify intercom, audio monitoring, timecode and control workflows into a single, consistent operating multifunctional environment" (Riedel Communications, n.d.-c). RTS's DBP beltpack "supports both digital partyline and matrix keypanel modes" (RTS, n.d.-a). Reasoned from those pages: the NFL A2 posting's "communication panels (i.e. Riedel)" (NFL, 2026g) are keypanels of this kind on a matrix. NFL Media's studio coordinator asks for experience with "RTS or Clear-Com intercom and IFB systems" (NFL, 2026o).
+
+**IFB: the talent's ear.** Clear-Com defines IFB as "INTERRUPTIBLE FOLD BACK or INTERRUPTIBLE FEED BACK," "an audio workflow used most often in broadcast to send production audio to the on-air talent through a one-way link, most often through an IFB box which has an earpiece for the talent." Production staff "can 'interrupt' the program audio by pressing a button to provide cues or directions to the talent. When pressing the IFB button, the program audio will dip or cut entirely so the production staff's voice can be heard clearly" (Clear-Com, 2026a). ESPN's glossary is shorter: "The earpiece talent use so that the director or producer can talk to them from the control room" (ESPN, 2018, p. 32). An IFB all-call speaks on every IFB channel at once, "a handy feature when a producer needs to provide the same cue to multiple talent on a set" (Clear-Com, 2020c, p. 20).
+
+**Three parts of an IFB.** Clear-Com splits an IFB into a SOURCE, "the audio that the talent (or a speaker) should be listening to"; a DESTINATION, "where the IFB feed should go"; and a RETURN, "the talent's microphone," which lets a producer or director hear the mic "pre-fade, meaning without the microphone turned up on the audio mixing console" (Clear-Com, 2026a). On a Clear-Com matrix an operator can check both ends: Destination Listen hears "the same audio as the IFB destination (i.e. mix + interrupt)," and Return Listen hears "the incoming return (i.e. pre-fade talent)" (Clear-Com, 2020a, 2026b).
+
+**Mix-minus.** For talent in the field, the IFB source "is going to be a mix-minus feed, which is the program audio MINUS the microphone of the on-air talent who is talking. (Without mix-minus, the talent in the field will hear themself but with a few seconds of delay.)" (Clear-Com, 2026a). Calrec's primer gives the reason: "It can be very difficult to speak while hearing your own voice returned to you with even a slight delay" (Calrec Audio, 2018, p. 44).
+
+**Reasoned.** IFB is not the crew's intercom. Intercom is two-way talk among the crew, by party-line, point to point or group; IFB is a one-way program feed to talent that production can interrupt. Who hears whom on a show, and how to talk on a headset, are in section 7. The wiring is in CREW-00 lessons "17 · Same plug, different signal: intercom and DMX on XLR" and "26 · RF coax, wireless mics and IFB."
+
+:::reveal Name Clear-Com's three basic forms of intercom. ||| Point to point, partyline and fixed groups (Clear-Com, 2020b).
+
+:::reveal What are the three parts of an IFB, in Clear-Com's terms? ||| SOURCE (what the talent should hear), DESTINATION (where the feed goes) and RETURN (the talent's microphone, heard pre-fade) (Clear-Com, 2026a).
+
+:::reveal Why does talent in the field get a mix-minus? ||| Without it they hear their own voice back a few seconds late, which makes speaking very difficult (Clear-Com, 2026a; Calrec Audio, 2018, p. 44).
+
+## Sources
+- ${ESPN_2018} Locator: "Audio" and "EIC/Audio Assist," p. 21; glossary, pp. 31 to 32.
+- ${CC_2020B} Locator: list items 1 to 3 and the "Partyline" item.
+- ${CC_2020C} Locator: glossary, "Partyline (PL)," p. 80; IFB all-call, p. 20.
+- ${VINOVICH} Locator: "Director (DGA)".
+- ${CC_PARTYLINE} Locator: body text.
+- ${CC_MATRIX} Locator: page introduction.
+- ${CC_ECLIPSE} Locator: body text.
+- ${RTS_MATRIX} Locator: body text, ADAM, ODIN and the DBP beltpack.
+- ${RTS_PARTYLINE} Locator: user stations paragraph.
+- ${RIEDEL_ARTIST} Locator: body text.
+- ${RIEDEL_BOLERO} Locator: "Three Ways to Deploy Bolero".
+- ${RIEDEL_SMARTPANELS} Locator: body text.
+- ${NFL_AUDIO2} Locator: "Responsibilities," item 4.
+- ${NFL_STUDIO_COORD} Locator: "Required Qualifications".
+- ${CC_2026A} Locator: opening; "How to Configure an IFB"; "SOURCE".
+- ${CC_2020A} Locator: article text.
+- ${CC_2026B} Locator: article text.
+- ${CALREC_PRIMER} Locator: "Mix Minus," p. 44.`,
+    },
+    {
+      slug: "consoles-and-audio-follow-video",
+      title: "7 · Consoles, embedded audio and audio-follow-video",
+      section: "2 · Audio: the A1 and the A2",
+      recallContent: [
+        {
+          prompt: "What does Clear-Com say happens to program audio when production presses the IFB button?",
+          answer: "It will \"dip or cut entirely so the production staff's voice can be heard clearly\" (Clear-Com, 2026a).",
+        },
+        {
+          prompt: "What is a mix-minus feed, in Clear-Com's words?",
+          answer: "\"the program audio MINUS the microphone of the on-air talent who is talking\" (Clear-Com, 2026a).",
+        },
+      ],
+      body: `${QR}
+
+**A console is a router.** Calrec, a console maker, says: "Broadcast consoles are not just audio desks, but routers," with router sizes it writes as 1024² on its Brio and 8192² on its Apollo (Calrec Audio, n.d.-c). Its consoles "provide comprehensive delay at three separate points in the signal chain; input, output and path delay." Calrec also says that "in Sports Video Group's annual Gearbase survey, Calrec have come top of the list for audio consoles in HD trucks every single year" (Calrec Audio, n.d.-c). That is the maker's claim; the survey itself was not read for this course. Lesson 3's truck 79 carries a Calrec Apollo.
+
+**The desks in the postings.** Each row pairs a maker's own description with the posting that asks for it:
+
+| Desk or system | The maker's words | Asked for by |
+|---|---|---|
+| Calrec Artemis | "A third of the touch screen is dedicated for user configurable meters, providing up to 36 x 5.1 meters simultaneously and provides loudness metering" (Calrec Audio, n.d.-a) | Fox News Media's audio operator, a news control-room job |
+| Calrec Hydra2 | "connects all Calrec's medium and large proprietary consoles and I/O via a high-speed, modular backbone" (Calrec Audio, n.d.-b) | Fox News Media's A2 and audio operator, both news jobs |
+| SSL System T | "Up to three control interfaces can use a single processor core" (Solid State Logic [SSL], n.d.-a) | Fox News Media's audio operator |
+| SSL S500 | fader status lights "covering Dynamics, De-ess mode, Dialogue Automix and Remote AFV or Production Automation control" (SSL, n.d.-b) | NFL Media's Audio 2, "specifically S500" |
+
+Reasoned from Calrec's page: the Fox News postings' "Calrec Hydra I/O boxes" and "Hydra BSP" (Fox News Media, 2026a, 2026b) belong to this Hydra2 networking family, since Calrec says its Apollo, Artemis and Summa "rely on Hydra2 for the routing of all audio to and from their DSP" (Calrec Audio, n.d.-b).
+
+**Networked audio.** NFL Media's A2 posting asks for "Understanding of IP Networked audio devices, specifically AES67 with Dante knowledge or certifications a plus" (National Football League [NFL], 2026g). Audinate's Dante Certification has three levels; Level 2 covers "IP networking, QoS, VLANs, IGMP, and redundancy," and Level 3 covers deploying "Dante across subnets" and synchronizing "your network using PTP" (Audinate, n.d.). Why a media network is kept apart from the office network is in CREW-00 lesson "20 · Dante, ST 2110, and why a media network is not the office network."
+
+**Audio inside the video.** On SDI, audio can ride inside the video signal. AJA's OG-12G-AM "is a 16-channel AES/EBU audio embedder/disembedder openGear card," with embedding selectable "on a channel pair basis" (AJA Video Systems, n.d.-a). In AJA's workflow, the card "disembeds AES audio to the AES I/O for mixing," and "The output of the mixer is then embedded into the SDI stream" (n.d.-a). AJA's Dante card supports "up to 16-channels of embedded audio support per SDI connection" (AJA Video Systems, n.d.-b). That 16 is AJA's figure for its own cards; the standard behind it was not read for this course. AES3 and MADI are in CREW-00 lesson "18 · AES3, word clock and MADI."
+
+**Audio follows video.** When the TD cuts to a camera, should that camera's microphone open with it? Makers call the link audio-follow-video (AFV). Sony defines it: "When the [AFV] button is pressed and the AFV function is enabled, the audio linked with a video is output when the program output is switched to that video. When the program output is switched to another video, the audio automatically switches to the muted state" (Sony, n.d.). Ross Video's switcher control software includes "AFV Hold," where audio is "automatically taken on-air with the video source" but left unchanged when the source goes off air, and "AFV Off," after which audio "will not automatically be taken on-air with the video source" (Ross Video, n.d.-b). Calrec's primer shows the link from the console side: a "Signal faded up on vision mixer" leads to "Associated audio sources faded up on Calrec console" (Calrec Audio, 2018, p. 46). No source read for this course says how sports A1s use AFV on a live game, or for which sources, so this course leaves that to the reviewer.
+
+**Automation, as a maker describes it.** Lawo calls its KICK "a unique, patent-pending, automated audio mixing technology" for "major live sports events that use a ball," which "automatically prioritizes the microphones closest to the action" (Lawo, n.d.). That is the maker's description of its own product.
+
+**Processing in a news posting.** Fox News Media's broadcast production engineer, a news job in Washington posted October 21, 2026, does "gating, compression, equalization of talent microphone audio, and multi-band processing of outbound audio programming using Orban processors," and sets up "small Dante audio networks." Pay: $44.00 to $51.25 per hour (Fox News Media, 2026g).
+
+:::reveal What does Calrec say a broadcast console is besides an audio desk? ||| A router: "Broadcast consoles are not just audio desks, but routers" (Calrec Audio, n.d.-c).
+
+:::reveal In AJA's workflow, what happens to the mixer's output? ||| It "is then embedded into the SDI stream" (AJA Video Systems, n.d.-a).
+
+:::reveal With Sony's AFV on, what happens to a source's audio when program switches away from its video? ||| It "automatically switches to the muted state" (Sony, n.d.).
+
+## Sources
+- ${CALREC_OB} Locator: body text, routers, delay and the Gearbase claim.
+- ${CALREC_ARTEMIS} Locator: body text, meters and 5.1 controls.
+- ${CALREC_HYDRA2} Locator: body text.
+- ${SSL_SYSTEM_T} Locator: body text.
+- ${SSL_S500} Locator: "Fader Tiles".
+- ${FNM_A2} Locator: "What You Will Need". A news control-room job.
+- ${FNM_AUDIO_OP} Locator: "What You Will Need". A news control-room job.
+- ${NFL_AUDIO2} Locator: "Required Qualifications," items 2 and 4.
+- ${AUDINATE} Locator: level descriptions.
+- ${AJA_12GAM} Locator: "Overview" and "OG-12G-AM Workflow".
+- ${AJA_DANTE} Locator: features.
+- ${SONY_AFV} Locator: "Configuring AFV".
+- ${ROSS_ACUITY} Locator: "Audio Mixer" events, AFV Hold and AFV Off.
+- ${CALREC_PRIMER} Locator: GPIO application, p. 46, text and Figure 1.
+- ${LAWO_KICK} Locator: body text.
+- ${FNM_BPE} Locator: responsibilities and pay disclosure. A news job.`,
+    },
+    {
+      slug: "levels-formats-and-loudness",
+      title: "8 · Levels, formats and loudness",
+      section: "2 · Audio: the A1 and the A2",
+      recallContent: [
+        {
+          prompt: "What are AFV Hold and AFV Off in Ross Video's switcher controls?",
+          answer: "AFV Hold takes audio on air with the video source but leaves it unchanged when the source goes off; AFV Off stops audio being taken on air with the video (Ross Video, n.d.-b).",
+        },
+        {
+          prompt: "How many embedded audio channels per SDI connection does AJA's Dante card support, and whose figure is it?",
+          answer: "Up to 16, as AJA states it for its own card (AJA Video Systems, n.d.-b).",
+        },
+      ],
+      body: `${QR}
+
+**Headroom and reference level.** Calrec's Audio Primer: "The difference between the normal operating level and the maximum is referred to as headroom," and "0dBFS is the maximum level that can be passed" (Calrec Audio, 2018, p. 13). A reference level ties digital to analog: "Two common reference levels are -18dBFS=0dBU and -20dBFS=+4dBU. These are used in the UK and the US respectively," though "several other standards are used around the world" (p. 13). Reasoned from those two lines: the reference level sits at the normal operating level, and headroom is the room above it, up to 0 dBFS.
+
+No source read for this course gives a digital peak target for a live mix, so this course gives none. *Break Into Sports & Media Broadcasting* lesson "6 · Signal flow and audio fundamentals" gives one without a source, and a research check is open on it. Use the reference level and the loudness targets below.
+
+**Meters.** "PPM meters have a very fast attack time and a very slow decay time," while "VU meters have a much slower attack, but a faster decay"; on program material "a PPM meter will generally display several dB's higher than a VU meter" (Calrec Audio, 2018, p. 16). Calrec adds: "Its always a good idea to be able to meter and listen to audio from further downstream than the console output to ensure your signal is being delivered as intended" (p. 16). CREW-02 lesson "17 · Meters, tone and gain" teaches the VU meter and line-up tone; this lesson does not repeat it.
+
+**Stereo and 5.1.** NFL Media's A2 posting requires "Stereo and 5.1. surround mixing formats" (National Football League [NFL], 2026g). A 5.1 signal is "Left (L), Right (R), Center (C), Low Frequency Effects (LFE), Left Surround (Ls) and Right Surround (Rs)"; one fader moves all six, and spill faders give separate control of L/R, C, LFE and Ls/Rs (Calrec Audio, 2018, p. 38). The ATSC defines the LFE as "An optional single channel of limited bandwidth (below 120 Hz)" (Advanced Television Systems Committee [ATSC], 2026b, p. 8).
+
+**Loudness in the United States.** The ATSC's recommended practice A/85 covers how TV loudness is measured and managed. Its current edition is A/85:2026-07, approved 8 July 2026, and it covers audio "as presented in both stereo (2.0-channel) and surround (5.1-channel) formats" (ATSC, n.d.; ATSC, 2026b, section 1). It counts "sporting events" as long-form content (ATSC, 2026b, p. 8). Its quick reference: "For delivery or exchange of Content without metadata (and where there is no prior arrangement by the parties regarding Target Loudness), the Target Loudness should be -24 LKFS," with a measurement tolerance "of up to approximately ±2 dB" and a maximum true peak of -2 dBTP (ATSC, 2026a, Table M.1). For long-form content, "It is vital that the average Dialogue Level be measured and reported as the Loudness" (ATSC, 2026a, note 31).
+
+**Mixing live to a number.** "The intent of Loudness measurements made during a live event is to guide the mixer to produce the Content at an average predetermined or Target Loudness." Sliding-window meters that show "a prior segment (typically 3 to 10 sec)" help "when mixing in noisy locations" (ATSC, 2026b, section 5.2.3, p. 12). Surround has a trap: "During production, the Loudness of surround programming should be measured in both its surround mix format and in its stereo (2.0-channel) downmix," because build-up can make the downmix louder "by up to 3 dB." One fix is "to assign dialogue and lead-singer elements primarily or exclusively to the center channel" (ATSC, 2026b, section 5.2.7, p. 13). For streaming only, A/85 recommends "a single Target Loudness between -23 to -27 LKFS" unless the parties agree otherwise (ATSC, 2026a, note 35).
+
+**What the law covers.** The FCC rule says "television broadcast stations must comply with the ATSC A/85 RP incorporated by reference ... insofar as it concerns the transmission of commercial advertisements" (47 C.F.R. § 73.682(e)(1), 2026). The edition it incorporates is "ATSC A/85:2013" (47 C.F.R. § 73.8000, 2026), which also gives -24 LKFS for content without metadata (ATSC, 2013, p. 18). Reasoned from the rule's own words: the law binds the commercials, and the game is mixed to the target the parties agree, which A/85 recommends.
+
+**Loudness in Europe.** EBU R 128: "the Programme Loudness Level shall be normalised to a Target Level of -23.0 LUFS. Where attaining the Target Level is not achievable practically (for example, live programmes), a tolerance of ±1.0 LU is permitted," and "the True Peak Level of a programme shall not exceed -1 dBTP" (European Broadcasting Union [EBU], 2023, pp. 3 to 4). The units match: "'LUFS' is equivalent to 'LKFS' (which is used in ITU-R BS.1770)" (EBU, 2023, p. 3). Reasoned: a US mix and a European mix aim at different targets, -24 LKFS against -23 LUFS, measured the same way.
+
+:::reveal What reference level does Calrec give for the US? ||| -20 dBFS = +4 dBu; the UK's is -18 dBFS = 0 dBu (Calrec Audio, 2018, p. 13).
+
+:::reveal What target loudness does A/85 give for content without metadata and no prior arrangement? ||| -24 LKFS, with a tolerance of up to about ±2 dB and a true peak no higher than -2 dBTP (ATSC, 2026a).
+
+:::reveal Does the FCC rule require the whole game to be mixed to -24 LKFS? ||| No. It makes A/85 (the 2013 edition) binding for the transmission of commercial advertisements (47 C.F.R. § 73.682(e)(1); § 73.8000).
+
+## Sources
+- ${CALREC_PRIMER} Locator: headroom and reference levels, p. 13; meters, p. 16; 5.1, p. 38.
+- ${NFL_AUDIO2} Locator: "Required Qualifications," item 3.
+- ${ATSC_PAGE} Locator: current edition and approval date.
+- ${ATSC_2026B} Locator: section 1 (scope); section 3, definitions, p. 8; section 5.2.3, p. 12; section 5.2.7, p. 13.
+- ${ATSC_2026A} Locator: Table M.1 and notes 31 and 35.
+- ${CFR_73_682} Locator: paragraph (e)(1).
+- ${CFR_73_8000} Locator: the ATSC entry.
+- ${ATSC_2013} Locator: section 6, p. 18.
+- ${EBU_2023} Locator: p. 3, item h and note 1; p. 4, item m.`,
+    },
+    {
+      slug: "section-2-quiz",
+      title: "Section 2 quiz · Audio: the A1 and the A2",
+      section: "2 · Audio: the A1 and the A2",
+      body: "A graded check on the A1, A2 and A3 as posted, the audio team on a network game, intercom and IFB, consoles and audio-follow-video, and levels and loudness. Each answer links back to the lesson that teaches it.",
+      quiz: {
+        passingScore: 80,
+        questionsPerAttempt: 5,
+        shuffleOptions: true,
+        questions: [
+          { prompt: "What was the title of the closed ESPN posting that describes both the A1 and the A2?", options: ["Audio Operator I", "Senior Audio Mixer", "Sound Supervisor", "Audio Engineer II"], correctIndex: 0, explanation: "ESPN (n.d.): an \"Audio Operator I\" providing \"audio mixing (A1) and/or audio assist (A2) support.\"", sourceLessonSlug: "a1-a2-a3-as-posted" },
+          { prompt: "In ESPN's closed posting, what must the A1 be proficient in?", options: ["Dressing talent with mics and IFBs", "Mixing and monitoring every source", "Configuring the intercom system", "Booking satellite and fiber feeds"], correctIndex: 1, explanation: "ESPN (n.d.): the A1 must be \"proficient in mixing and monitoring all audio sources.\" Intercom and dressing talent are the A2's.", sourceLessonSlug: "a1-a2-a3-as-posted" },
+          { prompt: "In ESPN's closed posting, what must the A2 be experienced in?", options: ["Mixing the show for air alone", "Shading cameras for the director", "Configuring intercom and PL comms", "Rolling clips for the producer"], correctIndex: 2, explanation: "ESPN (n.d.): the A2 must be \"experienced in the configuration of in-house intercom/PL communications\" and dress talent microphones and IFBs.", sourceLessonSlug: "a1-a2-a3-as-posted" },
+          { prompt: "What experience did ESPN's closed audio posting ask for?", options: ["Ten years at a national network", "A degree in audio engineering", "No experience; it was entry level", "2 years at network or large market"], correctIndex: 3, explanation: "ESPN (n.d.): \"2 years practical Content Production or related experience at the large market or network level in the A1 and/or A2 role.\"", sourceLessonSlug: "a1-a2-a3-as-posted" },
+          { prompt: "What is the status of ESPN's Audio Operator I posting, as the aggregator copy shows it?", options: ["Filled and removed in March 2025", "Open and accepting applications", "Paused until the next NFL season", "Reposted with a new pay range"], correctIndex: 0, explanation: "ESPN (n.d.): \"This position has been filled,\" removed by the employer on March 4, 2025, with no pay shown.", sourceLessonSlug: "a1-a2-a3-as-posted" },
+          { prompt: "What did this course find on the Fox, Disney, Warner Bros. Discovery and NFL boards on October 26, 2026?", options: ["Four open A1 postings in all", "No posting titled A1 was open", "One A1 posting, at Disney only", "A1 jobs listed only as interns"], correctIndex: 1, explanation: "Lesson 4: no posting titled A1 was open on those four boards, so the A1 is described from a closed posting and trade press.", sourceLessonSlug: "a1-a2-a3-as-posted" },
+          { prompt: "Where are the studios of NFL Media's Seasonal Part-Time Audio 2 job?", options: ["Mount Laurel, New Jersey", "Tempe, Arizona", "Inglewood, California", "Secaucus, New Jersey"], correctIndex: 2, explanation: "NFL (2026g): the role is at the NFL Media studios in Inglewood, California.", sourceLessonSlug: "a1-a2-a3-as-posted" },
+          { prompt: "What does NFL Media's Audio 2 posting call the job in its opening line?", options: ["An audio assistant", "A sound utility", "A comms engineer", "An A2 Audio Mixer"], correctIndex: 3, explanation: "NFL (2026g): \"NFL Media Technical Operations is looking for an A2 Audio Mixer.\"", sourceLessonSlug: "a1-a2-a3-as-posted" },
+          { prompt: "Which cart playback systems does the NFL Audio 2 posting name?", options: ["Ovation or 360systems", "Viz Trio or XPression", "EVS or Ross Rio", "iNews or Enco"], correctIndex: 0, explanation: "NFL (2026g): \"cart playback systems such as Ovation or 360systems.\"", sourceLessonSlug: "a1-a2-a3-as-posted" },
+          { prompt: "With whom does the NFL Audio 2 work on each show's audio requirements?", options: ["The talent and their agents", "The A1, show director and teams", "The sponsor and the ad agency", "The league office only"], correctIndex: 1, explanation: "NFL (2026g): \"Work with A1, show director and production teams on the proper audio requirements for each show.\"", sourceLessonSlug: "a1-a2-a3-as-posted" },
+          { prompt: "Which audio board does the NFL Audio 2 posting prefer?", options: ["Calrec Artemis", "Yamaha RIO", "SSL S500", "Lawo KICK"], correctIndex: 2, explanation: "NFL (2026g): \"Experience mixing with SSL audio boards (specifically S500) preferred.\"", sourceLessonSlug: "a1-a2-a3-as-posted" },
+          { prompt: "Which mixing formats does the NFL Audio 2 posting require?", options: ["Mono and stereo only", "Dolby Atmos and 7.1", "Binaural and 4.0", "Stereo and 5.1"], correctIndex: 3, explanation: "NFL (2026g): \"Experience in Stereo and 5.1. surround mixing formats required.\"", sourceLessonSlug: "a1-a2-a3-as-posted" },
+          { prompt: "How does this course print the NFL Audio 2's pay as posted?", options: ["$65.47 USD, with no unit", "$65.47 an hour, as posted", "$65.47 a week, as posted", "$65,470 a year, as posted"], correctIndex: 0, explanation: "Lesson 4: the pay line reads $65.47 USD with no unit, and the course adds none.", sourceLessonSlug: "a1-a2-a3-as-posted" },
+          { prompt: "Why does this course add no unit to the NFL's posted pay figures?", options: ["The NFL pays only by the season", "Its text allows salary or hourly", "The figure is a union minimum", "Units are illegal in postings"], correctIndex: 1, explanation: "Lesson 4: the NFL's pay text says its ranges are \"salaries or hourly rates,\" so the unit is not stated and must not be supplied.", sourceLessonSlug: "a1-a2-a3-as-posted" },
+          { prompt: "What does this course say about the \"A3 functions\" in the NFL posting?", options: ["They mean running the parabs", "They mean mixing the sub-feed", "No source read defines them", "They mean wiring the IFBs"], correctIndex: 2, explanation: "Lesson 4: the posting does not say what A3 functions are, and no source read for the course defines an A3.", sourceLessonSlug: "a1-a2-a3-as-posted" },
+          { prompt: "What kind of job is Fox News Media's Freelance A2/Audio Assistant?", options: ["A Fox Sports truck job", "An NFL studio job", "A stadium audio job", "A news control-room job"], correctIndex: 3, explanation: "Lesson 4: it is a news control-room job in New York, posted October 19, 2026 (Fox News Media, 2026a).", sourceLessonSlug: "a1-a2-a3-as-posted" },
+          { prompt: "Under whose direction does the Fox News A2 help maintain audio equipment?", options: ["The A1", "The TD", "The V1", "The AD"], correctIndex: 0, explanation: "Fox News Media (2026a): \"Assist in the maintenance of audio equipment under the direction of the A1.\"", sourceLessonSlug: "a1-a2-a3-as-posted" },
+          { prompt: "Besides audio, what else does the Fox News A2 posting say the A2 will move?", options: ["Cameras and lenses", "Furniture and set pieces", "Trucks and trailers", "Lights and stands"], correctIndex: 1, explanation: "Fox News Media (2026a): \"Move and organize furniture and set pieces in the studio prior to and following the shoot.\"", sourceLessonSlug: "a1-a2-a3-as-posted" },
+          { prompt: "With whom does Fox News Media's audio operator do facility checks before production?", options: ["The TD and the V1", "The producer alone", "The A2 and stage manager", "The talent and the AD"], correctIndex: 2, explanation: "Fox News Media (2026b): \"Perform facility checks with A2 and Stage Manager for all mic and IFB positions.\" A news control-room job.", sourceLessonSlug: "a1-a2-a3-as-posted" },
+          { prompt: "What pay does Fox News Media's freelance audio operator posting state?", options: ["$65.47 USD, with no unit", "$36.00 to $43.75 per hour", "$40.00 to $50.00 per hour", "$28.00 to $37.50 per hour"], correctIndex: 3, explanation: "Fox News Media (2026b): $28.00 to $37.50 per hour. The A2 posting is $36.00 to $43.75 per hour.", sourceLessonSlug: "a1-a2-a3-as-posted" },
+          { prompt: "What kind of sources does lesson 5 rest on?", options: ["Trade press, each one dated account", "Union contracts for audio crews", "Federal rules on audio mixing", "Makers' operator manuals"], correctIndex: 0, explanation: "Lesson 5: Sports Video Group articles reporting what individual mixers and A2s said, 2018 to 2026; each is one dated account, not a rule.", sourceLessonSlug: "the-audio-team-on-a-game" },
+          { prompt: "In a 2024 trade piece, what does a veteran A1 say the A1 is responsible for?", options: ["Shading cameras and the replay", "The truck's connections and routing", "Graphics and the score bug", "Booking the satellite feeds"], correctIndex: 1, explanation: "Daley (2024c): the A1 \"is responsible for both the internal and outside connections to the truck, all the unit's audio monitors, and audio routing and patching.\"", sourceLessonSlug: "the-audio-team-on-a-game" },
+          { prompt: "According to the 2024 piece, what is the A1 also often responsible for?", options: ["Lighting", "Replay", "Intercoms", "Graphics"], correctIndex: 2, explanation: "Daley (2024c): \"depending on the nature of the production, the A1 is also often responsible for intercoms.\"", sourceLessonSlug: "the-audio-team-on-a-game" },
+          { prompt: "In the 2018 account, what does the submixer send the A1?", options: ["The announcers' booth mics", "The music and sound effects", "The talent's IFB return feed", "The game at field level"], correctIndex: 3, explanation: "Daley (2018): the submixer \"sends me the game at field level, from the parabolic and goal-post microphones.\"", sourceLessonSlug: "the-audio-team-on-a-game" },
+          { prompt: "How does this course treat the 2018 account's announcers \"about 6 dB above the rest of the mix\"?", options: ["As one mixer's 2018 practice", "As the A/85 rule for sports", "As every network's standard", "As the NFL's league policy"], correctIndex: 0, explanation: "Lesson 5: it is one mixer's practice in 2018, not a rule (Daley, 2018).", sourceLessonSlug: "the-audio-team-on-a-game" },
+          { prompt: "In the 2018 account, what does the submixer tell the A2s carrying the parabs?", options: ["Stay behind the end zone", "Focus on the field, not the play", "Follow the ball at all times", "Point at the crowd on scores"], correctIndex: 1, explanation: "Daley (2018): the submixer \"directs the A2s carrying the parabs to keep them focused on the field rather than the play.\"", sourceLessonSlug: "the-audio-team-on-a-game" },
+          { prompt: "In 2022, whom did ESPN's two A2 parab operators replace?", options: ["Two camera operators", "Two RF coordinators", "Two utility personnel", "Two submixers"], correctIndex: 2, explanation: "Daley (2022): ESPN \"agreed to supply two A2s as parab operators, replacing two of the four utility personnel.\"", sourceLessonSlug: "the-audio-team-on-a-game" },
+          { prompt: "An ESPN A1 said the parab operator is as important to the A1 as whom is to the director?", options: ["The stage manager", "The technical director", "The associate director", "The camera operator"], correctIndex: 3, explanation: "Daley (2022): \"the parab operator is as important to the A1 as the camera operator is to the director.\"", sourceLessonSlug: "the-audio-team-on-a-game" },
+          { prompt: "How many parabs did Fox run in the 2022 season, per the trade report?", options: ["Six", "Two", "Four", "Ten"], correctIndex: 0, explanation: "Daley (2022): \"six parabs this season: four on the sidelines, two in the end zones.\" In 2024 SVG called six \"two more than for most NFL telecasts.\"", sourceLessonSlug: "the-audio-team-on-a-game" },
+          { prompt: "Which title did SVG's 2024 preview list on the Fox and ESPN NFL audio crews besides A1 and submixer?", options: ["Audio Guarantee", "RF Manager", "Sound Designer", "Comms Chief"], correctIndex: 1, explanation: "Daley (2024a): the Fox and ESPN crews also listed an \"RF Manager.\"", sourceLessonSlug: "the-audio-team-on-a-game" },
+          { prompt: "For the 2026 World Series, what was the wireless vendor responsible for?", options: ["Wireless video", "The intercom", "Wireless audio", "The parabs"], correctIndex: 2, explanation: "Daley (2026): a wireless vendor \"responsible for wireless audio.\"", sourceLessonSlug: "the-audio-team-on-a-game" },
+          { prompt: "Why does this course give \"audio guarantee\" and \"submixer\" as titles only?", options: ["They are union secrets", "They are maker trademarks", "They were dropped in 2026", "No source read defines them"], correctIndex: 3, explanation: "Lesson 5: the articles use them as titles without defining them, so the course gives them as titles only.", sourceLessonSlug: "the-audio-team-on-a-game" },
+          { prompt: "How does the 2023 report describe front-line audio workers in U.S. broadcasting?", options: ["Largely self-employed", "Mostly network staff", "Mostly league staff", "Largely unpaid interns"], correctIndex: 0, explanation: "Daley (2023): \"front-line audio workers are largely self-employed.\"", sourceLessonSlug: "the-audio-team-on-a-game" },
+          { prompt: "One A2 told SVG networks now want a person who can do which three things?", options: ["Mix, shade and switch", "The booth, the field and RF", "Replay, graphics and audio", "Rig, light and run cable"], correctIndex: 1, explanation: "Daley (2023): networks \"want a person who can do the booth, who can do the field, who can do RF.\"", sourceLessonSlug: "the-audio-team-on-a-game" },
+          { prompt: "Where does the 2023 report say A2s look to learn new products and skills?", options: ["University audio degrees", "League training camps", "Manufacturers' training", "Union apprenticeships"], correctIndex: 2, explanation: "Daley (2023): multi-skill work \"comes without standardized training,\" so \"A2s look to manufacturers' training.\"", sourceLessonSlug: "the-audio-team-on-a-game" },
+          { prompt: "What path to the A1 seat does a crewing firm call \"the only reliable one\"?", options: ["From utility straight to A1", "From A3 to A1 in one season", "From camera to the A1 chair", "From school to A2 to A1"], correctIndex: 3, explanation: "Daley (2024b): \"from school to A2 to A1, a journey that can take several years.\"", sourceLessonSlug: "the-audio-team-on-a-game" },
+          { prompt: "How does this course treat the \"extra $200 or so a day\" for mixing a show?", options: ["As reported in trade press", "As a posted network rate", "As a union scale minimum", "As an hourly market rate"], correctIndex: 0, explanation: "Lesson 5: the figure is as reported in trade press (Daley, 2024b), not a posting and not a market rate.", sourceLessonSlug: "the-audio-team-on-a-game" },
+          { prompt: "Over roughly what distance does the federal definition say a low power auxiliary station transmits?", options: ["About 10 kilometers", "About 100 meters", "About 1 mile", "About 10 meters"], correctIndex: 1, explanation: "47 C.F.R. § 74.801: \"approximately 100 meters for uses such as wireless microphones, cue and control communications.\"", sourceLessonSlug: "the-audio-team-on-a-game" },
+          { prompt: "In the federal rule, how many devices does a large venue owner or professional sound company routinely use?", options: ["5 or more", "10 or more", "50 or more", "500 or more"], correctIndex: 2, explanation: "47 C.F.R. § 74.801: one that \"routinely uses 50 or more low power auxiliary station devices.\"", sourceLessonSlug: "the-audio-team-on-a-game" },
+          { prompt: "What does Shure say managing intermodulation requires?", options: ["Fewer microphones on air", "Higher transmitter power", "Longer antenna cables", "Frequency coordination"], correctIndex: 3, explanation: "Shure (n.d.): managing intermodulation \"requires careful frequency coordination.\"", sourceLessonSlug: "the-audio-team-on-a-game" },
+          { prompt: "What is the first step in the 2018 trade article's RF coordination process?", options: ["Connect the analyzer", "Change the transmitters", "Run the analysis", "Call the FCC office"], correctIndex: 0, explanation: "Yeary (2018): \"connect the analyzer, gather RF data, pull all data into the coordination software, run the analysis,\" then change frequencies and run it again.", sourceLessonSlug: "the-audio-team-on-a-game" },
+          { prompt: "Reasoned in lesson 5, what is the audio chair on a network game?", options: ["One A1 working alone", "A team that varies by show", "Always exactly two A2s", "A job run by the league"], correctIndex: 1, explanation: "Lesson 5: an A1, submixers, A2s and on big shows an RF manager or wireless vendor; the seats vary by show.", sourceLessonSlug: "the-audio-team-on-a-game" },
+          { prompt: "What does ESPN's manual put the audio chair in charge of?", options: ["Audio and the replay servers", "Audio and the camera shading", "Audio and all communications", "Audio and the graphics feed"], correctIndex: 2, explanation: "ESPN (2018, p. 21): the audio chair \"is in charge of Audio and all communications associated with the broadcast.\"", sourceLessonSlug: "intercom-panels-and-ifb" },
+          { prompt: "Which of these does ESPN's A2 set up, per the manual?", options: ["The switcher's two keyers", "The camera control units", "The replay server playlists", "The PxP and color headsets"], correctIndex: 3, explanation: "ESPN (2018, p. 21): the A2 sets up the \"PxP & Color headsets,\" the \"IFB system\" and natural sound mics.", sourceLessonSlug: "intercom-panels-and-ifb" },
+          { prompt: "Which three basic forms of intercom does Clear-Com name?", options: ["Point to point, partyline, groups", "Wired, wireless and cellular", "Analog, digital and IP-based", "Program, preview and return"], correctIndex: 0, explanation: "Clear-Com (2020b): point to point, partyline and fixed groups.", sourceLessonSlug: "intercom-panels-and-ifb" },
+          { prompt: "In Clear-Com's words, what is point to point?", options: ["Everyone hears every talker", "Talking privately device to device", "Program audio sent to talent", "A group that hears one talker"], correctIndex: 1, explanation: "Clear-Com (2020b): \"This is when we talk privately from one device to another.\"", sourceLessonSlug: "intercom-panels-and-ifb" },
+          { prompt: "Which form of intercom does Clear-Com call the most common?", options: ["Fixed groups", "Point to point", "Party lines", "Wireless IFB"], correctIndex: 2, explanation: "Clear-Com (2020b): party lines \"are the most common form of intercom.\"", sourceLessonSlug: "intercom-panels-and-ifb" },
+          { prompt: "How does Clear-Com say party lines keep conversations separate?", options: ["By time slots", "By volume", "By color codes", "By channels"], correctIndex: 3, explanation: "Clear-Com (2020b): \"The PLs are broken down into channels, or separate paths, as needed for separation of conversations.\"", sourceLessonSlug: "intercom-panels-and-ifb" },
+          { prompt: "Where does Clear-Com's glossary say the name PL came from?", options: ["Original telephone systems", "Early radio dispatch", "Military field phones", "Theater stage bells"], correctIndex: 0, explanation: "Clear-Com (2020c, p. 80): the name \"came from the original telephone systems.\" An older handout expands PL as \"Private Line.\"", sourceLessonSlug: "intercom-panels-and-ifb" },
+          { prompt: "Over what does Clear-Com say its Encore party-line systems connect?", options: ["Single-mode fiber cable", "Two-conductor mic cable", "Cat 6 network cable", "Triax camera cable"], correctIndex: 1, explanation: "Clear-Com (n.d.-c): \"standard, two-conductor shielded mic cables.\"", sourceLessonSlug: "intercom-panels-and-ifb" },
+          { prompt: "What does Clear-Com say a matrix intercom provides?", options: ["A single shared talk channel", "A one-way feed to the talent", "Many point-to-point routes", "A backup for the program"], correctIndex: 2, explanation: "Clear-Com (n.d.-b): \"a high capacity of point-to-point audio routes to allow the greatest number of communication paths.\"", sourceLessonSlug: "intercom-panels-and-ifb" },
+          { prompt: "In what sizes does RTS say its ADAM matrix is available?", options: ["2 to 32 users", "100 to 200 users", "1,024 users only", "16 to 880 users"], correctIndex: 3, explanation: "RTS (n.d.-a): \"available in sizes from 16 to 880 users.\"", sourceLessonSlug: "intercom-panels-and-ifb" },
+          { prompt: "How many ports does Riedel say its Artist offers in 2RU?", options: ["Up to 1024", "Up to 128", "Up to 32", "Up to 880"], correctIndex: 0, explanation: "Riedel Communications (n.d.-a): \"up to 1024 ports in just 2RU.\"", sourceLessonSlug: "intercom-panels-and-ifb" },
+          { prompt: "How does this course treat RTS's \"only two-wire protocol\" statement?", options: ["As an FCC finding", "As the maker's claim", "As a SMPTE standard", "As a test result"], correctIndex: 1, explanation: "Lesson 6: it is the maker's claim about itself (RTS, n.d.-b).", sourceLessonSlug: "intercom-panels-and-ifb" },
+          { prompt: "Which two modes does RTS say its DBP beltpack supports?", options: ["Wired and Wi-Fi only", "IFB and program feed", "Partyline and keypanel", "Analog and DECT radio"], correctIndex: 2, explanation: "RTS (n.d.-a): the DBP \"supports both digital partyline and matrix keypanel modes.\"", sourceLessonSlug: "intercom-panels-and-ifb" },
+          { prompt: "What does IFB stand for, in Clear-Com's definition?", options: ["Internal feed bus", "Isolated fixed beltpack", "Integrated fiber backbone", "Interruptible fold back"], correctIndex: 3, explanation: "Clear-Com (2026a): \"INTERRUPTIBLE FOLD BACK or INTERRUPTIBLE FEED BACK.\"", sourceLessonSlug: "intercom-panels-and-ifb" },
+          { prompt: "What kind of link does Clear-Com say IFB uses to reach the talent?", options: ["A one-way link", "A two-way link", "A party-line link", "A matrix trunk"], correctIndex: 0, explanation: "Clear-Com (2026a): production audio goes to the talent \"through a one-way link.\"", sourceLessonSlug: "intercom-panels-and-ifb" },
+          { prompt: "What happens to program audio when production presses the IFB button?", options: ["It doubles in level", "It dips or cuts out", "It goes to stereo", "It moves to the A1"], correctIndex: 1, explanation: "Clear-Com (2026a): \"the program audio will dip or cut entirely so the production staff's voice can be heard clearly.\"", sourceLessonSlug: "intercom-panels-and-ifb" },
+          { prompt: "When does Clear-Com say an IFB all-call is handy?", options: ["Muting every microphone", "Talking to every camera", "One cue to many talent", "Rolling every break"], correctIndex: 2, explanation: "Clear-Com (2020c, p. 20): \"when a producer needs to provide the same cue to multiple talent on a set.\"", sourceLessonSlug: "intercom-panels-and-ifb" },
+          { prompt: "In Clear-Com's terms, what is an IFB's RETURN?", options: ["The talent's earpiece", "The program mix out", "The crew party line", "The talent's microphone"], correctIndex: 3, explanation: "Clear-Com (2026a): the RETURN is \"the talent's microphone,\" heard pre-fade.", sourceLessonSlug: "intercom-panels-and-ifb" },
+          { prompt: "What does \"pre-fade\" mean for the IFB return, per Clear-Com?", options: ["Mic heard without fading up", "Mic heard after compression", "Mic heard on the air only", "Mic heard a frame early"], correctIndex: 0, explanation: "Clear-Com (2026a): \"pre-fade, meaning without the microphone turned up on the audio mixing console.\"", sourceLessonSlug: "intercom-panels-and-ifb" },
+          { prompt: "On a Clear-Com matrix, what does Destination Listen let an operator hear?", options: ["The talent's mic, pre-fade", "The mix plus the interrupt", "The camera isolate channel", "The director's party line"], correctIndex: 1, explanation: "Clear-Com (2020a, 2026b): Destination Listen hears \"the same audio as the IFB destination (i.e. mix + interrupt).\" Return Listen hears the pre-fade talent.", sourceLessonSlug: "intercom-panels-and-ifb" },
+          { prompt: "What is a mix-minus feed, per Clear-Com?", options: ["The mix minus the music bed", "The mix minus all the effects", "The mix minus the talent's mic", "The mix minus the crowd noise"], correctIndex: 2, explanation: "Clear-Com (2026a): \"the program audio MINUS the microphone of the on-air talent who is talking.\"", sourceLessonSlug: "intercom-panels-and-ifb" },
+          { prompt: "Without mix-minus, what does talent in the field hear?", options: ["Nothing at all", "Only the crowd", "Only the director", "Their voice, delayed"], correctIndex: 3, explanation: "Clear-Com (2026a): they \"will hear themself but with a few seconds of delay.\" Calrec (2018, p. 44) says that makes speaking very difficult.", sourceLessonSlug: "intercom-panels-and-ifb" },
+          { prompt: "Reasoned in lesson 6, how does IFB differ from the crew's intercom?", options: ["IFB is a one-way feed to talent", "IFB is louder than intercom", "IFB is only used in news", "IFB replaces the party line"], correctIndex: 0, explanation: "Lesson 6: intercom is two-way talk among the crew; IFB is a one-way program feed to talent that production can interrupt.", sourceLessonSlug: "intercom-panels-and-ifb" },
+          { prompt: "Which intercom systems does NFL Media's studio coordinator posting ask experience with?", options: ["Riedel or Bolero", "RTS or Clear-Com", "Shure or Sennheiser", "Calrec or SSL"], correctIndex: 1, explanation: "NFL (2026o): \"RTS or Clear-Com intercom and IFB systems.\" Riedel panels are in the Audio 2 posting.", sourceLessonSlug: "intercom-panels-and-ifb" },
+          { prompt: "What does Calrec say broadcast consoles are, besides audio desks?", options: ["Recorders", "Monitors", "Routers", "Servers"], correctIndex: 2, explanation: "Calrec Audio (n.d.-c): \"Broadcast consoles are not just audio desks, but routers.\"", sourceLessonSlug: "consoles-and-audio-follow-video" },
+          { prompt: "At how many points in the signal chain does Calrec say its consoles provide delay?", options: ["One", "Two", "Five", "Three"], correctIndex: 3, explanation: "Calrec Audio (n.d.-c): \"comprehensive delay at three separate points in the signal chain; input, output and path delay.\"", sourceLessonSlug: "consoles-and-audio-follow-video" },
+          { prompt: "How does this course treat Calrec's statement about the Gearbase survey?", options: ["As the maker's own claim", "As a survey it has read", "As a federal statistic", "As an SVG finding"], correctIndex: 0, explanation: "Lesson 7: it is the maker's claim, and the survey itself was not read for the course.", sourceLessonSlug: "consoles-and-audio-follow-video" },
+          { prompt: "How many 5.1 meters can the Calrec Artemis touch screen show at once?", options: ["Up to 6", "Up to 36", "Up to 128", "Up to 1024"], correctIndex: 1, explanation: "Calrec Audio (n.d.-a): \"up to 36 x 5.1 meters simultaneously,\" with loudness metering.", sourceLessonSlug: "consoles-and-audio-follow-video" },
+          { prompt: "What does Calrec say Hydra2 connects?", options: ["Cameras to the video switcher", "Talent to the IFB transmitters", "Consoles and I/O on a backbone", "Replay servers to the playout"], correctIndex: 2, explanation: "Calrec Audio (n.d.-b): Hydra2 \"connects all Calrec's medium and large proprietary consoles and I/O via a high-speed, modular backbone.\"", sourceLessonSlug: "consoles-and-audio-follow-video" },
+          { prompt: "Reasoned in lesson 7, what are the Fox News postings' \"Hydra I/O boxes\" and \"Hydra BSP\"?", options: ["Sony camera control parts", "Clear-Com intercom cards", "EVS replay server parts", "Calrec's Hydra2 family"], correctIndex: 3, explanation: "Lesson 7: Calrec says its Apollo, Artemis and Summa rely on Hydra2 for routing, so those posting terms belong to that networking family.", sourceLessonSlug: "consoles-and-audio-follow-video" },
+          { prompt: "How many control interfaces does SSL say can use one System T processor core?", options: ["Up to three", "Exactly one", "Up to twelve", "Up to 99"], correctIndex: 0, explanation: "SSL (n.d.-a): \"Up to three control interfaces can use a single processor core.\"", sourceLessonSlug: "consoles-and-audio-follow-video" },
+          { prompt: "Which posting asks for the SSL S500 specifically?", options: ["Fox News Media's A2", "NFL Media's Audio 2", "FOX 5 DC's technician", "ESPN's Audio Operator I"], correctIndex: 1, explanation: "NFL (2026g): \"SSL audio boards (specifically S500) preferred.\"", sourceLessonSlug: "consoles-and-audio-follow-video" },
+          { prompt: "What does Audinate say its Dante Certification Level 3 covers?", options: ["Plugging in a Dante device", "Mixing in 5.1 surround", "Subnets and PTP timing", "Wireless mic coordination"], correctIndex: 2, explanation: "Audinate (n.d.): Level 3 covers deploying \"Dante across subnets\" and synchronizing \"your network using PTP.\"", sourceLessonSlug: "consoles-and-audio-follow-video" },
+          { prompt: "What is AJA's OG-12G-AM card, in AJA's words?", options: ["A 4K camera control unit", "A 12-port intercom panel", "A 5.1 loudness meter card", "A 16-channel AES embedder"], correctIndex: 3, explanation: "AJA Video Systems (n.d.-a): \"a 16-channel AES/EBU audio embedder/disembedder openGear card.\"", sourceLessonSlug: "consoles-and-audio-follow-video" },
+          { prompt: "In AJA's workflow, what happens to the mixer's output?", options: ["It is embedded into SDI", "It is sent out on Wi-Fi", "It is printed to a log", "It is muted on the cut"], correctIndex: 0, explanation: "AJA Video Systems (n.d.-a): \"The output of the mixer is then embedded into the SDI stream.\"", sourceLessonSlug: "consoles-and-audio-follow-video" },
+          { prompt: "How does this course treat \"16 channels of embedded audio per SDI connection\"?", options: ["As SMPTE's stated rule", "As AJA's own card figure", "As the FCC's channel cap", "As Calrec's console limit"], correctIndex: 1, explanation: "Lesson 7: the 16 is AJA's figure for its own cards; the standard behind it was not read for the course.", sourceLessonSlug: "consoles-and-audio-follow-video" },
+          { prompt: "With Sony's AFV on, what happens to a source's audio when program switches to its video?", options: ["It is muted", "It is delayed", "It is output", "It is recorded"], correctIndex: 2, explanation: "Sony (n.d.): \"the audio linked with a video is output when the program output is switched to that video.\"", sourceLessonSlug: "consoles-and-audio-follow-video" },
+          { prompt: "With Ross Video's \"AFV Off,\" what happens to a source's audio?", options: ["It is muted for the whole show", "It follows the preview bus instead", "It doubles in level when on air", "It is not taken on air with video"], correctIndex: 3, explanation: "Ross Video (n.d.-b): audio \"will not automatically be taken on-air with the video source.\"", sourceLessonSlug: "consoles-and-audio-follow-video" },
+          { prompt: "In Calrec's GPIO example, what happens when a signal is faded up on the vision mixer?", options: ["Its audio fades up on the console", "Its camera tally light goes out", "Its replay clip starts to roll", "Its graphic keys over the picture"], correctIndex: 0, explanation: "Calrec Audio (2018, p. 46): \"Associated audio sources faded up on Calrec console.\"", sourceLessonSlug: "consoles-and-audio-follow-video" },
+          { prompt: "What does this course say about how sports A1s use AFV on a live game?", options: ["They always leave it on", "No source read says how", "They never use it at all", "Only for crowd mics"], correctIndex: 1, explanation: "Lesson 7: no source read for the course says how sports A1s use AFV, or for which sources, so it is left to the reviewer.", sourceLessonSlug: "consoles-and-audio-follow-video" },
+          { prompt: "What does Lawo say its KICK automatically prioritizes?", options: ["The announcers' mics", "The crowd microphones", "Mics nearest the action", "The talent's IFB feed"], correctIndex: 2, explanation: "Lawo (n.d.): it \"automatically prioritizes the microphones closest to the action.\" That is the maker's description.", sourceLessonSlug: "consoles-and-audio-follow-video" },
+          { prompt: "What does Fox News Media's broadcast production engineer use Orban processors for?", options: ["Encoding the video feed", "Running the party line", "Embedding audio in SDI", "Processing outbound audio"], correctIndex: 3, explanation: "Fox News Media (2026g): \"multi-band processing of outbound audio programming using Orban processors.\" A news job.", sourceLessonSlug: "consoles-and-audio-follow-video" },
+          { prompt: "What does Calrec's primer call the difference between normal operating level and the maximum?", options: ["Headroom", "Noise floor", "Dynamic gain", "Line-up"], correctIndex: 0, explanation: "Calrec Audio (2018, p. 13): \"The difference between the normal operating level and the maximum is referred to as headroom.\"", sourceLessonSlug: "levels-formats-and-loudness" },
+          { prompt: "What does Calrec say 0 dBFS is?", options: ["The US reference level", "The maximum level passed", "The loudness target", "The noise floor"], correctIndex: 1, explanation: "Calrec Audio (2018, p. 13): \"0dBFS is the maximum level that can be passed.\"", sourceLessonSlug: "levels-formats-and-loudness" },
+          { prompt: "Which reference level does Calrec give for the US?", options: ["-18 dBFS = 0 dBu", "-24 dBFS = +4 dBu", "-20 dBFS = +4 dBu", "-23 dBFS = 0 dBu"], correctIndex: 2, explanation: "Calrec Audio (2018, p. 13): \"-20dBFS=+4dBU\" in the US and \"-18dBFS=0dBU\" in the UK.", sourceLessonSlug: "levels-formats-and-loudness" },
+          { prompt: "What digital peak target does this course give for a live mix?", options: ["-6 to -3 dBFS", "-12 dBFS", "-1 dBFS", "None at all"], correctIndex: 3, explanation: "Lesson 8: no source read for the course gives a digital peak target for a live mix, so it gives none; it uses reference level and loudness targets.", sourceLessonSlug: "levels-formats-and-loudness" },
+          { prompt: "How does Calrec describe a PPM meter's ballistics?", options: ["Fast attack, slow decay", "Slow attack, fast decay", "Slow attack, slow decay", "Fast attack, fast decay"], correctIndex: 0, explanation: "Calrec Audio (2018, p. 16): \"PPM meters have a very fast attack time and a very slow decay time.\" VU meters are the reverse.", sourceLessonSlug: "levels-formats-and-loudness" },
+          { prompt: "Where does Calrec say it is always a good idea to meter and listen?", options: ["Only at the microphone", "Downstream of the console", "Inside the talent's IFB", "On the director's panel"], correctIndex: 1, explanation: "Calrec Audio (2018, p. 16): \"from further downstream than the console output.\"", sourceLessonSlug: "levels-formats-and-loudness" },
+          { prompt: "Which six channels make up a 5.1 signal, per Calrec?", options: ["L, R, C, two height, LFE", "Two stereo pairs and two mono", "L, R, C, LFE, Ls and Rs", "Front, back, two sides, LFE"], correctIndex: 2, explanation: "Calrec Audio (2018, p. 38): Left, Right, Center, Low Frequency Effects, Left Surround and Right Surround.", sourceLessonSlug: "levels-formats-and-loudness" },
+          { prompt: "How does the ATSC define the LFE channel's bandwidth?", options: ["Above 12 kHz", "Below 20 Hz", "Full range", "Below 120 Hz"], correctIndex: 3, explanation: "ATSC (2026b, p. 8): \"An optional single channel of limited bandwidth (below 120 Hz).\"", sourceLessonSlug: "levels-formats-and-loudness" },
+          { prompt: "Which edition of A/85 is current, per the ATSC?", options: ["A/85:2026-07", "A/85:2013", "A/85:2009", "A/85:2020-01"], correctIndex: 0, explanation: "ATSC (n.d.; 2026b): A/85:2026-07, approved 8 July 2026. The FCC rule incorporates the 2013 edition.", sourceLessonSlug: "levels-formats-and-loudness" },
+          { prompt: "What target loudness does A/85 give for content without metadata and no prior arrangement?", options: ["-23 LUFS", "-24 LKFS", "-18 LKFS", "-27 LKFS"], correctIndex: 1, explanation: "ATSC (2026a, Table M.1): \"the Target Loudness should be -24 LKFS.\" -23 LUFS is the EBU target.", sourceLessonSlug: "levels-formats-and-loudness" },
+          { prompt: "What maximum true peak does A/85's quick reference give?", options: ["0 dBTP", "-6 dBTP", "-2 dBTP", "-10 dBTP"], correctIndex: 2, explanation: "ATSC (2026a, Table M.1): a maximum true peak of -2 dBTP. EBU R 128's is -1 dBTP.", sourceLessonSlug: "levels-formats-and-loudness" },
+          { prompt: "For long-form content, what does A/85 say must be measured and reported as the loudness?", options: ["The loudest peak", "The music level", "The crowd level", "The dialogue level"], correctIndex: 3, explanation: "ATSC (2026a, note 31): \"It is vital that the average Dialogue Level be measured and reported as the Loudness.\"", sourceLessonSlug: "levels-formats-and-loudness" },
+          { prompt: "Where does A/85 say short sliding-window loudness meters help?", options: ["Mixing in noisy places", "Mixing for radio only", "Mixing music videos", "Mixing in silence"], correctIndex: 0, explanation: "ATSC (2026b, p. 12): meters showing \"a prior segment (typically 3 to 10 sec)\" help \"when mixing in noisy locations.\"", sourceLessonSlug: "levels-formats-and-loudness" },
+          { prompt: "In which formats does A/85 say surround programming should be measured during production?", options: ["Mono, for compatibility", "5.1 and the stereo downmix", "5.1, the surround mix alone", "Stereo and the mono sum"], correctIndex: 1, explanation: "ATSC (2026b, p. 13): \"in both its surround mix format and in its stereo (2.0-channel) downmix.\"", sourceLessonSlug: "levels-formats-and-loudness" },
+          { prompt: "What fix does A/85 give for a downmix that builds up louder?", options: ["Raise the LFE channel", "Cut the surround channels", "Dialogue to the center", "Add a peak limiter"], correctIndex: 2, explanation: "ATSC (2026b, p. 13): \"assign dialogue and lead-singer elements primarily or exclusively to the center channel.\"", sourceLessonSlug: "levels-formats-and-loudness" },
+          { prompt: "What does the FCC rule make A/85 binding for?", options: ["Every live sports mix", "Streaming services", "Radio broadcasts", "Commercial advertisements"], correctIndex: 3, explanation: "47 C.F.R. § 73.682(e)(1): stations must comply with A/85 \"insofar as it concerns the transmission of commercial advertisements.\"", sourceLessonSlug: "levels-formats-and-loudness" },
+          { prompt: "Which edition of A/85 does the FCC rule incorporate?", options: ["A/85:2013", "A/85:2026-07", "A/85:2009", "A/85:2020-01"], correctIndex: 0, explanation: "47 C.F.R. § 73.8000: \"ATSC A/85:2013,\" not the 2026 edition.", sourceLessonSlug: "levels-formats-and-loudness" },
+          { prompt: "What target level does EBU R 128 set?", options: ["-24.0 LKFS", "-23.0 LUFS", "-18.0 LUFS", "-27.0 LKFS"], correctIndex: 1, explanation: "EBU (2023, p. 3): \"a Target Level of -23.0 LUFS.\" The US A/85 target is -24 LKFS.", sourceLessonSlug: "levels-formats-and-loudness" },
+          { prompt: "What tolerance does EBU R 128 permit where the target is not practical, as in live programs?", options: ["±3.0 LU", "±0.5 LU", "±1.0 LU", "±2.0 LU"], correctIndex: 2, explanation: "EBU (2023, p. 3): \"a tolerance of ±1.0 LU is permitted.\" A/85's measurement tolerance is about ±2 dB.", sourceLessonSlug: "levels-formats-and-loudness" },
+          { prompt: "Reasoned in lesson 8, how do US and European loudness targets differ?", options: ["Same target, measured differently", "Same target, measured the same", "No target in either place", "Different targets, measured alike"], correctIndex: 3, explanation: "Lesson 8: -24 LKFS against -23 LUFS, and \"'LUFS' is equivalent to 'LKFS'\" (EBU, 2023, p. 3).", sourceLessonSlug: "levels-formats-and-loudness" },
         ],
       },
     },
