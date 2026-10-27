@@ -24,7 +24,6 @@ import { isValidElement, Fragment, type ReactNode } from "react";
 const VOID = new Set(["br", "hr", "img", "input", "col", "area", "base", "link", "meta", "wbr", "source", "track"]);
 
 /** Characters XML 1.0 does not allow anywhere in a document (C0 controls other than tab, LF, CR). */
-// eslint-disable-next-line no-control-regex
 const XML_INVALID = /[\u0000-\u0008\u000B\u000C\u000E-\u001F￾￿]/g;
 
 export function escapeXml(text: string): string {
