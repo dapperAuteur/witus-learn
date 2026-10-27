@@ -966,6 +966,23 @@ see a hole it was not written to look for. `gen:outline` exists to feed an adver
 something produced from the same modules the seeder reads, rather than a hand-written summary that
 has drifted.
 
+### Exporting a course as an EPUB (for an e-reader)
+
+```bash
+pnpm export:epub <slug>                       # writes content/epub/<slug>.epub (content/ is gitignored)
+pnpm export:epub <slug> --out ~/Downloads/x.epub
+pnpm export:epub faa-part-107 --content <dir> # FAA only: read the academy-import from <dir>
+```
+
+The course comes from committed data through the seed registry, the same modules the seeders read;
+FAA Part 107 is assembled from the gitignored `content/drone-curriculum/academy-import/` by
+`scripts/lib/faa-course.ts`, the builder `pnpm seed:faa` uses. No database is touched. The book is
+built by `courseToEpub` (`src/lib/epub/course-to-epub.ts`), a pure function: EPUB 3 with an NCX for
+older readers, one chapter per lesson, lesson markdown rendered by the lesson page's own parser.
+Quiz, check-yourself and recall answers sit in an Answers section at the end of each chapter, linked
+both ways, so a reader can test themselves before looking. Images become their alt text (nothing is
+hotlinked). Kindle takes the file through Send to Kindle; Kobo and Apple Books open it directly.
+
 ## Future classes & features (`/admin/future`)
 
 Owner-only review surface for everything proposed but not yet built, the *She Did the Work* course
