@@ -2131,5 +2131,427 @@ Two more lines settle what the SM owns: "It shall be the sole responsibility of 
         ],
       },
     },
+    // ══════════════════════════════════════════════════════════════════════
+    // SECTION 7: How it fits together
+    // ══════════════════════════════════════════════════════════════════════
+    {
+      slug: "comms-who-hears-whom",
+      title: "22 · Comms: who hears whom",
+      section: "7 · How it fits together",
+      recallContent: [
+        {
+          prompt: "What does NFL Media's lighting director check at the start of each shift?",
+          answer: "Burnouts, repositioned equipment and overall stage and grid maintenance (NFL, 2026i).",
+        },
+        {
+          prompt: "Why does lesson 21 not say whether remote sports trucks carry a lighting director?",
+          answer: "No source read for the course describes one on a remote sports truck crew.",
+        },
+      ],
+      body: `${QR}
+
+**From the gear to the people.** Lesson 6 taught the hardware: partyline, matrix, panels, IFB and mix-minus. This lesson asks who is on which line. Its main source is an intercom maker's reference e-book (Clear-Com, 2020c), read beside ESPN's 2018 manual for school productions.
+
+**Partyline: everyone on one task.** Clear-Com says a partyline "is classically used when several users, such as beltpacks, are active in a common task and they must communicate with each other all the time" (Clear-Com, 2020c, p. 80).
+
+**The station that reaches every channel.** A Clear-Com main station keeps its channels isolated and "is usually given to a director, producer, stage manager or show caller depending on the workflow" (Clear-Com, 2020c, p. 9). It has talk, listen and call buttons for each channel, can fold program audio into the intercom channels, and has "an all-talk button access to all channels" (p. 10). Reasoned: the person who calls the show sits at the one station that can reach everyone at once.
+
+**Cameras.** Clear-Com says most large installations and "virtually all mobile units use camera isolate systems," which let one operator, "usually the video operator or technical director," talk privately with any one camera for setup or maintenance without interrupting the other cameras' talk with the director (Clear-Com, 2020c, p. 18; lesson 11). Reasoned from that sentence: the cameras share a line with the director, and the isolate is the private exception.
+
+**Talent: IFB.** "IFB is a type of simplex intercom for sending a program feed and interrupt (cue) audio on "IFB" lines for a talent to monitor." (Clear-Com, 2020c, p. 19). Lesson 6 called it a one-way link (Clear-Com, 2026a). ESPN's glossary says who is on the other end: "The earpiece talent use so that the director or producer can talk to them from the control room" (ESPN, 2018, p. 32).
+
+**Announcers, off air: talkback.** A commentary box has a "Co-Ordination (Co-Ord) or TB (Talkback) Circuit," which is "the main off air communication channel between the commentators, the engineer, sometimes the audio A1, and the coordinator. The coordinator is an editorial position responsible for the commentators, usually a producer or director." (Clear-Com, 2020c, p. 21).
+
+**A light instead of a voice.** Clear-Com's call signal can cue without words: "light on means standby, light off after light on means apply" (Clear-Com, 2020c, p. 75).
+
+**One truck's count.** Mobile TV Group's 58FLEX spec sheet lists "12 Model 381 Talent Amplifiers for IFB," "18 RTS DBP-5F headset boxes" and "8 Two-Way Radios with 2 base stations" (Mobile TV Group, n.d.-c, p. 2), beside the RTS Odin intercom from lesson 3. ESPN's audio chair keeps the camera headsets, the control room headset, the announcer mics and the IFB system working (ESPN, 2018, p. 21; lesson 6).
+
+**Who hears whom, reasoned.** Put Clear-Com's e-book, ESPN's manual and the DGA's Article 2 side by side:
+
+| Who | Talks with | On what |
+|---|---|---|
+| Director or producer | every channel | a main station with all-talk |
+| Camera operators | the director, on a shared line; the video operator or TD, privately | the camera line and the camera isolate |
+| Talent, on air | hears program audio, interrupted by the director or producer | IFB, one way |
+| Announcers, off air | the coordinator (usually a producer or director), the engineer, sometimes the A1 | the coordination or talkback circuit |
+| Performers on the floor | the stage manager, who relays the director and the AD | the SM's voice, cards and cues (DGA, 2020b, pp. 17 to 18; lesson 20) |
+
+**No standard channel plan.** No source read for this course states a standard channel layout for a US sports truck, such as one channel for production and one for cameras, so this course gives none.
+
+**Headset manners.** ESPN tells its directors: "Be critical when needed but NEVER abusive over the headset. Never talk down to a crew member over the headset." (ESPN, 2018, p. 24). At a DGA council event whose topics included "proper PL etiquette," a stage manager passed on a colleague's advice: "It is push to talk to answer a question, not push to talk to think out loud." (DGA, 2021). And the guild's Article 2 says comms "will not replace the use of the Stage Manager" (DGA, 2020b, p. 18).
+
+:::reveal To whom does Clear-Com say a main station is usually given? ||| "a director, producer, stage manager or show caller depending on the workflow" (Clear-Com, 2020c, p. 9).
+
+:::reveal Who is on a commentary box's coordination or talkback circuit? ||| The commentators, the engineer, sometimes the A1, and the coordinator, usually a producer or director (Clear-Com, 2020c, p. 21).
+
+:::reveal What does a call light mean, in Clear-Com's glossary? ||| "light on means standby, light off after light on means apply" (Clear-Com, 2020c, p. 75).
+
+## Sources
+- ${CC_2020C} Locator: section 1.4.1, pp. 9 to 10; "Cameras," p. 18; "2-Wire Interruptible Foldback (IFB) Systems," p. 19; "Commentators," p. 21; glossary, "Call Signaling," p. 75, and "Partyline (PL)," p. 80.
+- ${CC_2026A} Locator: opening definition.
+- ${ESPN_2018} Locator: "Audio," p. 21; "Director Responsibilities," p. 24; glossary, "IFB," p. 32.
+- ${MTVG_58_SPEC} Locator: "Communications," p. 2.
+- ${DGA_ART2} Locator: Art. 2, Sec. C, pp. 17 to 18, items 3 and 6.
+- ${DGA_2021} Locator: event write-up, topic list and the stage manager's advice.`,
+    },
+    {
+      slug: "calls-and-counts",
+      title: "23 · The director's calls and the AD's counts",
+      section: "7 · How it fits together",
+      recallContent: [
+        {
+          prompt: "Who usually uses a camera isolate system, according to Clear-Com?",
+          answer: "The video operator or technical director, to talk privately with one camera (Clear-Com, 2020c, p. 18).",
+        },
+        {
+          prompt: "What advice on headset etiquette did a stage manager pass on at a DGA event?",
+          answer: "\"It is push to talk to answer a question, not push to talk to think out loud.\" (DGA, 2021).",
+        },
+      ],
+      body: `${QR}
+
+**A note on these sources.** The calls in this lesson come from three teaching documents: ESPN's 2018 manual for schools that produce ESPN3 and ESPN+ games, a 2007 university directing handout (Owens, 2007), and two school classroom handouts (Montgomery County Public Schools [MCPS], n.d.-a, n.d.-b). None is a network truck's rulebook, and they do not use the same words. This lesson quotes each one and teaches only the pattern they share.
+
+**ESPN: "ready," then "take."** Under "Communicate," ESPN tells its directors to "make sure your camera operators know when you're going to take a shot." It says never to say "take 2, take 4, etc." and always to say "ready 2," then "take two" (ESPN, 2018, p. 24; the manual puts a dash between the two calls). *Break Into Sports & Media Broadcasting* lesson "8 · The control room: switcher, graphics, and replay" gives the same ready-then-take form without a source; ESPN's manual is one.
+
+**A university handout: setup, then execute.** "A setup call always precedes an execute call" (Owens, 2007, section 4.1). Its example: "SETUP: Next, we'll take one with mike four." then "EXECUTE: Mic, cue, take one." In interviews the setup may shrink to "Ready one."; a dissolve needs "Ready to dissolve one." "Hold one" tells the operator "to freeze the shot he has at that moment" (PDF pp. 22 to 26). The word itself: "An instantaneous switch from one shot to another is called a "take" in live TV, a "cut" in recorded TV and film." (PDF p. 16). Before a taping, the director checks shots with the camera operators, yells "Stand By!" in the studio and goes to the control room (PDF p. 39).
+
+**A classroom.** A school handout gives "Ready Camera 1...Take Camera 1" and "Ready Cameras 1 and 3...Take Camera ___" (MCPS, n.d.-a). Its role sheet tells the student director to "Call the shots' ready cues" (MCPS, n.d.-b).
+
+**The pattern, reasoned.** All three put a warning call before the action call ("ready" or "setup," then "take" or "execute"), so the camera operator, the TD and every chair waiting on the shot act on the same word at the same moment. Clear-Com's call light does it without a voice: on means standby, off after on means apply (lesson 22).
+
+**"Standby."** The word appears in Owens's studio taping and in Clear-Com's call light. No sports source read for this course says a director says "standby" on the headset, so this course teaches "ready" and "take," the words ESPN's manual uses.
+
+**The director's head.** ESPN: "When the game starts, you get to choose what the viewer sees." "Don't overcut," it adds, "(especially in basketball) less is best," and "Remember, your "game camera" is your best friend." And: "The moment you call a shot, your mind must be thinking about your next shot." (ESPN, 2018, p. 24).
+
+**The AD's counts.** Lesson 2 gave the AD the clock. ESPN's AD checklist spells out the counts (ESPN, 2018, p. 25):
+
+| Count | ESPN's AD checklist |
+|---|---|
+| To air | "Count us on the air, intervals from 5 minutes before the air to the second we hit the air." |
+| To break and back | "You will count master control to break and count us back from break. Find out if master control will count you back from break. If they can't do that use your stop watch and tell us when we need to come back from break." |
+| Off the air | on a planned hard 30 seconds, the "producer will start the countdown, then you pick it up and countdown to zero loud enough for Director and Producer to hear" |
+
+The reason for the last count, in ESPN's words: so "music will sting out, graphics will have the right graphic, and announcers will get off the air on-time." During a break, the AD should not let master control distract them "when Producer/Director is relying on you for count back from break" (p. 25). ESPN's integration ADs in Bristol "are responsible for coordinating counts to and from commercial breaks" (p. 31).
+
+**Who counts.** The DGA's Article 2 gives the AD "all timing functions" and "all time cues" (DGA, 2020b, p. 16). The classroom handout gives the count to the producer, who calls "5 min. to show time, 4 min., 3 min., 2 min., 1 min., 30 sec, 15 sec" and then 10 to 1, while the director "repeats in headset" and the floor manager "repeats on set" (MCPS, n.d.-b). Reasoned: in ESPN's manual the AD counts and the producer may start a count; in a classroom the producer counts. Who counts varies by shop. The count itself, said out loud so every chair hears it, does not.
+
+:::reveal What does ESPN's manual tell directors never to say, and what to say instead? ||| Never "take 2, take 4, etc."; always "ready 2," then "take two" (ESPN, 2018, p. 24).
+
+:::reveal In Owens's handout, what always comes before an execute call? ||| A setup call (Owens, 2007, section 4.1).
+
+:::reveal If master control cannot count the truck back from break, what does ESPN's AD do? ||| Uses a stopwatch and tells the crew when to come back (ESPN, 2018, p. 25).
+
+## Sources
+- ${ESPN_2018} Locator: "Director Responsibilities," p. 24; "Associate Director Responsibilities," items 8, 9 and 10, p. 25; glossary, "Associate Director," p. 31.
+- ${OWENS_2007} Locator: note 3, PDF p. 16; section 4.1, PDF pp. 22 to 26; PDF p. 39.
+- ${MCPS_A} Locator: items 8 to 21. A classroom handout.
+- ${MCPS_B} Locator: "Director" and "Producer". A classroom handout.
+- ${CC_2020C} Locator: glossary, "Call Signaling," p. 75.
+- ${DGA_ART2} Locator: Art. 2, Sec. B, item 3(d), p. 16.`,
+    },
+    {
+      slug: "checks-before-air",
+      title: "24 · Checks before air",
+      section: "7 · How it fits together",
+      recallContent: [
+        {
+          prompt: "What pattern do ESPN's manual, Owens's handout and the classroom handouts share for calls?",
+          answer: "A warning call before the action call: \"ready\" or \"setup,\" then \"take\" or \"execute.\"",
+        },
+        {
+          prompt: "From how long before air does ESPN's AD count the crew on the air?",
+          answer: "From 5 minutes before air \"to the second we hit the air\" (ESPN, 2018, p. 25).",
+        },
+      ],
+      body: `${QR}
+
+**One afternoon of checks.** ESPN's sample schedule for an 8:00 p.m. basketball game lays the day out by the clock (ESPN, 2018, p. 27):
+
+| Time | ESPN's schedule |
+|---|---|
+| 2:00 p.m. | "CREW CALL - everyone including 3 Utilities hired by Union Venue" |
+| 4:00 p.m. | "Camera Check and Element View" |
+| 4:30 p.m. | "FULL SHOW FAX" |
+| 5:30 p.m. | "CREW CALL - Stage Manager / Booth Coordinator" |
+| 6:00 p.m. | "Camera Meeting on site" |
+| 7:00 p.m. | "TRANSMISSION CHECK IN" |
+| 7:15 p.m. | "All Cameras at Game Positions- Bumps/Rehearsal" |
+
+*Break Into Sports & Media Broadcasting* lesson "13 · Game day: roles, call times, and where utility fits" gives the phases of the day. This is one dated, sourced example of them.
+
+**Checks, chair by chair.** Each row is what its source says that chair checks before air:
+
+| Chair | What it checks | Source |
+|---|---|---|
+| TD | "The TD faxes all productions systems: Cameras, Graphics, Audio, communications and 3play/evs to ensure that they are working properly," and makes sure the switcher "is set up correctly with all the correct elements and effects" | ESPN (2018, p. 21) |
+| Audio | the camera headsets, the control room headset, the announcer mics and the IFB system | ESPN (2018, p. 21); lesson 6 |
+| Producer | "Verify that graphics (clock/score included) conform to standards and are error-free" | ESPN (2018, p. 23) |
+| Director | "Make sure the back-up score bug is built"; review the "traffic" for the opening with the TD, graphics, audio and tape | ESPN (2018, p. 24); lesson 16 |
+| AD | sets the clock to match master control; when transmission time opens, calls "Bristol Transmission" and checks "all sources with them" | ESPN (2018, p. 25); lessons 2 and 14 |
+| Cameras | back focus "should be performed during camera fax prior to the telecast" | ESPN (2018, p. 31) |
+| Studio coordinator | "signal routing, intercom and IFB functionality, camera and lighting readiness, belt pack frequencies and batteries, and audio levels" | National Football League [NFL] (2026o) |
+| TOC | "Sync and Fax checks prior to live shows and events"; "extensive transmission checks prior to live remote events" | NFL (2026l); lesson 14 |
+| Lighting director | tech checks at the beginning of each shift "to check for burnouts" | NFL (2026i); lesson 21 |
+| Audio, in a news control room | "facility checks with A2 and Stage Manager for all mic and IFB positions in the studio before daily production begins" | Fox News Media (2026b), a news control-room job |
+
+**The far end.** A check is not finished until the receiving end agrees. ESPN's continuity check is "An audio and video test to determine if the control room's output is the same as what is received by master control prior to a show's airing." (ESPN, 2018, p. 31; lesson 14).
+
+**The word "fax."** In these sources "fax" is a noun and a verb for checking systems before air: a "FULL SHOW FAX," a "camera fax," a TD who "faxes" the systems, a TOC's "Sync and Fax checks" and a utility's "studio fax out" (ESPN, 2018, pp. 21, 27 and 31; NFL, 2026l, 2026m). No source read for this course expands "fax," so this course quotes it and does not guess what it stands for.
+
+**Reasoned.** Read down the table: each chair checks its own gear, the TD and the full show fax check that the chairs work together, and the AD and the TOC check with the far end. Then the counts from lesson 23 begin.
+
+:::reveal Which systems does ESPN's TD "fax" before air? ||| "Cameras, Graphics, Audio, communications and 3play/evs" (ESPN, 2018, p. 21).
+
+:::reveal In ESPN's sample schedule for an 8:00 p.m. game, when is the full show fax? ||| 4:30 p.m. (ESPN, 2018, p. 27).
+
+:::reveal Why does this course not say what "fax" stands for? ||| No source read for the course expands it; the sources use it only as a word for checks before air.
+
+## Sources
+- ${ESPN_2018} Locator: "Technical Director" and "Audio," p. 21; "Producer Responsibilities," p. 23; "Director Responsibilities," p. 24; "Associate Director Responsibilities," items 2 and 6, p. 25; "Sample Basketball Operations/Production Schedule," p. 27; glossary, "Back Focus" and "Continuity Check," p. 31.
+- ${NFL_STUDIO_COORD} Locator: "Responsibilities".
+- ${NFL_TOC} Locator: "Responsibilities".
+- ${NFL_LD} Locator: "Responsibilities".
+- ${NFL_UTILITY} Locator: "Responsibilities".
+- ${FNM_AUDIO_OP} Locator: "A Snapshot of Your Responsibilities". A news control-room job.`,
+    },
+    {
+      slug: "one-play-through-every-chair",
+      title: "25 · One play through every chair, and a mock segment",
+      section: "7 · How it fits together",
+      recallContent: [
+        {
+          prompt: "What does NFL Media's studio coordinator check before production?",
+          answer: "Signal routing, intercom and IFB functionality, camera and lighting readiness, belt pack frequencies and batteries, and audio levels (NFL, 2026o).",
+        },
+        {
+          prompt: "What does ESPN's continuity check compare?",
+          answer: "The control room's output against what master control receives, before the show airs (ESPN, 2018, p. 31).",
+        },
+      ],
+      body: `${QR}
+
+**How this walk-through was built.** No source read for this course follows a single play through a sports truck, chair by chair, so the order below is reasoned from what each source says its chair does, and the reviewer will check it. Each row names its source. *Break Into Sports & Media Broadcasting* lessons "8 · The control room: switcher, graphics, and replay" and "12 · Stats, spotting boards, and replay" give worked examples without sources; this one uses only sources.
+
+**One play, chair by chair.** An invented play in an invented football game, with no real team or person:
+
+| Moment | Chair | What it does | Source |
+|---|---|---|---|
+| Before the snap | Director | Calls the next shot ahead: "ready 2," then "take two" | ESPN (2018, p. 24); lesson 23 |
+| Before the snap | TD | Switches on the call | ESPN (2018, pp. 20 and 34); lesson 1 |
+| Before the snap | Camera operators | Hold their assigned positions and shots | ESPN (2018, pp. 7 and 22); lesson 19 |
+| During the play | Replay | Records every camera to a server | EVS (n.d.-b); lesson 12, reasoned from makers' pages |
+| During the play | Audio | The A1 mixes the field sound from the submixer with the announcers and the crowd, in one network's 2018 account | Daley (2018); lesson 5 |
+| During the play | Graphics | The score bug can be filled from live data | Vizrt (n.d.-b); lesson 16 |
+| After the play | Producer | Requests "replays and graphics to support the themes and topics of the game" | ESPN (2018, p. 23) |
+| After the play | Replay | Marks in and out points and plays the clip back, at speed or in slow motion | EVS (n.d.-a); lesson 12, reasoned from makers' pages |
+| After the play | Director and TD | The director calls the replay and the TD takes it to air | ESPN (2018, pp. 20 and 24) |
+| After the play | Graphics | A graphic goes up that the broadcast associate has checked for spelling and facts | NFL (2026h); lesson 15 |
+| Next down | Virtual enhancement | At Fox, Fox Sports work: integrates the first-and-ten markers and the down-and-distance graphics | Fox Corporation (2026a); lesson 17 |
+| Timeout | AD | Confirms "that we have the time-out and can go to break" and counts master control to break | ESPN (2018, p. 25) |
+| Timeout, streaming | FAST operator | Inserts the SCTE-35 cue on the AD's command | NFL (2026e); lesson 2 |
+
+**A mock segment: back from a timeout.** This is an invented walk-through with no real game, venue or people. Read each beat, decide which chair acts, then reveal the answer.
+
+**Beat 1.** The game is in a timeout and master control is running the break.
+
+:::reveal Who tells the truck when to come back from break, and what if master control cannot? ||| The AD counts the truck back from break; if master control cannot count it back, the AD uses a stopwatch (ESPN, 2018, p. 25).
+
+**Beat 2.** Coming out of the break, the director wants camera 2 on the air.
+
+:::reveal What does ESPN's manual tell the director to say? ||| "ready 2," then "take two," never a bare "take 2" (ESPN, 2018, p. 24).
+
+**Beat 3.** The play-by-play announcer needs a cue.
+
+:::reveal Who reaches the announcer, and how? ||| The director or producer, through the IFB earpiece (ESPN, 2018, p. 32; Clear-Com, 2020c, p. 19). Off air, the talkback circuit links the commentators with a producer or director (Clear-Com, 2020c, p. 21).
+
+**Beat 4.** A lower third goes up with a player's name misspelled.
+
+:::reveal Whose job was it to catch that before air, and who works on it now? ||| NFL Media's broadcast associate checks that graphics are "spelled correctly" (NFL, 2026h), and ESPN's producer verifies they are "error-free" (ESPN, 2018, p. 23). Fox News Media's Viz operator, a news job, will "Quickly troubleshoot graphic errors with producers" (Fox News Media, 2026f).
+
+**Beat 5.** The show ends on a planned hard 30 seconds.
+
+:::reveal Who counts the show off the air? ||| The producer starts the countdown and the AD picks it up and counts "to zero loud enough for Director and Producer to hear" (ESPN, 2018, p. 25).
+
+**Reasoned.** Every beat has the same shape: one chair calls or counts, the others act on the word, and each acts only on what its own source gives it.
+
+## Sources
+- ${ESPN_2018} Locator: "Camera Placements," p. 7; p. 20; "Camera Operators," p. 22; "Producer Responsibilities," p. 23; "Director Responsibilities," p. 24; "Associate Director Responsibilities," items 7, 8 and 10, p. 25; glossary, "IFB," p. 32, and "Technical Director," p. 34.
+- ${EVS_XTVIA} Locator: "At the heart of the action".
+- ${EVS_LSMVIA} Locator: "LSM-VIA Key features".
+- ${DALEY_2018} Locator: the paragraph on what the submixer sends the A1.
+- ${VIZ_TRIO} Locator: live data paragraph.
+- ${NFL_BA} Locator: "Responsibilities".
+- ${FOX_INTERN} Locator: "A Snapshot of Your Responsibilities," item 1. Fox Sports work.
+- ${NFL_FAST} Locator: "Required Qualifications".
+- ${CC_2020C} Locator: "2-Wire Interruptible Foldback (IFB) Systems," p. 19; "Commentators," p. 21.
+- ${FNM_VIZ} Locator: "A Snapshot of Your Responsibilities". A news control-room job.`,
+    },
+    {
+      slug: "when-something-breaks",
+      title: "26 · When something breaks: first line and escalation",
+      section: "7 · How it fits together",
+      recallContent: [
+        {
+          prompt: "In lesson 25's walk-through, who requests replays and graphics after a play?",
+          answer: "The producer: \"Request replays and graphics to support the themes and topics of the game\" (ESPN, 2018, p. 23).",
+        },
+        {
+          prompt: "How was lesson 25's one-play walk-through built?",
+          answer: "Reasoned from what each source says its chair does; no source read follows one play through a truck, so the reviewer will check the order.",
+        },
+      ],
+      body: `${QR}
+
+**What the sources cover.** No source read for this course assigns faults chair by chair on a network sports truck, for example whether the A1 or the engineer in charge owns a dead headset, so this lesson teaches only what the sources do say: who is the first line, and where a fault goes next.
+
+**ESPN: keep the producer and director in their seats.** ESPN recommends an engineer in charge (EIC): "designate a person that can help make fixes or changes so the Producer or Director doesn't have to leave their post during the broadcast" (ESPN, 2018, p. 21). On a small crew that person is also the A2 and the stage manager, "the first line of defense" (pp. 21 to 22; lesson 20). ESPN's video engineer "controls all incoming video signals; line patching and routing; "painting" cam video levels" (p. 20).
+
+**NFL Media: a first line, then engineering.** NFL Media's studio coordinator gives "first-line troubleshooting" of "router and comms panels, cameras, IFB and mic belt packs, stage lighting, replay, graphics, and audio systems, escalating unresolved faults to Engineering with documented detail," and documents "symptoms, troubleshooting steps taken, and resolution to support recurring-issue tracking" (National Football League [NFL], 2026o). Its TOC operator "is the first point of troubleshooting and escalation if an issue occurs and will be expected to communicate issues to Operations and Production Management in a timely and efficient manner," and must "document on-air issues" (NFL, 2026l). Its FAST operator will "Document, escalate, and manage video distribution incidents to resolution" (NFL, 2026e).
+
+**At the chair.** Some postings give the operator the first fix, or say where to send it:
+
+| Chair | As posted |
+|---|---|
+| NFL Media utility | "Ability to troubleshoot cameras on stage (tally, prompter etc.)" (NFL, 2026m) |
+| NFL Media lighting director | "Report technical and/or equipment issues to Studio Operations and Engineering teams" (NFL, 2026i) |
+| Fox News Media A2, a news control-room job | "Provide immediate solutions in the event of equipment failure or other audio problems" (Fox News Media, 2026a) |
+| Fox News Media Viz operator, a news control-room job | "Quickly troubleshoot graphic errors with producers" (Fox News Media, 2026f) |
+
+**Separate lines for separate trouble.** ESPN's manual lists separate trouble lines for transmission check-in or problems, for graphics issues ("Non-equipment") and for day-of-air programming issues (ESPN, 2018, p. 6). This course does not reproduce the numbers or the names.
+
+**How to behave while it is broken.** ESPN to its producers: "Let mistakes go immediately." "Never disparage the crew to announcers." "Speak respectfully to everyone, and discuss problems/solutions after the show ends." To its directors: "It's okay to ask if there's a problem, but save the critique for post-game" (ESPN, 2018, pp. 23 to 24).
+
+**The pattern, reasoned.** Across these sources, the operator at the chair fixes what is in front of them; a first-line person (ESPN's EIC, or NFL Media's studio coordinator or TOC) takes the rest; unresolved faults go to engineering with notes; and the producer and the director stay at their posts. CREW-05 lesson "26 · Status calls, escalation and reports" teaches escalation on the transmission side.
+
+:::reveal Why does ESPN recommend an engineer in charge? ||| So someone can make fixes "so the Producer or Director doesn't have to leave their post during the broadcast" (ESPN, 2018, p. 21).
+
+:::reveal What does NFL Media's studio coordinator do with a fault it cannot fix? ||| Escalates it "to Engineering with documented detail" (NFL, 2026o).
+
+:::reveal When does ESPN tell the producer to discuss problems? ||| "after the show ends" (ESPN, 2018, pp. 23 to 24).
+
+## Sources
+- ${ESPN_2018} Locator: "Trouble Numbers," p. 6; "Production personnel positions and responsibilities," p. 20; "EIC ( Engineer in Charge )" and "EIC/Audio Assist," pp. 21 to 22; "Producer Responsibilities," p. 23; "Director Responsibilities," p. 24.
+- ${NFL_STUDIO_COORD} Locator: summary paragraph; "Responsibilities".
+- ${NFL_TOC} Locator: opening paragraph; "Responsibilities".
+- ${NFL_FAST} Locator: "Responsibilities".
+- ${NFL_UTILITY} Locator: "Responsibilities".
+- ${NFL_LD} Locator: "Responsibilities".
+- ${FNM_A2} Locator: "A Snapshot of Your Responsibilities". A news control-room job.
+- ${FNM_VIZ} Locator: "A Snapshot of Your Responsibilities". A news control-room job.`,
+    },
+    {
+      slug: "section-7-quiz",
+      title: "Section 7 quiz · How it fits together",
+      section: "7 · How it fits together",
+      body: "A graded check on comms and who hears whom, the director's calls and the AD's counts, checks before air, one play through every chair, and what happens when something breaks. Each answer links back to the lesson that teaches it.",
+      quiz: {
+        passingScore: 80,
+        questionsPerAttempt: 5,
+        shuffleOptions: true,
+        questions: [
+          { prompt: "How does Clear-Com describe when a partyline is classically used?", options: ["One user to one speaker", "Users on a common task", "Talent hearing program", "Recording the show audio"], correctIndex: 1, explanation: "Clear-Com (2020c, p. 80): when several users \"are active in a common task and they must communicate with each other all the time.\"", sourceLessonSlug: "comms-who-hears-whom" },
+          { prompt: "To whom does Clear-Com say a main station is usually given?", options: ["The talent on the anchor desk", "The replay operators in turn", "Director, producer, SM or caller", "The utility on the studio floor"], correctIndex: 2, explanation: "Clear-Com (2020c, p. 9): \"a director, producer, stage manager or show caller depending on the workflow.\"", sourceLessonSlug: "comms-who-hears-whom" },
+          { prompt: "What does a Clear-Com main station's all-talk button reach?", options: ["One camera", "The talent only", "The far end", "All channels"], correctIndex: 3, explanation: "Clear-Com (2020c, p. 10): \"an all-talk button access to all channels.\"", sourceLessonSlug: "comms-who-hears-whom" },
+          { prompt: "What can a Clear-Com main station fold into the intercom channels?", options: ["Program audio", "Tally signals", "Camera video", "Lighting cues"], correctIndex: 0, explanation: "Clear-Com (2020c, p. 10): main stations can fold program audio into intercom channels.", sourceLessonSlug: "comms-who-hears-whom" },
+          { prompt: "Reasoned in lesson 22, who sits at the station that reaches everyone?", options: ["The newest crew member", "Whoever calls the show", "The camera utility", "The sponsor's rep"], correctIndex: 1, explanation: "Lesson 22: the person who calls the show sits at the one station that can reach everyone at once.", sourceLessonSlug: "comms-who-hears-whom" },
+          { prompt: "What does Clear-Com say virtually all mobile units use for cameras?", options: ["Wireless IFB packs only", "Talkback circuits only", "Camera isolate systems", "Fixed group calls only"], correctIndex: 2, explanation: "Clear-Com (2020c, p. 18): \"virtually all mobile units use camera isolate systems.\"", sourceLessonSlug: "comms-who-hears-whom" },
+          { prompt: "What does a camera isolate let one operator do?", options: ["Cut every camera's mic", "Speak to all talent at once", "Roll replays to the cameras", "Talk to one camera privately"], correctIndex: 3, explanation: "Clear-Com (2020c, p. 18): talk privately with any camera operator for setup or maintenance without interrupting the other cameras' talk with the director.", sourceLessonSlug: "comms-who-hears-whom" },
+          { prompt: "Reasoned in lesson 22, who shares a line with the camera operators?", options: ["The director", "The talent", "The sponsor", "The referee"], correctIndex: 0, explanation: "Lesson 22: the isolate works without interrupting \"the other cameras' talk with the director,\" so the cameras share a line with the director.", sourceLessonSlug: "comms-who-hears-whom" },
+          { prompt: "What kind of intercom does Clear-Com's e-book call IFB?", options: ["Duplex", "Simplex", "Matrix", "Wireless"], correctIndex: 1, explanation: "Clear-Com (2020c, p. 19): \"IFB is a type of simplex intercom for sending a program feed and interrupt (cue) audio.\"", sourceLessonSlug: "comms-who-hears-whom" },
+          { prompt: "What does IFB send to talent, per Clear-Com's e-book?", options: ["Camera return video", "Tally light signals", "Program and cue audio", "The crew's partyline"], correctIndex: 2, explanation: "Clear-Com (2020c, p. 19): \"a program feed and interrupt (cue) audio.\"", sourceLessonSlug: "comms-who-hears-whom" },
+          { prompt: "In ESPN's glossary, who talks to talent through the IFB?", options: ["Camera operators", "The other talent", "The TOC operator", "Director or producer"], correctIndex: 3, explanation: "ESPN (2018, p. 32): \"so that the director or producer can talk to them from the control room.\"", sourceLessonSlug: "comms-who-hears-whom" },
+          { prompt: "What is a commentary box's coordination circuit also called?", options: ["Talkback", "Partyline", "Mix-minus", "Cue line"], correctIndex: 0, explanation: "Clear-Com (2020c, p. 21): the \"Co-Ordination (Co-Ord) or TB (Talkback) Circuit.\"", sourceLessonSlug: "comms-who-hears-whom" },
+          { prompt: "Is the coordination circuit on air or off air, per Clear-Com?", options: ["On air", "Off air", "Both, always", "On air at half"], correctIndex: 1, explanation: "Clear-Com (2020c, p. 21): \"the main off air communication channel.\"", sourceLessonSlug: "comms-who-hears-whom" },
+          { prompt: "Who is the coordinator on the talkback circuit, per Clear-Com?", options: ["Usually the camera utility", "Usually the venue's owner", "Usually a producer or director", "Usually the lead sponsor"], correctIndex: 2, explanation: "Clear-Com (2020c, p. 21): \"an editorial position responsible for the commentators, usually a producer or director.\"", sourceLessonSlug: "comms-who-hears-whom" },
+          { prompt: "Besides commentators, the engineer and the coordinator, who is sometimes on the talkback circuit?", options: ["The utility", "The V2", "The LD", "The audio A1"], correctIndex: 3, explanation: "Clear-Com (2020c, p. 21): \"sometimes the audio A1.\"", sourceLessonSlug: "comms-who-hears-whom" },
+          { prompt: "What does a call light on, then off, mean in Clear-Com's glossary?", options: ["Standby, then apply", "Mute, then unmute", "Record, then stop", "Talk, then listen"], correctIndex: 0, explanation: "Clear-Com (2020c, p. 75): \"light on means standby, light off after light on means apply.\"", sourceLessonSlug: "comms-who-hears-whom" },
+          { prompt: "How many talent amplifiers for IFB does the 58FLEX spec sheet list?", options: ["18", "12", "8", "6"], correctIndex: 1, explanation: "Mobile TV Group (n.d.-c, p. 2): \"12 Model 381 Talent Amplifiers for IFB.\" 18 is the RTS headset boxes and 8 the two-way radios.", sourceLessonSlug: "comms-who-hears-whom" },
+          { prompt: "How many RTS headset boxes does the 58FLEX spec sheet list?", options: ["12", "8", "18", "32"], correctIndex: 2, explanation: "Mobile TV Group (n.d.-c, p. 2): \"18 RTS DBP-5F headset boxes.\"", sourceLessonSlug: "comms-who-hears-whom" },
+          { prompt: "Why does lesson 22 give no channel plan for a sports truck?", options: ["Every truck uses the same one", "The FCC assigns the channels", "Unions keep the plans secret", "No source states a standard"], correctIndex: 3, explanation: "Lesson 22: no source read for the course states a standard channel layout for a US sports truck.", sourceLessonSlug: "comms-who-hears-whom" },
+          { prompt: "What does ESPN tell directors never to be over the headset?", options: ["Abusive", "Brief", "Clear", "Calm"], correctIndex: 0, explanation: "ESPN (2018, p. 24): \"Be critical when needed but NEVER abusive over the headset.\"", sourceLessonSlug: "comms-who-hears-whom" },
+          { prompt: "What is push to talk for, in the advice passed on at a DGA event?", options: ["Thinking out loud", "Answering a question", "Chatting off air", "Testing the mic"], correctIndex: 1, explanation: "DGA (2021): \"It is push to talk to answer a question, not push to talk to think out loud.\"", sourceLessonSlug: "comms-who-hears-whom" },
+          { prompt: "What kind of documents are the sources for lesson 23's calls?", options: ["Network rulebooks", "Union contracts", "Teaching documents", "Federal rules"], correctIndex: 2, explanation: "Lesson 23: ESPN's school manual, a university handout and two classroom handouts; none is a truck's rulebook.", sourceLessonSlug: "calls-and-counts" },
+          { prompt: "Under \"Communicate,\" what does ESPN tell directors to make sure of?", options: ["Talent know the score first", "Sponsors hear their names", "The A1 hears every call twice", "Cameras know when you'll take"], correctIndex: 3, explanation: "ESPN (2018, p. 24): \"make sure your camera operators know when you're going to take a shot.\"", sourceLessonSlug: "calls-and-counts" },
+          { prompt: "Which call does ESPN's manual tell directors never to give on its own?", options: ["\"take 2\"", "\"ready 2\"", "\"hold 2\"", "\"stand by\""], correctIndex: 0, explanation: "ESPN (2018, p. 24): never say \"take 2, take 4, etc.\"; always \"ready 2,\" then \"take two.\"", sourceLessonSlug: "calls-and-counts" },
+          { prompt: "What does ESPN's manual tell directors to say before \"take two\"?", options: ["\"cue 2\"", "\"ready 2\"", "\"hold 2\"", "\"camera\""], correctIndex: 1, explanation: "ESPN (2018, p. 24): always say \"ready 2,\" then \"take two.\"", sourceLessonSlug: "calls-and-counts" },
+          { prompt: "In Owens's handout, what always comes before an execute call?", options: ["A hold call", "A cue light", "A setup call", "A countdown"], correctIndex: 2, explanation: "Owens (2007, section 4.1): \"A setup call always precedes an execute call.\"", sourceLessonSlug: "calls-and-counts" },
+          { prompt: "In Owens's example, what is the execute call?", options: ["\"Ready, ready, one.\"", "\"Hold one, hold it.\"", "\"Stand by, studio.\"", "\"Mic, cue, take one.\""], correctIndex: 3, explanation: "Owens (2007): \"EXECUTE: Mic, cue, take one.\" after \"SETUP: Next, we'll take one with mike four.\"", sourceLessonSlug: "calls-and-counts" },
+          { prompt: "What may the setup shrink to in interviews, per Owens?", options: ["\"Ready one.\"", "\"Take one.\"", "\"Hold one.\"", "\"Cue one.\""], correctIndex: 0, explanation: "Owens (2007, PDF p. 25): in interviews the setup may be shortened to \"Ready one.\"", sourceLessonSlug: "calls-and-counts" },
+          { prompt: "What does \"hold one\" tell the operator, per Owens?", options: ["Zoom in slowly", "Freeze the shot", "Pan to the left", "Change the lens"], correctIndex: 1, explanation: "Owens (2007, PDF p. 26): \"to freeze the shot he has at that moment.\"", sourceLessonSlug: "calls-and-counts" },
+          { prompt: "What does the director yell in the studio before a taping, per Owens?", options: ["\"Take one!\"", "\"Roll it!\"", "\"Stand By!\"", "\"Ready!\""], correctIndex: 2, explanation: "Owens (2007, PDF p. 39): the director checks shots with the camera operators, yells \"Stand By!\" and goes to the control room.", sourceLessonSlug: "calls-and-counts" },
+          { prompt: "In what order does the classroom handout give its camera calls?", options: ["Take, then ready", "Cue, then hold", "Hold, then cut", "Ready, then take"], correctIndex: 3, explanation: "MCPS (n.d.-a): \"Ready Camera 1...Take Camera 1.\"", sourceLessonSlug: "calls-and-counts" },
+          { prompt: "Reasoned in lesson 23, why does a warning call come before the action call?", options: ["All chairs act on one word", "It gives the A1 time to mix", "The union contract says so", "It fills dead air on the show"], correctIndex: 0, explanation: "Lesson 23: so the camera operator, the TD and every chair waiting on the shot act on the same word at the same moment.", sourceLessonSlug: "calls-and-counts" },
+          { prompt: "Why does this course teach \"ready\" and \"take\" rather than \"standby\"?", options: ["\"Standby\" is banned by the DGA", "No sports source has \"standby\"", "ESPN's manual uses \"standby\"", "Owens never uses \"standby\""], correctIndex: 1, explanation: "Lesson 23: only Owens's studio taping and Clear-Com's call light use \"standby\"; no sports source read says a director says it on the headset.", sourceLessonSlug: "calls-and-counts" },
+          { prompt: "What does ESPN tell the director not to do, \"(especially in basketball)\"?", options: ["Undercut", "Zoom", "Overcut", "Wait"], correctIndex: 2, explanation: "ESPN (2018, p. 24): \"Don't overcut,\" \"(especially in basketball) less is best.\"", sourceLessonSlug: "calls-and-counts" },
+          { prompt: "What does ESPN call the director's best friend?", options: ["The replay server", "The stage manager", "The score bug", "The game camera"], correctIndex: 3, explanation: "ESPN (2018, p. 24): \"Remember, your \"game camera\" is your best friend.\"", sourceLessonSlug: "calls-and-counts" },
+          { prompt: "From when does ESPN's AD count the crew on the air?", options: ["5 minutes before air", "1 hour before air", "30 seconds before air", "10 seconds before air"], correctIndex: 0, explanation: "ESPN (2018, p. 25): \"intervals from 5 minutes before the air to the second we hit the air.\"", sourceLessonSlug: "calls-and-counts" },
+          { prompt: "Whom does ESPN's AD count to break?", options: ["The talent", "Master control", "The cameras", "The sponsor"], correctIndex: 1, explanation: "ESPN (2018, p. 25): \"You will count master control to break and count us back from break.\"", sourceLessonSlug: "calls-and-counts" },
+          { prompt: "On a planned hard 30, who starts the countdown off the air at ESPN?", options: ["The director", "The A1", "The producer", "Master control"], correctIndex: 2, explanation: "ESPN (2018, p. 25): the \"producer will start the countdown, then you pick it up and countdown to zero.\"", sourceLessonSlug: "calls-and-counts" },
+          { prompt: "Why must the off-air count be loud enough for the director and producer?", options: ["So the sponsor hears every word", "So master control can record it", "So the talent can hear it on air", "So music, graphics, talent end on time"], correctIndex: 3, explanation: "ESPN (2018, p. 25): so \"music will sting out, graphics will have the right graphic, and announcers will get off the air on-time.\"", sourceLessonSlug: "calls-and-counts" },
+          { prompt: "What are ESPN's integration ADs responsible for coordinating?", options: ["Counts to and from breaks", "Camera placements at venues", "Pay for freelance crews", "Graphics spelling checks"], correctIndex: 0, explanation: "ESPN (2018, p. 31): \"responsible for coordinating counts to and from commercial breaks.\"", sourceLessonSlug: "calls-and-counts" },
+          { prompt: "In the classroom handout, who counts down to the show?", options: ["The director", "The producer", "The camera op", "The talent"], correctIndex: 1, explanation: "MCPS (n.d.-b): the producer calls the countdown; the director \"repeats in headset\" and the floor manager \"repeats on set.\"", sourceLessonSlug: "calls-and-counts" },
+          { prompt: "Reasoned in lesson 23, what varies by shop and what does not?", options: ["The count; not who counts", "Both vary in every shop", "Who counts; not the count", "Neither varies anywhere"], correctIndex: 2, explanation: "Lesson 23: who counts varies by shop; the count itself, said aloud so every chair hears it, does not.", sourceLessonSlug: "calls-and-counts" },
+          { prompt: "Under the DGA's Article 2, who gives all time cues?", options: ["The stage manager", "The technical director", "The producer alone", "The associate director"], correctIndex: 3, explanation: "DGA (2020b, p. 16): the AD will \"Perform all timing functions and give all time cues.\"", sourceLessonSlug: "calls-and-counts" },
+          { prompt: "In ESPN's sample schedule, what happens at 4:00 p.m.?", options: ["Camera check, element view", "The main crew call", "Transmission check-in", "The camera meeting"], correctIndex: 0, explanation: "ESPN (2018, p. 27): \"4:00PM Camera Check and Element View.\"", sourceLessonSlug: "checks-before-air" },
+          { prompt: "When is transmission check-in on ESPN's sample schedule?", options: ["4:00 p.m.", "7:00 p.m.", "4:30 p.m.", "7:15 p.m."], correctIndex: 1, explanation: "ESPN (2018, p. 27): \"7:00PM TRANSMISSION CHECK IN,\" an hour before an 8:00 p.m. game.", sourceLessonSlug: "checks-before-air" },
+          { prompt: "What runs at 4:30 p.m. in ESPN's sample schedule?", options: ["The camera meeting", "The stage manager call", "The full show fax", "Cameras to positions"], correctIndex: 2, explanation: "ESPN (2018, p. 27): \"4:30PM FULL SHOW FAX.\"", sourceLessonSlug: "checks-before-air" },
+          { prompt: "Which systems does ESPN's TD fax before air?", options: ["Payroll, travel, catering, parking", "Lights, scenery, rigging and power", "Ratings, ads, promos and sponsors", "Cameras, graphics, audio, comms, replay"], correctIndex: 3, explanation: "ESPN (2018, p. 21): \"Cameras, Graphics, Audio, communications and 3play/evs.\"", sourceLessonSlug: "checks-before-air" },
+          { prompt: "What must ESPN's TD make sure of on the switcher?", options: ["Correct elements and effects", "A new switcher every show", "Two TDs share the panel", "The A1 can see the panel"], correctIndex: 0, explanation: "ESPN (2018, p. 21): the switcher \"is set up correctly with all the correct elements and effects.\"", sourceLessonSlug: "checks-before-air" },
+          { prompt: "What does ESPN's producer verify about graphics before air?", options: ["Animation and music", "Standards and no errors", "Sponsor logos only", "Font sizes only"], correctIndex: 1, explanation: "ESPN (2018, p. 23): graphics, clock and score included, \"conform to standards and are error-free.\"", sourceLessonSlug: "checks-before-air" },
+          { prompt: "What does ESPN's director make sure is built?", options: ["A second control room", "The camera platforms", "The back-up score bug", "The talent's set"], correctIndex: 2, explanation: "ESPN (2018, p. 24): \"Make sure the back-up score bug is built.\"", sourceLessonSlug: "checks-before-air" },
+          { prompt: "When the transmission time opens, whom does ESPN's AD call?", options: ["The league office", "The venue's union", "The truck's owner", "Bristol Transmission"], correctIndex: 3, explanation: "ESPN (2018, p. 25): \"call Bristol Transmission\" and \"check all sources with them.\"", sourceLessonSlug: "checks-before-air" },
+          { prompt: "When does ESPN say back focus should be done?", options: ["During camera fax", "During halftime", "After the game", "During the meeting"], correctIndex: 0, explanation: "ESPN (2018, p. 31): back focus \"should be performed during camera fax prior to the telecast.\"", sourceLessonSlug: "checks-before-air" },
+          { prompt: "Which of these does NFL Media's studio coordinator check before production?", options: ["Ticket scanners", "Belt pack frequencies", "Concession menus", "Parking passes"], correctIndex: 1, explanation: "NFL (2026o): \"belt pack frequencies and batteries,\" with routing, intercom and IFB, cameras and lighting, and audio levels.", sourceLessonSlug: "checks-before-air" },
+          { prompt: "What checks must NFL Media's TOC perform before live shows?", options: ["Lens and filter checks", "Payroll and hours checks", "Sync and Fax checks", "Script and spell checks"], correctIndex: 2, explanation: "NFL (2026l): \"Sync and Fax checks prior to live shows and events.\"", sourceLessonSlug: "checks-before-air" },
+          { prompt: "Before live remote events, what extra checks does NFL Media's TOC run?", options: ["Extensive lighting", "Extensive wardrobe", "Extensive catering", "Extensive transmission"], correctIndex: 3, explanation: "NFL (2026l): \"extensive transmission checks prior to live remote events.\"", sourceLessonSlug: "checks-before-air" },
+          { prompt: "Which Fox News Media check is done with the A2 and the stage manager?", options: ["Mic and IFB positions", "Camera lens changes", "Graphics spelling", "Satellite bookings"], correctIndex: 0, explanation: "Fox News Media (2026b), a news control-room job: \"facility checks with A2 and Stage Manager for all mic and IFB positions in the studio.\"", sourceLessonSlug: "checks-before-air" },
+          { prompt: "What does ESPN's continuity check compare?", options: ["Two cameras' color balance", "Output and what master gets", "Audio and video sync only", "The clock and the rundown"], correctIndex: 1, explanation: "ESPN (2018, p. 31): whether \"the control room's output is the same as what is received by master control.\"", sourceLessonSlug: "checks-before-air" },
+          { prompt: "How is \"fax\" used in this course's sources?", options: ["For sending documents", "For booking satellites", "For checks before air", "For paying freelancers"], correctIndex: 2, explanation: "Lesson 24: \"fax\" is a noun and a verb for checking systems before air (\"FULL SHOW FAX,\" \"camera fax,\" \"Sync and Fax checks\").", sourceLessonSlug: "checks-before-air" },
+          { prompt: "Why does this course not say what \"fax\" stands for?", options: ["It is a trade secret", "It means facsimile", "It is ESPN's brand", "No source expands it"], correctIndex: 3, explanation: "Lesson 24: no source read for the course expands \"fax,\" so it is quoted, not guessed.", sourceLessonSlug: "checks-before-air" },
+          { prompt: "Reasoned in lesson 24, who checks with the far end?", options: ["The AD and the TOC", "The A1 and the A2", "The LD and the V1", "The SM and utility"], correctIndex: 0, explanation: "Lesson 24: the AD and the TOC check with the far end, while each chair checks its own gear.", sourceLessonSlug: "checks-before-air" },
+          { prompt: "Reasoned in lesson 24, what checks that the chairs work together?", options: ["The sponsor's walkthrough", "The TD and full show fax", "The talent's rehearsal", "The union's inspection"], correctIndex: 1, explanation: "Lesson 24: the TD and the full show fax check that the chairs work together.", sourceLessonSlug: "checks-before-air" },
+          { prompt: "Why is lesson 25's walk-through reasoned rather than quoted?", options: ["The NFL forbids describing it", "ESPN's manual was out of date", "No source follows one play", "Every truck does it differently"], correctIndex: 2, explanation: "Lesson 25: no source read follows a single play through a truck, chair by chair, so the order is reasoned and the reviewer will check it.", sourceLessonSlug: "one-play-through-every-chair" },
+          { prompt: "Before the snap, what does the director do in lesson 25's walk-through?", options: ["Rolls the last replay", "Counts to the break", "Mixes the field sound", "Calls the next shot ahead"], correctIndex: 3, explanation: "Lesson 25: \"ready 2,\" then \"take two\" (ESPN, 2018, p. 24).", sourceLessonSlug: "one-play-through-every-chair" },
+          { prompt: "In lesson 25's walk-through, who switches on the director's call?", options: ["The TD", "The A1", "The AD", "The SM"], correctIndex: 0, explanation: "ESPN (2018, pp. 20 and 34): the TD controls the video switcher and is \"also known as the switcher.\"", sourceLessonSlug: "one-play-through-every-chair" },
+          { prompt: "During the play, what does replay do, per lesson 25?", options: ["Calls the next shot", "Records every camera", "Mixes the crowd sound", "Fills the score bug"], correctIndex: 1, explanation: "Lesson 25, reasoned from makers' pages (lesson 12): replay records every camera to a server.", sourceLessonSlug: "one-play-through-every-chair" },
+          { prompt: "In the 2018 account, what does the A1 mix the submixer's field sound with?", options: ["Music and sponsors", "IFB and talkback", "Announcers and crowd", "Replay and tally"], correctIndex: 2, explanation: "Daley (2018): the A1 mixes the field sound \"with the announcers and the crowd.\"", sourceLessonSlug: "one-play-through-every-chair" },
+          { prompt: "What does lesson 25 say about the score bug during the play?", options: ["It is typed in by hand", "It is drawn by the TD", "It is set by the league", "It can fill from live data"], correctIndex: 3, explanation: "Lesson 25: Vizrt says Trio fills templates \"From scorebugs to dynamic lower thirds\" from live data (lesson 16).", sourceLessonSlug: "one-play-through-every-chair" },
+          { prompt: "After the play, what does ESPN's producer request?", options: ["Replays and graphics", "Camera lens changes", "New crew members", "A shorter break"], correctIndex: 0, explanation: "ESPN (2018, p. 23): \"Request replays and graphics to support the themes and topics of the game.\"", sourceLessonSlug: "one-play-through-every-chair" },
+          { prompt: "After the play, what does the replay operator do, per lesson 25?", options: ["Mixes the crowd and the field", "Marks in and out, plays back", "Checks spelling in graphics", "Counts master control to break"], correctIndex: 1, explanation: "Lesson 25, reasoned from makers' pages: marks in and out points and plays the clip back, at speed or in slow motion.", sourceLessonSlug: "one-play-through-every-chair" },
+          { prompt: "Who checks a graphic's spelling and facts before it goes up?", options: ["The replay operator", "The camera operator", "The broadcast associate", "The floor utility"], correctIndex: 2, explanation: "NFL (2026h); lessons 15 and 25.", sourceLessonSlug: "one-play-through-every-chair" },
+          { prompt: "In lesson 25, which chair integrates the first-and-ten markers at Fox?", options: ["The V1 shader", "The stage manager", "The TOC operator", "Virtual enhancement"], correctIndex: 3, explanation: "Fox Corporation (2026a), Fox Sports work: the virtual enhancement operator integrates \"first and 10 markers, plus down and distance graphics.\"", sourceLessonSlug: "one-play-through-every-chair" },
+          { prompt: "At a timeout, what does ESPN's AD confirm?", options: ["That we can go to break", "That replay is cued", "That talent are miked", "That lights are on"], correctIndex: 0, explanation: "ESPN (2018, p. 25): \"that we have the time-out and can go to break.\"", sourceLessonSlug: "one-play-through-every-chair" },
+          { prompt: "On a streaming game, what does NFL Media's FAST operator insert on the AD's command?", options: ["A score bug", "An SCTE-35 cue", "A replay clip", "An IFB feed"], correctIndex: 1, explanation: "NFL (2026e): SCTE-35 cue insertion \"following AD commands.\"", sourceLessonSlug: "one-play-through-every-chair" },
+          { prompt: "In Beat 1, what does the AD use if master control cannot count back?", options: ["The tally", "A slate", "A stopwatch", "The bug"], correctIndex: 2, explanation: "ESPN (2018, p. 25): \"use your stop watch and tell us when we need to come back from break.\"", sourceLessonSlug: "one-play-through-every-chair" },
+          { prompt: "In Beat 3, how does the director or producer reach the announcer on air?", options: ["Through tally", "Through the PA", "Through a monitor", "Through the IFB"], correctIndex: 3, explanation: "ESPN (2018, p. 32); Clear-Com (2020c, p. 19): the IFB earpiece carries program audio and interrupt cues.", sourceLessonSlug: "one-play-through-every-chair" },
+          { prompt: "In Beat 3, which circuit links commentators and the producer off air?", options: ["Talkback", "Tally", "Return", "Genlock"], correctIndex: 0, explanation: "Clear-Com (2020c, p. 21): the coordination or talkback circuit.", sourceLessonSlug: "one-play-through-every-chair" },
+          { prompt: "In Beat 4, which ESPN chair verifies graphics are error-free?", options: ["The TD", "The producer", "The A1", "The SM"], correctIndex: 1, explanation: "ESPN (2018, p. 23): the producer will \"Verify that graphics (clock/score included) conform to standards and are error-free.\"", sourceLessonSlug: "one-play-through-every-chair" },
+          { prompt: "In Beat 4, with whom does Fox News Media's Viz operator troubleshoot graphic errors?", options: ["Utilities", "Sponsors", "Producers", "Referees"], correctIndex: 2, explanation: "Fox News Media (2026f), a news control-room job: \"Quickly troubleshoot graphic errors with producers.\"", sourceLessonSlug: "one-play-through-every-chair" },
+          { prompt: "In Beat 5, who picks up the countdown to zero?", options: ["The TD", "The SM", "The A2", "The AD"], correctIndex: 3, explanation: "ESPN (2018, p. 25): the producer starts it, and the AD picks it up and counts \"to zero loud enough for Director and Producer to hear.\"", sourceLessonSlug: "one-play-through-every-chair" },
+          { prompt: "What shape does lesson 25 say every beat has?", options: ["One calls, the others act", "Everyone talks at once", "The talent leads the crew", "Each chair waits for the A1"], correctIndex: 0, explanation: "Lesson 25: one chair calls or counts, the others act on the word, each on what its own source gives it.", sourceLessonSlug: "one-play-through-every-chair" },
+          { prompt: "What does no source read for lesson 26 do?", options: ["Name a first-line person", "Assign faults chair by chair", "Mention escalation at all", "Describe an EIC's job"], correctIndex: 1, explanation: "Lesson 26: no source assigns faults chair by chair on a network sports truck, so the lesson teaches the first line and escalation.", sourceLessonSlug: "when-something-breaks" },
+          { prompt: "Why does ESPN recommend an engineer in charge?", options: ["So the union has a steward", "So the TD can leave early", "So producer and director stay put", "So the truck has a driver"], correctIndex: 2, explanation: "ESPN (2018, p. 21): so \"the Producer or Director doesn't have to leave their post during the broadcast.\"", sourceLessonSlug: "when-something-breaks" },
+          { prompt: "What does EIC stand for in ESPN's manual?", options: ["Editor in chief", "Electrician in charge", "Event info center", "Engineer in charge"], correctIndex: 3, explanation: "ESPN (2018, p. 21): the engineer in charge.", sourceLessonSlug: "when-something-breaks" },
+          { prompt: "Which ESPN video engineer duty appears in lesson 26?", options: ["Line patching and routing", "Rolling commercial breaks", "Writing the show rundown", "Mixing the announcers"], correctIndex: 0, explanation: "ESPN (2018, p. 20): \"controls all incoming video signals; line patching and routing; \"painting\" cam video levels.\"", sourceLessonSlug: "when-something-breaks" },
+          { prompt: "Which of these is on NFL Media's studio coordinator's first-line list?", options: ["Ticket and gate scanners", "IFB and mic belt packs", "Team travel and hotels", "Payroll and timecards"], correctIndex: 1, explanation: "NFL (2026o): router and comms panels, cameras, IFB and mic belt packs, stage lighting, replay, graphics and audio.", sourceLessonSlug: "when-something-breaks" },
+          { prompt: "Where does the studio coordinator send unresolved faults?", options: ["To the league", "To the talent", "To Engineering", "To the vendor"], correctIndex: 2, explanation: "NFL (2026o): \"escalating unresolved faults to Engineering with documented detail.\"", sourceLessonSlug: "when-something-breaks" },
+          { prompt: "What does the studio coordinator document about each fault?", options: ["Cost, vendor and warranty", "Who was blamed for it", "Ratings lost during it", "Symptoms, steps, resolution"], correctIndex: 3, explanation: "NFL (2026o): \"symptoms, troubleshooting steps taken, and resolution to support recurring-issue tracking.\"", sourceLessonSlug: "when-something-breaks" },
+          { prompt: "Why does the coordinator document faults, per the posting?", options: ["Recurring-issue tracking", "Billing the sponsors", "Disciplining the crew", "Filing union grievances"], correctIndex: 0, explanation: "NFL (2026o): \"to support recurring-issue tracking.\"", sourceLessonSlug: "when-something-breaks" },
+          { prompt: "What does NFL Media's TOC posting call the TOC operator when an issue occurs?", options: ["Last line of the defense", "First point of escalation", "Backup to the producer", "Owner of all the gear"], correctIndex: 1, explanation: "NFL (2026l): \"the first point of troubleshooting and escalation if an issue occurs.\"", sourceLessonSlug: "when-something-breaks" },
+          { prompt: "To whom does NFL Media's TOC operator communicate issues?", options: ["The talent and their agents", "The teams' coaching staffs", "Ops and production management", "The league's game referees"], correctIndex: 2, explanation: "NFL (2026l): \"communicate issues to Operations and Production Management in a timely and efficient manner.\"", sourceLessonSlug: "when-something-breaks" },
+          { prompt: "What does NFL Media's FAST operator do with distribution incidents?", options: ["Ignore them until the end", "Report them to sponsors", "Post them on social media", "Document, escalate, resolve"], correctIndex: 3, explanation: "NFL (2026e): \"Document, escalate, and manage video distribution incidents to resolution.\"", sourceLessonSlug: "when-something-breaks" },
+          { prompt: "In lesson 26's table, which chair troubleshoots tally and prompter?", options: ["The NFL utility", "The NFL TOC", "The NFL LD", "The Fox Viz op"], correctIndex: 0, explanation: "NFL (2026m): \"Ability to troubleshoot cameras on stage (tally, prompter etc.).\"", sourceLessonSlug: "when-something-breaks" },
+          { prompt: "What does Fox News Media's A2 provide when equipment fails?", options: ["A written apology", "Immediate solutions", "A new microphone", "A replacement crew"], correctIndex: 1, explanation: "Fox News Media (2026a), a news control-room job: \"Provide immediate solutions in the event of equipment failure or other audio problems.\"", sourceLessonSlug: "when-something-breaks" },
+          { prompt: "What kind of job is the Fox News Media A2 in lesson 26's table?", options: ["A Fox Sports truck job", "An NFL Media studio job", "A news control-room job", "A stadium video board job"], correctIndex: 2, explanation: "Lesson 26: both Fox News Media postings in its table are news control-room jobs.", sourceLessonSlug: "when-something-breaks" },
+          { prompt: "Which trouble lines does ESPN's manual list separately?", options: ["Catering, parking and the hotels", "Payroll, travel and the per diem", "Ratings, ads and the promotions", "Transmission, graphics, programs"], correctIndex: 3, explanation: "ESPN (2018, p. 6): transmission check-in or problems, graphics issues (\"Non-equipment\") and day-of-air programming issues.", sourceLessonSlug: "when-something-breaks" },
+          { prompt: "What does ESPN tell producers to do with mistakes?", options: ["Let them go immediately", "Replay them for the crew", "Log them for the league", "Fix them on air at once"], correctIndex: 0, explanation: "ESPN (2018, p. 23): \"Let mistakes go immediately.\"", sourceLessonSlug: "when-something-breaks" },
+          { prompt: "To whom does ESPN tell producers never to disparage the crew?", options: ["Sponsors", "Announcers", "Engineers", "Officials"], correctIndex: 1, explanation: "ESPN (2018, p. 23): \"Never disparage the crew to announcers.\"", sourceLessonSlug: "when-something-breaks" },
+          { prompt: "For when does ESPN tell directors to save the critique?", options: ["Halftime", "Timeouts", "Post-game", "Pregame"], correctIndex: 2, explanation: "ESPN (2018, p. 24): \"It's okay to ask if there's a problem, but save the critique for post-game.\"", sourceLessonSlug: "when-something-breaks" },
+          { prompt: "Reasoned in lesson 26, who stays at their posts when something breaks?", options: ["Utility and the SM", "The A2 and the EIC", "Camera operators", "Producer and director"], correctIndex: 3, explanation: "Lesson 26: the operator fixes what is in front of them, a first-line person takes the rest, engineering gets unresolved faults, and the producer and director stay at their posts.", sourceLessonSlug: "when-something-breaks" },
+          { prompt: "Which lesson teaches escalation on the transmission side, per lesson 26?", options: ["CREW-05 lesson 26", "CREW-05 lesson 4", "CREW-04 lesson 22", "CREW-07 lesson 1"], correctIndex: 0, explanation: "Lesson 26 links CREW-05's \"26 · Status calls, escalation and reports.\"", sourceLessonSlug: "when-something-breaks" },
+        ],
+      },
+    },
   ],
 };
