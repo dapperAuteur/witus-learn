@@ -1126,6 +1126,13 @@ auto-expands on a multi-course board: with most citations still unverified, "ope
 work" would expand nearly everything and undo the point. The per-course "show only unchecked"
 filter lives inside the panel it filters, so collapsing cannot defeat it.
 
+**Every public course is staged (2026-10-26).** `STAGED_COURSES` now lists every course whose lessons
+carry `## Sources` or `## References` in production, except private courses: 324 courses and 9,558
+citations in `/admin/citations`, up from 56 and about 3,900. The list was built from the database
+(visibility other than private), so the boards above are the whole public catalog, not a sample.
+Private courses stay out because the registry is a committed file in a public repository. A new
+course still joins the list when it ships.
+
 ## Civics courses link back to their index
 
 A `state-civics-<code>` course links back to `/civics`, the map that is actually its index; any

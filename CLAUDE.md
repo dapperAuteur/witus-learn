@@ -306,7 +306,8 @@ Two lists, one purpose: nothing in this catalog stays cited-but-unverified.
   DATABASE by `pnpm gen:citations` (not from `scripts/data/`, because BVC episodes, health, FAA and
   the languages are seeded from CSVs and generators that are gitignored or synthesized, so a
   source-file reader silently covers two thirds of the library). **Ship a course, stage it:** add the
-  slug to `STAGED_COURSES` in `src/lib/citations.ts`, regenerate, commit. `pnpm check:citations`
+  slug to `STAGED_COURSES` in `src/lib/citations.ts`, regenerate, commit (every public course was staged on
+  2026-10-26; private courses never are, because the registry is committed to a public repo). `pnpm check:citations`
   fails a staged course producing zero citations. Invited `course_auditors` verify their own course's
   citations at `/audit/citations`; the grant that lets someone read an unvetted course now also lets
   them check its sources, and only that course's.
