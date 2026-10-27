@@ -176,6 +176,20 @@ const LEADER_GUIDE = `Leader Electronics Corporation. (2026). *Leader scopes: On
 const LEADER_LV5600W = `LeaderPhabrix. (n.d.). *Leader LV5600W waveform monitor* [Product page]. ${RETRIEVED} https://leaderphabrix.com/products/lv5600w-waveform-monitor/`;
 const GV_CREATIVE_GRADING = `Grass Valley. (n.d.-b). *Creative Grading* [Product page]. ${RETRIEVED} https://www.grassvalley.com/products/cameras/creative-grading/`;
 const EVS_XTVIA = `EVS. (n.d.-b). *XT-VIA: Live production server* [Product page]. ${RETRIEVED} https://evs.com/products/live-production-servers/xt-via`;
+// Replay, playout and the TOC (research files 02 and 03)
+const EVS_LSMVIA = `EVS. (n.d.-a). *LSM-VIA: Live replay and highlights system* [Product page]. ${RETRIEVED} https://evs.com/products/live-replays-storytelling/lsm-via`;
+const EVS_XTGO = `EVS. (n.d.-c). *XT-GO: Live replay server* [Product page]. ${RETRIEVED} https://evs.com/products/live-production-servers/xt-go`;
+const EVS_IPDIRECTOR = `EVS. (n.d.-d). *IPDirector: Live PAM suite* [Product page]. ${RETRIEVED} https://evs.com/products/asset-workflow-management/ipdirector`;
+const ROSS_XPRESSION = `Ross Video. (n.d.-a). *XPression: Real-time motion graphics platform* [Product page]. ${RETRIEVED} https://www.rossvideo.com/products/graphics-and-virtual/xpression/`;
+const CHYRON_PAINT = `Chyron. (n.d.-a). *PAINT: Telestrated replay and sports analysis* [Product page]. ${RETRIEVED} https://chyron.com/products/all-in-one-production-systems/telestrated-replay-and-sports-analysis/`;
+const CHYRON_VP = `Chyron. (n.d.-b). *Virtual Placement: Live broadcast virtual graphics* [Product page]. ${RETRIEVED} https://chyron.com/products/virtual-augmented-reality/live-broadcast-virtual-graphics/`;
+const NBA_HIGHLIGHTS = `National Basketball Association. (2026a, October 13). *Highlight factory lead* [Job posting, JR001006]. Workday. ${RETRIEVED} https://nba.wd108.myworkdayjobs.com/nbacareers/job/Secaucus-USA/Highlight-Factory-Lead_JR001006`;
+const NBA_LOCAL_SUP = `National Basketball Association. (2026b, October 14). *Local game production supervisor (coordinating producer)* [Job posting, JR000970]. Workday. ${RETRIEVED} https://nba.wd108.myworkdayjobs.com/nbacareers/job/Secaucus-USA/Local-Game-Production-Supervisor--Coordinating-Producer-_JR000970`;
+const NFL_SEGMENT_PRODUCER = `National Football League. (2026k, September 29). *Seasonal part-time segment producer* [Job posting]. Greenhouse. ${RETRIEVED} https://job-boards.greenhouse.io/nflcareers/jobs/5393598008`;
+const NFL_TOC = `National Football League. (2026l, August 14). *Seasonal part-time TOC operator* [Job posting]. Greenhouse. ${RETRIEVED} https://job-boards.greenhouse.io/nflcareers/jobs/5389873008`;
+const FNM_PLAYOUT = `Fox News Media. (2026c, September 9). *Freelance playout operator* [Job posting]. Fox Corporation, Workday. ${RETRIEVED} https://fox.wd1.myworkdayjobs.com/Domestic/job/New-York-New-York-USA/Freelance-Playout-Operator_R50033820`;
+const MTVG_CAREERS = `Mobile TV Group. (n.d.-e). *Careers*. ${RETRIEVED} https://www.mobiletvgroup.com/contact/careers/`;
+
 // Audio trade press (research file 01). Every article is one dated account; no lesson names its people.
 const DALEY_2018 = `Daley, D. (2018, September 21). *Inside NBC Sports' all-encompassing audio production for Sunday Night Football*. Sports Video Group. ${RETRIEVED} https://www.sportsvideo.org/2018/09/21/inside-nbc-sports-all-encompassing-audio-production-for-sunday-night-football/`;
 const DALEY_2022 = `Daley, D. (2022, October 5). *Small changes make substantial differences in NFL audio*. Sports Video Group. ${RETRIEVED} https://www.sportsvideo.org/2022/10/05/small-changes-make-substantial-differences-in-nfl-audio/`;
@@ -1229,6 +1243,284 @@ The NFL V1 posting asks for the IP side too, "Working knowledge of SMPTE 2110 or
           { prompt: "Which lesson teaches reference and return video?", options: ["CREW-04 lesson 18", "CREW-02 lesson 8", "CREW-05 lesson 17", "CREW-00 lesson 7"], correctIndex: 3, explanation: "Lesson 11 links CREW-00's \"7 · Reference, timecode and return video.\"", sourceLessonSlug: "v2-robotics-and-the-chain" },
           { prompt: "Which course teaches the IP side the NFL V1 posting asks for (SMPTE 2110)?", options: ["CREW-05", "CREW-02", "CREW-03", "CREW-01"], correctIndex: 0, explanation: "Lesson 11: CREW-05, *Arena transmission*, teaches SMPTE 2110 and IP video.", sourceLessonSlug: "v2-robotics-and-the-chain" },
           { prompt: "Which lessons teach tally, per lesson 11's table?", options: ["CREW-02 17 and CREW-03 4", "CREW-00 25 and CREW-04 24", "CREW-05 9 and CREW-07 13", "CREW-01 2 and CREW-06 5"], correctIndex: 1, explanation: "Lesson 11: CREW-00's \"25 · DMX, RS-422, tally and USB\" and CREW-04's \"24 · Tally, intercom, return video and the questions to ask.\"", sourceLessonSlug: "v2-robotics-and-the-chain" },
+        ],
+      },
+    },
+    // ══════════════════════════════════════════════════════════════════════
+    // SECTION 4: Replay and playout
+    // ══════════════════════════════════════════════════════════════════════
+    {
+      slug: "the-replay-operator",
+      title: "12 · The replay server and the replay operator",
+      section: "4 · Replay and playout",
+      recallContent: [
+        {
+          prompt: "What did Turner Sports' V2 posting say the V2 helps the V1 achieve?",
+          answer: "The desired \"look\" of the studio cameras \"in terms of color/tone, iris/brightness, and camera matching\" (Turner Sports, 2023).",
+        },
+        {
+          prompt: "On a camera isolate system, who usually talks privately with a camera operator?",
+          answer: "\"usually the video operator or technical director\" (Clear-Com, 2020c, p. 18).",
+        },
+      ],
+      body: `${QR}
+
+**Two kinds of replay.** Broadcast replay serves the viewer; officiating replay serves the referee. They are different systems run by different crews, and the truck's replay operator does not decide reviews. CREW-05 lesson "4 · Beside the network: replay, tracking and referee comms" and CREW-07 lesson "1 · Three systems beside the field" teach the officiating side. *Break Into Sports & Media Broadcasting* lesson "12 · Stats, spotting boards, and replay" gives the broadcast replay operator in one paragraph. This lesson goes into the gear.
+
+**EVS is a system, not a person.** The postings use "EVS" as a system's name: "EVS teams" at the NBA (National Basketball Association [NBA], 2026a), an "EVS playout system" in a Fox News Media playout posting, a news control-room job (Fox News Media, 2026c), and "EVS IP Director ingest server systems" at NFL Media (National Football League [NFL], 2026l). One NFL posting has a segment producer oversee "EVS operators in the tape room" (NFL, 2026k), meaning the people who run that system. ESPN's format list writes the replay position as "EVS" (lesson 2). This course calls the person the replay operator. EVS is one maker; Ross Video and Chyron also sell replay systems.
+
+**No open posting.** On October 26, 2026, no live posting titled replay operator or EVS operator was found on the Fox, Disney (which includes ESPN and ABC), Warner Bros. Discovery, NFL or NBA boards, and Disney's searches for "replay" and "replay operator" returned no results (Fox Corporation, n.d.; NBA, n.d.; NFL, n.d.; The Walt Disney Company, n.d.; Warner Bros. Discovery, n.d.). So this lesson describes the work from makers' pages and from postings that mention replay, and the reviewer, who has held the chair, will confirm it.
+
+**The server.** EVS calls its XT-VIA a "Live production server," with "up to six channels of UHD and 12+ channels of HD" and "loop recording technology" (EVS, n.d.-b). It records "super motion cameras" at "2x up to 16x" in HD for "super slow-motion replays." Its licences include "Multicam," for "super slow-motion replays and highlights"; "Spotbox," for "ingest and playback purposes"; and "Sportlight," for smaller productions. EVS's XT-GO is an "Entry-level replay server" for "smaller productions operating on tighter budgets," with "live feed recording, slow and super motion replays, as well as clipping and playlist control" (EVS, n.d.-c). Lesson 3's truck 79 lists EVS XT-VIA servers.
+
+**The remote.** EVS calls LSM-VIA a "Live replay and highlights system" that works "together with the XT-VIA, XS-VIA and XT-GO servers" and was "Designed hand in hand with EVS's global community of operators" (EVS, n.d.-a). Its remote has an "EVS quality jog dial and lever," "Shortcut buttons with programmable functions," and "Quick clip playout control with shotbox function," and it can "Control live, recorders, clips and playlists." Its viewer screen shows "your clips, trains, and playlists." EVS lists these key features:
+
+- "Multi-camera ingest & playback control"
+- "Slow-motion and super slow-motion control"
+- "Highlights creation and editing"
+- "Live mode, clip mode, playlist mode"
+- "Instant access to any record train in the network"
+- "Metadata tagging"
+
+EVS says its LSM-GO remote for the XT-GO "is immediately accessible to any LSM operator with no need for extra training" (EVS, n.d.-c).
+
+**Seeing every angle.** EVS's MultiReview option lets an operator "Place in/out markers, select the angles you want to use" and "Create clips, export to targets, append to playlists," with "up to 16 multi-cam proxy feeds in one layout." EVS says it "Combines the overview of a director, with the possibilities of a replay operator" (EVS, n.d.-a). A multiviewer gives "Control of PGM & PVW ports," and shortcut buttons can give "easy access to intercom systems ("push-to-talk")."
+
+**Other makers.** Ross Video's product menu lists a "Rio Replay Live Replay System" (Ross Video, n.d.-a). Chyron's PAINT "combines a six-channel internal replay server with powerful, real-time telestration tools," and its operators can "comb through live feeds, clip key moments, and build highlight packages on the fly" (Chyron, n.d.-a).
+
+**The work, reasoned.** Assembled only from these makers' functions, because no posting read for this course lists a broadcast replay operator's duties: the operator records every camera to a server, marks in and out points, builds clips and playlists, and plays them back at speed or in slow motion.
+
+**On the crew.** ESPN's school minimum is "one DVR Unit with minimum 4 input / 2 output" (ESPN, 2018, p. 2), and its producer will "Request replays and graphics to support the themes and topics of the game" (p. 23). Mobile TV Group's 58FLEX has room for "Up to 6 replay operator positions" (Mobile TV Group, n.d.-c). The NBA's local game production supervisor coordinates "graphics, replay, sponsored elements, and other game presentation components" (NBA, 2026b). Section 7 follows one replay through every chair.
+
+:::reveal Does the truck's replay operator decide officiating reviews? ||| No. Broadcast replay serves the viewer; officiating replay is a separate system run by a separate crew (CREW-05, CREW-07).
+
+:::reveal What does this course call the person the postings call an "EVS operator"? ||| The replay operator. EVS is a system's name, not a job title.
+
+:::reveal What does EVS say its MultiReview option combines? ||| "the overview of a director, with the possibilities of a replay operator" (EVS, n.d.-a).
+
+## Sources
+- ${NBA_HIGHLIGHTS} Locator: description, "EVS teams".
+- ${FNM_PLAYOUT} Locator: "What You Will Need". A news control-room job.
+- ${NFL_TOC} Locator: "Responsibilities".
+- ${NFL_SEGMENT_PRODUCER} Locator: "Responsibilities".
+- ${FOX_BOARD} Locator: search results for "replay," "EVS" and "playout".
+- ${NBA_BOARD} Locator: search results.
+- ${NFL_BOARD_API} Locator: job title list.
+- ${DISNEY_BOARD} Locator: search results for "replay" and "replay operator" (none).
+- ${WBD_BOARD} Locator: search results for "replay" and "EVS".
+- ${EVS_XTVIA} Locator: "At the heart of the action," "Core benefits," "High quality super motion replays," "Introducing a new licensing model".
+- ${EVS_XTGO} Locator: "Go premium at lower cost" and "Fast and efficient control".
+- ${EVS_LSMVIA} Locator: page heading; "The new replay experience"; "LSM-VIA remote"; "Viewer screen"; "LSM-VIA Key features"; "MultiReview option"; "LSM-VIA Multiviewer".
+- ${ROSS_XPRESSION} Locator: product menu, "Video Servers & Replay".
+- ${CHYRON_PAINT} Locator: product description.
+- ${ESPN_2018} Locator: "Equipment Standards," p. 2; "Producer Responsibilities," p. 23.
+- ${MTVG_58_SPEC} Locator: "Replay," p. 1.
+- ${NBA_LOCAL_SUP} Locator: responsibilities.`,
+    },
+    {
+      slug: "playout-rolling-elements",
+      title: "13 · Playout: rolling elements on cue",
+      section: "4 · Replay and playout",
+      recallContent: [
+        {
+          prompt: "What does EVS's XT-VIA record, and at what speeds for super motion?",
+          answer: "Up to six UHD or 12+ HD channels with loop recording, and super motion cameras at 2x up to 16x in HD (EVS, n.d.-b).",
+        },
+        {
+          prompt: "From what is lesson 12's account of the replay operator's work assembled, and why?",
+          answer: "From makers' functions only, because no posting read for the course lists a broadcast replay operator's duties.",
+        },
+      ],
+      body: `${QR}
+
+**A news playout posting.** Fox News Media's "Freelance Playout Operator" is a news control-room job in New York, posted September 9, 2026 (Fox News Media, 2026c). The freelancer "will replace staff members who are on vacation or sick leave, including holidays and weekend shifts." The duties:
+
+- "Insert video elements during live programming as well as pretaped shows using a file server playout system"
+- "Count back to directors and roll elements simultaneously"
+- "Record and edit quick turnaround pieces"
+
+It asks for a "Strong understanding of iNews" and of "using a file server playout system," and says "Viz knowledge is a plus" and "Knowledge of EVS playout system is a plus." Pay: $36.00 to $43.75 per hour (Fox News Media, 2026c).
+
+The posting does not say what "count back" means, and no source read for this course defines it, so this course quotes the phrase and leaves its meaning to the reviewer. Section 7 teaches the counts that ESPN's manual does spell out.
+
+**Playout gear, as makers describe it.** EVS calls IPDirector a "live production asset management (PAM) suite" with "applications for ingest and playout control, logging, content search and browsing, editing, and social media publishing" (EVS, n.d.-d). Its MPlay remote "is used for the playout of clips, playlists and graphics" and "lets a single operator control up to four channels simultaneously," including "fill & key graphics and ganged clips." IPDirector also offers instant review of content while it is still being captured, and "Advanced playout control (playlist and ABRoll)" (EVS, n.d.-d). The XT-VIA's Spotbox licence gives "playback channels for shot-box purposes (also suitable for studios, news/MCR environments)" (EVS, n.d.-b). Chyron's Virtual Placement includes "an internal disc recorder that provides access to footage of all input channels for near-live replays, removing the need for extra servers or additional crew" (Chyron, n.d.-b). These are the makers' descriptions of their own products.
+
+**Audio has playout too.** NFL Media's A2 posting asks for experience with "cart playback systems such as Ovation or 360systems" and mixing "with heavy emphasis on remotes and server playback" (National Football League [NFL], 2026g). Lesson 4 reads that posting.
+
+**Elements on the clock.** ESPN's AD gets "run times on tease/open Animation, SOTS, B- Roll (or VO) and any pre-recorded element that is built and runs from the truck- control room" (ESPN, 2018, p. 25). Commercial breaks are elements too: master control is "where the shows commercial breaks are played back" (p. 33), and "In some cases, breaks will be rolled from site" (p. 3). Lesson 2 sets out who owns that clock.
+
+**Streaming playout.** NFL Media's "Seasonal FAST Video Systems Operator" will "Perform digital ad insertion operations on FAST live games" and "Execute SCTE-35 cue insertion for live and recorded programming, following AD commands" (NFL, 2026e). It is an "On-call position working less than 40 hours per week," seasonal for up to 7 months. Its pay line, first published August 11, 2026, reads $26 to $26.50 USD with no unit, printed here as posted. It asks for "A minimum of 2-years of experience in a Technical Support role."
+
+**Reasoned.** Put the postings and pages side by side: replay plays back moments the cameras just recorded, while playout rolls prepared elements (packages, animations, clips, graphics, breaks and ad cues) when the AD or the director calls for them. Both chairs work on the clock from lesson 2, and both may sit at the same kind of server: EVS sells one box with a replay licence and a playback licence.
+
+:::reveal Whom does Fox News Media's freelance playout operator replace? ||| "staff members who are on vacation or sick leave, including holidays and weekend shifts" (Fox News Media, 2026c).
+
+:::reveal What does EVS's MPlay remote let one operator control? ||| Up to four channels at once, for clips, playlists and graphics, including "fill & key graphics and ganged clips" (EVS, n.d.-d).
+
+:::reveal How does lesson 13 tell replay and playout apart? ||| Replay plays back what the cameras just recorded; playout rolls prepared elements on the AD's or director's call.
+
+## Sources
+- ${FNM_PLAYOUT} Locator: "Job Description"; "A Snapshot of Your Responsibilities," items 1 to 3; "What You Will Need"; pay paragraph. A news control-room job.
+- ${EVS_IPDIRECTOR} Locator: "Ingest, create and play"; "Remote controllers"; "Key features".
+- ${EVS_XTVIA} Locator: "Introducing a new licensing model".
+- ${CHYRON_VP} Locator: replay paragraph.
+- ${NFL_AUDIO2} Locator: "Responsibilities," items 1 and 3.
+- ${ESPN_2018} Locator: "Commercial Breaks and Formats," p. 3; "Associate Director Responsibilities," item 5, p. 25; glossary, "Master," p. 33.
+- ${NFL_FAST} Locator: "Responsibilities"; "Required Qualifications"; "Terms"; "Salary / Pay Range".`,
+    },
+    {
+      slug: "the-toc-feeds-in-and-out",
+      title: "14 · The TOC: feeds in and out",
+      section: "4 · Replay and playout",
+      recallContent: [
+        {
+          prompt: "Why does this course quote \"count back\" from the Fox News playout posting without explaining it?",
+          answer: "The posting does not define it, and no source read for the course does, so its meaning is left to the reviewer.",
+        },
+        {
+          prompt: "On whose commands does NFL Media's FAST operator insert SCTE-35 cues?",
+          answer: "The AD's: \"following AD commands\" (NFL, 2026e).",
+        },
+      ],
+      body: `${QR}
+
+**The name.** Mobile TV Group's careers page listed a "Technical Operations Center (TOC) Supervisor" opening (Mobile TV Group, n.d.-e). ESPN's producer gives the TOC a copy of the day's format, with the A1 and the replay position (ESPN, 2018, p. 23).
+
+**A TOC operator, as posted.** NFL Media's "Seasonal Part-Time TOC Operator" "will perform multiple job functions and ensure that all technical facility requests are met" (National Football League [NFL], 2026l). The operator works with "NFL Media Production team, Newsroom personnel, NFL Films Technical Operations, Encompass Atlanta Technical Operation, and members of all 32 NFL Clubs to ensure all video content is received and distributed to broadcast specifications," and "Communicates with NFL Network Master Control during live broadcasts to ensure signal continuity." The TOC handles feeds "for live remote network productions including NFL Network Games, Super Bowl, NFL Combine, NFL Draft, Hall of Fame Enshrinement." And: "The TOC operator is the first point of troubleshooting and escalation if an issue occurs."
+
+**The duties.**
+
+| Duty | As posted |
+|---|---|
+| Routing | "broadcast routing systems, including split routes" |
+| Scopes and bars | "Ability to read digital & analog waveform monitors and how to set up test bars" |
+| Audio | "Ability to read audio meters" |
+| Before air | "Must be able to perform Sync and Fax checks prior to live shows and events"; "Ability to perform extensive transmission checks prior to live remote events" |
+| Bookings | "Booking and goodnight procedures for The Switch, Lumen & AT&T Fiber and Satellite orders" |
+| Records | "Must possess above average writing skills to document on-air issues"; "Responsible for the generation of broadcast reports as required" |
+| Ingest | "Familiarity with EVS IP Director ingest server systems" |
+
+It requires "A minimum of 5 years' experience in a broadcast operations environment including 2110, HD/SD, ASI, JPEG and MPLS signals." The terms are "Up to 29 hours per week up to 7 months." The pay line, first published August 14, 2026, reads $60.06 USD at both ends, with no unit (NFL, 2026l).
+
+**Words the posting does not define.** "Fax" in "Sync and Fax checks," "goodnight procedures" for a booked circuit, and "split routes" appear without definitions, and no source read for this course defines them, so this course quotes them and leaves their meanings to the reviewer. Section 7 shows how ESPN's manual uses "fax" for the checks before air.
+
+**ESPN's transmission check.** ESPN's AD, "when the transmission time opens," will "call Bristol Transmission" and "check all sources with them" (ESPN, 2018, p. 25). ESPN's sample schedule for an 8:00 p.m. game lists "7:00PM TRANSMISSION CHECK IN" (p. 27). Its glossary defines the test at the receiving end: "Continuity Check: An audio and video test to determine if the control room's output is the same as what is received by master control prior to a show's airing" (p. 31). The manual lists a separate trouble line for transmission check-in or problems (p. 6).
+
+**First line, then escalation.** The NFL's TOC operator is "the first point of troubleshooting and escalation" and "will be expected to communicate issues to Operations and Production Management in a timely and efficient manner" (NFL, 2026l). The FAST operator from lesson 13 will "Document, escalate, and manage video distribution incidents to resolution" (NFL, 2026e). Section 7 sets out who fixes what when something breaks on air.
+
+**Where this continues.** CREW-05, *Arena transmission*, teaches the transmission side past the TOC, in "23 · Feed check-in and the monitoring tools" and "26 · Status calls, escalation and reports." This course does not repeat them.
+
+**Reasoned.** From the NFL posting and ESPN's manual together: the TOC is the door of the truck or studio. Feeds come in and go out through it, it checks them before air with bars, scopes, meters and the receiving end, it books and releases the circuits, and it is the first call when a feed fails.
+
+:::reveal With whom does NFL Media's TOC operator communicate during live broadcasts, and why? ||| NFL Network Master Control, "to ensure signal continuity" (NFL, 2026l).
+
+:::reveal In ESPN's glossary, what does a continuity check test? ||| Whether the control room's output is the same as what master control receives, before the show airs (ESPN, 2018, p. 31).
+
+:::reveal Why does this course not define "fax," "goodnight procedures" or "split routes"? ||| The posting does not define them and no source read for the course does, so they are quoted and left to the reviewer.
+
+## Sources
+- ${MTVG_CAREERS} Locator: openings list.
+- ${ESPN_2018} Locator: "Producer Responsibilities," p. 23; "Trouble Numbers," p. 6; AD item 6, p. 25; "Sample Basketball Operations/Production Schedule," p. 27; glossary, "Continuity Check," p. 31.
+- ${NFL_TOC} Locator: opening paragraph; "Responsibilities"; "Required Qualifications"; "Expected Hours of Work"; "Salary / Pay Range".
+- ${NFL_FAST} Locator: "Responsibilities".`,
+    },
+    {
+      slug: "section-4-quiz",
+      title: "Section 4 quiz · Replay and playout",
+      section: "4 · Replay and playout",
+      body: "A graded check on the replay server and the replay operator, playout, and the TOC. Each answer links back to the lesson that teaches it.",
+      quiz: {
+        passingScore: 80,
+        questionsPerAttempt: 5,
+        shuffleOptions: true,
+        questions: [
+          { prompt: "Whom does broadcast replay serve, in lesson 12?", options: ["The viewer", "The referee", "The league", "The coach"], correctIndex: 0, explanation: "Lesson 12: broadcast replay serves the viewer; officiating replay serves the referee.", sourceLessonSlug: "the-replay-operator" },
+          { prompt: "Whom does officiating replay serve, in lesson 12?", options: ["The viewer", "The referee", "The sponsor", "The talent"], correctIndex: 1, explanation: "Lesson 12: officiating replay serves the referee, on a separate system run by a separate crew.", sourceLessonSlug: "the-replay-operator" },
+          { prompt: "Does the truck's replay operator decide officiating reviews?", options: ["Yes, on every scoring play", "Yes, when the referee asks", "No, it is a separate system", "Only in college football"], correctIndex: 2, explanation: "Lesson 12: broadcast and officiating replay are different systems run by different crews; the truck's operator does not decide reviews.", sourceLessonSlug: "the-replay-operator" },
+          { prompt: "Which lessons teach the officiating side of replay?", options: ["CREW-02 lesson 17 and CREW-03 4", "CREW-00 lesson 8 and CREW-04 23", "CREW-01 lesson 3 and CREW-06 1", "CREW-05 lesson 4 and CREW-07 1"], correctIndex: 3, explanation: "Lesson 12 links CREW-05's \"4 · Beside the network: replay, tracking and referee comms\" and CREW-07's \"1 · Three systems beside the field.\"", sourceLessonSlug: "the-replay-operator" },
+          { prompt: "How do the postings in lesson 12 use \"EVS\"?", options: ["As a system's name", "As a job title", "As a union name", "As a league rule"], correctIndex: 0, explanation: "Lesson 12: \"EVS teams,\" an \"EVS playout system\" and \"EVS IP Director ingest server systems\" all name a system, not a person.", sourceLessonSlug: "the-replay-operator" },
+          { prompt: "Which phrase appears in the NBA's highlight factory lead posting?", options: ["\"EVS replay chair\"", "\"EVS teams\"", "\"EVS crew chief\"", "\"EVS desk lead\""], correctIndex: 1, explanation: "NBA (2026a): the lead coordinates \"across Content Creation, Automation, and EVS teams.\"", sourceLessonSlug: "the-replay-operator" },
+          { prompt: "Whom does an NFL segment producer posting say the producer oversees in the tape room?", options: ["Graphics designers", "Audio assistants", "EVS operators", "Camera utilities"], correctIndex: 2, explanation: "NFL (2026k): oversee \"EVS operators in the tape room,\" the people who run that system.", sourceLessonSlug: "the-replay-operator" },
+          { prompt: "What does this course call the person who runs the replay system?", options: ["The EVS operator", "The tape operator", "The video operator", "The replay operator"], correctIndex: 3, explanation: "Lesson 12: EVS is a system's name, so the course calls the person the replay operator.", sourceLessonSlug: "the-replay-operator" },
+          { prompt: "Besides EVS, which makers does lesson 12 say also sell replay systems?", options: ["Ross Video and Chyron", "Calrec and Solid State", "Riedel and RTS intercom", "Leader and Sony scopes"], correctIndex: 0, explanation: "Lesson 12: Ross Video lists Rio Replay and Chyron sells PAINT with an internal replay server.", sourceLessonSlug: "the-replay-operator" },
+          { prompt: "What did this course find for live replay operator postings on October 26, 2026?", options: ["Three, all at ESPN", "None on five boards", "One at NBC Sports", "Two at the NFL"], correctIndex: 1, explanation: "Lesson 12: no live posting titled replay operator or EVS operator on the Fox, Disney, Warner Bros. Discovery, NFL or NBA boards.", sourceLessonSlug: "the-replay-operator" },
+          { prompt: "What did Disney's searches for \"replay\" and \"replay operator\" return?", options: ["Two ESPN jobs", "One ABC job", "No results", "A closed job"], correctIndex: 2, explanation: "Lesson 12: Disney's searches for \"replay\" and \"replay operator\" returned no results.", sourceLessonSlug: "the-replay-operator" },
+          { prompt: "From what does lesson 12 describe the replay operator's work?", options: ["A live replay operator posting", "The DGA's Article 2 duties", "A union's job description", "Makers' pages and replay mentions"], correctIndex: 3, explanation: "Lesson 12: from makers' pages and postings that mention replay; the reviewer who has held the chair will confirm it.", sourceLessonSlug: "the-replay-operator" },
+          { prompt: "What does EVS call its XT-VIA?", options: ["A live production server", "A replay remote controller", "A graphics render engine", "A matrix intercom frame"], correctIndex: 0, explanation: "EVS (n.d.-b): XT-VIA is its \"Live production server.\" LSM-VIA is the replay remote.", sourceLessonSlug: "the-replay-operator" },
+          { prompt: "How many channels does EVS give for the XT-VIA?", options: ["Two UHD or four HD", "Six UHD or 12+ HD", "One UHD or two HD", "Sixteen UHD only"], correctIndex: 1, explanation: "EVS (n.d.-b): \"up to six channels of UHD and 12+ channels of HD.\"", sourceLessonSlug: "the-replay-operator" },
+          { prompt: "What recording technology does EVS name for the XT-VIA?", options: ["Tape recording", "Cloud recording", "Loop recording", "Disc recording"], correctIndex: 2, explanation: "EVS (n.d.-b): \"loop recording technology.\"", sourceLessonSlug: "the-replay-operator" },
+          { prompt: "At what speeds does EVS say XT-VIA records super motion cameras in HD?", options: ["1x only", "4x to 8x", "50x to 100x", "2x up to 16x"], correctIndex: 3, explanation: "EVS (n.d.-b): \"2x up to 16x\" in HD for super slow-motion replays.", sourceLessonSlug: "the-replay-operator" },
+          { prompt: "Which XT-VIA licence does EVS give for super slow-motion replays and highlights?", options: ["Multicam", "Spotbox", "Sportlight", "MultiReview"], correctIndex: 0, explanation: "EVS (n.d.-b): \"Multicam\" for \"super slow-motion replays and highlights.\" Spotbox is for ingest and playback.", sourceLessonSlug: "the-replay-operator" },
+          { prompt: "Which XT-VIA licence does EVS give for ingest and playback?", options: ["Multicam", "Spotbox", "Sportlight", "LSM-GO"], correctIndex: 1, explanation: "EVS (n.d.-b): \"Spotbox\" for \"ingest and playback purposes.\"", sourceLessonSlug: "the-replay-operator" },
+          { prompt: "For what does EVS say its XT-GO is meant?", options: ["The Super Bowl only", "Studio news playout", "Smaller productions", "Officiating review"], correctIndex: 2, explanation: "EVS (n.d.-c): an \"Entry-level replay server\" for \"smaller productions operating on tighter budgets.\"", sourceLessonSlug: "the-replay-operator" },
+          { prompt: "What does EVS call LSM-VIA?", options: ["A graphics playout and keying tool", "A live production and ingest server", "A camera robotics arm and rover", "A live replay and highlights system"], correctIndex: 3, explanation: "EVS (n.d.-a): a \"Live replay and highlights system.\"", sourceLessonSlug: "the-replay-operator" },
+          { prompt: "With whom does EVS say LSM-VIA was designed?", options: ["EVS's community of operators", "The NFL's officiating office", "Network directors' guild", "A university lab"], correctIndex: 0, explanation: "EVS (n.d.-a): \"Designed hand in hand with EVS's global community of operators.\"", sourceLessonSlug: "the-replay-operator" },
+          { prompt: "Which physical controls does EVS name on the LSM-VIA remote?", options: ["A T-bar and joystick", "A jog dial and lever", "Faders and mutes", "A touchpad only"], correctIndex: 1, explanation: "EVS (n.d.-a): an \"EVS quality jog dial and lever,\" with shortcut buttons.", sourceLessonSlug: "the-replay-operator" },
+          { prompt: "What does EVS say the LSM-VIA remote's shotbox function gives?", options: ["Camera tally control", "Intercom party lines", "Quick clip playout", "Loudness metering"], correctIndex: 2, explanation: "EVS (n.d.-a): \"Quick clip playout control with shotbox function.\"", sourceLessonSlug: "the-replay-operator" },
+          { prompt: "What does EVS say the LSM-VIA viewer screen shows?", options: ["Scores and game stats", "Camera shading levels", "Audio meters and peaks", "Clips, trains, playlists"], correctIndex: 3, explanation: "EVS (n.d.-a): the viewer screen shows \"your clips, trains, and playlists.\"", sourceLessonSlug: "the-replay-operator" },
+          { prompt: "Which three modes does EVS list among LSM-VIA's key features?", options: ["Live, clip and playlist", "Ingest, render and key", "Shade, match and paint", "Talk, listen and call"], correctIndex: 0, explanation: "EVS (n.d.-a): \"Live mode, clip mode, playlist mode.\"", sourceLessonSlug: "the-replay-operator" },
+          { prompt: "Who does EVS say can use the LSM-GO remote with no extra training?", options: ["Any graphics operator", "Any LSM operator", "Any camera operator", "Any audio mixer"], correctIndex: 1, explanation: "EVS (n.d.-c): it \"is immediately accessible to any LSM operator with no need for extra training.\"", sourceLessonSlug: "the-replay-operator" },
+          { prompt: "How many multi-cam proxy feeds can MultiReview show in one layout?", options: ["Up to 4", "Up to 8", "Up to 16", "Up to 64"], correctIndex: 2, explanation: "EVS (n.d.-a): \"up to 16 multi-cam proxy feeds in one layout.\"", sourceLessonSlug: "the-replay-operator" },
+          { prompt: "What does EVS say MultiReview combines?", options: ["Audio and video mixing in one desk", "Shading and robotics on one panel", "Graphics and the game clock data", "A director's overview and replay"], correctIndex: 3, explanation: "EVS (n.d.-a): it \"Combines the overview of a director, with the possibilities of a replay operator.\"", sourceLessonSlug: "the-replay-operator" },
+          { prompt: "What can LSM-VIA's shortcut buttons give access to through a Cerebrum integration?", options: ["Intercom push-to-talk", "Camera iris control", "Loudness meters", "The score bug"], correctIndex: 0, explanation: "EVS (n.d.-a): \"easy access to intercom systems (\"push-to-talk\").\"", sourceLessonSlug: "the-replay-operator" },
+          { prompt: "Which replay system does Ross Video's product menu list?", options: ["XT-GO", "Rio Replay", "PAINT", "LSM-VIA"], correctIndex: 1, explanation: "Ross Video (n.d.-a): \"Rio Replay Live Replay System.\" XT-GO and LSM-VIA are EVS's; PAINT is Chyron's.", sourceLessonSlug: "the-replay-operator" },
+          { prompt: "What does Chyron say PAINT combines?", options: ["Intercom and IFB", "Shading and scopes", "Replay and telestration", "Loudness and AFV"], correctIndex: 2, explanation: "Chyron (n.d.-a): \"a six-channel internal replay server with powerful, real-time telestration tools.\"", sourceLessonSlug: "the-replay-operator" },
+          { prompt: "Reasoned from makers' functions, what does lesson 12 say a replay operator does?", options: ["Shades and matches every camera", "Mixes the announcers and crowd", "Books satellite and fiber feeds", "Records, marks, clips, plays back"], correctIndex: 3, explanation: "Lesson 12: records every camera, marks in and out points, builds clips and playlists, and plays them back at speed or slow.", sourceLessonSlug: "the-replay-operator" },
+          { prompt: "What does ESPN's producer request to support the themes of the game?", options: ["Replays and graphics", "Camera moves and lenses", "Mics and IFB checks", "Feeds and bookings"], correctIndex: 0, explanation: "ESPN (2018, p. 23): \"Request replays and graphics to support the themes and topics of the game.\"", sourceLessonSlug: "the-replay-operator" },
+          { prompt: "What does the NBA's local game production supervisor coordinate, among other things?", options: ["Ticket sales and gates", "Graphics and replay", "Payroll and benefits", "Travel and hotels"], correctIndex: 1, explanation: "NBA (2026b): \"graphics, replay, sponsored elements, and other game presentation components.\"", sourceLessonSlug: "the-replay-operator" },
+          { prompt: "What kind of job is Fox News Media's Freelance Playout Operator?", options: ["A Fox Sports truck job", "An NFL studio job", "A news control-room job", "An NBA arena job"], correctIndex: 2, explanation: "Lesson 13: a news control-room job in New York, posted September 9, 2026 (Fox News Media, 2026c).", sourceLessonSlug: "playout-rolling-elements" },
+          { prompt: "Whom does the Fox News freelance playout operator replace?", options: ["The show's director", "The truck's A1", "Every new intern", "Staff on leave"], correctIndex: 3, explanation: "Fox News Media (2026c): \"staff members who are on vacation or sick leave, including holidays and weekend shifts.\"", sourceLessonSlug: "playout-rolling-elements" },
+          { prompt: "With what does the Fox News playout operator insert video elements?", options: ["A file server playout system", "A tape deck and a stopwatch", "A camera's own memory card", "The switcher's still store"], correctIndex: 0, explanation: "Fox News Media (2026c): \"using a file server playout system.\"", sourceLessonSlug: "playout-rolling-elements" },
+          { prompt: "What two things does the Fox News playout operator do simultaneously?", options: ["Shade and match cameras", "Count back and roll elements", "Mix and monitor audio", "Book and release circuits"], correctIndex: 1, explanation: "Fox News Media (2026c): \"Count back to directors and roll elements simultaneously.\"", sourceLessonSlug: "playout-rolling-elements" },
+          { prompt: "What else does the Fox News playout posting say the operator will do?", options: ["Direct the newscast", "Run the TOC desk", "Edit quick turnarounds", "Write the scripts"], correctIndex: 2, explanation: "Fox News Media (2026c): \"Record and edit quick turnaround pieces.\"", sourceLessonSlug: "playout-rolling-elements" },
+          { prompt: "Which newsroom system does the Fox News playout posting require a strong understanding of?", options: ["Viz Trio", "Riedel", "Calrec", "iNews"], correctIndex: 3, explanation: "Fox News Media (2026c): \"Strong understanding of iNews.\" Viz and EVS are pluses.", sourceLessonSlug: "playout-rolling-elements" },
+          { prompt: "Which playout system does the Fox News posting call a plus?", options: ["EVS", "Ross Rio", "Enco", "Ovation"], correctIndex: 0, explanation: "Fox News Media (2026c): \"Knowledge of EVS playout system is a plus,\" as is Viz.", sourceLessonSlug: "playout-rolling-elements" },
+          { prompt: "What pay does the Fox News playout operator posting state?", options: ["$26 to $26.50 USD", "$36.00 to $43.75 per hour", "$60.06 USD, no unit", "$44.00 to $58.50 per hour"], correctIndex: 1, explanation: "Fox News Media (2026c): $36.00 to $43.75 per hour.", sourceLessonSlug: "playout-rolling-elements" },
+          { prompt: "How does this course handle \"count back\" in the Fox News playout posting?", options: ["Defines it as a countdown", "Defines it as a rewind", "Quotes it, undefined", "Leaves it out entirely"], correctIndex: 2, explanation: "Lesson 13: no source read defines it, so the course quotes the phrase and leaves its meaning to the reviewer.", sourceLessonSlug: "playout-rolling-elements" },
+          { prompt: "What does EVS call IPDirector?", options: ["A live replay server", "A graphics engine", "An intercom matrix", "A live PAM suite"], correctIndex: 3, explanation: "EVS (n.d.-d): a \"live production asset management (PAM) suite.\"", sourceLessonSlug: "playout-rolling-elements" },
+          { prompt: "How many channels does EVS say one operator can control with the MPlay remote?", options: ["Up to four", "Up to sixteen", "Exactly one", "Up to two"], correctIndex: 0, explanation: "EVS (n.d.-d): MPlay \"lets a single operator control up to four channels simultaneously.\"", sourceLessonSlug: "playout-rolling-elements" },
+          { prompt: "What does EVS say MPlay is used for the playout of?", options: ["Audio carts and music", "Clips, playlists, graphics", "Satellite and fiber feeds", "Camera scene files"], correctIndex: 1, explanation: "EVS (n.d.-d): \"the playout of clips, playlists and graphics.\"", sourceLessonSlug: "playout-rolling-elements" },
+          { prompt: "Which kinds of material does EVS say MPlay can play out, besides plain clips?", options: ["Live camera iso feeds", "Talkback and IFB", "Fill & key graphics", "Loudness reports"], correctIndex: 2, explanation: "EVS (n.d.-d): \"fill & key graphics and ganged clips.\"", sourceLessonSlug: "playout-rolling-elements" },
+          { prompt: "What advanced playout control does EVS list for IPDirector?", options: ["Tally and talkback", "Shading and scopes", "Loop and record", "Playlist and ABRoll"], correctIndex: 3, explanation: "EVS (n.d.-d): \"Advanced playout control (playlist and ABRoll).\"", sourceLessonSlug: "playout-rolling-elements" },
+          { prompt: "For which settings does EVS say the Spotbox shot-box channels are also suitable?", options: ["Studios and news/MCR", "Stadium video boards", "Radio and podcasts", "Cinema and DIT carts"], correctIndex: 0, explanation: "EVS (n.d.-b): \"also suitable for studios, news/MCR environments.\"", sourceLessonSlug: "playout-rolling-elements" },
+          { prompt: "What does Chyron say its Virtual Placement's internal disc recorder removes the need for?", options: ["A graphics operator", "Extra servers or crew", "A camera tracking rig", "A director's call"], correctIndex: 1, explanation: "Chyron (n.d.-b): near-live replays, \"removing the need for extra servers or additional crew.\" That is the maker's claim.", sourceLessonSlug: "playout-rolling-elements" },
+          { prompt: "Which cart playback systems does NFL Media's A2 posting name?", options: ["EVS or Ross Rio", "iNews or Enco servers", "Ovation or 360systems", "Viz Trio or XPression"], correctIndex: 2, explanation: "NFL (2026g): \"cart playback systems such as Ovation or 360systems.\"", sourceLessonSlug: "playout-rolling-elements" },
+          { prompt: "For which elements does ESPN's AD get run times?", options: ["Live shots on the field", "Every replay in the game", "The announcers' ad-libs", "Pre-recorded truck elements"], correctIndex: 3, explanation: "ESPN (2018, p. 25): run times on the tease, open, SOTS, B-roll and \"any pre-recorded element that is built and runs from the truck.\"", sourceLessonSlug: "playout-rolling-elements" },
+          { prompt: "Where does ESPN's glossary say commercial breaks are played back?", options: ["Master control", "The replay room", "The audio booth", "The TOC desk"], correctIndex: 0, explanation: "ESPN (2018, p. 33): master control is \"where the shows commercial breaks are played back.\"", sourceLessonSlug: "playout-rolling-elements" },
+          { prompt: "What does NFL Media's FAST operator perform on FAST live games?", options: ["Camera shading", "Digital ad insertion", "Parab operation", "Graphics design"], correctIndex: 1, explanation: "NFL (2026e): \"Perform digital ad insertion operations on FAST live games.\"", sourceLessonSlug: "playout-rolling-elements" },
+          { prompt: "Which cues does the FAST operator insert for live and recorded programming?", options: ["IFB cues", "Tally cues", "SCTE-35 cues", "GPI cues"], correctIndex: 2, explanation: "NFL (2026e): \"Execute SCTE-35 cue insertion for live and recorded programming.\"", sourceLessonSlug: "playout-rolling-elements" },
+          { prompt: "What hours does the NFL FAST posting describe?", options: ["Exactly 40 hours per week", "Up to 29 hours a week", "Overnight shifts only", "On call, under 40 a week"], correctIndex: 3, explanation: "NFL (2026e): \"On-call position working less than 40 hours per week,\" seasonal up to 7 months.", sourceLessonSlug: "playout-rolling-elements" },
+          { prompt: "How does this course print the NFL FAST operator's posted pay?", options: ["$26 to $26.50 USD, no unit", "$26 to $26.50 an hour", "$26,000 to $26,500 a year", "$26 to $26.50 a day"], correctIndex: 0, explanation: "Lesson 13: the pay line reads $26 to $26.50 USD with no unit, printed as posted.", sourceLessonSlug: "playout-rolling-elements" },
+          { prompt: "How much experience does the NFL FAST posting ask for?", options: ["5 years in a truck", "2 years in tech support", "10 years in news", "None; it is an internship"], correctIndex: 1, explanation: "NFL (2026e): \"A minimum of 2-years of experience in a Technical Support role.\"", sourceLessonSlug: "playout-rolling-elements" },
+          { prompt: "Reasoned in lesson 13, how does playout differ from replay?", options: ["Playout is used only for audio", "Playout is used only in news", "Playout rolls prepared elements", "Playout is run by the TD alone"], correctIndex: 2, explanation: "Lesson 13: replay plays back what the cameras just recorded; playout rolls prepared elements when the AD or director calls for them.", sourceLessonSlug: "playout-rolling-elements" },
+          { prompt: "Reasoned in lesson 13, why may replay and playout sit at the same kind of server?", options: ["The FCC requires one box", "Unions demand one server", "Sony makes every server", "EVS licenses both on one box"], correctIndex: 3, explanation: "Lesson 13: EVS sells the XT-VIA with a replay licence (Multicam) and a playback licence (Spotbox).", sourceLessonSlug: "playout-rolling-elements" },
+          { prompt: "Which posting expands TOC as \"Technical Operations Center\"?", options: ["Mobile TV Group's careers", "NFL Media's TOC operator", "ESPN's 2018 manual", "Fox News Media's playout"], correctIndex: 0, explanation: "Mobile TV Group (n.d.-e) listed a \"Technical Operations Center (TOC) Supervisor\" opening.", sourceLessonSlug: "the-toc-feeds-in-and-out" },
+          { prompt: "What does ESPN's producer give the TOC before the show?", options: ["A transmission booking", "A copy of the format", "A spare beltpack", "A list of trouble lines"], correctIndex: 1, explanation: "ESPN (2018, p. 23): the producer gives copies of the format to the TOC, among others.", sourceLessonSlug: "the-toc-feeds-in-and-out" },
+          { prompt: "What does NFL Media's TOC operator ensure, per the opening paragraph?", options: ["Every replay airs", "Graphics are spelled right", "Facility requests are met", "Talent hear their IFB"], correctIndex: 2, explanation: "NFL (2026l): \"ensure all technical facility requests are met.\"", sourceLessonSlug: "the-toc-feeds-in-and-out" },
+          { prompt: "Whom does the NFL TOC communicate with during live broadcasts?", options: ["The league's game officials", "Each club's own head coach", "The talent and their agents", "NFL Network Master Control"], correctIndex: 3, explanation: "NFL (2026l): \"Communicates with NFL Network Master Control during live broadcasts to ensure signal continuity.\"", sourceLessonSlug: "the-toc-feeds-in-and-out" },
+          { prompt: "Why does the NFL TOC communicate with master control during live broadcasts?", options: ["To ensure signal continuity", "To approve the show rundown", "To shade the studio cameras", "To schedule the next crew"], correctIndex: 0, explanation: "NFL (2026l): \"to ensure signal continuity.\"", sourceLessonSlug: "the-toc-feeds-in-and-out" },
+          { prompt: "Which events does the NFL TOC posting name among its live remote productions?", options: ["Only preseason games", "Super Bowl, Combine, Draft", "Only NFL Films shoots", "Only college bowl games"], correctIndex: 1, explanation: "NFL (2026l): \"NFL Network Games, Super Bowl, NFL Combine, NFL Draft, Hall of Fame Enshrinement.\"", sourceLessonSlug: "the-toc-feeds-in-and-out" },
+          { prompt: "What does the NFL posting say the TOC operator is the first point of?", options: ["Contact for the talent", "Sale for the sponsors", "Troubleshooting, escalation", "Approval for graphics"], correctIndex: 2, explanation: "NFL (2026l): \"the first point of troubleshooting and escalation if an issue occurs.\"", sourceLessonSlug: "the-toc-feeds-in-and-out" },
+          { prompt: "What kind of routes does the NFL TOC posting include in its routing duty?", options: ["Bus routes", "Cable routes", "Mail routes", "Split routes"], correctIndex: 3, explanation: "NFL (2026l): \"broadcast routing systems, including split routes.\" The posting does not define the term.", sourceLessonSlug: "the-toc-feeds-in-and-out" },
+          { prompt: "What must the NFL TOC operator be able to set up, besides reading waveform monitors?", options: ["Test bars", "Camera lenses", "Talent mics", "Lighting cues"], correctIndex: 0, explanation: "NFL (2026l): \"Ability to read digital & analog waveform monitors and how to set up test bars.\"", sourceLessonSlug: "the-toc-feeds-in-and-out" },
+          { prompt: "Which checks must the NFL TOC perform before live shows and events?", options: ["Loudness and peak checks", "Sync and Fax checks", "Lens and focus checks", "Spelling and fact checks"], correctIndex: 1, explanation: "NFL (2026l): \"Must be able to perform Sync and Fax checks prior to live shows and events.\"", sourceLessonSlug: "the-toc-feeds-in-and-out" },
+          { prompt: "Before live remote events, what checks does the NFL TOC posting ask for?", options: ["Camera fax checks", "Parab aim checks", "Transmission checks", "Wardrobe checks"], correctIndex: 2, explanation: "NFL (2026l): \"Ability to perform extensive transmission checks prior to live remote events.\"", sourceLessonSlug: "the-toc-feeds-in-and-out" },
+          { prompt: "For which providers does the NFL TOC handle booking and goodnight procedures?", options: ["EVS, Ross and Chyron", "Riedel, RTS, Clear-Com", "Sony, Ikegami, Canon", "The Switch, Lumen, AT&T"], correctIndex: 3, explanation: "NFL (2026l): \"Booking and goodnight procedures for The Switch, Lumen & AT&T Fiber and Satellite orders.\"", sourceLessonSlug: "the-toc-feeds-in-and-out" },
+          { prompt: "Why does the NFL TOC posting ask for above average writing skills?", options: ["To document on-air issues", "To write the show's script", "To post on social media", "To draft graphics text"], correctIndex: 0, explanation: "NFL (2026l): \"Must possess above average writing skills to document on-air issues.\"", sourceLessonSlug: "the-toc-feeds-in-and-out" },
+          { prompt: "Which ingest server system does the NFL TOC posting ask familiarity with?", options: ["Ross Rio Replay", "EVS IP Director", "Chyron PAINT", "Viz Trio"], correctIndex: 1, explanation: "NFL (2026l): \"Familiarity with EVS IP Director ingest server systems.\"", sourceLessonSlug: "the-toc-feeds-in-and-out" },
+          { prompt: "What does the NFL TOC posting make the operator responsible for generating?", options: ["Crew schedules", "Rate cards", "Broadcast reports", "Score graphics"], correctIndex: 2, explanation: "NFL (2026l): \"Responsible for the generation of broadcast reports as required.\"", sourceLessonSlug: "the-toc-feeds-in-and-out" },
+          { prompt: "Which signal types does the NFL TOC posting's experience requirement list?", options: ["AM, FM and shortwave", "VHS, Beta and U-matic", "DMX, MIDI and USB", "2110, ASI, JPEG, MPLS"], correctIndex: 3, explanation: "NFL (2026l): 5 years \"including 2110, HD/SD, ASI, JPEG and MPLS signals.\"", sourceLessonSlug: "the-toc-feeds-in-and-out" },
+          { prompt: "How does this course print the NFL TOC operator's posted pay?", options: ["$60.06 USD, no unit", "$60.06 an hour, posted", "$60,060 a year, posted", "$60.06 a day, posted"], correctIndex: 0, explanation: "Lesson 14: the pay line reads $60.06 USD at both ends, with no unit.", sourceLessonSlug: "the-toc-feeds-in-and-out" },
+          { prompt: "When was the NFL TOC posting first published?", options: ["June 26, 2026", "August 14, 2026", "October 23, 2026", "July 10, 2026"], correctIndex: 1, explanation: "Lesson 14: first published August 14, 2026 (NFL, 2026l).", sourceLessonSlug: "the-toc-feeds-in-and-out" },
+          { prompt: "Which TOC posting words does this course quote without defining?", options: ["Rundown, float and heavy", "Iris, gamma and black level", "Fax, goodnight, split routes", "Ready, take and stand by"], correctIndex: 2, explanation: "Lesson 14: \"fax,\" \"goodnight procedures\" and \"split routes\" are not defined by the posting or any source read, so they are left to the reviewer.", sourceLessonSlug: "the-toc-feeds-in-and-out" },
+          { prompt: "Whom does ESPN's AD call when the transmission time opens?", options: ["The league office", "The A1 in the truck", "The team's PR staff", "Bristol Transmission"], correctIndex: 3, explanation: "ESPN (2018, p. 25): the AD will \"call Bristol Transmission\" and \"check all sources with them.\"", sourceLessonSlug: "the-toc-feeds-in-and-out" },
+          { prompt: "When does ESPN's sample schedule set transmission check-in for an 8:00 p.m. game?", options: ["7:00 p.m.", "2:00 p.m.", "4:30 p.m.", "7:55 p.m."], correctIndex: 0, explanation: "ESPN (2018, p. 27): \"7:00PM TRANSMISSION CHECK IN.\" 2:00 p.m. is crew call and 4:30 p.m. the full show fax.", sourceLessonSlug: "the-toc-feeds-in-and-out" },
+          { prompt: "What does ESPN's continuity check test?", options: ["The talent's IFB return level", "Output matches master's input", "The camera's back focus setting", "The truck's generator power"], correctIndex: 1, explanation: "ESPN (2018, p. 31): whether \"the control room's output is the same as what is received by master control.\"", sourceLessonSlug: "the-toc-feeds-in-and-out" },
+          { prompt: "For what does ESPN's manual list a separate trouble line?", options: ["Talent travel issues", "Crew payroll issues", "Transmission check-in", "Catering on site"], correctIndex: 2, explanation: "ESPN (2018, p. 6) lists separate trouble lines, including one for transmission check-in or problems.", sourceLessonSlug: "the-toc-feeds-in-and-out" },
+          { prompt: "To whom must the NFL TOC communicate issues, per the posting?", options: ["The talent and agents", "The fans on social media", "The league's officials", "Operations and production"], correctIndex: 3, explanation: "NFL (2026l): \"communicate issues to Operations and Production Management in a timely and efficient manner.\"", sourceLessonSlug: "the-toc-feeds-in-and-out" },
+          { prompt: "What does the NFL FAST operator do with video distribution incidents?", options: ["Document, escalate, resolve", "Ignore until the next show", "Post them on social media", "Send them to the talent"], correctIndex: 0, explanation: "NFL (2026e): \"Document, escalate, and manage video distribution incidents to resolution.\"", sourceLessonSlug: "the-toc-feeds-in-and-out" },
+          { prompt: "Which course teaches the transmission side past the TOC?", options: ["CREW-02", "CREW-05", "CREW-03", "CREW-06"], correctIndex: 1, explanation: "Lesson 14 links CREW-05's \"23 · Feed check-in and the monitoring tools\" and \"26 · Status calls, escalation and reports.\"", sourceLessonSlug: "the-toc-feeds-in-and-out" },
+          { prompt: "Reasoned in lesson 14, what is the TOC to the truck or studio?", options: ["Its kitchen", "Its stage", "Its door", "Its roof"], correctIndex: 2, explanation: "Lesson 14: feeds come in and go out through the TOC; it checks them, books and releases circuits, and is the first call when a feed fails.", sourceLessonSlug: "the-toc-feeds-in-and-out" },
         ],
       },
     },
