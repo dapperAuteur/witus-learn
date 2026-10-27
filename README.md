@@ -966,12 +966,14 @@ see a hole it was not written to look for. `gen:outline` exists to feed an adver
 something produced from the same modules the seeder reads, rather than a hand-written summary that
 has drifted.
 
-### Exporting a course as an EPUB (for an e-reader)
+### Exporting a course as an EPUB or a PDF (for an e-reader)
 
 ```bash
 pnpm export:epub <slug>                       # writes content/epub/<slug>.epub (content/ is gitignored)
 pnpm export:epub <slug> --out ~/Downloads/x.epub
 pnpm export:epub faa-part-107 --content <dir> # FAA only: read the academy-import from <dir>
+pnpm export:pdf <slug>                        # writes content/pdf/<slug>.pdf; same flags as export:epub
+pnpm export:pdf <slug> --no-toc-pages         # one layout pass: faster, no page numbers in the contents
 ```
 
 The course comes from committed data through the seed registry, the same modules the seeders read;
@@ -982,6 +984,28 @@ older readers, one chapter per lesson, lesson markdown rendered by the lesson pa
 Quiz, check-yourself and recall answers sit in an Answers section at the end of each chapter, linked
 both ways, so a reader can test themselves before looking. Images become their alt text (nothing is
 hotlinked). Kindle takes the file through Send to Kindle; Kobo and Apple Books open it directly.
+
+The PDF is built by `courseToPdf` (`src/lib/pdf/course-to-pdf.tsx`) with `@react-pdf/renderer`, pure
+JavaScript: no browser runs, unlike the dev-time `gen:pdfs` path, so the same function serves the admin
+route below. Letter size, 11pt body, generous margins: a title page with the course's notices (the
+site-wide educational disclaimer and any certification notice registered for the course), a contents page
+with page numbers (the document is laid out twice; the first pass records where each lesson lands), one
+lesson per section starting on a new page with the module as the running header and
+"Learn.WitUS · course · page N of M" as the footer, a PDF bookmark per lesson, and the same Answers page
+at the end of each lesson as the EPUB. Lesson markdown goes through `src/lib/pdf/markdown-pdf.tsx`
+(headings, lists, tables, links with their address printed, code, footnotes); a reviewer packet or a
+handout later is a different document composed over that same mapping. Standard PDF fonts, so Western
+European text sets cleanly; other scripts and emoji depend on the reader's fallback. A long course takes a
+while: FAA Part 107 (118 lessons, about 540 pages) renders in about 30 seconds.
+
+**In the app: two admin-only buttons.** `/teach/[courseId]` shows **Download EPUB** and **Download PDF**
+beside **Recording script** to a viewer who passes `isTenantAdmin` (platform owner or `brand_admin`),
+the same gate as the school gradebook export; a teacher who is not an admin never sees them. They call
+`GET /api/admin/courses/[id]/epub` and `/pdf` (`[id]` is the slug or uuid), which 401 signed out, 403 a
+non-admin, 404 a course outside the request's tenant, and otherwise build the book **from the database**:
+the published lessons a learner sees, sectioned by module, as an attachment named `<slug>.epub` or
+`<slug>.pdf` with `Cache-Control: no-store`. The CLI scripts read `scripts/data` instead, so a draft course
+can be exported before it is seeded.
 
 ## Future classes & features (`/admin/future`)
 

@@ -77,6 +77,12 @@ const MEDIA_NOTE: Record<string, string> = {
 const TOOL_OR_FIELD_LOG_RE = /^:::(?:tool|field-log)\b/;
 
 // Letter page, generous margins; the running header and footer sit inside the top and bottom margins.
+// Every Page opts into react-pdf's experimentalPagination (4.9): the content is measured once and
+// packed into pages, which on FAA Part 107 (118 lessons) cut the two-pass render from 29 s to 20 s and
+// the page count from 537 to 488 because the older engine broke a page early before any `wrap={false}`
+// block it thought might not fit. Checked on that course: contents numbers, bookmarks, every Answers
+// block on its own page, no question split across pages. If a react-pdf upgrade misbehaves, remove the
+// prop from the three Page elements below and the output is the older, looser layout.
 const MARGIN_X = 58;
 const s = StyleSheet.create({
   page: {
@@ -214,7 +220,7 @@ function renderBody(body: string, lessonIndex: number, answers: Answer[]): React
       flush();
       out.push(
         <View key={key("figure")} style={s.box} wrap={false}>
-          <Text style={md.imgAlt}>[Figure: {pdfText(fig[2])}]</Text>
+          <Text style={md.imgAlt}>{`[Figure: ${pdfText(fig[2])}]`}</Text>
           <Text style={[md.p, md.tight]}>{pdfText(fig[3])}</Text>
           <Text style={s.figureCredit}>{pdfText(fig[4])}</Text>
         </View>,
@@ -226,7 +232,8 @@ function renderBody(body: string, lessonIndex: number, answers: Answer[]): React
       out.push(
         <View key={key("check")} style={s.box} wrap={false}>
           <Text style={[md.p, md.tight]}>
-            <Text style={md.strong}>{label}.</Text> {pdfText(rv[1])}
+            <Text style={md.strong}>{`${label}.`}</Text>
+            {` ${pdfText(rv[1])}`}
           </Text>
           <Text style={s.review}>Answer at the end of this lesson.</Text>
         </View>,
@@ -262,12 +269,13 @@ function renderQuiz(
       label: `Question ${n}`,
       body: [
         <Text key={`${k}-a`} style={[md.p, md.tight]}>
-          <Text style={md.strong}>{letter(q.correctIndex)}.</Text> {pdfText(correct ?? "")}
+          <Text style={md.strong}>{`${letter(q.correctIndex)}.`}</Text>
+          {` ${pdfText(correct ?? "")}`}
         </Text>,
         ...(q.explanation ? paragraphs(q.explanation, `${k}-x`) : []),
         source ? (
           <Text key={`${k}-r`} style={s.review}>
-            Review: {pdfText(source)}
+            {`Review: ${pdfText(source)}`}
           </Text>
         ) : null,
       ],
@@ -275,12 +283,15 @@ function renderQuiz(
     return (
       <View key={k} style={s.question} wrap={false}>
         <Text style={[md.p, md.tight]}>
-          <Text style={md.strong}>{n}.</Text> {pdfText(q.prompt)}
+          <Text style={md.strong}>{`${n}.`}</Text>
+          {` ${pdfText(q.prompt)}`}
         </Text>
-        {q.imageUrl ? <Text style={[md.imgAlt, s.option]}>[Figure: {pdfText(q.imageAlt || "see the online course")}]</Text> : null}
+        {q.imageUrl ? (
+          <Text style={[md.imgAlt, s.option]}>{`[Figure: ${pdfText(q.imageAlt || "see the online course")}]`}</Text>
+        ) : null}
         {q.options.map((o, j) => (
           <Text key={j} style={s.option}>
-            {letter(j)}. {pdfText(o)}
+            {`${letter(j)}. ${pdfText(o)}`}
           </Text>
         ))}
       </View>
@@ -306,7 +317,7 @@ function renderRecall(cards: { prompt: string; answer: string }[], lessonIndex: 
         answers.push({ label: `Recall ${n}`, body: paragraphs(c.answer, `l${lessonIndex}-r${n}`) });
         return (
           <View key={n} style={md.listItem}>
-            <Text style={md.marker}>{n}.</Text>
+            <Text style={md.marker}>{`${n}.`}</Text>
             <Text style={[md.p, md.tight, md.itemBody]}>{pdfText(c.prompt)}</Text>
           </View>
         );
@@ -372,7 +383,7 @@ function TitlePage({ course, generatedOn }: { course: PdfCourseInput; generatedO
   const author = course.author?.trim() || "WitUS";
   const notices = (course.disclaimers ?? []).map((d) => d.trim()).filter(Boolean);
   return (
-    <Page size="LETTER" style={s.page} bookmark="About this book">
+    <Page size="LETTER" style={s.page} experimentalPagination bookmark="About this book">
       <View style={s.wordmarkRow}>
         <Text style={s.wordmark}>WitUS</Text>
         <Svg width={8} height={8} style={{ marginLeft: 3, marginTop: 8 }}>
@@ -394,8 +405,7 @@ function TitlePage({ course, generatedOn }: { course: PdfCourseInput; generatedO
         own, so you can test yourself before you look. The contents page and the bookmarks list every lesson.
       </Text>
       <Text style={s.meta}>
-        Exported {isoDate(generatedOn)} from {APP_URL}. Images in the online course are described here by their alt
-        text; links show their address.
+        {`Exported ${isoDate(generatedOn)} from ${APP_URL}. Images in the online course are described here by their alt text; links show their address.`}
       </Text>
       {notices.length > 0 ? (
         <View style={s.notices}>
@@ -412,7 +422,7 @@ function TitlePage({ course, generatedOn }: { course: PdfCourseInput; generatedO
 
 function ContentsPage({ course, groups, pages }: { course: PdfCourseInput; groups: TocGroup[]; pages: number[] }) {
   return (
-    <Page size="LETTER" style={s.page} bookmark="Contents">
+    <Page size="LETTER" style={s.page} experimentalPagination bookmark="Contents">
       <Header left={course.title} right="Contents" />
       <Footer course={course.title} />
       <Text style={s.lessonTitle}>Contents</Text>
@@ -457,7 +467,7 @@ function LessonPage({
   const quiz = lesson.quiz?.questions?.length ? renderQuiz(lesson.quiz, index + 1, answers, titleBySlug) : null;
   const recall = lesson.recall?.length ? renderRecall(lesson.recall, index + 1, answers) : null;
   return (
-    <Page size="LETTER" style={s.page} bookmark={pdfText(lesson.title)}>
+    <Page size="LETTER" style={s.page} experimentalPagination bookmark={pdfText(lesson.title)}>
       <Header left={section ?? course.title} right={lesson.title} />
       <Footer course={course.title} />
       {section ? <Text style={s.kicker}>{pdfText(section)}</Text> : null}
@@ -473,7 +483,7 @@ function LessonPage({
           return "";
         }}
       />
-      {MEDIA_NOTE[type] ? <Text style={s.note}>In the online course, this lesson includes {MEDIA_NOTE[type]}.</Text> : null}
+      {MEDIA_NOTE[type] ? <Text style={s.note}>{`In the online course, this lesson includes ${MEDIA_NOTE[type]}.`}</Text> : null}
       {body}
       {quiz}
       {recall}

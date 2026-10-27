@@ -206,7 +206,7 @@ function inlines(nodes: PhrasingContent[], ctx: Ctx, keyBase: string): ReactNode
       case "image":
         return (
           <Text key={key} style={md.imgAlt}>
-            [Image: {pdfText(n.alt?.trim() || "image")}]
+            {`[Image: ${pdfText(n.alt?.trim() || "image")}]`}
           </Text>
         );
       case "html":
