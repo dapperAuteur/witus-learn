@@ -996,7 +996,7 @@ at the end of each lesson as the EPUB. Lesson markdown goes through `src/lib/pdf
 (headings, lists, tables, links with their address printed, code, footnotes); a reviewer packet or a
 handout later is a different document composed over that same mapping. Standard PDF fonts, so Western
 European text sets cleanly; other scripts and emoji depend on the reader's fallback. A long course takes a
-while: FAA Part 107 (118 lessons, about 540 pages) renders in about 30 seconds.
+while: FAA Part 107 (118 lessons, 488 pages) renders in about 20 seconds with react-pdf's experimental pagination (537 pages and 29 seconds without it).
 
 **In the app: two admin-only buttons.** `/teach/[courseId]` shows **Download EPUB** and **Download PDF**
 beside **Recording script** to a viewer who passes `isTenantAdmin` (platform owner or `brand_admin`),
