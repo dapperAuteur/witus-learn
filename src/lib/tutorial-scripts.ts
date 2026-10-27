@@ -133,6 +133,7 @@ export const TUTORIAL_SCRIPTS: TutorialScript[] = [
   placeholder("create-a-course", "Creating a course"),
   placeholder("add-and-edit-lessons", "Adding and editing lessons"),
   placeholder("record-audio-in-app", "Recording audio and video in the app"),
+  placeholder("download-course-epub-pdf", "Downloading a course as an EPUB or PDF"),
   placeholder("recording-scripts-teleprompter", "Recording with the teleprompter"),
   placeholder("set-pricing", "Setting a price"),
   placeholder("categories", "Organizing the catalog with categories"),
