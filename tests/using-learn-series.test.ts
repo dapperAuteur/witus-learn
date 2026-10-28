@@ -34,6 +34,8 @@ const WAIVED: Record<string, string> = {
     "shipped with feat/release-follow-ups (the launch to-do list and its warning); a Run Your Course lesson that teaches it is the follow-up (delete this line then)",
   "tours-from-field-log":
     "shipped with feat/field-tours while the quiz-balance sweep was editing course files; a Run Your Course lesson that teaches it is the follow-up (delete this line then)",
+  "download-course-epub-pdf":
+    "shipped with feat/course-export-buttons (two admin-only download links on the course manager); a Run Your School lesson that teaches it is the follow-up (delete this line then)",
 };
 
 describe("Using Learn.WitUS series", () => {

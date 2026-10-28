@@ -4288,4 +4288,13 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   as \`reports:list\`). The content is **committed** (\`src/lib/future-work-content/*\`, generated from the
   gitignored \`plans/future-courses/\` notes by \`pnpm gen:future-work\`), so the page renders in
   production, nothing reads \`plans/\` at runtime.
+- ✅ **Download a course as an EPUB or a PDF** (\`feat/course-epub-export\`, \`feat/course-export-buttons\`,
+  no migration). BAM wanted to read courses on his e-reader (2026-10-27). \`pnpm export:epub <slug>\` and
+  \`pnpm export:pdf <slug>\` build a book from \`scripts/data\` with no database; two admin-only buttons on
+  \`/teach/[courseId]\` (**Download EPUB**, **Download PDF**, shown to viewers who pass \`isTenantAdmin\`,
+  the gradebook's gate) build the same book from the published lessons in the database through
+  \`/api/admin/courses/[id]/epub\` and \`/pdf\`. The PDF is pure JavaScript (\`@react-pdf/renderer\`), no
+  browser in the function: title page with the course's existing notices, contents with page numbers from a
+  two-pass layout, one lesson per section with running header and footer, a bookmark per lesson, and the
+  quiz, check-yourself and recall answers on a page at the end of each lesson, as in the EPUB.
 `;

@@ -118,6 +118,27 @@ is the whole point of a teleprompter. The self-view is mirrored for you only, th
 isn't flipped.`,
   },
   {
+    slug: "download-course-epub-pdf",
+    title: "Download a course as an EPUB or PDF",
+    category: "Courses",
+    keywords: ["epub", "pdf", "download", "e-reader", "kindle", "kobo", "print", "export", "offline"],
+    body: `# Download a course as an EPUB or PDF
+
+School admins (the platform owner and brand admins) can take a course away as a book. Open the course
+under **Teach**, and next to **Recording script** use **Download EPUB** (for a Kindle via Send to Kindle,
+a Kobo, or Apple Books) or **Download PDF** (letter size, readable at 100%, printable).
+
+The book is built from the **published** lessons the moment you click, so it matches what learners see;
+draft lessons stay out. Each lesson is a chapter in the EPUB and a section starting on a new page in the
+PDF, with the module as the running header. Quiz questions, check-yourself questions and recall cards sit
+in the lesson; their answers are collected at the **end of the same lesson**, so a reader can test
+themselves before looking. Images become their alt text, and in the PDF a link prints its address, since
+paper cannot be clicked.
+
+Teachers who are not admins do not see the buttons. A long course (a hundred lessons or more) takes
+about half a minute to render as a PDF; the download starts when it is done.`,
+  },
+  {
     slug: "set-pricing",
     title: "Set a price (it's here, not in Stripe)",
     category: "Pricing",
