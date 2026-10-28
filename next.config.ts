@@ -10,11 +10,18 @@ const nextConfig: NextConfig = {
   // @neondatabase/serverless uses `ws` for websocket transport; its native
   // bindings get mangled by the build minifier unless externalized. Mirrors
   // the shop-witus / wanderlearn fix for `TypeError: b.mask is not a function`.
-  serverExternalPackages: ["@neondatabase/serverless", "ws"],
+  // @react-pdf/renderer is used only by the admin PDF export route. Its closure (pdfkit, fontkit,
+  // yoga-layout, about 17 MB of node_modules) is left to Node at runtime instead of being parsed
+  // and minified by webpack: bundling it pushed the production build past the 8 GB Standard
+  // machine (SIGKILL during "Creating an optimized production build", 2026-10-27). File tracing
+  // still ships the package with the function.
+  serverExternalPackages: ["@neondatabase/serverless", "ws", "@react-pdf/renderer"],
   experimental: {
     // Lets the per-tenant role guards throw a clean 403 via forbidden()
     // instead of silently redirecting. Requires this flag in Next 16.
     authInterrupts: true,
+    // Trades a little build time for a lower webpack memory ceiling (same 2026-10-27 OOM).
+    webpackMemoryOptimizations: true,
   },
   // The state-standards finder moved from /standards to /academic-standards (and its explorer
   // sub-route with it). This 308 keeps every existing bookmark, external link, and OG share
