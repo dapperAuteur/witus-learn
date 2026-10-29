@@ -111,3 +111,31 @@ describe("guard: every insert into courses is born private", () => {
     expect(courses.isPublished.default).toBe(false);
   });
 });
+
+describe("owner-only: the private pipeline's courses stay the owner's (BAM 2026-10-29)", () => {
+  type Db = Parameters<typeof seedAuthoredCourse>[0];
+  const read = (rel: string) => readFileSync(join(import.meta.dirname, "..", rel), "utf-8");
+
+  it("a new course is not owner-only unless the seeder is told so", async () => {
+    await createCourse("tenant-1", "teacher-1", { title: "Plain" });
+    expect(rec.inserted[0]).not.toHaveProperty("ownerOnly");
+    expect(courses.ownerOnly.default).toBe(false);
+    await seedAuthoredCourse(fakeDb() as Db, { tenantId: "t", instructorId: "i", slug: "oo", course: COURSE, visibility: "private", publishHoldReason: "Review copy.", ownerOnly: true });
+    expect(rec.inserted.find((r) => r.slug === "oo")).toMatchObject({ ownerOnly: true, visibility: "private" });
+  });
+
+  it("seed-local-private inserts owner-only and re-asserts it on every run", () => {
+    const src = read("scripts/seed-local-private.ts");
+    expect(src).toContain("ownerOnly: true,");
+    expect(src).toContain('.set({ visibility: "private", isPublished: false, publishedAt: null, ownerOnly: true })');
+  });
+
+  it("migration 0071 backfills owner-only, fail-closed, onto every private learn-witus course", () => {
+    const sql = read("src/db/migrations/0071_course_owner_only_and_actor_role.sql");
+    expect(sql).toContain(`UPDATE "courses" SET "owner_only" = true`);
+    expect(sql).toContain(`"visibility" = 'private'`);
+    expect(sql).toContain(`"slug" = 'learn-witus'`);
+    // Additive for the code deployed before it: its owner-only switch inserts no role.
+    expect(sql).toContain(`"actor_role" text DEFAULT 'platform_owner' NOT NULL`);
+  });
+});

@@ -20,9 +20,11 @@ export const courseVisibilityChanges = pgTable(
       .references(() => courses.id, { onDelete: "cascade" }),
     /** Who clicked. Kept as null if the account is ever removed. */
     actorUserId: text("actor_user_id").references(() => users.id, { onDelete: "set null" }),
-    /** The role they acted in: "platform_owner" or "brand_admin" (VisibilityActorRole). Rows written
-     *  before migration 0071 were all the owner's, and were backfilled as such. */
-    actorRole: text("actor_role").notNull(),
+    /** The role they acted in: "platform_owner" or "brand_admin" (VisibilityActorRole). The switch
+     *  always writes it (decideVisibilityChange). The default exists for deploy order only: rows
+     *  written before migration 0071, and by code still deployed from before it, were all the
+     *  owner's (the switch was owner-only then), so migrating ahead of the deploy stays correct. */
+    actorRole: text("actor_role").notNull().default("platform_owner"),
     fromVisibility: text("from_visibility").notNull(),
     toVisibility: text("to_visibility").notNull(),
     fromPublished: boolean("from_published").notNull(),

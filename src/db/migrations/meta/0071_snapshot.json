@@ -1,5 +1,5 @@
 {
-  "id": "891ea765-7ddb-4f4e-881f-4ce80383193d",
+  "id": "2d1a63e1-72b5-4b9a-9338-8732ace2e895",
   "prevId": "ef403ab7-078c-42e8-a709-11e307077ec9",
   "version": "7",
   "dialect": "postgresql",
@@ -7627,7 +7627,8 @@
           "name": "actor_role",
           "type": "text",
           "primaryKey": false,
-          "notNull": true
+          "notNull": true,
+          "default": "'platform_owner'"
         },
         "from_visibility": {
           "name": "from_visibility",
