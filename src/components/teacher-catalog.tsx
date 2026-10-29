@@ -140,7 +140,7 @@ export function TeacherCatalog({
       ),
     );
     setBusy(false);
-    setMsg(`${verb}: ${ok}/${ids.length} updated${ok < ids.length ? " (some blocked, e.g. on hold)" : ""}.`);
+    setMsg(`${verb}: ${ok}/${ids.length} updated${ok < ids.length ? " (some blocked: on hold, or private, which only the owner's Make public control opens)" : ""}.`);
     router.refresh();
   }
 
@@ -167,7 +167,10 @@ export function TeacherCatalog({
         body: JSON.stringify(patch),
       });
       if (r.ok) setRows((prev) => prev.map((x) => (x.id === id ? { ...x, ...normalize(patch) } : x)));
-      else if (r.status === 409) setMsg(`“${c.title}” is on hold, can’t publish until the hold clears.`);
+      else if (r.status === 409) {
+        const body = (await r.json().catch(() => null)) as { error?: string } | null;
+        setMsg(`“${c.title}”: ${body?.error ?? "blocked, it is on hold or private."}`);
+      }
     } finally {
       setBusy(false);
       router.refresh();

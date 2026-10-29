@@ -8,6 +8,7 @@ import { AUDITOR_READ_ONLY_MESSAGE, isReadOnlyAuditor } from "@/lib/auditors";
 import type { Session } from "@/lib/auth";
 import { getMembership, getSession, isPlatformOwner } from "@/lib/session";
 import { canSeeUnvettedContent, isUnvetted, isVettingLocked } from "@/lib/vetting";
+import { isClosedCourse } from "@/lib/course-visibility";
 
 export const json = (data: unknown, status = 200) => NextResponse.json(data, { status });
 export const errorJson = (error: string, status: number) => json({ error }, status);
@@ -48,6 +49,48 @@ export async function canEditCourse(
   if (!session) return false;
   if (course.instructorId === session.user.id) return true;
   return isTenantAdmin(session, tenantId);
+}
+
+/**
+ * Who may open a course's AUTHORING workspace (/teach/[courseId] and its sub-pages) and download it
+ * as an EPUB or PDF. A CLOSED course (private, or held: isClosedCourse in src/lib/course-visibility.ts)
+ * opens only for the platform owner and its own instructor. A brand_admin is NOT enough: private
+ * review copies of copyrighted books live in closed courses, and a school admin downloading one is
+ * exactly the leak the private pipeline exists to prevent. An open course falls back to
+ * canEditCourse (instructor or tenant admin), as before.
+ *
+ * Callers answer a refusal with the same not-found a learner gets, never a 403, so the response
+ * does not confirm the course exists.
+ */
+export async function canOpenCourseWorkspace(
+  session: Session | null,
+  tenantId: string,
+  course: Course,
+): Promise<boolean> {
+  if (!session) return false;
+  if (course.instructorId === session.user.id) return true;
+  if (isClosedCourse(course)) return isPlatformOwner(session.user.id);
+  return isTenantAdmin(session, tenantId);
+}
+
+/**
+ * The EPUB/PDF export gate (/api/admin/courses/[id]/epub and /pdf), for a course already resolved
+ * in the request's tenant:
+ *   - a CLOSED course (private or held) exports only for the platform owner and its own instructor;
+ *     anyone else gets "not-found", the answer a learner gets, so the route does not confirm it exists;
+ *   - an open course exports for a tenant admin (brand_admin or platform owner), as it always has;
+ *     anyone else gets "forbidden".
+ */
+export async function courseExportAccess(
+  session: Session,
+  tenantId: string,
+  course: Course,
+): Promise<"ok" | "not-found" | "forbidden"> {
+  if (isClosedCourse(course)) {
+    if (course.instructorId === session.user.id) return "ok";
+    return (await isPlatformOwner(session.user.id)) ? "ok" : "not-found";
+  }
+  return (await isTenantAdmin(session, tenantId)) ? "ok" : "forbidden";
 }
 
 /**

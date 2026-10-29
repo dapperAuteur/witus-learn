@@ -7,6 +7,7 @@ import { drizzle } from "drizzle-orm/neon-serverless";
 import ws from "ws";
 import * as schema from "../src/db/schema";
 import { resolveDbUrl } from "./db-url";
+import { NEW_COURSE_STATE } from "../src/lib/course-visibility";
 import { seedAuthoredCourse } from "./lib/seed-authored-course";
 import type { AuthoredCourse } from "./data/authored-course";
 import { SPANISH_COURSE } from "./data/spanish-course";
@@ -212,9 +213,9 @@ async function main() {
             slug: lang.slug,
             description,
             category: "Languages",
-            isPublished: true,
-            publishedAt: new Date(),
             navigationMode: "linear",
+            // Born private and unpublished (src/lib/course-visibility.ts); the owner opens it.
+            ...NEW_COURSE_STATE,
           })
           .returning({ id: schema.courses.id });
         courseId = row.id;

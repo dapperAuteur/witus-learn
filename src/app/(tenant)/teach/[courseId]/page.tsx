@@ -2,7 +2,9 @@ import Link from "next/link";
 import { notFound, redirect } from "next/navigation";
 import type { Metadata } from "next";
 import { getScopedDb } from "@/db/scoped";
-import { canEditCourse } from "@/lib/api";
+import { canOpenCourseWorkspace } from "@/lib/api";
+import { isClosedCourse, publicReadiness } from "@/lib/course-visibility";
+import { CourseVisibilitySwitch } from "@/components/course-visibility-switch";
 import { getMembership, getSession, isPlatformOwner } from "@/lib/session";
 import { VetCourseCta } from "@/components/vet-course-cta";
 import { hasStripe } from "@/lib/env";
@@ -27,7 +29,8 @@ import { LaunchTodoList } from "@/components/launch-todo-list";
 export const metadata: Metadata = { title: "Manage course" };
 
 // Instructor course manager: edit settings + manage lessons. Scoped + edit-gated,
-// so only the owning instructor / brand admin / platform owner reaches it.
+// so only the owning instructor / brand admin / platform owner reaches it, and a PRIVATE or HELD
+// course only its own instructor and the platform owner (canOpenCourseWorkspace).
 export default async function ManageCoursePage({ params }: { params: Promise<{ courseId: string }> }) {
   // The URL segment is the course SLUG (readable) or its uuid (legacy links / ambiguous slugs).
   const { courseId: courseParam } = await params;
@@ -37,7 +40,7 @@ export default async function ManageCoursePage({ params }: { params: Promise<{ c
   const sdb = await getScopedDb();
   const course = await sdb.getCourseByIdOrSlug(courseParam);
   if (!course) notFound();
-  if (!(await canEditCourse(session, sdb.tenantId, course))) notFound();
+  if (!(await canOpenCourseWorkspace(session, sdb.tenantId, course))) notFound();
   // Everything downstream keys off the RESOLVED id, never the raw segment.
   const courseId = course.id;
   // Sibling authoring links keep the readable slug when the course has one.
@@ -129,11 +132,13 @@ export default async function ManageCoursePage({ params }: { params: Promise<{ c
   const showLaunchTodos = !courseLive || launchTodos.some((t) => t.status === "open");
 
   // Admins (platform owner / brand_admin) may reassign the course's instructor. This is the same
-  // test isTenantAdmin (src/lib/api.ts) makes, computed from the rows already loaded above; the
-  // course export routes (/api/admin/courses/[id]/epub and /pdf) gate on isTenantAdmin, so the
-  // download links below show only to a viewer those routes would serve, never to a teacher who
-  // would get a 403.
+  // test isTenantAdmin (src/lib/api.ts) makes, computed from the rows already loaded above. The
+  // download links below follow the export routes' rule (canExport), so they show only to a viewer
+  // those routes would serve.
   const isAdmin = owner || membership === "brand_admin";
+  // The export routes' own rule (courseExportAccess): a private or held course downloads only for
+  // the owner and its own instructor; an open course for a tenant admin.
+  const canExport = isClosedCourse(course) ? owner || course.instructorId === session.user.id : isAdmin;
   const instructors = isAdmin ? await listTenantInstructors(sdb.tenantId) : [];
 
   return (
@@ -148,7 +153,7 @@ export default async function ManageCoursePage({ params }: { params: Promise<{ c
           </Link>
           {/* Admin-only reading copies (e-reader or paper), built from the published lessons. Plain
               anchors, not <Link>: these are file downloads, and a prefetch would render a book. */}
-          {isAdmin ? (
+          {canExport ? (
             <>
               <a href={`/api/admin/courses/${course.slug ?? course.id}/epub`} download className="underline" style={{ color: "var(--accent)" }}>
                 Download EPUB
@@ -199,6 +204,17 @@ export default async function ManageCoursePage({ params }: { params: Promise<{ c
       ) : null}
 
       <div className="mt-6 space-y-8">
+        {/* The platform owner's switch: every course is born private and unpublished, and only the
+            owner opens it, after vetting (src/lib/course-visibility.ts). */}
+        {owner ? (
+          <CourseVisibilitySwitch
+            courseId={course.id}
+            visibility={course.visibility}
+            isPublished={course.isPublished}
+            readiness={publicReadiness(course, signoffReadiness)}
+          />
+        ) : null}
+
         {showLaunchTodos ? (
           <LaunchTodoList courseId={course.id} todos={launchTodos} isOwner={owner} courseLive={courseLive} />
         ) : null}

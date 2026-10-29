@@ -78,8 +78,11 @@ export const courses = pgTable(
     // visibility: "public" | "members" | "scheduled" | "private". A "private" course is
     // owner-only — visible/editable ONLY by the platform owner and the course's own
     // instructor, never by brand_admins/moderators (see canAccessCourse).
+    // Every course is BORN private and unpublished (src/lib/course-visibility.ts, BAM 2026-10-28):
+    // the default below was "public" until migration 0070, which changed the default only and
+    // rewrote no existing row. Only the platform owner's Make public switch takes a course public.
     isPublished: boolean("is_published").notNull().default(false),
-    visibility: text("visibility").notNull().default("public"),
+    visibility: text("visibility").notNull().default("private"),
     publishedAt: timestamp("published_at", { withTimezone: true }),
     // When the platform owner personally reviewed and VETTED this course's content.
     // NULL = unvetted, and an unvetted course is "Coming soon": its LANDING page stays

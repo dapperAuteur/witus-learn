@@ -4,26 +4,32 @@ import { strFromU8, unzipSync } from "fflate";
 /**
  * GET /api/admin/courses/[id]/epub and /pdf: WHO may download a course and WHAT goes in the file.
  *
- *   1. The gate: signed out is 401, signed in but not a tenant admin (an ordinary teacher) is 403,
- *      and nothing is read from the lessons table on either.
- *   2. Tenant scope: the course is resolved through the scoped DAL, so a course that does not
- *      resolve in this tenant (another brand's course, or no such course) is a 404.
+ *   1. The gate (courseExportAccess in src/lib/api.ts, exercised for real here: only the session,
+ *      membership and owner reads are mocked): signed out is 401; a course that does not resolve in
+ *      this tenant is 404; an OPEN course exports for a tenant admin and 403s anyone else.
+ *   2. A CLOSED course (private, or held) exports only for the platform owner and its own instructor.
+ *      Everyone else, a brand_admin included, gets the same 404 as a course that does not exist, so
+ *      the route never confirms a private course is there. Nothing is read from the lessons table.
  *   3. The file: an attachment named after the slug, never cached, built from the PUBLISHED
  *      lessons only, with the module titles as sections.
  */
 
 const mocks = vi.hoisted(() => ({
-  apiContext: vi.fn(),
-  isTenantAdmin: vi.fn(),
+  getSession: vi.fn(),
+  getMembership: vi.fn(),
+  isPlatformOwner: vi.fn(),
   getCourseByIdOrSlug: vi.fn(),
   listLessons: vi.fn(),
   listModules: vi.fn(),
 }));
 
-vi.mock("@/lib/api", () => ({
-  apiContext: mocks.apiContext,
-  isTenantAdmin: mocks.isTenantAdmin,
-  errorJson: (error: string, status: number) => Response.json({ error }, { status }),
+vi.mock("@/lib/session", () => ({
+  getSession: mocks.getSession,
+  getMembership: mocks.getMembership,
+  isPlatformOwner: mocks.isPlatformOwner,
+}));
+vi.mock("@/db/scoped", () => ({
+  getScopedDb: async () => ({ tenantId: TENANT, getCourseByIdOrSlug: mocks.getCourseByIdOrSlug }),
 }));
 vi.mock("@/db/queries/authoring", () => ({ listLessons: mocks.listLessons, listModules: mocks.listModules }));
 
@@ -34,19 +40,31 @@ const TENANT = "tenant-1";
 const COURSE = {
   id: "11111111-2222-4333-8444-555555555555",
   tenantId: TENANT,
+  instructorId: "course-instructor-1",
   slug: "faa-part-107",
   title: "FAA Part 107",
   description: "Pass the exam.",
+  visibility: "public",
+  publishHoldReason: null as string | null,
 };
 const session = { user: { id: "admin-1", name: "Admin" } };
 
 const call = (route: typeof getEpub, id = "faa-part-107") =>
   route(new Request("http://school.test/api/admin/courses/x"), { params: Promise.resolve({ id }) });
 
+/** Who is asking: a brand_admin by default. */
+function as(who: "brand_admin" | "owner" | "instructor" | "teacher") {
+  const id = who === "instructor" ? COURSE.instructorId : `${who}-1`;
+  mocks.getSession.mockResolvedValue({ user: { id, name: who } });
+  mocks.isPlatformOwner.mockResolvedValue(who === "owner");
+  mocks.getMembership.mockResolvedValue(who === "brand_admin" ? "brand_admin" : "instructor");
+}
+
 beforeEach(() => {
   vi.clearAllMocks();
-  mocks.apiContext.mockResolvedValue({ sdb: { tenantId: TENANT, getCourseByIdOrSlug: mocks.getCourseByIdOrSlug }, session });
-  mocks.isTenantAdmin.mockResolvedValue(true);
+  mocks.getSession.mockResolvedValue(session);
+  mocks.isPlatformOwner.mockResolvedValue(false);
+  mocks.getMembership.mockResolvedValue("brand_admin");
   mocks.getCourseByIdOrSlug.mockResolvedValue(COURSE);
   mocks.listModules.mockResolvedValue([
     { id: "m1", courseId: COURSE.id, title: "Module 1", sortOrder: 1 },
@@ -64,18 +82,16 @@ describe.each([
   ["pdf", getPdf],
 ] as const)("GET /api/admin/courses/[id]/%s gate", (_name, route) => {
   it("401s signed out", async () => {
-    mocks.apiContext.mockResolvedValue({ sdb: { tenantId: TENANT, getCourseByIdOrSlug: mocks.getCourseByIdOrSlug }, session: null });
+    mocks.getSession.mockResolvedValue(null);
     const res = await call(route);
     expect(res.status).toBe(401);
     expect(mocks.listLessons).not.toHaveBeenCalled();
   });
 
-  it("403s a signed-in viewer who is not a tenant admin, using the gradebook's gate", async () => {
-    mocks.isTenantAdmin.mockResolvedValue(false);
+  it("403s a signed-in viewer who is not a tenant admin on an open course", async () => {
+    as("teacher");
     const res = await call(route);
     expect(res.status).toBe(403);
-    expect(mocks.isTenantAdmin).toHaveBeenCalledWith(session, TENANT);
-    expect(mocks.getCourseByIdOrSlug).not.toHaveBeenCalled();
     expect(mocks.listLessons).not.toHaveBeenCalled();
   });
 
@@ -85,6 +101,28 @@ describe.each([
     expect(res.status).toBe(404);
     expect(mocks.getCourseByIdOrSlug).toHaveBeenCalledWith("someone-elses-course");
     expect(mocks.listLessons).not.toHaveBeenCalled();
+  });
+
+  describe.each([
+    ["private", { visibility: "private", publishHoldReason: null }],
+    ["held", { visibility: "public", publishHoldReason: "Private review copy of a copyrighted book." }],
+  ] as const)("a %s course", (_kind, closed) => {
+    beforeEach(() => mocks.getCourseByIdOrSlug.mockResolvedValue({ ...COURSE, ...closed }));
+
+    it.each(["brand_admin", "teacher"] as const)("is a 404 to a %s, exactly like a missing course", async (who) => {
+      as(who);
+      const res = await call(route);
+      expect(res.status).toBe(404);
+      expect(await res.json()).toEqual({ error: "Course not found." });
+      expect(mocks.listLessons).not.toHaveBeenCalled();
+    });
+
+    it.each(["owner", "instructor"] as const)("downloads for the %s", async (who) => {
+      as(who);
+      const res = await call(route);
+      expect(res.status).toBe(200);
+      expect(mocks.listLessons).toHaveBeenCalledWith(COURSE.id);
+    });
   });
 });
 

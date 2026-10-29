@@ -35,7 +35,7 @@ const CreateCourseSchema = z.object({
   navigationMode: z.enum(["linear", "cyoa"]).optional(),
   isSequential: z.boolean().optional(),
   requiresAgeGate: z.boolean().optional(),
-  visibility: z.enum(["public", "members", "scheduled"]).optional(),
+  // No `visibility`: every new course is born private and unpublished (src/lib/course-visibility.ts).
 });
 
 // POST /api/courses — instructor creates a course in the current tenant.

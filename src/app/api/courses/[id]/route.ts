@@ -7,6 +7,7 @@ import { countActiveEnrollments } from "@/db/queries/enrollment";
 import { hasStripe } from "@/lib/env";
 import { assessPriceChange, type PriceType } from "@/lib/price-change";
 import { normalizeAdditionalCategories } from "@/lib/course-categories";
+import { patchOpensPrivate } from "@/lib/course-visibility";
 import {
   deleteCourse,
   ensureUsernameById,
@@ -182,6 +183,11 @@ export async function PATCH(req: Request, { params }: Params) {
       }
     }
   }
+  // A PRIVATE course leaves "private" only through the platform owner's Make public switch
+  // (POST /api/courses/[id]/visibility), which checks vetting and review readiness and writes an
+  // audit row. Refused here for everyone, the owner included, so no save skips that record.
+  const opensPrivate = patchOpensPrivate(course, parsed.data);
+  if (opensPrivate) return errorJson(opensPrivate, 409);
   // A HELD course can't be published until the hold clears. Use the incoming hold value if
   // this request sets it, otherwise the stored one — so you can clear the hold and publish
   // in one action, but never publish while a hold stands (guards copyrighted/unvetted content).

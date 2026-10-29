@@ -3,7 +3,7 @@ import Link from "next/link";
 import { notFound } from "next/navigation";
 import { getScopedDb } from "@/db/scoped";
 import { getSession } from "@/lib/session";
-import { canAccessCourse } from "@/lib/api";
+import { canOpenCourseWorkspace } from "@/lib/api";
 import { listLessons } from "@/db/queries/authoring";
 import { courseToRecordingScript } from "@/lib/narration";
 import { RecordingScriptView } from "@/components/recording-script-view";
@@ -20,7 +20,8 @@ export default async function RecordingScriptPage({ params }: { params: Promise<
   const sdb = await getScopedDb();
   const course = await sdb.getCourseByIdOrSlug(courseParam);
   if (!course) notFound();
-  if (!(await canAccessCourse(session, sdb.tenantId, course))) notFound();
+  // Private or held: owner and own instructor only (canOpenCourseWorkspace).
+  if (!(await canOpenCourseWorkspace(session, sdb.tenantId, course))) notFound();
   const courseId = course.id;
 
   const lessons = await listLessons(courseId);
