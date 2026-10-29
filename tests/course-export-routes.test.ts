@@ -7,9 +7,11 @@ import { strFromU8, unzipSync } from "fflate";
  *   1. The gate (courseExportAccess in src/lib/api.ts, exercised for real here: only the session,
  *      membership and owner reads are mocked): signed out is 401; a course that does not resolve in
  *      this tenant is 404; an OPEN course exports for a tenant admin and 403s anyone else.
- *   2. A CLOSED course (private, or held) exports only for the platform owner and its own instructor.
- *      Everyone else, a brand_admin included, gets the same 404 as a course that does not exist, so
- *      the route never confirms a private course is there. Nothing is read from the lessons table.
+ *   2. A CLOSED course (private, or held) exports for the platform owner, its own instructor and a
+ *      brand_admin of its school (BAM 2026-10-29). An OWNER-ONLY course (courses.owner_only) exports
+ *      only for the owner and its own instructor. Everyone else, a brand_admin of another school or of
+ *      an owner-only course's school included, gets the same 404 as a course that does not exist, so
+ *      the route never confirms it is there. Nothing is read from the lessons table.
  *   3. The file: an attachment named after the slug, never cached, built from the PUBLISHED
  *      lessons only, with the module titles as sections.
  */
@@ -46,18 +48,24 @@ const COURSE = {
   description: "Pass the exam.",
   visibility: "public",
   publishHoldReason: null as string | null,
+  ownerOnly: false,
 };
 const session = { user: { id: "admin-1", name: "Admin" } };
 
 const call = (route: typeof getEpub, id = "faa-part-107") =>
   route(new Request("http://school.test/api/admin/courses/x"), { params: Promise.resolve({ id }) });
 
-/** Who is asking: a brand_admin by default. */
-function as(who: "brand_admin" | "owner" | "instructor" | "teacher") {
+/** Who is asking: a brand_admin by default. Membership is per tenant: the request resolves to
+ *  TENANT, and the other school's admin is a brand_admin of "tenant-2" only. */
+function as(who: "brand_admin" | "other_school_admin" | "owner" | "instructor" | "teacher") {
   const id = who === "instructor" ? COURSE.instructorId : `${who}-1`;
   mocks.getSession.mockResolvedValue({ user: { id, name: who } });
   mocks.isPlatformOwner.mockResolvedValue(who === "owner");
-  mocks.getMembership.mockResolvedValue(who === "brand_admin" ? "brand_admin" : "instructor");
+  mocks.getMembership.mockImplementation(async (_uid: string, tenantId: string) => {
+    if (who === "brand_admin") return tenantId === TENANT ? "brand_admin" : null;
+    if (who === "other_school_admin") return tenantId === "tenant-2" ? "brand_admin" : null;
+    return "instructor";
+  });
 }
 
 beforeEach(() => {
@@ -109,7 +117,33 @@ describe.each([
   ] as const)("a %s course", (_kind, closed) => {
     beforeEach(() => mocks.getCourseByIdOrSlug.mockResolvedValue({ ...COURSE, ...closed }));
 
-    it.each(["brand_admin", "teacher"] as const)("is a 404 to a %s, exactly like a missing course", async (who) => {
+    it.each(["other_school_admin", "teacher"] as const)("is a 404 to a %s, exactly like a missing course", async (who) => {
+      as(who);
+      const res = await call(route);
+      expect(res.status).toBe(404);
+      expect(await res.json()).toEqual({ error: "Course not found." });
+      expect(mocks.listLessons).not.toHaveBeenCalled();
+    });
+
+    it.each(["owner", "instructor", "brand_admin"] as const)("downloads for the %s", async (who) => {
+      as(who);
+      const res = await call(route);
+      expect(res.status).toBe(200);
+      expect(mocks.listLessons).toHaveBeenCalledWith(COURSE.id);
+    });
+  });
+
+  describe("an owner-only course (the private pipeline)", () => {
+    beforeEach(() =>
+      mocks.getCourseByIdOrSlug.mockResolvedValue({
+        ...COURSE,
+        visibility: "private",
+        publishHoldReason: "Private review copy of a copyrighted book.",
+        ownerOnly: true,
+      }),
+    );
+
+    it.each(["brand_admin", "other_school_admin", "teacher"] as const)("is a 404 to a %s, its school's admin included", async (who) => {
       as(who);
       const res = await call(route);
       expect(res.status).toBe(404);
@@ -121,7 +155,6 @@ describe.each([
       as(who);
       const res = await call(route);
       expect(res.status).toBe(200);
-      expect(mocks.listLessons).toHaveBeenCalledWith(COURSE.id);
     });
   });
 });

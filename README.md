@@ -317,16 +317,31 @@ and always wins — that path is owned by the IdP app, not by this one.
 **Every course is born private and unpublished** (BAM, 2026-10-28; `src/lib/course-visibility.ts`).
 The in-app creator and every seeder insert `NEW_COURSE_STATE`, and the column default is `'private'`
 (migration 0070, which changed the default and no row). Insert-only: a re-seed never touches an
-existing course's visibility or publishing. Only the **platform owner** opens a course, with **Make
-public** on `/teach/<course>`: it shows the readiness (vetted, no publish hold, every reviewer marker
-cleared), refuses when not ready unless the owner ticks **Override** and gives a reason, publishes the
-row and sets it public in one write, and records the change in `course_visibility_changes` (who, when,
-from, to, override, reason, any hold it cleared). **Make private** takes a course down the same way.
-The course settings PATCH refuses to move a private course out of private or to publish it.
+existing course's visibility or publishing. The **platform owner** (on every school) and the
+**school's brand_admin** (on that school's courses; BAM, 2026-10-29) open a course with **Make public**
+on `/teach/<course>`: it shows the readiness (vetted, no publish hold, every reviewer marker cleared),
+refuses when not ready unless the actor ticks **Override** and gives a reason, publishes the row and
+sets it public in one write, and records the change in `course_visibility_changes` (who, in which role
+(`actor_role`: `platform_owner` or `brand_admin`), when, from, to, override, reason, any hold it
+cleared). **Make private** takes a course down the same way. The course settings PATCH refuses to move
+a private course out of private or to publish it, for everyone, so every change goes through the switch
+and is audited.
 
-A **closed** course (private, or carrying a publish hold) opens on `/teach/<course>` and its sub-pages,
-and downloads as an EPUB or PDF, only for the platform owner and its own instructor; a brand_admin gets
-the same not-found a learner gets (`canOpenCourseWorkspace` and `courseExportAccess` in `src/lib/api.ts`).
+A school's brand_admin **controls that school's courses**, private, held or open: they open them on
+`/teach/<course>` and its sub-pages, download them as an EPUB or PDF, mark them vetted, release their
+review holds, and use the switch. **Never across schools**: the course is read through the
+tenant-scoped DAL and the brand_admin test is a membership of the request's tenant, so another school's
+admin gets the learner's not-found (`canAccessCourse`, `canOpenCourseWorkspace`, `courseExportAccess`
+in `src/lib/api.ts`; the pure rules are `workspaceAccess`, `exportAccess` and `visibilityActorRole` in
+`src/lib/course-visibility.ts`).
+
+**Owner-only courses** (`courses.owner_only`) are the exception: they open, export, release and switch
+only for the platform owner and their own instructor, never for a brand_admin of their school, who
+gets the learner's not-found and does not see them in the `/teach` list. The private pipeline
+(`pnpm seed:local-private`, below) sets it on insert and re-asserts it every run; migration 0071
+backfilled it, fail-closed, onto every course that was private on the learn-witus school. The owner
+sets or clears it with **Owner only** in course settings. Vetting a course stays the owner's or the
+school's brand_admin's; "live but unvetted" stays the owner's alone.
 
 A course can be **held back entirely** rather than published unvetted. `visibility: "private"` is an
 **insert-only** option on `seedAuthoredCourse` (like `price`), so the public flip is done once with the
@@ -420,8 +435,9 @@ Three safeguards, enforced rather than remembered:
   honest hold reason. **No allowlist**: there is no version of "this copyrighted course text is fine
   in the repo" that is true.
 - **The seeder refuses to run** if any of those files is tracked, and names the command that undoes it.
-- **It re-asserts private on every run**, rather than trusting the insert-only default, so a course
-  that somehow became public goes back.
+- **It re-asserts private and owner-only on every run**, rather than trusting the insert-only default,
+  so a course that somehow became public goes back, and a school's brand_admin (who controls that
+  school's other private courses) never reaches these (`courses.owner_only`).
 
 This does not license copying. The rule in `content/private-courses/00-READ-ME-FIRST.md` stands:
 BAM's own synthesis in his own words, citing the book rather than reproducing it.
@@ -1022,8 +1038,10 @@ European text sets cleanly; other scripts and emoji depend on the reader's fallb
 while: FAA Part 107 (118 lessons, 488 pages) renders in about 20 seconds with react-pdf's experimental pagination (537 pages and 29 seconds without it).
 
 **In the app: two admin-only buttons.** `/teach/[courseId]` shows **Download EPUB** and **Download PDF**
-beside **Recording script** to a viewer who passes `isTenantAdmin` (platform owner or `brand_admin`),
-the same gate as the school gradebook export; a teacher who is not an admin never sees them. They call
+beside **Recording script** to a viewer the export routes would serve (`courseExportAccess`): a tenant
+admin (platform owner or `brand_admin`) for an open course, the same gate as the school gradebook
+export; also the course's own instructor for a private or held one; and only the owner and its own
+instructor for an owner-only one. A teacher who is not an admin never sees them on an open course. They call
 `GET /api/admin/courses/[id]/epub` and `/pdf` (`[id]` is the slug or uuid), which 401 signed out, 403 a
 non-admin, 404 a course outside the request's tenant, and otherwise build the book **from the database**:
 the published lessons a learner sees, sectioned by module, as an attachment named `<slug>.epub` or

@@ -24,7 +24,7 @@ export interface CatalogCourse {
   publishHoldReason: string | null;
   priceType: string;
   price: number;
-  /** False = unvetted, so learners see "Coming soon" instead of the lessons. Owner-only to change. */
+  /** False = unvetted, so learners see "Coming soon" instead of the lessons. The owner or the school's brand_admin changes it. */
   vetted: boolean;
   /** Instructor byline shown to owner/admins for courses they don't personally own (else null). */
   instructorLabel?: string | null;
@@ -57,17 +57,21 @@ function priceLabel(c: CatalogCourse): string {
 // toggle. Bulk actions reuse the per-course PATCH route (validated + edit-gated server-side), so
 // there is no bulk endpoint to keep in sync with the single-course rules.
 //
-// `canVet` is the platform owner. Vetting is owner-only server-side (the PATCH route strips the
-// field for everyone else), so the buttons are hidden rather than shown-and-silently-ignored.
+// `canVet` is the platform owner or this school's brand_admin (BAM 2026-10-29); `canOpenUnvetted`
+// (live but unvetted) stays the platform owner's. The PATCH route strips each field for anyone else,
+// so the buttons are hidden rather than shown-and-silently-ignored.
 const STATUSES: Status[] = ["all", "published", "draft", "private", "hold", "vetted", "unvetted"];
 
 export function TeacherCatalog({
   courses,
   canVet = false,
+  canOpenUnvetted = false,
   initialStatus,
 }: {
   courses: CatalogCourse[];
   canVet?: boolean;
+  /** The platform owner: "Open while unvetted" / "Close while unvetted". */
+  canOpenUnvetted?: boolean;
   /** Preselect a status filter from the URL (?status=unvetted), so the admin tile and any
    *  bookmark can land directly on the vetting queue. Unknown values fall back to "all". */
   initialStatus?: string;
@@ -140,7 +144,7 @@ export function TeacherCatalog({
       ),
     );
     setBusy(false);
-    setMsg(`${verb}: ${ok}/${ids.length} updated${ok < ids.length ? " (some blocked: on hold, or private, which only the owner's Make public control opens)" : ""}.`);
+    setMsg(`${verb}: ${ok}/${ids.length} updated${ok < ids.length ? " (some blocked: on hold, or private, which only the Make public control on the course's page opens)" : ""}.`);
     router.refresh();
   }
 
@@ -237,6 +241,10 @@ export function TeacherCatalog({
               >
                 Mark unvetted
               </button>
+            </>
+          ) : null}
+          {canOpenUnvetted ? (
+            <>
               <button
                 type="button"
                 disabled={busy}

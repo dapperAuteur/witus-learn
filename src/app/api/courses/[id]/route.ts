@@ -52,10 +52,13 @@ const PatchSchema = z.object({
   billingInterval: z.enum(["month", "year"]).nullable().optional(),
   // Cross-promotion: 0–3 ecosystem product slugs curated for this course.
   relatedProducts: z.array(z.string().max(60)).max(3).nullable().optional(),
-  // Owner-only. A BOOLEAN, never a timestamp: the server stamps vetted_at itself, so a client
-  // can't backdate a review (the date is a trust signal shown to educators). Stripped below for
-  // anyone but the platform owner. false = back to "Coming soon".
+  // The platform owner, or this school's brand_admin (BAM 2026-10-29). A BOOLEAN, never a
+  // timestamp: the server stamps vetted_at itself, so a client can't backdate a review (the date is
+  // a trust signal shown to educators). Stripped below for anyone else. false = back to "Coming soon".
   vetted: z.boolean().optional(),
+  // Platform-owner only: closes the course to the school's brand_admins (courses.owner_only).
+  // Stripped below for anyone else, the way isFeatured is.
+  ownerOnly: z.boolean().optional(),
   // Owner-only, like `vetted`: "live but unvetted" (plans/52). Opens the course's content to the
   // public before review finishes, behind an on-page disclosure. Stripped for non-owners below.
   allowUnvettedPublic: z.boolean().optional(),
@@ -69,7 +72,8 @@ const PatchSchema = z.object({
   confirm: z.boolean().optional(),
 });
 
-// PATCH /api/courses/[id] — instructor (owner) or brand-admin edits a course.
+// PATCH /api/courses/[id] — the instructor, this school's brand_admin, or the platform owner edits a
+// course (loadEditableCourse; an owner-only course admits no brand_admin).
 export async function PATCH(req: Request, { params }: Params) {
   const { id } = await params;
   const ctx = await loadEditableCourse(id);
@@ -133,17 +137,26 @@ export async function PATCH(req: Request, { params }: Params) {
   // the new amount/interval — otherwise checkout keeps charging the OLD (cached) price after an edit.
   if ("price" in patch || "priceType" in patch || "billingInterval" in patch) patch.stripePriceId = null;
 
-  // Vetting is the PLATFORM OWNER's review, not a per-brand setting: an instructor or brand_admin
-  // must not be able to mark their own course reviewed. Silently dropped for everyone else, the
-  // same way isFeatured is. Translate the boolean into the column here, never trusting a client
-  // timestamp, and keep an existing vetted_at as-is so re-vetting an already-vetted course
-  // doesn't move the recorded review date (bulk "Mark vetted" over a mixed selection is common).
+  // Vetting is the platform owner's review on every school, and the school's brand_admin's on that
+  // school's courses (BAM 2026-10-29: brand admins control "public vs private vs published vs
+  // vetted"). isTenantAdmin is true for the owner and for a brand_admin of THIS tenant only, and the
+  // course was read through the tenant-scoped DAL, so it never reaches across schools; an owner-only
+  // course never gets this far for a brand_admin (loadEditableCourse). An instructor still cannot
+  // mark their own course reviewed: silently dropped, the same way isFeatured is. Translate the
+  // boolean into the column here, never trusting a client timestamp, and keep an existing vetted_at
+  // as-is so re-vetting an already-vetted course doesn't move the recorded review date (bulk "Mark
+  // vetted" over a mixed selection is common).
   if ("vetted" in patch) {
     const wantVetted = patch.vetted === true;
     delete patch.vetted; // never reaches the UPDATE: `vetted` is not a column
-    if (await isPlatformOwner(session.user.id)) {
+    if (await isTenantAdmin(session, sdb.tenantId)) {
       patch.vettedAt = wantVetted ? (course.vettedAt ?? new Date()) : null;
     }
+  }
+  // Owner-only is the platform owner's to set or clear: it is what keeps a private review copy away
+  // from the school's admins, so nobody else may touch it. Stripped for everyone else.
+  if ("ownerOnly" in patch && !(await isPlatformOwner(session.user.id))) {
+    delete patch.ownerOnly;
   }
   // Same authority as vetting itself: opening an UNREVIEWED course to the public is the platform
   // owner's risk to take, never an instructor's or brand_admin's. This one IS a column, so for
@@ -183,9 +196,10 @@ export async function PATCH(req: Request, { params }: Params) {
       }
     }
   }
-  // A PRIVATE course leaves "private" only through the platform owner's Make public switch
-  // (POST /api/courses/[id]/visibility), which checks vetting and review readiness and writes an
-  // audit row. Refused here for everyone, the owner included, so no save skips that record.
+  // A PRIVATE course leaves "private" only through the Make public switch (POST
+  // /api/courses/[id]/visibility; the platform owner, or this school's brand_admin), which checks
+  // vetting and review readiness and writes an audit row naming the actor's role. Refused here for
+  // everyone, the owner and brand_admins included, so no save skips that record.
   const opensPrivate = patchOpensPrivate(course, parsed.data);
   if (opensPrivate) return errorJson(opensPrivate, 409);
   // A HELD course can't be published until the hold clears. Use the incoming hold value if

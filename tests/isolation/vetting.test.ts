@@ -219,7 +219,7 @@ describe("the Coming soon face cannot leak the closed course", () => {
   });
 });
 
-describe("vetting is owner-only, and never takes a client timestamp", () => {
+describe("vetting is the owner's or this school's admin's, and never takes a client timestamp", () => {
   const route = src("src/app/api/courses/[id]/route.ts");
 
   it("accepts a boolean and stamps the column server-side", () => {
@@ -228,9 +228,19 @@ describe("vetting is owner-only, and never takes a client timestamp", () => {
     expect(route).toContain("patch.vettedAt = wantVetted");
   });
 
-  it("drops the field for anyone but the platform owner, and never writes `vetted`", () => {
+  it("drops the field for anyone but a tenant admin (the owner, or this school's brand_admin), and never writes `vetted`", () => {
+    // BAM 2026-10-29: brand admins control their school's courses, vetting included. isTenantAdmin
+    // reads the membership of the request's tenant only, so it never reaches across schools, and an
+    // owner-only course never reaches this line for a brand_admin (loadEditableCourse 404s it).
     expect(route).toContain("delete patch.vetted;");
-    expect(route).toContain("if (await isPlatformOwner(session.user.id))");
+    const vetBlock = route.slice(route.indexOf('if ("vetted" in patch)'), route.indexOf('if ("ownerOnly" in patch'));
+    expect(vetBlock).toContain("if (await isTenantAdmin(session, sdb.tenantId))");
+    expect(route).toContain("loadEditableCourse(id)");
+  });
+
+  it("keeps owner-only and live-but-unvetted the platform owner's alone", () => {
+    expect(route).toContain('if ("ownerOnly" in patch && !(await isPlatformOwner(session.user.id)))');
+    expect(route).toContain('if ("allowUnvettedPublic" in patch && !(await isPlatformOwner(session.user.id)))');
   });
 });
 

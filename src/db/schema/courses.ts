@@ -75,12 +75,14 @@ export const courses = pgTable(
     stripePriceId: text("stripe_price_id"),
 
     // Publishing / visibility.
-    // visibility: "public" | "members" | "scheduled" | "private". A "private" course is
-    // owner-only — visible/editable ONLY by the platform owner and the course's own
-    // instructor, never by brand_admins/moderators (see canAccessCourse).
+    // visibility: "public" | "members" | "scheduled" | "private". A "private" course is closed to
+    // learners and open to its school's people: its instructor, the school's brand_admins, and the
+    // platform owner (canAccessCourse). The narrower "owner only" rule is the separate `ownerOnly`
+    // flag below, not this value (BAM 2026-10-29).
     // Every course is BORN private and unpublished (src/lib/course-visibility.ts, BAM 2026-10-28):
     // the default below was "public" until migration 0070, which changed the default only and
-    // rewrote no existing row. Only the platform owner's Make public switch takes a course public.
+    // rewrote no existing row. The Make public switch (platform owner, or the school's brand_admin)
+    // takes a course public.
     isPublished: boolean("is_published").notNull().default(false),
     visibility: text("visibility").notNull().default("private"),
     publishedAt: timestamp("published_at", { withTimezone: true }),
@@ -103,6 +105,13 @@ export const courses = pgTable(
     // blocked until it clears (e.g. "vet culturally" or "swap copyrighted source for open").
     // NULL = no hold.
     publishHoldReason: text("publish_hold_reason"),
+    // OWNER ONLY: reachable on /teach, in exports, through the switch and the hold release ONLY by
+    // the platform owner and the course's own instructor, never by a brand_admin of its school.
+    // Set by the private pipeline (scripts/seed-local-private.ts: private review copies, including
+    // ones built from copyrighted books) on insert and re-asserted on every run, and by the owner
+    // in course settings. Migration 0071 backfilled it onto every course that was private on the
+    // learn-witus school, fail-closed. See ownerOnlyBlocks in src/lib/course-visibility.ts.
+    ownerOnly: boolean("owner_only").notNull().default(false),
 
     // Learning behaviour
     navigationMode: text("navigation_mode").notNull().default("linear"),

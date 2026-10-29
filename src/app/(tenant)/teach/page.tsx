@@ -7,6 +7,7 @@ import { listAllTenantCourses, listOwnCourses, type ManagedCourse } from "@/db/q
 import { TeacherCatalog, type CatalogReview } from "@/components/teacher-catalog";
 import { getScopedDb } from "@/db/scoped";
 import { readinessOf, reviewsByLesson, summarizeLessonReview, type LessonReviewSummary } from "@/lib/lesson-review-summary";
+import { ownerOnlyBlocks } from "@/lib/course-visibility";
 import { createCourseAction } from "./actions";
 
 export const metadata: Metadata = { title: "Teach" };
@@ -55,10 +56,12 @@ export default async function TeachPage({
   }
 
   // Admins see EVERY course on the brand (so a course bylined to another/stale-seed instructor is
-  // reachable to reassign); a plain instructor sees only their own.
-  const courses = isAdmin
-    ? await listAllTenantCourses(tenant.id)
-    : await listOwnCourses(tenant.id, session.user.id);
+  // reachable to reassign), private and held ones included; a plain instructor sees only their own.
+  // An OWNER-ONLY course is left off a brand_admin's list (its title alone says it exists), unless
+  // they are its instructor; the platform owner sees it.
+  const courses = (
+    isAdmin ? await listAllTenantCourses(tenant.id) : await listOwnCourses(tenant.id, session.user.id)
+  ).filter((c) => !ownerOnlyBlocks({ isOwner: owner, isInstructor: c.instructorId === session.user.id }, c));
   // Reviewer sign-off (plans/93 section 1): a "QR 12/17" chip per course that carries release
   // markers. Only marked lessons are read (a handful of courses), then the verdicts on just those
   // courses; each state is computed against the lesson as it stands, exactly as the course page does.
@@ -169,7 +172,8 @@ export default async function TeachPage({
             instructorLabel: labelFor(c),
             review: reviewFor(c.id),
           }))}
-          canVet={owner}
+          canVet={isAdmin}
+          canOpenUnvetted={owner}
           initialStatus={status}
         />
       )}

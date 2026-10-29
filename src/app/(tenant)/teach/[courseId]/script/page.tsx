@@ -20,7 +20,8 @@ export default async function RecordingScriptPage({ params }: { params: Promise<
   const sdb = await getScopedDb();
   const course = await sdb.getCourseByIdOrSlug(courseParam);
   if (!course) notFound();
-  // Private or held: owner and own instructor only (canOpenCourseWorkspace).
+  // Instructor, platform owner, or this school's brand_admin; owner-only courses: owner and own
+  // instructor only (canOpenCourseWorkspace).
   if (!(await canOpenCourseWorkspace(session, sdb.tenantId, course))) notFound();
   const courseId = course.id;
 

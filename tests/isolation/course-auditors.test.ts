@@ -256,9 +256,12 @@ describe("the grant is tenant-scoped end to end", () => {
     // approving a self-nominated reviewer mints exactly this grant and the two paths must not
     // drift apart. Same three identities, now asserted once at the definition and once per route.
     const gate = src("src/lib/course-reviewers.ts");
-    expect(gate).toContain("session.user.id === instructorId");
+    expect(gate).toContain("session.user.id === course.instructorId");
     expect(gate).toContain("isPlatformOwner");
     expect(gate).toContain("isTenantAdmin");
+    // An owner-only course (the private pipeline's review copies) admits no tenant admin: a grant
+    // would hand its text to whoever the admin named.
+    expect(gate).toContain("if (course.ownerOnly) return false;");
 
     const route = src("src/app/api/courses/[id]/auditors/route.ts");
     expect(route).toContain("canManageCourseReviewers");
