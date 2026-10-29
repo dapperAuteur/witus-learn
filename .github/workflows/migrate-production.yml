@@ -1,0 +1,73 @@
+# Migrate the production database after a merge to main, so nobody pastes a connection string.
+#
+# Runs when a push to main changes a migration (drizzle.config.ts `out`: src/db/migrations), and on
+# demand (Actions -> "Migrate production database" -> Run workflow). It reads ONE repository secret,
+# NEON_DIRECT_URL: the Neon DIRECT (unpooled) connection string for the production branch of
+# witus-learn's Neon project. Set it once without copying the value (OPERATING.md, section 3a):
+#   neon connection-string --project-id <witus-learn Neon project id> | gh secret set NEON_DIRECT_URL --repo dapperAuteur/witus-learn
+# (`--pooled` defaults to false, so that is the direct string.) GitHub masks the value in every log
+# line. The job fails closed when the secret is missing.
+#
+# What it runs: scripts/migrate.ts, the script behind `pnpm db:migrate:prod`, with the secret mapped
+# onto DATABASE_URL_UNPOOLED (the first name scripts/db-url.ts reads). `db:migrate:prod` itself loads
+# `.env.prod`, a laptop file the runner does not have, so the job calls the script directly. Drizzle
+# applies only the pending migrations and records each in drizzle.__drizzle_migrations, so a second
+# run is a no-op. The job summary lists how many it applied.
+#
+# SEEDS ARE NOT AUTOMATED, on purpose. The seeders upsert lesson title and text on every run, and
+# teachers can edit lesson text in the app (/teach/<course>), so a seed on merge would silently
+# overwrite their edits. Seeds stay manual (OPERATING.md sections 1 and 4) until BAM decides how a
+# seed treats an in-app edit.
+#
+# Timing: Vercel deploys the same push in parallel. Keep migrations additive, so the old code works on
+# the new schema and the new code's pages that need a new column answer 500 only until this job ends.
+name: Migrate production database
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "src/db/migrations/**"
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: migrate-production
+  # Never cancel a migration halfway: a second merge waits for the first run to finish.
+  cancel-in-progress: false
+
+jobs:
+  migrate:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - name: Require NEON_DIRECT_URL
+        env:
+          NEON_DIRECT_URL: ${{ secrets.NEON_DIRECT_URL }}
+        run: |
+          if [ -z "$NEON_DIRECT_URL" ]; then
+            echo "::error::Set the repository secret NEON_DIRECT_URL (OPERATING.md, section 3a: Automatic migrations)."
+            exit 1
+          fi
+
+      # Same versions ci.yml resolves today (its floating @v4 tags), pinned exactly.
+      - uses: actions/checkout@v4.4.0
+
+      # No version input: the action reads packageManager (pnpm 11) from package.json.
+      - uses: pnpm/action-setup@v4.4.0
+
+      # Node 24, matching ci.yml. The repo has no .nvmrc and no package.json engines field.
+      - uses: actions/setup-node@v4.4.0
+        with:
+          node-version: 24
+          cache: pnpm
+
+      - name: Install
+        run: pnpm install --frozen-lockfile
+
+      - name: Migrate
+        env:
+          DATABASE_URL_UNPOOLED: ${{ secrets.NEON_DIRECT_URL }}
+        run: pnpm exec tsx scripts/migrate.ts
