@@ -5,9 +5,13 @@
 // WHERE THE COURSE COMES FROM. The committed course data, the same source the seeders read: the
 // course registry (seed-registry.ts) resolves the slug to its scripts/data module. FAA Part 107 is
 // not a data module; it is assembled from the gitignored content/drone-curriculum/ import by
-// faa-course.ts, the same builder `pnpm seed:faa` uses.
+// faa-course.ts, the same builder `pnpm seed:faa` uses. A slug no seeder registers falls back to a
+// LOCAL PRIVATE course, a gitignored JSON file under content/private-courses/ that
+// `pnpm seed:local-private` seeds (scripts/seed-local-private.ts), so the owner can read one on an
+// e-reader without a database. The export lands under content/ too, so nothing leaves the machine.
 
 import { createHash } from "node:crypto";
+import { existsSync, readdirSync, readFileSync } from "node:fs";
 import { join } from "node:path";
 import { homedir } from "node:os";
 import type { AuthoredCourse } from "../data/authored-course";
@@ -41,18 +45,36 @@ export function uuidForSlug(slug: string): string {
   return `${x.slice(0, 8)}-${x.slice(8, 12)}-${x.slice(12, 16)}-${x.slice(16, 20)}-${x.slice(20, 32)}`;
 }
 
+/** Where `pnpm seed:local-private` reads its course files (gitignored). */
+export const LOCAL_PRIVATE_DIR = join(import.meta.dirname, "..", "..", "content", "private-courses");
+
+/** The local private course whose file says `"slug": <slug>`, or null. A file that does not parse is
+ *  skipped here; `pnpm lint` (check-private-courses) is what reports it. */
+export function loadLocalPrivateCourse(slug: string, dir: string = LOCAL_PRIVATE_DIR): AuthoredCourse | null {
+  if (!existsSync(dir)) return null;
+  for (const file of readdirSync(dir).filter((f) => f.endsWith(".json"))) {
+    try {
+      const raw = JSON.parse(readFileSync(join(dir, file), "utf-8")) as { slug?: string; course?: AuthoredCourse };
+      if (raw.slug === slug && raw.course?.lessons) return raw.course;
+    } catch {
+      // not this one
+    }
+  }
+  return null;
+}
+
 /** The authored course for a slug, or null when nothing registers it. `contentDir` is FAA only. */
 export async function loadAuthoredCourse(slug: string, contentDir?: string): Promise<AuthoredCourse | null> {
   if (slug === FAA_COURSE_SLUG) return buildFaaCourse(contentDir ?? FAA_CONTENT_DIR).course;
   const entry = findSeedEntry(slug);
-  if (!entry) return null;
+  if (!entry) return loadLocalPrivateCourse(slug);
   return loadCourse(entry);
 }
 
 export function noCourseMessage(slug: string): string {
   return slug === FAA_COURSE_SLUG
     ? "No FAA content found: the academy-import must be in content/drone-curriculum/ (or pass --content <dir>)."
-    : `No course data found for "${slug}". Check the slug against scripts/seed-*.ts; generated (gitignored) data modules must be generated first.`;
+    : `No course data found for "${slug}". Check the slug against scripts/seed-*.ts and the "slug" in content/private-courses/*.json; generated (gitignored) data modules and local private courses must be generated first.`;
 }
 
 /** The book builders' input, carrying the same notices the site shows for this course. */
