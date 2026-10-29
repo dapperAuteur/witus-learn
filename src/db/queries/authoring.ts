@@ -1,7 +1,9 @@
+import { NEW_COURSE_STATE } from "@/lib/course-visibility";
 import { and, asc, desc, eq, inArray, ne, sql, type SQL } from "drizzle-orm";
 import { db } from "@/db/client";
 import {
   courseModules,
+  courseVisibilityChanges,
   courses,
   lessons,
   tenantMemberships,
@@ -28,7 +30,6 @@ export interface NewCourseInput {
   navigationMode?: "linear" | "cyoa";
   isSequential?: boolean;
   requiresAgeGate?: boolean;
-  visibility?: "public" | "members" | "scheduled";
 }
 
 export type CoursePatch = Partial<typeof courses.$inferInsert>;
@@ -79,11 +80,39 @@ export async function createCourse(
       navigationMode: input.navigationMode ?? "linear",
       isSequential: input.isSequential ?? false,
       requiresAgeGate: input.requiresAgeGate ?? false,
-      visibility: input.visibility ?? "public",
+      // Born private and unpublished, whoever creates it (src/lib/course-visibility.ts). The platform
+      // owner's Make public switch is the only way out of private.
+      ...NEW_COURSE_STATE,
     })
     .returning();
   expireCourse(tenantId, row.id);
   return row;
+}
+
+/**
+ * Apply the owner's Make public / Make private change and write its audit row, in one transaction:
+ * a visibility change with no record of who made it, or a record of a change that did not happen,
+ * are both worse than neither. The decision (src/lib/course-visibility.ts) is made by the caller.
+ */
+export async function applyCourseVisibilityChange(
+  tenantId: string,
+  courseId: string,
+  actorUserId: string,
+  patch: CoursePatch,
+  audit: Omit<typeof courseVisibilityChanges.$inferInsert, "id" | "tenantId" | "courseId" | "actorUserId" | "createdAt">,
+): Promise<Course | null> {
+  const row = await db.transaction(async (tx) => {
+    const [updated] = await tx
+      .update(courses)
+      .set({ ...patch, updatedAt: new Date() })
+      .where(and(eq(courses.id, courseId), eq(courses.tenantId, tenantId)))
+      .returning();
+    if (!updated) return null;
+    await tx.insert(courseVisibilityChanges).values({ tenantId, courseId, actorUserId, ...audit });
+    return updated;
+  });
+  if (row) expireCourse(tenantId, courseId);
+  return row ?? null;
 }
 
 export async function updateCourse(

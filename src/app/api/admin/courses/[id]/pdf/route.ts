@@ -1,4 +1,4 @@
-import { apiContext, errorJson, isTenantAdmin } from "@/lib/api";
+import { apiContext, courseExportAccess, errorJson } from "@/lib/api";
 import { courseToPdf } from "@/lib/pdf/course-to-pdf";
 import { downloadResponse, exportFilename, loadExportableCourse } from "@/lib/course-export";
 
@@ -18,12 +18,15 @@ type Params = { params: Promise<{ id: string }> };
 export async function GET(_req: Request, { params }: Params) {
   const { sdb, session } = await apiContext();
   if (!session) return errorJson("Please sign in first.", 401);
-  if (!(await isTenantAdmin(session, sdb.tenantId))) {
-    return errorJson("Only a school admin can export a course.", 403);
-  }
   const { id } = await params;
-  const loaded = await loadExportableCourse(sdb, id);
-  if (!loaded) return errorJson("Course not found.", 404);
+  const course = await sdb.getCourseByIdOrSlug(id);
+  if (!course) return errorJson("Course not found.", 404);
+  // A private or held course exports only for the platform owner and its own instructor, and is
+  // "not found" to everyone else, brand_admins included (courseExportAccess in src/lib/api.ts).
+  const access = await courseExportAccess(session, sdb.tenantId, course);
+  if (access === "not-found") return errorJson("Course not found.", 404);
+  if (access === "forbidden") return errorJson("Only a school admin can export a course.", 403);
+  const loaded = await loadExportableCourse(course);
 
   const bytes = await courseToPdf(loaded.input, { variant: "reader" });
   return downloadResponse(bytes, "application/pdf", exportFilename(loaded.course, "pdf"));

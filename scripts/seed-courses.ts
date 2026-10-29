@@ -293,6 +293,10 @@ import { RETIREMENT_ACCOUNTS_COURSE } from "./data/retirement-accounts-course";
 // Seeds authored non-language courses on their schools (Ed.L.D. on Learn.WitUS;
 // cyber + FAA join here when their content lands). Re-seedable via the shared
 // seedAuthoredCourse upserter. Run: pnpm seed:courses
+//
+// Every NEW course row is inserted private and unpublished (src/lib/course-visibility.ts, BAM
+// 2026-10-28). A registration cannot make a course public; the platform owner does that on the
+// course's /teach page after vetting. Existing rows are never touched by that rule (insert-only).
 
 neonConfig.webSocketConstructor = ws;
 const connectionString = resolveDbUrl(true);
@@ -1779,7 +1783,7 @@ async function main() {
     navigationMode: "linear",
     price: 0,
     priceType: "free",
-    visibility: "public",
+    // Registered public before 2026-10-28; a new row is now born private (src/lib/course-visibility.ts).
     publishHoldReason:
       "Held until BAM has recorded the demonstrations the lessons marked P call for (3 to 7, 10 to 13, 15, 22 and 25) on his own Mannheim-type rule, card rods and printed log table. Every P lesson already teaches its operation in writing; the videos show it done. Research tier 1: mathematics and history, every worked example from public-domain sources (Pickworth and Cullimore, 1920; Lipka, 1918; the 1964 federal handbook; the FAA's pilot handbook) or plain arithmetic.",
   });
@@ -3401,7 +3405,8 @@ async function main() {
     });
   }
   // Hold BOTH Hoodoo courses from publishing, and make the comprehensive one PRIVATE
-  // (owner-only). seedAuthoredCourse publishes by default, so we override after seeding.
+  // (owner-only). These rows predate the private-by-default insert (2026-10-28), so the update still
+  // re-asserts their state on every run.
   await db
     .update(schema.courses)
     .set({
@@ -3716,7 +3721,7 @@ async function main() {
     navigationMode: "linear",
     price: 0,
     priceType: "free",
-    visibility: "public",
+    // Registered public before 2026-10-28; a new row is now born private (src/lib/course-visibility.ts).
     publishHoldReason:
       "Held until a licensed land surveyor (to be named) has read every lesson marked QR, with authority to change or cut it, and until BAM has filmed his demonstrations with the chain, compass, level and planimeter for the lessons marked P. Research tier 2: the practice of a licensed profession, next to boundary law.",
   });
@@ -3742,7 +3747,7 @@ async function main() {
     navigationMode: "linear",
     price: 0,
     priceType: "free",
-    visibility: "public",
+    // Registered public before 2026-10-28; a new row is now born private (src/lib/course-visibility.ts).
     publishHoldReason:
       "Held until a licensed land surveyor (to be named) has read every lesson marked QR, with authority to change or cut it; until a Native reviewer (to be named) has read lessons 3, 7 and 10, which teach that the grid followed treaty cessions, with the same authority; and until BAM has filmed his county surveyor visit for lesson 13. Research tier 2: boundary law and land title, next to a licensed profession.",
   });
@@ -3883,7 +3888,7 @@ async function main() {
     navigationMode: "linear",
     price: 0,
     priceType: "free",
-    visibility: "public",
+    // Registered public before 2026-10-28; a new row is now born private (src/lib/course-visibility.ts).
     publishHoldReason:
       "Held until the qualified reviewer BAM has named has checked every lesson marked QR, and until ElementaryMBA's courses are vetted. Research tier 2: every figure is read from one filed 10-K (Chipotle Mexican Grill, fiscal 2025, accession 0001058090-26-000009) and every rule from SEC, CFR, IRS or SBA text.",
   });

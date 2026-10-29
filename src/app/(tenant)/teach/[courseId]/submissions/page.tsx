@@ -2,7 +2,7 @@ import Link from "next/link";
 import { notFound, redirect } from "next/navigation";
 import type { Metadata } from "next";
 import { getScopedDb } from "@/db/scoped";
-import { canEditCourse } from "@/lib/api";
+import { canOpenCourseWorkspace } from "@/lib/api";
 import { getSession } from "@/lib/session";
 import { listSubmissionsForCourse } from "@/db/queries/assignments";
 import { SubmissionsGrader } from "@/components/submissions-grader";
@@ -19,7 +19,8 @@ export default async function SubmissionsPage({ params }: { params: Promise<{ co
   const sdb = await getScopedDb();
   const course = await sdb.getCourseByIdOrSlug(courseParam);
   if (!course) notFound();
-  if (!(await canEditCourse(session, sdb.tenantId, course))) notFound();
+  // Private or held: owner and own instructor only (canOpenCourseWorkspace).
+  if (!(await canOpenCourseWorkspace(session, sdb.tenantId, course))) notFound();
   const courseId = course.id;
 
   const rows = await listSubmissionsForCourse(sdb.tenantId, courseId);
