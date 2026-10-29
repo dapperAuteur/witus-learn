@@ -314,9 +314,23 @@ and always wins — that path is owned by the IdP app, not by this one.
 
 ## Private courses (`courses.visibility = 'private'`)
 
+**Every course is born private and unpublished** (BAM, 2026-10-28; `src/lib/course-visibility.ts`).
+The in-app creator and every seeder insert `NEW_COURSE_STATE`, and the column default is `'private'`
+(migration 0070, which changed the default and no row). Insert-only: a re-seed never touches an
+existing course's visibility or publishing. Only the **platform owner** opens a course, with **Make
+public** on `/teach/<course>`: it shows the readiness (vetted, no publish hold, every reviewer marker
+cleared), refuses when not ready unless the owner ticks **Override** and gives a reason, publishes the
+row and sets it public in one write, and records the change in `course_visibility_changes` (who, when,
+from, to, override, reason, any hold it cleared). **Make private** takes a course down the same way.
+The course settings PATCH refuses to move a private course out of private or to publish it.
+
+A **closed** course (private, or carrying a publish hold) opens on `/teach/<course>` and its sub-pages,
+and downloads as an EPUB or PDF, only for the platform owner and its own instructor; a brand_admin gets
+the same not-found a learner gets (`canOpenCourseWorkspace` and `courseExportAccess` in `src/lib/api.ts`).
+
 A course can be **held back entirely** rather than published unvetted. `visibility: "private"` is an
-**insert-only** option on `seedAuthoredCourse` (like `price`), so the public flip is done once in the
-admin UI and survives every later re-seed. A private course writes `isPublished: false`, so every
+**insert-only** option on `seedAuthoredCourse` (like `price`), so the public flip is done once with the
+owner's switch and survives every later re-seed. A private course writes `isPublished: false`, so every
 catalog surface filters it out, and `getSpecializations` excludes it explicitly. The **owner can
 still study it end to end** — enroll, quiz and complete all check `canAccessCourse` rather than
 `isPublished` — which is what makes a private course a real course and not a draft. Coverage:
