@@ -220,7 +220,7 @@ async function main() {
     navigationMode: "linear",
     price: 0,
     priceType: "free",
-    visibility: "public",
+    // Registered public before 2026-10-28; a new row is now born private (src/lib/course-visibility.ts).
     publishHoldReason:
       "Held until the qualified reviewer BAM has named has checked every lesson marked QR, and until ElementaryMBA's courses are vetted. Research tier 2: every figure is read from one filed 10-K (Chipotle Mexican Grill, fiscal 2025, accession 0001058090-26-000009) and every rule from SEC, CFR, IRS or SBA text.",
   });

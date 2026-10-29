@@ -4,6 +4,7 @@ import * as schema from "../../src/db/schema";
 import type { AuthoredCourse } from "../data/authored-course";
 import { normalizeAdditionalCategories } from "../../src/lib/course-categories";
 import { parseReleaseMarkers } from "../../src/lib/lesson-review";
+import { NEW_COURSE_STATE } from "../../src/lib/course-visibility";
 
 // Reusable seeder for any authored course (Ed.L.D., cyber, FAA when it lands, more
 // languages). Upserts the course (refreshing title/description) and its lessons by
@@ -64,14 +65,14 @@ export async function seedAuthoredCourse(
     price?: number;
     priceType?: "free" | "one_time" | "subscription";
     /**
-     * Initial visibility, applied **on FIRST INSERT ONLY**, exactly like `price` above and for the
-     * same reason: publishing state is owner-editable in the admin UI, and the PUBLIC FLIP of a
-     * private program (plans/67, the WELL series) must survive every later re-seed. `"private"`
-     * additionally writes `isPublished: false` / `publishedAt: null`, because the catalog surfaces
-     * filter on isPublished alone (the hoodoo-complete semantics; see scripts/seed-courses.ts,
-     * whose POST-SEED updates deliberately re-assert privacy every run and must stay as they are).
+     * Every course is inserted PRIVATE and UNPUBLISHED (NEW_COURSE_STATE in
+     * src/lib/course-visibility.ts, BAM 2026-10-28), so the only accepted value is "private", kept so
+     * a registration can say out loud that it is private by design. A registration can no longer
+     * make a course public: the platform owner does that with the Make public switch on the course's
+     * /teach page, after vetting. Insert-only like `price`: a re-seed never touches visibility or
+     * publishing, so a course the owner opened stays open (the WELL series' public flip, plans/67).
      */
-    visibility?: "public" | "private";
+    visibility?: "private";
     /** Insert-only, with `visibility`: the honest banner reason on a held course. */
     publishHoldReason?: string;
   },
@@ -108,10 +109,6 @@ export async function seedAuthoredCourse(
         description: course.description,
         category,
         additionalCategories: normalizeAdditionalCategories(category, opts.additionalCategories),
-        // A private course is born unpublished (catalog surfaces filter on isPublished alone).
-        isPublished: opts.visibility === "private" ? false : true,
-        publishedAt: opts.visibility === "private" ? null : new Date(),
-        ...(opts.visibility != null ? { visibility: opts.visibility } : {}),
         ...(opts.publishHoldReason != null ? { publishHoldReason: opts.publishHoldReason } : {}),
         navigationMode,
         // Insert-only pricing (see the option's doc comment). Omitted values fall through to the
@@ -119,6 +116,8 @@ export async function seedAuthoredCourse(
         ...(opts.price != null ? { price: String(opts.price) } : {}),
         ...(opts.priceType != null ? { priceType: opts.priceType } : {}),
         ...extra,
+        // Born private and unpublished, always; spread last so nothing above can override it.
+        ...NEW_COURSE_STATE,
       })
       .returning({ id: schema.courses.id });
     courseId = row.id;

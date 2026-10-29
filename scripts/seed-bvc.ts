@@ -4,6 +4,7 @@ import { drizzle } from "drizzle-orm/neon-serverless";
 import ws from "ws";
 import * as schema from "../src/db/schema";
 import { resolveDbUrl } from "./db-url";
+import { NEW_COURSE_STATE } from "../src/lib/course-visibility";
 
 // Seeds sample courses for BVC + the Acme isolation tenant so the catalog and the
 // isolation suite have real content. Idempotent. Run after seed:tenants:
@@ -81,7 +82,9 @@ async function ensureCourse(tenantId: string, instructorId: string, data: Course
     console.log(`  = course ${data.slug} exists`);
     return;
   }
-  await db.insert(schema.courses).values({ ...data, tenantId, instructorId });
+  // Born private and unpublished whatever `data` says (src/lib/course-visibility.ts): the
+  // isPublished flags below are history; the platform owner opens each course after vetting.
+  await db.insert(schema.courses).values({ ...data, tenantId, instructorId, ...NEW_COURSE_STATE });
   console.log(`  + course ${data.slug}`);
 }
 

@@ -248,11 +248,19 @@ export function CourseSettingsForm({
         <div>
           <label className="text-sm font-medium" htmlFor="cs-vis">Visibility</label>
           <select id="cs-vis" value={v.visibility} onChange={(e) => set("visibility", e.target.value as CourseSettings["visibility"])} className={field}>
-            <option value="public">Public</option>
-            <option value="members">Members</option>
-            <option value="scheduled">Scheduled</option>
+            {/* A private course is opened only by the platform owner's Make public control (it
+                checks vetting and review readiness and records the change), so the other options
+                are disabled while the saved course is private. The PATCH refuses it regardless. */}
+            <option value="public" disabled={initial.visibility === "private"}>Public</option>
+            <option value="members" disabled={initial.visibility === "private"}>Members</option>
+            <option value="scheduled" disabled={initial.visibility === "private"}>Scheduled</option>
             <option value="private">Private (owner only)</option>
           </select>
+          {initial.visibility === "private" ? (
+            <p className="mt-1 text-xs text-neutral-600 dark:text-neutral-400">
+              Private until the platform owner vets it and uses Make public.
+            </p>
+          ) : null}
         </div>
       </div>
 
@@ -418,10 +426,15 @@ export function CourseSettingsForm({
           <input
             type="checkbox"
             checked={v.isPublished}
-            disabled={Boolean(v.publishHoldReason)}
+            disabled={Boolean(v.publishHoldReason) || (initial.visibility === "private" && !initial.isPublished)}
             onChange={(e) => set("isPublished", e.target.checked)}
           />{" "}
-          Published{v.publishHoldReason ? " (release the hold above first)" : ""}
+          Published
+          {v.publishHoldReason
+            ? " (release the hold above first)"
+            : initial.visibility === "private" && !initial.isPublished
+              ? " (a private course is published with the owner's Make public control)"
+              : ""}
         </label>
         <label className="flex items-center gap-2"><input type="checkbox" checked={v.requiresAgeGate} onChange={(e) => set("requiresAgeGate", e.target.checked)} /> Requires age gate (18+)</label>
         <label className="flex items-center gap-2"><input type="checkbox" checked={v.isSequential} onChange={(e) => set("isSequential", e.target.checked)} /> Sequential (lessons unlock in order)</label>

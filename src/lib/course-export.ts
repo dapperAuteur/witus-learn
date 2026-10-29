@@ -10,7 +10,6 @@
 // site-wide educational disclaimer (every course page, the embed view and the public API carry it)
 // and the certification notice registered for the course, if any. Nothing is written here.
 
-import type { ScopedDb } from "@/db/scoped";
 import type { Course } from "@/db/schema";
 import { listLessons, listModules } from "@/db/queries/authoring";
 import { certDisclaimerFor } from "@/lib/cert-disclaimer";
@@ -34,10 +33,8 @@ function asQuiz(value: unknown): QuizContent | null {
   return Array.isArray(q.questions) ? (q as QuizContent) : null;
 }
 
-/** Resolve a course by id or slug within the request's tenant and load its published lessons. */
-export async function loadExportableCourse(sdb: ScopedDb, idOrSlug: string): Promise<ExportableCourse | null> {
-  const course = await sdb.getCourseByIdOrSlug(idOrSlug);
-  if (!course) return null;
+/** Load the published lessons of a course the route already resolved (tenant-scoped) and authorized. */
+export async function loadExportableCourse(course: Course): Promise<ExportableCourse> {
   const [all, modules] = await Promise.all([listLessons(course.id), listModules(course.id)]);
   const sectionOf = new Map(modules.map((m) => [m.id, m.title]));
   const lessons = all
