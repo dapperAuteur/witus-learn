@@ -14,8 +14,12 @@ All commands run from the repo root. Local uses `.env.local`; prod uses the depl
 **Migrate first, then seed.** Code alone never changes what learners see — courses render from the
 **database**, so a content edit only goes live after its seed re-runs.
 
+Migrations now run **by themselves** after a merge to `main` that changes `src/db/migrations/`
+(GitHub Actions, "Migrate production database"; see §3a). Check that run went green. Seeds are still
+run by hand:
+
 ```bash
-pnpm db:migrate:prod        # apply any new migrations (safe to re-run; only pending ones apply)
+pnpm db:migrate:prod        # only if the automatic run failed or the secret is not set yet (§3a)
 pnpm seed:<the affected seed(s)>   # re-seed the courses/content you changed
 ```
 
@@ -53,7 +57,66 @@ come before any content seed.
 - **After changing the schema** (`src/db/schema/*.ts`): `pnpm db:generate` creates the next
   migration; commit it; then `db:migrate:prod` on deploy. **Never** ship a schema change without its
   migration, or the next prod deploy 500s on the missing column.
-- Current head: **0024** (`quiz_attempts`). Recent: 0021/0022 (`recall_content`), 0023 (`media_parts`).
+- Current head: the last entry in `src/db/migrations/meta/_journal.json`.
+
+### 3a. Automatic migrations (`.github/workflows/migrate-production.yml`)
+
+**The automatic path.** A push to `main` that changes anything under `src/db/migrations/` (the
+`out` folder in `drizzle.config.ts`; `tests/migrate-workflow.test.ts` fails if the two drift apart)
+runs the workflow **Migrate production database**. It installs the app, then runs
+`scripts/migrate.ts` (the script behind `pnpm db:migrate:prod`) with the repository secret
+`NEON_DIRECT_URL` mapped onto `DATABASE_URL_UNPOOLED`. Drizzle applies only the pending migrations
+and records each in `drizzle.__drizzle_migrations`, so a second run is a no-op. The run's summary
+page says how many it applied, how many the database records, and the latest migration in the repo.
+Runs never overlap and are never cancelled midway (a second merge waits). Vercel deploys the same
+push at the same time, so keep migrations additive: the old code must keep working on the new schema
+for the minute the job takes.
+
+**Seeds are NOT automated.** Every seeder upserts lesson titles and text, and teachers can edit
+lesson text in the app (`/teach/<course>`), so a seed on merge would silently overwrite their edits.
+Seeds stay manual (§1, §4) until that is decided.
+
+**The secret, set once** (no value is pasted anywhere; GitHub masks it in every log):
+
+```bash
+neon connection-string --project-id <witus-learn Neon project id> \
+  | gh secret set NEON_DIRECT_URL --repo dapperAuteur/witus-learn
+```
+
+- `neon connection-string` prints the **direct** (unpooled) string unless you pass `--pooled`
+  (`--pooled` defaults to false), for the project's default branch. That is production unless the
+  Neon console shows a different default; check before setting the secret. Migrations need the
+  direct string.
+- The project id is in the Neon console (project settings). The repository variable
+  `NEON_PROJECT_ID`, set for the preview-branch cleanup workflow, names the same project, so
+  `--project-id "$(gh variable get NEON_PROJECT_ID --repo dapperAuteur/witus-learn)"` works too.
+- If the project has more than one database or role, pass `--database-name` and `--role-name` with
+  the names the Neon console shows, so the string points at the app's database.
+- Without the secret the job fails at its first step with
+  `::error::Set the repository secret NEON_DIRECT_URL ...`, and nothing else runs.
+
+**Run it by hand (no merge needed).** GitHub, the repository's **Actions** tab, **Migrate production
+database**, **Run workflow** on `main`. Or from a terminal: `gh workflow run migrate-production.yml
+--repo dapperAuteur/witus-learn --ref main`, then `gh run watch`. (A witus.online admin page with a
+Run button for every app's post-deploy steps is planned; until it ships, this button is the trigger.)
+
+**Manual fallback (the laptop).** The same thing the job does, from `.env.prod`:
+
+```bash
+pnpm install --frozen-lockfile
+pnpm db:migrate:prod        # tsx --env-file=.env.prod scripts/migrate.ts
+```
+
+`.env.prod` needs `DATABASE_URL_UNPOOLED` (preferred) or `DATABASE_URL` for production; see
+`scripts/db-url.ts` for every name it accepts. Expected output ends with a line like
+`Migrations applied: 1 new this run; N recorded in drizzle.__drizzle_migrations; N in the repo (latest 00NN_name).`
+A second run says `0 new this run`.
+
+**Check what production has applied** (read-only):
+
+```sql
+SELECT count(*) AS applied, max(created_at) AS latest_ms FROM drizzle.__drizzle_migrations;
+```
 
 ---
 
