@@ -412,6 +412,15 @@ Three safeguards, enforced rather than remembered:
 This does not license copying. The rule in `content/private-courses/00-READ-ME-FIRST.md` stands:
 BAM's own synthesis in his own words, citing the book rather than reproducing it.
 
+**Reading one offline.** `pnpm export:epub <slug>` (and `export:pdf`) fall back to these files when no
+seeder registers the slug, so a local private course exports without a database, into the gitignored
+`content/` tree or wherever `--out` says.
+
+**Generated, not hand-written: the Invest.WitUS Python tutorial.** `scripts/gen-invest-tutorial-course.ts`
+writes `learn-python-by-building-invest-witus.json` here from a local clone of the private invest-witus
+repo at one pinned tag (see its header). It lives here because that repo's text is not public yet, not
+because of copyright.
+
 ## Course categories (a course may appear in more than one)
 
 A course has **one primary category** (`courses.category`) and **up to five additional ones**
