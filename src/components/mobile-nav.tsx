@@ -3,7 +3,7 @@
 import { useEffect, useRef, useState, type FocusEvent, type ReactNode } from "react";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-import { SignOutButton } from "./sign-out-button";
+import { SignOutButton, SignOutEverywhereButton } from "./sign-out-button";
 import { badgeTotal, type NavItem } from "./nav-types";
 import { NavBadge } from "./nav-badge";
 
@@ -32,7 +32,10 @@ export function MobileNav({
   teachItems: NavItem[];
   accountItems: NavItem[];
   signedIn: boolean;
-  /** Server-resolved WitUS logout endpoint, or null off the ecosystem. See sign-out-button.tsx. */
+  /**
+   * Server-resolved WitUS logout endpoint for "Sign out of WitUS everywhere", or null off the
+   * ecosystem (then that control does not render). See sign-out-button.tsx.
+   */
   endSessionUrl?: string | null;
 }) {
   const [open, setOpen] = useState(false);
@@ -152,7 +155,13 @@ export function MobileNav({
                 renderSection(
                   "Account",
                   accountItems,
-                  <SignOutButton endSessionUrl={endSessionUrl} className={`${linkClass} w-full text-left`} />,
+                  <>
+                    <SignOutButton className={`${linkClass} w-full text-left`} />
+                    <SignOutEverywhereButton
+                      endSessionUrl={endSessionUrl}
+                      className={`${linkClass} w-full text-left`}
+                    />
+                  </>,
                 )
               ) : (
                 <li className="mt-2 border-t border-neutral-200 pt-2 dark:border-neutral-800">

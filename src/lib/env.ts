@@ -233,13 +233,14 @@ export const hasSentry = Boolean(env.SENTRY_DSN || env.NEXT_PUBLIC_SENTRY_DSN);
  * the IdP must also allow this origin with credentials or the probe simply answers nothing.
  */
 /**
- * Where sign-out ends the SHARED WitUS session (BAM's decision, 2026-08-30: signing out of one
- * WitUS app signs you out of all of them).
+ * Where "Sign out of WitUS everywhere" ends the SHARED WitUS session. Plain "Sign out" never uses
+ * it: it ends only this app's session (BAM, 2026-10-29, witus task 128 option (b)).
  *
- * Dark under exactly the same condition as the probe: if this app is not a configured ecosystem
- * OIDC client, there is no shared session to end and sign-out stays purely local. Callers must
- * ALSO gate on the per-tenant ecosystem flag, because a white-label school's learner must never be
- * redirected to the shared IdP: that leaks the ecosystem exactly as a silent sign-in would.
+ * Null under exactly the same condition as the probe: if this app is not a configured ecosystem
+ * OIDC client, there is no shared session to end and the "everywhere" control does not render.
+ * Callers must ALSO gate on the per-tenant ecosystem flag, because a white-label school's learner
+ * must never be redirected to the shared IdP: that leaks the ecosystem exactly as a silent sign-in
+ * would.
  */
 export const witusEndSessionEndpoint: string | null = (() => {
   const clientId = process.env.WITUS_OIDC_CLIENT_ID;
@@ -252,7 +253,7 @@ export const witusEndSessionEndpoint: string | null = (() => {
   // post_logout_redirect_uri with invalid_request ("client_id is required when using
   // post_logout_redirect_uri without a valid id_token_hint") unless the request carries either a
   // verifiable id_token_hint or an explicit client_id. We have no id_token client-side, so we send
-  // client_id. Baked in HERE, on the server, because the sign-out button is a client component and
+  // client_id. Baked in HERE, on the server, because the sign-out control is a client component and
   // must not be handed the raw env.
   return `${base}?client_id=${encodeURIComponent(clientId)}`;
 })();

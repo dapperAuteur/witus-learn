@@ -268,7 +268,7 @@ unstyled fallback, which is what produced the bare `NEXT_HTTP_ERROR_FALLBACK;403
 Covered by [tests/signed-out-redirect.test.ts](tests/signed-out-redirect.test.ts), which also fails
 the build if any `(tenant)` page reaches for the API-shaped guard again.
 
-## Ecosystem SSO: "Continue as ⟨name⟩" and global sign-out
+## Ecosystem SSO: "Continue as ⟨name⟩" and "Sign out of WitUS everywhere"
 
 **Both halves are gated to WitUS-branded surfaces, and that gate is the most important fact here.**
 The condition is `isWitusBrandedHost(host) || tenant.flags.ecosystemSso === true`
@@ -300,12 +300,18 @@ headers at all, so it answered on *no* browser. `/api/ecosystem/session` is the 
 replacement: same cookie, but it returns a display label and nothing else. `/get-session` carries the
 session token and must never become readable cross-origin.
 
-**Global sign-out** — signing out of Learn signs you out of every WitUS app in this browser. The
-order is the safety property: offline caches are purged and the **local session destroyed first**,
-then the browser is handed to the IdP's `oauth2/endsession` with `client_id` and a
+**Sign out vs. Sign out of WitUS everywhere** (BAM, 2026-10-29, witus task 128 option (b)).
+**Sign out** ends only the Learn session and lands on `/`; the WitUS session and other WitUS apps
+stay signed in, so the next "Sign in with WitUS" goes straight in. On a school the IdP has
+registered (`tenantUsesWitusSso`), the Account menu and the mobile drawer also offer **Sign out of
+WitUS everywhere**, with help text saying other WitUS apps stay signed in until you sign out of them.
+Its order is the safety property: offline caches are purged and the **local session destroyed
+first**, then the browser is handed to the IdP's `oauth2/endsession` with `client_id` and a
 `post_logout_redirect_uri` of this app's origin plus `/` (`https://learn.witus.online/` in
 production; the trailing slash is exact-matched by the IdP). An IdP that is unreachable or refuses
-the logout therefore still leaves the learner signed out here.
+the logout therefore still leaves the learner signed out here. White-label schools never see the
+control. Pure helpers: [src/lib/sign-out.ts](src/lib/sign-out.ts), pinned by
+[tests/global-sign-out.test.ts](tests/global-sign-out.test.ts).
 
 Env: `WITUS_OIDC_CLIENT_ID` + `WITUS_OIDC_CLIENT_SECRET` (both features stay dark without the id),
 optional `WITUS_OIDC_DISCOVERY_URL` (every IdP URL is derived from it, so `accounts.witus.online` is

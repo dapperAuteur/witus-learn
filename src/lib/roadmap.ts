@@ -5,6 +5,16 @@
 export const ROADMAP = `# Learn.WitUS, Roadmap
 
 ## Platform
+- 🔧 **"Sign out" leaves Learn only; "Sign out of WitUS everywhere" is its own control**
+  (\`fix/sign-out-this-app-or-everywhere\`, no migration). BAM, 2026-10-29, witus task 128 option (b):
+  since 2026-08-30 the plain Sign out also ended the WitUS session (and was relabeled "Sign out of
+  WitUS"), while every other app kept its own session, which surprised him. Now **Sign out** ends only
+  the Learn session and lands on \`/\`; the next "Sign in with WitUS" goes straight in. On a school the
+  IdP has registered (\`tenantUsesWitusSso\`), the Account menu and the mobile drawer also offer **Sign
+  out of WitUS everywhere**, with help text saying other WitUS apps stay signed in until you sign out of
+  them; it ends the Learn session first, then the WitUS session at the IdP's endsession endpoint.
+  White-label schools never see it. Both controls purge private offline copies first, as before. Pure
+  helpers in \`src/lib/sign-out.ts\`; \`tests/global-sign-out.test.ts\` rewritten.
 - 🔧 **Launch to-do list and release follow-ups** (\`feat/release-follow-ups\`, migration
   \`0069_release_followups\`; after merge run \`pnpm db:migrate:prod\`). BAM, 2026-10-15: warn about the blog
   post (naming the blog) and any follow-up work when a course is published, and give teachers the warning

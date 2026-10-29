@@ -167,9 +167,10 @@ function splitDiscoveryUrl(
  * The IdP's RP-initiated logout endpoint: `<basePath>/oauth2/endsession`, which is the
  * `end_session_endpoint` the live discovery document advertises (verified 2026-09-02).
  *
- * BAM chose GLOBAL sign-out on 2026-08-30: "signout signs out of every app". Ending only this
- * app's session leaves the IdP session alive, and once "Continue as ..." is live that means
- * signing out and coming back offers to sign you straight back in, which reads as a broken logout.
+ * Used only by "Sign out of WitUS everywhere". Plain "Sign out" ends just this app's session and
+ * leaves the IdP session alive (BAM, 2026-10-29, witus task 128 option (b)), so coming back to the
+ * login page may offer "Continue as ..."; that is expected. The everywhere control ends the IdP
+ * session too. See src/lib/sign-out.ts.
  */
 export function endSessionEndpointFromDiscovery(
   discoveryUrl: string | null | undefined,

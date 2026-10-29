@@ -10,7 +10,7 @@ import { countIncomingPings } from "@/db/queries/contact";
 import { listCategories } from "@/db/queries/catalog";
 import { cachedMapDataExists } from "@/lib/public-cache";
 import { VETTING_QUEUE } from "@/lib/admin-nav";
-import { SignOutButton } from "./sign-out-button";
+import { SignOutButton, SignOutEverywhereButton } from "./sign-out-button";
 import { ThemeToggle } from "./theme-toggle";
 import { MobileNav } from "./mobile-nav";
 import { NavMenu } from "./nav-menu";
@@ -19,15 +19,20 @@ import { ProfileSwitcher } from "./profile-switcher";
 import { ActingAsBanner } from "./acting-as-banner";
 import { StickyHeader } from "./sticky-header";
 
+const MENU_ROW_CLASS =
+  "block min-h-11 w-full rounded-md px-3 py-2 text-left leading-7 hover:bg-neutral-100 focus-visible:outline-2 focus-visible:outline-offset-2 dark:hover:bg-neutral-800";
+
 // Brand-aware academy header. Nav is driven by the tenant's feature flags — not a
 // fixed CentOS module nav. Accent color comes from the --accent CSS var set by the
 // tenant layout. Session-aware: Sign in (logged out) ↔ Sign out (logged in).
 export async function SiteHeader({ tenant }: { tenant: TenantRecord }) {
-  // GLOBAL SIGN-OUT gate, resolved here on the server from the tenant, never from anything
-  // client-supplied. Same rule as the sign-IN half on the login page (`tenantUsesWitusSso`): only a
-  // school the WitUS IdP has registered may be redirected to it on logout, or the IdP refuses the
-  // return address. `witusEndSessionEndpoint` is itself null unless this app is a configured
-  // ecosystem OIDC client, so both must hold.
+  // "SIGN OUT OF WITUS EVERYWHERE" gate, resolved here on the server from the tenant, never from
+  // anything client-supplied. Same rule as the sign-IN half on the login page
+  // (`tenantUsesWitusSso`): only a school the WitUS IdP has registered may be redirected to it on
+  // logout, or the IdP refuses the return address. `witusEndSessionEndpoint` is itself null unless
+  // this app is a configured ecosystem OIDC client, so both must hold. Null means the control does
+  // not render. Plain "Sign out" never uses it: it ends only this app's session (BAM, 2026-10-29,
+  // witus task 128 option (b)).
   const endSessionUrl = tenantUsesWitusSso(tenant) ? witusEndSessionEndpoint : null;
   const { flags } = tenant;
   const session = await getSession();
@@ -107,7 +112,8 @@ export async function SiteHeader({ tenant }: { tenant: TenantRecord }) {
   ];
   const showTeachMenu = Boolean(session) && canTeach && teachItems.length > 0;
 
-  // Only rendered when signed in; Sign out is appended as the trailing action in both the
+  // Only rendered when signed in; Sign out (and, on a registered school, Sign out of WitUS
+  // everywhere) is appended as the trailing action in both the
   // desktop dropdown and the mobile drawer's Account section. ONE array feeds both the desktop
   // dropdown (NavMenu) and the mobile drawer (MobileNav), so an item added here lights up both.
   //
@@ -200,11 +206,14 @@ export async function SiteHeader({ tenant }: { tenant: TenantRecord }) {
                     label="Account"
                     items={accountItems}
                     trailing={
-                      <SignOutButton
-                        menuItem
-                        endSessionUrl={endSessionUrl}
-                        className="block min-h-11 w-full rounded-md px-3 py-2 text-left leading-7 hover:bg-neutral-100 focus-visible:outline-2 focus-visible:outline-offset-2 dark:hover:bg-neutral-800"
-                      />
+                      <>
+                        <SignOutButton menuItem className={MENU_ROW_CLASS} />
+                        <SignOutEverywhereButton
+                          menuItem
+                          endSessionUrl={endSessionUrl}
+                          className={MENU_ROW_CLASS}
+                        />
+                      </>
                     }
                   />
                 </li>

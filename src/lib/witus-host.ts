@@ -15,7 +15,7 @@
 export const WITUS_BASE_TENANT_SLUG = "learn-witus";
 
 /**
- * Does this school take part in "Sign in with WitUS" and global sign-out?
+ * Does this school take part in "Sign in with WitUS" and "Sign out of WitUS everywhere"?
  *
  * STRICTER THAN `isWitusBrandedHost`, on purpose. The IdP (gemini/witus lib/identity/clients.ts)
  * registers exactly one Learn host, learn.witus.online, and deliberately registers NO tenant host,
