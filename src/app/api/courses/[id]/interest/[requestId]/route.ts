@@ -42,7 +42,7 @@ export async function POST(req: Request, { params }: Params) {
 
   const course = await sdb.getCourseById(id);
   if (!course) return errorJson("Not found", 404);
-  if (!(await canManageCourseReviewers(session, sdb.tenantId, course.instructorId))) {
+  if (!(await canManageCourseReviewers(session, sdb.tenantId, course))) {
     return errorJson("Forbidden", 403);
   }
 

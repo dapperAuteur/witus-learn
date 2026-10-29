@@ -4,22 +4,27 @@ import { useRouter } from "next/navigation";
 import { useId, useState } from "react";
 import { MIN_OVERRIDE_REASON, type PublicReadiness } from "@/lib/course-visibility";
 
-// The platform owner's Make public / Make private switch (src/lib/course-visibility.ts). Rendered on
-// /teach/[courseId] for the owner only; the route re-checks ownership and re-computes readiness from
-// the stored rows, so what this panel shows is a preview, never the decision.
+// The Make public / Make private switch (src/lib/course-visibility.ts). Rendered on /teach/[courseId]
+// for the platform owner and this school's brand_admin (never on an owner-only course for the
+// latter); the route re-checks the role and re-computes readiness from the stored rows, so what this
+// panel shows is a preview, never the decision.
 //
 // Make public opens a confirmation that lists the readiness checks. When the course is not ready the
-// confirm button stays disabled until the owner ticks the override and writes a reason, which is
-// stored with the change. Make private takes the course down in one confirmed step.
+// confirm button stays disabled until the actor ticks the override and writes a reason, which is
+// stored with the change along with their role. Make private takes the course down in one confirmed
+// step.
 export function CourseVisibilitySwitch({
   courseId,
   visibility,
   isPublished,
+  ownerOnly = false,
   readiness,
 }: {
   courseId: string;
   visibility: string;
   isPublished: boolean;
+  /** courses.owner_only: closed to the school's admins, so the "who can open it" line says so. */
+  ownerOnly?: boolean;
   readiness: PublicReadiness;
 }) {
   const router = useRouter();
@@ -79,13 +84,15 @@ export function CourseVisibilitySwitch({
       className="rounded-lg border border-neutral-300 p-4 text-sm dark:border-neutral-700"
     >
       <h2 id={`${ids}-h`} className="font-semibold">
-        Visibility (owner only)
+        Visibility
       </h2>
       <p className="mt-1 text-neutral-700 dark:text-neutral-300">
         {isLive
           ? "This course is public and published."
           : visibility === "private"
-            ? "This course is private and unpublished: only you and its instructor can open it."
+            ? ownerOnly
+              ? "This course is private, unpublished and owner only: only the platform owner and its instructor can open it."
+              : "This course is private and unpublished: only its instructor, this school's admins and the platform owner can open it."
             : `This course is ${visibility}${isPublished ? ", published" : ", unpublished"}.`}
       </p>
 

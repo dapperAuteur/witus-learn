@@ -21,6 +21,8 @@ export interface CourseSettings {
   isPublished: boolean;
   /** Non-null = the course is held and can't be published until cleared. */
   publishHoldReason: string | null;
+  /** Owner only (courses.owner_only): closed to the school's brand_admins. Platform-owner-set only. */
+  ownerOnly: boolean;
   requiresAgeGate: boolean;
   allowCrossCourseCyoa: boolean;
   isSequential: boolean;
@@ -57,6 +59,7 @@ export function CourseSettingsForm({
   courseId,
   initial,
   canFeature,
+  canSetOwnerOnly = false,
   categories = [],
   hasStripe = true,
   instructors = [],
@@ -67,6 +70,8 @@ export function CourseSettingsForm({
   courseId: string;
   initial: CourseSettings;
   canFeature: boolean;
+  /** The platform owner: may mark the course owner-only, or clear that (the API strips it for anyone else). */
+  canSetOwnerOnly?: boolean;
   /** This school's category names, offered as suggestions on the Category field. */
   categories?: string[];
   /** Whether Stripe is configured — when false, paid courses can't be purchased yet. */
@@ -248,17 +253,18 @@ export function CourseSettingsForm({
         <div>
           <label className="text-sm font-medium" htmlFor="cs-vis">Visibility</label>
           <select id="cs-vis" value={v.visibility} onChange={(e) => set("visibility", e.target.value as CourseSettings["visibility"])} className={field}>
-            {/* A private course is opened only by the platform owner's Make public control (it
-                checks vetting and review readiness and records the change), so the other options
-                are disabled while the saved course is private. The PATCH refuses it regardless. */}
+            {/* A private course is opened only by the Make public control (the platform owner or this
+                school's admin; it checks vetting and review readiness and records the change), so the
+                other options are disabled while the saved course is private. The PATCH refuses it
+                regardless. */}
             <option value="public" disabled={initial.visibility === "private"}>Public</option>
             <option value="members" disabled={initial.visibility === "private"}>Members</option>
             <option value="scheduled" disabled={initial.visibility === "private"}>Scheduled</option>
-            <option value="private">Private (owner only)</option>
+            <option value="private">Private (closed to learners)</option>
           </select>
           {initial.visibility === "private" ? (
             <p className="mt-1 text-xs text-neutral-600 dark:text-neutral-400">
-              Private until the platform owner vets it and uses Make public.
+              Private until it is vetted and opened with Make public, by this school&apos;s admin or the platform owner.
             </p>
           ) : null}
         </div>
@@ -433,7 +439,7 @@ export function CourseSettingsForm({
           {v.publishHoldReason
             ? " (release the hold above first)"
             : initial.visibility === "private" && !initial.isPublished
-              ? " (a private course is published with the owner's Make public control)"
+              ? " (a private course is published with the Make public control)"
               : ""}
         </label>
         <label className="flex items-center gap-2"><input type="checkbox" checked={v.requiresAgeGate} onChange={(e) => set("requiresAgeGate", e.target.checked)} /> Requires age gate (18+)</label>
@@ -441,6 +447,15 @@ export function CourseSettingsForm({
         <label className="flex items-center gap-2"><input type="checkbox" checked={v.allowCrossCourseCyoa} onChange={(e) => set("allowCrossCourseCyoa", e.target.checked)} /> Allow this course as a cross-course CYOA destination</label>
         {canFeature ? (
           <label className="flex items-center gap-2"><input type="checkbox" checked={v.isFeatured} onChange={(e) => set("isFeatured", e.target.checked)} /> Featured on the catalog</label>
+        ) : null}
+        {canSetOwnerOnly ? (
+          <label className="flex items-start gap-2">
+            <input type="checkbox" className="mt-1" checked={v.ownerOnly} onChange={(e) => set("ownerOnly", e.target.checked)} />
+            <span>
+              Owner only: closed to this school&apos;s admins. Only you and the course&apos;s instructor can open,
+              export, release or make it public. Keep it ticked on private review copies.
+            </span>
+          </label>
         ) : null}
       </fieldset>
 

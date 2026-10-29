@@ -22,7 +22,7 @@ export async function PATCH(req: Request, { params }: Params) {
 
   const course = await sdb.getCourseById(id);
   if (!course) return errorJson("Not found", 404);
-  if (!(await canManageCourseReviewers(session, sdb.tenantId, course.instructorId))) {
+  if (!(await canManageCourseReviewers(session, sdb.tenantId, course))) {
     return errorJson("Forbidden", 403);
   }
 
@@ -60,7 +60,7 @@ export async function DELETE(_req: Request, { params }: Params) {
   if (!course) return errorJson("Not found", 404);
   // Same gate as minting a grant (src/lib/course-reviewers.ts): whoever may hand one out is
   // whoever may take it back, and there is one definition of that for both.
-  if (!(await canManageCourseReviewers(session, sdb.tenantId, course.instructorId))) {
+  if (!(await canManageCourseReviewers(session, sdb.tenantId, course))) {
     return errorJson("Forbidden", 403);
   }
 

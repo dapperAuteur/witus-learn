@@ -75,6 +75,9 @@ export async function seedAuthoredCourse(
     visibility?: "private";
     /** Insert-only, with `visibility`: the honest banner reason on a held course. */
     publishHoldReason?: string;
+    /** Insert as OWNER-ONLY (courses.owner_only): closed to the school's brand_admins. The private
+     *  pipeline (scripts/seed-local-private.ts) sets it and re-asserts it on every run. */
+    ownerOnly?: true;
   },
 ): Promise<string> {
   const { tenantId, instructorId, slug, course, category } = opts;
@@ -110,6 +113,7 @@ export async function seedAuthoredCourse(
         category,
         additionalCategories: normalizeAdditionalCategories(category, opts.additionalCategories),
         ...(opts.publishHoldReason != null ? { publishHoldReason: opts.publishHoldReason } : {}),
+        ...(opts.ownerOnly ? { ownerOnly: true } : {}),
         navigationMode,
         // Insert-only pricing (see the option's doc comment). Omitted values fall through to the
         // schema defaults, which are price "0" / priceType "free".

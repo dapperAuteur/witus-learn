@@ -8,8 +8,9 @@ import { LaunchTodoWarning, hasOpenTodos } from "@/components/launch-todo-warnin
 
 // "This course still needs vetting" — the call to action, shown wherever the platform OWNER meets
 // an unvetted course (BAM 2026-08-18: he was finding unvetted courses with no way to act on them
-// from where he stood). Vetting is owner-only server-side; this component is only rendered for the
-// owner, and the PATCH strips the field for anyone else regardless.
+// from where he stood). Vetting is the owner's, and on /teach/[courseId] also the school's
+// brand_admin's (BAM 2026-10-29); this component is only rendered for them, and the PATCH strips
+// the field for anyone else regardless.
 //
 // The button marks the course vetted in place, because the alternative (navigate to /teach, find
 // the row, tick it, bulk-act) is exactly the friction that let the review queue sit. `variant`
