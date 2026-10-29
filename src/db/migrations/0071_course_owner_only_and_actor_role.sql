@@ -8,7 +8,7 @@ ALTER TABLE "courses" ADD COLUMN "owner_only" boolean DEFAULT false NOT NULL;-->
 UPDATE "courses" SET "owner_only" = true
   WHERE "visibility" = 'private'
     AND "tenant_id" IN (SELECT "id" FROM "tenants" WHERE "slug" = 'learn-witus');--> statement-breakpoint
--- Hand-written: every change recorded before this migration was the platform owner's (the switch
--- was owner-only), so existing rows take that role; the default is dropped so new rows must say.
-ALTER TABLE "course_visibility_changes" ADD COLUMN "actor_role" text DEFAULT 'platform_owner' NOT NULL;--> statement-breakpoint
-ALTER TABLE "course_visibility_changes" ALTER COLUMN "actor_role" DROP DEFAULT;
+-- The default is 'platform_owner' on purpose: every row written before this migration, and every row
+-- the code deployed before it can write (its switch was owner-only), was the owner's. The new code
+-- always sets the role. Additive, so migrating ahead of the deploy is safe.
+ALTER TABLE "course_visibility_changes" ADD COLUMN "actor_role" text DEFAULT 'platform_owner' NOT NULL;
