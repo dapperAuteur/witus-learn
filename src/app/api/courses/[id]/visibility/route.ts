@@ -1,21 +1,29 @@
 import { after } from "next/server";
 import { z } from "zod";
 import { reindexCourseEmbeddings } from "@/lib/ai/reindex";
-import { apiContext, errorJson, json } from "@/lib/api";
-import { isPlatformOwner } from "@/lib/session";
+import { apiContext, courseActor, errorJson, json } from "@/lib/api";
 import { applyCourseVisibilityChange } from "@/db/queries/authoring";
 import { readinessOf, reviewsByLesson, summarizeLessonReview } from "@/lib/lesson-review-summary";
-import { decideVisibilityChange, publicReadiness } from "@/lib/course-visibility";
+import {
+  decideVisibilityChange,
+  ownerOnlyBlocks,
+  publicReadiness,
+  VISIBILITY_FORBIDDEN,
+  visibilityActorRole,
+} from "@/lib/course-visibility";
 
 type Params = { params: Promise<{ id: string }> };
 
-// POST /api/courses/[id]/visibility: the platform owner's Make public / Make private switch
-// (src/lib/course-visibility.ts; BAM 2026-10-28: every course is private and unpublished until he
-// vets it and opens it).
+// POST /api/courses/[id]/visibility: the Make public / Make private switch
+// (src/lib/course-visibility.ts; BAM 2026-10-28: every course is private and unpublished until it is
+// vetted and opened).
 //
-// OWNER ONLY. Not the instructor and not a brand_admin: the course is opened to the public by the
-// person who vetted it. A non-owner gets 403 (they can already see the course exists on /teach or
-// they would not be here; an unknown id is a 404 before that).
+// WHO (BAM 2026-10-29): the platform owner on every school, and a brand_admin of the school the
+// request resolved to on that school's courses, with the same readiness check and override rules.
+// The audit row records which role acted. An OWNER-ONLY course (courses.owner_only) stays the
+// owner's: anyone but the owner and its own instructor gets the learner's 404. The instructor and
+// any other teacher get 403. Another school's course does not resolve here at all (tenant-scoped
+// read): 404.
 //
 // Readiness is RE-COMPUTED here from the stored rows, never taken from the screen that sent the
 // click: vetted_at stamped, no publish hold, every reviewer marker cleared. Not ready → 409 unless
@@ -38,8 +46,10 @@ export async function POST(req: Request, { params }: Params) {
   const body = BodySchema.safeParse(await req.json().catch(() => null));
   if (!body.success) return errorJson("Invalid input", 400);
 
-  const isOwner = await isPlatformOwner(session.user.id);
-  if (!isOwner) return errorJson("Only the platform owner can change a course's visibility here.", 403);
+  const actor = await courseActor(session, sdb.tenantId, course);
+  if (ownerOnlyBlocks(actor, course)) return errorJson("Not found", 404);
+  const actorRole = visibilityActorRole(actor, course);
+  if (!actorRole) return errorJson(VISIBILITY_FORBIDDEN, 403);
 
   const [lessons, reviews] = await Promise.all([
     sdb.listReviewableLessons([course.id]),
@@ -49,7 +59,7 @@ export async function POST(req: Request, { params }: Params) {
   const markers = readinessOf(lessons.map((l) => summarizeLessonReview(l, byLesson.get(l.id) ?? [])));
   const readiness = publicReadiness(course, markers);
 
-  const decision = decideVisibilityChange({ isOwner, course, readiness, request: body.data });
+  const decision = decideVisibilityChange({ actorRole, course, readiness, request: body.data });
   if (!decision.ok) return json({ error: decision.error, readiness }, decision.status);
   if (!decision.changed) return json({ ok: true, changed: false, course, readiness });
 

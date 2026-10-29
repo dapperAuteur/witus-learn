@@ -8,7 +8,7 @@ import { AUDITOR_READ_ONLY_MESSAGE, isReadOnlyAuditor } from "@/lib/auditors";
 import type { Session } from "@/lib/auth";
 import { getMembership, getSession, isPlatformOwner } from "@/lib/session";
 import { canSeeUnvettedContent, isUnvetted, isVettingLocked } from "@/lib/vetting";
-import { isClosedCourse } from "@/lib/course-visibility";
+import { exportAccess, type CourseActor } from "@/lib/course-visibility";
 
 export const json = (data: unknown, status = 200) => NextResponse.json(data, { status });
 export const errorJson = (error: string, status: number) => json({ error }, status);
@@ -41,6 +41,26 @@ export async function isTenantInstructor(
   return role === "instructor" || role === "brand_admin";
 }
 
+/**
+ * Who the viewer is relative to ONE course already resolved in `tenantId` (the request's school):
+ * the platform owner, the course's own instructor, a brand_admin of THAT school. Membership is read
+ * for this tenant only, so a brand_admin of another school is no admin here.
+ */
+export async function courseActor(session: Session, tenantId: string, course: Course): Promise<CourseActor> {
+  const isOwner = await isPlatformOwner(session.user.id);
+  const isInstructor = course.instructorId === session.user.id;
+  // The membership read is skipped when it cannot change any answer (owner or own instructor).
+  const isSchoolAdmin =
+    isOwner || isInstructor ? isOwner : (await getMembership(session.user.id, tenantId)) === "brand_admin";
+  return { isOwner, isInstructor, isSchoolAdmin };
+}
+
+/**
+ * The looser editor test the learner-facing routes use for "may skip the gating" (progress, quiz,
+ * tutor, source chat, submissions). Instructor or tenant admin, as before, except that an OWNER-ONLY
+ * course (courses.owner_only, src/lib/course-visibility.ts) admits no brand_admin: its text must not
+ * reach a school admin through the tutor or source chat either.
+ */
 export async function canEditCourse(
   session: Session | null,
   tenantId: string,
@@ -48,16 +68,17 @@ export async function canEditCourse(
 ): Promise<boolean> {
   if (!session) return false;
   if (course.instructorId === session.user.id) return true;
+  if (course.ownerOnly) return isPlatformOwner(session.user.id);
   return isTenantAdmin(session, tenantId);
 }
 
 /**
- * Who may open a course's AUTHORING workspace (/teach/[courseId] and its sub-pages) and download it
- * as an EPUB or PDF. A CLOSED course (private, or held: isClosedCourse in src/lib/course-visibility.ts)
- * opens only for the platform owner and its own instructor. A brand_admin is NOT enough: private
- * review copies of copyrighted books live in closed courses, and a school admin downloading one is
- * exactly the leak the private pipeline exists to prevent. An open course falls back to
- * canEditCourse (instructor or tenant admin), as before.
+ * Who may open a course's AUTHORING workspace (/teach/[courseId] and its sub-pages: the course page,
+ * script, embed and submissions). The same rule as canAccessCourse: its own instructor, the platform
+ * owner, and a brand_admin of the course's school, whether the course is private, held or open
+ * (BAM 2026-10-29: a school's brand_admin controls that school's courses). An OWNER-ONLY course
+ * (courses.owner_only: the private pipeline's review copies, some built from copyrighted books)
+ * opens only for the owner and its own instructor.
  *
  * Callers answer a refusal with the same not-found a learner gets, never a 403, so the response
  * does not confirm the course exists.
@@ -67,17 +88,15 @@ export async function canOpenCourseWorkspace(
   tenantId: string,
   course: Course,
 ): Promise<boolean> {
-  if (!session) return false;
-  if (course.instructorId === session.user.id) return true;
-  if (isClosedCourse(course)) return isPlatformOwner(session.user.id);
-  return isTenantAdmin(session, tenantId);
+  return canAccessCourse(session, tenantId, course);
 }
 
 /**
  * The EPUB/PDF export gate (/api/admin/courses/[id]/epub and /pdf), for a course already resolved
- * in the request's tenant:
- *   - a CLOSED course (private or held) exports only for the platform owner and its own instructor;
- *     anyone else gets "not-found", the answer a learner gets, so the route does not confirm it exists;
+ * in the request's tenant (exportAccess in src/lib/course-visibility.ts):
+ *   - an OWNER-ONLY course exports only for the platform owner and its own instructor;
+ *   - a private or held course for those two and the school's brand_admin;
+ *   - anyone else gets "not-found", the answer a learner gets, so the route does not confirm it exists;
  *   - an open course exports for a tenant admin (brand_admin or platform owner), as it always has;
  *     anyone else gets "forbidden".
  */
@@ -86,20 +105,26 @@ export async function courseExportAccess(
   tenantId: string,
   course: Course,
 ): Promise<"ok" | "not-found" | "forbidden"> {
-  if (isClosedCourse(course)) {
-    if (course.instructorId === session.user.id) return "ok";
-    return (await isPlatformOwner(session.user.id)) ? "ok" : "not-found";
-  }
-  return (await isTenantAdmin(session, tenantId)) ? "ok" : "forbidden";
+  return exportAccess(await courseActor(session, tenantId, course), course);
 }
 
 /**
- * Access gate that respects a PRIVATE course. A course with visibility "private" is
- * owner-only — viewable/editable ONLY by the platform owner and the course's own
- * instructor, NEVER by brand_admins or moderators. Non-private courses fall back to
- * canEditCourse (instructor OR any tenant admin). Use this — not canEditCourse — anywhere
- * a viewer could reach an unpublished/private course, so future admin/moderator roles
- * can't see the owner's private drafts.
+ * Is this course OWNER-ONLY and the viewer neither the platform owner nor its own instructor? Routes
+ * that gate on a role rather than on canAccessCourse (the hold release, the visibility switch, the
+ * reviewer grants) ask this first and answer the learner's not-found.
+ */
+export async function ownerOnlyHidden(session: Session, course: Course): Promise<boolean> {
+  if (!course.ownerOnly || course.instructorId === session.user.id) return false;
+  return !(await isPlatformOwner(session.user.id));
+}
+
+/**
+ * The course access gate. Its own instructor, the platform owner, and a tenant admin (a brand_admin
+ * of the school the request resolved to) may view and edit the course, whatever its visibility: a
+ * private course is closed to LEARNERS, not to its school (BAM 2026-10-29). An OWNER-ONLY course
+ * (courses.owner_only) admits only the owner and its own instructor, never a brand_admin or
+ * moderator. Use this, not canEditCourse, anywhere a viewer could reach an unpublished or private
+ * course.
  *
  * This is the EDIT gate. It deliberately says nothing about vetting: `vetted_at` is the
  * platform owner's own review queue, and a white-label school's brand_admin must not lose
@@ -114,7 +139,7 @@ export async function canAccessCourse(
 ): Promise<boolean> {
   if (!session) return false;
   if (course.instructorId === session.user.id) return true;
-  if (course.visibility === "private") return isPlatformOwner(session.user.id);
+  if (course.ownerOnly) return isPlatformOwner(session.user.id);
   return isTenantAdmin(session, tenantId);
 }
 
@@ -202,7 +227,11 @@ export async function loadEditableCourse(
   const { sdb, session } = await apiContext();
   const course = await sdb.getCourseById(id);
   if (!course) return { res: errorJson("Not found", 404) };
-  // canAccessCourse (not canEditCourse) so a PRIVATE course can't be edited by brand_admins.
-  if (!(await canAccessCourse(session, sdb.tenantId, course))) return { res: errorJson("Forbidden", 403) };
+  // canAccessCourse (not canEditCourse): an OWNER-ONLY course can't be edited by brand_admins, and
+  // is answered with the learner's not-found (a refusal there means the caller is neither the owner
+  // nor its instructor), so the response does not confirm it exists.
+  if (!(await canAccessCourse(session, sdb.tenantId, course))) {
+    return { res: session && course.ownerOnly ? errorJson("Not found", 404) : errorJson("Forbidden", 403) };
+  }
   return { sdb, session: session as Session, course };
 }

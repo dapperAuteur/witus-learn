@@ -1,14 +1,15 @@
 import { beforeEach, describe, expect, it, vi } from "vitest";
 
 /**
- * /teach/[courseId] and its sub-pages (script, embed, submissions) for a CLOSED course (private, or
- * held). Before 2026-10-28 these used canEditCourse, which lets any brand_admin in, so a school admin
- * could open the full text of a private course, including a private review copy of a copyrighted
- * book. Now (canOpenCourseWorkspace in src/lib/api.ts):
+ * /teach/[courseId] and its sub-pages (script, embed, submissions), gated by canOpenCourseWorkspace
+ * (src/lib/api.ts). BAM 2026-10-29: a school's brand_admin controls that school's courses, so
  *
- *   - private or held: the platform owner and the course's own instructor only; a brand_admin or any
- *     other teacher gets notFound(), the same answer a learner gets;
- *   - an open course: unchanged, a brand_admin still gets in.
+ *   - a private, held or open course opens for its instructor, the platform owner, and a brand_admin
+ *     of THIS school; a brand_admin of another school or any other teacher gets notFound(), the same
+ *     answer a learner gets;
+ *   - an OWNER-ONLY course (courses.owner_only: the private pipeline's review copies, some built from
+ *     copyrighted books) opens only for the owner and its own instructor, never for a brand_admin of
+ *     its school. That is the gap the 2026-10-28 closed-course rule was really about.
  *
  * Each page is rendered up to its gate. Every read past the gate throws PASSED_GATE, so "got in" and
  * "was turned away" are told apart without a database.
@@ -56,15 +57,23 @@ import { canOpenCourseWorkspace } from "@/lib/api";
 
 const OWNER = "owner-1";
 const INSTRUCTOR = "instructor-1";
-const OPEN = { id: "c1", tenantId: "tenant-1", instructorId: INSTRUCTOR, slug: "c", visibility: "public", publishHoldReason: null };
+const OPEN = { id: "c1", tenantId: "tenant-1", instructorId: INSTRUCTOR, slug: "c", visibility: "public", publishHoldReason: null, ownerOnly: false };
 const PRIVATE = { ...OPEN, visibility: "private" };
-const HELD = { ...OPEN, publishHoldReason: "Private review copy of a copyrighted book." };
+const HELD = { ...OPEN, publishHoldReason: "Held for cultural review." };
+const OWNER_ONLY = { ...PRIVATE, publishHoldReason: "Private review copy of a copyrighted book.", ownerOnly: true };
 
-function as(who: "owner" | "instructor" | "brand_admin" | "teacher") {
+type Who = "owner" | "instructor" | "brand_admin" | "other_school_admin" | "teacher";
+function as(who: Who) {
   const id = who === "owner" ? OWNER : who === "instructor" ? INSTRUCTOR : `${who}-1`;
   mocks.getSession.mockResolvedValue({ user: { id, email: `${who}@example.com` } });
   mocks.isPlatformOwner.mockImplementation(async (uid: string) => uid === OWNER);
-  mocks.getMembership.mockResolvedValue(who === "brand_admin" ? "brand_admin" : "instructor");
+  // Membership is per TENANT. The request resolves to tenant-1; the other school's admin is a
+  // brand_admin of tenant-2 only, so here they are nobody.
+  mocks.getMembership.mockImplementation(async (_uid: string, tenantId: string) => {
+    if (who === "brand_admin") return tenantId === "tenant-1" ? "brand_admin" : null;
+    if (who === "other_school_admin") return tenantId === "tenant-2" ? "brand_admin" : null;
+    return "instructor";
+  });
 }
 
 const params = { params: Promise.resolve({ courseId: "c" }) };
@@ -84,11 +93,26 @@ describe.each(PAGES)("%s", (_route, render) => {
   describe.each([
     ["private", PRIVATE],
     ["held", HELD],
+    ["open", OPEN],
   ] as const)("a %s course", (_kind, course) => {
     beforeEach(() => {
       mocks.course = { ...course };
     });
-    it.each(["brand_admin", "teacher"] as const)("is not found for a %s", async (who) => {
+    it.each(["other_school_admin", "teacher"] as const)("is not found for a %s", async (who) => {
+      as(who);
+      await expect(render()).rejects.toThrow("NOT_FOUND");
+    });
+    it.each(["owner", "instructor", "brand_admin"] as const)("opens for the %s", async (who) => {
+      as(who);
+      await expect(render()).rejects.toThrow("PASSED_GATE");
+    });
+  });
+
+  describe("an owner-only course", () => {
+    beforeEach(() => {
+      mocks.course = { ...OWNER_ONLY };
+    });
+    it.each(["brand_admin", "other_school_admin", "teacher"] as const)("is not found for a %s", async (who) => {
       as(who);
       await expect(render()).rejects.toThrow("NOT_FOUND");
     });
@@ -97,32 +121,38 @@ describe.each(PAGES)("%s", (_route, render) => {
       await expect(render()).rejects.toThrow("PASSED_GATE");
     });
   });
-
-  it("an open course still opens for a brand_admin", async () => {
-    mocks.course = { ...OPEN };
-    as("brand_admin");
-    await expect(render()).rejects.toThrow("PASSED_GATE");
-  });
 });
 
 describe("canOpenCourseWorkspace", () => {
   it("is false signed out", async () => {
     expect(await canOpenCourseWorkspace(null, "tenant-1", PRIVATE as never)).toBe(false);
   });
-  it("lets the instructor and the owner into a closed course, and nobody else", async () => {
-    for (const course of [PRIVATE, HELD]) {
-      for (const [who, expected] of [["owner", true], ["instructor", true], ["brand_admin", false], ["teacher", false]] as const) {
+  it("lets the school's brand_admin into its private, held and open courses, and no other school's admin", async () => {
+    for (const course of [PRIVATE, HELD, OPEN]) {
+      for (const [who, expected] of [
+        ["owner", true],
+        ["instructor", true],
+        ["brand_admin", true],
+        ["other_school_admin", false],
+        ["teacher", false],
+      ] as const) {
         as(who);
         const session = await mocks.getSession();
-        expect(await canOpenCourseWorkspace(session, "tenant-1", course as never)).toBe(expected);
+        expect(await canOpenCourseWorkspace(session, "tenant-1", course as never), `${who} on ${course.visibility}`).toBe(expected);
       }
     }
   });
-  it("keeps canEditCourse's answer for an open course: instructor or tenant admin", async () => {
-    for (const [who, expected] of [["owner", true], ["instructor", true], ["brand_admin", true], ["teacher", false]] as const) {
+  it("keeps an owner-only course to the owner and its own instructor", async () => {
+    for (const [who, expected] of [
+      ["owner", true],
+      ["instructor", true],
+      ["brand_admin", false],
+      ["other_school_admin", false],
+      ["teacher", false],
+    ] as const) {
       as(who);
       const session = await mocks.getSession();
-      expect(await canOpenCourseWorkspace(session, "tenant-1", OPEN as never)).toBe(expected);
+      expect(await canOpenCourseWorkspace(session, "tenant-1", OWNER_ONLY as never), who).toBe(expected);
     }
   });
 });

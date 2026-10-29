@@ -3,7 +3,7 @@ import { notFound, redirect } from "next/navigation";
 import type { Metadata } from "next";
 import { getScopedDb } from "@/db/scoped";
 import { canOpenCourseWorkspace } from "@/lib/api";
-import { isClosedCourse, publicReadiness } from "@/lib/course-visibility";
+import { exportAccess, publicReadiness, visibilityActorRole } from "@/lib/course-visibility";
 import { CourseVisibilitySwitch } from "@/components/course-visibility-switch";
 import { getMembership, getSession, isPlatformOwner } from "@/lib/session";
 import { VetCourseCta } from "@/components/vet-course-cta";
@@ -28,9 +28,11 @@ import { LaunchTodoList } from "@/components/launch-todo-list";
 
 export const metadata: Metadata = { title: "Manage course" };
 
-// Instructor course manager: edit settings + manage lessons. Scoped + edit-gated,
-// so only the owning instructor / brand admin / platform owner reaches it, and a PRIVATE or HELD
-// course only its own instructor and the platform owner (canOpenCourseWorkspace).
+// Instructor course manager: edit settings + manage lessons. Scoped + edit-gated, so only the
+// owning instructor / this school's brand admin / platform owner reaches it, whether the course is
+// private, held or open; an OWNER-ONLY course only its own instructor and the platform owner
+// (canOpenCourseWorkspace). The school's brand admin also gets the Make public / Make private
+// switch, vetting and the hold release here (BAM 2026-10-29).
 export default async function ManageCoursePage({ params }: { params: Promise<{ courseId: string }> }) {
   // The URL segment is the course SLUG (readable) or its uuid (legacy links / ambiguous slugs).
   const { courseId: courseParam } = await params;
@@ -134,11 +136,14 @@ export default async function ManageCoursePage({ params }: { params: Promise<{ c
   // Admins (platform owner / brand_admin) may reassign the course's instructor. This is the same
   // test isTenantAdmin (src/lib/api.ts) makes, computed from the rows already loaded above. The
   // download links below follow the export routes' rule (canExport), so they show only to a viewer
-  // those routes would serve.
+  // those routes would serve. A brand_admin only reaches this page for a course that is not
+  // owner-only (the gate above), so `isAdmin` here never opens an owner-only course.
   const isAdmin = owner || membership === "brand_admin";
-  // The export routes' own rule (courseExportAccess): a private or held course downloads only for
-  // the owner and its own instructor; an open course for a tenant admin.
-  const canExport = isClosedCourse(course) ? owner || course.instructorId === session.user.id : isAdmin;
+  const actor = { isOwner: owner, isInstructor: course.instructorId === session.user.id, isSchoolAdmin: isAdmin };
+  // The export routes' own rule (courseExportAccess → exportAccess).
+  const canExport = exportAccess(actor, course) === "ok";
+  // The Make public / Make private switch: the owner, or this school's brand_admin (null otherwise).
+  const switchRole = visibilityActorRole(actor, course);
   const instructors = isAdmin ? await listTenantInstructors(sdb.tenantId) : [];
 
   return (
@@ -198,19 +203,21 @@ export default async function ManageCoursePage({ params }: { params: Promise<{ c
             </Link>
           ) : null}
           {/* Mark it vetted from here, where the course is actually worked on: the walk to /teach
-              and back is the friction that let the review queue sit (BAM 2026-08-18). */}
-          {owner ? <VetCourseCta courseId={course.id} variant="inline" launchTodos={launchTodos} /> : null}
+              and back is the friction that let the review queue sit (BAM 2026-08-18). The owner, or
+              this school's brand_admin (BAM 2026-10-29). */}
+          {isAdmin ? <VetCourseCta courseId={course.id} variant="inline" launchTodos={launchTodos} /> : null}
         </div>
       ) : null}
 
       <div className="mt-6 space-y-8">
-        {/* The platform owner's switch: every course is born private and unpublished, and only the
-            owner opens it, after vetting (src/lib/course-visibility.ts). */}
-        {owner ? (
+        {/* The Make public / Make private switch: every course is born private and unpublished, and
+            the owner or this school's brand_admin opens it, after vetting (src/lib/course-visibility.ts). */}
+        {switchRole ? (
           <CourseVisibilitySwitch
             courseId={course.id}
             visibility={course.visibility}
             isPublished={course.isPublished}
+            ownerOnly={course.ownerOnly}
             readiness={publicReadiness(course, signoffReadiness)}
           />
         ) : null}
@@ -223,6 +230,7 @@ export default async function ManageCoursePage({ params }: { params: Promise<{ c
           courseId={course.id}
           launchTodos={launchTodos}
           canFeature={owner}
+          canSetOwnerOnly={owner}
           hasStripe={hasStripe}
           categories={categories.map((c) => c.name)}
           canAssignInstructor={isAdmin}
@@ -238,6 +246,7 @@ export default async function ManageCoursePage({ params }: { params: Promise<{ c
             visibility: course.visibility as "public" | "members" | "scheduled" | "private",
             isPublished: course.isPublished,
             publishHoldReason: course.publishHoldReason,
+            ownerOnly: course.ownerOnly,
             billingInterval: course.billingInterval as "month" | "year" | null,
             requiresAgeGate: course.requiresAgeGate,
             allowCrossCourseCyoa: course.allowCrossCourseCyoa,

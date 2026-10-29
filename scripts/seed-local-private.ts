@@ -140,15 +140,19 @@ async function main(): Promise<void> {
         priceType: "free",
         visibility: "private",
         publishHoldReason: entry.publishHoldReason,
+        ownerOnly: true,
         seriesSlug: entry.seriesSlug,
         seriesTitle: entry.seriesTitle,
         seriesOrder: entry.seriesOrder,
       });
       // Visibility is insert-only in the seeder, by design, so a course that already existed as
-      // public would stay public. These must never be public, so it is re-asserted every run.
+      // public would stay public. These must never be public, so it is re-asserted every run, and
+      // so is OWNER-ONLY (courses.owner_only): a school's brand_admin controls that school's private
+      // courses (BAM 2026-10-29), and these are the exception, open only to the platform owner and
+      // their own instructor (canAccessCourse in src/lib/api.ts).
       await db
         .update(schema.courses)
-        .set({ visibility: "private", isPublished: false, publishedAt: null })
+        .set({ visibility: "private", isPublished: false, publishedAt: null, ownerOnly: true })
         .where(eq(schema.courses.id, id));
       console.log(`  private: ${entry.slug} (${entry.course.lessons.length} lessons) from ${file}`);
     }

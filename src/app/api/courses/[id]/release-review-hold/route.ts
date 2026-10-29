@@ -1,4 +1,4 @@
-import { apiContext, errorJson, isTenantAdmin, json } from "@/lib/api";
+import { apiContext, errorJson, isTenantAdmin, json, ownerOnlyHidden } from "@/lib/api";
 import { updateCourse } from "@/db/queries/authoring";
 import { readinessOf, reviewsByLesson, summarizeLessonReview } from "@/lib/lesson-review-summary";
 
@@ -8,8 +8,11 @@ type Params = { params: Promise<{ id: string }> };
 // done (reviewer sign-off, plans/93 section 1).
 //
 // The PLATFORM OWNER or THIS SCHOOL'S ADMIN (brand_admin of the tenant the request resolved to), by
-// BAM's decision of 2026-10-14. A course's own instructor does not release their own course: the
-// point of the hold is that someone other than the author decides it is ready.
+// BAM's decision of 2026-10-14, restored 2026-10-29 (the button is on /teach/[courseId], which a
+// brand_admin reaches for every course of their school, held or private). A course's own instructor
+// does not release their own course: the point of the hold is that someone other than the author
+// decides it is ready. An OWNER-ONLY course (courses.owner_only) is the owner's alone: anyone else
+// gets the learner's 404.
 //
 // Readiness is RE-COMPUTED here from the stored verdicts and the lessons as they stand, never taken
 // from the screen that sent the click: every QR and P need cleared against the current text, and no
@@ -24,6 +27,7 @@ export async function POST(_req: Request, { params }: Params) {
 
   const course = await sdb.getCourseById(id);
   if (!course) return errorJson("Not found", 404);
+  if (await ownerOnlyHidden(session, course)) return errorJson("Not found", 404);
   // isTenantAdmin is true for the platform owner too, and for a brand_admin of THIS tenant only.
   if (!(await isTenantAdmin(session, sdb.tenantId))) return errorJson("Forbidden", 403);
 
