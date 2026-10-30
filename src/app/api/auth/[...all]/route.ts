@@ -22,12 +22,24 @@ const handlers = toNextJsHandler(auth);
  * that mean "a human has to act". A genuine fault still surfaces exactly as it does today.
  */
 export async function GET(request: Request): Promise<Response> {
-  const recovery = silentSsoRecoveryPath(new URL(request.url));
+  const url = new URL(request.url);
+  const recovery = silentSsoRecoveryPath(url);
   if (recovery) {
     // A RELATIVE Location on purpose. Every tenant has its own domain, and resolving an absolute
     // URL here would have to pick one; the browser resolves a relative one against the host the
     // visitor is actually on, which is always the right answer.
     return new Response(null, { status: 303, headers: { location: recovery } });
+  }
+  // better-auth 1.7 compatibility shim. The IdP still sends the browser to the registered
+  // /api/auth/oauth2/callback/witus (see redirectURI in src/lib/auth.ts), but 1.7 handles OAuth
+  // callbacks only at /api/auth/callback/:id. Forward code/state intact; relative Location for the
+  // same multi-tenant reason as above.
+  const legacyCallback = /^\/api\/auth\/oauth2\/callback\/([^/]+)\/?$/.exec(url.pathname);
+  if (legacyCallback) {
+    return new Response(null, {
+      status: 307,
+      headers: { location: `/api/auth/callback/${legacyCallback[1]}${url.search}` },
+    });
   }
   return handlers.GET(request);
 }
