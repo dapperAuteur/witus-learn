@@ -81,6 +81,11 @@ export default withSentryConfig(nextConfig, {
   project: process.env.SENTRY_PROJECT,
   silent: !process.env.CI,
   widenClientFileUpload: true,
+  // Without SENTRY_AUTH_TOKEN nothing is uploaded, yet the plugin still switches webpack to full
+  // `source-map` (server) and `hidden-source-map` (client) for every bundle. Generating maps that
+  // are then thrown away cost the 8 GB Vercel build machine memory it does not have (2026-10-30
+  // OOM). Maps come back automatically once the token is set.
+  sourcemaps: { disable: !process.env.SENTRY_AUTH_TOKEN },
   webpack: {
     // Strips the SDK's own debug logging from the bundle. Replaces the deprecated top-level
     // `disableLogger` option. Webpack-only, so it is a no-op under Turbopack (same as the old
