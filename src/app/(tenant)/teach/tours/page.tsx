@@ -7,6 +7,7 @@ import { getScopedDb } from "@/db/scoped";
 import type { TourSlotRow } from "@/db/queries/tour-embeds";
 import { displayTourTitle, tourSlotState, type TourSlotState } from "@/lib/field-log-tour";
 import { RemoveTourButton } from "@/components/remove-tour-button";
+import { TeachTourActions } from "@/components/teach-tour-actions";
 
 export const metadata: Metadata = {
   title: "Tours from the field",
@@ -39,6 +40,10 @@ const BADGE: Record<TourSlotState["state"], { label: string; className: string }
 // the /teach header. Login-gated and nested, so the page-reachability guard does not scan it; the
 // header link is what keeps it findable. Nothing here is a request or a queue: it lists the viewer's
 // own lessons and what is in them.
+//
+// v2 (plans/96): per filled row, Check link, Edit credit, and Attest for a tour published before the
+// people-in-frame attestation (Q2: such tours stay shown; only this page labels them). loading.tsx and
+// error.tsx sit beside this file.
 export default async function TeachToursPage() {
   const tenant = await requireTenant();
   const session = await getSession();
@@ -98,14 +103,15 @@ export default async function TeachToursPage() {
       </Link>
       <h1 className="mt-2 text-2xl font-bold">Tours from the field</h1>
       <p className="mt-3 max-w-prose text-sm text-neutral-700 dark:text-neutral-300">
-        Every virtual-tour lesson in {owner ? "this school's courses" : "your courses"}. Fill an empty one from a stop in{" "}
+        Every virtual-tour lesson in {owner || membership === "brand_admin" ? "this school's courses" : "your courses"}. Fill an empty one from a stop in{" "}
         <Link href="/field-log" className="underline">
           My Field Log
         </Link>
         : open the leg and choose <strong>Use in a lesson</strong>. The lesson shows the capture&apos;s own link with its
         credit, never a copy. A tour stays on the lesson only while its capture passes every rule: the subject did not
         decline, a minor appears only with written consent, it is a photo or video with an https link, and its stop has a
-        permission note. When one stops passing, it is hidden and this page says why.
+        permission note. When one stops passing, it is hidden and this page says why. A photo marked as a 360 photo in the
+        Field Log opens in a look-around viewer.
       </p>
 
       {loadFailed ? (
@@ -113,11 +119,20 @@ export default async function TeachToursPage() {
           The tour slots could not be loaded. If this branch was just merged, the database migration may not have run yet.
         </p>
       ) : rows.length === 0 ? (
-        <p className="mt-8 rounded-xl border border-dashed border-neutral-300 px-4 py-6 text-center text-neutral-600 dark:border-neutral-700">
-          No virtual-tour lessons in {owner ? "this school's courses" : "your courses"} yet.
+        <p className="mt-8 rounded-xl border border-dashed border-neutral-300 px-4 py-6 text-center text-neutral-600 dark:border-neutral-700 dark:text-neutral-400">
+          None of your courses has a tour slot.
         </p>
       ) : (
         <>
+          {count("live") + count("hidden") === 0 ? (
+            <p className="mt-8 rounded-xl border border-dashed border-neutral-300 px-4 py-6 text-center text-neutral-600 dark:border-neutral-700 dark:text-neutral-400">
+              No tours yet. Open a leg in{" "}
+              <Link href="/field-log" className="underline">
+                My Field Log
+              </Link>{" "}
+              and choose Use in a lesson.
+            </p>
+          ) : null}
           <p className="mt-6 text-sm text-neutral-600 dark:text-neutral-400">
             {rows.length} tour {rows.length === 1 ? "lesson" : "lessons"}: {count("empty")} empty, {count("live")} shown from
             the field, {count("hidden")} hidden, {count("own_link")} with a tour link of their own.
@@ -164,6 +179,13 @@ export default async function TeachToursPage() {
                           {state.state === "hidden" ? (
                             <p className="text-amber-900 dark:text-amber-200">Why it is hidden: {state.message}</p>
                           ) : null}
+                          <TeachTourActions
+                            courseId={slot.courseId}
+                            lessonId={slot.lessonId}
+                            lessonTitle={title}
+                            credit={state.credit}
+                            attested={state.attested}
+                          />
                           <RemoveTourButton courseId={slot.courseId} lessonId={slot.lessonId} lessonTitle={title} />
                         </div>
                       ) : state.state === "empty" ? (
