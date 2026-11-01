@@ -10125,6 +10125,54 @@ export const RESEARCH_CHECKS: ResearchCheck[] = [
     needs: ["An employer's, union's or truck provider's published career path, with date and locator", "Or the qualified reviewer's account, labeled as one account"],
     where: ["Truck providers' careers and crew pages", "NABET-CWA and IATSE training pages", "Sports Video Group workforce coverage", "The qualified reviewer"],
   },
+  // ── Where We Rested (REST-00) and the Green Book route course, corrected 2026-11-01 ────────────
+  {
+    key: "wwr-idlewild-lot-owners-association",
+    title: "Idlewild Lot Owners Association: 1920 or 1921, and who formed it?",
+    course: "where-we-rested",
+    lesson: "wwr-idlewild-1912",
+    quote: "Until that filing is read, this course teaches the question, not an answer.",
+    severity: "medium",
+    question:
+      "When was the Idlewild Lot Owners Association formed or incorporated, and by whom: the founders with William Jennings in 1920, or the Black property owners taking over from the developers in August 1921?",
+    claim:
+      "Lesson 4 reports two accounts side by side: the community's own (its website said, when the course was written in July 2026, that the developers handed ownership and management to the association, incorporated August 1921 and run by the Black owners; the page no longer says so as of November 1, 2026) and a Michigan History Center marker as transcribed by Read the Plaque (formed in 1920 by Lemon, Wright, Erastus and Adelbert Branch, and William Jennings, for public improvements and maintenance). Lessons 10, 12, 14, 18, 19 and 21 carry the same hedge.",
+    stakes:
+      "Medium. The course once called the 1921 transfer 'the single most under-taught fact about Idlewild'. If the founders formed the association, the story is a developer's maintenance body, not a buyers' takeover, and REST-02 (Idlewild after 1921) would start from a false premise.",
+    needs: [
+      "The association's articles of incorporation: filing date, incorporators' names, and stated purpose",
+      "The marker's own text from the State of Michigan's marker record (title, registered site number, year), to confirm the transcription",
+      "Whether any later filing transferred the resort company's property or management to the association, with its date",
+    ],
+    where: [
+      "Michigan Department of Licensing and Regulatory Affairs, Corporations Division, business entity search and archived filings",
+      "Michigan History Center historical marker database",
+      "Walker, L., & Wilson, B. C. (2002). Black Eden: The Idlewild community. Michigan State University Press (to buy or borrow)",
+      "The Idlewild Historic & Cultural Center",
+    ],
+  },
+  {
+    key: "gbr-winks-panorama-opening-year",
+    title: "Winks Panorama: built or opened in 1925 or 1928?",
+    course: "green-book-how-to-read-a-route",
+    lesson: "gbr-map",
+    quote: "That is a reason to prefer one source, not proof.",
+    severity: "low",
+    question:
+      "In what year was the Winks Panorama lodge built, and in what year did it open to guests?",
+    claim:
+      "The map lesson uses 1928 (Kahrl & Cammeron, 2022, pp. 56, 174, period of significance 1928 to 1965) and shows that the National Park Service's 2021 place page says built 1925 and used from 1925.",
+    stakes:
+      "Low. A map-point date in the Green Book route course; REST-04 will teach Lincoln Hills and must use the same answer.",
+    needs: [
+      "The construction and opening dates as stated in the 1980 National Register nomination (NRIS 80000901), the 2014 boundary increase (NRIS 13001035), or the National Historic Landmark nomination, with page",
+    ],
+    where: [
+      "NPGallery, NRIS 80000901 and 13001035 (the 2014 file is over 10 MB and was not fetched)",
+      "National Park Service National Historic Landmarks program, Winks Panorama nomination",
+      "History Colorado",
+    ],
+  },
 ];
 
 export function getResearchCheck(key: string): ResearchCheck | undefined {
