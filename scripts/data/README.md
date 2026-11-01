@@ -206,6 +206,16 @@
 - [`read-the-plan-and-the-code`](./read-the-plan-and-the-code-course.ts) Reading the Plan and the Code: Drawings, Specifications, and Who Made the Code Law · series the-house-you-live-in · private · listed here as an extra category; primary: Science & Math
 - [`who-the-rule-leaves-out`](./who-the-rule-leaves-out-course.ts) Who the Rule Leaves Out: Delia Derbyshire, Ruby Payne-Scott, Zitkala-Šá, and the Paper Each Rule Left · series credit · private · listed here as an extra category; primary: Culture & History
 
+### Using Work.WitUS
+
+- [`work-witus-blog`](./work-witus-blog-course.ts) The Work.WitUS Blog · WORK-07 (work-witus-guides)
+- [`work-witus-contractor-guide`](./work-witus-contractor-guide-course.ts) Work.WitUS for Contractors · WORK-01 (work-witus-guides)
+- [`work-witus-crewops-guide`](./work-witus-crewops-guide-course.ts) CrewOps on Work.WitUS: The Lister and Crew Coordinator Guide · WORK-02 (work-witus-guides)
+- [`work-witus-data-hub`](./work-witus-data-hub-course.ts) The Work.WitUS Data Hub · WORK-05 (work-witus-guides)
+- [`work-witus-equipment`](./work-witus-equipment-course.ts) Equipment Tracking on Work.WitUS · WORK-04 (work-witus-guides)
+- [`work-witus-finance`](./work-witus-finance-course.ts) Finance on Work.WitUS · WORK-03 (work-witus-guides)
+- [`work-witus-settings-and-billing`](./work-witus-settings-and-billing-course.ts) Work.WitUS Settings and Billing · WORK-06 (work-witus-guides)
+
 ### Culture & History
 
 - [`africa-before-colonization`](./africa-before-colonization-course.ts) Africa Before Colonization: The Documented Record

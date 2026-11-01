@@ -2047,6 +2047,16 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   helpers \`standardsHref\` / \`courseJurisdictions\` plus 5 isolation tests. No migration.
 
 ## Content
+- 🔧 **Work.WitUS guides: the Work.WitUS help tutorials as a seven-course series** (\`bundle/workwitus-guides-2026-11-01\`;
+  NO migration; after merge run \`pnpm seed:courses:prod\`, then vet and Make public each course). BAM's
+  decisions in contractor-os task 25: every guide, one course per guide, one series, public, BAM as the
+  instructor. WORK-01 Contractors (14 lessons), WORK-02 CrewOps (12), WORK-03 Finance (9), WORK-04
+  Equipment (7), WORK-05 Data Hub (3), WORK-06 Settings and Billing (3), WORK-07 Blog (8): 56 lessons in
+  the new "Using Work.WitUS" category, converted from the gitignored contractor-os markdown with routes
+  checked against Work.WitUS main and the Travel, Academy and CentenarianOS references removed. Left out:
+  the travel guide (RideWitUS's curriculum), the "Getting Started" guide (it described CentenarianOS),
+  the wearables and recipes lessons, and the Academy, Teaching and Coach folders (not Work.WitUS). No
+  quizzes yet (follow-up). Then Work.WitUS points its Help, home and dashboard links at the courses.
 - 🔧 **Two teacher-facing self-contradictions in the standards data, settled by re-fetching the rule**
   (\`fix/standards-claims-and-contradictions\`; NO migration, no seed). Both were found by the MONEY-04
   author, who correctly refused to guess at the fix. Neither is a bug in the app; both are pages a
