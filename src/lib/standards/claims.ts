@@ -4123,6 +4123,9 @@ export const COURSE_CLAIMS: CourseClaim[] = [
       // REST-01 integrates two National Register nominations, the Indiana Green Book MPDF, the state
       // marker's annotated text and the NPS theme study into one account of Fox Lake (lessons 1 to 13).
       "fox-lake-indianas-lake-of-its-own",
+      // REST-05 integrates the 2024 Belmont nomination, the state review board's record, the NPS weekly
+      // list, the theme study, an appellate opinion and the Black press as the nomination reports it.
+      "belmont-beach-and-the-citys-water",
       "what-they-built",
       // Integrates league constitutions, ballpark leases, newspaper business pages, museum and
       // Hall of Fame institutional records and MLB's own 2020/2024 statements into one account of
@@ -4292,6 +4295,9 @@ export const COURSE_CLAIMS: CourseClaim[] = [
       // REST-01 lesson 14 tests a dozen Fox Lake claims against their sources, cuts two ("one of only
       // two" and "first listed") that a better source contradicts, and leaves the rest marked open.
       "fox-lake-indianas-lake-of-its-own",
+      // REST-05 lessons 4, 13 and 16 test the 1927 episode, the Douglass pool date and the 2026 listing
+      // against their sources and leave each open with both owners; lesson 1 cuts "Black-owned".
+      "belmont-beach-and-the-citys-water",
       "river-living-on-the-water",
       // Lesson 4 withholds the zone's measured size on purpose and explains that freezing a moving
       // value into a sentence is the failure to avoid.
@@ -4504,6 +4510,9 @@ export const COURSE_CLAIMS: CourseClaim[] = [
       // Lesson 20 is a graded writing assignment built on one named document (a listing, a bylaw, a
       // weekly-list entry), with a required paragraph on what could not be established.
       "fox-lake-indianas-lake-of-its-own",
+      // REST-05 lesson 24 is a graded writing assignment on one place, one public body's decision and one
+      // newspaper page, with a required paragraph on what could not be established.
+      "belmont-beach-and-the-citys-water",
       "what-they-built",
       // Lesson 24 is a graded research capstone: one ballclub, ballpark or transaction, documented
       // from newspapers, National Register nominations, city directories and team records, written
