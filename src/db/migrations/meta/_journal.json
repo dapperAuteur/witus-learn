@@ -505,6 +505,13 @@
       "when": 1793284116786,
       "tag": "0071_course_owner_only_and_actor_role",
       "breakpoints": true
+    },
+    {
+      "idx": 72,
+      "version": "7",
+      "when": 1793563350958,
+      "tag": "0072_library_epub",
+      "breakpoints": true
     }
   ]
 }

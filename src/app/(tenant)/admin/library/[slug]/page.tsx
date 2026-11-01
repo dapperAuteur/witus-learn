@@ -3,6 +3,7 @@ import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import { requirePlatformOwner } from "@/lib/session";
 import { formatBytes } from "@/lib/format-bytes";
+import { libraryDownloadHref } from "@/lib/library-formats.mjs";
 import { getLibraryDocument } from "@/db/queries/library";
 import { Markdown } from "@/components/markdown";
 
@@ -27,6 +28,9 @@ export default async function AdminLibraryDocumentPage({
   const doc = await getLibraryDocument(slug);
   if (!doc) notFound();
   const size = doc.hasPdf ? formatBytes(doc.pdfBytes) : null;
+  const epubSize = doc.hasEpub ? formatBytes(doc.epubBytes) : null;
+  const buttonClass =
+    "inline-flex min-h-11 items-center rounded-lg border border-neutral-200 px-3 text-xs font-semibold transition-colors hover:border-neutral-400 dark:border-neutral-800 dark:hover:border-neutral-500";
 
   return (
     <main className="mx-auto max-w-3xl px-4 py-10">
@@ -34,13 +38,15 @@ export default async function AdminLibraryDocumentPage({
         <Link href="/admin/library" className="underline">
           Back to Library
         </Link>
-        <div className="flex items-center gap-3">
+        <div className="flex flex-wrap items-center gap-3">
           {doc.hasPdf ? (
-            <a
-              href={`/admin/library/${doc.slug}/download`}
-              className="inline-flex min-h-11 items-center rounded-lg border border-neutral-200 px-3 text-xs font-semibold transition-colors hover:border-neutral-400 dark:border-neutral-800 dark:hover:border-neutral-500"
-            >
+            <a href={libraryDownloadHref(doc.slug, "pdf")} className={buttonClass}>
               Download PDF{size ? ` (${size})` : ""}
+            </a>
+          ) : null}
+          {doc.hasEpub ? (
+            <a href={libraryDownloadHref(doc.slug, "epub")} className={buttonClass}>
+              Download EPUB{epubSize ? ` (${epubSize})` : ""}
             </a>
           ) : null}
           <span className="text-xs text-neutral-600">

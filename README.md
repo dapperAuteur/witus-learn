@@ -1089,7 +1089,13 @@ links to it, so no school ever sees a byte of it. Mirrors `/admin/library` on wi
 Migration `0048_nebulous_vermin.sql` creates the table (`pnpm db:migrate:prod` after merging).
 The owner can also download each document's typeset **PDF** (uploaded by `sync-library.mjs` from
 the sibling `<name>.pdf`; migration `0052` adds the columns) from the list rows or the reader
-header — attachment download, no caching. `pnpm library:sync:prod <markdown files...>` runs the same
+header — attachment download, no caching. The **EPUB** works the same way (for the e-reader): the
+sibling `<name>.epub` (witus.online's `npm run library:epub` writes it) is uploaded by the same
+script, migration `0072_library_epub` adds the columns, and `Download EPUB` links to
+`/admin/library/<slug>/download?format=epub` (`application/epub+zip`). Either file is cleared when
+its sibling is gone, and a file over 4 MiB is not stored, because the route returns it in one
+response and Vercel caps function responses at 4.5 MB (`src/lib/library-formats.mjs`).
+`pnpm library:sync:prod <markdown files...>` runs the same
 script against `.env.prod` (`.env.local` carries no database URL, so the plain form needs one exported).
 
 ## My Field Log: site tours and imported routes (`/field-log`)
