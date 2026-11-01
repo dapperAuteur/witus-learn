@@ -52,7 +52,7 @@ and visit the site from public ground without entering the river.
 **Held out of the course (BAM, answer 5: not yet approved).** Three case cards are written as drafts in the course
 file's `BELMONT_HELD_CASE_CARDS` export, which the seeder never reads: St. Louis's Fairground Park pool (June 21,
 1949), Detroit's Belle Isle (June 1943), and the Biloxi wade-ins (1959 to 1968). Each carries a content note and
-no images. BAM's answer switches them in (task 388).
+no images. BAM's answer switches them in (task 390).
 
 ## 3. Fit
 
@@ -111,9 +111,9 @@ snippet); Riverside "until 1963"; the 1927 *Recorder* pages; the Haughville rive
 
 ## 7. Questions for BAM
 
-1. Fairground Park, Belle Isle and Biloxi: switch the held case cards in, or keep them out? (task 388)
-2. Send the Friends of Belmont Beach and Kurt West Garner drafts (task 387).
-3. A Belmont Beach capture session (task 389).
+1. Fairground Park, Belle Isle and Biloxi: switch the held case cards in, or keep them out? (task 390)
+2. Send the Friends of Belmont Beach and Kurt West Garner drafts (task 389).
+3. A Belmont Beach capture session (task 391).
 4. The *Recorder* pages and the Haughville riverfront study (added to task 383).
 
 ## References
