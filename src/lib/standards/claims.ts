@@ -4120,6 +4120,9 @@ export const COURSE_CLAIMS: CourseClaim[] = [
       // Positive track
       "the-schoolhouse-network",
       "where-we-rested",
+      // REST-01 integrates two National Register nominations, the Indiana Green Book MPDF, the state
+      // marker's annotated text and the NPS theme study into one account of Fox Lake (lessons 1 to 13).
+      "fox-lake-indianas-lake-of-its-own",
       "what-they-built",
       // Integrates league constitutions, ballpark leases, newspaper business pages, museum and
       // Hall of Fame institutional records and MLB's own 2020/2024 statements into one account of
@@ -4286,6 +4289,9 @@ export const COURSE_CLAIMS: CourseClaim[] = [
     courseSlugs: [
       // Lesson 4 names the three values that must be read from an agency every time, and why a
       // confident summary of access law would be worse than useless.
+      // REST-01 lesson 14 tests a dozen Fox Lake claims against their sources, cuts two ("one of only
+      // two" and "first listed") that a better source contradicts, and leaves the rest marked open.
+      "fox-lake-indianas-lake-of-its-own",
       "river-living-on-the-water",
       // Lesson 4 withholds the zone's measured size on purpose and explains that freezing a moving
       // value into a sentence is the failure to avoid.
@@ -4495,6 +4501,9 @@ export const COURSE_CLAIMS: CourseClaim[] = [
       "exported-how-others-studied-american-race-law",
       "the-schoolhouse-network",
       "where-we-rested",
+      // Lesson 20 is a graded writing assignment built on one named document (a listing, a bylaw, a
+      // weekly-list entry), with a required paragraph on what could not be established.
+      "fox-lake-indianas-lake-of-its-own",
       "what-they-built",
       // Lesson 24 is a graded research capstone: one ballclub, ballpark or transaction, documented
       // from newspapers, National Register nominations, city directories and team records, written

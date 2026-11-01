@@ -228,6 +228,7 @@
 - [`deep-time-and-the-dinosaur-renaissance`](./deep-time-and-the-dinosaur-renaissance-course.ts) Deep Time and the Dinosaur Renaissance
 - [`exported-how-others-studied-american-race-law`](./jim-crow-export-course.ts) Exported: How Others Studied American Race Law
 - [`fort-harrison-the-federal-footprint`](./fort-harrison-course.ts) Fort Harrison: The Federal Footprint
+- [`fox-lake-indianas-lake-of-its-own`](./fox-lake-course.ts) Fox Lake: Indiana's Lake of Its Own · REST-01 (places-of-our-own)
 - [`genealogy-for-yourself-and-your-community`](./genealogy-self-and-community-course.ts) Genealogy for Yourself and Your Community
 - [`giants-dragons-and-the-bones`](./giants-dragons-and-the-bones-course.ts) Giants, Dragons, and the Bones They Came From
 - [`great-migration`](./great-migration-course.ts) The Great Migration: How Six Million People Remade America
@@ -275,7 +276,7 @@
 - [`two-racetracks`](./two-racetracks-course.ts) Two Racetracks
 - [`what-the-citation-records`](./what-the-citation-records-course.ts) What the Citation Records: Reading a Prize Page Against the Documents Around It · private · also in: Science & Math
 - [`what-they-built`](./what-they-built-course.ts) What They Built: Black Business Districts
-- [`where-we-rested`](./where-we-rested-course.ts) Where We Rested
+- [`where-we-rested`](./where-we-rested-course.ts) Where We Rested · REST-00 (places-of-our-own)
 - [`who-built-the-blood-bank`](./drew-blood-bank-course.ts) Who Built the Blood Bank: Charles Drew, the Research, and the Record · series credit · private
 - [`who-gets-named`](./who-gets-named-course.ts) Who Gets Named · CREDIT-00 (credit)
 - [`who-gets-nominated`](./who-gets-nominated-course.ts) Who Gets Nominated: Chien-Shiung Wu and the Stage Before the Prize · series credit · private · also in: Science & Math

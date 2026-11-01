@@ -2047,6 +2047,18 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   helpers \`standardsHref\` / \`courseJurisdictions\` plus 5 isolation tests. No migration.
 
 ## Content
+- 🔧 **A Place of Our Own: Black Resorts, Retreats and Vacation Towns (REST), started**
+  (\`bundle/rest-series-start-2026-11-01\`, no migration; after merge run \`pnpm seed:courses:prod\`; the new course
+  stays private and held). BAM approved the series brief (plans/94) on 2026-11-01 with all ten recommendations.
+  REST-00 is \`where-we-rested\`, retro-coded, with its Idlewild boundary increase settled as 2010 (NRIS 09001062) and
+  the 1921 Lot Owners Association claim re-sourced as two disagreeing accounts (research check
+  \`wwr-idlewild-lot-owners-association\`); the Green Book route course's Winks Panorama point now uses 1928 and
+  shows 1925. REST-01 **Fox Lake: Indiana's Lake of Its Own** (22 lessons, six beats: Then, Built, Who decided,
+  Now, Next, Write) is built from the 2001 and 2026 National Register nominations, the Indiana Green Book MPDF,
+  the 2022 state marker and the NPS theme study; the 1930 Marion lynching appears with a content note and no
+  images; no living private person is named; one cleared image (Indiana Album clubhouse, NoC-US) awaits upload.
+  Held until the Fox Lake Preservation Foundation has had about three weeks to review it (user tasks 381 to 384).
+  Briefs for REST-00 to REST-04 in \`cloud-briefs/rest-NN/\`; REST-02 to REST-04 not built.
 - 🔧 **Work.WitUS guides: the Work.WitUS help tutorials as a seven-course series** (\`bundle/workwitus-guides-2026-11-01\`;
   NO migration; after merge run \`pnpm seed:courses:prod\`, then vet and Make public each course). BAM's
   decisions in contractor-os task 25: every guide, one course per guide, one series, public, BAM as the
