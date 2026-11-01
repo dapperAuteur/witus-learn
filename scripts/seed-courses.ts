@@ -48,6 +48,13 @@ import { USING_LEARN_BUILD_A_COURSE_COURSE } from "./data/using-learn-build-a-co
 import { USING_LEARN_RUN_YOUR_COURSE_COURSE } from "./data/using-learn-run-your-course-course";
 import { USING_LEARN_COHORTS_COURSE } from "./data/using-learn-cohorts-course";
 import { USING_LEARN_RUN_YOUR_SCHOOL_COURSE } from "./data/using-learn-run-your-school-course";
+import { WORK_WITUS_CONTRACTOR_GUIDE_COURSE } from "./data/work-witus-contractor-guide-course";
+import { WORK_WITUS_CREWOPS_GUIDE_COURSE } from "./data/work-witus-crewops-guide-course";
+import { WORK_WITUS_FINANCE_COURSE } from "./data/work-witus-finance-course";
+import { WORK_WITUS_EQUIPMENT_COURSE } from "./data/work-witus-equipment-course";
+import { WORK_WITUS_DATA_HUB_COURSE } from "./data/work-witus-data-hub-course";
+import { WORK_WITUS_SETTINGS_AND_BILLING_COURSE } from "./data/work-witus-settings-and-billing-course";
+import { WORK_WITUS_BLOG_COURSE } from "./data/work-witus-blog-course";
 import { EDUCATION_LEADER_COURSE } from "./data/education-leader-course";
 import { PICKLEBALL_COURSE } from "./data/pickleball-course";
 import { CYBER_SECURITY_COURSE } from "./data/cyber-security-course";
@@ -4347,6 +4354,52 @@ async function main() {
       seriesCode: "USING",
       seriesPosition: r.position,
       seriesTrack: r.track,
+    });
+  }
+
+
+  // "Work.WitUS guides" (WORK): the Work.WitUS help tutorials, moved here from Work.WitUS's old Academy
+  // tables (contractor-os plan 18, section 8 answer 3). BAM's decisions, contractor-os
+  // plans/user-tasks/25 (2026-11-01): every guide, one course per guide, one series, public, BAM as the
+  // instructor. The travel guide is NOT here: it goes to RideWitUS's curriculum. Each file's header
+  // says what was converted, what was left out and why, and that the decisions stand in for a brief.
+  //
+  // LINEAR ORDER IS A SUGGESTION, not a prerequisite chain: a lister can start at WORK-02 and an
+  // accountant-minded contractor at WORK-03. Contractor first because most Work.WitUS members are
+  // contractors and its lesson 1 is the app tour. No "00": the source's "Getting Started" guide was
+  // CentenarianOS's (its pricing, demo data and modules), so it is not converted; see the file headers.
+  //
+  // Public by BAM's decision, but born private like every course (NEW_COURSE_STATE): BAM vets each one
+  // and opens it with Make public on its /teach page after the seed. Free by design: help for members.
+  await db
+    .insert(schema.courseCategories)
+    .values({ tenantId: learnWitus, name: "Using Work.WitUS", sortOrder: 10 })
+    .onConflictDoNothing();
+
+  for (const r of [
+    { slug: "work-witus-contractor-guide", course: WORK_WITUS_CONTRACTOR_GUIDE_COURSE, order: 1, seriesSlug: "work-witus-guides", seriesCode: "WORK", seriesPosition: "01" },
+    { slug: "work-witus-crewops-guide", course: WORK_WITUS_CREWOPS_GUIDE_COURSE, order: 2, seriesSlug: "work-witus-guides", seriesCode: "WORK", seriesPosition: "02" },
+    { slug: "work-witus-finance", course: WORK_WITUS_FINANCE_COURSE, order: 3, seriesSlug: "work-witus-guides", seriesCode: "WORK", seriesPosition: "03" },
+    { slug: "work-witus-equipment", course: WORK_WITUS_EQUIPMENT_COURSE, order: 4, seriesSlug: "work-witus-guides", seriesCode: "WORK", seriesPosition: "04" },
+    { slug: "work-witus-data-hub", course: WORK_WITUS_DATA_HUB_COURSE, order: 5, seriesSlug: "work-witus-guides", seriesCode: "WORK", seriesPosition: "05" },
+    { slug: "work-witus-settings-and-billing", course: WORK_WITUS_SETTINGS_AND_BILLING_COURSE, order: 6, seriesSlug: "work-witus-guides", seriesCode: "WORK", seriesPosition: "06" },
+    { slug: "work-witus-blog", course: WORK_WITUS_BLOG_COURSE, order: 7, seriesSlug: "work-witus-guides", seriesCode: "WORK", seriesPosition: "07" },
+  ]) {
+    await seedAuthoredCourse(db, {
+      tenantId: learnWitus,
+      instructorId,
+      slug: r.slug,
+      course: r.course,
+      category: "Using Work.WitUS",
+      navigationMode: "linear",
+      price: 0,
+      priceType: "free",
+      seriesSlug: r.seriesSlug,
+      seriesTitle: "Work.WitUS guides",
+      seriesOrder: r.order,
+      seriesCode: r.seriesCode,
+      seriesPosition: r.seriesPosition,
+      relatedProducts: ["work-witus"],
     });
   }
 
