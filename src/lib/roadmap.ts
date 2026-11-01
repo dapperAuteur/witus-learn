@@ -2047,6 +2047,16 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   helpers \`standardsHref\` / \`courseJurisdictions\` plus 5 isolation tests. No migration.
 
 ## Content
+- 🔧 **REST-05 Belmont Beach and the City's Water: Assigned, Claimed and Contested**
+  (\`bundle/rest-05-belmont-2026-11-01\`, no migration; after merge run \`pnpm seed:courses:prod\`, after task 381's seed;
+  the new course stays private and held). BAM approved plan 95 on 2026-11-01. A 26-lesson site course on the
+  Indianapolis beach the city formally opened for Black residents in 1936, read from the 2024 National Register
+  nomination (listed 2026 as "Belmont Beach," SG100013298), the state review board's record and the NPS theme
+  study, plus US case cards (Gary, Anacostia, Swope Park and *Kansas City v. Williams*, Coney Island, Highland Park,
+  Rainbow Beach moved from REST-03, Glen Echo, Gwynn Oak, St. Augustine). The land was the city's: never called
+  Black-owned. Drownings and the 1964 Monson acid with content notes, no images; Fairground Park, Belle Isle and
+  Biloxi written and held for BAM's decision. Held until the Friends of Belmont Beach have had about three weeks to
+  review it (user tasks 386 to 389). REST-06 (international) parked as research first; the old capstone is REST-07.
 - 🔧 **A Place of Our Own: Black Resorts, Retreats and Vacation Towns (REST), started**
   (\`bundle/rest-series-start-2026-11-01\`, no migration; after merge run \`pnpm seed:courses:prod\`; the new course
   stays private and held). BAM approved the series brief (plans/94) on 2026-11-01 with all ten recommendations.
