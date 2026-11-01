@@ -222,6 +222,7 @@
 - [`afrocentricity`](./afrocentricity-course.ts) Afrocentricity: How to Evaluate a Contested Paradigm
 - [`asia-before-european-colonization`](./asia-before-european-colonization-course.ts) Asia Before European Colonization: The Center of Gravity
 - [`baltimore-the-whole-chain`](./baltimore-chain-course.ts) Baltimore: The Whole Chain
+- [`belmont-beach-and-the-citys-water`](./belmont-beach-course.ts) Belmont Beach and the City's Water: Assigned, Claimed and Contested · REST-05 (places-of-our-own)
 - [`blind-and-low-vision-america`](./blind-and-low-vision-america-course.ts) Blind and Low-Vision America: The Code, the Schools, and the Record · private
 - [`dc-where-the-instrument-was-blessed`](./dc-berman-course.ts) Washington, DC: Where the Instrument Was Blessed
 - [`deaf-america`](./deaf-america-course.ts) Deaf America: Language, Schools, and the Record · private

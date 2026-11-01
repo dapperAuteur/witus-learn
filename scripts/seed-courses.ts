@@ -220,6 +220,7 @@ import { JIM_CROW_EXPORT_COURSE } from "./data/jim-crow-export-course";
 import { SCHOOLHOUSE_NETWORK_COURSE } from "./data/schoolhouse-network-course";
 import { WHERE_WE_RESTED_COURSE } from "./data/where-we-rested-course";
 import { FOX_LAKE_COURSE } from "./data/fox-lake-course";
+import { BELMONT_BEACH_COURSE } from "./data/belmont-beach-course";
 import { WHAT_THEY_BUILT_COURSE } from "./data/what-they-built-course";
 import { NEGRO_LEAGUES_COURSE } from "./data/negro-leagues-course";
 import { WHAT_A_BUSINESS_ENTITY_IS_COURSE } from "./data/what-a-business-entity-is-course";
@@ -2119,7 +2120,9 @@ async function main() {
     { slug: "the-schoolhouse-network", course: SCHOOLHOUSE_NETWORK_COURSE, category: "Culture & History" },
     // REST-00 of "A Place of Our Own: Black Resorts, Retreats and Vacation Towns" (BAM approved the
     // series brief, plans/94, on 2026-11-01). Retro-coded only; REST-01 Fox Lake is registered after
-    // this loop. Briefs: cloud-briefs/rest-00 to rest-04.
+    // this loop. Briefs: cloud-briefs/rest-00 to rest-06. Numbering (BAM, plan 95, 2026-11-01): REST-05 is
+    // Belmont Beach (registered after REST-01), REST-06 the international course (parked, research first),
+    // REST-07 the optional "Find the Resort Near You" capstone (parked).
     {
       slug: "where-we-rested",
       course: WHERE_WE_RESTED_COURSE,
@@ -3444,6 +3447,28 @@ async function main() {
     seriesPosition: "01",
     publishHoldReason:
       "Held for community review: the Fox Lake Preservation Foundation is asked to read the course over about three weeks, with authority to change or cut any of it, before release (BAM, 2026-11-01). Images other than the Indiana Album clubhouse photograph need permission.",
+  });
+  // REST-05 Belmont Beach and the City's Water: Assigned, Claimed and Contested, approved by BAM 2026-11-01
+  // (plans/95; brief cloud-briefs/rest-05/00-approved-brief.md). A site course on the Indianapolis beach the
+  // city assigned to Black residents in 1936, read from the 2024 National Register nomination, plus US case
+  // cards. Public-ready; held until the Friends of Belmont Beach have had about three weeks to review it (user
+  // task 389). Three case cards (Fairground Park, Belle Isle, Biloxi) are written in the course file but held
+  // out of `lessons` pending BAM's content decision (user task 390). New rows insert private and unpublished
+  // anyway (NEW_COURSE_STATE). Not in STAGED_COURSES until it is seeded and released.
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "belmont-beach-and-the-citys-water",
+    course: BELMONT_BEACH_COURSE,
+    category: "Culture & History",
+    navigationMode: "linear",
+    seriesSlug: "places-of-our-own",
+    seriesTitle: "A Place of Our Own: Black Resorts, Retreats and Vacation Towns",
+    seriesOrder: 5,
+    seriesCode: "REST",
+    seriesPosition: "05",
+    publishHoldReason:
+      "Held for community review: the Friends of Belmont Beach are asked to read the course over about three weeks, with authority to change or cut any of it, before release (BAM, 2026-11-01). No image is embedded; the nomination photographs need Kurt West Garner's permission and the Friends' images need theirs. Three case cards (Fairground Park, Belle Isle, Biloxi) await BAM's content decision.",
   });
   // Hold BOTH Hoodoo courses from publishing, and make the comprehensive one PRIVATE
   // (owner-only). These rows predate the private-by-default insert (2026-10-28), so the update still
