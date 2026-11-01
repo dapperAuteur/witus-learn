@@ -27,11 +27,12 @@
 //     end date; Swope's filing year; the Monson "manager" or "owner". Research checks filed for the ones a
 //     document can settle (src/lib/research-checks.ts, keys `bb-*`).
 //   * BAM's decision (plan 95, answer 5): the drownings (1941, unnamed, as the nomination records them; 1979,
-//     unnamed) and the 1964 Monson acid are included with a content note and NO images. Fairground Park
-//     (1949), Belle Isle (1943) and the Biloxi wade-ins are NOT approved yet: their case cards are written in
-//     `BELMONT_HELD_CASE_CARDS` at the bottom of this file, which the seeder never reads (it reads
-//     `lessons` only). BAM's answer switches them in (user task 390).
-//   * Rainbow Beach's 1960 and 1961 wade-ins moved here from REST-03 (answer 3), lesson 21.
+//     unnamed) and the 1964 Monson acid are included with a content note and NO images. On 2026-11-01 BAM
+//     added the three held case cards under the same rule ("include Fairground Park, Belle Isle and Biloxi";
+//     user task 390): Belle Isle (1943) is lesson 18, Fairground Park (1949) lesson 20, the Biloxi wade-ins
+//     (1959 to 1968) lesson 24, each with a content note, counts only, no images, and no private victim
+//     named. Biloxi's death toll is DISPUTED between sources and the lesson teaches the dispute.
+//   * Rainbow Beach's 1960 and 1961 wade-ins moved here from REST-03 (answer 3), lesson 23.
 //   * Consent rule: NO living private person is named or quoted. The Friends of Belmont Beach's officers,
 //     the historian IBJ quotes, the Kansas City plaintiffs, the Glen Echo and Rainbow Beach organizers and
 //     the 1979 child are described, not named. Historical figures named: Marian Spencer (died 2019), Thurgood
@@ -47,7 +48,7 @@
 //
 // House rule: NO em-dashes or en-dashes in prose.
 
-import type { AuthoredCourse, AuthoredLesson } from "./authored-course";
+import type { AuthoredCourse } from "./authored-course";
 
 const GARNER_2024 =
   "Garner, K. W. (2024). *Belmont Park & Beach* [National Register of Historic Places registration form, dated May 22, 2024; prepared for the Friends of Belmont Beach; listed July 31, 2026, as \"Belmont Beach,\" SG100013298]. Indiana Department of Natural Resources, Division of Historic Preservation and Archaeology. https://www.in.gov/dnr/historic-preservation/files/hp-Belmont-Park-and-Beach.pdf";
@@ -102,10 +103,20 @@ const IRVIN_MITCHELL_2026 =
 const JURAVICH_ND =
   "Juravich, N. (n.d.). August 29, 1960 [Guest post]. In M. F. Delmont, *Black quotidian: Everyday history in African-American newspapers*. Stanford University Press. https://blackquotidian.supdigital.org/bq/august-29-1960";
 
+// Section 5 case cards added 2026-11-01 (lessons 18, 20, 24).
+const ALLEN_2022 =
+  "Allen, M. R. (2022, April 2). The long reconstruction of Fairground Park. *The Common Reader*. https://commonreader.wustl.edu/the-long-reconstruction-of-fairground-park/";
+const LANE_2022 =
+  "Lane, S. N. (2022, December). *(H)our history lesson: The Detroit race riot of 1943*. National Park Service. https://home.nps.gov/articles/000/-h-our-history-lesson-the-detroit-race-riot-of-1943.htm";
+const MDAH_MASON =
+  "Mississippi Department of Archives and History. (n.d.). *Gilbert R. Mason papers* [Finding aid, Z/2300.000]. Retrieved November 1, 2026, from https://finding.mdah.ms.gov/manuscripts/z2300000";
+const BILOXI_2018 =
+  "City of Biloxi. (2018, April 25). *New wade-in marker added to Freedom Trail*. https://biloxi.ms.us/new-wade-in-marker-added-to-freedom-trail/";
+
 export const BELMONT_BEACH_COURSE: AuthoredCourse = {
   title: "Belmont Beach and the City's Water: Assigned, Claimed and Contested",
   description:
-    "A cited, high-school-and-up site course on Belmont Beach, the strip of White River shore in Haughville, on Indianapolis's near west side, that the city formally opened as a \"new swimming beach for colored people\" in 1936 while its other beaches and pools stayed closed to Black residents. It reads the place out of its 2024 National Register nomination (listed in 2026 as \"Belmont Beach\"), the state review board's record and the 1941 Indianapolis Recorder complaint the nomination reports. A learner can say how a flood levee, a dam built for a white park and a sandbar made the beach; which public body decided what (the parks board, public works, the board of health, the courts); why the city owned it and Black residents did not; how Indianapolis desegregated its water and what it left alone; and how the same fight ran in Gary, Washington, Kansas City, Cincinnati, Pittsburgh, Chicago's Rainbow Beach, Glen Echo, Gwynn Oak and St. Augustine. Belmont was assigned, not owned, which is what separates it from every earlier course in the series. It runs on the series rule: a positive is never used to soften a negative. Content notes mark drownings and the 1964 acid attack; there are no graphic images. Course 05 of A Place of Our Own (REST). Prerequisite: Where We Rested (where-we-rested).",
+    "A cited, high-school-and-up site course on Belmont Beach, the strip of White River shore in Haughville, on Indianapolis's near west side, that the city formally opened as a \"new swimming beach for colored people\" in 1936 while its other beaches and pools stayed closed to Black residents. It reads the place out of its 2024 National Register nomination (listed in 2026 as \"Belmont Beach\"), the state review board's record and the 1941 Indianapolis Recorder complaint the nomination reports. A learner can say how a flood levee, a dam built for a white park and a sandbar made the beach; which public body decided what (the parks board, public works, the board of health, the courts); why the city owned it and Black residents did not; how Indianapolis desegregated its water and what it left alone; and how the same fight ran in Detroit's Belle Isle, Gary, Washington, St. Louis's Fairground Park, Kansas City, Cincinnati, Pittsburgh, Chicago's Rainbow Beach, Glen Echo, Biloxi, Gwynn Oak and St. Augustine. Belmont was assigned, not owned, which is what separates it from every earlier course in the series. It runs on the series rule: a positive is never used to soften a negative. Content notes mark drownings, the 1943 Detroit riot, the 1949 attack at Fairground Park, the 1960 Biloxi riot and the 1964 acid attack; there are no graphic images. Course 05 of A Place of Our Own (REST). Prerequisite: Where We Rested (where-we-rested).",
   lessons: [
     // ═══════════════════════════════════════════════════════════════════════════════════════
     // SECTION 1 · Then
@@ -147,7 +158,7 @@ The Friends of Belmont Beach, the neighborhood group that has been reclaiming th
 - Say how a flood, a levee and a dam built for a white park made a beach, with dates and the document for each.
 - Name the four public bodies that decided Belmont's fate, and what each one decided.
 - Read a 1941 newspaper complaint, as a nomination reports it, as evidence.
-- Compare Belmont with pools, beaches and parks in eight other places, and say which were assigned and which were claimed.
+- Compare Belmont with pools, beaches and parks in twelve other places, and say which were assigned, which were claimed and which were shared.
 - Plan a visit that stays on public ground and out of the river.
 
 ## Sources
@@ -314,7 +325,8 @@ A news report on the Friends of Belmont Beach says, in the reporter's own words,
 | Term | What it means here | Where you meet it |
 |---|---|---|
 | **Assigned place** | A place a public body designated for Black use while keeping the decision; Belmont Beach (1936), Douglass Park (1921) | Lessons 1, 8, 13 |
-| **Claimed place** | A place people entered after being kept out, forcing the public body to answer; Rainbow Beach (1960) | Lessons 1, 21 |
+| **Claimed place** | A place people entered after being kept out, forcing the public body to answer; Rainbow Beach (1960) | Lessons 1, 19, 23 |
+| **Shared place** | A public place white and Black residents both used, where the sharing itself was contested; Belle Isle (1943) | Lesson 18 |
 | **Parks board** | The city body that bought park land, named parks and designated their uses | Lessons 2, 7, 11 |
 | **Board of public works** | The city body that built the levee and bought or condemned land for it | Lessons 2, 11 |
 | **Board of health** | The body that delayed the beach's opening in 1942 and closed it in 1943 | Lessons 11, 12 |
@@ -323,7 +335,7 @@ A news report on the Friends of Belmont Beach says, in the reporter's own words,
 | **Sandbar** | A bank of sand the river builds; Belmont's formed behind the Emrichsville Dam | Lesson 2 |
 | **National Register nomination** | The form that argues a place onto the federal list of historic places: description, significance, boundary, photographs | Lessons 1, 16 |
 | **Period of significance** | The years a nomination argues the place mattered; Belmont's is 1917 to 1976 | Lessons 2, 16 |
-| **Wade-in** | A protest in which people enter a beach or pool they have been kept out of | Lessons 18, 21 |
+| **Wade-in** | A protest in which people enter a beach or pool they have been kept out of | Lessons 23, 24 |
 | **Co-occurrence** | Two true things on one calendar, neither used to explain or soften the other | Lessons 1, 4 |
 
 :::reveal What is the difference between an assigned place and an owned place? ||| An owned place is held by its users, who can decide what happens to it. An assigned place is designated for a group by a public body that keeps the decision, including the decision to close it.
@@ -1221,12 +1233,61 @@ Photograph from public ground. On an event day, ask before photographing anyone,
     // SECTION 5 · The same fight in other cities
     // ═══════════════════════════════════════════════════════════════════════════════════════
     {
+      slug: "bb-belle-isle-1943",
+      title: "18 · Detroit, June 1943: Belle Isle, a shared park",
+      section: "Section 5 · The same fight in other cities",
+      body: `> **Content note.** This lesson concerns the 1943 Detroit riot, which began with fights at a city park and left 34 people dead. It gives counts only, names no victim, and there are no images. You may skip this lesson and come back to it.
+
+**Belmont's mechanism, a public body deciding who may use public water and public parks, ran in every city with a public beach or pool.** This section takes it city by city, in date order. It starts in the month the board of health closed Belmont Beach over raw sewage, June 1943 (Garner, 2024, Sec. 8 p. 17).
+
+## A shared park
+
+Belle Isle is an island park in the Detroit River where white and Black residents "fished, picnicked, boated, and played sports" (Kahrl & Cammeron, 2022, p. 59). The theme study notes that the park "continues to be owned by Detroit"; a National Park Service lesson plan calls it "the state park site of Belle Isle" today (Kahrl & Cammeron, 2022, p. 59, n. 114; Lane, 2022). As Detroit's Black population grew, the theme study says, white and Black residents "mingled with occasional fights over things like outdoor grills and fishing spots" (Kahrl & Cammeron, 2022, p. 59).
+
+## June 1943
+
+The theme study: in June 1943 "white sailors attacked Black visitors to the park and separately white women beat a Black woman. Rumors about the attacks spread to Detroit's Black community and the violence escalated" (Kahrl & Cammeron, 2022, p. 59). The Park Service lesson dates the first fight to the evening of June 20, 1943, and reports rumors running both ways, among Black and white Detroiters (Lane, 2022).
+
+**The counts, from two sources:**
+
+| | Park Service lesson (Lane, 2022) | Theme study (Kahrl & Cammeron, 2022, p. 59) |
+|---|---|---|
+| Deaths | 34: 25 African Americans, 17 of them killed by police, and 9 white people, none by police | 34, including 25 African Americans |
+| Injured | About 675, as authorities reported | Over 600 |
+| Troops | 6,000 soldiers | Not given |
+
+The two agree on the deaths and roughly on the injured. **Read Lane's sentence again: "Twenty-five African Americans were killed, 17 of them by police."** It names a public body as the killer of most of the Black dead. Lane also reports that four times as many African Americans as white people were arrested (Lane, 2022).
+
+## Why it belongs beside Belmont
+
+Belle Isle was not assigned to anyone, owned by any Black group, or entered by protesters. **It was shared, and the sharing was what was contested.** In the same month the board of health closed Belmont Beach, a shared park in Detroit ended in a riot. Neither event explains the other, and this course does not link them as cause and effect.
+
+:::reveal Why does this course call Belle Isle "shared" rather than assigned, owned or claimed? ||| No public body designated it for one race, no Black group owned it, and nobody had to break in. White and Black residents used the same park, and the contest was over the sharing itself.
+
+:::reveal According to the Park Service lesson, who killed 17 of the 25 African Americans who died in the 1943 riot? ||| The police.
+
+## Sources
+- ${GARNER_2024} Locator: Section 8, p. 17, the 1943 closure.
+- ${KAHRL_2022} Locator: printed p. 59 (PDF p. 67), and note 114, citing Wolcott (2012), *Race, Riots, and Roller Coasters*, p. 43.
+- ${LANE_2022} Locator: the reading "Belle Isle, June 20, 1943" and its paragraph on deaths, injuries and troops.`,
+      recallContent: [
+        {
+          prompt: "Name two places you may stand at Belmont Beach on a visit, and one rule about the river.",
+          answer: "Any two of: the 1917 levee monument at the parkway and Belmont Avenue; the west-end parking lot and lawn; the bank opposite the dam abutment; the park across the parkway. Never enter the river; read the current advisory yourself.",
+        },
+        {
+          prompt: "What is the Emrichsville Dam remnant, and why may you look but not climb?",
+          answer: "The stone and concrete remains of the 1900 dam built for Riverside Park, whose sandbars made the beach. It is a deteriorated structure at the water's edge.",
+        },
+      ],
+    },
+    {
       slug: "bb-1949-gary-and-anacostia",
-      title: "18 · Summer 1949: Gary's lakefront and Washington's Anacostia pool",
+      title: "19 · Summer 1949: Gary's lakefront and Washington's Anacostia pool",
       section: "Section 5 · The same fight in other cities",
       body: `> **Content note.** This lesson describes white crowds attacking Black young people trying to use public beaches and a public pool in 1949. It gives no detail of injuries beyond counts, and there are no images.
 
-**Belmont's mechanism, a public body deciding who may use public water, ran in every city with a public beach or pool.** This section takes it city by city, Midwest first. In summer 1949, four years after World War II, young Black Americans in two cities tested it directly.
+**Summer 1949, four years after World War II.** Young Black Americans in three cities tested Belmont's mechanism directly that June. This lesson takes two of them; lesson 20 takes the third, St. Louis.
 
 ## Gary, Indiana: "Young Citizens for Beachhead Democracy"
 
@@ -1250,10 +1311,6 @@ The Anacostia pool sat in Anacostia Park, whose history the National Park Servic
 
 **Both are claimed places.** At Belmont the city assigned a beach; at Gary and Anacostia young people walked into the ones that had been kept from them, and the public body had to answer. **Same mechanism, run in reverse.**
 
-## A third case from summer 1949, held
-
-St. Louis's Fairground Park pool, opened to Black children on June 21, 1949, belongs in this lesson by date and by mechanism. **Its case card is written and held** until a content decision is made about how this course treats violence aimed at children (see lesson 25).
-
 :::reveal What did the National Park Service do after the June 1949 clashes at the Anacostia pool? ||| It shut the pool for the rest of the summer, and reopened it as a desegregated pool in June 1950.
 
 :::reveal Why does this course call Gary and Anacostia "claimed" rather than "assigned"? ||| Because Black young people entered, or announced they would enter, public water they had been kept out of, forcing the public body to respond. Belmont was designated by the city.
@@ -1263,18 +1320,66 @@ St. Louis's Fairground Park pool, opened to Black children on June 21, 1949, bel
 - ${NPS_ANACOSTIA_2024} Locator: the page's account of June 23 and 29, 1949, and the 1950 reopening.`,
       recallContent: [
         {
-          prompt: "Name two places you may stand at Belmont Beach on a visit, and one rule about the river.",
-          answer: "Any two of: the 1917 levee monument at the parkway and Belmont Avenue; the west-end parking lot and lawn; the bank opposite the dam abutment; the park across the parkway. Never enter the river; read the current advisory yourself.",
+          prompt: "What kind of place does this course call Belle Isle in 1943, and who owned it?",
+          answer: "A shared place: an island park in the Detroit River that white and Black residents both used, where the sharing itself was contested. The city of Detroit owned it.",
         },
         {
-          prompt: "What is the Emrichsville Dam remnant, and why may you look but not climb?",
-          answer: "The stone and concrete remains of the 1900 dam built for Riverside Park, whose sandbars made the beach. It is a deteriorated structure at the water's edge.",
+          prompt: "How many people died in the 1943 Detroit riot, and who killed most of the African Americans who died, according to the Park Service lesson?",
+          answer: "34, including 25 African Americans. The Park Service lesson says 17 of the 25 were killed by police.",
+        },
+      ],
+    },
+    {
+      slug: "bb-fairground-park-1949",
+      title: "20 · St. Louis, June 21, 1949: the Fairground Park pool",
+      section: "Section 5 · The same fight in other cities",
+      body: `> **Content note.** This lesson describes a white crowd attacking Black children at a public pool in 1949. It gives counts, not details of injuries, names no victim, and there are no images. You may skip this lesson and come back to it.
+
+**Lesson 19 ended in Washington in late June 1949. In the same days, St. Louis ran the same mechanism, and the people attacked were children.**
+
+## A decision made quietly
+
+St. Louis had never segregated its parks by law (Allen, 2022). In 1949 the parks commissioner asked the director of public welfare, John J. O'Toole, whether the city had any law supporting the segregation of its swimming facilities, and O'Toole decided to allow integration. "I can't lawfully refuse them," he told a reporter. "I'm not going to be a party to an unlawful gentlemen's agreement." Neither official told the police department or the mayor, and there was no public notice until the day before the pools opened (Allen, 2022).
+
+## June 21, 1949
+
+With the Fairground Park pool newly open to Black swimmers, "200 White children and teenagers surrounded and began attacking 30 Black children who had entered the pool." Some 5,000 people gathered in the park, and over 400 police officers with 51 vehicles tried to break up a riot that lasted all night. Five Black people and one white person were seriously injured; police arrested three white people and four Black people (Allen, 2022). **These counts come from one source.** No other account of the riot was read for this course, so report the numbers as Allen's.
+
+## What the city did next
+
+"Mayor Darst immediately closed both Fairground and Marquette Pools on June 22, 1949," saying the parks commissioner had breached a "community policy" even though no law required segregation. Darst "eventually re-opened the pools as desegregated in 1950, but only after a federal court ruling" (Allen, 2022). "There are no monuments or markers to teach the story of the pool riot" (Allen, 2022).
+
+## Read it beside Anacostia and Kansas City
+
+| | Anacostia, Washington (lesson 19) | Fairground Park, St. Louis |
+|---|---|---|
+| How the water was opened | Black swimmers entered it | The city's welfare director allowed it, without notice |
+| What the authority did after the violence | The Park Service closed the pool for the summer | The mayor closed two pools the next day |
+| When it reopened desegregated | June 1950 | 1950, after a federal court ruling |
+
+**Same sequence, two cities, one summer.** And the St. Louis riot traveled: in Kansas City, the city's lawyers pointed to it as a reason to keep Swope Park's pool white (Ziegler, 2016; lesson 21).
+
+:::reveal What did Mayor Darst do the day after the June 21, 1949 attack at Fairground Park? ||| He closed both the Fairground and Marquette pools, calling segregation a "community policy." The pools reopened desegregated in 1950, after a federal court ruling.
+
+:::reveal Why does this lesson call its injury and arrest counts "Allen's"? ||| Because they come from one source, and no other account of the riot was read for the course. A count from a single source is reported with its owner.
+
+## Sources
+- ${ALLEN_2022} Locator: the sections on the 1949 decision, the June 21 riot and the June 22 closure, and the paragraph on the absence of markers near the end.
+- ${ZIEGLER_2016} Locator: the paragraph on the city's lawyers and the St. Louis riots.`,
+      recallContent: [
+        {
+          prompt: "What happened at the Anacostia pool in June 1949, and what did the Park Service do?",
+          answer: "Black swimmers challenged its whites-only practice from June 23; on June 29 about 70 Black and 100 white swimmers were in the pool with 450 outside, four were hospitalized and five arrested. The Park Service closed the pool for the summer and reopened it desegregated in June 1950.",
+        },
+        {
+          prompt: "What was Young Citizens for Beachhead Democracy?",
+          answer: "A group of African American youth in Gary, Indiana, who in 1949 announced plans to occupy the city's Lake Michigan beaches and were met, as Wolcott describes it, by forty squad cars and white residents with bats and pipes.",
         },
       ],
     },
     {
       slug: "bb-kansas-city-swope",
-      title: "19 · Kansas City: Swope Park pool, and reading the 1953 opinion",
+      title: "21 · Kansas City: Swope Park pool, and reading the 1953 opinion",
       section: "Section 5 · The same fight in other cities",
       body: `Gary and Anacostia were claimed by entering. **Kansas City was claimed in court.** This lesson asks you to read part of an appellate opinion, which is a primary source anyone can open.
 
@@ -1282,7 +1387,7 @@ St. Louis's Fairground Park pool, opened to Black children on June 21, 1949, bel
 
 The local NAACP helped three young Black residents sue the city to desegregate the **Swope Park** swimming pool. KCUR, Kansas City's public radio station, says the suit "was first filed in 1951" (Ziegler, 2016); the National Park Service's theme study says the three sued "after being denied admission to a whites-only public pool in **1952**" (Kahrl & Cammeron, 2022, p. 93). **Report both.** A filing date and a denial date can differ, and so can two secondary sources.
 
-Thurgood Marshall, then the NAACP's chief attorney, came to try the case. The city's lawyers moved to have him removed from it, and pointed to the riots in St. Louis when Black swimmers were allowed into a pool there (Ziegler, 2016). Judge Ridge, the trial judge, ruled for the plaintiffs in 1952 (Ziegler, 2016).
+Thurgood Marshall, then the NAACP's chief attorney, came to try the case. The city's lawyers moved to have him removed from it, and pointed to the riots in St. Louis when Black swimmers were allowed into a pool there (Ziegler, 2016), the riot of lesson 20. Judge Ridge, the trial judge, ruled for the plaintiffs in 1952 (Ziegler, 2016).
 
 ## The opinion
 
@@ -1306,7 +1411,7 @@ The pool was shut during the appeal, "allegedly to avoid the kind of violence" s
 | The better facility kept white | Riverside Park's beach, a short walk upriver | Swope Park pool |
 | How the gap was answered | It was not, in the record read | A suit, tried by Thurgood Marshall, won on appeal |
 
-**Nobody sued over Belmont in any source read for this course.** That is not evidence nobody tried. It is a gap, and lesson 25 lists it.
+**Nobody sued over Belmont in any source read for this course.** That is not evidence nobody tried. It is a gap, and lesson 28 lists it.
 
 :::reveal What did the Eighth Circuit hold in Kansas City v. Williams (1953)? ||| It affirmed the trial court's finding that the separate pool for Black swimmers was not substantially equal to Swope Park's, so the city could not exclude Black swimmers from Swope. It did not rule separate facilities unconstitutional.
 
@@ -1316,18 +1421,18 @@ The pool was shut during the appeal, "allegedly to avoid the kind of violence" s
 - ${ZIEGLER_2016}`,
       recallContent: [
         {
-          prompt: "What happened at the Anacostia pool in June 1949, and what did the Park Service do?",
-          answer: "Black swimmers challenged its whites-only practice from June 23; on June 29 about 70 Black and 100 white swimmers were in the pool with 450 outside, four were hospitalized and five arrested. The Park Service closed the pool for the summer and reopened it desegregated in June 1950.",
+          prompt: "Who decided to admit Black swimmers to St. Louis's pools in 1949, and how was the decision made public?",
+          answer: "The city's director of public welfare, John J. O'Toole. It was barely made public: neither the police nor the mayor was told, and there was no public notice until the day before the pools opened.",
         },
         {
-          prompt: "What was Young Citizens for Beachhead Democracy?",
-          answer: "A group of African American youth in Gary, Indiana, who in 1949 announced plans to occupy the city's Lake Michigan beaches and were met, as Wolcott describes it, by forty squad cars and white residents with bats and pipes.",
+          prompt: "What did Mayor Darst do on June 22, 1949, and when did the pools reopen desegregated?",
+          answer: "He closed the Fairground and Marquette pools. They reopened desegregated in 1950, after a federal court ruling.",
         },
       ],
     },
     {
       slug: "bb-cincinnati-and-pittsburgh",
-      title: "20 · Cincinnati's Coney Island and Pittsburgh's Highland Park pool",
+      title: "22 · Cincinnati's Coney Island and Pittsburgh's Highland Park pool",
       section: "Section 5 · The same fight in other cities",
       body: `Two more cases, one at an amusement park and one at a city pool, each taking years.
 
@@ -1379,9 +1484,9 @@ In 1932, after a mob beat two Black men, the **Robert H. Terrell Law Club** peti
     },
     {
       slug: "bb-wade-ins-and-carousels",
-      title: "21 · Wade-ins and carousels: Rainbow Beach, Glen Echo, Gwynn Oak, St. Augustine",
+      title: "23 · Wade-ins and carousels: Rainbow Beach, Glen Echo, Gwynn Oak, St. Augustine",
       section: "Section 5 · The same fight in other cities",
-      body: `> **Content note.** This lesson describes a 1960 attack with rocks on young people at a Chicago beach, mass arrests, and, in 1964, a motel operator pouring acid into a pool where Black and white protesters were swimming. It gives no graphic detail and shows no images. You may skip to lesson 22 and come back.
+      body: `> **Content note.** This lesson describes a 1960 attack with rocks on young people at a Chicago beach, mass arrests, and, in 1964, a motel operator pouring acid into a pool where Black and white protesters were swimming. It gives no graphic detail and shows no images. You may skip this lesson and come back to it.
 
 **By 1960 the claim had a method: walk in, together, in public, and make the authority choose.** Four places, four years.
 
@@ -1446,8 +1551,63 @@ The day after the attack, the Senate ended a 60-day filibuster and passed the Ci
       ],
     },
     {
+      slug: "bb-biloxi-wade-ins",
+      title: "24 · Biloxi, 1959 to 1968: the wade-ins and the federal money",
+      section: "Section 5 · The same fight in other cities",
+      body: `> **Content note.** This lesson describes a 1960 mob attack on people wading at a public beach, and shootings that followed in the city. The death toll is disputed between sources, and the lesson shows the dispute. It names no victim, and there are no images. You may skip this lesson and come back to it.
+
+**Biloxi ran the same fight as Rainbow Beach (lesson 23), in the Deep South, and it turned on a question Belmont never reached in court: whose money built the beach.**
+
+## A public beach, built with public money
+
+After a 1947 hurricane, Mississippi sought federal money to rebuild its Gulf shoreline, and a 1953 engineering project that rebuilt and reshaped the Harrison County beach was paid for with federal tax dollars (Kahrl & Cammeron, 2022, p. 98). The theme study says Biloxi had not adopted a segregation statute for the beach and "relied on fear and intimidation, or what whites euphemistically called 'custom'" (Kahrl & Cammeron, 2022, p. 98). The City of Biloxi's 2018 account says instead that "laws prevented African-Americans from enjoying the 26-mile public beach" (City of Biloxi, 2018). **The two do not agree on whether a law existed.**
+
+On **May 14, 1959**, Dr. Gilbert R. Mason, a Biloxi physician, "and eight others staged the first wade-in at Biloxi Beach" (Mississippi Department of Archives and History [MDAH], n.d.). The theme study counts Mason "and seven other African Americans, including five children," and dates it only to that summer (Kahrl & Cammeron, 2022, p. 97). In October 1959 Mason and two others petitioned the county board of supervisors for "unrestrained use of the beach," pointing out that no law barred Black people from it and that public funds had built it. Mason rejected a separate "colored" section: Black people wanted "all twenty-six miles" (Kahrl & Cammeron, 2022, p. 99). The board refused; the state's Sovereignty Commission surveilled the petitioners, and at least three signers were fired (Kahrl & Cammeron, 2022, p. 99).
+
+## April 1960
+
+On April 17, 1960, Mason swam alone and was arrested for disorderly conduct (MDAH, n.d.; Kahrl & Cammeron, 2022, p. 99). A larger wade-in followed within the week.
+
+**The sources disagree on what happened next.**
+
+| Source | Date | How many came | Casualties |
+|---|---|---|---|
+| Theme study (Kahrl & Cammeron, 2022, p. 99), citing the *New York Times* of April 26, 1960 | April 24, 1960 | Nearly 125 | Eight Black and two white people shot; at least fifteen seriously injured |
+| City of Biloxi (2018) | April 24, 1960 | 125 | "Two African-American men were murdered" |
+| MDAH finding aid (n.d.) | April 25, 1960 | Fifty | "Two people were killed and over twenty people were injured" |
+
+The theme study mentions no deaths; the other two each report two. **This lesson does not settle it.** A published history of the wade-ins should be read before any number of deaths is taught as fact. The theme study's own notes point to two: James Patterson Smith's 2003 chapter in *Sunbelt Revolution* and J. Michael Butler's 2002 article in the *Journal of Southern History* (Kahrl & Cammeron, 2022, pp. 97 to 98, nn. 24 and 25). Neither was read for this course.
+
+## What the federal government did
+
+On May 17, 1960, the Justice Department sued local officials in Harrison County, listing the federal money spent on the beachfront and the officials' written agreement to use it for a public sand beach: "the first time the federal government had used the appropriation of federal dollars to enforce equal access to public recreational amenities" (Kahrl & Cammeron, 2022, p. 100). The beaches were integrated on **August 16, 1968**, and a Mississippi Freedom Trail marker for the wade-in was dedicated in 2018 (City of Biloxi, 2018).
+
+**Compare Belmont.** Belmont was assigned by the city's own boards (lesson 11), and no source read for this course records anyone arguing that public money gave Black residents a right to Riverside's beach.
+
+**Link:** REST-04's Gulfside Assembly lessons, when built, will show the theme study's note that state investigators gave Gulfside "only a glancing look" during the wade-ins (Kahrl & Cammeron, 2022, p. 104).
+
+:::reveal What made the Justice Department's May 1960 suit over Biloxi's beach a first? ||| It used the federal money spent on the beach to enforce equal access: the first time the federal government had used the appropriation of federal dollars that way.
+
+:::reveal Why does this lesson give no death toll for the April 1960 riot? ||| Its sources disagree. The theme study reports ten people shot and mentions no deaths; the City of Biloxi and the state archives each report two killed. The course reports the disagreement.
+
+## Sources
+- ${BILOXI_2018}
+- ${KAHRL_2022} Locator: printed pp. 97 to 100 and 104 (PDF pp. 105 to 108 and 112), notes 24, 25 and 29.
+- ${MDAH_MASON} Locator: the "Biography" paragraph.`,
+      recallContent: [
+        {
+          prompt: "What did the Rainbow Beach 'Freedom Waders' do on August 28, 1960, and what happened?",
+          answer: "About thirty young people from the South Side NAACP Youth Council spread blankets on the sand; a white mob surrounded them and threw rocks, and the Youth Council's 21-year-old president needed 17 stitches.",
+        },
+        {
+          prompt: "What happened at the Monson Motor Lodge on June 18, 1964, and what happened in the Senate the next day?",
+          answer: "Two white guests and five Black young people entered the pool, and the man in charge poured muriatic acid into it. The next day the Senate ended its filibuster and passed the Civil Rights bill.",
+        },
+      ],
+    },
+    {
       slug: "bb-map",
-      title: "22 · Map: Belmont Beach and the same fight in other cities",
+      title: "25 · Map: Belmont Beach and the same fight in other cities",
       section: "Section 5 · The same fight in other cities",
       body: `Click any marker for its detail. **This map draws the whole country, so the Indianapolis points sit almost on top of each other.** Zoom in on Indianapolis to separate them. It shows three things:
 
@@ -1455,17 +1615,22 @@ The day after the attack, the Senate ended a 60-day filibuster and passed the Ci
 
 **Amber: the rest of Indianapolis's water and parks.** The Riverside Park area upriver, with the dam's white beach and the amusement park; Douglass Park, the other assigned park; Municipal Gardens, the riverfront the city kept from Henry Fleming's group in 1927.
 
-**Green: the same fight elsewhere.** Gary, Washington's Anacostia Park, Kansas City's Swope Park, Cincinnati, Pittsburgh's Highland Park, Chicago's Rainbow Beach, Glen Echo, Gwynn Oak and St. Augustine.
+**Green: the same fight elsewhere.** Detroit's Belle Isle, Gary, Washington's Anacostia Park, St. Louis's Fairground Park, Kansas City's Swope Park, Cincinnati, Pittsburgh's Highland Park, Chicago's Rainbow Beach, Glen Echo, Biloxi, Gwynn Oak and St. Augustine.
 
 **Purple: the series.** Fox Lake, the lake Indianapolis families went to (REST-01).
 
-**Coordinates are approximate place centers from OpenStreetMap's gazetteer**, not the locations of pools, docks or buildings. The Riverside marker is the gazetteer's point for today's Riverside park, not the old amusement park's gate. Cincinnati's marker is the city center; the gazetteer did not return Coney Island.
+**Coordinates are approximate place centers from OpenStreetMap's gazetteer**, not the locations of pools, docks or buildings. The Riverside marker is the gazetteer's point for today's Riverside park, not the old amusement park's gate. Cincinnati's and Biloxi's markers are city centers; the gazetteer did not return Coney Island, and the Biloxi wade-ins ran along miles of beachfront.
 
 **What the map cannot show.** It cannot show the beaches nobody wrote about. Every point here is on it because a newspaper, a court or a nomination recorded a decision. **The towns where Black children simply stayed home in the summer left no point.**
 
 ## Sources
 - OpenStreetMap contributors. (n.d.). *Nominatim gazetteer*. Retrieved November 1, 2026, from https://nominatim.openstreetmap.org/
-- ${GARNER_2024} Locator: Section 8, pp. 12 to 15.`,
+- ${GARNER_2024} Locator: Section 8, pp. 12 to 15.
+- ${ALLEN_2022}
+- ${BILOXI_2018}
+- ${KAHRL_2022} Locator: printed pp. 59 and 97 to 100.
+- ${LANE_2022}
+- ${MDAH_MASON}`,
       mapContent: {
         atlas: "us-states",
         markers: [
@@ -1515,6 +1680,15 @@ The day after the attack, the Senate ended a 60-day filibuster and passed the Ci
               "REST-01. A lake resort Black families bought into from the 1920s; Indianapolis sent more of its summer residents than any other city. An owned place, where Belmont was an assigned one.",
           },
           {
+            id: "bb-belle-isle",
+            lat: 42.342,
+            lng: -82.970,
+            title: "Belle Isle, Detroit, Michigan",
+            color: "#15803d",
+            description:
+              "June 1943: fights in a shared city park grew into the Detroit riot; 34 died, 25 of them African Americans, 17 of whom were killed by police, per a Park Service lesson. Lesson 18 (Kahrl & Cammeron, 2022, p. 59; Lane, 2022).",
+          },
+          {
             id: "bb-gary",
             lat: 41.564,
             lng: -87.337,
@@ -1531,6 +1705,15 @@ The day after the attack, the Senate ended a 60-day filibuster and passed the Ci
             color: "#15803d",
             description:
               "June 1949: Black swimmers challenged the pool's whites-only practice; four hospitalized and five arrested on June 29. The National Park Service closed the pool for the summer and reopened it desegregated in June 1950.",
+          },
+          {
+            id: "bb-fairground-park",
+            lat: 38.665,
+            lng: -90.221,
+            title: "Fairground Park, St. Louis, Missouri",
+            color: "#15803d",
+            description:
+              "June 21, 1949: a white crowd attacked 30 Black children in the newly opened pool; the mayor closed the pool the next day, and it reopened desegregated in 1950 after a federal court ruling. Lesson 20 (Allen, 2022).",
           },
           {
             id: "bb-swope",
@@ -1578,6 +1761,15 @@ The day after the attack, the Senate ended a 60-day filibuster and passed the Ci
               "June 30, 1960: a carousel sit-in by the Non-violent Action Group; five arrested that day and over 40 by summer's end. The park announced integration on March 14, 1961.",
           },
           {
+            id: "bb-biloxi",
+            lat: 30.401,
+            lng: -88.889,
+            title: "Biloxi, Mississippi",
+            color: "#15803d",
+            description:
+              "1959 to 1968: wade-ins on a beach rebuilt with federal money; a mob attack in April 1960 whose death toll the sources dispute; the first federal suit to use federal funds to enforce equal access; integrated August 16, 1968. Marker at the city center. Lesson 24 (Kahrl & Cammeron, 2022, pp. 97 to 100; City of Biloxi, 2018; MDAH, n.d.).",
+          },
+          {
             id: "bb-gwynn-oak",
             lat: 39.327,
             lng: -76.718,
@@ -1600,13 +1792,85 @@ The day after the attack, the Senate ended a 60-day filibuster and passed the Ci
     },
     {
       slug: "bb-quiz-other-cities",
-      title: "23 · Quiz: the same fight in other cities",
+      title: "26 · Quiz: the same fight in other cities",
       section: "Section 5 · The same fight in other cities",
       quiz: {
         passingScore: 70,
-        questionsPerAttempt: 8,
+        questionsPerAttempt: 10,
         shuffleOptions: true,
         questions: [
+          {
+            prompt: "What kind of place does this course call Belle Isle in 1943?",
+            options: [
+              "Assigned to Black residents",
+              "Owned by a Black company",
+              "Shared by white and Black",
+              "Claimed by a wade-in group",
+            ],
+            correctIndex: 2,
+            explanation: "A shared place: white and Black residents used the same city park, and the sharing itself was contested. No body assigned it, no Black group owned it, and nobody had to break in.",
+            sourceLessonSlug: "bb-belle-isle-1943",
+          },
+          {
+            prompt: "According to the Park Service lesson, who killed 17 of the 25 African Americans who died in the 1943 Detroit riot?",
+            options: [
+              "White sailors from the armory",
+              "The city's police officers",
+              "The federal troops sent in",
+              "A crowd on the island bridge",
+            ],
+            correctIndex: 1,
+            explanation: "\"Twenty-five African Americans were killed, 17 of them by police\" (Lane, 2022). The sentence names a public body as the killer of most of the Black dead.",
+            sourceLessonSlug: "bb-belle-isle-1943",
+          },
+          {
+            prompt: "Who decided in 1949 to let Black swimmers into St. Louis's city pools?",
+            options: [
+              "The city's welfare director",
+              "A federal district court",
+              "The board of aldermen",
+              "The governor of Missouri",
+            ],
+            correctIndex: 0,
+            explanation: "John J. O'Toole, the director of public welfare, after the parks commissioner asked whether any law supported segregation. Neither told the police or the mayor.",
+            sourceLessonSlug: "bb-fairground-park-1949",
+          },
+          {
+            prompt: "What did St. Louis's mayor do the day after the June 21, 1949 attack at Fairground Park?",
+            options: [
+              "Closed two of the city's pools",
+              "Called in state guard troops",
+              "Fired the welfare director",
+              "Built a pool across the city",
+            ],
+            correctIndex: 0,
+            explanation: "Mayor Darst closed the Fairground and Marquette pools on June 22, 1949. They reopened desegregated in 1950, after a federal court ruling.",
+            sourceLessonSlug: "bb-fairground-park-1949",
+          },
+          {
+            prompt: "Why did the 1959 Biloxi petitioners say Black residents had a right to the beach?",
+            options: [
+              "Public funds had built it",
+              "A treaty promised access",
+              "They owned the lots beside it",
+              "A court had ruled it so",
+            ],
+            correctIndex: 0,
+            explanation: "No law barred them, and public money had built and maintained the beach; a 1953 project that rebuilt it was paid for with federal tax dollars.",
+            sourceLessonSlug: "bb-biloxi-wade-ins",
+          },
+          {
+            prompt: "Why does the course give no single death toll for the April 1960 Biloxi riot?",
+            options: [
+              "Its sources disagree",
+              "No paper covered it",
+              "The records burned",
+              "The city sealed them",
+            ],
+            correctIndex: 0,
+            explanation: "The theme study reports ten people shot and mentions no deaths; the City of Biloxi and the state archives each report two killed. The course reports the disagreement.",
+            sourceLessonSlug: "bb-biloxi-wade-ins",
+          },
           {
             prompt: "What did the National Park Service do after the June 1949 clashes at the Anacostia pool?",
             options: [
@@ -1723,7 +1987,7 @@ The day after the attack, the Senate ended a 60-day filibuster and passed the Ci
     // ═══════════════════════════════════════════════════════════════════════════════════════
     {
       slug: "bb-write-assignment",
-      title: "24 · Your assignment: one beach, one board decision, one newspaper page",
+      title: "27 · Your assignment: one beach, one board decision, one newspaper page",
       section: "Section 6 · Write",
       lessonType: "assignment",
       body: `Beat 6 asks what can only be said about this place. **REST-00 lesson 20 gave you the rules for writing about a property. They all apply.** This lesson adds what is particular to an assigned place.
@@ -1736,7 +2000,7 @@ Write **800 to 1,200 words** of nonfiction built on **three documents**: one pla
 
 - **Belmont:** the 1931 purchase "for the exclusive use by the Black community"; the 1936 opening; the 1941 complaint; the 1943 closing; the 1959 expressway; the 2026 listing.
 - **Indianapolis:** Douglass Park's pool; Riverside's once-a-year day; the 1927 country club; the Riviera Club case.
-- **Elsewhere:** Swope Park and *Kansas City v. Williams*; Anacostia, 1949 to 1950; Coney Island, 1952 to 1961; Highland Park's "health certificates"; Rainbow Beach, 1960 and 1961.
+- **Elsewhere:** Swope Park and *Kansas City v. Williams*; Anacostia, 1949 to 1950; Fairground Park, 1949 to 1950; Coney Island, 1952 to 1961; Highland Park's "health certificates"; Rainbow Beach, 1960 and 1961; Biloxi's 1960 federal suit; Belle Isle as a shared park.
 
 **You may not write about a living private person**, quote anyone who has not agreed to be quoted, or name a child in a drowning or an attack. Historical public figures, in the roles the sources give them, are fine.
 
@@ -1758,18 +2022,18 @@ Five columns, as in REST-00: **date, event, deciding body, source, and what else
 - ${KAHRL_2022}`,
       recallContent: [
         {
-          prompt: "What did the Rainbow Beach 'Freedom Waders' do on August 28, 1960, and what happened?",
-          answer: "About thirty young people from the South Side NAACP Youth Council spread blankets on the sand; a white mob surrounded them and threw rocks, and the Youth Council's 21-year-old president needed 17 stitches.",
+          prompt: "Why did the 1959 petitioners say Black residents had a right to Biloxi's beach?",
+          answer: "No law barred them from it, and public funds had built and maintained it. A 1953 project that rebuilt the shoreline was paid for with federal tax dollars.",
         },
         {
-          prompt: "What happened at the Monson Motor Lodge on June 18, 1964, and what happened in the Senate the next day?",
-          answer: "Two white guests and five Black young people entered the pool, and the man in charge poured muriatic acid into it. The next day the Senate ended its filibuster and passed the Civil Rights bill.",
+          prompt: "On what three points do the sources disagree about April 1960 in Biloxi?",
+          answer: "The date (April 24 or 25), the size of the crowd (about 125 or fifty) and the casualties (ten people shot with no deaths mentioned, or two killed).",
         },
       ],
     },
     {
       slug: "bb-what-was-cut",
-      title: "25 · What this course cut, and the sources nobody has opened",
+      title: "28 · What this course cut, and the sources nobody has opened",
       section: "Section 6 · Write",
       body: `**A course that hides its gaps teaches you to hide yours.** Here are this course's.
 
@@ -1782,6 +2046,9 @@ Five columns, as in REST-00: **date, event, deciding body, source, and what else
 - **When Belmont and the city's other beaches were integrated.** The nomination's sentence has no date.
 - **Who poured the acid at the Monson pool, manager or owner.**
 - **Whether anyone ever sued over Belmont.** No source read mentions a suit. That is a gap, not a finding.
+- **How many people died in Biloxi in April 1960**, and on which day and how many waded: the theme study reports ten shot and mentions no deaths; the City of Biloxi and the state archives each report two killed (lesson 24).
+- **Whether Biloxi had a law closing the beach to Black people**: the theme study says no statute, only "custom"; the City of Biloxi's marker account says "laws prevented" them (lesson 24).
+- **The Fairground Park counts**, which come from one source (lesson 20).
 
 ## Left out on purpose
 
@@ -1790,9 +2057,9 @@ Five columns, as in REST-00: **date, event, deciding body, source, and what else
 - **Images.** None is embedded. The nomination's 21 photographs, the Friends' images and the *Recorder*'s 1936 photograph all need permission or a rights check first.
 - **A claim this course saw only in a search result**, about a city ban on Black swimming at two west side spots, from a neighborhood riverfront study whose file could not be opened. **The nomination documents a different 1941 ban, on river swimming except at two beaches.** The reported ban is not taught until the study is read.
 
-## Held: three case cards waiting on a decision
+## Added after a content decision
 
-Three more cases belong in Section 5 by date and by mechanism. Their case cards are **written and held** while a decision is made about how this course treats violence aimed at children and crowds: **St. Louis's Fairground Park pool (June 1949)**, **Detroit's Belle Isle (June 1943)** and **the Biloxi, Mississippi wade-ins (1959 to 1968)**. If they are added, they will carry content notes and no images, like lessons 12, 14 and 21.
+The case cards on **Detroit's Belle Isle (lesson 18)**, **St. Louis's Fairground Park pool (lesson 20)** and **the Biloxi wade-ins (lesson 24)** were written first and held while a decision was made about how this course treats violence aimed at children and crowds. They are now in the course under the same rule as the drownings and the Monson acid: a content note, counts only, no images, and no private victim named.
 
 ## The unopened sources
 
@@ -1800,7 +2067,8 @@ Three more cases belong in Section 5 by date and by mechanism. Their case cards 
 2. **The *Indianapolis News* and *Star*** pages the nomination cites, 1899 to 2008, by page and column (Garner, 2024, Sec. 9 pp. 19 to 20).
 3. **The neighborhood riverfront study** cited for the reported ban.
 4. **The final National Register record** for SG100013298, with its boundary.
-5. **Jeff Wiltse's *Contested Waters* (2007)** and **Victoria Wolcott's *Race, Riots, and Roller Coasters* (2012)**, the books the theme study draws on for Pittsburgh, Gary and Louisville. Not read for this course.
+5. **Jeff Wiltse's *Contested Waters* (2007)** and **Victoria Wolcott's *Race, Riots, and Roller Coasters* (2012)**, the books the theme study draws on for Pittsburgh, Gary, Detroit and Louisville. Not read for this course.
+6. **James Patterson Smith's 2003 chapter and J. Michael Butler's 2002 article on the Biloxi wade-ins**, the published histories that could settle Biloxi's death toll (Kahrl & Cammeron, 2022, pp. 97 to 98, nn. 24 and 25). Not read for this course.
 
 **If you want to add to Belmont's history instead of repeating it, that list is where to start.** The Friends of Belmont Beach, who asked for the nomination, are the people to tell what you find.
 
@@ -1816,7 +2084,7 @@ Three more cases belong in Section 5 by date and by mechanism. Their case cards 
     },
     {
       slug: "bb-final-quiz",
-      title: "26 · Final quiz",
+      title: "29 · Final quiz",
       section: "Section 6 · Write",
       quiz: {
         passingScore: 70,
@@ -1968,16 +2236,40 @@ Three more cases belong in Section 5 by date and by mechanism. Their case cards 
             sourceLessonSlug: "bb-kansas-city-swope",
           },
           {
-            prompt: "Which three case cards are written but held out of this course?",
+            prompt: "What was the Justice Department's May 1960 suit over Biloxi's beach the first to do?",
             options: [
-              "Gary, Anacostia, Swope Park",
-              "Fairground Park, Belle Isle, Biloxi",
-              "Glen Echo, Gwynn Oak, St. Augustine",
-              "Coney Island, Highland, Rainbow",
+              "Use federal money spent on it to force access",
+              "Use the Fourteenth Amendment on a beach",
+              "Charge a white mob under a federal law",
+              "Take a city beach as federal property",
             ],
-            correctIndex: 1,
-            explanation: "St. Louis's Fairground Park pool (1949), Detroit's Belle Isle (1943) and the Biloxi wade-ins (1959 to 1968), held while a content decision is made.",
-            sourceLessonSlug: "bb-what-was-cut",
+            correctIndex: 0,
+            explanation: "It listed the federal money spent on the beachfront: the first time the federal government had used the appropriation of federal dollars to enforce equal access to public recreation.",
+            sourceLessonSlug: "bb-biloxi-wade-ins",
+          },
+          {
+            prompt: "How did St. Louis's Fairground Park pool come to reopen desegregated?",
+            options: [
+              "After a federal court ruling, in 1950",
+              "By a vote of the board of aldermen",
+              "By the mayor's own order that July",
+              "After a state law passed that year",
+            ],
+            correctIndex: 0,
+            explanation: "Mayor Darst closed the pools on June 22, 1949, and reopened them desegregated in 1950, only after a federal court ruling.",
+            sourceLessonSlug: "bb-fairground-park-1949",
+          },
+          {
+            prompt: "Belle Isle in 1943 differs from Belmont Beach because it was:",
+            options: [
+              "Shared, and the sharing was contested",
+              "Owned by a Black resort company",
+              "Assigned by the state park board",
+              "Claimed by a 1943 wade-in group",
+            ],
+            correctIndex: 0,
+            explanation: "White and Black residents used the same city park; the contest was over the sharing. Belmont was assigned by the city.",
+            sourceLessonSlug: "bb-belle-isle-1943",
           },
           {
             prompt: "In your assignment, what does the 'deciding body' column at Belmont almost always name?",
@@ -2020,120 +2312,3 @@ Three more cases belong in Section 5 by date and by mechanism. Their case cards 
     },
   ],
 };
-
-// ═══════════════════════════════════════════════════════════════════════════════════════════════
-// HELD CASE CARDS: NOT IN THE COURSE. DO NOT SEED.
-// ═══════════════════════════════════════════════════════════════════════════════════════════════
-//
-// BAM's content decision (plan 95, answer 5) approved the drownings and the Monson acid. It did NOT
-// approve Fairground Park (1949), Belle Isle (1943) or the Biloxi wade-ins (1959 to 1968), which plan 95
-// §9 flagged as violence aimed at children and crowds. These three cards are written so his answer can
-// switch them in without a new research pass. The seeder reads `BELMONT_BEACH_COURSE.lessons` only, so
-// nothing below reaches the database, the citations list or a learner.
-//
-// TO SWITCH ONE IN (user task 390, after BAM says yes for that card):
-//   1. Move the card into `lessons`, in Section 5, by date: Belle Isle before lesson 18; Fairground Park
-//      after Anacostia in lesson 18's order (as its own lesson after 18); Biloxi after lesson 21.
-//   2. Renumber every lesson title from that point ("19 · ..." and so on) and every "lesson N" cross-
-//      reference in the bodies (lessons 1, 5, 18, 25 and the recall cards).
-//   3. Delete the "held" paragraph in lesson 18 (Fairground) and the "Held" section of lesson 25.
-//   4. Add two quiz questions per card to lesson 23 and one to the final, with the length checks green.
-//   5. Add map markers (St. Louis 38.625, -90.190; Belle Isle 42.342, -82.970; Biloxi 30.401, -88.889,
-//      OpenStreetMap place centers fetched 2026-11-01).
-//   6. Biloxi: the death toll is DISPUTED (two killed per MDAH and the City of Biloxi; ten shot and no
-//      deaths per the NPS theme study, citing the New York Times). The card teaches the dispute; settle
-//      it from James Patterson Smith's or J. Michael Butler's published work before asserting either.
-//   7. Re-run pnpm lint, the course audit and the tests.
-// If BAM says no to a card, delete it here and remove its sentence from lesson 25.
-
-const ALLEN_2022 =
-  "Allen, M. R. (2022, April 2). The long reconstruction of Fairground Park. *The Common Reader*. https://commonreader.wustl.edu/the-long-reconstruction-of-fairground-park/";
-const LANE_2022 =
-  "Lane, S. N. (2022, December). *(H)our history lesson: The Detroit race riot of 1943*. National Park Service. https://home.nps.gov/articles/000/-h-our-history-lesson-the-detroit-race-riot-of-1943.htm";
-const MDAH_MASON =
-  "Mississippi Department of Archives and History. (n.d.). *Gilbert R. Mason papers* [Finding aid, Z/2300.000]. Retrieved November 1, 2026, from https://finding.mdah.ms.gov/manuscripts/z2300000";
-const BILOXI_2018 =
-  "City of Biloxi. (2018, April 25). *New wade-in marker added to Freedom Trail*. https://biloxi.ms.us/new-wade-in-marker-added-to-freedom-trail/";
-
-export const BELMONT_HELD_CASE_CARDS: AuthoredLesson[] = [
-  {
-    slug: "bb-held-fairground-park-1949",
-    title: "HELD · St. Louis, June 21, 1949: the Fairground Park pool",
-    section: "Section 5 · The same fight in other cities",
-    body: `> **Content note.** This lesson describes a white crowd attacking Black children at a public pool in 1949. It gives counts, not details of injuries, and there are no images.
-
-## The decision
-
-St. Louis's welfare director, John J. O'Toole, decided in June 1949 to open the city's pools to Black swimmers. "I can't lawfully refuse them," he said, and "I'm not going to be a party to an unlawful gentlemen's agreement" (Allen, 2022).
-
-## June 21, 1949
-
-On the day the Fairground Park pool opened to them, "200 White children and teenagers surrounded and began attacking 30 Black children who had entered the pool." Some 5,000 people gathered in the park; over 400 police officers with 51 vehicles worked through the night. Five Black people and one white person were seriously injured; police arrested three white people and four Black people (Allen, 2022). **Other accounts give different injury and arrest counts**; this card uses one source's and says so.
-
-## What the city did next
-
-"Mayor Darst immediately closed both Fairground and Marquette Pools on June 22, 1949." He reopened them desegregated in 1950, after a federal court ruling (Allen, 2022). "There are no monuments or markers to teach the story of the pool riot" (Allen, 2022).
-
-**Compare with Anacostia in the same summer:** the same sequence, attack, closure, court or federal decision, desegregated reopening the next June. **And with Kansas City:** the city's lawyers cited the St. Louis riot as a reason to keep Swope segregated (lesson 19).
-
-## Sources
-- ${ALLEN_2022}`,
-  },
-  {
-    slug: "bb-held-belle-isle-1943",
-    title: "HELD · Detroit, June 1943: Belle Isle",
-    section: "Section 5 · The same fight in other cities",
-    body: `> **Content note.** This lesson concerns the 1943 Detroit riot, which began at a city park and left 34 people dead. It gives counts only, and there are no images.
-
-## A shared park
-
-Belle Isle is an island park in the Detroit River, owned by the city, where white and Black residents fished, picnicked, boated and played sports. As Detroit's Black population grew, the National Park Service's theme study says, they "mingled with occasional fights over things like outdoor grills and fishing spots" (Kahrl & Cammeron, 2022, p. 59).
-
-## June 1943
-
-In June 1943 white sailors attacked Black visitors to the park, and separately white women beat a Black woman; rumors spread and the violence grew (Kahrl & Cammeron, 2022, p. 59). A National Park Service lesson dates the first fight to the evening of June 20, 1943. **"Twenty-five African Americans were killed, 17 of them by police"**; 34 people died in all; authorities reported about 675 injured; 6,000 soldiers were sent in (Lane, 2022). The theme study gives "over 600" injured (Kahrl & Cammeron, 2022, p. 59).
-
-## Why it belongs beside Belmont
-
-Belle Isle was not assigned to anyone. **It was shared, and the sharing was what was contested.** The same summer of 1943 that ended Belmont Beach with a sewage closure, a shared park in Detroit ended in a riot. Neither event explains the other.
-
-## Sources
-- ${KAHRL_2022} Locator: printed p. 59 (PDF p. 67), citing Wolcott (2012), p. 43.
-- ${LANE_2022}`,
-  },
-  {
-    slug: "bb-held-biloxi-wade-ins",
-    title: "HELD · Biloxi, 1959 to 1968: the wade-ins",
-    section: "Section 5 · The same fight in other cities",
-    body: `> **Content note.** This lesson describes a 1960 mob attack and shootings on and near a public beach. The death toll is disputed between sources, and the lesson shows the dispute. There are no images.
-
-## A public beach with no law
-
-Biloxi's beachfront was built with public money, including federal funds. On **May 14, 1959**, Dr. Gilbert R. Mason and eight others staged the first wade-in (Mississippi Department of Archives and History [MDAH], n.d.). In October 1959 Mason and two others petitioned the county board of supervisors for "unrestrained use of the beach," pointing out that no law barred Black people from it and that public funds had built it. Mason rejected a separate "colored" section: Black people wanted "all twenty-six miles" (Kahrl & Cammeron, 2022, p. 99). The board refused; the state's Sovereignty Commission surveilled the petitioners, and at least three signers were fired (Kahrl & Cammeron, 2022, p. 99).
-
-## April 1960
-
-On April 17, 1960, Mason swam alone and was arrested for disorderly conduct (MDAH, n.d.; Kahrl & Cammeron, 2022, p. 99). A larger wade-in followed the next Sunday.
-
-**The sources disagree on what happened next.**
-
-| Source | Date | How many came | Casualties |
-|---|---|---|---|
-| NPS theme study, citing the *New York Times* | April 24, 1960 | Nearly 125 | Eight Black and two white people shot; at least fifteen seriously injured |
-| City of Biloxi (2018) | April 24, 1960 | 125 | "Two African-American men were murdered" |
-| MDAH finding aid | April 25, 1960 | Fifty | "Two people were killed and over twenty people were injured" |
-
-**This card does not settle it.** A published history of the wade-ins (the work of James Patterson Smith or J. Michael Butler) should be read before any number of deaths is taught as fact.
-
-## What the federal government did
-
-On May 17, 1960, the Justice Department sued Harrison County, arguing that federal money for the beach obliged equal access: "the first time the federal government had used the appropriation of federal dollars to enforce equal access to public recreational amenities" (Kahrl & Cammeron, 2022, p. 100). The beaches were integrated on **August 16, 1968** (City of Biloxi, 2018). A Mississippi Freedom Trail marker was added in 2018 (City of Biloxi, 2018).
-
-**Link:** REST-04's Gulfside Assembly lessons, when built, will show the theme study's note that state investigators passed over Gulfside during the wade-ins (Kahrl & Cammeron, 2022, p. 104).
-
-## Sources
-- ${BILOXI_2018}
-- ${KAHRL_2022} Locator: printed pp. 99 to 100, 104 (PDF pp. 107 to 108, 112).
-- ${MDAH_MASON}`,
-  },
-];
