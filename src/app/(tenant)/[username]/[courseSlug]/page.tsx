@@ -206,7 +206,8 @@ export default async function CourseBySlugPage({ params }: Params) {
         courseSlug,
         courseHref: base,
         sectionTitle: (l.moduleId ? moduleTitles.get(l.moduleId) : null) ?? null,
-        lessonTitle: l.title,
+        // As the syllabus names it: a live tour drops "(360 tour, forthcoming)" (plans/96 v2).
+        lessonTitle: titleOf(l),
         // Stamp what the learner is actually downloading, so /downloads can later tell them the
         // instructor has changed the course since (see courses.content_version).
         courseId: course.id,
@@ -270,7 +271,7 @@ export default async function CourseBySlugPage({ params }: Params) {
       // clicked without navigating. It renders itself away for locked lessons (never registered
       // with the provider) and in browsers with no Cache API.
       <li key={lesson.id} className="flex items-center gap-1">
-        <OfflineLessonCheckbox pagePath={pagePath} lessonTitle={lesson.title} />
+        <OfflineLessonCheckbox pagePath={pagePath} lessonTitle={titleOf(lesson)} />
         {access.open ? (
           <Link
             href={pagePath}

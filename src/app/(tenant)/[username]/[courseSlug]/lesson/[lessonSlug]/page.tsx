@@ -136,7 +136,8 @@ export default async function LessonPage({ params }: Params) {
     courseSlug,
     courseHref: base,
     sectionTitle: (l.moduleId ? moduleTitles.get(l.moduleId) : null) ?? null,
-    lessonTitle: l.title,
+    // As the rail names it: a live tour drops "(360 tour, forthcoming)" (plans/96 v2).
+    lessonTitle: titleOf(l),
   });
   const nextOffline: SavableLesson | null = next
     ? { pagePath: `${base}/lesson/${next.slug}`, mediaUrl: directMediaUrl(next), meta: offlineMeta(next) }
