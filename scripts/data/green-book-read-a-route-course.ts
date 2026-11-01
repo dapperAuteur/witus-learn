@@ -1177,13 +1177,17 @@ The first sentence is a claim about the world that you have not proved. The seco
 
 **Amber markers: route evidence from the 1940 edition.** Tulsa, Amarillo, Deming, and San Bernardino are the four points that make lesson 11 concrete. Amarillo is the last listed U.S. 66 stop going west; San Bernardino is the next one; Deming is the whole of New Mexico that year and it is nowhere near the road.
 
+**One green marker carries a date the sources disagree on, and you should see the disagreement rather than a tidy number.** Winks Panorama, the mountain lodge at Pinecliffe, Colorado, was built in 1925 according to the National Park Service's place page for it, which also says the property was used from 1925 to 1965 (National Park Service, 2021). The Park Service's 2022 African American outdoor recreation theme study, written as the survey for National Historic Landmark designation, says Obrey Wendall "Winks" Hamlet opened the lodge in 1928 and gives its period of significance as 1928 to 1965 (Kahrl & Cammeron, 2022, pp. 56, 174). **This map uses 1928**, because the theme study is the later document, it footnotes the lodge's National Register nomination and its 2014 boundary increase, and it was written as the survey for landmark designation, while the place page is a short summary. **That is a reason to prefer one source, not proof.** A lodge can be built in one year and open to guests in another, and the nomination file would settle it.
+
 **Coordinates on this map are approximate city centers, taken from OpenStreetMap's gazetteer**, not the coordinates of individual buildings. Do not use them to find an address. Use them to see the shape of the evidence.
 
 **What the map cannot show you.** It cannot show absence, because a marker only exists where something was recorded. Every empty stretch on this map is a question from lesson 12, not an answer.
 
 ## Sources
 - Green, V. H. (Ed.). (1940). *The Negro motorist Green book: 1940*. Victor H. Green. Schomburg Center for Research in Black Culture, The New York Public Library. https://digitalcollections.nypl.org/collections/the-green-book
+- Kahrl, A. W., & Cammeron, M. (2022). *African American outdoor recreation theme study: Historic context and National Historic Landmark survey*. National Park Service; Organization of American Historians. https://www.nps.gov/subjects/nationalhistoriclandmarks/upload/African-American-Outdoor-Recreation-National-Historic-Landmark-Theme-Study.pdf (printed p. 56 is PDF p. 64; printed p. 174 is PDF p. 182)
 - National Park Service. (n.d.-b). *Green Book properties listed in the National Register of Historic Places*. https://www.nps.gov/articles/green-book-properties-listed-in-the-national-register-of-historic-places.htm
+- National Park Service. (2021, August 10). *Winks Panorama*. https://www.nps.gov/places/winks-panorama.htm
 - OpenStreetMap contributors. (n.d.). *Nominatim gazetteer*. https://nominatim.openstreetmap.org/`,
       mapContent: {
         atlas: "us-states",
@@ -1294,7 +1298,7 @@ The first sentence is a claim about the world that you have not proved. The seco
             title: "Pinecliffe, Colorado",
             color: "#15803d",
             description:
-              "Winks Panorama, a historic African American mountain resort used between 1925 and 1965. Proof that the guide covered leisure and not only necessity: Green also listed golf courses, country clubs, and parks.",
+              "Winks Panorama, a historic African American mountain lodge in Lincoln Hills, open from 1928 to 1965 by the National Park Service's 2022 theme study, which this map follows; the Park Service's own 2021 place page says it was built in 1925 and used from 1925. Sources differ, and the text above this map says why it uses 1928. Proof that the guide covered leisure and not only necessity: Green also listed golf courses, country clubs, and parks.",
           },
           {
             id: "gbr-cincinnati",
