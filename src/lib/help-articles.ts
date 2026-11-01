@@ -451,6 +451,8 @@ clears a qualified-reviewer need.`,
       "tour",
       "virtual tour",
       "360",
+      "360 photo",
+      "panorama",
       "forthcoming",
       "field log",
       "capture",
@@ -459,7 +461,11 @@ clears a qualified-reviewer need.`,
       "permission",
       "permission note",
       "consent",
+      "people in frame",
+      "attest",
       "credit",
+      "edit credit",
+      "check link",
       "use in a lesson",
       "drive",
     ],
@@ -469,8 +475,8 @@ Some lessons are **tour lessons**: a virtual tour of a place, written to work be
 one is added, the lesson says its tour is forthcoming. If you filmed or photographed the place yourself and
 logged it in **My Field Log**, you can put that capture into the lesson.
 
-**Who can do this:** the platform owner, or the course's own instructor. The capture has to be in a Field
-Log project you are on.
+**Who can do this:** the platform owner, the course's own instructor, or the school's admin (on any course
+of the school that is not owner-only). The capture has to be in a Field Log project you are on.
 
 ## Before you start: the permission note
 
@@ -480,16 +486,32 @@ agreed by email on October 2." Add it when you create the leg, in the leg's **Us
 your route import file. **A capture on a leg with no permission note cannot be used.** Do not put anyone's
 phone number or email in it.
 
+## 360 photos
+
+When you log a photo, tick **This is a 360 photo** if it is a full 360 picture (the wide 2:1 image a 360
+camera saves). For a photo you already logged, tick **360** beside it in the **Captures** list. A 360 photo
+opens in the lesson as a view the learner can look around in: drag it, or click it and use the arrow keys,
+with plus and minus to zoom. A **View as a flat image** link under it opens the file itself.
+
+The 360 view needs a link to **the image file itself** (one ending in .jpg, for example). A Google Drive link
+shows the photo flat, in Drive's own preview. If the site holding the file does not allow other sites to
+read it, the lesson shows the photo flat and says so. Nothing is uploaded here either way.
+
 ## Adding the tour
 
 1. Open the project in **My Field Log**, go to **Legs**, and open **Use in a lesson** on the stop.
 2. Pick the **lesson**. If the stop's notes link to a lesson (a path like /yourname/your-course/lesson/its-slug),
-   that one is picked for you. Only empty tour lessons in your own courses are listed.
-3. Pick the **capture**. Captures that cannot be used are grayed out with the reason.
+   that one is picked for you. Only empty tour lessons you may fill are listed.
+3. Pick the **capture**. Captures that cannot be used are grayed out with the reason. A 360 photo is marked
+   **360**.
 4. Check the **credit**, which shows under the tour as plain text, for example "Photo by Jordan Lee at
    Fort Benjamin Harrison, Lawrence, Indiana, October 2026." Edit it if someone else on the crew took it
    (up to 400 characters).
-5. Press **Confirm**. The tour is on the lesson straight away; nobody has to approve it.
+5. Confirm the people in the frame by ticking **No identifiable person appears in this capture, or each one
+   has consent recorded on it.** Consent in the Field Log is logged for the subject you named; this covers
+   anyone else who can be recognized, a passer-by or a child included. Without the tick, the tour is not
+   added and you are told why.
+6. Press **Confirm**. The tour is on the lesson straight away; nobody has to approve it.
 
 ## What can never be used
 
@@ -501,7 +523,8 @@ The server refuses, and tells you why, when:
 - it has no **https** link to where the file lives (media is link only: nothing is uploaded here);
 - the link **cannot be shown** in a lesson: link one file (a Google Drive file, a YouTube or Vimeo video, or
   an image or video file), not a folder, a channel, or an audio file;
-- its stop has **no permission note**.
+- its stop has **no permission note**;
+- the people in the frame were **not confirmed** (step 5).
 
 ## Checked again on every view
 
@@ -511,13 +534,23 @@ capture's link changes, or the capture is deleted, the tour comes off the lesson
 back to saying its tour is forthcoming.
 
 While a tour is showing, the lesson's title drops "(360 tour, forthcoming)" and the opening paragraph that
-says the tour is not here yet is hidden, because neither is true any more.
+says the tour is not here yet is hidden, because neither is true any more. The same cleaned title shows in
+the course page, offline downloads and course search.
 
-## Seeing and removing tours
+## Seeing, fixing and removing tours
 
 **Teach, Tours** (/teach/tours, linked from the top of **Teach**) lists every tour lesson in your courses:
 **Empty**, **Shown, from the field** (with its credit and the link's site), **Hidden** (with the reason), or
-**Has its own tour link**. **Remove tour** empties the slot again; the capture stays in your Field Log.
+**Has its own tour link**. On each tour:
+
+- **Check link** asks the link's site, once, whether it still answers, and shows the answer under the
+  button. It names the site the link ended up on when that is a different one: open it to check that it is
+  the file and not a sign-in page. Nothing is saved, and nothing is checked on a schedule.
+- **Edit credit** fixes the credit in place (up to 400 characters). **Save** puts it on the lesson; **Cancel**
+  leaves it as it was.
+- **Attestation not recorded** marks a tour added before step 5 existed. It stays on the lesson. Open the
+  capture, check who is in it, and press **Attest** to confirm the same sentence.
+- **Remove tour** empties the slot again; the capture stays in your Field Log.
 
 Learners cannot send you a tour to add. That would be a request list, which this app does not keep.`,
   },
