@@ -159,6 +159,19 @@ export const STAGED_COURSES: string[] = [
   // interracial play from one book), it names figures it refuses to state, and Section 7 reports two
   // Peterson figures as attributed rather than verified because the page carrying them returns 403.
   "negro-leagues",
+  // REST-01 Fox Lake and REST-05 Belmont Beach, staged 2026-11-01 WHILE HELD for community review, so the
+  // reviewers BAM invites as auditors (the Fox Lake Preservation Foundation, the Friends of Belmont Beach)
+  // can verify every source from /audit/citations (BAM: "ensure all sources for content are included so
+  // the vetter may read them"). This publishes nothing: the board shows a course only to the platform
+  // owner and to holders of an accepted audit grant for it, and both courses' full text is already in this
+  // public repository (scripts/data/fox-lake-course.ts, belmont-beach-course.ts), unlike the private-course
+  // texts this list keeps out. Their rows (and where-we-rested's, refreshed for its 2026-11-01 edits) were
+  // computed from the committed modules the seeder stores, because the sandbox that staged them may not
+  // read the database; the next `pnpm gen:citations` after the seed rewrites them with the same keys.
+  // A verifier should expect hedged conflicts, not errors: each course's "what was cut" lesson lists them,
+  // and the sources packets (plans/outreach/*-sources-packet.md) give every source's access route.
+  "fox-lake-indianas-lake-of-its-own",
+  "belmont-beach-and-the-citys-water",
   // Every other PUBLIC course with sourced lessons in production, staged at once (BAM, 2026-10-26:
   // "stage all"). Listed from the database: visibility other than private, and lessons carrying
   // ## Sources or ## References. Private courses stay out (README: none is staged while private),
