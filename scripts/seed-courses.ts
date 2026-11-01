@@ -219,6 +219,7 @@ import { HOW_THE_TOOLS_TRAVELLED_COURSE } from "./data/how-the-tools-travelled-c
 import { JIM_CROW_EXPORT_COURSE } from "./data/jim-crow-export-course";
 import { SCHOOLHOUSE_NETWORK_COURSE } from "./data/schoolhouse-network-course";
 import { WHERE_WE_RESTED_COURSE } from "./data/where-we-rested-course";
+import { FOX_LAKE_COURSE } from "./data/fox-lake-course";
 import { WHAT_THEY_BUILT_COURSE } from "./data/what-they-built-course";
 import { NEGRO_LEAGUES_COURSE } from "./data/negro-leagues-course";
 import { WHAT_A_BUSINESS_ENTITY_IS_COURSE } from "./data/what-a-business-entity-is-course";
@@ -2116,7 +2117,19 @@ async function main() {
     // to people. These teach what was built, on its own terms. Governing rule, stated in each
     // course: never use a positive to soften a negative. The claim is co-occurrence, not balance.
     { slug: "the-schoolhouse-network", course: SCHOOLHOUSE_NETWORK_COURSE, category: "Culture & History" },
-    { slug: "where-we-rested", course: WHERE_WE_RESTED_COURSE, category: "Culture & History" },
+    // REST-00 of "A Place of Our Own: Black Resorts, Retreats and Vacation Towns" (BAM approved the
+    // series brief, plans/94, on 2026-11-01). Retro-coded only; REST-01 Fox Lake is registered after
+    // this loop. Briefs: cloud-briefs/rest-00 to rest-04.
+    {
+      slug: "where-we-rested",
+      course: WHERE_WE_RESTED_COURSE,
+      category: "Culture & History",
+      seriesSlug: "places-of-our-own",
+      seriesTitle: "A Place of Our Own: Black Resorts, Retreats and Vacation Towns",
+      seriesOrder: 0,
+      seriesCode: "REST",
+      seriesPosition: "00",
+    },
     // "What They Built" is the track's economics course: five districts read as firms, out of
     // charters, insurance filings and city directories, around the question nobody teaches — how do
     // you capitalise a business district when banks will not lend to you? It enforces the rule
@@ -3411,6 +3424,27 @@ async function main() {
       seriesTrack,
     });
   }
+  // REST-01 Fox Lake: Indiana's Lake of Its Own, approved by BAM 2026-11-01 (plans/94; brief
+  // cloud-briefs/rest-01/00-approved-brief.md). A six-beat site course on the Black lake resort near
+  // Angola, read from the 2001 and 2026 National Register nominations, the Indiana Green Book MPDF and
+  // the 2022 state marker. Public-ready; held until the Fox Lake Preservation Foundation has had about
+  // three weeks to review it (BAM's answer 4; user task 382). New rows insert private and unpublished
+  // anyway (NEW_COURSE_STATE). Not in STAGED_COURSES until it is seeded and released.
+  await seedAuthoredCourse(db, {
+    tenantId: learnWitus,
+    instructorId,
+    slug: "fox-lake-indianas-lake-of-its-own",
+    course: FOX_LAKE_COURSE,
+    category: "Culture & History",
+    navigationMode: "linear",
+    seriesSlug: "places-of-our-own",
+    seriesTitle: "A Place of Our Own: Black Resorts, Retreats and Vacation Towns",
+    seriesOrder: 1,
+    seriesCode: "REST",
+    seriesPosition: "01",
+    publishHoldReason:
+      "Held for community review: the Fox Lake Preservation Foundation is asked to read the course over about three weeks, with authority to change or cut any of it, before release (BAM, 2026-11-01). Images other than the Indiana Album clubhouse photograph need permission.",
+  });
   // Hold BOTH Hoodoo courses from publishing, and make the comprehensive one PRIVATE
   // (owner-only). These rows predate the private-by-default insert (2026-10-28), so the update still
   // re-asserts their state on every run.

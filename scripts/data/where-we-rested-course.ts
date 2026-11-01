@@ -2160,6 +2160,7 @@ A reported **25 by 100 foot** Idlewild lot and a roughly **70 by 30 foot** Oak B
 
 - **The Green Book: How to Read a Route** is the prerequisite. If you skipped it, the listings method in it applies directly to Shearer Cottage and to every lodging business named here.
 - **The site courses in the route series** teach the other half of the calendar: the clearance, the alignments, the designations and the demolitions. **This course was built to run beside them, not to answer them.**
+- **This course is REST-00 of a series, A Place of Our Own: Black Resorts, Retreats and Vacation Towns.** Its next course, **Fox Lake: Indiana's Lake of Its Own** (\`fox-lake-indianas-lake-of-its-own\`), applies this course's method to the one Black lake resort in Indiana, read from its two National Register nominations.
 
 ## The last thing
 
