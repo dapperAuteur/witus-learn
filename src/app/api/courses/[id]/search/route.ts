@@ -3,6 +3,8 @@ import { isEnrolled } from "@/db/queries/enrollment";
 import { getActiveLearner } from "@/lib/active-learner";
 import { isUnvetted } from "@/lib/vetting";
 import { searchLessons } from "@/lib/course-search";
+import { withTourDisplay } from "@/lib/field-log-tour";
+import { liveToursForCourse } from "@/lib/lesson-tours";
 
 type Params = { params: Promise<{ id: string }> };
 
@@ -54,5 +56,9 @@ export async function GET(req: Request, { params }: Params) {
   }
 
   const rows = await sdb.listPublishedLessonSearchRows(course.id);
-  return json({ results: searchLessons(rows, q) });
+  // A tour lesson whose tour is live is searched and named as the lesson page shows it: without
+  // "(360 tour, forthcoming)" and without the paragraph saying the tour is not here (plans/96 v2).
+  const tours = await liveToursForCourse(course.id, rows);
+  const shown = rows.map((r) => withTourDisplay(r, tours));
+  return json({ results: searchLessons(shown, q) });
 }

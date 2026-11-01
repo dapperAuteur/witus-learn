@@ -17,6 +17,9 @@ export interface CourseSearchLesson {
   slug: string | null;
   title: string;
   body: string | null;
+  /** So the route can tell a tour slot and show a filled one's cleaned title (plans/96 v2). */
+  lessonType: string;
+  contentUrl: string | null;
 }
 
 /** id/slug/title/body of the PUBLISHED lessons of one course, for THIS tenant, in course order. */
@@ -30,6 +33,8 @@ export async function listPublishedLessonSearchRows(
       slug: lessons.slug,
       title: lessons.title,
       body: lessons.textContent,
+      lessonType: lessons.lessonType,
+      contentUrl: lessons.contentUrl,
     })
     .from(lessons)
     .innerJoin(courses, and(eq(courses.id, lessons.courseId), eq(courses.tenantId, tenantId)))
