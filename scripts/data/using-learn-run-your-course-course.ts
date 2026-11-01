@@ -8,6 +8,12 @@
 // order: live-sessions, streaming-and-multistream, learner-feedback-and-reports,
 // notes-and-annotations, in-course-search, ai-tools-embeddings-audit.
 //
+// SECTION 3 (added 2026-11-01): one lesson, `tours-from-field-log`, and its quiz, beyond the brief's
+// six. Plans/96 (the Tours from the field PRD, approved by BAM 2026-11-01 in task 386) makes a Run
+// Your Course lesson teaching it an acceptance criterion and deletes its WAIVED line in
+// tests/using-learn-series.test.ts. The final quiz moves to Section 3, as in the other three-section
+// courses of the series, and gains three tour questions (pool 28).
+//
 // ASSESSMENT SIZE: the series exception recorded in using-learn-shared.ts (rubric D2, BAM
 // 2026-09-22). Each section quiz pools 10 and serves 5; the final pools 25, serves 10, passes at
 // 80. Every question carries `explanation` and `sourceLessonSlug`, and every teaching section has
@@ -30,11 +36,12 @@ import { finalQuiz, helpLesson, sectionQuiz } from "./using-learn-shared";
 
 const S1 = "Section 1 · Live and streaming";
 const S2 = "Section 2 · What your learners send back";
+const S3 = "Section 3 · Tours from the field";
 
 export const USING_LEARN_RUN_YOUR_COURSE_COURSE: AuthoredCourse = {
   title: "Teach and run your course",
   description:
-    "Schedule live sessions, keep an always-on stream running between them, and fan one broadcast out to your socials. Then read everything your learners send back: lesson feedback, problem reports, the notes they share with you, and the searches that show what they were looking for.",
+    "Schedule live sessions, keep an always-on stream running between them, and fan one broadcast out to your socials. Then read everything your learners send back: lesson feedback, problem reports, the notes they share with you, and the searches that show what they were looking for. Last, fill your tour lessons with photos and video from your own Field Log.",
   lessons: [
     // ══════════════════════════════════════════════════════════════════════
     // SECTION 1 · Live and streaming
@@ -336,7 +343,147 @@ export const USING_LEARN_RUN_YOUR_COURSE_COURSE: AuthoredCourse = {
         sourceLessonSlug: "ai-tools-embeddings-audit",
       },
     ]),
-    finalQuiz(S2, [
+    // ══════════════════════════════════════════════════════════════════════
+    // SECTION 3 · Tours from the field (added 2026-11-01, plans/96 v2, acceptance 9)
+    // ══════════════════════════════════════════════════════════════════════
+    helpLesson(
+      "tours-from-field-log",
+      S3,
+      "Open a project in My Field Log, give one stop a permission note, and log a photo on that stop (tick This is a 360 photo if it is one). Open Use in a lesson on the stop, pick an empty tour lesson in your own course, tick the people-in-frame box and press Confirm. Then open Teach, Tours, press Check link and Edit credit on the new tour, and open the lesson to see it.",
+    ),
+    sectionQuiz(S3, 3, [
+      {
+        prompt: "Who may put a Field Log capture into a tour lesson?",
+        options: [
+          "The owner, its instructor or a school admin",
+          "Any learner who is enrolled in the course",
+          "Any crew member on the Field Log project",
+          "Only a reviewer the instructor has invited",
+        ],
+        correctIndex: 0,
+        explanation:
+          "The platform owner, the course's own instructor, or the school's admin on a course that is not owner-only. Being on the Field Log project is needed too, but on its own it is not enough.",
+        sourceLessonSlug: "tours-from-field-log",
+      },
+      {
+        prompt: "What must a stop carry before any of its captures can fill a tour?",
+        options: [
+          "A pin placed on the course's map lesson",
+          "A permission note on what covers filming",
+          "A signed release uploaded for each person",
+          "A visited tick from every crew member",
+        ],
+        correctIndex: 1,
+        explanation:
+          "Each leg needs a permission note, such as \"Public viewpoint, no permission needed\". A capture on a leg without one cannot be used, and nothing is uploaded here.",
+        sourceLessonSlug: "tours-from-field-log",
+      },
+      {
+        prompt: "A capture involves a minor. Which consent lets it fill a tour?",
+        options: [
+          "Verbal consent, as long as it was recorded",
+          "No identifiable person, ticked by the crew",
+          "Written consent from a parent or guardian",
+          "On the record, given by the minor themself",
+        ],
+        correctIndex: 2,
+        explanation:
+          "A capture involving a minor is refused under every consent status except written: a parent or guardian's yes, in writing.",
+        sourceLessonSlug: "tours-from-field-log",
+      },
+      {
+        prompt: "What makes a photo open in the look-around 360 view?",
+        options: [
+          "Its link opens a Google Drive file page",
+          "Its credit line says it is a 360 capture",
+          "Its lesson title ends with (360 tour)",
+          "It is marked 360 and links the image file",
+        ],
+        correctIndex: 3,
+        explanation:
+          "Tick This is a 360 photo (or 360 in the Captures list) and link the image file itself. A Google Drive link shows the photo flat, in Drive's own preview.",
+        sourceLessonSlug: "tours-from-field-log",
+      },
+      {
+        prompt: "How does a learner look around a 360 tour without a mouse?",
+        options: [
+          "Click it and use the arrow keys to turn",
+          "Press Space to start it spinning slowly",
+          "Use Tab to step between saved viewpoints",
+          "Open the transcript and pick a direction",
+        ],
+        correctIndex: 0,
+        explanation:
+          "The view works from the keyboard: arrow keys look around, plus and minus zoom. It never spins on its own, and it has no saved viewpoints or transcript.",
+        sourceLessonSlug: "tours-from-field-log",
+      },
+      {
+        prompt: "What does ticking the people-in-frame box confirm?",
+        options: [
+          "That the leg's permission note is complete",
+          "Nobody identifiable is in it without consent",
+          "That the credit names everyone who appears",
+          "That the capture's link is shared publicly",
+        ],
+        correctIndex: 1,
+        explanation:
+          "It confirms no identifiable person appears, or each one has consent recorded. Consent is logged for the subject you named, so this covers passers-by and children too.",
+        sourceLessonSlug: "tours-from-field-log",
+      },
+      {
+        prompt: "You press Confirm without ticking the people-in-frame box. What happens?",
+        options: [
+          "The tour is added with a warning label on it",
+          "The tour waits for the school admin to agree",
+          "The tour is refused, and you are told why",
+          "The tour is added but hidden from learners",
+        ],
+        correctIndex: 2,
+        explanation:
+          "The server refuses it and shows the sentence to confirm. Nothing is queued for anyone to approve, and nothing is added.",
+        sourceLessonSlug: "tours-from-field-log",
+      },
+      {
+        prompt: "What does Check link on Teach, Tours do?",
+        options: [
+          "Checks every link nightly and emails you",
+          "Copies the file here so it cannot break",
+          "Swaps a dead link for your newest capture",
+          "Asks the link's site once if it answers",
+        ],
+        correctIndex: 3,
+        explanation:
+          "It asks once, when you press it, and shows the answer under the button. Nothing is saved, nothing runs on a schedule, and no file is copied.",
+        sourceLessonSlug: "tours-from-field-log",
+      },
+      {
+        prompt: "A tour on Teach, Tours says Attestation not recorded. What is true?",
+        options: [
+          "It is hidden from learners until you attest",
+          "It was added before the people-in-frame box",
+          "Its subject declined after it was published",
+          "Its link has not been checked in a month",
+        ],
+        correctIndex: 1,
+        explanation:
+          "The label marks a tour added before the people-in-frame confirmation existed. It stays on the lesson; check the capture and press Attest.",
+        sourceLessonSlug: "tours-from-field-log",
+      },
+      {
+        prompt: "A subject's consent is changed to declined after the tour is live. What happens?",
+        options: [
+          "It comes off the lesson the next time it opens",
+          "It stays until the instructor removes it",
+          "It stays, since it was approved when added",
+          "It is blurred until the subject agrees again",
+        ],
+        correctIndex: 0,
+        explanation:
+          "Every view runs the rules again against the capture as it stands, so a declined subject takes the tour off at once and the lesson goes back to saying its tour is forthcoming.",
+        sourceLessonSlug: "tours-from-field-log",
+      },
+    ]),
+    finalQuiz(S3, [
       {
         prompt: "What do you set on a live session besides its player embed URL?",
         options: [
@@ -661,6 +808,45 @@ export const USING_LEARN_RUN_YOUR_COURSE_COURSE: AuthoredCourse = {
         explanation:
           "Instructor tools sit at the bottom of the course page when you are its instructor, which is where the re-index badge shows up too.",
         sourceLessonSlug: "ai-tools-embeddings-audit",
+      },
+      {
+        prompt: "Where do you fix a misspelled credit on a live tour?",
+        options: [
+          "In the lesson editor's body text field",
+          "With Edit credit on Teach, Tours",
+          "In the stop's permission note field",
+          "In the course page's Instructor tools",
+        ],
+        correctIndex: 1,
+        explanation:
+          "Edit credit on Teach, Tours fixes it in place, up to 400 characters. The permission note and the lesson body are different fields, and Instructor tools has no credit control.",
+        sourceLessonSlug: "tours-from-field-log",
+      },
+      {
+        prompt: "A 360 photo is linked from Google Drive. How does the lesson show it?",
+        options: [
+          "As a 360 view learners can look around",
+          "Not at all: Drive links are refused",
+          "Flat, in Google Drive's own preview",
+          "As a download link with no picture",
+        ],
+        correctIndex: 2,
+        explanation:
+          "A Drive link shows the photo flat in Drive's own preview. The 360 view needs a link to the image file itself. Drive file links are allowed; folders are not.",
+        sourceLessonSlug: "tours-from-field-log",
+      },
+      {
+        prompt: "What does Remove tour on Teach, Tours do to the capture?",
+        options: [
+          "Deletes it from the Field Log project",
+          "Marks its subject as having declined",
+          "Moves it to another empty tour slot",
+          "Nothing: it stays in your Field Log",
+        ],
+        correctIndex: 3,
+        explanation:
+          "Remove tour empties the lesson's slot again. The capture stays in your Field Log, untouched.",
+        sourceLessonSlug: "tours-from-field-log",
       },
     ]),
   ],
