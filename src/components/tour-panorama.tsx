@@ -1,7 +1,9 @@
 "use client";
 
 import dynamic from "next/dynamic";
-import { useState } from "react";
+import { useRef, useState } from "react";
+import { capture } from "@/lib/analytics/capture";
+import { EVENTS } from "@/lib/analytics/events";
 
 // A tour from the field that is a 360 photo (plans/96 v2). The viewer's code is a separate chunk,
 // fetched only when this renders, which is only on a lesson whose tour is a 360 photo: no other page
@@ -23,8 +25,16 @@ const PanoramaViewer = dynamic(() => import("./panorama-viewer").then((m) => m.P
   ),
 });
 
-export function TourPanorama({ src, title, onOpened }: { src: string; title: string; onOpened?: () => void }) {
+export function TourPanorama({ src, title, lessonId }: { src: string; title: string; lessonId: string }) {
   const [failed, setFailed] = useState(false);
+  const opened = useRef(false);
+  // Counted when the photo is actually on screen in the viewer, once per page view; a fallback to
+  // the flat image is not an open.
+  function onReady() {
+    if (opened.current) return;
+    opened.current = true;
+    capture(EVENTS.tourViewerOpened, { lesson_id: lessonId });
+  }
 
   if (failed) {
     return (
@@ -40,7 +50,7 @@ export function TourPanorama({ src, title, onOpened }: { src: string; title: str
 
   return (
     <div className="space-y-1">
-      <PanoramaViewer src={src} label={`360 tour: ${title}`} onError={() => setFailed(true)} onReady={onOpened} />
+      <PanoramaViewer src={src} label={`360 tour: ${title}`} onError={() => setFailed(true)} onReady={onReady} />
       <p className="flex flex-wrap items-center justify-between gap-x-4 gap-y-1 text-xs text-neutral-600 dark:text-neutral-400">
         <span>Look around: drag, or use arrow keys. Plus and minus zoom.</span>
         <a href={src} target="_blank" rel="noopener noreferrer" className="inline-flex min-h-11 items-center underline">

@@ -3,6 +3,8 @@
 import { useEffect, useId, useRef, useState } from "react";
 import { useRouter } from "next/navigation";
 import { PEOPLE_ATTESTATION_LABEL, TOUR_CREDIT_MAX } from "@/lib/field-log-tour";
+import { capture } from "@/lib/analytics/capture";
+import { EVENTS } from "@/lib/analytics/events";
 
 // The per-tour controls on /teach/tours (plans/96 v2): Check link, Edit credit, and Attest for a tour
 // published before the people-in-frame attestation existed. Remove stays its own button.
@@ -99,6 +101,7 @@ export function TeachTourActions({
       return;
     }
     setSaved(true);
+    capture(EVENTS.lessonTourCreditEdited, { course_id: courseId, lesson_id: lessonId });
     closeEditor();
     router.refresh();
   }

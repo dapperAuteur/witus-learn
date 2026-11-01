@@ -4,6 +4,8 @@ import { useState } from "react";
 import Link from "next/link";
 import type { ProjectLeg } from "@/db/schema/field-log";
 import { PEOPLE_ATTESTATION_LABEL, TOUR_CREDIT_MAX } from "@/lib/field-log-tour";
+import { capture } from "@/lib/analytics/capture";
+import { EVENTS } from "@/lib/analytics/events";
 import { apiRequest, patchJson, postJson } from "./client";
 
 // "Use in a lesson" (plans/93 section 2, tours from the field): put one of this leg's photos or
@@ -34,7 +36,12 @@ type TargetCapture = {
   credit: string;
 };
 type Targets = { slots: Slot[]; suggestedLessonId: string | null; captures: TargetCapture[]; permissionNote: string | null };
-type Published = { lessonTitle: string; courseTitle: string; href: string | null };
+type Published = {
+  lessonTitle: string;
+  courseTitle: string;
+  href: string | null;
+  tour?: { courseId: string; lessonId: string; mediaKind: string; projection: string };
+};
 
 const field = "w-full rounded-md border border-neutral-300 px-3 py-2 dark:border-neutral-700 dark:bg-neutral-900";
 
@@ -123,6 +130,14 @@ export function UseInLesson({
     }
     setAttested(false);
     setPublished({ lessonTitle: res.data.lessonTitle, courseTitle: res.data.courseTitle, href: res.data.href });
+    if (res.data.tour) {
+      capture(EVENTS.lessonTourPublished, {
+        course_id: res.data.tour.courseId,
+        lesson_id: res.data.tour.lessonId,
+        media_kind: res.data.tour.mediaKind,
+        projection: res.data.tour.projection,
+      });
+    }
     await load(); // the filled slot leaves the list
   }
 

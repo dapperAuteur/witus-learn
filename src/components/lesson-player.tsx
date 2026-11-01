@@ -186,7 +186,12 @@ export function LessonPlayer({
           {embed ? (
             <MediaEmbed src={embed.src} title={lesson.title} />
           ) : fieldTour ? (
-            <FieldTour media={fieldTour.media} credit={fieldTour.credit} title={displayTourTitle(lesson.title, true)} />
+            <FieldTour
+              media={fieldTour.media}
+              credit={fieldTour.credit}
+              title={displayTourTitle(lesson.title, true)}
+              lessonId={lesson.id}
+            />
           ) : (
             <p className="text-neutral-600">
               This lesson type ({lesson.lessonType}) has no media yet.
@@ -224,11 +229,11 @@ function MediaEmbed({ src, title }: { src: string; title: string }) {
 
 // A tour from the field: the capture's own link (never a hosted copy), with its credit as plain text.
 // A 360 photo opens in the look-around viewer (plans/96 v2), whose code loads only here.
-function FieldTour({ media, credit, title }: { media: TourMedia; credit: string; title: string }) {
+function FieldTour({ media, credit, title, lessonId }: { media: TourMedia; credit: string; title: string; lessonId: string }) {
   return (
     <figure className="space-y-2">
       {isPanorama(media) ? (
-        <TourPanorama src={media.src} title={title} />
+        <TourPanorama src={media.src} title={title} lessonId={lessonId} />
       ) : media.kind === "image" ? (
         // eslint-disable-next-line @next/next/no-img-element
         <img src={media.src} alt={`Tour photo: ${title}`} className="w-full rounded-lg border border-neutral-200 dark:border-neutral-800" />

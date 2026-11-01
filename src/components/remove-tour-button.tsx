@@ -2,6 +2,8 @@
 
 import { useState } from "react";
 import { useRouter } from "next/navigation";
+import { capture } from "@/lib/analytics/capture";
+import { EVENTS } from "@/lib/analytics/events";
 
 // Take a tour from the field off a lesson (/teach/tours). The slot goes back to empty and the lesson
 // back to its "forthcoming" wording; the capture in the Field Log is untouched.
@@ -21,6 +23,7 @@ export function RemoveTourButton({ courseId, lessonId, lessonTitle }: { courseId
       setError(data?.error ?? "Could not remove the tour. Please try again.");
       return;
     }
+    capture(EVENTS.lessonTourRemoved, { course_id: courseId, lesson_id: lessonId });
     router.refresh();
   }
 
