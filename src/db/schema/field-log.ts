@@ -138,6 +138,12 @@ export const projectCaptures = pgTable(
     involvesMinor: boolean("involves_minor").notNull().default(false),
     /** A LINK only (Drive / YouTube / the learner's Cloudinary / …) — never hosted by us. */
     storageUrl: text("storage_url"),
+    /**
+     * How a photo is shaped (plans/96 v2): "equirectangular" is a 360 photo, shown in a lesson's tour
+     * slot as a look-around view; "flat" (or null, every capture logged before this column) is an
+     * ordinary picture. Only a photo can be a 360 photo; the API refuses it on any other kind.
+     */
+    projection: text("projection"),
     notes: text("notes"),
     capturedAt: timestamp("captured_at", { withTimezone: true }),
     createdAt: timestamp("created_at", { withTimezone: true }).notNull().defaultNow(),
@@ -147,6 +153,7 @@ export const projectCaptures = pgTable(
     index("project_captures_leg_idx").on(t.legId),
     check("project_captures_kind_chk", sql`${t.kind} in ('photo','audio','video','document','interview','artifact','note')`),
     check("project_captures_consent_chk", sql`${t.consentStatus} in ('na','verbal_recorded','written','on_record','declined')`),
+    check("project_captures_projection_chk", sql`${t.projection} is null or ${t.projection} in ('flat','equirectangular')`),
   ],
 );
 

@@ -92,6 +92,7 @@ describe.skipIf(!HAS_DB)("tours from the field are tenant- and course-scoped", (
     url: link,
     creditLine: "Photo by Iso at the porch.",
     setBy: instructorId,
+    peopleAttestedAt: new Date(),
     ...over,
   });
 
@@ -103,6 +104,24 @@ describe.skipIf(!HAS_DB)("tours from the field are tenant- and course-scoped", (
     expect(acme.some((s) => s.lessonId === lessonA || s.lessonId === lessonB)).toBe(false);
     const stranger = await listTourSlots(bvcId, { userId: `nobody-${stamp}`, isOwner: false });
     expect(stranger.some((s) => s.lessonId === lessonA)).toBe(false);
+  });
+
+  it("lists a school admin every slot of the school except owner-only courses (plans/96 Q3)", async () => {
+    const { db } = await import("@/db/client");
+    const { courses } = await import("@/db/schema");
+    const { eq } = await import("drizzle-orm");
+    const { listTourSlots } = await import("@/db/queries/tour-embeds");
+    await db.update(courses).set({ ownerOnly: false }).where(eq(courses.id, courseA));
+    await db.update(courses).set({ ownerOnly: true }).where(eq(courses.id, courseB));
+    try {
+      const admin = await listTourSlots(bvcId, { userId: `admin-${stamp}`, isOwner: false, isSchoolAdmin: true });
+      expect(admin.some((s) => s.lessonId === lessonA)).toBe(true);
+      expect(admin.some((s) => s.lessonId === lessonB)).toBe(false);
+      const otherSchool = await listTourSlots(acmeId, { userId: `admin-${stamp}`, isOwner: false, isSchoolAdmin: true });
+      expect(otherSchool.some((s) => s.lessonId === lessonA || s.lessonId === lessonB)).toBe(false);
+    } finally {
+      await db.update(courses).set({ ownerOnly: false }).where(eq(courses.id, courseB));
+    }
   });
 
   it("refuses a tour written under another tenant or another course", async () => {
@@ -156,6 +175,54 @@ describe.skipIf(!HAS_DB)("tours from the field are tenant- and course-scoped", (
     expect(await listCourseTourEmbeds(bvcId, courseA)).toHaveLength(1);
     const [l] = await db.select().from(lessons).where(eq(lessons.id, lessonA)).limit(1);
     expect(l.contentUrl).toBeNull();
+  });
+
+  it("stores the attestation and reads the capture's projection (plans/96 v2)", async () => {
+    const { db } = await import("@/db/client");
+    const { projectCaptures } = await import("@/db/schema");
+    const { eq } = await import("drizzle-orm");
+    const { listCourseTourEmbeds } = await import("@/db/queries/tour-embeds");
+    await db.update(projectCaptures).set({ projection: "equirectangular" }).where(eq(projectCaptures.id, captureBvc));
+    const [row] = await listCourseTourEmbeds(bvcId, courseA);
+    expect(row.peopleAttestedAt).toBeInstanceOf(Date);
+    expect(row.capture?.projection).toBe("equirectangular");
+    await db.update(projectCaptures).set({ projection: null }).where(eq(projectCaptures.id, captureBvc));
+  });
+
+  it("refuses a projection the column does not allow", async () => {
+    const { db } = await import("@/db/client");
+    const { projectCaptures } = await import("@/db/schema");
+    const { eq } = await import("drizzle-orm");
+    await expect(
+      db.update(projectCaptures).set({ projection: "cubemap" }).where(eq(projectCaptures.id, captureBvc)),
+    ).rejects.toThrow();
+  });
+
+  it("edits a credit and records an attestation in its own tenant and course only", async () => {
+    const { updateLessonTourEmbed, getLessonTourUrl, listCourseTourEmbeds } = await import("@/db/queries/tour-embeds");
+    expect(await updateLessonTourEmbed({ tenantId: acmeId, courseId: courseA, lessonId: lessonA, creditLine: "Leak." })).toBeNull();
+    expect(await updateLessonTourEmbed({ tenantId: bvcId, courseId: courseB, lessonId: lessonA, creditLine: "Leak." })).toBeNull();
+    const when = new Date("2026-11-01T12:00:00Z");
+    const row = await updateLessonTourEmbed({
+      tenantId: bvcId,
+      courseId: courseA,
+      lessonId: lessonA,
+      creditLine: "Photo by Iso at the front porch.",
+      attestedAt: when,
+    });
+    expect(row?.creditLine).toBe("Photo by Iso at the front porch.");
+    expect(row?.peopleAttestedAt?.toISOString()).toBe(when.toISOString());
+    const [read] = await listCourseTourEmbeds(bvcId, courseA);
+    expect(read.creditLine).toBe("Photo by Iso at the front porch.");
+    expect(await getLessonTourUrl(acmeId, courseA, lessonA)).toBeNull();
+    expect(await getLessonTourUrl(bvcId, courseA, lessonA)).toBe(link);
+  });
+
+  it("the database refuses a credit over 400 characters on edit", async () => {
+    const { updateLessonTourEmbed } = await import("@/db/queries/tour-embeds");
+    await expect(
+      updateLessonTourEmbed({ tenantId: bvcId, courseId: courseA, lessonId: lessonA, creditLine: "x".repeat(401) }),
+    ).rejects.toThrow();
   });
 
   it("a tour cannot be removed from another tenant or another course", async () => {

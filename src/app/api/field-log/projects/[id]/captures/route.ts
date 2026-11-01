@@ -1,6 +1,7 @@
 import { z } from "zod";
 import { apiContext, errorJson, json } from "@/lib/api";
 import { addCapture } from "@/db/queries/field-log";
+import { CAPTURE_PROJECTIONS, checkCaptureProjection } from "@/lib/field-log-tour";
 
 type Params = { params: Promise<{ id: string }> };
 
@@ -12,6 +13,8 @@ const CaptureSchema = z.object({
   involvesMinor: z.boolean().optional(),
   // Link only — we never host media.
   storageUrl: z.string().url().max(2000).nullish(),
+  // "equirectangular" marks a 360 photo (plans/96 v2); photos only, checked below.
+  projection: z.enum(CAPTURE_PROJECTIONS).nullish(),
   notes: z.string().max(2000).nullish(),
   capturedAt: z.string().datetime().nullish(),
 });
@@ -23,6 +26,8 @@ export async function POST(req: Request, { params }: Params) {
   if (!session) return errorJson("Unauthorized", 401);
   const parsed = CaptureSchema.safeParse(await req.json().catch(() => null));
   if (!parsed.success) return errorJson("Invalid input", 400);
+  const projection = checkCaptureProjection(parsed.data.kind, parsed.data.projection);
+  if (!projection.ok) return errorJson(projection.error, 400);
   const { capturedAt, ...rest } = parsed.data;
   const capture = await addCapture(sdb.tenantId, session.user.id, id, {
     ...rest,

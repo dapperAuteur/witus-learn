@@ -1,6 +1,18 @@
 import "server-only";
 import { getScopedDb } from "@/db/scoped";
+import type { TourSlotViewer } from "@/db/queries/tour-embeds";
+import { getMembership, isPlatformOwner } from "@/lib/session";
 import { isEmptyTourSlot, liveToursByLesson, type TourMedia } from "@/lib/field-log-tour";
+
+/**
+ * Who is asking for tour slots, in the shape listTourSlots and canPublishTour read: the platform
+ * owner, a school admin of THIS tenant (plans/96 Q3), or anyone else (their own courses only).
+ */
+export async function tourSlotViewer(userId: string, tenantId: string): Promise<TourSlotViewer> {
+  const isOwner = await isPlatformOwner(userId);
+  const isSchoolAdmin = !isOwner && (await getMembership(userId, tenantId)) === "brand_admin";
+  return { userId, isOwner, isSchoolAdmin };
+}
 
 export type LiveLessonTour = { media: TourMedia; credit: string };
 

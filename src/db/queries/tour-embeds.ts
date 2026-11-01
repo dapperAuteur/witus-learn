@@ -1,5 +1,5 @@
 import "server-only";
-import { and, asc, eq } from "drizzle-orm";
+import { and, asc, eq, or } from "drizzle-orm";
 import { db } from "@/db/client";
 import {
   courses,
@@ -25,7 +25,9 @@ import type { StoredLessonTour, StoredTour } from "@/lib/field-log-tour";
 const storedTourFields = {
   url: lessonTourEmbeds.url,
   creditLine: lessonTourEmbeds.creditLine,
+  peopleAttestedAt: lessonTourEmbeds.peopleAttestedAt,
   captureKind: projectCaptures.kind,
+  captureProjection: projectCaptures.projection,
   captureConsent: projectCaptures.consentStatus,
   captureMinor: projectCaptures.involvesMinor,
   captureUrl: projectCaptures.storageUrl,
@@ -37,7 +39,9 @@ const storedTourFields = {
 type StoredTourRow = {
   url: string;
   creditLine: string;
+  peopleAttestedAt: Date | null;
   captureKind: string | null;
+  captureProjection: string | null;
   captureConsent: string | null;
   captureMinor: boolean | null;
   captureUrl: string | null;
@@ -54,9 +58,16 @@ function toStoredTour(r: StoredTourRow): StoredTour {
           consentStatus: r.captureConsent ?? "na",
           involvesMinor: r.captureMinor ?? false,
           storageUrl: r.captureUrl,
+          projection: r.captureProjection,
         }
       : null;
-  return { url: r.url, creditLine: r.creditLine, capture, leg: r.legId ? { permissionNote: r.permissionNote } : null };
+  return {
+    url: r.url,
+    creditLine: r.creditLine,
+    peopleAttestedAt: r.peopleAttestedAt,
+    capture,
+    leg: r.legId ? { permissionNote: r.permissionNote } : null,
+  };
 }
 
 /** The tour rows of this tenant, joined to their capture (through a same-tenant project) and leg. */
@@ -108,6 +119,8 @@ export interface TourSlotRow {
   courseTitle: string;
   courseSlug: string | null;
   coursePublished: boolean;
+  courseOwnerOnly: boolean;
+  courseInstructorId: string;
   username: string | null;
   lessonId: string;
   lessonTitle: string;
@@ -119,15 +132,21 @@ export interface TourSlotRow {
   tour: (StoredTour & { setAt: Date }) | null;
 }
 
+/** Who is listing slots. Mirrors canPublishTour in src/lib/field-log-tour.ts. */
+export interface TourSlotViewer {
+  userId: string;
+  isOwner: boolean;
+  /** A brand_admin of THIS tenant (Q3, plans/96): every course of the school except owner-only ones. */
+  isSchoolAdmin?: boolean;
+}
+
 /**
  * Every virtual_tour lesson in this tenant that the viewer may publish a tour to: all of the
- * tenant's courses for the platform owner, the viewer's own courses for anyone else. Ordered by
- * course title, then lesson order.
+ * tenant's courses for the platform owner; for a school admin, every course that is not owner-only
+ * plus their own; the viewer's own courses for anyone else. Ordered by course title, then lesson
+ * order.
  */
-export async function listTourSlots(
-  tenantId: string,
-  viewer: { userId: string; isOwner: boolean },
-): Promise<TourSlotRow[]> {
+export async function listTourSlots(tenantId: string, viewer: TourSlotViewer): Promise<TourSlotRow[]> {
   const rows = await db
     .select({
       ...storedTourFields,
@@ -137,6 +156,8 @@ export async function listTourSlots(
       courseTitle: courses.title,
       courseSlug: courses.slug,
       coursePublished: courses.isPublished,
+      courseOwnerOnly: courses.ownerOnly,
+      courseInstructorId: courses.instructorId,
       username: userProfiles.username,
       lessonId: lessons.id,
       lessonTitle: lessons.title,
@@ -162,7 +183,11 @@ export async function listTourSlots(
       and(
         eq(lessons.tenantId, tenantId),
         eq(lessons.lessonType, "virtual_tour"),
-        viewer.isOwner ? undefined : eq(courses.instructorId, viewer.userId),
+        viewer.isOwner
+          ? undefined
+          : viewer.isSchoolAdmin
+            ? or(eq(courses.ownerOnly, false), eq(courses.instructorId, viewer.userId))
+            : eq(courses.instructorId, viewer.userId),
       ),
     )
     .orderBy(asc(courses.title), asc(lessons.sortOrder), asc(lessons.id));
@@ -171,6 +196,8 @@ export async function listTourSlots(
     courseTitle: r.courseTitle,
     courseSlug: r.courseSlug,
     coursePublished: r.coursePublished,
+    courseOwnerOnly: r.courseOwnerOnly,
+    courseInstructorId: r.courseInstructorId,
     username: r.username,
     lessonId: r.lessonId,
     lessonTitle: r.lessonTitle,
@@ -191,6 +218,8 @@ export interface InsertTourInput {
   url: string;
   creditLine: string;
   setBy: string;
+  /** When the publisher confirmed the people-in-frame sentence. The route refuses without it. */
+  peopleAttestedAt: Date;
 }
 
 export type InsertTourResult =
@@ -224,6 +253,7 @@ export async function insertLessonTourEmbed(input: InsertTourInput): Promise<Ins
       url: input.url,
       creditLine: input.creditLine,
       setBy: input.setBy,
+      peopleAttestedAt: input.peopleAttestedAt,
     })
     .onConflictDoNothing({ target: lessonTourEmbeds.lessonId })
     .returning();
@@ -243,4 +273,52 @@ export async function deleteLessonTourEmbed(tenantId: string, courseId: string, 
     )
     .returning({ id: lessonTourEmbeds.id });
   return rows.length > 0;
+}
+
+export interface UpdateTourInput {
+  tenantId: string;
+  courseId: string;
+  lessonId: string;
+  /** A new credit, already tidied by normalizeTourCredit. */
+  creditLine?: string;
+  /** Record the people-in-frame attestation now (a tour published before v2, plans/96 Q2). */
+  attestedAt?: Date;
+}
+
+/**
+ * Edit a published tour in place: its credit, its attestation, or both (plans/96 v2). Scoped to this
+ * tenant AND this course, so a lesson id from elsewhere changes nothing. Null when there is no tour
+ * on that lesson. The link is never editable: a different file is a new tour (Remove, then publish).
+ */
+export async function updateLessonTourEmbed(input: UpdateTourInput): Promise<LessonTourEmbed | null> {
+  const set: Partial<typeof lessonTourEmbeds.$inferInsert> = {};
+  if (input.creditLine !== undefined) set.creditLine = input.creditLine;
+  if (input.attestedAt !== undefined) set.peopleAttestedAt = input.attestedAt;
+  const where = and(
+    eq(lessonTourEmbeds.tenantId, input.tenantId),
+    eq(lessonTourEmbeds.courseId, input.courseId),
+    eq(lessonTourEmbeds.lessonId, input.lessonId),
+  );
+  if (Object.keys(set).length === 0) {
+    const [row] = await db.select().from(lessonTourEmbeds).where(where).limit(1);
+    return row ?? null;
+  }
+  const [row] = await db.update(lessonTourEmbeds).set(set).where(where).returning();
+  return row ?? null;
+}
+
+/** The stored link of the tour on one lesson of one of this tenant's courses, or null. */
+export async function getLessonTourUrl(tenantId: string, courseId: string, lessonId: string): Promise<string | null> {
+  const [row] = await db
+    .select({ url: lessonTourEmbeds.url })
+    .from(lessonTourEmbeds)
+    .where(
+      and(
+        eq(lessonTourEmbeds.tenantId, tenantId),
+        eq(lessonTourEmbeds.courseId, courseId),
+        eq(lessonTourEmbeds.lessonId, lessonId),
+      ),
+    )
+    .limit(1);
+  return row?.url ?? null;
 }
