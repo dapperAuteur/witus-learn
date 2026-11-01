@@ -30,7 +30,7 @@
 //     unnamed) and the 1964 Monson acid are included with a content note and NO images. Fairground Park
 //     (1949), Belle Isle (1943) and the Biloxi wade-ins are NOT approved yet: their case cards are written in
 //     `BELMONT_HELD_CASE_CARDS` at the bottom of this file, which the seeder never reads (it reads
-//     `lessons` only). BAM's answer switches them in (user task 388).
+//     `lessons` only). BAM's answer switches them in (user task 390).
 //   * Rainbow Beach's 1960 and 1961 wade-ins moved here from REST-03 (answer 3), lesson 21.
 //   * Consent rule: NO living private person is named or quoted. The Friends of Belmont Beach's officers,
 //     the historian IBJ quotes, the Kansas City plaintiffs, the Glen Echo and Rainbow Beach organizers and
@@ -43,7 +43,7 @@
 //     (Wooten, 2023). The current state advisory is an authoritative value to read on the day, not assumed.
 //
 // Held: public-ready, but publishHoldReason keeps it unpublished until the Friends of Belmont Beach have had
-// about three weeks to review it (plan 95, answer 6; user task 387).
+// about three weeks to review it (plan 95, answer 6; user task 389).
 //
 // House rule: NO em-dashes or en-dashes in prose.
 
@@ -2031,7 +2031,7 @@ Three more cases belong in Section 5 by date and by mechanism. Their case cards 
 // switch them in without a new research pass. The seeder reads `BELMONT_BEACH_COURSE.lessons` only, so
 // nothing below reaches the database, the citations list or a learner.
 //
-// TO SWITCH ONE IN (user task 388, after BAM says yes for that card):
+// TO SWITCH ONE IN (user task 390, after BAM says yes for that card):
 //   1. Move the card into `lessons`, in Section 5, by date: Belle Isle before lesson 18; Fairground Park
 //      after Anacostia in lesson 18's order (as its own lesson after 18); Biloxi after lesson 21.
 //   2. Renumber every lesson title from that point ("19 · ..." and so on) and every "lesson N" cross-

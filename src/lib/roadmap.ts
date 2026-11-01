@@ -2056,7 +2056,7 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   Rainbow Beach moved from REST-03, Glen Echo, Gwynn Oak, St. Augustine). The land was the city's: never called
   Black-owned. Drownings and the 1964 Monson acid with content notes, no images; Fairground Park, Belle Isle and
   Biloxi written and held for BAM's decision. Held until the Friends of Belmont Beach have had about three weeks to
-  review it (user tasks 386 to 389). REST-06 (international) parked as research first; the old capstone is REST-07.
+  review it (user tasks 388 to 391). REST-06 (international) parked as research first; the old capstone is REST-07.
 - 🔧 **A Place of Our Own: Black Resorts, Retreats and Vacation Towns (REST), started**
   (\`bundle/rest-series-start-2026-11-01\`, no migration; after merge run \`pnpm seed:courses:prod\`; the new course
   stays private and held). BAM approved the series brief (plans/94) on 2026-11-01 with all ten recommendations.
