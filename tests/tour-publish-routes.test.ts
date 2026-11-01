@@ -84,10 +84,19 @@ function as(who: "instructor" | "owner" | "school_admin" | "stranger") {
   mocks.getMembership.mockResolvedValue(who === "school_admin" ? "brand_admin" : who === "stranger" ? "instructor" : null);
 }
 
+/** A route's Response, asserted present (the handlers' inferred type allows undefined). */
+async function must(res: Promise<Response | undefined>): Promise<Response> {
+  const r = await res;
+  if (!r) throw new Error("route returned nothing");
+  return r;
+}
+
 const post = (body: Record<string, unknown>) =>
-  publish(
-    new Request("http://school.test/x", { method: "POST", body: JSON.stringify(body), headers: { "content-type": "application/json" } }),
-    { params: Promise.resolve({ id: PROJECT, legId: LEG }) },
+  must(
+    publish(
+      new Request("http://school.test/x", { method: "POST", body: JSON.stringify(body), headers: { "content-type": "application/json" } }),
+      { params: Promise.resolve({ id: PROJECT, legId: LEG }) },
+    ),
   );
 const good = { captureId: CAPTURE, lessonId: LESSON, credit: "Photo by Jordan Lee at the marker.", peopleAttested: true };
 
@@ -155,9 +164,11 @@ describe("POST tour-targets", () => {
 
 describe("PATCH a capture's projection", () => {
   const patch = (captureId: string, body: unknown) =>
-    patchCapture(
-      new Request("http://school.test/x", { method: "PATCH", body: JSON.stringify(body), headers: { "content-type": "application/json" } }),
-      { params: Promise.resolve({ id: PROJECT, captureId }) },
+    must(
+      patchCapture(
+        new Request("http://school.test/x", { method: "PATCH", body: JSON.stringify(body), headers: { "content-type": "application/json" } }),
+        { params: Promise.resolve({ id: PROJECT, captureId }) },
+      ),
     );
 
   beforeEach(() => {
