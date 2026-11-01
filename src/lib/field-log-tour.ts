@@ -368,8 +368,10 @@ export function suggestSlotFromNotes<T extends TourSlotRef>(notes: string | null
 // The 14 tour lessons were written before any tour existed, so their titles end "(360 tour,
 // forthcoming)" or "(virtual tour, forthcoming)" and their bodies open with a paragraph saying the
 // tour is not here yet. Once a tour is LIVE that is no longer true, so the suffix and that one
-// paragraph are hidden on screen. The course files are not edited (the seeder would only restore
-// them), and an unfilled or hidden tour shows the lesson exactly as written.
+// paragraph are hidden on screen. The app never edits the course files (the seeder would only restore
+// them), and an unfilled or hidden tour shows the lesson exactly as written. Removing the wording
+// from a course file for good is a content follow-up per filled slot (plans/96 Q6; see TOUR SLOTS in
+// src/lib/release-followups.ts).
 
 const FORTHCOMING_SUFFIX = /\s*\((?:360|virtual) tour, forthcoming\)\s*$/i;
 const FORTHCOMING_LEAD = /^\s*\*\*The (?:360|virtual) tour for this lesson is forthcoming\.\*\*/;

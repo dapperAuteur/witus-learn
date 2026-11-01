@@ -1124,26 +1124,52 @@ panel, through `PATCH .../legs/[legId]`, or from the import file, and it shows o
 rest of the consent minimum it holds no contact details.
 
 **Use in a lesson (tours from the field, plans/93 section 2).** A photo or video logged on a leg can fill
-an empty tour slot: a `virtual_tour` lesson with no tour link of its own (the 13 site-history courses'
+an empty tour slot: a `virtual_tour` lesson with no tour link of its own (the 14 site-history courses'
 "Now" lessons). The panel appears on each leg only for a viewer who may fill at least one slot, which
-is the **platform owner** or the **course's own instructor**; it suggests the slot the leg's notes link
+is the **platform owner**, the **course's own instructor**, or (plans/96 Q3) a **school admin** on a
+course that is not owner-only; it suggests the slot the leg's notes link
 to, lists the leg's captures with the ineligible ones disabled and the reason shown, and offers an
 editable credit (default "Photo by {name} at {stop}, {place}, {month year}."). The server refuses, with
 the reason (`GET|POST /api/field-log/projects/[id]/legs/[legId]/tour-targets`, 422): a subject who
 **declined**; a capture that **involves a minor** without **written** consent; any kind but **photo or
 video**; a missing or non-**https** link; a link that **cannot be shown** in a lesson (a Drive folder, a
-YouTube channel, an audio file); and a leg with **no permission note**. The tour lives in its own table,
+YouTube channel, an audio file); a leg with **no permission note**; and, since plans/96 v2, a publish
+without `peopleAttested: true`, the publisher's tick on "No identifiable person appears in this capture,
+or each one has consent recorded on it" (stored as `lesson_tour_embeds.people_attested_at`, migration
+`0073_tour_projection_and_attestation`). The tour lives in its own table,
 `lesson_tour_embeds` (one per lesson, a copy of the capture's link and the credit), because the course
 seeder rewrites `lessons.content_url` on every seed. Media stays **link only**: nothing is uploaded or
 hosted, and a Google Drive file link is shown through its `/preview` form. **Every lesson read re-runs
 the same rules** against the capture and leg as they stand, so a consent later set to declined, a
 removed permission note, a changed link or a deleted capture takes the tour off the lesson at once.
 While a tour is live, the lesson and course pages drop the title's "(360 tour, forthcoming)" suffix and
-the body's opening "forthcoming" paragraph; the course files are not edited. **`/teach/tours`** (linked
-from the `/teach` header) lists every tour slot as empty, shown, hidden (with why), or with its own
-link, and **Remove** (`DELETE /api/courses/[id]/lessons/[lessonId]/tour`, any course editor) empties a
-slot again. Nothing is requested or queued: a learner proposing a tour to an instructor is out of scope
-under the no-inbox rule. The public read API (`/api/v1`) does not carry tours from the field yet.
+the body's opening "forthcoming" paragraph; the course files are not edited. Offline downloads, in-course
+search and `/api/v1` name such a lesson the same way (`withTourDisplay`, `displayTourTitle`).
+**`/teach/tours`** (linked from the `/teach` header, with `loading.tsx` and `error.tsx`) lists every tour
+slot as empty, shown, hidden (with why), or with its own link. On each tour: **Check link** (`POST
+.../tour/check`: fetches the stored link once, https and public hosts only, at most 3 redirects, 5
+seconds, nothing stored or logged), **Edit credit** (`PATCH .../tour { creditLine }`, 1 to 400
+characters), **Attest** for a tour published before the attestation existed (`PATCH .../tour { attest:
+true }`; such tours stay shown and are only labelled here), and **Remove** (`DELETE
+/api/courses/[id]/lessons/[lessonId]/tour`). All four use the course-editor guard, which since Q3 matches
+who may publish. Nothing is requested or queued: a learner proposing a tour to an instructor is out of
+scope under the no-inbox rule. The public read API (`/api/v1`) carries the cleaned title of a filled slot
+but not the tour itself (Q4).
+
+**360 photos (plans/96 v2).** A photo capture can be marked **This is a 360 photo** on the capture form,
+or with **360** on the Captures list (`PATCH /api/field-log/projects/[id]/captures/[captureId] {
+projection }`; `project_captures.projection` is `flat`, `equirectangular` or null, photos only). A tour
+whose capture is marked so and whose link is an image file opens in a look-around viewer
+(`src/components/panorama-viewer.tsx`, one WebGL fragment shader, no library, fetched through
+`next/dynamic` only on that lesson): drag, arrow keys (Shift for larger steps), plus and minus, Home,
+zoom buttons, an accessible name naming the lesson, a visible hint and a **View as a flat image** link. A
+Drive link stays Drive's own flat preview; a host without CORS headers, or no WebGL, falls back to the
+flat image with the same credit. The view math is pure in `src/lib/panorama.ts`.
+
+**Product events (plans/96 Q5).** `lesson_tour_published` { course_id, lesson_id, media_kind, projection
+}, `lesson_tour_removed` and `lesson_tour_credit_edited` { course_id, lesson_id }, and
+`tour_viewer_opened` { lesson_id }, all through `capture()` in `src/lib/analytics/` after the server
+answered OK. Ids and kinds only.
 
 ## Admin home + self-serve brand settings
 
