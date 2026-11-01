@@ -49,6 +49,16 @@ const BACKLOG: Record<string, string> = {
   "using-learn-run-your-course": "Using Learn.WitUS path: product onboarding, no academic standard applies; revisit if ISTE for Educators is transcribed (BAM, 2026-09-22).",
   "using-learn-cohorts": "Using Learn.WitUS path: product onboarding, no academic standard applies (BAM, 2026-09-22).",
   "using-learn-run-your-school": "Using Learn.WitUS path: product onboarding, no academic standard applies (BAM, 2026-09-22).",
+  // The seven "Work.WitUS guides" (WORK), 2026-11-01: help tutorials for one ecosystem app, moved here
+  // from its old Academy tables. Same reasoning as the USING paths above: they teach where a screen's
+  // controls are, which no academic standard covers.
+  "work-witus-contractor-guide": "Work.WitUS guide: product onboarding for an ecosystem app, no academic standard applies (contractor-os task 25, 2026-11-01).",
+  "work-witus-crewops-guide": "Work.WitUS guide: product onboarding for an ecosystem app, no academic standard applies (contractor-os task 25, 2026-11-01).",
+  "work-witus-finance": "Work.WitUS guide: product onboarding for an ecosystem app, no academic standard applies (contractor-os task 25, 2026-11-01).",
+  "work-witus-equipment": "Work.WitUS guide: product onboarding for an ecosystem app, no academic standard applies (contractor-os task 25, 2026-11-01).",
+  "work-witus-data-hub": "Work.WitUS guide: product onboarding for an ecosystem app, no academic standard applies (contractor-os task 25, 2026-11-01).",
+  "work-witus-settings-and-billing": "Work.WitUS guide: product onboarding for an ecosystem app, no academic standard applies (contractor-os task 25, 2026-11-01).",
+  "work-witus-blog": "Work.WitUS guide: product onboarding for an ecosystem app, no academic standard applies (contractor-os task 25, 2026-11-01).",
 
   "education-leadership-doctoral-rigor":
     "Invisible to this guard until 2026-08-27: the old regex matched only single-line seed entries, so this course was never counted. Not yet analysed for standards; listed so the gap is visible and ratcheted rather than silently uncounted.",

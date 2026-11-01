@@ -124,7 +124,7 @@ SELECT count(*) AS applied, max(created_at) AS latest_ms FROM drizzle.__drizzle_
 
 | Seed | Owns |
 |---|---|
-| `seed:courses` | Civics (101, US Constitution, state-vs-federal, all `state-civics-*`), AI ladders (`ai-*`), Hoodoo, Ed.L.D., cyber, knots, survival, broadcasting, how-to-run, help-a-campaign, learning-how-to-learn, course-creation, robotics-steam, spotting-misleading-marketing |
+| `seed:courses` | Civics (101, US Constitution, state-vs-federal, all `state-civics-*`), AI ladders (`ai-*`), Hoodoo, Ed.L.D., cyber, knots, survival, broadcasting, how-to-run, help-a-campaign, learning-how-to-learn, course-creation, robotics-steam, spotting-misleading-marketing, the Work.WitUS guides (`work-witus-*`, series WORK; born private, BAM opens each with Make public) |
 | `seed:languages` | Spanish, French, Portuguese, Italian |
 | `seed:langchain` | LangGraph: Triage Agent, Reflection Loops, Per-Agent RAG (auto-discovers `scripts/data/langchain/*`) |
 | `seed:health` | NASM CPT/CES/CNC, Read-Your-Body, ECS Foundations/Fitness/Nutrition/Neuroscience |
