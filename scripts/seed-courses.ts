@@ -3432,7 +3432,7 @@ async function main() {
   // Angola, read from the 2001 and 2026 National Register nominations, the Indiana Green Book MPDF and
   // the 2022 state marker. Public-ready; held until the Fox Lake Preservation Foundation has had about
   // three weeks to review it (BAM's answer 4; user task 382). New rows insert private and unpublished
-  // anyway (NEW_COURSE_STATE). Not in STAGED_COURSES until it is seeded and released.
+  // anyway (NEW_COURSE_STATE). Its citations are staged for auditors while it is held (src/lib/citations.ts).
   await seedAuthoredCourse(db, {
     tenantId: learnWitus,
     instructorId,
@@ -3452,9 +3452,9 @@ async function main() {
   // (plans/95; brief cloud-briefs/rest-05/00-approved-brief.md). A site course on the Indianapolis beach the
   // city assigned to Black residents in 1936, read from the 2024 National Register nomination, plus US case
   // cards. Public-ready; held until the Friends of Belmont Beach have had about three weeks to review it (user
-  // task 389). Three case cards (Fairground Park, Belle Isle, Biloxi) are written in the course file but held
-  // out of `lessons` pending BAM's content decision (user task 390). New rows insert private and unpublished
-  // anyway (NEW_COURSE_STATE). Not in STAGED_COURSES until it is seeded and released.
+  // task 389). The three case cards once held out (Fairground Park, Belle Isle, Biloxi) are lessons 18, 20 and 24
+  // since BAM's 2026-11-01 decision (user task 390, closed). New rows insert private and unpublished anyway
+  // (NEW_COURSE_STATE). Its citations are staged for auditors while it is held (src/lib/citations.ts).
   await seedAuthoredCourse(db, {
     tenantId: learnWitus,
     instructorId,
@@ -3468,7 +3468,7 @@ async function main() {
     seriesCode: "REST",
     seriesPosition: "05",
     publishHoldReason:
-      "Held for community review: the Friends of Belmont Beach are asked to read the course over about three weeks, with authority to change or cut any of it, before release (BAM, 2026-11-01). No image is embedded; the nomination photographs need Kurt West Garner's permission and the Friends' images need theirs. Three case cards (Fairground Park, Belle Isle, Biloxi) await BAM's content decision.",
+      "Held for community review: the Friends of Belmont Beach are asked to read the course over about three weeks, with authority to change or cut any of it, before release (BAM, 2026-11-01). No image is embedded; the nomination photographs need Kurt West Garner's permission and the Friends' images need theirs. The Fairground Park, Belle Isle and Biloxi lessons carry content notes and no images.",
   });
   // Hold BOTH Hoodoo courses from publishing, and make the comprehensive one PRIVATE
   // (owner-only). These rows predate the private-by-default insert (2026-10-28), so the update still

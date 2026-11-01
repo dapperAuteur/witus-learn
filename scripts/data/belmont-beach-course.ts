@@ -21,7 +21,7 @@
 //     as the nomination reports it; no Recorder page was opened (Hoosier State Chronicles answered 403).
 //   * BELMONT WAS NOT BLACK-OWNED. The land was the city's. The course says so and never says otherwise.
 //     The news report that business owners were "offered Belmont Beach instead" is the reporter's narration
-//     (Strong, n.d.), taught as one account beside the nomination's.
+//     (Strong, 2023), taught as one account beside the nomination's.
 //   * CONFLICTS ARE TAUGHT, NOT RESOLVED BY GUESSING: when it began; who made it; the 1927 Fleming episode;
 //     Douglass Park's pool year; what the 2026 listing holds; why the city allowed it; Riverside's picket and
 //     end date; Swope's filing year; the Monson "manager" or "owner". Research checks filed for the ones a
@@ -66,8 +66,8 @@ const MULLINS_2016 =
   "Mullins, P. R. (2016, February 22). Race and the river: Swimming, sewers, and segregation. *Archaeology and Material Culture*. https://paulmullins.wordpress.com/2016/02/22/race-and-the-river-swimming-sewers-and-segregation/";
 const WOOTEN_2023 =
   "Wooten, T. (2023, June 9). Haughville pursuing vision to make Belmont Beach permanent park. *Indianapolis Business Journal*. https://www.ibj.com/articles/reenvisioning-belmont-beach";
-const STRONG_ND =
-  "Strong, A. (n.d.). Historic beach provides glimpse into realities of segregated swimming. *Scripps News*. Retrieved November 1, 2026, from https://www.scrippsnews.com/us-news/race-in-america/historic-beach-provides-glimpse-into-realities-of-segregated-swimming";
+const STRONG_2023 =
+  "Strong, A. (2023, June 19). Historic beach provides glimpse into realities of segregated swimming. *Scripps News*. https://www.scrippsnews.com/us-news/race-in-america/historic-beach-provides-glimpse-into-realities-of-segregated-swimming";
 const FOBB_PAST =
   "Friends of Belmont Beach. (n.d.-a). *The past*. Retrieved November 1, 2026, from https://belmontbeachindy.org/the-past/";
 const FOBB_HOME =
@@ -151,7 +151,7 @@ The Friends of Belmont Beach, the neighborhood group that has been reclaiming th
 
 ## One thing this course will never say
 
-**Belmont Beach was not Black-owned.** A news report says a group of Black business owners was "offered Belmont Beach instead" of land they had meant to buy (Strong, n.d.). Lesson 4 shows where that story probably comes from. But no source read for this course says any Black person or company held title to the beach or ran it. The parks department did (Garner, 2024, Sec. 8 p. 12).
+**Belmont Beach was not Black-owned.** A news report says a group of Black business owners was "offered Belmont Beach instead" of land they had meant to buy (Strong, 2023). Lesson 4 shows where that story probably comes from. But no source read for this course says any Black person or company held title to the beach or ran it. The parks department did (Garner, 2024, Sec. 8 p. 12).
 
 ## What you will be able to do at the end
 
@@ -165,7 +165,7 @@ The Friends of Belmont Beach, the neighborhood group that has been reclaiming th
 - ${FOBB_HOME}
 - ${FOBB_PAST}
 - ${GARNER_2024} Locator: Section 8, pp. 10 and 12 (PDF pp. 10, 12), statement of significance and "Construction of the Levee and Parkway."
-- ${STRONG_ND}`,
+- ${STRONG_2023}`,
     },
     {
       slug: "bb-1913-to-1917-levee-and-dam",
@@ -283,7 +283,7 @@ The 2024 nomination does not name Fleming. It says only: "The city had blocked a
 
 ## Where the "offered Belmont Beach instead" story probably comes from
 
-A news report on the Friends of Belmont Beach says, in the reporter's own words, that a group of Black business owners meant to buy another property but "was offered Belmont Beach instead" (Strong, n.d.). The nomination says the city designated the beach in 1936, nine years after the 1927 episode, and **never says the beach was offered to, sold to or run by any group** (Garner, 2024, Sec. 8 pp. 15 to 16). The two accounts may be one memory joining two events: the refused purchase of 1927 and the city's designation of 1936. That is an inference, and it is labeled as one. **What the documents support is narrower: the city refused Black buyers a riverfront of their own, and later assigned them one it kept.**
+A news report on the Friends of Belmont Beach says, in the reporter's own words, that a group of Black business owners meant to buy another property but "was offered Belmont Beach instead" (Strong, 2023). The nomination says the city designated the beach in 1936, nine years after the 1927 episode, and **never says the beach was offered to, sold to or run by any group** (Garner, 2024, Sec. 8 pp. 15 to 16). The two accounts may be one memory joining two events: the refused purchase of 1927 and the city's designation of 1936. That is an inference, and it is labeled as one. **What the documents support is narrower: the city refused Black buyers a riverfront of their own, and later assigned them one it kept.**
 
 ## Co-occurrence drill: the same years at Fox Lake
 
@@ -303,7 +303,7 @@ A news report on the Friends of Belmont Beach says, in the reporter's own words,
 - ${GARNER_2024} Locator: Section 8, p. 15 (PDF p. 15), "Development of Belmont Beach," first paragraph.
 - ${GARNER_2025} Locator: p. 26.
 - ${MULLINS_2016} Locator: the paragraph on Henry Fleming and the Spring Hill Country Club.
-- ${STRONG_ND} Locator: the paragraph after the executive director's first quotation.
+- ${STRONG_2023} Locator: the paragraph after the executive director's first quotation.
 - ${WOOTEN_2023} Locator: the paragraphs on the 1927 country club plan.`,
       recallContent: [
         {
@@ -604,12 +604,12 @@ Put the three items side by side. **The *Recorder* reported Black merchants payi
 
 ## What the Recorder also reported
 
-The same newspaper, five years after the opening, ran a front-page complaint about the beach's conditions and a column calling the city's system "recreation-jim-crow ... as it is deliberately planned to be." **Lesson 12 reads it.** A newspaper that celebrated the park and attacked the city that ran it was not contradicting itself. It was doing both of its jobs.
+The same newspaper, five years after the opening, ran a front-page complaint about the beach's conditions and, a month later, a piece calling the city's system "recreation-jim-crow (sic) ... as it is deliberately planned to be" (Garner, 2024, Sec. 8 pp. 16 to 17, nn. 24 and 27). **Lesson 12 reads it.** A newspaper that celebrated the park and attacked the city that ran it was not contradicting itself. It was doing both of its jobs.
 
 :::reveal What does the 1935 sponsor list tell you about the neighborhood, and what does it not? ||| That west side businesses, most of them Black-owned, paid for the park's season-closing program. It does not tell you who owned the park: the city did.
 
 ## Sources
-- ${GARNER_2024} Locator: Section 8, pp. 14 to 15 (PDF pp. 14 to 15), notes 16 to 18.`,
+- ${GARNER_2024} Locator: Section 8, pp. 14 to 15 (PDF pp. 14 to 15), notes 16 to 18; pp. 16 to 17, notes 24 and 27 (the 1941 pieces).`,
       recallContent: [
         {
           prompt: "What did the formal opening of August 8, 1936 add to Belmont Beach?",
@@ -894,7 +894,7 @@ Type the missing word, then check.
       slug: "bb-douglass-park-pool",
       title: "13 · One pool across town: Douglass Park",
       section: "Section 3 · Who decided",
-      body: `The 1941 reporter compared Belmont with "unsatisfactory Douglass Park." **Douglass Park was the other assigned place**, and the city's first.
+      body: `The 1941 reporter compared Belmont with "unsatisfactory Douglass Park" (Garner, 2024, Sec. 8 p. 16, n. 25). **Douglass Park was the other assigned place**, and the city's first.
 
 ## The park
 
@@ -932,7 +932,7 @@ Put Douglass and Belmont side by side:
 :::reveal Why does this course not settle the Douglass pool's opening year by counting sources? ||| Because two sources can repeat one; agreement is not independence. A dated record of the opening, such as a newspaper notice or the parks department's drawings, would settle it.
 
 ## Sources
-- ${GARNER_2024} Locator: Section 8, pp. 14 to 15 (PDF pp. 14 to 15), note 19.
+- ${GARNER_2024} Locator: Section 8, pp. 14 to 15 (PDF pp. 14 to 15), note 19; p. 16, note 25.
 - Indianapolis Department of Parks and Recreation. (n.d.). *Douglass Park pool, site plan, club house, golf course, concessions, recreational center* [Landscape architectural drawings, 1922 to 1954; rights: In Copyright]. Indiana Memory. Retrieved November 1, 2026, from https://digital.library.in.gov/Record/BSU_IndplsPDArc-5379 Locator: the record's description.
 - ${INDY_PARKS} Locator: the history paragraph.
 - ${MULLINS_2016} Locator: the paragraphs on Douglass Park and the 1949 Recorder.
@@ -1189,7 +1189,7 @@ What National Register listing does and does not do is the subject of REST-01 le
 
 ## The rule before everything else: stay out of the river
 
-The *Indianapolis Business Journal* reported in June 2023 that the White River "is still deemed unsafe for swimming" (Wooten, 2023). **This course never suggests entering the water.** Before any visit, read the current advisory from the state and county health authorities yourself; do not assume it from this lesson, because water quality changes and a 2023 sentence is not today's reading. The Friends of Belmont Beach work with local programs to promote swimming lessons, a news report says (Strong, n.d.). **Learning to swim happens in a pool with a lifeguard, not here.**
+The *Indianapolis Business Journal* reported in June 2023 that the White River "is still deemed unsafe for swimming" (Wooten, 2023). **This course never suggests entering the water.** Before any visit, read the current advisory from the state and county health authorities yourself; do not assume it from this lesson, because water quality changes and a 2023 sentence is not today's reading. The Friends of Belmont Beach work with local programs to promote swimming lessons, a news report says (Strong, 2023). **Learning to swim happens in a pool with a lifeguard, not here.**
 
 ## Where you may stand
 
@@ -1216,7 +1216,7 @@ Photograph from public ground. On an event day, ask before photographing anyone,
 
 ## Sources
 - ${GARNER_2024} Locator: Section 7, pp. 5 to 7 (PDF pp. 5 to 7); Section 8, p. 18; photo log, pp. 23 to 26.
-- ${STRONG_ND}
+- ${STRONG_2023}
 - ${WOOTEN_2023} Locator: the paragraphs on land ownership and water quality.`,
       recallContent: [
         {
@@ -1621,16 +1621,35 @@ On May 17, 1960, the Justice Department sued local officials in Harrison County,
 
 **Coordinates are approximate place centers from OpenStreetMap's gazetteer**, not the locations of pools, docks or buildings. The Riverside marker is the gazetteer's point for today's Riverside park, not the old amusement park's gate. Cincinnati's and Biloxi's markers are city centers; the gazetteer did not return Coney Island, and the Biloxi wade-ins ran along miles of beachfront.
 
-**What the map cannot show.** It cannot show the beaches nobody wrote about. Every point here is on it because a newspaper, a court or a nomination recorded a decision. **The towns where Black children simply stayed home in the summer left no point.**
+**What the map cannot show.** It cannot show the beaches nobody wrote about. Every point here is on it because a newspaper, a court or a nomination recorded a decision. **The towns where Black children simply stayed home in the summer left no point.** Coordinates: OpenStreetMap's gazetteer (OpenStreetMap contributors, n.d.).
+
+**Every marker ends with the lesson that teaches it and the sources for its facts.** The references are below.
 
 ## Sources
-- OpenStreetMap contributors. (n.d.). *Nominatim gazetteer*. Retrieved November 1, 2026, from https://nominatim.openstreetmap.org/
-- ${GARNER_2024} Locator: Section 8, pp. 12 to 15.
 - ${ALLEN_2022}
+- ${CBS_BALTIMORE_2013}
 - ${BILOXI_2018}
-- ${KAHRL_2022} Locator: printed pp. 59 and 97 to 100.
+- ${GARNER_2024} Locator: Section 8, pp. 12 to 17.
+- ${GARNER_2025} Locator: p. 26 ("Indianapolis provided the most summer vacationers").
+- ${INDY_PARKS}
+- ${IRVIN_MITCHELL_2026}
+- ${JURAVICH_ND}
+- ${KAHRL_2022} Locator: printed pp. 59, 60, 91, 97 to 102, 105 to 106.
+- ${KC_V_WILLIAMS}
+- ${KERN_2019}
 - ${LANE_2022}
-- ${MDAH_MASON}`,
+- ${MDAH_MASON}
+- ${MULLINS_2016}
+- ${NPS_GLEN_ECHO_2021}
+- ${NPS_ANACOSTIA_2024}
+- ${NPS_WEEKLY_2026}
+- ${NPR_2014}
+- OpenStreetMap contributors. (n.d.). *Nominatim gazetteer*. Retrieved November 1, 2026, from https://nominatim.openstreetmap.org/
+- ${SUTTON_2019}
+- ${UC_LIBRARIES}
+- ${VERDERAME_2023}
+- ${WOOTEN_2023}
+- ${ZIEGLER_2016}`,
       mapContent: {
         atlas: "us-states",
         markers: [
@@ -1641,7 +1660,7 @@ On May 17, 1960, the Justice Department sued local officials in Harrison County,
             title: "Belmont Beach and Rev. Mozel Sanders Park, Indianapolis",
             color: "#1d4ed8",
             description:
-              "The subject of this course. A strip of city land between the White River and the 1917 levee, used informally by Black west siders from 1917 and formally opened by the city as a beach for Black residents on August 8, 1936; closed by the board of health in 1943. The park across the parkway was bought in 1931 and opened in 1932. Listed on the National Register as \"Belmont Beach\" on July 31, 2026.",
+              "The subject of this course. A strip of city land between the White River and the 1917 levee, used informally by Black west siders from 1917 and formally opened by the city as a beach for Black residents on August 8, 1936; closed by the board of health in 1943. The park across the parkway was bought in 1931 and opened in 1932. Listed on the National Register as \"Belmont Beach\" on July 31, 2026. Lessons 2, 8, 11 and 16 (Garner, 2024; National Park Service, 2026).",
           },
           {
             id: "bb-riverside",
@@ -1650,7 +1669,7 @@ On May 17, 1960, the Justice Department sued local officials in Harrison County,
             title: "Riverside Park area, Indianapolis",
             color: "#d97706",
             description:
-              "The white park upriver. The Emrichsville Dam (1900) was built so Riverside would have deeper water and a beach. Riverside Amusement Park, beside it, was officially segregated from 1919, admitted Black patrons once a year, and was picketed by NAACP Youth in June 1962.",
+              "The white park upriver. The Emrichsville Dam (1900) was built so Riverside would have deeper water and a beach. Riverside Amusement Park, beside it, was officially segregated from 1919, admitted Black patrons once a year, and was picketed by NAACP Youth in June 1962. Lessons 2 and 14 (Garner, 2024; Sutton, 2019).",
           },
           {
             id: "bb-douglass-park",
@@ -1659,7 +1678,7 @@ On May 17, 1960, the Justice Department sued local officials in Harrison County,
             title: "Frederick Douglass Park, Indianapolis",
             color: "#d97706",
             description:
-              "The city's first park for Black residents, opened July 7, 1921, about four miles from the west side. Its pool opened in June 1922 or in 1927 (sources differ) and, one historian writes, remained the city's only public Black pool into the late 1950s.",
+              "The city's first park for Black residents, opened July 7, 1921, about four miles from the west side. Its pool opened in June 1922 or in 1927 (sources differ) and, one historian writes, remained the city's only public Black pool into the late 1950s. Lesson 13 (Verderame, 2023; Indy Parks, n.d.; Garner, 2024; Mullins, 2016).",
           },
           {
             id: "bb-municipal-gardens",
@@ -1668,7 +1687,7 @@ On May 17, 1960, the Justice Department sued local officials in Harrison County,
             title: "Municipal Gardens, Indianapolis",
             color: "#d97706",
             description:
-              "The riverfront site where Henry Fleming's group planned the Spring Hill Country Club in 1927. The city stopped it: by a threat to condemn, in one account, or by buying the land, in another.",
+              "The riverfront site where Henry Fleming's group planned the Spring Hill Country Club in 1927. The city stopped it: by a threat to condemn, in one account, or by buying the land, in another. Lesson 4 (Mullins, 2016; Wooten, 2023; Garner, 2024).",
           },
           {
             id: "bb-fox-lake",
@@ -1677,7 +1696,7 @@ On May 17, 1960, the Justice Department sued local officials in Harrison County,
             title: "Fox Lake, Steuben County, Indiana",
             color: "#7c3aed",
             description:
-              "REST-01. A lake resort Black families bought into from the 1920s; Indianapolis sent more of its summer residents than any other city. An owned place, where Belmont was an assigned one.",
+              "REST-01. A lake resort Black families bought into from the 1920s; Indianapolis sent more of its summer residents than any other city. An owned place, where Belmont was an assigned one. REST-01, and lesson 4 here (Garner, 2025, p. 26).",
           },
           {
             id: "bb-belle-isle",
@@ -1695,7 +1714,7 @@ On May 17, 1960, the Justice Department sued local officials in Harrison County,
             title: "Gary, Indiana",
             color: "#15803d",
             description:
-              "1949: Young Citizens for Beachhead Democracy announced plans to occupy the city's Lake Michigan beaches and, as one historian describes it, were met by forty squad cars and white residents with bats and pipes.",
+              "1949: Young Citizens for Beachhead Democracy announced plans to occupy the city's Lake Michigan beaches and, as one historian describes it, were met by forty squad cars and white residents with bats and pipes. Lesson 19 (Kahrl & Cammeron, 2022, p. 91).",
           },
           {
             id: "bb-anacostia",
@@ -1704,7 +1723,7 @@ On May 17, 1960, the Justice Department sued local officials in Harrison County,
             title: "Anacostia Park, Washington, D.C.",
             color: "#15803d",
             description:
-              "June 1949: Black swimmers challenged the pool's whites-only practice; four hospitalized and five arrested on June 29. The National Park Service closed the pool for the summer and reopened it desegregated in June 1950.",
+              "June 1949: Black swimmers challenged the pool's whites-only practice; four hospitalized and five arrested on June 29. The National Park Service closed the pool for the summer and reopened it desegregated in June 1950. Lesson 19 (National Park Service, 2024).",
           },
           {
             id: "bb-fairground-park",
@@ -1722,7 +1741,7 @@ On May 17, 1960, the Justice Department sued local officials in Harrison County,
             title: "Swope Park, Kansas City, Missouri",
             color: "#15803d",
             description:
-              "Kansas City v. Williams (8th Cir. 1953): the city's separate pool was not substantially equal to Swope's 'deluxe or blue ribbon facility.' Black swimmers were admitted the next summer.",
+              "Kansas City v. Williams (8th Cir. 1953): the city's separate pool was not substantially equal to Swope's 'deluxe or blue ribbon facility.' Black swimmers were admitted the next summer. Lesson 21 (Kansas City v. Williams, 1953; Ziegler, 2016).",
           },
           {
             id: "bb-cincinnati",
@@ -1731,7 +1750,7 @@ On May 17, 1960, the Justice Department sued local officials in Harrison County,
             title: "Cincinnati, Ohio (Coney Island and Sunlite Pool)",
             color: "#15803d",
             description:
-              "1952: Marian Spencer led an NAACP legal action against Coney Island. The park's entrance opened to all in 1955; Sunlite Pool was desegregated in 1961. Marker at the city center, not the park.",
+              "1952: Marian Spencer led an NAACP legal action against Coney Island. The park's entrance opened to all in 1955; Sunlite Pool was desegregated in 1961. Marker at the city center, not the park. Lesson 22 (Kern, 2019; University of Cincinnati Libraries, n.d.).",
           },
           {
             id: "bb-highland-park",
@@ -1740,7 +1759,7 @@ On May 17, 1960, the Justice Department sued local officials in Harrison County,
             title: "Highland Park, Pittsburgh",
             color: "#15803d",
             description:
-              "1931: 'health certificates' demanded of Black swimmers only; late 1940s: Black swimmers arrested for 'inciting a riot'; integrated by 1952, when the Pittsburgh Courier reported 5,000 Black swimmers that season.",
+              "1931: 'health certificates' demanded of Black swimmers only; late 1940s: Black swimmers arrested for 'inciting a riot'; integrated by 1952, when the Pittsburgh Courier reported 5,000 Black swimmers that season. Lesson 22 (Kahrl & Cammeron, 2022, pp. 60, 91; Irvin-Mitchell, 2026).",
           },
           {
             id: "bb-rainbow-beach",
@@ -1749,7 +1768,7 @@ On May 17, 1960, the Justice Department sued local officials in Harrison County,
             title: "Rainbow Beach, Chicago",
             color: "#15803d",
             description:
-              "August 28, 1960: the South Side NAACP Youth Council's 'Freedom Waders' were attacked with rocks. July 7 and 8, 1961: they returned with over 200 police present, and nine white people were charged.",
+              "August 28, 1960: the South Side NAACP Youth Council's 'Freedom Waders' were attacked with rocks. July 7 and 8, 1961: they returned with over 200 police present, and nine white people were charged. Lesson 23 (Juravich, n.d.; Kahrl & Cammeron, 2022, p. 102).",
           },
           {
             id: "bb-glen-echo",
@@ -1758,7 +1777,7 @@ On May 17, 1960, the Justice Department sued local officials in Harrison County,
             title: "Glen Echo Park, Maryland",
             color: "#15803d",
             description:
-              "June 30, 1960: a carousel sit-in by the Non-violent Action Group; five arrested that day and over 40 by summer's end. The park announced integration on March 14, 1961.",
+              "June 30, 1960: a carousel sit-in by the Non-violent Action Group; five arrested that day and over 40 by summer's end. The park announced integration on March 14, 1961. Lesson 23 (National Park Service, 2021; Kahrl & Cammeron, 2022, p. 100).",
           },
           {
             id: "bb-biloxi",
@@ -1776,7 +1795,7 @@ On May 17, 1960, the Justice Department sued local officials in Harrison County,
             title: "Gwynn Oak Park, Maryland",
             color: "#15803d",
             description:
-              "Summer 1963: nearly 400 arrested for trespassing in protests that ended July 7. Desegregated August 28, 1963.",
+              "Summer 1963: nearly 400 arrested for trespassing in protests that ended July 7. Desegregated August 28, 1963. Lesson 23 (CBS Baltimore, 2013).",
           },
           {
             id: "bb-st-augustine",
@@ -1785,7 +1804,7 @@ On May 17, 1960, the Justice Department sued local officials in Harrison County,
             title: "St. Augustine, Florida",
             color: "#15803d",
             description:
-              "June 18, 1964: a swim-in at the Monson Motor Lodge pool, into which the man in charge poured muriatic acid. The Senate passed the Civil Rights bill the next day.",
+              "June 18, 1964: a swim-in at the Monson Motor Lodge pool, into which the man in charge poured muriatic acid. The Senate passed the Civil Rights bill the next day. Lesson 23 (Kahrl & Cammeron, 2022, pp. 105 to 106; NPR, 2014).",
           },
         ],
       },

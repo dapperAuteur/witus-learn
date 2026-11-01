@@ -26,8 +26,8 @@
 //   * The 2021 to 2023 return sequence is read from Los Angeles County's own ARDI page and
 //     Supervisor Hahn's office. The complications are reported: what came back was Block 5 (the
 //     lifeguard building site), NOT the city park in Block 12; four other Black families
-//     condemned in 1924 have had nothing returned; and the family sold the land back to the
-//     County within about seven months.
+//     condemned in 1924 have had nothing returned; and the family decided within about six
+//     months to sell the land back to the County (Hahn statement, January 4, 2023).
 //   * MaVynee Betsch and NaNa dune are taken from the National Park Service and from the
 //     Timucuan Ecological and Historic Preserve Boundary Revision Act of 2004, not from the
 //     popular "she saved the dune" version. The record shows a campaign, a landowner's
@@ -101,9 +101,9 @@ The condition these places answered was not one law. It was a stack of instrumen
 
 ## Sources
 - City of Manhattan Beach History Advisory Board. (2021, October 25). *History Advisory Board report*. City of Manhattan Beach. https://cmcp.org/wp-content/uploads/2023/02/Supplmental-Material_History-Report-4867-6724-8699-1-1.pdf
-- Loewen, J. W. (2005). *Sundown towns: A hidden dimension of American racism*. New Press.
+- Loewen, J. W. (2005). *Sundown towns: A hidden dimension of American racism*. New Press. https://thenewpress.org/books/sundown-towns/ (book; cited second hand, through the City of Manhattan Beach report)
 - National Park Service. (n.d.-d). *The Green Book: An historic context*. https://www.nps.gov/articles/000/the-green-book-an-historic-context.htm
-- Rothstein, R. (2017). *The color of law: A forgotten history of how our government segregated America*. Liveright.`,
+- Rothstein, R. (2017). *The color of law: A forgotten history of how our government segregated America*. Liveright. https://wwnorton.com/books/the-color-of-law (book; cited second hand, through the City of Manhattan Beach report)`,
     },
     {
       slug: "wwr-what-resort-meant",
@@ -117,7 +117,7 @@ The condition these places answered was not one law. It was a stack of instrumen
 |---|---|---|---|---|
 | **Highland Beach**, Anne Arundel County, Maryland | 1893 | Charles and Laura Douglass, buying from a Black farming family | Lots | **Incorporated town** since 1922 |
 | **Idlewild**, Lake County, Michigan | 1912 | The Idlewild Resort Company, four white couples | Lots | **Unincorporated**, in Yates Township |
-| **American Beach**, Nassau County, Florida | 1935 | The Afro-American Life Insurance Company's Pension Bureau | Lots | **Unincorporated**, in Nassau County |
+| **American Beach**, Nassau County, Florida | 1935 | The Afro-American Life Insurance Company, selling lots for its employee pension fund | Lots | **Unincorporated**, in Nassau County |
 | **Oak Bluffs and the Inkwell**, Dukes County, Massachusetts | No founding date | Nobody. Individual buyers, deed by deed, from 1870 | Lots | **A town of Massachusetts** that Black owners do not control |
 | **Bruce's Beach**, Manhattan Beach, California | 1912 | Willa Bruce, buying two lots in an existing tract | **Service, not land** | **Gone.** Condemned 1924, judgment 1929 |
 
@@ -136,7 +136,7 @@ The condition these places answered was not one law. It was a stack of instrumen
 - **Plat.** A recorded map dividing a tract into numbered lots and blocks. Filing one is how raw land becomes sellable parcels. Idlewild's first plat was surveyed in 1915 (The Cultural Landscape Foundation, n.d.).
 - **Lot and block.** The address system of a plat. Willa Bruce owned **Lot 8 and Lot 9 of Block 5** of Peck's Manhattan Beach Tract. Those words are the whole legal identity of Bruce's Beach (City of Manhattan Beach History Advisory Board, 2021).
 - **Deed.** The instrument transferring title, recorded with a county. Deeds are public.
-- **Incorporation.** The act by which residents create a municipality with the power to tax, zone and govern. Highland Beach did it on May 12, 1922 (Town of Highland Beach, n.d.).
+- **Incorporation.** The act by which residents create a municipality with the power to tax, zone and govern. Highland Beach did it in 1922 (Town of Highland Beach, n.d.).
 - **Condemnation, or eminent domain.** A government taking private property for public use, paying compensation set by a court. Manhattan Beach used it in 1924 (City of Manhattan Beach History Advisory Board, 2021).
 
 **One warning before Section 2.** These five communities were not a movement and did not coordinate. They are five separate business decisions made in five states across forty-two years, mostly by people who did not know each other. **Do not let the shape of a course convince you they were a plan.**
@@ -175,7 +175,7 @@ The condition these places answered was not one law. It was a stack of instrumen
 
 ## The denial
 
-Major **Charles Remond Douglass**, the youngest son of Frederick Douglass, and his wife **Laura** were refused service at a resort on the Chesapeake Bay because they were Black. Accounts of the refusal differ in detail. BlackPast places it in **1890** at a restaurant at the **Bay Ridge Resort**; the community's own museum account says only that they were "denied service because of their race" at a nearby resort (Frederick Douglass Museum and Cultural Center, n.d.). **Both accounts agree on the sequence: refusal first, purchase second.**
+Major **Charles Remond Douglass**, the youngest son of Frederick Douglass, and his wife **Laura** were refused service at a resort on the Chesapeake Bay because they were Black. Accounts of the refusal differ in detail. BlackPast places it in **1890** at a restaurant at the **Bay Ridge Resort** (BlackPast, n.d.-b); the town's own history says **1892**, at a restaurant at the Bay Ridge Resort and Amusement Park (Town of Highland Beach, n.d.); the community's own museum account says only that they were "denied service because of their race" at a nearby all-white resort (Frederick Douglass Museum and Cultural Center, n.d.-a). **Both accounts agree on the sequence: refusal first, purchase second.**
 
 **Note what he did next, because it is the subject of this whole course.** He did not petition the resort. He bought the ground south of it.
 
@@ -184,17 +184,19 @@ Major **Charles Remond Douglass**, the youngest son of Frederick Douglass, and h
 **How much land, and from whom, is genuinely contested, and the two answers come from equally serious places.**
 
 - **The Town of Highland Beach's own history** says the Douglasses acquired **twenty-six and two-thirds acres** from **Daniel Brashears and Georgianna Lane**, heirs to the original Brashears estate (Town of Highland Beach, n.d.).
-- **Preservation Maryland and other accounts** say **40 acres** of farmland, with **500 feet of beachfront**, purchased from **Daniel Brashears**, described as a free Black farmer and waterman of Anne Arundel County (Preservation Maryland, n.d.).
+- **Preservation Maryland and other accounts** say **40 acres** of farmland (Preservation Maryland, n.d.); BlackPast says slightly more than 40 acres, for 5,000 dollars (BlackPast, n.d.-b).
+
+**The town's own history also connects the two numbers.** It says Douglass arranged to buy a **two-thirds interest in forty acres** of the original forty-eight-acre Brashears estate, and in the spring of 1893 settled on the purchase of twenty-six and two-thirds acres (Town of Highland Beach, n.d.). Two-thirds of forty is twenty-six and two-thirds, so the figures may describe one transaction from two angles. **That is a reading of the town's account, not a reading of the deed.**
 
 **Do not split the difference and do not pick the bigger number.** The deed is recorded in the **Anne Arundel County land records**, and this course has not read it. **A community's own history and a recorded deed are different kinds of document with different failure modes**, and when they disagree the way to resolve it is the deed, not a vote.
 
-**One thing every account agrees on, and it matters more than the acreage.** The seller was Black. Daniel Brashears was a free Black farmer and waterman. **There was no white developer in the middle of this transaction**, which makes Highland Beach different from Idlewild in a way lesson 4 will make plain.
+**One thing every account agrees on, and it matters more than the acreage.** The seller was Black. The museum describes Daniel Brashears as a free Black farmer (Frederick Douglass Museum and Cultural Center, n.d.-a). **There was no white developer in the middle of this transaction**, which makes Highland Beach different from Idlewild in a way lesson 4 will make plain.
 
 ## The subdivision
 
 Douglass **laid out the community** and named its two principal streets for Reconstruction-era friends of his father (Maryland Historical Trust, n.d.). **Naming a street is a governance act performed by a private person**, and it is an early sign of what this place was going to become.
 
-Then he **subdivided the tract and sold lots**, to family and friends first (Frederick Douglass Museum and Cultural Center, n.d.; Preservation Maryland, n.d.). **That is the business model of this entire course in one line: buy a tract, cut it into lots, sell the lots to people who cannot buy elsewhere, and let them build.**
+Then he **subdivided the tract and sold lots**, to family and friends first (BlackPast, n.d.-b; Frederick Douglass Museum and Cultural Center, n.d.-a). **That is the business model of this entire course in one line: buy a tract, cut it into lots, sell the lots to people who cannot buy elsewhere, and let them build.**
 
 ## The first buildings
 
@@ -206,7 +208,7 @@ The Maryland Historical Trust's National Register entry records the tradition th
 
 ## The incorporation
 
-Charles Douglass died in **1920**. His son **Haley Douglass** led the effort that made Highland Beach an **incorporated municipality on May 12, 1922**, the first African American incorporated municipality in Maryland and, by the town's own account, believed to be the first African American summer resort in the United States (Town of Highland Beach, n.d.).
+Charles Douglass died in **1920**. His son **Haley Douglass** led the effort that made Highland Beach an **incorporated municipality in 1922** (BlackPast, n.d.-b), the first African American incorporated municipality in Maryland and, by the town's own account, believed to be the first African American summer resort in the United States (Town of Highland Beach, n.d.). **The exact day of the charter is not given in any source read for this course**; the Maryland session laws for 1922 are where it would be.
 
 **Twenty-nine years from a refused dinner to a municipal charter.** Section 4 explains why that charter turned out to be the most consequential thing in this lesson.
 
@@ -218,7 +220,7 @@ Guests and residents recorded by the town include Paul Robeson, Robert and Mary 
 
 ## Sources
 - BlackPast. (n.d.-b). *Highland Beach, Maryland (1893 to present)*. https://blackpast.org/african-american-history/highland-beach-maryland-1893/
-- Frederick Douglass Museum and Cultural Center. (n.d.). *How it all began*. https://fdmcc.org/founding-of-the-community
+- Frederick Douglass Museum and Cultural Center. (n.d.-a). *How it all began*. Archived October 3, 2022, at https://web.archive.org/web/20221003060241/https://www.fdmcc.org/founding-of-the-community
 - Maryland Historical Trust. (n.d.). *Douglass Summer House* [National Register properties in Maryland, NRID 1097]. https://apps.mht.maryland.gov/nr/NRDetail.aspx?NRID=1097
 - Preservation Maryland. (n.d.). *Highland Beach: Douglass family-founded beach town on the Chesapeake*. https://preservationmaryland.org/highland-beach-douglass-family-founded-beach-town-on-the-chesapeake/
 - Town of Highland Beach. (n.d.). *History of Highland Beach*. https://www.highlandbeachmd.org/town-history`,
@@ -249,7 +251,7 @@ Guests and residents recorded by the town include Paul Robeson, Robert and Mary 
 
 ## Who founded it
 
-**The Idlewild Resort Company was formed in 1912 by four white couples.** Erastus and Flora Branch and Adelbert and Isabelle Branch of White Cloud, Michigan; Wilbur M. and Mayme Lemon and A. E. and Madolin Wright of Chicago. They organized the company to turn roughly **2,700 acres of cutover timberland in Lake County, Michigan**, into a resort marketed to the middle-class and professional Black communities of Detroit and Chicago (Terry Wantz Historical Research Center, n.d.; The Cultural Landscape Foundation, n.d.).
+**The Idlewild Resort Company was formed in 1912 by four white couples.** Erastus and Flora Branch and Adelbert and Isabelle Branch of White Cloud, Michigan; Wilbur M. and Mayme Lemon and A. E. and Madolin Wright of Chicago. They organized the company to build a resort for the middle-class and professional Black communities of Detroit and Chicago (Terry Wantz Historical Research Center, n.d.), on land that had already been logged: The Cultural Landscape Foundation calls it "former deforested land" (The Cultural Landscape Foundation, n.d.). The National Park Service's theme study says the four developers platted **2,700 acres of cutover land** along a lake in 1915 (Kahrl & Cammeron, 2022, p. 55).
 
 **The community says this about itself, in these words, on its own website:** Idlewild was "Founded in 1912 by white land developers who marketed Idlewild as a resort community for blacks during the Jim Crow segregation era" (Idlewild Michigan, n.d.).
 
@@ -259,13 +261,13 @@ Guests and residents recorded by the town include Paul Robeson, Robert and Mary 
 
 The company **surveyed its first plat in 1915** and began marketing lots in tracts adjacent to **Idlewild Lake**, about 100 acres, and near **Paradise Lake**, about 42 acres. An eight-acre island in Idlewild Lake, **Island Park**, later Williams Island, became the social center, reached first by footbridges. **A clubhouse went up in 1916**, followed by an electrical plant, cottages and venues (The Cultural Landscape Foundation, n.d.).
 
-**The sales terms are the most quoted business fact about Idlewild, and they need a caveat.** Secondary accounts consistently report **lots of 25 by 100 feet at 35 dollars**, sold on terms of **6 dollars down and 1 dollar a week**, and report that the company **recruited Black sales agents by giving them a lot for every lot they sold**. **This course has not checked those terms against the recorded 1915 plat or against a deed.** The Lake County Register of Deeds is where they would be checked, and if you want to make an original contribution to Idlewild's history rather than restate it, that is the errand.
+**The sales terms are the most quoted business fact about Idlewild, and they need a caveat.** Accounts in circulation, none of which this course has read at first hand, report **lots of 25 by 100 feet at 35 dollars**, sold on terms of **6 dollars down and 1 dollar a week**, and report that the company **recruited Black sales agents by giving them a lot for every lot they sold**. **This course has not checked those terms against the recorded 1915 plat or against a deed.** The Lake County Register of Deeds is where they would be checked, and if you want to make an original contribution to Idlewild's history rather than restate it, that is the errand.
 
 **Look at what those terms do, if they are right.** A dollar a week is a working household's discretionary money. **Priced that way, a lot is not an investment vehicle for the rich. It is a savings plan.** And paying sales agents in lots turns the sales force into the resident population, which is a cheap way to seed a community and a fast way to lose control of one.
 
 ## The advertising, and the endorsement
 
-The company advertised in Black newspapers, the **Chicago Defender** among them. The Cultural Landscape Foundation credits **W.E.B. Du Bois** with making Idlewild nationally known through an article in **The Crisis in 1921** (The Cultural Landscape Foundation, n.d.).
+The company advertised lot sales in regional and national editions of major Black newspapers (Kahrl & Cammeron, 2022, p. 55), and the Michigan historical marker at Idlewild names the **Chicago Defender** among them (The Historical Marker Database, n.d.). Within ten years, the theme study says, more than 4,000 lots had been sold and 400 cottages built (Kahrl & Cammeron, 2022, p. 55). The Cultural Landscape Foundation credits **W.E.B. Du Bois** with making Idlewild nationally known through an article in **The Crisis in 1921** (The Cultural Landscape Foundation, n.d.).
 
 Early property owners named by the community and by the local historical research center include **Dr. Daniel Hale Williams**, the Chicago surgeon who founded Provident Hospital; **W.E.B. Du Bois**; the novelist **Charles Waddell Chesnutt**; **Madam C. J. Walker**; and **Violette Neatley Anderson**, whom the community's own site describes as the first Black woman attorney in Chicago (Idlewild Michigan, n.d.; Terry Wantz Historical Research Center, n.d.).
 
@@ -273,13 +275,13 @@ Early property owners named by the community and by the local historical researc
 
 ## 1920 or 1921: the owners' association, and two accounts of it
 
-**This section was corrected on November 1, 2026, and the correction is the lesson.** When this course was written in July 2026, the Idlewild community's own website said that in 1921 the original developers turned ownership and management of the resort over to the **Idlewild Lot Owners Association**, incorporated in August 1921 and run by Idlewild's Black property owners, and that the association still exists. **The same page, read again on November 1, 2026, no longer says any of that** (Idlewild Michigan, n.d.). So this course now reports the 1921 transfer as **the community's own account**, published by the community and since withdrawn from its page, and not as a documented fact.
+**This section was corrected on November 1, 2026, and the correction is the lesson.** When this course was written in July 2026, it said that in 1921 the original developers turned ownership and management of the resort over to the **Idlewild Lot Owners Association**, incorporated in August 1921 and run by Idlewild's Black property owners, and that the association still exists. It cited the Idlewild community's History page for that. **The page, read on November 1, 2026, does not say any of it, and neither do the copies of the same page archived by the Internet Archive on August 29, 2025 and May 31, 2026** (Idlewild Michigan, n.d.). So this course can no longer show where that account came from. It now reports the 1921 transfer as **an account this course first published and cannot source**, not as a documented fact, and it asks the Idlewild Historic & Cultural Center to settle it.
 
 **A second source tells it differently.** A historical marker credited to the Michigan History Center, as transcribed by the Read the Plaque project, says that **in 1920** Idlewild's founders, Wilbur Lemon, Alvin Wright, and the brothers Erastus and Adelbert Branch, **joined William Jennings to form** the Idlewild Lot Owners Association, and that the association was responsible for public improvements and maintenance of the resort (Read the Plaque, n.d.). **This course has read the transcription, not the marker itself.**
 
 **Put the two accounts side by side, because they disagree about more than a year.**
 
-| Question | The community's account (as published in 2026, since removed) | The marker, as transcribed |
+| Question | The account this course first reported (source not found) | The marker, as transcribed |
 |---|---|---|
 | **When** | August 1921 | 1920 |
 | **Who formed it** | The Black property owners took it over from the developers | The founders themselves, with William Jennings |
@@ -289,21 +291,23 @@ Early property owners named by the community and by the local historical researc
 
 ## The peak, and three numbers that are not the same number
 
-Idlewild's best decades ran from the 1920s into the early 1960s. **Nightlife was the draw.** Promoters **Phil Giles** and **Arthur Braggs** brought major entertainers to clubs including the **Flamingo**, the **Paradise** and the **El Morocco**, and the **Pere Marquette Railway** connected the resort to Chicago, Detroit, Cleveland and St. Louis (Idlewild Michigan, n.d.).
+The Terry Wantz Historical Research Center puts Idlewild's peak at **1920 to 1963** (Terry Wantz Historical Research Center, n.d.); the Park Service's theme study puts its peak of popularity at **1955 to 1962** (Kahrl & Cammeron, 2022, p. 188). **Nightlife was the draw.** The community's own account says **Phil Giles** and **Arthur Braggs**, developers from Detroit and Saginaw, brought leading entertainers to the **Flamingo**, the **Paradise** and the **El Morocco**; that excursions came from Grand Rapids, Detroit, Chicago and other Midwestern cities; and that the **Pere Marquette Railway** brought residents and visitors from Indiana, St. Louis and Cleveland (Idlewild Michigan, n.d.).
 
 **Now the numbers, and this is a method lesson disguised as a fact.**
 
 | Figure | Whose figure | What it counts |
 |---|---|---|
-| **25,000 visitors on a given weekend** in the 1950s | Ronald Stephens, a Purdue professor who has written two books on Idlewild, as reported in press accounts | A single weekend, at peak |
-| **20,000 visitors on a summer weekend** | Other press accounts | A single weekend, at peak |
-| **Almost 25,000 annual vacationers**, and **more than 300 Black-owned businesses** | The Idlewild community's own website | A whole year, and a business count |
+| **More than 25,000 people** drawn by summer holidays in the early 1960s | The Michigan historical marker at Idlewild, erected 2009 (The Historical Marker Database, n.d.) | A holiday, at peak |
+| **Summer crowds "into the thousands"** by the mid-1950s | The Park Service's theme study (Kahrl & Cammeron, 2022, p. 79) | A summer, described rather than counted |
+| **Almost 25,000 annual vacationers**, and **more than 300 Black-owned businesses** | The Idlewild community's own website (Idlewild Michigan, n.d.) | A whole year, and a business count |
 
-**Those are not competing estimates of one quantity. They are three different quantities.** Twenty-five thousand in a weekend and twenty-five thousand in a year differ by roughly a factor of ten. **Give a figure its owner and its scope every single time, or you will publish a number that means nothing.**
+Press accounts also circulate figures of **25,000** and **20,000 visitors on a single summer weekend**, one of them attributed to the Purdue historian Ronald Stephens, author of two books on Idlewild. **This course has not read those articles**, so they are listed here as figures in circulation, not as findings.
+
+**Those are not competing estimates of one quantity. They are different quantities.** Twenty-five thousand in a weekend and twenty-five thousand in a year differ by roughly a factor of ten. **Give a figure its owner and its scope every single time, or you will publish a number that means nothing.**
 
 ## Designation
 
-The **Idlewild Historic District** was listed on the National Register of Historic Places on **June 7, 1979**, reference number **79001160**, with Black social history as an area of significance (National Park Service, n.d.-e). **A boundary increase followed in 2010.** The National Register's own record for the boundary increase, reference number **09001062**, gives its date published as **August 6, 2010** (National Park Service, n.d.-f), and the National Park Service's African American outdoor recreation theme study says the boundary increase "was completed in 2010 at the national level of significance" (Kahrl & Cammeron, 2022, p. 189). The Cultural Landscape Foundation also dates the expansion to 2010 (The Cultural Landscape Foundation, n.d.). **An earlier version of this course reported a competing date of 2015 from other listing summaries; the National Register record settles it, and 2015 is wrong.** Neither nomination file has been digitized yet, so the record read here is the register's catalog entry, not the nomination itself.
+The **Idlewild Historic District** was listed on the National Register of Historic Places on **June 7, 1979**, reference number **79001160**, with Black social history as an area of significance (National Park Service, n.d.-e). **A boundary increase followed in 2010.** The National Register's own record for the boundary increase, reference number **09001062**, gives its date published as **August 6, 2010** (National Park Service, n.d.-f), and the National Park Service's African American outdoor recreation theme study says the boundary increase "was completed in 2010 at the national level of significance" (Kahrl & Cammeron, 2022, p. 189). The Cultural Landscape Foundation also dates the expansion to 2010 (The Cultural Landscape Foundation, n.d.). **The community's own History page gives 2015 for the expansion** (Idlewild Michigan, n.d.). This course follows the register's own record, 2010, and reports the community's date so a reader who meets it knows where it comes from. The National Park Service's NPGallery says of both nomination files that "The PDF file for this National Register record has not yet been digitized," so the record read here is the register's catalog entry, not the nomination itself. The theme study's notes point to copies at the National Archives catalog, ids 25339789 (1979) and 25339785 (2010), which this course has not opened (Kahrl & Cammeron, 2022, p. 189).
 
 A **Michigan Historical Commission** marker stands at Idlewild; the Historical Marker Database records it as erected in **2009**, marker number S0713 (The Historical Marker Database, n.d.).
 
@@ -319,7 +323,7 @@ A **Michigan Historical Commission** marker stands at Idlewild; the Historical M
       recallContent: [
         {
           prompt: "Who did Charles Douglass buy Highland Beach from, and why does that detail matter?",
-          answer: "Daniel Brashears, a free Black farmer and waterman of Anne Arundel County (the town's account adds Georgianna Lane). It matters because no white developer stood in the middle of the transaction.",
+          answer: "Daniel Brashears, whom the community's museum describes as a free Black farmer (the town's account adds Georgianna Lane). It matters because no white developer stood in the middle of the transaction.",
         },
         {
           prompt: "What are the two competing acreage figures for the 1893 purchase, and how would you settle them?",
@@ -327,7 +331,7 @@ A **Michigan Historical Commission** marker stands at Idlewild; the Historical M
         },
         {
           prompt: "When did Highland Beach incorporate, who led it, and what was the significance?",
-          answer: "May 12, 1922, led by Haley Douglass after his father Charles died in 1920. It was the first African American incorporated municipality in Maryland.",
+          answer: "In 1922, led by Haley Douglass after his father Charles died in 1920. It was the first African American incorporated municipality in Maryland.",
         },
         {
           prompt: "What does the Maryland Historical Trust signal by writing that Frederick Douglass designed Twin Oaks according to tradition?",
@@ -343,23 +347,25 @@ A **Michigan Historical Commission** marker stands at Idlewild; the Historical M
 
 ## The company first, the beach second
 
-The **Afro-American Life Insurance Company** was founded in **Jacksonville, Florida, in 1901** to insure Black Floridians when white-owned insurers would not. **Abraham Lincoln Lewis** was one of seven founders and became its president; he is described as Florida's first Black millionaire (National Park Service, n.d.-a; Wikipedia, n.d.-a).
+The **Afro-American Life Insurance Company** was founded in **Jacksonville, Florida, in 1901** to insure Black Floridians when white-owned insurers would not. **Abraham Lincoln Lewis** was one of its original founders and became its president; he is described as Florida's first Black millionaire (National Park Service, n.d.-a; Wikipedia, n.d.-a).
 
-**In 1935 the company's Pension Bureau bought 33 acres of oceanfront on Amelia Island.** The purchase served two purposes at once: **an investment of company funds**, and **a resort for Black Floridians who were excluded from other beaches**, offered as a benefit to executives and as a sales incentive for employees (National Park Service, n.d.-c; Wikipedia, n.d.-a).
+**In 1935 the company founded American Beach on Amelia Island** (National Park Service, n.d.-c). The Park Service's theme study says Lewis envisioned it as a recreation resource and resort for the company's African American executives and employees, and that the first lot sales, to "Negro citizens," were to generate revenue for the **company's employee pension fund** (Kahrl & Cammeron, 2022, p. 183). **So the land served two purposes at once: a resort for people excluded from other beaches, and a source of money for the company's pension fund.**
 
-**Read that as a business decision, because that is what it was.** An insurer holds reserves and must invest them. This one invested part of them in beachfront that its own policyholders could actually use. **That is capital formation under exclusion, and it is an economics lesson rather than a footnote.**
+**Read that as a business decision, because that is what it was.** A company bought shoreline, sold lots on it to raise money for its employees' pensions, and sold them to buyers who could not buy a beach lot elsewhere. **That is capital formation under exclusion, and it is an economics lesson rather than a footnote.**
 
 ## The name is an argument
 
-Lewis named the place **American Beach**. The reason given in the accounts is that he and others held that in the United States beach access should be open to everyone. **The name is a claim about the country, filed as a property name.** The community's motto, carried on its markers and in its own materials, was **"Recreation and Relaxation Without Humiliation."**
+Lewis named the place **American Beach**. Popular accounts say he chose the name to argue that beach access in the United States should be open to everyone; **none of the sources read for this course gives the reason**, so treat that as a story to check, not a finding. The motto is documented: the town advertised itself as a place for **"recreation and relaxation without humiliation"** (National Park Service, n.d.-a; Kahrl & Cammeron, 2022, p. 183).
 
 **Notice something, and do not overclaim it.** The Green Book course taught that the rival guide *Travelguide*, published from 1947 to 1963, carried the motto "Vacation and Recreation Without Humiliation" (National Park Service, n.d.-d). **The construction recurs across Black leisure businesses of the period.** Whether one borrowed from the other is not established here, and you should not assert it.
 
 ## The subdivision, and an acreage range
 
-**Lewis had the land subdivided and sold parcels** to Black-owned companies and to shareholders, and the community grew well beyond the original 33 acres. **Accounts of its greatest extent range from about 200 acres to 216 acres** (Wikipedia, n.d.-a). **This course reports the range rather than choosing inside it.** The Nassau County property records are where the answer is.
+**The company sold lots, and it chose its buyers.** The theme study says sales were limited to a "select group of Negro citizens," and that deeds set a minimum cost for new houses and barred gambling, alcohol sales and loud music (Kahrl & Cammeron, 2022, pp. 68-69). The Park Service's Betsch page says the beach began as a retreat for company employees and investors and was soon opened to other Black buyers (National Park Service, n.d.-a).
 
-**Same model as Highland Beach and Idlewild: buy a tract, cut it up, sell the lots.** The difference is who is buying and with whose money. Highland Beach was a federal employee's savings and his family's. Idlewild was a white land company's capital, and then thousands of dollar-a-week payments. **American Beach was an insurance company's investment portfolio.**
+**How much land, and when, is not settled in the sources read here.** One passage of the theme study says company executives bought **200 acres, including 3,500 feet of ocean frontage, in 1936** (Kahrl & Cammeron, 2022, p. 68); the Park Service's Betsch page says the company bought **more than 200 acres between 1935 and 1940** (National Park Service, n.d.-a); Wikipedia gives **216 acres** (Wikipedia, n.d.-a). A figure of 33 acres for the first purchase circulates in other accounts that this course has not read. **This course reports the range rather than choosing inside it.** The Nassau County property records are where the answer is.
+
+**Same model as Highland Beach and Idlewild: buy a tract, cut it up, sell the lots.** The difference is who is buying and with whose money. Highland Beach was bought by a longtime Treasury Department clerk with help from his father (BlackPast, n.d.-b; Town of Highland Beach, n.d.). Idlewild was a white land company's capital, and then thousands of dollar-a-week payments. **American Beach was an insurance company's land, sold to fund its pension fund.**
 
 ## What was on it
 
@@ -372,7 +378,7 @@ The Park Service's own summary calls American Beach **the most prominent of Flor
 **Two things happened to American Beach in 1964, and it is important not to fuse them.**
 
 - **The Civil Rights Act of 1964** desegregated public accommodations, including Florida's beaches. Black Floridians could go to beaches nearer home, and many did (Wikipedia, n.d.-a).
-- **Hurricane Dora made landfall near St. Augustine in the early hours of September 10, 1964**, with winds estimated around 115 miles per hour, the first hurricane landfall at St. Augustine in the era of modern record keeping. Northeast Florida took heavy damage (National Oceanic and Atmospheric Administration, 2014). **American Beach lost homes and buildings** (Wikipedia, n.d.-a).
+- **Hurricane Dora made landfall near St. Augustine in the early hours of September 10, 1964**, with winds estimated around 115 miles per hour, the first hurricane landfall at St. Augustine in the era of modern record keeping. Northeast Florida took considerable damage (National Oceanic and Atmospheric Administration, 2014). **American Beach lost homes and buildings**; the theme study says Dora leveled dozens of homes and businesses there (Kahrl & Cammeron, 2022, p. 137; Wikipedia, n.d.-a).
 
 **One statute and one storm, ten weeks apart.** Lesson 14 handles what to do with that pairing without turning it into a moral.
 
@@ -380,39 +386,42 @@ The Park Service's own summary calls American Beach **the most prominent of Flor
 
 **MaVynee Oshun Betsch was born on January 13, 1935 and died on September 5, 2005** (National Park Service, n.d.-a). She studied at the **Oberlin Conservatory of Music** and performed in Europe, then returned to Florida in the 1960s to work on the environment; Wikipedia dates her return specifically to American Beach to **1977** (National Park Service, n.d.-a; Wikipedia, n.d.-a). She **donated her substantial inheritance to environmental causes** and sold her family's home to give away the proceeds (National Park Service, n.d.-a). She was known as **the Beach Lady**.
 
-**Her relationship to A. L. Lewis is reported two different ways, and the disagreement is worth carrying.** The National Park Service says "Her great-grandfather, Abraham Lincoln Lewis" (National Park Service, n.d.-a). Wikipedia's American Beach article calls her his granddaughter (Wikipedia, n.d.-a). **Prefer the Park Service, note the conflict, and understand that a genealogy is settled by records rather than by repetition.**
+**Her relationship to A. L. Lewis is reported two different ways, and the disagreement is worth carrying.** The National Park Service says "Her great-grandfather, Abraham Lincoln Lewis" (National Park Service, n.d.-a). Wikipedia's American Beach article calls her his granddaughter (Wikipedia, n.d.-a). The Park Service's theme study also says great-granddaughter (Kahrl & Cammeron, 2022, p. 152). **Prefer the Park Service, note the conflict, and understand that a genealogy is settled by records rather than by repetition.**
 
 ## NaNa dune, and what actually happened
 
 **The popular version is that the Beach Lady saved the dune.** The record is more specific and, read carefully, more instructive.
 
-**NaNa** is part of the tallest dune system on Florida's Atlantic coast. The name is from **NaNa**, meaning grandmother in the **Twi** language of West Africa. When development of the Amelia Island Plantation resort threatened it, **Betsch campaigned against that development** (National Park Service, n.d.-a).
+**NaNa** is part of the tallest dune system on Florida's Atlantic coast, and **Betsch campaigned against its development** (National Park Service, n.d.-a). The neighbor to the south was the gated Amelia Island Plantation resort, which in the mid-1990s bought 80 acres of forest next to American Beach and turned it into fairways and homes (Kahrl & Cammeron, 2022, p. 141).
 
 Then three separate things had to happen, and only the first was hers.
 
-1. **She changed a landowner's mind.** Accounts credit her campaign with persuading the resort to preserve the dune.
-2. **The landowner conveyed it.** Amelia Island Plantation bought the dune and donated it toward the National Park Service (Wikipedia, n.d.-a).
-3. **Congress had to move a boundary.** The Park Service could not simply hold the parcel. The **Timucuan Ecological and Historic Preserve Boundary Revision Act of 2004** (H.R. 3768, 108th Congress) expanded the preserve's boundary to take in an **8.5-acre parcel** at American Beach. The Park Service today states that it owns the **8.5-acre sand dune** (Timucuan Ecological and Historic Preserve Boundary Revision Act of 2004; National Park Service, n.d.-b).
+1. **She pressed a landowner.** Her campaign opposed the dune's development (National Park Service, n.d.-a). The sources read here do not document what changed inside the resort's own decision.
+2. **The landowner conveyed it.** In 2003, after what the theme study calls a protracted dispute, Amelia Island Plantation agreed to transfer the dune to the National Park Service (Kahrl & Cammeron, 2022, pp. 152-153); Wikipedia says the resort bought the dune and donated it (Wikipedia, n.d.-a).
+3. **Congress had to move a boundary.** The **Timucuan Ecological and Historic Preserve Boundary Revision Act of 2004** (H.R. 3768, 108th Congress) added "approximately 8.5 acres of land located in Nassau County, Florida" to the preserve, as shown on a map dated June 2003 (Timucuan Ecological and Historic Preserve Boundary Revision Act of 2004, sec. 2). The Park Service today states that it owns the **8.5-acre sand dune** (National Park Service, n.d.-b).
 
-**Sources differ on the year of the donation**, with 2003 and 2004 both appearing. **The statute is the datable instrument and it is 2004.** When a popular account and a public law disagree about a date, use the public law.
+**Two years appear, 2003 and 2004, and they belong to two different events**: the resort's agreement in 2003 and the statute in 2004. **The statute is the datable instrument that made the dune part of the preserve.**
 
 **Why this version is better than the legend.** "One woman saved a dune" is a story about a personality. **"An activist changed a corporation's decision, and then a federal statute made the result permanent"** is a story about how anything gets protected in the United States, and it takes nothing at all away from her.
 
 ## The place today
 
-**Most of American Beach is privately owned.** The Park Service says so and instructs visitors to respect residents' privacy (National Park Service, n.d.-b). The **A. L. Lewis Museum at American Beach opened on September 6, 2014**, a project Betsch had wanted for most of her life. An **American Beach Property Owners Association** exists, and **Nassau County planning staff have worked with the community since 2018** on identifying and preserving the community's character, including zoning updates and an explored Community Redevelopment Area designation (Nassau County, n.d.).
+**Most of American Beach is privately owned.** The Park Service says so and instructs visitors to respect residents' privacy (National Park Service, n.d.-b). The **A. L. Lewis Museum at American Beach opened on September 6, 2014**, a lifelong dream of Betsch's (Wikipedia, n.d.-a). The community has a property owners association, named on its heritage plaques (lesson 17), and **Nassau County planning staff have worked with the community since 2018** on identifying and preserving the community's character, including zoning updates and an explored Community Redevelopment Area designation (Nassau County, n.d.).
 
-**And there is a live designation question right now.** After a letter of inquiry received in 2021, the National Park Service commissioned a **National Historic Landmark study** of American Beach, opened public comment on **November 4, 2024**, and expected the effort to run **through spring 2026** (National Park Service, n.d.-c). The district itself has been on the **National Register since 2002**; secondary summaries give the listing date as January 28, 2002 and the district as about 40 acres with 67 buildings and one structure, figures fixed in a nomination this course has not read. **Check the current status before you rely on any of this. A live process is a live process.**
+**And there is a live designation question right now.** After reviewing a letter of inquiry, the National Park Service commissioned a **National Historic Landmark study** of American Beach, opened public comment on **November 4, 2024**, and expected the effort to run **through spring 2026** (National Park Service, n.d.-c). The district itself has been on the **National Register since 2002** (National Park Service, n.d.-c); Wikipedia gives the listing date as January 28, 2002 and the district as about 40 acres with 67 buildings and one structure (Wikipedia, n.d.-a), figures fixed in a nomination this course has not read. **Check the current status before you rely on any of this. A live process is a live process.**
 
 ## Sources
+- BlackPast. (n.d.-b). *Highland Beach, Maryland (1893 to present)*. https://blackpast.org/african-american-history/highland-beach-maryland-1893/
+- Kahrl, A. W., & Cammeron, M. (2022). *African American outdoor recreation theme study: Historic context and National Historic Landmark survey*. National Park Service; Organization of American Historians. https://www.nps.gov/subjects/nationalhistoriclandmarks/upload/African-American-Outdoor-Recreation-National-Historic-Landmark-Theme-Study.pdf (printed page numbers; printed p. 183 is PDF p. 191)
 - Nassau County, Florida. (n.d.). *American Beach neighborhood planning*. https://www.nassaucountyfl.com/990/American-Beach-Neighborhood-Planning
-- National Oceanic and Atmospheric Administration, Atlantic Oceanographic and Meteorological Laboratory. (2014). *50th anniversary of Hurricane Dora's St. Augustine landfall*. https://www.aoml.noaa.gov/hurricane_blog/50th-anniversary-of-hurricane-doras-st-augustine-landfall/
+- National Oceanic and Atmospheric Administration, Atlantic Oceanographic and Meteorological Laboratory. (2014). *50th anniversary of Hurricane Dora's St. Augustine landfall*. Archived August 12, 2026, at https://web.archive.org/web/20260812042429/https://www.aoml.noaa.gov/hurricane_blog/50th-anniversary-of-hurricane-doras-st-augustine-landfall/
 - National Park Service. (n.d.-a). *MaVynee "Beach Lady" Betsch*. https://www.nps.gov/people/mavynee-beach-lady-betsch.htm
 - National Park Service. (n.d.-b). *Visiting American Beach*. Timucuan Ecological and Historic Preserve. https://www.nps.gov/timu/learn/historyculture/ambch_visiting.htm
 - National Park Service. (n.d.-c). *National Park Service announces study of American Beach for possible National Historic Landmark designation* [News release]. Timucuan Ecological and Historic Preserve. https://www.nps.gov/timu/learn/news/national-park-service-announces-study-of-american-beach-for-possible-national-historic-landmark-designation.htm
 - National Park Service. (n.d.-d). *The Green Book: An historic context*. https://www.nps.gov/articles/000/the-green-book-an-historic-context.htm
-- Timucuan Ecological and Historic Preserve Boundary Revision Act of 2004, H.R. 3768, 108th Cong. (2004). https://www.congress.gov/bill/108th-congress/house-bill/3768/text
-- Wikipedia. (n.d.-a). *American Beach, Florida*. https://en.wikipedia.org/wiki/American_Beach,_Florida`,
+- Timucuan Ecological and Historic Preserve Boundary Revision Act of 2004, H.R. 3768, 108th Cong. (2004) (enrolled bill). https://www.govinfo.gov/content/pkg/BILLS-108hr3768enr/html/BILLS-108hr3768enr.htm
+- Town of Highland Beach. (n.d.). *History of Highland Beach*. https://www.highlandbeachmd.org/town-history
+- Wikipedia. (n.d.-a). *American Beach, Florida*. Retrieved November 1, 2026, from https://en.wikipedia.org/wiki/American_Beach,_Florida`,
       recallContent: [
         {
           prompt: "Who formed the Idlewild Resort Company, and how does the Idlewild community describe that fact on its own website?",
@@ -420,7 +429,7 @@ Then three separate things had to happen, and only the first was hers.
         },
         {
           prompt: "What happened at Idlewild in 1921, and why is it the most under-taught fact about the place?",
-          answer: "By the community's own account, as published on its website when this course was written and since removed, the developers turned ownership and management over to the Idlewild Lot Owners Association, incorporated in August 1921 and run by the Black property owners. A Michigan marker, as transcribed, says instead that the founders formed the association with William Jennings in 1920. The articles of incorporation would settle it.",
+          answer: "By the account this course first reported in July 2026, citing the community's website, which does not carry it now and did not in archived copies from 2025 and May 2026, the developers turned ownership and management over to the Idlewild Lot Owners Association, incorporated in August 1921 and run by the Black property owners. A Michigan marker, as transcribed, says instead that the founders formed the association with William Jennings in 1920. The articles of incorporation would settle it.",
         },
         {
           prompt: "Idlewild's peak is reported as 25,000 visitors on a weekend, 20,000 on a weekend, and almost 25,000 a year. What is the method lesson?",
@@ -442,7 +451,7 @@ There is **no founder**, **no founding year**, and **no Black developer** to nam
 
 ## The land was subdivided for somebody else
 
-The **Vineyard Grove Company**, formed by wealthy residents, laid out the **Highlands** section of what became Oak Bluffs around **1869 to 1870**, dividing it into roughly **700 small parcels of about 70 by 30 feet**, as a Methodist summer vacation community (Burnett, n.d.; Martha's Vineyard Magazine, 2016).
+The **Vineyard Grove Company**, formed by wealthy residents, laid out the **Highlands** section of what became Oak Bluffs around **1869 to 1870**, dividing it into **hundreds of small parcels of about 70 by 30 feet**, as a Methodist summer vacation community (Burnett, n.d.; Martha's Vineyard Magazine, 2016).
 
 **The plan did not work.** When Methodist development faltered in an economic downturn, the company made a deal with a smaller **Baptist** organization to hold revivals there. A **wooden open tabernacle was built in 1877**, on a site where the **New England Black Baptist Association** had held meetings (Burnett, n.d.; Martha's Vineyard Magazine, 2016).
 
@@ -501,11 +510,11 @@ The **African American Heritage Trail of Martha's Vineyard** was established in 
       recallContent: [
         {
           prompt: "Where did the Afro-American Life Insurance Company's money for American Beach come from, and why is that an economics lesson?",
-          answer: "From an insurer's invested reserves. The company was founded in 1901 to insure Black Floridians when white insurers would not, and in 1935 its Pension Bureau bought 33 acres of oceanfront as both an investment and a resort its policyholders could use. That is capital formation under exclusion.",
+          answer: "From the insurer's own land and lot sales. The company was founded in 1901 to insure Black Floridians when white insurers would not; it founded American Beach in 1935 as a resort for its executives and employees, and the first lot sales were to raise revenue for its employee pension fund. That is capital formation under exclusion.",
         },
         {
           prompt: "What three steps actually protected NaNa dune?",
-          answer: "MaVynee Betsch's campaign changed the resort's decision; Amelia Island Plantation bought and donated the dune; and the Timucuan Ecological and Historic Preserve Boundary Revision Act of 2004 expanded the preserve boundary to take in the 8.5-acre parcel.",
+          answer: "MaVynee Betsch campaigned against the dune's development; Amelia Island Plantation agreed in 2003 to hand the dune to the National Park Service; and the Timucuan Ecological and Historic Preserve Boundary Revision Act of 2004 expanded the preserve boundary to take in the 8.5-acre parcel.",
         },
         {
           prompt: "Which two things happened to American Beach in 1964?",
@@ -601,7 +610,7 @@ The **African American Heritage Trail of Martha's Vineyard** was established in 
             sourceLessonSlug: "wwr-highland-beach-1893",
           },
           {
-            prompt: "Highland Beach incorporated on May 12, 1922. What did that make it?",
+            prompt: "Highland Beach incorporated in 1922. What did that make it?",
             options: [
               "A federally protected historic site",
               "A county park and recreation district",
@@ -632,15 +641,15 @@ The **African American Heritage Trail of Martha's Vineyard** was established in 
             sourceLessonSlug: "wwr-idlewild-1912",
           },
           {
-            prompt: "What happened at Idlewild in August 1921?",
+            prompt: "Two accounts of how the Idlewild Lot Owners Association began disagree. On what?",
             options: [
-              "The company surveyed and recorded its first plat",
-              "The Chicago Defender stopped carrying the advertisements",
-              "The federal government designated the historic district",
-              "The Lot Owners Association took over the resort",
+              "The year, and who formed it",
+              "Whether it ever existed",
+              "Which state chartered it",
+              "Whether Black owners joined",
             ],
-            correctIndex: 3,
-            explanation: "That is the community's own account, as published on its website when this course was written and since removed: the developers handed the resort to the association, run by the Black property owners. Lesson 4 also gives the second account, a Michigan marker as transcribed, which dates the association to 1920 and has the founders forming it. The articles of incorporation would settle which is right.",
+            correctIndex: 0,
+            explanation: "1920, formed by the founders (a Michigan marker, as transcribed), or August 1921, taken over by the owners. The 1921 version is the account this course first reported, citing the community's History page; the page does not carry it now, nor in archived copies from August 2025 and May 2026, so its source is unknown. The articles of incorporation would settle which is right.",
             sourceLessonSlug: "wwr-idlewild-1912",
           },
           {
@@ -656,7 +665,7 @@ The **African American Heritage Trail of Martha's Vineyard** was established in 
             sourceLessonSlug: "wwr-idlewild-1912",
           },
           {
-            prompt: "Which company bought the first 33 acres at American Beach, and in what year?",
+            prompt: "Which company founded American Beach, and in what year?",
             options: [
               "The Amelia Island Plantation resort company, in 1972",
               "The Afro-American Life Insurance Company, in 1935",
@@ -664,7 +673,7 @@ The **African American Heritage Trail of Martha's Vineyard** was established in 
               "The Vineyard Grove Company, in 1901",
             ],
             correctIndex: 1,
-            explanation: "The company's Pension Bureau bought the oceanfront as both an investment of reserves and a resort its policyholders could actually use.",
+            explanation: "The Park Service dates the founding to 1935. Its theme study says the resort was meant for the company's executives and employees, and that lot sales would raise revenue for the employee pension fund.",
             sourceLessonSlug: "wwr-american-beach-1935",
           },
           {
@@ -676,7 +685,7 @@ The **African American Heritage Trail of Martha's Vineyard** was established in 
               "A Florida state park designation granted in 1977 by the governor",
             ],
             correctIndex: 0,
-            explanation: "Her campaign changed the resort's decision and the resort conveyed the land, but the Timucuan boundary revision act of 2004 is the instrument that let the Park Service hold the 8.5 acres.",
+            explanation: "Her campaign opposed the dune's development and the resort agreed in 2003 to hand it over, but the Timucuan boundary revision act of 2004 is the instrument that put the 8.5 acres inside the Park Service's preserve.",
             sourceLessonSlug: "wwr-american-beach-1935",
           },
           {
@@ -688,14 +697,14 @@ The **African American Heritage Trail of Martha's Vineyard** was established in 
               "A failed Methodist subdivision, then an 1877 Baptist tabernacle",
             ],
             correctIndex: 3,
-            explanation: "The Vineyard Grove Company platted about 700 small parcels around 1870 for a Methodist community; when that faltered it partnered with a Baptist organization, and the tabernacle drew Black vacationers who then bought.",
+            explanation: "The Vineyard Grove Company divided the Highlands into hundreds of small 70 by 30 foot parcels in 1870 for a Methodist community; when that faltered it made a deal with a Baptist organization, and the 1877 tabernacle drew Black vacationers who then bought.",
             sourceLessonSlug: "wwr-oak-bluffs-deeds",
           },
           {
             prompt: "Jeffrey Burnett's Oak Bluffs Highlands project counted how many deeds involving people of African descent?",
             options: ["22", "70", "129", "700"],
             correctIndex: 2,
-            explanation: "129 deeds covering 22 different properties, spatialised from the Dukes County Registry of Deeds. The 22 is the property count and the 700 is the original parcel count.",
+            explanation: "129 deeds covering 22 different properties, mapped from records in the Dukes County Registry of Deeds. The 22 is the property count, not the deed count.",
             sourceLessonSlug: "wwr-oak-bluffs-deeds",
           },
         ],
@@ -746,7 +755,7 @@ Willa Bruce's guests in 1912 arrived to find that she **rented bathing suits and
 
 ## 5. The lot itself
 
-**In three of the five communities the primary product was land, and everything else was an amenity that made land sell.** Highland Beach: Charles Douglass subdivided and sold lots to family and friends. Idlewild: the Resort Company platted in 1915 and sold lots, reportedly for 35 dollars on weekly terms. American Beach: the Afro-American Life Insurance Company subdivided its 33 acres and sold parcels to Black-owned companies and shareholders.
+**In three of the five communities the primary product was land, and everything else was an amenity that made land sell.** Highland Beach: Charles Douglass subdivided and sold lots to family and friends. Idlewild: the Resort Company platted in 1915 and sold lots, reportedly for 35 dollars on weekly terms. American Beach: the Afro-American Life Insurance Company sold lots to a select group of Black buyers to raise revenue for its employee pension fund (Kahrl & Cammeron, 2022, p. 183).
 
 **A hotel earns a room-night at a time. A lot company earns once, and then the buyer builds the town for you.** That is why the lot model recurs in this course and the pure hotel model does not.
 
@@ -762,6 +771,7 @@ Willa Bruce's guests in 1912 arrived to find that she **rented bathing suits and
 - City of Manhattan Beach History Advisory Board. (2021, October 25). *History Advisory Board report*. City of Manhattan Beach. https://cmcp.org/wp-content/uploads/2023/02/Supplmental-Material_History-Report-4867-6724-8699-1-1.pdf
 - The Cultural Landscape Foundation. (n.d.). *Idlewild Historic District*. https://www.tclf.org/idlewild-historic-district
 - Idlewild Michigan. (n.d.). *History*. https://www.idlewild-michigan.org/history
+- Kahrl, A. W., & Cammeron, M. (2022). *African American outdoor recreation theme study: Historic context and National Historic Landmark survey*. National Park Service; Organization of American Historians. https://www.nps.gov/subjects/nationalhistoriclandmarks/upload/African-American-Outdoor-Recreation-National-Historic-Landmark-Theme-Study.pdf
 - Martha's Vineyard African American Heritage Trail. (n.d.). *Town of Oak Bluffs*. https://mvafricanamericanheritagetrail.org/trail-sites/town-of-oak-bluffs/
 - Martha's Vineyard Magazine. (2016, August 1). *Life in the Highlands*. https://mvmagazine.com/news/2016/08/01/life-highlands
 - National Park Service. (n.d.-b). *Visiting American Beach*. Timucuan Ecological and Historic Preserve. https://www.nps.gov/timu/learn/historyculture/ambch_visiting.htm
@@ -814,7 +824,7 @@ The Martha's Vineyard African American Heritage Trail describes the Inkwell as o
 |---|---|---|
 | **Highland Beach** | A federal employee's savings and his family's, buying from a Black farmer | Small, personal, and answerable to nobody. Also small enough to stay residential |
 | **Idlewild** | A white land company's capital first, then thousands of instalment payments from Black buyers | The developers took the early risk and the buyers took the town, formally, in 1921 |
-| **American Beach** | An insurance company's invested reserves | Professional capital, a board, and a resort that is a line item |
+| **American Beach** | An insurance company's land, with lot sales feeding its employee pension fund | Professional capital, a board, and a resort that is a line item |
 | **Oak Bluffs** | Individual household savings, deed by deed | No single point of failure, and no single body that can act |
 | **Bruce's Beach** | A railroad dining-car chef's wages and a woman running the business on site | One family, no partners, no association, no municipality |
 
@@ -885,18 +895,18 @@ Everything so far has been property and business. **Now ask the question that de
 
 ## The five shapes
 
-**1. An incorporated municipality. Highland Beach, Maryland, since May 12, 1922.**
-Residents created a municipal government, the first African American incorporated municipality in Maryland (Town of Highland Beach, n.d.). Preservation Maryland describes it as an **all-volunteer government** (Preservation Maryland, n.d.). **The town prohibits commercial establishments** (Town of Highland Beach, n.d.).
+**1. An incorporated municipality. Highland Beach, Maryland, since 1922.**
+Residents created a municipal government, the first African American incorporated municipality in Maryland (BlackPast, n.d.-b; Town of Highland Beach, n.d.). Preservation Maryland describes it as an **all-volunteer government** (Preservation Maryland, n.d.). **The town prohibits commercial establishments** (Town of Highland Beach, n.d.).
 
 **Read that last sentence again as a governance fact.** A town can restrict land use inside its own limits because a municipality holds the **police power** delegated by the state. **A homeowners association cannot do that. A town can.**
 
 **2. An unincorporated community, a township, and a lot owners association. Idlewild, Michigan.**
-Idlewild is unincorporated and sits in **Yates Township, Lake County**, so the township and county provide public funding and administrative oversight. The **Idlewild Lot Owners Association** is the private body. Its founding is disputed: the community's own account, as published when this course was written and since removed from its website, dated it to **August 1921** and described homeowner governance and preservation advocacy ever since; a Michigan marker, as transcribed, dates it to **1920** and says the founders formed it to handle public improvements and maintenance (Idlewild Michigan, n.d.; Read the Plaque, n.d.). Lesson 4 sets the two accounts side by side. The community's account also named an **Idlewild African American Chamber of Commerce** founded in **2000** by John O. Meeks (Idlewild Michigan, n.d.).
+Idlewild is unincorporated and sits in **Yates Township, Lake County**, so the township and county provide public funding and administrative oversight. The **Idlewild Lot Owners Association** is the private body. Its founding is disputed. This course first reported, citing the community's website, that it was incorporated in **August 1921** and took over the resort from the developers; that page does not say so now and did not in archived copies from 2025 and May 2026 (Idlewild Michigan, n.d.), so the course cannot source it. A Michigan marker, as transcribed, dates the association to **1920**, says the founders formed it with William Jennings to handle public improvements and maintenance, and records that it bought the site of its youth center in 1954 (Read the Plaque, n.d.). Lesson 4 sets the two accounts side by side. Wikipedia's article on Idlewild also names an **Idlewild African American Chamber of Commerce**, founded in **2000** (Wikipedia, n.d.-b).
 
 **Two bodies, neither of them a city.** One is a unit of Michigan government the residents vote in; the other is a private corporation the property owners run.
 
 **3. An unincorporated community, a county, and a property owners association. American Beach, Florida.**
-American Beach is unincorporated in **Nassau County**. There is an **American Beach Property Owners Association**, and since **2018** county planning staff have worked with the community on identifying and preserving its character, including zoning updates and an explored **Community Redevelopment Area** designation (Nassau County, n.d.).
+American Beach is unincorporated in **Nassau County**. The community has a property owners association, the **American Beach Property Owners Association**, which this course names from the community's heritage plaques (lesson 17) and has not documented from a filing. Since **2018** county planning staff have worked with the community on identifying and preserving its character, including zoning updates and an explored **Community Redevelopment Area** designation (Nassau County, n.d.).
 
 **Notice who holds the pen.** The zoning is the county's. The community participates. **Participation and authority are different things, and knowing which one you have is the whole skill.**
 
@@ -920,6 +930,8 @@ The Bruces held two lots. There was no township of theirs, no association, no mu
 | **Take property by eminent domain** | No | Yes | Yes |
 | **Police the streets** | No | Yes | Yes |
 
+**Read the table as a general summary, not as a legal finding.** It describes how these bodies usually work in American law. The exact powers of any one association, township or county are set by its state's statutes and by its own documents, and this course has not read those for any of the five places.
+
 **Every power in the bottom half of that table is a power somebody can use on you.** An association is a way of speaking. A government is a way of deciding.
 
 ## The pattern, stated at exactly the strength the evidence supports
@@ -936,12 +948,14 @@ The Bruces held two lots. There was no township of theirs, no association, no mu
 
 ## Sources
 - City of Manhattan Beach History Advisory Board. (2021, October 25). *History Advisory Board report*. City of Manhattan Beach. https://cmcp.org/wp-content/uploads/2023/02/Supplmental-Material_History-Report-4867-6724-8699-1-1.pdf
-- Idlewild Michigan. (n.d.). *History*. https://www.idlewild-michigan.org/history
+- BlackPast. (n.d.-b). *Highland Beach, Maryland (1893 to present)*. https://blackpast.org/african-american-history/highland-beach-maryland-1893/
+- Idlewild Michigan. (n.d.). *History*. Retrieved November 1, 2026, from https://www.idlewild-michigan.org/history
 - Nassau County, Florida. (n.d.). *American Beach neighborhood planning*. https://www.nassaucountyfl.com/990/American-Beach-Neighborhood-Planning
 - Preservation Maryland. (n.d.). *Highland Beach: Douglass family-founded beach town on the Chesapeake*. https://preservationmaryland.org/highland-beach-douglass-family-founded-beach-town-on-the-chesapeake/
 - Read the Plaque. (n.d.). *Idlewild Lot Owners Association* [Transcription of a historical marker credited to the Michigan History Center]. Retrieved November 1, 2026, from https://readtheplaque.com/plaque/idlewild-lot-owners-association
 - Town of Highland Beach. (n.d.). *History of Highland Beach*. https://www.highlandbeachmd.org/town-history
-- Vineyard Gazette. (2016, August 2). *The Cottagers: Sixty years of community and philanthropy*. https://vineyardgazette.com/news/2016/08/02/cottagers-sixty-years-community-and-philanthrophy`,
+- Vineyard Gazette. (2016, August 2). *The Cottagers: Sixty years of community and philanthropy*. https://vineyardgazette.com/news/2016/08/02/cottagers-sixty-years-community-and-philanthrophy
+- Wikipedia. (n.d.-b). *Idlewild, Michigan*. Retrieved November 1, 2026, from https://en.wikipedia.org/wiki/Idlewild,_Michigan`,
       recallContent: [
         {
           prompt: "What does this course refuse to tell you about these businesses, and why?",
@@ -949,7 +963,7 @@ The Bruces held two lots. There was no township of theirs, no association, no mu
         },
         {
           prompt: "Name the five different sources of capital behind the five communities.",
-          answer: "A federal employee's savings (Highland Beach), a white land company then instalment payments from Black buyers (Idlewild), an insurance company's invested reserves (American Beach), individual household savings deed by deed (Oak Bluffs), and a railroad dining-car chef's wages with his wife running the business on site (Bruce's Beach).",
+          answer: "A federal employee's savings (Highland Beach), a white land company then instalment payments from Black buyers (Idlewild), an insurance company's land and lot sales for its pension fund (American Beach), individual household savings deed by deed (Oak Bluffs), and a railroad dining-car chef's wages with his wife running the business on site (Bruce's Beach).",
         },
         {
           prompt: "What did the Los Angeles Times say about the 1,225 dollars Willa Bruce paid, and what caveat did the city's own report attach?",
@@ -1195,41 +1209,52 @@ The Bruces held two lots. There was no township of theirs, no association, no mu
 
 ## The calendar, worked across this course
 
-**Every line below has a source in an earlier lesson. Read it as one page, not as two.**
+**Every line below is taught in an earlier lesson, and the last column names its source. Read it as one page, not as two.**
 
-| Year | What was built or owned | What was done |
-|---|---|---|
-| **1890** | | Charles and Laura Douglass refused service at a Chesapeake Bay resort |
-| **1893 to 1895** | Highland Beach bought, laid out and sold as lots; the first cottage and Twin Oaks built | |
-| **Feb 1912** | Willa Bruce buys Lot 8, Block 5, for 1,225 dollars | |
-| **June 17, 1912** | Bruce Beach Front opens: soda pop, lunches, bathing suits, showers, dressing tents | The arrival of Black guests causes agitation among some white property owners, and confrontation with guests reaching the ocean |
-| **1912** | The Idlewild Resort Company is formed to sell lots to Black buyers | The Los Angeles City Attorney's opinion in the Caleb Holden matter guts the state civil rights bill in practice |
-| **1913** | | Segregation approved in federal government offices |
-| **1915 to 1916** | Idlewild's first plat surveyed; Idlewild clubhouse built; the Bruces build a two-story building with a kitchen and dance floor | |
-| **1919 to 1923** | The Prioleaus, Elizabeth Patterson, Mary Sanders and the Johnsons buy lots in Block 12 | 1921: Lindsey approaches the Board of Trustees about the increasing number of Black people in Manhattan Beach |
-| **1920 or Aug 1921** | The Idlewild Lot Owners Association is formed: the community's own account says August 1921, with the owners taking over the resort; a Michigan marker, as transcribed, says 1920, formed by the founders (lesson 4) | 1921: the federal Advisory Committee on Zoning is organized and its manual distributed nationwide |
-| **May 12, 1922** | Highland Beach incorporates as a municipality | |
-| **Nov to Dec 1923** | | Lindsey and civic leaders petition to purchase Blocks 5 and 12; owners of Blocks 5 and 12 petition against it |
-| **1924** | | The realtors' national code of ethics adopted; a Klan lecture advertised in January; Ordinance 276 and ordinances 273 to 275 passed June 5; Ordinance 282; the city files its condemnation suit in November |
-| **May 30, 1927** | The Slaughters open a ten-room boarding house | May: the Bruces surrender the land. June: the buildings are demolished |
-| **June 10, 1929** | | Final judgment in the condemnation |
-| **1935** | American Beach founded on 33 acres bought by an insurance company's Pension Bureau. MaVynee Betsch born on January 13 | |
-| **1956** | The Cottagers, Inc. founded at Oak Bluffs | |
-| **1964** | | The Civil Rights Act desegregates public accommodations. Hurricane Dora lands near St. Augustine on September 10 |
-| **1979, 1992, 2002** | Idlewild, Twin Oaks and American Beach listed on the National Register | |
-| **2004** | NaNa dune enters the National Park System by act of Congress | |
-| **July 20, 2022** | Two Manhattan Beach parcels returned to the Bruces' heirs | |
+| Year | What was built or owned | What was done | Source |
+|---|---|---|---|
+| **1890 or 1892** | | Charles and Laura Douglass refused service at the Bay Ridge resort on the Chesapeake | Lesson 3; BlackPast, n.d.-b; Town of Highland Beach, n.d. |
+| **1893 to 1895** | Highland Beach bought, laid out and sold as lots; the first cottage and Twin Oaks built | | Lesson 3; Town of Highland Beach, n.d.; Maryland Historical Trust, n.d. |
+| **Feb 1912** | Willa Bruce buys Lot 8, Block 5, for 1,225 dollars | | Lesson 15; City of Manhattan Beach History Advisory Board, 2021, p. 18 |
+| **June 17, 1912** | Bruce Beach Front opens: soda pop, lunches, bathing suits, showers, dressing tents | The arrival of Black guests causes agitation among some white property owners, and confrontation with guests reaching the ocean | City of Manhattan Beach History Advisory Board, 2021, pp. 11, 19 |
+| **1912** | The Idlewild Resort Company is formed to sell lots to Black buyers | The Los Angeles City Attorney's opinion in the Caleb Holden matter guts the state civil rights bill in practice | Lesson 4; Terry Wantz Historical Research Center, n.d.; City of Manhattan Beach History Advisory Board, 2021, p. 10 |
+| **1913** | | Segregation approved in federal government offices | City of Manhattan Beach History Advisory Board, 2021, p. 8 |
+| **1915 to 1916** | Idlewild platted; Idlewild clubhouse built; the Bruces build a two-story building with a kitchen and dance floor | | The Cultural Landscape Foundation, n.d.; City of Manhattan Beach History Advisory Board, 2021, p. 11 |
+| **1919 to 1923** | The Prioleaus, Elizabeth Patterson, Mary Sanders and the Johnsons buy lots in Block 12 | 1921: Lindsey approaches the Board of Trustees about the increasing number of Black people in Manhattan Beach | City of Manhattan Beach History Advisory Board, 2021, pp. 11-12 |
+| **1920 or Aug 1921** | The Idlewild Lot Owners Association is formed: a Michigan marker, as transcribed, says 1920, formed by the founders; an account this course first reported and can no longer source says August 1921, with the owners taking over the resort (lesson 4) | 1921: the federal Advisory Committee on Zoning is organized and its manual distributed nationwide | Read the Plaque, n.d.; Rothstein, 2017, as cited in City of Manhattan Beach History Advisory Board, 2021, p. 8 |
+| **1922** | Highland Beach incorporates as a municipality | | BlackPast, n.d.-b; Town of Highland Beach, n.d. |
+| **Nov to Dec 1923** | | Lindsey and civic leaders petition to purchase Blocks 5 and 12; owners of Blocks 5 and 12 petition against it | City of Manhattan Beach History Advisory Board, 2021, p. 27 |
+| **1924** | | The realtors' national code of ethics adopted; a Klan lecture advertised in January; Ordinance 276 and ordinances 273 to 275 passed June 5; Ordinance 282; the city files its condemnation suit in November | Rothstein, 2017, as cited in City of Manhattan Beach History Advisory Board, 2021, p. 8; City of Manhattan Beach History Advisory Board, 2021, pp. 12, 29 |
+| **May 30, 1927** | The Slaughters open a ten-room boarding house | May: the Bruces surrender the land. June: the buildings are demolished | City of Manhattan Beach History Advisory Board, 2021, pp. 13, 32-33 |
+| **June 10, 1929** | | Final judgment in the condemnation | City of Manhattan Beach History Advisory Board, 2021, p. 43 |
+| **1935** | American Beach founded by the Afro-American Life Insurance Company. MaVynee Betsch born on January 13 | | National Park Service, n.d.-a, n.d.-c |
+| **1956** | The Cottagers, Inc. founded at Oak Bluffs | | Vineyard Gazette, 2016 |
+| **1964** | | The Civil Rights Act desegregates public accommodations. Hurricane Dora lands near St. Augustine on September 10 | National Park Service, n.d.-d; National Oceanic and Atmospheric Administration, 2014 |
+| **1979, 1992, 2002** | Idlewild, Twin Oaks and American Beach listed on the National Register | | National Park Service, n.d.-e; Maryland Historical Trust, n.d.; National Park Service, n.d.-c |
+| **2004** | NaNa dune added to the Timucuan preserve by act of Congress | | Timucuan Ecological and Historic Preserve Boundary Revision Act of 2004 |
+| **July 20, 2022** | Two Manhattan Beach parcels returned to the Bruces' heirs | | Los Angeles County Chief Executive Office, n.d. |
 
-**Look at 1921 and 1922 side by side.** In August 1921 Black property owners took ownership of a Michigan resort. In May 1922 Black residents of Maryland chartered a town. In the same eighteen months, the federal government was distributing a zoning manual and a Los Angeles real estate agent was starting the process that ended Bruce's Beach.
+**Look at 1921 and 1922 side by side.** In 1920 or 1921, depending on which account turns out to be right, Idlewild's lot owners had an association. In 1922 Black residents of Maryland chartered a town. In the same few years, the federal government was distributing a zoning manual and a Los Angeles real estate agent was starting the process that ended Bruce's Beach.
 
 **Do not write a sentence that connects those.** They are not connected. **Write the calendar and let the learner see the two columns fill at the same time**, which is the only thing this evidence lets you claim and, done properly, is far more disturbing than any sentence you could write about it.
 
 ## Sources
+- BlackPast. (n.d.-b). *Highland Beach, Maryland (1893 to present)*. https://blackpast.org/african-american-history/highland-beach-maryland-1893/
 - City of Manhattan Beach History Advisory Board. (2021, October 25). *History Advisory Board report*. City of Manhattan Beach. https://cmcp.org/wp-content/uploads/2023/02/Supplmental-Material_History-Report-4867-6724-8699-1-1.pdf
-- Idlewild Michigan. (n.d.). *History*. https://www.idlewild-michigan.org/history
-- National Oceanic and Atmospheric Administration, Atlantic Oceanographic and Meteorological Laboratory. (2014). *50th anniversary of Hurricane Dora's St. Augustine landfall*. https://www.aoml.noaa.gov/hurricane_blog/50th-anniversary-of-hurricane-doras-st-augustine-landfall/
-- Rothstein, R. (2017). *The color of law: A forgotten history of how our government segregated America*. Liveright.
-- Town of Highland Beach. (n.d.). *History of Highland Beach*. https://www.highlandbeachmd.org/town-history`,
+- The Cultural Landscape Foundation. (n.d.). *Idlewild Historic District*. https://www.tclf.org/idlewild-historic-district
+- Los Angeles County Chief Executive Office, Anti-Racism, Diversity and Inclusion Initiative. (n.d.). *Bruce's Beach*. https://ceo.lacounty.gov/ardi/bruces-beach/
+- Maryland Historical Trust. (n.d.). *Douglass Summer House* [National Register properties in Maryland, NRID 1097]. https://apps.mht.maryland.gov/nr/NRDetail.aspx?NRID=1097
+- National Oceanic and Atmospheric Administration, Atlantic Oceanographic and Meteorological Laboratory. (2014). *50th anniversary of Hurricane Dora's St. Augustine landfall*. Archived August 12, 2026, at https://web.archive.org/web/20260812042429/https://www.aoml.noaa.gov/hurricane_blog/50th-anniversary-of-hurricane-doras-st-augustine-landfall/
+- National Park Service. (n.d.-a). *MaVynee "Beach Lady" Betsch*. https://www.nps.gov/people/mavynee-beach-lady-betsch.htm
+- National Park Service. (n.d.-c). *National Park Service announces study of American Beach for possible National Historic Landmark designation* [News release]. Timucuan Ecological and Historic Preserve. https://www.nps.gov/timu/learn/news/national-park-service-announces-study-of-american-beach-for-possible-national-historic-landmark-designation.htm
+- National Park Service. (n.d.-d). *The Green Book: An historic context*. https://www.nps.gov/articles/000/the-green-book-an-historic-context.htm
+- National Park Service. (n.d.-e). *Idlewild Historic District* [National Register of Historic Places, reference no. 79001160]. https://npgallery.nps.gov/AssetDetail/NRIS/79001160
+- Read the Plaque. (n.d.). *Idlewild Lot Owners Association* [Transcription of a historical marker credited to the Michigan History Center]. Retrieved November 1, 2026, from https://readtheplaque.com/plaque/idlewild-lot-owners-association
+- Rothstein, R. (2017). *The color of law: A forgotten history of how our government segregated America*. Liveright. https://wwnorton.com/books/the-color-of-law (book; cited second hand, through the City of Manhattan Beach report)
+- Terry Wantz Historical Research Center. (n.d.). *Idlewild*. https://www.twhistoricalresearchcenter.com/idlewild
+- Timucuan Ecological and Historic Preserve Boundary Revision Act of 2004, H.R. 3768, 108th Cong. (2004) (enrolled bill). https://www.govinfo.gov/content/pkg/BILLS-108hr3768enr/html/BILLS-108hr3768enr.htm
+- Town of Highland Beach. (n.d.). *History of Highland Beach*. https://www.highlandbeachmd.org/town-history
+- Vineyard Gazette. (2016, August 2). *The Cottagers: Sixty years of community and philanthropy*. https://vineyardgazette.com/news/2016/08/02/cottagers-sixty-years-community-and-philanthrophy`,
       recallContent: [
         {
           prompt: "Which powers separate a government from a property owners association?",
@@ -1339,14 +1364,15 @@ The report also notes that it had **requested the 1929 Grand Jury report** and w
 
 ## The two facts
 
-**Fact one.** The **Civil Rights Act of 1964** barred discrimination in public accommodations. The prerequisite course teaches that this Act is **why the Green Book ended**: a directory of places that would serve you becomes unnecessary when refusing to serve you is illegal (National Park Service, n.d.-d).
+**Fact one.** The **Civil Rights Act of 1964** barred discrimination in public accommodations. The Green Book's final edition, for 1966 to 1967, told its readers that "every hotel, restaurant, theater or other facility catering to the general public must do exactly that," and the Park Service's history of the guide adds that expanded access "had the practical effect of driving business away from many Black-owned establishments" (National Park Service, n.d.-d).
 
-**Fact two.** In every account of these communities that names a cause of decline, **1964 is the year named**.
+**Fact two.** In the accounts read for this course that name a cause of decline, **1964 is the year named**.
 
-- The Michigan historical marker at Idlewild, as recorded by the Historical Marker Database, says the 1964 passage of the Civil Rights Act **opened doors for Black Americans to stay at previously whites-only resorts** (The Historical Marker Database, n.d.).
-- Idlewild's own account puts its peak from the 1920s into the early 1960s and dates significant population decline to after 1964 (Idlewild Michigan, n.d.; Terry Wantz Historical Research Center, n.d.).
+- The Michigan historical marker at Idlewild, as recorded by the Historical Marker Database, says the 1964 passage of the Civil Rights Act **opened doors for Black Americans to stay at previously whites-only resorts**, and that Idlewild's heyday ended (The Historical Marker Database, n.d.).
+- The Terry Wantz Historical Research Center puts Idlewild's peak at 1920 to 1963 and records a population decline with the passing of the Act in 1964; the community's own account names the Act **and the loss of Chesapeake and Ohio Railway service to Baldwin** (Terry Wantz Historical Research Center, n.d.; Idlewild Michigan, n.d.).
 - The Cultural Landscape Foundation records visitation declining after the 1964 Act (The Cultural Landscape Foundation, n.d.).
-- At American Beach, after the Act desegregated Florida's beaches, **many African American Jacksonvillians turned to locations closer to home** (Wikipedia, n.d.-a).
+- At American Beach, after the Act desegregated Florida's beaches, **many African American Jacksonvillians turned to locations closer to home** (Wikipedia, n.d.-a). The Park Service's Betsch page says Hurricane Dora damaged the town but that "the bigger factor, however, was the Civil Rights Act" (National Park Service, n.d.-a).
+- At Highland Beach, Preservation Maryland says interest waned and visitor numbers dwindled after desegregation (Preservation Maryland, n.d.).
 
 ## The sentence you must not write
 
@@ -1356,8 +1382,8 @@ Here is why the evidence does not carry it.
 
 1. **The Act did not close anything. It removed a restriction.** What changed was the market: a business whose customers had nowhere else to go now had customers with somewhere else to go. **A captive market is not a competitive advantage anybody should have to keep.**
 2. **The counterfactual is not testable.** Nobody can tell you what Idlewild's 1975 season would have looked like in a country that had not passed the Act, because that country does not exist.
-3. **The accounts converge on the Act because it is the most visible date, not because anybody ran the analysis.** Convergence of secondary accounts is weak evidence about causation. **It tells you what people believe about the cause.**
-4. **There are confounders sitting in plain sight in this course.** American Beach was hit by **Hurricane Dora on September 10, 1964**, ten weeks after the Act, losing homes and buildings (National Oceanic and Atmospheric Administration, 2014; Wikipedia, n.d.-a). Idlewild's business was substantially a **live entertainment** business, and the American live entertainment economy changed enormously in the same period. Rail travel declined. **Nobody in this course's sources has separated those effects.**
+3. **The accounts converge on the Act because it is the most visible date, and none of them shows the analysis.** The Park Service's Betsch page ranks the Act above the hurricane at American Beach without giving evidence for the ranking (National Park Service, n.d.-a). Convergence of secondary accounts is weak evidence about causation. **It tells you what people believe about the cause.**
+4. **There are confounders sitting in plain sight in this course.** American Beach was hit by **Hurricane Dora on September 10, 1964**, ten weeks after the Act, losing homes and buildings (National Oceanic and Atmospheric Administration, 2014; Wikipedia, n.d.-a); the theme study says Dora leveled dozens of homes and businesses there (Kahrl & Cammeron, 2022, p. 137). Idlewild lost its Chesapeake and Ohio Railway service to Baldwin (Idlewild Michigan, n.d.), and its business was substantially a **live entertainment** business, which no source read here measures across those years. The Park Service's Green Book history also names urban renewal and freeway building as forces that closed Black-owned businesses in the same period (National Park Service, n.d.-d). **Nobody in this course's sources has separated those effects.**
 
 ## The sentence you may write
 
@@ -1372,27 +1398,32 @@ Here is why the evidence does not carry it.
 **These are living communities, so the survival column is written in the present tense, and it is not a consolation prize.**
 
 - **Highland Beach** is still an incorporated town with an all-volunteer government, about 80 homes, and residents who are descendants of the original settlers. **Twin Oaks is the Frederick Douglass Museum and Cultural Center** (Town of Highland Beach, n.d.; Preservation Maryland, n.d.).
-- **Idlewild** is still an unincorporated community in Yates Township, with a **Lot Owners Association dating to 1920 or 1921** (lesson 4 gives the two accounts), an **African American Chamber of Commerce founded in 2000**, a National Register historic district, and residents the community describes as year-round residents, fourth and fifth generation Idlewilders, seasonal visitors and newcomers (Idlewild Michigan, n.d.).
-- **American Beach** is mostly privately owned, has a **Property Owners Association**, has had the **A. L. Lewis Museum since September 6, 2014**, holds an **8.5-acre federally owned dune**, and is **under study by the National Park Service for National Historic Landmark designation** (National Park Service, n.d.-b, n.d.-c; Nassau County, n.d.).
+- **Idlewild** is still an unincorporated community, with a **Lot Owners Association dating to 1920 or 1921** (lesson 4 gives the two accounts) whose marker stands at its youth center (Read the Plaque, n.d.), an **African American Chamber of Commerce founded in 2000** (Wikipedia, n.d.-b), a National Register historic district (National Park Service, n.d.-e), the **Idlewild Historic & Cultural Center**, and, in the community's words, "year-round residents, fourth- and fifth-generation Idlewilders, seasonal visitors, and newcomers" (Idlewild Michigan, n.d.).
+- **American Beach** is mostly privately owned, has had the **A. L. Lewis Museum since September 6, 2014**, holds an **8.5-acre federally owned dune**, works with Nassau County planning staff, and is **under study by the National Park Service for National Historic Landmark designation** (National Park Service, n.d.-b, n.d.-c; Nassau County, n.d.; Wikipedia, n.d.-a).
 - **Oak Bluffs**: **Shearer Cottage is still owned by Shearer descendants**, the Inkwell is a working town beach with a dawn swimming group, and **The Cottagers, Inc. marked seventy years in 2026** (National Trust for Historic Preservation, n.d.; Martha's Vineyard African American Heritage Trail, n.d.; Vineyard Gazette, 2026).
 - **Bruce's Beach** is the exception, and it gets the next lesson to itself.
 
 ## Sources
 - The Cultural Landscape Foundation. (n.d.). *Idlewild Historic District*. https://www.tclf.org/idlewild-historic-district
 - The Historical Marker Database. (n.d.). *Idlewild historical marker*. https://www.hmdb.org/m.asp?m=182804
-- Idlewild Michigan. (n.d.). *History*. https://www.idlewild-michigan.org/history
+- Idlewild Michigan. (n.d.). *History*. Retrieved November 1, 2026, from https://www.idlewild-michigan.org/history
+- Kahrl, A. W., & Cammeron, M. (2022). *African American outdoor recreation theme study: Historic context and National Historic Landmark survey*. National Park Service; Organization of American Historians. https://www.nps.gov/subjects/nationalhistoriclandmarks/upload/African-American-Outdoor-Recreation-National-Historic-Landmark-Theme-Study.pdf
 - Martha's Vineyard African American Heritage Trail. (n.d.). *Town of Oak Bluffs*. https://mvafricanamericanheritagetrail.org/trail-sites/town-of-oak-bluffs/
 - Nassau County, Florida. (n.d.). *American Beach neighborhood planning*. https://www.nassaucountyfl.com/990/American-Beach-Neighborhood-Planning
-- National Oceanic and Atmospheric Administration, Atlantic Oceanographic and Meteorological Laboratory. (2014). *50th anniversary of Hurricane Dora's St. Augustine landfall*. https://www.aoml.noaa.gov/hurricane_blog/50th-anniversary-of-hurricane-doras-st-augustine-landfall/
+- National Oceanic and Atmospheric Administration, Atlantic Oceanographic and Meteorological Laboratory. (2014). *50th anniversary of Hurricane Dora's St. Augustine landfall*. Archived August 12, 2026, at https://web.archive.org/web/20260812042429/https://www.aoml.noaa.gov/hurricane_blog/50th-anniversary-of-hurricane-doras-st-augustine-landfall/
+- National Park Service. (n.d.-a). *MaVynee "Beach Lady" Betsch*. https://www.nps.gov/people/mavynee-beach-lady-betsch.htm
 - National Park Service. (n.d.-b). *Visiting American Beach*. Timucuan Ecological and Historic Preserve. https://www.nps.gov/timu/learn/historyculture/ambch_visiting.htm
 - National Park Service. (n.d.-c). *National Park Service announces study of American Beach for possible National Historic Landmark designation* [News release]. Timucuan Ecological and Historic Preserve. https://www.nps.gov/timu/learn/news/national-park-service-announces-study-of-american-beach-for-possible-national-historic-landmark-designation.htm
 - National Park Service. (n.d.-d). *The Green Book: An historic context*. https://www.nps.gov/articles/000/the-green-book-an-historic-context.htm
+- National Park Service. (n.d.-e). *Idlewild Historic District* [National Register of Historic Places, reference no. 79001160]. https://npgallery.nps.gov/AssetDetail/NRIS/79001160
 - National Trust for Historic Preservation. (n.d.). *Shearer Cottage and the rich African American heritage of Martha's Vineyard*. https://savingplaces.org/stories/shearer-cottage-and-the-rich-african-american-heritage-of-marthas-vineyard
 - Preservation Maryland. (n.d.). *Highland Beach: Douglass family-founded beach town on the Chesapeake*. https://preservationmaryland.org/highland-beach-douglass-family-founded-beach-town-on-the-chesapeake/
+- Read the Plaque. (n.d.). *Idlewild Lot Owners Association* [Transcription of a historical marker credited to the Michigan History Center]. Retrieved November 1, 2026, from https://readtheplaque.com/plaque/idlewild-lot-owners-association
 - Terry Wantz Historical Research Center. (n.d.). *Idlewild*. https://www.twhistoricalresearchcenter.com/idlewild
 - Town of Highland Beach. (n.d.). *History of Highland Beach*. https://www.highlandbeachmd.org/town-history
 - Vineyard Gazette. (2026, July 1). *Cottagers celebrate 70 years of service*. https://vineyardgazette.com/news/2026/07/01/cottagers-celebrate-70-years-service
-- Wikipedia. (n.d.-a). *American Beach, Florida*. https://en.wikipedia.org/wiki/American_Beach,_Florida`,
+- Wikipedia. (n.d.-a). *American Beach, Florida*. https://en.wikipedia.org/wiki/American_Beach,_Florida
+- Wikipedia. (n.d.-b). *Idlewild, Michigan*. Retrieved November 1, 2026, from https://en.wikipedia.org/wiki/Idlewild,_Michigan`,
       recallContent: [
         {
           prompt: "Name four things that happened in Manhattan Beach in the summer of 1927 on the built or owned side of the calendar.",
@@ -1439,7 +1470,9 @@ Here is why the evidence does not carry it.
 | **June 1927** | Demolition | The buildings come down |
 | **June 10, 1929** | **Final judgment** | Awards set |
 
-**The awards in the 1929 judgment, as printed in the Board of Trustees minutes** (City of Manhattan Beach History Advisory Board, 2021):
+(City of Manhattan Beach History Advisory Board, 2021, pp. 11-15, 18-33, 43; Los Angeles County Library, n.d.)
+
+**The awards in the 1929 judgment, as printed in the Board of Trustees minutes** (City of Manhattan Beach History Advisory Board, 2021, pp. 43-44):
 
 | Owner | Property | Award |
 |---|---|---|
@@ -1456,7 +1489,7 @@ Here is why the evidence does not carry it.
 
 ## Part 2. What the land actually did next, which is not the folklore
 
-**The story that the land sat empty for thirty years is wrong in detail, and the city's own report corrects it from the minutes.**
+**The story that the land sat empty for thirty years is wrong in detail, and the city's own report corrects it from the minutes** (City of Manhattan Beach History Advisory Board, 2021, pp. 15-16, 47-51). The County's own page still says "No park was built, and the land sat empty for decades" until a park was built in 1956 (Los Angeles County Chief Executive Office, n.d.); the minutes below are the better evidence.
 
 - **July 21, 1932.** The City petitions the County for help funding a City Park between the Strand and Highland, using County Welfare and Stabilization Program labor.
 - **February 1933.** The City files plans to use **Reconstruction Finance Corporation** funds for a beachfront park, requesting thousands of "man days" of relief labor block by block.
@@ -1472,6 +1505,8 @@ Here is why the evidence does not carry it.
 
 **Note the 1948 condition, because it is the reason 2021 needed a state statute.** The land carried a **public-use restriction imposed by the State**. **A city could take this ground in 1924 with an ordinance. Giving it back required an act of the California Legislature.** Hold that asymmetry; it is the civics lesson of the whole course.
 
+(City of Manhattan Beach History Advisory Board, 2021, pp. 15-16, 47-51)
+
 **In 1995**, Los Angeles County acquired the land the Bruces had owned, through transfers from the City of Manhattan Beach and the State of California (Los Angeles County Chief Executive Office, n.d.).
 
 ## Part 3. The return, in dates
@@ -1479,28 +1514,28 @@ Here is why the evidence does not carry it.
 | Date | What happened |
 |---|---|
 | **April 20, 2021** | The County Board of Supervisors votes to develop a return plan and to sponsor **Senate Bill 796** to lift the state restrictions |
-| **September 30, 2021** | **Governor Newsom signs SB 796**, enabling the return |
+| **2021** | **SB 796** is signed into state law, enabling the return. The County's page records the signing but not its date; the bill's history at the California Legislature has it |
 | **October 5, 2021** | The Board approves steps to return the property |
 | **June 28, 2022** | The Board approves the transfer of ownership to the Bruce family entity |
 | **July 20, 2022** | **The Board officially returns Bruce's Beach to the closest living legal heirs of Charles and Willa Bruce** |
 
 (Los Angeles County Chief Executive Office, n.d.; Los Angeles County Library, n.d.)
 
-**The lease-back terms.** The County's own account says the agreement has the County **renting the land on which the Lifeguard Administration Building operates**, gives the Bruce family the **right to require the County to acquire the property** within a timeframe, gives the County the **right to require a sale** within a timeframe **not to exceed 20 million dollars**, and sets an annual rent supported by an economic analysis (Los Angeles County Chief Executive Office, n.d.). **Press reporting of the June 2022 agreement describes a 24-month lease at an annual rent of 413,000 dollars plus all operation and maintenance costs.**
+**The lease-back terms.** The County's own account says the County **leases the land where the Lifeguard Administration Building stands**, that the Bruces have the **right to require the County to acquire the property** within a certain timeframe, that the County has the **right to require a sale** within a certain timeframe for a purchase price **not to exceed 20 million dollars**, and that the annual rent is supported by an economic analysis (Los Angeles County Chief Executive Office, n.d.). **The rent figure and the lease term are in the Board's June 2022 action, which this course has not read.**
 
-**The sale.** On **January 3 and 4, 2023**, the family's decision to sell the property back to the County for nearly 20 million dollars was announced by Board Chair **Janice Hahn** and State Senator **Steven Bradford**. Hahn's statement said the seizure was an injustice inflicted on generations of descendants "who almost certainly would have been millionaires," and called the outcome "what reparations look like" and "a model that I hope governments across the country will follow" (Hahn, 2023).
+**The sale.** On **January 4, 2023**, Board Chair **Janice Hahn** released a statement that the Bruce family had decided to sell the property back to the County for nearly 20 million dollars, "nearly six months after" the return. Her statement said the seizure was an injustice inflicted on generations of descendants "who almost certainly would have been millionaires," and called the outcome "what reparations look like" and "a model that I hope governments across the country will follow" (Hahn, 2023).
 
-**Whether and exactly when the sale closed is where this course stops asserting.** Press accounts place the completed sale in early 2023 and at least one outlet gives **January 30, 2023**. **The County's own ARDI page, as read for this course, records no completion date.** **The deed record at the Los Angeles County Registrar-Recorder and County Clerk is where the closing date lives, and this course has not read it.**
+**Whether and exactly when the sale closed is where this course stops asserting.** **The County's own ARDI page, as read for this course, records the return but no sale and no completion date.** **The deed record at the Los Angeles County Registrar-Recorder and County Clerk is where the closing date lives, and this course has not read it.**
 
 ## Part 4. The four complications, none of which cancels the win
 
-**Complication 1. What came back is not the park.** The parcels returned were **Lots 8 and 9 of Block 5**, the land the County owned, which holds the **Los Angeles County Lifeguard Administration Building and its parking lot**. **Block 12, the open space that today carries the name Bruce's Beach Park, is owned by the City of Manhattan Beach and was not returned.** **The park named for the Bruces is not the land the Bruces got back.**
+**Complication 1. What came back is not the park.** The parcels returned were **Lots 8 and 9 of Block 5**, the land the County owned, which holds the **Los Angeles County Lifeguard Administration Building and its parking lot**. **Block 12, the open space that today carries the name Bruce's Beach Park, is owned by the City of Manhattan Beach and was not returned.** **The park named for the Bruces is not the land the Bruces got back** (Los Angeles County Chief Executive Office, n.d.).
 
-**Complication 2. Four other Black families have had nothing returned.** The Prioleaus, Elizabeth Patterson, Mary Sanders and the Johnsons all owned in **Block 12**, which is the city's park. **Their descendants are not part of the 2022 transfer.** Every award in the 1929 table above is a claim that has not been revisited.
+**Complication 2. Four other Black families have had nothing returned.** The Prioleaus, Elizabeth Patterson, Mary Sanders and the Johnsons all owned in **Block 12**, which is the city's park. **Their descendants are not part of the 2022 transfer**, which went to the heirs of Charles and Willa Bruce (Los Angeles County Chief Executive Office, n.d.). Every award in the 1929 table above is a claim that has not been revisited.
 
-**Complication 3. The land went back into public ownership within about seven months.** The family sold. **Their reasoning was stated publicly and is worth taking at face value:** you cannot operate a beach resort on the site of a county lifeguard headquarters, and converting a returned asset into money is what rebuilding wealth looks like when the asset cannot be used. The family's attorney has also argued publicly that **if the return is reparations, it is an inadequate form**, because it addresses neither the wider Black community's loss of a place of refuge nor the lost economic opportunity. **Organisers who campaigned for the return, including Kavon Ward, were publicly disappointed by the sale.** **Report all three positions. Do not adjudicate among them.**
+**Complication 3. Within six months the family decided to sell the land back to the County.** The one account of their reasoning read for this course is Supervisor Hahn's: the family felt that what was best for them was "selling this property back to the County for nearly $20 million and finally rebuilding the generational wealth they were denied for nearly a century" (Hahn, 2023). **The returned parcel holds a county lifeguard headquarters**, which the County was leasing (Los Angeles County Chief Executive Office, n.d.). Other public positions exist, including the argument that a return of this kind is an inadequate form of reparations and the disappointment of some who campaigned for the return; **this course has not read them at first hand**, so it names them as positions to look up rather than reporting them. **Report every position you can source. Do not adjudicate among them.**
 
-**Complication 4. The asymmetry of instruments.** A **city ordinance** in 1924 was enough to start taking the land. **A state statute** in 2021 was required to give it back, because of a **1948 state condition**. **It is easier to take than to return, and the difference is measured in which legislature has to act.**
+**Complication 4. The asymmetry of instruments.** A **city ordinance** in 1924 was enough to start taking the land. **A state statute** in 2021 was required to give it back, because of a **1948 state condition** (City of Manhattan Beach History Advisory Board, 2021, p. 49; Los Angeles County Chief Executive Office, n.d.). **It is easier to take than to return, and the difference is measured in which legislature has to act.**
 
 ## What to do with all of that
 
@@ -1508,13 +1543,13 @@ Here is why the evidence does not carry it.
 
 **July 20, 2022 is a win with a date.** A county government returned condemned land to the heirs of the family it was taken from, and it needed a state law to do it. **That happened. It is the only one of its kind in this course.**
 
-**And the park is still the city's, four families are still uncompensated a second time, the land is public again, and it took ninety-eight years.** **Both paragraphs. Same page. No netting.** That is the procedure from lesson 12, applied to the hardest case it has.
+**And the park is still the city's, four families have had nothing returned, the family chose within six months to sell the land back to the County, and it took ninety-eight years.** **Both paragraphs. Same page. No netting.** That is the procedure from lesson 12, applied to the hardest case it has.
 
 ## Sources
 - City of Manhattan Beach History Advisory Board. (2021, October 25). *History Advisory Board report*. City of Manhattan Beach. https://cmcp.org/wp-content/uploads/2023/02/Supplmental-Material_History-Report-4867-6724-8699-1-1.pdf
 - Hahn, J. (2023, January 4). *Hahn releases statement on Bruce family's decision to sell Bruce's Beach*. Office of Supervisor Janice Hahn, County of Los Angeles. https://hahn.lacounty.gov/hahn-releases-statement-on-bruce-familys-decision-to-sell-bruces-beach/
 - Los Angeles County Chief Executive Office, Anti-Racism, Diversity and Inclusion Initiative. (n.d.). *Bruce's Beach*. https://ceo.lacounty.gov/ardi/bruces-beach/
-- Los Angeles County Library. (n.d.). *Bruce's Beach*. https://lacountylibrary.org/bruces-beach/`,
+- Los Angeles County Library. (n.d.). *Bruce's Beach*. Archived May 13, 2026, at https://web.archive.org/web/20260513163419/https://lacountylibrary.org/bruces-beach/`,
       recallContent: [
         {
           prompt: "What is the one sentence this course refuses to write about 1964, and why?",
@@ -1698,7 +1733,7 @@ Here is why the evidence does not carry it.
               "Because a 1948 state condition allowed park or beach use only",
             ],
             correctIndex: 3,
-            explanation: "SB 796, signed September 30, 2021, lifted that restriction. A city ordinance was enough to take the land; a state statute was needed to give it back.",
+            explanation: "SB 796, signed into state law in 2021, lifted that restriction. A city ordinance was enough to take the land; a state statute was needed to give it back.",
             sourceLessonSlug: "wwr-bruces-beach-return",
           },
           {
@@ -1790,7 +1825,7 @@ A reported **25 by 100 foot** Idlewild lot and a roughly **70 by 30 foot** Oak B
         },
         {
           prompt: "Why did the return require an act of the California Legislature?",
-          answer: "Because when the State took ownership in 1948 it imposed a condition that the land be used only as a public beach or park. SB 796, signed September 30, 2021, lifted that restriction. A city ordinance was enough to take it; a state statute was needed to return it.",
+          answer: "Because when the State took ownership in 1948 it imposed a condition that the land be used only as a public beach or park. SB 796, signed into state law in 2021, lifted that restriction. A city ordinance was enough to take it; a state statute was needed to return it.",
         },
         {
           prompt: "What does the 1929 award table explain about how the taking worked?",
@@ -1798,7 +1833,7 @@ A reported **25 by 100 foot** Idlewild lot and a roughly **70 by 30 foot** Oak B
         },
         {
           prompt: "What are the four complications reported about the return?",
-          answer: "The returned parcels are not the park; four other Black families condemned in 1924 have had nothing returned; the land went back into public ownership within about seven months when the family sold; and it took a city ordinance to take it and a state statute to give it back.",
+          answer: "The returned parcels are not the park; four other Black families condemned in 1924 have had nothing returned; the family decided within six months to sell the land back to the County; and it took a city ordinance to take it and a state statute to give it back.",
         },
       ],
     },
@@ -1808,17 +1843,17 @@ A reported **25 by 100 foot** Idlewild lot and a roughly **70 by 30 foot** Oak B
       section: "Section 7 · Now",
       body: `**Read this before you touch the map, because the map's limits are half the lesson.**
 
-**This platform's lesson map draws the whole world.** A marker is a fixed-size dot on a world projection, so two points need to be roughly two degrees apart, on the order of 200 kilometres, before they separate visually. **Two of the markers below are going to overlap**: Washington, D.C. sits about 55 kilometres from Highland Beach, and at this scale they are one dot.
+**This platform's lesson map draws the whole world.** A marker is a fixed-size dot on a world projection, so two points need to be roughly two degrees apart, on the order of 200 kilometres, before they separate visually. **Two of the markers below are going to overlap**: Washington, D.C. sits about 50 kilometres from Highland Beach, measured between the two markers' own coordinates, and at this scale they are one dot.
 
-**That overlap is a fact about the map, not about the places**, and it is exactly why lesson 19 sends you to five different county systems instead. **A 33 foot lot line is roughly five million times smaller than the distance between two of these markers.** No single map does both jobs.
+**That overlap is a fact about the map, not about the places**, and it is exactly why lesson 19 sends you to five different county systems instead. **A 33 foot lot line is roughly four hundred thousand times smaller than the distance between the two farthest markers**, Oak Bluffs and Bruce's Beach, about 4,200 kilometres apart by their coordinates. No single map does both jobs.
 
 ## What this map is for
 
 **It carries one argument: these five communities were separate business decisions, in five states, across forty-two years, mostly by people who did not know each other.** Seeing them spread from Michigan to Florida to California is the cheapest possible cure for the instinct to treat them as a movement.
 
-**Blue: the five communities.** Each marker's detail carries the founding, the instrument and the present legal shape.
+**Blue: the five communities.** Each marker's detail carries the founding, the instrument and the present legal shape, and ends with the lessons that teach those facts and the sources behind them. Every source named in a marker is listed in this lesson's Sources.
 
-**Amber: two market cities.** Chicago and Detroit are where Idlewild's buyers came from and where the newspapers that advertised the lots were read. **A resort is a catchment area, and the catchment is the business.**
+**Amber: two market cities.** Chicago and Detroit are where Idlewild's buyers came from (Terry Wantz Historical Research Center, n.d.) and where Black newspapers that carried the lot advertisements were read (Kahrl & Cammeron, 2022, p. 55; The Historical Marker Database, n.d.). **A resort is a catchment area, and the catchment is the business.**
 
 **Green: Washington, D.C.**, where the National Register and National Historic Landmark records are kept. Three of these five places carry a National Register listing, and every listing is a decision recorded on a nomination document you can read.
 
@@ -1829,7 +1864,7 @@ A reported **25 by 100 foot** Idlewild lot and a roughly **70 by 30 foot** Oak B
 **When your question is about a lot, use the system that holds the lot.** Each of these communities has a different one, and finding the right office is itself the research skill:
 
 - **Highland Beach:** the **Anne Arundel County** land records, Maryland.
-- **Idlewild:** the **Lake County** Register of Deeds, Michigan, which holds the 1915 plat.
+- **Idlewild:** the **Lake County** Register of Deeds, Michigan, where the 1915 plat would be recorded.
 - **American Beach:** the **Nassau County** property appraiser and clerk, Florida.
 - **Oak Bluffs:** the **Dukes County Registry of Deeds**, Massachusetts, which is what Jeffrey Burnett's Highlands map was built from.
 - **Bruce's Beach:** the **Los Angeles County Registrar-Recorder and County Clerk**, plus the Superior Court file in **City of Manhattan Beach v. B. H. Dyer et al., No. 157,573**.
@@ -1841,13 +1876,35 @@ A reported **25 by 100 foot** Idlewild lot and a roughly **70 by 30 foot** Oak B
 **It cannot show absence.** Every marker here exists because a community survived well enough to be documented. **How many Black resort and beach communities existed and left no institution behind is a question this course cannot answer and will not guess at.** The five here are the ones with museums, associations, historic districts and county reports. **That is a fact about who kept records, as much as about who built things.**
 
 ## Sources
+- BlackPast. (n.d.-a). *The Inkwell, Martha's Vineyard (1890s to present)*. https://blackpast.org/african-american-history/inkwell-martha-s-vineyard-1890s/
+- BlackPast. (n.d.-b). *Highland Beach, Maryland (1893 to present)*. https://blackpast.org/african-american-history/highland-beach-maryland-1893/
 - Burnett, J. (n.d.). *Oak Bluffs historic Highlands map*. https://historic-highlands.oakbluffsarchaeology.org/
 - City of Manhattan Beach History Advisory Board. (2021, October 25). *History Advisory Board report*. City of Manhattan Beach. https://cmcp.org/wp-content/uploads/2023/02/Supplmental-Material_History-Report-4867-6724-8699-1-1.pdf
 - The Cultural Landscape Foundation. (n.d.). *Idlewild Historic District*. https://www.tclf.org/idlewild-historic-district
+- Frederick Douglass Museum and Cultural Center. (n.d.-a). *How it all began*. Archived October 3, 2022, at https://web.archive.org/web/20221003060241/https://www.fdmcc.org/founding-of-the-community
+- Hahn, J. (2023, January 4). *Hahn releases statement on Bruce family's decision to sell Bruce's Beach*. Office of Supervisor Janice Hahn, County of Los Angeles. https://hahn.lacounty.gov/hahn-releases-statement-on-bruce-familys-decision-to-sell-bruces-beach/
+- The Historical Marker Database. (n.d.). *Idlewild historical marker*. https://www.hmdb.org/m.asp?m=182804
+- Idlewild Michigan. (n.d.). *History*. Retrieved November 1, 2026, from https://www.idlewild-michigan.org/history
+- Kahrl, A. W., & Cammeron, M. (2022). *African American outdoor recreation theme study: Historic context and National Historic Landmark survey*. National Park Service; Organization of American Historians. https://www.nps.gov/subjects/nationalhistoriclandmarks/upload/African-American-Outdoor-Recreation-National-Historic-Landmark-Theme-Study.pdf
+- Los Angeles County Chief Executive Office, Anti-Racism, Diversity and Inclusion Initiative. (n.d.). *Bruce's Beach*. https://ceo.lacounty.gov/ardi/bruces-beach/
+- Martha's Vineyard Magazine. (2016, August 1). *Life in the Highlands*. https://mvmagazine.com/news/2016/08/01/life-highlands
 - Maryland Historical Trust. (n.d.). *Douglass Summer House* [National Register properties in Maryland, NRID 1097]. https://apps.mht.maryland.gov/nr/NRDetail.aspx?NRID=1097
+- Nassau County, Florida. (n.d.). *American Beach neighborhood planning*. https://www.nassaucountyfl.com/990/American-Beach-Neighborhood-Planning
+- National Oceanic and Atmospheric Administration, Atlantic Oceanographic and Meteorological Laboratory. (2014). *50th anniversary of Hurricane Dora's St. Augustine landfall*. Archived August 12, 2026, at https://web.archive.org/web/20260812042429/https://www.aoml.noaa.gov/hurricane_blog/50th-anniversary-of-hurricane-doras-st-augustine-landfall/
+- National Park Service. (n.d.-a). *MaVynee "Beach Lady" Betsch*. https://www.nps.gov/people/mavynee-beach-lady-betsch.htm
+- National Park Service. (n.d.-b). *Visiting American Beach*. Timucuan Ecological and Historic Preserve. https://www.nps.gov/timu/learn/historyculture/ambch_visiting.htm
+- National Park Service. (n.d.-c). *National Park Service announces study of American Beach for possible National Historic Landmark designation* [News release]. Timucuan Ecological and Historic Preserve. https://www.nps.gov/timu/learn/news/national-park-service-announces-study-of-american-beach-for-possible-national-historic-landmark-designation.htm
 - National Park Service. (n.d.-e). *Idlewild Historic District* [National Register of Historic Places, reference no. 79001160]. https://npgallery.nps.gov/AssetDetail/NRIS/79001160
 - National Park Service. (n.d.-f). *Idlewild Historic District (boundary increase)* [National Register of Historic Places, reference no. 09001062]. https://npgallery.nps.gov/AssetDetail/NRIS/09001062
-- Read the Plaque. (n.d.). *Idlewild Lot Owners Association* [Transcription of a historical marker credited to the Michigan History Center]. Retrieved November 1, 2026, from https://readtheplaque.com/plaque/idlewild-lot-owners-association`,
+- National Trust for Historic Preservation. (n.d.). *Shearer Cottage and the rich African American heritage of Martha's Vineyard*. https://savingplaces.org/stories/shearer-cottage-and-the-rich-african-american-heritage-of-marthas-vineyard
+- Preservation Maryland. (n.d.). *Highland Beach: Douglass family-founded beach town on the Chesapeake*. https://preservationmaryland.org/highland-beach-douglass-family-founded-beach-town-on-the-chesapeake/
+- Read the Plaque. (n.d.). *Idlewild Lot Owners Association* [Transcription of a historical marker credited to the Michigan History Center]. Retrieved November 1, 2026, from https://readtheplaque.com/plaque/idlewild-lot-owners-association
+- Terry Wantz Historical Research Center. (n.d.). *Idlewild*. https://www.twhistoricalresearchcenter.com/idlewild
+- Timucuan Ecological and Historic Preserve Boundary Revision Act of 2004, H.R. 3768, 108th Cong. (2004) (enrolled bill). https://www.govinfo.gov/content/pkg/BILLS-108hr3768enr/html/BILLS-108hr3768enr.htm
+- Town of Highland Beach. (n.d.). *History of Highland Beach*. https://www.highlandbeachmd.org/town-history
+- Vineyard Gazette. (2016, August 2). *The Cottagers: Sixty years of community and philanthropy*. https://vineyardgazette.com/news/2016/08/02/cottagers-sixty-years-community-and-philanthrophy
+- Vineyard Gazette. (2026, July 1). *Cottagers celebrate 70 years of service*. https://vineyardgazette.com/news/2026/07/01/cottagers-celebrate-70-years-service
+- Wikipedia. (n.d.-a). *American Beach, Florida*. https://en.wikipedia.org/wiki/American_Beach,_Florida`,
       mapContent: {
         markers: [
           {
@@ -1857,7 +1914,7 @@ A reported **25 by 100 foot** Idlewild lot and a roughly **70 by 30 foot** Oak B
             title: "Highland Beach, Anne Arundel County, Maryland",
             color: "#1d4ed8",
             description:
-              "Founded 1893 by Major Charles Remond Douglass and his wife Laura after they were refused service at a Chesapeake Bay resort, on land bought from Daniel Brashears, a free Black farmer and waterman. Sources disagree on the size: the town says 26 and two-thirds acres, others say 40 acres with 500 feet of beachfront. Douglass laid out the streets and sold lots. Twin Oaks, built 1894 to 1895 for Frederick Douglass, who died before it was finished, was listed on the National Register on February 20, 1992 and is now the Frederick Douglass Museum and Cultural Center. Incorporated May 12, 1922, the first African American incorporated municipality in Maryland. About 80 homes today, an all-volunteer government, and no commercial establishments permitted.",
+              "Founded 1893 by Major Charles Remond Douglass and his wife Laura after they were refused service at the Bay Ridge resort on the Chesapeake, in 1890 or 1892 depending on the source, on land bought from the Brashears family; the museum calls Daniel Brashears a free Black farmer. Sources give 26 and two-thirds acres (the town) or 40 acres (others); the town's own account says Douglass bought a two-thirds interest in forty acres. Douglass laid out the streets and sold lots. Twin Oaks, built 1894 to 1895 for Frederick Douglass, who died before it was finished, was listed on the National Register on February 20, 1992 and is now the Frederick Douglass Museum and Cultural Center. Incorporated 1922, the first African American incorporated municipality in Maryland. About 80 homes today, an all-volunteer government, and no commercial establishments permitted; the town says it cannot accommodate visits from the general public. (Lessons 3, 10, 19; BlackPast, n.d.-b; Frederick Douglass Museum and Cultural Center, n.d.-a; Maryland Historical Trust, n.d.; Preservation Maryland, n.d.; Town of Highland Beach, n.d.)",
           },
           {
             id: "wwr-idlewild",
@@ -1866,7 +1923,7 @@ A reported **25 by 100 foot** Idlewild lot and a roughly **70 by 30 foot** Oak B
             title: "Idlewild, Yates Township, Lake County, Michigan",
             color: "#1d4ed8",
             description:
-              "The Idlewild Resort Company was formed in 1912 by four white couples to sell lots on roughly 2,700 acres of cutover timberland to Black buyers in Detroit and Chicago, a fact the community states plainly on its own website. First plat surveyed 1915; clubhouse on the island 1916. The Idlewild Lot Owners Association followed in 1920 or 1921: the community's own account (since removed from its website) has the Black property owners taking over in August 1921, and a Michigan marker, as transcribed, has the founders forming it in 1920. Nightlife at the Flamingo, the Paradise and the El Morocco, promoted by Phil Giles and Arthur Braggs. Peak visitor figures in circulation are 25,000 and 20,000 on a weekend and almost 25,000 a year, which are three different quantities. National Register district listed June 7, 1979, reference 79001160, with a boundary increase published August 6, 2010, reference 09001062. Unincorporated: the township and county govern.",
+              "The Idlewild Resort Company was formed in 1912 by four white couples to sell lots to Black buyers from Detroit and Chicago, a fact the community states plainly on its own website. The developers platted 2,700 acres of cutover land in 1915; clubhouse on the island 1916. The Idlewild Lot Owners Association followed in 1920 or 1921: a Michigan marker, as transcribed, has the founders forming it in 1920, and an account this course first reported but can no longer source has the Black property owners taking over in August 1921. Nightlife at the Flamingo, the Paradise and the El Morocco, promoted by Phil Giles and Arthur Braggs. Peak figures run from more than 25,000 people on summer holidays in the early 1960s (the marker) to almost 25,000 vacationers a year (the community), which are different quantities. National Register district listed June 7, 1979, reference 79001160, with a boundary increase published August 6, 2010, reference 09001062; the community's own page gives 2015 for the expansion. Unincorporated: the township and county govern. (Lessons 4, 10, 14; Idlewild Michigan, n.d.; Kahrl & Cammeron, 2022, p. 55; National Park Service, n.d.-e, n.d.-f; Read the Plaque, n.d.; Terry Wantz Historical Research Center, n.d.; The Cultural Landscape Foundation, n.d.; The Historical Marker Database, n.d.)",
           },
           {
             id: "wwr-american-beach",
@@ -1875,7 +1932,7 @@ A reported **25 by 100 foot** Idlewild lot and a roughly **70 by 30 foot** Oak B
             title: "American Beach, Amelia Island, Nassau County, Florida",
             color: "#1d4ed8",
             description:
-              "Founded 1935 when the Pension Bureau of the Afro-American Life Insurance Company, headquartered in Jacksonville and founded in 1901 to insure Black Floridians, bought 33 acres of oceanfront. Company president Abraham Lincoln Lewis named it American Beach on the argument that beach access in the United States should be open to everyone. Subdivided and sold to Black-owned companies and shareholders; accounts of its greatest extent range from about 200 to 216 acres. Evans' Rendezvous still stands and is not open for touring. Hurricane Dora landed near St. Augustine on September 10, 1964, ten weeks after the Civil Rights Act. Historic district listed on the National Register in 2002; NaNa dune, 8.5 acres, entered the National Park System through the Timucuan boundary revision act of 2004; the A. L. Lewis Museum opened September 6, 2014. Unincorporated: Nassau County holds the zoning, and a National Historic Landmark study is under way.",
+              "Founded 1935 by the Afro-American Life Insurance Company of Jacksonville, founded in 1901 to insure Black Floridians, under its president Abraham Lincoln Lewis, as a resort for the company's executives and employees, with lot sales raising revenue for the employee pension fund. Accounts of its extent run from 200 acres to 216 acres. Evans' Rendezvous still stands and is not open for touring. Hurricane Dora landed near St. Augustine on September 10, 1964, ten weeks after the Civil Rights Act. Historic district listed on the National Register in 2002; NaNa dune, 8.5 acres, was added to the Timucuan preserve by the boundary revision act of 2004; the A. L. Lewis Museum opened September 6, 2014. Unincorporated: Nassau County holds the zoning, and a National Historic Landmark study is under way. (Lessons 5, 10, 14, 19; Kahrl & Cammeron, 2022, p. 183; National Oceanic and Atmospheric Administration, 2014; National Park Service, n.d.-a, n.d.-b, n.d.-c; Nassau County, n.d.; Timucuan Ecological and Historic Preserve Boundary Revision Act of 2004; Wikipedia, n.d.-a)",
           },
           {
             id: "wwr-oak-bluffs",
@@ -1884,7 +1941,7 @@ A reported **25 by 100 foot** Idlewild lot and a roughly **70 by 30 foot** Oak B
             title: "Oak Bluffs and the Inkwell, Dukes County, Massachusetts",
             color: "#1d4ed8",
             description:
-              "No founder and no founding date. The Vineyard Grove Company platted the Highlands into roughly 700 parcels of about 70 by 30 feet around 1870 for a Methodist summer community; when that faltered a Baptist organization held revivals there and a tabernacle went up in 1877, and Black vacationers began buying. Jeffrey Burnett's deed-based Highlands map identifies 129 deeds in which people of African descent bought or sold land across 22 properties, from Dr. Samuel T. Brimingham in August 1870 onward. Shearer Cottage opened as a 12-room inn in 1912, after Henrietta Shearer ran a laundry for ten years, was listed in the Green Book, and is still owned by Shearer descendants. The Inkwell is the town beach, named as an insult and taken up as a name of pride. The Cottagers, Inc., 100 African American women homeowners, was founded in 1956 and marked seventy years in 2026. Black owners hold property in a town they do not govern, so the institution is voluntary rather than municipal.",
+              "No founder and no founding date. The Vineyard Grove Company divided the Highlands into hundreds of small parcels of about 70 by 30 feet in 1870 for a Methodist summer community; when that faltered it made a deal with a Baptist organization to hold revivals there, a tabernacle went up in 1877, and Black vacationers began buying. Jeffrey Burnett's deed-based Highlands map identifies 129 deeds in which people of African descent bought or sold land across 22 properties, from Dr. Samuel T. Brimingham in August 1870 onward. Shearer Cottage opened as a 12-room inn in 1912, after Henrietta Shearer ran a laundry for ten years, was listed in the Green Book, and is still owned by Shearer descendants. The Inkwell is the town beach, named as an insult and taken up as a name of pride. The Cottagers, Inc., 100 African American women homeowners, was founded in 1956 and marked seventy years in 2026. Black owners hold property in a town they do not govern, so the institution is voluntary rather than municipal. (Lessons 6, 10, 19; BlackPast, n.d.-a; Burnett, n.d.; Martha's Vineyard Magazine, 2016; National Trust for Historic Preservation, n.d.; Vineyard Gazette, 2016, 2026)",
           },
           {
             id: "wwr-bruces-beach",
@@ -1893,7 +1950,7 @@ A reported **25 by 100 foot** Idlewild lot and a roughly **70 by 30 foot** Oak B
             title: "Bruce's Beach, Manhattan Beach, Los Angeles County, California",
             color: "#1d4ed8",
             description:
-              "Willa Bruce bought Lot 8 of Block 5, Peck's Manhattan Beach Tract, on February 19, 1912 for 1,225 dollars, a parcel 33 and one-third by 105 feet, and opened selling soda pop, lunches, rented bathing suits, showers and dressing tents. A two-story building with a kitchen and dance floor followed in 1916, and lot 9 in 1920. Four other Black families bought in Block 12 between 1919 and 1923. On June 5, 1924 the Board of Trustees passed Ordinance 276 declaring the intention to condemn both blocks, and ordinances 273 to 275 restricting bath houses and beach changing. Final judgment June 10, 1929 awarded the Bruces 14,500 dollars; most of the condemned lots were white-owned and the largest award went to three white owners. The State took the land in 1948 for public beach or park use only; the County acquired it in 1995. SB 796 was signed September 30, 2021 and the Board returned Lots 8 and 9 to the heirs on July 20, 2022. The family sold back to the County for nearly 20 million dollars in 2023. The park that carries the name is Block 12 and is still the city's.",
+              "Willa Bruce bought Lot 8 of Block 5, Peck's Manhattan Beach Tract, on February 19, 1912 for 1,225 dollars, a parcel 33 and one-third by 105 feet, and opened selling soda pop, lunches, rented bathing suits, showers and dressing tents. A two-story building with a kitchen and dance floor followed in 1916, and lot 9 in 1920. Four other Black families bought in Block 12 between 1919 and 1923. On June 5, 1924 the Board of Trustees passed Ordinance 276 declaring the intention to condemn both blocks, and ordinances 273 to 275 restricting bath houses and beach changing. Final judgment June 10, 1929 awarded the Bruces 14,500 dollars; most of the condemned lots were white-owned and the largest award went to three white owners. The State took the land in 1948 for public beach or park use only; the County acquired it in 1995. SB 796 became state law in 2021 and the Board returned Lots 8 and 9 to the heirs on July 20, 2022. In January 2023 the family decided to sell back to the County for nearly 20 million dollars. The park that carries the name is Block 12 and is still the city's. (Lessons 13, 15, 19; City of Manhattan Beach History Advisory Board, 2021; Hahn, 2023; Los Angeles County Chief Executive Office, n.d.)",
           },
           {
             id: "wwr-chicago",
@@ -1902,7 +1959,7 @@ A reported **25 by 100 foot** Idlewild lot and a roughly **70 by 30 foot** Oak B
             title: "Chicago, Illinois",
             color: "#b45309",
             description:
-              "One of the two cities Idlewild was sold into. The Idlewild Resort Company advertised its lots in Black newspapers including the Chicago Defender, and the Chicago surgeon Dr. Daniel Hale Williams, who founded Provident Hospital, was among the early buyers whose names made the sales pitch work. A resort is a catchment area, and the catchment is the business.",
+              "One of the two cities Idlewild was sold into. Lots were advertised in regional and national editions of major Black newspapers, the Chicago Defender among them, and the Chicago surgeon Dr. Daniel Hale Williams was among the early buyers whose names made the sales pitch work. A resort is a catchment area, and the catchment is the business. (Lesson 4; Idlewild Michigan, n.d.; Kahrl & Cammeron, 2022, p. 55; The Historical Marker Database, n.d.)",
           },
           {
             id: "wwr-detroit",
@@ -1911,7 +1968,7 @@ A reported **25 by 100 foot** Idlewild lot and a roughly **70 by 30 foot** Oak B
             title: "Detroit, Michigan",
             color: "#b45309",
             description:
-              "The other city Idlewild was sold into, and one terminus of the Pere Marquette Railway line that connected the resort to Chicago, Detroit, Cleveland and St. Louis. Promoter Phil Giles came out of Detroit. Distance from a market is a cost input, and a resort on a rail line has a catchment while a resort off one has a driveway.",
+              "The other city Idlewild was sold into. The community's own account says excursions came to Idlewild from Detroit, Chicago, Grand Rapids and other Midwestern cities, and names its promoters Phil Giles and Arthur Braggs as developers from Detroit and Saginaw. Distance from a market is a cost input, and a resort on a rail line has a catchment while a resort off one has a driveway. (Lesson 4; Idlewild Michigan, n.d.; Terry Wantz Historical Research Center, n.d.)",
           },
           {
             id: "wwr-washington",
@@ -1920,7 +1977,7 @@ A reported **25 by 100 foot** Idlewild lot and a roughly **70 by 30 foot** Oak B
             title: "National Register and National Historic Landmarks, Washington, D.C.",
             color: "#15803d",
             description:
-              "Where the National Register and National Historic Landmark records live. Three of the five communities carry listings: Idlewild's district on June 7, 1979, the Douglass Summer House on February 20, 1992, and the American Beach historic district in 2002, with a National Historic Landmark study of American Beach under way. Every one of those is a decision recorded on a nomination document you can read. This marker will very nearly overlap Highland Beach at this scale, because the two are about 55 kilometres apart, which is the map's limitation rather than the places'.",
+              "Where the National Register and National Historic Landmark records live. Three of the five communities carry listings: Idlewild's district on June 7, 1979, the Douglass Summer House on February 20, 1992, and the American Beach historic district in 2002, with a National Historic Landmark study of American Beach under way. Every one of those is a decision recorded on a nomination document you can read, though the Idlewild files are not yet digitized on the Park Service's site. This marker will very nearly overlap Highland Beach at this scale, because the two are about 50 kilometres apart, which is the map's limitation rather than the places'. (Lessons 3, 4, 5; Maryland Historical Trust, n.d.; National Park Service, n.d.-c, n.d.-e, n.d.-f)",
           },
         ],
       },
@@ -1953,39 +2010,41 @@ A reported **25 by 100 foot** Idlewild lot and a roughly **70 by 30 foot** Oak B
 
 **What is there:** a small incorporated town of about 80 homes with an all-volunteer government, many houses owned by descendants of the original settlers, and **no commercial establishments**, because the town prohibits them (Town of Highland Beach, n.d.; Preservation Maryland, n.d.).
 
-**What you can visit:** **Twin Oaks**, restored in 1986, listed on the National Register on February 20, 1992, and operating as the **Frederick Douglass Museum and Cultural Center** (Maryland Historical Trust, n.d.; Preservation Maryland, n.d.).
+**What the town says about visiting:** "Highland Beach is residential only, does not offer opportunities for tourism and cannot accommodate visits from the general public" (Town of Highland Beach, n.d.).
 
-**The honest advice:** **there is no visitor economy here.** No hotel, no restaurant, no shop, because the town decided that. **Contact the museum, go to the museum, and do not drive around looking at houses.**
+**The museum:** **Twin Oaks**, restored in 1986, listed on the National Register on February 20, 1992, and operating as the **Frederick Douglass Museum and Cultural Center** (Maryland Historical Trust, n.d.; Preservation Maryland, n.d.). **As read on November 1, 2026, the museum's own site says it is not accepting tour requests while it makes renovations and repairs, and offers virtual tours on its website instead** (Frederick Douglass Museum and Cultural Center, n.d.-b).
+
+**The honest advice:** **there is no visitor economy here.** No hotel, no restaurant, no shop, because the town decided that. **Take the museum's virtual tours, watch its site for when tours resume, and do not drive around looking at houses.**
 
 ## Idlewild, Michigan
 
-**What is there:** an unincorporated community in Yates Township with a **National Register historic district listed in 1979**, a **Lot Owners Association dating to 1920 or August 1921, depending on the account**, an **African American Chamber of Commerce founded in 2000**, a **Michigan Historical Commission marker**, and residents the community describes as year-round residents, fourth and fifth generation Idlewilders, seasonal visitors and newcomers (Idlewild Michigan, n.d.; National Park Service, n.d.-e; Read the Plaque, n.d.; The Historical Marker Database, n.d.).
+**What is there:** an unincorporated community in Yates Township with a **National Register historic district listed in 1979** (National Park Service, n.d.-e), a **Lot Owners Association dating to 1920 or August 1921, depending on the account** (lesson 4; Read the Plaque, n.d.), an **African American Chamber of Commerce founded in 2000** (Wikipedia, n.d.-b), a **Michigan Historical Commission marker** (The Historical Marker Database, n.d.), and, in the community's words, "year-round residents, fourth- and fifth-generation Idlewilders, seasonal visitors, and newcomers" (Idlewild Michigan, n.d.).
 
-**What you can visit:** the **Idlewild Historic and Cultural Center**, plus summer events and festivals the community runs. **Two sources disagree about the Center's date**: the Terry Wantz Historical Research Center says it was established in 2003, and the community's own site says it opened in 2019 (Terry Wantz Historical Research Center, n.d.; Idlewild Michigan, n.d.). **That is very likely an organization founded in one year and a building opened in another, and the Center itself is the place to confirm it.**
+**What you can visit:** the **Idlewild Historic and Cultural Center**, at 7025 Broadway Avenue, Idlewild (Terry Wantz Historical Research Center, n.d.), plus summer events and festivals the community runs (Idlewild Michigan, n.d.). **Two sources disagree about the Center's date**: the Terry Wantz Historical Research Center says the community established it in 2003, and the community's own site says it opened in 2019 (Terry Wantz Historical Research Center, n.d.; Idlewild Michigan, n.d.). **That may be an organization founded in one year and a building opened in another, but neither source says so, and the Center itself is the place to confirm it.**
 
 ## American Beach, Florida
 
-**What is there:** a residential community that is **mostly privately owned**, in unincorporated Nassau County (National Park Service, n.d.-b).
+**What is there:** a residential community that is **mostly privately owned**, in unincorporated Nassau County (National Park Service, n.d.-b; Nassau County, n.d.).
 
-**What you can visit:** the **A. L. Lewis Museum at American Beach**, open since September 6, 2014. **NaNa dune**, 8.5 acres owned by the National Park Service within the Timucuan Ecological and Historic Preserve. **Burney Beachfront Park**, where the Park Service notes restrooms are available (National Park Service, n.d.-b).
+**What you can visit:** the **A. L. Lewis Museum at American Beach**, 1600 Julia Street, open since September 6, 2014 (National Park Service, n.d.-b; Wikipedia, n.d.-a). **NaNa dune**, 8.5 acres owned by the National Park Service within the Timucuan Ecological and Historic Preserve (National Park Service, n.d.-a, n.d.-b). **Burney Beachfront Park**, where the Park Service notes restrooms are available (National Park Service, n.d.-b).
 
-**What you cannot visit: Evans' Rendezvous is not available for touring** (National Park Service, n.d.-b).
+**What you cannot visit: Evans' Rendezvous is not available for touring**; the Park Service says the Trust for Public Land acquired the building (National Park Service, n.d.-b).
 
-**The stewards, by name:** the **American Beach Property Owners Association**, **Friends of American Beach, Inc.**, the **Florida Department of State** (which co-sponsors the Florida Heritage Site plaques), the **National Park Service**, and **Nassau County** planning staff, who have worked with the community since 2018 (Nassau County, n.d.).
+**The stewards, by name:** the **A. L. Lewis Museum**, the **National Park Service**, and **Nassau County** planning staff, who have worked with the community since 2018 (National Park Service, n.d.-b; Nassau County, n.d.). Lesson 17 also names the **American Beach Property Owners Association**, **Friends of American Beach, Inc.** and the **Florida Department of State** as sponsors on the community's Florida Heritage Site plaques; **this course has not read those plaques' text or the groups' filings**, so check the plaques themselves when you are there.
 
 **The Park Service's own instruction is the one to follow:** the majority of land at American Beach is held by private landholders, and visitors are asked to **respect their privacy** (National Park Service, n.d.-b).
 
 ## Oak Bluffs, Massachusetts
 
-**What is there:** a town of Massachusetts with a long-standing Black summer and year-round community.
+**What is there:** a town of Massachusetts with a large African American community, particularly in the summer season (Martha's Vineyard African American Heritage Trail, n.d.).
 
-**What you can visit:** the **African American Heritage Trail of Martha's Vineyard**, established in 1998, which is the interpretive route. **The Inkwell** is a public town beach on Beach Road, busiest in July and August, with a dawn swimming group. **Cottagers' Corner** is the Cottagers' building. **Shearer Cottage is a working guest house owned by Shearer descendants**, which means the correct way to see the inside of it is to book a room (National Trust for Historic Preservation, n.d.; Martha's Vineyard African American Heritage Trail, n.d.).
+**What you can visit:** the **African American Heritage Trail of Martha's Vineyard**, established in 1998, which is the interpretive route (National Trust for Historic Preservation, n.d.). **The Inkwell** is a public town beach on Beach Road, busiest in July and August, with a dawn swimming group (Martha's Vineyard African American Heritage Trail, n.d.). **Cottagers' Corner** is the Cottagers' building (Vineyard Gazette, 2016). **Shearer Cottage is still owned and operated by Shearer descendants as a guest house**, which means the correct way to see the inside of it is to book a room (National Trust for Historic Preservation, n.d.; Martha's Vineyard African American Heritage Trail, n.d.).
 
 ## Bruce's Beach, California
 
-**What is there:** a **city park** in Manhattan Beach between 26th and 27th Streets, renamed Bruce's Beach by the City Council in 2006 and dedicated in 2007, with a plaque acknowledging the park's history commissioned in 2003. **Below and to the west sits the Los Angeles County Lifeguard Administration Building**, on the parcels returned to the Bruce heirs in 2022 and sold back to the County in 2023 (City of Manhattan Beach History Advisory Board, 2021; Los Angeles County Chief Executive Office, n.d.).
+**What is there:** a **city park** in Manhattan Beach between 26th and 27th Streets, renamed Bruce's Beach by the City Council in 2006 and dedicated on March 31, 2007, with a plaque acknowledging the park's history commissioned in 2003 (City of Manhattan Beach History Advisory Board, 2021, p. 16; Los Angeles County Library, n.d.). **On Block 5 sits the Los Angeles County Lifeguard Administration Building**, on the parcels returned to the Bruce heirs in 2022, which the family decided in January 2023 to sell back to the County (Los Angeles County Chief Executive Office, n.d.; Hahn, 2023).
 
-**What to notice while standing there:** **the park is Block 12 and the lifeguard building is Block 5.** The four other Black families condemned in 1924 owned in Block 12. **The park carrying the Bruce name is not the land the Bruces got back**, and you are standing on the difference.
+**What to notice while standing there:** **the park is Block 12 and the lifeguard building is Block 5** (Los Angeles County Chief Executive Office, n.d.). The four other Black families condemned in 1924 owned in Block 12 (City of Manhattan Beach History Advisory Board, 2021, pp. 43-44). **The park carrying the Bruce name is not the land the Bruces got back**, and you are standing on the difference.
 
 ## Five rules for visiting any of these places
 
@@ -1997,23 +2056,30 @@ A reported **25 by 100 foot** Idlewild lot and a roughly **70 by 30 foot** Oak B
 
 ## Sources
 - City of Manhattan Beach History Advisory Board. (2021, October 25). *History Advisory Board report*. City of Manhattan Beach. https://cmcp.org/wp-content/uploads/2023/02/Supplmental-Material_History-Report-4867-6724-8699-1-1.pdf
+- Frederick Douglass Museum and Cultural Center. (n.d.-b). *Home* [Announcement that the museum is not accepting tour requests]. Retrieved November 1, 2026, from https://www.fdmcc.org/
+- Hahn, J. (2023, January 4). *Hahn releases statement on Bruce family's decision to sell Bruce's Beach*. Office of Supervisor Janice Hahn, County of Los Angeles. https://hahn.lacounty.gov/hahn-releases-statement-on-bruce-familys-decision-to-sell-bruces-beach/
 - The Historical Marker Database. (n.d.). *Idlewild historical marker*. https://www.hmdb.org/m.asp?m=182804
-- Idlewild Michigan. (n.d.). *History*. https://www.idlewild-michigan.org/history
+- Idlewild Michigan. (n.d.). *History*. Retrieved November 1, 2026, from https://www.idlewild-michigan.org/history
 - Los Angeles County Chief Executive Office, Anti-Racism, Diversity and Inclusion Initiative. (n.d.). *Bruce's Beach*. https://ceo.lacounty.gov/ardi/bruces-beach/
+- Los Angeles County Library. (n.d.). *Bruce's Beach*. Archived May 13, 2026, at https://web.archive.org/web/20260513163419/https://lacountylibrary.org/bruces-beach/
 - Martha's Vineyard African American Heritage Trail. (n.d.). *Town of Oak Bluffs*. https://mvafricanamericanheritagetrail.org/trail-sites/town-of-oak-bluffs/
 - Maryland Historical Trust. (n.d.). *Douglass Summer House* [National Register properties in Maryland, NRID 1097]. https://apps.mht.maryland.gov/nr/NRDetail.aspx?NRID=1097
 - Nassau County, Florida. (n.d.). *American Beach neighborhood planning*. https://www.nassaucountyfl.com/990/American-Beach-Neighborhood-Planning
+- National Park Service. (n.d.-a). *MaVynee "Beach Lady" Betsch*. https://www.nps.gov/people/mavynee-beach-lady-betsch.htm
 - National Park Service. (n.d.-b). *Visiting American Beach*. Timucuan Ecological and Historic Preserve. https://www.nps.gov/timu/learn/historyculture/ambch_visiting.htm
 - National Park Service. (n.d.-e). *Idlewild Historic District* [National Register of Historic Places, reference no. 79001160]. https://npgallery.nps.gov/AssetDetail/NRIS/79001160
 - National Trust for Historic Preservation. (n.d.). *Shearer Cottage and the rich African American heritage of Martha's Vineyard*. https://savingplaces.org/stories/shearer-cottage-and-the-rich-african-american-heritage-of-marthas-vineyard
 - Preservation Maryland. (n.d.). *Highland Beach: Douglass family-founded beach town on the Chesapeake*. https://preservationmaryland.org/highland-beach-douglass-family-founded-beach-town-on-the-chesapeake/
 - Read the Plaque. (n.d.). *Idlewild Lot Owners Association* [Transcription of a historical marker credited to the Michigan History Center]. Retrieved November 1, 2026, from https://readtheplaque.com/plaque/idlewild-lot-owners-association
 - Terry Wantz Historical Research Center. (n.d.). *Idlewild*. https://www.twhistoricalresearchcenter.com/idlewild
-- Town of Highland Beach. (n.d.). *History of Highland Beach*. https://www.highlandbeachmd.org/town-history`,
+- Town of Highland Beach. (n.d.). *History of Highland Beach*. https://www.highlandbeachmd.org/town-history
+- Vineyard Gazette. (2016, August 2). *The Cottagers: Sixty years of community and philanthropy*. https://vineyardgazette.com/news/2016/08/02/cottagers-sixty-years-community-and-philanthrophy
+- Wikipedia. (n.d.-a). *American Beach, Florida*. https://en.wikipedia.org/wiki/American_Beach,_Florida
+- Wikipedia. (n.d.-b). *Idlewild, Michigan*. Retrieved November 1, 2026, from https://en.wikipedia.org/wiki/Idlewild,_Michigan`,
       recallContent: [
         {
           prompt: "Why will Washington, D.C. and Highland Beach appear as one dot on the lesson map?",
-          answer: "Because they are about 55 kilometres apart and a world projection needs roughly two degrees, on the order of 200 kilometres, before two markers separate. That is a limitation of the map, not a fact about the places.",
+          answer: "Because they are about 50 kilometres apart and a world projection needs roughly two degrees, on the order of 200 kilometres, before two markers separate. That is a limitation of the map, not a fact about the places.",
         },
         {
           prompt: "What single argument does the map carry?",
@@ -2093,14 +2159,14 @@ A reported **25 by 100 foot** Idlewild lot and a roughly **70 by 30 foot** Oak B
 
 **A short piece in which every sentence is either something you read in a named source or something you have clearly marked as unresolved, and in which the prose is still good.** Those two standards do not conflict.
 
-**Consider what is already in the record and needs no decoration.** A woman bought a beach lot in February and opened in June. A laundress ran a laundry for ten years and then opened a twelve-room inn. A land company gave its salesmen lots instead of wages and lost the town to them in nine years. An insurance company put its reserves in a shoreline its own policyholders could use. A city passed an ordinance against changing your clothes on the beach on the same day it moved to condemn the beach. **None of that needs a single adjective from you.**
+**Consider what is already in the record and needs no decoration.** A woman bought a beach lot in February and opened in June. A laundress ran a laundry for ten years and then opened a twelve-room inn. A land company platted cutover timberland and advertised the lots in the Black press. An insurance company sold lots on a shoreline to fund its employees' pensions. A city passed an ordinance against changing your clothes on the beach on the same day it moved to condemn the beach. **None of that needs a single adjective from you.**
 
 ## Sources
 - City of Manhattan Beach History Advisory Board. (2021, October 25). *History Advisory Board report*. City of Manhattan Beach. https://cmcp.org/wp-content/uploads/2023/02/Supplmental-Material_History-Report-4867-6724-8699-1-1.pdf
 - Burnett, J. (n.d.). *Oak Bluffs historic Highlands map*. https://historic-highlands.oakbluffsarchaeology.org/
 - Idlewild Michigan. (n.d.). *History*. https://www.idlewild-michigan.org/history
 - Martha's Vineyard Magazine. (2016, August 1). *Life in the Highlands*. https://mvmagazine.com/news/2016/08/01/life-highlands
-- Timucuan Ecological and Historic Preserve Boundary Revision Act of 2004, H.R. 3768, 108th Cong. (2004). https://www.congress.gov/bill/108th-congress/house-bill/3768/text
+- Timucuan Ecological and Historic Preserve Boundary Revision Act of 2004, H.R. 3768, 108th Cong. (2004) (enrolled bill). https://www.govinfo.gov/content/pkg/BILLS-108hr3768enr/html/BILLS-108hr3768enr.htm
 - Town of Highland Beach. (n.d.). *History of Highland Beach*. https://www.highlandbeachmd.org/town-history`,
       recallContent: [
         {
@@ -2141,7 +2207,7 @@ A reported **25 by 100 foot** Idlewild lot and a roughly **70 by 30 foot** Oak B
 
 ## The rule, one last time
 
-**Never use a positive to soften a negative.** You have now watched that rule do real work: in 1927, when a boarding house opened and a house was set on fire in the same season; in 1964, when a statute freed people and closed their businesses; and in 2022, when a county returned land it had to get a state law to give back, and the family sold it seven months later.
+**Never use a positive to soften a negative.** You have now watched that rule do real work: in 1927, when a boarding house opened and a house was set on fire in the same season; in 1964, when a statute freed people and closed their businesses; and in 2022, when a county returned land it had to get a state law to give back, and the family decided within six months to sell it back.
 
 **In none of those cases does one fact answer the other.** **They co-occurred. That is the whole claim, and it is enough.**
 
@@ -2149,14 +2215,18 @@ A reported **25 by 100 foot** Idlewild lot and a roughly **70 by 30 foot** Oak B
 
 **This course reports its own failures, because a course that hides them teaches you to hide yours.**
 
-- **The Idlewild lot terms.** The reported 35 dollars, 6 dollars down and 1 dollar a week, and the practice of paying sales agents in lots, come from secondary accounts and **were not checked against the recorded 1915 plat or any deed**.
-- **The Highland Beach acreage.** **26 and two-thirds acres or 40 acres, unresolved.** The town's own history and the preservation literature disagree, and the deed was not read.
+- **The Idlewild lot terms.** The reported 35 dollars, 6 dollars down and 1 dollar a week, and the practice of paying sales agents in lots, come from accounts this course has not read at first hand and **were not checked against the recorded 1915 plat or any deed**.
+- **The Idlewild weekend crowd figures.** The 25,000 and 20,000 weekend figures come from press accounts this course has not read.
+- **The Highland Beach acreage.** **26 and two-thirds acres or 40 acres.** The town's own history suggests how the two fit, a two-thirds interest in forty acres, but the deed was not read.
+- **The Highland Beach refusal year and charter day.** 1890 (BlackPast and the Park Service theme study) or 1892 (the town), and no source read here gives the day of the 1922 charter.
+- **The first American Beach purchase.** No source read here gives the 33 acres or the Pension Bureau that earlier versions of this course reported; the sources read give 200 acres in 1936, more than 200 acres between 1935 and 1940, or 216 acres.
 - **MaVynee Betsch's exact relation to A. L. Lewis.** The National Park Service says great-granddaughter; another widely read source says granddaughter. **Unresolved here.**
-- **The Idlewild Lot Owners Association's founding.** 1920, formed by the founders (a Michigan marker, as transcribed), or August 1921, taken over by the owners (the community's own account, since removed from its website). **The articles of incorporation were not read.** (The boundary increase year, once on this list, is settled: 2010, National Register reference 09001062.)
-- **The closing date of the 2023 Bruce's Beach sale.** Announced January 3 and 4, 2023; one outlet gives January 30, 2023; **the County's own page as read here records no completion date.** The deed record has it.
+- **The Idlewild Lot Owners Association's founding.** 1920, formed by the founders (a Michigan marker, as transcribed), or August 1921, taken over by the owners (an account this course first reported, citing the community's website, which neither the live page nor archived copies from 2025 and May 2026 contain). **The articles of incorporation were not read.** (The boundary increase year is settled by the register at 2010, National Register reference 09001062, though the community's own page gives 2015.)
+- **The closing date of the 2023 Bruce's Beach sale.** The family's decision was announced on January 4, 2023; **the County's own page as read here records no sale and no completion date.** The deed record has it.
+- **The date SB 796 was signed in 2021.** The County's page records the signing without a date; the bill's history at the California Legislature has it.
 - **The outcome of Elizabeth Catley's 1928 lawsuit**, which the City of Manhattan Beach's own report could not obtain and had requested.
 - **The season economics of every single one of these businesses.** No room rate, no occupancy, no payroll, no season length. **None of it was read into this course, and none of it was guessed at.**
-- **Green Book listings for these specific communities.** Shearer Cottage is documented as listed; the rest were not researched here. **The prerequisite course teaches you exactly how to check, and the digitized editions are at the Schomburg Center.**
+- **Green Book listings for these specific communities.** Shearer Cottage is documented as listed (National Trust for Historic Preservation, n.d.); the rest were not researched here. **The prerequisite course teaches you exactly how to check, and the Schomburg Center at the New York Public Library has digitized every available edition** (National Park Service, n.d.-d).
 - **Any national count of Black resort and beach communities.** **No survey has been read here, and this course will not manufacture a number.** The five taught are the five that left institutions behind.
 
 ## The unopened sources, which are the next real work
@@ -2165,11 +2235,11 @@ A reported **25 by 100 foot** Idlewild lot and a roughly **70 by 30 foot** Oak B
 
 1. **Anne Arundel County land records, Maryland.** The 1893 Douglass deed, which settles the acreage.
 2. **Lake County Register of Deeds, Michigan.** The 1915 Idlewild plat and early lot deeds, which settle the price and terms.
-3. **The Michigan articles of incorporation** of the Idlewild Lot Owners Association, which settle 1920 or 1921 and who formed it. **The National Register nomination files** for the Idlewild Historic District (1979 and its 2010 boundary increase, neither digitized yet) and the American Beach Historic District (2002), plus the **National Historic Landmark study record** for American Beach at the National Park Service planning site.
+3. **The Michigan articles of incorporation** of the Idlewild Lot Owners Association, which settle 1920 or 1921 and who formed it. **The National Register nomination files** for the Idlewild Historic District (1979 and its 2010 boundary increase, not digitized on the Park Service's NPGallery; the theme study points to National Archives catalog ids 25339789 and 25339785) and the American Beach Historic District (2002), plus the **National Historic Landmark study record** for American Beach at the National Park Service planning site (Kahrl & Cammeron, 2022, p. 189; National Park Service, n.d.-c).
 4. **Nassau County, Florida** property and corporate records, and whatever survives of the **Afro-American Life Insurance Company's** own books, which would turn the American Beach story from a founding into an investment history.
 5. **Dukes County Registry of Deeds, Massachusetts.** Partly mapped already by Jeffrey Burnett; the other properties are not.
 6. **Los Angeles County Superior Court, No. 157,573**, the full condemnation file, and the **Registrar-Recorder** deeds for the 1948, 1995, 2022 and 2023 transfers.
-7. **The Black press.** The **Chicago Defender** for the Idlewild advertisements, and the **California Eagle**, which reported the Manhattan Beach summer of 1927 week by week and is the reason we know what Bessonette said under oath.
+7. **The Black press.** The **Chicago Defender** for the Idlewild advertisements, and the **California Eagle**, which reported the Manhattan Beach summer of 1927 week by week and is the reason we know what Bessonette said under oath (City of Manhattan Beach History Advisory Board, 2021).
 
 **If you want to make an original contribution to this history rather than restate it, that list is where it is.**
 
@@ -2187,11 +2257,13 @@ A reported **25 by 100 foot** Idlewild lot and a roughly **70 by 30 foot** Oak B
 
 ## Sources
 - City of Manhattan Beach History Advisory Board. (2021, October 25). *History Advisory Board report*. City of Manhattan Beach. https://cmcp.org/wp-content/uploads/2023/02/Supplmental-Material_History-Report-4867-6724-8699-1-1.pdf
+- Kahrl, A. W., & Cammeron, M. (2022). *African American outdoor recreation theme study: Historic context and National Historic Landmark survey*. National Park Service; Organization of American Historians. https://www.nps.gov/subjects/nationalhistoriclandmarks/upload/African-American-Outdoor-Recreation-National-Historic-Landmark-Theme-Study.pdf
 - Los Angeles County Chief Executive Office, Anti-Racism, Diversity and Inclusion Initiative. (n.d.). *Bruce's Beach*. https://ceo.lacounty.gov/ardi/bruces-beach/
 - National Park Service. (n.d.-c). *National Park Service announces study of American Beach for possible National Historic Landmark designation* [News release]. Timucuan Ecological and Historic Preserve. https://www.nps.gov/timu/learn/news/national-park-service-announces-study-of-american-beach-for-possible-national-historic-landmark-designation.htm
 - National Park Service. (n.d.-d). *The Green Book: An historic context*. https://www.nps.gov/articles/000/the-green-book-an-historic-context.htm
 - National Park Service. (n.d.-e). *Idlewild Historic District* [National Register of Historic Places, reference no. 79001160]. https://npgallery.nps.gov/AssetDetail/NRIS/79001160
 - National Park Service. (n.d.-f). *Idlewild Historic District (boundary increase)* [National Register of Historic Places, reference no. 09001062]. https://npgallery.nps.gov/AssetDetail/NRIS/09001062
+- National Trust for Historic Preservation. (n.d.). *Shearer Cottage and the rich African American heritage of Martha's Vineyard*. https://savingplaces.org/stories/shearer-cottage-and-the-rich-african-american-heritage-of-marthas-vineyard
 - Read the Plaque. (n.d.). *Idlewild Lot Owners Association* [Transcription of a historical marker credited to the Michigan History Center]. Retrieved November 1, 2026, from https://readtheplaque.com/plaque/idlewild-lot-owners-association
 - Town of Highland Beach. (n.d.). *History of Highland Beach*. https://www.highlandbeachmd.org/town-history`,
       recallContent: [
