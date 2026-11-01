@@ -3452,8 +3452,8 @@ async function main() {
   // (plans/95; brief cloud-briefs/rest-05/00-approved-brief.md). A site course on the Indianapolis beach the
   // city assigned to Black residents in 1936, read from the 2024 National Register nomination, plus US case
   // cards. Public-ready; held until the Friends of Belmont Beach have had about three weeks to review it (user
-  // task 387). Three case cards (Fairground Park, Belle Isle, Biloxi) are written in the course file but held
-  // out of `lessons` pending BAM's content decision (user task 388). New rows insert private and unpublished
+  // task 389). Three case cards (Fairground Park, Belle Isle, Biloxi) are written in the course file but held
+  // out of `lessons` pending BAM's content decision (user task 390). New rows insert private and unpublished
   // anyway (NEW_COURSE_STATE). Not in STAGED_COURSES until it is seeded and released.
   await seedAuthoredCourse(db, {
     tenantId: learnWitus,
