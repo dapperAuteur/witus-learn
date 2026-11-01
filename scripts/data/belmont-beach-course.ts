@@ -1282,7 +1282,7 @@ St. Louis's Fairground Park pool, opened to Black children on June 21, 1949, bel
 
 The local NAACP helped three young Black residents sue the city to desegregate the **Swope Park** swimming pool. KCUR, Kansas City's public radio station, says the suit "was first filed in 1951" (Ziegler, 2016); the National Park Service's theme study says the three sued "after being denied admission to a whites-only public pool in **1952**" (Kahrl & Cammeron, 2022, p. 93). **Report both.** A filing date and a denial date can differ, and so can two secondary sources.
 
-Thurgood Marshall, then the NAACP's chief attorney, came to try the case. The city's lawyers moved to have him removed from it, and pointed to the riots in St. Louis when Black swimmers were allowed into a pool there (Ziegler, 2016). The trial judge, Judge Ridge, ruled for the plaintiffs in 1952 (Ziegler, 2016).
+Thurgood Marshall, then the NAACP's chief attorney, came to try the case. The city's lawyers moved to have him removed from it, and pointed to the riots in St. Louis when Black swimmers were allowed into a pool there (Ziegler, 2016). Judge Ridge, the trial judge, ruled for the plaintiffs in 1952 (Ziegler, 2016).
 
 ## The opinion
 
