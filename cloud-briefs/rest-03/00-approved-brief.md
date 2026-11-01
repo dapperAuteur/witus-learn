@@ -22,7 +22,7 @@ the cause, and compare four lake communities that are each too thinly documented
 3. Woodland Park and the Michigan list: the signage trail; the Michigan Green Book survey; Appendix A names.
 4. Lake Placid, Missouri (1934 to 1937): research first; one source only. Drop if no second source.
 5. Ohio: the Cabin Club in Cuyahoga Valley; Clearview Golf Club.
-6. Map; assignment; final. (Rainbow Beach's 1960 and 1961 wade-ins moved to REST-05 lesson 21 by BAM's
+6. Map; assignment; final. (Rainbow Beach's 1960 and 1961 wade-ins moved to REST-05 lesson 23 (lesson 21 until 2026-11-01) by BAM's
    decision of 2026-11-01, plan 95 §12 answer 3; this course links there from section 1.)
 
 ## 3. Fit
