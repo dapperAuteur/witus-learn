@@ -243,7 +243,7 @@ Guests and residents recorded by the town include Paul Robeson, Robert and Mary 
     },
     {
       slug: "wwr-idlewild-1912",
-      title: "4 · Idlewild, 1912 to 1921: a lot-sales business, and the year the owners took it over",
+      title: "4 · Idlewild, 1912 to 1921: a lot-sales business, and who ran it after the founders",
       section: "Section 2 · Buying the land",
       body: `**Idlewild is the best business-history case in this course, and it opens with a fact that a careless version would hide.**
 
@@ -271,11 +271,21 @@ Early property owners named by the community and by the local historical researc
 
 **That roster is the marketing asset.** A lot company selling to a national Black market needed exactly one thing: proof that people whose judgment the market trusted had already bought.
 
-## 1921, the year that matters
+## 1920 or 1921: the owners' association, and two accounts of it
 
-**In 1921 the original developers turned ownership and management of the resort over to the Idlewild Lot Owners Association, incorporated in August 1921 and run by Idlewild's Black property owners. The association still exists** (Idlewild Michigan, n.d.).
+**This section was corrected on November 1, 2026, and the correction is the lesson.** When this course was written in July 2026, the Idlewild community's own website said that in 1921 the original developers turned ownership and management of the resort over to the **Idlewild Lot Owners Association**, incorporated in August 1921 and run by Idlewild's Black property owners, and that the association still exists. **The same page, read again on November 1, 2026, no longer says any of that** (Idlewild Michigan, n.d.). So this course now reports the 1921 transfer as **the community's own account**, published by the community and since withdrawn from its page, and not as a documented fact.
 
-**Stop on that.** Nine years after four white couples formed a company to sell lots to Black buyers, the buyers held the going concern. **That is a transfer of a business, and it is the single most under-taught fact about Idlewild.** Lesson 10 comes back to what the association could and could not do.
+**A second source tells it differently.** A historical marker credited to the Michigan History Center, as transcribed by the Read the Plaque project, says that **in 1920** Idlewild's founders, Wilbur Lemon, Alvin Wright, and the brothers Erastus and Adelbert Branch, **joined William Jennings to form** the Idlewild Lot Owners Association, and that the association was responsible for public improvements and maintenance of the resort (Read the Plaque, n.d.). **This course has read the transcription, not the marker itself.**
+
+**Put the two accounts side by side, because they disagree about more than a year.**
+
+| Question | The community's account (as published in 2026, since removed) | The marker, as transcribed |
+|---|---|---|
+| **When** | August 1921 | 1920 |
+| **Who formed it** | The Black property owners took it over from the developers | The founders themselves, with William Jennings |
+| **What it did** | Ownership and management of the resort | Public improvements and maintenance |
+
+**Do not pick the version you like better.** The first account is a story about buyers taking over a business. The second is a story about a developer setting up a body to maintain its subdivision. **Both are common shapes, and the paper settles which one happened here:** the association's articles of incorporation, filed with the State of Michigan, will carry a date and the names of its incorporators. **Until that filing is read, this course teaches the question, not an answer.** Lesson 10 comes back to what an owners' association can and cannot do, whoever formed it.
 
 ## The peak, and three numbers that are not the same number
 
@@ -293,15 +303,18 @@ Idlewild's best decades ran from the 1920s into the early 1960s. **Nightlife was
 
 ## Designation
 
-The **Idlewild Historic District** was listed on the National Register of Historic Places on **June 7, 1979**, reference number **79001160**, with Black social history as an area of significance (National Park Service, n.d.-e). **A boundary increase followed, and the sources disagree about when.** The Cultural Landscape Foundation says the district was expanded in **2010** (The Cultural Landscape Foundation, n.d.), while other listing summaries put the boundary increase in **2015**. **The National Register record settles it, and this course has not opened the nomination file.**
+The **Idlewild Historic District** was listed on the National Register of Historic Places on **June 7, 1979**, reference number **79001160**, with Black social history as an area of significance (National Park Service, n.d.-e). **A boundary increase followed in 2010.** The National Register's own record for the boundary increase, reference number **09001062**, gives its date published as **August 6, 2010** (National Park Service, n.d.-f), and the National Park Service's African American outdoor recreation theme study says the boundary increase "was completed in 2010 at the national level of significance" (Kahrl & Cammeron, 2022, p. 189). The Cultural Landscape Foundation also dates the expansion to 2010 (The Cultural Landscape Foundation, n.d.). **An earlier version of this course reported a competing date of 2015 from other listing summaries; the National Register record settles it, and 2015 is wrong.** Neither nomination file has been digitized yet, so the record read here is the register's catalog entry, not the nomination itself.
 
 A **Michigan Historical Commission** marker stands at Idlewild; the Historical Marker Database records it as erected in **2009**, marker number S0713 (The Historical Marker Database, n.d.).
 
 ## Sources
 - The Cultural Landscape Foundation. (n.d.). *Idlewild Historic District*. https://www.tclf.org/idlewild-historic-district
 - The Historical Marker Database. (n.d.). *Idlewild historical marker*. https://www.hmdb.org/m.asp?m=182804
-- Idlewild Michigan. (n.d.). *History*. https://www.idlewild-michigan.org/history
+- Idlewild Michigan. (n.d.). *History*. Retrieved November 1, 2026, from https://www.idlewild-michigan.org/history
+- Kahrl, A. W., & Cammeron, M. (2022). *African American outdoor recreation theme study: Historic context and National Historic Landmark survey*. National Park Service; Organization of American Historians. https://www.nps.gov/subjects/nationalhistoriclandmarks/upload/African-American-Outdoor-Recreation-National-Historic-Landmark-Theme-Study.pdf (printed p. 189 is PDF p. 197)
 - National Park Service. (n.d.-e). *Idlewild Historic District* [National Register of Historic Places, reference no. 79001160]. https://npgallery.nps.gov/AssetDetail/NRIS/79001160
+- National Park Service. (n.d.-f). *Idlewild Historic District (boundary increase)* [National Register of Historic Places, reference no. 09001062]. https://npgallery.nps.gov/AssetDetail/NRIS/09001062
+- Read the Plaque. (n.d.). *Idlewild Lot Owners Association* [Transcription of a historical marker credited to the Michigan History Center]. Retrieved November 1, 2026, from https://readtheplaque.com/plaque/idlewild-lot-owners-association
 - Terry Wantz Historical Research Center. (n.d.). *Idlewild*. https://www.twhistoricalresearchcenter.com/idlewild`,
       recallContent: [
         {
@@ -407,7 +420,7 @@ Then three separate things had to happen, and only the first was hers.
         },
         {
           prompt: "What happened at Idlewild in 1921, and why is it the most under-taught fact about the place?",
-          answer: "The original developers turned ownership and management over to the Idlewild Lot Owners Association, incorporated in August 1921 and run by Idlewild's Black property owners. It is a transfer of a going concern from the developers to the buyers.",
+          answer: "By the community's own account, as published on its website when this course was written and since removed, the developers turned ownership and management over to the Idlewild Lot Owners Association, incorporated in August 1921 and run by the Black property owners. A Michigan marker, as transcribed, says instead that the founders formed the association with William Jennings in 1920. The articles of incorporation would settle it.",
         },
         {
           prompt: "Idlewild's peak is reported as 25,000 visitors on a weekend, 20,000 on a weekend, and almost 25,000 a year. What is the method lesson?",
@@ -627,7 +640,7 @@ The **African American Heritage Trail of Martha's Vineyard** was established in 
               "The Lot Owners Association took over the resort",
             ],
             correctIndex: 3,
-            explanation: "The original developers turned ownership and management over to the association, run by Idlewild's Black property owners. It is a transfer of a going concern.",
+            explanation: "That is the community's own account, as published on its website when this course was written and since removed: the developers handed the resort to the association, run by the Black property owners. Lesson 4 also gives the second account, a Michigan marker as transcribed, which dates the association to 1920 and has the founders forming it. The articles of incorporation would settle which is right.",
             sourceLessonSlug: "wwr-idlewild-1912",
           },
           {
@@ -878,7 +891,7 @@ Residents created a municipal government, the first African American incorporate
 **Read that last sentence again as a governance fact.** A town can restrict land use inside its own limits because a municipality holds the **police power** delegated by the state. **A homeowners association cannot do that. A town can.**
 
 **2. An unincorporated community, a township, and a lot owners association. Idlewild, Michigan.**
-Idlewild is unincorporated and sits in **Yates Township, Lake County**, so the township and county provide public funding and administrative oversight. The **Idlewild Lot Owners Association**, incorporated in **August 1921**, has provided homeowner governance and preservation advocacy ever since, and an **Idlewild African American Chamber of Commerce** was founded in **2000** by John O. Meeks (Idlewild Michigan, n.d.).
+Idlewild is unincorporated and sits in **Yates Township, Lake County**, so the township and county provide public funding and administrative oversight. The **Idlewild Lot Owners Association** is the private body. Its founding is disputed: the community's own account, as published when this course was written and since removed from its website, dated it to **August 1921** and described homeowner governance and preservation advocacy ever since; a Michigan marker, as transcribed, dates it to **1920** and says the founders formed it to handle public improvements and maintenance (Idlewild Michigan, n.d.; Read the Plaque, n.d.). Lesson 4 sets the two accounts side by side. The community's account also named an **Idlewild African American Chamber of Commerce** founded in **2000** by John O. Meeks (Idlewild Michigan, n.d.).
 
 **Two bodies, neither of them a city.** One is a unit of Michigan government the residents vote in; the other is a private corporation the property owners run.
 
@@ -926,6 +939,7 @@ The Bruces held two lots. There was no township of theirs, no association, no mu
 - Idlewild Michigan. (n.d.). *History*. https://www.idlewild-michigan.org/history
 - Nassau County, Florida. (n.d.). *American Beach neighborhood planning*. https://www.nassaucountyfl.com/990/American-Beach-Neighborhood-Planning
 - Preservation Maryland. (n.d.). *Highland Beach: Douglass family-founded beach town on the Chesapeake*. https://preservationmaryland.org/highland-beach-douglass-family-founded-beach-town-on-the-chesapeake/
+- Read the Plaque. (n.d.). *Idlewild Lot Owners Association* [Transcription of a historical marker credited to the Michigan History Center]. Retrieved November 1, 2026, from https://readtheplaque.com/plaque/idlewild-lot-owners-association
 - Town of Highland Beach. (n.d.). *History of Highland Beach*. https://www.highlandbeachmd.org/town-history
 - Vineyard Gazette. (2016, August 2). *The Cottagers: Sixty years of community and philanthropy*. https://vineyardgazette.com/news/2016/08/02/cottagers-sixty-years-community-and-philanthrophy`,
       recallContent: [
@@ -1193,7 +1207,7 @@ The Bruces held two lots. There was no township of theirs, no association, no mu
 | **1913** | | Segregation approved in federal government offices |
 | **1915 to 1916** | Idlewild's first plat surveyed; Idlewild clubhouse built; the Bruces build a two-story building with a kitchen and dance floor | |
 | **1919 to 1923** | The Prioleaus, Elizabeth Patterson, Mary Sanders and the Johnsons buy lots in Block 12 | 1921: Lindsey approaches the Board of Trustees about the increasing number of Black people in Manhattan Beach |
-| **Aug 1921** | The Idlewild Lot Owners Association is incorporated and takes over the resort | The federal Advisory Committee on Zoning is organized and its manual distributed nationwide |
+| **1920 or Aug 1921** | The Idlewild Lot Owners Association is formed: the community's own account says August 1921, with the owners taking over the resort; a Michigan marker, as transcribed, says 1920, formed by the founders (lesson 4) | 1921: the federal Advisory Committee on Zoning is organized and its manual distributed nationwide |
 | **May 12, 1922** | Highland Beach incorporates as a municipality | |
 | **Nov to Dec 1923** | | Lindsey and civic leaders petition to purchase Blocks 5 and 12; owners of Blocks 5 and 12 petition against it |
 | **1924** | | The realtors' national code of ethics adopted; a Klan lecture advertised in January; Ordinance 276 and ordinances 273 to 275 passed June 5; Ordinance 282; the city files its condemnation suit in November |
@@ -1358,7 +1372,7 @@ Here is why the evidence does not carry it.
 **These are living communities, so the survival column is written in the present tense, and it is not a consolation prize.**
 
 - **Highland Beach** is still an incorporated town with an all-volunteer government, about 80 homes, and residents who are descendants of the original settlers. **Twin Oaks is the Frederick Douglass Museum and Cultural Center** (Town of Highland Beach, n.d.; Preservation Maryland, n.d.).
-- **Idlewild** is still an unincorporated community in Yates Township, with a **Lot Owners Association dating to 1921**, an **African American Chamber of Commerce founded in 2000**, a National Register historic district, and residents the community describes as year-round residents, fourth and fifth generation Idlewilders, seasonal visitors and newcomers (Idlewild Michigan, n.d.).
+- **Idlewild** is still an unincorporated community in Yates Township, with a **Lot Owners Association dating to 1920 or 1921** (lesson 4 gives the two accounts), an **African American Chamber of Commerce founded in 2000**, a National Register historic district, and residents the community describes as year-round residents, fourth and fifth generation Idlewilders, seasonal visitors and newcomers (Idlewild Michigan, n.d.).
 - **American Beach** is mostly privately owned, has a **Property Owners Association**, has had the **A. L. Lewis Museum since September 6, 2014**, holds an **8.5-acre federally owned dune**, and is **under study by the National Park Service for National Historic Landmark designation** (National Park Service, n.d.-b, n.d.-c; Nassau County, n.d.).
 - **Oak Bluffs**: **Shearer Cottage is still owned by Shearer descendants**, the Inkwell is a working town beach with a dawn swimming group, and **The Cottagers, Inc. marked seventy years in 2026** (National Trust for Historic Preservation, n.d.; Martha's Vineyard African American Heritage Trail, n.d.; Vineyard Gazette, 2026).
 - **Bruce's Beach** is the exception, and it gets the next lesson to itself.
@@ -1516,7 +1530,7 @@ Here is why the evidence does not carry it.
         },
         {
           prompt: "Name three things that survive in the present tense at these communities.",
-          answer: "Highland Beach is still an incorporated town with an all-volunteer government and Twin Oaks is a museum; Idlewild still has its 1921 Lot Owners Association and a Chamber of Commerce founded in 2000; Shearer Cottage is still owned by Shearer descendants; American Beach has the A. L. Lewis Museum, a federally owned dune and a National Historic Landmark study under way; and the Cottagers marked seventy years in 2026.",
+          answer: "Highland Beach is still an incorporated town with an all-volunteer government and Twin Oaks is a museum; Idlewild still has its Lot Owners Association, founded in 1920 or 1921 depending on the account, and a Chamber of Commerce founded in 2000; Shearer Cottage is still owned by Shearer descendants; American Beach has the A. L. Lewis Museum, a federally owned dune and a National Historic Landmark study under way; and the Cottagers marked seventy years in 2026.",
         },
       ],
     },
@@ -1831,7 +1845,9 @@ A reported **25 by 100 foot** Idlewild lot and a roughly **70 by 30 foot** Oak B
 - City of Manhattan Beach History Advisory Board. (2021, October 25). *History Advisory Board report*. City of Manhattan Beach. https://cmcp.org/wp-content/uploads/2023/02/Supplmental-Material_History-Report-4867-6724-8699-1-1.pdf
 - The Cultural Landscape Foundation. (n.d.). *Idlewild Historic District*. https://www.tclf.org/idlewild-historic-district
 - Maryland Historical Trust. (n.d.). *Douglass Summer House* [National Register properties in Maryland, NRID 1097]. https://apps.mht.maryland.gov/nr/NRDetail.aspx?NRID=1097
-- National Park Service. (n.d.-e). *Idlewild Historic District* [National Register of Historic Places, reference no. 79001160]. https://npgallery.nps.gov/AssetDetail/NRIS/79001160`,
+- National Park Service. (n.d.-e). *Idlewild Historic District* [National Register of Historic Places, reference no. 79001160]. https://npgallery.nps.gov/AssetDetail/NRIS/79001160
+- National Park Service. (n.d.-f). *Idlewild Historic District (boundary increase)* [National Register of Historic Places, reference no. 09001062]. https://npgallery.nps.gov/AssetDetail/NRIS/09001062
+- Read the Plaque. (n.d.). *Idlewild Lot Owners Association* [Transcription of a historical marker credited to the Michigan History Center]. Retrieved November 1, 2026, from https://readtheplaque.com/plaque/idlewild-lot-owners-association`,
       mapContent: {
         markers: [
           {
@@ -1850,7 +1866,7 @@ A reported **25 by 100 foot** Idlewild lot and a roughly **70 by 30 foot** Oak B
             title: "Idlewild, Yates Township, Lake County, Michigan",
             color: "#1d4ed8",
             description:
-              "The Idlewild Resort Company was formed in 1912 by four white couples to sell lots on roughly 2,700 acres of cutover timberland to Black buyers in Detroit and Chicago, a fact the community states plainly on its own website. First plat surveyed 1915; clubhouse on the island 1916. In August 1921 the developers turned ownership and management over to the Idlewild Lot Owners Association, run by the Black property owners, which still exists. Nightlife at the Flamingo, the Paradise and the El Morocco, promoted by Phil Giles and Arthur Braggs. Peak visitor figures in circulation are 25,000 and 20,000 on a weekend and almost 25,000 a year, which are three different quantities. National Register district listed June 7, 1979, reference 79001160, with a later boundary increase that sources date to either 2010 or 2015. Unincorporated: the township and county govern.",
+              "The Idlewild Resort Company was formed in 1912 by four white couples to sell lots on roughly 2,700 acres of cutover timberland to Black buyers in Detroit and Chicago, a fact the community states plainly on its own website. First plat surveyed 1915; clubhouse on the island 1916. The Idlewild Lot Owners Association followed in 1920 or 1921: the community's own account (since removed from its website) has the Black property owners taking over in August 1921, and a Michigan marker, as transcribed, has the founders forming it in 1920. Nightlife at the Flamingo, the Paradise and the El Morocco, promoted by Phil Giles and Arthur Braggs. Peak visitor figures in circulation are 25,000 and 20,000 on a weekend and almost 25,000 a year, which are three different quantities. National Register district listed June 7, 1979, reference 79001160, with a boundary increase published August 6, 2010, reference 09001062. Unincorporated: the township and county govern.",
           },
           {
             id: "wwr-american-beach",
@@ -1943,7 +1959,7 @@ A reported **25 by 100 foot** Idlewild lot and a roughly **70 by 30 foot** Oak B
 
 ## Idlewild, Michigan
 
-**What is there:** an unincorporated community in Yates Township with a **National Register historic district listed in 1979**, a **Lot Owners Association dating to August 1921**, an **African American Chamber of Commerce founded in 2000**, a **Michigan Historical Commission marker**, and residents the community describes as year-round residents, fourth and fifth generation Idlewilders, seasonal visitors and newcomers (Idlewild Michigan, n.d.; National Park Service, n.d.-e; The Historical Marker Database, n.d.).
+**What is there:** an unincorporated community in Yates Township with a **National Register historic district listed in 1979**, a **Lot Owners Association dating to 1920 or August 1921, depending on the account**, an **African American Chamber of Commerce founded in 2000**, a **Michigan Historical Commission marker**, and residents the community describes as year-round residents, fourth and fifth generation Idlewilders, seasonal visitors and newcomers (Idlewild Michigan, n.d.; National Park Service, n.d.-e; Read the Plaque, n.d.; The Historical Marker Database, n.d.).
 
 **What you can visit:** the **Idlewild Historic and Cultural Center**, plus summer events and festivals the community runs. **Two sources disagree about the Center's date**: the Terry Wantz Historical Research Center says it was established in 2003, and the community's own site says it opened in 2019 (Terry Wantz Historical Research Center, n.d.; Idlewild Michigan, n.d.). **That is very likely an organization founded in one year and a building opened in another, and the Center itself is the place to confirm it.**
 
@@ -1991,6 +2007,7 @@ A reported **25 by 100 foot** Idlewild lot and a roughly **70 by 30 foot** Oak B
 - National Park Service. (n.d.-e). *Idlewild Historic District* [National Register of Historic Places, reference no. 79001160]. https://npgallery.nps.gov/AssetDetail/NRIS/79001160
 - National Trust for Historic Preservation. (n.d.). *Shearer Cottage and the rich African American heritage of Martha's Vineyard*. https://savingplaces.org/stories/shearer-cottage-and-the-rich-african-american-heritage-of-marthas-vineyard
 - Preservation Maryland. (n.d.). *Highland Beach: Douglass family-founded beach town on the Chesapeake*. https://preservationmaryland.org/highland-beach-douglass-family-founded-beach-town-on-the-chesapeake/
+- Read the Plaque. (n.d.). *Idlewild Lot Owners Association* [Transcription of a historical marker credited to the Michigan History Center]. Retrieved November 1, 2026, from https://readtheplaque.com/plaque/idlewild-lot-owners-association
 - Terry Wantz Historical Research Center. (n.d.). *Idlewild*. https://www.twhistoricalresearchcenter.com/idlewild
 - Town of Highland Beach. (n.d.). *History of Highland Beach*. https://www.highlandbeachmd.org/town-history`,
       recallContent: [
@@ -2135,7 +2152,7 @@ A reported **25 by 100 foot** Idlewild lot and a roughly **70 by 30 foot** Oak B
 - **The Idlewild lot terms.** The reported 35 dollars, 6 dollars down and 1 dollar a week, and the practice of paying sales agents in lots, come from secondary accounts and **were not checked against the recorded 1915 plat or any deed**.
 - **The Highland Beach acreage.** **26 and two-thirds acres or 40 acres, unresolved.** The town's own history and the preservation literature disagree, and the deed was not read.
 - **MaVynee Betsch's exact relation to A. L. Lewis.** The National Park Service says great-granddaughter; another widely read source says granddaughter. **Unresolved here.**
-- **The Idlewild boundary increase year.** 2010 or 2015 depending on the source. **The National Register file was not opened.**
+- **The Idlewild Lot Owners Association's founding.** 1920, formed by the founders (a Michigan marker, as transcribed), or August 1921, taken over by the owners (the community's own account, since removed from its website). **The articles of incorporation were not read.** (The boundary increase year, once on this list, is settled: 2010, National Register reference 09001062.)
 - **The closing date of the 2023 Bruce's Beach sale.** Announced January 3 and 4, 2023; one outlet gives January 30, 2023; **the County's own page as read here records no completion date.** The deed record has it.
 - **The outcome of Elizabeth Catley's 1928 lawsuit**, which the City of Manhattan Beach's own report could not obtain and had requested.
 - **The season economics of every single one of these businesses.** No room rate, no occupancy, no payroll, no season length. **None of it was read into this course, and none of it was guessed at.**
@@ -2148,7 +2165,7 @@ A reported **25 by 100 foot** Idlewild lot and a roughly **70 by 30 foot** Oak B
 
 1. **Anne Arundel County land records, Maryland.** The 1893 Douglass deed, which settles the acreage.
 2. **Lake County Register of Deeds, Michigan.** The 1915 Idlewild plat and early lot deeds, which settle the price and terms.
-3. **The National Register nomination files** for the Idlewild Historic District (1979 and its boundary increase) and the American Beach Historic District (2002), plus the **National Historic Landmark study record** for American Beach at the National Park Service planning site.
+3. **The Michigan articles of incorporation** of the Idlewild Lot Owners Association, which settle 1920 or 1921 and who formed it. **The National Register nomination files** for the Idlewild Historic District (1979 and its 2010 boundary increase, neither digitized yet) and the American Beach Historic District (2002), plus the **National Historic Landmark study record** for American Beach at the National Park Service planning site.
 4. **Nassau County, Florida** property and corporate records, and whatever survives of the **Afro-American Life Insurance Company's** own books, which would turn the American Beach story from a founding into an investment history.
 5. **Dukes County Registry of Deeds, Massachusetts.** Partly mapped already by Jeffrey Burnett; the other properties are not.
 6. **Los Angeles County Superior Court, No. 157,573**, the full condemnation file, and the **Registrar-Recorder** deeds for the 1948, 1995, 2022 and 2023 transfers.
@@ -2160,6 +2177,7 @@ A reported **25 by 100 foot** Idlewild lot and a roughly **70 by 30 foot** Oak B
 
 - **The Green Book: How to Read a Route** is the prerequisite. If you skipped it, the listings method in it applies directly to Shearer Cottage and to every lodging business named here.
 - **The site courses in the route series** teach the other half of the calendar: the clearance, the alignments, the designations and the demolitions. **This course was built to run beside them, not to answer them.**
+- **This course is REST-00 of a series, A Place of Our Own: Black Resorts, Retreats and Vacation Towns.** Its next course, **Fox Lake: Indiana's Lake of Its Own** (\`fox-lake-indianas-lake-of-its-own\`), applies this course's method to the one Black lake resort in Indiana, read from its two National Register nominations.
 
 ## The last thing
 
@@ -2173,6 +2191,8 @@ A reported **25 by 100 foot** Idlewild lot and a roughly **70 by 30 foot** Oak B
 - National Park Service. (n.d.-c). *National Park Service announces study of American Beach for possible National Historic Landmark designation* [News release]. Timucuan Ecological and Historic Preserve. https://www.nps.gov/timu/learn/news/national-park-service-announces-study-of-american-beach-for-possible-national-historic-landmark-designation.htm
 - National Park Service. (n.d.-d). *The Green Book: An historic context*. https://www.nps.gov/articles/000/the-green-book-an-historic-context.htm
 - National Park Service. (n.d.-e). *Idlewild Historic District* [National Register of Historic Places, reference no. 79001160]. https://npgallery.nps.gov/AssetDetail/NRIS/79001160
+- National Park Service. (n.d.-f). *Idlewild Historic District (boundary increase)* [National Register of Historic Places, reference no. 09001062]. https://npgallery.nps.gov/AssetDetail/NRIS/09001062
+- Read the Plaque. (n.d.). *Idlewild Lot Owners Association* [Transcription of a historical marker credited to the Michigan History Center]. Retrieved November 1, 2026, from https://readtheplaque.com/plaque/idlewild-lot-owners-association
 - Town of Highland Beach. (n.d.). *History of Highland Beach*. https://www.highlandbeachmd.org/town-history`,
       recallContent: [
         {
