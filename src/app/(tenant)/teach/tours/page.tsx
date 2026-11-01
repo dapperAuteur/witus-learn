@@ -75,7 +75,8 @@ export default async function TeachToursPage() {
   let slots: TourSlotRow[] = [];
   let loadFailed = false;
   try {
-    slots = await sdb.listTourSlots({ userId: session.user.id, isOwner: owner });
+    // A school admin sees every course of the school except owner-only ones (plans/96 Q3).
+    slots = await sdb.listTourSlots({ userId: session.user.id, isOwner: owner, isSchoolAdmin: membership === "brand_admin" });
   } catch (err) {
     console.error("tours: could not list tour slots for /teach/tours", err);
     loadFailed = true;
