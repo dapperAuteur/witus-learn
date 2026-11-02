@@ -14,13 +14,15 @@ All commands run from the repo root. Local uses `.env.local`; prod uses the depl
 **Migrate first, then seed.** Code alone never changes what learners see — courses render from the
 **database**, so a content edit only goes live after its seed re-runs.
 
-Migrations now run **by themselves** after a merge to `main` that changes `src/db/migrations/`
-(GitHub Actions, "Migrate production database"; see §3a). Check that run went green. Seeds are still
-run by hand:
+Migrations run **by themselves** after a merge to `main` that changes `src/db/migrations/`
+(GitHub Actions, "Migrate production database"; see §3a). `seed:courses` and the RAG index run **by
+themselves** after a merge that changes a course file (GitHub Actions, "Seed production courses"; see
+§3b). Check both runs went green. The other seeds (§4) are still run by hand:
 
 ```bash
 pnpm db:migrate:prod        # only if the automatic run failed or the secret is not set yet (§3a)
-pnpm seed:<the affected seed(s)>   # re-seed the courses/content you changed
+pnpm seed:courses:prod      # only if the automatic seed run failed (§3b)
+pnpm seed:<another seed>    # seeds other than seed:courses (§4)
 ```
 
 If you're not sure which seed owns a course, see the reference in §4.
@@ -72,9 +74,7 @@ Runs never overlap and are never cancelled midway (a second merge waits). Vercel
 push at the same time, so keep migrations additive: the old code must keep working on the new schema
 for the minute the job takes.
 
-**Seeds are NOT automated.** Every seeder upserts lesson titles and text, and teachers can edit
-lesson text in the app (`/teach/<course>`), so a seed on merge would silently overwrite their edits.
-Seeds stay manual (§1, §4) until that is decided.
+**Seeds are not run by this workflow;** `seed:courses` has its own (§3b), which waits for this one.
 
 **The secret, set once** (no value is pasted anywhere; GitHub masks it in every log):
 
@@ -117,6 +117,54 @@ A second run says `0 new this run`.
 ```sql
 SELECT count(*) AS applied, max(created_at) AS latest_ms FROM drizzle.__drizzle_migrations;
 ```
+
+### 3b. Automatic seeds and RAG index (`.github/workflows/seed-production.yml`)
+
+**Why it is safe now.** Seeds used to overwrite lessons teachers edited in the app. The seeder now
+records what it last wrote to each lesson (`lessons.seed_hash`). A lesson edited in the app since then
+is **left alone and reported**: the seed log says `edited in the app: <course>/<lesson>`, and the
+lesson's instructor and the platform owner see a warning on `/teach` (and the owner on `/admin`) on
+every visit until they open the course's Teach page, compare the app's text with the file's, and
+choose **Keep the app edit** (quiet until the course file changes again) or **Take the course file's
+version**. A lesson with no `seed_hash` yet (the first seed after migration 0074) is written as seeds
+always did, so an in-app edit made before that first run is not protected. The code is
+`src/lib/seed-drift.ts`.
+
+**The automatic path.** A push to `main` that changes `scripts/data/**`, `scripts/seed-courses.ts`
+or the seeding code runs **Seed production courses**: it waits for this commit's migration run,
+applies pending migrations (a no-op when §3a already did), runs `scripts/seed-courses.ts` (the script
+behind `pnpm seed:courses:prod`), then re-indexes exactly the courses whose content that seed changed
+with `scripts/rag-index.ts --courses-file` (the script behind `pnpm rag:index:prod`; throttled, see
+§5a). The run summary lists the drift and one `ok`/`FAILED` line per indexed course. Re-running it is
+safe: unchanged lessons are rewritten with the same content and nothing is re-indexed.
+
+**Run it by hand.** Actions, **Seed production courses**, **Run workflow** (inputs: whether to seed,
+and which courses to index: `seeded`, `changed-only` for every previously indexed course that is
+stale, `needing` for every course never indexed or stale, or `none`). Or
+`gh workflow run seed-production.yml --repo dapperAuteur/witus-learn --ref main -f rag=changed-only`.
+
+**The secrets, set once** (piped, never pasted; GitHub masks them). `NEON_DIRECT_URL` is the same
+secret as §3a. The Gemini key:
+
+```bash
+grep '^GOOGLE_GEMINI_API_KEY=' .env.prod | cut -d= -f2- | tr -d '"' \
+  | gh secret set GOOGLE_GEMINI_API_KEY --repo dapperAuteur/witus-learn
+```
+
+Without either, the job stops at its first step with `::error::Set the repository secret ...`.
+
+**Manual fallback (the laptop).**
+
+```bash
+pnpm install --frozen-lockfile
+pnpm db:migrate:prod
+SEED_REPORT_PATH=/tmp/seed-report.json pnpm seed:courses:prod   # prints "Seed drift: N course(s) changed, ..."
+pnpm rag:index:prod --courses-file /tmp/seed-report.courses.json  # or --course <slug> [--tenant <slug>]
+pnpm rag:list:prod                                               # what still needs indexing
+```
+
+Expected seed output ends with `Seed drift: ... course(s) changed, ... lesson(s) left as edited in the
+app ..., ... lesson(s) baselined.` and `Done.`
 
 ---
 

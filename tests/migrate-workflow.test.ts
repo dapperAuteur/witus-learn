@@ -52,7 +52,7 @@ describe("migrate-production.yml", () => {
     expect(migrateScript).toContain(`const MIGRATIONS_FOLDER = "./${out}";`);
   });
 
-  it("does not run any seed: seeds overwrite teachers' in-app lesson edits", () => {
+  it("does not run any seed: seeds run in seed-production.yml after this job", () => {
     const runLines = workflow.split("\n").filter((l) => /^\s+run:/.test(l) || /^\s{10}\S/.test(l));
     expect(runLines.join("\n")).not.toMatch(/seed/);
   });
