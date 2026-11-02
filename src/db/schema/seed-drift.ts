@@ -41,7 +41,7 @@ export const lessonSeedDrifts = pgTable(
     /** The file's version of the content fields (src/lib/seed-drift.ts SeedContent). */
     fileContent: jsonb("file_content").notNull(),
     detectedAt: timestamp("detected_at", { withTimezone: true }).notNull().defaultNow(),
-    lastSeenAt: timestamp("last_seen_at", { withTimezone: true }).notNull().defaultNow(),
+    lastCheckedAt: timestamp("last_checked_at", { withTimezone: true }).notNull().defaultNow(),
     /** null = open (warn); kept_app = acknowledged, quiet until file_hash changes. */
     resolution: text("resolution"),
     resolvedAt: timestamp("resolved_at", { withTimezone: true }),

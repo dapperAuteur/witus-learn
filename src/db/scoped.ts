@@ -1,4 +1,5 @@
 import "server-only";
+import { listOpenSeedDrifts, resolveSeedDrift } from "@/db/queries/seed-drift";
 import { notFound } from "next/navigation";
 import { requireTenant, type TenantRecord } from "@/lib/tenant";
 import {
@@ -287,6 +288,19 @@ export class ScopedDb {
   /** Is this person an ACCEPTED auditor of this course, in this tenant? */
   isCourseAuditor(input: { courseId: string; userId: string | null; email: string | null }) {
     return isCourseAuditor({ tenantId: this.tenantId, ...input });
+  }
+
+  // ── Seed drift (plans/97 Q5) ───────────────────────────────────────────────
+  // Lessons edited in the app since the last seed, which the seeder left alone. This tenant only.
+
+  /** Open warnings; `instructorId` limits to one instructor's courses, `courseId` to one course. */
+  listOpenSeedDrifts(opts: { instructorId?: string; courseId?: string } = {}) {
+    return listOpenSeedDrifts(this.tenantId, opts);
+  }
+
+  /** Keep the app's edit, or take the file's version, for one open warning on one of this tenant's courses. */
+  resolveSeedDrift(courseId: string, driftId: string, action: "keep_app" | "take_file", userId: string) {
+    return resolveSeedDrift(this.tenantId, courseId, driftId, action, userId);
   }
 
   // ── Reviewer sign-off (plans/93 section 1) ─────────────────────────────────

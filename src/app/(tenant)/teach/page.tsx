@@ -9,6 +9,8 @@ import { getScopedDb } from "@/db/scoped";
 import { readinessOf, reviewsByLesson, summarizeLessonReview, type LessonReviewSummary } from "@/lib/lesson-review-summary";
 import { ownerOnlyBlocks } from "@/lib/course-visibility";
 import { createCourseAction } from "./actions";
+import { SeedDriftWarnings } from "@/components/seed-drift-warnings";
+import type { OpenSeedDrift } from "@/db/queries/seed-drift";
 
 export const metadata: Metadata = { title: "Teach" };
 
@@ -82,6 +84,15 @@ export default async function TeachPage({
     return { qrCleared: r.qrCleared, qrTotal: r.qrTotal, ready: r.ready, openDecisions: r.openDecisions };
   };
 
+  // Seed drift (plans/97 Q5): re-surfaced on every visit until acknowledged on the course's page.
+  // The owner sees every course's; an instructor their own. Never allowed to take Teach down.
+  let drifts: OpenSeedDrift[] = [];
+  try {
+    drifts = await sdb.listOpenSeedDrifts(owner ? {} : { instructorId: session.user.id });
+  } catch (err) {
+    console.error("seed drift unavailable", err);
+  }
+
   const labelFor = (c: (typeof courses)[number]): string | null => {
     if (!isAdmin) return null;
     const m = c as ManagedCourse;
@@ -119,6 +130,7 @@ export default async function TeachPage({
           </Link>
         </div>
       </div>
+      <SeedDriftWarnings drifts={drifts} />
 
       <form action={createCourseAction} className="mt-6 flex flex-col gap-3 rounded-2xl border border-neutral-200 bg-white p-5 dark:border-neutral-800 dark:bg-neutral-900">
         <h2 className="font-semibold">New course</h2>
