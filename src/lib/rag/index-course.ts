@@ -77,7 +77,7 @@ async function resolveDb(db?: RagDb): Promise<RagDb> {
  * courseRagContentHash in ./content-hash.ts, plus how many items it covered. One query for the whole
  * catalog, so listing never pulls lesson text into memory.
  */
-function contentHashQuery(courseId?: string) {
+export function contentHashQuery(courseId?: string) {
   const lessonWhere = courseId ? sql`and l.course_id = ${courseId}` : sql``;
   const sourceWhere = courseId ? sql`and s.course_id = ${courseId}` : sql``;
   const courseWhere = courseId ? sql`where c.id = ${courseId}` : sql``;
