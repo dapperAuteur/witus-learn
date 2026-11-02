@@ -109,7 +109,7 @@
     "tutorial:video": "node scripts/tutorial-video/compose.mjs",
     "typecheck": "next typegen && tsc --noEmit",
     "verify:observability": "tsx scripts/verify-observability.ts",
-    "test:db": "node --env-file=.env.test ./node_modules/vitest/vitest.mjs run",
+    "test:db": "node --env-file=.env.test --env-file-if-exists=.env.test.local ./node_modules/vitest/vitest.mjs run",
     "check:private-courses": "tsx scripts/check-private-courses.ts",
     "seed:local-private": "tsx --env-file=.env.local scripts/seed-local-private.ts",
     "seed:local-private:prod": "tsx --env-file=.env.prod scripts/seed-local-private.ts",
