@@ -37,3 +37,28 @@ export const sourceChunks = pgTable(
 );
 
 export type SourceChunk = typeof sourceChunks.$inferSelect;
+
+/**
+ * What the retrieval corpus of one course was built from (plans/97 Q5 automation). One row per
+ * course, written by indexCourse (src/lib/rag/index-course.ts) after a successful rebuild:
+ * `content_hash` is the hash of the lesson titles and bodies and the bibliography text that were
+ * embedded, so "which courses changed since they were indexed, or were never indexed" is a
+ * comparison, not a guess (listCoursesNeedingIndex, `pnpm rag:list`).
+ */
+export const courseRagIndex = pgTable(
+  "course_rag_index",
+  {
+    courseId: uuid("course_id")
+      .primaryKey()
+      .references(() => courses.id, { onDelete: "cascade" }),
+    tenantId: uuid("tenant_id")
+      .notNull()
+      .references(() => tenants.id, { onDelete: "cascade" }),
+    contentHash: text("content_hash").notNull(),
+    indexedAt: timestamp("indexed_at", { withTimezone: true }).notNull().defaultNow(),
+    chunkCount: integer("chunk_count").notNull().default(0),
+  },
+  (t) => [index("course_rag_index_tenant_idx").on(t.tenantId)],
+);
+
+export type CourseRagIndex = typeof courseRagIndex.$inferSelect;
