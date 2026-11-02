@@ -47,7 +47,9 @@ import { dirname, join } from "node:path";
 import { fileURLToPath, pathToFileURL } from "node:url";
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
-const UA = "witus-learn-course-build/1.0 (https://learn.witus.online; tools@awews.com)";
+// Identify the app, never a person: no email or name goes to outside services (BAM, 2026-11-01).
+// Wikimedia, LOC, Gutenberg and the Internet Archive ask for a contact; the site URL is that contact.
+const UA = "witus-learn-course-build/1.0 (+https://learn.witus.online)";
 
 // Licence short names we will publish, and what each obliges. Anything not matched here is refused,
 // loudly, and skipped: an unreadable or non-free licence does not ship. Non-commercial (CC BY-NC*)
