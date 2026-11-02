@@ -74,7 +74,11 @@ export interface AuthoredLesson {
    * box that begins "Before release". The recognised wordings are "a qualified reviewer (QR)",
    * "a practitioner", "a practitioner or BAM's demonstration" and "BAM's decision (brief question
    * N)", and one line may carry two needs joined by "; and needs ...". A line in any other wording
-   * still holds the course: it is stored as a decision, which no verdict can clear.
+   * still holds the course: it is stored as a decision, which no verdict can clear, and
+   * tests/lesson-review-markers.test.ts fails on any such decision without a brief question number,
+   * so a misparsed marker cannot ship silently (plans/97 v2 G1). Verdicts are one per lesson per need
+   * KIND: two QR needs on one lesson (two different reviewers) are cleared by one verdict, so give
+   * the second one a decision marker until verdicts are keyed per need.
    *
    * Set this only to override the parse; an empty list means "no needs" even if the body has
    * marker lines.
