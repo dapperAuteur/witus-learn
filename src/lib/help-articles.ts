@@ -184,6 +184,9 @@ one). Categories power the catalog filter.`,
 Toggle publish per course from **/teach** (click the status pill), or in bulk by selecting several
 courses and choosing **Publish / Unpublish**.
 
+When you schedule, publish or release a course from its own page under Teach, a warning first lists its
+open launch to-dos and how many quizzes do not pass the length check yet; it is never a block.
+
 See also **Vetting a course, and the "Coming soon" page**, for the separate review step that decides
 whether learners get the lessons or a coming-soon page.`,
   },
@@ -997,7 +1000,20 @@ appears on the Coming-soon page of a course still in review, as counts only.
 To raise the numbers, give every question a \`sourceLessonSlug\` and an \`explanation\`, and edit
 option text in place so the right answer is as often long as short across a quiz (never reorder
 options or edit a prompt; the length guards in \`pnpm lint\` say which questions to fix). The platform
-owner sees every course, worst first, at **/admin/quiz-integrity**.`,
+owner sees every course, worst first, at **/admin/quiz-integrity**.
+
+## Quiz checks on your course page under Teach
+
+Open your course under **Teach**. The **Quiz checks** section shows the same sentences the visitor's
+card shows, then lists each quiz of 8 or more questions that does not pass the length check yet, each
+linking to its lesson in the Lessons list. It reads the course as it is stored, so it checks every quiz
+the course holds. Rewrite option text so the right answer is as often long as short; do not reorder
+options or edit the question. A course with no quiz says "No quiz in this course yet.", and quizzes
+under 8 questions are too short to measure.
+
+When you schedule, publish, release or vet a course with a failing quiz, the warning that lists your
+launch to-dos adds "N quizzes do not pass the length check yet." It is a warning, never a block: **Go
+ahead** carries on exactly as you asked.`,
   },
   {
     slug: "images-and-quick-recall",

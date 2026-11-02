@@ -80,8 +80,19 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   The Coming-soon face gets counts from \`ScopedDb.courseQuizIntegrity\`, where SQL returns option lengths,
   never question text. New owner-only \`/admin/quiz-integrity\`: every course worst first, with a
   school-wide pass share that doubles as the length-balance campaign's progress bar; it states that a
-  database figure can differ slightly from lint. Follow-up: \`tests/isolation/quiz-integrity.db.test.ts\`
-  has not run against a database.
+  database figure can differ slightly from lint.
+  **Version 2** (plans/98 Part B, BAM's answers 2026-11-01; branches \`feat/quiz-checks-teach\`,
+  \`feat/quiz-warning-item\`, \`feat/quiz-panel-analytics\`, \`chore/longest-option-ratchet\`,
+  \`docs/quiz-panel-v2\`; no migration). \`/teach/<course>\` gains a **Quiz checks** section: the public
+  panel's sentences plus the measured quizzes that fail the length check, each linked to its lesson in the
+  Lessons list (\`ScopedDb.listFailingQuizBanks\`, the same lengths-only SQL, so any quiz in the database is
+  checked, not only course files), with empty, small-bank and could-not-load states. Scheduling, publishing,
+  releasing the hold, vetting and Make public now warn "N quizzes do not pass the length check yet." (Q1;
+  never a gate; focus moves to the warning and back on Not yet). The panel stays visible to every visitor,
+  collapsed (Q2), and opening it sends \`quiz_integrity_panel_opened\` {course_id, surface} once per page view
+  (Q3). The empty longest-option GRANDFATHERED map is gone (Q4; lint totals unchanged). Open:
+  \`tests/isolation/quiz-integrity.db.test.ts\` (extended with a cross-tenant failing-quiz case) still needs a
+  test database seeded with BVC courses to run.
 - 🔧 **Read the Statements, FIRM-01** (\`feat/course-firm-01-read-the-statements\`, no migration; after merge
   run \`pnpm seed:speedway:prod\` and \`pnpm seed:courses:prod\`). BAM approved the brief on 2026-10-25
   (\`cloud-briefs/firm-01/00-approved-brief.md\`; tier 2). Financial accounting learned from one real filing,
