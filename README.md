@@ -1538,6 +1538,27 @@ per-question strategy values that `check-longest-option.ts`, `check-shortest-opt
 a k-way tie scores 1/k, true/false limits of 65% and 75%, banks under 8 questions unmeasured) and
 `tests/isolation/quiz-integrity.db.test.ts` (tenant-scoped, counts only; skipped offline).
 
+**For the course's editors (version 2, plans/98).** `/teach/<course>` carries a **Quiz checks**
+section with the same sentences the public card shows, then lists each **measured** quiz (8 or more
+questions) that does not pass the length check, linked to its lesson in the Lessons list, with the fix:
+"Rewrite option text so the right answer is as often long as short. Do not reorder options or edit the
+question." It reads the database through `ScopedDb.listFailingQuizBanks(courseId)` (the same
+lengths-only SQL, tenant-filtered), so a quiz is checked however it reached the course, not only when it
+sits in a course file the lint guards scan. States: "No quiz in this course yet.", "Your quizzes have
+fewer than 8 questions, so length cannot be measured yet.", and an alert if the read fails while the
+rest of the page still renders.
+
+**A warning, never a gate.** Scheduling, publishing or clearing the hold in the settings form, releasing
+the review hold, vetting, and Make public add one item to the existing launch warning when any measured
+quiz fails: "N quizzes do not pass the length check yet." Go ahead proceeds exactly as before. Focus
+moves to the warning's heading when it opens and back to the button on "Not yet".
+
+**Analytics.** Opening the card sends `quiz_integrity_panel_opened` with `{ course_id, surface:
+"course" | "coming_soon" }`, once per page view (`src/components/quiz-integrity-details.tsx`, the only
+client part; the card's text stays server-rendered and works without JavaScript).
+
+The longest-option guard no longer has a `GRANDFATHERED` map (it was empty): every file must pass it.
+
 ## Teachers Pay Teachers packets (`/admin/tpt-plan`)
 
 Owner-only rollout plan for the TpT sales channel: which packet to post, in what order, at what
