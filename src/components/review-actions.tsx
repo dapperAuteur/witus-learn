@@ -4,6 +4,8 @@ import { useState } from "react";
 import type { LaunchTodo } from "@/lib/launch-todos";
 import { LaunchTodoWarning, hasOpenTodos } from "@/components/launch-todo-warning";
 import { useRouter } from "next/navigation";
+import { capture } from "@/lib/analytics/capture";
+import { EVENTS } from "@/lib/analytics/events";
 import type { VerdictNeedKind } from "@/lib/lesson-review";
 
 // The platform owner's two buttons in reviewer sign-off (plans/93 section 1). Both are owner-only on
@@ -82,6 +84,7 @@ export function ReleaseReviewHoldButton({ courseId, launchTodos }: { courseId: s
       setMessage(data?.error ?? "The hold could not be released.");
       return;
     }
+    if (data?.released) capture(EVENTS.reviewHoldReleased, { course_id: courseId });
     setMessage(data?.released ? "Hold released. Vetting is still a separate step." : "There was no hold to release.");
     router.refresh();
   }
