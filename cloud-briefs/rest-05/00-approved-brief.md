@@ -14,7 +14,7 @@ The optional method capstone plan 94 §3.1 parked as "REST-05 Find the Resort Ne
 parked. Recorded in plan 94 §3.1, the seed registration comment, and `cloud-briefs/rest-06/00-parked-brief.md`.
 
 **Rainbow Beach moves (BAM, answer 3).** The 1960 and 1961 Rainbow Beach wade-ins leave REST-03 section 6 and are
-taught in REST-05 lesson 21 (the wade-ins lesson; plan 95 called it lesson 20). REST-03 keeps Chicago, July 27,
+taught in REST-05 lesson 23 (the wade-ins lesson; plan 95 called it lesson 20, and it was lesson 21 until the three case cards went in on 2026-11-01). REST-03 keeps Chicago, July 27,
 1919 as its opening and links to REST-05 for 1960 and 1961. REST-03's brief (both copies) is updated to say so.
 
 ## 1. Description
@@ -25,7 +25,7 @@ Black residents; read a National Register nomination and a 1941 newspaper compla
 it) as evidence of who decided what; compare Belmont with contested pools, beaches and parks in other US cities;
 and visit the site from public ground without entering the river.
 
-## 2. Outline (built 2026-11-01; 26 lessons; six sections)
+## 2. Outline (built 2026-11-01; 29 lessons since the three case cards went in the same day; six sections)
 
 - **Section 1 · Then:** owned, assigned, claimed (links REST-00 and REST-01); 1913 to 1917, flood, levee, the
   Emrichsville Dam built for Riverside Park, and the sandbar; the west side fills (ward five, Haughville); 1927,
@@ -42,17 +42,23 @@ and visit the site from public ground without entering the river.
 - **Section 4 · Now:** 1959 to 2026, the expressway, Rev. Mozel Sanders Park (2008), the Friends (2020), the
   pop-up park (2021), the 2026 listing as "Belmont Beach" and what the listed boundary holds (open); now (360
   tour, forthcoming), public ground only, the river is not for swimming.
-- **Section 5 · The same fight in other cities:** 1949, Gary's lakefront and Washington's Anacostia pool; Kansas
+- **Section 5 · The same fight in other cities:** Detroit's Belle Isle, June 1943, a shared park (content note);
+  1949, Gary's lakefront and Washington's Anacostia pool; St. Louis's Fairground Park pool, June 21, 1949 (content
+  note); Kansas
   City, Swope Park and *Kansas City v. Williams* (1953), read the opinion; Cincinnati's Coney Island and Marian
   Spencer (1952 to 1961) and Pittsburgh's Highland Park pool; wade-ins and carousels: Rainbow Beach (1960, 1961),
-  Glen Echo (1960), Gwynn Oak (1963), St. Augustine's Monson Motor Lodge pool (1964, content note); map; quiz.
+  Glen Echo (1960), Gwynn Oak (1963), St. Augustine's Monson Motor Lodge pool (1964, content note); the Biloxi
+  wade-ins, 1959 to 1968, and the federal money (content note; the 1960 death toll is disputed and taught as a
+  dispute); map; quiz.
 - **Section 6 · Write:** assignment (one beach, one board decision, one newspaper page); what this course cut and
   the sources nobody has opened; final quiz.
 
-**Held out of the course (BAM, answer 5: not yet approved).** Three case cards are written as drafts in the course
-file's `BELMONT_HELD_CASE_CARDS` export, which the seeder never reads: St. Louis's Fairground Park pool (June 21,
-1949), Detroit's Belle Isle (June 1943), and the Biloxi wade-ins (1959 to 1968). Each carries a content note and
-no images. BAM's answer switches them in (task 390).
+**The three held case cards are in (BAM, 2026-11-01: "include Fairground Park, Belle Isle and Biloxi"; task 390,
+closed).** They were first written as drafts held out of `lessons`. They now sit in Section 5 by date as lesson 18
+(Belle Isle, 1943), lesson 20 (Fairground Park, 1949) and lesson 24 (Biloxi, 1959 to 1968), under the same rule as
+the drownings and the Monson acid: a content note, counts only, no images, and no private victim named. Lessons
+after 17 were renumbered; the Section 5 quiz gained six questions and the final quiz three (one replacing the
+question about the held cards).
 
 ## 3. Fit
 
@@ -79,7 +85,8 @@ after `where-we-rested` (REST-00, the prerequisite). High school and up; adult l
 would break that course's one claim; the nomination carries four sections; the US cases share Belmont's
 mechanism and are each too thin to stand alone. Rubric: A1, A2, A5, A7 pass; A3 pass with correction (city-owned,
 not Black-owned); A4 met by quoting no living private person; A6 decided in part (drownings and the Monson acid
-in, with a content note and no graphic images; Fairground Park, Belle Isle and Biloxi held); B 3/3/3/3/3/2 = 35;
+in, with a content note and no graphic images; Fairground Park, Belle Isle and Biloxi added on 2026-11-01 under the
+same rule); B 3/3/3/3/3/2 = 35;
 form C6.
 
 ## 6. Evidence status
@@ -111,7 +118,8 @@ snippet); Riverside "until 1963"; the 1927 *Recorder* pages; the Haughville rive
 
 ## 7. Questions for BAM
 
-1. Fairground Park, Belle Isle and Biloxi: switch the held case cards in, or keep them out? (task 390)
+1. ~~Fairground Park, Belle Isle and Biloxi: switch the held case cards in, or keep them out? (task 390)~~ Answered
+   2026-11-01: include all three. Done.
 2. Send the Friends of Belmont Beach and Kurt West Garner drafts (task 389).
 3. A Belmont Beach capture session (task 391).
 4. The *Recorder* pages and the Haughville riverfront study (added to task 383).
