@@ -91,8 +91,8 @@ export const OPERATOR_COMMANDS: CommandGroup[] = [
     title: "AI / retrieval",
     blurb: "Builds the search corpus for the per-course 'chat with the sources' feature.",
     commands: [
-      { cmd: "pnpm rag:index --course <slug>", desc: "Chunk + embed (Gemini 768-dim) a course's lesson bodies + bibliography citations into source_chunks (a clean rebuild). Add --source-url <url> to also ingest a PUBLIC-DOMAIN full text (e.g. Puckett on archive.org); --tenant <slug> to disambiguate a shared slug. Needs GOOGLE_GEMINI_API_KEY.", impact: "write-dev" },
-      { cmd: "pnpm rag:list", desc: "Print a Markdown checklist of every course + the rag:index command to build its chat index (grouped by school). Save it: pnpm rag:list > plans/rag-index-checklist.md, then check courses off as you index them.", impact: "read" },
+      { cmd: "pnpm rag:index --course <slug>", desc: "Chunk + embed (Gemini 768-dim) a course's lesson bodies + bibliography citations into source_chunks, and record what was indexed in course_rag_index. Batched under a per-minute token budget (RAG_EMBED_TOKENS_PER_MINUTE, default 25000) and retried on Gemini 429s (RAG_EMBED_MAX_RETRIES, default 8). Keeps a public-domain full text unless --source-url <url> replaces it; --tenant <slug> or --all-tenants for a shared slug; --courses-file <json> or --needing [--changed-only] for many courses. Needs GOOGLE_GEMINI_API_KEY.", impact: "write-dev" },
+      { cmd: "pnpm rag:list", desc: "Print a Markdown checklist of every course with its index state (never indexed, changed since indexed, current, nothing to index) and the rag:index command for it, grouped by school. Save it: pnpm rag:list > plans/rag-index-checklist.md.", impact: "read" },
     ],
   },
 ];

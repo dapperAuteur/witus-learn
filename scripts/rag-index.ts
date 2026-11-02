@@ -1,65 +1,34 @@
-// rag:index — build the retrieval corpus for one course's "chat with the sources" (plans/future/17).
-// Chunks + embeds (Gemini 768-dim) the course's LESSON bodies + bibliography CITATIONS, and — when a
-// --source-url is given — a PUBLIC-DOMAIN full text (e.g. Puckett 1926 on the Internet Archive). Stores
-// everything tenant/course-scoped in source_chunks (a clean rebuild each run).
+// rag:index: build the retrieval corpus for "chat with the sources" (plans/future/17), a thin CLI over
+// indexCourse in src/lib/rag/index-course.ts (the post-merge workflow and the admin page call the same
+// function). Embeddings are batched under a per-minute token budget and retried on Gemini 429s
+// (src/lib/rag/embed-batch.ts), so a course larger than the free tier's 30,000 tokens a minute
+// finishes instead of failing every time.
 //
 //   pnpm rag:index --course hoodoo-tradition-of-resistance
-//   pnpm rag:index --course hoodoo-tradition-of-resistance --source-url https://archive.org/stream/folkbeliefsofsou00puck/folkbeliefsofsou00puck_djvu.txt
-//   pnpm rag:index --course <slug> --tenant <tenantSlug>    # disambiguate a slug shared across tenants
+//   pnpm rag:index --course <slug> --source-url https://archive.org/stream/…_djvu.txt   # also ingest a public-domain text
+//   pnpm rag:index --course <slug> --tenant <tenantSlug>   # a slug shared across schools
+//   pnpm rag:index --course <slug> --all-tenants           # every school's course with that slug
+//   pnpm rag:index --courses-file changed.json             # [{ "tenantSlug": "...", "courseSlug": "..." }]
+//   pnpm rag:index --needing [--changed-only]              # never indexed or changed since (rag:list shows them)
 //
-// Needs GOOGLE_GEMINI_API_KEY (embeddings) + the DB url (both via .env.local). Writes the DB.
+// Needs GOOGLE_GEMINI_API_KEY and the DB url. Optional: RAG_EMBED_TOKENS_PER_MINUTE (default 25000),
+// RAG_EMBED_MAX_RETRIES (default 8). Attempts every course, then exits 1 if any failed.
 
+import { readFileSync } from "node:fs";
 import { neonConfig, Pool } from "@neondatabase/serverless";
-import { and, eq } from "drizzle-orm";
 import { drizzle } from "drizzle-orm/neon-serverless";
 import ws from "ws";
 import * as schema from "../src/db/schema";
 import { resolveDbUrl } from "./db-url";
-
-const GEMINI_MODEL = "gemini-embedding-001";
-const DIMS = 768;
-
-const flag = (n: string) => {
-  const i = process.argv.indexOf(`--${n}`);
-  return i !== -1 ? process.argv[i + 1] : undefined;
-};
-
-async function embed(text: string): Promise<number[]> {
-  const key = process.env.GOOGLE_GEMINI_API_KEY;
-  if (!key) throw new Error("GOOGLE_GEMINI_API_KEY is not set (add it to .env.local).");
-  const res = await fetch(`https://generativelanguage.googleapis.com/v1beta/models/${GEMINI_MODEL}:embedContent`, {
-    method: "POST",
-    headers: { "content-type": "application/json", "x-goog-api-key": key },
-    body: JSON.stringify({
-      model: `models/${GEMINI_MODEL}`,
-      content: { parts: [{ text: text.slice(0, 8000) }] },
-      outputDimensionality: DIMS,
-    }),
-  });
-  if (!res.ok) throw new Error(`Gemini embed failed: ${res.status} ${await res.text().catch(() => "")}`);
-  const data = (await res.json()) as { embedding?: { values?: number[] } };
-  const values = data.embedding?.values;
-  if (!Array.isArray(values) || values.length !== DIMS) throw new Error(`Unexpected embedding dim: ${values?.length}`);
-  return values;
-}
-
-function chunkText(text: string, size = 1800, overlap = 200): string[] {
-  const clean = text.replace(/\r/g, "").replace(/[ \t]+/g, " ").replace(/\n{3,}/g, "\n\n").trim();
-  if (clean.length <= size) return clean ? [clean] : [];
-  const out: string[] = [];
-  for (let i = 0; i < clean.length; i += size - overlap) out.push(clean.slice(i, i + size));
-  return out;
-}
+import { RAG_INDEX_USAGE, parseCoursesFile, parseRagIndexArgs, type CourseRef } from "../src/lib/rag/index-args";
+import { findCoursesBySlug, indexCourse, listCoursesNeedingIndex, type RagDb } from "../src/lib/rag/index-course";
 
 async function main() {
-  const slug = flag("course");
-  if (!slug) {
-    console.error("Usage: pnpm rag:index --course <slug> [--tenant <slug>] [--source-url <url>]");
+  const args = parseRagIndexArgs(process.argv.slice(2));
+  if ("error" in args) {
+    console.error(`${args.error}\n${RAG_INDEX_USAGE}`);
     process.exit(1);
   }
-  const tenantSlug = flag("tenant");
-  const sourceUrl = flag("source-url");
-
   const url = resolveDbUrl(true);
   if (!url) {
     console.error("Set DATABASE_URL (or DATABASE_URL_UNPOOLED).");
@@ -67,79 +36,55 @@ async function main() {
   }
   neonConfig.webSocketConstructor = ws;
   const pool = new Pool({ connectionString: url });
-  const db = drizzle(pool, { schema });
+  const db = drizzle(pool, { schema }) as RagDb;
 
-  // Resolve the course (disambiguate a shared slug via --tenant).
-  let tenantId: string | undefined;
-  if (tenantSlug) {
-    const [t] = await db.select({ id: schema.tenants.id }).from(schema.tenants).where(eq(schema.tenants.slug, tenantSlug)).limit(1);
-    if (!t) { console.error(`Tenant "${tenantSlug}" not found.`); await pool.end(); process.exit(1); }
-    tenantId = t.id;
+  let targets: (CourseRef & { sourceUrl?: string })[] = [];
+  if (args.mode === "course") {
+    if (args.allTenants) {
+      const found = await findCoursesBySlug(args.course, undefined, { db });
+      targets = found.map((f) => ({ tenantSlug: f.tenantSlug, courseSlug: f.courseSlug }));
+      if (targets.length === 0) console.error(`No course with slug "${args.course}".`);
+    } else {
+      // tenantSlug "" lets indexCourse resolve it (and say so when the slug is shared).
+      targets = [{ tenantSlug: args.tenant ?? "", courseSlug: args.course, sourceUrl: args.sourceUrl }];
+    }
+  } else if (args.mode === "courses-file") {
+    const parsed = parseCoursesFile(JSON.parse(readFileSync(args.path, "utf8")));
+    if ("error" in parsed) {
+      console.error(`${args.path}: ${parsed.error}`);
+      await pool.end();
+      process.exit(1);
+    }
+    targets = parsed;
+  } else {
+    const needing = await listCoursesNeedingIndex({ db });
+    targets = needing
+      .filter((n) => !args.changedOnly || n.reason === "changed")
+      .map((n) => ({ tenantSlug: n.tenantSlug, courseSlug: n.courseSlug }));
   }
-  const courseRows = await db
-    .select({ id: schema.courses.id, tenantId: schema.courses.tenantId, title: schema.courses.title })
-    .from(schema.courses)
-    .where(tenantId ? and(eq(schema.courses.slug, slug), eq(schema.courses.tenantId, tenantId)) : eq(schema.courses.slug, slug));
-  if (courseRows.length === 0) { console.error(`No course with slug "${slug}".`); await pool.end(); process.exit(1); }
-  if (courseRows.length > 1) {
-    console.error(`Slug "${slug}" matches ${courseRows.length} courses across tenants, pass --tenant <slug>.`);
-    await pool.end();
-    process.exit(1);
-  }
-  const course = courseRows[0];
-  console.error(`Indexing "${course.title}" …`);
 
-  // Clean rebuild.
-  await db.delete(schema.sourceChunks).where(eq(schema.sourceChunks.courseId, course.id));
-
-  const rows: (typeof schema.sourceChunks.$inferInsert)[] = [];
-
-  // 1) Lessons.
-  const lessons = await db
-    .select({ title: schema.lessons.title, body: schema.lessons.textContent })
-    .from(schema.lessons)
-    .where(eq(schema.lessons.courseId, course.id));
-  let lessonChunks = 0;
-  for (const l of lessons) {
-    if (!l.body) continue;
-    const chunks = chunkText(l.body);
-    for (let i = 0; i < chunks.length; i++) {
-      rows.push({ tenantId: course.tenantId, courseId: course.id, kind: "lesson", title: l.title, text: chunks[i], embedding: await embed(chunks[i]), ord: i });
-      lessonChunks++;
+  console.log(`Indexing ${targets.length} course${targets.length === 1 ? "" : "s"}.`);
+  const failed: string[] = [];
+  for (const [i, t] of targets.entries()) {
+    const label = `${t.tenantSlug || "?"}/${t.courseSlug}`;
+    try {
+      const r = await indexCourse(t.courseSlug, t.tenantSlug || undefined, {
+        db,
+        sourceUrl: t.sourceUrl,
+        onProgress: (p) => console.error(`  [${i + 1}/${targets.length}] ${label}: ${p.message}`),
+      });
+      console.log(
+        `ok ${r.tenantSlug}/${r.courseSlug}: ${r.lessonChunks} lesson, ${r.citationChunks} citation, ` +
+          `${r.publicDomainChunks} public-domain${r.publicDomainKept ? " (kept)" : ""} chunks`,
+      );
+    } catch (err) {
+      failed.push(label);
+      console.log(`FAILED ${label}: ${err instanceof Error ? err.message : String(err)}`);
     }
   }
-
-  // 2) Citations (bibliography — retrieve over the citation, not copyrighted full text).
-  const sources = await db.select().from(schema.courseSources).where(eq(schema.courseSources.courseId, course.id));
-  let citationChunks = 0;
-  for (const s of sources) {
-    const cite = s.apa || s.inText;
-    if (!cite) continue;
-    rows.push({ tenantId: course.tenantId, courseId: course.id, sourceId: s.id, kind: "citation", title: s.apa ?? null, text: cite, embedding: await embed(cite), ord: 0 });
-    citationChunks++;
-  }
-
-  // 3) Public-domain full text (opt-in via --source-url).
-  let pdChunks = 0;
-  if (sourceUrl) {
-    console.error(`Fetching public-domain text: ${sourceUrl}`);
-    const res = await fetch(sourceUrl);
-    if (!res.ok) { console.error(`Fetch failed: ${res.status}`); await pool.end(); process.exit(1); }
-    const text = await res.text();
-    const chunks = chunkText(text);
-    for (let i = 0; i < chunks.length; i++) {
-      rows.push({ tenantId: course.tenantId, courseId: course.id, kind: "public_domain_text", title: sourceUrl, text: chunks[i], embedding: await embed(chunks[i]), ord: i });
-      pdChunks++;
-    }
-  }
-
-  // Insert in batches (avoid oversized statements).
-  for (let i = 0; i < rows.length; i += 100) {
-    await db.insert(schema.sourceChunks).values(rows.slice(i, i + 100));
-  }
-
-  console.log(`Indexed ${rows.length} chunks for "${course.title}": ${lessonChunks} lesson, ${citationChunks} citation, ${pdChunks} public-domain.`);
   await pool.end();
+  console.log(`Done: ${targets.length - failed.length} indexed, ${failed.length} failed.`);
+  if (failed.length) process.exit(1);
 }
 
 main().catch((err) => {
