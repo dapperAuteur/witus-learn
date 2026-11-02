@@ -52,6 +52,11 @@ export const EVENTS = {
   /** The 360 viewer finished loading its photo on a lesson (once per page view). { lesson_id } */
   tourViewerOpened: "tour_viewer_opened",
 
+  // Quiz integrity panel (plans/98 section 8, BAM 2026-11-01 Q3).
+  /** "How this course's quizzes are built" opened, once per page view.
+   *  { course_id, surface: "course"|"coming_soon" } */
+  quizIntegrityPanelOpened: "quiz_integrity_panel_opened",
+
   ...SHARED_EVENTS,
 } as const;
 
