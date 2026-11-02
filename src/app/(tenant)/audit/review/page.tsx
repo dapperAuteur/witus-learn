@@ -5,6 +5,7 @@ import { requireUserPage, isPlatformOwner } from "@/lib/session";
 import { getUsername } from "@/db/queries/authoring";
 import { hasReviewerCredential, KIND_TITLE, needLabel, RESET_RULE, REVIEW_DISCLAIMER, STATE_LABEL } from "@/lib/lesson-review";
 import { reviewsByLesson, summarizeLessonReview } from "@/lib/lesson-review-summary";
+import { ReviewPacketDownload } from "@/components/review-packet-download";
 
 /** Login-gated, one reviewer's own list, never shared or indexed, so no social card by design. */
 export const metadata: Metadata = {
@@ -93,6 +94,7 @@ export default async function AuditReviewPage() {
                   ? `You will be credited as ${g.reviewerName!.trim()}, ${g.reviewerCredential!.trim()}.`
                   : "Not credited yet: the person who invited you adds your name and credential, and you can record a verdict once they have."}
               </p>
+              {courseLessons.length > 0 ? <ReviewPacketDownload courseId={g.courseId} courseTitle={g.courseTitle} /> : null}
               {courseLessons.length === 0 ? (
                 <p className="mt-2 text-sm text-neutral-600 dark:text-neutral-400">No lesson in this course is marked for review.</p>
               ) : (

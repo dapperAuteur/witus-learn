@@ -49,6 +49,14 @@ export interface PdfCourseInput extends Omit<EpubCourseInput, "identifier"> {
   disclaimers?: string[];
   /** The export date on the title page. Defaults to now; pass a fixed date for reproducible output. */
   generatedOn?: Date;
+  /**
+   * The school whose file this is (plans/97 v2: a reviewer packet carries the tenant's branding,
+   * never another tenant's). `name` replaces the WitUS wordmark and app name, `host` the address.
+   * Omitted: the Learn.WitUS branding, as before.
+   */
+  brand?: { name: string; host: string };
+  /** A line printed under the title on the title page (the reviewer packet says what it holds). */
+  purpose?: string;
 }
 
 export type PdfVariant = "reader";
@@ -350,8 +358,15 @@ function Header({ left, right }: { left: string; right: string }) {
   );
 }
 
-function Footer({ course }: { course: string }) {
-  const label = `${APP_NAME} · ${pdfText(course)} · `;
+function brandOf(course: PdfCourseInput): { name: string; host: string; wordmark: string; appLine: string } {
+  if (course.brand) {
+    return { name: course.brand.name, host: course.brand.host, wordmark: course.brand.name, appLine: course.brand.host };
+  }
+  return { name: APP_NAME, host: APP_URL, wordmark: "WitUS", appLine: `${APP_NAME}.Online · ${APP_URL}` };
+}
+
+function Footer({ course, brand }: { course: string; brand: string }) {
+  const label = `${pdfText(brand)} · ${pdfText(course)} · `;
   return (
     <Text style={s.footer} fixed render={({ pageNumber, totalPages }) => `${label}page ${pageNumber} of ${totalPages}`} />
   );
@@ -382,19 +397,21 @@ function tocGroups(lessons: PdfLessonInput[]): TocGroup[] {
 function TitlePage({ course, generatedOn }: { course: PdfCourseInput; generatedOn: Date }) {
   const author = course.author?.trim() || "WitUS";
   const notices = (course.disclaimers ?? []).map((d) => d.trim()).filter(Boolean);
+  const brand = brandOf(course);
   return (
     <Page size="LETTER" style={s.page} experimentalPagination bookmark="About this book">
       <View style={s.wordmarkRow}>
-        <Text style={s.wordmark}>WitUS</Text>
+        <Text style={s.wordmark}>{pdfText(brand.wordmark)}</Text>
         <Svg width={8} height={8} style={{ marginLeft: 3, marginTop: 8 }}>
           <Circle cx={4} cy={4} r={3} fill={PDF_COLOR.muted} />
         </Svg>
       </View>
       <Text style={s.appLine}>
-        {APP_NAME}.Online · {APP_URL}
+        {pdfText(brand.appLine)}
       </Text>
       <Text style={s.courseTitle}>{pdfText(course.title)}</Text>
       <Text style={s.byline}>{pdfText(author)}</Text>
+      {course.purpose?.trim() ? <Text style={md.p}>{pdfText(course.purpose)}</Text> : null}
       {course.description?.trim() ? markdownToPdf(course.description, "desc") : null}
       <Text style={md.h3} minPresenceAhead={40}>
         How to read this book
@@ -405,7 +422,7 @@ function TitlePage({ course, generatedOn }: { course: PdfCourseInput; generatedO
         own, so you can test yourself before you look. The contents page and the bookmarks list every lesson.
       </Text>
       <Text style={s.meta}>
-        {`Exported ${isoDate(generatedOn)} from ${APP_URL}. Images in the online course are described here by their alt text; links show their address.`}
+        {`Exported ${isoDate(generatedOn)} from ${brand.host}. Images in the online course are described here by their alt text; links show their address.`}
       </Text>
       {notices.length > 0 ? (
         <View style={s.notices}>
@@ -424,7 +441,7 @@ function ContentsPage({ course, groups, pages }: { course: PdfCourseInput; group
   return (
     <Page size="LETTER" style={s.page} experimentalPagination bookmark="Contents">
       <Header left={course.title} right="Contents" />
-      <Footer course={course.title} />
+      <Footer course={course.title} brand={brandOf(course).name} />
       <Text style={s.lessonTitle}>Contents</Text>
       {groups.map((g, gi) => (
         <View key={gi}>
@@ -469,7 +486,7 @@ function LessonPage({
   return (
     <Page size="LETTER" style={s.page} experimentalPagination bookmark={pdfText(lesson.title)}>
       <Header left={section ?? course.title} right={lesson.title} />
-      <Footer course={course.title} />
+      <Footer course={course.title} brand={brandOf(course).name} />
       {section ? <Text style={s.kicker}>{pdfText(section)}</Text> : null}
       <Text style={s.lessonTitle}>{pdfText(title)}</Text>
       {/* Page marker: the render callback fires as the layout settles, and the last page number it
@@ -507,9 +524,9 @@ function ReaderDocument({
     <Document
       title={pdfText(course.title)}
       author={course.author?.trim() || "WitUS"}
-      subject={`A ${APP_NAME} course`}
-      creator={`${APP_NAME}.Online`}
-      producer={`${APP_NAME}.Online`}
+      subject={`A ${brandOf(course).name} course`}
+      creator={course.brand ? course.brand.name : `${APP_NAME}.Online`}
+      producer={course.brand ? course.brand.name : `${APP_NAME}.Online`}
       language={course.language?.trim() || "en"}
     >
       <TitlePage course={course} generatedOn={generatedOn} />

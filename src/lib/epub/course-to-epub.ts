@@ -47,6 +47,8 @@ export interface EpubCourseInput {
   description?: string | null;
   /** Shown as dc:creator. Defaults to "WitUS". */
   author?: string | null;
+  /** dc:publisher. Defaults to "WitUS"; the reviewer packet passes the tenant's own name. */
+  publisher?: string | null;
   /** BCP 47 language tag. Defaults to "en". */
   language?: string | null;
   /** A stable unique id for the book, e.g. `urn:uuid:<course id>`. Same course, same id. */
@@ -361,7 +363,7 @@ export function courseToEpub(course: EpubCourseInput): Uint8Array {
     `<metadata xmlns:dc="http://purl.org/dc/elements/1.1/">\n` +
     `<dc:identifier id="bookid">${escapeXml(course.identifier)}</dc:identifier>\n` +
     `<dc:title>${escapeXml(course.title)}</dc:title>\n<dc:language>${escapeXml(lang)}</dc:language>\n` +
-    `<dc:creator>${escapeXml(author)}</dc:creator>\n<dc:publisher>WitUS</dc:publisher>\n` +
+    `<dc:creator>${escapeXml(author)}</dc:creator>\n<dc:publisher>${escapeXml(course.publisher?.trim() || "WitUS")}</dc:publisher>\n` +
     (course.description?.trim() ? `<dc:description>${escapeXml(course.description.trim())}</dc:description>\n` : "") +
     `<meta property="dcterms:modified">${epubDate(modified)}</meta>\n</metadata>\n<manifest>\n` +
     `<item id="nav" href="nav.xhtml" media-type="application/xhtml+xml" properties="nav"/>\n` +
