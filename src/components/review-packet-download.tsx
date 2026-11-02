@@ -2,6 +2,8 @@
 
 import { useState } from "react";
 import type { PacketFormat } from "@/lib/review-packet";
+import { capture } from "@/lib/analytics/capture";
+import { EVENTS } from "@/lib/analytics/events";
 
 /**
  * "Download the lessons for your review" (plans/97 v2, G3), one pair of buttons per course on
@@ -42,6 +44,7 @@ export function ReviewPacketDownload({
       a.click();
       a.remove();
       setTimeout(() => URL.revokeObjectURL(url), 10_000);
+      capture(EVENTS.reviewPacketDownloaded, { course_id: courseId, format });
       onDownloaded?.(format);
     } catch {
       setFailed({ format, message: "Network error." });

@@ -3,6 +3,8 @@
 import { useState } from "react";
 import Link from "next/link";
 import { useRouter } from "next/navigation";
+import { capture } from "@/lib/analytics/capture";
+import { EVENTS } from "@/lib/analytics/events";
 import {
   CORRECTION_MAX,
   KIND_TITLE,
@@ -113,6 +115,8 @@ function NeedVerdict({ courseId, lessonId, need }: { courseId: string; lessonId:
         return;
       }
       setSaved(true);
+      // Ids and kinds only (plans/97 section 8): never the correction text or the reviewer's name.
+      capture(EVENTS.lessonReviewRecorded, { course_id: courseId, lesson_id: lessonId, need_kind: need.kind, verdict });
       router.refresh();
     } catch {
       setError("Network error, please try again.");
