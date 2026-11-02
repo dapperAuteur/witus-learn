@@ -15,7 +15,7 @@
 //   * Every teaching lesson carries APA 7 in-line citations and a `## Sources` bibliography with a
 //     locator. The two National Register nominations (Greiff, 2001; Garner, 2025), the Indiana Green
 //     Book multiple property form (Borland & Linebarger, 2025), the 2022 state marker and the NPS theme
-//     study (Kahrl & Cammeron, 2022) are the spine. The Indianapolis Recorder is quoted ONLY as the
+//     study (Kahrl et al., 2022) are the spine. The Indianapolis Recorder is quoted ONLY as the
 //     nominations quote it; no Recorder page was opened (Hoosier State Chronicles answered 403).
 //   * CONFLICTS ARE TAUGHT, NOT RESOLVED BY GUESSING. Plat 1926 or 1927; founding year; level of
 //     significance in 2001; the 2026 form's own Green Book years and period of significance; Pryor's
@@ -26,12 +26,17 @@
 //     source links it to the land company's decisions, and the course says so.
 //   * Consent rule (answer 7): NO living private person is named or quoted. The nominations quote a
 //     living daughter of the Pryors and name other living owners; the course uses none of it. No cottage
-//     street number appears: the 2026 form lists owners by address and the course does not reproduce it.
+//     street number appears: the 2026 form lists every cottage by address, many under a family's name,
+//     and the course does not reproduce that list.
 //   * Images: only the Indiana Album clubhouse photograph (rights "No Copyright, United States") may be
 //     shown, after the /admin/media upload and approval; until then it is a described placeholder with
 //     its credit. Every other image is a placeholder that names who must give permission.
 //   * Public stops only. The lesson that plans a visit sends learners to the state marker, the DNR
-//     public access site and public roads; the lodge only by the association's invitation.
+//     public access site and public roads; the lodge only by invitation.
+//   * Source audit of 2026-11-01: every reference URL was reopened and every in-line citation checked
+//     against the page it names; Greiff (2001) Section 7 page numbers corrected to the form's own
+//     continuation-sheet numbers (pp. 2 to 3), the 2001 level-of-significance box read as "statewide",
+//     the theme study credited to all three title-page authors (Kahrl et al., 2022).
 //
 // Held: public-ready, but publishHoldReason keeps it unpublished until the Fox Lake Preservation
 // Foundation has had about three weeks to review it (BAM, answer 4; user task 382).
@@ -49,9 +54,9 @@ const BORLAND_2025 =
 const IHB_2022 =
   "Indiana Historical Bureau. (2022). *Fox Lake Resort* [State historical marker 76.2022.1, with annotated text]. Indiana State Library. https://www.in.gov/history/state-historical-markers/find-a-marker/find-historical-markers-by-county/indiana-historical-markers-by-county/fox-lake-resort/";
 const KAHRL_2022 =
-  "Kahrl, A. W., & Cammeron, M. (2022). *African American outdoor recreation theme study: Historic context and National Historic Landmark survey*. National Park Service; Organization of American Historians. https://www.nps.gov/subjects/nationalhistoriclandmarks/upload/African-American-Outdoor-Recreation-National-Historic-Landmark-Theme-Study.pdf";
+  "Kahrl, A. W., Cammeron, M., & Katen, B. (2022). *African American outdoor recreation theme study: Historic context and National Historic Landmark survey* [Historic context study by Kahrl and Cammeron; NHL guidelines and survey (Part C) by Katen]. National Park Service; Organization of American Historians. https://www.nps.gov/subjects/nationalhistoriclandmarks/upload/African-American-Outdoor-Recreation-National-Historic-Landmark-Theme-Study.pdf";
 const NPS_2024 =
-  "National Park Service. (2024). *Weekly list of actions taken on properties* [Week ending November 15, 2024]. https://www.nps.gov/subjects/nationalregister/weekly-list-2024-11-15.htm";
+  "National Park Service. (2024). *Weekly list of actions taken on properties: 11/8/2024 through 11/15/2024*. https://www.nps.gov/subjects/nationalregister/weekly-list-2024-11-15.htm";
 const NPS_2026 =
   "National Park Service. (2026). *Weekly list of actions taken on properties: 2/27/2026 through 3/6/2026*. https://home.nps.gov/subjects/nationalregister/weekly-list-2026-03-06.htm";
 const NPS_FAQ =
@@ -59,9 +64,9 @@ const NPS_FAQ =
 const EJI =
   "Equal Justice Initiative. (n.d.). *Thousands lynch two Black men in Marion, Indiana* [A history of racial injustice calendar, August 7]. Retrieved November 1, 2026, from https://calendar.eji.org/racial-injustice/aug/7";
 const INDIANA_ALBUM =
-  "Indiana State Library. (n.d.). *Fox Lake Clubhouse interior, Angola, Indiana, circa 1950s* [Photograph; Dixon Family Collection; rights statement No Copyright, United States]. Indiana Album, Indiana Memory. https://digital.library.in.gov/Record/PPO_IndianaAlbum-7860FF8E-F9CD-4FA0-A9B9-909931734393";
+  "Indiana Album. (n.d.). *Fox Lake Clubhouse interior, Angola, Indiana, circa 1950s* [Photograph; Dixon Family Collection; rights statement No Copyright, United States]. Indiana Memory, Indiana State Library. https://digital.library.in.gov/Record/PPO_IndianaAlbum-7860FF8E-F9CD-4FA0-A9B9-909931734393";
 const INDIANA_LANDMARKS_2021 =
-  "Indiana Landmarks. (2021, April 26). *Saving sites rich in African American heritage*. https://www.indianalandmarks.org/2021/04/saving-sites-rich-in-african-american-heritage/";
+  "Indiana Landmarks. (2021, April 26). *Saving places that tell the story of Indiana's Black history*. https://www.indianalandmarks.org/2021/04/saving-sites-rich-in-african-american-heritage/";
 const FOX_LAKE_FOUNDATION =
   "Fox Lake Preservation Foundation. (n.d.). *About us*. Retrieved November 1, 2026, from https://www.foxlakefoundation.org/about";
 
@@ -99,7 +104,7 @@ The 2001 nomination places Fox Lake in a decade when the Ku Klux Klan "was a pow
 
 ## What came of it
 
-Until Fox Lake, the 2001 nomination says, there appear to have been no Black lake resorts in Indiana; it says Fox Lake "appears to have been the only such community in Indiana" before World War II, and one of the few in the Midwest (Greiff, 2001, Sec. 8, pp. 5, 9). The 2026 update to the nomination goes further and calls it "Indiana's only African American lake resort community," which is why it raised the district's significance to the whole state (Garner, 2025, p. 22).
+Until Fox Lake, the 2001 nomination says, there appear to have been no Black lake resorts in Indiana; it says Fox Lake "appears to have been the only such community in Indiana" before World War II, and one of the few in the Midwest (Greiff, 2001, Sec. 8, pp. 5, 9). The 2026 update to the nomination goes further and calls it "Indiana's only African American lake resort community," and gives that as its reason for raising the district's significance "from local to statewide" (Garner, 2025, p. 22). The 2001 form's own certification box already reads statewide (Greiff, 2001, Sec. 3, PDF p. 1), a conflict lesson 14 takes up.
 
 **Read those two claims carefully, because they are not the same claim.** "Only before World War II" and "only, ever" are different statements, and lesson 14 will show you how often a later document says more than an earlier one without new evidence.
 
@@ -114,8 +119,8 @@ Until Fox Lake, the 2001 nomination says, there appear to have been no Black lak
 ## Sources
 - ${BORLAND_2025} Locator: pp. 102 to 103, "Subtype 1: Resort."
 - ${GARNER_2025} Locator: p. 22, statement of significance; p. 32, Sager Lake.
-- ${GREIFF_2001} Locator: Section 8, pp. 4 to 5 and 9 (PDF pp. 8, 9 and 13); Section 9, p. 10 (PDF p. 14), bibliography.
-- Taylor, C. (2020). *Overground railroad: The Green Book and the roots of Black travel in America*. Abrams Press. [Cited in Borland & Linebarger, 2025, p. 102, n. 260; not read for this course.]`,
+- ${GREIFF_2001} Locator: Section 3, state certification (PDF p. 1); Section 8, pp. 4 to 5 and 9 (PDF pp. 8, 9 and 13); Section 9, p. 10 (PDF p. 14), bibliography.
+- Taylor, C. (2020). *Overground railroad: The Green Book and the roots of Black travel in America*. Abrams Press. ISBN 9781419738173; Open Library record https://openlibrary.org/books/OL27909521M. Locator: p. 166, as given in Borland & Linebarger (2025, p. 102, n. 260). [Cited second hand; the book was not read for this course.]`,
     },
     {
       slug: "fl-1924-the-company",
@@ -137,9 +142,9 @@ Until Fox Lake, the 2001 nomination says, there appear to have been no Black lak
 
 ## The pattern, and why it matters
 
-The Indiana Green Book survey treats this as the usual shape of a Black resort: "The land for Black resorts was typically purchased by white businessmen, platted, and sold to Black buyers" (Borland & Linebarger, 2025, p. 103; see also Garner, 2025, p. 23). Idlewild in Michigan began the same way, as REST-00 lesson 4 showed.
+The Indiana Green Book survey treats this as the usual shape of a Black resort: "The land for Black resorts was typically purchased by white businessmen, platted, and sold to Black buyers" (Borland & Linebarger, 2025, p. 103; see also Garner, 2025, p. 23). Idlewild in Michigan began the same way: the National Park Service's theme study says four white businessmen and their wives formed the Idlewild Resort Company in 1912 (Kahrl et al., 2022, p. 188), and REST-00 lesson 4 teaches it.
 
-**Do not read that as a kindness, and do not read it as a scam.** Read it as a business arrangement shaped by exclusion. The sellers had land and access to the lake market that Black buyers were denied; the buyers had demand that the rest of the market refused. **The company made money because the rest of Indiana's lakes were closed.** That is a fact about the market, and it does not need an adjective.
+**Do not read that as a kindness, and do not read it as a scam.** Read it as a business arrangement shaped by exclusion. The state survey says Black buyers were kept out of white resort areas by white owners, real estate agents and mortgage lenders acting together (Borland & Linebarger, 2025, p. 103). The sellers had land on a lake; the buyers had demand that the rest of the market refused. **The company's market existed because the rest of Indiana's lakes were closed.** That is a fact about the market, and it does not need an adjective. Whether the company made money, no source read for this course says.
 
 ## The address
 
@@ -153,7 +158,8 @@ The company's offices were in Marion. The 2026 nomination, in the same paragraph
 - ${BORLAND_2025} Locator: p. 103.
 - ${GARNER_2025} Locator: pp. 23 to 25.
 - ${GREIFF_2001} Locator: Section 8, p. 5 (PDF p. 9).
-- ${IHB_2022} Locator: annotated text, note 1.`,
+- ${IHB_2022} Locator: annotated text, note 1.
+- ${KAHRL_2022} Locator: printed p. 188 (PDF p. 196), Idlewild.`,
       recallContent: [
         {
           prompt: "What two things did a lake resort offer Black families in the 1920s, according to the Indiana Green Book survey?",
@@ -173,7 +179,7 @@ The company's offices were in Marion. The 2026 nomination, in the same paragraph
       slug: "fl-marion-1930",
       title: "3 · Marion, 1930: what the record puts beside the company's address",
       section: "Section 1 · Then",
-      body: `> **Content note.** This lesson names a lynching: the killing of two Black teenagers by a white mob in Marion, Indiana, in 1930. It describes what happened in plain words and without detail of the violence. It shows no images, and it does not link to the photograph of the event. You may skip to lesson 4 and come back.
+      body: `> **Content note.** This lesson names a lynching: the killing of two Black teenagers by a white mob in Marion, Indiana, in 1930. It describes what happened in plain words and without detail of the violence. It shows no images. **Be aware:** its source for the event, the Equal Justice Initiative page listed under Sources, loads a photograph at the top of the page (credited "Lawrence Beitler/Bettmann/Corbis"). You may skip to lesson 4 and come back.
 
 ## Why this is here
 
@@ -183,7 +189,7 @@ The 2026 Fox Lake nomination names Marion as the city of the land company's offi
 
 On the night of August 7, 1930, a white mob in Marion broke into the Grant County Jail, took out **Thomas Shipp and Abram Smith**, both 19, and hanged them in the courthouse yard without a trial. The three young men held there had been accused, in the Equal Justice Initiative's words, of "murdering a white man and sexual impropriety against a white woman." The Equal Justice Initiative puts the crowd at between 5,000 and 10,000 people. A third young man, **James Cameron**, 16, was beaten and about to be killed when someone in the crowd said he was innocent, and he was released. No one was convicted for the killings; the Equal Justice Initiative records that all-white juries acquitted the mob's leaders. Cameron was convicted as an accessory and served four years. He later founded NAACP chapters in Indiana, opened America's Black Holocaust Museum in Milwaukee in 1988, and was pardoned by the State of Indiana in 1993 (Equal Justice Initiative, n.d.).
 
-**A photograph was taken that night, and the Equal Justice Initiative calls it one of the best-known photographs of an American lynching.** This course does not show it and does not link to it. You do not need to see it to know what it records.
+**A photograph was taken that night, and the Equal Justice Initiative calls it "one of the most well-known and infamous photographs of an American lynching"** (Equal Justice Initiative, n.d.). This course does not show it. The Equal Justice Initiative page this lesson cites loads an image at the top of the page, so open that link knowing it is there. You do not need to see the photograph to know what it records.
 
 ## What the record connects, and what it does not
 
@@ -195,6 +201,8 @@ Hold two facts side by side.
 | **1926 to 1929** | The plat, the first lots sold, the first cottage (lesson 4) | |
 | **August 7, 1930** | | Thomas Shipp and Abram Smith are lynched; James Cameron survives |
 | **1932** | Lowell T. Boyd takes control of the company and moves its offices to Kokomo | |
+
+(Greiff, 2001, Sec. 8, pp. 5 to 6; Garner, 2025, p. 25; Equal Justice Initiative, n.d. The 1926 to 1929 row is taught, with its sources, in lesson 4.)
 
 **Now the discipline.** No source read for this course says the lynching changed anything at Fox Lake. The 2001 nomination gives a reason for the 1932 change of control: "changing fortunes brought about by the Depression" (Greiff, 2001, Sec. 8, p. 6). **The office moved from Marion to Kokomo because Kokomo was where the new controlling owner's insurance business was** (Greiff, 2001, Sec. 8, p. 6). Nothing in the record says more than that, and you may not say more than that either.
 
@@ -225,12 +233,12 @@ Hold two facts side by side.
 
 | Answer | What it dates | Whose answer |
 |---|---|---|
-| **1924** | The land company buys the farm and incorporates | Greiff, 2001, Sec. 8, p. 5; Garner, 2025, p. 25; Kahrl & Cammeron, 2022, p. 185 |
+| **1924** | The land company buys the farm and incorporates | Greiff, 2001, Sec. 8, p. 5; Garner, 2025, p. 25; Kahrl et al., 2022, p. 185 |
 | **1926 or 1927** | The original plat is laid out and lots begin to sell | Garner, 2025, p. 25 (1926); Greiff, 2001, Sec. 8, p. 6 (1927) |
 | **1928** | The first cottage is built | Greiff, 2001, Sec. 8, p. 6; the 2026 form's period of significance starts here (Garner, 2025, p. 22) |
 | **"the 1920s"** | The resort as a whole | The state marker (Indiana Historical Bureau, 2022) |
 
-The National Park Service's theme study adds a fifth version: it says the Fox Lake community "began" in 1927, when Black families started renting cabins from white landowners or building on lots they had bought (Kahrl & Cammeron, 2022, p. 56). **None of these is wrong about its own event. They are wrong only if you let one stand for all the others.**
+The National Park Service's theme study adds a fifth version: it says the Fox Lake community "began" in 1927, when Black families started renting cabins from white landowners or building on lots they had bought (Kahrl et al., 2022, p. 56). **None of these is wrong about its own event. They are wrong only if you let one stand for all the others.**
 
 ## The plat: 1926 or 1927
 
@@ -243,15 +251,15 @@ The National Park Service's theme study adds a fifth version: it says the Fox La
 
 ## June 1926: the opening
 
-The 2026 nomination quotes an advertisement in the Indianapolis Recorder, the city's Black newspaper, of June 19, 1926: "The long looked for Indiana lake resort for Colored people" and "Fox Lake Big Opening Sunday June 20." A bus excursion from Indianapolis cost $5.00, and the ad gave drivers a route north through Peru and Fort Wayne to Angola (Garner, 2025, p. 26). **This course has not seen the ad; it reports the nomination's quotation of it.** An advertised opening in 1926 fits the 2026 form's plat date better than the 2001 form's, but an advertisement is a promise, not a recorded plat.
+The 2026 nomination quotes an advertisement in the Indianapolis Recorder, the city's Black newspaper, of June 19, 1926: "The long looked for Indiana lake resort for Colored people" and "Fox Lake Big Opening Sunday June 20." A bus excursion from Indianapolis cost $5.00, and the ad gave drivers a route north through Peru and Fort Wayne to Angola (Garner, 2025, p. 26). The state marker's notes cite the same issue, page 2, under the headline "Fox Lake Big Opening" (Indiana Historical Bureau, 2022, n. 1). **This course has not seen the ad; it reports the nomination's quotation of it.** An advertised opening in 1926 fits the 2026 form's plat date better than the 2001 form's, but an advertisement is a promise, not a recorded plat.
 
 ## 1928: the first cottage
 
-**Carl Wilson Sr.**, a Black businessman who had built an exterminating business in Fort Wayne that reached beyond the Black community, built the first of his three cottages starting in 1928. The access road ended just past his cottage, and the lane was named **Wilson Drive** (Greiff, 2001, Sec. 8, p. 6). It is Lane 130 today, and two of his cottages still stand on it (Garner, 2025, p. 25). The 2026 form says the first cottage was built "by 1929" (Garner, 2025, p. 25), a looser date that does not contradict 1928.
+**Carl Wilson Sr.**, a Black businessman who had built an exterminating business in Fort Wayne that reached beyond the Black community, built the first of his three cottages starting in 1928. The access road ended just past his cottage, and the lane was named **Wilson Drive** (Greiff, 2001, Sec. 8, p. 6; Garner, 2025, p. 25). It is Lane 130 today, and two of his cottages still stand on it (Garner, 2025, p. 25). The 2026 form says the first cottage was built "by 1929" (Garner, 2025, p. 25), a looser date that does not contradict 1928.
 
 ## 1929 and 1932
 
-In 1929 a few of the incorporators paid for 58 children of the Indianapolis Orphans' Home to spend two weeks at the lake (Garner, 2025, p. 26, citing the Recorder of August 10, 1929). **Development was slow.** The 2026 form suspects the Depression; the 2001 form says so outright. **In 1932, Lowell T. Boyd**, an insurance executive, took control of the company and moved its offices to Kokomo, and his brother **Emery Boyd** moved to the lake with his family to run it day to day and farm the tillable land, which had first been meant for a golf course (Greiff, 2001, Sec. 8, p. 6; Garner, 2025, p. 26).
+In 1929 a few of the incorporators paid for 58 children of the Indianapolis Orphans' Home to spend two weeks at the lake (Garner, 2025, p. 26, citing the Recorder of August 10, 1929). **Development was slow.** The 2026 form says it was "likely impacted" by the Depression (Garner, 2025, p. 26); the 2001 form says the 1932 change of control was owed "largely" to the Depression (Greiff, 2001, Sec. 8, p. 6). **In 1932, Lowell T. Boyd**, an insurance executive, took control of the company and moved its offices to Kokomo, and his brother **Emery Boyd** moved to the lake with his family to run it day to day and farm the tillable land, which had first been meant for a golf course (Greiff, 2001, Sec. 8, p. 6; Garner, 2025, p. 26).
 
 **The two nominations describe 1932 slightly differently.** The 2001 form says Lowell Boyd "assumed controlling interest"; the 2026 form says the original incorporators "sold Fox Lake Land Company to two brothers" (Greiff, 2001, Sec. 8, p. 6; Garner, 2025, p. 26). Those are compatible, but not identical: a controlling interest is not the whole company. Quote the one you use.
 
@@ -260,7 +268,7 @@ In 1929 a few of the incorporators paid for 58 children of the Indianapolis Orph
 ## Sources
 - ${GARNER_2025} Locator: pp. 22 to 26 and 34 (bibliography: the 1930 Hixson plat book).
 - ${GREIFF_2001} Locator: Section 8, pp. 5 to 6 (PDF pp. 9 to 10).
-- ${IHB_2022} Locator: marker text, side one.
+- ${IHB_2022} Locator: marker text, side one; annotated text, note 1.
 - ${KAHRL_2022} Locator: printed p. 56 (PDF p. 64); printed p. 185 (PDF p. 193).`,
       recallContent: [
         {
@@ -277,7 +285,7 @@ In 1929 a few of the incorporators paid for 58 children of the Indianapolis Orph
       slug: "fl-who-came",
       title: "5 · Who came, and what they did there",
       section: "Section 1 · Then",
-      body: `**The resort was not just its cottages. It was a calendar of meetings, picnics and conventions**, most of them reported in the Indianapolis Recorder and quoted in the 2026 nomination. Read this lesson as a list of documents, not a list of good times.
+      body: `**The resort was not just its cottages. It was a calendar of meetings, picnics and conventions**, most of them reported in the Indianapolis Recorder and quoted in the 2026 nomination (Garner, 2025, pp. 26 to 30, nn. 1 to 17). Read this lesson as a list of documents, not a list of good times.
 
 ## Where they came from
 
@@ -348,6 +356,8 @@ It cannot tell you what it cost to stay, how many families came in a given summe
 | **Green Book listing** | An entry in *The Negro Motorist Green Book*: a name, an address and a category, in a given year | Lesson 12 |
 | **Co-occurrence** | Two true things on one calendar, neither used to explain or soften the other | Lessons 1, 3, 16 |
 
+The facts in this table are taught, with their sources, in the lessons named. The lot size is from the 2001 form (Greiff, 2001, Sec. 7, p. 3); Emery Boyd's twelve cottages and the association's dates are from the same form (Greiff, 2001, Sec. 8, pp. 6 to 8); the listings and periods of significance are from the 2026 form (Garner, 2025, pp. 21 to 24); and the Green Book MPDF is the state's survey (Borland & Linebarger, 2025).
+
 :::reveal What is the difference between a plat and a lot? ||| A plat is the recorded map that divides land into numbered parcels; a lot is one of those parcels.
 
 :::reveal What does a "period of significance" tell you, and what does it not? ||| It gives the years a nomination argues the place mattered, for the reasons the nomination gives. It does not tell you when the place began or ended, and two nominations can give different periods for one place.
@@ -355,8 +365,9 @@ It cannot tell you what it cost to stay, how many families came in a given summe
 :::reveal Why is "several thousand expected" not a count? ||| Because it is a newspaper's forecast before the event. A count would come after it, from someone who counted.
 
 ## Sources
-- ${GARNER_2025} Locator: pp. 21 to 22 (areas and periods of significance).
-- ${GREIFF_2001} Locator: Section 7, pp. 4 to 5 (PDF pp. 6 to 7), lot size; Section 8, pp. 6 to 8 (PDF pp. 10 to 12).`,
+- ${BORLAND_2025} Locator: the whole form; title page.
+- ${GARNER_2025} Locator: pp. 21 to 24 (areas and periods of significance; listings).
+- ${GREIFF_2001} Locator: Section 7, p. 3 (PDF p. 7), lot size; Section 8, pp. 6 to 8 (PDF pp. 10 to 12).`,
       recallContent: [
         {
           prompt: "Why did so many clubs and organizations meet at Fox Lake, according to the 2001 nomination?",
@@ -487,20 +498,20 @@ It cannot tell you what it cost to stay, how many families came in a given summe
 
 ## What the cottages are
 
-The 2001 nomination describes the original district as "32 relatively modest lake cottages, most of which were constructed before World War II," with "a fairly high degree of integrity" (Greiff, 2001, Sec. 7, p. 4). Most are:
+The 2001 nomination describes the original district as "32 relatively modest lake cottages, most of which were constructed before World War II," with "a fairly high degree of integrity" (Greiff, 2001, Sec. 7, p. 2). Most are:
 - **one story, of frame construction**, with **gabled roofs** and **concrete block foundations**;
 - fronted by **open or screened porches**, some since enclosed for more room;
 - sided in **clapboard or board-and-batten**, some now covered in aluminum or vinyl;
 - lit by **wood double-hung windows** (three-over-one or one-over-one), or a few casements;
-- marked by a few **Craftsman** details such as exposed rafter ends (Greiff, 2001, Sec. 7, pp. 4 to 5).
+- marked by a few **Craftsman** details such as exposed rafter ends (Greiff, 2001, Sec. 7, pp. 2 to 3).
 
-The nomination calls them "representative of midwestern lakeside cottages of the period" and points to similar cottages at Lake James nearby and at Hudson Lake in LaPorte County (Greiff, 2001, Sec. 7, p. 4). **That comparison matters.** The cottages are ordinary for their region. **What is not ordinary is who was allowed to build them where.**
+The nomination calls them "representative of midwestern lakeside cottages of the period" and points to similar cottages at Lake James nearby and at Hudson Lake in LaPorte County (Greiff, 2001, Sec. 7, p. 2). **That comparison matters.** The cottages are ordinary for their region. **What is not ordinary is who was allowed to build them where.**
 
 ## The slope
 
-On the lake side of the lane the ground drops so steeply that several cottages are **two stories high: an entrance facing the lane on the upper floor, and a door to the lake on the lower one.** The upper story is frame; the lower story is **concrete block built into the hillside**, so only part of it shows. At the east end some rooftops sit below the lane and are reached by steps (Greiff, 2001, Sec. 7, p. 5).
+On the lake side of the lane the ground drops so steeply that several cottages are **two stories high: an entrance facing the lane on the upper floor, and a door to the lake on the lower one.** The upper story is frame; the lower story is **concrete block built into the hillside**, so only part of it shows. At the east end some rooftops sit below the lane and are reached by steps (Greiff, 2001, Sec. 7, p. 3).
 
-**The lots are small**, about fifty by eighty feet on average, and the cottages cluster wherever the ground allows; some nearly touch (Greiff, 2001, Sec. 7, p. 5). The 2001 form says the lane itself began as "little more than a rugged dirt path," later graveled, and paved with asphalt in the decade before the form was written (Greiff, 2001, Sec. 7, p. 5).
+**The lots are small**, about fifty by eighty feet on average, and the cottages cluster wherever the ground allows; some nearly touch (Greiff, 2001, Sec. 7, p. 3). The 2001 form says the lane itself began as "little more than a rugged dirt path," later graveled, and paved with asphalt in the decade before the form was written (Greiff, 2001, Sec. 7, p. 3).
 
 ## Water, light and the privy
 
@@ -521,7 +532,7 @@ The Indiana Green Book survey says it directly: at a Green Book resort, "The ind
 ## Sources
 - ${BORLAND_2025} Locator: p. 102.
 - ${GARNER_2025} Locator: pp. 28 to 29, 31.
-- ${GREIFF_2001} Locator: Section 7, pp. 4 to 5 (PDF pp. 6 to 7); Section 8, p. 7 and note 2 (PDF p. 11).`,
+- ${GREIFF_2001} Locator: Section 7, pp. 2 to 3 (PDF pp. 6 to 7); Section 8, p. 7 and note 2 (PDF p. 11).`,
       recallContent: [
         {
           prompt: "What does the 2001 nomination's comparison with Lake James and Hudson Lake teach?",
@@ -547,29 +558,29 @@ When Emery Boyd took charge in 1932 he built **twelve cottages on scattered lots
 
 **John A. Roberts, a Black contractor, bought lots from the company and built several cottages around the lake.** He lived at the resort year round, built one last cottage he named "Lake View," and in 1947 bought another 1.8 acres from the company to develop more homes. His death was reported at the association's Memorial Day meeting of 1953 (Garner, 2025, pp. 26, 29 to 30). The 2026 form names him, with Emery Boyd, as a builder of the district (Garner, 2025, p. 21).
 
-**Put the two side by side.** The white land company built to sell; a Black contractor built to sell and to stay. **Both are in the record, and the record names them as equals on the form's builder line.**
+**Put the two side by side.** The land company built cottages to rent until they sold; a Black contractor built cottages and lived at the lake year round. **Both are in the record, and the 2026 form puts both names on its builder line** (Garner, 2025, p. 21).
 
 ## The hotel, the barn and the clubhouse
 
 Boyd leased out the Ward farmhouse so it could become a small hotel, and rebuilt the barn as a restaurant with a clubhouse and dance hall above it. Neither building survives; they stood uphill, south of today's Fox Lake Road (Greiff, 2001, Sec. 8, p. 6). Around the clubhouse were tennis courts, horseshoe pits and basketball hoops; there were saddle horses until the early 1950s, trap shooting matches run by a Toledo gun club, a weekly Family Night at the restaurant, and, from the mid-1940s, a Sunday school held on the beach in July and August (Greiff, 2001, Sec. 8, p. 8).
 
-> **Image placeholder: cleared for use, upload pending.** "Fox Lake Clubhouse interior, Angola, Indiana, circa 1950s," Dixon Family Collection, Indiana Album, Indiana State Library. Rights statement: No Copyright, United States (RightsStatements.org NoC-US). The record describes a snapshot of people dancing and listening to music at an unknown event, with men on a small corner stage with record players, speakers and a microphone, and decorations hanging from the rafters. It says the clubhouse burned down in the late 1950s (Indiana State Library, n.d.). The photograph appears here after it is uploaded and approved at /admin/media; until then, open it at the link in Sources.
+> **Image placeholder: cleared for use, upload pending.** "Fox Lake Clubhouse interior, Angola, Indiana, circa 1950s," Dixon Family Collection, Indiana Album, on Indiana Memory (Indiana State Library). Rights statement: No Copyright, United States (RightsStatements.org NoC-US). The record describes a snapshot of people dancing and listening to music at an unknown event, with men on a small corner stage with record players, speakers and a microphone, and decorations hanging from the rafters. It says the clubhouse burned down in the late 1950s (Indiana Album, n.d.). The photograph appears here after it is uploaded and approved at /admin/media; until then, open it at the link in Sources.
 
 ## Two Black women ran the hotel
 
 **A succession of managers ran the hotel and restaurant until 1943, when two Black women took them over: Mary Frances Fleming of Indianapolis and Mabel Van Cleave of Franklin, Indiana** (Garner, 2025, p. 28; Greiff, 2001, Sec. 8, p. 6). The partnership did well enough that **Harry M. and Frances Fleming**, who owned Fleming's Grocery in Indianapolis, built a new motel, the **Mar-Fran**, on the west bluff over the lake in the 1950s (Garner, 2025, p. 28). The 40-room Mar-Fran burned in 1966 and was rebuilt in 1967 as the two-story winged building that stands there now (Garner, 2025, p. 31).
 
-**Now ask the ownership question, and notice the record's limit.** Boyd set up a lease for the farmhouse. The 2026 form says operations were "turned over" to Fleming and Van Cleave. **Neither nomination says who owned the hotel business after 1943, or on what terms the women ran it.** The Mar-Fran is different: the Flemings built it. **When you write about the hotel, say "ran," because that is what the record supports.**
+**Now ask the ownership question, and notice the record's limit.** Boyd set up a lease for the farmhouse (Greiff, 2001, Sec. 8, p. 6). The 2026 form says operations were "turned over" to Fleming and Van Cleave (Garner, 2025, p. 28). **Neither nomination says who owned the hotel business after 1943, or on what terms the women ran it.** The Mar-Fran is different: the Flemings built it. **When you write about the hotel, say "ran," because that is what the record supports.**
 
 ## Pryor's Country Place
 
-At the east end of the south shore stands a cobblestone house built for the Rev. Dr. Scott F. Hershey and Georgia Hershey in about 1916, and later run briefly as a resort by Jack and Belle Fox of Angola until federal raids for illegal liquor and gambling sent them to prison in the early 1930s (Garner, 2025, p. 25). **In 1947 Albert and Hazelene Pryor of Chicago, a Black couple, bought the house and five acres** and ran it as an inn: rooms, cabins, three meals a day cooked by Hazelene Pryor, a small beach, boats, lawn bowling, croquet and archery (Garner, 2025, p. 28). It was listed in the Green Book from 1954 to 1967 (Borland & Linebarger, 2025, p. 111). **Lesson 12 reads those listings.**
+At the east end of the south shore stands a cobblestone house built for the Rev. Dr. Scott F. Hershey and Georgia Hershey in about 1916 (the form reports it planned in 1915 for "the following summer," and elsewhere dates it 1917), and later run briefly as a resort by Jack and Belle Fox of Angola, who bought it by May 1930, until federal raids for illegal liquor and gambling sent them to prison; the form's bibliography lists Angola Herald stories on the case from 1931 (Garner, 2025, pp. 5, 22, 25, 33). **In 1947 Albert and Hazelene Pryor of Chicago, a Black couple, bought the house and five acres** and ran it as an inn: rooms, cabins, three meals a day cooked by Hazelene Pryor, a small beach, boats, lawn bowling, croquet and archery (Garner, 2025, p. 28). It was listed in the Green Book from 1954 to 1967 (Borland & Linebarger, 2025, p. 111). **Lesson 12 reads those listings.**
 
 > **Image placeholder: permission needed.** The 2026 nomination's photographs of the cottages, the Mar-Fran and Pryor's Place were taken by Kurt West Garner on February 3, 2025 (Garner, 2025, p. 37). They may be shown here only with the photographer's or the foundation's permission, which has been asked for. Interiors of any cottage, the Mar-Fran or Pryor's Place need the owner's written consent.
 
 ## Sources
 - ${BORLAND_2025} Locator: p. 111, Table (Angola entries).
-- ${GARNER_2025} Locator: pp. 21, 25 to 26, 28 to 31, 37 (photo log).
+- ${GARNER_2025} Locator: pp. 5, 21 to 22, 25 to 26, 28 to 31, 33 (bibliography), 37 (photo log).
 - ${GREIFF_2001} Locator: Section 8, pp. 6 and 8 (PDF pp. 10 and 12).
 - ${INDIANA_ALBUM}`,
       recallContent: [
@@ -702,7 +713,7 @@ At the east end of the south shore stands a cobblestone house built for the Rev.
 
 ## The land company decided the map
 
-The Fox Lake Land Company drew the plat, set the lots, sold them, and kept selling for half a century. It ran a promotional drawing on Labor Day 1937 with over 1,000 entries and deeded the prize cottage for $1.00 (Garner, 2025, p. 30). It added the Butternut Point Addition in 1940, platted the northwest shore as Tri-State Beach by 1951 and the north shore in 1966 (Garner, 2025, pp. 27, 29, 31). Between 1967 and 1969 the Boyd family deeded 3.3 acres of lakefront for a new recreation center (Garner, 2025, p. 30). **And it still owns unplatted land on the northeast corner of the lake** (Garner, 2025, p. 31). **Whoever owns the plat decides where lots exist at all.**
+The Fox Lake Land Company drew the plat, set the lots, sold them, and kept platting new lots into the 1970s (Garner, 2025, p. 24). It ran a promotional drawing on Labor Day 1937 with over 1,000 entries and deeded the prize cottage for $1.00 (Garner, 2025, p. 30). It added the Butternut Point Addition in 1940, platted the northwest shore as Tri-State Beach by 1951 and the north shore in 1966 (Garner, 2025, pp. 27, 29, 31). Between 1967 and 1969 the Boyd family deeded 3.3 acres of lakefront for a new recreation center (Garner, 2025, p. 30). **And it still owns unplatted land on the northeast corner of the lake** (Garner, 2025, p. 31). **Whoever owns the plat decides where lots exist at all.**
 
 ## The owners formed a body
 
@@ -712,21 +723,21 @@ The Fox Lake Land Company drew the plat, set the lots, sold them, and kept selli
 
 (Garner, 2025, p. 27)
 
-**Over the next decade it arranged regular trash removal and road upkeep, hired lifeguards and set swimming hours and rules**, and owners formed clubs in their home cities in the off season to raise money for it (Greiff, 2001, Sec. 8, pp. 7 to 8). **It incorporated on July 8, 1952**, the date of its articles of incorporation and bylaws (Greiff, 2001, Sec. 8, p. 8 and Sec. 9, p. 9), and that year improved the beach and bathhouse on "the island" in the middle of the south shore (Garner, 2025, p. 29). The state marker says the association formed "by 1940," which fits 1938 (Indiana Historical Bureau, 2022).
+**Over the next decade it arranged regular trash removal and road upkeep, hired lifeguards and set swimming hours and rules**, and owners formed clubs in their home cities in the off season to raise money for it (Greiff, 2001, Sec. 8, pp. 7 to 8; Garner, 2025, p. 27). **It incorporated on July 8, 1952**, the date of its articles of incorporation and bylaws (Greiff, 2001, Sec. 8, p. 8 and Sec. 9, p. 9), and that year improved the beach and bathhouse on "the island" in the middle of the south shore (Garner, 2025, p. 29). The state marker says the association formed "by 1940," which fits 1938 (Indiana Historical Bureau, 2022).
 
 **Read the bylaws as a list of powers.** Every verb is about shared services and money: protect the investment, serve needs, provide recreation, supervise, hire a lifeguard. **One clause is about who comes: "to encourage persons of good moral character to buy."** Encourage is not a power to refuse a buyer, and no source read for this course says the association ever screened one. Do not write that it did.
 
 ## What the association could not decide
 
 REST-00 lesson 10 gave you the rule: **a homeowners' body cannot zone, tax or police; a town can.** Fox Lake is not a town. It sits in Pleasant Township, Steuben County (Garner, 2025, p. 34). So the bodies that decided the rest were public ones:
-- **The county** built West Fox Lake Road, the east and west connection along the south shore, in the late 1940s (Garner, 2025, p. 25).
+- **The county road.** West Fox Lake Road, the east and west connection along the south shore, was not built until the late 1940s, and the 2026 form calls it "the county road now known as West Fox Lake Road" (Garner, 2025, pp. 25, 29). A county road is the county's to build and keep, not the association's.
 - **The State of Indiana** stocked the lake with bluegill after a 1949 meeting between the Indiana Director of Conservation and a group of Fox Lake anglers, and in the mid-1960s bought an acre from the Pryors for a public access site with a boat launch and fishing pier, still public today (Garner, 2025, pp. 29, 31).
 - **The National Park Service**, through the National Register, decided what counts as historic and where the boundary runs (lesson 13).
 
 **A summer community of owners decided its own beach, its own roads within the plat and its own calendar. It never decided the county road, the state's fish or the federal list.** That is what "who decided" looks like at a private lake.
 
 ## Sources
-- ${GARNER_2025} Locator: pp. 25, 27, 29 to 31, 34.
+- ${GARNER_2025} Locator: pp. 24 to 25, 27, 29 to 31, 34.
 - ${GREIFF_2001} Locator: Section 8, pp. 7 to 8 (PDF pp. 11 to 12); Section 9, p. 9 (PDF p. 13), bibliography (articles of incorporation, July 8, 1952).
 - ${IHB_2022} Locator: marker text, side one; annotated text, notes 2 to 3.`,
       recallContent: [
@@ -748,7 +759,7 @@ REST-00 lesson 10 gave you the rule: **a homeowners' body cannot zone, tax or po
 
 ## The Fox Lake listings
 
-The Indiana Green Book survey transcribes every Indiana entry from the digitized editions. For Angola it gives three (Borland & Linebarger, 2025, p. 111):
+The Indiana Green Book survey lists every Indiana entry it found in the guide, after reviewing all the editions the New York Public Library digitized (Borland & Linebarger, 2025, pp. 104 to 105). For Angola it gives three (Borland & Linebarger, 2025, p. 111):
 
 | Listed as | Address as printed | Years listed | Category |
 |---|---|---|---|
@@ -756,26 +767,26 @@ The Indiana Green Book survey transcribes every Indiana entry from the digitized
 | **Pryor's Country Place** | Rural Route No. 2 | 1954 to 1967 | (none given) |
 | **Mar-Fran Hotel** | US 20, 1 mile west of Angola, 1/2 mile south | 1959 to 1967 | Hotel |
 
-The survey adds a warning about its own table: "Fox Lake included multiple buildings under different ownership. Specific addresses for buildings within the resort were not included in the Green Book editions" (Borland & Linebarger, 2025, p. 111). **The resort listing names a place, not a business.**
+The survey adds a warning about its own table: "Fox Lake included multiple buildings under different ownership. Specific addresses for buildings within the resort were not included in the Green Book editions" (Borland & Linebarger, 2025, p. 112). **The resort listing names a place, not a business.**
 
 ## Three things to notice
 
 **1. The gap.** The resort is not listed from 1942 to 1945. The table does not say why, and neither does this course. The method course's lesson on gaps gives you the possible explanations and the rule: **a gap is a question, not an answer.**
 
-**2. The change of subject.** After 1949 the resort itself drops out, and two businesses at the lake appear instead. **From 1954 the Green Book points travelers to an inn and, from 1959, a motel, not to a resort.** That fits what lessons 9 and 16 show: a community of owners did not need a guide; travelers who did not own a cottage needed a room.
+**2. The change of subject.** After 1949 the resort itself drops out, and two businesses at the lake appear instead. **From 1954 the Green Book points travelers to an inn and, from 1959, a motel, not to a resort.** This course reads that as fitting lessons 9 and 16: a community of owners did not need a guide, while travelers who did not own a cottage needed a room. **That is this course's interpretation; no source states it.**
 
 **3. Category and name.** The motel the nominations call the Mar-Fran Motel is listed as the Mar-Fran Hotel. Use the name the source prints, and say so.
 
 ## The pages themselves
 
-The state marker's annotated text cites the edition and page for each Fox Lake listing it used: 1940, p. 12; 1941, p. 12; 1959, p. 23; 1960, p. 38; 1961, p. 32; 1962, p. 38; 1963 to 1964, p. 23; 1966 to 1967, p. 23, each with a New York Public Library image ID (Indiana Historical Bureau, 2022, n. 4). **Look closely at that footnote: it gives the same image ID, 5205895, for both the 1963 to 1964 and the 1966 to 1967 editions.** Two editions cannot share one image. One of them is a copy error. **Even a careful footnote can carry one, and the only fix is to open the page.** This course has not opened the scans; they are at the Schomburg Center's digital collections.
+The state marker's annotated text cites the edition and page for each Fox Lake listing it used: 1940, p. 12; 1941, p. 12; 1959, p. 23; 1960, p. 38; 1961, p. 32; 1962, p. 38; 1963 to 1964, p. 23; 1966 to 1967, p. 23, each with a New York Public Library image ID (Indiana Historical Bureau, 2022, n. 4). **Look closely at that footnote: it gives the same image ID, 5205895, for both the 1963 to 1964 and the 1966 to 1967 editions.** Two editions cannot share one image. One of them is a copy error. **Even a careful footnote can carry one, and the only fix is to open the page.** This course has not opened the scans; the marker's note places them in the Schomburg Center's collections in the New York Public Library Digital Collections (Indiana Historical Bureau, 2022, n. 4).
 
 ## A listing is not a guarantee
 
 The 2026 nomination sums up the guide's purpose: Victor Green, a Harlem postman, believed a national guide to businesses that would serve Black travelers would make travel safer, and the listings also brought those businesses customers (Garner, 2025, p. 30). **A listing is what a business told the publisher, in a given year.** It is not an inspection and not a promise. And at Fox Lake the record shows the opposite risk as well: the resort was a destination well before the Green Book listed it in 1940 (Garner, 2025, p. 23). **Absence from the guide never meant absence from the map.**
 
 ## Sources
-- ${BORLAND_2025} Locator: p. 111, Table and its note.
+- ${BORLAND_2025} Locator: pp. 104 to 105 (how the list was made); p. 111, table (Angola entries); p. 112, the table's note.
 - ${GARNER_2025} Locator: pp. 23, 30.
 - ${IHB_2022} Locator: annotated text, note 4.`,
       recallContent: [
@@ -793,7 +804,7 @@ The 2026 nomination sums up the guide's purpose: Victor Green, a Harlem postman,
       slug: "fl-decided-designation",
       title: "13 · Designation as an instrument: 2001, 2024, 2026",
       section: "Section 3 · Who decided",
-      body: `**A National Register listing is a decision with an author, a date and a boundary.** At Fox Lake there are three, and the community commissioned all of them.
+      body: `**A National Register listing is a decision with an author, a date and a boundary.** At Fox Lake there are three. Community bodies asked for at least two of them; this course did not read who asked for the third, Pryor's Country Place.
 
 ## Three listings
 
@@ -803,9 +814,9 @@ The 2026 nomination sums up the guide's purpose: Victor Green, a Harlem postman,
 | **November 13, 2024** | Pryor's Country Place, individually, SG100011038 | Kurt West Garner | Criterion A, Black ethnic heritage and recreation, and Criterion C, architecture; period 1916 to 1970 |
 | **March 2, 2026** | Fox Lake additional documentation (MP01000360) and boundary increase (MP100012764), and Pryor's additional documentation (MP100011038) | Kurt West Garner, for the Fox Lake Preservation Foundation | About 240 acres around most of the lake; 69 contributing and 35 non-contributing resources added to the 30 already listed; periods 1928 to 1976 and 1940 to 1949; listed under the Green Book MPDF |
 
-(Greiff, 2001, Secs. 5, 8, 10; National Park Service, 2024, 2026; Garner, 2025, pp. 1, 3, 21 to 24, 35, 37)
+(Greiff, 2001, Secs. 3, 5, 8, 10, 11; National Park Service, 2024, 2026; Garner, 2025, pp. 1, 3, 21 to 24, 34 to 35, 37)
 
-**Notice who decided to ask.** The 2001 form was prepared for the owners' association; the 2026 form for the preservation foundation. The state reviewed both, and the National Park Service listed them. **The community wrote its own history into the federal record twice, twenty-five years apart.**
+**Notice who decided to ask.** The 2001 form was prepared for the owners' association (Greiff, 2001, Sec. 11, PDF p. 4); the 2026 form for the preservation foundation (Garner, 2025, p. 37). The state's preservation office signed the 2001 form's certification and is named on the 2026 form's (Greiff, 2001, Sec. 3, PDF p. 1; Garner, 2025, p. 1), and the National Park Service listed both (Garner, 2025, p. 24; National Park Service, 2026). **The community wrote its own history into the federal record twice, twenty-five years apart.**
 
 ## What the boundary increase changed
 
@@ -815,19 +826,19 @@ The 2026 form says the 2001 district covered only part of what the land company 
 
 The National Park Service is direct about this. Listing "places no restrictions on what a non-federal owner may do with their property up to and including destruction," unless federal assistance is involved; when federal money is involved, the Advisory Council on Historic Preservation must be allowed to comment on changes (National Park Service, 2026, February 17). The Park Service also points owners to a federal tax credit program (National Park Service, 2026, February 17).
 
-**So the listings protect Fox Lake's record, not its buildings.** A cottage owner may still sell, alter or tear down. Rules on demolition would come from a local ordinance, and this course did not look for one in Steuben County; that is a question for lesson 19.
+**So the listings protect Fox Lake's record, not its buildings.** A cottage owner may still sell, alter or tear down. Rules on demolition would come from state or local law, which the Park Service tells owners to check (National Park Service, 2026, February 17). This course did not look for a local ordinance in Steuben County; that is a question for lesson 19.
 
 ## The state marker
 
 In 2022 the Indiana Historical Bureau, Indiana Landmarks and the Fox Lake Preservation Foundation installed state marker 76.2022.1 at the southeast point of the lake (Indiana Historical Bureau, 2022). **A marker is a public text with three sponsors.** Its two sides say what those three bodies agreed to say in public in 2022, and its annotated text tells you where each sentence came from.
 
 ## Sources
-- ${GARNER_2025} Locator: pp. 1, 3, 21 to 24, 35 to 37.
-- ${GREIFF_2001} Locator: Sections 5, 8 and 10 (PDF pp. 2 and 15).
+- ${GARNER_2025} Locator: pp. 1, 3, 21 to 24, 34 to 37.
+- ${GREIFF_2001} Locator: Section 3, state certification (PDF p. 1); Section 5 (PDF p. 2); Section 8, period of significance (PDF p. 3); Sections 10 and 11, acreage and form prepared by (PDF p. 4).
 - ${IHB_2022} Locator: location and sponsors.
 - ${NPS_2024} Locator: Indiana, Steuben County entry.
 - ${NPS_2026} Locator: Indiana, Steuben County entries.
-- ${NPS_FAQ} Locator: "What are the results of listing?"`,
+- ${NPS_FAQ} Locator: questions "What are the restrictions, rules, regulations for historic property owners?" and "How do I apply for grant money or tax credits?"`,
       recallContent: [
         {
           prompt: "Which Green Book listings does the Indiana survey give for Angola, and for which years?",
@@ -850,20 +861,21 @@ In 2022 the Indiana Historical Bureau, Indiana Landmarks and the Fox Lake Preser
 | Question | One source says | Another says | What would settle it |
 |---|---|---|---|
 | **Plat date** | 1927 (Greiff, 2001, Sec. 8, p. 6) | "by 1926" (Garner, 2025, p. 25); "by 1927" (Garner, 2025, p. 23) | The recorded plat; the 1930 Hixson plat book |
-| **When it began** | 1924 company (both nominations) | 1927, families renting cabins (Kahrl & Cammeron, 2022, p. 56); "the 1920s" (marker) | Name the event, then date it (lesson 4) |
-| **Level of significance in 2001** | "statewide" (Kahrl & Cammeron, 2022, p. 186) | the 2026 update "seeks to raise the significance ... from local to statewide" (Garner, 2025, p. 22) | The 2001 form's level box, illegible in the scan read here |
+| **When it began** | 1924 company (both nominations) | 1927, families renting cabins (Kahrl et al., 2022, p. 56); "the 1920s" (marker) | Name the event, then date it (lesson 4) |
+| **Level of significance in 2001** | "statewide": the box checked on the 2001 form's state certification, signed 1/31/01 (Greiff, 2001, Sec. 3, PDF p. 1); "statewide" (Kahrl et al., 2022, p. 186) | the 2026 update "seeks to raise the significance ... from local to statewide" (Garner, 2025, p. 22) | The level the Park Service accepted in 2001, which this course has not read |
 | **Green Book years** | "often featured in the Negro Motorists Green Book during the 1950s-1960s" (Garner, 2025, p. 22) | "last included in the Green Book in 1949" (Garner, 2025, p. 23) | The state survey's table: the resort 1940 to 1949, two businesses to 1967 (lesson 12) |
 | **Mar-Fran in the Green Book** | promoted "by 1954" (Garner, 2025, p. 30) | 1959 to 1967 (Borland & Linebarger, 2025, p. 111; Garner, 2025, p. 28) | The 1954 to 1958 editions |
-| **End of the period of significance** | 1976 (Garner, 2025, p. 22) | "the end of the period of significance in 1982" (Garner, 2025, p. 31); 1964 (Kahrl & Cammeron, 2022, p. 185) | The listed form as the Park Service accepted it |
-| **Pryor's Country Place listed** | November 13, 2024 (National Park Service, 2024) | "02/19/2025" (Garner, 2025, p. 24) | The weekly list is the Park Service's own record; prefer it and say so |
-| **Lake size** | 142 acres (Greiff, 2001, Sec. 7, p. 4) | 140 acres (Garner, 2025, p. 5) | A state lake survey |
-| **Cottages in the 2001 district** | "32 relatively modest lake cottages" (Greiff, 2001, Sec. 7, p. 4) | 27 contributing and 6 non-contributing buildings, 33 (Greiff, 2001, Sec. 5); "approximately 30 cottages" (Garner, 2025, p. 24) | The 2001 resource list, cottage by cottage |
+| **End of the period of significance** | 1976 (Garner, 2025, p. 22) | "the end of the period of significance in 1982" (Garner, 2025, p. 31); 1964 (Kahrl et al., 2022, p. 185) | The listed form as the Park Service accepted it |
+| **Pryor's Country Place listed** | November 13, 2024 (National Park Service, 2024); "in 2024" (Garner, 2025, p. 5) | "02/19/2025" (Garner, 2025, p. 24) | The weekly list is the Park Service's own record; prefer it and say so |
+| **Lake size** | 142 acres (Greiff, 2001, Sec. 7, p. 2) | 140 acres (Garner, 2025, p. 5) | A state lake survey |
+| **Cottages in the 2001 district** | "32 relatively modest lake cottages" (Greiff, 2001, Sec. 7, p. 2) | 27 contributing and 6 non-contributing buildings, 33 (Greiff, 2001, Sec. 5); "approximately 30 cottages" (Garner, 2025, p. 24) | The 2001 resource list, cottage by cottage |
 | **The hotel manager's name** | "Frances Flemming" (Greiff, 2001, Sec. 8, p. 6) | "Mary Frances Fleming" (Garner, 2025, p. 28) | Use the fuller, later form and say so |
+| **When the Hershey house (Pryor's) was built** | about 1916: planned in 1915 for "the following summer" (Garner, 2025, p. 25); Pryor's period of significance starts in 1916 (Garner, 2025, p. 24) | 1917 (Garner, 2025, pp. 5, 22) | The 2024 Pryor's nomination, which this course has not read |
 
 ## Two claims this course will not teach
 
-- **"One of only two still-standing African American lake resorts in the nation, along with Idlewild."** Indiana Landmarks wrote this (Indiana Landmarks, 2021). The National Park Service's theme study names other Midwest lake communities that kept their Black identity, Lake Ivanhoe in Wisconsin, Lake Placid in Missouri and Lake Adney in Minnesota (Kahrl & Cammeron, 2022, p. 142). **The claim is contradicted by a better source, so it is out.**
-- **"The first African American resort community listed on the National Register."** The theme study says this of Fox Lake in a footnote (Kahrl & Cammeron, 2022, p. 56, n. 95). The Idlewild Historic District in Michigan was listed in 1979, twenty-two years earlier (REST-00 lesson 4). **Out.**
+- **"One of only two still-standing African American lake resorts in the nation, along with Idlewild."** Indiana Landmarks wrote that Fox Lake is "believed to be" this (Indiana Landmarks, 2021). The National Park Service's theme study names other Midwest lake communities that kept their Black identity, Lake Ivanhoe in Wisconsin, Lake Placid in Missouri and Lake Adney in Minnesota (Kahrl et al., 2022, p. 142). **The claim is contradicted by a better source, so it is out.** The study's own footnotes add that Lake Ivanhoe is now "largely integrated" and that only a small share of Lake Adney's south-shore properties remain in Black hands (Kahrl et al., 2022, p. 56, nn. 94, 96), so "still standing" depends on what you count: one more reason not to teach a ranking.
+- **"The first African American resort community listed on the National Register."** The theme study says this of Fox Lake in a footnote (Kahrl et al., 2022, p. 56, n. 95). The Idlewild Historic District in Michigan was listed in 1979, twenty-two years earlier (Kahrl et al., 2022, p. 188; REST-00 lesson 4). **Out.**
 
 ## A rule the form had to meet
 
@@ -881,9 +893,9 @@ The state's Green Book survey sets the rule for listing a resort under it: the p
 ## Sources
 - ${BORLAND_2025} Locator: pp. 103, 111.
 - ${GARNER_2025} Locator: pp. 5, 21 to 25, 28, 30 to 31.
-- ${GREIFF_2001} Locator: Section 5 (PDF p. 2); Section 7, p. 4 (PDF p. 6); Section 8, p. 6 (PDF p. 10).
+- ${GREIFF_2001} Locator: Section 3, state certification (PDF p. 1); Section 5 (PDF p. 2); Section 7, p. 2 (PDF p. 6); Section 8, p. 6 (PDF p. 10).
 - ${INDIANA_LANDMARKS_2021}
-- ${KAHRL_2022} Locator: printed pp. 56 and n. 95, 142, 185 to 186 (PDF pp. 64, 150, 193 to 194).
+- ${KAHRL_2022} Locator: printed p. 56 and nn. 94 to 96, p. 142, pp. 185 to 186, p. 188 (PDF pp. 64, 150, 193 to 194, 196).
 - ${NPS_2024} Locator: Indiana, Steuben County entry.`,
       recallContent: [
         {
@@ -1030,14 +1042,16 @@ The record after 1964 is a record of building, not of closing:
 
 ## Why it held: one argument, with an owner
 
-The National Park Service's theme study offers an explanation: because northeast Indiana never saw the population and economic growth of much of the coastal South, Fox Lake owners "never experienced the intense pressure to sell, nor was the area subject to coordinated efforts to redevelop, that befell other historically Black summer communities" (Kahrl & Cammeron, 2022, p. 142). **That is an interpretation by named historians, and it is a good one. Teach it as theirs.** It has a corollary worth saying out loud: **the same slow growth that spared Fox Lake was not a choice anyone at Fox Lake made.** It is a fact about the region.
+The National Park Service's theme study offers an explanation: because northeast Indiana never saw the population and economic growth of much of the coastal South, Fox Lake owners "never experienced the intense pressure to sell, nor was the area subject to coordinated efforts to redevelop, that befell other historically Black summer communities" (Kahrl et al., 2022, p. 142). **That is an interpretation by named historians, and it is a good one. Teach it as theirs.** It has a corollary worth saying out loud: **the same slow growth that spared Fox Lake was not a choice anyone at Fox Lake made.** It is a fact about the region.
 
 ## The co-occurrence, stated plainly
 
 | After 1964 | At Fox Lake |
 |---|---|
-| Black families can buy at any lake, by law | The owners build a new lodge and plat a new shore |
+| Black families can buy at any lake, by law | The community builds a new lodge, and the land company plats a new shore |
 | The hotel and restaurant are gone by the time of the 2026 form | The association, the lodge and the families remain |
+
+(Garner, 2025, pp. 30 to 32)
 
 **Do not turn that into a moral.** The hotel did not close because the law was wrong, and the families did not stay because the law was right. **Each column is a fact with a source.**
 
@@ -1064,7 +1078,7 @@ The National Park Service's theme study offers an explanation: because northeast
 
 ## The rule before everything else
 
-**Fox Lake is a living community on private land.** The cottages are homes and summer homes, many held by the same families for three generations. **This course never sends you to a cottage, a private lane or a private dock.** The 2026 nomination lists owners by address; this course does not reproduce that list, and you should not either.
+**Fox Lake is a living community on private land.** The cottages are homes and summer homes, many passed down in families, some now in their third generation of ownership (Garner, 2025, p. 32). **This course never sends you to a cottage, a private lane or a private dock.** The 2026 nomination lists every cottage by street address, many under a family's name (Garner, 2025, pp. 6 to 19); this course does not reproduce that list, and you should not either.
 
 ## Where you may stand
 
@@ -1072,15 +1086,15 @@ The National Park Service's theme study offers an explanation: because northeast
 2. **The public access site**, which the State of Indiana bought from the Pryors in the mid-1960s: a boat launch and fishing pier east of Pryor's Place, still public (Garner, 2025, p. 31).
 3. **West Fox Lake Road**, the county road along the south shore (Garner, 2025, p. 25). Whether the numbered lanes off it are public roads is a question this course did not settle, so treat them as private unless you are invited.
 
-**The K. T. Thompson Lodge is the association's building.** Go in only if the association invites you.
+**The K. T. Thompson Lodge is the community's building**, in use by "residents, members, and guests of Fox Lake" (Garner, 2025, p. 31). No source read for this course says who owns it or who may enter, so go in only if you are invited.
 
 ## What to look for, in order
 
-1. **The slope.** From the water or the access site, find the two-story cottages: frame above, block below, door to the lake (lesson 8).
-2. **The scale of the lots.** Cottages close together, about fifty by eighty feet in the original plat. **Small lots were how a lake was sold to working families.**
+1. **The slope.** From the water or the access site, find the two-story cottages: frame above, block below, door to the lake (lesson 8; Greiff, 2001, Sec. 7, p. 3).
+2. **The scale of the lots.** Cottages close together, on lots of about fifty by eighty feet on average in the 2001 district. **The 2001 form names the small lots as one reason the cottages cluster wherever the ground allows** (Greiff, 2001, Sec. 7, p. 3).
 3. **The west bluff.** The two-story winged motel there is the Mar-Fran as rebuilt in 1967 (Garner, 2025, p. 31). Look; do not go in.
-4. **The center of the south shore.** The lodge, the lagoon and the beach the association improved in 1952 and rebuilt in 1968.
-5. **The north shore.** Newer houses, 1966 to 1982. **They are part of the same history, which is the 2026 boundary's whole argument.**
+4. **The center of the south shore.** The lodge, the lagoon and the beach the association improved in 1952, "vastly improved" again in 1968 (Garner, 2025, pp. 29 to 30).
+5. **The north shore.** Newer houses, 1966 to 1982 (Garner, 2025, p. 31). **They are part of the same history, which is the 2026 boundary's whole argument.**
 6. **The undeveloped northeast corner**, still owned by the land company (Garner, 2025, p. 31).
 7. **The marker's words.** Compare them with what you see. What does the marker say that the shore does not show, and the reverse?
 
@@ -1093,7 +1107,8 @@ It cannot show a deed, a date, an owner, or who was refused at another lake the 
 Photograph from public ground. Do not photograph people without asking, and never children. Do not photograph into windows. **An interior, any interior, needs the owner's consent first.**
 
 ## Sources
-- ${GARNER_2025} Locator: pp. 25, 31.
+- ${GARNER_2025} Locator: pp. 6 to 19 (resource list), 25, 29 to 32.
+- ${GREIFF_2001} Locator: Section 7, p. 3 (PDF p. 7).
 - ${IHB_2022} Locator: location line.`,
       recallContent: [
         {
@@ -1118,16 +1133,23 @@ Photograph from public ground. Do not photograph people without asking, and neve
 
 **Amber: the company's cities, and the lake that was refused.** Marion, where the company kept its offices from 1924 to 1932; Kokomo, where they moved; and Valparaiso, near Sager Lake, refused in 1922 (Greiff, 2001, Sec. 8, pp. 5 to 6).
 
-**Purple: the Midwest ring.** Idlewild in Michigan, the best-known Black lake resort and the subject of REST-00 lesson 4 and REST-02; Woodland Park near it; and Lake Ivanhoe in Wisconsin, founded by Black Chicagoans in 1926 (Kahrl & Cammeron, 2022, p. 56). REST-03 teaches the ring.
+**Purple: the Midwest ring.** Idlewild in Michigan, the best known of the Michigan resorts (Greiff, 2001, Sec. 8, p. 5) and the subject of REST-00 lesson 4 and REST-02; Woodland Park Resort in Michigan, which the theme study's appendix lists as operating from 1921 (Kahrl et al., 2022, p. 211); and Lake Ivanhoe in Wisconsin, founded by Black Chicagoans in 1926 (Kahrl et al., 2022, p. 56). REST-03 teaches the ring.
 
-**Coordinates are approximate place centers from OpenStreetMap's gazetteer**, not the locations of buildings. Do not use them to find an address.
+**Every marker's detail is taught, with its sources, in the lessons named at its end.**
 
-**What the map cannot show.** It cannot show the lakes that said no. Sager Lake is on it because a newspaper wrote it down; **every other refusal in Indiana in those years is missing because nobody did.**
+**Coordinates are approximate place centers from OpenStreetMap's gazetteer** (OpenStreetMap contributors, n.d.), not the locations of buildings. Do not use them to find an address.
+
+**What the map cannot show.** It cannot show the lakes that said no. Sager Lake is on it because newspapers wrote it down (Greiff, 2001, Sec. 9, p. 10); **a refusal nobody wrote down cannot be mapped.**
 
 ## Sources
-- ${GREIFF_2001} Locator: Section 8, pp. 5 to 7 (PDF pp. 9 to 11).
-- ${KAHRL_2022} Locator: printed p. 56 (PDF p. 64).
-- OpenStreetMap contributors. (n.d.). *Nominatim gazetteer*. https://nominatim.openstreetmap.org/`,
+- ${EJI}
+- ${GARNER_2025} Locator: pp. 25 to 29, 35.
+- ${GREIFF_2001} Locator: Section 8, pp. 5 to 8 (PDF pp. 9 to 12); Section 9, p. 10 (PDF p. 14).
+- ${IHB_2022} Locator: location line; ID number.
+- ${KAHRL_2022} Locator: printed pp. 55 to 56, 188, 211 (PDF pp. 63 to 64, 196, 219).
+- ${NPS_2024} Locator: Indiana, Steuben County entry.
+- ${NPS_2026} Locator: Indiana, Steuben County entries.
+- OpenStreetMap contributors. (n.d.). *Nominatim* [Gazetteer search service]. https://nominatim.openstreetmap.org/`,
       mapContent: {
         atlas: "us-states",
         markers: [
@@ -1138,7 +1160,7 @@ Photograph from public ground. Do not photograph people without asking, and neve
             title: "Fox Lake, Steuben County, Indiana",
             color: "#1d4ed8",
             description:
-              "The subject of this course. The Fox Lake Land Company, five white businessmen, bought the Ward farm in 1924 to sell lots to Black families; the plat dates from 1926 or 1927 (sources differ) and the first cottage from 1928. Listed on the National Register in 2001, with Pryor's Country Place in 2024 and a boundary increase to about 240 acres in 2026. State marker 76.2022.1 stands at the southeast point.",
+              "The subject of this course. The Fox Lake Land Company, five white businessmen, bought the Ward farm in 1924 to sell lots to Black families; the plat dates from 1926 or 1927 (sources differ) and the first cottage from 1928. Listed on the National Register in 2001, with Pryor's Country Place in 2024 and a boundary increase to about 240 acres in 2026. State marker 76.2022.1 stands at the southeast point. Taught in lessons 2, 4 and 13 (Greiff, 2001; Garner, 2025; National Park Service, 2024, 2026; Indiana Historical Bureau, 2022).",
           },
           {
             id: "fl-indianapolis",
@@ -1147,7 +1169,7 @@ Photograph from public ground. Do not photograph people without asking, and neve
             title: "Indianapolis, Indiana",
             color: "#15803d",
             description:
-              "The city that sent the most Fox Lake vacationers, Freeman B. Ransom among them, and home of the Indianapolis Recorder, whose pages the 2026 nomination cites for the resort's opening ad (1926), conventions and picnics.",
+              "The city that sent the most Fox Lake vacationers, Freeman B. Ransom among them, and home of the Indianapolis Recorder, whose pages the 2026 nomination cites for the resort's opening ad (1926), conventions and picnics. Taught in lessons 4 and 5 (Greiff, 2001; Garner, 2025).",
           },
           {
             id: "fl-fort-wayne",
@@ -1156,7 +1178,7 @@ Photograph from public ground. Do not photograph people without asking, and neve
             title: "Fort Wayne, Indiana",
             color: "#15803d",
             description:
-              "Home of Carl Wilson Sr., who built the first cottage, and of two of the 1924 incorporators. During World War II, Black troops from Baer Field here were invited to Fox Lake on weekend passes.",
+              "Home of Carl Wilson Sr., who built the first cottage, and of two of the 1924 incorporators. During World War II, Black troops from Baer Field here were invited to Fox Lake on weekend passes. Taught in lessons 2, 4 and 5 (Greiff, 2001; Garner, 2025).",
           },
           {
             id: "fl-detroit",
@@ -1164,7 +1186,7 @@ Photograph from public ground. Do not photograph people without asking, and neve
             lng: -83.047,
             title: "Detroit, Michigan",
             color: "#15803d",
-            description: "One of the distant cities both nominations name as a source of Fox Lake vacationers.",
+            description: "One of the distant cities both nominations name as a source of Fox Lake vacationers. Taught in lesson 5 (Greiff, 2001; Garner, 2025).",
           },
           {
             id: "fl-chicago",
@@ -1173,7 +1195,7 @@ Photograph from public ground. Do not photograph people without asking, and neve
             title: "Chicago, Illinois",
             color: "#15803d",
             description:
-              "Source of vacationers, and of Albert and Hazelene Pryor, who bought the Hershey house in 1947 and ran Pryor's Country Place. Black Chicago families had tried and failed to buy Sager Lake in 1922.",
+              "Source of vacationers, and of Albert and Hazelene Pryor, who bought the Hershey house in 1947 and ran Pryor's Country Place. Black Chicago families had tried and failed to buy Sager Lake in 1922. Taught in lessons 1, 5 and 9 (Greiff, 2001; Garner, 2025).",
           },
           {
             id: "fl-toledo",
@@ -1181,7 +1203,7 @@ Photograph from public ground. Do not photograph people without asking, and neve
             lng: -83.538,
             title: "Toledo, Ohio",
             color: "#15803d",
-            description: "Source of vacationers, and of the gun club that ran trap shooting matches at the lake in the early years.",
+            description: "Source of vacationers, and of the gun club that ran trap shooting matches at the lake in the early years. Taught in lessons 5 and 9 (Greiff, 2001).",
           },
           {
             id: "fl-marion",
@@ -1190,7 +1212,7 @@ Photograph from public ground. Do not photograph people without asking, and neve
             title: "Marion, Indiana",
             color: "#b45309",
             description:
-              "The land company's offices, 1924 to 1932, and the city where Thomas Shipp and Abram Smith were lynched on August 7, 1930 (lesson 3, with a content note). No source links the two.",
+              "The land company's offices, 1924 to 1932, and the city where Thomas Shipp and Abram Smith were lynched on August 7, 1930 (lesson 3, with a content note). No source links the two. Taught in lessons 2 and 3 (Garner, 2025; Equal Justice Initiative, n.d.).",
           },
           {
             id: "fl-kokomo",
@@ -1199,7 +1221,7 @@ Photograph from public ground. Do not photograph people without asking, and neve
             title: "Kokomo, Indiana",
             color: "#b45309",
             description:
-              "Home of incorporator Harry Schrader, and from 1932 of the company's offices, when Lowell T. Boyd, an insurance executive based here, took control.",
+              "Home of incorporator Harry Schrader, and from 1932 of the company's offices, when Lowell T. Boyd, an insurance executive based here, took control. Taught in lessons 2 and 4 (Greiff, 2001).",
           },
           {
             id: "fl-valparaiso",
@@ -1208,7 +1230,7 @@ Photograph from public ground. Do not photograph people without asking, and neve
             title: "Valparaiso, Indiana (Sager Lake)",
             color: "#b45309",
             description:
-              "In 1922 middle-class Black families from Chicago tried to buy Sager Lake, outside Valparaiso, for a summer resort. Local opposition stopped it.",
+              "In 1922 middle-class Black families from Chicago tried to buy Sager Lake, outside Valparaiso, for a summer resort. Local opposition stopped it. Taught in lesson 1 (Greiff, 2001; Garner, 2025).",
           },
           {
             id: "fl-idlewild",
@@ -1217,7 +1239,7 @@ Photograph from public ground. Do not photograph people without asking, and neve
             title: "Idlewild, Lake County, Michigan",
             color: "#7c3aed",
             description:
-              "The best-known Black lake resort in the Midwest, founded 1912 by white developers and bought by Black owners; National Register district 1979, boundary increase 2010. Taught in REST-00 lesson 4; REST-02 picks up after 1921.",
+              "The best known of the Michigan resorts. The theme study says four white businessmen and their wives formed the Idlewild Resort Company in 1912 (another chapter dates the first platting to 1915) and that thousands of lots sold, many to Black Chicagoans; National Register 1979, boundary expansion 2010 (Kahrl et al., 2022, pp. 55, 188). Taught in REST-00 lesson 4; REST-02 picks up after 1921.",
           },
           {
             id: "fl-woodland-park",
@@ -1225,7 +1247,7 @@ Photograph from public ground. Do not photograph people without asking, and neve
             lng: -85.861,
             title: "Woodland Park, Michigan",
             color: "#7c3aed",
-            description: "A second Black resort community near Idlewild, taught in REST-03.",
+            description: "Woodland Park Resort, Merrill Township: listed in the theme study's appendix as a lake resort operating from 1921 to the present (Kahrl et al., 2022, p. 211). Taught in REST-03.",
           },
           {
             id: "fl-lake-ivanhoe",
@@ -1234,7 +1256,7 @@ Photograph from public ground. Do not photograph people without asking, and neve
             title: "Lake Ivanhoe, Wisconsin",
             color: "#7c3aed",
             description:
-              "An 83-acre lake resort community Black Chicagoans established in 1926, the year Fox Lake's plat was advertised. Taught in REST-03.",
+              "An 83-acre lake resort community Black Chicagoans established in 1926, the year Fox Lake's opening was advertised (Kahrl et al., 2022, p. 56; lesson 4). Taught in REST-03.",
           },
         ],
       },
@@ -1247,7 +1269,7 @@ Photograph from public ground. Do not photograph people without asking, and neve
       title: "19 · Next: read the current record",
       section: "Section 5 · Next",
       lessonType: "exercise",
-      body: `**Beat 5 asks what is decided about this place now, and who is deciding it.** At Fox Lake nobody has published a redevelopment plan; the live record is a boundary, a study list, a foundation's aims, an undeveloped corner and a county's parcel map. **Read each one, then answer the drill below.**
+      body: `**Beat 5 asks what is decided about this place now, and who is deciding it.** At Fox Lake no source read for this course describes a redevelopment plan; the live record is a boundary, a study list, a foundation's aims, an undeveloped corner and a county's parcel map. **Read each one, then answer the drill below.**
 
 ## 1. The boundary
 
@@ -1255,7 +1277,7 @@ The 2026 listing drew the historic district around most of the lake, about 240 a
 
 ## 2. The study list
 
-The National Park Service's theme study put Fox Lake on its list for possible National Historic Landmark study and wrote: "Further study will be needed to determine the overall integrity of the Fox Lake Resort" (Kahrl & Cammeron, 2022, p. 186). **That sentence is an open door, not a decision.** A landmark nomination would need someone to write it.
+The National Park Service's theme study put Fox Lake on its list for possible National Historic Landmark study and wrote: "Further study will be needed to determine the overall integrity of the Fox Lake Resort" (Kahrl et al., 2022, p. 186). **That sentence is an open door, not a decision.** A landmark nomination would need someone to write it.
 
 ## 3. The foundation
 
@@ -1314,7 +1336,7 @@ Look up public and institutional parcels only. **Do not publish a cottage owner'
             prompt: "The level of significance the 2026 update gave the district is ___.",
             answer: "statewide",
             accept: ["state", "statewide significance"],
-            explanation: "Raised from local, on the ground that Fox Lake is Indiana's only African American lake resort community.",
+            explanation: "The 2026 form says it raised the level from local to statewide, because Fox Lake is Indiana's only African American lake resort community. The 2001 form's own certification box already reads statewide; lesson 14 shows the conflict.",
           },
           {
             prompt: "Listing places no restrictions on a non-federal owner unless ___ assistance is involved.",
@@ -1335,10 +1357,10 @@ Look up public and institutional parcels only. **Do not publish a cottage owner'
             explanation: "A boat launch and fishing pier, bought in the mid-1960s and still public: a safe parcel to look up.",
           },
           {
-            prompt: "The association's building at the center of the south shore is the K. T. ___ Lodge.",
+            prompt: "The community building at the center of the south shore is the K. T. ___ Lodge.",
             answer: "Thompson",
             accept: ["thompson lodge", "k. t. thompson"],
-            explanation: "Dedicated September 1, 1968, and entered only by the association's invitation.",
+            explanation: "Dedicated September 1, 1968. Enter it only if you are invited.",
           },
         ],
       },
@@ -1360,7 +1382,7 @@ Write **800 to 1,200 words** of nonfiction built on **one document** from this c
 ## Choose your subject
 
 - **A business:** Pryor's Country Place, the Mar-Fran, the hotel and clubhouse, or the land company.
-- **A person in the record:** Carl Wilson Sr., John A. Roberts, Mary Frances Fleming and Mabel Van Cleave, the Pryors, the Rev. Plummer D. Jacobs, Dr. K. T. Thompson. **Historical figures only, as the nominations name them.**
+- **A person in the record:** Carl Wilson Sr., John A. Roberts, Mary Frances Fleming and Mabel Van Cleave, the Pryors, the Rev. Plummer D. Jacobs, Dr. K. T. Thompson. **Historical figures only, as the nominations name them** (Greiff, 2001; Garner, 2025).
 - **A decision:** the 1938 association, the 1952 incorporation, the 1966 north-shore plat, the 2026 boundary.
 - **A conflict:** one row of lesson 14's table, followed as far as you can take it.
 
@@ -1376,11 +1398,11 @@ Five columns, as in REST-00: **date, event, instrument, source, and what else wa
 2. **Give every figure its owner**, and say "expected" when the source said expected.
 3. **Say "ran" when the record says ran.** Ownership is a claim that needs a deed.
 4. **One paragraph, at least, on what you could not establish.**
-5. **No lost paradise.** Fox Lake is a working community with a strong association today. Write it in the present tense.
+5. **No lost paradise.** Fox Lake is a working community today, with an association the 2026 form calls "strong" (Garner, 2025, p. 32). Write it in the present tense.
 
 ## Sources
-- ${GARNER_2025}
-- ${GREIFF_2001}`,
+- ${GARNER_2025} Locator: p. 32; the whole form for subjects.
+- ${GREIFF_2001} Locator: the whole form for subjects.`,
       recallContent: [
         {
           prompt: "Why is the land company's undeveloped northeast corner worth watching?",
@@ -1401,27 +1423,28 @@ Five columns, as in REST-00: **date, event, instrument, source, and what else wa
 ## Not settled
 
 - **The plat date**, 1926 or 1927. The recorded plat was not read.
-- **The level of significance in 2001**, local or statewide. The 2001 form's level box is illegible in the scan read here.
+- **The level of significance in 2001**, local or statewide. The 2001 form's certification box reads statewide (Greiff, 2001, Sec. 3, PDF p. 1); the 2026 form says the district was local (Garner, 2025, p. 22). The level the Park Service accepted in 2001 was not read.
 - **The end of the period of significance**, 1976 or 1982, inside one form.
 - **Who owned the hotel business after 1943.** The record says who ran it.
 - **What anything cost.** No open-market lot price, rent, room rate or dues figure appears in the sources read for this course, and none was guessed.
 
 ## Left out on purpose
 
-- **Every cottage address and every current owner's name.** The 2026 form lists them; this course does not.
-- **Living people's recollections.** The 2026 form quotes a living daughter of the Pryors. This course quotes no living private person without consent, and asks the foundation whether anyone wishes to be named.
+- **Every cottage address, and the family names attached to them.** The 2026 form lists every cottage by address (Garner, 2025, pp. 6 to 19); this course does not.
+- **Living people's recollections.** The 2026 form quotes a living daughter of the Pryors (Garner, 2025, p. 28). This course quotes no living private person without consent, and asks the foundation whether anyone wishes to be named.
 - **Photographs**, except one cleared photograph of the clubhouse, until the people who hold the rights say yes.
 
 ## The unopened sources
 
-1. **The Indianapolis Recorder**, 1926 to 1964. The 2026 form cites a dozen issues by date and page. **Every one of them is a primary source this course only knows second hand.**
-2. **"History of Fox Lake Resort, 1925-1965,"** the property owners' association's unpublished manuscript of 1965 or 1966, in the Spears Family Collection at the Indiana Historical Society (Indiana Historical Bureau, 2022, nn. 2 to 3; Greiff, 2001, Sec. 9, p. 10).
-3. **The association's articles of incorporation and bylaws**, July 8, 1952 (Greiff, 2001, Sec. 9, p. 9).
+1. **The Indianapolis Recorder**, 1926 to 1964. The 2026 form cites a dozen issues by date and page (Garner, 2025, pp. 26 to 34). **Every one of them is a primary source this course only knows second hand.**
+2. **"History of Fox Lake Resort, 1925-1965,"** the property owners' association's unpublished manuscript of 1965 or 1966, in the Spears Family Collection, which the marker's notes place in the Indiana Historical Society's digital collection (Indiana Historical Bureau, 2022, nn. 2 to 3). The 2001 form credits it to Charles E. Harry Sr. and others and dates it 1966 (Greiff, 2001, Sec. 9, p. 10); the marker's notes date it 1965.
+3. **The association's articles of incorporation and bylaws**, July 8, 1952 (Greiff, 2001, Sec. 9, p. 9), also in the Spears Family Collection (Indiana Historical Bureau, 2022, n. 3).
 4. **The Fox Lake Newsletter**, volumes 1 to 6, October 1962 to October 1968 (Greiff, 2001, Sec. 9, p. 9).
-5. **Steuben County's deed books and the 1930 Hixson plat book**, which settle the plat date.
+5. **Steuben County's deed books and the 1930 Hixson plat book**, which would settle the plat date. The 2001 form gives the company's land as described on page 42C of volume 78 of the county's deed records (Greiff, 2001, Sec. 10, PDF p. 15); the plat book is in the 2026 form's bibliography (Garner, 2025, p. 34).
 6. **The Muncie Star Press of October 12, 1924**, the incorporation notice (Indiana Historical Bureau, 2022, n. 1).
-7. **Mark Foster's 1999 article** on prosperous Black Americans and vacations, which the marker cites (Indiana Historical Bureau, 2022, n. 1).
-8. **The Green Book pages** for Angola in each edition, at the Schomburg Center's digital collections.
+7. **Mark Foster's 1999 article**, "In the Face of 'Jim Crow': Prosperous Blacks and Vacations, Travel and Outdoor Leisure, 1890-1945," *Journal of Negro History*, 84(2), pages 130 to 149, which the marker cites (Indiana Historical Bureau, 2022, n. 1).
+8. **The Green Book pages** for Angola in each edition, at the Schomburg Center's digital collections (Indiana Historical Bureau, 2022, n. 4).
+9. **The rest of the two bibliographies:** newspaper stories, interviews and an unpublished manuscript that the nominations list and this course has not read (Greiff, 2001, Sec. 9, pp. 9 to 10; Garner, 2025, pp. 33 to 34).
 
 **If you want to add to Fox Lake's history instead of repeating it, that list is where to start.**
 
@@ -1432,9 +1455,9 @@ Five columns, as in REST-00: **date, event, instrument, source, and what else wa
 - **REST-04** goes to the mountains, the Gulf and the shore.
 
 ## Sources
-- ${GARNER_2025}
-- ${GREIFF_2001} Locator: Section 9, pp. 9 to 10 (PDF pp. 13 to 14), bibliography.
-- ${IHB_2022} Locator: annotated text, notes 1 to 3.`,
+- ${GARNER_2025} Locator: pp. 6 to 19 (resource list), 22, 26 to 34.
+- ${GREIFF_2001} Locator: Section 3, state certification (PDF p. 1); Section 9, pp. 9 to 10 (PDF pp. 13 to 14), bibliography; Section 10 (PDF p. 15), deed reference.
+- ${IHB_2022} Locator: annotated text, notes 1 to 4.`,
     },
     {
       slug: "fl-final-quiz",
@@ -1598,7 +1621,7 @@ Five columns, as in REST-00: **date, event, instrument, source, and what else wa
               "Onto the docks of the cottages listed in the 2026 nomination",
             ],
             correctIndex: 0,
-            explanation: "The state marker, the public access site and the county road. The lodge is the association's building, entered only by its invitation; the cottages are homes.",
+            explanation: "The state marker, the public access site and the county road. The lodge is the community's building, entered only by invitation; the cottages are homes.",
             sourceLessonSlug: "fl-now-tour",
           },
           {
