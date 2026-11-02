@@ -3,6 +3,7 @@
 import { useRouter } from "next/navigation";
 import { useId, useState } from "react";
 import { MIN_OVERRIDE_REASON, type PublicReadiness } from "@/lib/course-visibility";
+import { quizLengthWarning } from "@/lib/quiz-integrity";
 
 // The Make public / Make private switch (src/lib/course-visibility.ts). Rendered on /teach/[courseId]
 // for the platform owner and this school's brand_admin (never on an owner-only course for the
@@ -19,6 +20,7 @@ export function CourseVisibilitySwitch({
   isPublished,
   ownerOnly = false,
   readiness,
+  failingQuizzes = 0,
 }: {
   courseId: string;
   visibility: string;
@@ -26,7 +28,10 @@ export function CourseVisibilitySwitch({
   /** courses.owner_only: closed to the school's admins, so the "who can open it" line says so. */
   ownerOnly?: boolean;
   readiness: PublicReadiness;
+  /** Measured quizzes failing the length check: a note in the Make public confirmation, never a gate. */
+  failingQuizzes?: number;
 }) {
+  const quizNote = quizLengthWarning(failingQuizzes);
   const router = useRouter();
   const ids = useId();
   const [open, setOpen] = useState<null | "make-public" | "make-private">(null);
@@ -136,6 +141,12 @@ export function CourseVisibilitySwitch({
                     )
                   : check(true, "No reviewer markers on this course")}
               </ul>
+              {quizNote ? (
+                <p className="mt-2 rounded-md bg-amber-50 p-2 text-amber-950 dark:bg-amber-950/40 dark:text-amber-100">
+                  Quiz checks: {quizNote} This does not block publishing; the quizzes are listed under &ldquo;Quiz checks&rdquo; on
+                  this page.
+                </p>
+              ) : null}
               {needsOverride ? (
                 <div className="mt-3 space-y-2">
                   <label className="flex items-start gap-2">
