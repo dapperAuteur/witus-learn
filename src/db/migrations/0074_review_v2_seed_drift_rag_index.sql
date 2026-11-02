@@ -15,7 +15,7 @@ CREATE TABLE "lesson_seed_drifts" (
 	"app_hash" text NOT NULL,
 	"file_content" jsonb NOT NULL,
 	"detected_at" timestamp with time zone DEFAULT now() NOT NULL,
-	"last_seen_at" timestamp with time zone DEFAULT now() NOT NULL,
+	"last_checked_at" timestamp with time zone DEFAULT now() NOT NULL,
 	"resolution" text,
 	"resolved_at" timestamp with time zone,
 	"resolved_by" text,

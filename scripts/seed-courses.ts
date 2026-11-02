@@ -4,7 +4,8 @@ import { drizzle } from "drizzle-orm/neon-serverless";
 import ws from "ws";
 import * as schema from "../src/db/schema";
 import { resolveDbUrl } from "./db-url";
-import { seedAuthoredCourse } from "./lib/seed-authored-course";
+import { seedAuthoredCourse, seedReport } from "./lib/seed-authored-course";
+import { writeSeedReport } from "./lib/seed-report";
 import { SURPLUS_FUNDS_BASICS_COURSE } from "./data/surplus-funds-basics-course";
 import { MONODRAMA_WRITING_COURSE } from "./data/monodrama-writing-course";
 import { MONODRAMA_PERFORMING_COURSE } from "./data/monodrama-performing-course";
@@ -4462,6 +4463,9 @@ async function main() {
     });
   }
 
+  // Seed drift (plans/97 Q5): say what was left alone, and hand the post-merge workflow the courses
+  // whose content changed so it re-indexes exactly those (scripts/lib/seed-report.ts).
+  await writeSeedReport(db, seedReport());
   await pool.end();
   console.log("Done.");
 }

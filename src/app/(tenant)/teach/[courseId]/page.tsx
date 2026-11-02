@@ -27,6 +27,8 @@ import { launchTodosForCourse } from "@/db/queries/release-followups";
 import { LaunchTodoList } from "@/components/launch-todo-list";
 import { TeachQuizChecks } from "@/components/teach-quiz-checks";
 import type { CourseQuizIntegrity, FailingQuizBank } from "@/lib/quiz-integrity";
+import { SeedDriftPanel, type DriftItem } from "@/components/seed-drift-panel";
+import { diffSeedContent } from "@/lib/seed-drift";
 
 export const metadata: Metadata = { title: "Manage course" };
 
@@ -145,6 +147,22 @@ export default async function ManageCoursePage({ params }: { params: Promise<{ c
     console.error("quiz checks unavailable", err);
   }
 
+  // Seed drift (plans/97 Q5): lessons edited here since the last seed, which the seed left alone.
+  // Only the course's instructor and the platform owner decide them. Off the critical path: a deploy
+  // ahead of migration 0074 still renders the page.
+  let driftItems: DriftItem[] = [];
+  if (owner || course.instructorId === session.user.id) {
+    try {
+      driftItems = (await sdb.listOpenSeedDrifts({ courseId })).map((d) => ({
+        id: d.id,
+        lessonTitle: d.lessonTitle,
+        lastCheckedAt: d.lastCheckedAt.toISOString(),
+        diffs: diffSeedContent(d.app, d.file),
+      }));
+    } catch (err) {
+      console.error("seed drift unavailable", err);
+    }
+  }
   const courseLive = courseStage(course) === "live";
   const showLaunchTodos = !courseLive || launchTodos.some((t) => t.status === "open");
 
@@ -237,6 +255,8 @@ export default async function ManageCoursePage({ params }: { params: Promise<{ c
             failingQuizzes={failingQuizzes.length}
           />
         ) : null}
+
+        <SeedDriftPanel courseId={course.id} items={driftItems} />
 
         {showLaunchTodos ? (
           <LaunchTodoList courseId={course.id} todos={launchTodos} isOwner={owner} courseLive={courseLive} />

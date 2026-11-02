@@ -9316,8 +9316,8 @@
           "notNull": true,
           "default": "now()"
         },
-        "last_seen_at": {
-          "name": "last_seen_at",
+        "last_checked_at": {
+          "name": "last_checked_at",
           "type": "timestamp with time zone",
           "primaryKey": false,
           "notNull": true,
