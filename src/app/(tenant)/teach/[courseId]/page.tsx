@@ -220,7 +220,7 @@ export default async function ManageCoursePage({ params }: { params: Promise<{ c
           {/* Mark it vetted from here, where the course is actually worked on: the walk to /teach
               and back is the friction that let the review queue sit (BAM 2026-08-18). The owner, or
               this school's brand_admin (BAM 2026-10-29). */}
-          {isAdmin ? <VetCourseCta courseId={course.id} variant="inline" launchTodos={launchTodos} /> : null}
+          {isAdmin ? <VetCourseCta courseId={course.id} variant="inline" launchTodos={launchTodos} failingQuizzes={failingQuizzes.length} /> : null}
         </div>
       ) : null}
 
@@ -234,6 +234,7 @@ export default async function ManageCoursePage({ params }: { params: Promise<{ c
             isPublished={course.isPublished}
             ownerOnly={course.ownerOnly}
             readiness={publicReadiness(course, signoffReadiness)}
+            failingQuizzes={failingQuizzes.length}
           />
         ) : null}
 
@@ -244,6 +245,7 @@ export default async function ManageCoursePage({ params }: { params: Promise<{ c
         <CourseSettingsForm
           courseId={course.id}
           launchTodos={launchTodos}
+          failingQuizzes={failingQuizzes.length}
           canFeature={owner}
           canSetOwnerOnly={owner}
           hasStripe={hasStripe}
@@ -342,6 +344,7 @@ export default async function ManageCoursePage({ params }: { params: Promise<{ c
             canRelease={isAdmin}
             holdReason={course.publishHoldReason}
             launchTodos={launchTodos}
+            failingQuizzes={failingQuizzes.length}
           />
         ) : null}
 

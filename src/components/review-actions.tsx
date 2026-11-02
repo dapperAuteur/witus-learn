@@ -1,8 +1,8 @@
 "use client";
 
-import { useState } from "react";
+import { useRef, useState } from "react";
 import type { LaunchTodo } from "@/lib/launch-todos";
-import { LaunchTodoWarning, hasOpenTodos } from "@/components/launch-todo-warning";
+import { LaunchTodoWarning, focusLater, shouldWarnBeforeLaunch } from "@/components/launch-todo-warning";
 import { useRouter } from "next/navigation";
 import type { VerdictNeedKind } from "@/lib/lesson-review";
 
@@ -64,8 +64,18 @@ export function CorrectionAppliedButton({
 }
 
 /** Clear the course's publish hold. The server re-checks readiness and refuses (409) if not ready. */
-export function ReleaseReviewHoldButton({ courseId, launchTodos }: { courseId: string; launchTodos?: LaunchTodo[] }) {
+export function ReleaseReviewHoldButton({
+  courseId,
+  launchTodos,
+  failingQuizzes = 0,
+}: {
+  courseId: string;
+  launchTodos?: LaunchTodo[];
+  /** Measured quizzes failing the length check: one more warning item, never a gate. */
+  failingQuizzes?: number;
+}) {
   const router = useRouter();
+  const triggerRef = useRef<HTMLButtonElement>(null);
   const [busy, setBusy] = useState(false);
   const [message, setMessage] = useState<string | null>(null);
   // Releasing the hold is an intent to launch, so the course's open launch to-dos come first.
@@ -88,19 +98,24 @@ export function ReleaseReviewHoldButton({ courseId, launchTodos }: { courseId: s
 
   return (
     <div className="mt-3">
-      {warning && launchTodos ? (
+      {warning ? (
         <LaunchTodoWarning
-          todos={launchTodos}
+          todos={launchTodos ?? []}
+          failingQuizzes={failingQuizzes}
           action="release the review hold"
           confirmLabel="Go ahead and release"
           busy={busy}
           onConfirm={() => void release()}
-          onCancel={() => setWarning(false)}
+          onCancel={() => {
+            setWarning(false);
+            focusLater(triggerRef);
+          }}
         />
       ) : (
         <button
+          ref={triggerRef}
           type="button"
-          onClick={() => (hasOpenTodos(launchTodos) ? setWarning(true) : void release())}
+          onClick={() => (shouldWarnBeforeLaunch(launchTodos, failingQuizzes) ? setWarning(true) : void release())}
           disabled={busy}
           className="min-h-11 rounded-md px-4 py-2 text-sm font-medium text-white focus-visible:outline-2 focus-visible:outline-offset-2 disabled:opacity-60"
           style={{ backgroundColor: "var(--accent)" }}

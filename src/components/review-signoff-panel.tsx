@@ -38,6 +38,7 @@ export function ReviewSignoffPanel({
   canRelease,
   launchTodos,
   holdReason,
+  failingQuizzes = 0,
 }: {
   courseId: string;
   lessons: SignoffLesson[];
@@ -49,6 +50,8 @@ export function ReviewSignoffPanel({
   holdReason: string | null;
   /** The course's launch to-do list, shown as a warning before the hold is released. */
   launchTodos?: LaunchTodo[];
+  /** Measured quizzes failing the length check, carried into the release warning (never a gate). */
+  failingQuizzes?: number;
 }) {
   return (
     <section aria-labelledby="review-signoff-heading" className="rounded-lg border border-neutral-200 p-4 dark:border-neutral-800">
@@ -70,7 +73,7 @@ export function ReviewSignoffPanel({
 
       {canRelease && holdReason ? (
         readiness.ready ? (
-          <ReleaseReviewHoldButton courseId={courseId} launchTodos={launchTodos} />
+          <ReleaseReviewHoldButton courseId={courseId} launchTodos={launchTodos} failingQuizzes={failingQuizzes} />
         ) : (
           <p className="mt-2 text-sm text-neutral-600 dark:text-neutral-400">
             The hold can be released here once every qualified-reviewer and practitioner need is cleared and no decision is open.

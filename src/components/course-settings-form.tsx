@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useRouter } from "next/navigation";
 import { estimatedFee, estimatedNet } from "@/lib/fees";
 import { CROSS_PROMO_PRODUCTS } from "@/lib/ecosystem";
@@ -8,7 +8,7 @@ import { assessPriceChange, type PriceState } from "@/lib/price-change";
 import { PriceChangeConfirm, type PriceChangeItem } from "@/components/price-change-confirm";
 import { MAX_ADDITIONAL_CATEGORIES } from "@/lib/course-categories";
 import { isLaunchIntent, type LaunchTodo } from "@/lib/launch-todos";
-import { LaunchTodoWarning, hasOpenTodos } from "@/components/launch-todo-warning";
+import { LaunchTodoWarning, focusLater, shouldWarnBeforeLaunch } from "@/components/launch-todo-warning";
 
 export interface CourseSettings {
   title: string;
@@ -66,6 +66,7 @@ export function CourseSettingsForm({
   canAssignInstructor = false,
   enrollmentCount = null,
   launchTodos,
+  failingQuizzes = 0,
 }: {
   courseId: string;
   initial: CourseSettings;
@@ -84,7 +85,10 @@ export function CourseSettingsForm({
   enrollmentCount?: number | null;
   /** The course's launch to-do list, shown as a warning when a save would schedule, publish or release it. */
   launchTodos?: LaunchTodo[];
+  /** Measured quizzes failing the length check: one more item in the launch warning, never a gate. */
+  failingQuizzes?: number;
 }) {
+  const saveRef = useRef<HTMLButtonElement>(null);
   const router = useRouter();
   const [v, setV] = useState<CourseSettings>(initial);
   const [state, setState] = useState<"idle" | "saving" | "saved" | "error">("idle");
@@ -167,7 +171,7 @@ export function CourseSettingsForm({
     // so that the teacher (and the owner) plan for the real date. Judged against the last SAVED
     // settings, so re-saving an already-scheduled course does not warn again.
     const saved = JSON.parse(savedSnapshot) as CourseSettings;
-    if (!launchWarn && hasOpenTodos(launchTodos) && isLaunchIntent(saved, v)) {
+    if (!launchWarn && shouldWarnBeforeLaunch(launchTodos, failingQuizzes) && isLaunchIntent(saved, v)) {
       setState("idle");
       setErrMsg(null);
       setLaunchWarn(true);
@@ -459,14 +463,18 @@ export function CourseSettingsForm({
         ) : null}
       </fieldset>
 
-      {launchWarn && launchTodos ? (
+      {launchWarn ? (
         <LaunchTodoWarning
-          todos={launchTodos}
+          todos={launchTodos ?? []}
+          failingQuizzes={failingQuizzes}
           action={v.visibility === "scheduled" ? "schedule this course" : "make this course live"}
           confirmLabel="Go ahead and save"
           busy={state === "saving"}
           onConfirm={proceed}
-          onCancel={() => setLaunchWarn(false)}
+          onCancel={() => {
+            setLaunchWarn(false);
+            focusLater(saveRef);
+          }}
         />
       ) : null}
 
@@ -484,7 +492,7 @@ export function CourseSettingsForm({
       ) : null}
 
       <div className="flex items-center gap-3">
-        <button type="submit" disabled={state === "saving"} className="min-h-11 rounded-md px-4 font-medium text-white focus-visible:outline-2 focus-visible:outline-offset-2 disabled:opacity-60" style={{ backgroundColor: "var(--accent)" }}>
+        <button ref={saveRef} type="submit" disabled={state === "saving"} className="min-h-11 rounded-md px-4 font-medium text-white focus-visible:outline-2 focus-visible:outline-offset-2 disabled:opacity-60" style={{ backgroundColor: "var(--accent)" }}>
           {state === "saving" ? "Saving…" : "Save settings"}
         </button>
         <span role="status" aria-live="polite" className="text-sm">
