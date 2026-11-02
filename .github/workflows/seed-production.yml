@@ -1,0 +1,140 @@
+# Seed the course catalog and refresh the "chat with the sources" index after a merge to main, so
+# nobody runs `pnpm seed:courses:prod` and `pnpm rag:index:prod` by hand (plans/97 Q5).
+#
+# Safe because seeds no longer overwrite teachers: the seeder skips every lesson edited in the app
+# since the last seed and opens a warning on /teach for its author (src/lib/seed-drift.ts). It is also
+# idempotent: a lesson whose file and row already agree is rewritten with the same content, so a
+# second run changes nothing and indexes nothing.
+#
+# Runs when a push to main changes a course file or the seeding code, and on demand (Actions ->
+# "Seed production courses" -> Run workflow). Order inside the job:
+#   1. wait for this commit's "Migrate production database" run, if any (a seed must not race the
+#      migration that adds the columns it writes), then apply pending migrations itself (a no-op
+#      when the migrate job already did; it makes a manual run safe on its own);
+#   2. scripts/seed-courses.ts (what `pnpm seed:courses:prod` runs), writing a report of the courses
+#      whose content changed and the lessons it left alone;
+#   3. scripts/rag-index.ts --courses-file <that list> (what `pnpm rag:index:prod` runs), throttled
+#      under the Gemini free tier's tokens-per-minute limit and retrying on 429.
+#
+# Secrets (set once, piped, never pasted; OPERATING.md section 3b): NEON_DIRECT_URL (the same one the
+# migrate workflow reads) and GOOGLE_GEMINI_API_KEY (embeddings). Fails closed when either is missing.
+# Other seeds (seed:health, seed:speedway, seed:langchain, seed:faa, ...) stay manual (OPERATING.md
+# section 4): some read gitignored content the runner does not have.
+name: Seed production courses
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - "scripts/data/**"
+      - "scripts/seed-courses.ts"
+      - "scripts/lib/seed-authored-course.ts"
+      - "scripts/lib/seed-report.ts"
+      - "src/lib/seed-drift.ts"
+      - "src/lib/lesson-review.ts"
+  workflow_dispatch:
+    inputs:
+      seed:
+        description: "Run seed:courses (skips lessons edited in the app)"
+        type: boolean
+        default: true
+      rag:
+        description: "Which courses to re-index: the ones this seed changed, every previously indexed course that is stale, every course that needs it, or none"
+        type: choice
+        options: [seeded, changed-only, needing, none]
+        default: seeded
+
+permissions:
+  contents: read
+  actions: read
+
+concurrency:
+  group: seed-production
+  # Never cancel a seed halfway: a second merge waits for the first run to finish.
+  cancel-in-progress: false
+
+jobs:
+  seed:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    steps:
+      - name: Require secrets
+        env:
+          NEON_DIRECT_URL: ${{ secrets.NEON_DIRECT_URL }}
+          GOOGLE_GEMINI_API_KEY: ${{ secrets.GOOGLE_GEMINI_API_KEY }}
+        run: |
+          if [ -z "$NEON_DIRECT_URL" ]; then
+            echo "::error::Set the repository secret NEON_DIRECT_URL (OPERATING.md, section 3a: Automatic migrations)."
+            exit 1
+          fi
+          if [ -z "$GOOGLE_GEMINI_API_KEY" ]; then
+            echo "::error::Set the repository secret GOOGLE_GEMINI_API_KEY (OPERATING.md, section 3b: Automatic seeds and RAG index)."
+            exit 1
+          fi
+
+      - uses: actions/checkout@v4.4.0
+
+      - uses: pnpm/action-setup@v4.4.0
+
+      - uses: actions/setup-node@v4.4.0
+        with:
+          node-version: 24
+          cache: pnpm
+
+      - name: Install
+        run: pnpm install --frozen-lockfile
+
+      - name: Wait for this commit's migration run
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          for i in $(seq 1 60); do
+            pending=$(gh run list --repo "$GITHUB_REPOSITORY" --workflow migrate-production.yml --commit "$GITHUB_SHA" \
+              --json status --jq '[.[] | select(.status != "completed")] | length')
+            if [ "${pending:-0}" = "0" ]; then echo "No migration run in progress for $GITHUB_SHA."; exit 0; fi
+            echo "Migration run in progress, waiting 15 s ($i/60)."
+            sleep 15
+          done
+          echo "::error::The migration run for this commit did not finish in 15 minutes; re-run this workflow after it does."
+          exit 1
+
+      - name: Apply pending migrations
+        env:
+          DATABASE_URL_UNPOOLED: ${{ secrets.NEON_DIRECT_URL }}
+        run: pnpm exec tsx scripts/migrate.ts
+
+      - name: Seed courses
+        if: github.event_name == 'push' || inputs.seed
+        env:
+          DATABASE_URL_UNPOOLED: ${{ secrets.NEON_DIRECT_URL }}
+          SEED_REPORT_PATH: ${{ runner.temp }}/seed-report.json
+        run: |
+          pnpm exec tsx scripts/seed-courses.ts | tee "$RUNNER_TEMP/seed.log"
+          {
+            echo "## Seed"
+            grep -E '^(Seed drift:|  edited in the app:)' "$RUNNER_TEMP/seed.log" || echo "No drift summary printed."
+            echo
+            echo "Lessons edited in the app were left as they are; their authors see a warning on /teach."
+          } >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Refresh the RAG index
+        env:
+          DATABASE_URL_UNPOOLED: ${{ secrets.NEON_DIRECT_URL }}
+          GOOGLE_GEMINI_API_KEY: ${{ secrets.GOOGLE_GEMINI_API_KEY }}
+          MODE: ${{ github.event_name == 'push' && 'seeded' || inputs.rag }}
+        run: |
+          list="$RUNNER_TEMP/seed-report.courses.json"
+          case "$MODE" in
+            none) echo "RAG index: skipped (none)." | tee -a "$GITHUB_STEP_SUMMARY"; exit 0 ;;
+            changed-only) args="--needing --changed-only" ;;
+            needing) args="--needing" ;;
+            *)
+              if [ ! -s "$list" ] || [ "$(node -e 'console.log(JSON.parse(require("fs").readFileSync(process.argv[1],"utf8")).length)' "$list")" = "0" ]; then
+                echo "RAG index: no course content changed, nothing to index." | tee -a "$GITHUB_STEP_SUMMARY"
+                exit 0
+              fi
+              args="--courses-file $list" ;;
+          esac
+          set -o pipefail
+          pnpm exec tsx scripts/rag-index.ts $args | tee "$RUNNER_TEMP/rag.log"
+          { echo "## RAG index ($MODE)"; echo '```'; grep -E '^(ok|FAILED)' "$RUNNER_TEMP/rag.log" || true; echo '```'; } >> "$GITHUB_STEP_SUMMARY"

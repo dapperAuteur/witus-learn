@@ -14,10 +14,9 @@
 # applies only the pending migrations and records each in drizzle.__drizzle_migrations, so a second
 # run is a no-op. The job summary lists how many it applied.
 #
-# SEEDS ARE NOT AUTOMATED, on purpose. The seeders upsert lesson title and text on every run, and
-# teachers can edit lesson text in the app (/teach/<course>), so a seed on merge would silently
-# overwrite their edits. Seeds stay manual (OPERATING.md sections 1 and 4) until BAM decides how a
-# seed treats an in-app edit.
+# Seeds are NOT run here. seed:courses and the RAG index run in their own workflow,
+# .github/workflows/seed-production.yml, which waits for this one on the same commit. That became
+# safe once the seeder learned to skip lessons edited in the app (plans/97 Q5, src/lib/seed-drift.ts).
 #
 # Timing: Vercel deploys the same push in parallel. Keep migrations additive, so the old code works on
 # the new schema and the new code's pages that need a new column answer 500 only until this job ends.
