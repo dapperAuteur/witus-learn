@@ -38,7 +38,7 @@ async function main() {
   out.push("# RAG index checklist, chat with the sources");
   out.push("");
   out.push("Build each course's retrieval index so its **Chat with the sources** works. Check off as you go");
-  out.push("index only the courses you want; leave the rest for later. Needs `GOOGLE_GEMINI_API_KEY`.");
+  out.push("index only the courses you want; leave the rest for later. Needs `MISTRAL_API_KEY`. Or press Run on /admin/rag.");
   out.push("");
   out.push("- Regenerate this list anytime: `pnpm rag:list > plans/rag-index-checklist.md`");
   out.push("- Add `--source-url <archive.org …_djvu.txt>` to a command to also ingest a **public-domain full text**.");

@@ -1,7 +1,9 @@
 import "server-only";
 import type { Course } from "@/db/schema";
 import { retrieveChunks } from "@/db/queries/source-chunks";
-import { embed } from "./embeddings";
+// The RAG index is mistral-embed since migration 0076, so the question MUST be embedded with the same
+// model; src/lib/ai/embeddings.ts (Gemini) stays CYOA's lesson_embeddings embedder and is not used here.
+import { embedQuery } from "@/lib/rag/embed-batch";
 import { withFallback } from "./fallback";
 import { configureLangSmith } from "./langsmith";
 import { LENSES, type Lens } from "./specialists";
@@ -59,11 +61,11 @@ function resolveProvider(p?: string): AiProvider | undefined {
 export async function sourceChat(course: Course, question: string, opts: SourceChatOptions): Promise<SourceChatResult> {
   configureLangSmith();
   const topK = Math.min(Math.max(opts.topK ?? 6, 1), 12);
-  const qv = await embed(question);
+  const qv = await embedQuery(question);
   const chunks = await retrieveChunks(course.tenantId, course.id, qv, topK);
   if (chunks.length === 0) {
     return {
-      answer: "This course's sources haven't been indexed yet, so I can't answer from them. (Run `pnpm rag:index` for this course.)",
+      answer: "This course's sources haven't been indexed yet, so I can't answer from them. (An admin indexes it from Admin, Source chat index, or with `pnpm rag:index`.)",
       citations: [],
       agents: [],
       usedChunks: 0,

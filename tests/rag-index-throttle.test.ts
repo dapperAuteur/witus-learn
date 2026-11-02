@@ -2,37 +2,43 @@ import { readFileSync } from "node:fs";
 import { join } from "node:path";
 import { describe, expect, it, vi } from "vitest";
 import {
-  BATCH_MAX_REQUESTS,
+  BATCH_MAX_TEXTS,
   EMBED_DIMS,
+  EMBED_ENDPOINT,
   EmbedRateLimitError,
+  MAX_REQUEST_TOKENS,
   backoffMs,
+  embedQuery,
   embedTexts,
   estimateTokens,
-  parseDurationMs,
   planBatches,
-  retryDelayFromBody,
+  retryAfterMs,
   type EmbedProgress,
 } from "@/lib/rag/embed-batch";
 import { RAG_HASH_HEADER, chunkText, courseRagContentHash } from "@/lib/rag/content-hash";
 import { parseCoursesFile, parseRagIndexArgs } from "@/lib/rag/index-args";
 import { classifyIndexState } from "@/lib/rag/index-course";
 
-// The Gemini 429 fix (2026-11-01): `rag:index:prod --course where-we-rested` failed every time with
-// RESOURCE_EXHAUSTED on the free tier's 30,000 embedding tokens a minute. No network and no database
-// here: fetch and time are injected, so "waited 16 s, then retried the same batch" is asserted, not hoped.
+// The RAG embedder (Mistral since 2026-11-02, after Gemini's free tier failed rag:index:prod with
+// 429s on 2026-11-01). No network and no database here: fetch and time are injected, so "waited
+// 16 s, then retried the same batch" is asserted, not hoped. Mistral is never called.
 
-const vec = () => Array.from({ length: EMBED_DIMS }, () => 0.5);
+const vec = (dims = EMBED_DIMS) => Array.from({ length: dims }, () => 0.5);
 
-function ok(n: number) {
-  return new Response(JSON.stringify({ embeddings: Array.from({ length: n }, () => ({ values: vec() })) }), { status: 200 });
+function ok(n: number, headers: Record<string, string> = {}, opts: { dims?: number; reverse?: boolean } = {}) {
+  const data = Array.from({ length: n }, (_, i) => ({ object: "embedding", index: i, embedding: vec(opts.dims) }));
+  if (opts.reverse) data.reverse();
+  return new Response(JSON.stringify({ id: "x", object: "list", model: "mistral-embed", data, usage: { prompt_tokens: n } }), {
+    status: 200,
+    headers: { "content-type": "application/json", ...headers },
+  });
 }
 
-function rateLimited(retryDelay?: string) {
-  const details = retryDelay ? [{ "@type": "type.googleapis.com/google.rpc.RetryInfo", retryDelay }] : [];
-  return new Response(
-    JSON.stringify({ error: { code: 429, status: "RESOURCE_EXHAUSTED", message: "Embed content tokens per minute limit exceeded", details } }),
-    { status: 429 },
-  );
+function rateLimited(retryAfter?: string) {
+  return new Response(JSON.stringify({ message: "Requests rate limit exceeded" }), {
+    status: 429,
+    headers: retryAfter ? { "retry-after": retryAfter } : {},
+  });
 }
 
 /** A fake clock: sleep advances time instead of waiting. */
@@ -49,13 +55,13 @@ function fakeClock() {
   };
 }
 
-type Call = { url: string; init: RequestInit; texts: string[] };
+type Call = { url: string; init: RequestInit; texts: string[]; model: string };
 
 function fakeFetch(responses: (() => Response)[]) {
   const calls: Call[] = [];
   const impl = (async (url: string, init: RequestInit) => {
-    const body = JSON.parse(String(init.body)) as { requests: { content: { parts: { text: string }[] } }[] };
-    calls.push({ url, init, texts: body.requests.map((r) => r.content.parts[0].text) });
+    const body = JSON.parse(String(init.body)) as { model: string; input: string[] };
+    calls.push({ url, init, texts: body.input, model: body.model });
     const next = responses.shift();
     if (!next) throw new Error("unexpected fetch");
     return next();
@@ -63,25 +69,13 @@ function fakeFetch(responses: (() => Response)[]) {
   return { impl, calls };
 }
 
-describe("parsing Gemini's retry hint", () => {
-  it("reads a protobuf duration", () => {
-    expect(parseDurationMs("16s")).toBe(16_000);
-    expect(parseDurationMs("1.5s")).toBe(1_500);
-    expect(parseDurationMs("16")).toBeNull();
-    expect(parseDurationMs(undefined)).toBeNull();
-  });
-  it("finds RetryInfo among the error details", () => {
-    const body = {
-      error: {
-        details: [
-          { "@type": "type.googleapis.com/google.rpc.QuotaFailure", violations: [] },
-          { "@type": "type.googleapis.com/google.rpc.RetryInfo", retryDelay: "16s" },
-        ],
-      },
-    };
-    expect(retryDelayFromBody(body)).toBe(16_000);
-    expect(retryDelayFromBody({ error: { details: [] } })).toBeNull();
-    expect(retryDelayFromBody(null)).toBeNull();
+describe("reading the server's retry hints", () => {
+  it("reads Retry-After as seconds or as an HTTP date", () => {
+    expect(retryAfterMs("16")).toBe(16_000);
+    expect(retryAfterMs("1.5")).toBe(1_500);
+    expect(retryAfterMs("Wed, 21 Oct 2015 07:28:10 GMT", Date.parse("Wed, 21 Oct 2015 07:28:00 GMT"))).toBe(10_000);
+    expect(retryAfterMs("soon")).toBeNull();
+    expect(retryAfterMs(null)).toBeNull();
   });
   it("backs off exponentially with jitter, capped at a minute", () => {
     expect(backoffMs(1, () => 0)).toBe(2_000);
@@ -91,27 +85,76 @@ describe("parsing Gemini's retry hint", () => {
   });
 });
 
-describe("planning batches under the token budget", () => {
+describe("planning batches", () => {
   it("estimates tokens conservatively (one per three characters)", () => {
     expect(estimateTokens("abc")).toBe(1);
     expect(estimateTokens("abcd")).toBe(2);
   });
-  it("splits on the budget and on the per-call cap", () => {
+  it("splits on the token cap and on the per-request text cap", () => {
     const texts = Array.from({ length: 10 }, () => "x".repeat(300)); // 100 tokens each
     expect(planBatches(texts, 250)).toEqual([[0, 1], [2, 3], [4, 5], [6, 7], [8, 9]]);
-    const many = Array.from({ length: BATCH_MAX_REQUESTS + 5 }, () => "x");
-    const b = planBatches(many, 1_000_000);
-    expect(b.map((x) => x.length)).toEqual([BATCH_MAX_REQUESTS, 5]);
+    const many = Array.from({ length: BATCH_MAX_TEXTS + 5 }, () => "x");
+    expect(planBatches(many, 1_000_000).map((x) => x.length)).toEqual([BATCH_MAX_TEXTS, 5]);
+  });
+  it("a course's 1,800-character chunks go about thirteen to a request under our own cap", async () => {
+    const clock = fakeClock();
+    const chunks = Array.from({ length: 30 }, () => "x".repeat(1800)); // 600 estimated tokens each
+    const { impl, calls } = fakeFetch([() => ok(13), () => ok(13), () => ok(4)]);
+    const out = await embedTexts(chunks, { apiKey: "k", fetchImpl: impl, sleep: clock.sleep, now: clock.now });
+    expect(out).toHaveLength(30);
+    expect(calls.map((c) => c.texts.length)).toEqual([13, 13, 4]);
+    for (const c of calls) expect(c.texts.reduce((s, t) => s + estimateTokens(t), 0)).toBeLessThanOrEqual(MAX_REQUEST_TOKENS);
   });
 });
 
-describe("embedTexts", () => {
-  it("waits the server's retryDelay on a 429 and retries the SAME batch", async () => {
+describe("embedTexts (Mistral)", () => {
+  it("posts the batch to Mistral with the key as a Bearer header, never in the URL", async () => {
     const clock = fakeClock();
-    const { impl, calls } = fakeFetch([() => rateLimited("16s"), () => ok(2)]);
+    const { impl, calls } = fakeFetch([() => ok(2)]);
+    await embedTexts(["alpha", "beta"], { apiKey: "test-key", fetchImpl: impl, sleep: clock.sleep, now: clock.now });
+    expect(calls[0].url).toBe("https://api.mistral.ai/v1/embeddings");
+    expect(EMBED_ENDPOINT).toBe(calls[0].url);
+    expect(calls[0].url).not.toContain("test-key");
+    expect((calls[0].init.headers as Record<string, string>).authorization).toBe("Bearer test-key");
+    expect(JSON.parse(String(calls[0].init.body))).toEqual({ model: "mistral-embed", input: ["alpha", "beta"] });
+  });
+
+  it("places vectors by the response's index, not its array order", async () => {
+    const clock = fakeClock();
+    const { impl } = fakeFetch([
+      () =>
+        new Response(
+          JSON.stringify({
+            data: [
+              { index: 1, embedding: vec().map(() => 1) },
+              { index: 0, embedding: vec().map(() => 0) },
+            ],
+          }),
+          { status: 200 },
+        ),
+    ]);
+    const out = await embedTexts(["a", "b"], { apiKey: "k", fetchImpl: impl, sleep: clock.sleep, now: clock.now });
+    expect(out[0][0]).toBe(0);
+    expect(out[1][0]).toBe(1);
+  });
+
+  it("refuses a vector that is not 1024 dimensions, and a count mismatch", async () => {
+    const clock = fakeClock();
+    expect(EMBED_DIMS).toBe(1024);
+    const a = fakeFetch([() => ok(1, {}, { dims: 768 })]);
+    await expect(embedTexts(["a"], { apiKey: "k", fetchImpl: a.impl, sleep: clock.sleep, now: clock.now })).rejects.toThrow(/dimension 768/);
+    const b = fakeFetch([() => ok(1)]);
+    await expect(embedTexts(["a", "b"], { apiKey: "k", fetchImpl: b.impl, sleep: clock.sleep, now: clock.now })).rejects.toThrow(
+      /1 embeddings for 2 texts/,
+    );
+  });
+
+  it("waits Retry-After on a 429 and retries the SAME batch", async () => {
+    const clock = fakeClock();
+    const { impl, calls } = fakeFetch([() => rateLimited("16"), () => ok(2)]);
     const progress: EmbedProgress[] = [];
     const out = await embedTexts(["alpha", "beta"], {
-      apiKey: "test-key",
+      apiKey: "k",
       fetchImpl: impl,
       sleep: clock.sleep,
       now: clock.now,
@@ -124,34 +167,22 @@ describe("embedTexts", () => {
     expect(progress.some((p) => p.kind === "wait-429" && p.message === "batch 1/1, rate limited, waiting 16 s (retry 1/8)")).toBe(true);
   });
 
-  it("with the real timer path (vitest fake timers), the retry does not fire before retryDelay", async () => {
+  it("with the real timer path (vitest fake timers), the retry does not fire before Retry-After", async () => {
     vi.useFakeTimers();
     try {
-      const { impl, calls } = fakeFetch([() => rateLimited("16s"), () => ok(1)]);
+      const { impl, calls } = fakeFetch([() => rateLimited("16"), () => ok(1)]);
       const done = embedTexts(["alpha"], { apiKey: "k", fetchImpl: impl });
       await vi.advanceTimersByTimeAsync(15_999);
       expect(calls).toHaveLength(1);
       await vi.advanceTimersByTimeAsync(1);
       await expect(done).resolves.toHaveLength(1);
       expect(calls).toHaveLength(2);
-      expect(calls[1].texts).toEqual(["alpha"]);
     } finally {
       vi.useRealTimers();
     }
   });
 
-  it("sends the key in a header, never in the URL, to the batch endpoint with 768 dimensions", async () => {
-    const clock = fakeClock();
-    const { impl, calls } = fakeFetch([() => ok(1)]);
-    await embedTexts(["alpha"], { apiKey: "test-key", fetchImpl: impl, sleep: clock.sleep, now: clock.now });
-    expect(calls[0].url).toBe("https://generativelanguage.googleapis.com/v1beta/models/gemini-embedding-001:batchEmbedContents");
-    expect(calls[0].url).not.toContain("test-key");
-    expect((calls[0].init.headers as Record<string, string>)["x-goog-api-key"]).toBe("test-key");
-    const body = JSON.parse(String(calls[0].init.body));
-    expect(body.requests[0]).toEqual({ model: "models/gemini-embedding-001", content: { parts: [{ text: "alpha" }] }, outputDimensionality: 768 });
-  });
-
-  it("backs off exponentially when the 429 names no retryDelay", async () => {
+  it("backs off exponentially when the 429 names no Retry-After", async () => {
     const clock = fakeClock();
     const { impl } = fakeFetch([() => rateLimited(), () => rateLimited(), () => ok(1)]);
     await embedTexts(["alpha"], { apiKey: "k", fetchImpl: impl, sleep: clock.sleep, now: clock.now, random: () => 0 });
@@ -160,52 +191,98 @@ describe("embedTexts", () => {
 
   it("gives up after the retry limit with a rate-limit error", async () => {
     const clock = fakeClock();
-    const { impl, calls } = fakeFetch(Array.from({ length: 4 }, () => () => rateLimited("1s")));
+    const { impl, calls } = fakeFetch(Array.from({ length: 4 }, () => () => rateLimited("1")));
     await expect(
       embedTexts(["alpha"], { apiKey: "k", fetchImpl: impl, sleep: clock.sleep, now: clock.now, maxRetries: 3 }),
     ).rejects.toBeInstanceOf(EmbedRateLimitError);
     expect(calls).toHaveLength(4);
   });
 
-  it("fails loudly on a non-429 error", async () => {
+  it("fails loudly on a non-429 error, and with no key", async () => {
     const clock = fakeClock();
     const { impl } = fakeFetch([() => new Response("bad request", { status: 400 })]);
     await expect(embedTexts(["alpha"], { apiKey: "k", fetchImpl: impl, sleep: clock.sleep, now: clock.now })).rejects.toThrow(/400/);
+    const saved = process.env.MISTRAL_API_KEY;
+    delete process.env.MISTRAL_API_KEY;
+    try {
+      await expect(embedTexts(["alpha"], { fetchImpl: impl })).rejects.toThrow("MISTRAL_API_KEY is not set.");
+    } finally {
+      if (saved !== undefined) process.env.MISTRAL_API_KEY = saved;
+    }
   });
 
-  it("waits at the minute boundary instead of exceeding the token budget", async () => {
+  it("paces requests under the per-minute request limit", async () => {
     const clock = fakeClock();
-    const texts = Array.from({ length: 4 }, () => "x".repeat(300)); // 100 tokens each
-    const { impl, calls } = fakeFetch([() => ok(2), () => ok(2)]);
+    const texts = Array.from({ length: 3 }, () => "x".repeat(300));
+    const { impl, calls } = fakeFetch([() => ok(1), () => ok(1), () => ok(1)]);
     const progress: EmbedProgress[] = [];
     await embedTexts(texts, {
       apiKey: "k",
       fetchImpl: impl,
       sleep: clock.sleep,
       now: clock.now,
-      tokensPerMinute: 200,
+      batchSize: 1,
+      requestsPerMinute: 2,
       onProgress: (p) => progress.push(p),
     });
-    expect(calls.map((c) => c.texts.length)).toEqual([2, 2]);
+    expect(calls).toHaveLength(3);
     expect(clock.sleeps).toEqual([60_000]);
-    expect(progress.find((p) => p.kind === "wait-budget")?.message).toBe("batch 2/2, waiting 60 s for the per-minute token budget");
+    expect(progress.find((p) => p.kind === "wait-budget")?.message).toBe("batch 3/3, waiting 60 s for the per-minute request budget");
   });
 
-  it("reads the budget and retry limit from the environment", async () => {
-    process.env.RAG_EMBED_TOKENS_PER_MINUTE = "200";
+  it("waits for the minute to turn when the server says no requests remain", async () => {
+    const clock = fakeClock();
+    const { impl, calls } = fakeFetch([() => ok(1, { "x-ratelimit-remaining-req-minute": "0" }), () => ok(1)]);
+    const progress: EmbedProgress[] = [];
+    await embedTexts(["a", "b"], {
+      apiKey: "k",
+      fetchImpl: impl,
+      sleep: clock.sleep,
+      now: clock.now,
+      batchSize: 1,
+      onProgress: (p) => progress.push(p),
+    });
+    expect(calls).toHaveLength(2);
+    expect(clock.sleeps).toEqual([60_000]);
+    expect(progress.find((p) => p.kind === "wait-budget")?.message).toContain("the server's per-minute limit");
+  });
+
+  it("an optional token budget still paces at the minute boundary", async () => {
+    const clock = fakeClock();
+    const texts = Array.from({ length: 4 }, () => "x".repeat(300)); // 100 tokens each
+    const { impl, calls } = fakeFetch([() => ok(2), () => ok(2)]);
+    await embedTexts(texts, { apiKey: "k", fetchImpl: impl, sleep: clock.sleep, now: clock.now, tokensPerMinute: 200 });
+    expect(calls.map((c) => c.texts.length)).toEqual([2, 2]);
+    expect(clock.sleeps).toEqual([60_000]);
+  });
+
+  it("reads the request limit and retry limit from the environment", async () => {
+    process.env.RAG_EMBED_REQUESTS_PER_MINUTE = "1";
     process.env.RAG_EMBED_MAX_RETRIES = "1";
     try {
       const clock = fakeClock();
-      const { impl, calls } = fakeFetch([() => rateLimited("1s"), () => rateLimited("1s")]);
+      const { impl, calls } = fakeFetch([() => ok(1), () => rateLimited("1"), () => rateLimited("1")]);
       await expect(
-        embedTexts(["x".repeat(300), "x".repeat(300), "x".repeat(300)], { apiKey: "k", fetchImpl: impl, sleep: clock.sleep, now: clock.now }),
+        embedTexts(["a", "b"], { apiKey: "k", fetchImpl: impl, sleep: clock.sleep, now: clock.now, batchSize: 1 }),
       ).rejects.toBeInstanceOf(EmbedRateLimitError);
-      expect(calls[0].texts).toHaveLength(2); // the 200-token budget split the three texts
-      expect(calls).toHaveLength(2); // one try plus one retry
+      expect(clock.sleeps[0]).toBe(60_000); // one request a minute
+      expect(calls).toHaveLength(3); // the first batch, then one try plus one retry on the second
     } finally {
-      delete process.env.RAG_EMBED_TOKENS_PER_MINUTE;
+      delete process.env.RAG_EMBED_REQUESTS_PER_MINUTE;
       delete process.env.RAG_EMBED_MAX_RETRIES;
     }
+  });
+
+  it("embedQuery embeds one question with the same model and retries a 429 at most twice", async () => {
+    const clock = fakeClock();
+    const { impl, calls } = fakeFetch([() => rateLimited("1"), () => rateLimited("1"), () => rateLimited("1")]);
+    await expect(embedQuery("why the grid?", { apiKey: "k", fetchImpl: impl, sleep: clock.sleep, now: clock.now })).rejects.toBeInstanceOf(
+      EmbedRateLimitError,
+    );
+    expect(calls).toHaveLength(3);
+    expect(calls[0].model).toBe("mistral-embed");
+    const ok1 = fakeFetch([() => ok(1)]);
+    expect(await embedQuery("q", { apiKey: "k", fetchImpl: ok1.impl, sleep: clock.sleep, now: clock.now })).toHaveLength(1024);
   });
 });
 
@@ -233,7 +310,7 @@ describe("the course content hash", () => {
     expect(courseRagContentHash([...lessons, { title: "Empty", body: "" }], [...sources, { apa: "", inText: "" }])).toBe(a);
   });
   it("names the model, dimensions and chunking in its header", () => {
-    expect(RAG_HASH_HEADER).toBe("rag-v1|gemini-embedding-001|768|1800/200");
+    expect(RAG_HASH_HEADER).toBe("rag-v1|mistral-embed|1024|1800/200");
   });
   it("the SQL computes the same algorithm (md5 fingerprints, byte-order sort, sha256 over header and lines)", () => {
     const code = readFileSync(join(process.cwd(), "src/lib/rag/index-course.ts"), "utf8");
@@ -304,6 +381,24 @@ describe("indexCourse rebuild rules (static, no database)", () => {
     expect(tx).toContain("tx\n      .delete(schema.sourceChunks)");
     expect(tx).toContain("tx.insert(schema.sourceChunks)");
     expect(tx).toContain("insert(schema.courseRagIndex)");
+  });
+  it("writes and reads only the 1024-dim column; the legacy Gemini column is left alone", () => {
+    expect(code).toContain("embeddingV2: vectors[i]");
+    expect(code).not.toMatch(/\bembedding: vectors/);
+    const q = readFileSync(join(process.cwd(), "src/db/queries/source-chunks.ts"), "utf8");
+    expect(q).toContain("${sourceChunks.embeddingV2} <=> ${vec}::vector");
+    expect(q).not.toContain("${sourceChunks.embedding} <=>");
+    // The question is embedded with the index's model, never with CYOA's Gemini embedder.
+    const chat = readFileSync(join(process.cwd(), "src/lib/ai/source-chat.ts"), "utf8");
+    expect(chat).toContain("await embedQuery(question)");
+    expect(chat).not.toMatch(/from "\.\/embeddings"/);
+  });
+  it("the migration is additive and indexes the new column by hand", () => {
+    const m = readFileSync(join(process.cwd(), "src/db/migrations/0076_rag_mistral_embedding_v2.sql"), "utf8");
+    expect(m).toContain('ADD COLUMN IF NOT EXISTS "embedding_v2" vector(1024)');
+    expect(m).toContain('USING hnsw ("embedding_v2" vector_cosine_ops)');
+    const statements = m.split("\n").filter((l) => !l.trim().startsWith("--")).join("\n");
+    expect(statements).not.toMatch(/\bDROP\b/i);
   });
   it("needs no server-only import, so tsx scripts can run it", () => {
     expect(code).not.toMatch(/import\s+["']server-only["']/);

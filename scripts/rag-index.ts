@@ -1,8 +1,8 @@
 // rag:index: build the retrieval corpus for "chat with the sources" (plans/future/17), a thin CLI over
 // indexCourse in src/lib/rag/index-course.ts (the post-merge workflow and the admin page call the same
-// function). Embeddings are batched under a per-minute token budget and retried on Gemini 429s
-// (src/lib/rag/embed-batch.ts), so a course larger than the free tier's 30,000 tokens a minute
-// finishes instead of failing every time.
+// function). Embeddings are Mistral's mistral-embed (1024 dimensions, since migration 0076), batched,
+// paced under a per-minute request limit and retried on 429s (src/lib/rag/embed-batch.ts). The admin
+// page /admin/rag runs the same indexer per course.
 //
 //   pnpm rag:index --course hoodoo-tradition-of-resistance
 //   pnpm rag:index --course <slug> --source-url https://archive.org/stream/…_djvu.txt   # also ingest a public-domain text
@@ -11,8 +11,8 @@
 //   pnpm rag:index --courses-file changed.json             # [{ "tenantSlug": "...", "courseSlug": "..." }]
 //   pnpm rag:index --needing [--changed-only]              # never indexed or changed since (rag:list shows them)
 //
-// Needs GOOGLE_GEMINI_API_KEY and the DB url. Optional: RAG_EMBED_TOKENS_PER_MINUTE (default 25000),
-// RAG_EMBED_MAX_RETRIES (default 8). Attempts every course, then exits 1 if any failed.
+// Needs MISTRAL_API_KEY and the DB url. Optional: RAG_EMBED_REQUESTS_PER_MINUTE (default 60),
+// RAG_EMBED_TOKENS_PER_MINUTE (no default), RAG_EMBED_MAX_RETRIES (default 8). Attempts every course, then exits 1 if any failed.
 
 import { readFileSync } from "node:fs";
 import { neonConfig, Pool } from "@neondatabase/serverless";

@@ -18,7 +18,9 @@ describe("seed-production.yml", () => {
   it("never cancels a run and fails closed on each missing secret", () => {
     expect(wf).toMatch(/concurrency:\n {2}group: seed-production\n(?: {2}#.*\n)* {2}cancel-in-progress: false/);
     expect(wf).toContain("::error::Set the repository secret NEON_DIRECT_URL");
-    expect(wf).toContain("::error::Set the repository secret GOOGLE_GEMINI_API_KEY");
+    expect(wf).toContain("::error::Set the repository secret MISTRAL_API_KEY");
+    // Embeddings moved to Mistral in migration 0076: the Gemini secret is no longer read.
+    expect(wf).not.toContain("GOOGLE_GEMINI_API_KEY");
   });
   it("waits for the migration, migrates, seeds with a report, then indexes the seeded courses", () => {
     const jobs = wf.slice(wf.indexOf("\njobs:"));

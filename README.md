@@ -644,6 +644,13 @@ edit** (quiet until the course file changes again) or **Take the course file's v
 This made `seed:courses` and the RAG index safe to automate:
 [.github/workflows/seed-production.yml](.github/workflows/seed-production.yml) (OPERATING.md 3b).
 
+**The "chat with the sources" index** (`source_chunks`, `course_rag_index`) embeds with Mistral's
+`mistral-embed` (1024 dimensions, `source_chunks.embedding_v2`, migration 0076; it was Gemini 768 until
+2026-11-02). The question is embedded with the same model. **`/admin/rag`** (platform owner) lists every
+course never indexed or changed since, with **Run** per course and **Run all**, which calls
+`POST /api/admin/rag/index` once per course from the browser. `pnpm rag:index` and the seed workflow use
+the same `indexCourse`. Needs `MISTRAL_API_KEY` (OPERATING.md 5a).
+
 ## Launch to-do list and release follow-ups (`course_launch_todos`, `course_release_followups`)
 
 A course that is ready is not the same as a course that is launched: the blog post that announces it,

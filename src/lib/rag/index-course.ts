@@ -1,7 +1,9 @@
 // Build (or rebuild) one course's "chat with the sources" index, and list the courses that need one.
 // plans/97 Q5 and the 2026-11-01 Gemini 429 report: the CLI (scripts/rag-index.ts), the post-merge
-// workflow, and a future admin page (a list with a button per course and a Run all button) all call
-// THESE two functions, so there is one indexer.
+// workflow, and the admin page /admin/rag (a list with a button per course and a Run all button) all
+// call THESE two functions, so there is one indexer. Embeddings are mistral-embed (1024 dimensions)
+// in `source_chunks.embedding_v2` since migration 0076; the legacy Gemini `embedding` column is
+// neither written nor read here.
 //
 // Runs from the app and from tsx scripts alike: no `server-only` import, and no database client at
 // module load. Pass `db` (a scripts' own neon-serverless drizzle instance, or `db` from
@@ -14,9 +16,12 @@
 //      chunks only when a new `sourceUrl` is given, since an automated re-index has no URL and must
 //      not drop a full text someone ingested by hand), insert the new chunks, and upsert
 //      course_rag_index (content_hash, indexed_at, chunk_count).
+//   Kept public-domain chunks that predate 0076 have no `embedding_v2`, so retrieval would skip them;
+//   step 2 embeds their stored text too and step 3 fills `embedding_v2` in place (the text is not
+//   fetched again).
 // Tenant- and course-scoped like every source_chunks row (isolation invariant).
 
-import { and, eq, inArray, ne, sql } from "drizzle-orm";
+import { and, eq, inArray, isNull, ne, notInArray, sql } from "drizzle-orm";
 import type { NeonDatabase } from "drizzle-orm/neon-serverless";
 import * as schema from "@/db/schema";
 import { embedTexts, type EmbedProgress, type EmbedTextsOptions } from "./embed-batch";
@@ -36,7 +41,7 @@ export type EmbedFn = (texts: string[], opts: Pick<EmbedTextsOptions, "onProgres
 export interface IndexCourseOptions {
   onProgress?: (p: IndexProgress) => void;
   db?: RagDb;
-  /** Replace the embedder (tests); defaults to the throttled Gemini batch embedder. */
+  /** Replace the embedder (tests); defaults to the throttled Mistral batch embedder. */
   embed?: EmbedFn;
   /** Also ingest (and replace) a PUBLIC-DOMAIN full text from this URL. */
   sourceUrl?: string;
@@ -54,6 +59,8 @@ export interface IndexCourseResult {
   /** New public-domain chunks (with sourceUrl) or the ones kept from before (without). */
   publicDomainChunks: number;
   publicDomainKept: boolean;
+  /** Kept public-domain chunks that had no 1024-dim vector yet and were embedded in this run. */
+  publicDomainReembedded: number;
 }
 
 export interface CourseNeedingIndex {
@@ -121,6 +128,21 @@ export async function findCoursesBySlug(
   return rows.map((r) => ({ ...r, courseSlug: slug }));
 }
 
+/** One course by id, with its school's slug, or null (the admin page's Run button sends an id). */
+export async function findCourseById(
+  courseId: string,
+  opts: { db?: RagDb } = {},
+): Promise<{ courseId: string; tenantSlug: string; courseSlug: string | null; title: string } | null> {
+  const db = await resolveDb(opts.db);
+  const [row] = await db
+    .select({ courseId: schema.courses.id, tenantSlug: schema.tenants.slug, courseSlug: schema.courses.slug, title: schema.courses.title })
+    .from(schema.courses)
+    .innerJoin(schema.tenants, eq(schema.tenants.id, schema.courses.tenantId))
+    .where(eq(schema.courses.id, courseId))
+    .limit(1);
+  return row ?? null;
+}
+
 /**
  * Rebuild one course's index. `tenantSlug` is required only when the slug exists in more than one
  * school; the error says so. Throws on any failure, leaving the old index in place.
@@ -184,13 +206,30 @@ export async function indexCourse(slug: string, tenantSlug?: string, opts: Index
     });
   }
 
-  say(`embedding ${pending.length} chunks (${lessonChunks} lesson, ${citationChunks} citation, ${publicDomainChunks} public-domain)`);
-  const embed: EmbedFn = opts.embed ?? ((texts, o) => embedTexts(texts, o));
-  const vectors = await embed(
-    pending.map((p) => p.text),
-    { onProgress: (e) => say(e.message, e) },
+  // Kept public-domain chunks (no new sourceUrl) still missing a 1024-dim vector: embed their stored text.
+  const stalePublicDomain = opts.sourceUrl
+    ? []
+    : await db
+        .select({ id: schema.sourceChunks.id, text: schema.sourceChunks.text })
+        .from(schema.sourceChunks)
+        .where(
+          and(
+            eq(schema.sourceChunks.courseId, course.courseId),
+            notInArray(schema.sourceChunks.kind, ["lesson", "citation"]),
+            isNull(schema.sourceChunks.embeddingV2),
+          ),
+        );
+
+  say(
+    `embedding ${pending.length + stalePublicDomain.length} chunks (${lessonChunks} lesson, ${citationChunks} citation, ` +
+      `${publicDomainChunks + stalePublicDomain.length} public-domain)`,
   );
-  if (vectors.length !== pending.length) throw new Error(`Embedder returned ${vectors.length} vectors for ${pending.length} chunks.`);
+  const embed: EmbedFn = opts.embed ?? ((texts, o) => embedTexts(texts, o));
+  const allTexts = [...pending.map((p) => p.text), ...stalePublicDomain.map((c) => c.text)];
+  const allVectors = await embed(allTexts, { onProgress: (e) => say(e.message, e) });
+  if (allVectors.length !== allTexts.length) throw new Error(`Embedder returned ${allVectors.length} vectors for ${allTexts.length} chunks.`);
+  const vectors = allVectors.slice(0, pending.length);
+  const staleVectors = allVectors.slice(pending.length);
 
   // 3) Swap the index in one transaction.
   const keptPublicDomain = await db.transaction(async (tx) => {
@@ -198,8 +237,15 @@ export async function indexCourse(slug: string, tenantSlug?: string, opts: Index
     await tx
       .delete(schema.sourceChunks)
       .where(and(eq(schema.sourceChunks.courseId, course.courseId), inArray(schema.sourceChunks.kind, replaceKinds)));
-    const rows: Row[] = pending.map((p, i) => ({ ...p.row, embedding: vectors[i] }));
+    // New rows carry ONLY the 1024-dim vector; the legacy `embedding` column stays NULL.
+    const rows: Row[] = pending.map((p, i) => ({ ...p.row, embeddingV2: vectors[i] }));
     for (let i = 0; i < rows.length; i += 100) await tx.insert(schema.sourceChunks).values(rows.slice(i, i + 100));
+    for (const [i, c] of stalePublicDomain.entries()) {
+      await tx
+        .update(schema.sourceChunks)
+        .set({ embeddingV2: staleVectors[i] })
+        .where(and(eq(schema.sourceChunks.id, c.id), eq(schema.sourceChunks.courseId, course.courseId)));
+    }
     const kept = opts.sourceUrl
       ? 0
       : (
@@ -229,6 +275,7 @@ export async function indexCourse(slug: string, tenantSlug?: string, opts: Index
     citationChunks,
     publicDomainChunks: opts.sourceUrl ? publicDomainChunks : keptPublicDomain,
     publicDomainKept: !opts.sourceUrl && keptPublicDomain > 0,
+    publicDomainReembedded: stalePublicDomain.length,
   };
   say(
     `indexed ${lessonChunks} lesson, ${citationChunks} citation, ${result.publicDomainChunks} public-domain chunks` +
@@ -266,12 +313,35 @@ export async function listCourseIndexStates(opts: { db?: RagDb } = {}): Promise<
     db.execute(contentHashQuery()),
     db.selectDistinct({ courseId: schema.sourceChunks.courseId }).from(schema.sourceChunks),
   ]);
-  const hashOf = new Map(
-    (hashRows(hashes.rows)).map((r) => [r.course_id, r] as const),
-  );
-  const hasChunks = new Set(chunkCourses.map((c) => c.courseId));
+  return buildIndexStates(courses, hashRows(hashes.rows), chunkCourses.map((c) => c.courseId));
+}
+
+/** One course row as listCourseIndexStates reads it (courses joined to tenants and course_rag_index). */
+export interface IndexStateCourseRow {
+  courseId: string;
+  courseSlug: string | null;
+  title: string;
+  tenantSlug: string;
+  tenantName: string;
+  isPublished: boolean;
+  indexedHash: string | null;
+  indexedAt: Date | null;
+  chunkCount: number | null;
+}
+
+/**
+ * PURE: join the course rows, today's content hashes (contentHashQuery) and the courses that have any
+ * chunk into one state per course with a slug, sorted by school then title. Unit-tested.
+ */
+export function buildIndexStates(
+  courses: readonly IndexStateCourseRow[],
+  hashes: readonly { course_id: string; items: number; content_hash: string }[],
+  chunkCourseIds: readonly string[],
+): CourseIndexState[] {
+  const hashOf = new Map(hashes.map((r) => [r.course_id, r] as const));
+  const hasChunks = new Set(chunkCourseIds);
   return courses
-    .filter((c): c is typeof c & { courseSlug: string } => Boolean(c.courseSlug))
+    .filter((c): c is IndexStateCourseRow & { courseSlug: string } => Boolean(c.courseSlug))
     .map((c) => {
       const h = hashOf.get(c.courseId);
       return {
@@ -318,7 +388,11 @@ export function classifyIndexState(i: {
 
 /** The courses an admin page or the workflow should index: never indexed, or changed since. */
 export async function listCoursesNeedingIndex(opts: { db?: RagDb } = {}): Promise<CourseNeedingIndex[]> {
-  const states = await listCourseIndexStates(opts);
+  return needingIndex(await listCourseIndexStates(opts));
+}
+
+/** PURE: the states that need an index run (never indexed, or changed since), as the list the CLI uses. */
+export function needingIndex(states: readonly CourseIndexState[]): CourseNeedingIndex[] {
   return states
     .filter((s) => s.state === "never" || s.state === "changed")
     .map((s) => ({

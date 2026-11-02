@@ -8,8 +8,12 @@ import { tenants } from "./tenancy";
 // Retrieval corpus for the per-course "chat with the sources" feature (plans/future/17). Each row is
 // an embedded chunk of either a lesson body, a public-domain source's full text, or a bibliography
 // citation. TENANT- and COURSE-scoped so retrieval never crosses tenants/courses (isolation invariant).
-// 768-dim to match the Gemini embeddings used elsewhere (lesson_embeddings). The hnsw cosine index is
-// added by hand in the migration (like lesson_embeddings), since drizzle-kit doesn't emit vector indexes.
+// `embedding` (768-dim Gemini, migration 0026) is LEGACY: written and read by code before migration
+// 0076 only. Since 0076 the indexer writes and retrieval reads `embedding_v2` (1024-dim mistral-embed,
+// src/lib/rag/embed-batch.ts), and a row with no `embedding_v2` is simply not returned. Keeping both
+// columns lets the deployed code keep answering while the migration and the re-index run; a later
+// cleanup migration drops `embedding` (plans/99-rag-embedding-v1-cleanup.md). The hnsw cosine indexes
+// are added by hand in the migrations (like lesson_embeddings), since drizzle-kit doesn't emit them.
 export const sourceChunks = pgTable(
   "source_chunks",
   {
@@ -26,7 +30,10 @@ export const sourceChunks = pgTable(
     kind: text("kind").notNull(),
     title: text("title"),
     text: text("text").notNull(),
+    /** LEGACY 768-dim Gemini vector; nothing since 0076 writes or reads it. Dropped by a later migration. */
     embedding: vector("embedding", { dimensions: 768 }),
+    /** 1024-dim mistral-embed vector (migration 0076). NULL until the course is re-indexed. */
+    embeddingV2: vector("embedding_v2", { dimensions: 1024 }),
     ord: integer("ord").notNull().default(0),
     createdAt: timestamp("created_at", { withTimezone: true }).notNull().defaultNow(),
   },
