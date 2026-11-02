@@ -186,13 +186,15 @@ export async function setCourseAuditorCredit(
   tenantId: string,
   courseId: string,
   auditorId: string,
-  credit: { reviewerName: string | null; reviewerCredential: string | null },
+  credit: { reviewerName: string | null; reviewerCredential: string | null; credentialEvidenceUrl?: string | null },
 ): Promise<CourseAuditor | null> {
   const [row] = await db
     .update(courseAuditors)
     .set({
       reviewerName: credit.reviewerName?.trim() || null,
       reviewerCredential: credit.reviewerCredential?.trim() || null,
+      // Undefined leaves the evidence link as it is: only the owner or a school admin sends it.
+      ...(credit.credentialEvidenceUrl !== undefined ? { credentialEvidenceUrl: credit.credentialEvidenceUrl } : {}),
     })
     .where(
       and(

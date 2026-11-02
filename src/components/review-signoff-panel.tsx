@@ -38,6 +38,7 @@ export function ReviewSignoffPanel({
   canRelease,
   launchTodos,
   holdReason,
+  evidenceByAuditor,
 }: {
   courseId: string;
   lessons: SignoffLesson[];
@@ -49,6 +50,8 @@ export function ReviewSignoffPanel({
   holdReason: string | null;
   /** The course's launch to-do list, shown as a warning before the hold is released. */
   launchTodos?: LaunchTodo[];
+  /** Credential evidence links by grant id; passed only to the owner and school admin (plans/97 v2 Q2). */
+  evidenceByAuditor?: Record<string, string>;
 }) {
   return (
     <section aria-labelledby="review-signoff-heading" className="rounded-lg border border-neutral-200 p-4 dark:border-neutral-800">
@@ -103,6 +106,20 @@ export function ReviewSignoffPanel({
                       <span className="block text-neutral-600 dark:text-neutral-400">
                         {r.review.reviewerName}, {r.review.reviewerCredential}, {fmt(r.review.decidedAt)}
                         {r.review.correctionAppliedAt ? `, correction applied ${fmt(r.review.correctionAppliedAt)}` : ""}
+                        {r.review.auditorId && evidenceByAuditor?.[r.review.auditorId] ? (
+                          <>
+                            {" "}
+                            <a
+                              href={evidenceByAuditor[r.review.auditorId]}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="underline"
+                              style={{ color: "var(--accent)" }}
+                            >
+                              Credential evidence<span className="sr-only"> for {r.review.reviewerName} (opens in a new tab)</span>
+                            </a>
+                          </>
+                        ) : null}
                       </span>
                     ) : null}
                     {r.state === "pending_correction" && r.review?.correction ? (

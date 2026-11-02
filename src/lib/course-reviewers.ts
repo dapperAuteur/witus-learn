@@ -29,3 +29,20 @@ export async function canManageCourseReviewers(
   if (course.ownerOnly) return false;
   return isTenantAdmin(session, tenantId);
 }
+
+/**
+ * Who may set and see a reviewer's credential EVIDENCE link (plans/97 v2 Q2: "owner-only"): the
+ * platform owner, and the school's admin on a course that is not owner-only. Narrower than
+ * canManageCourseReviewers on purpose: the course's own instructor credits a reviewer but does not
+ * vet the credential. The link is never shown on a public lesson and never copied into a verdict.
+ */
+export async function canSeeReviewerEvidence(
+  session: Session | null,
+  tenantId: string,
+  course: { ownerOnly: boolean },
+): Promise<boolean> {
+  if (!session) return false;
+  if (await isPlatformOwner(session.user.id)) return true;
+  if (course.ownerOnly) return false;
+  return isTenantAdmin(session, tenantId);
+}

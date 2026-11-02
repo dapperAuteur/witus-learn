@@ -74,7 +74,7 @@ describe("reviewer sign-off is tenant-scoped end to end", () => {
     const r = src("src/app/api/courses/[id]/auditors/[auditorId]/route.ts");
     const patch = r.slice(r.indexOf("export async function PATCH"), r.indexOf("export async function DELETE"));
     expect(patch).toContain("canManageCourseReviewers");
-    expect(patch).toContain("sdb.setCourseAuditorCredit(course.id, auditorId, parsed.data)");
+    expect(patch).toContain("sdb.setCourseAuditorCredit(course.id, auditorId, {");
   });
 
   it("the seeder parses the markers and rewrites review_needs on every seed", () => {

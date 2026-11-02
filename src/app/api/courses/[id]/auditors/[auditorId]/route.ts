@@ -1,7 +1,7 @@
 import { z } from "zod";
 import { apiContext, errorJson, json } from "@/lib/api";
-import { canManageCourseReviewers } from "@/lib/course-reviewers";
-import { REVIEWER_CREDENTIAL_MAX, REVIEWER_NAME_MAX } from "@/lib/lesson-review";
+import { canManageCourseReviewers, canSeeReviewerEvidence } from "@/lib/course-reviewers";
+import { REVIEWER_CREDENTIAL_MAX, REVIEWER_NAME_MAX, normalizeEvidenceUrl } from "@/lib/lesson-review";
 
 type Params = { params: Promise<{ id: string; auditorId: string }> };
 
@@ -13,6 +13,8 @@ type Params = { params: Promise<{ id: string; auditorId: string }> };
 const Credit = z.object({
   reviewerName: z.string().max(REVIEWER_NAME_MAX).nullable(),
   reviewerCredential: z.string().max(REVIEWER_CREDENTIAL_MAX).nullable(),
+  /** Optional evidence link (plans/97 v2 Q2). Only the owner or a school admin may send it. */
+  credentialEvidenceUrl: z.string().nullable().optional(),
 });
 
 export async function PATCH(req: Request, { params }: Params) {
@@ -34,8 +36,21 @@ export async function PATCH(req: Request, { params }: Params) {
     );
   }
 
+  const evidence = await canSeeReviewerEvidence(session, sdb.tenantId, course);
+  let credentialEvidenceUrl: string | null | undefined = undefined;
+  if (parsed.data.credentialEvidenceUrl !== undefined) {
+    if (!evidence) return errorJson("Only the platform owner or a school admin can set an evidence link.", 403);
+    const checked = normalizeEvidenceUrl(parsed.data.credentialEvidenceUrl);
+    if (!checked.ok) return errorJson(checked.error, 400);
+    credentialEvidenceUrl = checked.url;
+  }
+
   // Scoped by tenant AND course, like revoke: an id from another school or course updates nothing.
-  const updated = await sdb.setCourseAuditorCredit(course.id, auditorId, parsed.data);
+  const updated = await sdb.setCourseAuditorCredit(course.id, auditorId, {
+    reviewerName: parsed.data.reviewerName,
+    reviewerCredential: parsed.data.reviewerCredential,
+    credentialEvidenceUrl,
+  });
   if (!updated) return errorJson("Not found", 404);
   return json({
     auditor: {
@@ -45,6 +60,7 @@ export async function PATCH(req: Request, { params }: Params) {
       acceptedAt: updated.acceptedAt,
       reviewerName: updated.reviewerName,
       reviewerCredential: updated.reviewerCredential,
+      ...(evidence ? { credentialEvidenceUrl: updated.credentialEvidenceUrl } : {}),
     },
   });
 }

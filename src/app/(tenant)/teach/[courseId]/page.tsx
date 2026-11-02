@@ -313,7 +313,11 @@ export default async function ManageCoursePage({ params }: { params: Promise<{ c
             acceptedAt: a.acceptedAt,
             reviewerName: a.reviewerName,
             reviewerCredential: a.reviewerCredential,
+            // Owner and school admin only (canSeeReviewerEvidence: isAdmin here, since a brand_admin
+            // never reaches an owner-only course's page).
+            ...(isAdmin ? { credentialEvidenceUrl: a.credentialEvidenceUrl } : {}),
           }))}
+          canSetEvidence={isAdmin}
         />
 
         {signoffLessons.length > 0 ? (
@@ -325,6 +329,13 @@ export default async function ManageCoursePage({ params }: { params: Promise<{ c
             canRelease={isAdmin}
             holdReason={course.publishHoldReason}
             launchTodos={launchTodos}
+            evidenceByAuditor={
+              isAdmin
+                ? Object.fromEntries(
+                    auditors.filter((a) => a.credentialEvidenceUrl).map((a) => [a.id, a.credentialEvidenceUrl as string]),
+                  )
+                : undefined
+            }
           />
         ) : null}
 

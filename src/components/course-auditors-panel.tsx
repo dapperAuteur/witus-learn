@@ -10,6 +10,8 @@ export interface AuditorRow {
   /** How this reviewer is credited on a lesson they clear (reviewer sign-off). Set here, by the inviter. */
   reviewerName?: string | null;
   reviewerCredential?: string | null;
+  /** Owner and school admin only (plans/97 v2 Q2); never sent to the course's instructor. */
+  credentialEvidenceUrl?: string | null;
 }
 
 const fmt = (d: string | Date) =>
@@ -27,10 +29,13 @@ export function CourseAuditorsPanel({
   courseId,
   initial,
   isUnvetted,
+  canSetEvidence = false,
 }: {
   courseId: string;
   initial: AuditorRow[];
   isUnvetted: boolean;
+  /** The platform owner or this school's admin: may add a credential evidence link. */
+  canSetEvidence?: boolean;
 }) {
   const [rows, setRows] = useState<AuditorRow[]>(initial);
   const [email, setEmail] = useState("");
@@ -162,7 +167,7 @@ export function CourseAuditorsPanel({
                   Remove
                 </button>
               </div>
-              <ReviewerCredit courseId={courseId} row={r} onSaved={credited} />
+              <ReviewerCredit courseId={courseId} row={r} onSaved={credited} canSetEvidence={canSetEvidence} />
             </li>
           ))}
         </ul>
@@ -176,13 +181,16 @@ function ReviewerCredit({
   courseId,
   row,
   onSaved,
+  canSetEvidence,
 }: {
   courseId: string;
   row: AuditorRow;
   onSaved: (r: AuditorRow) => void;
+  canSetEvidence: boolean;
 }) {
   const [name, setName] = useState(row.reviewerName ?? "");
   const [credential, setCredential] = useState(row.reviewerCredential ?? "");
+  const [evidence, setEvidence] = useState(row.credentialEvidenceUrl ?? "");
   const [busy, setBusy] = useState(false);
   const [message, setMessage] = useState<string | null>(null);
   const isSet = Boolean(row.reviewerName?.trim() && row.reviewerCredential?.trim());
@@ -195,7 +203,11 @@ function ReviewerCredit({
       const res = await fetch(`/api/courses/${courseId}/auditors/${row.id}`, {
         method: "PATCH",
         headers: { "content-type": "application/json" },
-        body: JSON.stringify({ reviewerName: name, reviewerCredential: credential }),
+        body: JSON.stringify({
+          reviewerName: name,
+          reviewerCredential: credential,
+          ...(canSetEvidence ? { credentialEvidenceUrl: evidence } : {}),
+        }),
       });
       const data = await res.json().catch(() => ({}));
       if (!res.ok) {
@@ -241,6 +253,28 @@ function ReviewerCredit({
             className="min-h-11 w-full rounded-md border border-neutral-300 px-3 py-2 dark:border-neutral-700 dark:bg-neutral-900"
           />
         </div>
+        {canSetEvidence ? (
+          <div className="sm:col-span-2">
+            <label htmlFor={`credit-evidence-${row.id}`} className="block text-xs font-medium">
+              Evidence link (optional)
+            </label>
+            <input
+              id={`credit-evidence-${row.id}`}
+              type="url"
+              inputMode="url"
+              value={evidence}
+              maxLength={500}
+              placeholder="https://"
+              onChange={(e) => setEvidence(e.target.value)}
+              aria-describedby={`credit-evidence-help-${row.id}`}
+              className="min-h-11 w-full rounded-md border border-neutral-300 px-3 py-2 dark:border-neutral-700 dark:bg-neutral-900"
+            />
+            <p id={`credit-evidence-help-${row.id}`} className="mt-1 text-xs text-neutral-600 dark:text-neutral-400">
+              A license lookup or professional profile that backs the credential. Only the platform owner and school
+              admins see it; learners never do.
+            </p>
+          </div>
+        ) : null}
         <button
           type="submit"
           disabled={busy}

@@ -21,6 +21,8 @@ import { lessonReviewHash } from "@/lib/lesson-review-hash";
 /** A stored verdict, reduced to what a screen may show. */
 export interface StoredReview {
   needKind: string;
+  /** The grant it was recorded under (null for the owner's own P verdict, or once revoked). */
+  auditorId?: string | null;
   verdict: Verdict | string;
   reviewerUserId: string | null;
   reviewerName: string;
