@@ -73,8 +73,7 @@ export default async function AuditReviewPage() {
 
       {grants.length === 0 ? (
         <p className="mt-8 rounded-md border border-neutral-200 p-4 text-sm dark:border-neutral-800">
-          You do not have an accepted invitation to review any course on this site yet. If you were sent an invitation link,
-          open it first and it will bring you back here.
+          You have no courses to review. Open the invitation link you were sent; it brings you back here.
         </p>
       ) : (
         grants.map((g) => {

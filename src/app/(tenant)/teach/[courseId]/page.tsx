@@ -326,6 +326,16 @@ export default async function ManageCoursePage({ params }: { params: Promise<{ c
             holdReason={course.publishHoldReason}
             launchTodos={launchTodos}
           />
+        ) : course.publishHoldReason ? (
+          // Plans/97 v2 empty state: a held course with no "Before release" markers clears by hand.
+          <section aria-labelledby="review-signoff-heading" className="rounded-lg border border-neutral-200 p-4 dark:border-neutral-800">
+            <h2 id="review-signoff-heading" className="font-semibold">
+              Reviewer sign-off
+            </h2>
+            <p className="mt-1 text-sm text-neutral-600 dark:text-neutral-400">
+              This course has no lessons marked for review. Clear its hold by hand.
+            </p>
+          </section>
         ) : null}
 
         <LinkUsagePanel rows={linkUsage} />
