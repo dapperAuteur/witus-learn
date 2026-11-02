@@ -3,7 +3,9 @@
 import { useState } from "react";
 import Link from "next/link";
 import type { ProjectLeg } from "@/db/schema/field-log";
-import { TOUR_CREDIT_MAX } from "@/lib/field-log-tour";
+import { PEOPLE_ATTESTATION_LABEL, TOUR_CREDIT_MAX } from "@/lib/field-log-tour";
+import { capture } from "@/lib/analytics/capture";
+import { EVENTS } from "@/lib/analytics/events";
 import { apiRequest, patchJson, postJson } from "./client";
 
 // "Use in a lesson" (plans/93 section 2, tours from the field): put one of this leg's photos or
@@ -28,12 +30,18 @@ type TargetCapture = {
   kind: string;
   subject: string | null;
   storageUrl: string | null;
+  projection: string | null;
   eligible: boolean;
   reason: string | null;
   credit: string;
 };
 type Targets = { slots: Slot[]; suggestedLessonId: string | null; captures: TargetCapture[]; permissionNote: string | null };
-type Published = { lessonTitle: string; courseTitle: string; href: string | null };
+type Published = {
+  lessonTitle: string;
+  courseTitle: string;
+  href: string | null;
+  tour?: { courseId: string; lessonId: string; mediaKind: string; projection: string };
+};
 
 const field = "w-full rounded-md border border-neutral-300 px-3 py-2 dark:border-neutral-700 dark:bg-neutral-900";
 
@@ -64,6 +72,7 @@ export function UseInLesson({
   const [lessonId, setLessonId] = useState("");
   const [captureId, setCaptureId] = useState("");
   const [credit, setCredit] = useState("");
+  const [attested, setAttested] = useState(false);
   const [confirming, setConfirming] = useState(false);
 
   const base = `/api/field-log/projects/${projectId}/legs/${leg.id}`;
@@ -90,6 +99,8 @@ export function UseInLesson({
   function pickCapture(c: TargetCapture) {
     setCaptureId(c.id);
     setCredit(c.credit);
+    // The attestation is about ONE capture's frame: picking another asks again.
+    setAttested(false);
   }
 
   async function savePermission() {
@@ -109,13 +120,24 @@ export function UseInLesson({
     if (!lessonId || !captureId) return;
     setConfirming(true);
     setError(null);
-    const res = await postJson<Published>(`${base}/tour-targets`, { captureId, lessonId, credit });
+    // Confirm stays enabled without the box ticked: the server is the guard and answers 422 with the
+    // sentence to confirm, shown below in role="alert".
+    const res = await postJson<Published>(`${base}/tour-targets`, { captureId, lessonId, credit, peopleAttested: attested });
     setConfirming(false);
     if (!res.ok) {
       setError(res.error);
       return;
     }
+    setAttested(false);
     setPublished({ lessonTitle: res.data.lessonTitle, courseTitle: res.data.courseTitle, href: res.data.href });
+    if (res.data.tour) {
+      capture(EVENTS.lessonTourPublished, {
+        course_id: res.data.tour.courseId,
+        lesson_id: res.data.tour.lessonId,
+        media_kind: res.data.tour.mediaKind,
+        projection: res.data.tour.projection,
+      });
+    }
     await load(); // the filled slot leaves the list
   }
 
@@ -239,6 +261,11 @@ export function UseInLesson({
                         />
                         <span className="min-w-0 break-words">
                           <span className="font-medium capitalize">{c.kind}</span>
+                          {c.projection === "equirectangular" ? (
+                            <span className="ml-1 rounded border border-neutral-300 px-1 text-xs font-medium dark:border-neutral-700">
+                              360
+                            </span>
+                          ) : null}
                           {c.subject ? `: ${c.subject}` : ""}
                           <span className="ml-1 text-xs text-neutral-600 dark:text-neutral-400">({hostOf(c.storageUrl)})</span>
                           {c.reason ? (
@@ -266,6 +293,17 @@ export function UseInLesson({
                     {credit.length} of {TOUR_CREDIT_MAX} characters. Edit it if someone else on the crew took it.
                   </p>
                 </div>
+
+                <label htmlFor={id("people")} className="flex min-h-11 items-start gap-2 rounded-md border border-neutral-200 p-2 dark:border-neutral-800">
+                  <input
+                    id={id("people")}
+                    type="checkbox"
+                    checked={attested}
+                    onChange={(e) => setAttested(e.target.checked)}
+                    className="mt-0.5 h-5 w-5 shrink-0"
+                  />
+                  <span>{PEOPLE_ATTESTATION_LABEL}</span>
+                </label>
 
                 <button
                   type="button"

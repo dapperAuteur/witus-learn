@@ -34,6 +34,16 @@
 // TO ADD ONE: append an entry whenever you draft a blog post about a course, and whenever a course
 // ships with work that has to wait for its release (a post to update, a task step to re-check, a
 // partner to tell). `kind: "blog-post"` names the blog and the slug; `kind: "task"` is anything else.
+//
+// TOUR SLOTS (plans/96 Q6, BAM 2026-11-01). When a tour from the field fills one of the 14 tour
+// lessons, add a `kind: "task"`, `when: "seeded"` follow-up for that course: remove "(360 tour,
+// forthcoming)" from the lesson title and its opening "forthcoming" paragraph in scripts/data/, then
+// re-seed. One per filled slot, keyed `tour-filled-<lesson slug>`. The app already hides both on
+// screen while the tour is live (src/lib/field-log-tour.ts), so this is tidiness, not a fix; the
+// detail must say the trade-off: once the file is edited, a tour later hidden (a consent changed to
+// declined) leaves a lesson that no longer says its tour is coming. A slot counts as filled only when
+// /teach/tours shows it "Shown, from the field" or the plans/96 section 1 query says so; none was known
+// to be on 2026-11-01, so no entry exists yet.
 // PURE: no db, no next/headers, so the tests and the CLI can load it.
 
 import {

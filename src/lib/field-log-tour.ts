@@ -19,6 +19,11 @@ export interface TourCaptureFacts {
   consentStatus: string;
   involvesMinor: boolean;
   storageUrl: string | null;
+  /**
+   * "equirectangular" for a 360 photo, "flat" or null otherwise (plans/96 v2). Optional so a row read
+   * before the column exists, or a caller that never selects it, reads as an ordinary photo.
+   */
+  projection?: string | null;
 }
 
 /** What the rules read from the capture's leg (null when the capture is on no leg). */
@@ -55,6 +60,37 @@ export const TOUR_REFUSAL_COPY: Record<TourHiddenReason, string> = {
 export interface TourMedia {
   kind: "image" | "video" | "iframe";
   src: string;
+  /**
+   * Set only on an IMAGE whose capture is marked as a 360 photo: the lesson shows it in the look-around
+   * viewer. A 360 photo behind a Google Drive link is an iframe (Drive's own preview), so it shows flat;
+   * the viewer needs the image file itself.
+   */
+  projection?: "equirectangular";
+}
+
+/** Does this tour open in the 360 viewer? */
+export function isPanorama(media: TourMedia): boolean {
+  return media.kind === "image" && media.projection === "equirectangular";
+}
+
+// ── 360 photos (plans/96 v2) ──────────────────────────────────────────────────
+
+export const CAPTURE_PROJECTIONS = ["flat", "equirectangular"] as const;
+export type CaptureProjection = (typeof CAPTURE_PROJECTIONS)[number];
+
+/**
+ * The projection to store for a capture, or an error. Only a photo can be a 360 photo; "flat" and null
+ * are always fine (null means "not said", which renders as flat). Undefined means "leave it alone" on
+ * an edit.
+ */
+export function checkCaptureProjection(
+  kind: string,
+  projection: CaptureProjection | null | undefined,
+): { ok: true } | { ok: false; error: string } {
+  if (projection === "equirectangular" && kind !== "photo") {
+    return { ok: false, error: "Only a photo can be marked as a 360 photo." };
+  }
+  return { ok: true };
 }
 
 export type TourEligibility =
@@ -128,13 +164,32 @@ export function tourCaptureEligibility(capture: TourCaptureFacts, leg: TourLegFa
   const media = tourMediaFor(capture.storageUrl);
   if (!media) return refuse("not_embeddable");
   if (!leg?.permissionNote?.trim()) return refuse("no_permission_note");
+  if (media.kind === "image" && capture.projection === "equirectangular") {
+    return { ok: true, media: { ...media, projection: "equirectangular" } };
+  }
   return { ok: true, media };
 }
+
+// ── People in frame (plans/96 v2) ─────────────────────────────────────────────
+// Consent is logged per capture, for the SUBJECT the logger named. A street photo logged with consent
+// "na" (no subject) still passes every rule above, yet can show a bystander's face or a child. So the
+// publisher confirms this sentence before a tour is written. The server is the guard (422 without it);
+// the checkbox in the picker only mirrors it. What is stored is the moment they confirmed, not who is
+// in the picture.
+
+/** The checkbox label in the picker, word for word. */
+export const PEOPLE_ATTESTATION_LABEL =
+  "No identifiable person appears in this capture, or each one has consent recorded on it.";
+
+/** The 422 a publish without the attestation gets. */
+export const PEOPLE_ATTESTATION_REQUIRED = `Confirm before publishing: ${PEOPLE_ATTESTATION_LABEL}`;
 
 /** A stored tour joined to its capture and leg as they stand now. */
 export interface StoredTour {
   url: string;
   creditLine: string;
+  /** When the publisher confirmed the people-in-frame sentence; null for a tour published before v2. */
+  peopleAttestedAt?: Date | null;
   /** null when the capture was deleted (the foreign key is set null). */
   capture: TourCaptureFacts | null;
   leg: TourLegFacts | null;
@@ -183,8 +238,8 @@ export function liveToursByLesson(rows: readonly StoredLessonTour[]): Map<string
 export type TourSlotState =
   | { state: "empty" }
   | { state: "own_link" }
-  | { state: "live"; credit: string; host: string }
-  | { state: "hidden"; credit: string; host: string; reason: TourHiddenReason; message: string };
+  | { state: "live"; credit: string; host: string; attested: boolean }
+  | { state: "hidden"; credit: string; host: string; attested: boolean; reason: TourHiddenReason; message: string };
 
 function hostOf(url: string): string {
   try {
@@ -207,13 +262,26 @@ export function tourSlotState(
   if (!stored) return { state: "empty" };
   const live = liveTour(stored);
   const host = hostOf(stored.url);
-  if (live.ok) return { state: "live", credit: stored.creditLine, host };
-  return { state: "hidden", credit: stored.creditLine, host, reason: live.reason, message: live.message };
+  // Q2 (BAM, 2026-11-01): a tour published before the attestation existed stays SHOWN, since every
+  // one passed v1's consent rules; only this page labels it, until someone attests.
+  const attested = stored.peopleAttestedAt != null;
+  if (live.ok) return { state: "live", credit: stored.creditLine, host, attested };
+  return { state: "hidden", credit: stored.creditLine, host, attested, reason: live.reason, message: live.message };
 }
 
-/** Who may put a field capture into a lesson: the platform owner, or the course's own instructor. */
-export function canPublishTour(input: { isOwner: boolean; isInstructor: boolean }): boolean {
-  return input.isOwner || input.isInstructor;
+/**
+ * Who may put a field capture into a lesson: the platform owner, the course's own instructor, or (Q3,
+ * BAM 2026-11-01) a school admin of this tenant, unless the course is owner-only. The same line
+ * canManageCourseReviewers draws: an owner-only course admits no brand_admin.
+ */
+export function canPublishTour(input: {
+  isOwner: boolean;
+  isInstructor: boolean;
+  isSchoolAdmin?: boolean;
+  ownerOnly?: boolean;
+}): boolean {
+  if (input.isOwner || input.isInstructor) return true;
+  return Boolean(input.isSchoolAdmin) && !input.ownerOnly;
 }
 
 // ── Credit ────────────────────────────────────────────────────────────────────
@@ -297,11 +365,13 @@ export function suggestSlotFromNotes<T extends TourSlotRef>(notes: string | null
 }
 
 // ── What a filled slot hides ──────────────────────────────────────────────────
-// The 13 tour lessons were written before any tour existed, so their titles end "(360 tour,
+// The 14 tour lessons were written before any tour existed, so their titles end "(360 tour,
 // forthcoming)" or "(virtual tour, forthcoming)" and their bodies open with a paragraph saying the
 // tour is not here yet. Once a tour is LIVE that is no longer true, so the suffix and that one
-// paragraph are hidden on screen. The course files are not edited (the seeder would only restore
-// them), and an unfilled or hidden tour shows the lesson exactly as written.
+// paragraph are hidden on screen. The app never edits the course files (the seeder would only restore
+// them), and an unfilled or hidden tour shows the lesson exactly as written. Removing the wording
+// from a course file for good is a content follow-up per filled slot (plans/96 Q6; see TOUR SLOTS in
+// src/lib/release-followups.ts).
 
 const FORTHCOMING_SUFFIX = /\s*\((?:360|virtual) tour, forthcoming\)\s*$/i;
 const FORTHCOMING_LEAD = /^\s*\*\*The (?:360|virtual) tour for this lesson is forthcoming\.\*\*/;
@@ -327,4 +397,20 @@ export function displayTourBody(text: string | null, filled: boolean): string | 
   const lead = forthcomingLead(text);
   if (!lead) return text;
   return text.replace(/^\s+/, "").slice(lead.length).replace(/^\s+/, "");
+}
+
+/**
+ * A lesson as every list surface should name it (plans/96 v2: offline downloads, in-course search,
+ * /api/v1): title without the "(... tour, forthcoming)" suffix, and body without the forthcoming
+ * paragraph, when its tour is live. `filled` is the set of lesson ids with a live tour
+ * (liveToursByLesson); a lesson not in it comes back exactly as written.
+ */
+export function withTourDisplay<T extends { id: string; title: string; body?: string | null }>(
+  lesson: T,
+  filled: { has(id: string): boolean },
+): T {
+  if (!filled.has(lesson.id)) return lesson;
+  const out = { ...lesson, title: displayTourTitle(lesson.title, true) };
+  if (lesson.body !== undefined) out.body = displayTourBody(lesson.body ?? null, true);
+  return out;
 }

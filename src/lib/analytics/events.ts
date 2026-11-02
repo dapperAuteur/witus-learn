@@ -31,13 +31,27 @@ export const SHARED_EVENTS = {
 } as const;
 
 /**
- * Events specific to this app. Only route views are wired so far; add product events
- * here (by slug or id, never display name) when a call site is instrumented.
+ * Events specific to this app. Add product events here (by slug or id, never display
+ * name) when a call site is instrumented. Properties are ids and kinds only: never a
+ * URL, a credit line, a subject label, a note, or anything a learner typed.
  */
 export const EVENTS = {
   /** An explicit route view. capture_pageview is off — Next's client router would
    *  fire it once and then lie — so route changes are reported deliberately. */
   routeViewed: "route_viewed",
+
+  // Tours from the field (plans/96 section 8, BAM 2026-11-01 Q5). Sent from the client
+  // after the server answered OK, so a refused publish is never counted.
+  /** A Field Log capture was put into a lesson's tour slot.
+   *  { course_id, lesson_id, media_kind: "image"|"video"|"iframe", projection: "flat"|"equirectangular" } */
+  lessonTourPublished: "lesson_tour_published",
+  /** A tour was taken off a lesson on /teach/tours. { course_id, lesson_id } */
+  lessonTourRemoved: "lesson_tour_removed",
+  /** A published tour's credit was edited in place. { course_id, lesson_id } */
+  lessonTourCreditEdited: "lesson_tour_credit_edited",
+  /** The 360 viewer finished loading its photo on a lesson (once per page view). { lesson_id } */
+  tourViewerOpened: "tour_viewer_opened",
+
   ...SHARED_EVENTS,
 } as const;
 

@@ -1,10 +1,11 @@
 import { notFound } from "next/navigation";
 import type { Metadata } from "next";
 import { requireTenant } from "@/lib/tenant";
-import { getSession, isPlatformOwner } from "@/lib/session";
+import { getSession } from "@/lib/session";
 import { getProjectBundle } from "@/db/queries/field-log";
 import { getScopedDb } from "@/db/scoped";
 import { isEmptyTourSlot } from "@/lib/field-log-tour";
+import { tourSlotViewer } from "@/lib/lesson-tours";
 import { ProjectWorkspace } from "@/components/field-log/project-workspace";
 
 export const metadata: Metadata = { title: "Field Log project" };
@@ -21,13 +22,13 @@ export default async function FieldLogProjectPage({ params }: Params) {
   if (!bundle) notFound();
 
   // Tours from the field (plans/93 section 2): "Use in a lesson" appears on each leg only when this
-  // viewer may fill at least one empty tour slot here (the platform owner, or a course's own
-  // instructor). Everyone else's Field Log is unchanged. Degrades to "no" on error, so a missing
+  // viewer may fill at least one empty tour slot here (the platform owner, a course's own instructor,
+  // or a school admin on a course that is not owner-only). Everyone else's Field Log is unchanged. Degrades to "no" on error, so a missing
   // migration never breaks the Field Log itself.
   let canUseInLesson = false;
   try {
     const sdb = await getScopedDb();
-    const slots = await sdb.listTourSlots({ userId: session.user.id, isOwner: await isPlatformOwner(session.user.id) });
+    const slots = await sdb.listTourSlots(await tourSlotViewer(session.user.id, tenant.id));
     canUseInLesson = slots.some((s) => isEmptyTourSlot(s, s.tour !== null));
   } catch (err) {
     console.error("tours: could not list tour slots for the Field Log", err);

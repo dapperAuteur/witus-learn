@@ -2,6 +2,8 @@ import "server-only";
 import { and, asc, count, eq, isNotNull } from "drizzle-orm";
 import { db } from "@/db/client";
 import { courses, lessons, userProfiles, type Lesson } from "@/db/schema";
+import { getLessonTourEmbed, listCourseTourEmbeds } from "@/db/queries/tour-embeds";
+import { displayTourTitle, isEmptyTourSlot, liveTour, liveToursByLesson } from "@/lib/field-log-tour";
 
 // Tenant-scoped reads for the public read-only API (src/app/api/v1). Every function
 // takes an explicit tenantId (resolved from the caller's API key — see
@@ -135,19 +137,31 @@ export async function getPublishedCourseWithLessons(
   const course = courseRows[0];
   if (!course) return null;
 
-  const lessonRows: Pick<Lesson, "id" | "slug" | "title" | "lessonType" | "sortOrder">[] = await db
+  const lessonRows: Pick<Lesson, "id" | "slug" | "title" | "lessonType" | "sortOrder" | "contentUrl">[] = await db
     .select({
       id: lessons.id,
       slug: lessons.slug,
       title: lessons.title,
       lessonType: lessons.lessonType,
       sortOrder: lessons.sortOrder,
+      contentUrl: lessons.contentUrl,
     })
     .from(lessons)
     .where(and(eq(lessons.courseId, id), eq(lessons.tenantId, tenantId), eq(lessons.isPublished, true)))
     .orderBy(asc(lessons.sortOrder));
 
-  return { ...course, lessons: lessonRows };
+  const filled = await liveTourLessons(tenantId, id, lessonRows);
+  return {
+    ...course,
+    // contentUrl was read only to spot tour slots; the course detail stays metadata-only.
+    lessons: lessonRows.map((l) => ({
+      id: l.id,
+      slug: l.slug,
+      title: displayTourTitle(l.title, filled.has(l.id)),
+      lessonType: l.lessonType,
+      sortOrder: l.sortOrder,
+    })),
+  };
 }
 
 export interface ApiLessonDetail {
@@ -215,11 +229,48 @@ export async function getPublishedLesson(
   return {
     id: lesson.id,
     slug: lesson.slug,
-    title: lesson.title,
+    title: displayTourTitle(lesson.title, await hasLiveTour(tenantId, lesson)),
     lessonType: lesson.lessonType,
     order: lesson.sortOrder,
     body: lesson.textContent,
     contentFormat: lesson.contentFormat,
     mediaUrl: lesson.contentUrl,
   };
+}
+
+// ── Tours from the field (plans/96 v2, Q4) ──────────────────────────────────────
+// The API carries the CLEANED TITLE of a tour lesson whose tour is live, so a consumer never lists
+// "(360 tour, forthcoming)" for a lesson that has its tour. It does not carry the tour itself (BAM,
+// 2026-11-01: title now, tours when a consumer asks), so the body keeps its own wording. Each read
+// re-checks the tour against its capture, like the lesson page. Degrades to "not filled" on error, so
+// the API never fails because of this optional table.
+
+/** Ids of the lessons in this list whose field tour is live. Costs no query without a tour slot. */
+async function liveTourLessons(
+  tenantId: string,
+  courseId: string,
+  rows: readonly { lessonType: string; contentUrl: string | null }[],
+): Promise<Set<string>> {
+  if (!rows.some((l) => isEmptyTourSlot(l, false))) return new Set();
+  try {
+    return new Set(liveToursByLesson(await listCourseTourEmbeds(tenantId, courseId)).keys());
+  } catch (err) {
+    console.error("api-v1: could not read field tours", err);
+    return new Set();
+  }
+}
+
+/** Whether this one lesson's field tour is live. */
+async function hasLiveTour(
+  tenantId: string,
+  lesson: { id: string; lessonType: string; contentUrl: string | null },
+): Promise<boolean> {
+  if (!isEmptyTourSlot(lesson, false)) return false;
+  try {
+    const row = await getLessonTourEmbed(tenantId, lesson.id);
+    return row ? liveTour(row).ok : false;
+  } catch (err) {
+    console.error("api-v1: could not read a field tour", err);
+    return false;
+  }
 }

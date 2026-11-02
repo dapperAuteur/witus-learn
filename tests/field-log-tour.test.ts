@@ -1,9 +1,14 @@
 import { describe, expect, it } from "vitest";
 import {
+  PEOPLE_ATTESTATION_LABEL,
+  PEOPLE_ATTESTATION_REQUIRED,
   TOUR_CREDIT_MAX,
   TOUR_REFUSAL_COPY,
   buildTourCredit,
   canPublishTour,
+  checkCaptureProjection,
+  isPanorama,
+  withTourDisplay,
   displayTourBody,
   displayTourTitle,
   forthcomingLead,
@@ -22,6 +27,7 @@ import { parseReleaseMarkers } from "@/lib/lesson-review";
 import type { AuthoredCourse } from "../scripts/data/authored-course";
 import { BALTIMORE_CHAIN_COURSE } from "../scripts/data/baltimore-chain-course";
 import { DC_BERMAN_COURSE } from "../scripts/data/dc-berman-course";
+import { FOX_LAKE_COURSE } from "../scripts/data/fox-lake-course";
 import { FORT_HARRISON_COURSE } from "../scripts/data/fort-harrison-course";
 import { GYM_COLOR_LINE_COURSE } from "../scripts/data/gym-color-line-course";
 import { INDIANA_AVENUE_COURSE } from "../scripts/data/indiana-avenue-course";
@@ -36,7 +42,7 @@ import { WHERE_WE_RESTED_COURSE } from "../scripts/data/where-we-rested-course";
 
 // Tours from the field (plans/93 section 2). Every rule that decides whether a field capture may
 // appear in a lesson is pure and pinned here, including the suffix and paragraph a live tour hides,
-// checked against the 13 real tour lessons rather than a made-up fixture.
+// checked against the 14 real tour lessons rather than a made-up fixture.
 
 const ok: TourCaptureFacts = {
   kind: "photo",
@@ -211,11 +217,17 @@ describe("liveToursByLesson and tourSlotState", () => {
   it("says empty, own link, live with its host, or hidden with the reason", () => {
     expect(tourSlotState(slot, null)).toEqual({ state: "empty" });
     expect(tourSlotState({ ...slot, contentUrl: "https://wanderlearn.example/t" }, stored)).toEqual({ state: "own_link" });
-    expect(tourSlotState(slot, stored)).toEqual({ state: "live", credit: stored.creditLine, host: "drive.google.com" });
+    expect(tourSlotState(slot, stored)).toEqual({
+      state: "live",
+      credit: stored.creditLine,
+      host: "drive.google.com",
+      attested: false,
+    });
     expect(tourSlotState(slot, { ...stored, capture: null })).toEqual({
       state: "hidden",
       credit: stored.creditLine,
       host: "drive.google.com",
+      attested: false,
       reason: "capture_removed",
       message: TOUR_REFUSAL_COPY.capture_removed,
     });
@@ -227,6 +239,104 @@ describe("canPublishTour", () => {
     expect(canPublishTour({ isOwner: true, isInstructor: false })).toBe(true);
     expect(canPublishTour({ isOwner: false, isInstructor: true })).toBe(true);
     expect(canPublishTour({ isOwner: false, isInstructor: false })).toBe(false);
+  });
+
+  it("lets a school admin publish, except into an owner-only course (plans/96 Q3)", () => {
+    expect(canPublishTour({ isOwner: false, isInstructor: false, isSchoolAdmin: true, ownerOnly: false })).toBe(true);
+    expect(canPublishTour({ isOwner: false, isInstructor: false, isSchoolAdmin: true, ownerOnly: true })).toBe(false);
+    // Owner-only shuts out the admin, never the owner or the course's own instructor.
+    expect(canPublishTour({ isOwner: true, isInstructor: false, ownerOnly: true })).toBe(true);
+    expect(canPublishTour({ isOwner: false, isInstructor: true, ownerOnly: true })).toBe(true);
+  });
+});
+
+describe("360 photos (plans/96 v2)", () => {
+  const pano = "https://res.cloudinary.com/demo/image/upload/v1/fox-lake-marker.jpg";
+  const stored = (projection: string | null, url = pano) => ({
+    url,
+    creditLine: "Photo by BAM at the marker.",
+    capture: { ...ok, storageUrl: url, projection },
+    leg,
+  });
+
+  it("passes the projection through liveTour to the player, on an image file only", () => {
+    const live = liveTour(stored("equirectangular"));
+    expect(live).toEqual({
+      ok: true,
+      media: { kind: "image", src: pano, projection: "equirectangular" },
+      credit: "Photo by BAM at the marker.",
+    });
+    expect(live.ok && isPanorama(live.media)).toBe(true);
+  });
+
+  it("renders flat, exactly as v1, for a flat or unmarked photo, a video and a Drive link", () => {
+    for (const p of ["flat", null, undefined]) {
+      const live = liveTour({ ...stored(null), capture: { ...ok, storageUrl: pano, projection: p } });
+      expect(live).toMatchObject({ ok: true, media: { kind: "image", src: pano } });
+      expect(live.ok && live.media.projection).toBeFalsy();
+    }
+    // A 360 mark on a Drive link: Drive's own preview, flat, as v1.
+    const drive = liveTour(stored("equirectangular", ok.storageUrl!));
+    expect(drive).toMatchObject({ ok: true, media: { kind: "iframe" } });
+    expect(drive.ok && isPanorama(drive.media)).toBe(false);
+    const video = "https://example.org/walk.mp4";
+    expect(liveTour({ ...stored(null, video), capture: { ...ok, kind: "video", storageUrl: video } })).toMatchObject({
+      ok: true,
+      media: { kind: "video", src: video },
+    });
+  });
+
+  it("keeps the 360 view keyed by lesson in liveToursByLesson", () => {
+    const map = liveToursByLesson([
+      { ...stored("equirectangular"), lessonId: "fl", lessonType: "virtual_tour", contentUrl: null },
+    ]);
+    expect(map.get("fl")?.media.projection).toBe("equirectangular");
+  });
+
+  it("allows a 360 mark on a photo only", () => {
+    expect(checkCaptureProjection("photo", "equirectangular")).toEqual({ ok: true });
+    expect(checkCaptureProjection("video", "equirectangular")).toMatchObject({ ok: false });
+    expect(checkCaptureProjection("video", "flat")).toEqual({ ok: true });
+    expect(checkCaptureProjection("note", null)).toEqual({ ok: true });
+    expect(checkCaptureProjection("audio", undefined)).toEqual({ ok: true });
+  });
+});
+
+describe("people in frame (plans/96 v2)", () => {
+  it("asks in the 422 for exactly the sentence the checkbox shows", () => {
+    expect(PEOPLE_ATTESTATION_REQUIRED).toContain(PEOPLE_ATTESTATION_LABEL);
+    expect(PEOPLE_ATTESTATION_LABEL).toBe(
+      "No identifiable person appears in this capture, or each one has consent recorded on it.",
+    );
+  });
+
+  it("labels an unattested tour on /teach/tours but still shows it (Q2)", () => {
+    const stored = { url: ok.storageUrl!, creditLine: "Photo.", capture: ok, leg };
+    const slot = { lessonType: "virtual_tour", contentUrl: null };
+    expect(tourSlotState(slot, { ...stored, peopleAttestedAt: null })).toMatchObject({ state: "live", attested: false });
+    expect(tourSlotState(slot, { ...stored, peopleAttestedAt: new Date() })).toMatchObject({ state: "live", attested: true });
+  });
+});
+
+describe("withTourDisplay: the list surfaces (offline, search, /api/v1)", () => {
+  const lesson = {
+    id: "l1",
+    title: "17 · Now: walk it (360 tour, forthcoming)",
+    body: "**The 360 tour for this lesson is forthcoming.** Not yet.\n\n**Look at the porch.**",
+  };
+
+  it("cleans the title and body of a lesson with a live tour only", () => {
+    expect(withTourDisplay(lesson, new Set(["l1"]))).toEqual({
+      id: "l1",
+      title: "17 · Now: walk it",
+      body: "**Look at the porch.**",
+    });
+    expect(withTourDisplay(lesson, new Set())).toBe(lesson);
+  });
+
+  it("leaves a row with no body without one", () => {
+    const noBody = { id: lesson.id, title: lesson.title };
+    expect(withTourDisplay(noBody, new Set(["l1"]))).toEqual({ id: "l1", title: "17 · Now: walk it" });
   });
 });
 
@@ -300,11 +410,12 @@ describe("suggestSlotFromNotes", () => {
   });
 });
 
-describe("what a live tour hides, on all 13 real tour lessons", () => {
+describe("what a live tour hides, on all 14 real tour lessons", () => {
   const COURSES: [string, AuthoredCourse][] = [
     ["baltimore-chain", BALTIMORE_CHAIN_COURSE],
     ["dc-berman", DC_BERMAN_COURSE],
     ["fort-harrison", FORT_HARRISON_COURSE],
+    ["fox-lake", FOX_LAKE_COURSE],
     ["gym-color-line", GYM_COLOR_LINE_COURSE],
     ["indiana-avenue", INDIANA_AVENUE_COURSE],
     ["mudsock-boundary", MUDSOCK_BOUNDARY_COURSE],
@@ -348,7 +459,8 @@ describe("what a live tour hides, on all 13 real tour lessons", () => {
       // Nothing after the lead paragraph is lost: the shown body is the stored one minus that paragraph.
       expect(stored.endsWith(shown)).toBe(true);
       expect(shown.length).toBeGreaterThan(stored.length / 2);
-      expect(shown.startsWith("**")).toBe(true);
+      // The next block is authored prose: a bold lead-in, or (Fox Lake) a heading.
+      expect(/^(\*\*|#)/.test(shown)).toBe(true);
     });
   }
 

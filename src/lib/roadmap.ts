@@ -28,8 +28,9 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   launched with open items; a blog post's feed listing is checked so a published post can be closed with
   its URL. Closing anything requires saying what was done. \`pnpm follow-ups:list\` reads it all back. No
   inbox: a chore on a course, no recipient, no notification.
-- 🔧 **Reviewer sign-off** (\`feat/reviewer-signoff\`, migration \`0067_serious_karen_page\`; after merge run
-  \`pnpm db:migrate:prod\` then \`pnpm seed:courses:prod\`). Plans/93 section 1. The "Before release" lines in
+- ✅ **Reviewer sign-off** (\`feat/reviewer-signoff\`, migration \`0067_serious_karen_page\`; on \`main\` since
+  2026-10-14, merge \`30948759\`, task 337 applied the migration). Plans/93 section 1. Version 2 is specified in
+  plans/97 (build order 2 of 3). The "Before release" lines in
   the four marked courses (rigging, sound, light, raising animals for yarn: 81 lines in 71 lessons, 83
   needs) become \`lessons.review_needs\`, parsed by the seeder and drawn back on the lesson in a box that
   still begins "Before release". An accepted reviewer whose name and credential the inviter set records
@@ -39,8 +40,25 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   course's own instructor) releases the hold once every QR and P need is cleared and no decision is left.
   New \`/audit/review\` for reviewers, a sign-off panel on \`/teach/<course>\`, and a QR chip on \`/teach\`.
   No inbox: a correction is one-way content on a lesson, never a message.
-- 🔧 **Tours from the field** (\`feat/field-tours\`, stacked on \`feat/reviewer-signoff\`, migration
-  \`0068_jittery_changeling\`; after merge run \`pnpm db:migrate:prod\`). Plans/93 section 2. A photo or video
+- 🔧 **Tours from the field, version 2** (\`bundle/tours-v2-2026-11-01\`, migration
+  \`0073_tour_projection_and_attestation\`, applied by \`migrate-production.yml\` on the merge; then
+  \`pnpm seed:courses:prod\` for the Run Your Course lesson). Plans/96 Part B, BAM's answers 2026-11-01. A photo
+  marked **This is a 360 photo** (capture form, or **360** on the Captures list; new \`project_captures.projection\`)
+  and linked as an image file opens in a look-around viewer on the lesson: arrow keys, plus and minus, drag,
+  zoom buttons, an accessible name, a visible hint and **View as a flat image**; no library (one WebGL shader,
+  loaded only on that lesson) and the flat image as fallback when WebGL or the host's CORS says no. Publishing
+  now requires ticking "No identifiable person appears in this capture, or each one has consent recorded on
+  it" (422 without it; \`lesson_tour_embeds.people_attested_at\`); tours published before it stay shown and are
+  labelled on \`/teach/tours\` with an **Attest** button (Q2). A school's admin may publish into a course that
+  is not owner-only (Q3). \`/teach/tours\` adds **Check link** (server fetch on demand, public https only, 3
+  redirects, 5 seconds, nothing stored or logged), **Edit credit** in place (PATCH), and loading and error
+  states. Offline downloads, in-course search and \`/api/v1\` (title only, Q4) no longer say "(360 tour,
+  forthcoming)" for a filled slot. Four product events: \`lesson_tour_published\`, \`lesson_tour_removed\`,
+  \`lesson_tour_credit_edited\`, \`tour_viewer_opened\` (Q5). Run Your Course gains Section 3 teaching
+  \`tours-from-field-log\` (WAIVED line deleted). Open: \`tests/isolation/tour-embeds.db.test.ts\` (extended) has
+  still not run against a database; Q6 content follow-ups are filed per slot once a slot is known to be filled.
+- ✅ **Tours from the field** (\`feat/field-tours\`, migration \`0068_jittery_changeling\`; on \`main\` since
+  2026-10-14, merge \`30948759\`, task 338 applied the migration). Plans/93 section 2. A photo or video
   logged on a Field Log leg fills an empty \`virtual_tour\` slot (the 13 site-history "Now" lessons) through
   **Use in a lesson** on the leg: the platform owner or the course's own instructor picks the slot (suggested
   from the leg's notes), a capture and a credit. New \`lesson_tour_embeds\` (the seeder rewrites
@@ -51,9 +69,9 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   file links embed via \`/preview\`. A live tour hides the "(360 tour, forthcoming)" suffix and the opening
   forthcoming paragraph on screen (course files untouched). New \`/teach/tours\` (empty, shown, hidden and why,
   Remove), linked from \`/teach\`. Not requested or queued: a learner proposing a tour is out of scope (no-inbox
-  rule). Follow-ups: the course files still say "forthcoming" under the hood; \`/api/v1\` omits field tours; a
-  Run Your Course lesson teaching \`tours-from-field-log\` (then delete its WAIVED line).
-- 🔧 **Quiz integrity panel** (\`feat/quiz-integrity-panel\`, no migration). Plans/93 section 3. The three
+  rule). Its follow-ups are version 2's list above.
+- ✅ **Quiz integrity panel** (\`feat/quiz-integrity-panel\`, no migration; on \`main\` since 2026-10-14, merge
+  \`08318540\`). Plans/93 section 3. Version 2 is specified in plans/98 (build order 3 of 3). The three
   length guards' constants and measures move into one pure \`src/lib/quiz-integrity.ts\` that
   \`check-longest-option\`, \`check-shortest-option\` and \`check-length-balance\` import (their output is
   byte-identical before and after; no GRANDFATHERED map touched). A collapsed "How this course's quizzes are

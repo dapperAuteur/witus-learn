@@ -2,6 +2,7 @@ import Link from "next/link";
 import type { Metadata } from "next";
 import { requirePlatformOwner } from "@/lib/session";
 import { formatBytes } from "@/lib/format-bytes";
+import { libraryDownloadHref } from "@/lib/library-formats.mjs";
 import { listLibraryDocuments } from "@/db/queries/library";
 
 export const metadata: Metadata = { title: "Library" };
@@ -21,7 +22,7 @@ export default async function AdminLibraryPage() {
       <p className="mt-2 text-sm text-neutral-600 dark:text-neutral-400">
         Private long-form documents: interview prep, the playbook, per-app chapters. Synced from
         local markdown via <span className="font-mono">scripts/sync-library.mjs</span>, which also
-        uploads the sibling PDF when there is one. Owner-only; nothing here is visible to any
+        uploads the sibling PDF and EPUB when there are. Owner-only; nothing here is visible to any
         school.
       </p>
 
@@ -35,6 +36,7 @@ export default async function AdminLibraryPage() {
         <ul className="mt-6 space-y-3">
           {docs.map((doc) => {
             const size = doc.hasPdf ? formatBytes(doc.pdfBytes) : null;
+            const epubSize = doc.hasEpub ? formatBytes(doc.epubBytes) : null;
             return (
               <li
                 key={doc.slug}
@@ -54,14 +56,24 @@ export default async function AdminLibraryPage() {
                     Updated {dateFmt.format(doc.updatedAt)}
                   </span>
                 </Link>
-                {doc.hasPdf ? (
-                  <div className="border-t border-neutral-200 px-4 py-1.5 dark:border-neutral-800">
-                    <a
-                      href={`/admin/library/${doc.slug}/download`}
-                      className="inline-flex min-h-11 items-center text-xs font-semibold underline"
-                    >
-                      Download PDF{size ? ` (${size})` : ""}
-                    </a>
+                {doc.hasPdf || doc.hasEpub ? (
+                  <div className="flex flex-wrap gap-x-4 border-t border-neutral-200 px-4 py-1.5 dark:border-neutral-800">
+                    {doc.hasPdf ? (
+                      <a
+                        href={libraryDownloadHref(doc.slug, "pdf")}
+                        className="inline-flex min-h-11 items-center text-xs font-semibold underline"
+                      >
+                        Download PDF{size ? ` (${size})` : ""}
+                      </a>
+                    ) : null}
+                    {doc.hasEpub ? (
+                      <a
+                        href={libraryDownloadHref(doc.slug, "epub")}
+                        className="inline-flex min-h-11 items-center text-xs font-semibold underline"
+                      >
+                        Download EPUB{epubSize ? ` (${epubSize})` : ""}
+                      </a>
+                    ) : null}
                   </div>
                 ) : null}
               </li>

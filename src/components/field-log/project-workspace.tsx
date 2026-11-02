@@ -243,6 +243,17 @@ export function ProjectWorkspace({
     fail(res.error);
     return false;
   }
+  // Mark a photo as a 360 photo, or not (plans/96 v2). A tour already published from it shows the
+  // 360 viewer on the lesson's next load.
+  async function setCaptureProjection(captureId: string, projection: "flat" | "equirectangular") {
+    const res = await patchJson<ProjectCapture>(`/api/field-log/projects/${projectId}/captures/${captureId}`, { projection });
+    if (res.ok) {
+      setCaptures((prev) => prev.map((c) => (c.id === captureId ? res.data : c)));
+      return true;
+    }
+    fail(res.error);
+    return false;
+  }
   function queueCapture(body: Record<string, unknown>, meta: { subject: string; kind: string; consentStatus: string }) {
     const item: PendingCapture = { tempId: `${Date.now()}-${pending.length}`, body, ...meta };
     const next = [...pending, item];
@@ -365,7 +376,13 @@ export function ProjectWorkspace({
           />
         ) : null}
         {tab === "captures" ? (
-          <CapturesTab captures={captures} pending={pending} legs={legs} onAdd={addCapture} />
+          <CapturesTab
+            captures={captures}
+            pending={pending}
+            legs={legs}
+            onAdd={addCapture}
+            onSetProjection={setCaptureProjection}
+          />
         ) : null}
         {tab === "journal" ? <JournalTab comments={comments} onAdd={addComment} /> : null}
         {tab === "reviews" ? <ReviewsTab reviews={reviews} project={project} /> : null}
@@ -632,16 +649,20 @@ function CapturesTab({
   pending,
   legs,
   onAdd,
+  onSetProjection,
 }: {
   captures: ProjectCapture[];
   pending: PendingCapture[];
   legs: ProjectLeg[];
   onAdd: (body: Record<string, unknown>, meta: { subject: string; kind: string; consentStatus: string }) => Promise<boolean>;
+  onSetProjection: (captureId: string, projection: "flat" | "equirectangular") => Promise<boolean>;
 }) {
   const [kind, setKind] = useState<string>("photo");
   const [subject, setSubject] = useState("");
   const [consentStatus, setConsentStatus] = useState<string>("na");
   const [involvesMinor, setInvolvesMinor] = useState(false);
+  const [is360, setIs360] = useState(false);
+  const [savingProjection, setSavingProjection] = useState<string | null>(null);
   const [storageUrl, setStorageUrl] = useState("");
   const [legId, setLegId] = useState<string>("");
   const [notes, setNotes] = useState("");
@@ -657,6 +678,8 @@ function CapturesTab({
       consentStatus,
       involvesMinor,
       storageUrl: storageUrl.trim() || null,
+      // Only a photo can be a 360 photo; the server refuses it on any other kind.
+      projection: kind === "photo" ? (is360 ? "equirectangular" : "flat") : null,
       legId: legId || null,
       notes: notes.trim() || null,
     };
@@ -667,12 +690,19 @@ function CapturesTab({
       setStorageUrl("");
       setNotes("");
       setInvolvesMinor(false);
+      setIs360(false);
     }
   }
 
+  async function toggle360(c: ProjectCapture) {
+    setSavingProjection(c.id);
+    await onSetProjection(c.id, c.projection === "equirectangular" ? "flat" : "equirectangular");
+    setSavingProjection(null);
+  }
+
   const rows = [
-    ...pending.map((p) => ({ id: p.tempId, kind: p.kind, subject: p.subject, consentStatus: p.consentStatus, pending: true, createdAt: null as Date | null })),
-    ...captures.map((c) => ({ id: c.id, kind: c.kind, subject: c.subject, consentStatus: c.consentStatus, pending: false, createdAt: c.createdAt })),
+    ...pending.map((p) => ({ id: p.tempId, kind: p.kind, subject: p.subject, consentStatus: p.consentStatus, pending: true, createdAt: null as Date | null, capture: null as ProjectCapture | null })),
+    ...captures.map((c) => ({ id: c.id, kind: c.kind, subject: c.subject, consentStatus: c.consentStatus, pending: false, createdAt: c.createdAt, capture: c as ProjectCapture | null })),
   ];
 
   return (
@@ -704,6 +734,12 @@ function CapturesTab({
           <input type="checkbox" checked={involvesMinor} onChange={(e) => setInvolvesMinor(e.target.checked)} className="h-4 w-4" />
           Involves a minor (get parent/guardian consent)
         </label>
+        {kind === "photo" ? (
+          <label className="mt-2 flex min-h-11 items-center gap-2 text-sm">
+            <input type="checkbox" checked={is360} onChange={(e) => setIs360(e.target.checked)} className="h-4 w-4" />
+            This is a 360 photo
+          </label>
+        ) : null}
         <button type="submit" disabled={saving} className="mt-3 min-h-9 rounded-md px-4 text-sm font-medium text-white disabled:opacity-60" style={{ backgroundColor: "var(--accent)" }}>
           {saving ? "Logging…" : "Log capture"}
         </button>
@@ -727,7 +763,26 @@ function CapturesTab({
             {rows.map((r) => (
               <tr key={r.id} className="border-t border-neutral-100 dark:border-neutral-800">
                 <td className="py-1 pr-3">{r.subject || <span className="text-neutral-400">-</span>}{r.pending ? <span className="ml-2 text-xs text-amber-600">pending</span> : null}</td>
-                <td className="py-1 pr-3">{ledger ? r.consentStatus : r.kind}</td>
+                <td className="py-1 pr-3">
+                  {ledger ? (
+                    r.consentStatus
+                  ) : r.capture && r.kind === "photo" ? (
+                    <label className="inline-flex min-h-11 items-center gap-2">
+                      <span>photo</span>
+                      <input
+                        type="checkbox"
+                        checked={r.capture.projection === "equirectangular"}
+                        disabled={savingProjection === r.id}
+                        onChange={() => toggle360(r.capture!)}
+                        aria-label={`360 photo${r.subject ? `: ${r.subject}` : ""}`}
+                        className="h-4 w-4"
+                      />
+                      <span className="text-xs text-neutral-600 dark:text-neutral-400">360</span>
+                    </label>
+                  ) : (
+                    r.kind
+                  )}
+                </td>
                 <td className="py-1 pr-3 text-xs text-neutral-600">{r.createdAt ? new Date(r.createdAt).toLocaleString() : "-"}</td>
               </tr>
             ))}

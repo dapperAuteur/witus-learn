@@ -46,6 +46,13 @@ export const lessonTourEmbeds = pgTable(
     creditLine: text("credit_line").notNull(),
     setBy: text("set_by").references(() => users.id, { onDelete: "set null" }),
     setAt: timestamp("set_at", { withTimezone: true }).notNull().defaultNow(),
+    /**
+     * When the publisher confirmed that no identifiable person appears in the capture, or that each
+     * one has consent recorded on it (plans/96 v2). The POST route refuses a tour without it. Records
+     * THAT the publisher confirmed, never who appears. Null on every tour published before v2: those
+     * stay shown (each passed v1's consent rules) and /teach/tours labels them until someone attests.
+     */
+    peopleAttestedAt: timestamp("people_attested_at", { withTimezone: true }),
   },
   (t) => [
     unique("lesson_tour_embeds_lesson_uq").on(t.lessonId),

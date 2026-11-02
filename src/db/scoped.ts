@@ -33,10 +33,14 @@ import type { VerdictNeedKind } from "@/lib/lesson-review";
 import {
   deleteLessonTourEmbed,
   getLessonTourEmbed,
+  getLessonTourUrl,
   insertLessonTourEmbed,
   listCourseTourEmbeds,
   listTourSlots,
+  updateLessonTourEmbed,
   type InsertTourInput,
+  type TourSlotViewer,
+  type UpdateTourInput,
 } from "@/db/queries/tour-embeds";
 import { quizIntegrityByCourse } from "@/db/queries/quiz-integrity";
 import {
@@ -332,8 +336,9 @@ export class ScopedDb {
   // A field capture shown in a lesson's tour slot. Every method supplies this tenant itself, so a
   // route can neither read nor write a tour, nor list a slot, outside its own school.
 
-  /** Virtual-tour lessons the viewer may publish to: every course here for the owner, else their own. */
-  listTourSlots(viewer: { userId: string; isOwner: boolean }) {
+  /** Virtual-tour lessons the viewer may publish to: every course here for the owner, every course
+   *  but owner-only ones for a school admin, else their own. */
+  listTourSlots(viewer: TourSlotViewer) {
     return listTourSlots(this.tenantId, viewer);
   }
 
@@ -355,6 +360,16 @@ export class ScopedDb {
   /** Take the tour off one lesson of one of this tenant's courses. */
   deleteLessonTourEmbed(courseId: string, lessonId: string) {
     return deleteLessonTourEmbed(this.tenantId, courseId, lessonId);
+  }
+
+  /** Edit a published tour's credit or record its attestation (plans/96 v2). Null when there is none. */
+  updateLessonTourEmbed(input: Omit<UpdateTourInput, "tenantId">) {
+    return updateLessonTourEmbed({ tenantId: this.tenantId, ...input });
+  }
+
+  /** The stored link of one lesson's tour, for "Check link". Null when there is none. */
+  getLessonTourUrl(courseId: string, lessonId: string) {
+    return getLessonTourUrl(this.tenantId, courseId, lessonId);
   }
 
   // ── Quiz integrity panel (plans/93 section 3) ──────────────────────────────

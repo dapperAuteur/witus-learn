@@ -27,6 +27,12 @@ export const libraryDocuments = pgTable("library_documents", {
   /** Size of the DECODED pdf in bytes, so the UI can show a file size without pulling the
    *  payload. Set together with `pdf`; NULL exactly when it is NULL. */
   pdfBytes: integer("pdf_bytes"),
+  // The sibling EPUB (witus.online's `npm run library:epub` writes it next to the markdown), for
+  // the owner's e-reader. Stored exactly like `pdf` (base64 in text, same reason) and served by the
+  // same download route with `?format=epub`. NULL when no sibling EPUB exists.
+  epub: text("epub"),
+  /** Size of the DECODED epub in bytes; NULL exactly when `epub` is NULL. */
+  epubBytes: integer("epub_bytes"),
   sortOrder: integer("sort_order").notNull().default(0),
   updatedAt: timestamp("updated_at", { withTimezone: true }).notNull().defaultNow(),
 });

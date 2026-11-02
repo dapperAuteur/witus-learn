@@ -1,9 +1,11 @@
 import { requirePlatformOwner } from "@/lib/session";
 import { safeFilename } from "@/lib/safe-filename";
-import { getLibraryDocumentPdf } from "@/db/queries/library";
+import { getLibraryDocumentFile } from "@/db/queries/library";
+import { LIBRARY_FORMATS, parseLibraryFormat } from "@/lib/library-formats.mjs";
 
 /**
- * Streams the stored PDF for one library document as an attachment.
+ * Streams the stored PDF (default) or EPUB (`?format=epub`) for one library document as an
+ * attachment. Any other `format` value answers 404, the same as a missing file.
  *
  * GATING: the library PAGES call requirePlatformOwner() themselves, but a layout or sibling page
  * guard never runs for a route handler, so this file repeats the exact same check. Per the
@@ -28,23 +30,28 @@ function notFoundResponse(): Response {
 }
 
 export async function GET(
-  _request: Request,
+  request: Request,
   { params }: { params: Promise<{ slug: string }> },
 ): Promise<Response> {
   await requirePlatformOwner();
 
+  const format = parseLibraryFormat(new URL(request.url).searchParams.get("format"));
+  if (!format) return notFoundResponse();
+  const { ext, contentType } = LIBRARY_FORMATS[format];
+
   const { slug } = await params;
-  const doc = await getLibraryDocumentPdf(slug);
+  const doc = await getLibraryDocumentFile(slug, format);
   if (!doc) return notFoundResponse();
 
-  // Stored base64 (see src/db/schema/library.ts for why base64 and not bytea).
-  const bytes = Uint8Array.from(Buffer.from(doc.pdf, "base64"));
+  // Stored base64 (see src/db/schema/library.ts for why base64 and not bytea). The sync script
+  // caps each file at 4 MiB, under Vercel's 4.5 MB function response limit.
+  const bytes = Uint8Array.from(Buffer.from(doc.file, "base64"));
 
   return new Response(bytes, {
     status: 200,
     headers: {
-      "Content-Type": "application/pdf",
-      "Content-Disposition": `attachment; filename="${safeFilename(doc.slug)}.pdf"`,
+      "Content-Type": contentType,
+      "Content-Disposition": `attachment; filename="${safeFilename(doc.slug)}.${ext}"`,
       "Content-Length": String(bytes.byteLength),
       "Cache-Control": "no-store, no-cache, must-revalidate, max-age=0",
       "X-Content-Type-Options": "nosniff",

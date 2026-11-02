@@ -43,7 +43,9 @@ describe("tours from the field are tenant-scoped end to end", () => {
     expect(r).toContain("c.legId === leg.id");
     expect(r).toContain("getLessonById(sdb.tenantId, parsed.data.lessonId)");
     expect(r).toContain("sdb.getCourseById(lesson.courseId)");
-    expect(r).toContain("canPublishTour({ isOwner, isInstructor: course.instructorId === session.user.id })");
+    expect(r).toMatch(/canPublishTour\(\{\s*isOwner,\s*isInstructor: course\.instructorId === session\.user\.id,\s*isSchoolAdmin,\s*ownerOnly: course\.ownerOnly,\s*\}\)/);
+    // The people-in-frame attestation is enforced here, before anything is written (plans/96 v2).
+    expect(r).toContain("if (parsed.data.peopleAttested !== true) return errorJson(PEOPLE_ATTESTATION_REQUIRED, 422)");
     expect(r).toContain("const eligibility = tourCaptureEligibility(capture, leg)");
     expect(r).toContain("isEmptyTourSlot(lesson, existing !== null)");
     // The link is copied from the stored capture; the request schema cannot carry one.
@@ -52,11 +54,15 @@ describe("tours from the field are tenant-scoped end to end", () => {
     expect(r).toContain("url: capture.storageUrl!.trim()");
   });
 
-  it("publishing is the owner or the course's own instructor, never a brand admin by role", () => {
+  it("publishing is the owner, the course's own instructor, or a school admin of THIS tenant off owner-only courses", () => {
+    // plans/96 Q3 (BAM, 2026-11-01). The admin is read from THIS tenant's membership (tourSlotViewer),
+    // and canPublishTour refuses an owner-only course; the broader edit gates are still not used.
     const r = src(TARGETS);
+    expect(r).toContain("tourSlotViewer(session.user.id, sdb.tenantId)");
     expect(r).not.toContain("isTenantAdmin");
     expect(r).not.toContain("canEditCourse");
     expect(r).not.toContain("canAccessCourse");
+    expect(src("src/lib/lesson-tours.ts")).toContain('(await getMembership(userId, tenantId)) === "brand_admin"');
   });
 
   it("the remove route 404s across tenants and across courses", () => {
@@ -90,8 +96,21 @@ describe("a tour is published directly, never requested (no-inbox rule)", () => 
     const names = Object.values(getTableColumns(lessonTourEmbeds))
       .map((c) => c.name)
       .sort();
+    // people_attested_at: plans/96 v2, approved by BAM 2026-11-01 (task 386). A timestamp that the
+    // publisher confirmed the people-in-frame sentence, not a state and not a message.
     expect(names).toEqual(
-      ["capture_id", "course_id", "credit_line", "id", "lesson_id", "set_at", "set_by", "tenant_id", "url"].sort(),
+      [
+        "capture_id",
+        "course_id",
+        "credit_line",
+        "id",
+        "lesson_id",
+        "people_attested_at",
+        "set_at",
+        "set_by",
+        "tenant_id",
+        "url",
+      ].sort(),
     );
     // No state that would make it a queue, and nothing message-shaped. A new column here is a decision
     // for BAM, not a test to update.
