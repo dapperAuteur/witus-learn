@@ -16,6 +16,7 @@ import {
  *   pnpm check:longest-option          # exit 1 on any bank over its limit
  *   pnpm check:longest-option --list   # print every bank, passing ones included
  *   pnpm check:longest-option --detail <file>   # per-question dump for one file, to author against
+ *   tsx scripts/check-longest-option.ts --files <path...>   # judge these files instead of the tracked tree
  *
  * THE TELL
  * --------
@@ -73,13 +74,13 @@ import {
  * Do NOT "fix" a bank by padding the distractors with filler. That trades a length tell for a
  * nonsense tell and is worse, because the padding reads as wrong on sight.
  *
- * A RATCHET, like check-standards-coverage.ts
- * -------------------------------------------
- * Courses authored before this guard are listed in GRANDFATHERED with their measured score, and do
- * not fail the build; failing them all at once would just get the check disabled. What fails is a
- * bank in a file that is NOT on that list. New content ships clean, and each entry deleted from the
- * list is real progress. The recorded number is also a ceiling: if a grandfathered file gets WORSE,
- * it fails, so the debt can only shrink.
+ * NO EXCEPTIONS LEFT (plans/98 Q4, BAM 2026-11-01)
+ * -----------------------------------------------
+ * This guard started as a ratchet like check-standards-coverage.ts, with every pre-existing file in
+ * a GRANDFATHERED map at its measured score. The length-balance sweep emptied that map, so it was
+ * removed: every bank of 8+ questions in every file is now judged against the limit, and any file
+ * over it fails. Do not bring the map back to let new content through; fix the options instead.
+ * (check-shortest-option.ts and check-length-balance.ts still carry their maps.)
  */
 
 const ROOTS = ["scripts", "src"];
@@ -90,18 +91,11 @@ const EXTS = [".ts", ".tsx"];
 // src/lib/quiz-integrity.ts, shared with check-shortest-option.ts, check-length-balance.ts and the
 // course-page quiz panel, so a change to a measure changes all of them at once.
 
-/** Slack over a grandfathered file's recorded score, for ordinary authoring drift. */
-const DRIFT = 0.03;
-
-/**
- * Files authored before this guard existed, with the score measured when it was added. They do not
- * fail, but they may not get worse. DELETE an entry once its file is fixed; the list shrinking is
- * the progress bar. Do not add to this list to make new content pass.
- */
-const GRANDFATHERED: Record<string, number> = {
-};
-
 function trackedFiles(): string[] {
+  // `--files a.ts b.ts` judges just those files (the tests use it on a fixture); otherwise every
+  // tracked .ts/.tsx file under scripts/ and src/.
+  const at = process.argv.indexOf("--files");
+  if (at !== -1) return process.argv.slice(at + 1).filter((f) => !f.startsWith("--"));
   const out = execFileSync("git", ["ls-files", "-z", ...ROOTS], { encoding: "utf-8" });
   return out
     .split("\0")
@@ -272,50 +266,17 @@ if (detailIdx !== -1) {
   process.exit(0);
 }
 
-/**
- * `--emit-grandfather` prints the GRANDFATHERED literal for the CURRENT state of the tree.
- *
- * This exists for the one-time baseline and for re-baselining DOWNWARD after a sweep. Do not run it
- * to silence a failure: it would record the regression as the new normal, which is the opposite of
- * what the ratchet is for. To let one file through deliberately, add that single line by hand.
- */
-if (process.argv.includes("--emit-grandfather")) {
-  const rows: [string, number][] = [];
-  for (const [file, list] of new Map(
-    [...checked].reduce((m, b) => m.set(b.file, [...(m.get(b.file) ?? []), b]), new Map<string, Bank[]>()),
-  )) {
-    const worst = list.reduce((a, b) => (b.score > a.score ? b : a));
-    if (worst.score > worst.limit) rows.push([relative(process.cwd(), file), worst.score]);
-  }
-  rows.sort((a, b) => a[0].localeCompare(b[0]));
-  for (const [f, s] of rows) console.log(`  ${JSON.stringify(f)}: ${s.toFixed(2)},`);
-  console.error(`\n${rows.length} files.`);
-  process.exit(0);
-}
-
 /** Worst bank score per file: a file is only as clean as its most gameable bank. */
 const byFile = new Map<string, Bank[]>();
 for (const b of checked) byFile.set(b.file, [...(byFile.get(b.file) ?? []), b]);
 
-const violations: { file: string; worst: Bank; allowed: number; grandfathered: boolean }[] = [];
+const violations: { file: string; worst: Bank }[] = [];
 for (const [file, list] of byFile) {
   const worst = list.reduce((a, b) => (b.score > a.score ? b : a));
-  const rel = relative(process.cwd(), file);
-  const recorded = GRANDFATHERED[rel];
-  // A grandfathered file is judged against its own recorded score plus drift, so it can never get
-  // worse; a file with no entry is judged against the normal limit.
-  const allowed = recorded === undefined ? worst.limit : Math.max(worst.limit, recorded + DRIFT);
-  if (worst.score > allowed) {
-    violations.push({ file: rel, worst, allowed, grandfathered: recorded !== undefined });
-  }
+  if (worst.score > worst.limit) violations.push({ file: relative(process.cwd(), file), worst });
 }
 
 const overLimit = checked.filter((b) => b.score > b.limit);
-const stale = Object.keys(GRANDFATHERED).filter((f) => {
-  const list = byFile.get(join(process.cwd(), f)) ?? byFile.get(f);
-  if (!list) return false;
-  return list.every((b) => b.score <= b.limit);
-});
 
 if (listAll) {
   for (const b of [...checked].sort((a, b) => b.score - a.score)) {
@@ -331,15 +292,9 @@ if (listAll) {
 
 console.log(
   `Scanned ${files.length} files: ${checked.length} quiz banks of ${MIN_BANK}+ questions, ` +
-    `${overLimit.length} over the ${pct(BASE_SHARE)} length-tell limit ` +
-    `(${Object.keys(GRANDFATHERED).length} file(s) grandfathered), ` +
+    `${overLimit.length} over the ${pct(BASE_SHARE)} length-tell limit (no file grandfathered), ` +
     `${violations.length} violation${violations.length === 1 ? "" : "s"}.`,
 );
-
-if (stale.length > 0) {
-  console.log(`\nGood news: ${stale.length} grandfathered file(s) are now clean. Delete them from GRANDFATHERED:`);
-  for (const f of stale) console.log(`  ${f}`);
-}
 
 if (violations.length > 0) {
   console.error(
@@ -350,9 +305,7 @@ if (violations.length > 0) {
       "an edit resets every learner's history for that question). Run with --detail <file> for the list.\n",
   );
   for (const v of violations.sort((a, b) => b.worst.score - a.worst.score)) {
-    const why = v.grandfathered
-      ? `${pct(v.worst.score)} is WORSE than the recorded ${pct(v.allowed - DRIFT)}`
-      : `${pct(v.worst.score)} of questions answerable by length, limit ${pct(v.allowed)}`;
+    const why = `${pct(v.worst.score)} of questions answerable by length, limit ${pct(v.worst.limit)}`;
     console.error(`  ${v.file}:${v.worst.line}  ${v.worst.label}\n      ${why}`);
   }
   process.exit(1);

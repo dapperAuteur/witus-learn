@@ -141,8 +141,9 @@ Two more, below, protect the self-check card and the choice of widget itself:
   long as short. The other two guards stop the extremes at 60% for every file; this one is the
   standard new content is written to.
 
-All three length guards are **ratchets** like the standards one: pre-existing files sit in
-`GRANDFATHERED` with their measured score and may not get *worse*; any file not on that list fails.
+The shortest-option and length-balance guards are **ratchets** like the standards one: pre-existing
+files sit in `GRANDFATHERED` with their measured score and may not get *worse*; any file not on that
+list fails. The longest-option guard has no map left (its last entry was fixed; removed 2026-11-01, plans/98 Q4), so every file must pass it.
 When you fix a file, delete its line. Never add a line to make new content pass. The sweep's method,
 tools and order are in `plans/bugs/2026-10-07-shortest-option-tell.md`.
 The length measures live in `src/lib/quiz-integrity.ts`; the three check scripts and the course-page quiz panel all import them, so a change to a measure changes all three at once.
