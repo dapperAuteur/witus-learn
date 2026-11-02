@@ -95,19 +95,58 @@ function cleanLocator(raw: string): string | null {
   return LOCATOR_SHAPE.test(s) ? s : null;
 }
 
+// A regulation or statute cited by its code section: "Definitions, 47 C.F.R. § 74.801 (2026)" is
+// cited in text as "(47 C.F.R. § 74.801, 2026)", but apaSignals reads its author as "Definitions".
+const CODE_SECTION = /\b\d+\s+(?:C\.F\.R\.|U\.S\.C\.|CFR|USC)\s+§+\s*[\d.]+(?:\([a-z0-9]+\))*/;
+
+/** The author (or code section) and year an in-text citation of this entry carries. */
+export function citationSignals(entry: string): { author: string; year: string } | null {
+  const signals = apaSignals(entry);
+  if (!signals) return null;
+  const plain = entry.replace(/\*+/g, "");
+  const code = CODE_SECTION.exec(plain.slice(0, plain.search(/\((?:n\.d\.|\d{4})/) + 1 || undefined));
+  return code ? { author: code[0], year: signals.year } : signals;
+}
+
+/**
+ * Group-author abbreviations the course defines in its text, APA style: the first citation reads
+ * "(Society of Motion Picture and Television Engineers [SMPTE], 2018, p. 2)" and later ones
+ * "(SMPTE, 2018)". Full name, lowercased, to its abbreviations.
+ */
+export function groupAbbreviations(texts: readonly (string | null | undefined)[]): Map<string, string[]> {
+  const out = new Map<string, string[]>();
+  for (const t of texts) {
+    if (!t) continue;
+    for (const m of t.replace(/\*+/g, "").matchAll(/([A-Z][A-Za-z.&'’ -]{2,120}?)\s*\[([A-Z][A-Za-z0-9&.-]{1,15})\]/g)) {
+      const full = m[1].trim().toLowerCase();
+      const list = out.get(full) ?? [];
+      if (!list.includes(m[2])) list.push(m[2]);
+      out.set(full, list);
+    }
+  }
+  return out;
+}
+
 /**
  * The locators a lesson's prose cites for one source, in order, de-duplicated.
  *
  * Two forms: parenthetical, "(Belden, 2026a, p. 1)" or a group "(Smith, 2020, pp. 4-5; Doe, 2019)",
  * where each `;` part is checked on its own; and narrative, "Hofstede de Groot (1893, p. 190)".
+ * A group author's abbreviation (`abbreviations`, from groupAbbreviations) counts as its name.
  * Returns `matched: false` when the source is not cited in the text at all.
  */
-export function pinpointsFor(body: string | null | undefined, entry: string): { matched: boolean; pinpoints: string[] } {
+export function pinpointsFor(
+  body: string | null | undefined,
+  entry: string,
+  abbreviations: ReadonlyMap<string, readonly string[]> = new Map(),
+): { matched: boolean; pinpoints: string[] } {
   if (!body) return { matched: false, pinpoints: [] };
-  const signals = apaSignals(entry);
+  const signals = citationSignals(entry);
   if (!signals) return { matched: false, pinpoints: [] };
   const prose = stripSourcesBlock(body);
-  const author = escapeRegExp(signals.author);
+  // The full name, or "Full Name [ABBR]", or the abbreviation alone.
+  const names = [signals.author, ...(abbreviations.get(signals.author.toLowerCase()) ?? [])];
+  const author = `(?:${names.map(escapeRegExp).join("|")})(?:\\s*\\[[^\\]]{1,16}\\])?`;
   const year = yearPattern(signals.year, entry);
   const authorRe = new RegExp(`(?<![A-Za-z])${author}(?![a-z])`, "i");
   const yearRe = new RegExp(year, "i");
@@ -165,6 +204,7 @@ export function buildCourseBibliography(lessons: readonly BibliographyLessonInpu
   const byKey = new Map<string, BibliographyEntry>();
   // key -> lesson position -> the Locator clauses that lesson's entry carries.
   const listedIn = new Map<string, Map<number, string[]>>();
+  const abbreviations = groupAbbreviations(ordered.map((l) => l.body));
   for (const l of ordered) {
     for (const raw of extractCitations(l.body ?? "")) {
       const { text, locator } = splitLocatorClause(raw);
@@ -183,7 +223,7 @@ export function buildCourseBibliography(lessons: readonly BibliographyLessonInpu
   for (const entry of byKey.values()) {
     const listed = listedIn.get(entry.key)!;
     for (const l of ordered) {
-      const { matched, pinpoints } = pinpointsFor(l.body, entry.text);
+      const { matched, pinpoints } = pinpointsFor(l.body, entry.text, abbreviations);
       const isListed = listed.has(l.position);
       if (!matched && !isListed) continue;
       entry.uses.push({
