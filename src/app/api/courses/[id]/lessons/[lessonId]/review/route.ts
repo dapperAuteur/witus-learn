@@ -9,8 +9,11 @@ import {
   normalizeCorrection,
   OWNER_DEMONSTRATION_CREDENTIAL,
   readReviewNeeds,
-  verdictKindsFor,
+  verdictBlockReason,
+  verdictSlotsFor,
   CORRECTION_MAX,
+  REVIEWER_KEY_MAX,
+  REVIEWER_KEY_PATTERN,
 } from "@/lib/lesson-review";
 import { lessonReviewHash } from "@/lib/lesson-review-hash";
 
@@ -18,6 +21,8 @@ type Params = { params: Promise<{ id: string; lessonId: string }> };
 
 const Body = z.object({
   needKind: z.enum(["qr", "p"]),
+  /** Which reviewer's need ('' or absent for an untagged one; migration 0075). */
+  reviewerKey: z.union([z.literal(""), z.string().max(REVIEWER_KEY_MAX).regex(REVIEWER_KEY_PATTERN)]).optional(),
   verdict: z.enum(["cleared", "cleared_with_correction", "not_cleared"]),
   // Length is checked after trimming by normalizeCorrection; this cap only stops an absurd body.
   correction: z.string().max(CORRECTION_MAX * 4).nullable().optional(),
@@ -51,9 +56,11 @@ export async function POST(req: Request, { params }: Params) {
   const parsed = Body.safeParse(await req.json().catch(() => null));
   if (!parsed.success) return errorJson("Invalid input", 400);
   const { needKind, verdict } = parsed.data;
+  const reviewerKey = parsed.data.reviewerKey ?? "";
 
-  if (!verdictKindsFor(readReviewNeeds(lesson.reviewNeeds)).includes(needKind)) {
-    return errorJson("This lesson has no release need of that kind.", 400);
+  // Each (kind, reviewer key) is its own sign-off: the need must exist exactly as named.
+  if (!verdictSlotsFor(readReviewNeeds(lesson.reviewNeeds)).some((s) => s.kind === needKind && s.reviewerKey === reviewerKey)) {
+    return errorJson("This lesson has no release need of that kind for that reviewer.", 400);
   }
   const correction = normalizeCorrection(verdict, parsed.data.correction);
   if (!correction.ok) return errorJson(correction.error, 400);
@@ -70,14 +77,20 @@ export async function POST(req: Request, { params }: Params) {
   // A reviewer reads only published lessons; a verdict on a draft they cannot open means nothing.
   if (!isOwner && !lesson.isPublished) return errorJson("Not found", 404);
 
-  const allowed = canRecordVerdict({
+  const actor = {
     isAuditor: Boolean(grant),
     hasCredential: grant ? hasReviewerCredential(grant) : false,
     isOwner,
     isInstructor: course.instructorId === session.user.id,
     kind: needKind,
-  });
-  if (!allowed) {
+    grantReviewerKey: grant?.reviewerKey ?? "",
+    needReviewerKey: reviewerKey,
+  };
+  if (!canRecordVerdict(actor)) {
+    // A surveyor's grant must not clear the Native reviewer's need on the same lesson (rule 5).
+    if (verdictBlockReason(actor) === "other_reviewer") {
+      return errorJson("This need is for a different reviewer from the one your invitation names.", 403);
+    }
     if (grant && !hasReviewerCredential(grant)) {
       return errorJson(
         "The person who invited you has not added your name and credential yet, so a verdict could not be credited. Ask them to add it on the course's review panel.",
@@ -96,6 +109,7 @@ export async function POST(req: Request, { params }: Params) {
     courseId: course.id,
     lessonId: lesson.id,
     needKind,
+    reviewerKey,
     auditorId: grant?.id ?? null,
     reviewerUserId: session.user.id,
     reviewerName,
@@ -109,6 +123,7 @@ export async function POST(req: Request, { params }: Params) {
   return json({
     review: {
       needKind: row.needKind,
+      reviewerKey: row.reviewerKey,
       verdict: row.verdict,
       reviewerName: row.reviewerName,
       reviewerCredential: row.reviewerCredential,

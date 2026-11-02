@@ -20,10 +20,13 @@ export function CorrectionAppliedButton({
   courseId,
   lessonId,
   needKind,
+  reviewerKey = "",
 }: {
   courseId: string;
   lessonId: string;
   needKind: VerdictNeedKind;
+  /** Which reviewer's verdict ('' when untagged; migration 0075). */
+  reviewerKey?: string;
 }) {
   const router = useRouter();
   const [busy, setBusy] = useState(false);
@@ -35,7 +38,7 @@ export function CorrectionAppliedButton({
     const res = await fetch(`/api/courses/${courseId}/lessons/${lessonId}/review/applied`, {
       method: "POST",
       headers: { "content-type": "application/json" },
-      body: JSON.stringify({ needKind }),
+      body: JSON.stringify({ needKind, reviewerKey }),
     }).catch(() => null);
     setBusy(false);
     if (!res?.ok) {

@@ -46,6 +46,44 @@ describe("every Before release marker in scripts/data parses as the need it mean
     expect(bad).toEqual([]);
   });
 
+  // Plan 97 G1/Q3: a reviewer need must be written as one. A decision is BAM's call and no verdict
+  // clears it, so a reviewer's read written as "BAM's decision ... release only after a reviewer has
+  // read it" can never be signed off by that reviewer and silently holds the course. Since 0075 a
+  // second reviewer on a lesson is a tagged QR need ("(QR) [native-reviewer]: ..."), so no decision
+  // has a reason to name a reviewer or a read.
+  const REVIEWER_NEED_AS_DECISION = /\b(reviewer|has read|to read|to check|to review)\b/i;
+
+  it("no decision marker is a reviewer need in disguise", async () => {
+    const { courses } = await loadAllCourseFiles();
+    const disguised: string[] = [];
+    for (const { file, course } of courses) {
+      for (const l of course.lessons) {
+        const needs = l.reviewNeeds ?? parseReleaseMarkers(l.body).needs;
+        for (const n of needs) {
+          if (n.kind === "decision" && REVIEWER_NEED_AS_DECISION.test(n.who)) {
+            disguised.push(`${file} · lesson "${l.slug}" · ${n.who}`);
+          }
+        }
+      }
+    }
+    expect(
+      disguised,
+      `Write these as reviewer needs: "needs a qualified reviewer (QR) [reviewer-key]: ...", which that reviewer signs off`,
+    ).toEqual([]);
+  });
+
+  it("the disguise guard catches the old Native-reviewer wording and passes a real decision", () => {
+    const old = parseReleaseMarkers(
+      "> **Before release:** needs BAM's decision (brief question 8): release only after a Native reviewer, to be named, has read the cessions.",
+    ).needs[0];
+    expect(old.kind).toBe("decision");
+    expect(REVIEWER_NEED_AS_DECISION.test(old.who)).toBe(true);
+    const real = parseReleaseMarkers(
+      "> **Before release:** needs BAM's decision (brief question 5): whether set sound is taught here or in the planned Videography course.",
+    ).needs[0];
+    expect(REVIEWER_NEED_AS_DECISION.test(real.who)).toBe(false);
+  });
+
   it("catches a misworded marker (the guard itself works)", () => {
     const needs = parseReleaseMarkers("> **Before release:** release only after a Native reviewer has read it.").needs;
     expect(needs).toEqual([{ kind: "decision", who: "release only after a Native reviewer has read it" }]);

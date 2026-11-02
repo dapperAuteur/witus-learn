@@ -3,10 +3,15 @@ import { apiContext, errorJson, json } from "@/lib/api";
 import { getLessonById } from "@/db/queries/authoring";
 import { isPlatformOwner } from "@/lib/session";
 import { lessonReviewHash } from "@/lib/lesson-review-hash";
+import { REVIEWER_KEY_MAX, REVIEWER_KEY_PATTERN } from "@/lib/lesson-review";
 
 type Params = { params: Promise<{ id: string; lessonId: string }> };
 
-const Body = z.object({ needKind: z.enum(["qr", "p"]) });
+const Body = z.object({
+  needKind: z.enum(["qr", "p"]),
+  /** Which reviewer's verdict ('' or absent for an untagged need; migration 0075). */
+  reviewerKey: z.union([z.literal(""), z.string().max(REVIEWER_KEY_MAX).regex(REVIEWER_KEY_PATTERN)]).optional(),
+});
 
 // POST /api/courses/[id]/lessons/[lessonId]/review/applied: "Applied as written" (reviewer
 // sign-off, plans/93 section 1). The platform owner says he has edited the lesson to read exactly as
@@ -35,6 +40,7 @@ export async function POST(req: Request, { params }: Params) {
     courseId: course.id,
     lessonId: lesson.id,
     needKind: parsed.data.needKind,
+    reviewerKey: parsed.data.reviewerKey ?? "",
     lessonHash: lessonReviewHash(lesson),
   });
   if (!row) return errorJson("There is no unapplied correction on this need.", 409);

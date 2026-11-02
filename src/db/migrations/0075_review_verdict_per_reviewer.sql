@@ -1,0 +1,6 @@
+ALTER TABLE "lesson_reviews" DROP CONSTRAINT "lesson_reviews_tenant_lesson_kind_uq";--> statement-breakpoint
+ALTER TABLE "course_auditors" ADD COLUMN "reviewer_key" text DEFAULT '' NOT NULL;--> statement-breakpoint
+ALTER TABLE "lesson_reviews" ADD COLUMN "reviewer_key" text DEFAULT '' NOT NULL;--> statement-breakpoint
+ALTER TABLE "lesson_reviews" ADD CONSTRAINT "lesson_reviews_tenant_lesson_kind_reviewer_uq" UNIQUE("tenant_id","lesson_id","need_kind","reviewer_key");--> statement-breakpoint
+ALTER TABLE "course_auditors" ADD CONSTRAINT "course_auditors_reviewer_key_chk" CHECK ("course_auditors"."reviewer_key" = '' or ("course_auditors"."reviewer_key" ~ '^[a-z0-9]+(-[a-z0-9]+)*$' and char_length("course_auditors"."reviewer_key") <= 40));--> statement-breakpoint
+ALTER TABLE "lesson_reviews" ADD CONSTRAINT "lesson_reviews_reviewer_key_chk" CHECK ("lesson_reviews"."reviewer_key" = '' or ("lesson_reviews"."reviewer_key" ~ '^[a-z0-9]+(-[a-z0-9]+)*$' and char_length("lesson_reviews"."reviewer_key") <= 40));

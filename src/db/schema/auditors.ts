@@ -61,11 +61,21 @@ export const courseAuditors = pgTable(
      * only, at most 500 characters (validated in the route and by the CHECK below).
      */
     credentialEvidenceUrl: text("credential_evidence_url"),
+    /**
+     * Which tagged need this reviewer clears (migration 0075): '' clears the course's untagged needs,
+     * as every grant did before; `native-reviewer` clears ONLY needs tagged `[native-reviewer]`. Set
+     * by the inviter beside the credit, so a reviewer cannot pick which need they speak for.
+     */
+    reviewerKey: text("reviewer_key").notNull().default(""),
   },
   (t) => [
     check(
       "course_auditors_evidence_url_chk",
       sql`${t.credentialEvidenceUrl} is null or (${t.credentialEvidenceUrl} like 'https://%' and char_length(${t.credentialEvidenceUrl}) <= 500)`,
+    ),
+    check(
+      "course_auditors_reviewer_key_chk",
+      sql`${t.reviewerKey} = '' or (${t.reviewerKey} ~ '^[a-z0-9]+(-[a-z0-9]+)*$' and char_length(${t.reviewerKey}) <= 40)`,
     ),
     unique("course_auditors_tenant_course_email_uq").on(t.tenantId, t.courseId, t.email),
     index("course_auditors_tenant_course_idx").on(t.tenantId, t.courseId),

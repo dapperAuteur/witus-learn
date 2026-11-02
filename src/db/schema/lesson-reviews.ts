@@ -6,7 +6,13 @@ import { courses, lessons } from "./courses";
 import { tenants } from "./tenancy";
 
 /**
- * Reviewer sign-off (plans/93 section 1): ONE current verdict per lesson per need kind.
+ * Reviewer sign-off (plans/93 section 1): ONE current verdict per lesson, need kind and reviewer key.
+ *
+ * `reviewer_key` (migration 0075, BAM 2026-11-02: "each kind of review is signed off separately")
+ * says WHICH reviewer a need is for, from the marker's `[tag]` ("needs a qualified reviewer (QR)
+ * [native-reviewer]: ..."). '' is the untagged need, which is every need written before 0075, so
+ * every existing row keeps matching the need it cleared. A lesson that needs a surveyor AND a Native
+ * reviewer has two QR rows, and one reviewer's verdict cannot clear the other's need.
  *
  * A row says: this reviewer, credited as this name and credential, read this lesson as it stood
  * (`lesson_hash`, the sha256 of src/lib/lesson-review.ts materialLessonText) and cleared it, cleared
@@ -40,6 +46,8 @@ export const lessonReviews = pgTable(
       .references(() => lessons.id, { onDelete: "cascade" }),
     /** qr | p. A "decision" marker is never a verdict; it clears only by editing it away. */
     needKind: text("need_kind").notNull(),
+    /** '' for an untagged need, else a key such as `native-reviewer` (src/lib/lesson-review.ts rule 5). */
+    reviewerKey: text("reviewer_key").notNull().default(""),
     /** The grant the verdict was recorded under. NULL for the owner's own P verdict, or once revoked. */
     auditorId: uuid("auditor_id").references(() => courseAuditors.id, { onDelete: "set null" }),
     reviewerUserId: text("reviewer_user_id").references(() => users.id, { onDelete: "set null" }),
@@ -55,9 +63,13 @@ export const lessonReviews = pgTable(
     decidedAt: timestamp("decided_at", { withTimezone: true }).notNull().defaultNow(),
   },
   (t) => [
-    unique("lesson_reviews_tenant_lesson_kind_uq").on(t.tenantId, t.lessonId, t.needKind),
+    unique("lesson_reviews_tenant_lesson_kind_reviewer_uq").on(t.tenantId, t.lessonId, t.needKind, t.reviewerKey),
     index("lesson_reviews_tenant_course_idx").on(t.tenantId, t.courseId),
     check("lesson_reviews_need_kind_chk", sql`${t.needKind} in ('qr','p')`),
+    check(
+      "lesson_reviews_reviewer_key_chk",
+      sql`${t.reviewerKey} = '' or (${t.reviewerKey} ~ '^[a-z0-9]+(-[a-z0-9]+)*$' and char_length(${t.reviewerKey}) <= 40)`,
+    ),
     check("lesson_reviews_verdict_chk", sql`${t.verdict} in ('cleared','cleared_with_correction','not_cleared')`),
     check(
       "lesson_reviews_correction_chk",

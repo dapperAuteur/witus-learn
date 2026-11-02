@@ -42,9 +42,12 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   on \`/teach\` until acknowledged (Q5), which made \`seed:courses\` and the RAG index automatic after a merge
   (\`seed-production.yml\`; the indexer now throttles under Gemini's free-tier limit and retries 429s). Three
   product events (Q6), \`/audit/review\` loading, error and empty states, Run Your Course Section 4 (WAIVED line
-  deleted). Not done: Q3 (rewording the three Native-reviewer markers to QR) waits on verdicts keyed per need,
-  since lessons 3, 7 and 10 already carry a surveyor QR need; \`pnpm test:db\` for the review suites needs
-  seeded tenants on the test branch.
+  deleted). **Each reviewer signs off separately** (\`feat/review-verdict-per-reviewer\`, migration
+  \`0075_review_verdict_per_reviewer\`): a marker may tag its reviewer (\`(QR) [native-reviewer]\`), verdicts are
+  keyed per lesson, kind and reviewer key, and the inviter sets **Reviews for** on a grant, so a surveyor's
+  verdict cannot clear a Native reviewer's need on the same lesson. That made Q3 safe: the three
+  Native-reviewer markers are now tagged QR needs, and a test fails on any decision written like a reviewer
+  need. Not done: \`pnpm test:db\` for the review suites needs seeded tenants on the test branch.
 - ✅ **Reviewer sign-off** (\`feat/reviewer-signoff\`, migration \`0067_serious_karen_page\`; on \`main\` since
   2026-10-14, merge \`30948759\`, task 337 applied the migration). Plans/93 section 1. Version 2 is the entry
   above (plans/97). The "Before release" lines in

@@ -27,18 +27,13 @@ import type { AuthoredCourse } from "./authored-course";
 // MARKED LESSONS. Each starts its body with a "> **Before release:**" line naming who must act.
 //   QR, licensed land surveyor only: 2 (the limits and the legal-survey definition), 6 (the corners
 //     are the law), 8 (reading and rerunning a deed).
-//   QR, licensed land surveyor, PLUS a separate decision marker for the Native reviewer's read (one
-//     verdict per kind per lesson, so two reviewers on one QR line would clear when either signed;
-//     see plans/bugs/2026-10-15-one-qr-verdict-per-lesson.md): 3 (the 1785 Ordinance,
-//     "purchased of the Indian inhabitants"), 7 (the 1775 Piankeshaw deed), 10 (how Indiana was
-//     surveyed, cession by cession).
-//     NOT reworded to the QR form (reviewer sign-off v2, 2026-11-01). Plan 97 Q3 proposed that, on
-//     the reading that these lines "parse as a decision" by accident. They do not: each parses as a
-//     decision WITH brief question 8, which is what they were written to be. Rewording them to QR
-//     would put the Native reviewer and the surveyor under ONE qr verdict per lesson, so either one
-//     signing would clear both, the defect in plans/bugs/2026-10-15-one-qr-verdict-per-lesson.md.
-//     They stay decisions (fail closed) until verdicts are keyed per need, not per kind; BAM edits
-//     each marker away after the Native reviewer has read the lesson.
+//   QR, licensed land surveyor, PLUS a second QR need tagged [native-reviewer] for the Native
+//     reviewer's read: 3 (the 1785 Ordinance, "purchased of the Indian inhabitants"), 7 (the 1775
+//     Piankeshaw deed), 10 (how Indiana was surveyed, cession by cession). Each (kind, tag) is its
+//     own sign-off (migration 0075, BAM 2026-11-02, plan 97 Q3), and only a grant set to review for
+//     "native reviewer" can clear the tagged one, so the surveyor's verdict cannot clear it. These
+//     were BAM's-decision markers (brief question 8) until then; see
+//     plans/bugs/2026-10-15-one-qr-verdict-per-lesson.md.
 //   P (BAM's filmed visit): 13.
 //   Unmarked: 1, 4, 5, 9, 11, 12.
 //
@@ -124,11 +119,11 @@ const P = (what: string) => `> **Before release:** needs a practitioner or BAM's
 
 const SURVEYOR = "a licensed land surveyor, to be named";
 const NATIVE_REVIEWER = "a Native reviewer, to be named";
-// The Native read is a DECISION marker, not a second QR need: sign-off keeps one verdict per kind per
-// lesson, so a QR line naming two reviewers would clear when EITHER signed. A decision is never cleared
-// by a verdict; BAM removes the marker once the Native reviewer has read the lesson (answer 8).
+// The Native read is its own QR need, tagged [native-reviewer]: verdicts are kept per (kind, tag), so
+// it is signed off separately from the surveyor's need on the same lesson, by a reviewer whose grant
+// is set to "native reviewer" on the course's review panel (src/lib/lesson-review.ts rule 5).
 const NATIVE_READ = (what: string) =>
-  `> **Before release:** needs BAM's decision (brief question 8): release only after ${NATIVE_REVIEWER} has read ${what}.`;
+  `> **Before release:** needs a qualified reviewer (QR) [native-reviewer]: ${NATIVE_REVIEWER}, to read ${what}.`;
 
 export const READING_A_LAND_DESCRIPTION_COURSE: AuthoredCourse = {
   title: "Reading a Land Description: The Grid, the Deed and Indiana",

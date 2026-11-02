@@ -3,7 +3,16 @@ import type { Metadata } from "next";
 import { getScopedDb } from "@/db/scoped";
 import { requireUserPage, isPlatformOwner } from "@/lib/session";
 import { getUsername } from "@/db/queries/authoring";
-import { hasReviewerCredential, KIND_TITLE, needLabel, RESET_RULE, REVIEW_DISCLAIMER, STATE_LABEL } from "@/lib/lesson-review";
+import {
+  hasReviewerCredential,
+  KIND_TITLE,
+  needLabel,
+  RESET_RULE,
+  REVIEW_DISCLAIMER,
+  reviewerKeyLabel,
+  slotId,
+  STATE_LABEL,
+} from "@/lib/lesson-review";
 import { reviewsByLesson, summarizeLessonReview } from "@/lib/lesson-review-summary";
 import { ReviewPacketDownload } from "@/components/review-packet-download";
 
@@ -118,9 +127,14 @@ export default async function AuditReviewPage() {
                           {summary.rows
                             .filter((r) => r.stillMarked)
                             .map((r) => (
-                              <li key={r.kind}>
-                                <span className="font-medium">{KIND_TITLE[r.kind]}</span> ({r.whos.join("; ")}):{" "}
-                                {STATE_LABEL[r.state]}
+                              <li key={slotId(r.kind, r.reviewerKey)}>
+                                <span className="font-medium">
+                                  {KIND_TITLE[r.kind]}
+                                  {r.reviewerKey ? ` (${reviewerKeyLabel(r.reviewerKey)})` : ""}
+                                </span>{" "}
+                                ({r.whos.join("; ")}): {STATE_LABEL[r.state]}
+                                {/* Rule 5: a need tagged for another reviewer is listed, but is not this grant's to clear. */}
+                                {r.reviewerKey !== g.reviewerKey ? " (for a different reviewer)" : ""}
                                 {r.review && r.review.reviewerUserId === session.user.id
                                   ? `, your verdict of ${fmt(r.review.decidedAt)}`
                                   : r.review

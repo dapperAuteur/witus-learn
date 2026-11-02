@@ -22,6 +22,7 @@ import { CourseInterestPanel } from "@/components/course-interest-panel";
 import { serializeForOwner } from "@/lib/course-interest";
 import { ReviewSignoffPanel, type SignoffLesson } from "@/components/review-signoff-panel";
 import { readinessOf, reviewsByLesson, summarizeLessonReview } from "@/lib/lesson-review-summary";
+import { reviewerKeyOptions } from "@/lib/lesson-review";
 import { courseStage, followUpsForCourse, type LaunchTodo } from "@/lib/release-followups";
 import { launchTodosForCourse } from "@/db/queries/release-followups";
 import { LaunchTodoList } from "@/components/launch-todo-list";
@@ -352,11 +353,13 @@ export default async function ManageCoursePage({ params }: { params: Promise<{ c
             acceptedAt: a.acceptedAt,
             reviewerName: a.reviewerName,
             reviewerCredential: a.reviewerCredential,
+            reviewerKey: a.reviewerKey,
             // Owner and school admin only (canSeeReviewerEvidence: isAdmin here, since a brand_admin
             // never reaches an owner-only course's page).
             ...(isAdmin ? { credentialEvidenceUrl: a.credentialEvidenceUrl } : {}),
           }))}
           canSetEvidence={isAdmin}
+          reviewerKeys={reviewerKeyOptions(signoffLessons.map((x) => x.summary.needs))}
         />
 
         {signoffLessons.length > 0 ? (

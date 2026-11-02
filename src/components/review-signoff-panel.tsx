@@ -1,5 +1,13 @@
 import Link from "next/link";
-import { KIND_TITLE, needLabel, RESET_RULE, STATE_LABEL, type ReleaseReadiness } from "@/lib/lesson-review";
+import {
+  KIND_TITLE,
+  needLabel,
+  RESET_RULE,
+  reviewerKeyLabel,
+  slotId,
+  STATE_LABEL,
+  type ReleaseReadiness,
+} from "@/lib/lesson-review";
 import type { LessonReviewSummary } from "@/lib/lesson-review-summary";
 import { CorrectionAppliedButton, ReleaseReviewHoldButton } from "@/components/review-actions";
 import type { LaunchTodo } from "@/lib/launch-todos";
@@ -71,7 +79,8 @@ export function ReviewSignoffPanel({
       </p>
       <p className="mt-1 text-sm text-neutral-600 dark:text-neutral-400">
         A reviewer records a verdict only after you add their name and credential under &ldquo;Invite someone to review this
-        course&rdquo;. The platform owner may clear practitioner needs with their own demonstration, never a qualified-reviewer need.
+        course&rdquo;. A need that names a particular reviewer, such as &ldquo;Qualified reviewer (native reviewer)&rdquo;, is signed off
+        separately, only by a reviewer you set to review for it there. The platform owner may clear practitioner needs with their own demonstration, never a qualified-reviewer need.
       </p>
 
       {canRelease && holdReason ? (
@@ -97,9 +106,12 @@ export function ReviewSignoffPanel({
               )}
               <ul className="mt-1 space-y-2">
                 {l.summary.rows.map((r) => (
-                  <li key={r.kind}>
+                  <li key={slotId(r.kind, r.reviewerKey)}>
                     <span className="flex flex-wrap items-center gap-2">
-                      <span className="text-neutral-600 dark:text-neutral-400">{KIND_TITLE[r.kind]}</span>
+                      <span className="text-neutral-600 dark:text-neutral-400">
+                        {KIND_TITLE[r.kind]}
+                        {r.reviewerKey ? ` (${reviewerKeyLabel(r.reviewerKey)})` : ""}
+                      </span>
                       <span className={`rounded-full px-2 py-0.5 text-xs ${STATE_TONE[r.state] ?? STATE_TONE.awaiting}`}>
                         {r.stillMarked ? STATE_LABEL[r.state] : `${STATE_LABEL[r.state]} (marker removed)`}
                       </span>
@@ -131,7 +143,12 @@ export function ReviewSignoffPanel({
                         <span className="whitespace-pre-line">{r.review.correction}</span>
                         {isOwner ? (
                           <span className="block">
-                            <CorrectionAppliedButton courseId={courseId} lessonId={l.summary.lessonId} needKind={r.kind} />
+                            <CorrectionAppliedButton
+                              courseId={courseId}
+                              lessonId={l.summary.lessonId}
+                              needKind={r.kind}
+                              reviewerKey={r.reviewerKey}
+                            />
                           </span>
                         ) : null}
                       </span>

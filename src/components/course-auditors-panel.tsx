@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import { reviewerKeyLabel } from "@/lib/lesson-review";
 
 export interface AuditorRow {
   id: string;
@@ -12,6 +13,14 @@ export interface AuditorRow {
   reviewerCredential?: string | null;
   /** Owner and school admin only (plans/97 v2 Q2); never sent to the course's instructor. */
   credentialEvidenceUrl?: string | null;
+  /** Which tagged need this reviewer clears ('' = the untagged needs; migration 0075). */
+  reviewerKey?: string;
+}
+
+/** A tagged reviewer the course's markers name, with the words of the first need that names it. */
+export interface ReviewerKeyOption {
+  key: string;
+  example: string;
 }
 
 const fmt = (d: string | Date) =>
@@ -30,10 +39,13 @@ export function CourseAuditorsPanel({
   initial,
   isUnvetted,
   canSetEvidence = false,
+  reviewerKeys = [],
 }: {
   courseId: string;
   initial: AuditorRow[];
   isUnvetted: boolean;
+  /** Tagged reviewers this course's markers name. Empty: every need is untagged, so no choice is shown. */
+  reviewerKeys?: ReviewerKeyOption[];
   /** The platform owner or this school's admin: may add a credential evidence link. */
   canSetEvidence?: boolean;
 }) {
@@ -167,7 +179,13 @@ export function CourseAuditorsPanel({
                   Remove
                 </button>
               </div>
-              <ReviewerCredit courseId={courseId} row={r} onSaved={credited} canSetEvidence={canSetEvidence} />
+              <ReviewerCredit
+                courseId={courseId}
+                row={r}
+                onSaved={credited}
+                canSetEvidence={canSetEvidence}
+                reviewerKeys={reviewerKeys}
+              />
             </li>
           ))}
         </ul>
@@ -182,15 +200,21 @@ function ReviewerCredit({
   row,
   onSaved,
   canSetEvidence,
+  reviewerKeys,
 }: {
   courseId: string;
   row: AuditorRow;
   onSaved: (r: AuditorRow) => void;
   canSetEvidence: boolean;
+  reviewerKeys: ReviewerKeyOption[];
 }) {
   const [name, setName] = useState(row.reviewerName ?? "");
   const [credential, setCredential] = useState(row.reviewerCredential ?? "");
   const [evidence, setEvidence] = useState(row.credentialEvidenceUrl ?? "");
+  const [reviewerKey, setReviewerKey] = useState(row.reviewerKey ?? "");
+  // Show the choice when the course names a tagged reviewer, or when this grant already carries a
+  // key a later edit removed from the course (so it can be set back to untagged).
+  const showKey = reviewerKeys.length > 0 || Boolean(row.reviewerKey);
   const [busy, setBusy] = useState(false);
   const [message, setMessage] = useState<string | null>(null);
   const isSet = Boolean(row.reviewerName?.trim() && row.reviewerCredential?.trim());
@@ -207,6 +231,7 @@ function ReviewerCredit({
           reviewerName: name,
           reviewerCredential: credential,
           ...(canSetEvidence ? { credentialEvidenceUrl: evidence } : {}),
+          ...(showKey ? { reviewerKey } : {}),
         }),
       });
       const data = await res.json().catch(() => ({}));
@@ -227,6 +252,7 @@ function ReviewerCredit({
     <details className="mt-1">
       <summary className="inline-flex min-h-11 cursor-pointer items-center text-neutral-600">
         {isSet ? `Credited as ${row.reviewerName}, ${row.reviewerCredential}` : "Not credited yet: add a name and credential"}
+        {row.reviewerKey ? `, reviewing for: ${reviewerKeyLabel(row.reviewerKey)}` : ""}
       </summary>
       <form onSubmit={save} className="mt-2 grid gap-2 sm:grid-cols-[1fr_1fr_auto] sm:items-end">
         <div>
@@ -253,6 +279,34 @@ function ReviewerCredit({
             className="min-h-11 w-full rounded-md border border-neutral-300 px-3 py-2 dark:border-neutral-700 dark:bg-neutral-900"
           />
         </div>
+        {showKey ? (
+          <div className="sm:col-span-2">
+            <label htmlFor={`credit-key-${row.id}`} className="block text-xs font-medium">
+              Reviews for
+            </label>
+            <select
+              id={`credit-key-${row.id}`}
+              value={reviewerKey}
+              onChange={(e) => setReviewerKey(e.target.value)}
+              aria-describedby={`credit-key-help-${row.id}`}
+              className="min-h-11 w-full rounded-md border border-neutral-300 px-3 py-2 dark:border-neutral-700 dark:bg-neutral-900"
+            >
+              <option value="">Needs that name no particular reviewer</option>
+              {reviewerKeys.map((o) => (
+                <option key={o.key} value={o.key}>
+                  {`Only needs for ${reviewerKeyLabel(o.key)} (${o.example})`}
+                </option>
+              ))}
+              {row.reviewerKey && !reviewerKeys.some((o) => o.key === row.reviewerKey) ? (
+                <option value={row.reviewerKey}>{`Only needs for ${reviewerKeyLabel(row.reviewerKey)} (no lesson names it now)`}</option>
+              ) : null}
+            </select>
+            <p id={`credit-key-help-${row.id}`} className="mt-1 text-xs text-neutral-600 dark:text-neutral-400">
+              Some lessons need two different reviewers. Each is signed off separately, and a reviewer clears only the
+              needs set here, so one reviewer&apos;s verdict never stands in for another&apos;s.
+            </p>
+          </div>
+        ) : null}
         {canSetEvidence ? (
           <div className="sm:col-span-2">
             <label htmlFor={`credit-evidence-${row.id}`} className="block text-xs font-medium">

@@ -561,7 +561,7 @@ or BAM's demonstration`, or `BAM's decision (brief question N)`; one line may ca
 - **The lesson page draws them back** in a box that begins "Before release" (the rigging course quizzes
   on that sentence). A cleared need reads "Reviewed by {name}, {credential}, on {date}", with one line
   saying a review checks content and is not an endorsement or a learner qualification.
-- **A verdict** (`lesson_reviews`, one current row per lesson per need kind) is cleared, cleared with
+- **A verdict** (`lesson_reviews`, one current row per lesson, need kind and reviewer key) is cleared, cleared with
   one correction to make (1 to 1,000 characters), or not cleared. It is **pinned to a sha256 of the
   lesson's material text** (title, body without markers and with whitespace collapsed, media URL,
   recall, exercise and map content), computed on the server. Every read compares it with the current
@@ -617,10 +617,19 @@ needs are filled and the markers leave the lesson text.
 - **States and events.** `/audit/review` has `loading.tsx`, `error.tsx` and an empty state; a held course
   with no markers says "Clear its hold by hand." PostHog: `lesson_review_recorded`,
   `review_hold_released`, `review_packet_downloaded` (ids and kinds only).
-- **Not done:** the three Native-reviewer markers in reading-a-land-description stay decisions (brief
-  question 8), because verdicts are one per lesson per need kind and lessons 3, 7 and 10 already have a
-  surveyor QR need: a QR rewording would let the surveyor's verdict clear the Native read. Keying
-  verdicts per need is the change that makes the rewording safe.
+- **Each reviewer signs off separately (migration 0075, BAM 2026-11-02).** A marker may name which
+  reviewer it asks for with a tag before the colon: `needs a qualified reviewer (QR) [native-reviewer]:
+  a Native reviewer, ...`. Verdicts are keyed (tenant, lesson, need kind, `reviewer_key`); untagged
+  needs and every verdict recorded before 0075 have the key `''`, so nothing existing changed. The
+  inviter sets **Reviews for** on each grant (`course_auditors.reviewer_key`, shown only when the
+  course has a tagged need), and a grant records verdicts only on needs carrying its own key
+  (`verdictBlockReason` returns `other_reviewer` otherwise), so the surveyor's verdict on lesson 10 of
+  reading-a-land-description cannot clear the Native reviewer's need, and the reverse. Readiness counts
+  each (kind, key) sign-off. reading-a-land-description's three Native-reviewer decisions are now
+  tagged QR needs (plan 97 Q3: 187 QR, 0 decisions catalog-wide), and
+  [tests/lesson-review-markers.test.ts](tests/lesson-review-markers.test.ts) fails on any decision that
+  reads like a reviewer need. After merge: `pnpm db:migrate:prod` (0075), `pnpm seed:courses:prod`,
+  then set the Native reviewer's grant to "native reviewer" once one is invited.
 
 ## Seed drift: seeds skip lessons edited in the app (`lessons.seed_hash`, `lesson_seed_drifts`)
 

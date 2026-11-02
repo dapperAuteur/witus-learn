@@ -1,4 +1,4 @@
-import { KIND_TITLE, needLabel, REVIEW_DISCLAIMER } from "@/lib/lesson-review";
+import { KIND_TITLE, needLabel, REVIEW_DISCLAIMER, reviewerKeyLabel, slotId } from "@/lib/lesson-review";
 import type { LessonReviewSummary, NeedSummary } from "@/lib/lesson-review-summary";
 import { CorrectionAppliedButton } from "@/components/review-actions";
 
@@ -55,7 +55,7 @@ export function ReleaseNeedsBox({
           <p className="font-semibold">Before release</p>
           <ul className="mt-1 list-disc space-y-1 pl-5">
             {open.map((r) => (
-              <li key={r.kind}>
+              <li key={slotId(r.kind, r.reviewerKey)}>
                 This lesson needs {needLabel({ kind: r.kind, who: "" })}: {r.whos.join("; ")}.{statusNote(r)}
               </li>
             ))}
@@ -70,10 +70,13 @@ export function ReleaseNeedsBox({
 
       {pending.map((r) => (
         <div
-          key={`correction-${r.kind}`}
+          key={`correction-${slotId(r.kind, r.reviewerKey)}`}
           className="rounded-lg border border-amber-400 bg-amber-50 p-4 text-sm text-amber-900 dark:border-amber-700 dark:bg-amber-950/40 dark:text-amber-200"
         >
-          <p className="font-semibold">Correction to make ({KIND_TITLE[r.kind].toLowerCase()} review)</p>
+          <p className="font-semibold">
+            Correction to make ({KIND_TITLE[r.kind].toLowerCase()} review
+            {r.reviewerKey ? `, ${reviewerKeyLabel(r.reviewerKey)}` : ""})
+          </p>
           <p className="mt-1 whitespace-pre-line">{r.review!.correction}</p>
           <p className="mt-2 text-xs">
             From {r.review!.reviewerName}, {r.review!.reviewerCredential}, on {fmt(r.review!.decidedAt)}. Edit the
@@ -81,7 +84,12 @@ export function ReleaseNeedsBox({
             {canApply ? ", unless you mark it applied as written once the lesson reads exactly as asked" : ""}.
           </p>
           {canApply ? (
-            <CorrectionAppliedButton courseId={courseId} lessonId={summary.lessonId} needKind={r.kind} />
+            <CorrectionAppliedButton
+              courseId={courseId}
+              lessonId={summary.lessonId}
+              needKind={r.kind}
+              reviewerKey={r.reviewerKey}
+            />
           ) : null}
         </div>
       ))}
@@ -90,7 +98,7 @@ export function ReleaseNeedsBox({
         <div className="rounded-lg border border-emerald-300 bg-emerald-50 p-4 text-sm text-emerald-900 dark:border-emerald-800 dark:bg-emerald-950/40 dark:text-emerald-200">
           <ul className="space-y-1">
             {cleared.map((r) => (
-              <li key={`cleared-${r.kind}`}>
+              <li key={`cleared-${slotId(r.kind, r.reviewerKey)}`}>
                 Reviewed by {r.review!.reviewerName}, {r.review!.reviewerCredential}, on {fmt(r.review!.decidedAt)}.
                 {r.review!.correctionAppliedAt ? ` Correction applied ${fmt(r.review!.correctionAppliedAt)}.` : ""}
               </li>

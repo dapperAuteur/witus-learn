@@ -9,6 +9,8 @@ import {
   CORRECTION_MAX,
   KIND_TITLE,
   RESET_RULE,
+  reviewerKeyLabel,
+  slotId,
   STATE_LABEL,
   VERDICT_LABEL,
   VERDICTS,
@@ -19,6 +21,8 @@ import {
 
 export interface VerdictNeed {
   kind: VerdictNeedKind;
+  /** Which reviewer this sign-off is for ('' when untagged). Each (kind, key) is recorded separately. */
+  reviewerKey: string;
   whos: string[];
   state: ReviewState;
   /** The verdict on file, whoever recorded it. Null when nobody has. */
@@ -69,7 +73,7 @@ export function LessonVerdictForm({
         </p>
       ) : null}
       {needs.map((n) => (
-        <NeedVerdict key={n.kind} courseId={courseId} lessonId={lessonId} need={n} />
+        <NeedVerdict key={slotId(n.kind, n.reviewerKey)} courseId={courseId} lessonId={lessonId} need={n} />
       ))}
       <p className="mt-4 text-sm">
         <Link
@@ -93,7 +97,7 @@ function NeedVerdict({ courseId, lessonId, need }: { courseId: string; lessonId:
   const [busy, setBusy] = useState(false);
   const [saved, setSaved] = useState(false);
   const [error, setError] = useState<string | null>(null);
-  const base = `verdict-${lessonId}-${need.kind}`;
+  const base = `verdict-${lessonId}-${need.kind}${need.reviewerKey ? `-${need.reviewerKey}` : ""}`;
 
   async function submit(e: React.FormEvent) {
     e.preventDefault();
@@ -107,6 +111,7 @@ function NeedVerdict({ courseId, lessonId, need }: { courseId: string; lessonId:
         headers: { "content-type": "application/json" },
         body: JSON.stringify({
           needKind: need.kind,
+          reviewerKey: need.reviewerKey,
           verdict,
           correction: verdict === "cleared_with_correction" ? correction : null,
         }),
@@ -143,6 +148,7 @@ function NeedVerdict({ courseId, lessonId, need }: { courseId: string; lessonId:
       >
         <legend className="text-sm font-medium">
           {KIND_TITLE[need.kind]}
+          {need.reviewerKey ? ` (${reviewerKeyLabel(need.reviewerKey)})` : ""}
           {need.whos.length ? `: ${need.whos.join("; ")}` : ""}
         </legend>
         <p className="mt-1 text-xs text-neutral-600 dark:text-neutral-400">Now: {STATE_LABEL[need.state]}</p>
