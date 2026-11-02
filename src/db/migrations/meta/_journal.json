@@ -519,6 +519,13 @@
       "when": 1793567871222,
       "tag": "0073_tour_projection_and_attestation",
       "breakpoints": true
+    },
+    {
+      "idx": 74,
+      "version": "7",
+      "when": 1793584369324,
+      "tag": "0074_review_v2_seed_drift_rag_index",
+      "breakpoints": true
     }
   ]
 }

@@ -1,4 +1,5 @@
-import { index, pgTable, text, timestamp, unique, uuid } from "drizzle-orm/pg-core";
+import { sql } from "drizzle-orm";
+import { check, index, pgTable, text, timestamp, unique, uuid } from "drizzle-orm/pg-core";
 import { users } from "./auth";
 import { courses } from "./courses";
 import { tenants } from "./tenancy";
@@ -53,8 +54,19 @@ export const courseAuditors = pgTable(
      */
     reviewerName: text("reviewer_name"),
     reviewerCredential: text("reviewer_credential"),
+    /**
+     * Reviewer sign-off v2 (plans/97 Q2): an optional link to evidence for the credential (a license
+     * lookup, a professional profile). Set by the platform owner or the school's admin, shown to them
+     * on the sign-off panel, NEVER on a public lesson and never copied into lesson_reviews. https
+     * only, at most 500 characters (validated in the route and by the CHECK below).
+     */
+    credentialEvidenceUrl: text("credential_evidence_url"),
   },
   (t) => [
+    check(
+      "course_auditors_evidence_url_chk",
+      sql`${t.credentialEvidenceUrl} is null or (${t.credentialEvidenceUrl} like 'https://%' and char_length(${t.credentialEvidenceUrl}) <= 500)`,
+    ),
     unique("course_auditors_tenant_course_email_uq").on(t.tenantId, t.courseId, t.email),
     index("course_auditors_tenant_course_idx").on(t.tenantId, t.courseId),
     index("course_auditors_token_idx").on(t.token),
