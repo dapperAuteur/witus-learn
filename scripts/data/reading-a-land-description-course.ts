@@ -32,6 +32,13 @@ import type { AuthoredCourse } from "./authored-course";
 //     see plans/bugs/2026-10-15-one-qr-verdict-per-lesson.md): 3 (the 1785 Ordinance,
 //     "purchased of the Indian inhabitants"), 7 (the 1775 Piankeshaw deed), 10 (how Indiana was
 //     surveyed, cession by cession).
+//     NOT reworded to the QR form (reviewer sign-off v2, 2026-11-01). Plan 97 Q3 proposed that, on
+//     the reading that these lines "parse as a decision" by accident. They do not: each parses as a
+//     decision WITH brief question 8, which is what they were written to be. Rewording them to QR
+//     would put the Native reviewer and the surveyor under ONE qr verdict per lesson, so either one
+//     signing would clear both, the defect in plans/bugs/2026-10-15-one-qr-verdict-per-lesson.md.
+//     They stay decisions (fail closed) until verdicts are keyed per need, not per kind; BAM edits
+//     each marker away after the Native reviewer has read the lesson.
 //   P (BAM's filmed visit): 13.
 //   Unmarked: 1, 4, 5, 9, 11, 12.
 //
