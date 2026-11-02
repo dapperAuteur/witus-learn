@@ -62,6 +62,11 @@ export const EVENTS = {
   /** A reviewer downloaded the lessons marked for review. { course_id, format: "pdf"|"epub" } */
   reviewPacketDownloaded: "review_packet_downloaded",
 
+  // Quiz integrity panel (plans/98 section 8, BAM 2026-11-01 Q3).
+  /** "How this course's quizzes are built" opened, once per page view.
+   *  { course_id, surface: "course"|"coming_soon" } */
+  quizIntegrityPanelOpened: "quiz_integrity_panel_opened",
+
   ...SHARED_EVENTS,
 } as const;
 

@@ -417,7 +417,7 @@ export default async function CourseBySlugPage({ params }: Params) {
 
       <CourseStandards courseSlug={courseSlug} />
 
-      <CourseQuizIntegrity summary={quizIntegrity} />
+      <CourseQuizIntegrity summary={quizIntegrity} courseId={course.id} surface="course" />
 
       {courseBundles.length > 0 ? (
         <aside

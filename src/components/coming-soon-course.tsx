@@ -174,7 +174,7 @@ export function ComingSoonCourseFace({
         <p className="mt-4 text-neutral-700 dark:text-neutral-300">{description}</p>
       ) : null}
       <CourseStandards courseSlug={courseSlug} />
-      <CourseQuizIntegrity summary={quizIntegrity} />
+      <CourseQuizIntegrity summary={quizIntegrity} courseId={courseId} surface="coming_soon" />
       <ComingSoonPanel
         brand={brand}
         courseId={courseId}
