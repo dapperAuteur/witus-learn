@@ -324,6 +324,30 @@ export function hasReviewerCredential(g: { reviewerName: string | null; reviewer
 export const OWNER_DEMONSTRATION_CREDENTIAL = "Platform owner, own demonstration";
 
 export const REVIEWER_NAME_MAX = 120;
+/** course_auditors.credential_evidence_url: https only, at most this long (the table's CHECK agrees). */
+export const EVIDENCE_URL_MAX = 500;
+
+/**
+ * Validate the optional, owner-only credential evidence link (plans/97 v2 Q2). Blank clears it.
+ * https only: a link the owner clicks to check a license must not be a javascript: or http: URL.
+ */
+export function normalizeEvidenceUrl(
+  raw: string | null | undefined,
+): { ok: true; url: string | null } | { ok: false; error: string } {
+  const v = (raw ?? "").trim();
+  if (!v) return { ok: true, url: null };
+  if (v.length > EVIDENCE_URL_MAX) return { ok: false, error: `Keep the evidence link under ${EVIDENCE_URL_MAX} characters.` };
+  let u: URL;
+  try {
+    u = new URL(v);
+  } catch {
+    return { ok: false, error: "The evidence link must be a full web address starting with https://." };
+  }
+  if (u.protocol !== "https:" || !v.toLowerCase().startsWith("https://")) {
+    return { ok: false, error: "The evidence link must start with https://." };
+  }
+  return { ok: true, url: v };
+}
 export const REVIEWER_CREDENTIAL_MAX = 200;
 export const CORRECTION_MAX = 1000;
 

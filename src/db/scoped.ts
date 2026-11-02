@@ -297,7 +297,7 @@ export class ScopedDb {
   setCourseAuditorCredit(
     courseId: string,
     auditorId: string,
-    credit: { reviewerName: string | null; reviewerCredential: string | null },
+    credit: { reviewerName: string | null; reviewerCredential: string | null; credentialEvidenceUrl?: string | null },
   ) {
     return setCourseAuditorCredit(this.tenantId, courseId, auditorId, credit);
   }
