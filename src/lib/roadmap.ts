@@ -28,6 +28,12 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   launched with open items; a blog post's feed listing is checked so a published post can be closed with
   its URL. Closing anything requires saying what was done. \`pnpm follow-ups:list\` reads it all back. No
   inbox: a chore on a course, no recipient, no notification.
+- 🔧 **Source chat index on Mistral, with an admin page** (\`feat/rag-mistral-admin-page\`, migration
+  \`0076_rag_mistral_embedding_v2\`). BAM 2026-11-02: the "chat with the sources" index embeds with Mistral's
+  \`mistral-embed\` (1024 dimensions) instead of Gemini, whose free tier failed \`rag:index:prod\` with 429s; paced
+  to 60 requests a minute and retried on 429. Questions are embedded with the same model. New owner page
+  \`/admin/rag\` lists every course never indexed or changed since, with Run per course and Run all (one
+  request per course, from the browser). The legacy 768-dim column stays until a cleanup migration (plan 99).
 - 🔧 **Reviewer sign-off, version 2** (\`bundle/learn-pending-2026-11-01\`, migration
   \`0074_review_v2_seed_drift_rag_index\`, applied by \`migrate-production.yml\` on the merge). Plans/97 Part B,
   BAM's answers 2026-11-01. A greyed-out verdict form says why (\`verdictBlockReason\`: the course's own
@@ -40,7 +46,7 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   every course file. Every course gets a **Sources** page with each work's lessons and pinpoints, public once
   live, editors and reviewers only while held. **Seeds skip lessons edited in the app** and warn their author
   on \`/teach\` until acknowledged (Q5), which made \`seed:courses\` and the RAG index automatic after a merge
-  (\`seed-production.yml\`; the indexer now throttles under Gemini's free-tier limit and retries 429s). Three
+  (\`seed-production.yml\`; the indexer paces and retries 429s). Three
   product events (Q6), \`/audit/review\` loading, error and empty states, Run Your Course Section 4 (WAIVED line
   deleted). **Each reviewer signs off separately** (\`feat/review-verdict-per-reviewer\`, migration
   \`0075_review_verdict_per_reviewer\`): a marker may tag its reviewer (\`(QR) [native-reviewer]\`), verdicts are
