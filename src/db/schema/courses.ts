@@ -235,6 +235,11 @@ export const lessons = pgTable(
     // reviewer, p = a practitioner or the owner's demonstration, decision = the owner's call. NULL
     // = no marker. Rewritten on every seed, so removing a marker from the course file removes it.
     reviewNeeds: jsonb("review_needs").$type<{ kind: "qr" | "p" | "decision"; who: string; question?: number }[]>(),
+    // Seed drift (plans/97 Q5): the content hash (src/lib/seed-drift.ts) of what the seeder last wrote
+    // to this lesson, or null for a lesson the seeder never wrote since this column arrived. When the
+    // row's current content no longer hashes to it, someone edited the lesson in the app, and the
+    // seeder leaves the lesson alone and records a lesson_seed_drifts row instead of overwriting it.
+    seedHash: text("seed_hash"),
     exerciseContent: jsonb("exercise_content"),
     audioChapters: jsonb("audio_chapters"),
     // Multi-part media: when a recording is too long for the upload cap, it's captured and stored

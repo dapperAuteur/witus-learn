@@ -52,6 +52,21 @@ export const EVENTS = {
   /** The 360 viewer finished loading its photo on a lesson (once per page view). { lesson_id } */
   tourViewerOpened: "tour_viewer_opened",
 
+  // Reviewer sign-off (plans/97 section 8, BAM 2026-11-01 Q6). Sent from the client after the
+  // server answered OK. Ids and kinds only: never a reviewer's name, credential or correction text.
+  /** A reviewer (or the owner, for a P need) recorded a verdict.
+   *  { course_id, lesson_id, need_kind: "qr"|"p", verdict: "cleared"|"cleared_with_correction"|"not_cleared" } */
+  lessonReviewRecorded: "lesson_review_recorded",
+  /** The review hold came off a course whose needs were all cleared. { course_id } */
+  reviewHoldReleased: "review_hold_released",
+  /** A reviewer downloaded the lessons marked for review. { course_id, format: "pdf"|"epub" } */
+  reviewPacketDownloaded: "review_packet_downloaded",
+
+  // Quiz integrity panel (plans/98 section 8, BAM 2026-11-01 Q3).
+  /** "How this course's quizzes are built" opened, once per page view.
+   *  { course_id, surface: "course"|"coming_soon" } */
+  quizIntegrityPanelOpened: "quiz_integrity_panel_opened",
+
   ...SHARED_EVENTS,
 } as const;
 

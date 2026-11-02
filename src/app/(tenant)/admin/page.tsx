@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
+import { SeedDriftWarnings } from "@/components/seed-drift-warnings";
+import type { OpenSeedDrift } from "@/db/queries/seed-drift";
 import { requireTenant } from "@/lib/tenant";
 import { isPlatformOwner, requireBrandAdmin } from "@/lib/session";
 import { adminNavFor } from "@/lib/admin-nav";
@@ -51,6 +53,17 @@ export default async function AdminHome() {
     }
   }
 
+  // Seed drift (plans/97 Q5), owner only: every lesson a seed left alone because it was edited in the
+  // app, until its author acknowledges it on the course's page.
+  let drifts: OpenSeedDrift[] = [];
+  if (owner) {
+    try {
+      drifts = await (await getScopedDb()).listOpenSeedDrifts();
+    } catch (err) {
+      console.error("seed drift unavailable", err);
+    }
+  }
+
   const tiles = adminStatTiles({ stats, openReports, leads, openFeedback, pendingMedia, upcomingLive, followUpsDue });
 
   return (
@@ -59,6 +72,8 @@ export default async function AdminHome() {
       <p className="mt-1 text-sm text-neutral-600">
         {owner ? "Platform operator console." : `Manage ${tenant.name}.`}
       </p>
+
+      <SeedDriftWarnings drifts={drifts} />
 
       <section aria-labelledby="admin-at-a-glance" className="mt-6">
         <h2 id="admin-at-a-glance" className="text-sm font-semibold uppercase tracking-wide text-neutral-600">

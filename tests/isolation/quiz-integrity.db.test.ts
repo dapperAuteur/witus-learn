@@ -80,4 +80,48 @@ describe.skipIf(!HAS_DB)("quiz-integrity counts are tenant-scoped and carry no q
     const all = await quizIntegrityByCourse(bvcId);
     expect(JSON.stringify(all.get(courseId))).not.toContain("SECRET");
   });
+
+  it("lists the failing quizzes only in the course's own tenant (plans/98 v2)", async () => {
+    const { db } = await import("@/db/client");
+    const { courses } = await import("@/db/schema");
+    const { eq } = await import("drizzle-orm");
+    const { seedAuthoredCourse } = await import("../../scripts/lib/seed-authored-course");
+    const { listFailingQuizBanks } = await import("@/db/queries/quiz-integrity");
+    // The shared fixture's options are equal in length, so it passes and nothing is listed.
+    expect(await listFailingQuizBanks(bvcId, courseId)).toEqual([]);
+    const instructorId = (await db.select().from(courses).where(eq(courses.id, courseId)).limit(1))[0]!.instructorId;
+    const lopsidedId = await seedAuthoredCourse(db, {
+      tenantId: bvcId,
+      instructorId,
+      slug: `iso-quiz-failing-${stamp}`,
+      course: {
+        title: `Isolation failing-quiz fixture ${stamp}`,
+        description: "Throwaway failing-quiz fixture.",
+        lessons: [
+          {
+            slug: "lopsided",
+            title: "Lopsided quiz",
+            quiz: {
+              questions: Array.from({ length: 8 }, (_, i) => ({
+                prompt: `SECRET PROMPT ${i}`,
+                options: ["SECRET a", "SECRET b", "SECRET c", "SECRET the visibly longest correct option of all"],
+                correctIndex: 3,
+              })),
+            },
+          },
+        ],
+      },
+      visibility: "private",
+      publishHoldReason: "Isolation test fixture.",
+    });
+    try {
+      const own = await listFailingQuizBanks(bvcId, lopsidedId);
+      expect(own.map((f) => f.title)).toEqual(["Lopsided quiz"]);
+      expect(JSON.stringify(own)).not.toContain("SECRET");
+      // Another tenant asking for the same course id gets nothing at all.
+      expect(await listFailingQuizBanks(acmeId, lopsidedId)).toEqual([]);
+    } finally {
+      await db.delete(courses).where(eq(courses.id, lopsidedId));
+    }
+  });
 });

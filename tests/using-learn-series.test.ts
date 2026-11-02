@@ -28,8 +28,6 @@ const COURSES: [string, AuthoredCourse][] = [
 /** Articles deliberately taught by no path. Each needs a reason a reader can weigh. */
 const WAIVED: Record<string, string> = {
   "keeping-courses-current": "a command-line runbook for the platform owner, not a screen anyone drives",
-  "reviewer-sign-off":
-    "shipped with feat/reviewer-signoff (plans/93) while the quiz-balance sweep was editing course files; a Run Your Course lesson that teaches it is the follow-up (delete this line then)",
   "launch-to-do-list":
     "shipped with feat/release-follow-ups (the launch to-do list and its warning); a Run Your Course lesson that teaches it is the follow-up (delete this line then)",
   "download-course-epub-pdf":

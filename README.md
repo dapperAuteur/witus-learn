@@ -599,6 +599,42 @@ old one. No page lists corrections across courses. Pinned by
 `pnpm db:migrate:prod` (migration `0067_serious_karen_page`), then `pnpm seed:courses:prod` so the
 needs are filled and the markers leave the lesson text.
 
+**Version 2 (plans/97 Part B, BAM's answers of 2026-11-01):**
+- **Disabled reason.** `verdictBlockReason` returns why a viewer may not record a verdict (decision,
+  owner on a QR need, the course's own instructor, no grant, no credential yet); `canRecordVerdict` is
+  its null case. Each need's fieldset shows the sentence and is described by it.
+- **Reviewer packet.** `GET /api/courses/[id]/review-packet?format=pdf|epub` (accepted reviewer,
+  platform owner, or school admin on a non-owner-only course; 401/403/404 as usual) builds the course
+  export limited to published lessons with needs, each headed by its needs, carrying the school's own
+  name and host. Buttons on `/audit/review` with "Preparing your file" and a retry.
+- **Credential evidence link.** `course_auditors.credential_evidence_url` (migration 0074; https, 500
+  max), set and seen only by the platform owner and the school's admin (`canSeeReviewerEvidence`),
+  shown beside the reviewer's credit on the sign-off panel, never on a lesson or in a verdict.
+- **Course Sources page.** `/{username}/{courseSlug}/sources` lists every work the course's lessons
+  cite with the lessons that use it and the pinpoints (page, section, locator). Open to everyone once
+  the course is live; while held, only to its editors and accepted reviewers. Releasing turns it on.
+- **Seeds no longer overwrite in-app edits.** See "Seed drift" below.
+- **States and events.** `/audit/review` has `loading.tsx`, `error.tsx` and an empty state; a held course
+  with no markers says "Clear its hold by hand." PostHog: `lesson_review_recorded`,
+  `review_hold_released`, `review_packet_downloaded` (ids and kinds only).
+- **Not done:** the three Native-reviewer markers in reading-a-land-description stay decisions (brief
+  question 8), because verdicts are one per lesson per need kind and lessons 3, 7 and 10 already have a
+  surveyor QR need: a QR rewording would let the surveyor's verdict clear the Native read. Keying
+  verdicts per need is the change that makes the rewording safe.
+
+## Seed drift: seeds skip lessons edited in the app (`lessons.seed_hash`, `lesson_seed_drifts`)
+
+The seeder records the hash of what it last wrote to each lesson (title, text, media link, quiz,
+exercise, map, recall; [src/lib/seed-drift.ts](src/lib/seed-drift.ts)). On the next seed a lesson that
+no longer hashes to it was edited in the app: the seed leaves its content alone (order and sections
+still follow the file), stores the file's version in `lesson_seed_drifts`, and prints it. The course's
+instructor and the platform owner see a warning on `/teach` on every visit (the owner also on `/admin`)
+until they open the course's Teach page, read the per-field difference, and choose **Keep the app
+edit** (quiet until the course file changes again) or **Take the course file's version**
+(`POST /api/courses/[id]/seed-drift/[driftId]`). A lesson with no hash yet is written as before, once.
+This made `seed:courses` and the RAG index safe to automate:
+[.github/workflows/seed-production.yml](.github/workflows/seed-production.yml) (OPERATING.md 3b).
+
 ## Launch to-do list and release follow-ups (`course_launch_todos`, `course_release_followups`)
 
 A course that is ready is not the same as a course that is launched: the blog post that announces it,
@@ -1501,6 +1537,27 @@ per-question strategy values that `check-longest-option.ts`, `check-shortest-opt
 `tests/quiz-integrity.test.ts` (equal lengths score chance, a visibly longest correct option scores 1.0,
 a k-way tie scores 1/k, true/false limits of 65% and 75%, banks under 8 questions unmeasured) and
 `tests/isolation/quiz-integrity.db.test.ts` (tenant-scoped, counts only; skipped offline).
+
+**For the course's editors (version 2, plans/98).** `/teach/<course>` carries a **Quiz checks**
+section with the same sentences the public card shows, then lists each **measured** quiz (8 or more
+questions) that does not pass the length check, linked to its lesson in the Lessons list, with the fix:
+"Rewrite option text so the right answer is as often long as short. Do not reorder options or edit the
+question." It reads the database through `ScopedDb.listFailingQuizBanks(courseId)` (the same
+lengths-only SQL, tenant-filtered), so a quiz is checked however it reached the course, not only when it
+sits in a course file the lint guards scan. States: "No quiz in this course yet.", "Your quizzes have
+fewer than 8 questions, so length cannot be measured yet.", and an alert if the read fails while the
+rest of the page still renders.
+
+**A warning, never a gate.** Scheduling, publishing or clearing the hold in the settings form, releasing
+the review hold, vetting, and Make public add one item to the existing launch warning when any measured
+quiz fails: "N quizzes do not pass the length check yet." Go ahead proceeds exactly as before. Focus
+moves to the warning's heading when it opens and back to the button on "Not yet".
+
+**Analytics.** Opening the card sends `quiz_integrity_panel_opened` with `{ course_id, surface:
+"course" | "coming_soon" }`, once per page view (`src/components/quiz-integrity-details.tsx`, the only
+client part; the card's text stays server-rendered and works without JavaScript).
+
+The longest-option guard no longer has a `GRANDFATHERED` map (it was empty): every file must pass it.
 
 ## Teachers Pay Teachers packets (`/admin/tpt-plan`)
 

@@ -179,10 +179,15 @@ one). Categories power the catalog filter.`,
 - **On hold**, a course flagged with a hold reason **can't be published** until you clear the hold
   (use this for content that still needs vetting).
 - **Held for a reviewer**, a course whose lessons are marked "Before release" is released from its
-  hold on its own page once a qualified reviewer has cleared them: see **Reviewer sign-off**.
+  hold on its own page once a qualified reviewer has cleared them: see **Reviewer sign-off**. A held
+  course with no marked lessons clears its hold by hand. Releasing also opens the course's **Sources**
+  page to learners.
 
 Toggle publish per course from **/teach** (click the status pill), or in bulk by selecting several
 courses and choosing **Publish / Unpublish**.
+
+When you schedule, publish or release a course from its own page under Teach, a warning first lists its
+open launch to-dos and how many quizzes do not pass the length check yet; it is never a block.
 
 See also **Vetting a course, and the "Coming soon" page**, for the separate review step that decides
 whether learners get the lessons or a coming-soon page.`,
@@ -395,6 +400,12 @@ background.`,
       "release",
       "audit",
       "applied as written",
+      "review packet",
+      "pdf",
+      "epub",
+      "evidence",
+      "sources",
+      "bibliography",
     ],
     body: `# Reviewer sign-off
 
@@ -412,6 +423,13 @@ demonstration), or **a decision** the course author still has to make.
    **Cleared**, **Cleared with a correction**, or **Not cleared**.
 4. A correction is one short note (up to 1,000 characters) **attached to that lesson**. Nobody replies
    to it and nobody is notified; the author applies it. Recording a new verdict replaces your old one.
+5. To read offline, press **Download the lessons for your review (PDF)** or **(EPUB)** under the
+   course on Review lessons. The file holds only the lessons marked for review, each headed by what you
+   are asked to check. You still record each verdict on the lesson's page.
+
+If the verdict form is greyed out, the sentence above it says why: the course's own instructor cannot
+review it, your name and credential are not added yet, you are signed in with an address that has no
+invitation, or the need is one only the platform owner records.
 
 You can record a verdict only after the person who invited you has added your **name and
 credential**, because that is what the lesson will show: "Reviewed by {name}, {credential}, on
@@ -423,7 +441,9 @@ That is deliberate: your name never sits on wording you did not read.
 ## If you run the course
 
 - On the course's page under **Teach**, add each reviewer's name and credential under **Invite someone
-  to review this course**.
+  to review this course**. The platform owner or the school's admin may also add an **evidence link**
+  (a license lookup or a professional profile); only they see it, beside the reviewer's credit on the
+  sign-off panel, and learners never do.
 - The **Reviewer sign-off** panel on the same page lists every need, its state (awaiting, cleared,
   correction to apply, not cleared, changed since review), who cleared it, and any correction.
 - **Apply a correction by editing the lesson.** The platform owner can then press **Applied as
@@ -431,6 +451,7 @@ That is deliberate: your name never sits on wording you did not read.
   applied. Any later edit resets the verdict like any other.
 - A **decision** marker clears only when the marker is edited out of the course file.
 - On **/teach**, a **QR 12/17** chip shows how many qualified-reviewer needs are cleared.
+- A held course with no marked lessons says so on the panel: clear its hold by hand.
 
 ## Releasing the hold (platform owner)
 
@@ -441,7 +462,14 @@ step (see **Vetting a course, and the "Coming soon" page**).
 
 The platform owner or the school's admin releases a hold, never the course's own author. Only the
 platform owner clears practitioner needs (with their own demonstration), and only an invited reviewer
-clears a qualified-reviewer need.`,
+clears a qualified-reviewer need.
+
+## The course's sources
+
+Every course has a **Sources** page beside its course page, listing every work its lessons cite and,
+for each, the lessons that use it and where in the work (a page, a section, a locator). While a course
+is held it is open only to its editors and invited reviewers; **releasing the course opens it to
+learners**, with nothing else to switch on.`,
   },
   {
     slug: "tours-from-field-log",
@@ -997,7 +1025,20 @@ appears on the Coming-soon page of a course still in review, as counts only.
 To raise the numbers, give every question a \`sourceLessonSlug\` and an \`explanation\`, and edit
 option text in place so the right answer is as often long as short across a quiz (never reorder
 options or edit a prompt; the length guards in \`pnpm lint\` say which questions to fix). The platform
-owner sees every course, worst first, at **/admin/quiz-integrity**.`,
+owner sees every course, worst first, at **/admin/quiz-integrity**.
+
+## Quiz checks on your course page under Teach
+
+Open your course under **Teach**. The **Quiz checks** section shows the same sentences the visitor's
+card shows, then lists each quiz of 8 or more questions that does not pass the length check yet, each
+linking to its lesson in the Lessons list. It reads the course as it is stored, so it checks every quiz
+the course holds. Rewrite option text so the right answer is as often long as short; do not reorder
+options or edit the question. A course with no quiz says "No quiz in this course yet.", and quizzes
+under 8 questions are too short to measure.
+
+When you schedule, publish, release or vet a course with a failing quiz, the warning that lists your
+launch to-dos adds "N quizzes do not pass the length check yet." It is a warning, never a block: **Go
+ahead** carries on exactly as you asked.`,
   },
   {
     slug: "images-and-quick-recall",
@@ -1042,13 +1083,23 @@ and drain when you're back online.`,
 Full runbook: **OPERATING.md** in the repo. The essentials:
 
 ## The golden rule
-Code alone doesn't change what learners see, courses render from the **database**. After you
-change a course, **migrate (if the schema changed) then re-run its seed**:
+Code alone doesn't change what learners see, courses render from the **database**. After a merge to
+main, two GitHub workflows do it for you: **Migrate production database** applies new migrations,
+then **Seed production courses** re-runs **seed:courses** and refreshes the "chat with the sources"
+index for the courses whose files changed. Other seeds are still run by hand:
 
 \`\`\`
-pnpm db:migrate:prod
-pnpm seed:<the affected seed>
+pnpm db:migrate:prod        # only if the automatic run failed
+pnpm seed:courses:prod      # only if the automatic run failed
+pnpm seed:<another seed>
 \`\`\`
+
+## When a lesson was edited in the app
+A seed never overwrites a lesson someone edited in the app since the last seed. It leaves it as it is
+and the course's instructor (and the platform owner) see a warning on **Teach** on every visit. Open
+the course's Teach page, compare the app's text with the course file's, and choose **Keep the app
+edit** (the warning stays quiet until the course file changes again) or **Take the course file's
+version**.
 
 ## Which seed owns what
 - **seed:courses**, civics (incl. all state-civics), the AI ladders, Hoodoo, Ed.L.D., cyber, and
@@ -1058,7 +1109,7 @@ pnpm seed:<the affected seed>
 - **seed:health**, NASM / ECS / Read-Your-Body. **seed:speedway**, ElementaryMBA.
 - **seed:faa**, FAA Part 107. **seed:bvc:real**, Better Vice Club. **seed:map**, the maps.
 
-Every seed is idempotent (upserts by slug), so re-running is always safe. On a fresh database, run
+Every seed is idempotent (upserts by slug, skipping lessons edited in the app), so re-running is always safe. On a fresh database, run
 **seed:tenants first**, then the content seeds.
 
 ## Editing without a seed

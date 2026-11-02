@@ -25,6 +25,10 @@ import { readinessOf, reviewsByLesson, summarizeLessonReview } from "@/lib/lesso
 import { courseStage, followUpsForCourse, type LaunchTodo } from "@/lib/release-followups";
 import { launchTodosForCourse } from "@/db/queries/release-followups";
 import { LaunchTodoList } from "@/components/launch-todo-list";
+import { TeachQuizChecks } from "@/components/teach-quiz-checks";
+import type { CourseQuizIntegrity, FailingQuizBank } from "@/lib/quiz-integrity";
+import { SeedDriftPanel, type DriftItem } from "@/components/seed-drift-panel";
+import { diffSeedContent } from "@/lib/seed-drift";
 
 export const metadata: Metadata = { title: "Manage course" };
 
@@ -130,6 +134,35 @@ export default async function ManageCoursePage({ params }: { params: Promise<{ c
   } catch (err) {
     console.error("launch to-do list unavailable", err);
   }
+  // Quiz checks (plans/98 v2): the public panel's sentences plus the measured quizzes that fail the
+  // length check, read from the database so a quiz however it was written is checked. Off the
+  // critical path: if the read fails, the section says so and the page still renders.
+  let quizSummary: CourseQuizIntegrity | null = null;
+  let failingQuizzes: FailingQuizBank[] = [];
+  let quizChecksFailed = false;
+  try {
+    [quizSummary, failingQuizzes] = await Promise.all([sdb.courseQuizIntegrity(courseId), sdb.listFailingQuizBanks(courseId)]);
+  } catch (err) {
+    quizChecksFailed = true;
+    console.error("quiz checks unavailable", err);
+  }
+
+  // Seed drift (plans/97 Q5): lessons edited here since the last seed, which the seed left alone.
+  // Only the course's instructor and the platform owner decide them. Off the critical path: a deploy
+  // ahead of migration 0074 still renders the page.
+  let driftItems: DriftItem[] = [];
+  if (owner || course.instructorId === session.user.id) {
+    try {
+      driftItems = (await sdb.listOpenSeedDrifts({ courseId })).map((d) => ({
+        id: d.id,
+        lessonTitle: d.lessonTitle,
+        lastCheckedAt: d.lastCheckedAt.toISOString(),
+        diffs: diffSeedContent(d.app, d.file),
+      }));
+    } catch (err) {
+      console.error("seed drift unavailable", err);
+    }
+  }
   const courseLive = courseStage(course) === "live";
   const showLaunchTodos = !courseLive || launchTodos.some((t) => t.status === "open");
 
@@ -205,7 +238,7 @@ export default async function ManageCoursePage({ params }: { params: Promise<{ c
           {/* Mark it vetted from here, where the course is actually worked on: the walk to /teach
               and back is the friction that let the review queue sit (BAM 2026-08-18). The owner, or
               this school's brand_admin (BAM 2026-10-29). */}
-          {isAdmin ? <VetCourseCta courseId={course.id} variant="inline" launchTodos={launchTodos} /> : null}
+          {isAdmin ? <VetCourseCta courseId={course.id} variant="inline" launchTodos={launchTodos} failingQuizzes={failingQuizzes.length} /> : null}
         </div>
       ) : null}
 
@@ -219,8 +252,11 @@ export default async function ManageCoursePage({ params }: { params: Promise<{ c
             isPublished={course.isPublished}
             ownerOnly={course.ownerOnly}
             readiness={publicReadiness(course, signoffReadiness)}
+            failingQuizzes={failingQuizzes.length}
           />
         ) : null}
+
+        <SeedDriftPanel courseId={course.id} items={driftItems} />
 
         {showLaunchTodos ? (
           <LaunchTodoList courseId={course.id} todos={launchTodos} isOwner={owner} courseLive={courseLive} />
@@ -229,6 +265,7 @@ export default async function ManageCoursePage({ params }: { params: Promise<{ c
         <CourseSettingsForm
           courseId={course.id}
           launchTodos={launchTodos}
+          failingQuizzes={failingQuizzes.length}
           canFeature={owner}
           canSetOwnerOnly={owner}
           hasStripe={hasStripe}
@@ -279,6 +316,8 @@ export default async function ManageCoursePage({ params }: { params: Promise<{ c
           }))}
         />
 
+        <TeachQuizChecks summary={quizSummary} failing={failingQuizzes} failed={quizChecksFailed} />
+
         <section className="rounded-lg border border-neutral-200 p-4 dark:border-neutral-800">
           <h2 className="font-semibold">Recall accuracy</h2>
           <p className="mt-1 text-sm text-neutral-600">
@@ -313,7 +352,11 @@ export default async function ManageCoursePage({ params }: { params: Promise<{ c
             acceptedAt: a.acceptedAt,
             reviewerName: a.reviewerName,
             reviewerCredential: a.reviewerCredential,
+            // Owner and school admin only (canSeeReviewerEvidence: isAdmin here, since a brand_admin
+            // never reaches an owner-only course's page).
+            ...(isAdmin ? { credentialEvidenceUrl: a.credentialEvidenceUrl } : {}),
           }))}
+          canSetEvidence={isAdmin}
         />
 
         {signoffLessons.length > 0 ? (
@@ -325,7 +368,25 @@ export default async function ManageCoursePage({ params }: { params: Promise<{ c
             canRelease={isAdmin}
             holdReason={course.publishHoldReason}
             launchTodos={launchTodos}
+            evidenceByAuditor={
+              isAdmin
+                ? Object.fromEntries(
+                    auditors.filter((a) => a.credentialEvidenceUrl).map((a) => [a.id, a.credentialEvidenceUrl as string]),
+                  )
+                : undefined
+            }
+            failingQuizzes={failingQuizzes.length}
           />
+        ) : course.publishHoldReason ? (
+          // Plans/97 v2 empty state: a held course with no "Before release" markers clears by hand.
+          <section aria-labelledby="review-signoff-heading" className="rounded-lg border border-neutral-200 p-4 dark:border-neutral-800">
+            <h2 id="review-signoff-heading" className="font-semibold">
+              Reviewer sign-off
+            </h2>
+            <p className="mt-1 text-sm text-neutral-600 dark:text-neutral-400">
+              This course has no lessons marked for review. Clear its hold by hand.
+            </p>
+          </section>
         ) : null}
 
         <LinkUsagePanel rows={linkUsage} />

@@ -2,7 +2,7 @@ import { z } from "zod";
 import { apiContext, errorJson, json } from "@/lib/api";
 import { sendCourseAuditInviteEmail } from "@/lib/emails";
 import { getSiteUrl } from "@/lib/site-url";
-import { canManageCourseReviewers } from "@/lib/course-reviewers";
+import { canManageCourseReviewers, canSeeReviewerEvidence } from "@/lib/course-reviewers";
 
 type Params = { params: Promise<{ id: string }> };
 
@@ -25,6 +25,7 @@ export async function GET(_req: Request, { params }: Params) {
   }
 
   const auditors = await sdb.listCourseAuditors(course.id);
+  const evidence = await canSeeReviewerEvidence(session, sdb.tenantId, course);
   // The TOKEN is never listed: it is a bearer credential, and a list endpoint is not where a live
   // invite link should be re-readable. Lost the link? Re-invite, which mints a fresh one.
   return json({
@@ -37,6 +38,8 @@ export async function GET(_req: Request, { params }: Params) {
       // inviter through PATCH /api/courses/[id]/auditors/[auditorId].
       reviewerName: a.reviewerName,
       reviewerCredential: a.reviewerCredential,
+      // Owner and school admin only (plans/97 v2 Q2); absent for the course's instructor.
+      ...(evidence ? { credentialEvidenceUrl: a.credentialEvidenceUrl } : {}),
     })),
   });
 }

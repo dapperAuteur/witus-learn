@@ -28,9 +28,26 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   launched with open items; a blog post's feed listing is checked so a published post can be closed with
   its URL. Closing anything requires saying what was done. \`pnpm follow-ups:list\` reads it all back. No
   inbox: a chore on a course, no recipient, no notification.
+- 🔧 **Reviewer sign-off, version 2** (\`bundle/learn-pending-2026-11-01\`, migration
+  \`0074_review_v2_seed_drift_rag_index\`, applied by \`migrate-production.yml\` on the merge). Plans/97 Part B,
+  BAM's answers 2026-11-01. A greyed-out verdict form says why (\`verdictBlockReason\`: the course's own
+  instructor, no credential yet, no grant, owner on a QR need, a decision), read with its fieldset. Reviewers
+  download the lessons marked for review as a PDF or an EPUB (\`/api/courses/[id]/review-packet\`, the school's
+  own branding) from \`/audit/review\` (Q1). The owner or the school's admin may add a credential evidence link
+  per reviewer, seen only by them (Q2). Sound-craft's two decisions are answered (Q4: set sound taught here and,
+  later, linked from Videography; \`consent-before-record\` teaches the Library of Congress release form). A
+  guard test fails on a marker that parses to a decision without a brief question; the needs snapshot covers
+  every course file. Every course gets a **Sources** page with each work's lessons and pinpoints, public once
+  live, editors and reviewers only while held. **Seeds skip lessons edited in the app** and warn their author
+  on \`/teach\` until acknowledged (Q5), which made \`seed:courses\` and the RAG index automatic after a merge
+  (\`seed-production.yml\`; the indexer now throttles under Gemini's free-tier limit and retries 429s). Three
+  product events (Q6), \`/audit/review\` loading, error and empty states, Run Your Course Section 4 (WAIVED line
+  deleted). Not done: Q3 (rewording the three Native-reviewer markers to QR) waits on verdicts keyed per need,
+  since lessons 3, 7 and 10 already carry a surveyor QR need; \`pnpm test:db\` for the review suites needs
+  seeded tenants on the test branch.
 - ✅ **Reviewer sign-off** (\`feat/reviewer-signoff\`, migration \`0067_serious_karen_page\`; on \`main\` since
-  2026-10-14, merge \`30948759\`, task 337 applied the migration). Plans/93 section 1. Version 2 is specified in
-  plans/97 (build order 2 of 3). The "Before release" lines in
+  2026-10-14, merge \`30948759\`, task 337 applied the migration). Plans/93 section 1. Version 2 is the entry
+  above (plans/97). The "Before release" lines in
   the four marked courses (rigging, sound, light, raising animals for yarn: 81 lines in 71 lessons, 83
   needs) become \`lessons.review_needs\`, parsed by the seeder and drawn back on the lesson in a box that
   still begins "Before release". An accepted reviewer whose name and credential the inviter set records
@@ -80,8 +97,19 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   The Coming-soon face gets counts from \`ScopedDb.courseQuizIntegrity\`, where SQL returns option lengths,
   never question text. New owner-only \`/admin/quiz-integrity\`: every course worst first, with a
   school-wide pass share that doubles as the length-balance campaign's progress bar; it states that a
-  database figure can differ slightly from lint. Follow-up: \`tests/isolation/quiz-integrity.db.test.ts\`
-  has not run against a database.
+  database figure can differ slightly from lint.
+  **Version 2** (plans/98 Part B, BAM's answers 2026-11-01; branches \`feat/quiz-checks-teach\`,
+  \`feat/quiz-warning-item\`, \`feat/quiz-panel-analytics\`, \`chore/longest-option-ratchet\`,
+  \`docs/quiz-panel-v2\`; no migration). \`/teach/<course>\` gains a **Quiz checks** section: the public
+  panel's sentences plus the measured quizzes that fail the length check, each linked to its lesson in the
+  Lessons list (\`ScopedDb.listFailingQuizBanks\`, the same lengths-only SQL, so any quiz in the database is
+  checked, not only course files), with empty, small-bank and could-not-load states. Scheduling, publishing,
+  releasing the hold, vetting and Make public now warn "N quizzes do not pass the length check yet." (Q1;
+  never a gate; focus moves to the warning and back on Not yet). The panel stays visible to every visitor,
+  collapsed (Q2), and opening it sends \`quiz_integrity_panel_opened\` {course_id, surface} once per page view
+  (Q3). The empty longest-option GRANDFATHERED map is gone (Q4; lint totals unchanged). Open:
+  \`tests/isolation/quiz-integrity.db.test.ts\` (extended with a cross-tenant failing-quiz case) still needs a
+  test database seeded with BVC courses to run.
 - 🔧 **Read the Statements, FIRM-01** (\`feat/course-firm-01-read-the-statements\`, no migration; after merge
   run \`pnpm seed:speedway:prod\` and \`pnpm seed:courses:prod\`). BAM approved the brief on 2026-10-25
   (\`cloud-briefs/firm-01/00-approved-brief.md\`; tier 2). Financial accounting learned from one real filing,

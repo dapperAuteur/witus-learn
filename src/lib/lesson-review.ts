@@ -281,15 +281,39 @@ export interface VerdictActor {
   kind: NeedKind;
 }
 
+/**
+ * Why a viewer may NOT record a verdict on a need, as a code the form maps to a sentence
+ * (plans/97 v2, G2: a reviewer always sees why the form is disabled). Null means they may.
+ * One function decides both the answer and the reason, so the two can never disagree.
+ */
+export type VerdictBlockReason = "decision" | "owner_qr" | "instructor" | "no_grant" | "no_credential";
+
 /** See rule 2 and 3 in the header. */
-export function canRecordVerdict(a: VerdictActor): boolean {
-  if (a.kind === "decision") return false;
+export function verdictBlockReason(a: VerdictActor): VerdictBlockReason | null {
+  if (a.kind === "decision") return "decision";
   // The owner's own demonstration may clear a P need. A QR need needs somebody else, so the owner
   // is refused QR even while holding a grant (a self-invite must not become a qualification).
-  if (a.isOwner) return a.kind === "p";
-  if (a.isInstructor) return false;
-  return a.isAuditor && a.hasCredential;
+  if (a.isOwner) return a.kind === "p" ? null : "owner_qr";
+  if (a.isInstructor) return "instructor";
+  if (!a.isAuditor) return "no_grant";
+  return a.hasCredential ? null : "no_credential";
 }
+
+export function canRecordVerdict(a: VerdictActor): boolean {
+  return verdictBlockReason(a) === null;
+}
+
+/** The sentence shown above a disabled verdict form, one per reason. */
+export const VERDICT_BLOCK_SENTENCE: Record<VerdictBlockReason, string> = {
+  decision: "This need is a decision for the course's owner, not a review, so no verdict can clear it.",
+  owner_qr:
+    "A qualified-reviewer need is cleared by someone else's review. As the platform owner you may clear practitioner needs only.",
+  instructor: "You teach this course, so you cannot review it. Ask the owner to invite another reviewer.",
+  no_grant:
+    "This account has no accepted invitation to review this course. Sign in with the address you were invited at, or open your invitation link.",
+  no_credential:
+    "The person who invited you has not added your name and credential yet, so a verdict cannot be credited. Ask them to add it; the form opens as soon as they do.",
+};
 
 /** A grant's credit line is usable only when both halves are present and not blank. */
 export function hasReviewerCredential(g: { reviewerName: string | null; reviewerCredential: string | null }): boolean {
@@ -300,6 +324,30 @@ export function hasReviewerCredential(g: { reviewerName: string | null; reviewer
 export const OWNER_DEMONSTRATION_CREDENTIAL = "Platform owner, own demonstration";
 
 export const REVIEWER_NAME_MAX = 120;
+/** course_auditors.credential_evidence_url: https only, at most this long (the table's CHECK agrees). */
+export const EVIDENCE_URL_MAX = 500;
+
+/**
+ * Validate the optional, owner-only credential evidence link (plans/97 v2 Q2). Blank clears it.
+ * https only: a link the owner clicks to check a license must not be a javascript: or http: URL.
+ */
+export function normalizeEvidenceUrl(
+  raw: string | null | undefined,
+): { ok: true; url: string | null } | { ok: false; error: string } {
+  const v = (raw ?? "").trim();
+  if (!v) return { ok: true, url: null };
+  if (v.length > EVIDENCE_URL_MAX) return { ok: false, error: `Keep the evidence link under ${EVIDENCE_URL_MAX} characters.` };
+  let u: URL;
+  try {
+    u = new URL(v);
+  } catch {
+    return { ok: false, error: "The evidence link must be a full web address starting with https://." };
+  }
+  if (u.protocol !== "https:" || !v.toLowerCase().startsWith("https://")) {
+    return { ok: false, error: "The evidence link must start with https://." };
+  }
+  return { ok: true, url: v };
+}
 export const REVIEWER_CREDENTIAL_MAX = 200;
 export const CORRECTION_MAX = 1000;
 

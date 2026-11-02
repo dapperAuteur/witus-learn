@@ -1,4 +1,5 @@
 import { quizIntegrityLines, type CourseQuizIntegrity as QuizIntegritySummary } from "@/lib/quiz-integrity";
+import { QuizIntegrityDetails } from "@/components/quiz-integrity-details";
 
 /**
  * "How this course's quizzes are built", a collapsed card under the standards block on a course page.
@@ -14,14 +15,29 @@ import { quizIntegrityLines, type CourseQuizIntegrity as QuizIntegritySummary } 
  * Coming-soon face gets them from a scoped query that never returns question text. A course with no
  * quiz renders NOTHING (the summary is null), and a measure with nothing to measure is left out
  * rather than shown as "0 of 0", the same choice CourseStandards makes for an unmapped course.
+ *
+ * Visible to every visitor, collapsed (BAM Q2, 2026-11-01). Opening it sends
+ * `quiz_integrity_panel_opened` once per page view (QuizIntegrityDetails, the only client part).
  */
-export function CourseQuizIntegrity({ summary }: { summary: QuizIntegritySummary | null }) {
+export function CourseQuizIntegrity({
+  summary,
+  courseId,
+  surface,
+}: {
+  summary: QuizIntegritySummary | null;
+  courseId: string;
+  surface: "course" | "coming_soon";
+}) {
   if (!summary) return null;
   const { quizzes, questions } = summary;
   const lines = quizIntegrityLines(summary);
 
   return (
-    <details className="group mt-4 rounded-lg border border-neutral-200 dark:border-neutral-800">
+    <QuizIntegrityDetails
+      courseId={courseId}
+      surface={surface}
+      className="group mt-4 rounded-lg border border-neutral-200 dark:border-neutral-800"
+    >
       <summary className="flex min-h-11 cursor-pointer list-none items-center gap-2 px-4 text-sm font-medium pointer-coarse:min-h-12">
         <span aria-hidden="true">📝</span>
         <span>How this course&apos;s quizzes are built</span>
@@ -41,6 +57,6 @@ export function CourseQuizIntegrity({ summary }: { summary: QuizIntegritySummary
         </ul>
         <p className="mt-3 text-xs text-neutral-600">Counted from the quizzes themselves each time this page loads.</p>
       </div>
-    </details>
+    </QuizIntegrityDetails>
   );
 }

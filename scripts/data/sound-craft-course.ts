@@ -40,7 +40,9 @@ import type { AuthoredCourse } from "./authored-course";
 //     23     a lawyer or rights-clearance reviewer (added here: the lesson states no consent law,
 //            but its release passages edge toward legal advice; brief marks 6.1 QR "if it ever
 //            states consent law", and any consent law added later needs a fetched statute per state)
-//            23 is also held for BAM's answer to brief question 6 (where releases are taught)
+//            BAM answered brief question 6 on 2026-11-01: this lesson teaches the Library of
+//            Congress release form itself (the sample in the AFC guide's appendix, printed p. 40),
+//            so the decision marker that held it is gone and only this QR need remains.
 //     24     a licensing reviewer (added here: the brief makes 6.2 tier 2, "QR by a licensing
 //            reviewer, or taught only by quoting the Creative Commons deeds and the Freesound FAQ";
 //            the CC deeds are not in the dossier, so the QR route is taken)
@@ -51,11 +53,15 @@ import type { AuthoredCourse } from "./authored-course";
 //     15, 16 a production sound mixer or boom operator (brief 4.2, 4.3)
 //     18     a production sound mixer, boom operator or BAM (brief 4.5; does not ship without one)
 //     22     BAM's demonstration of made sounds beside the NPS clips (brief 5.4)
-//   BAM decision (brief question 5): 15 to 18, set sound here or in CRAFT-02 Videography.
+//   BAM decided brief question 5 on 2026-11-01: set sound is taught in BOTH this course (lessons 15
+//   to 18, as written) and the planned CRAFT-02 Videography course, so the four decision markers on
+//   15 to 18 are gone and their P markers stay. Videography is only a brief today: learners are not
+//   told about it here. When it is built, it links to these four lessons instead of repeating them
+//   (note in plans/future-courses/ beside its brief, 2026-11-01).
 //   Each P lesson is written only as far as the documents carry it and says, under "Where the
 //   practitioner's part begins" or in its closing build note, where the practitioner takes over.
-//   Unmarked: 1 to 4, 7 to 13 (9 is the practice drill), 20, 21, 25. Lesson 17 carries only the
-//   question 5 marker.
+//   Unmarked: 1 to 4, 7 to 13 (9 is the practice drill), 17 (its question 5 marker was its only
+//   one), 20, 21, 25.
 //
 // RIGHTS (the source-hosting rule in CLAUDE.md, decided per source):
 //  - Tier A, may be hosted on Cloudinary later: NPS page TEXT and clips credited "NPS" (S1 to S5, S7,
@@ -1186,8 +1192,6 @@ That is the setup this lesson teaches: a documentation recording of a performanc
       ],
       body: `${P("a production sound mixer or boom operator, to bring the 1989 kit list up to current practice and to add what the documents do not carry: wireless systems and frequencies, timecode, and today's mixers and recorders")}
 
-> **Before release:** needs BAM's decision (brief question 5): whether set sound is taught here or in the planned Videography course, which would leave only a link here in its place.
-
 **A 1989 Army kit list.** The Army's 1989 course on electronic field production (EFP), as its title spells the term out, lists the audio side: "EFP audio requirements should include extra mike cables, gaffer tape, and headphones for monitoring audio pickup, spare batteries, fuses and windscreens for the microphones." On microphones: "Shotgun mikes and fishpole boom microphones are used so as not to be seen"; wireless mics were "becoming more common on EFP shoots"; and with several microphones you need "a sound mixer, preferably battery powered". Its glossary: "Fishpole boom: Hand-held and used mainly on location".
 
 **A course that dates itself.** The same course says of itself: "This subcourse reflects the doctrine current at the time the subcourse was prepared." Its lessons also state that their material was derived in part from a separately published book, Alan Wurtzel's *Television Production*, second edition. So this course quotes it briefly and links it, and does not copy it.
@@ -1228,8 +1232,6 @@ That is the setup this lesson teaches: a documentation recording of a performanc
         },
       ],
       body: `${P("a production sound mixer or boom operator, to check the 1987 placement rules against current practice, to show how a lavalier is hidden on wardrobe and how a boom is worked, and to correct anything dated")}
-
-> **Before release:** needs BAM's decision (brief question 5): whether set sound is taught here or in the planned Videography course, which would leave only a link here in its place.
 
 **The lavalier in 1987.** The Army's television course: "The most commonly used microphone in television is the lavalier". The rules it taught:
 - "Have the production personnel place the mike on the subject".
@@ -1275,9 +1277,7 @@ That last rule is about a 1987 studio. How a lavalier is hidden under wardrobe t
           answer: "About 6 inches, clipped near the top button of a shirt or blouse.",
         },
       ],
-      body: `> **Before release:** needs BAM's decision (brief question 5): whether set sound is taught here or in the planned Videography course, which would leave only a link here in its place.
-
-**What a console is for.** The 1987 Army course gives a console "three primary functions: 1. amplify sound 2. control sound 3. route sound".
+      body: `**What a console is for.** The 1987 Army course gives a console "three primary functions: 1. amplify sound 2. control sound 3. route sound".
 
 **The VU meter, in the Army's words.** "The normal acceptable level for riding audio is between 80-100 per cent VU modulation". The same page, printed p. 36, also uses three phrases: "in the red", "the needle is pegged" and "riding in the mud". This lesson quotes only the normal band and does not define the three phrases, because their meanings are not in the notes this course was checked against. Open printed p. 36 and read them in context.
 
@@ -1322,8 +1322,6 @@ That last rule is about a 1987 studio. How a lavalier is hidden under wardrobe t
         },
       ],
       body: `${P("a production sound mixer or boom operator, or BAM from his own set experience, to write the part on room tone, wild tracks, slating, timecode and the sound report; this lesson is not released without one")}
-
-> **Before release:** needs BAM's decision (brief question 5): whether set sound is taught here or in the planned Videography course, which would leave only a link here in its place.
 
 **The documented part: say who, where and when, on the recording.** The Library of Congress guide: "At the start of the recording, make a brief opening statement that specifies the date and place of the interview, the names of the people on the recording, yourself included, and the general topic of the interview." And at the end: "Make a brief closing announcement on the recording at the end of the interview." A spoken label at the head of a file stays with the file even if the paperwork is lost.
 
@@ -1782,8 +1780,6 @@ ${P("BAM's demonstration: a thunder sheet, a dried-pea rain drum and rice poured
       ],
       body: `${QR("a lawyer or rights-clearance reviewer, to confirm that the release passages are framed correctly and that nothing here reads as consent law; any consent law added later needs that reviewer or a fetched statute for each state named")}
 
-> **Before release:** needs BAM's decision (brief question 6): whether this lesson teaches the Library of Congress release form, or links to a release lesson added to *Rights, Permissions and Clearances Research*, as the craft-course boundary table asks.
-
 **The floor.** The Library of Congress fieldwork guide puts the ethic plainly: "Since our interviewees are giving us their time and trust, it's also important that we be honest and truthful with them. For these reasons, you shouldn't record anyone without their knowledge, do research under false pretenses, or lie to the community you're studying. You shouldn't use their voices or images without permission. You don't want to use the information they give you in a way they don't approve of, or publish it in ways that will harm or embarrass them."
 
 It notes that universities treat this as regulated research: "Interviewees are often considered "human subjects," just like people in medical experiments, and universities are very careful about regulating human subject research."
@@ -1793,7 +1789,19 @@ It notes that universities treat this as regulated research: "Interviewees are o
 - The person can say no: "Remember, after the interview, interviewees always have the right to refuse to sign a release form if they have reservations about what was discussed."
 - The paper outlasts your word: "If the collection and its release forms go to another institution or individual in the future, they're only bound by what it says on the release, not by a promise you made personally."
 
-**Read the form itself.** The sample release in the guide's appendix says: "By giving permission, I understand that I do not give up any copyright or performance rights that I may hold." It grants use of "my name, video or photographic image or likeness, statements, performance, and voice reproduction, or other sound effects without further approval on my part." It was written for recordings deposited in an archive, not for commercial use; the guide itself says commercial use may need added language. A recording for a commercial production, on a set or in a theater, may need a release written for that use, and no source read for this course supplies one.
+**The Library of Congress release form, part by part.** The form this lesson teaches is the one-page sample titled "RELEASE FORM" in the guide's appendix, "Sample Forms" (printed p. 40). The guide calls it "ready to go for most basic purposes" and describes it as a form "which grants researchers access to the interview and permits its use for non-commercial purposes." Read it in five parts and a signature block.
+
+1. **Who and what project.** It opens "I,_______________________, am a participant in the ___________________ project". You fill in the person's name and your project's name before the interview, not after.
+2. **Where the recordings go, and what for.** The person states that they understand "the purpose of the project is to collect audio- and video-tapes and selected related documentary materials (such as photographs and manuscripts) that may be deposited in the permanent collections of" a named institution, and that the materials "may be used for scholarly, educational, and other purposes." Every blank that names an institution names the same one: the archive, library or organization that will keep the recording.
+3. **Ownership of the copy, use of the content, and what the person keeps.** The person grants the institution "ownership of the physical property delivered to the institution and the right to use the property that is the product of my participation (for example, my interview, performance, photographs, and written materials)". Then the line that protects them: "By giving permission, I understand that I do not give up any copyright or performance rights that I may hold."
+4. **Photographs.** A separate grant gives "absolute and irrevocable consent for any photograph(s) provided by me or taken of me in the course of my participation in the project to be used, published, and copied" by the institution "and its assignees in any medium."
+5. **Name, image and voice.** The last grant lets the institution use "my name, video or photographic image or likeness, statements, performance, and voice reproduction, or other sound effects without further approval on my part."
+
+Under "ACCEPTED AND AGREED" come a signature, the date, the printed name and contact details. A note at the foot points to more examples in the Folklife Center's online fieldwork resources.
+
+**How to use it.** The guide's own steps: "bring two copies of the release form to the interview: one for your files; the other for the interviewees' files. Have both parties sign both copies". Fill in the blanks first, so the person signs a finished page. If they hesitate afterward, "don't negotiate by introducing promises that aren't on the release form"; "If necessary, negotiate a new release form with terms your interviewee feels comfortable with." The appendix's recording log, the page before the form, has a "Rights" line: write there which release covers the recording, so the log and the paper can be matched later.
+
+**What the form is not.** It was written for recordings deposited in an archive. The guide says commercial use may need language added to it, and a recording for a commercial production, on a set or in a theater, may need a release written for that use. No source read for this course supplies one, and the reviewer named at the top of this lesson checks how these passages are framed.
 
 **What this lesson does not tell you: the law.** This course states no law on recording people. Whether one person's consent is enough or everyone's is needed, what a location or talent release must contain, and what union rules apply on a set were not researched for it. The guide's ethic is the floor, not the law. For the law of recording in public, the catalog's lesson is *Civic Documentation: Recording What Happened in Public*, "9 · What the law protects, and what it does not". For rights in what you record, see *Rights, Permissions and Clearances Research*, "5 · The trap: when the rights field is about the wrong object".
 
@@ -1807,8 +1815,12 @@ It notes that universities treat this as regulated research: "Interviewees are o
 
 :::reveal Why does a promise you made personally not protect an interviewee later? ||| Because a later holder of the collection is "only bound by what it says on the release, not by a promise you made personally."
 
+:::reveal Under the Library of Congress sample release, does the person give up copyright in their interview? ||| No: "I understand that I do not give up any copyright or performance rights that I may hold."
+
+:::reveal How many copies of the release does the guide tell you to bring, and who signs them? ||| Two copies, one for your files and one for the interviewee's, and both parties sign both copies.
+
 ## Sources
-- ${AFC} Locator: pp. 10 to 11 (PDF pp. 16 to 17), the ethics passage; p. 11 (PDF p. 17), human subjects; p. 16 (PDF p. 22), release forms and location data; table of contents, p. iii (PDF p. 4); appendix, p. 40 (PDF p. 46), the sample release. ${AFC_PAGES}`,
+- ${AFC} Locator: pp. 10 to 11 (PDF pp. 16 to 17), the ethics passage; p. 11 (PDF p. 17), human subjects; p. 16 (PDF p. 22), release forms and location data; table of contents, p. iii (PDF p. 4); appendix, p. 39 (PDF p. 45), the recording log's "Rights" line; appendix, p. 40 (PDF p. 46), the sample release form, every clause. The guide as a PDF: https://tile.loc.gov/storage-services/master/gdc/gdcebookspublic/20/19/66/70/28/2019667028/2019667028.pdf#page=46 ${AFC_PAGES}`,
     },
     {
       slug: "licenses-for-sounds",

@@ -33,3 +33,26 @@ test("public catalog renders and is accessible", async ({ page }) => {
   await expect(page.getByRole("heading", { name: "Courses" }).first()).toBeVisible();
   await expectNoSeriousA11yViolations(page);
 });
+
+// Quiz integrity panel (plans/98 acceptance 9): a public course with quizzes shows the collapsed
+// "How this course's quizzes are built" card, visible to a signed-out visitor (BAM Q2). Which courses
+// exist depends on the deployment's tenant, so the test walks the catalog's course links (a few at
+// most) instead of naming a slug, and skips when none of them has a quiz.
+test("a public course with quizzes shows the quiz integrity panel", async ({ page }) => {
+  await page.goto("/courses");
+  const hrefs = await page
+    .locator("main a[href]")
+    .evaluateAll((as) =>
+      Array.from(new Set(as.map((a) => a.getAttribute("href") ?? ""))).filter((h) => /^\/[^/]+\/[^/]+$/.test(h)),
+    );
+  for (const href of hrefs.slice(0, 8)) {
+    await page.goto(href);
+    const summary = page.locator("details > summary", { hasText: "How this course's quizzes are built" });
+    if ((await summary.count()) === 0) continue;
+    await expect(summary.first()).toBeVisible();
+    // Collapsed by default: the sentences sit inside a closed <details>.
+    await expect(summary.first().locator("xpath=..")).not.toHaveAttribute("open", "");
+    return;
+  }
+  test.skip(true, "No course among the first catalog links has a quiz on this deployment.");
+});

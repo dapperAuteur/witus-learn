@@ -38,6 +38,8 @@ export function ReviewSignoffPanel({
   canRelease,
   launchTodos,
   holdReason,
+  evidenceByAuditor,
+  failingQuizzes = 0,
 }: {
   courseId: string;
   lessons: SignoffLesson[];
@@ -49,6 +51,10 @@ export function ReviewSignoffPanel({
   holdReason: string | null;
   /** The course's launch to-do list, shown as a warning before the hold is released. */
   launchTodos?: LaunchTodo[];
+  /** Credential evidence links by grant id; passed only to the owner and school admin (plans/97 v2 Q2). */
+  evidenceByAuditor?: Record<string, string>;
+  /** Measured quizzes failing the length check, carried into the release warning (never a gate). */
+  failingQuizzes?: number;
 }) {
   return (
     <section aria-labelledby="review-signoff-heading" className="rounded-lg border border-neutral-200 p-4 dark:border-neutral-800">
@@ -70,7 +76,7 @@ export function ReviewSignoffPanel({
 
       {canRelease && holdReason ? (
         readiness.ready ? (
-          <ReleaseReviewHoldButton courseId={courseId} launchTodos={launchTodos} />
+          <ReleaseReviewHoldButton courseId={courseId} launchTodos={launchTodos} failingQuizzes={failingQuizzes} />
         ) : (
           <p className="mt-2 text-sm text-neutral-600 dark:text-neutral-400">
             The hold can be released here once every qualified-reviewer and practitioner need is cleared and no decision is open.
@@ -103,6 +109,20 @@ export function ReviewSignoffPanel({
                       <span className="block text-neutral-600 dark:text-neutral-400">
                         {r.review.reviewerName}, {r.review.reviewerCredential}, {fmt(r.review.decidedAt)}
                         {r.review.correctionAppliedAt ? `, correction applied ${fmt(r.review.correctionAppliedAt)}` : ""}
+                        {r.review.auditorId && evidenceByAuditor?.[r.review.auditorId] ? (
+                          <>
+                            {" "}
+                            <a
+                              href={evidenceByAuditor[r.review.auditorId]}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                              className="underline"
+                              style={{ color: "var(--accent)" }}
+                            >
+                              Credential evidence<span className="sr-only"> for {r.review.reviewerName} (opens in a new tab)</span>
+                            </a>
+                          </>
+                        ) : null}
                       </span>
                     ) : null}
                     {r.state === "pending_correction" && r.review?.correction ? (

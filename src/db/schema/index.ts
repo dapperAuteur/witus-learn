@@ -28,6 +28,7 @@ export * from "./bundles";
 export * from "./promotions";
 export * from "./auditors";
 export * from "./lesson-reviews";
+export * from "./seed-drift";
 export * from "./tour-embeds";
 export * from "./library";
 export * from "./media-assets";

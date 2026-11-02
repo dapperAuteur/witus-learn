@@ -14,6 +14,11 @@
 // tests/using-learn-series.test.ts. The final quiz moves to Section 3, as in the other three-section
 // courses of the series, and gains three tour questions (pool 28).
 //
+// SECTION 4 (added 2026-11-02): one lesson, `reviewer-sign-off`, and its quiz. Plans/97 v2
+// acceptance 6 makes a Run Your Course lesson teaching it the condition for deleting its WAIVED line
+// in tests/using-learn-series.test.ts. The final quiz moves to Section 4 (it stays the course's
+// last lesson); its pool is unchanged.
+//
 // ASSESSMENT SIZE: the series exception recorded in using-learn-shared.ts (rubric D2, BAM
 // 2026-09-22). Each section quiz pools 10 and serves 5; the final pools 25, serves 10, passes at
 // 80. Every question carries `explanation` and `sourceLessonSlug`, and every teaching section has
@@ -37,11 +42,12 @@ import { finalQuiz, helpLesson, sectionQuiz } from "./using-learn-shared";
 const S1 = "Section 1 · Live and streaming";
 const S2 = "Section 2 · What your learners send back";
 const S3 = "Section 3 · Tours from the field";
+const S4 = "Section 4 · Reviewer sign-off";
 
 export const USING_LEARN_RUN_YOUR_COURSE_COURSE: AuthoredCourse = {
   title: "Teach and run your course",
   description:
-    "Schedule live sessions, keep an always-on stream running between them, and fan one broadcast out to your socials. Then read everything your learners send back: lesson feedback, problem reports, the notes they share with you, and the searches that show what they were looking for. Last, fill your tour lessons with photos and video from your own Field Log.",
+    "Schedule live sessions, keep an always-on stream running between them, and fan one broadcast out to your socials. Then read everything your learners send back: lesson feedback, problem reports, the notes they share with you, and the searches that show what they were looking for. Then fill your tour lessons with photos and video from your own Field Log. Last, get the lessons marked \"Before release\" checked by qualified reviewers and release the course.",
   lessons: [
     // ══════════════════════════════════════════════════════════════════════
     // SECTION 1 · Live and streaming
@@ -483,7 +489,147 @@ export const USING_LEARN_RUN_YOUR_COURSE_COURSE: AuthoredCourse = {
         sourceLessonSlug: "tours-from-field-log",
       },
     ]),
-    finalQuiz(S3, [
+    // ══════════════════════════════════════════════════════════════════════
+    // SECTION 4 · Reviewer sign-off (added 2026-11-02, plans/97 v2, acceptance 6)
+    // ══════════════════════════════════════════════════════════════════════
+    helpLesson(
+      "reviewer-sign-off",
+      S4,
+      "Open Teach and a course whose lessons are marked Before release. Under Invite someone to review this course, invite a reviewer and add the name and credential they will be credited with. Read the Reviewer sign-off panel: which needs are open, which are decisions, and whether Release the review hold is offered yet. Then open the course's Sources page and note who can see it while the course is held.",
+    ),
+    sectionQuiz(S4, 4, [
+      {
+        prompt: "When can an invited reviewer record a verdict?",
+        options: [
+          "Once the inviter adds a name and credential",
+          "As soon as the invitation email is opened",
+          "After the course is released to learners",
+          "Once the reviewer writes their own credit",
+        ],
+        correctIndex: 0,
+        explanation:
+          "The verdict credits the reviewer by name and credential, so the person who invited them must add both first. The reviewer never sets their own credit.",
+        sourceLessonSlug: "reviewer-sign-off",
+      },
+      {
+        prompt: "A reviewer cleared a lesson, then you fixed a typo in it. What happens?",
+        options: [
+          "The badge stays, since a typo is minor",
+          "The verdict resets and asks for a review",
+          "The reviewer is emailed the changed line",
+          "The fix waits until the reviewer agrees",
+        ],
+        correctIndex: 1,
+        explanation:
+          "Any change to the lesson's text, even a typo fix, resets its verdict. A reviewer's name never sits on wording they did not read, and nobody is notified.",
+        sourceLessonSlug: "reviewer-sign-off",
+      },
+      {
+        prompt: "Where does a reviewer's correction go?",
+        options: [
+          "Into a thread the author answers in",
+          "Into an email sent to the instructor",
+          "Onto that lesson, for the author to apply",
+          "Onto a list of every course's corrections",
+        ],
+        correctIndex: 2,
+        explanation:
+          "A correction is one note attached to that lesson. Nobody replies and nobody is notified; the author applies it by editing the lesson.",
+        sourceLessonSlug: "reviewer-sign-off",
+      },
+      {
+        prompt: "You teach the course and also hold a review invitation. What do you see?",
+        options: [
+          "The form, open, since you hold a grant",
+          "The form, and your verdict needs a second",
+          "No form at all and no reason for it",
+          "The form greyed out, with the reason why",
+        ],
+        correctIndex: 3,
+        explanation:
+          "The course's own instructor cannot review it. The form stays greyed out and the sentence above it says so, so nobody meets a dead form without a reason.",
+        sourceLessonSlug: "reviewer-sign-off",
+      },
+      {
+        prompt: "How does a reviewer read the marked lessons offline?",
+        options: [
+          "Download the PDF or EPUB on Review lessons",
+          "Print each lesson page from the browser",
+          "Ask the author to email the course file",
+          "Export the whole course from Admin",
+        ],
+        correctIndex: 0,
+        explanation:
+          "Review lessons offers Download the lessons for your review as a PDF or an EPUB, holding only the marked lessons, each headed by what to check.",
+        sourceLessonSlug: "reviewer-sign-off",
+      },
+      {
+        prompt: "Who can see a reviewer's credential evidence link?",
+        options: [
+          "Every learner, beside the reviewed badge",
+          "The platform owner and the school's admin",
+          "The reviewer and the course's instructor",
+          "Anyone who opens the course's Sources page",
+        ],
+        correctIndex: 1,
+        explanation:
+          "The evidence link is optional and shown only to the platform owner and the school's admin, beside the reviewer's credit on the sign-off panel. Learners never see it.",
+        sourceLessonSlug: "reviewer-sign-off",
+      },
+      {
+        prompt: "How does a decision marker clear?",
+        options: [
+          "A qualified reviewer records it as cleared",
+          "The platform owner presses Applied as written",
+          "The marker is edited out of the course file",
+          "The school admin releases the review hold",
+        ],
+        correctIndex: 2,
+        explanation:
+          "A decision is not a review, so no verdict clears it. It clears only when the marker is edited out of the course file.",
+        sourceLessonSlug: "reviewer-sign-off",
+      },
+      {
+        prompt: "When does Release the review hold appear?",
+        options: [
+          "When half of the needs have been cleared",
+          "When the first reviewer accepts an invite",
+          "When the instructor marks the course ready",
+          "When every need is cleared, no decision left",
+        ],
+        correctIndex: 3,
+        explanation:
+          "Every qualified-reviewer and practitioner need must be cleared and no decision left. The server checks again before it clears anything.",
+        sourceLessonSlug: "reviewer-sign-off",
+      },
+      {
+        prompt: "Who may clear a practitioner need with their own demonstration?",
+        options: [
+          "The course's own instructor",
+          "The platform owner",
+          "Any enrolled learner",
+          "The school's admin",
+        ],
+        correctIndex: 1,
+        explanation:
+          "Only the platform owner clears practitioner needs with their own demonstration, and only an invited reviewer clears a qualified-reviewer need.",
+        sourceLessonSlug: "reviewer-sign-off",
+      },
+      {
+        prompt: "While a course is held, who can open its Sources page?",
+        options: [
+          "Anyone, since sources are always public",
+          "Only learners who enrolled before the hold",
+          "Its editors and its invited reviewers",
+          "Nobody until the course is vetted",
+        ],
+        correctIndex: 2,
+        explanation:
+          "A held course's Sources page is open to its editors and invited reviewers. Releasing the course opens it to learners, with nothing else to switch on.",
+        sourceLessonSlug: "reviewer-sign-off",
+      },
+    ]),
+    finalQuiz(S4, [
       {
         prompt: "What do you set on a live session besides its player embed URL?",
         options: [

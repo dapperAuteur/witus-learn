@@ -1,4 +1,5 @@
 import "server-only";
+import { listOpenSeedDrifts, resolveSeedDrift } from "@/db/queries/seed-drift";
 import { notFound } from "next/navigation";
 import { requireTenant, type TenantRecord } from "@/lib/tenant";
 import {
@@ -42,7 +43,7 @@ import {
   type TourSlotViewer,
   type UpdateTourInput,
 } from "@/db/queries/tour-embeds";
-import { quizIntegrityByCourse } from "@/db/queries/quiz-integrity";
+import { listFailingQuizBanks, quizIntegrityByCourse } from "@/db/queries/quiz-integrity";
 import {
   countCourseInterestByCapacity,
   countPendingCourseInterest,
@@ -289,6 +290,19 @@ export class ScopedDb {
     return isCourseAuditor({ tenantId: this.tenantId, ...input });
   }
 
+  // ── Seed drift (plans/97 Q5) ───────────────────────────────────────────────
+  // Lessons edited in the app since the last seed, which the seeder left alone. This tenant only.
+
+  /** Open warnings; `instructorId` limits to one instructor's courses, `courseId` to one course. */
+  listOpenSeedDrifts(opts: { instructorId?: string; courseId?: string } = {}) {
+    return listOpenSeedDrifts(this.tenantId, opts);
+  }
+
+  /** Keep the app's edit, or take the file's version, for one open warning on one of this tenant's courses. */
+  resolveSeedDrift(courseId: string, driftId: string, action: "keep_app" | "take_file", userId: string) {
+    return resolveSeedDrift(this.tenantId, courseId, driftId, action, userId);
+  }
+
   // ── Reviewer sign-off (plans/93 section 1) ─────────────────────────────────
   // Verdicts on a lesson's release needs. Every method supplies this tenant itself, so a route can
   // neither read nor write a verdict, a credit or a reviewable lesson outside its own school.
@@ -297,7 +311,7 @@ export class ScopedDb {
   setCourseAuditorCredit(
     courseId: string,
     auditorId: string,
-    credit: { reviewerName: string | null; reviewerCredential: string | null },
+    credit: { reviewerName: string | null; reviewerCredential: string | null; credentialEvidenceUrl?: string | null },
   ) {
     return setCourseAuditorCredit(this.tenantId, courseId, auditorId, credit);
   }
@@ -379,6 +393,14 @@ export class ScopedDb {
   /** Quiz-integrity counts for one of this tenant's courses, or null when it has no quiz to count. */
   async courseQuizIntegrity(courseId: string) {
     return (await quizIntegrityByCourse(this.tenantId, courseId)).get(courseId) ?? null;
+  }
+
+  /**
+   * The measured quizzes of one course that fail a length measure (lesson id, slug, title, size).
+   * EDITORS ONLY (/teach/[courseId]): it names lessons, so the Coming-soon face never calls it.
+   */
+  listFailingQuizBanks(courseId: string) {
+    return listFailingQuizBanks(this.tenantId, courseId);
   }
 
   /** Quiz-integrity counts for every course in this tenant that has a quiz, keyed by course id. */

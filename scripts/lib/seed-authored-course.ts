@@ -1,10 +1,28 @@
-import { and, eq, sql } from "drizzle-orm";
+import { and, eq, inArray, sql } from "drizzle-orm";
 import type { NeonDatabase } from "drizzle-orm/neon-serverless";
 import * as schema from "../../src/db/schema";
 import type { AuthoredCourse } from "../data/authored-course";
 import { normalizeAdditionalCategories } from "../../src/lib/course-categories";
 import { parseReleaseMarkers } from "../../src/lib/lesson-review";
 import { NEW_COURSE_STATE } from "../../src/lib/course-visibility";
+import { decideSeedAction, seedContentHash, seedContentOf, type SeedContent } from "../../src/lib/seed-drift";
+
+// ── Seed drift report (plans/97 Q5) ─────────────────────────────────────────
+// Every seedAuthoredCourse call in this process adds to it; the seed script prints it at the end and,
+// when SEED_REPORT_PATH is set (the post-merge workflow), writes it as JSON so the RAG step indexes
+// exactly the courses whose content this run changed.
+export interface SeedReport {
+  /** Courses where this run inserted a lesson or wrote changed content: they need a RAG re-index. */
+  changedCourses: { tenantId: string; courseId: string; courseSlug: string }[];
+  /** Lessons left alone because they were edited in the app (a warning is open for each). */
+  drifted: { courseSlug: string; lessonSlug: string; acknowledged: boolean }[];
+  /** Lessons written for the first time since migration 0074 (no seed_hash yet). */
+  baselined: number;
+}
+const report: SeedReport = { changedCourses: [], drifted: [], baselined: 0 };
+export function seedReport(): SeedReport {
+  return report;
+}
 
 // Reusable seeder for any authored course (Ed.L.D., cyber, FAA when it lands, more
 // languages). Upserts the course (refreshing title/description) and its lessons by
@@ -194,10 +212,84 @@ export async function seedAuthoredCourse(
       isPublished: true,
     };
   });
-  if (lessonRows.length) {
+  // Seed drift (plans/97 Q5): read what is there first, so a lesson edited in the app since the last
+  // seed is left alone and reported instead of overwritten. A replaceLessons run deleted them above.
+  const existingRows = lessonRows.length
+    ? await db
+        .select({
+          id: schema.lessons.id,
+          slug: schema.lessons.slug,
+          title: schema.lessons.title,
+          textContent: schema.lessons.textContent,
+          contentUrl: schema.lessons.contentUrl,
+          quizContent: schema.lessons.quizContent,
+          exerciseContent: schema.lessons.exerciseContent,
+          mapContent: schema.lessons.mapContent,
+          recallContent: schema.lessons.recallContent,
+          seedHash: schema.lessons.seedHash,
+        })
+        .from(schema.lessons)
+        .where(eq(schema.lessons.courseId, courseId))
+    : [];
+  const existingBySlug = new Map(existingRows.filter((r) => r.slug).map((r) => [r.slug as string, r]));
+  const drifts = existingRows.length
+    ? await db
+        .select()
+        .from(schema.lessonSeedDrifts)
+        .where(inArray(schema.lessonSeedDrifts.lessonId, existingRows.map((r) => r.id)))
+    : [];
+  const driftByLesson = new Map(drifts.map((d) => [d.lessonId, d]));
+
+  const toWrite: (typeof lessonRows[number] & { seedHash: string })[] = [];
+  const skipped: { id: string; sortOrder: number; moduleId: string | null }[] = [];
+  let contentChanged = false;
+  for (const row of lessonRows) {
+    const file: SeedContent = seedContentOf(row);
+    const fileHash = seedContentHash(file);
+    const existing = existingBySlug.get(row.slug);
+    const appHash = existing ? seedContentHash(seedContentOf(existing as SeedContent)) : undefined;
+    const drift = existing ? (driftByLesson.get(existing.id) ?? null) : null;
+    const action = decideSeedAction({ seedHash: existing ? existing.seedHash : undefined, appHash, fileHash, drift });
+    if (action === "write") {
+      if (existing && existing.seedHash == null) report.baselined++;
+      if (!existing || appHash !== fileHash) contentChanged = true;
+      toWrite.push({ ...row, seedHash: fileHash });
+      if (drift) await db.delete(schema.lessonSeedDrifts).where(eq(schema.lessonSeedDrifts.id, drift.id));
+      continue;
+    }
+    // Edited in the app: keep its content; still follow the file's order and sections.
+    skipped.push({ id: existing!.id, sortOrder: row.sortOrder, moduleId: row.moduleId });
+    report.drifted.push({ courseSlug: slug, lessonSlug: row.slug, acknowledged: action === "skip_kept" });
+    if (action === "skip_report") {
+      const reopen = drift?.fileHash !== fileHash; // a newer file version reopens an acknowledged warning
+      await db
+        .insert(schema.lessonSeedDrifts)
+        .values({ tenantId, courseId, lessonId: existing!.id, fileHash, appHash: appHash!, fileContent: file })
+        .onConflictDoUpdate({
+          target: [schema.lessonSeedDrifts.lessonId],
+          set: {
+            fileHash,
+            appHash: appHash!,
+            fileContent: file,
+            lastCheckedAt: new Date(),
+            ...(reopen ? { resolution: null, resolvedAt: null, resolvedBy: null, detectedAt: new Date() } : {}),
+          },
+        });
+      console.warn(`  ! ${slug}/${row.slug}: edited in the app since the last seed; left as is (warning on /teach)`);
+    }
+  }
+  for (const k of skipped) {
+    await db
+      .update(schema.lessons)
+      .set({ sortOrder: k.sortOrder, moduleId: k.moduleId })
+      .where(eq(schema.lessons.id, k.id));
+  }
+  if (contentChanged) report.changedCourses.push({ tenantId, courseId, courseSlug: slug });
+
+  if (toWrite.length) {
     await db
       .insert(schema.lessons)
-      .values(lessonRows)
+      .values(toWrite)
       .onConflictDoUpdate({
         target: [schema.lessons.courseId, schema.lessons.slug],
         targetWhere: sql`slug is not null`,
@@ -222,10 +314,12 @@ export async function seedAuthoredCourse(
           contentUrl: sql`excluded.content_url`,
           contentFormat: sql`excluded.content_format`,
           isPublished: sql`excluded.is_published`,
+          // What this seed wrote, so the next one can tell an in-app edit from an unchanged lesson.
+          seedHash: sql`excluded.seed_hash`,
           updatedAt: new Date(),
         },
       });
-    console.log(`  lessons: ${lessonRows.length} (upserted)`);
+    console.log(`  lessons: ${toWrite.length} (upserted)${skipped.length ? `, ${skipped.length} left as edited in the app` : ""}`);
   }
   return courseId;
 }
