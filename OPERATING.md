@@ -149,6 +149,39 @@ LangGraph courses). **Edit the source → re-run that seed** to push it live.
 Teachers can also edit lesson text, glossary, sources, and recall prompts **in-app** on the
 **Curriculum** tab under `/teach/<courseId>` — those save straight to the DB (no seed needed).
 
+### 5a. RAG index (embeddings)
+
+A course's **Chat with the sources** answers from `source_chunks`, built by `pnpm rag:index`
+(`scripts/rag-index.ts`, a thin CLI over `indexCourse` in `src/lib/rag/index-course.ts`). A seed that
+changes lesson text leaves that index stale until it is rebuilt.
+
+```bash
+pnpm rag:list:prod                                   # every course: never indexed / changed / current
+pnpm rag:index:prod --course <slug>                  # one course (add --tenant <slug> for a shared slug)
+pnpm rag:index:prod --course <slug> --all-tenants    # that slug in every school
+pnpm rag:index:prod --needing --changed-only         # every course indexed before and changed since
+pnpm rag:index:prod --needing                        # ...plus every course never indexed (many Gemini calls)
+pnpm rag:index:prod --courses-file changed.json      # [{ "tenantSlug": "...", "courseSlug": "..." }]
+```
+
+- **Rate limits.** Gemini's free tier allows 30,000 embedding tokens a minute, and one course can hold
+  more, so the indexer sends chunks in batches (`batchEmbedContents`, 100 texts at most per call) under
+  a one-minute token budget, estimated at one token per three characters (an over-count). On a 429 it
+  waits the `retryDelay` Gemini sends (or backs off 2 s, 4 s, 8 s... with jitter, capped at 60 s) and
+  retries the same batch. Progress prints as `batch 7/40, rate limited, waiting 16 s (retry 1/8)`.
+- **Env vars:** `GOOGLE_GEMINI_API_KEY` (required, sent only in the `x-goog-api-key` header),
+  `RAG_EMBED_TOKENS_PER_MINUTE` (default `25000`; raise it on a paid tier),
+  `RAG_EMBED_MAX_RETRIES` (default `8` consecutive 429s on one batch before that course fails).
+- **Safe to re-run.** Everything is embedded before anything is deleted; the old chunks are swapped for
+  the new ones in one transaction, so a failure leaves the previous index in place. A public-domain
+  full text ingested with `--source-url` is kept on later runs without the flag.
+- **What was indexed** is recorded per course in `course_rag_index` (content hash, `indexed_at`, chunk
+  count). The hash covers the lesson titles and bodies and the citation text, so `rag:list` and
+  `--needing` know which courses changed. A course indexed before this record existed shows as
+  "changed" until it is indexed once more.
+- Exit code 1 when any course failed (after trying all of them); each course prints one `ok` or
+  `FAILED` line.
+
 ---
 
 ## 6. Other operator tasks
