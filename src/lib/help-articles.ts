@@ -429,7 +429,8 @@ demonstration), or **a decision** the course author still has to make.
 
 If the verdict form is greyed out, the sentence above it says why: the course's own instructor cannot
 review it, your name and credential are not added yet, you are signed in with an address that has no
-invitation, or the need is one only the platform owner records.
+invitation, the need is one only the platform owner records, or the need names a different reviewer
+from the one your invitation is for.
 
 You can record a verdict only after the person who invited you has added your **name and
 credential**, because that is what the lesson will show: "Reviewed by {name}, {credential}, on
@@ -449,6 +450,11 @@ That is deliberate: your name never sits on wording you did not read.
 - **Apply a correction by editing the lesson.** The platform owner can then press **Applied as
   written** once, which keeps the reviewer's badge on the edited text and shows the date it was
   applied. Any later edit resets the verdict like any other.
+- **Two different reviewers on one lesson** (a land surveyor and a Native reviewer, say) are signed off
+  separately. A need that names a particular reviewer shows it after its kind, for example
+  "Qualified reviewer (native reviewer)". Set **Reviews for** on that reviewer's invitation so they
+  can record it; each reviewer then clears only their own needs, so one verdict never stands in for
+  another's.
 - A **decision** marker clears only when the marker is edited out of the course file.
 - On **/teach**, a **QR 12/17** chip shows how many qualified-reviewer needs are cleared.
 - A held course with no marked lessons says so on the panel: clear its hold by hand.

@@ -38,6 +38,8 @@ export async function GET(_req: Request, { params }: Params) {
       // inviter through PATCH /api/courses/[id]/auditors/[auditorId].
       reviewerName: a.reviewerName,
       reviewerCredential: a.reviewerCredential,
+      // Which tagged need this reviewer clears ('' = untagged; migration 0075).
+      reviewerKey: a.reviewerKey,
       // Owner and school admin only (plans/97 v2 Q2); absent for the course's instructor.
       ...(evidence ? { credentialEvidenceUrl: a.credentialEvidenceUrl } : {}),
     })),

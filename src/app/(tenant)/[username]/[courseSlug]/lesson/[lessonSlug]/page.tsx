@@ -261,9 +261,18 @@ export default async function LessonPage({ params }: Params) {
           const isInstructor = view.course.instructorId === view.session.user.id;
           const needs: VerdictNeed[] = marked
             .map((r) => {
-              const why = verdictBlockReason({ isAuditor: Boolean(grant), hasCredential, isOwner: viewerIsOwner, isInstructor, kind: r.kind });
+              const why = verdictBlockReason({
+                isAuditor: Boolean(grant),
+                hasCredential,
+                isOwner: viewerIsOwner,
+                isInstructor,
+                kind: r.kind,
+                grantReviewerKey: grant?.reviewerKey ?? "",
+                needReviewerKey: r.reviewerKey,
+              });
               return {
                 kind: r.kind,
+                reviewerKey: r.reviewerKey,
                 whos: r.whos,
                 state: r.state,
                 current: r.review ? { verdict: r.review.verdict as Verdict, correction: r.review.correction } : null,

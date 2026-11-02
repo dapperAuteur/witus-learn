@@ -311,7 +311,12 @@ export class ScopedDb {
   setCourseAuditorCredit(
     courseId: string,
     auditorId: string,
-    credit: { reviewerName: string | null; reviewerCredential: string | null; credentialEvidenceUrl?: string | null },
+    credit: {
+      reviewerName: string | null;
+      reviewerCredential: string | null;
+      credentialEvidenceUrl?: string | null;
+      reviewerKey?: string;
+    },
   ) {
     return setCourseAuditorCredit(this.tenantId, courseId, auditorId, credit);
   }
@@ -337,7 +342,13 @@ export class ScopedDb {
   }
 
   /** The owner's "Applied as written" stamp, which re-pins the verdict to the edited lesson. */
-  markCorrectionApplied(input: { courseId: string; lessonId: string; needKind: VerdictNeedKind; lessonHash: string }) {
+  markCorrectionApplied(input: {
+    courseId: string;
+    lessonId: string;
+    needKind: VerdictNeedKind;
+    reviewerKey: string;
+    lessonHash: string;
+  }) {
     return markCorrectionApplied({ tenantId: this.tenantId, ...input });
   }
 

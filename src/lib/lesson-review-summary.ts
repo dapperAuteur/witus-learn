@@ -2,7 +2,9 @@ import {
   effectiveReviewState,
   readReviewNeeds,
   releaseReadiness,
-  verdictKindsFor,
+  reviewerKeyOf,
+  slotId,
+  verdictSlotsFor,
   VERDICT_NEED_KINDS,
   type MaterialLesson,
   type ReleaseReadiness,
@@ -21,6 +23,8 @@ import { lessonReviewHash } from "@/lib/lesson-review-hash";
 /** A stored verdict, reduced to what a screen may show. */
 export interface StoredReview {
   needKind: string;
+  /** Which reviewer the verdict is for ('' for an untagged need; migration 0075). */
+  reviewerKey?: string;
   /** The grant it was recorded under (null for the owner's own P verdict, or once revoked). */
   auditorId?: string | null;
   verdict: Verdict | string;
@@ -35,7 +39,9 @@ export interface StoredReview {
 
 export interface NeedSummary {
   kind: VerdictNeedKind;
-  /** Every "who" the markers name for this kind (usually one). Empty for a badge kept after its marker went. */
+  /** Which reviewer this sign-off is for ('' when untagged). Each (kind, key) is its own row and verdict. */
+  reviewerKey: string;
+  /** Every "who" the markers name for this sign-off (usually one). Empty for a badge kept after its marker went. */
   whos: string[];
   state: ReviewState;
   review: StoredReview | null;
@@ -48,7 +54,7 @@ export interface LessonReviewSummary {
   needs: ReviewNeed[];
   /** Decision markers: shown, never cleared by a verdict. */
   decisions: ReviewNeed[];
-  /** One entry per verdict kind the markers ask for, plus cleared badges whose marker was removed. */
+  /** One entry per sign-off (kind and reviewer key) the markers ask for, plus cleared badges whose marker was removed. */
   rows: NeedSummary[];
   hash: string;
 }
@@ -59,17 +65,30 @@ export function summarizeLessonReview(
 ): LessonReviewSummary {
   const needs = readReviewNeeds(lesson.reviewNeeds);
   const hash = lessonReviewHash(lesson);
-  const marked = verdictKindsFor(needs);
-  const byKind = new Map(reviews.map((r) => [r.needKind, r]));
+  const slots = verdictSlotsFor(needs);
+  const marked = new Set(slots.map((s) => slotId(s.kind, s.reviewerKey)));
+  const bySlot = new Map(reviews.map((r) => [slotId(r.needKind as VerdictNeedKind, r.reviewerKey ?? ""), r]));
   const rows: NeedSummary[] = [];
   for (const kind of VERDICT_NEED_KINDS) {
-    const review = byKind.get(kind) ?? null;
-    const state = effectiveReviewState(review, hash);
-    if (marked.includes(kind)) {
-      rows.push({ kind, whos: needs.filter((n) => n.kind === kind).map((n) => n.who), state, review, stillMarked: true });
-    } else if (review && state === "cleared") {
-      // "Markers are outside the hash, so removing one keeps a badge" (plans/93).
-      rows.push({ kind, whos: [], state, review, stillMarked: false });
+    for (const { reviewerKey } of slots.filter((s) => s.kind === kind)) {
+      const review = bySlot.get(slotId(kind, reviewerKey)) ?? null;
+      rows.push({
+        kind,
+        reviewerKey,
+        whos: needs.filter((n) => n.kind === kind && reviewerKeyOf(n) === reviewerKey).map((n) => n.who),
+        state: effectiveReviewState(review, hash),
+        review,
+        stillMarked: true,
+      });
+    }
+    // "Markers are outside the hash, so removing one keeps a badge" (plans/93): a still-valid cleared
+    // verdict whose marker went keeps its credit line, per reviewer.
+    for (const review of reviews) {
+      if (review.needKind !== kind) continue;
+      const reviewerKey = review.reviewerKey ?? "";
+      if (marked.has(slotId(kind, reviewerKey))) continue;
+      const state = effectiveReviewState(review, hash);
+      if (state === "cleared") rows.push({ kind, reviewerKey, whos: [], state, review, stillMarked: false });
     }
   }
   return { lessonId: lesson.id, needs, decisions: needs.filter((n) => n.kind === "decision"), rows, hash };
@@ -80,7 +99,7 @@ export function readinessOf(summaries: readonly LessonReviewSummary[]): ReleaseR
   return releaseReadiness(
     summaries.map((s) => ({
       needs: s.needs,
-      states: Object.fromEntries(s.rows.filter((r) => r.stillMarked).map((r) => [r.kind, r.state])),
+      states: Object.fromEntries(s.rows.filter((r) => r.stillMarked).map((r) => [slotId(r.kind, r.reviewerKey), r.state])),
     })),
   );
 }

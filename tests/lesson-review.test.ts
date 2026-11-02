@@ -106,8 +106,10 @@ describe("every marked course file", () => {
   //   2026-11-01 before v2: 248 lessons, 184 QR, 79 P, 8 decisions, in 16 files.
   //   2026-11-01 after v2: 247 lessons, 184 QR, 79 P, 3 decisions. Sound-craft's five decisions
   //     went with BAM's answers to brief questions 5 and 6 (lesson 17 carried only one of them).
-  //     reading-a-land-description keeps its three Native-reviewer decisions on purpose: see the
-  //     header of that course file and plans/bugs/2026-10-15-one-qr-verdict-per-lesson.md.
+  //     reading-a-land-description kept its three Native-reviewer decisions on purpose then.
+  //   2026-11-02 (migration 0075, verdicts per reviewer): 247 lessons, 187 QR, 79 P, 0 decisions. The
+  //     three Native-reviewer decisions became QR needs tagged [native-reviewer] (plan 97 Q3), each
+  //     signed off separately from the surveyor's need on the same lesson.
   type Tally = { lessons: number; qr: number; p: number; decision: number };
   const tally = (c: AuthoredCourse): Tally => {
     const t: Tally = { lessons: 0, qr: 0, p: 0, decision: 0 };
@@ -140,7 +142,7 @@ describe("every marked course file", () => {
         // FIRM-01 seeds on two schools from two exports of one file; counted once in the totals below.
         "read-the-statements-course.ts#READ_THE_STATEMENTS_COURSE": { lessons: 14, qr: 14, p: 0, decision: 0 },
         "read-the-statements-course.ts#READ_THE_STATEMENTS_LEARN_COURSE": { lessons: 14, qr: 14, p: 0, decision: 0 },
-        "reading-a-land-description-course.ts#READING_A_LAND_DESCRIPTION_COURSE": { lessons: 7, qr: 6, p: 1, decision: 3 },
+        "reading-a-land-description-course.ts#READING_A_LAND_DESCRIPTION_COURSE": { lessons: 7, qr: 9, p: 1, decision: 0 },
         "renting-out-production-gear-course.ts#RENTING_OUT_PRODUCTION_GEAR_COURSE": { lessons: 9, qr: 8, p: 1, decision: 0 },
         "sideline-systems-course.ts#SIDELINE_SYSTEMS_COURSE": { lessons: 21, qr: 25, p: 0, decision: 0 },
         "sound-craft-course.ts#SOUND_CRAFT_COURSE": { lessons: 11, qr: 7, p: 5, decision: 0 },
@@ -167,7 +169,7 @@ describe("every marked course file", () => {
         total.p += t.p;
         total.decision += t.decision;
       }
-      expect(total).toEqual({ files: 16, lessons: 247, qr: 184, p: 79, decision: 3 });
+      expect(total).toEqual({ files: 16, lessons: 247, qr: 187, p: 79, decision: 0 });
     },
     SLOW,
   );

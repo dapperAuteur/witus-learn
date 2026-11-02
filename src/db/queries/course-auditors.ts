@@ -186,7 +186,13 @@ export async function setCourseAuditorCredit(
   tenantId: string,
   courseId: string,
   auditorId: string,
-  credit: { reviewerName: string | null; reviewerCredential: string | null; credentialEvidenceUrl?: string | null },
+  credit: {
+    reviewerName: string | null;
+    reviewerCredential: string | null;
+    credentialEvidenceUrl?: string | null;
+    /** Undefined leaves it as it is (migration 0075). */
+    reviewerKey?: string;
+  },
 ): Promise<CourseAuditor | null> {
   const [row] = await db
     .update(courseAuditors)
@@ -195,6 +201,7 @@ export async function setCourseAuditorCredit(
       reviewerCredential: credit.reviewerCredential?.trim() || null,
       // Undefined leaves the evidence link as it is: only the owner or a school admin sends it.
       ...(credit.credentialEvidenceUrl !== undefined ? { credentialEvidenceUrl: credit.credentialEvidenceUrl } : {}),
+      ...(credit.reviewerKey !== undefined ? { reviewerKey: credit.reviewerKey } : {}),
     })
     .where(
       and(
@@ -236,6 +243,8 @@ export interface ViewerAuditGrant {
   instructorId: string;
   reviewerName: string | null;
   reviewerCredential: string | null;
+  /** Which tagged need this grant clears ('' = untagged; migration 0075). */
+  reviewerKey: string;
 }
 
 /**
@@ -268,5 +277,6 @@ export async function listViewerAuditGrants(
       instructorId: r.instructorId,
       reviewerName: r.auditor.reviewerName,
       reviewerCredential: r.auditor.reviewerCredential,
+      reviewerKey: r.auditor.reviewerKey,
     }));
 }

@@ -76,9 +76,15 @@ export interface AuthoredLesson {
    * N)", and one line may carry two needs joined by "; and needs ...". A line in any other wording
    * still holds the course: it is stored as a decision, which no verdict can clear, and
    * tests/lesson-review-markers.test.ts fails on any such decision without a brief question number,
-   * so a misparsed marker cannot ship silently (plans/97 v2 G1). Verdicts are one per lesson per need
-   * KIND: two QR needs on one lesson (two different reviewers) are cleared by one verdict, so give
-   * the second one a decision marker until verdicts are keyed per need.
+   * so a misparsed marker cannot ship silently (plans/97 v2 G1).
+   *
+   * Two DIFFERENT reviewers on one lesson: tag the need with the reviewer before the colon,
+   * "needs a qualified reviewer (QR) [native-reviewer]: a Native reviewer, to be named, ...". Each
+   * (kind, tag) is its own sign-off (migration 0075) and only a grant set to that tag clears it, so a
+   * surveyor's verdict never clears a Native reviewer's need. Untagged needs of one kind on one
+   * lesson are still ONE sign-off (the same reviewer). A tag is lowercase words joined by hyphens;
+   * a malformed tag, or a tag on a decision, fails closed like any unreadable marker. Never write a
+   * reviewer need as a decision: the marker test fails on a decision that reads like one.
    *
    * Set this only to override the parse; an empty list means "no needs" even if the body has
    * marker lines.

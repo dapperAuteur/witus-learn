@@ -38,6 +38,8 @@ export interface UpsertLessonReviewInput {
   courseId: string;
   lessonId: string;
   needKind: VerdictNeedKind;
+  /** Which reviewer the need is for ('' when untagged). Part of the unique key since 0075. */
+  reviewerKey: string;
   auditorId: string | null;
   reviewerUserId: string;
   reviewerName: string;
@@ -49,7 +51,7 @@ export interface UpsertLessonReviewInput {
 }
 
 /**
- * Record a verdict. One current verdict per (tenant, lesson, need kind): a new one REPLACES the old
+ * Record a verdict. One current verdict per (tenant, lesson, need kind, reviewer key): a new one REPLACES the old
  * one outright (reviewer, credit, correction, hash and date), and clears any "applied" stamp. There
  * is no history chain and no parent, by the no-inbox rule: a verdict is not an answer to anything.
  *
@@ -75,7 +77,7 @@ export async function upsertLessonReview(input: UpsertLessonReviewInput): Promis
     .insert(lessonReviews)
     .values({ ...input, decidedAt: now })
     .onConflictDoUpdate({
-      target: [lessonReviews.tenantId, lessonReviews.lessonId, lessonReviews.needKind],
+      target: [lessonReviews.tenantId, lessonReviews.lessonId, lessonReviews.needKind, lessonReviews.reviewerKey],
       set: {
         courseId: input.courseId,
         auditorId: input.auditorId,
@@ -97,13 +99,14 @@ export async function upsertLessonReview(input: UpsertLessonReviewInput): Promis
  * "Applied as written": the owner says the lesson now reads as the reviewer's correction asked.
  * Stamps the time and RE-PINS the hash to the edited lesson, so the badge survives the edit that
  * applied the correction. Only an unstamped cleared-with-correction verdict can be stamped. Scoped by tenant,
- * course, lesson and kind, so an id from anywhere else updates nothing.
+ * course, lesson, kind and reviewer key, so an id from anywhere else updates nothing.
  */
 export async function markCorrectionApplied(input: {
   tenantId: string;
   courseId: string;
   lessonId: string;
   needKind: VerdictNeedKind;
+  reviewerKey: string;
   lessonHash: string;
 }): Promise<LessonReview | null> {
   const [row] = await db
@@ -115,6 +118,7 @@ export async function markCorrectionApplied(input: {
         eq(lessonReviews.courseId, input.courseId),
         eq(lessonReviews.lessonId, input.lessonId),
         eq(lessonReviews.needKind, input.needKind),
+        eq(lessonReviews.reviewerKey, input.reviewerKey),
         eq(lessonReviews.verdict, "cleared_with_correction"),
         // Once only. After the stamp, any further edit resets the verdict like any other edit and
         // needs a fresh review: the owner cannot keep re-pinning a reviewer's name onto new wording.

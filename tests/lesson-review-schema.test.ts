@@ -32,6 +32,9 @@ describe("lesson_reviews carries a verdict, never a conversation", () => {
         "lesson_id",
         "need_kind",
         "reviewer_credential",
+        // Migration 0075 (BAM, 2026-11-02: "each kind of review is signed off separately"): WHICH
+        // reviewer a need is for. A label from the course's marker, not a recipient or a channel.
+        "reviewer_key",
         "reviewer_name",
         "reviewer_user_id",
         "tenant_id",
@@ -47,11 +50,15 @@ describe("lesson_reviews carries a verdict, never a conversation", () => {
     expect(columnNames(courseAuditors).filter((n) => messageish.test(n))).toEqual([]);
   });
 
-  it("one current verdict per lesson and need: a new one replaces the old, no history chain", () => {
+  it("one current verdict per lesson, need and reviewer: a new one replaces the old, no history chain", () => {
     const schema = src("src/db/schema/lesson-reviews.ts");
-    expect(schema).toContain('unique("lesson_reviews_tenant_lesson_kind_uq").on(t.tenantId, t.lessonId, t.needKind)');
+    expect(schema).toContain(
+      'unique("lesson_reviews_tenant_lesson_kind_reviewer_uq").on(t.tenantId, t.lessonId, t.needKind, t.reviewerKey)',
+    );
     const q = src("src/db/queries/lesson-reviews.ts");
-    expect(q).toContain("target: [lessonReviews.tenantId, lessonReviews.lessonId, lessonReviews.needKind]");
+    expect(q).toContain(
+      "target: [lessonReviews.tenantId, lessonReviews.lessonId, lessonReviews.needKind, lessonReviews.reviewerKey]",
+    );
   });
 
   it("recording a verdict notifies nobody: no email, no Inbox mirror, no notification", () => {

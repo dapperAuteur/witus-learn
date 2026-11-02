@@ -1,7 +1,13 @@
 import { z } from "zod";
 import { apiContext, errorJson, json } from "@/lib/api";
 import { canManageCourseReviewers, canSeeReviewerEvidence } from "@/lib/course-reviewers";
-import { REVIEWER_CREDENTIAL_MAX, REVIEWER_NAME_MAX, normalizeEvidenceUrl } from "@/lib/lesson-review";
+import {
+  REVIEWER_CREDENTIAL_MAX,
+  REVIEWER_KEY_MAX,
+  REVIEWER_KEY_PATTERN,
+  REVIEWER_NAME_MAX,
+  normalizeEvidenceUrl,
+} from "@/lib/lesson-review";
 
 type Params = { params: Promise<{ id: string; auditorId: string }> };
 
@@ -15,6 +21,11 @@ const Credit = z.object({
   reviewerCredential: z.string().max(REVIEWER_CREDENTIAL_MAX).nullable(),
   /** Optional evidence link (plans/97 v2 Q2). Only the owner or a school admin may send it. */
   credentialEvidenceUrl: z.string().nullable().optional(),
+  /**
+   * Which tagged need this reviewer clears (migration 0075). '' = the course's untagged needs.
+   * Absent leaves it as it is. Set by the inviter, like the credit, never by the reviewer.
+   */
+  reviewerKey: z.union([z.literal(""), z.string().max(REVIEWER_KEY_MAX).regex(REVIEWER_KEY_PATTERN)]).optional(),
 });
 
 export async function PATCH(req: Request, { params }: Params) {
@@ -50,6 +61,7 @@ export async function PATCH(req: Request, { params }: Params) {
     reviewerName: parsed.data.reviewerName,
     reviewerCredential: parsed.data.reviewerCredential,
     credentialEvidenceUrl,
+    reviewerKey: parsed.data.reviewerKey,
   });
   if (!updated) return errorJson("Not found", 404);
   return json({
@@ -60,6 +72,7 @@ export async function PATCH(req: Request, { params }: Params) {
       acceptedAt: updated.acceptedAt,
       reviewerName: updated.reviewerName,
       reviewerCredential: updated.reviewerCredential,
+      reviewerKey: updated.reviewerKey,
       ...(evidence ? { credentialEvidenceUrl: updated.credentialEvidenceUrl } : {}),
     },
   });

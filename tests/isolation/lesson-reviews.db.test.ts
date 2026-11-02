@@ -79,6 +79,7 @@ describe.skipIf(!HAS_DB)("lesson reviews are tenant- and course-scoped", () => {
     courseId: courseA,
     lessonId: lessonA,
     needKind: "qr" as const,
+    reviewerKey: "",
     auditorId,
     reviewerUserId: reviewerId,
     reviewerName: "Iso Reviewer",
@@ -123,7 +124,14 @@ describe.skipIf(!HAS_DB)("lesson reviews are tenant- and course-scoped", () => {
 
   it("'Applied as written' cannot be stamped from another tenant or course, and only once", async () => {
     const { markCorrectionApplied } = await import("@/db/queries/lesson-reviews");
-    const base = { tenantId: bvcId, courseId: courseA, lessonId: lessonA, needKind: "qr" as const, lessonHash: "h2" };
+    const base = {
+      tenantId: bvcId,
+      courseId: courseA,
+      lessonId: lessonA,
+      needKind: "qr" as const,
+      reviewerKey: "",
+      lessonHash: "h2",
+    };
     expect(await markCorrectionApplied({ ...base, tenantId: acmeId })).toBeNull();
     expect(await markCorrectionApplied({ ...base, courseId: courseB })).toBeNull();
     expect((await markCorrectionApplied(base))?.lessonHash).toBe("h2");
@@ -157,5 +165,17 @@ describe.skipIf(!HAS_DB)("lesson reviews are tenant- and course-scoped", () => {
     expect(await state()).toBe("cleared");
     await seedFixture(`iso-review-a-${stamp}`, MARKED_BODY.replace("doubles", "triples"));
     expect(await state()).toBe("changed_since_review");
+  });
+
+  it("a verdict for a tagged reviewer is its own row: it neither replaces nor is replaced by the untagged one", async () => {
+    const { listLessonReviews, upsertLessonReview } = await import("@/db/queries/lesson-reviews");
+    const before = (await listLessonReviews(bvcId, [courseA])).filter((r) => r.reviewerKey === "");
+    const tagged = await upsertLessonReview(review({ reviewerKey: "native-reviewer", verdict: "not_cleared" }));
+    expect(tagged?.reviewerKey).toBe("native-reviewer");
+    const rows = await listLessonReviews(bvcId, [courseA]);
+    expect(rows.filter((r) => r.reviewerKey === "")).toHaveLength(before.length);
+    expect(rows.filter((r) => r.reviewerKey === "native-reviewer")).toHaveLength(1);
+    // The untagged verdict is untouched by the tagged one.
+    expect(rows.find((r) => r.reviewerKey === "")?.id).toBe(before[0]?.id);
   });
 });

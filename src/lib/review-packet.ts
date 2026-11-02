@@ -6,7 +6,7 @@
 // What it never contains: anything about learners, any verdict or correction (those are attached to
 // the lesson in the app, never mailed around), and another school's branding.
 
-import { KIND_TITLE, readReviewNeeds, type ReviewNeed } from "@/lib/lesson-review";
+import { KIND_TITLE, readReviewNeeds, reviewerKeyLabel, reviewerKeyOf, type ReviewNeed } from "@/lib/lesson-review";
 import type { QuizContent } from "@/lib/quiz";
 
 export type PacketFormat = "pdf" | "epub";
@@ -32,7 +32,9 @@ export interface PacketLessonRow {
 export function needsHeading(needs: readonly ReviewNeed[]): string {
   const lines = needs.map((n) => {
     const q = n.kind === "decision" && n.question != null ? ` (brief question ${n.question})` : "";
-    return `> **${KIND_TITLE[n.kind]}${q}:** ${n.who}`;
+    // A need for a named reviewer says so, since each is signed off separately (migration 0075).
+    const key = reviewerKeyOf(n) ? ` (${reviewerKeyLabel(reviewerKeyOf(n))})` : "";
+    return `> **${KIND_TITLE[n.kind]}${q}${key}:** ${n.who}`;
   });
   return ["> **For your review before release.**", ">", ...lines.flatMap((l, i) => (i ? [">", l] : [l]))].join("\n");
 }
