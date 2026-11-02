@@ -56,6 +56,7 @@ import { isPlatformOwner } from "@/lib/session";
 import { VetCourseCta } from "@/components/vet-course-cta";
 import { displayTourTitle } from "@/lib/field-log-tour";
 import { liveToursForCourse } from "@/lib/lesson-tours";
+import { bibliographyAccess } from "@/lib/course-bibliography";
 
 type Params = { params: Promise<{ username: string; courseSlug: string }> };
 
@@ -418,6 +419,21 @@ export default async function CourseBySlugPage({ params }: Params) {
       <CourseStandards courseSlug={courseSlug} />
 
       <CourseQuizIntegrity summary={quizIntegrity} courseId={course.id} surface="course" />
+
+      {/* The full bibliography (src/lib/course-bibliography.ts): public once the course is live, and
+          before that only for its editors and reviewers, the same rule the page itself applies. No
+          count here: counting means reading every lesson body, and this page reads summaries only. */}
+      {bibliographyAccess(course, { isEditor, isAuditor: view.isAuditor }) !== "not-found" ? (
+        <p className="mt-4 text-sm">
+          <Link
+            href={`/${username}/${courseSlug}/sources`}
+            className="inline-flex min-h-11 items-center underline hover:no-underline focus-visible:outline-2 focus-visible:outline-offset-2"
+            style={{ color: "var(--accent)" }}
+          >
+            Sources and bibliography: every source, and where each lesson uses it
+          </Link>
+        </p>
+      ) : null}
 
       {courseBundles.length > 0 ? (
         <aside
