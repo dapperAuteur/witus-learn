@@ -14,15 +14,13 @@ import {
   type ReviewNeed,
 } from "@/lib/lesson-review";
 import { lessonReviewHash } from "@/lib/lesson-review-hash";
-import { STAGE_AND_BROADCAST_RIGGING_COURSE } from "../scripts/data/stage-and-broadcast-rigging-course";
-import { SOUND_CRAFT_COURSE } from "../scripts/data/sound-craft-course";
-import { LIGHT_ON_SET_COURSE } from "../scripts/data/light-on-set-course";
-import { RAISING_ANIMALS_FOR_YARN_COURSE } from "../scripts/data/raising-animals-for-yarn-course";
-import { RENTING_OUT_PRODUCTION_GEAR_COURSE } from "../scripts/data/renting-out-production-gear-course";
 import type { AuthoredCourse } from "../scripts/data/authored-course";
+import { loadAllCourseFiles } from "./course-files";
 
 // Reviewer sign-off (plans/93 section 1): the pure rules. The marker lines below are copied from the
-// four course files, one per style, so a change to how the helpers word a marker fails here first.
+// course files, one per style, so a change to how the helpers word a marker fails here first.
+// DECISION_LINE is sound-craft's brief-question-5 marker, retired from the course on 2026-11-01 when
+// BAM answered the question; it stays here as the fixture for the decision format.
 
 const QR_LINE = "> **Before release:** needs a qualified reviewer (QR): a large-animal veterinarian.";
 const P_DEMO_LINE =
@@ -96,58 +94,112 @@ describe("parseReleaseMarkers", () => {
   });
 });
 
-describe("the four marked course files", () => {
-  // A snapshot of what the seeder will write. Counted 2026-10-14: 81 marker lines in 71 lessons,
-  // carrying 83 needs (two lines hold two). If a course gains or loses a marker, update the count
-  // deliberately; if a marker stops parsing, the "decision" fallback shows up here as a jump.
-  // CREW-06 (renting-out-production-gear) joined 2026-10-21: 9 marker lines in 9 lessons, 9 needs.
-  const courses: [string, AuthoredCourse][] = [
-    ["stage-and-broadcast-rigging", STAGE_AND_BROADCAST_RIGGING_COURSE],
-    ["sound-craft", SOUND_CRAFT_COURSE],
-    ["light-on-set", LIGHT_ON_SET_COURSE],
-    ["raising-animals-for-yarn", RAISING_ANIMALS_FOR_YARN_COURSE],
-    ["renting-out-production-gear", RENTING_OUT_PRODUCTION_GEAR_COURSE],
-  ];
-  const tally = (c: AuthoredCourse) => {
-    const t = { lessons: 0, qr: 0, p: 0, decision: 0 };
+describe("every marked course file", () => {
+  // A snapshot of what the seeder will write, over EVERY course file (plans/97 G4), not a
+  // hand-picked list: the list it replaced covered 5 of the 16 files that carry markers. If a course
+  // gains or loses a marker, update its line deliberately; if a marker stops parsing, the
+  // "decision" fallback shows up here as a jump (and tests/lesson-review-markers.test.ts names it).
+  //
+  // Counted the way the seeder counts (scripts/lib/seed-authored-course.ts): an explicit
+  // `reviewNeeds` on a lesson wins over the parsed markers.
+  //   2026-10-14 (v1 build): 71 lessons, 83 needs, in 4 files.
+  //   2026-11-01 before v2: 248 lessons, 184 QR, 79 P, 8 decisions, in 16 files.
+  //   2026-11-01 after v2: 247 lessons, 184 QR, 79 P, 3 decisions. Sound-craft's five decisions
+  //     went with BAM's answers to brief questions 5 and 6 (lesson 17 carried only one of them).
+  //     reading-a-land-description keeps its three Native-reviewer decisions on purpose: see the
+  //     header of that course file and plans/bugs/2026-10-15-one-qr-verdict-per-lesson.md.
+  type Tally = { lessons: number; qr: number; p: number; decision: number };
+  const tally = (c: AuthoredCourse): Tally => {
+    const t: Tally = { lessons: 0, qr: 0, p: 0, decision: 0 };
     for (const l of c.lessons) {
-      const { needs } = parseReleaseMarkers(l.body);
+      const needs = l.reviewNeeds ?? parseReleaseMarkers(l.body).needs;
       if (needs.length) t.lessons++;
       for (const n of needs) t[n.kind]++;
     }
     return t;
   };
+  const marked = async () => {
+    const { courses } = await loadAllCourseFiles();
+    return courses
+      .map((c) => ({ ...c, t: tally(c.course) }))
+      .filter((c) => c.t.lessons > 0);
+  };
+  const SLOW = 180_000;
 
-  it("parses to the expected needs per course", () => {
-    expect(Object.fromEntries(courses.map(([slug, c]) => [slug, tally(c)]))).toEqual({
-      "stage-and-broadcast-rigging": { lessons: 17, qr: 17, p: 2, decision: 0 },
-      "sound-craft": { lessons: 12, qr: 7, p: 5, decision: 5 },
-      "light-on-set": { lessons: 19, qr: 8, p: 14, decision: 0 },
-      "raising-animals-for-yarn": { lessons: 23, qr: 18, p: 7, decision: 0 },
-      "renting-out-production-gear": { lessons: 9, qr: 8, p: 1, decision: 0 },
-    });
-  });
+  it(
+    "parses to the expected needs per course export",
+    async () => {
+      const rows = await marked();
+      expect(Object.fromEntries(rows.map((r) => [`${r.file.replace("scripts/data/", "")}#${r.exportName}`, r.t]))).toEqual({
+        "arena-transmission-course.ts#ARENA_TRANSMISSION_COURSE": { lessons: 7, qr: 7, p: 1, decision: 0 },
+        "cables-and-connectors-course.ts#CABLES_AND_CONNECTORS_COURSE": { lessons: 23, qr: 22, p: 1, decision: 0 },
+        "cinema-look-camera-rig-course.ts#CINEMA_LOOK_CAMERA_RIG_COURSE": { lessons: 13, qr: 12, p: 1, decision: 0 },
+        "light-on-set-course.ts#LIGHT_ON_SET_COURSE": { lessons: 19, qr: 8, p: 14, decision: 0 },
+        "map-and-compass-course.ts#MAP_AND_COMPASS_COURSE": { lessons: 22, qr: 8, p: 17, decision: 0 },
+        "raising-animals-for-yarn-course.ts#RAISING_ANIMALS_FOR_YARN_COURSE": { lessons: 23, qr: 18, p: 7, decision: 0 },
+        // FIRM-01 seeds on two schools from two exports of one file; counted once in the totals below.
+        "read-the-statements-course.ts#READ_THE_STATEMENTS_COURSE": { lessons: 14, qr: 14, p: 0, decision: 0 },
+        "read-the-statements-course.ts#READ_THE_STATEMENTS_LEARN_COURSE": { lessons: 14, qr: 14, p: 0, decision: 0 },
+        "reading-a-land-description-course.ts#READING_A_LAND_DESCRIPTION_COURSE": { lessons: 7, qr: 6, p: 1, decision: 3 },
+        "renting-out-production-gear-course.ts#RENTING_OUT_PRODUCTION_GEAR_COURSE": { lessons: 9, qr: 8, p: 1, decision: 0 },
+        "sideline-systems-course.ts#SIDELINE_SYSTEMS_COURSE": { lessons: 21, qr: 25, p: 0, decision: 0 },
+        "sound-craft-course.ts#SOUND_CRAFT_COURSE": { lessons: 11, qr: 7, p: 5, decision: 0 },
+        "stage-and-broadcast-rigging-course.ts#STAGE_AND_BROADCAST_RIGGING_COURSE": { lessons: 17, qr: 17, p: 2, decision: 0 },
+        "surveying-how-land-gets-measured-course.ts#SURVEYING_HOW_LAND_GETS_MEASURED_COURSE": { lessons: 12, qr: 2, p: 10, decision: 0 },
+        "the-abacus-course.ts#THE_ABACUS_COURSE": { lessons: 7, qr: 0, p: 7, decision: 0 },
+        "the-show-crew-course.ts#THE_SHOW_CREW_COURSE": { lessons: 30, qr: 30, p: 0, decision: 0 },
+        "the-slide-rule-course.ts#THE_SLIDE_RULE_COURSE": { lessons: 12, qr: 0, p: 12, decision: 0 },
+      });
+    },
+    SLOW,
+  );
 
-  it("every decision is a real 'BAM's decision' marker, never the unparseable fallback", () => {
-    for (const [, c] of courses) {
-      for (const l of c.lessons) {
-        for (const n of parseReleaseMarkers(l.body).needs) {
-          if (n.kind === "decision") expect(n.question, l.slug).toBeTypeOf("number");
+  it(
+    "totals over the 16 files (one export per file)",
+    async () => {
+      const rows = await marked();
+      const perFile = new Map<string, Tally>();
+      for (const r of rows) if (!perFile.has(r.file)) perFile.set(r.file, r.t);
+      const total = { files: perFile.size, lessons: 0, qr: 0, p: 0, decision: 0 };
+      for (const t of perFile.values()) {
+        total.lessons += t.lessons;
+        total.qr += t.qr;
+        total.p += t.p;
+        total.decision += t.decision;
+      }
+      expect(total).toEqual({ files: 16, lessons: 247, qr: 184, p: 79, decision: 3 });
+    },
+    SLOW,
+  );
+
+  it(
+    "every decision is a real 'BAM's decision' marker, never the unparseable fallback",
+    async () => {
+      for (const { course } of await marked()) {
+        for (const l of course.lessons) {
+          for (const n of parseReleaseMarkers(l.body).needs) {
+            if (n.kind === "decision") expect(n.question, l.slug).toBeTypeOf("number");
+          }
         }
       }
-    }
-  });
+    },
+    SLOW,
+  );
 
-  it("strips every marker and leaves no lesson starting with a blank line", () => {
-    for (const [, c] of courses) {
-      for (const l of c.lessons) {
-        const { needs, body } = parseReleaseMarkers(l.body);
-        expect(body, l.slug).not.toContain("> **Before release:**");
-        if (needs.length) expect(body.startsWith("\n"), l.slug).toBe(false);
-        else expect(body, l.slug).toBe(l.body ?? "");
+  it(
+    "strips every marker and leaves no lesson starting with a blank line",
+    async () => {
+      for (const { course } of await marked()) {
+        for (const l of course.lessons) {
+          const { needs, body } = parseReleaseMarkers(l.body);
+          expect(body, l.slug).not.toContain("> **Before release:**");
+          if (needs.length) expect(body.startsWith("\n"), l.slug).toBe(false);
+          else expect(body, l.slug).toBe(l.body ?? "");
+        }
       }
-    }
-  });
+    },
+    SLOW,
+  );
 });
 
 const lesson = (over: Partial<MaterialLesson> = {}): MaterialLesson => ({
