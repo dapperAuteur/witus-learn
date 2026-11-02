@@ -25,6 +25,8 @@ import { readinessOf, reviewsByLesson, summarizeLessonReview } from "@/lib/lesso
 import { courseStage, followUpsForCourse, type LaunchTodo } from "@/lib/release-followups";
 import { launchTodosForCourse } from "@/db/queries/release-followups";
 import { LaunchTodoList } from "@/components/launch-todo-list";
+import { TeachQuizChecks } from "@/components/teach-quiz-checks";
+import type { CourseQuizIntegrity, FailingQuizBank } from "@/lib/quiz-integrity";
 
 export const metadata: Metadata = { title: "Manage course" };
 
@@ -130,6 +132,19 @@ export default async function ManageCoursePage({ params }: { params: Promise<{ c
   } catch (err) {
     console.error("launch to-do list unavailable", err);
   }
+  // Quiz checks (plans/98 v2): the public panel's sentences plus the measured quizzes that fail the
+  // length check, read from the database so a quiz however it was written is checked. Off the
+  // critical path: if the read fails, the section says so and the page still renders.
+  let quizSummary: CourseQuizIntegrity | null = null;
+  let failingQuizzes: FailingQuizBank[] = [];
+  let quizChecksFailed = false;
+  try {
+    [quizSummary, failingQuizzes] = await Promise.all([sdb.courseQuizIntegrity(courseId), sdb.listFailingQuizBanks(courseId)]);
+  } catch (err) {
+    quizChecksFailed = true;
+    console.error("quiz checks unavailable", err);
+  }
+
   const courseLive = courseStage(course) === "live";
   const showLaunchTodos = !courseLive || launchTodos.some((t) => t.status === "open");
 
@@ -278,6 +293,8 @@ export default async function ManageCoursePage({ params }: { params: Promise<{ c
             lessonNumber: l.moduleId ? (lessonNumberById.get(l.id) ?? null) : null,
           }))}
         />
+
+        <TeachQuizChecks summary={quizSummary} failing={failingQuizzes} failed={quizChecksFailed} />
 
         <section className="rounded-lg border border-neutral-200 p-4 dark:border-neutral-800">
           <h2 className="font-semibold">Recall accuracy</h2>

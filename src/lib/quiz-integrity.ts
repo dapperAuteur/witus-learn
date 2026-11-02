@@ -287,6 +287,57 @@ export function quizIntegrityFromLessons(lessons: readonly IntegrityLesson[]): C
   );
 }
 
+// ── The editor's list: which quizzes fail (plans/98 v2) ────────────────────────────────────────
+
+/** One quiz lesson as the /teach "Quiz checks" section sees it: its identity plus the bank. */
+export interface NamedQuizBank {
+  lessonId: string;
+  slug: string | null;
+  title: string;
+  quiz: IntegrityQuiz | null | undefined;
+}
+
+/** A measured quiz that does not pass every length measure, for the editor's list. */
+export interface FailingQuizBank {
+  lessonId: string;
+  slug: string | null;
+  title: string;
+  /** Measurable questions in the bank (MIN_BANK or more, since only measured banks are listed). */
+  size: number;
+}
+
+/**
+ * The quiz lessons whose bank is big enough to measure (MIN_BANK questions) and fails a length
+ * measure, in the order given. A bank too small to measure is never listed: it has no verdict, the
+ * same rule the public panel and the lint guards apply. Editors only: this carries lesson titles,
+ * which the Coming-soon face must not receive.
+ */
+export function failingQuizBanks(banks: readonly NamedQuizBank[]): FailingQuizBank[] {
+  const out: FailingQuizBank[] = [];
+  for (const b of banks) {
+    const questions = Array.isArray(b.quiz?.questions)
+      ? b.quiz!.questions!.filter((q): q is IntegrityQuestion => Boolean(q) && typeof q === "object")
+      : [];
+    const m = measureBank(questions);
+    if (m.measured && m.pass === false) out.push({ lessonId: b.lessonId, slug: b.slug, title: b.title, size: m.size });
+  }
+  return out;
+}
+
+/** Copy for the /teach section and the pre-launch warning, one place so the tests pin it. */
+export const QUIZ_CHECKS_FIX_ADVICE =
+  "Rewrite option text so the right answer is as often long as short. Do not reorder options or edit the question.";
+export const QUIZ_CHECKS_EMPTY = "No quiz in this course yet.";
+export const QUIZ_CHECKS_SMALL = `Your quizzes have fewer than ${MIN_BANK} questions, so length cannot be measured yet.`;
+
+/** "1 quiz does not pass..." / "3 quizzes do not pass...", or null when nothing fails. */
+export function quizLengthWarning(failing: number): string | null {
+  if (!Number.isFinite(failing) || failing <= 0) return null;
+  return failing === 1
+    ? "1 quiz does not pass the length check yet."
+    : `${failing} quizzes do not pass the length check yet.`;
+}
+
 // ── The panel's sentences ────────────────────────────────────────────────────────────────────────
 
 /** "All 12" when every one counts, else "9 of 12". */
