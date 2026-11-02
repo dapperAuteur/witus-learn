@@ -42,7 +42,7 @@ import {
   type TourSlotViewer,
   type UpdateTourInput,
 } from "@/db/queries/tour-embeds";
-import { quizIntegrityByCourse } from "@/db/queries/quiz-integrity";
+import { listFailingQuizBanks, quizIntegrityByCourse } from "@/db/queries/quiz-integrity";
 import {
   countCourseInterestByCapacity,
   countPendingCourseInterest,
@@ -379,6 +379,14 @@ export class ScopedDb {
   /** Quiz-integrity counts for one of this tenant's courses, or null when it has no quiz to count. */
   async courseQuizIntegrity(courseId: string) {
     return (await quizIntegrityByCourse(this.tenantId, courseId)).get(courseId) ?? null;
+  }
+
+  /**
+   * The measured quizzes of one course that fail a length measure (lesson id, slug, title, size).
+   * EDITORS ONLY (/teach/[courseId]): it names lessons, so the Coming-soon face never calls it.
+   */
+  listFailingQuizBanks(courseId: string) {
+    return listFailingQuizBanks(this.tenantId, courseId);
   }
 
   /** Quiz-integrity counts for every course in this tenant that has a quiz, keyed by course id. */

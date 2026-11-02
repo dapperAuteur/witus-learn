@@ -7,6 +7,11 @@ import {
   compareWorstFirst,
   courseQuizIntegrity,
   extremeLimit,
+  failingQuizBanks,
+  quizLengthWarning,
+  QUIZ_CHECKS_EMPTY,
+  QUIZ_CHECKS_FIX_ADVICE,
+  QUIZ_CHECKS_SMALL,
   longestStrategyValue,
   measureBank,
   quizIntegrityFromLessons,
@@ -354,4 +359,77 @@ describe("one definition: the three guards import the measure instead of keeping
       }
     });
   }
+});
+
+describe("failingQuizBanks (the /teach Quiz checks list, plans/98 v2)", () => {
+  const bank = (lessonId: string, questions: IntegrityQuestion[]) => ({
+    lessonId,
+    slug: lessonId,
+    title: `Quiz ${lessonId}`,
+    quiz: { questions },
+  });
+
+  it("does not list a bank whose options are all the same length", () => {
+    expect(failingQuizBanks([bank("equal", times(MIN_BANK, (i) => q([20, 20, 20, 20], i % 4)))])).toEqual([]);
+  });
+
+  it("lists a measured bank whose correct option is visibly the longest, with its size", () => {
+    const out = failingQuizBanks([bank("long", times(MIN_BANK, () => q([10, 10, 10, 60], 3)))]);
+    expect(out).toEqual([{ lessonId: "long", slug: "long", title: "Quiz long", size: MIN_BANK }]);
+  });
+
+  it("never lists a bank under 8 questions, however lopsided: it has no verdict", () => {
+    expect(failingQuizBanks([bank("small", times(MIN_BANK - 1, () => q([10, 10, 10, 60], 3)))])).toEqual([]);
+  });
+
+  it("keeps the given order and skips empty or malformed banks", () => {
+    const out = failingQuizBanks([
+      bank("b", times(MIN_BANK, () => q([10, 10, 10, 60], 3))),
+      { lessonId: "empty", slug: null, title: "Empty", quiz: null },
+      bank("a", times(MIN_BANK, () => q([60, 10, 10, 10], 0))),
+    ]);
+    expect(out.map((f) => f.lessonId)).toEqual(["b", "a"]);
+  });
+});
+
+describe("quizLengthWarning (the pre-launch warning item)", () => {
+  it("adds nothing when no measured quiz fails", () => {
+    expect(quizLengthWarning(0)).toBeNull();
+    expect(quizLengthWarning(-1)).toBeNull();
+    expect(quizLengthWarning(Number.NaN)).toBeNull();
+  });
+
+  it("names the count, singular and plural", () => {
+    expect(quizLengthWarning(1)).toBe("1 quiz does not pass the length check yet.");
+    expect(quizLengthWarning(3)).toBe("3 quizzes do not pass the length check yet.");
+  });
+
+  it("writes no en or em dash in any Quiz checks copy", () => {
+    for (const line of [QUIZ_CHECKS_EMPTY, QUIZ_CHECKS_FIX_ADVICE, QUIZ_CHECKS_SMALL, quizLengthWarning(2)!]) {
+      expect(line).not.toMatch(/[\u2013\u2014]/);
+    }
+  });
+});
+
+describe("the /teach Quiz checks read is tenant-scoped and editors-only", () => {
+  const read = (p: string) => readFileSync(fileURLToPath(new URL(`../${p}`, import.meta.url)), "utf8");
+
+  it("goes through ScopedDb, which supplies the tenant id itself", () => {
+    const scoped = read("src/db/scoped.ts");
+    expect(scoped).toContain("return listFailingQuizBanks(this.tenantId, courseId);");
+    const page = read("src/app/(tenant)/teach/[courseId]/page.tsx");
+    expect(page).toContain("sdb.listFailingQuizBanks(courseId)");
+    expect(page).toContain("sdb.courseQuizIntegrity(courseId)");
+  });
+
+  it("reuses the tenant-filtered, lengths-only bank query", () => {
+    const query = read("src/db/queries/quiz-integrity.ts");
+    const fn = query.slice(query.indexOf("export async function listFailingQuizBanks"));
+    expect(fn).toContain("bankRows(tenantId, courseId)");
+  });
+
+  it("the Coming-soon face never asks for lesson names", () => {
+    const page = read("src/app/(tenant)/[username]/[courseSlug]/page.tsx");
+    expect(page).not.toContain("listFailingQuizBanks");
+  });
 });

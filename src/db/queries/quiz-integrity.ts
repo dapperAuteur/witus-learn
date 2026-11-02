@@ -4,7 +4,9 @@ import { db } from "@/db/client";
 import { lessons } from "@/db/schema";
 import {
   courseQuizIntegrity,
+  failingQuizBanks,
   type CourseQuizIntegrity,
+  type FailingQuizBank,
   type IntegrityQuestion,
   type IntegrityQuiz,
 } from "@/lib/quiz-integrity";
@@ -31,6 +33,9 @@ type PackedQuestion = [number[] | null, number | null, boolean, string | null];
 
 interface BankRow extends Record<string, unknown> {
   course_id: string;
+  lesson_id: string;
+  lesson_slug: string | null;
+  lesson_title: string;
   shuffle_options: boolean | null;
   questions: PackedQuestion[] | null;
 }
@@ -40,6 +45,9 @@ function bankRows(tenantId: string, courseId?: string) {
   return db.execute<BankRow>(sql`
     select
       l.course_id,
+      l.id as lesson_id,
+      l.slug as lesson_slug,
+      l.title as lesson_title,
       case when jsonb_typeof(l.quiz_content -> 'shuffleOptions') = 'boolean'
            then (l.quiz_content ->> 'shuffleOptions')::boolean end as shuffle_options,
       (
@@ -75,6 +83,7 @@ function bankRows(tenantId: string, courseId?: string) {
       and l.is_published
       and l.lesson_type = 'quiz'
       ${onlyCourse}
+    order by l.sort_order
   `);
 }
 
@@ -127,4 +136,23 @@ export async function quizIntegrityByCourse(
     if (summary) out.set(id, summary);
   }
   return out;
+}
+
+/**
+ * The measured quiz lessons of one course that fail a length measure, for its editors on
+ * /teach/[courseId] (plans/98 v2). Same SQL as the counts (option LENGTHS only, never question
+ * text), tenant-filtered, so a course id from another school returns an empty list. It reads the
+ * database, so a quiz written in the app at /teach is checked exactly like a seeded one. Carries
+ * lesson titles: never hand it to the Coming-soon face.
+ */
+export async function listFailingQuizBanks(tenantId: string, courseId: string): Promise<FailingQuizBank[]> {
+  const { rows } = await bankRows(tenantId, courseId);
+  return failingQuizBanks(
+    rows.map((b) => ({
+      lessonId: b.lesson_id,
+      slug: b.lesson_slug,
+      title: b.lesson_title,
+      quiz: { shuffleOptions: b.shuffle_options, questions: (b.questions ?? []).map(unpack) },
+    })),
+  );
 }

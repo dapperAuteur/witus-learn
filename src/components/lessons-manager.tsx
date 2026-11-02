@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useRouter } from "next/navigation";
 import { MarkdownEditor } from "./markdown-editor";
 import { CloudinaryUpload } from "./cloudinary-upload";
@@ -56,6 +56,21 @@ export function LessonsManager({ courseId, lessons }: { courseId: string; lesson
   const [newBody, setNewBody] = useState("");
 
   const sorted = [...lessons].sort((a, b) => a.sortOrder - b.sortOrder);
+
+  // A link to "#lesson-<id>" (the Quiz checks section's failing-quiz list) opens that lesson's editor
+  // and scrolls to it, on load and whenever the hash changes.
+  useEffect(() => {
+    const open = () => {
+      const m = /^#lesson-(.+)$/.exec(window.location.hash);
+      if (m && lessons.some((l) => l.id === m[1])) {
+        setEditing(m[1]);
+        document.getElementById(`lesson-${m[1]}`)?.scrollIntoView({ block: "start" });
+      }
+    };
+    open();
+    window.addEventListener("hashchange", open);
+    return () => window.removeEventListener("hashchange", open);
+  }, [lessons]);
 
   async function api(path: string, method: string, body?: unknown) {
     setBusy(true);
@@ -134,7 +149,7 @@ export function LessonsManager({ courseId, lessons }: { courseId: string; lesson
       <ul className="mt-3 divide-y divide-neutral-200 dark:divide-neutral-800">
         {sorted.length === 0 ? <li className="py-3 text-sm text-neutral-600">No lessons yet.</li> : null}
         {sorted.map((l, i) => (
-          <li key={l.id} className="py-3">
+          <li key={l.id} id={`lesson-${l.id}`} className="scroll-mt-24 py-3">
             <div className="flex flex-wrap items-center gap-2">
               {l.moduleNumber != null && l.lessonNumber != null ? (
                 <span
