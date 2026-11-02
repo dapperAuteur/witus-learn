@@ -13,11 +13,13 @@
 // Lesson ORDER is deliberately not in the hash: reordering lessons does not change what is embedded.
 
 import { createHash } from "node:crypto";
-import { EMBED_DIMS, GEMINI_EMBED_MODEL } from "./embed-batch";
+import { EMBED_DIMS, EMBED_MODEL } from "./embed-batch";
 
 export const CHUNK_SIZE = 1800;
 export const CHUNK_OVERLAP = 200;
-export const RAG_HASH_HEADER = `rag-v1|${GEMINI_EMBED_MODEL}|${EMBED_DIMS}|${CHUNK_SIZE}/${CHUNK_OVERLAP}`;
+// Since migration 0076 this reads "rag-v1|mistral-embed|1024|1800/200", so every course indexed with
+// Gemini became "changed" and the admin page lists it for a re-index.
+export const RAG_HASH_HEADER = `rag-v1|${EMBED_MODEL}|${EMBED_DIMS}|${CHUNK_SIZE}/${CHUNK_OVERLAP}`;
 const US = String.fromCharCode(31);
 
 export interface RagLessonInput {

@@ -13,11 +13,13 @@
 #      when the migrate job already did; it makes a manual run safe on its own);
 #   2. scripts/seed-courses.ts (what `pnpm seed:courses:prod` runs), writing a report of the courses
 #      whose content changed and the lessons it left alone;
-#   3. scripts/rag-index.ts --courses-file <that list> (what `pnpm rag:index:prod` runs), throttled
-#      under the Gemini free tier's tokens-per-minute limit and retrying on 429.
+#   3. scripts/rag-index.ts --courses-file <that list> (what `pnpm rag:index:prod` runs), embedding
+#      with Mistral's mistral-embed, paced under 60 requests a minute and retrying on 429. Courses
+#      the seed did not change but whose index is stale (every course after the move from Gemini, in
+#      migration 0076) are listed on /admin/rag with Run and Run all, or use the "needing" input here.
 #
 # Secrets (set once, piped, never pasted; OPERATING.md section 3b): NEON_DIRECT_URL (the same one the
-# migrate workflow reads) and GOOGLE_GEMINI_API_KEY (embeddings). Fails closed when either is missing.
+# migrate workflow reads) and MISTRAL_API_KEY (embeddings). Fails closed when either is missing.
 # Other seeds (seed:health, seed:speedway, seed:langchain, seed:faa, ...) stay manual (OPERATING.md
 # section 4): some read gitignored content the runner does not have.
 name: Seed production courses
@@ -61,14 +63,14 @@ jobs:
       - name: Require secrets
         env:
           NEON_DIRECT_URL: ${{ secrets.NEON_DIRECT_URL }}
-          GOOGLE_GEMINI_API_KEY: ${{ secrets.GOOGLE_GEMINI_API_KEY }}
+          MISTRAL_API_KEY: ${{ secrets.MISTRAL_API_KEY }}
         run: |
           if [ -z "$NEON_DIRECT_URL" ]; then
             echo "::error::Set the repository secret NEON_DIRECT_URL (OPERATING.md, section 3a: Automatic migrations)."
             exit 1
           fi
-          if [ -z "$GOOGLE_GEMINI_API_KEY" ]; then
-            echo "::error::Set the repository secret GOOGLE_GEMINI_API_KEY (OPERATING.md, section 3b: Automatic seeds and RAG index)."
+          if [ -z "$MISTRAL_API_KEY" ]; then
+            echo "::error::Set the repository secret MISTRAL_API_KEY (OPERATING.md, section 3b: Automatic seeds and RAG index)."
             exit 1
           fi
 
@@ -120,7 +122,7 @@ jobs:
       - name: Refresh the RAG index
         env:
           DATABASE_URL_UNPOOLED: ${{ secrets.NEON_DIRECT_URL }}
-          GOOGLE_GEMINI_API_KEY: ${{ secrets.GOOGLE_GEMINI_API_KEY }}
+          MISTRAL_API_KEY: ${{ secrets.MISTRAL_API_KEY }}
           MODE: ${{ github.event_name == 'push' && 'seeded' || inputs.rag }}
         run: |
           list="$RUNNER_TEMP/seed-report.courses.json"

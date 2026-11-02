@@ -1,11 +1,13 @@
 import "server-only";
-import { and, eq, sql } from "drizzle-orm";
+import { and, eq, isNotNull, sql } from "drizzle-orm";
 import { db } from "@/db/client";
 import { sourceChunks, type SourceChunk } from "@/db/schema/rag";
 
 // Retrieval for "chat with the sources". Everything is scoped by tenant AND course so the corpus of one
-// course/tenant can never leak into another's answers (isolation invariant). Embeddings are 768-dim
-// Gemini vectors; distance is cosine (`<=>`) backed by the hnsw index.
+// course/tenant can never leak into another's answers (isolation invariant). Since migration 0076 the
+// vectors are 1024-dim mistral-embed in `embedding_v2` (src/lib/rag/embed-batch.ts), and the QUESTION
+// must be embedded with the same model (embedQuery there). Distance is cosine (`<=>`) backed by the
+// hnsw index on embedding_v2. A chunk with no embedding_v2 (indexed before 0076) is never returned.
 
 export interface ChunkInsert {
   tenantId: string;
@@ -14,6 +16,7 @@ export interface ChunkInsert {
   kind: "public_domain_text" | "lesson" | "citation";
   title?: string | null;
   text: string;
+  /** 1024-dim mistral-embed vector, stored in embedding_v2. */
   embedding: number[];
   ord?: number;
 }
@@ -33,25 +36,31 @@ export async function insertChunks(chunks: ChunkInsert[]): Promise<void> {
       kind: c.kind,
       title: c.title ?? null,
       text: c.text,
-      embedding: c.embedding,
+      embeddingV2: c.embedding,
       ord: c.ord ?? 0,
     })),
   );
 }
 
-/** Whether a course has been indexed yet (used to hide the chat panel until there's a corpus). */
+/**
+ * Whether a course has been indexed with the current model yet (used to hide the chat panel until
+ * there's a corpus it can search). Chunks with only the legacy vector do not count.
+ */
 export async function courseHasChunks(tenantId: string, courseId: string): Promise<boolean> {
   const rows = await db
     .select({ id: sourceChunks.id })
     .from(sourceChunks)
-    .where(and(eq(sourceChunks.tenantId, tenantId), eq(sourceChunks.courseId, courseId)))
+    .where(and(eq(sourceChunks.tenantId, tenantId), eq(sourceChunks.courseId, courseId), isNotNull(sourceChunks.embeddingV2)))
     .limit(1);
   return rows.length > 0;
 }
 
-export type RetrievedChunk = Omit<SourceChunk, "embedding"> & { distance: number };
+export type RetrievedChunk = Omit<SourceChunk, "embedding" | "embeddingV2"> & { distance: number };
 
-/** Top-k nearest chunks for a query embedding, scoped to (tenant, course). Lower distance = closer. */
+/**
+ * Top-k nearest chunks for a query embedding (1024-dim mistral-embed, from embedQuery), scoped to
+ * (tenant, course). Lower distance = closer. Rows without embedding_v2 are skipped.
+ */
 export async function retrieveChunks(
   tenantId: string,
   courseId: string,
@@ -70,11 +79,11 @@ export async function retrieveChunks(
       text: sourceChunks.text,
       ord: sourceChunks.ord,
       createdAt: sourceChunks.createdAt,
-      distance: sql<number>`${sourceChunks.embedding} <=> ${vec}::vector`,
+      distance: sql<number>`${sourceChunks.embeddingV2} <=> ${vec}::vector`,
     })
     .from(sourceChunks)
-    .where(and(eq(sourceChunks.tenantId, tenantId), eq(sourceChunks.courseId, courseId)))
-    .orderBy(sql`${sourceChunks.embedding} <=> ${vec}::vector`)
+    .where(and(eq(sourceChunks.tenantId, tenantId), eq(sourceChunks.courseId, courseId), isNotNull(sourceChunks.embeddingV2)))
+    .orderBy(sql`${sourceChunks.embeddingV2} <=> ${vec}::vector`)
     .limit(k);
   return rows as RetrievedChunk[];
 }

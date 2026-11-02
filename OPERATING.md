@@ -144,11 +144,12 @@ stale, `needing` for every course never indexed or stale, or `none`). Or
 `gh workflow run seed-production.yml --repo dapperAuteur/witus-learn --ref main -f rag=changed-only`.
 
 **The secrets, set once** (piped, never pasted; GitHub masks them). `NEON_DIRECT_URL` is the same
-secret as §3a. The Gemini key:
+secret as §3a. The Mistral key (embeddings since migration 0076; the old `GOOGLE_GEMINI_API_KEY`
+secret is no longer read by this workflow):
 
 ```bash
-grep '^GOOGLE_GEMINI_API_KEY=' .env.prod | cut -d= -f2- | tr -d '"' \
-  | gh secret set GOOGLE_GEMINI_API_KEY --repo dapperAuteur/witus-learn
+grep '^MISTRAL_API_KEY=' .env.prod | cut -d= -f2- | tr -d '"' \
+  | gh secret set MISTRAL_API_KEY --repo dapperAuteur/witus-learn
 ```
 
 Without either, the job stops at its first step with `::error::Set the repository secret ...`.
@@ -199,30 +200,45 @@ Teachers can also edit lesson text, glossary, sources, and recall prompts **in-a
 
 ### 5a. RAG index (embeddings)
 
-A course's **Chat with the sources** answers from `source_chunks`, built by `pnpm rag:index`
-(`scripts/rag-index.ts`, a thin CLI over `indexCourse` in `src/lib/rag/index-course.ts`). A seed that
-changes lesson text leaves that index stale until it is rebuilt.
+A course's **Chat with the sources** answers from `source_chunks`, built by `indexCourse` in
+`src/lib/rag/index-course.ts`, which three things call: the admin page **`/admin/rag`** (platform owner:
+every course never indexed or changed since, each with **Run**, plus **Run all**, which works through
+the list one course per request from the browser), `pnpm rag:index` (`scripts/rag-index.ts`), and
+`seed-production.yml` (§3b). A seed that changes lesson text leaves that index stale until it is rebuilt.
+
+**Embeddings are Mistral's `mistral-embed` (1024 dimensions) since migration 0076** (BAM, 2026-11-02;
+it was Gemini `gemini-embedding-001`, 768, whose free tier failed `rag:index:prod` with 429s). They live
+in `source_chunks.embedding_v2`; retrieval embeds the question with the same model and reads only that
+column, so a chunk indexed before 0076 is not returned until its course is re-indexed. The model is in
+the content hash's header, so **every course shows as "changed" after 0076 deploys: open `/admin/rag`
+and press Run all.** The legacy 768-dim `embedding` column is left in place for the deployed code during
+the switch and dropped by a later cleanup migration (plan 99).
 
 ```bash
 pnpm rag:list:prod                                   # every course: never indexed / changed / current
 pnpm rag:index:prod --course <slug>                  # one course (add --tenant <slug> for a shared slug)
 pnpm rag:index:prod --course <slug> --all-tenants    # that slug in every school
 pnpm rag:index:prod --needing --changed-only         # every course indexed before and changed since
-pnpm rag:index:prod --needing                        # ...plus every course never indexed (many Gemini calls)
+pnpm rag:index:prod --needing                        # ...plus every course never indexed (many Mistral calls)
 pnpm rag:index:prod --courses-file changed.json      # [{ "tenantSlug": "...", "courseSlug": "..." }]
 ```
 
-- **Rate limits.** Gemini's free tier allows 30,000 embedding tokens a minute, and one course can hold
-  more, so the indexer sends chunks in batches (`batchEmbedContents`, 100 texts at most per call) under
-  a one-minute token budget, estimated at one token per three characters (an over-count). On a 429 it
-  waits the `retryDelay` Gemini sends (or backs off 2 s, 4 s, 8 s... with jitter, capped at 60 s) and
-  retries the same batch. Progress prints as `batch 7/40, rate limited, waiting 16 s (retry 1/8)`.
-- **Env vars:** `GOOGLE_GEMINI_API_KEY` (required, sent only in the `x-goog-api-key` header),
-  `RAG_EMBED_TOKENS_PER_MINUTE` (default `25000`; raise it on a paid tier),
-  `RAG_EMBED_MAX_RETRIES` (default `8` consecutive 429s on one batch before that course fails).
+- **Rate limits.** Learn's Mistral key reported `x-ratelimit-limit-req-minute: 60` on 2026-11-02, so
+  the indexer paces requests to 60 a minute, and when a response says
+  `x-ratelimit-remaining-req-minute: 0` it waits for the minute to turn. It sends chunks in batches
+  (`POST https://api.mistral.ai/v1/embeddings`, at most 64 texts and about 8,000 estimated tokens per
+  request: our own caps, since Mistral's API reference states none; one input may hold 8k tokens).
+  On a 429 it waits the `Retry-After` header (or backs off 2 s, 4 s, 8 s... with jitter, capped at
+  60 s) and retries the same batch. Progress prints as `batch 7/40, rate limited, waiting 16 s (retry 1/8)`.
+  Price: USD 0.1 per million tokens (Mistral's model card, read 2026-11-02).
+- **Env vars:** `MISTRAL_API_KEY` (required, sent only in the `Authorization: Bearer` header; Vercel
+  production already has it), `RAG_EMBED_REQUESTS_PER_MINUTE` (default `60`),
+  `RAG_EMBED_TOKENS_PER_MINUTE` (optional, no default), `RAG_EMBED_MAX_RETRIES` (default `8`
+  consecutive 429s on one batch before that course fails).
 - **Safe to re-run.** Everything is embedded before anything is deleted; the old chunks are swapped for
   the new ones in one transaction, so a failure leaves the previous index in place. A public-domain
-  full text ingested with `--source-url` is kept on later runs without the flag.
+  full text ingested with `--source-url` is kept on later runs without the flag, and a kept one with no
+  1024-dim vector yet is embedded from its stored text (not fetched again).
 - **What was indexed** is recorded per course in `course_rag_index` (content hash, `indexed_at`, chunk
   count). The hash covers the lesson titles and bodies and the citation text, so `rag:list` and
   `--needing` know which courses changed. A course indexed before this record existed shows as
