@@ -23,6 +23,8 @@ export interface VerdictNeed {
   current: { verdict: Verdict; correction: string | null } | null;
   /** Decided on the server (canRecordVerdict); the route re-checks it on every save. */
   canRecord: boolean;
+  /** When canRecord is false: the sentence saying why (VERDICT_BLOCK_SENTENCE), read with the fieldset. */
+  blockedReason?: string | null;
 }
 
 /**
@@ -123,7 +125,18 @@ function NeedVerdict({ courseId, lessonId, need }: { courseId: string; lessonId:
 
   return (
     <form onSubmit={submit} className="mt-4 border-t border-neutral-100 pt-4 dark:border-neutral-800/60">
-      <fieldset disabled={!need.canRecord || busy}>
+      {!need.canRecord && need.blockedReason ? (
+        <p
+          id={`${base}-why`}
+          className="mb-2 rounded-md bg-amber-50 p-3 text-sm text-amber-900 dark:bg-amber-950/40 dark:text-amber-200"
+        >
+          {need.blockedReason}
+        </p>
+      ) : null}
+      <fieldset
+        disabled={!need.canRecord || busy}
+        aria-describedby={!need.canRecord && need.blockedReason ? `${base}-why` : undefined}
+      >
         <legend className="text-sm font-medium">
           {KIND_TITLE[need.kind]}
           {need.whos.length ? `: ${need.whos.join("; ")}` : ""}

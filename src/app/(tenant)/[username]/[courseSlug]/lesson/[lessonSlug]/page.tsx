@@ -37,7 +37,7 @@ import { brandName } from "@/lib/branding";
 import { ogImageUrl } from "@/lib/og";
 import { getScopedDb } from "@/db/scoped";
 import { isPlatformOwner } from "@/lib/session";
-import { canRecordVerdict, hasReviewerCredential, type Verdict } from "@/lib/lesson-review";
+import { VERDICT_BLOCK_SENTENCE, hasReviewerCredential, verdictBlockReason, type Verdict } from "@/lib/lesson-review";
 import { summarizeLessonReview, type LessonReviewSummary } from "@/lib/lesson-review-summary";
 import { ReleaseNeedsBox } from "@/components/release-needs-box";
 import { LessonVerdictForm, type VerdictNeed } from "@/components/lesson-verdict-form";
@@ -260,13 +260,18 @@ export default async function LessonPage({ params }: Params) {
           const hasCredential = grant ? hasReviewerCredential(grant) : false;
           const isInstructor = view.course.instructorId === view.session.user.id;
           const needs: VerdictNeed[] = marked
-            .map((r) => ({
-              kind: r.kind,
-              whos: r.whos,
-              state: r.state,
-              current: r.review ? { verdict: r.review.verdict as Verdict, correction: r.review.correction } : null,
-              canRecord: canRecordVerdict({ isAuditor: Boolean(grant), hasCredential, isOwner: viewerIsOwner, isInstructor, kind: r.kind }),
-            }))
+            .map((r) => {
+              const why = verdictBlockReason({ isAuditor: Boolean(grant), hasCredential, isOwner: viewerIsOwner, isInstructor, kind: r.kind });
+              return {
+                kind: r.kind,
+                whos: r.whos,
+                state: r.state,
+                current: r.review ? { verdict: r.review.verdict as Verdict, correction: r.review.correction } : null,
+                canRecord: why === null,
+                // Plans/97 v2 (G2): a disabled form always says why, per need, read with its fieldset.
+                blockedReason: why ? VERDICT_BLOCK_SENTENCE[why] : null,
+              };
+            })
             // The owner sees only what he may record (P); a reviewer sees every need, disabled until credited.
             .filter((n) => !viewerIsOwner || n.canRecord);
           if (needs.length > 0) {
@@ -277,9 +282,8 @@ export default async function LessonPage({ params }: Params) {
                   ? { name: grant.reviewerName!.trim(), credential: grant.reviewerCredential!.trim() }
                   : null,
               blockedReason:
-                grant && !hasCredential
-                  ? "The person who invited you has not added your name and credential yet, so a verdict cannot be credited. Ask them to add it; the form opens as soon as they do."
-                  : null,
+                // Each need's fieldset now carries its own reason (verdictBlockReason).
+                null,
             };
           }
         }
