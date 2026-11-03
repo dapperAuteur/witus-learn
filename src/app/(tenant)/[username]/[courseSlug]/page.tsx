@@ -229,12 +229,15 @@ export default async function CourseBySlugPage({ params }: Params) {
     (await courseHasChunks(course.tenantId, course.id)) &&
     sourceChatAllowed({ isEditor, isEnrolled: view.isEnrolled, free: isFreeCourse(course), stage: sourceChatConfig.stage });
   // Saved answers are the platform owner's only (BAM, 2026-11-02); everyone else gets null and sees nothing.
+  // A failed read (e.g. the deploy beat migration 0077) hides the block rather than breaking the course page.
   const savedSourceChats: SavedChatView[] | null =
     showSourceChat && view.session && (await isPlatformOwner(view.session.user.id))
-      ? (await listSavedSourceChats(view.session.user.id, { courseId: course.id, limit: 50 })).map((c) => ({
-          ...c,
-          createdAt: c.createdAt.toISOString(),
-        }))
+      ? await listSavedSourceChats(view.session.user.id, { courseId: course.id, limit: 50 })
+          .then((rows) => rows.map((c) => ({ ...c, createdAt: c.createdAt.toISOString() })))
+          .catch((err: unknown) => {
+            console.error("course page: saved source chats unavailable", err);
+            return null;
+          })
       : null;
   const typeIcon = (t: string) =>
     ({ text: "📖", exercise: "✍️", quiz: "🧠", map: "🗺️", video: "🎬", "360video": "🎬", audio: "🎧", assignment: "📝" })[t] ?? "📄";
