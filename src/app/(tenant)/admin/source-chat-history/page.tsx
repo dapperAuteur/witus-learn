@@ -6,14 +6,14 @@ import { SavedSourceChatManager } from "@/components/saved-source-chats";
 
 /** Owner-only operator page behind admin auth, never shared or indexed, so no social card by design. */
 export const metadata: Metadata = {
-  title: "Saved source chats",
-  description: "Your saved chat-with-the-sources answers across every course, with Delete per chat and Delete all.",
+  title: "Saved course chats",
+  description: "Your saved course-chat conversations across every course, with Delete per conversation and Delete all.",
   robots: { index: false, follow: false },
 };
 export const dynamic = "force-dynamic";
 
-// /admin/source-chat-history (BAM, 2026-11-02): the platform owner's saved "chat with the sources"
-// answers, newest first, across every course and school (the owner is cross-school, like /admin/rag),
+// /admin/source-chat-history (BAM, 2026-11-02): the platform owner's saved course-chat conversations (one row
+// per turn, shown as whole threads since migration 0078), newest first, across every course and school (the owner is cross-school, like /admin/rag),
 // with a course filter. Only the owner's questions are ever saved (src/lib/source-chat-history.ts), and
 // every read and delete is keyed by the owner's own user id.
 export default async function SavedSourceChatsPage({ searchParams }: { searchParams: Promise<{ course?: string }> }) {
@@ -27,13 +27,13 @@ export default async function SavedSourceChatsPage({ searchParams }: { searchPar
 
   return (
     <main className="mx-auto max-w-3xl px-4 py-10">
-      <h1 className="text-2xl font-bold">Saved source chats</h1>
+      <h1 className="text-2xl font-bold">Saved course chats</h1>
       <p className="mt-2 text-sm text-neutral-600 dark:text-neutral-400">
-        Every question you asked a course&apos;s &ldquo;chat with the sources&rdquo;, with its answer and the sources
-        it cited, newest first (the latest 200 shown). Only your questions are saved; nobody else&apos;s are. Set who
-        may use the chat on{" "}
+        Every conversation you had with a course&apos;s chat, each question with its answer and the sources it
+        cited, newest first (the latest 200 questions shown, so the oldest thread on the page may be cut short).
+        Only your questions are saved; nobody else&apos;s are. Set who may use the chat on{" "}
         <Link href="/admin/source-chat" className="underline" style={{ color: "var(--accent)" }}>
-          Source Chat
+          Course chat
         </Link>
         .
       </p>

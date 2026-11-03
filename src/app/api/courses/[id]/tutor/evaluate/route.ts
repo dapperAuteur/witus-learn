@@ -1,42 +1,9 @@
-import { z } from "zod";
-import { apiContext, canEditCourse, errorJson } from "@/lib/api";
-import { isEnrolled } from "@/db/queries/enrollment";
-import { isFreeCourse } from "@/lib/gating";
-import { streamSentenceEvaluation } from "@/lib/ai/tutor";
-import { hasAiProvider } from "@/lib/env";
-import { getActiveLearner } from "@/lib/active-learner";
+import { handleCourseChat } from "@/lib/course-chat-handler";
 
-const Schema = z.object({ sentence: z.string().min(2).max(600) });
-
-// POST /api/courses/[id]/tutor/evaluate — the sentence-evaluation coach. Same gating
-// as the tutor: auth + AI configured + per-tenant flag + paid access. Course-scoped
-// retrieval, so feedback can only ground on / cite THIS course.
+// DEPRECATED (2026-11-03): POST /api/courses/[id]/tutor/evaluate ({ sentence }) forwards to the course chat's
+// sentence coach (/api/courses/[id]/chat with mode "evaluate"). Same NDJSON as before (meta with usedLessons,
+// tokens, done), with Deprecation and Link: rel="successor-version" headers. Nothing in the app calls it.
 export async function POST(req: Request, { params }: { params: Promise<{ id: string }> }) {
   const { id } = await params;
-  const { sdb, session } = await apiContext();
-  if (!session) return errorJson("Unauthorized", 401);
-  if (!hasAiProvider) return errorJson("The AI coach is not configured", 503);
-  if (sdb.tenant.flags.aiTutor === false) {
-    return errorJson("The AI coach is disabled for this school", 403);
-  }
-
-  const course = await sdb.getCourseById(id);
-  if (!course || !course.isPublished) return errorJson("Not found", 404);
-
-  // Same enrollment attribution as the tutor route: check the ACTIVE learner (self, or
-  // a managed child while "studying as"), since enrollment itself is per-learner.
-  const learner = (await getActiveLearner(session))!;
-  const paidLearner = !isFreeCourse(course) && (await isEnrolled(learner.id, id));
-  const allowed = (await canEditCourse(session, sdb.tenantId, course)) || paidLearner;
-  if (!allowed) return errorJson("The AI coach is for enrolled paid students", 403);
-
-  const parsed = Schema.safeParse(await req.json().catch(() => null));
-  if (!parsed.success) return errorJson("Invalid input", 400);
-
-  const stream = await streamSentenceEvaluation(course, parsed.data.sentence, {
-    provider: sdb.tenant.flags.aiProvider,
-  });
-  return new Response(stream, {
-    headers: { "content-type": "application/x-ndjson; charset=utf-8", "cache-control": "no-store" },
-  });
+  return handleCourseChat(req, id, "evaluate");
 }

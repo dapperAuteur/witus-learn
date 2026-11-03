@@ -1,4 +1,4 @@
-// When a "chat with the sources" answer is saved. PURE (the owner check and the insert are passed in),
+// When a course-chat turn (was "chat with the sources") is saved. PURE (the owner check and the insert are passed in),
 // so the rules are unit-tested in tests/source-chat-history.test.ts.
 //
 // BAM, 2026-11-02: save answers for the platform owner only, for now. Everyone else: nothing stored,
@@ -39,4 +39,40 @@ export async function saveIfOwner({ isOwner, save, timeoutMs = SAVE_TIMEOUT_MS, 
   } finally {
     if (timer) clearTimeout(timer);
   }
+}
+
+// ---- Threads (migration 0078) ----------------------------------------------------------------------------
+// Each saved row is one turn. Rows that share a conversation id are one thread, shown in turn order; a row
+// with no conversation id (saved before 0078) is a thread of its own. Threads are newest first by their
+// latest turn. PURE, so the course page, the admin page and the tests share it.
+
+export interface SavedTurnLike {
+  id: string;
+  conversationId: string | null;
+  turn: number;
+  /** ISO timestamp. */
+  createdAt: string;
+}
+
+export interface SavedThread<T extends SavedTurnLike> {
+  /** The conversation id, or the row id for a pre-0078 row. */
+  key: string;
+  conversationId: string | null;
+  turns: T[];
+  /** ISO timestamp of the newest turn. */
+  latestAt: string;
+}
+
+export function groupSavedThreads<T extends SavedTurnLike>(rows: readonly T[]): SavedThread<T>[] {
+  const byKey = new Map<string, SavedThread<T>>();
+  for (const row of rows) {
+    const key = row.conversationId ?? row.id;
+    const thread = byKey.get(key) ?? { key, conversationId: row.conversationId, turns: [], latestAt: row.createdAt };
+    thread.turns.push(row);
+    if (row.createdAt > thread.latestAt) thread.latestAt = row.createdAt;
+    byKey.set(key, thread);
+  }
+  const threads = [...byKey.values()];
+  for (const t of threads) t.turns.sort((a, b) => a.turn - b.turn || a.createdAt.localeCompare(b.createdAt));
+  return threads.sort((a, b) => b.latestAt.localeCompare(a.latestAt));
 }

@@ -1,87 +1,10 @@
-import { z } from "zod";
-import { apiContext, canEditCourse, errorJson, json } from "@/lib/api";
-import { isEnrolled } from "@/db/queries/enrollment";
-import { isFreeCourse } from "@/lib/gating";
-import { getSourceChatConfig } from "@/db/queries/source-chat-config";
-import { sourceChat } from "@/lib/ai/source-chat";
-import type { Lens } from "@/lib/ai/specialists";
-import { getActiveLearner } from "@/lib/active-learner";
-import { isPlatformOwner } from "@/lib/session";
-import { insertSavedSourceChat } from "@/db/queries/source-chat-history";
-import { saveIfOwner } from "@/lib/source-chat-history";
+import { handleCourseChat } from "@/lib/course-chat-handler";
 
-type Params = { params: Promise<{ id: string }> };
-
-const Body = z.object({
-  question: z.string().min(1).max(2000),
-  // Owner/instructor test override from the dashboard (ignored for learners).
-  config: z
-    .object({
-      agents: z.array(z.enum(["explain", "examples", "coach"])).optional(),
-      provider: z.string().max(40).optional(),
-      temperature: z.number().min(0).max(1).optional(),
-      topK: z.number().int().min(1).max(12).optional(),
-      grounding: z.enum(["strict", "mixed"]).optional(),
-    })
-    .optional(),
-});
-
-// POST /api/courses/[id]/source-chat — grounded, retrieval-based chat over the course's sources.
-// Access follows the course's configured stage: owner/instructor always; enrolled learners once the
-// owner opens it (invited); paid-course enrolled learners at the paid stage.
-export async function POST(req: Request, { params }: Params) {
+// DEPRECATED (2026-11-03): POST /api/courses/[id]/source-chat forwards to the course chat
+// (/api/courses/[id]/chat) and answers one JSON reply in the old shape ({ answer, citations, agents,
+// usedChunks, savedId }, plus conversationId), with Deprecation and Link: rel="successor-version" headers.
+// Kept so an old caller keeps working; nothing in the app calls it.
+export async function POST(req: Request, { params }: { params: Promise<{ id: string }> }) {
   const { id } = await params;
-  const { sdb, session } = await apiContext();
-  if (!session) return errorJson("Unauthorized", 401);
-  const course = await sdb.getCourseById(id);
-  if (!course) return errorJson("Not found", 404);
-
-  const config = await getSourceChatConfig(sdb.tenantId, id);
-  const isAdmin = await canEditCourse(session, sdb.tenantId, course);
-  let allowed = isAdmin;
-  if (!allowed) {
-    // Enrollment gates here are per-learner (see /api/courses/[id]/enroll), so check the
-    // ACTIVE learner (self, or a managed child while "studying as") rather than the
-    // signed-in account directly.
-    const learner = (await getActiveLearner(session))!;
-    if (config.stage === "invited") allowed = await isEnrolled(learner.id, id);
-    else if (config.stage === "paid") allowed = !isFreeCourse(course) && (await isEnrolled(learner.id, id));
-  }
-  if (!allowed) return errorJson("Chat with the sources isn't available for you on this course yet.", 403);
-
-  const parsed = Body.safeParse(await req.json().catch(() => null));
-  if (!parsed.success) return errorJson("Invalid input", 400);
-
-  // Admins can test unsaved params; learners always use the saved config.
-  const eff = isAdmin && parsed.data.config ? { ...config, ...parsed.data.config } : config;
-  const result = await sourceChat(course, parsed.data.question, {
-    agents: eff.agents as Lens[],
-    provider: eff.provider || undefined,
-    temperature: eff.temperature,
-    topK: eff.topK,
-    grounding: eff.grounding,
-    viewer: { isEditor: isAdmin },
-  });
-
-  // Saved for the platform owner only (BAM, 2026-11-02); nobody else's questions are stored. Never
-  // blocks or fails the answer: saveIfOwner swallows errors and gives up after a few seconds.
-  const savedId = await saveIfOwner({
-    isOwner: () => isPlatformOwner(session.user.id),
-    save: () =>
-      insertSavedSourceChat({
-        tenantId: course.tenantId,
-        courseId: course.id,
-        userId: session.user.id,
-        question: parsed.data.question,
-        answer: result.answer,
-        citations: result.citations,
-        agents: result.agents,
-        grounding: eff.grounding ?? null,
-        provider: eff.provider || null,
-        temperature: eff.temperature ?? null,
-        topK: eff.topK ?? null,
-        usedChunks: result.usedChunks,
-      }),
-  });
-  return json({ ...result, savedId });
+  return handleCourseChat(req, id, "source-chat");
 }

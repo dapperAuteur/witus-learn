@@ -32,13 +32,14 @@ import { GlossaryList } from "@/components/glossary-list";
 import { ProgressBar } from "@/components/progress-bits";
 import { getUnmetRequired, listPrerequisites } from "@/db/queries/prerequisites";
 import { CourseActions } from "@/components/course-actions";
-import { TutorChat } from "@/components/tutor-chat";
-import { CourseSourceChat } from "@/components/course-source-chat";
+import { CourseChat } from "@/components/course-chat";
 import { getSourceChatConfig } from "@/db/queries/source-chat-config";
 import { courseHasChunks } from "@/db/queries/source-chunks";
 import { listSavedSourceChats } from "@/db/queries/source-chat-history";
 import type { SavedChatView } from "@/components/saved-source-chats";
-import { sourceChatAllowed } from "@/lib/source-chat-access";
+import { courseChatAllowed } from "@/lib/source-chat-access";
+import { hasAiProvider } from "@/lib/env";
+import { getCourseIndexState } from "@/lib/rag/index-course";
 import { CourseAdminTools } from "@/components/course-admin-tools";
 import { getEmbeddingStaleness } from "@/db/queries/cyoa";
 import { hasAgeConsentCookie } from "@/lib/age-gate";
@@ -221,21 +222,31 @@ export default async function CourseBySlugPage({ params }: Params) {
   }, []);
   const savablePaths = new Set(savableLessons.map((l) => l.pagePath));
 
-  // "Chat with the sources": shown when the course is indexed AND the learner is allowed by the
-  // owner-set stage (owner/instructor → invited/enrolled → paid). Config lives in platform_settings.
+  // The course chat (one tool since 2026-11-03; it replaced "Ask the course tutor" and "Chat with the sources"):
+  // shown when an AI provider is configured, the course is indexed, and this viewer may use it (editors always;
+  // others need the brand's AI switch and the course's stage from /admin/source-chat). The route checks again.
   const sourceChatConfig = await getSourceChatConfig(course.tenantId, course.id);
-  const showSourceChat =
+  const showCourseChat =
+    hasAiProvider &&
     (course.isPublished || isEditor) && // editors can test on their own unpublished courses
-    (await courseHasChunks(course.tenantId, course.id)) &&
-    sourceChatAllowed({ isEditor, isEnrolled: view.isEnrolled, free: isFreeCourse(course), stage: sourceChatConfig.stage });
-  // Saved answers are the platform owner's only (BAM, 2026-11-02); everyone else gets null and sees nothing.
-  // A failed read (e.g. the deploy beat migration 0077) hides the block rather than breaking the course page.
+    courseChatAllowed({
+      isEditor,
+      isEnrolled: view.isEnrolled,
+      free: isFreeCourse(course),
+      stage: sourceChatConfig.stage,
+      brandAiOn: view.tenant.flags.aiTutor !== false,
+    }) &&
+    (await courseHasChunks(course.tenantId, course.id));
+  // Asked only when something below uses it: the saved threads, or the /admin/rag link in Instructor tools.
+  const viewerIsOwner = view.session && (showCourseChat || isEditor) ? await isPlatformOwner(view.session.user.id) : false;
+  // Saved threads are the platform owner's only (BAM, 2026-11-02); everyone else gets null and sees nothing.
+  // A failed read (e.g. the deploy beat a migration) hides the block rather than breaking the course page.
   const savedSourceChats: SavedChatView[] | null =
-    showSourceChat && view.session && (await isPlatformOwner(view.session.user.id))
-      ? await listSavedSourceChats(view.session.user.id, { courseId: course.id, limit: 50 })
+    showCourseChat && view.session && viewerIsOwner
+      ? await listSavedSourceChats(view.session.user.id, { courseId: course.id, limit: 100 })
           .then((rows) => rows.map((c) => ({ ...c, createdAt: c.createdAt.toISOString() })))
           .catch((err: unknown) => {
-            console.error("course page: saved source chats unavailable", err);
+            console.error("course page: saved course chats unavailable", err);
             return null;
           })
       : null;
@@ -793,17 +804,21 @@ export default async function CourseBySlugPage({ params }: Params) {
         <RelatedTools slugs={relatedSlugs} courseId={course.id} />
       ) : null}
 
-      {course.isPublished && (view.isEditor || (view.isEnrolled && !isFreeCourse(course))) ? (
-        <TutorChat courseId={course.id} courseTitle={course.title} />
-      ) : null}
-
-      {showSourceChat ? <CourseSourceChat courseId={course.id} courseTitle={course.title} saved={savedSourceChats} /> : null}
+      {showCourseChat ? <CourseChat courseId={course.id} courseTitle={course.title} saved={savedSourceChats} /> : null}
 
       {view.isEditor ? (
         <CourseAdminTools
           courseId={course.id}
           navigationMode={course.navigationMode}
-          index={await getEmbeddingStaleness(course.id)}
+          // The CYOA crossroads index (Gemini lesson_embeddings) matters only in CYOA mode.
+          index={course.navigationMode === "cyoa" ? await getEmbeddingStaleness(course.id) : undefined}
+          // The course chat's own index (Mistral source_chunks), by the rule /admin/rag uses. A failed read
+          // shows nothing rather than breaking the page.
+          sourceIndex={await getCourseIndexState(course.id).catch((err: unknown) => {
+            console.error("course page: source index state unavailable", err);
+            return null;
+          })}
+          viewerIsOwner={viewerIsOwner}
         />
       ) : null}
     </main>

@@ -547,6 +547,13 @@
       "when": 1793674398413,
       "tag": "0077_source_chat_history",
       "breakpoints": true
+    },
+    {
+      "idx": 78,
+      "version": "7",
+      "when": 1793721379207,
+      "tag": "0078_source_chat_history_conversation",
+      "breakpoints": true
     }
   ]
 }

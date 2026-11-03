@@ -16,7 +16,8 @@ const PROVIDERS = [
   { v: "anthropic", label: "Anthropic (Claude)" },
   { v: "openai", label: "OpenAI" },
 ];
-const DEFAULT: SourceChatConfig = { stage: "owner", agents: ["explain", "examples"], provider: "", temperature: 0.2, topK: 6, grounding: "strict" };
+// Mirrors DEFAULT_SOURCE_CHAT_CONFIG (server-only module); the form loads the saved config over it.
+const DEFAULT: SourceChatConfig = { stage: "paid", agents: ["explain", "examples"], routing: "all", provider: "", temperature: 0.2, topK: 6, grounding: "strict" };
 
 interface ChatResult { answer: string; citations: SourceChatCitationView[]; agents: string[]; usedChunks: number }
 
@@ -72,10 +73,10 @@ export function SourceChatAdmin({ courses }: { courses: { id: string; title: str
     setAsking(true);
     setChatError(null);
     setResult(null);
-    const res = await fetch(`/api/courses/${courseId}/source-chat`, {
+    const res = await fetch(`/api/courses/${courseId}/chat?format=json`, {
       method: "POST",
       headers: { "content-type": "application/json" },
-      body: JSON.stringify({ question: question.trim(), config }),
+      body: JSON.stringify({ mode: "ask", question: question.trim(), config }),
     });
     const data = (await res.json().catch(() => ({}))) as ChatResult & { error?: string };
     setAsking(false);
@@ -100,7 +101,7 @@ export function SourceChatAdmin({ courses }: { courses: { id: string; title: str
             <select value={config.stage} onChange={(e) => setConfig((c) => ({ ...c, stage: e.target.value as SourceChatConfig["stage"] }))} className={`mt-1 ${field}`}>
               <option value="owner">Owner / instructor only (test)</option>
               <option value="invited">+ Enrolled learners (invited)</option>
-              <option value="paid">+ Enrolled on a paid course</option>
+              <option value="paid">+ Enrolled on a paid course (default)</option>
             </select>
           </label>
           <label className="block text-sm">
@@ -137,6 +138,15 @@ export function SourceChatAdmin({ courses }: { courses: { id: string; title: str
               </label>
             ))}
           </div>
+          <label className="mt-2 flex items-center gap-2 text-sm">
+            <input
+              type="checkbox"
+              checked={config.routing === "auto"}
+              onChange={(e) => setConfig((c) => ({ ...c, routing: e.target.checked ? "auto" : "all" }))}
+              className="h-4 w-4"
+            />
+            Let a supervisor pick which of these agents answer each question (one extra model call; off = all run)
+          </label>
         </fieldset>
         <div className="mt-4 flex items-center gap-3">
           <button type="button" onClick={save} disabled={saving} className="min-h-9 rounded-md px-4 text-sm font-medium text-white disabled:opacity-60" style={{ backgroundColor: "var(--accent)" }}>

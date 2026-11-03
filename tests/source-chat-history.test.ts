@@ -2,7 +2,7 @@ import { beforeEach, describe, expect, it, vi } from "vitest";
 import { saveIfOwner } from "@/lib/source-chat-history";
 
 /**
- * Saved "chat with the sources" answers, platform owner only (BAM, 2026-11-02). The pure rule
+ * Saved course-chat turns (was "chat with the sources"), platform owner only (BAM, 2026-11-02). The pure rule
  * (saveIfOwner) runs for real everywhere below; the routes run for real with their session, course
  * lookup, model call and database writes mocked.
  */
@@ -29,7 +29,16 @@ vi.mock("@/lib/api", () => ({
 vi.mock("@/db/queries/enrollment", () => ({ isEnrolled: mocks.isEnrolled }));
 vi.mock("@/lib/gating", () => ({ isFreeCourse: () => true }));
 vi.mock("@/db/queries/source-chat-config", () => ({ getSourceChatConfig: mocks.getSourceChatConfig }));
-vi.mock("@/lib/ai/source-chat", () => ({ sourceChat: mocks.sourceChat }));
+// The engine's turn is mocked as events from mocks.sourceChat's answer; collectCourseChat stays real.
+vi.mock("@/lib/ai/course-chat", async (importOriginal) => ({
+  ...(await importOriginal<typeof import("@/lib/ai/course-chat")>()),
+  courseChatEvents: async function* () {
+    const a = (await mocks.sourceChat()) as typeof ANSWER;
+    yield { type: "meta", citations: a.citations, agents: a.agents, usedChunks: a.usedChunks, usedLessons: [] };
+    yield { type: "token", text: a.answer };
+  },
+}));
+vi.mock("@/lib/env", () => ({ hasAiProvider: true }));
 vi.mock("@/lib/active-learner", () => ({ getActiveLearner: mocks.getActiveLearner }));
 vi.mock("@/lib/session", () => ({ isPlatformOwner: mocks.isPlatformOwner }));
 vi.mock("@/db/queries/source-chat-history", () => ({
@@ -42,7 +51,7 @@ import { POST as ask } from "@/app/api/courses/[id]/source-chat/route";
 import { DELETE as deleteOne } from "@/app/api/admin/source-chat-history/[id]/route";
 import { DELETE as deleteAll } from "@/app/api/admin/source-chat-history/route";
 
-const COURSE = { id: "11111111-1111-4111-8111-111111111111", tenantId: "t1", title: "Rope" };
+const COURSE = { id: "11111111-1111-4111-8111-111111111111", tenantId: "t1", title: "Rope", isPublished: true };
 const ROW_ID = "22222222-2222-4222-8222-222222222222";
 const ANSWER = {
   answer: "Anchors hold the load [1].",
@@ -53,7 +62,7 @@ const ANSWER = {
 
 function signIn(userId: string | null) {
   mocks.apiContext.mockResolvedValue({
-    sdb: { tenantId: "t1", getCourseById: async (id: string) => (id === COURSE.id ? COURSE : null) },
+    sdb: { tenantId: "t1", tenant: { flags: {} }, getCourseById: async (id: string) => (id === COURSE.id ? COURSE : null) },
     session: userId ? { user: { id: userId } } : null,
   });
 }
@@ -65,7 +74,7 @@ const askAs = () =>
 
 beforeEach(() => {
   vi.clearAllMocks();
-  mocks.getSourceChatConfig.mockResolvedValue({ stage: "invited", agents: ["explain"], provider: "", temperature: 0.2, topK: 6, grounding: "strict" });
+  mocks.getSourceChatConfig.mockResolvedValue({ stage: "invited", agents: ["explain"], provider: "", temperature: 0.2, topK: 6, grounding: "strict", routing: "all" });
   mocks.sourceChat.mockResolvedValue(ANSWER);
   mocks.getActiveLearner.mockImplementation(async (s: { user: { id: string } }) => ({ id: s.user.id }));
   mocks.isEnrolled.mockResolvedValue(true);
@@ -104,12 +113,12 @@ describe("saveIfOwner", () => {
   });
 });
 
-describe("POST /api/courses/[id]/source-chat saving", () => {
+describe("POST /api/courses/[id]/source-chat (the old route, forwarded to the course chat) saving", () => {
   it("saves the owner's question with the answer and its linked citations", async () => {
     signIn("owner");
     const res = await askAs();
     expect(res.status).toBe(200);
-    expect(await res.json()).toEqual({ ...ANSWER, savedId: ROW_ID });
+    expect(await res.json()).toEqual({ ...ANSWER, savedId: ROW_ID, conversationId: expect.any(String) });
     expect(mocks.insertSavedSourceChat).toHaveBeenCalledWith(
       expect.objectContaining({
         tenantId: "t1",
@@ -129,7 +138,7 @@ describe("POST /api/courses/[id]/source-chat saving", () => {
     signIn("learner");
     const res = await askAs();
     expect(res.status).toBe(200);
-    expect(await res.json()).toEqual({ ...ANSWER, savedId: null });
+    expect(await res.json()).toEqual({ ...ANSWER, savedId: null, conversationId: expect.any(String) });
     expect(mocks.insertSavedSourceChat).not.toHaveBeenCalled();
   });
 
@@ -139,7 +148,7 @@ describe("POST /api/courses/[id]/source-chat saving", () => {
     const spy = vi.spyOn(console, "error").mockImplementation(() => {});
     const res = await askAs();
     expect(res.status).toBe(200);
-    expect(await res.json()).toEqual({ ...ANSWER, savedId: null });
+    expect(await res.json()).toEqual({ ...ANSWER, savedId: null, conversationId: expect.any(String) });
     expect(spy).toHaveBeenCalled();
     spy.mockRestore();
   });

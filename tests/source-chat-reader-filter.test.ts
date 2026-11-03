@@ -4,7 +4,7 @@ import { readerMayUseChunk, sharedTitlePublishedLessonIds, type ReaderLesson } f
 /**
  * The indexer embeds every lesson, drafts too. A reader who cannot edit the course must never be
  * answered from an unpublished lesson: not its text in the model's prompt, not its title in the
- * citations. The pure rule (readerMayUseChunk) is tested directly; sourceChat runs for real with
+ * citations. The pure rule (readerMayUseChunk) is tested directly; courseChat (the course chat engine) runs for real with
  * retrieval, the embedder, the model and the lesson reads mocked, and the prompt it sends is captured.
  */
 
@@ -27,6 +27,12 @@ vi.mock("@/lib/ai/fallback", () => ({
       mocks.prompts.push(messages.map((m) => m.content).join("\n"));
       return { content: "An answer [1]." };
     },
+    stream: async (messages: { role: string; content: string }[]) => {
+      mocks.prompts.push(messages.map((m) => m.content).join("\n"));
+      return (async function* () {
+        yield { content: "An answer [1]." };
+      })();
+    },
   }),
 }));
 vi.mock("@/lib/public-cache", () => ({ cachedLessonSummaries: mocks.cachedLessonSummaries }));
@@ -38,7 +44,7 @@ vi.mock("@/db/client", () => {
   return { db: chain };
 });
 
-import { sourceChat } from "@/lib/ai/source-chat";
+import { courseChat } from "@/lib/ai/course-chat";
 import type { Course } from "@/db/schema";
 
 const lesson = (id: string, title: string, isPublished: boolean) => ({ id, title, isPublished });
@@ -86,7 +92,7 @@ describe("readerMayUseChunk", () => {
   });
 });
 
-describe("sourceChat for a reader vs an editor", () => {
+describe("the course chat for a reader vs an editor", () => {
   const COURSE = { id: "c1", tenantId: "t1", slug: "rope", instructorId: "u1", title: "Rope" } as unknown as Course;
   const row = (kind: string, title: string | null, text: string, ord = 0) => ({ id: `${title}-${ord}`, tenantId: "t1", courseId: "c1", sourceId: null, kind, title, text, ord, createdAt: new Date(), distance: 0.1 });
   const DRAFT_TEXT = "UNPUBLISHED-DRAFT-PASSAGE about the anchor test nobody may read yet.";
@@ -112,7 +118,7 @@ describe("sourceChat for a reader vs an editor", () => {
     ]);
   });
 
-  const ask = (isEditor: boolean, topK = 6) => sourceChat(COURSE, "What holds the load?", { agents: ["explain"], topK, viewer: { isEditor } });
+  const ask = (isEditor: boolean, topK = 6) => courseChat(COURSE, "What holds the load?", { agents: ["explain"], topK, viewer: { isEditor } });
 
   it("never puts an unpublished lesson's text in a reader's prompt or its title in the citations", async () => {
     const res = await ask(false);

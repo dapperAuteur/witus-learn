@@ -4,7 +4,7 @@ import { db } from "@/db/client";
 import { courses, tenants } from "@/db/schema";
 import { sourceChatHistory, type SavedSourceChatCitation } from "@/db/schema/rag";
 
-// Saved "chat with the sources" answers, platform owner only (src/lib/source-chat-history.ts decides
+// Saved course-chat turns (was "chat with the sources"), platform owner only (src/lib/source-chat-history.ts decides
 // WHEN to save; this only reads and writes). Every read and delete is keyed by the asker's user id, so
 // one user can never see or remove another's rows, whatever the caller passes.
 
@@ -21,6 +21,9 @@ export interface NewSavedSourceChat {
   temperature: number | null;
   topK: number | null;
   usedChunks: number;
+  /** The course-chat conversation, and this turn's 0-based place in it (migration 0078). */
+  conversationId: string | null;
+  turn: number;
 }
 
 export interface SavedSourceChat {
@@ -33,6 +36,8 @@ export interface SavedSourceChat {
   citations: SavedSourceChatCitation[];
   agents: string[];
   grounding: string | null;
+  conversationId: string | null;
+  turn: number;
   createdAt: Date;
 }
 
@@ -61,6 +66,8 @@ export async function listSavedSourceChats(
       citations: sourceChatHistory.citations,
       agents: sourceChatHistory.agents,
       grounding: sourceChatHistory.grounding,
+      conversationId: sourceChatHistory.conversationId,
+      turn: sourceChatHistory.turn,
       createdAt: sourceChatHistory.createdAt,
     })
     .from(sourceChatHistory)
@@ -89,6 +96,15 @@ export async function deleteSavedSourceChat(userId: string, id: string): Promise
     .where(and(eq(sourceChatHistory.userId, userId), eq(sourceChatHistory.id, id)))
     .returning({ id: sourceChatHistory.id });
   return rows.length > 0;
+}
+
+/** Delete every turn of one of THIS user's saved conversations. Returns how many went. */
+export async function deleteSavedSourceChatThread(userId: string, conversationId: string): Promise<number> {
+  const rows = await db
+    .delete(sourceChatHistory)
+    .where(and(eq(sourceChatHistory.userId, userId), eq(sourceChatHistory.conversationId, conversationId)))
+    .returning({ id: sourceChatHistory.id });
+  return rows.length;
 }
 
 /** Delete all of THIS user's saved answers (or all for one course). Returns how many went. */

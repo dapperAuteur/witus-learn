@@ -83,8 +83,8 @@ export interface SavedSourceChatCitation {
 
 /**
  * Saved "chat with the sources" answers (BAM, 2026-11-02: "add for me only first, I'll consider it for
- * other users later"). One row per question asked, written by the source-chat route ONLY when the asker
- * is the platform owner; nobody else's questions are stored. A personal record of the owner's own
+ * other users later"). One row per question asked (one turn of a course-chat conversation), written by the
+ * course chat route ONLY when the asker is the platform owner; nobody else's questions are stored. A personal record of the owner's own
  * questions to the AI, not a message between people (the no-inbox rule is about those). The citations
  * keep the links resolved at the time, so a saved answer opens the same places it did.
  */
@@ -113,11 +113,19 @@ export const sourceChatHistory = pgTable(
     temperature: real("temperature"),
     topK: integer("top_k"),
     usedChunks: integer("used_chunks").notNull().default(0),
+    /**
+     * The course-chat conversation this turn belongs to (migration 0078), so a saved chat shows the whole
+     * thread. Null on rows saved before 0078: each of those is its own one-turn thread.
+     */
+    conversationId: uuid("conversation_id"),
+    /** 0-based position of this turn in its conversation. */
+    turn: integer("turn").notNull().default(0),
     createdAt: timestamp("created_at", { withTimezone: true }).notNull().defaultNow(),
   },
   (t) => [
     index("source_chat_history_user_created_idx").on(t.userId, t.createdAt),
     index("source_chat_history_course_idx").on(t.courseId),
+    index("source_chat_history_user_conversation_idx").on(t.userId, t.conversationId),
   ],
 );
 
