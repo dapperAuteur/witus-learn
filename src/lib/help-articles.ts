@@ -1126,8 +1126,9 @@ Full runbook: **OPERATING.md** in the repo. The essentials:
 ## The golden rule
 Code alone doesn't change what learners see, courses render from the **database**. After a merge to
 main, two GitHub workflows do it for you: **Migrate production database** applies new migrations,
-then **Seed production courses** re-runs **seed:courses** and refreshes the course chat's source
-index for the courses whose files changed. Other seeds are still run by hand:
+then **Seed production courses** re-runs **seed:courses**, refreshes the course chat's source
+index for the courses whose files changed, and embeds any new or changed lesson of a CYOA course for
+its crossroads (\`pnpm cyoa:index:prod --list\` shows what still needs it). Other seeds are still run by hand:
 
 \`\`\`
 pnpm db:migrate:prod        # only if the automatic run failed

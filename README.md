@@ -29,7 +29,7 @@ event to identifiers if the scrub itself throws). This public **`/roadmap`** pag
 ## Stack
 
 Next.js 16 (App Router) · TypeScript · Tailwind v4 · Neon Postgres (+ pgvector) · Drizzle ORM ·
-Better Auth (magic-link) · Stripe · Mailgun · Gemini (embeddings + recommendations) · Cloudinary.
+Better Auth (magic-link) · Stripe · Mailgun · Mistral `mistral-embed` (the course chat's source index and the CYOA crossroads index) · Gemini (one of the optional chat LLM providers) · Cloudinary.
 
 ## Multi-tenancy (the hard requirement)
 
@@ -675,6 +675,14 @@ saving and streaming are in `src/lib/course-chat-handler.ts`.
 course never indexed or changed since, with **Run** per course and **Run all**, which calls
 `POST /api/admin/rag/index` once per course from the browser. `pnpm rag:index` and the seed workflow use
 the same `indexCourse`. Needs `MISTRAL_API_KEY` (OPERATING.md 5a).
+
+**The CYOA crossroads index** (`lesson_embeddings.embedding_v2`, migration 0079; it was Gemini 768 until
+2026-11-03) uses the same Mistral embedder, one vector per published lesson plus `content_hash`, the md5
+of the title and text it embedded. A lesson **needs embedding** when it has no v2 vector or its hash no
+longer matches (`src/lib/cyoa/crossroads-index.ts`); until then it gets no "Related" or cross-course
+crossroads, and is never offered as one. Built on publish, by the course page's **Re-index crossroads**,
+by `pnpm cyoa:index` (`--list`, `--needing`, `--all`, `--course`), and at the end of every **Seed
+production courses** run (input `cyoa`). Needs `MISTRAL_API_KEY` (OPERATING.md 3c).
 
 **Citation links.** Each numbered source under an answer links to where it can be read in full,
 resolved when the answer is built (`src/lib/source-chat-links.ts`, gathered by

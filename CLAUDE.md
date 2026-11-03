@@ -374,8 +374,9 @@ list, stop and take it to BAM as a decision; do not build a smaller version of i
 
 Next.js 16 App Router (`--webpack`) · TS · Tailwind v4 · `@neondatabase/serverless` + Drizzle ORM +
 drizzle-kit · Better Auth 1.6.2 (magic-link) · Zod 4 · Vitest · `tsx` scripts · pnpm. Plus Stripe,
-Mailgun, Gemini (CYOA `lesson_embeddings`, pgvector 768d), Mistral `mistral-embed` (the "chat with the sources"
-RAG index, `source_chunks.embedding_v2`, 1024d, since migration 0076), Cloudinary. `@/*` → `src/*`. Lazy Proxy-wrapped DB client; env
+Mailgun, Mistral `mistral-embed` (the "chat with the sources" RAG index, `source_chunks.embedding_v2`, 1024d,
+since migration 0076, and the CYOA crossroads index, `lesson_embeddings.embedding_v2`, 1024d, since 0079; the
+legacy Gemini 768d columns are dropped later, plans/99), Cloudinary. `@/*` → `src/*`. Lazy Proxy-wrapped DB client; env
 validated in `src/lib/env.ts`; schema split under `src/db/schema/`, Drizzle-generated migrations +
 hand-written SQL for the Postgres-specific bits (extensions, ivfflat, triggers).
 

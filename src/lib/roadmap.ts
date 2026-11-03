@@ -5,6 +5,15 @@
 export const ROADMAP = `# Learn.WitUS, Roadmap
 
 ## Platform
+- 🔧 **CYOA crossroads embeddings move to Mistral** (\`feat/cyoa-mistral\`, built on \`feat/one-course-chat\`,
+  migration \`0079_cyoa_mistral_embedding_v2\`, applied by \`migrate-production.yml\`; task 402). BAM, 2026-11-03:
+  "move CYOA to Mistral". Production has no Gemini key, so the 768-dim Gemini \`lesson_embeddings\` could not be built
+  or refreshed. Now every writer (publish auto-index, Re-index crossroads, \`pnpm cyoa:index\`, the seed workflow) embeds
+  with \`mistral-embed\` into \`lesson_embeddings.embedding_v2\` (1024, hnsw) with a \`content_hash\`, and the
+  crossroads read only that column, keeping the mandatory tenant filter; a lesson with no v2 vector gets no Related
+  picks and is never offered as one. Staleness is hash-based ("N of M lessons new or changed"), so a reseed with no
+  text change no longer marks every lesson stale. Backfill: Actions, Seed production courses, cyoa \`needing\`
+  (OPERATING.md 3c). The legacy 768 column is dropped later (plans/99).
 - 🔧 **One course chat: the tutor and "chat with the sources" combined** (\`feat/one-course-chat\`, migration
   \`0078_source_chat_history_conversation\`, applied by \`migrate-production.yml\` on the merge; task 400). BAM,
   2026-11-03: the two gave the same answer to the same prompt; one saved chats, the other felt like a conversation, one

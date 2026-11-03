@@ -89,10 +89,12 @@ export const OPERATOR_COMMANDS: CommandGroup[] = [
   },
   {
     title: "AI / retrieval",
-    blurb: "Builds the search corpus for the per-course 'chat with the sources' feature.",
+    blurb: "Builds the search corpus for the per-course 'chat with the sources' feature, and the CYOA crossroads index.",
     commands: [
       { cmd: "pnpm rag:index --course <slug>", desc: "Chunk + embed (Mistral mistral-embed, 1024-dim, source_chunks.embedding_v2) a course's lesson bodies + bibliography citations into source_chunks, and record what was indexed in course_rag_index. Batched, paced under a per-minute request limit (RAG_EMBED_REQUESTS_PER_MINUTE, default 60; optional RAG_EMBED_TOKENS_PER_MINUTE) and retried on 429s honoring Retry-After (RAG_EMBED_MAX_RETRIES, default 8). Keeps a public-domain full text unless --source-url <url> replaces it (and embeds a kept one that has no 1024-dim vector yet); --tenant <slug> or --all-tenants for a shared slug; --courses-file <json> or --needing [--changed-only] for many courses. Needs MISTRAL_API_KEY. The same indexer runs from /admin/rag (Run, Run all).", impact: "write-dev" },
       { cmd: "pnpm rag:list", desc: "Print a Markdown checklist of every course with its index state (never indexed, changed since indexed, current, nothing to index) and the rag:index command for it, grouped by school. Save it: pnpm rag:list > plans/rag-index-checklist.md.", impact: "read" },
+      { cmd: "pnpm cyoa:index --list", desc: "Read-only: every CYOA course with its published lessons and how many have no Mistral crossroads vector (lesson_embeddings.embedding_v2) or changed since they were embedded.", impact: "read" },
+      { cmd: "pnpm cyoa:index --needing", desc: "Embed (Mistral mistral-embed, 1024-dim) the missing or changed lessons of every CYOA course into lesson_embeddings.embedding_v2, the index behind the CYOA crossroads; --all re-embeds everything, --course <slug> [--tenant <slug>] [--force] does one course. Same pacing env as rag:index. Needs MISTRAL_API_KEY. In production the seed workflow runs it (Actions, Seed production courses, input cyoa).", impact: "write-dev" },
     ],
   },
 ];

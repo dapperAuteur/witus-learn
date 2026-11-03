@@ -167,6 +167,45 @@ pnpm rag:list:prod                                               # what still ne
 Expected seed output ends with `Seed drift: ... course(s) changed, ... lesson(s) left as edited in the
 app ..., ... lesson(s) baselined.` and `Done.`
 
+### 3c. CYOA crossroads index (the last step of `seed-production.yml`)
+
+The "where next" crossroads on a CYOA course's lesson player read `lesson_embeddings.embedding_v2`,
+Mistral `mistral-embed` vectors (1024 dimensions) **since migration 0079** (BAM, 2026-11-03: "move CYOA
+to Mistral"; it was Gemini `gemini-embedding-001`, 768, and production has no Gemini key). Each row also
+stores `content_hash`, the md5 of the title and text it embedded, so a lesson **needs embedding** when it
+is published and has no v2 vector or its title or text changed since. A lesson that needs one still shows
+**Continue** and **Unexpected path**, just no **Related** or cross-course picks. The legacy 768-dim
+`embedding` column stays for the deployed code during the switch and is dropped later (plan 99).
+
+**The automatic path.** Every **Seed production courses** run (§3b) ends with
+`scripts/cyoa-index.ts --needing` (the script behind `pnpm cyoa:index:prod`), after the migrations and
+even when the seed or the RAG step failed. It embeds only the missing or changed lessons of courses
+whose navigation is CYOA, so a run with nothing changed embeds nothing. Same embedder, pacing and 429
+retries as §5a. Publishing a course and the course page's **Re-index crossroads** button run the same
+indexer for one course.
+
+**The one-time backfill after 0079.** Every CYOA lesson needs a v2 vector once. Actions, **Seed
+production courses**, **Run workflow** with seed off, rag `none`, cyoa `needing`:
+
+```bash
+gh workflow run seed-production.yml --repo dapperAuteur/witus-learn --ref main -f seed=false -f rag=none -f cyoa=needing
+```
+
+The run summary prints `CYOA courses: N; published lessons: M; needing embedding: K.`, one `ok`/`FAILED`
+line per course and a `Done:` line. Run it again and K is 0.
+
+**Manual fallback (the laptop).**
+
+```bash
+pnpm db:migrate:prod                 # applies 0079 if it hasn't run
+pnpm cyoa:index:prod --list          # read-only: every CYOA course and how many lessons need embedding
+pnpm cyoa:index:prod --needing       # the backfill; --all re-embeds everything
+pnpm cyoa:index:prod --course <slug> [--tenant <slug>] [--force]   # one course
+```
+
+Needs `MISTRAL_API_KEY` in `.env.prod` (for everything but `--list`). Exit code 1 when any course
+failed, after trying all of them.
+
 ---
 
 ## 4. Which seed owns which course (so you know what to re-run)
@@ -205,6 +244,7 @@ A course's **course chat** (one tool since 2026-11-03; it replaced the tutor and
 every course never indexed or changed since, each with **Run**, plus **Run all**, which works through
 the list one course per request from the browser), `pnpm rag:index` (`scripts/rag-index.ts`), and
 `seed-production.yml` (§3b). A seed that changes lesson text leaves that index stale until it is rebuilt.
+(The CYOA crossroads index is a different table with the same embedder: §3c.)
 
 **Embeddings are Mistral's `mistral-embed` (1024 dimensions) since migration 0076** (BAM, 2026-11-02;
 it was Gemini `gemini-embedding-001`, 768, whose free tier failed `rag:index:prod` with 429s). They live

@@ -1,5 +1,6 @@
-# Seed the course catalog and refresh the "chat with the sources" index after a merge to main, so
-# nobody runs `pnpm seed:courses:prod` and `pnpm rag:index:prod` by hand (plans/97 Q5).
+# Seed the course catalog and refresh the "chat with the sources" index and the CYOA crossroads index
+# after a merge to main, so nobody runs `pnpm seed:courses:prod`, `pnpm rag:index:prod` or
+# `pnpm cyoa:index:prod` by hand (plans/97 Q5).
 #
 # Safe because seeds no longer overwrite teachers: the seeder skips every lesson edited in the app
 # since the last seed and opens a warning on /teach for its author (src/lib/seed-drift.ts). It is also
@@ -16,7 +17,11 @@
 #   3. scripts/rag-index.ts --courses-file <that list> (what `pnpm rag:index:prod` runs), embedding
 #      with Mistral's mistral-embed, paced under 60 requests a minute and retrying on 429. Courses
 #      the seed did not change but whose index is stale (every course after the move from Gemini, in
-#      migration 0076) are listed on /admin/rag with Run and Run all, or use the "needing" input here.
+#      migration 0076) are listed on /admin/rag with Run and Run all, or use the "needing" input here;
+#   4. scripts/cyoa-index.ts --needing (what `pnpm cyoa:index:prod` runs): embeds, with the same Mistral
+#      embedder, the lessons of every CYOA course that have no crossroads vector or changed since
+#      (lesson_embeddings.embedding_v2, migration 0079). Hash-based, so an unchanged seed embeds nothing.
+#      The one-time backfill after 0079 is this step: Run workflow with seed off, rag "none", cyoa "needing".
 #
 # Secrets (set once, piped, never pasted; OPERATING.md section 3b): NEON_DIRECT_URL (the same one the
 # migrate workflow reads) and MISTRAL_API_KEY (embeddings). Fails closed when either is missing.
@@ -45,6 +50,11 @@ on:
         type: choice
         options: [seeded, changed-only, needing, none]
         default: seeded
+      cyoa:
+        description: "CYOA crossroads index: embed the missing or changed lessons of every CYOA course, re-embed all of them, or skip"
+        type: choice
+        options: [needing, all, none]
+        default: needing
 
 permissions:
   contents: read
@@ -101,6 +111,7 @@ jobs:
           exit 1
 
       - name: Apply pending migrations
+        id: migrate
         env:
           DATABASE_URL_UNPOOLED: ${{ secrets.NEON_DIRECT_URL }}
         run: pnpm exec tsx scripts/migrate.ts
@@ -140,3 +151,21 @@ jobs:
           set -o pipefail
           pnpm exec tsx scripts/rag-index.ts $args | tee "$RUNNER_TEMP/rag.log"
           { echo "## RAG index ($MODE)"; echo '```'; grep -E '^(ok|FAILED)' "$RUNNER_TEMP/rag.log" || true; echo '```'; } >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Refresh the CYOA crossroads index
+        # Independent of the seed and the RAG index: runs even when one of them failed, but never
+        # before the migration that adds lesson_embeddings.embedding_v2 (0079) has applied.
+        if: ${{ !cancelled() && steps.migrate.outcome == 'success' }}
+        env:
+          DATABASE_URL_UNPOOLED: ${{ secrets.NEON_DIRECT_URL }}
+          MISTRAL_API_KEY: ${{ secrets.MISTRAL_API_KEY }}
+          MODE: ${{ github.event_name == 'push' && 'needing' || inputs.cyoa }}
+        run: |
+          case "$MODE" in
+            none) echo "CYOA crossroads index: skipped (none)." | tee -a "$GITHUB_STEP_SUMMARY"; exit 0 ;;
+            all) args="--all" ;;
+            *) args="--needing" ;;
+          esac
+          set -o pipefail
+          pnpm exec tsx scripts/cyoa-index.ts $args | tee "$RUNNER_TEMP/cyoa.log"
+          { echo "## CYOA crossroads index ($MODE)"; echo '```'; grep -E '^(CYOA courses:|ok|FAILED|Done:)' "$RUNNER_TEMP/cyoa.log" || true; echo '```'; } >> "$GITHUB_STEP_SUMMARY"
