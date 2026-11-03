@@ -49,6 +49,7 @@ export function CourseAdminTools({
   index,
   sourceIndex,
   viewerIsOwner = false,
+  geminiConfigured = true,
 }: {
   courseId: string;
   navigationMode: string;
@@ -56,6 +57,8 @@ export function CourseAdminTools({
   index?: { published: number; stale: number };
   sourceIndex?: SourceIndexStatus | null;
   viewerIsOwner?: boolean;
+  /** Whether this deployment has GOOGLE_GEMINI_API_KEY; the crossroads embedder is Gemini-only. */
+  geminiConfigured?: boolean;
 }) {
   const router = useRouter();
   const [pending, setPending] = useState<string | null>(null);
@@ -144,7 +147,7 @@ export function CourseAdminTools({
           <button
             type="button"
             onClick={generateEmbeddings}
-            disabled={!!pending}
+            disabled={!!pending || !geminiConfigured}
             className="min-h-9 rounded-md border border-neutral-300 px-3 font-medium focus-visible:outline-2 focus-visible:outline-offset-2 disabled:opacity-60 dark:border-neutral-700"
           >
             {pending === "embed" ? "Embedding…" : stale ? "Re-index crossroads" : "Generate crossroads embeddings"}
@@ -155,6 +158,13 @@ export function CourseAdminTools({
             </span>
           ) : index && index.published > 0 ? (
             <span className="text-xs text-green-700 dark:text-green-400">Crossroads index up to date ✓</span>
+          ) : null}
+          {!geminiConfigured ? (
+            <p role="status" className="w-full text-xs text-amber-800 dark:text-amber-200">
+              This deployment has no Gemini key (GOOGLE_GEMINI_API_KEY), so the crossroads index can&apos;t be built or
+              refreshed here. Lessons already embedded keep their crossroads; new or edited ones get none. The course
+              chat is not affected: it uses its own Mistral index.
+            </p>
           ) : null}
         </div>
       ) : null}
@@ -182,7 +192,7 @@ export function CourseAdminTools({
       <p className="mt-2 text-xs text-neutral-600">
         {cyoa
           ? "The crossroads index only picks the CYOA \u201cwhere next\u201d lessons on the lesson player (Gemini key needed); it is not the course chat's index. Publishing re-indexes it automatically; re-index by hand after editing lessons on an already-published course. "
-          : "Switch navigation to CYOA to get crossroads on the lesson player; its index appears here then. "}
+          : `Switch navigation to CYOA to get crossroads on the lesson player; its index appears here then${geminiConfigured ? "" : " (it needs a Gemini key, which this deployment doesn't have)"}. `}
         &ldquo;Audit reveals&rdquo; asks the AI
         whether each self-check answer is supported by its lesson (advisory, needs an AI key).
         &ldquo;Audit assessment fit&rdquo; asks whether each lesson uses the right WIDGET (scored

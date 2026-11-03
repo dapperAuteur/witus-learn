@@ -625,7 +625,8 @@ different indexes show there, and they do different jobs:
   lessons the lesson player offers in CYOA mode, and nothing else: it does **not** feed the course chat.
   Publishing builds it automatically. If you later edit lessons on an already-published course, a badge
   shows **"N of M lessons changed since the last crossroads index"**; click **Re-index crossroads** to
-  refresh it. (Needs an AI key configured.) On a linear course you can ignore it.
+  refresh it. It needs a **Gemini** key; when the deployment has none, the tools say so and the button is
+  off (the course chat is unaffected, it uses Mistral). On a linear course you can ignore it.
 - **Audit reveals** asks the AI whether each \`:::reveal\` self-check answer is actually supported by
   its lesson, and lists any that look off. It's an advisory suggestion, so always verify before you
   change a card, but it's a fast way to catch an answer that drifted after you rewrote a lesson.`,

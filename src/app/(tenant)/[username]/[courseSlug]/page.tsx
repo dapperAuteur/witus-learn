@@ -38,7 +38,7 @@ import { courseHasChunks } from "@/db/queries/source-chunks";
 import { listSavedSourceChats } from "@/db/queries/source-chat-history";
 import type { SavedChatView } from "@/components/saved-source-chats";
 import { courseChatAllowed } from "@/lib/source-chat-access";
-import { hasAiProvider } from "@/lib/env";
+import { hasAiProvider, hasGemini } from "@/lib/env";
 import { getCourseIndexState } from "@/lib/rag/index-course";
 import { CourseAdminTools } from "@/components/course-admin-tools";
 import { getEmbeddingStaleness } from "@/db/queries/cyoa";
@@ -819,6 +819,7 @@ export default async function CourseBySlugPage({ params }: Params) {
             return null;
           })}
           viewerIsOwner={viewerIsOwner}
+          geminiConfigured={hasGemini}
         />
       ) : null}
     </main>
