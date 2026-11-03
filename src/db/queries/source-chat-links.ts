@@ -9,9 +9,11 @@ import { coursePagePath } from "@/lib/course-href";
 import { cleanChunkSource } from "@/lib/rag/content-hash";
 import {
   duplicateTitleLessonIds,
+  sharedTitlePublishedLessonIds,
   type CitationChunk,
   type CitationLinkContext,
   type LinkableSource,
+  type ReaderChunkContext,
 } from "@/lib/source-chat-links";
 
 // Gathers what src/lib/source-chat-links.ts needs to turn a source-chat answer's chunks into links.
@@ -72,4 +74,29 @@ export async function loadCitationLinkContext(
     sourcesPageHref,
     duplicateTitleBodies,
   };
+}
+
+/**
+ * What readerMayUseChunk needs for a reader who cannot edit the course: every lesson's title and publish
+ * state (the same cached summaries the lesson route reads), and the bodies of only those PUBLISHED
+ * lessons whose title is shared and was retrieved. Keyed by this course's id, like everything here.
+ */
+export async function loadReaderChunkContext(
+  course: Pick<Course, "id">,
+  chunks: readonly Pick<CitationChunk, "kind" | "title">[],
+): Promise<ReaderChunkContext> {
+  const titles = chunks.flatMap((c) => (c.kind === "lesson" && c.title ? [c.title] : []));
+  if (titles.length === 0) return { isEditor: false, lessons: [] };
+  const summaries = await cachedLessonSummaries(course.id);
+  const lessonRows = summaries.map((l) => ({ id: l.id, title: l.title, isPublished: l.isPublished }));
+  const ids = sharedTitlePublishedLessonIds(lessonRows, titles);
+  let sharedTitleBodies: Map<string, string> | undefined;
+  if (ids.length) {
+    const rows = await db
+      .select({ id: lessons.id, body: lessons.textContent })
+      .from(lessons)
+      .where(and(eq(lessons.courseId, course.id), inArray(lessons.id, ids)));
+    sharedTitleBodies = new Map(rows.map((r) => [r.id, cleanChunkSource(r.body ?? "")]));
+  }
+  return { isEditor: false, lessons: lessonRows, sharedTitleBodies };
 }

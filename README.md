@@ -661,6 +661,13 @@ unsure match gets no link. A bibliography entry links to its `url`, then its hos
 DOI, in a new tab; with none of those it links to the course's Sources page when the reader may open it.
 A public-domain text links to its source URL.
 
+**Unpublished lessons stay out of learners' answers.** The indexer embeds every lesson, drafts too, so
+for a reader who cannot edit the course `sourceChat` over-fetches, drops every lesson chunk that does not
+provably come from a published lesson (`readerMayUseChunk`: matched by title; a title shared with another
+lesson needs a published lesson whose body contains the chunk), and trims back to top-k, before the
+prompt and the citations are built. If the publish state cannot be read it fails closed (bibliography
+chunks only). Editors and the owner keep every chunk.
+
 **Saved chats (platform owner only).** When the platform owner asks, the question, answer, citations
 (with their links), agents and grounding are saved to `source_chat_history` (migration 0077); nobody
 else's questions are stored. Saving never blocks or fails the answer (`src/lib/source-chat-history.ts`

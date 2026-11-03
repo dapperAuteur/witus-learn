@@ -4,8 +4,9 @@ import { retrieveChunks } from "@/db/queries/source-chunks";
 // The RAG index is mistral-embed since migration 0076, so the question MUST be embedded with the same
 // model; src/lib/ai/embeddings.ts (Gemini) stays CYOA's lesson_embeddings embedder and is not used here.
 import { embedQuery } from "@/lib/rag/embed-batch";
-import { loadCitationLinkContext } from "@/db/queries/source-chat-links";
-import { resolveCitationLink } from "@/lib/source-chat-links";
+import { loadCitationLinkContext, loadReaderChunkContext } from "@/db/queries/source-chat-links";
+import { readerMayUseChunk, resolveCitationLink } from "@/lib/source-chat-links";
+import type { RetrievedChunk } from "@/db/queries/source-chunks";
 import { withFallback } from "./fallback";
 import { configureLangSmith } from "./langsmith";
 import { LENSES, type Lens } from "./specialists";
@@ -66,11 +67,40 @@ function resolveProvider(p?: string): AiProvider | undefined {
   return p && VALID_PROVIDERS.has(p as AiProvider) ? (p as AiProvider) : undefined;
 }
 
+// A reader who cannot edit the course must never be answered from an unpublished lesson: the indexer
+// embeds drafts too, so their chunks are dropped right after retrieval, before the prompt and the
+// citations are built (readerMayUseChunk). To keep top-k meaningful, readers' retrieval over-fetches
+// and the kept chunks are trimmed back to top-k.
+const READER_OVERFETCH = 3;
+const READER_MAX_FETCH = 36;
+
+/** The chunks a non-editor may be answered from, at most topK. Fails closed: on an error, no lesson chunks. */
+export async function chunksForReader<C extends Pick<RetrievedChunk, "kind" | "title" | "text">>(
+  course: Pick<Course, "id">,
+  retrieved: readonly C[],
+  topK: number,
+): Promise<C[]> {
+  try {
+    const ctx = await loadReaderChunkContext(course, retrieved);
+    return retrieved.filter((c) => readerMayUseChunk(c, ctx)).slice(0, topK);
+  } catch (err) {
+    console.error("source-chat: could not check lesson publish state; answering from bibliography only", err);
+    return retrieved.filter((c) => c.kind !== "lesson").slice(0, topK);
+  }
+}
+
 export async function sourceChat(course: Course, question: string, opts: SourceChatOptions): Promise<SourceChatResult> {
   configureLangSmith();
   const topK = Math.min(Math.max(opts.topK ?? 6, 1), 12);
+  const isEditor = opts.viewer?.isEditor ?? false;
   const qv = await embedQuery(question);
-  const chunks = await retrieveChunks(course.tenantId, course.id, qv, topK);
+  const fetchK = isEditor ? topK : Math.min(topK * READER_OVERFETCH, READER_MAX_FETCH);
+  const retrieved = await retrieveChunks(course.tenantId, course.id, qv, fetchK);
+  const chunks = isEditor ? retrieved : await chunksForReader(course, retrieved, topK);
+  if (retrieved.length > 0 && chunks.length === 0) {
+    // Everything retrieved came from lessons this reader cannot see yet: say so without asking a model.
+    return { answer: "That isn't covered in this course's sources.", citations: [], agents: [], usedChunks: 0 };
+  }
   if (chunks.length === 0) {
     return {
       answer: "This course's sources haven't been indexed yet, so I can't answer from them. (An admin indexes it from Admin, Source chat index, or with `pnpm rag:index`.)",
@@ -93,7 +123,7 @@ export async function sourceChat(course: Course, question: string, opts: SourceC
   const model = withFallback((m) => m, { temperature: opts.temperature ?? 0.2, maxTokens: 700, provider });
 
   // Links are resolved while the model works; a failure here costs the links, never the answer.
-  const linksPromise = loadCitationLinkContext(course, chunks, opts.viewer ?? { isEditor: false })
+  const linksPromise = loadCitationLinkContext(course, chunks, { isEditor })
     .then((ctx) => chunks.map((c) => resolveCitationLink(c, ctx)))
     .catch((err: unknown) => {
       console.error("source-chat: citation links failed", err);

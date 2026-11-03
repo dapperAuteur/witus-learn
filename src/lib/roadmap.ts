@@ -40,7 +40,10 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   a bibliography entry opens the source's URL, hosted copy or DOI in a new tab, else the course's Sources page; a
   public-domain text opens its URL. Resolved at answer time (\`src/lib/source-chat-links.ts\`): a lesson is found by
   title among the lessons this viewer may open, a shared title is settled by which body holds the passage, and
-  anything unsure gets no link rather than a guess.
+  anything unsure gets no link rather than a guess. Also closes a leak: drafts are indexed too, so a learner could be
+  answered from an unpublished lesson's text; now a non-editor's retrieval over-fetches and drops every lesson chunk not
+  provably from a published lesson before the prompt is built (\`readerMayUseChunk\`). Editors keep everything. Later:
+  have the indexer skip unpublished lessons (task 399).
 - 🔧 **Saved source chats, platform owner only** (\`feat/source-chat-history-owner\`, stacked on the citation-links
   branch; migration \`0077_source_chat_history\`, applied by \`migrate-production.yml\` on the merge). BAM 2026-11-02:
   "add for me only first, I'll consider it for other users later." Each question the owner asks is saved with its

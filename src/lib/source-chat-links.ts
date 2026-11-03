@@ -181,3 +181,55 @@ export function duplicateTitleLessonIds(lessons: readonly LinkableLesson[], cite
   }
   return [...byTitle.values()].filter((ids) => ids.length > 1).flat();
 }
+
+// ── What a reader may be answered from ───────────────────────────────────────
+
+export interface ReaderLesson {
+  id: string;
+  title: string;
+  isPublished: boolean;
+}
+
+export interface ReaderChunkContext {
+  /** Editors and the owner keep every chunk, unpublished lessons included. */
+  isEditor: boolean;
+  /** EVERY lesson of the course, published or not, so a title shared with a draft is seen as shared. */
+  lessons: readonly ReaderLesson[];
+  /**
+   * Bodies (cleaned with cleanChunkSource) of the PUBLISHED lessons whose title is shared with another
+   * lesson of the course, by lesson id. Only those are needed (see readerMayUseChunk).
+   */
+  sharedTitleBodies?: ReadonlyMap<string, string>;
+}
+
+/**
+ * May this chunk be used to answer this reader, and be shown in their citations? The indexer embeds
+ * every lesson, drafts too, so for a reader who cannot edit the course a lesson chunk is kept only when
+ * it provably comes from a published lesson, matched by title like resolveCitationLink:
+ *   - the title belongs to exactly one lesson and that lesson is published: keep;
+ *   - the title is shared (with another lesson, published or not): keep only when a published lesson
+ *     with that title contains the chunk's text;
+ *   - otherwise (a draft's title, no title, a title renamed since indexing): drop.
+ * Citation and public-domain chunks are bibliography material, public with the course, and always kept.
+ */
+export function readerMayUseChunk(chunk: Pick<CitationChunk, "kind" | "title" | "text">, ctx: ReaderChunkContext): boolean {
+  if (ctx.isEditor || chunk.kind !== "lesson") return true;
+  const title = chunk.title?.trim();
+  if (!title) return false;
+  const same = ctx.lessons.filter((l) => l.title.trim() === title);
+  const published = same.filter((l) => l.isPublished);
+  if (published.length === 0) return false;
+  if (same.length === 1) return true;
+  return published.some((l) => ctx.sharedTitleBodies?.get(l.id)?.includes(chunk.text) ?? false);
+}
+
+/** Published lessons whose title is shared with another lesson and is one of the given titles. */
+export function sharedTitlePublishedLessonIds(lessons: readonly ReaderLesson[], titles: Iterable<string>): string[] {
+  const wanted = new Set([...titles].map((t) => t.trim()));
+  const byTitle = new Map<string, ReaderLesson[]>();
+  for (const l of lessons) {
+    const t = l.title.trim();
+    if (wanted.has(t)) byTitle.set(t, [...(byTitle.get(t) ?? []), l]);
+  }
+  return [...byTitle.values()].filter((ls) => ls.length > 1).flatMap((ls) => ls.filter((l) => l.isPublished).map((l) => l.id));
+}
