@@ -200,7 +200,7 @@ Teachers can also edit lesson text, glossary, sources, and recall prompts **in-a
 
 ### 5a. RAG index (embeddings)
 
-A course's **Chat with the sources** answers from `source_chunks`, built by `indexCourse` in
+A course's **course chat** (one tool since 2026-11-03; it replaced the tutor and "Chat with the sources") answers from `source_chunks`, built by `indexCourse` in
 `src/lib/rag/index-course.ts`, which three things call: the admin page **`/admin/rag`** (platform owner:
 every course never indexed or changed since, each with **Run**, plus **Run all**, which works through
 the list one course per request from the browser), `pnpm rag:index` (`scripts/rag-index.ts`), and

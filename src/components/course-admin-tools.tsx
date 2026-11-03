@@ -37,8 +37,8 @@ export interface SourceIndexStatus {
 
 // Editor-only course tools. Two DIFFERENT indexes live here, and the labels keep them apart (BAM, 2026-11-03,
 // after "118 of 118 lessons changed since last index" read like the chat's index):
-//   - the CYOA crossroads index: Gemini `lesson_embeddings`, built by "Generate embeddings" / "Re-index
-//     lessons" (/api/courses/[id]/generate-embeddings). It only picks the "where next" lessons on the lesson
+//   - the CYOA crossroads index: Gemini `lesson_embeddings`, built by "Generate crossroads embeddings" / "Re-index
+//     crossroads" (/api/courses/[id]/generate-embeddings). It only picks the "where next" lessons on the lesson
 //     player in CYOA mode, so it is shown only when the course's navigation is CYOA. `index` counts published
 //     lessons missing or behind their embedding; publishing auto-indexes, later edits need this button.
 //   - the course chat's source index: Mistral `source_chunks`, built on /admin/rag (platform owner), by

@@ -143,6 +143,7 @@ export const TUTORIAL_SCRIPTS: TutorialScript[] = [
   placeholder("launch-to-do-list", "The launch to-do list, and the warning before a course goes live"),
   placeholder("quick-recall", "Quick recall"),
   placeholder("ai-tools-embeddings-audit", "The AI instructor tools"),
+  placeholder("course-chat", "The course chat: questions, follow-ups and linked sources"),
   placeholder("live-sessions", "Running a live session"),
   placeholder("cohorts", "Running a private class"),
   placeholder("family", "The family view for parents"),

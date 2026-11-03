@@ -610,18 +610,50 @@ for another try.`,
     slug: "ai-tools-embeddings-audit",
     title: "Keep your course's AI features current",
     category: "Teaching",
-    keywords: ["embeddings", "index", "reindex", "re-index", "chat with sources", "cyoa", "audit reveals", "ai", "self-check"],
+    keywords: ["embeddings", "index", "reindex", "re-index", "course chat", "chat with sources", "tutor", "cyoa", "crossroads", "audit reveals", "ai", "self-check"],
     body: `# Keep your course's AI features current
 
-At the bottom of your course page (when you're the instructor) you'll find **Instructor tools**.
+At the bottom of your course page (when you're the instructor) you'll find **Instructor tools**. Two
+different indexes show there, and they do different jobs:
 
-- **Generate / Re-index embeddings** powers chat-with-your-sources and the CYOA "crossroads." When you
-  **publish** a course it re-indexes automatically. If you later edit lessons on an already-published
-  course, a badge shows **"N of M lessons changed since last index"**, click **Re-index lessons** to
-  refresh it. (Needs an AI key configured.)
+- **Course chat source index** is what the course chat answers from (every lesson's text and the course's
+  sources, embedded with Mistral). Its line says **current**, or **needs indexing** when the course changed
+  since it was last indexed. It is rebuilt automatically after course updates are merged, and the platform
+  owner can run it on **Admin, Source chat index** (\`/admin/rag\`). Until a course is indexed, the chat
+  stays hidden on its page.
+- **CYOA crossroads index** only appears when the course's navigation is **CYOA**. It picks the "where next"
+  lessons the lesson player offers in CYOA mode, and nothing else: it does **not** feed the course chat.
+  Publishing builds it automatically. If you later edit lessons on an already-published course, a badge
+  shows **"N of M lessons changed since the last crossroads index"**; click **Re-index crossroads** to
+  refresh it. (Needs an AI key configured.) On a linear course you can ignore it.
 - **Audit reveals** asks the AI whether each \`:::reveal\` self-check answer is actually supported by
   its lesson, and lists any that look off. It's an advisory suggestion, so always verify before you
   change a card, but it's a fast way to catch an answer that drifted after you rewrote a lesson.`,
+  },
+  {
+    slug: "course-chat",
+    title: "The course chat: questions, follow-ups and linked sources",
+    category: "Teaching",
+    keywords: ["chat", "course chat", "tutor", "ai tutor", "ask", "chat with the sources", "follow-up", "citations", "sentence coach"],
+    body: `# The course chat
+
+Every indexed course page has one **Chat with this course** panel. (Until November 2026 there were two,
+"Ask the course tutor" and "Chat with the sources"; they gave the same answers, so they became one.)
+
+- **Ask, then ask a follow-up.** The chat remembers the conversation, so "can you give an example of
+  that?" works. **New conversation** starts over.
+- **Answers come from the course's own sources.** Each answer cites numbered sources; open **Sources used**
+  and click one to read it: a lesson opens at the passage, a source opens its page or the course's Sources
+  page. Learners are only ever answered from published lessons.
+- **Grounding** is strict by default (if the sources don't cover it, the chat says so) or mixed (sources
+  first, labeled general knowledge when they fall short), set per course on **Admin, Course chat**.
+- **Who can use it:** you and other editors always; learners enrolled on a paid course by default; or only
+  you, or every enrolled learner, as set on **Admin, Course chat**. The brand's **AI tutor** switch in
+  Brand settings turns it off for learners.
+- **Language courses** also show the **sentence coach** on exercise lessons: a learner writes a sentence and
+  gets a verdict, a correction and the rule, from the same sources.
+
+Nothing a learner asks is saved. The platform owner's own conversations are saved for them alone.`,
   },
   {
     slug: "live-sessions",
@@ -1091,7 +1123,7 @@ Full runbook: **OPERATING.md** in the repo. The essentials:
 ## The golden rule
 Code alone doesn't change what learners see, courses render from the **database**. After a merge to
 main, two GitHub workflows do it for you: **Migrate production database** applies new migrations,
-then **Seed production courses** re-runs **seed:courses** and refreshes the "chat with the sources"
+then **Seed production courses** re-runs **seed:courses** and refreshes the course chat's source
 index for the courses whose files changed. Other seeds are still run by hand:
 
 \`\`\`
@@ -1284,7 +1316,8 @@ Brand admins can change the school themselves, no code change and no support tic
   - The **Saved brand** card at the top of the page shows how the saved logo, wordmark,
     tagline, and accent render together right now.
 - **Gamification dose**: off, light (streaks and mastery), or full (adds XP, levels, badges).
-- **AI tutor**: turn the tutor and sentence coach off for this brand.
+- **AI tutor**: turn the course chat and the sentence coach off for learners at this brand (instructors can
+  still test them).
 - **Age gate**: require an age check before entering the site.
 - **Coming soon**: show a launch holding page instead of the catalog. While it is on, the
   "notify me" form collects signups even if the lead funnel toggle is off.

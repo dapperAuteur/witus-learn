@@ -389,8 +389,8 @@ describe("indexCourse rebuild rules (static, no database)", () => {
     expect(q).toContain("${sourceChunks.embeddingV2} <=> ${vec}::vector");
     expect(q).not.toContain("${sourceChunks.embedding} <=>");
     // The question is embedded with the index's model, never with CYOA's Gemini embedder.
-    const chat = readFileSync(join(process.cwd(), "src/lib/ai/source-chat.ts"), "utf8");
-    expect(chat).toContain("await embedQuery(question)");
+    const chat = readFileSync(join(process.cwd(), "src/lib/ai/course-chat.ts"), "utf8");
+    expect(chat).toContain("await embedQuery(query)"); // the question, or a follow-up's standalone rewrite
     expect(chat).not.toMatch(/from "\.\/embeddings"/);
   });
   it("the migration is additive and indexes the new column by hand", () => {

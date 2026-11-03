@@ -5,6 +5,21 @@
 export const ROADMAP = `# Learn.WitUS, Roadmap
 
 ## Platform
+- 🔧 **One course chat: the tutor and "chat with the sources" combined** (\`feat/one-course-chat\`, migration
+  \`0078_source_chat_history_conversation\`, applied by \`migrate-production.yml\` on the merge; task 400). BAM,
+  2026-11-03: the two gave the same answer to the same prompt; one saved chats, the other felt like a conversation, one
+  linked its sources. Now one **Chat with this course** panel and one route, \`POST /api/courses/[id]/chat\`: real
+  follow-ups (earlier turns sent, a follow-up rewritten into a standalone question for retrieval, the conversation as
+  context and never as a source), grounded on the Mistral source index with the reader filter on every turn, numbered
+  citations that link to the passage, streamed. Kept from the tutor: streaming, an optional supervisor that picks the
+  lenses per question, the brand's AI tutor switch, the sentence coach (\`mode: "evaluate"\`, now on the same index).
+  Kept from source chat: stage, agents, grounding, provider and the rest from \`/admin/source-chat\` (now "Course
+  chat"); the default stage for a course with nothing saved is **paid**, the tutor's old audience. The owner's turns
+  are saved with a conversation id and shown as whole threads. \`/source-chat\`, \`/tutor\` and \`/tutor/evaluate\`
+  forward to it with Deprecation headers. Not carried over: the tutor's glossary block (the glossary is not in the
+  source index). Instructor tools: the Gemini embeddings badge is now labeled the **CYOA crossroads index** and shows
+  only in CYOA mode, with a separate line for the chat's source index (current / needs indexing, link to
+  \`/admin/rag\` for the owner); the help article that said it powered chat-with-your-sources is corrected.
 - 🔧 **"Sign out" leaves Learn only; "Sign out of WitUS everywhere" is its own control**
   (\`fix/sign-out-this-app-or-everywhere\`, no migration). BAM, 2026-10-29, witus task 128 option (b):
   since 2026-08-30 the plain Sign out also ended the WitUS session (and was relabeled "Sign out of

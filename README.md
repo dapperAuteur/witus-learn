@@ -644,7 +644,32 @@ edit** (quiet until the course file changes again) or **Take the course file's v
 This made `seed:courses` and the RAG index safe to automate:
 [.github/workflows/seed-production.yml](.github/workflows/seed-production.yml) (OPERATING.md 3b).
 
-**The "chat with the sources" index** (`source_chunks`, `course_rag_index`) embeds with Mistral's
+## The course chat (`POST /api/courses/[id]/chat`)
+
+**One tool since 2026-11-03.** "Ask the course tutor" and "Chat with the sources" gave the same answers to the
+same question, so they were combined (BAM, 2026-11-03). The course page shows one **Chat with this course**
+panel (`src/components/course-chat.tsx`); the engine is `src/lib/ai/course-chat.ts` and the route's access,
+saving and streaming are in `src/lib/course-chat-handler.ts`.
+
+- **Multi-turn.** The client sends the earlier turns (the server keeps the last 6) and a conversation id. A
+  follow-up is rewritten into a standalone question for retrieval (falls back to previous question plus this
+  one), and the conversation goes into the prompt as context, never as a source.
+- **Grounded on the source index** below, every turn, with the reader filter (learners are never answered
+  from an unpublished lesson; editors see everything). Numbered citations link to the passage.
+- **Configured per course on `/admin/source-chat`** ("Course chat"): stage (owner, invited, paid; **paid is
+  the default** for a course with nothing saved, the old tutor's audience), agents (explain, examples,
+  coach), an optional supervisor that picks among them per question, grounding (strict, mixed), provider,
+  temperature, top-k. Editors always have it; for learners the brand's **AI tutor** flag must be on.
+- **Streams NDJSON** (`meta` with citations, `token`s, `done` with the saved id); `?format=json` returns one
+  reply. `mode: "evaluate"` with a `sentence` is the language courses' sentence coach on the same index.
+- **Old routes forward here** with `Deprecation: true` and `Link: rel="successor-version"`:
+  `/api/courses/[id]/source-chat` (JSON, old shape), `/api/courses/[id]/tutor` (NDJSON, `usedLessons` and
+  `lenses` in meta), `/api/courses/[id]/tutor/evaluate` (the coach). Nothing in the app calls them.
+- The tutor used to retrieve from the CYOA `lesson_embeddings`; nothing but CYOA crossroads reads those now.
+  The course page's Instructor tools label them "CYOA crossroads index" and show them only in CYOA mode,
+  with a separate line for this chat's source index (`getCourseIndexState`, the `/admin/rag` rule).
+
+**The course chat's source index** (`source_chunks`, `course_rag_index`) embeds with Mistral's
 `mistral-embed` (1024 dimensions, `source_chunks.embedding_v2`, migration 0076; it was Gemini 768 until
 2026-11-02). The question is embedded with the same model. **`/admin/rag`** (platform owner) lists every
 course never indexed or changed since, with **Run** per course and **Run all**, which calls
@@ -668,12 +693,14 @@ lesson needs a published lesson whose body contains the chunk), and trims back t
 prompt and the citations are built. If the publish state cannot be read it fails closed (bibliography
 chunks only). Editors and the owner keep every chunk.
 
-**Saved chats (platform owner only).** When the platform owner asks, the question, answer, citations
-(with their links), agents and grounding are saved to `source_chat_history` (migration 0077); nobody
+**Saved chats (platform owner only).** When the platform owner asks, each turn's question, answer,
+citations (with their links), agents and grounding are saved to `source_chat_history` (migration 0077),
+with its `conversation_id` and `turn` (migration 0078) so a saved chat shows the whole thread; nobody
 else's questions are stored. Saving never blocks or fails the answer (`src/lib/source-chat-history.ts`
 gives up after 3 seconds and logs). The owner sees "Your saved chats for this course" under the chat,
-and **`/admin/source-chat-history`** lists every saved chat with a course filter, **Delete** per chat
-and **Delete all** (`DELETE /api/admin/source-chat-history[/id]`, owner-only).
+and **`/admin/source-chat-history`** lists every saved conversation with a course filter, **Delete** per
+conversation and **Delete all** (`DELETE /api/admin/source-chat-history[/id|?conversationId=|?courseId=]`,
+owner-only).
 
 ## Launch to-do list and release follow-ups (`course_launch_todos`, `course_release_followups`)
 
