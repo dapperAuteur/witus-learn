@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import type { SourceChatConfig } from "@/db/queries/source-chat-config";
+import { SourceChatCitations, type SourceChatCitationView } from "@/components/source-chat-citations";
 
 type Lens = "explain" | "examples" | "coach";
 const AGENTS: { v: Lens; label: string }[] = [
@@ -17,8 +18,7 @@ const PROVIDERS = [
 ];
 const DEFAULT: SourceChatConfig = { stage: "owner", agents: ["explain", "examples"], provider: "", temperature: 0.2, topK: 6, grounding: "strict" };
 
-interface Citation { n: number; kind: string; title: string | null; snippet: string }
-interface ChatResult { answer: string; citations: Citation[]; agents: string[]; usedChunks: number }
+interface ChatResult { answer: string; citations: SourceChatCitationView[]; agents: string[]; usedChunks: number }
 
 const field = "w-full rounded-md border border-neutral-300 px-3 py-2 text-sm dark:border-neutral-700 dark:bg-neutral-900";
 
@@ -161,11 +161,7 @@ export function SourceChatAdmin({ courses }: { courses: { id: string; title: str
               {result.usedChunks} chunk(s) retrieved · agents: {result.agents.join(", ") || "-"}
             </div>
             {result.citations.length ? (
-              <ol className="space-y-1 text-xs text-neutral-600">
-                {result.citations.map((c) => (
-                  <li key={c.n}>[{c.n}] <span className="font-medium">{c.kind}</span>{c.title ? ` · ${c.title}` : ""}: {c.snippet}…</li>
-                ))}
-              </ol>
+              <SourceChatCitations citations={result.citations} className="space-y-1 text-xs text-neutral-600" />
             ) : null}
           </div>
         ) : null}

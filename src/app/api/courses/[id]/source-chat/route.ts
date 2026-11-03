@@ -57,6 +57,7 @@ export async function POST(req: Request, { params }: Params) {
     temperature: eff.temperature,
     topK: eff.topK,
     grounding: eff.grounding,
+    viewer: { isEditor: isAdmin },
   });
   return json(result);
 }

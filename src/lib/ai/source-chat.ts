@@ -4,6 +4,8 @@ import { retrieveChunks } from "@/db/queries/source-chunks";
 // The RAG index is mistral-embed since migration 0076, so the question MUST be embedded with the same
 // model; src/lib/ai/embeddings.ts (Gemini) stays CYOA's lesson_embeddings embedder and is not used here.
 import { embedQuery } from "@/lib/rag/embed-batch";
+import { loadCitationLinkContext } from "@/db/queries/source-chat-links";
+import { resolveCitationLink } from "@/lib/source-chat-links";
 import { withFallback } from "./fallback";
 import { configureLangSmith } from "./langsmith";
 import { LENSES, type Lens } from "./specialists";
@@ -20,6 +22,8 @@ export interface SourceChatOptions {
   temperature?: number;
   topK?: number;
   grounding?: "strict" | "mixed";
+  /** Who is asking, so a citation only links to lessons this viewer may open. Default: a learner. */
+  viewer?: { isEditor: boolean };
 }
 
 export interface SourceChatCitation {
@@ -27,6 +31,10 @@ export interface SourceChatCitation {
   kind: string;
   title: string | null;
   snippet: string;
+  /** Where to read it in full (src/lib/source-chat-links.ts), or null when there is nowhere sure. */
+  href: string | null;
+  /** True when href is another site (open in a new tab). */
+  external: boolean;
 }
 
 export interface SourceChatResult {
@@ -84,6 +92,14 @@ export async function sourceChat(course: Course, question: string, opts: SourceC
   const provider = resolveProvider(opts.provider);
   const model = withFallback((m) => m, { temperature: opts.temperature ?? 0.2, maxTokens: 700, provider });
 
+  // Links are resolved while the model works; a failure here costs the links, never the answer.
+  const linksPromise = loadCitationLinkContext(course, chunks, opts.viewer ?? { isEditor: false })
+    .then((ctx) => chunks.map((c) => resolveCitationLink(c, ctx)))
+    .catch((err: unknown) => {
+      console.error("source-chat: citation links failed", err);
+      return chunks.map(() => null);
+    });
+
   const findings = await Promise.all(
     agents.map(async (lens) => {
       const res = await model.invoke(
@@ -112,9 +128,17 @@ export async function sourceChat(course: Course, question: string, opts: SourceC
     answer = asText(res.content);
   }
 
+  const links = await linksPromise;
   return {
     answer,
-    citations: chunks.map((c, i) => ({ n: i + 1, kind: c.kind, title: c.title, snippet: c.text.slice(0, 160).replace(/\s+/g, " ").trim() })),
+    citations: chunks.map((c, i) => ({
+      n: i + 1,
+      kind: c.kind,
+      title: c.title,
+      snippet: c.text.slice(0, 160).replace(/\s+/g, " ").trim(),
+      href: links[i]?.href ?? null,
+      external: links[i]?.external ?? false,
+    })),
     agents,
     usedChunks: chunks.length,
   };

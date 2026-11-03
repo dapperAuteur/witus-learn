@@ -1,9 +1,9 @@
 "use client";
 
 import { useState } from "react";
+import { SourceChatCitations, type SourceChatCitationView } from "@/components/source-chat-citations";
 
-interface Citation { n: number; kind: string; title: string | null; snippet: string }
-interface ChatResult { answer: string; citations: Citation[]; usedChunks: number }
+interface ChatResult { answer: string; citations: SourceChatCitationView[]; usedChunks: number }
 
 // Learner-facing "chat with the sources" panel on the course page. Answers strictly from the course's
 // indexed sources (the server enforces access + grounding). Rendered only when the learner is allowed
@@ -69,11 +69,7 @@ export function CourseSourceChat({ courseId, courseTitle }: { courseId: string; 
           {result.citations.length ? (
             <details className="text-xs text-neutral-600">
               <summary className="cursor-pointer">Sources used ({result.citations.length})</summary>
-              <ol className="mt-2 space-y-1">
-                {result.citations.map((c) => (
-                  <li key={c.n}>[{c.n}] <span className="font-medium">{c.kind}</span>{c.title ? ` · ${c.title}` : ""}: {c.snippet}…</li>
-                ))}
-              </ol>
+              <SourceChatCitations citations={result.citations} className="mt-2 space-y-1" />
             </details>
           ) : null}
         </div>
