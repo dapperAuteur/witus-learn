@@ -36,6 +36,8 @@ import { TutorChat } from "@/components/tutor-chat";
 import { CourseSourceChat } from "@/components/course-source-chat";
 import { getSourceChatConfig } from "@/db/queries/source-chat-config";
 import { courseHasChunks } from "@/db/queries/source-chunks";
+import { listSavedSourceChats } from "@/db/queries/source-chat-history";
+import type { SavedChatView } from "@/components/saved-source-chats";
 import { sourceChatAllowed } from "@/lib/source-chat-access";
 import { CourseAdminTools } from "@/components/course-admin-tools";
 import { getEmbeddingStaleness } from "@/db/queries/cyoa";
@@ -226,6 +228,14 @@ export default async function CourseBySlugPage({ params }: Params) {
     (course.isPublished || isEditor) && // editors can test on their own unpublished courses
     (await courseHasChunks(course.tenantId, course.id)) &&
     sourceChatAllowed({ isEditor, isEnrolled: view.isEnrolled, free: isFreeCourse(course), stage: sourceChatConfig.stage });
+  // Saved answers are the platform owner's only (BAM, 2026-11-02); everyone else gets null and sees nothing.
+  const savedSourceChats: SavedChatView[] | null =
+    showSourceChat && view.session && (await isPlatformOwner(view.session.user.id))
+      ? (await listSavedSourceChats(view.session.user.id, { courseId: course.id, limit: 50 })).map((c) => ({
+          ...c,
+          createdAt: c.createdAt.toISOString(),
+        }))
+      : null;
   const typeIcon = (t: string) =>
     ({ text: "📖", exercise: "✍️", quiz: "🧠", map: "🗺️", video: "🎬", "360video": "🎬", audio: "🎧", assignment: "📝" })[t] ?? "📄";
 
@@ -784,7 +794,7 @@ export default async function CourseBySlugPage({ params }: Params) {
         <TutorChat courseId={course.id} courseTitle={course.title} />
       ) : null}
 
-      {showSourceChat ? <CourseSourceChat courseId={course.id} courseTitle={course.title} /> : null}
+      {showSourceChat ? <CourseSourceChat courseId={course.id} courseTitle={course.title} saved={savedSourceChats} /> : null}
 
       {view.isEditor ? (
         <CourseAdminTools

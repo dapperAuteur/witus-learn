@@ -2,17 +2,28 @@
 
 import { useState } from "react";
 import { SourceChatCitations, type SourceChatCitationView } from "@/components/source-chat-citations";
+import { CourseSavedChats, type SavedChatView } from "@/components/saved-source-chats";
 
-interface ChatResult { answer: string; citations: SourceChatCitationView[]; usedChunks: number }
+interface ChatResult { answer: string; citations: SourceChatCitationView[]; usedChunks: number; savedId?: string | null }
 
 // Learner-facing "chat with the sources" panel on the course page. Answers strictly from the course's
 // indexed sources (the server enforces access + grounding). Rendered only when the learner is allowed
-// and the course has been indexed.
-export function CourseSourceChat({ courseId, courseTitle }: { courseId: string; courseTitle: string }) {
+// and the course has been indexed. `saved` is the platform owner's saved answers for this course (null
+// for everyone else, whose questions are never stored).
+export function CourseSourceChat({
+  courseId,
+  courseTitle,
+  saved = null,
+}: {
+  courseId: string;
+  courseTitle: string;
+  saved?: SavedChatView[] | null;
+}) {
   const [question, setQuestion] = useState("");
   const [asking, setAsking] = useState(false);
   const [result, setResult] = useState<ChatResult | null>(null);
   const [error, setError] = useState<string | null>(null);
+  const [savedChats, setSavedChats] = useState<SavedChatView[] | null>(saved);
 
   async function ask() {
     if (!question.trim()) return;
@@ -26,7 +37,26 @@ export function CourseSourceChat({ courseId, courseTitle }: { courseId: string; 
         body: JSON.stringify({ question: question.trim() }),
       });
       const data = (await res.json().catch(() => ({}))) as ChatResult & { error?: string };
-      if (res.ok) setResult(data);
+      if (res.ok) {
+        setResult(data);
+        // The server saved it (owner only): show it at the top of the saved list straight away.
+        if (data.savedId && savedChats) {
+          const first = savedChats[0];
+          setSavedChats([
+            {
+              id: data.savedId,
+              courseId,
+              courseTitle,
+              tenantName: first?.tenantName ?? "",
+              question: question.trim(),
+              answer: data.answer,
+              citations: data.citations,
+              createdAt: new Date().toISOString(),
+            },
+            ...savedChats,
+          ]);
+        }
+      }
       else setError(data.error ?? "Something went wrong. Please try again.");
     } catch {
       setError("Network error. Please try again.");
@@ -74,6 +104,7 @@ export function CourseSourceChat({ courseId, courseTitle }: { courseId: string; 
           ) : null}
         </div>
       ) : null}
+      {savedChats ? <CourseSavedChats items={savedChats} onItemsChange={setSavedChats} /> : null}
     </section>
   );
 }

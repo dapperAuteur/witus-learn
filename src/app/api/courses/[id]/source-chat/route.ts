@@ -6,6 +6,9 @@ import { getSourceChatConfig } from "@/db/queries/source-chat-config";
 import { sourceChat } from "@/lib/ai/source-chat";
 import type { Lens } from "@/lib/ai/specialists";
 import { getActiveLearner } from "@/lib/active-learner";
+import { isPlatformOwner } from "@/lib/session";
+import { insertSavedSourceChat } from "@/db/queries/source-chat-history";
+import { saveIfOwner } from "@/lib/source-chat-history";
 
 type Params = { params: Promise<{ id: string }> };
 
@@ -59,5 +62,26 @@ export async function POST(req: Request, { params }: Params) {
     grounding: eff.grounding,
     viewer: { isEditor: isAdmin },
   });
-  return json(result);
+
+  // Saved for the platform owner only (BAM, 2026-11-02); nobody else's questions are stored. Never
+  // blocks or fails the answer: saveIfOwner swallows errors and gives up after a few seconds.
+  const savedId = await saveIfOwner({
+    isOwner: () => isPlatformOwner(session.user.id),
+    save: () =>
+      insertSavedSourceChat({
+        tenantId: course.tenantId,
+        courseId: course.id,
+        userId: session.user.id,
+        question: parsed.data.question,
+        answer: result.answer,
+        citations: result.citations,
+        agents: result.agents,
+        grounding: eff.grounding ?? null,
+        provider: eff.provider || null,
+        temperature: eff.temperature ?? null,
+        topK: eff.topK ?? null,
+        usedChunks: result.usedChunks,
+      }),
+  });
+  return json({ ...result, savedId });
 }

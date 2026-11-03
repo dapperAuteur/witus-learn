@@ -90,6 +90,13 @@ export const ADMIN_NAV: AdminNavItem[] = [
   { href: "/admin/commands", title: "Commands", desc: "CLI reference, migrations, seeds, feedback:list…", icon: "⌨️", ownerOnly: true },
   { href: "/admin/source-chat", title: "Source Chat", desc: "Chat-with-sources config + test (per course).", icon: "💬", ownerOnly: true },
   {
+    href: "/admin/source-chat-history",
+    title: "Saved source chats",
+    desc: "Your saved chat-with-the-sources answers across courses: filter, read, delete.",
+    icon: "🧾",
+    ownerOnly: true,
+  },
+  {
     href: "/admin/rag",
     title: "Source chat index",
     desc: "Courses whose chat-with-the-sources index is new or out of date: Run one, or Run all.",
