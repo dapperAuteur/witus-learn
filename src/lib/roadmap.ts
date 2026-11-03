@@ -34,6 +34,13 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   to 60 requests a minute and retried on 429. Questions are embedded with the same model. New owner page
   \`/admin/rag\` lists every course never indexed or changed since, with Run per course and Run all (one
   request per course, from the browser). The legacy 768-dim column stays until a cleanup migration (plan 99).
+- 🔧 **Source chat citations link to where they can be read** (\`feat/source-chat-citation-links\`, no migration,
+  no re-index). BAM 2026-11-02: each numbered source under a "chat with the sources" answer is a link. A lesson
+  passage opens its lesson with a \`#:~:text=\` fragment, so a supporting browser scrolls to it and highlights it;
+  a bibliography entry opens the source's URL, hosted copy or DOI in a new tab, else the course's Sources page; a
+  public-domain text opens its URL. Resolved at answer time (\`src/lib/source-chat-links.ts\`): a lesson is found by
+  title among the lessons this viewer may open, a shared title is settled by which body holds the passage, and
+  anything unsure gets no link rather than a guess.
 - 🔧 **Reviewer sign-off, version 2** (\`bundle/learn-pending-2026-11-01\`, migration
   \`0074_review_v2_seed_drift_rag_index\`, applied by \`migrate-production.yml\` on the merge). Plans/97 Part B,
   BAM's answers 2026-11-01. A greyed-out verdict form says why (\`verdictBlockReason\`: the course's own

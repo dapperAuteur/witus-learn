@@ -651,6 +651,16 @@ course never indexed or changed since, with **Run** per course and **Run all**, 
 `POST /api/admin/rag/index` once per course from the browser. `pnpm rag:index` and the seed workflow use
 the same `indexCourse`. Needs `MISTRAL_API_KEY` (OPERATING.md 5a).
 
+**Citation links.** Each numbered source under an answer links to where it can be read in full,
+resolved when the answer is built (`src/lib/source-chat-links.ts`, gathered by
+`src/db/queries/source-chat-links.ts`; no lesson id is stored on a chunk, so no re-index is needed). A
+lesson passage links to its lesson, matched by title among the lessons the reader may open (published
+ones, or all for an editor), with a URL text fragment (`#:~:text=`) so a supporting browser scrolls to
+the passage and highlights it; a shared title is settled by which body contains the passage, and an
+unsure match gets no link. A bibliography entry links to its `url`, then its hosted `pdf_url`, then its
+DOI, in a new tab; with none of those it links to the course's Sources page when the reader may open it.
+A public-domain text links to its source URL.
+
 ## Launch to-do list and release follow-ups (`course_launch_todos`, `course_release_followups`)
 
 A course that is ready is not the same as a course that is launched: the blog post that announces it,
