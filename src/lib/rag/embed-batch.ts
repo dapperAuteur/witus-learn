@@ -5,8 +5,9 @@
 // minute and failed `rag:index:prod` with 429s. Of the keys Learn already holds, Anthropic has no
 // embeddings API and Together's only embedding model (bge-base-en-v1.5) has a 512-token context, too
 // close to our 1,800-character chunks; mistral-embed takes 8k tokens per input and also suits the
-// planned Spanish editions. This module covers the RAG index and the RAG query only. CYOA's
-// lesson_embeddings keep Gemini (src/lib/ai/embeddings.ts) and are not touched.
+// planned Spanish editions. This module covers the RAG index and the RAG query, and since migration
+// 0079 the CYOA crossroads index too (lesson_embeddings.embedding_v2, src/lib/cyoa/crossroads-index.ts;
+// BAM, 2026-11-03: "move CYOA to Mistral"), so Learn has one embedding provider.
 //
 // What it does:
 //   1. sends texts in BATCHES (one POST per batch, at most BATCH_MAX_TEXTS texts and

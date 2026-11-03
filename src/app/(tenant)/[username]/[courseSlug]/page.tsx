@@ -38,10 +38,10 @@ import { courseHasChunks } from "@/db/queries/source-chunks";
 import { listSavedSourceChats } from "@/db/queries/source-chat-history";
 import type { SavedChatView } from "@/components/saved-source-chats";
 import { courseChatAllowed } from "@/lib/source-chat-access";
-import { hasAiProvider, hasGemini } from "@/lib/env";
+import { hasAiProvider, hasMistral } from "@/lib/env";
 import { getCourseIndexState } from "@/lib/rag/index-course";
 import { CourseAdminTools } from "@/components/course-admin-tools";
-import { getEmbeddingStaleness } from "@/db/queries/cyoa";
+import { getCrossroadsStatus } from "@/lib/cyoa/crossroads-index";
 import { hasAgeConsentCookie } from "@/lib/age-gate";
 import { AgeGate } from "@/components/age-gate";
 import { brandName } from "@/lib/branding";
@@ -810,8 +810,8 @@ export default async function CourseBySlugPage({ params }: Params) {
         <CourseAdminTools
           courseId={course.id}
           navigationMode={course.navigationMode}
-          // The CYOA crossroads index (Gemini lesson_embeddings) matters only in CYOA mode.
-          index={course.navigationMode === "cyoa" ? await getEmbeddingStaleness(course.id) : undefined}
+          // The CYOA crossroads index (Mistral lesson_embeddings.embedding_v2) matters only in CYOA mode.
+          index={course.navigationMode === "cyoa" ? await getCrossroadsStatus(course.id) : undefined}
           // The course chat's own index (Mistral source_chunks), by the rule /admin/rag uses. A failed read
           // shows nothing rather than breaking the page.
           sourceIndex={await getCourseIndexState(course.id).catch((err: unknown) => {
@@ -819,7 +819,7 @@ export default async function CourseBySlugPage({ params }: Params) {
             return null;
           })}
           viewerIsOwner={viewerIsOwner}
-          geminiConfigured={hasGemini}
+          crossroadsKeyConfigured={hasMistral}
         />
       ) : null}
     </main>

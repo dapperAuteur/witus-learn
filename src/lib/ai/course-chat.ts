@@ -3,7 +3,7 @@ import { z } from "zod";
 import type { Course } from "@/db/schema";
 import { retrieveChunks } from "@/db/queries/source-chunks";
 // The RAG index is mistral-embed since migration 0076, so the question MUST be embedded with the same
-// model; src/lib/ai/embeddings.ts (Gemini) stays CYOA's lesson_embeddings embedder and is not used here.
+// model. (CYOA's crossroads index uses the same embedder since migration 0079, in its own table.)
 import { embedQuery } from "@/lib/rag/embed-batch";
 import { loadCitationLinkContext, loadReaderChunkContext } from "@/db/queries/source-chat-links";
 import { readerMayUseChunk, resolveCitationLink } from "@/lib/source-chat-links";

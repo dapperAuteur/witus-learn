@@ -68,8 +68,8 @@ export async function POST(req: Request, { params }: Params) {
     readiness,
   });
   if (!updated) return errorJson("Not found", 404);
-  // Same as publishing through the settings PATCH: (re)index the embeddings after the response so
-  // chat-with-sources and CYOA routing see the lessons. Best-effort; the manual button remains.
+  // Same as publishing through the settings PATCH: (re)index the CYOA crossroads embeddings (Mistral)
+  // after the response so CYOA routing sees the lessons. Best-effort; the manual button remains.
   if (decision.patch.isPublished && !course.isPublished) {
     after(async () => {
       try {

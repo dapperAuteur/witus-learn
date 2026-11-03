@@ -624,9 +624,11 @@ different indexes show there, and they do different jobs:
 - **CYOA crossroads index** only appears when the course's navigation is **CYOA**. It picks the "where next"
   lessons the lesson player offers in CYOA mode, and nothing else: it does **not** feed the course chat.
   Publishing builds it automatically. If you later edit lessons on an already-published course, a badge
-  shows **"N of M lessons changed since the last crossroads index"**; click **Re-index crossroads** to
-  refresh it. It needs a **Gemini** key; when the deployment has none, the tools say so and the button is
-  off (the course chat is unaffected, it uses Mistral). On a linear course you can ignore it.
+  shows **"N of M lessons new or changed since the last crossroads index"**; click **Re-index crossroads**
+  to refresh it (only the new or changed lessons are embedded again). It uses **Mistral** embeddings, the
+  same provider as the course chat, so it needs the deployment's Mistral key; when there is none, the tools
+  say so and the button is off. A lesson that isn't embedded yet still offers **Continue** and **Unexpected
+  path**, just no **Related** picks. On a linear course you can ignore it.
 - **Audit reveals** asks the AI whether each \`:::reveal\` self-check answer is actually supported by
   its lesson, and lists any that look off. It's an advisory suggestion, so always verify before you
   change a card, but it's a fast way to catch an answer that drifted after you rewrote a lesson.`,

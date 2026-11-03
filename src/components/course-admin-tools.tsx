@@ -37,10 +37,12 @@ export interface SourceIndexStatus {
 
 // Editor-only course tools. Two DIFFERENT indexes live here, and the labels keep them apart (BAM, 2026-11-03,
 // after "118 of 118 lessons changed since last index" read like the chat's index):
-//   - the CYOA crossroads index: Gemini `lesson_embeddings`, built by "Generate crossroads embeddings" / "Re-index
-//     crossroads" (/api/courses/[id]/generate-embeddings). It only picks the "where next" lessons on the lesson
-//     player in CYOA mode, so it is shown only when the course's navigation is CYOA. `index` counts published
-//     lessons missing or behind their embedding; publishing auto-indexes, later edits need this button.
+//   - the CYOA crossroads index: Mistral `lesson_embeddings.embedding_v2` (since migration 0079; it was Gemini),
+//     built by "Generate crossroads embeddings" / "Re-index crossroads" (/api/courses/[id]/generate-embeddings).
+//     It only picks the "where next" lessons on the lesson player in CYOA mode, so it is shown only when the
+//     course's navigation is CYOA. `index` counts published lessons with no Mistral vector or whose title or
+//     text changed since it was embedded (getCrossroadsStatus); publishing auto-indexes, later edits need
+//     this button, and the seed workflow backfills every CYOA course (OPERATING.md 3c).
 //   - the course chat's source index: Mistral `source_chunks`, built on /admin/rag (platform owner), by
 //     `pnpm rag:index`, or by the seed workflow after a merge. `sourceIndex` is its one-line status.
 export function CourseAdminTools({
@@ -49,7 +51,7 @@ export function CourseAdminTools({
   index,
   sourceIndex,
   viewerIsOwner = false,
-  geminiConfigured = true,
+  crossroadsKeyConfigured = true,
 }: {
   courseId: string;
   navigationMode: string;
@@ -57,8 +59,8 @@ export function CourseAdminTools({
   index?: { published: number; stale: number };
   sourceIndex?: SourceIndexStatus | null;
   viewerIsOwner?: boolean;
-  /** Whether this deployment has GOOGLE_GEMINI_API_KEY; the crossroads embedder is Gemini-only. */
-  geminiConfigured?: boolean;
+  /** Whether this deployment has MISTRAL_API_KEY; the crossroads embedder is Mistral's mistral-embed. */
+  crossroadsKeyConfigured?: boolean;
 }) {
   const router = useRouter();
   const [pending, setPending] = useState<string | null>(null);
@@ -74,7 +76,13 @@ export function CourseAdminTools({
     const r = await fetch(`/api/courses/${courseId}/generate-embeddings`, { method: "POST" });
     const d = await r.json().catch(() => ({}));
     setPending(null);
-    setMsg(r.ok ? `Embedded ${d.embedded} lesson(s).` : (d.error ?? "Failed to embed."));
+    setMsg(
+      r.ok
+        ? d.embedded > 0
+          ? `Embedded ${d.embedded} lesson(s)${d.current ? `; ${d.current} were already current` : ""}.`
+          : "Every published lesson was already current; nothing to embed."
+        : (d.error ?? "Failed to embed."),
+    );
     if (r.ok) router.refresh(); // pull a fresh staleness count after re-indexing
   }
 
@@ -147,23 +155,23 @@ export function CourseAdminTools({
           <button
             type="button"
             onClick={generateEmbeddings}
-            disabled={!!pending || !geminiConfigured}
+            disabled={!!pending || !crossroadsKeyConfigured}
             className="min-h-9 rounded-md border border-neutral-300 px-3 font-medium focus-visible:outline-2 focus-visible:outline-offset-2 disabled:opacity-60 dark:border-neutral-700"
           >
             {pending === "embed" ? "Embedding…" : stale ? "Re-index crossroads" : "Generate crossroads embeddings"}
           </button>
           {stale ? (
             <span className="rounded-full bg-amber-100 px-2 py-0.5 text-xs font-medium text-amber-800 dark:bg-amber-900/40 dark:text-amber-200">
-              {index!.stale} of {index!.published} lesson{index!.published === 1 ? "" : "s"} changed since the last crossroads index
+              {index!.stale} of {index!.published} lesson{index!.published === 1 ? "" : "s"} new or changed since the last crossroads index
             </span>
           ) : index && index.published > 0 ? (
             <span className="text-xs text-green-700 dark:text-green-400">Crossroads index up to date ✓</span>
           ) : null}
-          {!geminiConfigured ? (
+          {!crossroadsKeyConfigured ? (
             <p role="status" className="w-full text-xs text-amber-800 dark:text-amber-200">
-              This deployment has no Gemini key (GOOGLE_GEMINI_API_KEY), so the crossroads index can&apos;t be built or
-              refreshed here. Lessons already embedded keep their crossroads; new or edited ones get none. The course
-              chat is not affected: it uses its own Mistral index.
+              This deployment has no Mistral key (MISTRAL_API_KEY), so the crossroads index can&apos;t be built or
+              refreshed here. Lessons already embedded keep their crossroads; new or edited ones get no
+              &ldquo;Related&rdquo; picks until it is set.
             </p>
           ) : null}
         </div>
@@ -191,8 +199,8 @@ export function CourseAdminTools({
       </div>
       <p className="mt-2 text-xs text-neutral-600">
         {cyoa
-          ? "The crossroads index only picks the CYOA \u201cwhere next\u201d lessons on the lesson player (Gemini key needed); it is not the course chat's index. Publishing re-indexes it automatically; re-index by hand after editing lessons on an already-published course. "
-          : `Switch navigation to CYOA to get crossroads on the lesson player; its index appears here then${geminiConfigured ? "" : " (it needs a Gemini key, which this deployment doesn't have)"}. `}
+          ? "The crossroads index only picks the CYOA \u201cwhere next\u201d lessons on the lesson player (Mistral key needed); it is not the course chat's index. Publishing re-indexes it automatically; re-index by hand after editing lessons on an already-published course. A lesson not embedded yet still gets its Continue and Unexpected path picks, just no Related ones. "
+          : `Switch navigation to CYOA to get crossroads on the lesson player; its index appears here then${crossroadsKeyConfigured ? "" : " (it needs a Mistral key, which this deployment doesn't have)"}. `}
         &ldquo;Audit reveals&rdquo; asks the AI
         whether each self-check answer is supported by its lesson (advisory, needs an AI key).
         &ldquo;Audit assessment fit&rdquo; asks whether each lesson uses the right WIDGET (scored
