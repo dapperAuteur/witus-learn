@@ -11,5 +11,9 @@ allowBuilds:
   esbuild: true
   sharp: true
   unrs-resolver: true
+minimumReleaseAgeExclude:
+  - '@posthog/browser-common@0.10.4'
+  - '@posthog/core@1.62.1'
+  - posthog-js@1.445.1
 patchedDependencies:
   '@react-pdf/hyphenate@0.1.0': patches/@react-pdf__hyphenate@0.1.0.patch
