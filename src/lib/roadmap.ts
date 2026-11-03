@@ -41,6 +41,12 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   public-domain text opens its URL. Resolved at answer time (\`src/lib/source-chat-links.ts\`): a lesson is found by
   title among the lessons this viewer may open, a shared title is settled by which body holds the passage, and
   anything unsure gets no link rather than a guess.
+- 🔧 **Saved source chats, platform owner only** (\`feat/source-chat-history-owner\`, stacked on the citation-links
+  branch; migration \`0077_source_chat_history\`, applied by \`migrate-production.yml\` on the merge). BAM 2026-11-02:
+  "add for me only first, I'll consider it for other users later." Each question the owner asks is saved with its
+  answer, linked citations, agents and grounding; nobody else's are stored. Saving never blocks or fails the answer
+  (gives up after 3 s). The course page shows the owner's saved chats for that course; owner-only
+  \`/admin/source-chat-history\` lists all of them with a course filter, Delete per chat and Delete all.
 - 🔧 **Reviewer sign-off, version 2** (\`bundle/learn-pending-2026-11-01\`, migration
   \`0074_review_v2_seed_drift_rag_index\`, applied by \`migrate-production.yml\` on the merge). Plans/97 Part B,
   BAM's answers 2026-11-01. A greyed-out verdict form says why (\`verdictBlockReason\`: the course's own

@@ -661,6 +661,13 @@ unsure match gets no link. A bibliography entry links to its `url`, then its hos
 DOI, in a new tab; with none of those it links to the course's Sources page when the reader may open it.
 A public-domain text links to its source URL.
 
+**Saved chats (platform owner only).** When the platform owner asks, the question, answer, citations
+(with their links), agents and grounding are saved to `source_chat_history` (migration 0077); nobody
+else's questions are stored. Saving never blocks or fails the answer (`src/lib/source-chat-history.ts`
+gives up after 3 seconds and logs). The owner sees "Your saved chats for this course" under the chat,
+and **`/admin/source-chat-history`** lists every saved chat with a course filter, **Delete** per chat
+and **Delete all** (`DELETE /api/admin/source-chat-history[/id]`, owner-only).
+
 ## Launch to-do list and release follow-ups (`course_launch_todos`, `course_release_followups`)
 
 A course that is ready is not the same as a course that is launched: the blog post that announces it,
