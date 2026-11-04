@@ -28,7 +28,12 @@ vi.mock("@/lib/api", () => ({
 }));
 vi.mock("@/db/queries/enrollment", () => ({ isEnrolled: mocks.isEnrolled }));
 vi.mock("@/lib/gating", () => ({ isFreeCourse: () => true }));
-vi.mock("@/db/queries/source-chat-config", () => ({ getSourceChatConfig: mocks.getSourceChatConfig }));
+// The platform-wide "Course chat for everyone else" switch is on here, so the per-course stage ("invited") decides
+// and an enrolled learner gets the answer; tests/course-chat.test.ts covers the switch being off (owner only).
+vi.mock("@/db/queries/source-chat-config", () => ({
+  getSourceChatConfig: mocks.getSourceChatConfig,
+  courseChatOpenToOthers: async () => true,
+}));
 // The engine's turn is mocked as events from mocks.sourceChat's answer; collectCourseChat stays real.
 vi.mock("@/lib/ai/course-chat", async (importOriginal) => ({
   ...(await importOriginal<typeof import("@/lib/ai/course-chat")>()),
