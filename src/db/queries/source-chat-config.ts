@@ -1,5 +1,5 @@
 import "server-only";
-import { and, eq } from "drizzle-orm";
+import { and, desc, eq, isNull } from "drizzle-orm";
 import { db } from "@/db/client";
 import { platformSettings } from "@/db/schema/tenancy";
 import type { Lens } from "@/lib/ai/specialists";
@@ -7,10 +7,12 @@ import type { Lens } from "@/lib/ai/specialists";
 // Owner-managed per-course config for the course chat (was "chat with the sources"), stored as one JSON value
 // in the tenant-scoped platform_settings table under `source_chat:<courseId>` (no migration). Drives the
 // access stage (owner → invited → paid), which agents run and how they are picked, provider, and grounding.
-// A course with nothing saved gets DEFAULT_SOURCE_CHAT_CONFIG: stage "paid" since 2026-11-03, the audience the
-// old course tutor had, so merging the two tools took the chat away from no enrolled paid learner.
+// A course with nothing saved gets DEFAULT_SOURCE_CHAT_CONFIG: stage "owner" since 2026-11-04 (BAM: "chat should
+// only be available for me until I turn it on for other users"; it was "paid" for one day after the merge of the
+// tutor and source chat). Above every stage sits the platform-wide switch below: while it is off (the default),
+// only the platform owner gets the chat anywhere. The rule itself is src/lib/source-chat-access.ts.
 export interface SourceChatConfig {
-  /** owner = owner/instructor only · invited = + enrolled learners · paid = + enrolled on a paid course. */
+  /** owner = platform owner only · invited = + editors + enrolled learners · paid = + editors + enrolled on a paid course. */
   stage: "owner" | "invited" | "paid";
   agents: Lens[];
   /** all = every agent above runs; auto = a supervisor picks 1+ of them per question (the old tutor's routing). */
@@ -23,7 +25,7 @@ export interface SourceChatConfig {
 }
 
 export const DEFAULT_SOURCE_CHAT_CONFIG: SourceChatConfig = {
-  stage: "paid",
+  stage: "owner",
   agents: ["explain", "examples"],
   routing: "all",
   provider: "",
@@ -70,4 +72,31 @@ export async function setSourceChatConfig(tenantId: string, courseId: string, co
     .values({ tenantId, key: keyFor(courseId), value })
     .onConflictDoUpdate({ target: [platformSettings.tenantId, platformSettings.key], set: { value, updatedAt: new Date() } });
   return clean;
+}
+
+// ── The platform-wide switch: "Course chat for everyone else" ─────────────────────────────────────────────────
+//
+// One row in platform_settings with a NULL tenant (the teacher-age rule's pattern, src/db/queries/teacher-age.ts;
+// no migration). OFF unless the row says "on", so a missing row, a failed write or a fresh database all mean
+// owner-only. The (tenant_id, key) unique constraint does not cover NULLs, so reads take the newest row and
+// writes replace every row for the key.
+export const COURSE_CHAT_OPEN_KEY = "course_chat:open_to_others";
+
+export async function courseChatOpenToOthers(): Promise<boolean> {
+  const [row] = await db
+    .select({ value: platformSettings.value })
+    .from(platformSettings)
+    .where(and(isNull(platformSettings.tenantId), eq(platformSettings.key, COURSE_CHAT_OPEN_KEY)))
+    .orderBy(desc(platformSettings.updatedAt))
+    .limit(1);
+  return row?.value === "on";
+}
+
+export async function setCourseChatOpenToOthers(on: boolean): Promise<void> {
+  await db.transaction(async (tx) => {
+    await tx
+      .delete(platformSettings)
+      .where(and(isNull(platformSettings.tenantId), eq(platformSettings.key, COURSE_CHAT_OPEN_KEY)));
+    await tx.insert(platformSettings).values({ tenantId: null, key: COURSE_CHAT_OPEN_KEY, value: on ? "on" : "off" });
+  });
 }

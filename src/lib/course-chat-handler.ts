@@ -3,7 +3,7 @@ import { z } from "zod";
 import { apiContext, canEditCourse, errorJson, json } from "@/lib/api";
 import { isEnrolled } from "@/db/queries/enrollment";
 import { isFreeCourse } from "@/lib/gating";
-import { getSourceChatConfig } from "@/db/queries/source-chat-config";
+import { courseChatOpenToOthers, getSourceChatConfig } from "@/db/queries/source-chat-config";
 import {
   collectCourseChat,
   courseChatEvents,
@@ -85,16 +85,19 @@ export async function handleCourseChat(req: Request, courseId: string, legacy?: 
   if (!course.isPublished && !isEditor) return errorJson("Not found", 404);
 
   const config = await getSourceChatConfig(sdb.tenantId, courseId);
-  let allowed = isEditor;
-  if (!allowed) {
+  const isOwner = await isPlatformOwner(session.user.id);
+  let allowed = isOwner;
+  if (!allowed && (await courseChatOpenToOthers())) {
     // Enrollment is per learner (see /api/courses/[id]/enroll), so check the ACTIVE learner (self, or a
-    // managed child while "studying as"), not the signed-in account directly.
-    const learner = (await getActiveLearner(session))!;
+    // managed child while "studying as"), not the signed-in account directly. Editors skip the read.
+    const learner = isEditor ? null : (await getActiveLearner(session))!;
     allowed = courseChatAllowed({
-      isEditor: false,
-      isEnrolled: await isEnrolled(learner.id, courseId),
+      isOwner: false,
+      isEditor,
+      isEnrolled: learner ? await isEnrolled(learner.id, courseId) : false,
       free: isFreeCourse(course),
       stage: config.stage,
+      openToOthers: true,
       brandAiOn: sdb.tenant.flags.aiTutor !== false,
     });
   }
@@ -134,7 +137,7 @@ export async function handleCourseChat(req: Request, courseId: string, legacy?: 
   // Saved for the platform owner only (BAM, 2026-11-02), one row per turn; nobody else's questions are stored.
   const save = (r: { answer: string; citations: SourceChatCitation[]; agents: Lens[]; usedChunks: number }) =>
     saveIfOwner({
-      isOwner: () => isPlatformOwner(session.user.id),
+      isOwner: async () => isOwner,
       save: () =>
         insertSavedSourceChat({
           tenantId: course.tenantId,

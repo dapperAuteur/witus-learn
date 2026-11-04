@@ -17,13 +17,20 @@ const PROVIDERS = [
   { v: "openai", label: "OpenAI" },
 ];
 // Mirrors DEFAULT_SOURCE_CHAT_CONFIG (server-only module); the form loads the saved config over it.
-const DEFAULT: SourceChatConfig = { stage: "paid", agents: ["explain", "examples"], routing: "all", provider: "", temperature: 0.2, topK: 6, grounding: "strict" };
+const DEFAULT: SourceChatConfig = { stage: "owner", agents: ["explain", "examples"], routing: "all", provider: "", temperature: 0.2, topK: 6, grounding: "strict" };
 
 interface ChatResult { answer: string; citations: SourceChatCitationView[]; agents: string[]; usedChunks: number }
 
 const field = "w-full rounded-md border border-neutral-300 px-3 py-2 text-sm dark:border-neutral-700 dark:bg-neutral-900";
 
-export function SourceChatAdmin({ courses }: { courses: { id: string; title: string }[] }) {
+export function SourceChatAdmin({
+  courses,
+  openToOthers = false,
+}: {
+  courses: { id: string; title: string }[];
+  /** The platform-wide "Course chat for everyone else" switch; while off, the stage below waits. */
+  openToOthers?: boolean;
+}) {
   const [courseId, setCourseId] = useState(courses[0]?.id ?? "");
   const [config, setConfig] = useState<SourceChatConfig>(DEFAULT);
   const [status, setStatus] = useState<{ kind: "ok" | "err"; msg: string } | null>(null);
@@ -99,10 +106,15 @@ export function SourceChatAdmin({ courses }: { courses: { id: string; title: str
           <label className="block text-sm">
             Who can use it
             <select value={config.stage} onChange={(e) => setConfig((c) => ({ ...c, stage: e.target.value as SourceChatConfig["stage"] }))} className={`mt-1 ${field}`}>
-              <option value="owner">Owner / instructor only (test)</option>
-              <option value="invited">+ Enrolled learners (invited)</option>
-              <option value="paid">+ Enrolled on a paid course (default)</option>
+              <option value="owner">Only me, the platform owner (default)</option>
+              <option value="invited">+ Editors and enrolled learners (invited)</option>
+              <option value="paid">+ Editors and learners enrolled on a paid course</option>
             </select>
+            {!openToOthers ? (
+              <span className="mt-1 block text-xs text-neutral-600 dark:text-neutral-400">
+                Saved, but waiting: &ldquo;Course chat for everyone else&rdquo; is off, so only you see the chat on every course.
+              </span>
+            ) : null}
           </label>
           <label className="block text-sm">
             Grounding

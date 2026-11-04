@@ -20,6 +20,8 @@ const mocks = vi.hoisted(() => ({
   canEditCourse: vi.fn(),
   isEnrolled: vi.fn(),
   getSourceChatConfig: vi.fn(),
+  openToOthers: true,
+  setCourseChatOpenToOthers: vi.fn(),
   getActiveLearner: vi.fn(),
   isPlatformOwner: vi.fn(),
   insertSavedSourceChat: vi.fn(),
@@ -72,7 +74,12 @@ vi.mock("@/lib/api", () => ({
 }));
 vi.mock("@/db/queries/enrollment", () => ({ isEnrolled: mocks.isEnrolled }));
 vi.mock("@/lib/gating", () => ({ isFreeCourse: () => mocks.free }));
-vi.mock("@/db/queries/source-chat-config", () => ({ getSourceChatConfig: mocks.getSourceChatConfig }));
+vi.mock("@/db/queries/source-chat-config", async (importOriginal) => ({
+  ...(await importOriginal<typeof import("@/db/queries/source-chat-config")>()),
+  getSourceChatConfig: mocks.getSourceChatConfig,
+  courseChatOpenToOthers: async () => mocks.openToOthers,
+  setCourseChatOpenToOthers: mocks.setCourseChatOpenToOthers,
+}));
 vi.mock("@/lib/active-learner", () => ({ getActiveLearner: mocks.getActiveLearner }));
 vi.mock("@/lib/session", () => ({ isPlatformOwner: mocks.isPlatformOwner }));
 vi.mock("@/db/queries/source-chat-history", () => ({
@@ -96,6 +103,8 @@ import { POST as oldSourceChat } from "@/app/api/courses/[id]/source-chat/route"
 import { POST as oldTutor } from "@/app/api/courses/[id]/tutor/route";
 import { POST as oldEvaluate } from "@/app/api/courses/[id]/tutor/evaluate/route";
 import { DELETE as deleteAll } from "@/app/api/admin/source-chat-history/route";
+import { GET as getOpen, POST as setOpen } from "@/app/api/admin/source-chat/open-to-others/route";
+import { DEFAULT_SOURCE_CHAT_CONFIG, sanitizeConfig } from "@/db/queries/source-chat-config";
 import type { Course } from "@/db/schema";
 
 const COURSE_ID = "11111111-1111-4111-8111-111111111111";
@@ -143,6 +152,9 @@ beforeEach(() => {
   mocks.embedded.length = 0;
   mocks.failCondense = false;
   mocks.free = false;
+  // Most tests below exercise the per-course stages, which only apply once the owner's platform-wide switch is
+  // on; the "owner only by default" block turns it off.
+  mocks.openToOthers = true;
   course = COURSE;
   brandFlags = {};
   mocks.cachedLessonSummaries.mockResolvedValue([
@@ -244,28 +256,76 @@ describe("follow-ups use the prior turns", () => {
   });
 });
 
-describe("access: editors always; others by the brand switch and the course's stage", () => {
+describe("access: owner only until the platform switch is on, then by the course's stage", () => {
   it("is the pure rule", () => {
-    const base = { isEditor: false, isEnrolled: true, free: false };
+    const base = { isOwner: false, isEditor: false, isEnrolled: true, free: false, openToOthers: true };
+    // the owner always, switch off or on, any stage, brand AI off
+    for (const stage of ["owner", "invited", "paid"] as const) {
+      expect(courseChatAllowed({ ...base, isOwner: true, stage, openToOthers: false, brandAiOn: false })).toBe(true);
+    }
+    // switch off: nobody else, editors included
+    expect(courseChatAllowed({ ...base, stage: "paid", openToOthers: false })).toBe(false);
+    expect(courseChatAllowed({ ...base, isEditor: true, stage: "invited", openToOthers: false })).toBe(false);
+    // switch on: the stage decides
     expect(courseChatAllowed({ ...base, stage: "owner" })).toBe(false);
+    expect(courseChatAllowed({ ...base, isEditor: true, stage: "owner" })).toBe(false);
     expect(courseChatAllowed({ ...base, stage: "invited" })).toBe(true);
     expect(courseChatAllowed({ ...base, stage: "paid" })).toBe(true);
     expect(courseChatAllowed({ ...base, free: true, stage: "paid" })).toBe(false);
     expect(courseChatAllowed({ ...base, isEnrolled: false, stage: "invited" })).toBe(false);
     expect(courseChatAllowed({ ...base, stage: "paid", brandAiOn: false })).toBe(false);
-    expect(courseChatAllowed({ ...base, isEditor: true, stage: "owner", brandAiOn: false })).toBe(true);
+    expect(courseChatAllowed({ ...base, isEditor: true, isEnrolled: false, stage: "paid", brandAiOn: false })).toBe(true);
   });
 
-  it("the route refuses by stage, brand switch and publish state, and lets editors in", async () => {
+  it("a course with nothing saved is the owner's only", () => {
+    expect(DEFAULT_SOURCE_CHAT_CONFIG.stage).toBe("owner");
+    expect(sanitizeConfig({}).stage).toBe("owner");
+    expect(sanitizeConfig({ stage: "everyone" }).stage).toBe("owner");
+    expect(sanitizeConfig({ stage: "paid" }).stage).toBe("paid");
+  });
+
+  it("no saved config: only the owner gets 200, even with the switch on", async () => {
+    mocks.getSourceChatConfig.mockResolvedValue({ ...DEFAULT_SOURCE_CHAT_CONFIG });
+    for (const open of [false, true]) {
+      mocks.openToOthers = open;
+      signIn("owner");
+      expect((await post(chat, { question: "Hi" }, "?format=json")).status).toBe(200);
+      for (const who of ["learner", "instructor"]) {
+        signIn(who);
+        expect((await post(chat, { question: "Hi" }, "?format=json")).status).toBe(403);
+      }
+    }
+  });
+
+  it("switch off: only the owner, whatever the course's stage says", async () => {
+    mocks.openToOthers = false;
+    for (const stage of ["invited", "paid"]) {
+      mocks.getSourceChatConfig.mockResolvedValue({ ...DEFAULT_SOURCE_CHAT_CONFIG, stage });
+      for (const who of ["learner", "instructor"]) {
+        signIn(who);
+        expect((await post(chat, { question: "Hi" }, "?format=json")).status).toBe(403);
+      }
+      signIn("owner");
+      expect((await post(chat, { question: "Hi" }, "?format=json")).status).toBe(200);
+    }
+    // the owner may still test an unpublished course
+    course = { ...COURSE, isPublished: false } as Course;
+    expect((await post(chat, { question: "Hi" }, "?format=json")).status).toBe(200);
+  });
+
+  it("switch on: an explicit stage is honored, with the brand switch and publish state", async () => {
     signIn(null);
     expect((await post(chat, { question: "Hi" })).status).toBe(401);
 
     signIn("learner");
+    expect((await post(chat, { question: "Hi" })).status).toBe(200); // stage "paid", enrolled, paid course
     mocks.getSourceChatConfig.mockResolvedValueOnce({ ...(await mocks.getSourceChatConfig()), stage: "owner" });
     expect((await post(chat, { question: "Hi" })).status).toBe(403);
 
     mocks.free = true; // stage "paid" on a free course
     expect((await post(chat, { question: "Hi" })).status).toBe(403);
+    mocks.getSourceChatConfig.mockResolvedValueOnce({ ...(await mocks.getSourceChatConfig()), stage: "invited" });
+    expect((await post(chat, { question: "Hi" })).status).toBe(200);
     mocks.free = false;
 
     brandFlags = { aiTutor: false };
@@ -280,6 +340,25 @@ describe("access: editors always; others by the brand switch and the course's st
     expect((await post(chat, { question: "Hi" })).status).toBe(404);
     signIn("instructor");
     expect((await post(chat, { question: "Hi" })).status).toBe(200);
+  });
+
+  it("the platform switch is the owner's alone", async () => {
+    const req = (on: unknown) =>
+      new Request("http://learn.test/api/admin/source-chat/open-to-others", { method: "POST", body: JSON.stringify({ on }) });
+    signIn(null);
+    expect((await setOpen(req(true))).status).toBe(401);
+    for (const who of ["learner", "instructor"]) {
+      signIn(who);
+      expect((await setOpen(req(true))).status).toBe(403);
+      expect((await getOpen()).status).toBe(403);
+    }
+    expect(mocks.setCourseChatOpenToOthers).not.toHaveBeenCalled();
+    signIn("owner");
+    expect((await setOpen(req("yes"))).status).toBe(400);
+    expect((await setOpen(req(true))).status).toBe(200);
+    expect(mocks.setCourseChatOpenToOthers).toHaveBeenCalledWith(true);
+    mocks.openToOthers = false;
+    expect(await (await getOpen()).json()).toEqual({ on: false });
   });
 
   it("ignores a learner's config override and honors an editor's", async () => {

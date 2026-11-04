@@ -33,7 +33,7 @@ import { ProgressBar } from "@/components/progress-bits";
 import { getUnmetRequired, listPrerequisites } from "@/db/queries/prerequisites";
 import { CourseActions } from "@/components/course-actions";
 import { CourseChat } from "@/components/course-chat";
-import { getSourceChatConfig } from "@/db/queries/source-chat-config";
+import { courseChatOpenToOthers, getSourceChatConfig } from "@/db/queries/source-chat-config";
 import { courseHasChunks } from "@/db/queries/source-chunks";
 import { listSavedSourceChats } from "@/db/queries/source-chat-history";
 import type { SavedChatView } from "@/components/saved-source-chats";
@@ -223,22 +223,27 @@ export default async function CourseBySlugPage({ params }: Params) {
   const savablePaths = new Set(savableLessons.map((l) => l.pagePath));
 
   // The course chat (one tool since 2026-11-03; it replaced "Ask the course tutor" and "Chat with the sources"):
-  // shown when an AI provider is configured, the course is indexed, and this viewer may use it (editors always;
-  // others need the brand's AI switch and the course's stage from /admin/source-chat). The route checks again.
-  const sourceChatConfig = await getSourceChatConfig(course.tenantId, course.id);
+  // shown when an AI provider is configured, the course is indexed, and this viewer may use it: the platform owner
+  // always; everyone else only once the owner turns on "Course chat for everyone else" on /admin/source-chat, and
+  // then by the course's stage (src/lib/source-chat-access.ts). The route checks again.
+  // Asked only when something below uses it: the chat, the saved threads, or the /admin/rag link in Instructor tools.
+  const viewerIsOwner = view.session && (hasAiProvider || isEditor) ? await isPlatformOwner(view.session.user.id) : false;
+  const chatCandidate = hasAiProvider && !!view.session && (course.isPublished || isEditor); // editors can test unpublished
+  const chatOpenToOthers = chatCandidate && !viewerIsOwner ? await courseChatOpenToOthers() : false;
   const showCourseChat =
-    hasAiProvider &&
-    (course.isPublished || isEditor) && // editors can test on their own unpublished courses
-    courseChatAllowed({
-      isEditor,
-      isEnrolled: view.isEnrolled,
-      free: isFreeCourse(course),
-      stage: sourceChatConfig.stage,
-      brandAiOn: view.tenant.flags.aiTutor !== false,
-    }) &&
+    chatCandidate &&
+    (viewerIsOwner ||
+      (chatOpenToOthers &&
+        courseChatAllowed({
+          isOwner: false,
+          isEditor,
+          isEnrolled: view.isEnrolled,
+          free: isFreeCourse(course),
+          stage: (await getSourceChatConfig(course.tenantId, course.id)).stage,
+          openToOthers: true,
+          brandAiOn: view.tenant.flags.aiTutor !== false,
+        }))) &&
     (await courseHasChunks(course.tenantId, course.id));
-  // Asked only when something below uses it: the saved threads, or the /admin/rag link in Instructor tools.
-  const viewerIsOwner = view.session && (showCourseChat || isEditor) ? await isPlatformOwner(view.session.user.id) : false;
   // Saved threads are the platform owner's only (BAM, 2026-11-02); everyone else gets null and sees nothing.
   // A failed read (e.g. the deploy beat a migration) hides the block rather than breaking the course page.
   const savedSourceChats: SavedChatView[] | null =
