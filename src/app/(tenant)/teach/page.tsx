@@ -183,9 +183,11 @@ export default async function TeachPage({
             vetted: c.vettedAt != null,
             instructorLabel: labelFor(c),
             review: reviewFor(c.id),
+            navigationMode: c.navigationMode,
           }))}
           canVet={isAdmin}
           canOpenUnvetted={owner}
+          canRunCrossroadsBackfill={owner}
           initialStatus={status}
         />
       )}

@@ -219,19 +219,33 @@ export async function auditorReadOnlyBlock(input: {
     : null;
 }
 
+/** The per-course half of loadEditableCourse, for a route that acts on several courses at once
+ *  (POST /api/courses/bulk-navigation): the same answer the single-course PATCH would give. */
+export async function checkEditableCourse(
+  sdb: ScopedDb,
+  session: Session | null,
+  id: string,
+): Promise<{ course: Course } | { status: 403 | 404 }> {
+  const course = await sdb.getCourseById(id);
+  if (!course) return { status: 404 };
+  // canAccessCourse (not canEditCourse): an OWNER-ONLY course can't be edited by brand_admins, and
+  // is answered with the learner's not-found (a refusal there means the caller is neither the owner
+  // nor its instructor), so the response does not confirm it exists.
+  if (!(await canAccessCourse(session, sdb.tenantId, course))) {
+    return { status: session && course.ownerOnly ? 404 : 403 };
+  }
+  return { course };
+}
+
 /** Load a course for editing: 404 if it isn't this tenant's, 403 if the caller
  *  can't edit it. Returns either the context or a ready-to-return response. */
 export async function loadEditableCourse(
   id: string,
 ): Promise<{ sdb: ScopedDb; session: Session; course: Course } | { res: NextResponse }> {
   const { sdb, session } = await apiContext();
-  const course = await sdb.getCourseById(id);
-  if (!course) return { res: errorJson("Not found", 404) };
-  // canAccessCourse (not canEditCourse): an OWNER-ONLY course can't be edited by brand_admins, and
-  // is answered with the learner's not-found (a refusal there means the caller is neither the owner
-  // nor its instructor), so the response does not confirm it exists.
-  if (!(await canAccessCourse(session, sdb.tenantId, course))) {
-    return { res: session && course.ownerOnly ? errorJson("Not found", 404) : errorJson("Forbidden", 403) };
+  const checked = await checkEditableCourse(sdb, session, id);
+  if ("status" in checked) {
+    return { res: checked.status === 404 ? errorJson("Not found", 404) : errorJson("Forbidden", 403) };
   }
-  return { sdb, session: session as Session, course };
+  return { sdb, session: session as Session, course: checked.course };
 }
