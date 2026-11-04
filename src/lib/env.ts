@@ -196,6 +196,8 @@ export const hasDatabase = !env.DATABASE_URL.includes("placeholder");
 export const hasMailgun = Boolean(env.MAILGUN_API_KEY && env.MAILGUN_DOMAIN);
 export const hasStripe = Boolean(env.STRIPE_SECRET_KEY);
 export const hasGemini = Boolean(env.GOOGLE_GEMINI_API_KEY);
+/** Mistral embeddings can run: the source chat index (0076) and the CYOA crossroads index (0079). */
+export const hasMistral = Boolean(env.MISTRAL_API_KEY);
 export const hasCloudinary = Boolean(
   env.NEXT_PUBLIC_CLOUDINARY_CLOUD_NAME && env.CLOUDINARY_UPLOAD_PRESET,
 );

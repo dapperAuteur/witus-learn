@@ -1,6 +1,7 @@
 import { sql } from "drizzle-orm";
-import { check, index, integer, pgTable, text, timestamp, uuid } from "drizzle-orm/pg-core";
+import { check, index, integer, jsonb, pgTable, real, text, timestamp, uuid } from "drizzle-orm/pg-core";
 import { vector } from "./_types";
+import { users } from "./auth";
 import { courses } from "./courses";
 import { courseSources } from "./pedagogy";
 import { tenants } from "./tenancy";
@@ -69,3 +70,63 @@ export const courseRagIndex = pgTable(
 );
 
 export type CourseRagIndex = typeof courseRagIndex.$inferSelect;
+
+/** One citation of a saved answer, exactly as the asker saw it, links included (src/lib/source-chat-links.ts). */
+export interface SavedSourceChatCitation {
+  n: number;
+  kind: string;
+  title: string | null;
+  snippet: string;
+  href: string | null;
+  external: boolean;
+}
+
+/**
+ * Saved "chat with the sources" answers (BAM, 2026-11-02: "add for me only first, I'll consider it for
+ * other users later"). One row per question asked (one turn of a course-chat conversation), written by the
+ * course chat route ONLY when the asker is the platform owner; nobody else's questions are stored. A personal record of the owner's own
+ * questions to the AI, not a message between people (the no-inbox rule is about those). The citations
+ * keep the links resolved at the time, so a saved answer opens the same places it did.
+ */
+export const sourceChatHistory = pgTable(
+  "source_chat_history",
+  {
+    id: uuid("id").primaryKey().defaultRandom(),
+    tenantId: uuid("tenant_id")
+      .notNull()
+      .references(() => tenants.id, { onDelete: "cascade" }),
+    courseId: uuid("course_id")
+      .notNull()
+      .references(() => courses.id, { onDelete: "cascade" }),
+    userId: text("user_id")
+      .notNull()
+      .references(() => users.id, { onDelete: "cascade" }),
+    question: text("question").notNull(),
+    answer: text("answer").notNull(),
+    citations: jsonb("citations").$type<SavedSourceChatCitation[]>().notNull().default([]),
+    /** The specialist lenses that answered (explain, examples, coach). */
+    agents: jsonb("agents").$type<string[]>().notNull().default([]),
+    /** strict | mixed, as used for this answer. */
+    grounding: text("grounding"),
+    /** The provider asked first, or null for the default chain. */
+    provider: text("provider"),
+    temperature: real("temperature"),
+    topK: integer("top_k"),
+    usedChunks: integer("used_chunks").notNull().default(0),
+    /**
+     * The course-chat conversation this turn belongs to (migration 0078), so a saved chat shows the whole
+     * thread. Null on rows saved before 0078: each of those is its own one-turn thread.
+     */
+    conversationId: uuid("conversation_id"),
+    /** 0-based position of this turn in its conversation. */
+    turn: integer("turn").notNull().default(0),
+    createdAt: timestamp("created_at", { withTimezone: true }).notNull().defaultNow(),
+  },
+  (t) => [
+    index("source_chat_history_user_created_idx").on(t.userId, t.createdAt),
+    index("source_chat_history_course_idx").on(t.courseId),
+    index("source_chat_history_user_conversation_idx").on(t.userId, t.conversationId),
+  ],
+);
+
+export type SourceChatHistoryRow = typeof sourceChatHistory.$inferSelect;

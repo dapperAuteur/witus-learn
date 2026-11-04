@@ -14,6 +14,11 @@
 //     PE index page (snapshot 2026-06-01) still links exactly this document
 //   · Economics (2026), Geography & History of the World (2023), World History (2023),
 //     U.S. History (2023), ELA 9-10 / 11-12 (2023) — fetched 2026-07-13 (see per-framework dates)
+//   · 2026-11-03: www.in.gov answered directly. The social-studies index and the 2023 U.S. History,
+//     U.S. Government and Grade 4 PDFs were fetched from in.gov itself, every existing code's text
+//     in those three frameworks was re-checked word for word against them, and the Indiana
+//     site-course claims (indiana.* in claims.ts) were added. The 2026 U.S. History and U.S.
+//     Government PDFs were fetched the same day only to say what changes in that edition.
 //
 // ⚠️ Two-editions problem, still open (see plans/user-tasks/82): IDOE's index lists BOTH a 2026
 // and a 2023 column for every high-school social-studies course. For Economics both editions are
@@ -77,10 +82,10 @@ export const JURISDICTION: JurisdictionFile = {
       name: "Indiana Academic Standards: U.S. Government",
       publisher: "Indiana Department of Education (IDOE)",
       version: "2023",
-      fetchedOn: "2026-07-15",
+      fetchedOn: "2026-11-03",
       sourceUrl: "https://www.in.gov/doe/files/Indiana-Academic-Standards-U.S.-Government.pdf",
       adoption:
-        "The high-school Government course — the framework most of our civics catalog answers to. IDOE's index also lists a 2026 edition, but as retrieved it is published only as a Google Drive link, so we cite the durable 2023 in.gov document. Confirm which edition your school year is being held to.",
+        "The high-school Government course — the framework most of our civics catalog answers to. IDOE's index lists a 2023 and a 2026 edition side by side. The codes here are the 2023 edition's. The 2026 edition renumbers several of them (for example, the organization of state and local governments in Indiana is USG.3.13 there, not USG.3.12) and drops the Benjamin Harrison standard, USG.3.9. Confirm which edition your school year is being held to.",
       standards: [
         {
           code: "USG.1.3",
@@ -110,9 +115,10 @@ export const JURISDICTION: JurisdictionFile = {
             "civics.separation-checks-balances",
             "civics.federalism-why-split-power",
             "civics.in-three-branches",
+            "indiana.fort-harrison-federalism",
           ],
           coverage: "partial",
-          note: "Partial: three of the four named principles — federalism, separation of powers, checks and balances — are taught thoroughly, with examples in both the United States government and Indiana's. “Republican government” is not taught as a named principle.",
+          note: "Partial: three of the four named principles — federalism, separation of powers, checks and balances — are taught thoroughly, with examples in both the United States government and Indiana's. “Republican government” is not taught as a named principle. Fort Harrison: The Federal Footprint adds an Indiana example of federalism only: a federal Army post inside Indiana that the county could not tax (the Enclave Clause and McCulloch v. Maryland), and what changed when the ground passed to state and local owners.",
         },
         {
           code: "USG.3.4",
@@ -135,9 +141,13 @@ export const JURISDICTION: JurisdictionFile = {
         {
           code: "USG.3.6",
           text: "Describe the procedures for amending the United States and Indiana Constitutions, and analyze why it is so difficult to amend these Constitutions.",
-          claimIds: ["civics.article-v-amendment", "civics.in-constitution-amendment"],
+          claimIds: [
+            "civics.article-v-amendment",
+            "civics.in-constitution-amendment",
+            "indiana.mudsock-tax-cap-amendment",
+          ],
           coverage: "partial",
-          note: "Partial: Article V is taught in full, including why the federal bar is so high. On the Indiana side the course teaches who may propose amendments (only the General Assembly — Indiana has no citizen initiative) but not the full two-session-plus-ratification procedure.",
+          note: "Partial: Article V is taught in full, including why the federal bar is so high. On the Indiana side the civics course teaches who may propose amendments (only the General Assembly — Indiana has no citizen initiative), and Mudsock: How a Rivalry Marks a Boundary works the rest of the procedure through one real case: the property-tax-cap amendment, passed in 2008, passed again by a separately elected General Assembly in 2010, then ratified by the voters in November 2010. Why Indiana's procedure is hard to complete is shown by that case, not analyzed in general.",
         },
         {
           code: "USG.3.7",
@@ -156,6 +166,13 @@ export const JURISDICTION: JurisdictionFile = {
           claimIds: ["civics.election-mechanics", "civics.in-election-law"],
           coverage: "full",
           note: "National election law and systems get a full course; Indiana's specifics (photo ID and Crawford v. Marion County, excuse-required absentee voting) get their own lesson. Local variation is handled the honest way — the course teaches students to verify their own county's rules.",
+        },
+        {
+          code: "USG.3.9",
+          text: "Analyze the election of Benjamin Harrison, his approach to the presidency, his relationship to the legislative branch, and his re-election defeat, considering the effects of party politics and public opinion.",
+          claimIds: ["indiana.harrison-presidency"],
+          coverage: "partial",
+          note: "Partial: the 1888 election (an Electoral College win while losing the popular vote, the 'blocks of five' circular), his approach to the office and his relationship with a Congress his own party held are analyzed through one question, voting rights and the 1890 federal elections bill, with party politics and public opinion throughout. His 1892 defeat is reported but not analyzed, and the tariff, silver and foreign policy are left out on purpose. This standard is in the 2023 edition only; the 2026 edition has no Harrison standard.",
         },
         {
           code: "USG.3.11",
@@ -360,10 +377,10 @@ export const JURISDICTION: JurisdictionFile = {
       name: "Indiana Academic Standards: U.S. History",
       publisher: "Indiana Department of Education (IDOE)",
       version: "2023",
-      fetchedOn: "2026-07-13",
+      fetchedOn: "2026-11-03",
       sourceUrl: "https://www.in.gov/doe/files/Indiana-Academic-Standards-U.S.-History.pdf",
       adoption:
-        "The current edition IDOE links for this high-school course. The Great Migration and labor-history courses map here; each entry says exactly which era standard it reaches and which halves it does not.",
+        "The 2023 edition, which IDOE's index lists beside a 2026 edition. The Great Migration, labor-history and Indiana site courses map here; each entry says exactly which era standard it reaches and which halves it does not. The 2026 edition renumbers the era standards, has no separate Historical Thinking domain (USH.10.x here) and no Benjamin Harrison standard (USH.2.6 here), so confirm which edition your school year is being held to.",
       standards: [
         {
           code: "USH.2.4",
@@ -381,6 +398,13 @@ export const JURISDICTION: JurisdictionFile = {
           ],
           coverage: "partial",
           note: "Partial: the standard's second sentence — the denial of African American rights in the South and its effects in future years — is the course's core, taught for twelve lessons, and The Match adds the first sentence's development half from the statute side: 7 U.S.C. § 323, enacted in 1890, deemed a state compliant if it maintained separate colleges and divided the funds equitably, six years before the Supreme Court adopted the doctrine, with the effects in future years traced through the funding record to the present. The case-law development culminating in Plessy is still referenced rather than analyzed case by case.",
+        },
+        {
+          code: "USH.2.6",
+          text: "Describe and assess the contribution of Benjamin Harrison to national policies on environmental protection, business regulation, immigration, and civil rights.",
+          claimIds: ["indiana.harrison-civil-rights-and-immigration-record"],
+          coverage: "partial",
+          note: "Partial: two of the four policy areas. Civil rights is the course's core (his messages on the ballot, the elections and Blair bills, his appointments, his 1892 call for anti-lynching legislation), and immigration is taught through the Geary Act he signed in 1892. Environmental protection is not taught, and business regulation (the Sherman Act, the McKinley Tariff) is left out on purpose. This standard is in the 2023 edition only.",
         },
         {
           code: "USH.3.4",
@@ -411,11 +435,22 @@ export const JURISDICTION: JurisdictionFile = {
           note: "Partial: two of the standard's four areas. The LABOR effect — the Wagner Act, what it created, and precisely who it excluded — is taught in depth, including its long-term consequences. The AGRICULTURE effect is taught through one Second New Deal instrument specifically: section 8(b) of the Soil Conservation and Domestic Allotment Act of 1935, which created the state, county and community committees that administer federal farm programs, and whose long-term effect is that those committees still run conservation and price-support programs today, still elected by producers, at 16 U.S.C. § 590h(b)(5). The standard's remaining two areas, social welfare and banking, are not taught.",
         },
         {
+          code: "USH.6.1",
+          text: "Describe the challenges involved with the enforcement of desegregation directives in Brown v. Board of Education of Topeka (1954). (E)",
+          claimIds: ["indiana.gym-desegregation-enforcement"],
+          coverage: "partial",
+          note: "Partial: one Northern district, worked from the 1971 federal opinion. The Gym and the Color Line teaches how the Indianapolis school board kept its schools segregated after 1954 (optional attendance zones, boundary changes, transfer rules) and how the federal suit filed in 1968 was enforced, through inter-district busing from 1981 to 2016. Brown itself is mentioned rather than taught, and Brown II and Southern massive resistance are not covered.",
+        },
+        {
           code: "USH.7.1",
           text: "Explain the efforts of groups of African Americans, Native Americans, Hispanic Americans, and women to assert their social and civic rights in the years following World War II. (E)",
-          claimIds: ["history.migration-civil-rights-politics", "history.labor-civil-rights"],
+          claimIds: [
+            "history.migration-civil-rights-politics",
+            "history.labor-civil-rights",
+            "indiana.belmont-postwar-rights-claims",
+          ],
           coverage: "partial",
-          note: "Partial: African American civil-rights organizing is covered from an angle most curricula skip — the Black urban vote the Migration created, and A. Philip Randolph through the 1968 Memphis sanitation strike. The standard also names Native Americans, Hispanic Americans, and women, none of whom are covered here.",
+          note: "Partial: African American civil-rights organizing is covered from an angle most curricula skip — the Black urban vote the Migration created, and A. Philip Randolph through the 1968 Memphis sanitation strike. Belmont Beach and the City's Water adds the fight for public water, case by case from 1949 to 1968: Gary, Anacostia, St. Louis, the Swope Park suit and its 1953 opinion, Coney Island, the Rainbow Beach and Biloxi wade-ins, Glen Echo and Gwynn Oak, and in Indianapolis the 1962 NAACP Youth picket at Riverside. The standard also names Native Americans, Hispanic Americans, and women, none of whom are covered here.",
         },
         {
           code: "USH.8.5",
@@ -434,9 +469,40 @@ export const JURISDICTION: JurisdictionFile = {
         {
           code: "USH.10.2",
           text: "Locate and analyze primary sources and secondary sources related to an event or issue of the past; discover possible limitations in various kinds of historical evidence and differing secondary opinions.",
-          claimIds: ["history.migration-primary-sources", "history.land-record-primary-sources"],
+          claimIds: [
+            "history.migration-primary-sources",
+            "history.land-record-primary-sources",
+            "indiana.belmont-sources-and-limits",
+            "indiana.avenue-evidence-limits",
+            "indiana.gym-court-opinions-as-sources",
+            "indiana.racetracks-evidence",
+            "indiana.mudsock-sources",
+            "indiana.fort-harrison-sources",
+            "indiana.fox-lake-conflicting-records",
+          ],
           coverage: "partial",
-          note: "Partial: sources are pointed to their actual archives (National Archives, Census Bureau, the Schomburg Center) rather than quoted from memory, and the course turns a widely repeated but unsupported statistic into an explicit limitations-of-evidence lesson. Sustained student-run source analysis is prompted by activities but not assessed. Reading a Land Description reaches the standard through land records: learners read the Land Ordinance of 1785 clause by clause, a 1775 deed from eleven Piankeshaw chiefs, and a surveyor's own field entry, each beside a secondary account (White's 1983 BLM history, Wilson's 1916 article), and two conflicts are taught as limitations of the evidence rather than settled by guessing: the year Freeman surveyed the Vincennes Tract (1803 in White, 1802-3 in Wilson) and the year the Vincennes land office opened (two different years on the state archives' own page). Partial there too: the sources are land records only, and the analysis is assessed by quiz rather than by a student-written argument.",
+          note: "Partial: sources are pointed to their actual archives (National Archives, Census Bureau, the Schomburg Center) rather than quoted from memory, and the course turns a widely repeated but unsupported statistic into an explicit limitations-of-evidence lesson. Sustained student-run source analysis is prompted by activities but not assessed. Reading a Land Description reaches the standard through land records: learners read the Land Ordinance of 1785 clause by clause, a 1775 deed from eleven Piankeshaw chiefs, and a surveyor's own field entry, each beside a secondary account (White's 1983 BLM history, Wilson's 1916 article), and two conflicts are taught as limitations of the evidence rather than settled by guessing: the year Freeman surveyed the Vincennes Tract (1803 in White, 1802-3 in Wilson) and the year the Vincennes land office opened (two different years on the state archives' own page). Partial there too: the sources are land records only, and the analysis is assessed by quiz rather than by a student-written argument. The Indiana site courses each work the standard on one place, and the split matters: The Gym and the Color Line and Fort Harrison: The Federal Footprint have the learner read primary sources directly (court opinions; HABS records, a 1938 newsletter and Library of Congress photographs) and correct a secondary source against them. Belmont Beach, Indiana Avenue, Two Racetracks, Mudsock and Fox Lake teach the limits of evidence thoroughly (conflicting counts, a secondary source cited by a nomination, an account resting on one historian), but most of their primary sources are read as a National Register nomination or a secondary account quotes them, and each course says so; the primary records it could not open are listed for the learner to find.",
+        },
+        {
+          code: "USH.10.1",
+          text: "Cultivate historical thinking, including the ability to evaluate competing explanations for historical change.",
+          claimIds: ["indiana.avenue-competing-explanations"],
+          coverage: "partial",
+          note: "Partial: one historical change, evaluated well. Indiana Avenue: A District and What Replaced It weighs three explanations for the loss of the Avenue's buildings (the interstate, blight designation with university land assembly, and Unigov) and rules one out by chronology. It is one change in one city, not a general course in historical thinking.",
+        },
+        {
+          code: "USH.10.3",
+          text: "Analyze multiple, unexpected, and complex causes and effects of events in the past.",
+          claimIds: ["indiana.racetracks-multiple-causes"],
+          coverage: "partial",
+          note: "Partial: Two Racetracks treats exclusion from the Indianapolis 500 as several separate gates (license, entry approval, membership, venue, capital) and analyzes the 42 years between 1949 and the first Black starter in 1991 through four possible causes. It declines to rank them because the record does not support a ranking, so the analysis stops short of a causal conclusion.",
+        },
+        {
+          code: "USH.10.4",
+          text: "Assess competing historical interpretations of a particular historical moment, event, or change.",
+          claimIds: ["indiana.harrison-compromise-of-1890", "indiana.belmont-competing-readings"],
+          coverage: "partial",
+          note: "Partial: two courses, one moment each. The President's House separates the established record of January 22, 1891 from the contested 'Compromise of 1890' interpretation and weighs four historians on it. Belmont Beach and the City's Water sets two readings of why Indianapolis allowed the beach (the Friends of Belmont Beach's environmental-racism reading of motive, the nomination's cautious reading of cause) and two versions of the 1927 country-club episode side by side, and leaves them open with their owners rather than choosing. Neither is a survey of historiography.",
         },
       ],
     },
@@ -448,10 +514,10 @@ export const JURISDICTION: JurisdictionFile = {
       name: "Indiana Academic Standards: Grade 4 Social Studies",
       publisher: "Indiana Department of Education (IDOE)",
       version: "2023",
-      fetchedOn: "2026-10-14",
+      fetchedOn: "2026-11-03",
       sourceUrl: "https://www.in.gov/doe/files/Indiana-Academic-Standards-Grade-4-Social-Studies.pdf",
       adoption:
-        "The 2023 edition, as printed on the document itself. IDOE's social-studies page also lists a 2026 column for Grade 4; that edition has not been fetched, so confirm which edition your school year is held to. Mapped for Reading a Land Description, an adult-level course whose Indiana lessons a Grade 4 teacher can draw on for the documents named in 4.H.4.",
+        "The 2023 edition, as printed on the document itself. IDOE's social-studies page also lists a 2026 edition for Grade 4, published only as a Google Drive link; it has not been fetched, so confirm which edition your school year is held to. Every course mapped here is written for high school and adults, so a Grade 4 teacher would draw on its Indiana lessons and adapt them rather than assign the course as it stands; each entry names the lessons to start from.",
       standards: [
         {
           code: "4.H.4",
@@ -459,6 +525,62 @@ export const JURISDICTION: JurisdictionFile = {
           claimIds: ["civics.land-ordinance-and-northwest-ordinance"],
           coverage: "partial",
           note: "Partial. The standard's examples are the Land Ordinance of 1784, the Northwest Ordinance (1787), and the 1816 Indiana Constitution. Reading a Land Description teaches the Land Ordinance of 1785 from its own text and the Northwest Ordinance's provisions and significance (lesson 3), and what each gave Indiana: its survey grid, and its path to statehood on an equal footing. It mentions the 1784 committee draft only as the plan the 1785 Ordinance revised, and it does not teach the 1816 Indiana Constitution. The course is written for adults, so a Grade 4 teacher would adapt it rather than assign it.",
+        },
+        {
+          code: "4.H.5",
+          text: "Explain the roles of various individuals, groups, and movements in the social conflicts leading to the Civil War. (E)",
+          claimIds: ["indiana.ohio-underground-railroad"],
+          coverage: "partial",
+          note: "Partial: the Underground Railroad in southern Indiana, and who led and risked it. The Ohio and the Line teaches the river as the legal line between free Indiana and slave-state Kentucky and the networks George DeBaptiste and Elijah Anderson organized from Madison. It does not teach the standard's other examples (Levi and Catharine Coffin, organized abolition and anti-slavery societies, the Liberia colonization movement) or how these conflicts led to the Civil War.",
+        },
+        {
+          code: "4.H.8",
+          text: "Describe the participation of Indiana citizens in World War I and World War II. (E)",
+          claimIds: ["indiana.fort-harrison-two-wars"],
+          coverage: "partial",
+          note: "Partial: Indiana's part in both wars through one Army post: the 1917 officer training camps and the Lilly-funded Base Hospital 32, staffed by local doctors and nurses, in World War I; the induction and reception center and the prisoner-of-war camp in World War II. The standard's home-front examples (victory gardens, rationing, the steel mills, Ernie Pyle) are not taught.",
+        },
+        {
+          code: "4.H.9",
+          text: "Identify and describe important events and movements that changed life in Indiana in the early twentieth century.",
+          claimIds: ["indiana.belmont-early-twentieth-century"],
+          coverage: "partial",
+          note: "Partial: two events, in one Indianapolis neighborhood. Belmont Beach and the City's Water describes the Great Flood of 1913 and the levee built after it, and the Black population growth of the Great Migration years on the near west side, one of the standard's own examples. Women's suffrage, the Great Depression and the two world wars are not taught as Indiana events.",
+        },
+        {
+          code: "4.H.11",
+          text: "Identify and describe important events and movements that changed life in Indiana from the mid-twentieth century to the present.",
+          claimIds: ["indiana.belmont-civil-rights-in-indianapolis", "indiana.avenue-midcentury-change", "indiana.gym-school-integration-indianapolis"],
+          coverage: "partial",
+          note: "Partial: the standard's first example, the Civil Rights Movement and school integration in Indiana, is taught in depth, but in Indianapolis only. Belmont Beach and the City's Water covers how the city desegregated its public water (the 1962 NAACP Youth picket at Riverside, the 1974 suit against a private club) and the 2008 renaming of Belmont Park for Rev. Mozel Sanders; The Gym and the Color Line covers school integration from the 1949 statute to busing from 1981 to 2016; Indiana Avenue covers blight clearance, the university land purchases of the 1960s and Unigov in 1970. The Korean War, Asian and Hispanic immigration, advanced manufacturing and the life sciences are not taught.",
+        },
+        {
+          code: "4.H.13",
+          text: "Create and interpret timelines that show relationships among people, events, and movements in the history of Indiana.",
+          claimIds: ["indiana.avenue-chronology"],
+          coverage: "partial",
+          note: "Partial: Indiana Avenue has the learner interpret a dated Indianapolis chronology (1945 to 1983) to test whether a cause comes before its effect, then build a dated table of their own. The timelines are tables for one city, not drawn timelines of statewide history.",
+        },
+        {
+          code: "4.H.14",
+          text: "Construct a brief narrative about an event in Indiana history using primary and secondary sources.",
+          claimIds: ["indiana.belmont-sourced-narrative", "indiana.racetracks-sourced-narrative", "indiana.fox-lake-sourced-narrative"],
+          coverage: "partial",
+          note: "Partial: each of three courses ends on a sourced nonfiction assignment that can be an Indiana event (the 1936 opening of Belmont Beach, the 1931 Gold and Glory Sweepstakes, a Fox Lake decision). They are 800 to 1,300 words, not brief, they also allow subjects that are not events or not in Indiana, and the primary sources are often available only as a nomination quotes them, which each assignment says to mark.",
+        },
+        {
+          code: "4.E.5",
+          text: "Identify entrepreneurs who have influenced Indiana and the local community.",
+          claimIds: ["indiana.fox-lake-entrepreneurs"],
+          coverage: "partial",
+          note: "Partial: Fox Lake names the Black business people who built the resort and what each built or ran (Carl Wilson Sr. of Fort Wayne, contractor John A. Roberts, the hotel run by Mary Frances Fleming and Mabel Van Cleave, the Mar-Fran motel, the Pryors' inn). It identifies them; it does not teach profit as an incentive, and it says no source shows whether the land company made money.",
+        },
+        {
+          code: "4.E.7",
+          text: "Identify important goods and services provided by state and local governments by giving examples of how state and local tax revenues are used. (E)",
+          claimIds: ["indiana.mudsock-tax-services"],
+          coverage: "full",
+          note: "Covered with real Hamilton County examples: what a household gets for a new municipal levy on annexation (stormwater management, road repair and snow removal, police patrol), where school referendum dollars go, and state tuition support per student. The course is written for high school and adults, so a Grade 4 teacher would adapt the examples.",
         },
       ],
     },
@@ -716,7 +838,7 @@ export const JURISDICTION: JurisdictionFile = {
     },
     {
       heading: "Most of the U.S. Government standards we checked.",
-      body: "USG.1.4 (types of government: monarchy, oligarchy, totalitarianism, anarchy), USG.1.5 (unitary vs confederate vs federal), USG.1.6 (constitutionalism, rule of law, limited government, popular sovereignty as named principles), USG.2.2 (compromise at the Constitutional Convention), USG.2.4-2.6 (founding ideas, civic identity, and civic values as a set), USG.3.1 (the four-part characterization of U.S. government), USG.3.3 (enumerated/implied/DENIED powers in BOTH constitutions — our course teaches enumerated/implied/reserved/concurrent, U.S. only), USG.3.9 (Benjamin Harrison), USG.3.10 (political parties' progression and ideologies), USG.3.13 (media influence on public opinion — our media-literacy course is consumer protection, not political media analysis), all of USG.4 (foreign affairs), and USG.5.8 — the courses do not genuinely teach these, so we do not claim them.",
+      body: "USG.1.4 (types of government: monarchy, oligarchy, totalitarianism, anarchy), USG.1.5 (unitary vs confederate vs federal), USG.1.6 (constitutionalism, rule of law, limited government, popular sovereignty as named principles), USG.2.2 (compromise at the Constitutional Convention), USG.2.4-2.6 (founding ideas, civic identity, and civic values as a set), USG.3.1 (the four-part characterization of U.S. government), USG.3.3 (enumerated/implied/DENIED powers in BOTH constitutions — our course teaches enumerated/implied/reserved/concurrent, U.S. only), USG.3.10 (political parties' progression and ideologies), USG.3.13 (media influence on public opinion — our media-literacy course is consumer protection, not political media analysis), all of USG.4 (foreign affairs), and USG.5.8 — the courses do not genuinely teach these, so we do not claim them.",
     },
     {
       heading: "Indiana Economics has no standard on unions.",
@@ -737,6 +859,18 @@ export const JURISDICTION: JurisdictionFile = {
     {
       heading: "The AI-literacy ladder, the language courses, and Learning How to Learn — deferred, not denied.",
       body: "Indiana's closest frameworks (K-12 Computer Science, World Languages, Employability Skills) have not been fetched and verified yet. Our rule is fetch-or-don't-cite, so these courses carry no Indiana claims this pass. They are queued for a later mapping pass.",
+    },
+    {
+      heading: "Indiana site courses: government standards a civics course already covers in full.",
+      body: "The courses on Indiana places (Belmont Beach, Indiana Avenue, the Attucks gym, the two racetracks, Mudsock, Fort Harrison, Fox Lake) each show, for one place, which state and local bodies decided what and how that shaped residents' lives, which is part of USG.3.12; Belmont Beach and Mudsock also show citizen and interest-group action reaching local government (USG.5.5), The President's House traces a federal bill's death (USG.3.5), Mudsock teaches local referendum law (USG.3.8), and The Gym and the Color Line reads Milliken v. Bradley (USG.5.3). This page shows one coverage level per standard, and those five are marked Covered because a civics course teaches each in full. Listing a site course under them would tell you that course covers the whole standard, and none of them does, so they are not listed there. Use the civics courses for those standards and the site courses as Indiana examples.",
+    },
+    {
+      heading: "Indiana site courses: era standards considered and not claimed.",
+      body: "Belmont Beach and the City's Water: USH.3.6 (one lesson on the Great Migration's arrival on the west side, too thin for the standard's three migrant streams), USH.5.4 (the 1943 Detroit riot is taught as a park case, not as wartime experience), USH.7.2 (the course compares how claims to public water were made, by entering, suing and wading in, but not the philosophies the standard names), USH.10.5 (its assignment is a sourced narrative, not an argument about historical change), and USG.5.3 (Kansas City v. Williams is an appellate opinion, not a Supreme Court case). Two Racetracks: 4.H.10 and 4.E.5 (the Speedway's founders and the town's manufacturers are named, not taught). Fox Lake: 4.H.11 (it shows one effect of the 1964 Civil Rights Act on a resort, not the movement) and 4.H.13 (its dated tables cover one resort, not Indiana's history). The Wabash Headwaters: 4.G.2 and 4.G.7 (one sentence locates the river; its role in settlement is not taught). Fort Harrison: USH.5.4 and USH.4.6 (a 1942 photograph series and an all-Black CCC company are documented, not analyzed as wartime or New Deal policy).",
+    },
+    {
+      heading: "Grade 8, Indiana Studies, content-area literacy and science: not yet mapped for the site courses.",
+      body: "The Ohio and the Line (the Underground Railroad at Madison) and Fort Harrison (federal, state and local roles in an economy) have candidate Grade 8 matches, and every Indiana site course would fit the high-school Indiana Studies elective and Indiana's own content-area literacy standards for history, the Indiana counterpart of the Common Core literacy standards these courses carry in other states. Grade 8 has not been added as a framework yet; Indiana Studies is published only as a Google Drive link; and the 2020 content-area literacy document is not linked from IDOE's current social-studies page, so whether it still applies has not been confirmed. Belmont Beach's sewage and river-safety history was not checked against Indiana's environmental science standards. None of these is claimed until it is fetched and checked.",
     },
     {
       heading: "E.4.1, E.4.2, E.3.2, USH.9.3 — the Commodity Map rejections, still rejected.",

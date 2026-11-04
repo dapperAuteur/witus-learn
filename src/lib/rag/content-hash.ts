@@ -50,9 +50,17 @@ export function courseRagContentHash(lessons: readonly RagLessonInput[], sources
   return createHash("sha256").update(`${RAG_HASH_HEADER}\n${fps.join("\n")}`, "utf8").digest("hex");
 }
 
+/**
+ * The whitespace clean-up chunkText applies before slicing. Every chunk is a substring of this, so it
+ * is also how a chunk is found again in its lesson body (src/lib/source-chat-links.ts).
+ */
+export function cleanChunkSource(text: string): string {
+  return text.replace(/\r/g, "").replace(/[ \t]+/g, " ").replace(/\n{3,}/g, "\n\n").trim();
+}
+
 /** Split a body into overlapping chunks, exactly as the indexer always has. */
 export function chunkText(text: string, size = CHUNK_SIZE, overlap = CHUNK_OVERLAP): string[] {
-  const clean = text.replace(/\r/g, "").replace(/[ \t]+/g, " ").replace(/\n{3,}/g, "\n\n").trim();
+  const clean = cleanChunkSource(text);
   if (clean.length <= size) return clean ? [clean] : [];
   const out: string[] = [];
   for (let i = 0; i < clean.length; i += size - overlap) out.push(clean.slice(i, i + size));

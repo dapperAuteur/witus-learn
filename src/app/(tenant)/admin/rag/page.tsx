@@ -37,7 +37,7 @@ export default async function RagIndexAdminPage() {
         {current} {current === 1 ? "course is" : "courses are"} current
         {empty > 0 ? `; ${empty} ${empty === 1 ? "has" : "have"} nothing to index yet` : ""}. Set who may use the chat on{" "}
         <Link href="/admin/source-chat" className="underline" style={{ color: "var(--accent)" }}>
-          Source Chat
+          Course chat
         </Link>
         .
       </p>

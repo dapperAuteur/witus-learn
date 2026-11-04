@@ -228,9 +228,10 @@ export async function PATCH(req: Request, { params }: Params) {
 
   const updated = await updateCourse(sdb.tenantId, id, patch);
 
-  // Publishing (re)indexes the course's embeddings so chat-with-sources and CYOA routing reflect
-  // the latest lessons without a manual "Generate embeddings" click. Non-blocking (runs after the
-  // response) and a no-op when Gemini isn't configured. Lesson edits AFTER publish don't hit this
+  // Publishing (re)indexes the CYOA crossroads embeddings (Mistral, lesson_embeddings.embedding_v2)
+  // so CYOA routing reflects the latest lessons without a manual "Generate embeddings" click; only new
+  // or changed lessons are embedded. Non-blocking (runs after the response) and a no-op when
+  // MISTRAL_API_KEY isn't configured. The course chat's own index is rebuilt elsewhere (/admin/rag). Lesson edits AFTER publish don't hit this
   // route, so the course page surfaces a staleness badge prompting a manual re-index (CourseAdminTools).
   if (patch.isPublished === true) {
     after(async () => {

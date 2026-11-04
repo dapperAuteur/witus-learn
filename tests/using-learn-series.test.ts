@@ -30,6 +30,8 @@ const WAIVED: Record<string, string> = {
   "keeping-courses-current": "a command-line runbook for the platform owner, not a screen anyone drives",
   "launch-to-do-list":
     "shipped with feat/release-follow-ups (the launch to-do list and its warning); a Run Your Course lesson that teaches it is the follow-up (delete this line then)",
+  "course-chat":
+    "shipped with feat/one-course-chat (the tutor and chat with the sources combined into one course chat); a Run Your Course lesson that teaches it is the follow-up (delete this line then)",
   "download-course-epub-pdf":
     "shipped with feat/course-export-buttons (two admin-only download links on the course manager); a Run Your School lesson that teaches it is the follow-up (delete this line then)",
 };

@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import type { SourceChatConfig } from "@/db/queries/source-chat-config";
+import { SourceChatCitations, type SourceChatCitationView } from "@/components/source-chat-citations";
 
 type Lens = "explain" | "examples" | "coach";
 const AGENTS: { v: Lens; label: string }[] = [
@@ -15,10 +16,10 @@ const PROVIDERS = [
   { v: "anthropic", label: "Anthropic (Claude)" },
   { v: "openai", label: "OpenAI" },
 ];
-const DEFAULT: SourceChatConfig = { stage: "owner", agents: ["explain", "examples"], provider: "", temperature: 0.2, topK: 6, grounding: "strict" };
+// Mirrors DEFAULT_SOURCE_CHAT_CONFIG (server-only module); the form loads the saved config over it.
+const DEFAULT: SourceChatConfig = { stage: "paid", agents: ["explain", "examples"], routing: "all", provider: "", temperature: 0.2, topK: 6, grounding: "strict" };
 
-interface Citation { n: number; kind: string; title: string | null; snippet: string }
-interface ChatResult { answer: string; citations: Citation[]; agents: string[]; usedChunks: number }
+interface ChatResult { answer: string; citations: SourceChatCitationView[]; agents: string[]; usedChunks: number }
 
 const field = "w-full rounded-md border border-neutral-300 px-3 py-2 text-sm dark:border-neutral-700 dark:bg-neutral-900";
 
@@ -72,10 +73,10 @@ export function SourceChatAdmin({ courses }: { courses: { id: string; title: str
     setAsking(true);
     setChatError(null);
     setResult(null);
-    const res = await fetch(`/api/courses/${courseId}/source-chat`, {
+    const res = await fetch(`/api/courses/${courseId}/chat?format=json`, {
       method: "POST",
       headers: { "content-type": "application/json" },
-      body: JSON.stringify({ question: question.trim(), config }),
+      body: JSON.stringify({ mode: "ask", question: question.trim(), config }),
     });
     const data = (await res.json().catch(() => ({}))) as ChatResult & { error?: string };
     setAsking(false);
@@ -100,7 +101,7 @@ export function SourceChatAdmin({ courses }: { courses: { id: string; title: str
             <select value={config.stage} onChange={(e) => setConfig((c) => ({ ...c, stage: e.target.value as SourceChatConfig["stage"] }))} className={`mt-1 ${field}`}>
               <option value="owner">Owner / instructor only (test)</option>
               <option value="invited">+ Enrolled learners (invited)</option>
-              <option value="paid">+ Enrolled on a paid course</option>
+              <option value="paid">+ Enrolled on a paid course (default)</option>
             </select>
           </label>
           <label className="block text-sm">
@@ -137,6 +138,15 @@ export function SourceChatAdmin({ courses }: { courses: { id: string; title: str
               </label>
             ))}
           </div>
+          <label className="mt-2 flex items-center gap-2 text-sm">
+            <input
+              type="checkbox"
+              checked={config.routing === "auto"}
+              onChange={(e) => setConfig((c) => ({ ...c, routing: e.target.checked ? "auto" : "all" }))}
+              className="h-4 w-4"
+            />
+            Let a supervisor pick which of these agents answer each question (one extra model call; off = all run)
+          </label>
         </fieldset>
         <div className="mt-4 flex items-center gap-3">
           <button type="button" onClick={save} disabled={saving} className="min-h-9 rounded-md px-4 text-sm font-medium text-white disabled:opacity-60" style={{ backgroundColor: "var(--accent)" }}>
@@ -161,11 +171,7 @@ export function SourceChatAdmin({ courses }: { courses: { id: string; title: str
               {result.usedChunks} chunk(s) retrieved · agents: {result.agents.join(", ") || "-"}
             </div>
             {result.citations.length ? (
-              <ol className="space-y-1 text-xs text-neutral-600">
-                {result.citations.map((c) => (
-                  <li key={c.n}>[{c.n}] <span className="font-medium">{c.kind}</span>{c.title ? ` · ${c.title}` : ""}: {c.snippet}…</li>
-                ))}
-              </ol>
+              <SourceChatCitations citations={result.citations} className="space-y-1 text-xs text-neutral-600" />
             ) : null}
           </div>
         ) : null}

@@ -2,7 +2,7 @@ import { z } from "zod";
 import { apiContext, errorJson, isTenantAdmin, json } from "@/lib/api";
 import { getSourceChatConfig, setSourceChatConfig } from "@/db/queries/source-chat-config";
 
-// Owner/brand-admin management of a course's "chat with the sources" config (stage + agents + params).
+// Owner/brand-admin management of a course's course-chat config (stage + agents + params).
 export async function GET(req: Request) {
   const { sdb, session } = await apiContext();
   if (!session) return errorJson("Unauthorized", 401);
@@ -18,6 +18,7 @@ const Patch = z.object({
     .object({
       stage: z.enum(["owner", "invited", "paid"]).optional(),
       agents: z.array(z.enum(["explain", "examples", "coach"])).optional(),
+      routing: z.enum(["all", "auto"]).optional(),
       provider: z.string().max(40).optional(),
       temperature: z.number().min(0).max(1).optional(),
       topK: z.number().int().min(1).max(12).optional(),

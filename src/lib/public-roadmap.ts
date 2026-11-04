@@ -35,8 +35,8 @@ export const PUBLIC_ROADMAP: Record<RoadmapStatus, PublicRoadmapItem[]> = {
       body: "Start from a place on the map and follow a commodity's story into a full course. The map is the table of contents.",
     },
     {
-      title: "AI tutor and chat with the sources",
-      body: "Ask questions and get answers grounded in the course's own cited material, not a guess from the open internet.",
+      title: "Course chat with linked sources",
+      body: "Ask questions and follow-ups and get answers grounded in the course's own cited material, each source a link to the passage, not a guess from the open internet.",
     },
     {
       title: "Quizzes, spaced recall, and self-checks",

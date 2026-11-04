@@ -5975,6 +5975,326 @@ export const COURSE_CLAIMS: CourseClaim[] = [
       "34 · A GPS fix on the paper map",
     ],
   },
+  // ══ INDIANA SITE COURSES · Indiana content standards (2026-11-03) ══════════════════════
+  //
+  // WHY THESE EXIST. Every course about an Indiana place (Belmont Beach, Indiana Avenue, the
+  // Attucks gym, the two racetracks, Mudsock, the Harrison house, Fort Harrison, Fox Lake) carried
+  // only the catalog.* literacy claims, which map to Common Core. Indiana repealed Common Core in
+  // 2014, so an Indiana teacher opening any of them saw no Indiana standard at all. These claims
+  // are each read against the lesson bodies (not titles) and are mapped in data/in.ts to the 2023
+  // IDOE U.S. History, U.S. Government and Grade 4 Social Studies documents, fetched 2026-11-03.
+  // Most are partial on purpose; the partial note in in.ts says what is and is not taught.
+
+  // REST-05 · Belmont Beach and the City's Water
+  {
+    id: "indiana.belmont-postwar-rights-claims",
+    claim:
+      "Teaches how Black Americans asserted the right to use public water after World War II, case by case: Gary's 1949 beach campaign, the 1949 Anacostia pool challenge, the St. Louis pool opening of 1949, the NAACP's Swope Park suit read through the 1953 appellate opinion, Marian Spencer's nine-year Coney Island campaign, the Rainbow Beach and Biloxi wade-ins, the Glen Echo and Gwynn Oak protests, and in Indianapolis the 1962 NAACP Youth picket at Riverside and the 1974 suit against a private club.",
+    courseSlugs: ["belmont-beach-and-the-citys-water"],
+    lessons: [
+      // The 1962 picket, the 1945/1949/1960s state laws and Bates v. Riviera Club (1974 to 1980).
+      "14 · How Indianapolis desegregated its water, and what it left alone",
+      "19 · Summer 1949: Gary's lakefront and Washington's Anacostia pool",
+      "20 · St. Louis, June 21, 1949: the Fairground Park pool",
+      // "Kansas City was claimed in court": the opinion read in three passages.
+      "21 · Kansas City: Swope Park pool, and reading the 1953 opinion",
+      "22 · Cincinnati's Coney Island and Pittsburgh's Highland Park pool",
+      "23 · Wade-ins and carousels: Rainbow Beach, Glen Echo, Gwynn Oak, St. Augustine",
+      "24 · Biloxi, 1959 to 1968: the wade-ins and the federal money",
+    ],
+  },
+  {
+    id: "indiana.belmont-sources-and-limits",
+    claim:
+      "Teaches the learner to name the limits of the evidence for one Indianapolis place: a newspaper known only through the nomination's summary ('if the page and the summary differ, the page wins'), population figures that are a secondary source's numbers cited by a nomination, an appellate opinion read directly, and a closing list of the sources nobody has opened.",
+    courseSlugs: ["belmont-beach-and-the-citys-water"],
+    lessons: [
+      "3 · The west side fills: ward five, Haughville and the Great Migration",
+      "12 · Primary-source exercise: the Recorder's 1941 complaint",
+      "21 · Kansas City: Swope Park pool, and reading the 1953 opinion",
+      "28 · What this course cut, and the sources nobody has opened",
+    ],
+  },
+  {
+    id: "indiana.belmont-competing-readings",
+    claim:
+      "Sets competing accounts of the same Indianapolis episodes side by side and assesses them without picking: two versions of the 1927 country-club episode and the nomination's one sentence, and two readings of why the city allowed Belmont Beach at all (the Friends of Belmont Beach's environmental-racism reading of motive against the nomination's cautious 'probably' reading of cause).",
+    courseSlugs: ["belmont-beach-and-the-citys-water"],
+    lessons: [
+      "4 · 1927: a country club the Parks Board would not allow",
+      "11 · Four public bodies: who could buy, build, designate, delay and close",
+    ],
+  },
+  {
+    id: "indiana.belmont-early-twentieth-century",
+    claim:
+      "Describes two early twentieth-century events that changed life on Indianapolis's west side: the Great Flood of 1913 and the levee built after it, and the Black population growth of the Great Migration years (1,653 at the close of the Civil War, almost 35,000 by 1920) into ward five and Haughville, whose parks were assigned by race.",
+    courseSlugs: ["belmont-beach-and-the-citys-water"],
+    lessons: [
+      "2 · 1913 to 1917: a flood, a levee, a dam built for Riverside Park, and a sandbar",
+      "3 · The west side fills: ward five, Haughville and the Great Migration",
+    ],
+  },
+  {
+    id: "indiana.belmont-civil-rights-in-indianapolis",
+    claim:
+      "Describes how Indianapolis desegregated its public water and what it left alone (state laws of 1945, 1949 and the early 1960s, the 1962 NAACP Youth picket at Riverside, the 1974 to 1980 suit against the Riviera Club), and what followed at Belmont: the 1959 expressway through the park, the 2008 renaming for civil-rights leader Rev. Mozel Sanders, the neighborhood's 2020 reclaiming of the beach, and its 2026 National Register listing.",
+    courseSlugs: ["belmont-beach-and-the-citys-water"],
+    lessons: [
+      "14 · How Indianapolis desegregated its water, and what it left alone",
+      "16 · 1959 to 2026: an expressway, a new name, a friends group, and a listing",
+    ],
+  },
+  {
+    id: "indiana.belmont-sourced-narrative",
+    claim:
+      "Assigns an 800 to 1,200 word sourced nonfiction narrative on one place, one public body's decision and one newspaper page, with a dated table first, 'as quoted in' marked when a newspaper is known only through a secondary source, and a paragraph on what could not be established.",
+    courseSlugs: ["belmont-beach-and-the-citys-water"],
+    lessons: ["27 · Your assignment: one beach, one board decision, one newspaper page"],
+  },
+
+  // Indiana Avenue: A District and What Replaced It
+  {
+    id: "indiana.avenue-competing-explanations",
+    claim:
+      "Weighs three explanations for the loss of Indiana Avenue's buildings (the interstate, blight designation with university land assembly, and Unigov) and tests each against a dated chronology, ruling out Unigov as a cause because it came after the losses.",
+    courseSlugs: ["indiana-avenue-a-district-and-what-replaced-it"],
+    lessons: [
+      "10 · Instrument three: the alignment decision",
+      "13 · Testing an argument against a chronology",
+    ],
+  },
+  {
+    id: "indiana.avenue-evidence-limits",
+    claim:
+      "Teaches the limits of specific evidence about the Avenue: Green Book coverage against a 1916 business count ('the guide's coverage, not the Avenue's inventory'), two conflicting Lockefield unit counts, and a displacement figure with no stated method that is attributed rather than adopted.",
+    courseSlugs: ["indiana-avenue-a-district-and-what-replaced-it"],
+    lessons: [
+      "2 · Reading the Avenue out of the Green Book",
+      "3 · The music, and the institutions around it",
+      "10 · Instrument three: the alignment decision",
+    ],
+  },
+  {
+    id: "indiana.avenue-midcentury-change",
+    claim:
+      "Describes dated mid-century events that changed life in Indianapolis: blight clearance from 1948, Indiana University's purchase of 401 parcels in 1964 to 1966 for what became IUPUI, and the 1970 Unigov consolidation that cut the Black share of the city's population, with school busing from 1981.",
+    courseSlugs: ["indiana-avenue-a-district-and-what-replaced-it"],
+    lessons: [
+      "8 · Instrument one: the blight designation",
+      "11 · Instrument four: a university as a land assembler",
+      "12 · Instrument five: redrawing the jurisdiction",
+    ],
+  },
+  {
+    id: "indiana.avenue-chronology",
+    claim:
+      "Has the learner read a dated Indianapolis chronology (1945 to 1983) to test whether a proposed cause comes before its effects, then build their own chronology with columns for date, event, instrument and source.",
+    courseSlugs: ["indiana-avenue-a-district-and-what-replaced-it"],
+    lessons: [
+      "13 · Testing an argument against a chronology",
+      "20 · Your assignment: write one block",
+    ],
+  },
+
+  // The Gym and the Color Line
+  {
+    id: "indiana.gym-desegregation-enforcement",
+    claim:
+      "Teaches, from the 1971 federal opinion, how the Indianapolis school board kept schools segregated after 1954 (optional attendance zones, boundary changes, transfer rules) and traces the federal enforcement suit from its 1968 filing through inter-district busing from 1981 to 2016.",
+    courseSlugs: ["the-gym-and-the-color-line"],
+    lessons: [
+      "8 · Instrument one: the attendance zone, and the optional zone",
+      "11 · Instrument three: the lawsuit, and the case that outlived the children in it",
+    ],
+  },
+  {
+    id: "indiana.gym-school-integration-indianapolis",
+    claim:
+      "Describes school integration in Indianapolis from the 1949 state statute to 2026: the 1971 finding of de jure segregation, Unigov leaving the school district out of the consolidation, busing from 1981 to 2016, and Marion County's eleven school corporations today.",
+    courseSlugs: ["the-gym-and-the-color-line"],
+    lessons: [
+      "10 · The carve-out: what Unigov merged, and what it deliberately did not",
+      "11 · Instrument three: the lawsuit, and the case that outlived the children in it",
+      "17 · Where the lines are today, who pays for the building, and how a district line is actually moved",
+    ],
+  },
+  {
+    id: "indiana.gym-court-opinions-as-sources",
+    claim:
+      "Has the learner read court opinions directly as primary sources and correct a secondary source against them (the opinion's 'approximately 350' boundary changes against an encyclopedia's 360), and weigh three conflicting secondary accounts of the 1955 championship celebration.",
+    courseSlugs: ["the-gym-and-the-color-line"],
+    lessons: [
+      "3 · 1955, 1956, 1959, and a parade nobody agrees about",
+      "8 · Instrument one: the attendance zone, and the optional zone",
+      "13 · Testing the same argument against a different chronology",
+    ],
+  },
+
+  // Two Racetracks
+  {
+    id: "indiana.racetracks-evidence",
+    claim:
+      "Teaches how to weigh evidence about exclusion from the Indianapolis 500: a self-interested 1947 denial known through a secondary source, an institution's statement against its own interest, disagreeing secondary counts, and a body of sources that all trace back to one historian ('an authority' and 'a single point of failure').",
+    courseSlugs: ["two-racetracks"],
+    lessons: [
+      "2 · The Gold and Glory Sweepstakes",
+      "3 · The drivers, and the eighty years",
+      "10 · Testing the claim: was there a written rule?",
+    ],
+  },
+  {
+    id: "indiana.racetracks-multiple-causes",
+    claim:
+      "Treats exclusion from the Indianapolis 500 as several separate gates (license, entry approval, membership, venue, capital), any one of which suffices, and analyzes the 42 years between licensing opening in 1949 and the first Black starter in 1991 through four possible causes it declines to rank.",
+    courseSlugs: ["two-racetracks"],
+    lessons: [
+      "9 · Instrument two: the gates a driver has to pass",
+      "12 · What actually opened the gate, and what replaced it",
+    ],
+  },
+  {
+    id: "indiana.racetracks-sourced-narrative",
+    claim:
+      "Assigns a 900 to 1,300 word source-checked narrative about one Indiana race or one refusal, such as the 1931 Gold and Glory Sweepstakes, with a planning table that labels what kind of source each item is.",
+    courseSlugs: ["two-racetracks"],
+    lessons: ["19 · Your assignment: write one race, or one refusal"],
+  },
+
+  // Mudsock: How a Rivalry Marks a Boundary
+  {
+    id: "indiana.mudsock-tax-services",
+    claim:
+      "Names the services a Hamilton County household gains for a new municipal levy on annexation (stormwater management, road repair and snow removal, Fishers police patrol) and shows where school referendum dollars and state tuition support go.",
+    courseSlugs: ["mudsock-how-a-rivalry-marks-a-boundary"],
+    lessons: [
+      "9 · Instrument two: annexation, and the waiver almost nobody reads",
+      "11 · Instrument four: the tax base, the caps, and who actually pays",
+    ],
+  },
+  {
+    id: "indiana.mudsock-tax-cap-amendment",
+    claim:
+      "Teaches Indiana's constitutional amendment procedure through the property-tax-cap amendment: passed by the General Assembly in 2008, passed again by a separately elected General Assembly in 2010, and ratified by the voters in November 2010.",
+    courseSlugs: ["mudsock-how-a-rivalry-marks-a-boundary"],
+    lessons: ["11 · Instrument four: the tax base, the caps, and who actually pays"],
+  },
+  {
+    id: "indiana.mudsock-sources",
+    claim:
+      "Has the learner keep conflicting accounts apart instead of averaging them (three accounts of the 1881 Battle of Mudsock, two census publishers' counts), flag a history that rests only on secondary sources, and read official 2012 election returns as a primary source.",
+    courseSlugs: ["mudsock-how-a-rivalry-marks-a-boundary"],
+    lessons: [
+      "1 · Mudsock: a nickname, a crossroads, and what a name proves",
+      "2 · Reading a county's growth out of the census",
+      "3 · Two high schools in one city, and why the rivalry has a name",
+      "8 · Instrument one: incorporation, and choosing your own government",
+    ],
+  },
+
+  // The President's House (Benjamin Harrison)
+  {
+    id: "indiana.harrison-presidency",
+    claim:
+      "Analyzes Benjamin Harrison's 1888 election (an Electoral College win while losing the popular vote, and the 'blocks of five' circular), his approach to the office on voting rights (recommend, lobby, appoint), and his failure to move his own party's Congress on the 1890 federal elections bill, with party politics and public opinion running through each.",
+    courseSlugs: ["the-presidents-house"],
+    lessons: [
+      "3 · How he got the office, and why that complicates the story",
+      "8 · What a president can and cannot do",
+      "10 · How a bill dies, which is almost never by losing a vote",
+      "11 · The trade that may or may not have happened",
+      "12 · The record: his own words, and the parts that do not fit",
+    ],
+  },
+  {
+    id: "indiana.harrison-civil-rights-and-immigration-record",
+    claim:
+      "Assesses Benjamin Harrison's civil-rights record (his messages on the ballot from 1889 to 1892, lobbying for the elections and Blair bills, his appointments, his 1892 call for anti-lynching legislation) and one immigration act he signed, the Geary Act's certificate requirement for Chinese residents.",
+    courseSlugs: ["the-presidents-house"],
+    lessons: [
+      "8 · What a president can and cannot do",
+      "12 · The record: his own words, and the parts that do not fit",
+    ],
+  },
+  {
+    id: "indiana.harrison-compromise-of-1890",
+    claim:
+      "Separates the established record of January 22, 1891 (the 35 to 34 vote to set the elections bill aside) from the contested 'Compromise of 1890' interpretation, weighs four historians' readings of it, and says what evidence would settle it.",
+    courseSlugs: ["the-presidents-house"],
+    lessons: ["11 · The trade that may or may not have happened"],
+  },
+
+  // Fort Harrison: The Federal Footprint
+  {
+    id: "indiana.fort-harrison-sources",
+    claim:
+      "Has the learner read the post's primary record (HABS documentation, the 1993 National Register nomination, a 1938 company newsletter, Library of Congress photographs) and treat its limits as evidence: sources that disagree on acreage and dates, a factual error in a federal nomination, and preservation documents that are silent on race.",
+    courseSlugs: ["fort-harrison-the-federal-footprint"],
+    lessons: [
+      "1 · Why a post here: an arsenal, an objection, and a purchase",
+      "2 · What the post did in two wars",
+      "3 · Segregation on this post: what the record shows, and what it does not",
+      "11 · Instrument four: who decided the afterlife of the ground",
+    ],
+  },
+  {
+    id: "indiana.fort-harrison-federalism",
+    claim:
+      "Teaches federalism through a federal post inside Indiana: the Enclave Clause, McCulloch v. Maryland's rule that a state cannot tax a federal instrumentality, and what changed when the federal ground passed to state and local owners.",
+    courseSlugs: ["fort-harrison-the-federal-footprint"],
+    lessons: [
+      "8 · Instrument one: land the county cannot tax and does not govern",
+      "11 · Instrument four: who decided the afterlife of the ground",
+    ],
+  },
+  {
+    id: "indiana.fort-harrison-two-wars",
+    claim:
+      "Describes what Fort Benjamin Harrison did in both world wars: the 1917 officer training camps and the Eli Lilly-funded Base Hospital 32 staffed by local doctors and nurses in World War I, and in World War II the post's induction and reception center and its prisoner-of-war camp.",
+    courseSlugs: ["fort-harrison-the-federal-footprint"],
+    lessons: ["2 · What the post did in two wars"],
+  },
+
+  // REST-01 · Fox Lake: Indiana's Lake of Its Own
+  {
+    id: "indiana.fox-lake-conflicting-records",
+    claim:
+      "Has the learner compare two National Register nominations, a state survey, a state marker and the NPS theme study, name more than a dozen conflicts between them (the plat year, the lake's size, the end of the period of significance), and follow a procedure for conflicting sources; it says plainly which primary sources it knows only as the nominations quote them.",
+    courseSlugs: ["fox-lake-indianas-lake-of-its-own"],
+    lessons: [
+      "4 · 1926 to 1932: three dates for three events, and a plat that has two",
+      "12 · The Green Book as a listing, not a guarantee",
+      "14 · Reading a nomination that disagrees with itself",
+      "21 · What this course cut, and the sources nobody has opened",
+    ],
+  },
+  {
+    id: "indiana.fox-lake-entrepreneurs",
+    claim:
+      "Identifies the Black business people who built Fox Lake as a community and what each built or ran: Carl Wilson Sr. of Fort Wayne and his cottages, contractor John A. Roberts, the hotel run by Mary Frances Fleming and Mabel Van Cleave, the Flemings' Mar-Fran motel, and the Pryors' inn.",
+    courseSlugs: ["fox-lake-indianas-lake-of-its-own"],
+    lessons: [
+      "4 · 1926 to 1932: three dates for three events, and a plat that has two",
+      "5 · Who came, and what they did there",
+      "9 · Who built it, who ran it, and who owned it",
+    ],
+  },
+  {
+    id: "indiana.fox-lake-sourced-narrative",
+    claim:
+      "Assigns an 800 to 1,200 word nonfiction narrative about one Fox Lake cottage, owner, decision or source conflict, built on one named document, with every factual sentence checkable.",
+    courseSlugs: ["fox-lake-indianas-lake-of-its-own"],
+    lessons: ["20 · Your assignment: one cottage, one owner, one document"],
+  },
+
+  // The Ohio and the Line (river expedition series)
+  {
+    id: "indiana.ohio-underground-railroad",
+    claim:
+      "Teaches the Ohio River as the legal line between free Indiana and slave-state Kentucky, and the Underground Railroad networks Black activists George DeBaptiste and Elijah Anderson organized from Madison, Indiana, with people on both banks and the greatest risk on those escaping and their Black helpers.",
+    courseSlugs: ["river-the-ohio-and-the-line"],
+    lessons: ["1 · A river that was a legal line", "2 · The people on the northern bank"],
+  },
 ];
 
 const byId = new Map(COURSE_CLAIMS.map((c) => [c.id, c]));

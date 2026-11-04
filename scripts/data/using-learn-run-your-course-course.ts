@@ -215,7 +215,7 @@ export const USING_LEARN_RUN_YOUR_COURSE_COURSE: AuthoredCourse = {
     helpLesson(
       "ai-tools-embeddings-audit",
       S2,
-      "Scroll to Instructor tools at the bottom of your own course page and run Generate / Re-index embeddings. Edit a lesson, come back, and look for the badge counting lessons changed since the last index, then click Re-index lessons. Run Audit reveals and check each answer it flags against its lesson before you change the card.",
+      "Scroll to Instructor tools at the bottom of your own course page and read the Course chat source index line. Switch the course to CYOA navigation and run Generate crossroads embeddings. Edit a lesson, come back, and look for the badge counting lessons changed since the last crossroads index, then click Re-index crossroads. Run Audit reveals and check each answer it flags against its lesson before you change the card.",
     ),
     sectionQuiz(S2, 2, [
       {
@@ -332,7 +332,7 @@ export const USING_LEARN_RUN_YOUR_COURSE_COURSE: AuthoredCourse = {
         ],
         correctIndex: 0,
         explanation:
-          "Publishing re-indexes automatically. Edits made after that are only counted in the badge until you click Re-index lessons yourself.",
+          "Publishing re-indexes automatically. Edits made after that are only counted in the badge until you click Re-index crossroads yourself.",
         sourceLessonSlug: "ai-tools-embeddings-audit",
       },
       {
@@ -935,11 +935,11 @@ export const USING_LEARN_RUN_YOUR_COURSE_COURSE: AuthoredCourse = {
           "The course search box on the course page",
           "The offline queue that holds a note",
           "The multistream fan-out to your socials",
-          "Chat with your sources and the crossroads",
+          "Only the CYOA crossroads between lessons",
         ],
         correctIndex: 3,
         explanation:
-          "Embeddings drive chat-with-your-sources and the CYOA crossroads, and they need an AI key. The course search box is a separate feature.",
+          "Lesson embeddings only pick the CYOA crossroads, and they need an AI key. The course chat answers from its own source index, and the course search box is a separate feature.",
         sourceLessonSlug: "ai-tools-embeddings-audit",
       },
       {

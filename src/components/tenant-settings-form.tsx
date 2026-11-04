@@ -134,7 +134,7 @@ export function TenantSettingsForm({ initial }: { initial: TenantSettings }) {
               <option value="full">Full (+ XP, levels, badges)</option>
             </select>
           </label>
-          <Toggle label="AI tutor" checked={s.aiTutor} onChange={(v) => set("aiTutor", v)} hint="Off disables the tutor + sentence coach for this brand." />
+          <Toggle label="AI tutor" checked={s.aiTutor} onChange={(v) => set("aiTutor", v)} hint="Off turns the course chat and sentence coach off for learners at this brand (instructors can still test)." />
           <Toggle label="Age gate" checked={s.requiresAgeGate} onChange={(v) => set("requiresAgeGate", v)} hint="Require an age check before entering." />
           <Toggle label="Coming soon" checked={s.comingSoon} onChange={(v) => set("comingSoon", v)} hint="Show a launch holding page instead of the catalog." />
           <Toggle label="Commodity Map" checked={s.commodityMap} onChange={(v) => set("commodityMap", v)} hint="Show the interactive origins map at /explore and feature it on the home page (needs map data, pnpm seed:map)." />

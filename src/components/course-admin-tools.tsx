@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Link from "next/link";
 import { useRouter } from "next/navigation";
 
 interface AuditFlag {
@@ -27,18 +28,39 @@ interface FitResult {
   truncated: boolean;
 }
 
-// Editor-only course tools: generate embeddings + set the navigation mode. CYOA
-// crossroads appear on the lesson player once mode = cyoa AND embeddings exist.
-// `index` reports how many published lessons are missing/behind their embedding — publishing
-// auto-indexes, but lessons edited afterwards go stale until a manual re-index (this button).
+/** The course chat's source index, by the same rule as /admin/rag (getCourseIndexState). */
+export interface SourceIndexStatus {
+  state: "never" | "changed" | "current" | "empty";
+  chunkCount: number;
+  indexedAt: Date | string | null;
+}
+
+// Editor-only course tools. Two DIFFERENT indexes live here, and the labels keep them apart (BAM, 2026-11-03,
+// after "118 of 118 lessons changed since last index" read like the chat's index):
+//   - the CYOA crossroads index: Mistral `lesson_embeddings.embedding_v2` (since migration 0079; it was Gemini),
+//     built by "Generate crossroads embeddings" / "Re-index crossroads" (/api/courses/[id]/generate-embeddings).
+//     It only picks the "where next" lessons on the lesson player in CYOA mode, so it is shown only when the
+//     course's navigation is CYOA. `index` counts published lessons with no Mistral vector or whose title or
+//     text changed since it was embedded (getCrossroadsStatus); publishing auto-indexes, later edits need
+//     this button, and the seed workflow backfills every CYOA course (OPERATING.md 3c).
+//   - the course chat's source index: Mistral `source_chunks`, built on /admin/rag (platform owner), by
+//     `pnpm rag:index`, or by the seed workflow after a merge. `sourceIndex` is its one-line status.
 export function CourseAdminTools({
   courseId,
   navigationMode,
   index,
+  sourceIndex,
+  viewerIsOwner = false,
+  crossroadsKeyConfigured = true,
 }: {
   courseId: string;
   navigationMode: string;
+  /** CYOA crossroads index staleness; pass it only when the navigation mode is CYOA. */
   index?: { published: number; stale: number };
+  sourceIndex?: SourceIndexStatus | null;
+  viewerIsOwner?: boolean;
+  /** Whether this deployment has MISTRAL_API_KEY; the crossroads embedder is Mistral's mistral-embed. */
+  crossroadsKeyConfigured?: boolean;
 }) {
   const router = useRouter();
   const [pending, setPending] = useState<string | null>(null);
@@ -46,6 +68,7 @@ export function CourseAdminTools({
   const [audit, setAudit] = useState<AuditResult | null>(null);
   const [fit, setFit] = useState<FitResult | null>(null);
   const stale = index && index.stale > 0;
+  const cyoa = navigationMode === "cyoa";
 
   async function generateEmbeddings() {
     setPending("embed");
@@ -53,7 +76,13 @@ export function CourseAdminTools({
     const r = await fetch(`/api/courses/${courseId}/generate-embeddings`, { method: "POST" });
     const d = await r.json().catch(() => ({}));
     setPending(null);
-    setMsg(r.ok ? `Embedded ${d.embedded} lesson(s).` : (d.error ?? "Failed to embed."));
+    setMsg(
+      r.ok
+        ? d.embedded > 0
+          ? `Embedded ${d.embedded} lesson(s)${d.current ? `; ${d.current} were already current` : ""}.`
+          : "Every published lesson was already current; nothing to embed."
+        : (d.error ?? "Failed to embed."),
+    );
     if (r.ok) router.refresh(); // pull a fresh staleness count after re-indexing
   }
 
@@ -119,22 +148,35 @@ export function CourseAdminTools({
   return (
     <section className="mt-10 rounded-lg border border-dashed border-neutral-300 p-4 text-sm dark:border-neutral-700">
       <h2 className="font-semibold">Instructor tools</h2>
+      <SourceIndexLine status={sourceIndex ?? null} viewerIsOwner={viewerIsOwner} />
+      {cyoa ? (
+        <div className="mt-3 flex flex-wrap items-center gap-3">
+          <span className="font-medium">CYOA crossroads index:</span>
+          <button
+            type="button"
+            onClick={generateEmbeddings}
+            disabled={!!pending || !crossroadsKeyConfigured}
+            className="min-h-9 rounded-md border border-neutral-300 px-3 font-medium focus-visible:outline-2 focus-visible:outline-offset-2 disabled:opacity-60 dark:border-neutral-700"
+          >
+            {pending === "embed" ? "Embedding…" : stale ? "Re-index crossroads" : "Generate crossroads embeddings"}
+          </button>
+          {stale ? (
+            <span className="rounded-full bg-amber-100 px-2 py-0.5 text-xs font-medium text-amber-800 dark:bg-amber-900/40 dark:text-amber-200">
+              {index!.stale} of {index!.published} lesson{index!.published === 1 ? "" : "s"} new or changed since the last crossroads index
+            </span>
+          ) : index && index.published > 0 ? (
+            <span className="text-xs text-green-700 dark:text-green-400">Crossroads index up to date ✓</span>
+          ) : null}
+          {!crossroadsKeyConfigured ? (
+            <p role="status" className="w-full text-xs text-amber-800 dark:text-amber-200">
+              This deployment has no Mistral key (MISTRAL_API_KEY), so the crossroads index can&apos;t be built or
+              refreshed here. Lessons already embedded keep their crossroads; new or edited ones get no
+              &ldquo;Related&rdquo; picks until it is set.
+            </p>
+          ) : null}
+        </div>
+      ) : null}
       <div className="mt-3 flex flex-wrap items-center gap-3">
-        <button
-          type="button"
-          onClick={generateEmbeddings}
-          disabled={!!pending}
-          className="min-h-9 rounded-md border border-neutral-300 px-3 font-medium focus-visible:outline-2 focus-visible:outline-offset-2 disabled:opacity-60 dark:border-neutral-700"
-        >
-          {pending === "embed" ? "Embedding…" : stale ? "Re-index lessons" : "Generate embeddings"}
-        </button>
-        {stale ? (
-          <span className="rounded-full bg-amber-100 px-2 py-0.5 text-xs font-medium text-amber-800 dark:bg-amber-900/40 dark:text-amber-200">
-            {index!.stale} of {index!.published} lesson{index!.published === 1 ? "" : "s"} changed since last index
-          </span>
-        ) : index && index.published > 0 ? (
-          <span className="text-xs text-green-700 dark:text-green-400">Index up to date ✓</span>
-        ) : null}
         <button
           type="button"
           onClick={auditReveals}
@@ -156,9 +198,10 @@ export function CourseAdminTools({
         {modeBtn("cyoa", "CYOA")}
       </div>
       <p className="mt-2 text-xs text-neutral-600">
-        CYOA crossroads appear on the lesson player once the mode is CYOA and embeddings are
-        generated (needs a Gemini key). Publishing re-indexes automatically; re-index by hand after
-        editing lessons on an already-published course. &ldquo;Audit reveals&rdquo; asks the AI
+        {cyoa
+          ? "The crossroads index only picks the CYOA \u201cwhere next\u201d lessons on the lesson player (Mistral key needed); it is not the course chat's index. Publishing re-indexes it automatically; re-index by hand after editing lessons on an already-published course. A lesson not embedded yet still gets its Continue and Unexpected path picks, just no Related ones. "
+          : `Switch navigation to CYOA to get crossroads on the lesson player; its index appears here then${crossroadsKeyConfigured ? "" : " (it needs a Mistral key, which this deployment doesn't have)"}. `}
+        &ldquo;Audit reveals&rdquo; asks the AI
         whether each self-check answer is supported by its lesson (advisory, needs an AI key).
         &ldquo;Audit assessment fit&rdquo; asks whether each lesson uses the right WIDGET (scored
         quiz, typed exercise, or self-check reveal) for the content it wraps. Both are suggestions
@@ -243,5 +286,38 @@ export function CourseAdminTools({
         </div>
       ) : null}
     </section>
+  );
+}
+
+/** One line: is the course chat's source index current? Owner gets the /admin/rag link; others are told who runs it. */
+function SourceIndexLine({ status, viewerIsOwner }: { status: SourceIndexStatus | null; viewerIsOwner: boolean }) {
+  if (!status) return null;
+  const when = status.indexedAt ? new Date(status.indexedAt).toISOString().slice(0, 10) : null;
+  const text =
+    status.state === "current"
+      ? `current (${status.chunkCount} passage${status.chunkCount === 1 ? "" : "s"}${when ? `, indexed ${when}` : ""}) ✓`
+      : status.state === "changed"
+        ? `needs indexing: the course changed since ${when ? `it was indexed on ${when}` : "it was indexed"}`
+        : status.state === "never"
+          ? "needs indexing: never indexed, so the course chat is hidden"
+          : "nothing to index yet (no lesson text or sources)";
+  const ok = status.state === "current" || status.state === "empty";
+  return (
+    <p className="mt-3 text-sm">
+      <span className="font-medium">Course chat source index:</span>{" "}
+      <span className={ok ? "text-green-700 dark:text-green-400" : "text-amber-800 dark:text-amber-200"}>{text}</span>
+      {!ok ? (
+        viewerIsOwner ? (
+          <>
+            {" "}
+            <Link href="/admin/rag" className="underline" style={{ color: "var(--accent)" }}>
+              Index it on Source chat index
+            </Link>
+          </>
+        ) : (
+          " The platform owner re-indexes it (Admin, Source chat index)."
+        )
+      ) : null}
+    </p>
   );
 }

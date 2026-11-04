@@ -386,6 +386,42 @@ export function classifyIndexState(i: {
   return i.items > 0 ? "never" : "empty";
 }
 
+/**
+ * ONE course's chat-index state, by the same rule as /admin/rag (classifyIndexState), for the course page's
+ * Instructor tools. Reads only this course: its index record, whether it has any current-model chunk, and
+ * today's content hash of exactly this course.
+ */
+export async function getCourseIndexState(
+  courseId: string,
+  opts: { db?: RagDb } = {},
+): Promise<{ state: CourseIndexState["state"]; chunkCount: number; indexedAt: Date | null }> {
+  const db = await resolveDb(opts.db);
+  const [record, chunk, hashes] = await Promise.all([
+    db
+      .select({
+        contentHash: schema.courseRagIndex.contentHash,
+        indexedAt: schema.courseRagIndex.indexedAt,
+        chunkCount: schema.courseRagIndex.chunkCount,
+      })
+      .from(schema.courseRagIndex)
+      .where(eq(schema.courseRagIndex.courseId, courseId))
+      .limit(1),
+    db.select({ id: schema.sourceChunks.id }).from(schema.sourceChunks).where(eq(schema.sourceChunks.courseId, courseId)).limit(1),
+    db.execute(contentHashQuery(courseId)),
+  ]);
+  const h = hashRows(hashes.rows)[0];
+  return {
+    state: classifyIndexState({
+      indexedHash: record[0]?.contentHash ?? null,
+      currentHash: h?.content_hash ?? null,
+      items: h?.items ?? 0,
+      hasChunks: chunk.length > 0,
+    }),
+    chunkCount: record[0]?.chunkCount ?? 0,
+    indexedAt: record[0]?.indexedAt ?? null,
+  };
+}
+
 /** The courses an admin page or the workflow should index: never indexed, or changed since. */
 export async function listCoursesNeedingIndex(opts: { db?: RagDb } = {}): Promise<CourseNeedingIndex[]> {
   return needingIndex(await listCourseIndexStates(opts));

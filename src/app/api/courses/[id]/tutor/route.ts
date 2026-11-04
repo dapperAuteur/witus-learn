@@ -1,45 +1,10 @@
-import { z } from "zod";
-import { apiContext, canEditCourse, errorJson } from "@/lib/api";
-import { isEnrolled } from "@/db/queries/enrollment";
-import { isFreeCourse } from "@/lib/gating";
-import { streamTutor } from "@/lib/ai/tutor";
-import { hasAiProvider } from "@/lib/env";
-import { getActiveLearner } from "@/lib/active-learner";
+import { handleCourseChat } from "@/lib/course-chat-handler";
 
-const Schema = z.object({ question: z.string().min(2).max(1000) });
-
-// POST /api/courses/[id]/tutor — grounded course tutor. Auth + access gated; the
-// retrieval is course-scoped so it can never cite another course/tenant.
+// DEPRECATED (2026-11-03): POST /api/courses/[id]/tutor ({ question }) forwards to the course chat
+// (/api/courses/[id]/chat), which replaced the course tutor. It streams the same NDJSON as before (a meta event
+// with usedLessons and lenses, then tokens, then done), now grounded in the course's indexed sources with
+// numbered citations, with Deprecation and Link: rel="successor-version" headers. Nothing in the app calls it.
 export async function POST(req: Request, { params }: { params: Promise<{ id: string }> }) {
   const { id } = await params;
-  const { sdb, session } = await apiContext();
-  if (!session) return errorJson("Unauthorized", 401);
-  if (!hasAiProvider) return errorJson("The AI tutor is not configured", 503);
-  // Per-tenant opt-out: on by default when an AI key is configured.
-  if (sdb.tenant.flags.aiTutor === false) {
-    return errorJson("The AI tutor is disabled for this school", 403);
-  }
-
-  const course = await sdb.getCourseById(id);
-  if (!course || !course.isPublished) return errorJson("Not found", 404);
-
-  // AI tutor is for PAID students only: editors/owners, or learners enrolled in a
-  // paid course (a free-course enrollment is not a payment, so it doesn't qualify).
-  // Enrollment is per-learner, so a parent "studying as" a managed child checks the
-  // CHILD's own enrollment — matching how enrollment itself is attributed (see
-  // /api/courses/[id]/enroll). Editor/owner status stays on the real signed-in account.
-  const learner = (await getActiveLearner(session))!;
-  const paidLearner = !isFreeCourse(course) && (await isEnrolled(learner.id, id));
-  const allowed = (await canEditCourse(session, sdb.tenantId, course)) || paidLearner;
-  if (!allowed) return errorJson("The AI tutor is for enrolled paid students", 403);
-
-  const parsed = Schema.safeParse(await req.json().catch(() => null));
-  if (!parsed.success) return errorJson("Invalid input", 400);
-
-  const stream = await streamTutor(course, parsed.data.question, {
-    provider: sdb.tenant.flags.aiProvider,
-  });
-  return new Response(stream, {
-    headers: { "content-type": "application/x-ndjson; charset=utf-8", "cache-control": "no-store" },
-  });
+  return handleCourseChat(req, id, "tutor");
 }

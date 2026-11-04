@@ -5,6 +5,30 @@
 export const ROADMAP = `# Learn.WitUS, Roadmap
 
 ## Platform
+- 🔧 **CYOA crossroads embeddings move to Mistral** (\`feat/cyoa-mistral\`, built on \`feat/one-course-chat\`,
+  migration \`0079_cyoa_mistral_embedding_v2\`, applied by \`migrate-production.yml\`; task 402). BAM, 2026-11-03:
+  "move CYOA to Mistral". Production has no Gemini key, so the 768-dim Gemini \`lesson_embeddings\` could not be built
+  or refreshed. Now every writer (publish auto-index, Re-index crossroads, \`pnpm cyoa:index\`, the seed workflow) embeds
+  with \`mistral-embed\` into \`lesson_embeddings.embedding_v2\` (1024, hnsw) with a \`content_hash\`, and the
+  crossroads read only that column, keeping the mandatory tenant filter; a lesson with no v2 vector gets no Related
+  picks and is never offered as one. Staleness is hash-based ("N of M lessons new or changed"), so a reseed with no
+  text change no longer marks every lesson stale. Backfill: Actions, Seed production courses, cyoa \`needing\`
+  (OPERATING.md 3c). The legacy 768 column is dropped later (plans/99).
+- 🔧 **One course chat: the tutor and "chat with the sources" combined** (\`feat/one-course-chat\`, migration
+  \`0078_source_chat_history_conversation\`, applied by \`migrate-production.yml\` on the merge; task 400). BAM,
+  2026-11-03: the two gave the same answer to the same prompt; one saved chats, the other felt like a conversation, one
+  linked its sources. Now one **Chat with this course** panel and one route, \`POST /api/courses/[id]/chat\`: real
+  follow-ups (earlier turns sent, a follow-up rewritten into a standalone question for retrieval, the conversation as
+  context and never as a source), grounded on the Mistral source index with the reader filter on every turn, numbered
+  citations that link to the passage, streamed. Kept from the tutor: streaming, an optional supervisor that picks the
+  lenses per question, the brand's AI tutor switch, the sentence coach (\`mode: "evaluate"\`, now on the same index).
+  Kept from source chat: stage, agents, grounding, provider and the rest from \`/admin/source-chat\` (now "Course
+  chat"); the default stage for a course with nothing saved is **paid**, the tutor's old audience. The owner's turns
+  are saved with a conversation id and shown as whole threads. \`/source-chat\`, \`/tutor\` and \`/tutor/evaluate\`
+  forward to it with Deprecation headers. Not carried over: the tutor's glossary block (the glossary is not in the
+  source index). Instructor tools: the Gemini embeddings badge is now labeled the **CYOA crossroads index** and shows
+  only in CYOA mode, with a separate line for the chat's source index (current / needs indexing, link to
+  \`/admin/rag\` for the owner); the help article that said it powered chat-with-your-sources is corrected.
 - 🔧 **"Sign out" leaves Learn only; "Sign out of WitUS everywhere" is its own control**
   (\`fix/sign-out-this-app-or-everywhere\`, no migration). BAM, 2026-10-29, witus task 128 option (b):
   since 2026-08-30 the plain Sign out also ended the WitUS session (and was relabeled "Sign out of
@@ -34,6 +58,22 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   to 60 requests a minute and retried on 429. Questions are embedded with the same model. New owner page
   \`/admin/rag\` lists every course never indexed or changed since, with Run per course and Run all (one
   request per course, from the browser). The legacy 768-dim column stays until a cleanup migration (plan 99).
+- 🔧 **Source chat citations link to where they can be read** (\`feat/source-chat-citation-links\`, no migration,
+  no re-index). BAM 2026-11-02: each numbered source under a "chat with the sources" answer is a link. A lesson
+  passage opens its lesson with a \`#:~:text=\` fragment, so a supporting browser scrolls to it and highlights it;
+  a bibliography entry opens the source's URL, hosted copy or DOI in a new tab, else the course's Sources page; a
+  public-domain text opens its URL. Resolved at answer time (\`src/lib/source-chat-links.ts\`): a lesson is found by
+  title among the lessons this viewer may open, a shared title is settled by which body holds the passage, and
+  anything unsure gets no link rather than a guess. Also closes a leak: drafts are indexed too, so a learner could be
+  answered from an unpublished lesson's text; now a non-editor's retrieval over-fetches and drops every lesson chunk not
+  provably from a published lesson before the prompt is built (\`readerMayUseChunk\`). Editors keep everything. Later:
+  have the indexer skip unpublished lessons (task 399).
+- 🔧 **Saved source chats, platform owner only** (\`feat/source-chat-history-owner\`, stacked on the citation-links
+  branch; migration \`0077_source_chat_history\`, applied by \`migrate-production.yml\` on the merge). BAM 2026-11-02:
+  "add for me only first, I'll consider it for other users later." Each question the owner asks is saved with its
+  answer, linked citations, agents and grounding; nobody else's are stored. Saving never blocks or fails the answer
+  (gives up after 3 s). The course page shows the owner's saved chats for that course; owner-only
+  \`/admin/source-chat-history\` lists all of them with a course filter, Delete per chat and Delete all.
 - 🔧 **Reviewer sign-off, version 2** (\`bundle/learn-pending-2026-11-01\`, migration
   \`0074_review_v2_seed_drift_rag_index\`, applied by \`migrate-production.yml\` on the merge). Plans/97 Part B,
   BAM's answers 2026-11-01. A greyed-out verdict form says why (\`verdictBlockReason\`: the course's own

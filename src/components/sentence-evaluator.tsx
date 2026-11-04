@@ -5,8 +5,8 @@ import { Markdown } from "./markdown";
 import { AccentBar } from "./accent-bar";
 
 // Open production practice: the learner writes a sentence and the AI coach checks
-// grammar/structure grounded ONLY in this course (paid-gated server-side). Streams
-// NDJSON from /api/courses/[id]/tutor/evaluate, the same shape the tutor chat uses.
+// grammar/structure grounded ONLY in this course's indexed sources (access checked server-side, the
+// same rule as the course chat). Streams NDJSON from /api/courses/[id]/chat in "evaluate" mode.
 export function SentenceEvaluator({ courseId }: { courseId: string }) {
   const [sentence, setSentence] = useState("");
   const [feedback, setFeedback] = useState("");
@@ -22,15 +22,15 @@ export function SentenceEvaluator({ courseId }: { courseId: string }) {
     setLessons([]);
     setError(null);
     try {
-      const res = await fetch(`/api/courses/${courseId}/tutor/evaluate`, {
+      const res = await fetch(`/api/courses/${courseId}/chat`, {
         method: "POST",
         headers: { "content-type": "application/json" },
-        body: JSON.stringify({ sentence }),
+        body: JSON.stringify({ mode: "evaluate", sentence }),
       });
       if (!res.ok || !res.body) {
         setError(
           res.status === 403
-            ? "The AI coach is for enrolled paid students."
+            ? "The AI coach isn't available for you on this course yet."
             : "Could not reach the coach. Please try again.",
         );
         setBusy(false);

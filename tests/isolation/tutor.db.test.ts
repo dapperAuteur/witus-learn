@@ -8,8 +8,9 @@ import { ALL_LENSES, LENSES } from "@/lib/ai/specialists";
 //     tenants (pnpm seed:tenants && pnpm seed:bvc) + DATABASE_URL; skipped offline.
 const HAS_DB = !!process.env.DATABASE_URL && !process.env.DATABASE_URL.includes("placeholder");
 const NO_EXCLUDE = "00000000-0000-0000-0000-000000000000";
-// Deterministic non-zero query vector (order doesn't matter — we assert scope, not ranking).
-const VEC = Array.from({ length: 768 }, (_, i) => ((i % 7) + 1) / 10);
+// Deterministic non-zero query vector (order doesn't matter — we assert scope, not ranking). 1024 dims:
+// the crossroads read lesson_embeddings.embedding_v2 (mistral-embed) since migration 0079.
+const VEC = Array.from({ length: 1024 }, (_, i) => ((i % 7) + 1) / 10);
 
 describe("tutor grounding guardrails (pure)", () => {
   it("the explanation lens restricts the model to the course material", () => {

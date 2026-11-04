@@ -1,7 +1,12 @@
 import { and, eq, isNotNull, ne, or, sql } from "drizzle-orm";
 import { db } from "@/db/client";
 import { courses, lessonEmbeddings, lessons } from "@/db/schema";
-import { vectorLiteral } from "@/lib/ai/embeddings";
+
+// CYOA crossroads reads. Since migration 0079 every read uses lesson_embeddings.embedding_v2 (1024-dim
+// mistral-embed); the legacy 768-dim Gemini `embedding` column is never read. A lesson with no v2 vector
+// is skipped on both sides: it has no query vector of its own (getLessonEmbedding returns null, so its
+// crossroads show no "Related" picks), and it is never offered as a neighbor (the isNotNull filters).
+// Writes and staleness live in src/lib/cyoa/crossroads-index.ts.
 
 export interface LessonMatch {
   id: string;
@@ -11,42 +16,19 @@ export interface LessonMatch {
   courseTitle?: string;
 }
 
+/** pgvector text literal for a vector, e.g. [0.1,0.2,...]. */
+export function vectorLiteral(v: number[]): string {
+  return `[${v.join(",")}]`;
+}
+
+/** The lesson's mistral-embed crossroads vector, or null when it has none yet. */
 export async function getLessonEmbedding(lessonId: string): Promise<number[] | null> {
   const rows = await db
-    .select({ embedding: lessonEmbeddings.embedding })
+    .select({ embedding: lessonEmbeddings.embeddingV2 })
     .from(lessonEmbeddings)
     .where(eq(lessonEmbeddings.lessonId, lessonId))
     .limit(1);
   return rows[0]?.embedding ?? null;
-}
-
-export async function upsertLessonEmbedding(lessonId: string, embedding: number[]): Promise<void> {
-  await db
-    .insert(lessonEmbeddings)
-    .values({ lessonId, embedding })
-    .onConflictDoUpdate({
-      target: lessonEmbeddings.lessonId,
-      set: { embedding, createdAt: new Date() },
-    });
-}
-
-/** Index freshness for a course: how many published lessons are missing an embedding or have been
- *  edited since they were last embedded (`updated_at > created_at`). `stale > 0` means the RAG index
- *  is behind the lessons — the course page shows a "re-index" nudge on the instructor tools. */
-export async function getEmbeddingStaleness(
-  courseId: string,
-): Promise<{ published: number; stale: number }> {
-  const [row] = await db
-    .select({
-      published: sql<number>`count(*)`.mapWith(Number),
-      stale: sql<number>`count(*) filter (where ${lessonEmbeddings.lessonId} is null or ${lessons.updatedAt} > ${lessonEmbeddings.createdAt})`.mapWith(
-        Number,
-      ),
-    })
-    .from(lessons)
-    .leftJoin(lessonEmbeddings, eq(lessonEmbeddings.lessonId, lessons.id))
-    .where(and(eq(lessons.courseId, courseId), eq(lessons.isPublished, true)));
-  return { published: row?.published ?? 0, stale: row?.stale ?? 0 };
 }
 
 /** In-course semantic neighbors. Course-scoped, so naturally tenant-safe. */
@@ -62,9 +44,14 @@ export async function matchLessons(
     .from(lessons)
     .innerJoin(lessonEmbeddings, eq(lessonEmbeddings.lessonId, lessons.id))
     .where(
-      and(eq(lessons.courseId, courseId), eq(lessons.isPublished, true), ne(lessons.id, excludeLessonId)),
+      and(
+        eq(lessons.courseId, courseId),
+        eq(lessons.isPublished, true),
+        ne(lessons.id, excludeLessonId),
+        isNotNull(lessonEmbeddings.embeddingV2),
+      ),
     )
-    .orderBy(sql`${lessonEmbeddings.embedding} <=> ${vec}::vector`)
+    .orderBy(sql`${lessonEmbeddings.embeddingV2} <=> ${vec}::vector`)
     .limit(k);
 }
 
@@ -108,8 +95,9 @@ export async function matchLessonsGlobal(
         eq(lessons.isPublished, true),
         ne(lessons.id, excludeLessonId),
         ne(lessons.courseId, excludeCourseId),
+        isNotNull(lessonEmbeddings.embeddingV2),
       ),
     )
-    .orderBy(sql`${lessonEmbeddings.embedding} <=> ${vec}::vector`)
+    .orderBy(sql`${lessonEmbeddings.embeddingV2} <=> ${vec}::vector`)
     .limit(k);
 }
