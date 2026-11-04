@@ -184,7 +184,8 @@ one). Categories power the catalog filter.`,
   page to learners.
 
 Toggle publish per course from **/teach** (click the status pill), or in bulk by selecting several
-courses and choosing **Publish / Unpublish**.
+courses and choosing **Publish / Unpublish**. The same selection can also switch navigation between
+**Linear** and **CYOA** (see **Keep your course's AI features current**).
 
 When you schedule, publish or release a course from its own page under Teach, a warning first lists its
 open launch to-dos and how many quizzes do not pass the length check yet; it is never a block.
@@ -620,7 +621,8 @@ different indexes show there, and they do different jobs:
   sources, embedded with Mistral). Its line says **current**, or **needs indexing** when the course changed
   since it was last indexed. It is rebuilt automatically after course updates are merged, and the platform
   owner can run it on **Admin, Source chat index** (\`/admin/rag\`). Until a course is indexed, the chat
-  stays hidden on its page.
+  stays hidden on its page, and until the platform owner turns the chat on for everyone else, only the owner
+  sees it at all.
 - **CYOA crossroads index** only appears when the course's navigation is **CYOA**. It picks the "where next"
   lessons the lesson player offers in CYOA mode, and nothing else: it does **not** feed the course chat.
   Publishing builds it automatically. If you later edit lessons on an already-published course, a badge
@@ -629,6 +631,11 @@ different indexes show there, and they do different jobs:
   same provider as the course chat, so it needs the deployment's Mistral key; when there is none, the tools
   say so and the button is off. A lesson that isn't embedded yet still offers **Continue** and **Unexpected
   path**, just no **Related** picks. On a linear course you can ignore it.
+- **Switching several courses at once.** On **/teach**, tick the courses (or **Select all shown**), then
+  **Navigation: Set CYOA** or **Set Linear**, and confirm. Courses you can't edit are skipped and listed.
+  After a switch to CYOA, the result says how many courses still need crossroads embeddings; switching does
+  not build them. Press **Re-index crossroads** on each course, or ask the platform owner to run the
+  crossroads backfill, which embeds every CYOA course's missing lessons in one paced run.
 - **Audit reveals** asks the AI whether each \`:::reveal\` self-check answer is actually supported by
   its lesson, and lists any that look off. It's an advisory suggestion, so always verify before you
   change a card, but it's a fast way to catch an answer that drifted after you rewrote a lesson.`,
@@ -650,9 +657,11 @@ Every indexed course page has one **Chat with this course** panel. (Until Novemb
   page. Learners are only ever answered from published lessons.
 - **Grounding** is strict by default (if the sources don't cover it, the chat says so) or mixed (sources
   first, labeled general knowledge when they fall short), set per course on **Admin, Course chat**.
-- **Who can use it:** you and other editors always; learners enrolled on a paid course by default; or only
-  you, or every enrolled learner, as set on **Admin, Course chat**. The brand's **AI tutor** switch in
-  Brand settings turns it off for learners.
+- **Who can use it:** only the platform owner, until the owner turns on **Course chat for everyone else**
+  on **Admin, Course chat** (off by default). After that, each course's setting there decides: only the
+  owner (the default for a course with nothing saved), its editors and enrolled learners, or its editors
+  and learners enrolled on a paid course. The brand's **AI tutor** switch in Brand settings turns it off
+  for that school's learners.
 - **Language courses** also show the **sentence coach** on exercise lessons: a learner writes a sentence and
   gets a verdict, a correction and the rule, from the same sources.
 

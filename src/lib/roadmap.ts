@@ -5,6 +5,19 @@
 export const ROADMAP = `# Learn.WitUS, Roadmap
 
 ## Platform
+- 🔧 **Course chat is the owner's only until BAM turns it on; bulk "Set navigation" on /teach**
+  (\`feat/chat-owner-default-and-bulk-cyoa\`, no migration). BAM, 2026-11-04: "chat should only be available for me
+  until I turn it on for other users." A course with nothing saved now defaults to stage **owner** (the platform
+  owner only; it was **paid** for a day after the merge below), and a platform-wide switch on \`/admin/source-chat\`,
+  **Course chat for everyone else** (off by default; a NULL-tenant \`platform_settings\` row, the teacher-age rule's
+  pattern), keeps every course owner-only while off, whatever its stage. On, each course's stage decides (owner;
+  invited = + editors and enrolled learners; paid = + editors and enrolled on a paid course), and the brand's AI
+  tutor switch still gates learners. Instructors and brand admins no longer get the chat by default. Also BAM,
+  "can I convert multiple courses at once to CYOA?": the /teach catalog's bulk bar gains **Set navigation: CYOA /
+  Linear** with a confirm step, through one route (\`POST /api/courses/bulk-navigation\`) that runs the
+  single-course PATCH's edit check per course and answers per course. It does not embed the crossroads; the reply
+  counts the CYOA courses whose lessons still need embeddings, and the owner gets the paced backfill command
+  (Actions, Seed production courses, cyoa \`needing\`). A **CYOA** chip marks those courses in the list.
 - 🔧 **CYOA crossroads embeddings move to Mistral** (\`feat/cyoa-mistral\`, built on \`feat/one-course-chat\`,
   migration \`0079_cyoa_mistral_embedding_v2\`, applied by \`migrate-production.yml\`; task 402). BAM, 2026-11-03:
   "move CYOA to Mistral". Production has no Gemini key, so the 768-dim Gemini \`lesson_embeddings\` could not be built
@@ -23,7 +36,8 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   citations that link to the passage, streamed. Kept from the tutor: streaming, an optional supervisor that picks the
   lenses per question, the brand's AI tutor switch, the sentence coach (\`mode: "evaluate"\`, now on the same index).
   Kept from source chat: stage, agents, grounding, provider and the rest from \`/admin/source-chat\` (now "Course
-  chat"); the default stage for a course with nothing saved is **paid**, the tutor's old audience. The owner's turns
+  chat"); the default stage for a course with nothing saved was **paid**, the tutor's old audience (owner since
+  2026-11-04, see above). The owner's turns
   are saved with a conversation id and shown as whole threads. \`/source-chat\`, \`/tutor\` and \`/tutor/evaluate\`
   forward to it with Deprecation headers. Not carried over: the tutor's glossary block (the glossary is not in the
   source index). Instructor tools: the Gemini embeddings badge is now labeled the **CYOA crossroads index** and shows

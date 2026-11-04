@@ -656,10 +656,15 @@ saving and streaming are in `src/lib/course-chat-handler.ts`.
   one), and the conversation goes into the prompt as context, never as a source.
 - **Grounded on the source index** below, every turn, with the reader filter (learners are never answered
   from an unpublished lesson; editors see everything). Numbered citations link to the passage.
-- **Configured per course on `/admin/source-chat`** ("Course chat"): stage (owner, invited, paid; **paid is
-  the default** for a course with nothing saved, the old tutor's audience), agents (explain, examples,
-  coach), an optional supervisor that picks among them per question, grounding (strict, mixed), provider,
-  temperature, top-k. Editors always have it; for learners the brand's **AI tutor** flag must be on.
+- **Owner only until BAM turns it on** (2026-11-04). A platform-wide switch on `/admin/source-chat`, **Course
+  chat for everyone else** (a `platform_settings` row with a NULL tenant, key `course_chat:open_to_others`;
+  missing means off), keeps the chat to the platform owner on every course while it is off. Once it is on,
+  each course's stage decides.
+- **Configured per course on `/admin/source-chat`** ("Course chat"): stage (owner = the platform owner only,
+  **the default** for a course with nothing saved; invited = + editors and enrolled learners; paid = +
+  editors and learners enrolled on a paid course), agents (explain, examples, coach), an optional supervisor
+  that picks among them per question, grounding (strict, mixed), provider, temperature, top-k. For learners
+  the brand's **AI tutor** flag must also be on. The rule is `src/lib/source-chat-access.ts`.
 - **Streams NDJSON** (`meta` with citations, `token`s, `done` with the saved id); `?format=json` returns one
   reply. `mode: "evaluate"` with a `sentence` is the language courses' sentence coach on the same index.
 - **Old routes forward here** with `Deprecation: true` and `Link: rel="successor-version"`:
@@ -683,6 +688,17 @@ longer matches (`src/lib/cyoa/crossroads-index.ts`); until then it gets no "Rela
 crossroads, and is never offered as one. Built on publish, by the course page's **Re-index crossroads**,
 by `pnpm cyoa:index` (`--list`, `--needing`, `--all`, `--course`), and at the end of every **Seed
 production courses** run (input `cyoa`). Needs `MISTRAL_API_KEY` (OPERATING.md 3c).
+
+**Bulk "Set navigation" on `/teach`** (2026-11-04). Select courses, **Navigation: Set CYOA / Set Linear**,
+confirm. One request, `POST /api/courses/bulk-navigation` (`{ courseIds, navigationMode }`, at most 500),
+runs the single-course PATCH's edit check per course (`checkEditableCourse` in `src/lib/api.ts`) and answers
+per course: `updated`, `unchanged`, `forbidden`, `not-found` (another school's course, or an owner-only
+course to a brand admin) or `failed`; a refused course is reported by id only. It does **not** embed: each
+CYOA course in the reply carries its crossroads status, and the catalog says how many courses still need
+embeddings, with the backfill command and the Actions link for the platform owner
+(`gh workflow run seed-production.yml ... -f seed=false -f rag=none -f cyoa=needing`). Embedding many
+courses inside one request would outrun the function's time budget and Mistral's pacing; the workflow is
+already paced. Shared shapes: `src/lib/bulk-navigation.ts`.
 
 **Citation links.** Each numbered source under an answer links to where it can be read in full,
 resolved when the answer is built (`src/lib/source-chat-links.ts`, gathered by
