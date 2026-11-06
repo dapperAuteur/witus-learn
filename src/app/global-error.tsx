@@ -3,9 +3,14 @@
 import { useEffect } from "react";
 import * as Sentry from "@sentry/nextjs";
 import { reportClientError } from "@/lib/client-error";
+import { NeutralChrome } from "@/components/neutral-chrome";
+import { ErrorContent } from "@/components/error-content";
+import "./globals.css";
 
-// Root error boundary — catches errors thrown in the root layout itself. Renders its own
-// <html>/<body>, stays neutral, auto-reports to an admin, and offers retry + a route back home.
+// Root error boundary: catches errors thrown in the root layout itself. It replaces that layout, so it
+// renders its own <html>/<body> and loads the stylesheet itself, and wears the neutral header and
+// footer (with Sign in) rather than rendering bare: the school's own need the database and the layout,
+// which may be what failed. Auto-reports to an admin and to Sentry.
 export default function GlobalError({ error, reset }: { error: Error & { digest?: string }; reset: () => void }) {
   useEffect(() => {
     // Existing home-grown admin report (survives with or without Sentry)...
@@ -16,35 +21,22 @@ export default function GlobalError({ error, reset }: { error: Error & { digest?
 
   return (
     <html lang="en">
-      <body
-        style={{
-          fontFamily: "ui-sans-serif, system-ui, sans-serif",
-          minHeight: "100vh",
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
-          margin: 0,
-        }}
-      >
-        <main style={{ maxWidth: 480, padding: 24, textAlign: "center" }}>
-          <h1 style={{ fontSize: 28, fontWeight: 700 }}>Service temporarily unavailable</h1>
-          <p style={{ color: "#666", marginTop: 12 }}>
-            We could not load this page, and our team has been notified. Please try again shortly.
-          </p>
-          <div style={{ marginTop: 16, display: "flex", gap: 12, justifyContent: "center", flexWrap: "wrap" }}>
-            <button type="button" onClick={reset} style={{ minHeight: 44, padding: "0 20px", borderRadius: 6 }}>
+      <body className="min-h-screen text-neutral-900 antialiased dark:text-neutral-100">
+        <NeutralChrome>
+          <ErrorContent
+            title="Service temporarily unavailable"
+            message="We could not load this page, and our team has been notified. Please try again shortly."
+          >
+            <button
+              type="button"
+              onClick={reset}
+              className="inline-flex min-h-11 items-center rounded-md border border-neutral-300 px-5 font-medium focus-visible:outline-2 focus-visible:outline-offset-2 dark:border-neutral-700"
+            >
               Try again
             </button>
-            {/* Root boundary renders its own <html> outside the router; a plain anchor is correct here. */}
-            {/* eslint-disable-next-line @next/next/no-html-link-for-pages */}
-            <a href="/" style={{ minHeight: 44, padding: "10px 20px", borderRadius: 6, border: "1px solid #ccc", textDecoration: "none", color: "inherit" }}>
-              Back to home
-            </a>
-          </div>
-          {error.digest ? (
-            <p style={{ color: "#999", fontSize: 12, marginTop: 12 }}>Reference: {error.digest}</p>
-          ) : null}
-        </main>
+          </ErrorContent>
+          {error.digest ? <p className="pb-8 text-center text-xs text-neutral-600">Reference: {error.digest}</p> : null}
+        </NeutralChrome>
       </body>
     </html>
   );

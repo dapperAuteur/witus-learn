@@ -5,6 +5,13 @@
 export const ROADMAP = `# Learn.WitUS, Roadmap
 
 ## Platform
+- 🔧 **Error pages keep the header and footer** (\`fix/test-users-exports-error-pages\`, no migration). BAM,
+  2026-11-04: "404 page should still have header/footer. all apps should include header/footer on 400/500 error
+  pages." The 404 and 403 render above the school layout, so they now bring the school's own header (with Sign in)
+  and footer themselves (\`ErrorChrome\`), neutral on an unknown host, before the age gate, or when the header's
+  reads fail; a new \`(tenant)/error.tsx\` keeps errors on school pages inside the layout; the root and global
+  error boundaries wear a neutral header with Sign in and a footer. One h1, home, catalog and catalog search on
+  each; a @smoke test checks an unknown URL answers 404 with Sign in and the footer, and no sideways scroll at 320px.
 - 🔧 **Test teacher and school-admin accounts on ElementaryMBA** (\`fix/test-users-exports-error-pages\`, migration
   \`0080_pending_role_grants\`). BAM, 2026-11-04/05: "there are no teacher or admin users", "add [them] to
   ElementaryMBA school". \`pnpm test-users:prod --instructor <email> --admin <email>\` gives the owner's own test

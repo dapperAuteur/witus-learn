@@ -5,7 +5,7 @@ import { getSession } from "@/lib/session";
 import { hasAcknowledgedAge } from "@/lib/age-gate";
 import { brandName } from "@/lib/branding";
 import { getSiteUrl } from "@/lib/site-url";
-import { isWitusBrandedHost } from "@/lib/witus-host";
+import { usesEcosystemFooter } from "@/lib/witus-host";
 import { organizationJsonLd } from "@/lib/seo/json-ld";
 import { isDemoEmail } from "@/db/queries/demo";
 import { SiteHeader } from "@/components/site-header";
@@ -40,8 +40,7 @@ export default async function TenantLayout({ children }: { children: React.React
   // tenants on their own domains keep the isolated per-tenant footer.
   const headerList = await headers();
   const host = headerList.get("x-forwarded-host") ?? headerList.get("host");
-  const showEcosystemFooter =
-    isWitusBrandedHost(host) || tenant.flags.ecosystemSso === true;
+  const showEcosystemFooter = usesEcosystemFooter(host, tenant);
 
   // Prefill the "Report a problem" email for a signed-in user (they can still edit it).
   const session = await getSession();

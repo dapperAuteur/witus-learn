@@ -4,6 +4,8 @@ import { getSession } from "@/lib/session";
 import { resolveTenant } from "@/lib/tenant";
 import { loginPathFor, PATHNAME_HEADER } from "@/lib/next-path";
 import { headers } from "next/headers";
+import { ErrorChrome } from "@/components/error-chrome";
+import { ErrorContent } from "@/components/error-content";
 
 // The UI for forbidden() — Next renders its own unstyled fallback when this file is absent, which
 // is what a denied visitor used to see (and what produced the bare NEXT_HTTP_ERROR_FALLBACK;403
@@ -13,6 +15,8 @@ import { headers } from "next/headers";
 //     "sign in", so lead with that and carry them back afterwards.
 //   - Signed IN but lacking the role: signing in again fixes nothing, so say so plainly and offer
 //     a way back into the app instead of a login loop.
+//
+// Wears the school's header and footer (ErrorChrome), like the 404.
 //
 // Isolation: never name the resource, the tenant that owns it, or the role required. "You do not
 // have access" is the entire message — anything more confirms that a thing exists to be denied.
@@ -24,33 +28,28 @@ export default async function Forbidden() {
   const signedIn = Boolean(session);
 
   return (
-    <main
-      style={style}
-      className="mx-auto flex min-h-screen max-w-xl flex-col items-center justify-center gap-4 px-6 text-center"
-    >
-      <h1 className="text-5xl font-bold">403</h1>
-      <p className="text-neutral-600 dark:text-neutral-400">
-        {signedIn
-          ? "You do not have access to this page. If you think that is wrong, ask whoever manages your school to check your role."
-          : "This page is for signed-in members. Sign in and we will bring you right back here."}
-      </p>
-      <div className="flex flex-wrap items-center justify-center gap-3">
-        {signedIn ? null : (
-          <Link
-            href={loginPathFor(h.get(PATHNAME_HEADER))}
-            className="min-h-11 rounded-md px-5 py-2.5 font-medium focus-visible:outline-2 focus-visible:outline-offset-2 pointer-coarse:min-h-12"
-            style={{ backgroundColor: "var(--accent)", color: "var(--accent-fg)" }}
-          >
-            Sign in
-          </Link>
-        )}
-        <Link
-          href="/"
-          className="min-h-11 rounded-md border border-neutral-300 px-5 py-2.5 font-medium focus-visible:outline-2 focus-visible:outline-offset-2 dark:border-neutral-700 pointer-coarse:min-h-12"
+    <ErrorChrome>
+      <div style={style}>
+        <ErrorContent
+          code="403"
+          title="No access"
+          message={
+            signedIn
+              ? "You do not have access to this page. If you think that is wrong, ask whoever manages your school to check your role."
+              : "This page is for signed-in members. Sign in and we will bring you right back here."
+          }
         >
-          Back to home
-        </Link>
+          {signedIn ? null : (
+            <Link
+              href={loginPathFor(h.get(PATHNAME_HEADER))}
+              className="inline-flex min-h-11 items-center rounded-md px-5 py-2.5 font-medium focus-visible:outline-2 focus-visible:outline-offset-2 pointer-coarse:min-h-12"
+              style={{ backgroundColor: "var(--accent)", color: "var(--accent-fg)" }}
+            >
+              Sign in
+            </Link>
+          )}
+        </ErrorContent>
       </div>
-    </main>
+    </ErrorChrome>
   );
 }

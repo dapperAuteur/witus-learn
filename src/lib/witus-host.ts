@@ -43,3 +43,16 @@ export function isWitusBrandedHost(rawHost: string | null | undefined): boolean 
     host.endsWith(".localhost")
   );
 }
+
+/**
+ * Does this request get the cross-product ecosystem footer rather than the school's own? WitUS-branded
+ * hosts (the apex, *.witus.online, learn.witus.online) and schools that opt in with
+ * `flags.ecosystemSso`; a white-label school on its own domain keeps its isolated footer. One rule
+ * for the school layout and the error pages, so a 404 wears the same footer as the page it replaced.
+ */
+export function usesEcosystemFooter(
+  rawHost: string | null | undefined,
+  tenant: { flags: { ecosystemSso?: unknown } },
+): boolean {
+  return isWitusBrandedHost(rawHost) || tenant.flags.ecosystemSso === true;
+}

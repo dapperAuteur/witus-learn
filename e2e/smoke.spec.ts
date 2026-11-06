@@ -19,3 +19,32 @@ test("@smoke homepage serves", async ({ page }) => {
   await page.goto("/");
   await expect(page.locator("h1").first()).toBeVisible();
 });
+
+// Error pages keep the header and footer (BAM, 2026-11-04). An unknown URL must answer 404 AND still
+// carry the school's header with its Sign in control and the footer, so a visitor who hits a dead link
+// can sign in or get back. Signed out on purpose (no auth state), which is when Sign in shows.
+test.describe("@smoke unknown URL", () => {
+  const path = "/this-page-does-not-exist-smoke-404";
+
+  test("@smoke answers 404 with the header's Sign in and the footer", async ({ page }) => {
+    await page.setViewportSize({ width: 1280, height: 800 });
+    const res = await page.goto(path);
+    expect(res?.status()).toBe(404);
+    const header = page.locator("header").first();
+    await expect(header).toBeVisible();
+    await expect(header.getByRole("link", { name: "Sign in" })).toBeVisible();
+    await expect(page.locator("footer").first()).toBeVisible();
+    await expect(page.locator("h1")).toHaveCount(1);
+    await expect(page.getByRole("link", { name: "Back to home" })).toBeVisible();
+  });
+
+  test("@smoke works at 320px: header, footer, no sideways scroll", async ({ page }) => {
+    await page.setViewportSize({ width: 320, height: 640 });
+    const res = await page.goto(path);
+    expect(res?.status()).toBe(404);
+    await expect(page.locator("header").first()).toBeVisible();
+    await expect(page.locator("footer").first()).toBeVisible();
+    const overflow = await page.evaluate(() => document.documentElement.scrollWidth - document.documentElement.clientWidth);
+    expect(overflow).toBeLessThanOrEqual(0);
+  });
+});
