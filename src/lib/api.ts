@@ -93,12 +93,13 @@ export async function canOpenCourseWorkspace(
 
 /**
  * The EPUB/PDF export gate (/api/admin/courses/[id]/epub and /pdf), for a course already resolved
- * in the request's tenant (exportAccess in src/lib/course-visibility.ts):
+ * in the request's tenant (exportAccess in src/lib/course-visibility.ts): whoever may open the
+ * course's workspace may export it, open courses included (BAM 2026-11-04, "every course should
+ * have that option"):
  *   - an OWNER-ONLY course exports only for the platform owner and its own instructor;
- *   - a private or held course for those two and the school's brand_admin;
- *   - anyone else gets "not-found", the answer a learner gets, so the route does not confirm it exists;
- *   - an open course exports for a tenant admin (brand_admin or platform owner), as it always has;
- *     anyone else gets "forbidden".
+ *   - any other course for those two and the school's brand_admin;
+ *   - anyone else gets "not-found" on a closed course (the answer a learner gets, so the route does
+ *     not confirm it exists) and "forbidden" on an open one.
  */
 export async function courseExportAccess(
   session: Session,

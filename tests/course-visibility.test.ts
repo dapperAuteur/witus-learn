@@ -226,6 +226,17 @@ describe("who runs a course: the school's brand_admin, except on an owner-only c
     expect(exportAccess(STRANGER, priv)).toBe("not-found");
     expect(exportAccess(STRANGER, open)).toBe("forbidden");
   });
+  it("exports every course whose workspace opens, so /teach shows the Download links on all of them", () => {
+    // BAM 2026-11-04: "every course should have that option". An open course's own instructor used
+    // to get the page without the links.
+    expect(exportAccess(INSTRUCTOR, open)).toBe("ok");
+    expect(exportAccess(INSTRUCTOR, priv)).toBe("ok");
+    for (const actor of [OWNER, INSTRUCTOR, SCHOOL_ADMIN, STRANGER]) {
+      for (const course of [open, priv, held, ownerOnly]) {
+        expect(exportAccess(actor, course) === "ok").toBe(workspaceAccess(actor, course));
+      }
+    }
+  });
   it("gives the switch to the owner and the school's brand_admin, not the instructor, not on owner-only", () => {
     expect(visibilityActorRole(OWNER, priv)).toBe("platform_owner");
     expect(visibilityActorRole(OWNER, ownerOnly)).toBe("platform_owner");

@@ -124,8 +124,9 @@ isn't flipped.`,
     keywords: ["epub", "pdf", "download", "e-reader", "kindle", "kobo", "print", "export", "offline"],
     body: `# Download a course as an EPUB or PDF
 
-School admins (the platform owner and brand admins) can take a course away as a book. Open the course
-under **Teach**, and next to **Recording script** use **Download EPUB** (for a Kindle via Send to Kindle,
+Anyone who can edit a course (its teacher, the school's admins, and the platform owner) can take it
+away as a book. Every course has the option. Open the course under **Teach**, and next to **Recording
+script** use **Download EPUB** (for a Kindle via Send to Kindle,
 a Kobo, or Apple Books) or **Download PDF** (letter size, readable at 100%, printable).
 
 The book is built from the **published** lessons the moment you click, so it matches what learners see;

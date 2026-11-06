@@ -174,7 +174,8 @@ export default async function ManageCoursePage({ params }: { params: Promise<{ c
   // owner-only (the gate above), so `isAdmin` here never opens an owner-only course.
   const isAdmin = owner || membership === "brand_admin";
   const actor = { isOwner: owner, isInstructor: course.instructorId === session.user.id, isSchoolAdmin: isAdmin };
-  // The export routes' own rule (courseExportAccess → exportAccess).
+  // The export routes' own rule (courseExportAccess → exportAccess): true for every viewer this page
+  // opens for, so every course shows its Download EPUB / PDF links.
   const canExport = exportAccess(actor, course) === "ok";
   // The Make public / Make private switch: the owner, or this school's brand_admin (null otherwise).
   const switchRole = visibilityActorRole(actor, course);
@@ -182,36 +183,39 @@ export default async function ManageCoursePage({ params }: { params: Promise<{ c
 
   return (
     <main className="mx-auto max-w-3xl px-4 py-10">
-      <div className="flex items-center justify-between">
-        <Link href="/teach" className="text-sm text-neutral-600 hover:underline">
+      <div className="flex flex-wrap items-center justify-between gap-x-4 gap-y-2">
+        <Link href="/teach" className="inline-flex min-h-11 items-center text-sm text-neutral-600 hover:underline">
           ← Your courses
         </Link>
-        <div className="flex items-center gap-4 text-sm">
-          <Link href={`${courseHref}/script`} className="underline" style={{ color: "var(--accent)" }}>
+        {/* Wraps instead of running off a phone screen: six links do not fit in one row at 360px. */}
+        <nav aria-label="Course tools" className="flex flex-wrap items-center gap-x-4 gap-y-1 text-sm">
+          <Link href={`${courseHref}/script`} className="inline-flex min-h-11 items-center underline" style={{ color: "var(--accent)" }}>
             📄 Recording script
           </Link>
-          {/* Admin-only reading copies (e-reader or paper), built from the published lessons. Plain
-              anchors, not <Link>: these are file downloads, and a prefetch would render a book. */}
+          {/* Reading copies (e-reader or paper), built from the published lessons, on every course this
+              viewer can edit (exportAccess). Plain anchors, not <Link>: these are file downloads, and a
+              prefetch would render a book. The course id, never the slug: a slug two courses share in
+              this school resolves to neither, and the download would 404. */}
           {canExport ? (
             <>
-              <a href={`/api/admin/courses/${course.slug ?? course.id}/epub`} download className="underline" style={{ color: "var(--accent)" }}>
+              <a href={`/api/admin/courses/${course.id}/epub`} download className="inline-flex min-h-11 items-center underline" style={{ color: "var(--accent)" }}>
                 Download EPUB
               </a>
-              <a href={`/api/admin/courses/${course.slug ?? course.id}/pdf`} download className="underline" style={{ color: "var(--accent)" }}>
+              <a href={`/api/admin/courses/${course.id}/pdf`} download className="inline-flex min-h-11 items-center underline" style={{ color: "var(--accent)" }}>
                 Download PDF
               </a>
             </>
           ) : null}
-          <Link href={`${courseHref}/submissions`} className="underline" style={{ color: "var(--accent)" }}>
+          <Link href={`${courseHref}/submissions`} className="inline-flex min-h-11 items-center underline" style={{ color: "var(--accent)" }}>
             Submissions
           </Link>
-          <Link href={`${courseHref}/embed`} className="underline" style={{ color: "var(--accent)" }}>
+          <Link href={`${courseHref}/embed`} className="inline-flex min-h-11 items-center underline" style={{ color: "var(--accent)" }}>
             Embed
           </Link>
-          <Link href={`/course/${course.id}`} className="underline" style={{ color: "var(--accent)" }}>
+          <Link href={`/course/${course.id}`} className="inline-flex min-h-11 items-center underline" style={{ color: "var(--accent)" }}>
             View public page →
           </Link>
-        </div>
+        </nav>
       </div>
 
       <h1 className="mt-4 text-2xl font-bold">{course.title}</h1>

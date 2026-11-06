@@ -103,6 +103,13 @@ describe.each([
     expect(mocks.listLessons).not.toHaveBeenCalled();
   });
 
+  it("downloads an OPEN course for its own instructor, so every course they edit has the links", async () => {
+    as("instructor");
+    const res = await call(route, COURSE.id);
+    expect(res.status).toBe(200);
+    expect(mocks.getCourseByIdOrSlug).toHaveBeenCalledWith(COURSE.id);
+  });
+
   it("404s a course that does not resolve in this tenant", async () => {
     mocks.getCourseByIdOrSlug.mockResolvedValue(null);
     const res = await call(route, "someone-elses-course");
@@ -199,5 +206,67 @@ describe("GET /api/admin/courses/[id]/pdf", () => {
     expect(marks).toContain("Published One");
     expect(marks).toContain("Quiz Two");
     expect(marks).not.toContain("Draft Lesson");
+  });
+});
+
+// Two Racetracks (BAM 2026-11-04: "there isn't a download pdf/epub for two-racetracks course"). Its rows
+// as the seeder writes them (scripts/lib/seed-authored-course.ts): a virtual tour with no body of its
+// own, a map, an exercise, an assignment, three quizzes and recall cards. Both books must build from
+// that shape, and the links on /teach address the course by id.
+describe("the Two Racetracks course exports as both books", () => {
+  async function seededRows() {
+    const { TWO_RACETRACKS_COURSE } = await import("../scripts/data/two-racetracks-course");
+    const { parseReleaseMarkers } = await import("@/lib/lesson-review");
+    const sections = [...new Set(TWO_RACETRACKS_COURSE.lessons.map((l) => l.section).filter(Boolean))] as string[];
+    const modules = sections.map((title, i) => ({ id: `m${i}`, courseId: COURSE.id, title, sortOrder: i + 1 }));
+    const lessons = TWO_RACETRACKS_COURSE.lessons.map((l, i) => ({
+      id: `l${i}`,
+      title: l.title,
+      slug: l.slug,
+      moduleId: l.section ? `m${sections.indexOf(l.section)}` : null,
+      lessonType: l.lessonType ?? (l.quiz ? "quiz" : l.exercise ? "exercise" : l.mapContent ? "map" : "text"),
+      isPublished: true,
+      textContent: l.body == null ? null : parseReleaseMarkers(l.body).body,
+      quizContent: l.quiz ?? null,
+      recallContent: l.recallContent ?? null,
+    }));
+    return { modules, lessons, count: TWO_RACETRACKS_COURSE.lessons.length };
+  }
+
+  beforeEach(async () => {
+    const { modules, lessons } = await seededRows();
+    as("owner");
+    mocks.getCourseByIdOrSlug.mockResolvedValue({ ...COURSE, slug: "two-racetracks", title: "Two Racetracks", visibility: "private" });
+    mocks.listModules.mockResolvedValue(modules);
+    mocks.listLessons.mockResolvedValue(lessons);
+  });
+
+  it("EPUB: every lesson is a chapter", async () => {
+    const { count } = await seededRows();
+    const res = await call(getEpub, COURSE.id);
+    expect(res.status).toBe(200);
+    expect(res.headers.get("content-disposition")).toBe('attachment; filename="two-racetracks.epub"');
+    const files = unzipSync(new Uint8Array(await res.arrayBuffer()));
+    expect(Object.keys(files).filter((f) => f.startsWith("OEBPS/text/")).length).toBeGreaterThanOrEqual(count);
+  });
+
+  it("PDF: builds, with a bookmark per lesson", async () => {
+    const { lessons } = await seededRows();
+    const res = await call(getPdf, COURSE.id);
+    expect(res.status).toBe(200);
+    const bytes = Buffer.from(await res.arrayBuffer());
+    expect(bytes.subarray(0, 5).toString("latin1")).toBe("%PDF-");
+    // One outline entry per lesson (its titles carry a middle dot, so they are written as UTF-16 hex
+    // strings rather than plain ones; counting the entries is the check that does not depend on that).
+    const outline = bytes.toString("latin1").match(/\/Title [(<]/g) ?? [];
+    expect(outline.length).toBeGreaterThanOrEqual(lessons.length);
+  });
+
+  it("/teach links the downloads by course id and shows them wherever exportAccess allows", async () => {
+    const { readFileSync } = await import("node:fs");
+    const page = readFileSync("src/app/(tenant)/teach/[courseId]/page.tsx", "utf8");
+    expect(page).toContain("href={`/api/admin/courses/${course.id}/epub`}");
+    expect(page).toContain("href={`/api/admin/courses/${course.id}/pdf`}");
+    expect(page).toMatch(/const canExport = exportAccess\(actor, course\) === "ok"/);
   });
 });

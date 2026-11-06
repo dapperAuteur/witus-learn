@@ -78,20 +78,23 @@ export function workspaceAccess(actor: CourseActor, course: { ownerOnly: boolean
 }
 
 /**
- * The EPUB/PDF export rule. "not-found" hides a course this viewer may not reach at all (owner-only,
- * or closed to someone outside its workspace); "forbidden" is an OPEN course that a non-admin asked
- * for, as before.
+ * The EPUB/PDF export rule: EVERY course a viewer may open the workspace of exports for them (BAM,
+ * 2026-11-04: "every course should have that option"), so the Download links on /teach/[courseId]
+ * show wherever that page opens. Before this an OPEN course exported only for the owner and the
+ * school's brand_admin, so its own instructor got the page without the links.
  *   - owner-only: the owner and its own instructor;
- *   - private or held: the owner, its own instructor, and the school's brand_admin;
- *   - open: the owner and the school's brand_admin (a tenant admin), as it always was.
+ *   - every other course, private, held or open: the owner, its own instructor, and the school's
+ *     brand_admin (workspaceAccess);
+ *   - anyone else: "not-found" for a closed or owner-only course (the route does not confirm it
+ *     exists), "forbidden" for an open one, as before.
  */
 export function exportAccess(
   actor: CourseActor,
   course: { ownerOnly: boolean; visibility: string; publishHoldReason: string | null },
 ): "ok" | "not-found" | "forbidden" {
   if (ownerOnlyBlocks(actor, course)) return "not-found";
-  if (isClosedCourse(course)) return workspaceAccess(actor, course) ? "ok" : "not-found";
-  return actor.isOwner || actor.isSchoolAdmin ? "ok" : "forbidden";
+  if (workspaceAccess(actor, course)) return "ok";
+  return isClosedCourse(course) ? "not-found" : "forbidden";
 }
 
 /**

@@ -21,8 +21,9 @@ export async function GET(_req: Request, { params }: Params) {
   const { id } = await params;
   const course = await sdb.getCourseByIdOrSlug(id);
   if (!course) return errorJson("Course not found.", 404);
-  // A private or held course exports only for the platform owner and its own instructor, and is
-  // "not found" to everyone else, brand_admins included (courseExportAccess in src/lib/api.ts).
+  // Exports for whoever may open the course's workspace: the platform owner, its own instructor, and
+  // the school's brand_admin (not on an owner-only course). Anyone else gets "not found" on a closed
+  // course and 403 on an open one (courseExportAccess in src/lib/api.ts).
   const access = await courseExportAccess(session, sdb.tenantId, course);
   if (access === "not-found") return errorJson("Course not found.", 404);
   if (access === "forbidden") return errorJson("Only a school admin can export a course.", 403);
