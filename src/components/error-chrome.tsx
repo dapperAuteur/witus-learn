@@ -1,5 +1,6 @@
 import type { CSSProperties, ReactNode } from "react";
 import { headers } from "next/headers";
+import { unstable_rethrow } from "next/navigation";
 import { resolveTenant, type TenantRecord } from "@/lib/tenant";
 import { hasAcknowledgedAge } from "@/lib/age-gate";
 import { usesEcosystemFooter } from "@/lib/witus-host";
@@ -31,6 +32,9 @@ export async function ErrorChrome({ children }: { children: ReactNode }) {
       ecosystem = usesEcosystemFooter(h.get("x-forwarded-host") ?? h.get("host"), tenant);
     }
   } catch (err) {
+    // Next's own signals (dynamic rendering, redirect, notFound) are not failures: let them through,
+    // or a prerender would bake the neutral chrome into the page.
+    unstable_rethrow(err);
     console.warn("[error-chrome] school header unavailable, using the neutral one", err);
     header = null;
   }

@@ -20,6 +20,7 @@ const mocks = vi.hoisted(() => ({
 vi.mock("next/headers", () => ({
   headers: async () => new Headers(mocks.host ? { host: mocks.host } : {}),
 }));
+vi.mock("next/navigation", () => ({ unstable_rethrow: () => {} }));
 vi.mock("@/lib/tenant", () => ({ resolveTenant: mocks.resolveTenant }));
 vi.mock("@/lib/age-gate", () => ({ hasAcknowledgedAge: mocks.hasAcknowledgedAge }));
 vi.mock("@/components/site-header", () => ({ SiteHeader: mocks.SiteHeader }));
