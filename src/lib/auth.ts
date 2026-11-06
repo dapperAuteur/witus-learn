@@ -5,6 +5,7 @@ import { magicLink } from "better-auth/plugins/magic-link";
 import { genericOAuth } from "better-auth/plugins";
 import { db, schema } from "@/db/client";
 import { userProfiles } from "@/db/schema";
+import { claimPendingRoleGrants } from "@/db/queries/pending-role-grants";
 import { env } from "./env";
 import { rewriteOrigin } from "./auth-url";
 import { sendEmail } from "./mailer";
@@ -121,6 +122,14 @@ export const auth = betterAuth({
             .insert(userProfiles)
             .values({ userId: user.id, isPlatformOwner: isOwner })
             .onConflictDoNothing();
+          // A role the owner granted this address before it had an account (pnpm test-users:prod)
+          // lands now, whichever way the account was made: a magic link on any school, or "Sign in
+          // with WitUS" on learn.witus.online. Never allowed to fail a sign-up.
+          try {
+            await claimPendingRoleGrants(user.id, user.email);
+          } catch (err) {
+            console.error("[auth] pending role grants not claimed", err);
+          }
         },
       },
     },

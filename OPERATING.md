@@ -299,3 +299,10 @@ pnpm rag:index:prod --courses-file changed.json      # [{ "tenantSlug": "...", "
 - **Demo account** ("Try the demo" on the Acme login page + its nightly reset cron): set
   `CRON_SECRET` / `DEMO_VISITOR_PASSWORD` / `DEMO_VISITOR_USER_EMAIL` in Vercel, add the Acme
   tenant's public host, then `pnpm seed:demo` once. See `plans/user-tasks/62-demo-account-setup.md`.
+- **Test teacher and school-admin accounts** (roles for your own test addresses on ONE school,
+  ElementaryMBA by default): `pnpm test-users:prod --instructor <email> --admin <email>
+  [--learner <email>] [--school <slug>]`, then `--check` to read the result back. An address with an
+  account gets the role at once; one without gets it on its first sign-in (magic link on any school,
+  or Sign in with WitUS on learn.witus.online), through a pending grant (`pending_role_grants`,
+  migration 0080) the sign-up hook claims. Refuses the platform owner's address, writes on no other
+  school, and changes no course. See `scripts/lib/test-users.ts`.

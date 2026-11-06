@@ -5,6 +5,12 @@
 export const ROADMAP = `# Learn.WitUS, Roadmap
 
 ## Platform
+- 🔧 **Test teacher and school-admin accounts on ElementaryMBA** (\`fix/test-users-exports-error-pages\`, migration
+  \`0080_pending_role_grants\`). BAM, 2026-11-04/05: "there are no teacher or admin users", "add [them] to
+  ElementaryMBA school". \`pnpm test-users:prod --instructor <email> --admin <email>\` gives the owner's own test
+  addresses a role on ONE school (ElementaryMBA by default): at once when the address has an account, otherwise
+  through a pending grant the sign-up hook claims on the first sign-in (magic link, or Sign in with WitUS). Refuses
+  the platform owner, writes on no other school, \`--check\` reads back.
 - 🔧 **Course chat is the owner's only until BAM turns it on; bulk "Set navigation" on /teach**
   (\`feat/chat-owner-default-and-bulk-cyoa\`, no migration). BAM, 2026-11-04: "chat should only be available for me
   until I turn it on for other users." A course with nothing saved now defaults to stage **owner** (the platform

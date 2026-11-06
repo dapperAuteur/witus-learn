@@ -965,6 +965,17 @@ optional: three env vars (`CRON_SECRET`, `DEMO_VISITOR_PASSWORD`, `DEMO_VISITOR_
 it, the app boots fine without them. See [src/db/queries/demo.ts](src/db/queries/demo.ts) and
 `plans/user-tasks/62-demo-account-setup.md`.
 
+## Test accounts for the owner
+
+`pnpm test-users:prod --instructor <email> --admin <email> [--learner <email>] [--school <slug>]`
+gives the owner's own test addresses a teacher, school-admin or learner role on **one** school
+(ElementaryMBA by default), so each role's view can be tried without touching any other school. An
+address that already has an account gets its role at once; an address with none gets a pending grant
+(`pending_role_grants`, migration 0080) that the sign-up hook in `src/lib/auth.ts` claims the moment
+the account is created, by a magic link or by Sign in with WitUS. `--check` reads it all back
+without writing. The addresses come from the command line or env, never from the repo; the platform
+owner's address is refused. See [scripts/lib/test-users.ts](scripts/lib/test-users.ts).
+
 ## Offline: what works without a connection
 
 The service worker (`public/sw.js`, **v6**) is network-first: online, every page is always fresh.

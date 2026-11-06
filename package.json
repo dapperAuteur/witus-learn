@@ -91,6 +91,7 @@
     "seed:neuromatch:prod": "tsx --env-file=.env.prod scripts/seed-neuromatch.ts",
     "seed:owner": "tsx --env-file=.env.local scripts/seed-owner.ts",
     "seed:owner:prod": "tsx --env-file=.env.prod scripts/seed-owner.ts",
+    "test-users:prod": "tsx --env-file=.env.prod scripts/test-users.ts",
     "seed:sommelier": "tsx --env-file=.env.local scripts/seed-sommelier.ts",
     "seed:sommelier:prod": "tsx --env-file=.env.prod scripts/seed-sommelier.ts",
     "seed:speedway": "tsx --env-file=.env.local scripts/seed-speedway.ts",
