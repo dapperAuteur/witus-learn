@@ -8,6 +8,7 @@
     "check:assessment-fit": "tsx scripts/check-assessment-fit.ts",
     "check:citations": "tsx scripts/check-citations.ts",
     "check:course-index": "tsx scripts/gen-course-index.ts --check",
+    "check:csv-quiz-balance": "tsx scripts/check-csv-quiz-balance.ts",
     "check:em-dashes": "tsx scripts/check-em-dashes.ts",
     "check:figures": "tsx scripts/check-figures.ts",
     "check:longest-option": "tsx scripts/check-longest-option.ts",
