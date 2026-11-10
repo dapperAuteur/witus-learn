@@ -253,7 +253,10 @@ You cannot mark your own course vetted, and that is deliberate: vetting means *s
 reviewed it. Here is the path.
 
 1. **Finish the course.** Every lesson published, quizzes in place, and the \`## Sources\` block
-   filled in on any lesson that makes a factual claim.
+   filled in on any lesson that makes a factual claim. **An AI tool is never a source:** every fact
+   traces to a document a reader can open (a primary record, a book, an article, a dataset, an
+   official page), never to "ChatGPT said" or "according to Gemini". AI may help you write; it is
+   never the authority cited.
 2. **Check it against the guards.** Ask the platform owner to run the content checks (they fail
    the build on a quiz answerable without reading, a broken self-check card, a figure with no
    credit), or watch for their feedback if they run them for you.
@@ -422,7 +425,9 @@ demonstration), or **a decision** the course author still has to make.
 2. Go to **Review lessons** (\`/audit/review\`). It lists every marked lesson in the courses you were
    invited to, where each one stands, and how you will be credited.
 3. Open a lesson, read it against its sources, and at the foot of the page choose one verdict:
-   **Cleared**, **Cleared with a correction**, or **Not cleared**.
+   **Cleared**, **Cleared with a correction**, or **Not cleared**. Check that every source is a
+   document a reader can open and none is an AI tool or a chat transcript ("according to ChatGPT",
+   a chatbot in the Sources list): a fact whose only source is an AI is not cleared.
 4. A correction is one short note (up to 1,000 characters) **attached to that lesson**. Nobody replies
    to it and nobody is notified; the author applies it. Recording a new verdict replaces your old one.
 5. To read offline, press **Download the lessons for your review (PDF)** or **(EPUB)** under the
