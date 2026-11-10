@@ -252,6 +252,12 @@ There is deliberately **no expected date** on that page. A missed date is worse 
 You cannot mark your own course vetted, and that is deliberate: vetting means *someone else*
 reviewed it. Here is the path.
 
+**Before any of it, the sources.** The list of documents a course will cite is approved by the
+course's owner before the first lesson is written, and a source added while writing is approved
+before the course leaves draft. If someone is building the course for you, you are the one who
+approves; see **Sources approval before writing** for what the packet holds and how each source
+earns its place.
+
 1. **Finish the course.** Every lesson published, quizzes in place, and the \`## Sources\` block
    filled in on any lesson that makes a factual claim. **An AI tool is never a source:** every fact
    traces to a document a reader can open (a primary record, a book, an article, a dataset, an
@@ -482,7 +488,123 @@ clears a qualified-reviewer need.
 Every course has a **Sources** page beside its course page, listing every work its lessons cite and,
 for each, the lessons that use it and where in the work (a page, a section, a locator). While a course
 is held it is open only to its editors and invited reviewers; **releasing the course opens it to
-learners**, with nothing else to switch on.`,
+learners**, with nothing else to switch on.
+
+A course built since November 2026 also has a **sources packet**: the list its owner approved before
+the first lesson was written, one entry per source with what it is used for and the provenance
+checks it passed. Ask the platform owner for it if you want to see what the course rests on before
+you read a lesson. What the checks are, and why no AI-text detector is among them, is in **Sources
+approval before writing**.`,
+  },
+  {
+    slug: "sources-approval-before-writing",
+    title: "Sources approval before writing",
+    category: "Courses",
+    keywords: [
+      "sources",
+      "source list",
+      "approve sources",
+      "sources packet",
+      "packet",
+      "provenance",
+      "ai generated",
+      "ai detector",
+      "detector",
+      "citation",
+      "bibliography",
+      "before writing",
+      "research",
+      "evidence",
+      "verify",
+      "owner",
+      "teacher approval",
+    ],
+    body: `# Sources approval before writing
+
+A course here teaches from documents a reader can open, so the list of documents comes first.
+**Before any lesson of a new course is written, the person who owns the course approves the list
+of sources it will cite.** If a course is being built for you (by the platform team, a co-author
+or an assistant), that person is you. If you are building a course for a school, it is the teacher
+the course is for. Nothing is drafted on a source the owner has not seen.
+
+## What you receive
+
+A **sources packet**: one short document, sent as a PDF and an EPUB, with one entry per source:
+
+- the full reference (title, author or publisher, date, link);
+- what kind of document it is (a primary record, an official body, a peer-reviewed or edited
+  publication, an archive or dataset, a book, a news report);
+- what the course will use it for (which lessons, which claims);
+- whether a learner will be able to open it (a hosted copy, a link, or a book to obtain);
+- a one-line note on where it came from and the date it was opened;
+- the checks it passed (the eight below), with a note wherever one needs explaining.
+
+Answer each entry with **approve**, **request a change** (a better edition, a source you trust
+more, a source you want left out) or **drop**. Changes come back to you before writing starts. If a
+source turns up while the course is being written, it is added to the packet, marked as awaiting
+your answer, and the course stays in draft until you have given it.
+
+## How a source earns its place
+
+Every source in a packet is held to the same eight checks. One that fails is marked unverified: it
+is replaced, or the claim that needed it is cut.
+
+1. **Kind.** A primary document, an official body, a peer-reviewed or edited publication, an
+   archive or a dataset come first. A secondary account is fine when it says where it got the fact.
+   An encyclopedia entry or a listicle is a pointer to follow, not a source.
+2. **Author.** A named person or institution stands behind it.
+3. **Date.** The page or record carries a publication, revision or record date.
+4. **Stable link.** It opened on the date noted, at a link, DOI, handle or shelfmark that can be
+   opened again. A page that could move is saved to the Wayback Machine first.
+5. **Editorial process.** The publisher's about page or masthead was read: who runs it, whether
+   anyone edits before publishing, how errors are corrected.
+6. **Cross-checked.** Each fact the course leans on was confirmed in a second, independent source,
+   named in the note.
+7. **No content-farm signals.** No author, no date, generic stock images, every page the same
+   length, no sources of its own, a domain registered recently: one is a flag, two or more fail
+   the check.
+8. **Not an AI.** Not a chatbot transcript or a chat link, not an AI-written summary, and not a
+   page whose only source for the fact is an AI. An AI tool is never a source here.
+
+## "How do you test whether a source is AI generated?"
+
+Honestly: **no automated AI-text detector is used.** The largest independent test so far, of 12
+public tools and the two systems universities buy (Turnitin and PlagiarismCheck), found the tools
+"neither accurate nor reliable", biased toward calling text human-written, and worse still on
+paraphrased or translated text (Weber-Wulff et al., 2023). Vanderbilt University switched
+Turnitin's detector off on the same evidence: at the vendor's own claimed 1 percent false-positive
+rate, about 750 of the 75,000 papers it had submitted in a year would have been wrongly flagged,
+and detectors flag non-native English writers more often (Vanderbilt University, 2023). A
+detector's score would tell you nothing you could stand behind, in either direction.
+
+What is done instead is the provenance check above, which asks a better question: not "did a
+machine write this?" but "who stands behind this, and can it be checked?" A page an AI wrote and
+nobody checked fails the author, editorial and content-farm checks. So does a page a person wrote
+carelessly, and the course is no worse off for not knowing which.
+
+The tools behind the checks are ordinary ones: the source itself, read in full, never a search
+snippet; Crossref for a DOI's real record and Unpaywall for a free copy; library catalogs and
+official registers for books and law; the Wayback Machine for a page's history; a WHOIS lookup for
+a domain's age; the publisher's own about and corrections pages; and a second independent source
+for every fact that matters.
+
+## Where this sits in the process
+
+Brief approved, then sources approved, then writing, then the content guards, then review and
+vetting (see **Vetting a course, and the "Coming soon" page** and **Reviewer sign-off**). A
+reviewer can ask for the packet: it is the quickest way to see what a course rests on before
+reading a lesson.
+
+## References
+
+Vanderbilt University. (2023, August 16). *Guidance on AI detection and why we're disabling
+Turnitin's AI detector*. Brightspace.
+https://www.vanderbilt.edu/brightspace/2023/08/16/guidance-on-ai-detection-and-why-were-disabling-turnitins-ai-detector/
+
+Weber-Wulff, D., Anohina-Naumeca, A., Bjelobaba, S., Foltýnek, T., Guerrero-Dib, J., Popoola, O.,
+Šigut, P., & Waddington, L. (2023). Testing of detection tools for AI-generated text.
+*International Journal for Educational Integrity, 19*, Article 26.
+https://doi.org/10.1007/s40979-023-00146-z`,
   },
   {
     slug: "tours-from-field-log",

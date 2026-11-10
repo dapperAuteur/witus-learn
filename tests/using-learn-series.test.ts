@@ -34,6 +34,8 @@ const WAIVED: Record<string, string> = {
     "shipped with feat/one-course-chat (the tutor and chat with the sources combined into one course chat); a Run Your Course lesson that teaches it is the follow-up (delete this line then)",
   "download-course-epub-pdf":
     "shipped with feat/course-export-buttons (two admin-only download links on the course manager); a Run Your School lesson that teaches it is the follow-up (delete this line then)",
+  "sources-approval-before-writing":
+    "shipped with docs/sources-approval-rule (the owner approves the sources packet before a lesson is written; BAM 2026-11-10); a Build a Course lesson that teaches it is the follow-up (delete this line then)",
 };
 
 describe("Using Learn.WitUS series", () => {

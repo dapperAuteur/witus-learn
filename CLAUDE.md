@@ -80,6 +80,38 @@ build gates a finished course must pass. Put one line in section 5, e.g. "Rubric
 B 3/2/3/1/2/2 = 29; form C5". The long-form version with worked examples is the WitUS library ebook
 `gemini/witus/plans/playbook/2026-09-18-course-creation-rubric.md`; the docs/ copy wins if they differ.
 
+## Sources-approval rule: the owner approves the source list before any lesson is written
+
+**BAM, 2026-11-10: "provide sources to me/teacher before using it in course creation for me/teacher to
+approve."** After the brief is approved and before the first lesson is written, the session puts the
+course's full source list in front of the **course owner** (BAM, or the teacher who owns the course) as a
+**sources packet**: `plans/sources-packets/<course-slug>.md` (gitignored, like the rest of `plans/`;
+template `plans/sources-packets/00-template.md`), rendered to PDF and EPUB with the witus library
+scripts (from `gemini/witus`: `npm run library:pdf -- <absolute path>.md` and `npm run library:epub --
+<absolute path>.md`; both take any path and write beside the source), plus an operator task in
+`plans/user-tasks/` that names the owner, the packet and what the approval unblocks. One entry per
+source: title, author or publisher, date, URL, type, what it will be used for, a one-line provenance
+note (where it came from, how it was found, the date it was opened), and the line of provenance checks
+it passed. **Building starts only after approval.** Changes requested on the packet come back before
+writing. A source added during writing is appended under "Added during writing", flagged awaiting
+approval, and the course does not leave draft (no merge task, no staging, no vetting request) until the
+owner has answered. The 2026-11-01 reviewer packets (`plans/outreach/*-sources-packet.md`: Belmont
+Beach, Fox Lake, Where We Rested) are the shape this grew from; this rule moves the packet to before
+the build and adds the checks line.
+
+The rubric gate is **D5c** (`docs/course-method/course-creation-rubric.md`). Its Part I.2 is the
+per-source checklist, **"How a source earns its place"**: kind (primary, official, peer-reviewed or
+edited, archive or dataset), named author or institution, date, stable URL, editorial process read,
+every load-bearing fact cross-checked, no content-farm signals, not an AI chat and not a page that cites
+only an AI. A source that fails a check is UNVERIFIED: find a better one or drop the claim. Part I.3
+answers BAM's question of the same day, "what steps, tools, and resources are you using to test if a
+source is AI generated?": **no automated AI-text detector is run, and none becomes a gate**, because the
+published tests cited there find the detectors neither accurate nor reliable; provenance checking is
+what is done, with the tools named (fetch and read the source itself, Crossref, Unpaywall, library
+catalogs and official registers, the Wayback Machine, WHOIS, the publisher's about page, a second
+independent source). Teachers and reviewers see the same rule in the help article **"Sources approval
+before writing"** (`src/lib/help-articles.ts`), which the vetting and reviewer sign-off articles link to.
+
 ## Standards-coverage rule — a new course declares its standards or says why not
 
 Educators shop on **standards coverage**, so it must not rot. `pnpm lint` runs
