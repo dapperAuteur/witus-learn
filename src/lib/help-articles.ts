@@ -743,6 +743,10 @@ school.
 **Remove teacher** takes the role away. Classes they already teach stay theirs; they just can't
 create new classes or courses here. Admins are managed separately and can't be removed on this page.
 
+**Everyone, not just teachers:** **Admin → Users** (\`/admin/users\`) lists every member of the school
+(learners too) with name, username, email, role, when they joined and their last sign-in, with a search
+box. That page is also where you hand a course to a teacher and decide teachers' course requests.
+
 **Just one class?** You don't have to make someone a teacher of the whole school. Create the class
 yourself, then on the class page **add them as its teacher**; they run that class and nothing else.`,
   },
@@ -1217,28 +1221,43 @@ message: nobody is notified, and nothing is sent.`,
   },
   {
     slug: "change-course-instructor",
-    title: "Change a course's instructor (fix wrong bylines)",
+    title: "Change a course's instructor (assign a teacher)",
     category: "Operator",
-    keywords: ["instructor", "owner", "byline", "reassign", "can't edit", "cannot edit", "record", "save", "witus-health", "trade-faculty", "permission", "403"],
+    keywords: ["instructor", "owner", "byline", "reassign", "assign", "teacher", "can't edit", "cannot edit", "record", "save", "witus-health", "trade-faculty", "permission", "403", "users"],
     body: `# Change a course's instructor
 
-Every course has one **instructor** (its owner). Only that instructor, plus brand admins and the
-platform owner, can edit, record, or save it. Some courses were seeded under placeholder instructors
-(\`@witus-health\`, \`@trade-faculty\`, or a \`bam\` seed id) that may not match the account you log in
-with, which is why they can feel read-only or "won't save".
+Every course has one **instructor**: the teacher who edits, records and is bylined on it. That teacher can
+be **any teacher or admin of the course's school**, or the platform owner. The owner and the teacher do not
+have to be the same person (BAM, 2026-11-10): a school's admin hands a course to one of the school's
+teachers, and the owner keeps every power on every school.
 
-## Fix one course (from the UI)
-As an **owner or brand admin**, open the course at \`/teach/<courseId>\` → **Course settings** →
-the **Instructor** dropdown → pick the right person → **Save settings**.
+Only the instructor, the school's admins and the platform owner can edit, record or save a course. Some
+courses were seeded under placeholder instructors (\`@witus-health\`, \`@trade-faculty\`, or a \`bam\` seed
+id) that may not match the account you log in with, which is why they can feel read-only or "won't save".
 
-- The course moves to that instructor's dashboard and its public URL changes to
-  \`/their-username/…\`. You keep access as an admin.
-- If you don't see the course under **Your courses**, admins see **every** course on the brand in
-  \`/teach\` (with an \`instructor:\` byline), so it's reachable there.
-- "That instructor already has a course at this URL" → two courses would share a slug; rename this
+## Assign a teacher (from the UI)
+Two places, same rule, as an **owner or school admin**:
+
+- **Admin → Users** (\`/admin/users\`) → **Assign a teacher to a course** → pick the teacher and the course
+  → **Assign this teacher**. The teacher list is the school's teachers and admins, named by name or email.
+- Or open the course at \`/teach/<course>\` → **Course settings** → the **Instructor** dropdown → pick the
+  person → **Save settings**.
+
+- The course moves to that teacher's Teach page and its public URL changes to \`/their-username/…\`.
+  You keep access as an admin; the previous instructor loses edit access.
+- Only a **teacher or admin of this school** can be picked ("isn't a teacher of this school" means make
+  them one on Admin → Teachers first). A teacher who has never signed in has no profile yet; ask them to
+  sign in once.
+- "That teacher already has a course at this URL" → two courses would share a slug; rename this
   course's slug first.
+- Every change is logged (who, in what role, from whom to whom, and from which page).
 
-## Fix them all at once (bulk)
+## Seeds keep your assignment
+A course that comes from a seed file used to go back to the owner on every re-seed. Since 2026-11-10 a
+re-seed leaves the instructor alone when they are a teacher or admin of the school (or the owner); it
+only replaces a stale seed account that has no role on the school, and logs that repair.
+
+## Fix them all at once (bulk, owner only)
 To make your account the instructor on **every** Learn.WitUS course, run the reassign script
 (dry-run first, then \`--apply\`):
 
@@ -1248,6 +1267,61 @@ pnpm reassign:instructor --apply
 \`\`\`
 
 See **user-task 42** in the repo for prod details.`,
+  },
+  {
+    slug: "school-users-and-course-requests",
+    title: "Your school's users, and teachers' course requests",
+    category: "Operator",
+    keywords: ["users", "members", "email", "username", "role", "last sign-in", "search", "course request", "approve", "decline", "admin"],
+    body: `# Your school's users, and course requests
+
+**Admin → Users** (\`/admin/users\`) is the school admin's list of everyone with a role at the school:
+**name, username, email, role** (admin, teacher or learner), **when they joined** and their **last
+sign-in**. Search by name, username or email. A school admin sees this school's members only.
+
+Below the list:
+
+- **Waiting for a first sign-in**: roles the platform owner granted to an address that has no account
+  yet. The role lands the moment that address signs in.
+- **Assign a teacher to a course**: pick a teacher (any teacher or admin of the school) and a course.
+  See "Change a course's instructor".
+- **Course requests**: teachers ask for a course from their Teach page. Each request shows the title,
+  what it covers, why, and a brief link if they gave one.
+  - **Approve and create the draft**: a **private, unpublished** draft course is created with that
+    teacher as its instructor. It appears under their **Your courses** on Teach; it goes public only
+    through the usual Make public switch after vetting.
+  - **Decline with note**: the teacher reads your note on Teach (at least 10 characters, so it says
+    something they can act on). A note is optional on an approval.
+  - A request is decided once. The teacher is emailed either way when the school's mail is set up; the
+    school's admins are emailed when a request comes in.
+
+To make someone a teacher in the first place, use **Admin → Teachers**.`,
+  },
+  {
+    slug: "request-a-course",
+    title: "Request a course from your school",
+    category: "Teaching",
+    keywords: ["request", "propose", "new course", "idea", "brief", "approve", "declined", "teacher"],
+    body: `# Request a course
+
+A teacher can propose a course and have the school approve it. On **Teach** (\`/teach\`), press
+**Request a course** and fill in:
+
+1. **Title**.
+2. **What it covers**, a sentence or two.
+3. **Why this course**, a sentence or two.
+4. An optional **link to a brief or outline** you already wrote.
+
+Press **Send the request**. The school's admins are told, and your request shows under **Your course
+requests** on Teach with its status:
+
+- **Waiting for the school**: not decided yet.
+- **Approved**: a private draft course was created with you as its instructor. Follow **Open the draft
+  course** and start adding lessons. It stays private and unpublished until the school opens it.
+- **Declined**: the school's note explains why. You can send a new request once you have addressed it.
+
+School admins and the platform owner do not need to request: they create courses directly with the
+**New course** form.`,
   },
   {
     slug: "api-keys-and-embedding",

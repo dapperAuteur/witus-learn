@@ -162,6 +162,8 @@ export const TUTORIAL_SCRIPTS: TutorialScript[] = [
   placeholder("change-course-instructor", "Changing a course's instructor"),
   placeholder("api-keys-and-embedding", "API keys and embedding"),
   placeholder("admin-home-and-brand-settings", "The admin home and brand settings"),
+  placeholder("school-users-and-course-requests", "Your school's users and course requests"),
+  placeholder("request-a-course", "Requesting a course from your school"),
 ];
 
 export function tutorialScriptFor(helpSlug: string): TutorialScript | undefined {
