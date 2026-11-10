@@ -139,6 +139,7 @@ export const TUTORIAL_SCRIPTS: TutorialScript[] = [
   placeholder("categories", "Organizing the catalog with categories"),
   placeholder("publish-visibility-holds", "Publishing, visibility, and holds"),
   placeholder("reviewer-sign-off", "Reviewer sign-off on lessons marked Before release"),
+  placeholder("sources-approval-before-writing", "Sources approval before writing"),
   placeholder("tours-from-field-log", "Tours from the field: a Field Log capture in a tour lesson"),
   placeholder("launch-to-do-list", "The launch to-do list, and the warning before a course goes live"),
   placeholder("quick-recall", "Quick recall"),

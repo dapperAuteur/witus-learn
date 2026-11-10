@@ -38,6 +38,8 @@ const WAIVED: Record<string, string> = {
     "shipped with feat/school-admin-roles (/admin/users: members, assign a teacher to a course, decide course requests); a Run Your School lesson that teaches it is the follow-up (delete this line then)",
   "request-a-course":
     "shipped with feat/school-admin-roles (Request a course on /teach); a Build a Course lesson that teaches it is the follow-up (delete this line then)",
+  "sources-approval-before-writing":
+    "shipped with docs/sources-approval-rule (the owner approves the sources packet before a lesson is written; BAM 2026-11-10); a Build a Course lesson that teaches it is the follow-up (delete this line then)",
 };
 
 describe("Using Learn.WitUS series", () => {
