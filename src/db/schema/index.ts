@@ -38,3 +38,4 @@ export * from "./interest";
 export * from "./teacher-age";
 export * from "./contact";
 export * from "./pending-role-grants";
+export * from "./course-requests";
