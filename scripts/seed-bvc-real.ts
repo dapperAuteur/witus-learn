@@ -9,6 +9,7 @@ import * as schema from "../src/db/schema";
 import { resolveDbUrl } from "./db-url";
 import { seedAuthoredCourse } from "./lib/seed-authored-course";
 import { cleanLessonMarkdown, convertCentosQuiz, type CentosQuiz } from "./lib/centos-content";
+import { ownerEmail } from "./lib/owner";
 import type { AuthoredCourse, AuthoredLesson } from "./data/authored-course";
 import { unmatchedFigureKeys, withFigures } from "../src/lib/course-figures";
 
@@ -135,7 +136,7 @@ async function main() {
   // regressed reassign:instructor on every re-seed.
   const instructorId = await ensureInstructor(tenantId, {
     id: "bam",
-    email: "bam@awews.com",
+    email: ownerEmail(),
     username: "bam",
     displayName: "BAM",
   });
@@ -180,7 +181,7 @@ async function main() {
   const shares = [
     {
       slug: "learn-witus",
-      instructor: { id: "bam", email: "bam@awews.com", username: "bam", displayName: "BAM" },
+      instructor: { id: "bam", email: ownerEmail(), username: "bam", displayName: "BAM" },
       collection: "Better Vice Club: Origin Stories",
       keepBvcBranding: true,
     },
@@ -188,7 +189,7 @@ async function main() {
       slug: "elementary-mba",
       // Same real account as everywhere else — a synthetic "emba-faculty" here would strand
       // the shared S1 episodes under /emba-faculty/ on that tenant.
-      instructor: { id: "bam", email: "bam@awews.com", username: "bam", displayName: "BAM" },
+      instructor: { id: "bam", email: ownerEmail(), username: "bam", displayName: "BAM" },
       collection: "Commodity: Origin Stories. Canon Events.",
       keepBvcBranding: false,
     },

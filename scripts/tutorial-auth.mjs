@@ -18,7 +18,7 @@ import * as path from "node:path";
 
 const PROFILES = {
   acme: {
-    who: "bam@awews.com — the instructor who owns the demo courses on the Acme demo school",
+    who: "the platform owner (the address in PLATFORM_OWNER_EMAIL), the instructor who owns the demo courses on the Acme demo school",
     url: "https://acme.learning.witus.online",
     file: ".auth/tutorial-acme.json",
     // /family is gated by requireUserPage, so it 307s to /login when signed out. Do NOT use

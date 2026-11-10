@@ -17,6 +17,7 @@ import ws from "ws";
 import * as schema from "../src/db/schema";
 import { seedAuthoredCourse } from "./lib/seed-authored-course";
 import { resolveDbUrl } from "./db-url";
+import { ownerEmail } from "./lib/owner";
 import { WELL_ORIENTATION_SCOPE_COURSE } from "./data/well-orientation-scope-course";
 import { WELL_COACHING_PSYCHOLOGY_COURSE } from "./data/well-coaching-psychology-course";
 import { WELL_COACHING_MOVEMENT_COURSE } from "./data/well-coaching-movement-course";
@@ -29,7 +30,7 @@ import { WELL_CONTEXT_EQUITY_COURSE } from "./data/well-context-equity-course";
 import { WELL_CENTENARIAN_CAPSTONE_COURSE } from "./data/well-centenarian-capstone-course";
 
 const TARGET_SLUG = "learn-witus";
-const INSTRUCTOR_EMAIL = "bam@awews.com";
+const INSTRUCTOR_EMAIL = ownerEmail();
 const HOLD_REASON = "Private study program (plans/67). Owner-only until the public flip.";
 
 async function main() {

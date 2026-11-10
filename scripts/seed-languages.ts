@@ -9,6 +9,7 @@ import * as schema from "../src/db/schema";
 import { resolveDbUrl } from "./db-url";
 import { NEW_COURSE_STATE } from "../src/lib/course-visibility";
 import { seedAuthoredCourse } from "./lib/seed-authored-course";
+import { ownerEmail } from "./lib/owner";
 import type { AuthoredCourse } from "./data/authored-course";
 import { SPANISH_COURSE } from "./data/spanish-course";
 import { FRENCH_COURSE } from "./data/french-course";
@@ -108,10 +109,10 @@ function buildCsvLessons(
 }
 
 async function ensureInstructor(tenantId: string): Promise<string> {
-  // BAM is the instructor. Reuse the real account if bam@awews.com already exists (BAM has
+  // BAM is the instructor. Reuse the real account if the owner's address already exists (BAM has
   // logged in, so an auth id owns it) — inserting the synthetic "bam" id would conflict on
   // the email and the membership FK would fail. Mirrors seed-courses.ts.
-  const who = { id: "bam", email: "bam@awews.com", username: "bam", displayName: "BAM" };
+  const who = { id: "bam", email: ownerEmail(), username: "bam", displayName: "BAM" };
   const existing = await db
     .select({ id: schema.users.id })
     .from(schema.users)

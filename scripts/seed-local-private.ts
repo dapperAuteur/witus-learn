@@ -39,6 +39,7 @@ import ws from "ws";
 import * as schema from "../src/db/schema";
 import { resolveDbUrl } from "./db-url";
 import { seedAuthoredCourse } from "./lib/seed-authored-course";
+import { ownerEmail } from "./lib/owner";
 import type { AuthoredCourse } from "./data/authored-course";
 
 neonConfig.webSocketConstructor = ws;
@@ -122,7 +123,7 @@ async function main(): Promise<void> {
     const [owner] = await db
       .select()
       .from(schema.users)
-      .where(eq(schema.users.email, "bam@awews.com"))
+      .where(eq(schema.users.email, ownerEmail()))
       .limit(1);
     if (!owner) throw new Error("Owner user not found. Run pnpm seed:owner first.");
 

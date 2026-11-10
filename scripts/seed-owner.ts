@@ -4,10 +4,11 @@ import { drizzle } from "drizzle-orm/neon-serverless";
 import ws from "ws";
 import * as schema from "../src/db/schema";
 import { resolveDbUrl } from "./db-url";
+import { ownerEmail } from "./lib/owner";
 
 // Seeds BAM as the platform owner and the instructor on EVERY course (re-homing the
 // synthetic seed instructors @witus-faculty / @witus-languages / @bvc-faculty to him).
-// His user matches by email, so signing in as bam@awews.com lands on this account.
+// His user matches by email (PLATFORM_OWNER_EMAIL), so signing in with that address lands on this account.
 // Run: pnpm seed:owner
 
 neonConfig.webSocketConstructor = ws;
@@ -19,7 +20,7 @@ if (!connectionString || connectionString.includes("placeholder")) {
 const pool = new Pool({ connectionString });
 const db = drizzle(pool, { schema, casing: "snake_case" });
 
-const OWNER_EMAIL = "bam@awews.com";
+const OWNER_EMAIL = ownerEmail();
 
 async function main() {
   // 1. Ensure the user. If BAM already signed in (user exists under a generated id),
@@ -62,7 +63,7 @@ async function main() {
   console.log(`Re-homed ${res.length} courses to BAM (${ownerId}).`);
 
   await pool.end();
-  console.log("Done. Set PLATFORM_OWNER_EMAIL=bam@awews.com so future logins keep owner.");
+  console.log("Done. Keep PLATFORM_OWNER_EMAIL set to this address in the app's environment so future logins keep owner.");
 }
 
 main().catch((error) => {

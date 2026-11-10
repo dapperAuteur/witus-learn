@@ -11,8 +11,9 @@ import { drizzle } from "drizzle-orm/neon-serverless";
 import ws from "ws";
 import * as schema from "../src/db/schema";
 import { resolveDbUrl } from "./db-url";
+import { ownerEmail } from "./lib/owner";
 
-const OWNER_EMAIL = process.env.PLATFORM_OWNER_EMAIL || "bam@awews.com";
+const OWNER_EMAIL = ownerEmail();
 // Courses stranded on these standalone tenants get moved into the Learn.WitUS catalog.
 const MERGE_FROM = ["trade-school", "witus-health", "health"];
 

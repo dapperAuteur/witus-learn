@@ -7,6 +7,7 @@ import ws from "ws";
 import * as schema from "../src/db/schema";
 import { resolveDbUrl } from "./db-url";
 import { seedAuthoredCourse } from "./lib/seed-authored-course";
+import { ownerEmail } from "./lib/owner";
 import type { AuthoredCourse, AuthoredLesson } from "./data/authored-course";
 import type { QuizContent } from "../src/lib/quiz";
 
@@ -107,7 +108,7 @@ async function main() {
   // BAM is the instructor on Learn.WitUS courses (matches seed-courses.ts).
   const instructorId = await ensureInstructor(learnWitus, {
     id: "bam",
-    email: "bam@awews.com",
+    email: ownerEmail(),
     username: "bam",
     displayName: "BAM",
   });

@@ -7,6 +7,7 @@ import { resolveDbUrl } from "./db-url";
 import { seedAuthoredCourse } from "./lib/seed-authored-course";
 import type { AuthoredCourse } from "./data/authored-course";
 import { buildFaaCourse, readFaaGlossary, type BuildStats } from "./lib/faa-course";
+import { ownerEmail } from "./lib/owner";
 
 // Imports the FAA Part 107 course (authored by CentOS, audio-first) from the
 // gitignored content/drone-curriculum/academy-import/ into Learn.WitUS. Reads the
@@ -148,18 +149,19 @@ async function main() {
     // This used to seed a synthetic "trade-faculty" account, which put the course at
     // /trade-faculty/faa-part-107 instead of /bam/faa-part-107 — course URLs are
     // /{instructor-username}/{slug}. Match by email so the real logged-in account (which owns
-    // bam@awews.com) keeps ownership; seedAuthoredCourse updates instructor_id on re-seed, so
+    // the owner's address) keeps ownership; seedAuthoredCourse updates instructor_id on re-seed, so
     // one `pnpm seed:faa` re-run moves the live course to /bam/.
+    const email = ownerEmail();
     const existing = await db
       .select({ id: schema.users.id })
       .from(schema.users)
-      .where(eq(schema.users.email, "bam@awews.com"))
+      .where(eq(schema.users.email, email))
       .limit(1);
     const instructorId = existing[0]?.id ?? "bam";
     if (!existing[0]) {
       await db
         .insert(schema.users)
-        .values({ id: instructorId, email: "bam@awews.com", emailVerified: true, name: "BAM" })
+        .values({ id: instructorId, email, emailVerified: true, name: "BAM" })
         .onConflictDoNothing();
     }
     await db

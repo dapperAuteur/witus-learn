@@ -39,6 +39,7 @@ import ws from "ws";
 import { z } from "zod";
 import * as schema from "../src/db/schema";
 import { resolveDbUrl } from "./db-url";
+import { ownerEmail } from "./lib/owner";
 import { LegSchema } from "../src/lib/field-log-leg-schema";
 import { initialChecklist, templateByKey } from "../src/lib/field-log-templates";
 
@@ -92,7 +93,6 @@ async function main(): Promise<void> {
     console.error("Usage: pnpm field-log:import <file.json> [more.json ...] [--email you@example.com] [--tenant learn-witus] [--replace] [--check]");
     process.exit(1);
   }
-  const email = arg("--email", "bam@awews.com");
   const tenantSlug = arg("--tenant", "learn-witus");
   const replace = process.argv.includes("--replace");
 
@@ -107,6 +107,9 @@ async function main(): Promise<void> {
     for (const { path, data } of entries) console.log(`  ok: "${data.title}" · ${data.legs.length} legs · ${relative(ROOT, path)}`);
     return;
   }
+  // The owner's account by default (PLATFORM_OWNER_EMAIL, scripts/lib/owner.ts); read after --check so a
+  // validation run needs no env file.
+  const email = arg("--email", "") || ownerEmail();
 
   const url = resolveDbUrl(true);
   if (!url) throw new Error("No database URL in the environment (see scripts/db-url.ts).");

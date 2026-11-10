@@ -5,6 +5,7 @@ import ws from "ws";
 import * as schema from "../src/db/schema";
 import { resolveDbUrl } from "./db-url";
 import { seedAuthoredCourse } from "./lib/seed-authored-course";
+import { ownerEmail } from "./lib/owner";
 import { BVC_SOMMELIER_WINE_COURSE } from "./data/bvc-sommelier-wine-course";
 import { BVC_SOMMELIER_COFFEE_COURSE } from "./data/bvc-sommelier-coffee-course";
 import { BVC_SOMMELIER_CHOCOLATE_COURSE } from "./data/bvc-sommelier-chocolate-course";
@@ -48,11 +49,11 @@ async function tenantBySlug(slug: string): Promise<string | undefined> {
   return r[0]?.id;
 }
 
-// Match by email first: if BAM has logged in, an auth-generated id already owns bam@awews.com, so
+// Match by email first: if BAM has logged in, an auth-generated id already owns the owner's address, so
 // inserting the synthetic id would no-op on the unique email and leave the membership FK pointing
 // at a row that does not exist. Same guard as every other seeder in this repo.
 async function ensureInstructor(tenantId: string): Promise<string> {
-  const who = { id: "bam", email: "bam@awews.com", username: "bam", displayName: "BAM" };
+  const who = { id: "bam", email: ownerEmail(), username: "bam", displayName: "BAM" };
   const existing = await db
     .select({ id: schema.users.id })
     .from(schema.users)
