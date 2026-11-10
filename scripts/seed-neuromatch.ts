@@ -32,6 +32,7 @@ import ws from "ws";
 import * as schema from "../src/db/schema";
 import { resolveDbUrl } from "./db-url";
 import { seedAuthoredCourse } from "./lib/seed-authored-course";
+import { ownerEmail } from "./lib/owner";
 import type { AuthoredCourse } from "./data/authored-course";
 import { NEUROMATCH_COMPNEURO_COURSE } from "./data/neuromatch-compneuro-course";
 import { NEUROMATCH_DEEP_LEARNING_COURSE } from "./data/neuromatch-deep-learning-course";
@@ -39,7 +40,7 @@ import { NEUROMATCH_COMP_BEHAVIOUR_COURSE } from "./data/neuromatch-comp-behavio
 import { NEUROMATCH_CLIMATE_TOOLS_COURSE } from "./data/neuromatch-climate-tools-course";
 
 const TARGET_SLUG = "learn-witus";
-const INSTRUCTOR_EMAIL = "bam@awews.com";
+const INSTRUCTOR_EMAIL = ownerEmail();
 const HOLD_REASON =
   "Private study course (plans/74). Owner-only while BAM works through it; flip to public only after a standards pass and citation staging.";
 

@@ -5,6 +5,7 @@ import ws from "ws";
 import * as schema from "../src/db/schema";
 import { resolveDbUrl } from "./db-url";
 import { seedAuthoredCourse } from "./lib/seed-authored-course";
+import { ownerEmail } from "./lib/owner";
 import type { AuthoredCourse } from "./data/authored-course";
 import { READ_YOUR_BODY_COURSE } from "./data/read-your-body-course";
 import { DENTAL_HEALTH_COURSE } from "./data/dental-health-course";
@@ -63,16 +64,17 @@ async function ensureInstructor(tenantId: string): Promise<string> {
   // /witus-health/... (course URLs are /{instructor-username}/{slug}) and REGRESSED the
   // data each re-seed even after `reassign:instructor --apply` had fixed it. Match the
   // real account by email, like seed-courses.ts's ensureInstructor.
+  const email = ownerEmail();
   const existing = await db
     .select({ id: schema.users.id })
     .from(schema.users)
-    .where(eq(schema.users.email, "bam@awews.com"))
+    .where(eq(schema.users.email, email))
     .limit(1);
   const id = existing[0]?.id ?? "bam";
   if (!existing[0]) {
     await db
       .insert(schema.users)
-      .values({ id, email: "bam@awews.com", emailVerified: true, name: "BAM" })
+      .values({ id, email, emailVerified: true, name: "BAM" })
       .onConflictDoNothing();
   }
   await db

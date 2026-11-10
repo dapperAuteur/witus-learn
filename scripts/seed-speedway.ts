@@ -5,6 +5,7 @@ import ws from "ws";
 import * as schema from "../src/db/schema";
 import { resolveDbUrl } from "./db-url";
 import { seedAuthoredCourse } from "./lib/seed-authored-course";
+import { ownerEmail } from "./lib/owner";
 import { SPEEDWAY_COURSE } from "./data/speedway-course";
 import { ROBOTICS_STEAM_COURSE } from "./data/robotics-steam-course";
 import { AI_YOUNG_MAKERS_COURSE } from "./data/ai-young-makers-course";
@@ -62,16 +63,17 @@ async function main() {
 
   // BAM instructs every course, on every tenant — the synthetic "emba-faculty" account put
   // Speedway under /emba-faculty/... and regressed reassign:instructor on every re-seed.
+  const email = ownerEmail();
   const existing = await db
     .select({ id: schema.users.id })
     .from(schema.users)
-    .where(eq(schema.users.email, "bam@awews.com"))
+    .where(eq(schema.users.email, email))
     .limit(1);
   const instructorId = existing[0]?.id ?? "bam";
   if (!existing[0]) {
     await db
       .insert(schema.users)
-      .values({ id: instructorId, email: "bam@awews.com", emailVerified: true, name: "BAM" })
+      .values({ id: instructorId, email, emailVerified: true, name: "BAM" })
       .onConflictDoNothing();
   }
   await db

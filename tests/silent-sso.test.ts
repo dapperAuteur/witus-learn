@@ -312,7 +312,7 @@ describe("reading the probe answer", () => {
     expect(
       parseSilentSsoIdentity({
         session: { id: "s1", userId: "u1" },
-        user: { id: "u1", name: "Brand Anthony McDonald", email: "bam@awews.com" },
+        user: { id: "u1", name: "Brand Anthony McDonald", email: "owner@example.com" },
       }),
     ).toEqual({ label: "Brand Anthony McDonald" });
   });

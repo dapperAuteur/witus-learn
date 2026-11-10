@@ -19,6 +19,8 @@ describe("seed-production.yml", () => {
     expect(wf).toMatch(/concurrency:\n {2}group: seed-production\n(?: {2}#.*\n)* {2}cancel-in-progress: false/);
     expect(wf).toContain("::error::Set the repository secret NEON_DIRECT_URL");
     expect(wf).toContain("::error::Set the repository secret MISTRAL_API_KEY");
+    // Task 394: the owner's address left the seed scripts for PLATFORM_OWNER_EMAIL (scripts/lib/owner.ts).
+    expect(wf).toContain("::error::Set the repository secret PLATFORM_OWNER_EMAIL");
     // Embeddings moved to Mistral in migration 0076: the Gemini secret is no longer read.
     expect(wf).not.toContain("GOOGLE_GEMINI_API_KEY");
   });
@@ -30,6 +32,10 @@ describe("seed-production.yml", () => {
     expect(order.every((i) => i > 0)).toBe(true);
     expect([...order].sort((a, b) => a - b)).toEqual(order);
     expect(wf).toContain("SEED_REPORT_PATH: ${{ runner.temp }}/seed-report.json");
+    // The seed step gets the owner's address; ownerEmail() throws without it, so the step would fail
+    // before writing anything rather than create an instructor with an empty address.
+    const seedStep = wf.slice(wf.indexOf("- name: Seed courses"), wf.indexOf("- name: Refresh the RAG index"));
+    expect(seedStep).toContain("PLATFORM_OWNER_EMAIL: ${{ secrets.PLATFORM_OWNER_EMAIL }}");
     expect(wf).toContain('args="--courses-file $list"');
     expect(wf).toContain("GITHUB_STEP_SUMMARY");
   });

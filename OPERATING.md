@@ -4,8 +4,9 @@ The one place for the commands to run the app and keep courses/content correct. 
 in the in-app **Help Center** (`/help` → "Keeping courses & content current"). Update this file
 whenever a migration or seed is added.
 
-All commands run from the repo root. Local uses `.env.local`; prod uses the deploy's env
-(the `:prod` variants skip `--env-file`). `pnpm` is the package manager.
+All commands run from the repo root. Local uses `.env.local`; the `:prod` variants load `.env.prod`
+(both gitignored). Every seed, `reassign:instructor` and `field-log:import` need `PLATFORM_OWNER_EMAIL`
+in that file (§3b) and stop before writing anything when it is missing. `pnpm` is the package manager.
 
 ---
 
@@ -34,7 +35,7 @@ If you're not sure which seed owns a course, see the reference in §4.
 ```bash
 pnpm db:migrate:prod        # 1. schema (all migrations, currently through 0024)
 pnpm seed:tenants           # 2. tenants FIRST (BVC + Learn.WitUS + test tenant). Everything needs this.
-pnpm seed:owner             # 3. platform owner / instructor (BAM)
+pnpm seed:owner             # 3. platform owner / instructor (the PLATFORM_OWNER_EMAIL account)
 pnpm seed:map               # 4. Commodity Map + growing belts + languages atlas
 pnpm seed:languages         # 5. language courses
 pnpm seed:courses           # 6. civics, AI ladders, hoodoo, Ed.L.D., etc. (most authored courses)
@@ -145,16 +146,23 @@ stale, `needing` for every course never indexed or stale, or `none`). Or
 
 **The secrets, set once** (piped, never pasted; GitHub masks them). `NEON_DIRECT_URL` is the same
 secret as §3a. The Mistral key (embeddings since migration 0076; the old `GOOGLE_GEMINI_API_KEY`
-secret is no longer read by this workflow):
+secret is no longer read by this workflow). And the platform owner's address, `PLATFORM_OWNER_EMAIL`:
+every seed reads it through `scripts/lib/owner.ts` to match or create the owner's instructor account.
+It is the variable the app already reads (`src/lib/env.ts`); the scripts used to carry the address
+themselves, and task 394 (2026-11-09) moved it here so it is not written in this public repository.
+A seed with the variable unset throws, naming it, before it writes anything.
 
 ```bash
 grep '^MISTRAL_API_KEY=' .env.prod | cut -d= -f2- | tr -d '"' \
   | gh secret set MISTRAL_API_KEY --repo dapperAuteur/witus-learn
+grep '^PLATFORM_OWNER_EMAIL=' .env.prod | cut -d= -f2- | tr -d '"' \
+  | gh secret set PLATFORM_OWNER_EMAIL --repo dapperAuteur/witus-learn
 ```
 
-Without either, the job stops at its first step with `::error::Set the repository secret ...`.
+Without any of the three, the job stops at its first step with `::error::Set the repository secret ...`.
 
-**Manual fallback (the laptop).**
+**Manual fallback (the laptop).** `.env.prod` must carry `PLATFORM_OWNER_EMAIL` as well as the database
+URL; `seed:courses:prod` stops with an error naming the variable otherwise.
 
 ```bash
 pnpm install --frozen-lockfile
@@ -220,6 +228,9 @@ failed, after trying all of them.
 | `seed:faa` | FAA Part 107 |
 | `seed:bvc:real` | Better Vice Club real episodes |
 | `seed:map` | Commodity Map, growing belts, languages atlas |
+
+Every seed in this table runs as the owner: it matches or creates the instructor account by
+`PLATFORM_OWNER_EMAIL` (§3b), so that variable must be in the env file the command loads.
 
 Course source lives in `scripts/data/<slug>-course.ts` (or `scripts/data/langchain/<repo>/` for the
 LangGraph courses). **Edit the source → re-run that seed** to push it live.

@@ -24,7 +24,9 @@
 #      The one-time backfill after 0079 is this step: Run workflow with seed off, rag "none", cyoa "needing".
 #
 # Secrets (set once, piped, never pasted; OPERATING.md section 3b): NEON_DIRECT_URL (the same one the
-# migrate workflow reads) and MISTRAL_API_KEY (embeddings). Fails closed when either is missing.
+# migrate workflow reads), MISTRAL_API_KEY (embeddings) and PLATFORM_OWNER_EMAIL (the owner's address: the
+# seed matches or creates the instructor account by it through scripts/lib/owner.ts, since task 394 took the
+# address out of the scripts). Fails closed when any of the three is missing.
 # Other seeds (seed:health, seed:speedway, seed:langchain, seed:faa, ...) stay manual (OPERATING.md
 # section 4): some read gitignored content the runner does not have.
 name: Seed production courses
@@ -74,6 +76,7 @@ jobs:
         env:
           NEON_DIRECT_URL: ${{ secrets.NEON_DIRECT_URL }}
           MISTRAL_API_KEY: ${{ secrets.MISTRAL_API_KEY }}
+          PLATFORM_OWNER_EMAIL: ${{ secrets.PLATFORM_OWNER_EMAIL }}
         run: |
           if [ -z "$NEON_DIRECT_URL" ]; then
             echo "::error::Set the repository secret NEON_DIRECT_URL (OPERATING.md, section 3a: Automatic migrations)."
@@ -81,6 +84,10 @@ jobs:
           fi
           if [ -z "$MISTRAL_API_KEY" ]; then
             echo "::error::Set the repository secret MISTRAL_API_KEY (OPERATING.md, section 3b: Automatic seeds and RAG index)."
+            exit 1
+          fi
+          if [ -z "$PLATFORM_OWNER_EMAIL" ]; then
+            echo "::error::Set the repository secret PLATFORM_OWNER_EMAIL (OPERATING.md, section 3b: Automatic seeds and RAG index)."
             exit 1
           fi
 
@@ -121,6 +128,7 @@ jobs:
         env:
           DATABASE_URL_UNPOOLED: ${{ secrets.NEON_DIRECT_URL }}
           SEED_REPORT_PATH: ${{ runner.temp }}/seed-report.json
+          PLATFORM_OWNER_EMAIL: ${{ secrets.PLATFORM_OWNER_EMAIL }}
         run: |
           pnpm exec tsx scripts/seed-courses.ts | tee "$RUNNER_TEMP/seed.log"
           {

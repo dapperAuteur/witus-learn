@@ -6,6 +6,7 @@ import * as schema from "../src/db/schema";
 import { resolveDbUrl } from "./db-url";
 import { seedAuthoredCourse, seedReport } from "./lib/seed-authored-course";
 import { writeSeedReport } from "./lib/seed-report";
+import { ownerEmail } from "./lib/owner";
 import { SURPLUS_FUNDS_BASICS_COURSE } from "./data/surplus-funds-basics-course";
 import { MONODRAMA_WRITING_COURSE } from "./data/monodrama-writing-course";
 import { MONODRAMA_PERFORMING_COURSE } from "./data/monodrama-performing-course";
@@ -331,7 +332,7 @@ async function ensureInstructor(
   who: { id: string; email: string; username: string; displayName: string },
 ): Promise<string> {
   // Reuse the real user when the email is already taken (e.g. BAM has logged in, so an
-  // auth-generated id owns bam@awews.com). Inserting the synthetic id would conflict on
+  // auth-generated id owns the owner's address). Inserting the synthetic id would conflict on
   // the email, leave no row for that id, and the membership FK would fail. Matching by
   // email keeps course ownership on the real account and makes this idempotent.
   const existing = await db
@@ -367,7 +368,7 @@ async function main() {
   // BAM is the instructor on Learn.WitUS courses (not a synthetic faculty account).
   const instructorId = await ensureInstructor(learnWitus, {
     id: "bam",
-    email: "bam@awews.com",
+    email: ownerEmail(),
     username: "bam",
     displayName: "BAM",
   });

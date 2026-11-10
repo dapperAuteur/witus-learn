@@ -4,6 +4,7 @@ import { drizzle } from "drizzle-orm/neon-serverless";
 import ws from "ws";
 import * as schema from "../src/db/schema";
 import { resolveDbUrl } from "./db-url";
+import { ownerEmail } from "./lib/owner";
 import { NEW_COURSE_STATE } from "../src/lib/course-visibility";
 
 // Seeds sample courses for BVC + the Acme isolation tenant so the catalog and the
@@ -99,7 +100,7 @@ async function main() {
   // ── BVC ──
   // BAM instructs every course (the synthetic bvc-faculty byline put these under
   // /bvc-faculty/ and regressed reassign:instructor on every re-seed).
-  const bvcInstructor = await ensureInstructor("bam", "bam@awews.com", "bam", "BAM", bvc);
+  const bvcInstructor = await ensureInstructor("bam", ownerEmail(), "bam", "BAM", bvc);
   await ensureCategory(bvc, "Daily Rituals", 1);
   await ensureCategory(bvc, "The Forbidden Leaf", 3);
   console.log("BVC courses:");

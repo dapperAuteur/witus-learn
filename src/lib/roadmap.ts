@@ -4437,7 +4437,7 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
 ## Operator
 - 🟡 All branches merged as of 2026-08-17 (none remain open) → \`db:migrate:prod\` →
   \`seed:bvc:real\` / \`seed:map\` / \`seed:owner\` → regen embeddings. Set
-  \`PLATFORM_OWNER_EMAIL=bam@awews.com\`.
+  \`PLATFORM_OWNER_EMAIL=<owner email>\`.
 - ⚪ Health/vetting work merged: \`pnpm gen:health\` → \`seed:health\` / \`seed:speedway\`.
 - ✅ **Authoritative-values rule**: added to ecosystem + repo CLAUDE.md (never assert guessed external
   values; born from the DNS A-record false-negative). Still TODO: commit the ecosystem copy in \`gemini/\`.
