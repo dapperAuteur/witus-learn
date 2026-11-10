@@ -581,6 +581,10 @@ export interface TenantInstructor {
   userId: string;
   username: string | null;
   displayName: string | null;
+  /** The account's name and email, so a teacher with no profile yet is still recognisable in a picker
+   *  (a new teacher has neither a username nor a display name until they create or receive a course). */
+  name: string | null;
+  email: string;
 }
 
 /** Everyone who can instruct on this tenant (role instructor OR brand_admin), joined to
@@ -593,8 +597,11 @@ export async function listTenantInstructors(tenantId: string): Promise<TenantIns
       userId: tenantMemberships.userId,
       username: userProfiles.username,
       displayName: userProfiles.displayName,
+      name: users.name,
+      email: users.email,
     })
     .from(tenantMemberships)
+    .innerJoin(users, eq(users.id, tenantMemberships.userId))
     .leftJoin(userProfiles, eq(userProfiles.userId, tenantMemberships.userId))
     .where(
       and(
@@ -602,7 +609,7 @@ export async function listTenantInstructors(tenantId: string): Promise<TenantIns
         inArray(tenantMemberships.role, ["instructor", "brand_admin"]),
       ),
     )
-    .orderBy(asc(userProfiles.displayName));
+    .orderBy(asc(userProfiles.displayName), asc(users.email));
 }
 
 /** Is this user an instructor/brand_admin member of the tenant? (Gate for reassignment —

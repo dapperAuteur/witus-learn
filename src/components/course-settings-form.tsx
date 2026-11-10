@@ -7,6 +7,7 @@ import { CROSS_PROMO_PRODUCTS } from "@/lib/ecosystem";
 import { assessPriceChange, type PriceState } from "@/lib/price-change";
 import { PriceChangeConfirm, type PriceChangeItem } from "@/components/price-change-confirm";
 import { MAX_ADDITIONAL_CATEGORIES } from "@/lib/course-categories";
+import { personLabel } from "@/lib/course-instructor";
 import { isLaunchIntent, type LaunchTodo } from "@/lib/launch-todos";
 import { LaunchTodoWarning, focusLater, shouldWarnBeforeLaunch } from "@/components/launch-todo-warning";
 
@@ -41,10 +42,14 @@ export interface InstructorOption {
   userId: string;
   username: string | null;
   displayName: string | null;
+  name?: string | null;
+  email?: string | null;
 }
 
+// Name, then @username, then email, so a teacher who has not set up a profile yet still reads as a
+// person and not as a raw account id (which is what BAM's new test teacher showed as).
 function instructorLabel(o: InstructorOption): string {
-  return o.displayName || (o.username ? `@${o.username}` : o.userId);
+  return personLabel(o);
 }
 
 /** Just the three fields a price change is judged on. */
@@ -311,7 +316,7 @@ export function CourseSettingsForm({
 
       {canAssignInstructor ? (
         <div>
-          <label className="text-sm font-medium" htmlFor="cs-instructor">Instructor (owner of this course)</label>
+          <label className="text-sm font-medium" htmlFor="cs-instructor">Instructor (the teacher who owns this course)</label>
           <select
             id="cs-instructor"
             value={v.instructorId}
