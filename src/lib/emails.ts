@@ -245,3 +245,84 @@ export async function sendContactPingEmail(opts: {
     tenant: opts.tenant.slug,
   });
 }
+
+// A teacher asked for a course (POST /api/teach/course-requests): tell the school's admins, with a link
+// to the Users page where they decide it. Same per-tenant sender as every other email here. The
+// caller treats a failure as non-fatal: the request row is already saved and listed on /admin/users.
+export async function sendCourseRequestEmail(opts: {
+  tenant: TenantRecord;
+  to: string;
+  teacherName: string;
+  teacherEmail: string;
+  title: string;
+  description: string;
+  reason: string;
+  briefUrl: string | null;
+  adminUrl: string;
+}): Promise<void> {
+  const brand = brandName(opts.tenant);
+  const lines = [
+    `${opts.teacherName} asked for a new course on ${brand}.`,
+    "",
+    `Title:   ${opts.title}`,
+    "",
+    "What it covers:",
+    opts.description,
+    "",
+    "Why:",
+    opts.reason,
+    ...(opts.briefUrl ? ["", `Brief: ${opts.briefUrl}`] : []),
+    "",
+    `Approve or decline it here: ${opts.adminUrl}`,
+    `Reply straight to this email to answer ${opts.teacherName}.`,
+  ];
+  await sendEmail({
+    to: opts.to,
+    from: opts.tenant.email.from,
+    replyTo: opts.teacherEmail,
+    subject: `${brand}: course request from ${opts.teacherName}: ${opts.title}`,
+    text: lines.join("\n"),
+    kind: "course-request",
+    tenant: opts.tenant.slug,
+  });
+}
+
+// The school decided a teacher's course request (POST /api/admin/course-requests/[id]): tell the
+// teacher, with the course link on an approval or the note on a decline. Non-fatal for the caller.
+export async function sendCourseRequestDecisionEmail(opts: {
+  tenant: TenantRecord;
+  to: string;
+  title: string;
+  decision: "approved" | "declined";
+  note: string | null;
+  /** The new course's /teach page, on an approval. */
+  courseUrl: string | null;
+}): Promise<void> {
+  const brand = brandName(opts.tenant);
+  const approved = opts.decision === "approved";
+  const lines = approved
+    ? [
+        `Your course request on ${brand} was approved: ${opts.title}.`,
+        "",
+        "A draft course was created with you as its instructor. It is private and unpublished until the school opens it.",
+        ...(opts.courseUrl ? ["", `Start adding lessons: ${opts.courseUrl}`] : []),
+        ...(opts.note ? ["", "Note from the school:", opts.note] : []),
+      ]
+    : [
+        `Your course request on ${brand} was declined: ${opts.title}.`,
+        "",
+        "Note from the school:",
+        opts.note ?? "(none)",
+        "",
+        "You can send a new request from Teach once you have addressed it.",
+      ];
+  await sendEmail({
+    to: opts.to,
+    from: opts.tenant.email.from,
+    replyTo: opts.tenant.email.replyTo,
+    subject: `${brand}: your course request was ${opts.decision}: ${opts.title}`,
+    text: lines.join("\n"),
+    kind: "course-request-decision",
+    tenant: opts.tenant.slug,
+  });
+}

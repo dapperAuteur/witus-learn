@@ -11,6 +11,10 @@ import { ownerOnlyBlocks } from "@/lib/course-visibility";
 import { createCourseAction } from "./actions";
 import { SeedDriftWarnings } from "@/components/seed-drift-warnings";
 import type { OpenSeedDrift } from "@/db/queries/seed-drift";
+import { CourseRequestForm } from "@/components/course-request-form";
+import { countOpenCourseRequests, listOwnCourseRequests, type CourseRequestRow } from "@/db/queries/course-requests";
+import { REQUEST_STATUS_LABELS } from "@/lib/course-requests";
+import type { CourseRequestStatus } from "@/db/schema";
 
 export const metadata: Metadata = { title: "Teach" };
 
@@ -93,6 +97,19 @@ export default async function TeachPage({
     console.error("seed drift unavailable", err);
   }
 
+  // Course requests (BAM 2026-11-10): a teacher's own, with the school's answer; for an admin, how many
+  // wait on /admin/users. Off the critical path: a deploy ahead of migration 0081 still renders Teach.
+  let ownRequests: CourseRequestRow[] = [];
+  let openRequests = 0;
+  try {
+    [ownRequests, openRequests] = await Promise.all([
+      listOwnCourseRequests(tenant.id, session.user.id),
+      isAdmin ? countOpenCourseRequests(tenant.id) : Promise.resolve(0),
+    ]);
+  } catch (err) {
+    console.error("course requests unavailable", err);
+  }
+
   const labelFor = (c: (typeof courses)[number]): string | null => {
     if (!isAdmin) return null;
     const m = c as ManagedCourse;
@@ -113,6 +130,11 @@ export default async function TeachPage({
           {isAdmin ? (
             <Link href="/teach/announce" className="font-medium underline" style={{ color: "var(--accent)" }}>
               Announce →
+            </Link>
+          ) : null}
+          {isAdmin ? (
+            <Link href="/admin/users#course-requests" className="font-medium underline" style={{ color: "var(--accent)" }}>
+              Course requests{openRequests > 0 ? ` (${openRequests})` : ""} →
             </Link>
           ) : null}
           <Link href="/help" className="underline" style={{ color: "var(--accent)" }}>
@@ -161,6 +183,37 @@ export default async function TeachPage({
           Create course
         </button>
       </form>
+
+      {/* A teacher who is not an admin asks the school for a course; an admin creates one above. */}
+      {!isAdmin ? <CourseRequestForm /> : null}
+      {ownRequests.length > 0 ? (
+        <section aria-labelledby="own-requests-h" className="mt-6">
+          <h2 id="own-requests-h" className="font-semibold">
+            Your course requests
+          </h2>
+          <ul className="mt-2 divide-y divide-neutral-200 text-sm dark:divide-neutral-800">
+            {ownRequests.map((r) => (
+              <li key={r.id} className="py-3">
+                <p className="font-medium">
+                  {r.title}{" "}
+                  <span className="font-normal text-neutral-600 dark:text-neutral-400">({REQUEST_STATUS_LABELS[r.status as CourseRequestStatus]})</span>
+                </p>
+                {r.status === "approved" && r.courseId ? (
+                  <Link href={`/teach/${r.courseSlug ?? r.courseId}`} className="underline" style={{ color: "var(--accent)" }}>
+                    Open the draft course →
+                  </Link>
+                ) : null}
+                {r.decisionNote ? (
+                  <p className="mt-1 whitespace-pre-wrap text-neutral-700 dark:text-neutral-300">
+                    <span className="font-medium">Note from the school: </span>
+                    {r.decisionNote}
+                  </p>
+                ) : null}
+              </li>
+            ))}
+          </ul>
+        </section>
+      ) : null}
 
       {courses.length === 0 ? (
         <p className="mt-8 rounded-xl border border-dashed border-neutral-300 px-4 py-6 text-center text-neutral-600 dark:border-neutral-700">
