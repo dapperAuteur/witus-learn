@@ -912,7 +912,9 @@ Decided by BAM on 2026-09-20 (`plans/app-improvements/messaging-parents-teachers
 brand_admin role, or the platform owner, AND the adult rule). A class can have **several teachers**
 (`cohort_teachers`, migration `0063`); its creator or a school admin adds one by email from the class
 page. A school admin makes someone a teacher of the whole school (the instructor role) at
-**`/admin/teachers`**. Every "may run this class" check goes through [src/lib/cohort-access.ts](src/lib/cohort-access.ts).
+**`/admin/teachers`**, sees every member at **`/admin/users`**, and hands a course to a teacher there
+(see "School users, assigning teachers to courses, and course requests" below). Every "may run this
+class" check goes through [src/lib/cohort-access.ts](src/lib/cohort-access.ts).
 
 **"Adult"** is an "I am 18 or older" attestation (`user_profiles.adult_attested_at`) that no
 structural fact contradicts: a managed child, a kid (avatar and PIN) login, or being someone's linked
@@ -975,6 +977,38 @@ address that already has an account gets its role at once; an address with none 
 the account is created, by a magic link or by Sign in with WitUS. `--check` reads it all back
 without writing. The addresses come from the command line or env, never from the repo; the platform
 owner's address is refused. See [scripts/lib/test-users.ts](scripts/lib/test-users.ts).
+
+## School users, assigning teachers to courses, and course requests
+
+A school's **brand_admin** (and the platform owner) runs its people from **`/admin/users`**: every member
+of **that school only** (`tenant_memberships`) with name, username, email, role, joined date and last
+sign-in (the newest `sessions` row), with search, plus the role grants still waiting for a first
+sign-in. Two actions sit on the same page:
+
+- **Assign a teacher to a course.** A course's instructor can be **any teacher or admin of its school**,
+  or a platform owner; the owner and the teacher never had to be the same account in the app's gates,
+  but every seeder wrote the seeding account back onto a course on each re-seed, which made it so in
+  practice. The one rule is [src/lib/course-instructor.ts](src/lib/course-instructor.ts), applied by
+  `assignCourseInstructor` ([src/db/queries/course-instructor.ts](src/db/queries/course-instructor.ts))
+  from both `POST /api/admin/courses/[id]/instructor` (the Users page) and the course settings
+  `PATCH /api/courses/[id]` (the Instructor picker); every change writes a `course_instructor_changes`
+  row (who, in what role, from whom to whom, from which page). `seedAuthoredCourse` now keeps an
+  instructor who teaches on the school (or is an owner) and only repairs a stale seed account with no
+  role there, logging the repair as `source: seed`. A brand_admin never reaches an owner-only course
+  (404, as everywhere else).
+- **Course requests** (`course_requests`, migration `0081`). A teacher who is not an admin presses
+  **Request a course** on `/teach` (title, what it covers, why, optional brief link) →
+  `POST /api/teach/course-requests`. The school's admins are emailed (Mailgun, best-effort; the row is
+  saved first) and decide on `/admin/users#course-requests` → `POST /api/admin/course-requests/[id]`:
+  **approve** creates a private, unpublished draft course with the requester as its instructor in one
+  transaction (the request is claimed first, so a request is decided once), **decline** needs a note of
+  at least 10 characters. The teacher sees the status and note under **Your course requests** on
+  `/teach` and gets one email on the decision. Rules: [src/lib/course-requests.ts](src/lib/course-requests.ts).
+
+Every boundary is tested with the real route code (`tests/course-instructor-routes.test.ts`,
+`tests/course-requests-routes.test.ts`): a learner, a teacher of another school and a brand_admin of
+another school are refused on every write; the owner keeps every power. The database half is
+`tests/isolation/school-members.db.test.ts`.
 
 ## Offline: what works without a connection
 

@@ -5,6 +5,7 @@ import type { AuthoredCourse } from "../data/authored-course";
 import { normalizeAdditionalCategories } from "../../src/lib/course-categories";
 import { parseReleaseMarkers } from "../../src/lib/lesson-review";
 import { NEW_COURSE_STATE } from "../../src/lib/course-visibility";
+import { keepsCurrentInstructor } from "../../src/lib/course-instructor";
 import { decideSeedAction, seedContentHash, seedContentOf, type SeedContent } from "../../src/lib/seed-drift";
 
 // ── Seed drift report (plans/97 Q5) ─────────────────────────────────────────
@@ -113,7 +114,7 @@ export async function seedAuthoredCourse(
   };
 
   const existing = await db
-    .select({ id: schema.courses.id })
+    .select({ id: schema.courses.id, instructorId: schema.courses.instructorId })
     .from(schema.courses)
     .where(and(eq(schema.courses.tenantId, tenantId), eq(schema.courses.slug, slug)))
     .limit(1);
@@ -145,10 +146,29 @@ export async function seedAuthoredCourse(
     courseId = row.id;
     console.log(`+ course ${slug}`);
   } else {
+    // The instructor is INSERT-ONLY once a real teacher holds the course (BAM, 2026-11-10: "owner and
+    // teacher do not need to be same user, it currently is mandatory"). Until this, every re-seed wrote
+    // the seeding account (the owner) back onto the course, so a school admin's assignment of a teacher
+    // lasted until the next seed run. A stale seed account with no role on the school (the old
+    // @trade-faculty bylines) is still repaired, and that repair is logged like any other change.
+    const current = existing[0]!.instructorId;
+    const nextInstructorId = (await keepsInstructor(db, tenantId, current, instructorId)) ? current : instructorId;
     await db
       .update(schema.courses)
-      .set({ title: course.title, description: course.description, instructorId, ...extra })
+      .set({ title: course.title, description: course.description, instructorId: nextInstructorId, ...extra })
       .where(eq(schema.courses.id, courseId));
+    if (nextInstructorId !== current) {
+      await db.insert(schema.courseInstructorChanges).values({
+        tenantId,
+        courseId,
+        fromInstructorId: current,
+        toInstructorId: nextInstructorId,
+        actorUserId: null,
+        actorRole: "seed",
+        source: "seed",
+      });
+      console.log(`~ course ${slug}: instructor repaired (stale seed account had no role on this school)`);
+    }
     if (opts.replaceLessons) {
       await db.delete(schema.lessons).where(eq(schema.lessons.courseId, courseId));
     }
@@ -322,4 +342,34 @@ export async function seedAuthoredCourse(
     console.log(`  lessons: ${toWrite.length} (upserted)${skipped.length ? `, ${skipped.length} left as edited in the app` : ""}`);
   }
   return courseId;
+}
+
+/**
+ * Does the course's current instructor stay through this re-seed? Yes when they are a teacher or admin
+ * of the school, a platform owner, or the seeding account itself (src/lib/course-instructor.ts,
+ * keepsCurrentInstructor). The membership is read on THIS tenant only.
+ */
+export async function keepsInstructor(
+  db: NeonDatabase<typeof schema>,
+  tenantId: string,
+  currentInstructorId: string,
+  seedInstructorId: string,
+): Promise<boolean> {
+  if (currentInstructorId === seedInstructorId) return true;
+  const [membership] = await db
+    .select({ role: schema.tenantMemberships.role })
+    .from(schema.tenantMemberships)
+    .where(and(eq(schema.tenantMemberships.tenantId, tenantId), eq(schema.tenantMemberships.userId, currentInstructorId)))
+    .limit(1);
+  const [profile] = await db
+    .select({ owner: schema.userProfiles.isPlatformOwner })
+    .from(schema.userProfiles)
+    .where(eq(schema.userProfiles.userId, currentInstructorId))
+    .limit(1);
+  return keepsCurrentInstructor({
+    currentInstructorId,
+    seedInstructorId,
+    currentRole: (membership?.role as "learner" | "instructor" | "brand_admin" | undefined) ?? null,
+    currentIsPlatformOwner: profile?.owner ?? false,
+  });
 }

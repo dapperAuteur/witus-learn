@@ -15,6 +15,8 @@ export type EmailKind =
   | "course-audit-invite"
   | "pricing-inquiry"
   | "contact-ping"
+  | "course-request"
+  | "course-request-decision"
   | "other";
 
 /**

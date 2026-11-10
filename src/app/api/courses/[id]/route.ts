@@ -1,6 +1,7 @@
 import { after } from "next/server";
 import { z } from "zod";
-import { apiContext, errorJson, isTenantAdmin, json, loadEditableCourse } from "@/lib/api";
+import { apiContext, courseActor, errorJson, isTenantAdmin, json, loadEditableCourse } from "@/lib/api";
+import { assignCourseInstructor } from "@/db/queries/course-instructor";
 import { isPlatformOwner } from "@/lib/session";
 import { reindexCourseEmbeddings } from "@/lib/ai/reindex";
 import { countActiveEnrollments } from "@/db/queries/enrollment";
@@ -8,13 +9,7 @@ import { hasStripe } from "@/lib/env";
 import { assessPriceChange, type PriceType } from "@/lib/price-change";
 import { normalizeAdditionalCategories } from "@/lib/course-categories";
 import { patchOpensPrivate } from "@/lib/course-visibility";
-import {
-  deleteCourse,
-  ensureUsernameById,
-  instructorSlugTaken,
-  isTenantInstructorMember,
-  updateCourse,
-} from "@/db/queries/authoring";
+import { deleteCourse, updateCourse } from "@/db/queries/authoring";
 
 type Params = { params: Promise<{ id: string }> };
 
@@ -172,28 +167,25 @@ export async function PATCH(req: Request, { params }: Params) {
       delete patch.featuredOrder;
     }
   }
-  // Reassigning the instructor is admin-only (platform owner or brand_admin) and validated.
-  // This is the fix for courses bylined to a stale seed instructor: an admin can hand the
-  // course to the real account. NOTE: after this, the OLD instructor loses edit access.
+  // Reassigning the instructor: the platform owner or this school's brand_admin, through the one rule
+  // every assignment uses (src/lib/course-instructor.ts, shared with the Users page), which checks the
+  // target teaches on this school, has a username for the course URL, and holds no course at this
+  // slug, then writes the course_instructor_changes row. Silently ignored for non-admins (mirrors
+  // isFeatured). NOTE: after this, the OLD instructor loses edit access. Applied here, ahead of the
+  // generic UPDATE, so a refused assignment refuses the whole save.
   if ("instructorId" in patch) {
     const newInstructorId = patch.instructorId as string;
-    if (!(await isTenantAdmin(session, sdb.tenantId))) {
-      delete patch.instructorId; // silently ignore for non-admins (mirrors isFeatured)
-    } else if (newInstructorId === course.instructorId) {
-      delete patch.instructorId; // no-op, skip the checks
-    } else {
-      // Target must be allowed to teach here (an instructor/brand_admin member, or the owner).
-      const eligible =
-        (await isTenantInstructorMember(sdb.tenantId, newInstructorId)) ||
-        (await isPlatformOwner(newInstructorId));
-      if (!eligible) return errorJson("That person isn't an instructor on this brand.", 400);
-      // Pretty course URLs are /{username}/{slug} — the new instructor needs a username.
-      const uname = await ensureUsernameById(newInstructorId);
-      if (!uname) return errorJson("That instructor has no profile yet, can't build their course URL.", 400);
-      // The (tenant, instructor, slug) unique index would collide if they already own this slug.
-      if (course.slug && (await instructorSlugTaken(sdb.tenantId, newInstructorId, course.slug, course.id))) {
-        return errorJson("That instructor already has a course at this URL, rename this course's slug first.", 409);
-      }
+    delete patch.instructorId; // never part of the generic UPDATE below
+    if (await isTenantAdmin(session, sdb.tenantId)) {
+      const actor = await courseActor(session, sdb.tenantId, course);
+      const result = await assignCourseInstructor({
+        tenantId: sdb.tenantId,
+        course,
+        newInstructorId,
+        actor: { userId: session.user.id, isOwner: actor.isOwner, isSchoolAdmin: actor.isSchoolAdmin },
+        source: "course-settings",
+      });
+      if (!result.ok) return errorJson(result.error, result.status);
     }
   }
   // A PRIVATE course leaves "private" only through the Make public switch (POST

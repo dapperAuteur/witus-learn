@@ -252,6 +252,12 @@ There is deliberately **no expected date** on that page. A missed date is worse 
 You cannot mark your own course vetted, and that is deliberate: vetting means *someone else*
 reviewed it. Here is the path.
 
+**Before any of it, the sources.** The list of documents a course will cite is approved by the
+course's owner before the first lesson is written, and a source added while writing is approved
+before the course leaves draft. If someone is building the course for you, you are the one who
+approves; see **Sources approval before writing** for what the packet holds and how each source
+earns its place.
+
 1. **Finish the course.** Every lesson published, quizzes in place, and the \`## Sources\` block
    filled in on any lesson that makes a factual claim. **An AI tool is never a source:** every fact
    traces to a document a reader can open (a primary record, a book, an article, a dataset, an
@@ -482,7 +488,123 @@ clears a qualified-reviewer need.
 Every course has a **Sources** page beside its course page, listing every work its lessons cite and,
 for each, the lessons that use it and where in the work (a page, a section, a locator). While a course
 is held it is open only to its editors and invited reviewers; **releasing the course opens it to
-learners**, with nothing else to switch on.`,
+learners**, with nothing else to switch on.
+
+A course built since November 2026 also has a **sources packet**: the list its owner approved before
+the first lesson was written, one entry per source with what it is used for and the provenance
+checks it passed. Ask the platform owner for it if you want to see what the course rests on before
+you read a lesson. What the checks are, and why no AI-text detector is among them, is in **Sources
+approval before writing**.`,
+  },
+  {
+    slug: "sources-approval-before-writing",
+    title: "Sources approval before writing",
+    category: "Courses",
+    keywords: [
+      "sources",
+      "source list",
+      "approve sources",
+      "sources packet",
+      "packet",
+      "provenance",
+      "ai generated",
+      "ai detector",
+      "detector",
+      "citation",
+      "bibliography",
+      "before writing",
+      "research",
+      "evidence",
+      "verify",
+      "owner",
+      "teacher approval",
+    ],
+    body: `# Sources approval before writing
+
+A course here teaches from documents a reader can open, so the list of documents comes first.
+**Before any lesson of a new course is written, the person who owns the course approves the list
+of sources it will cite.** If a course is being built for you (by the platform team, a co-author
+or an assistant), that person is you. If you are building a course for a school, it is the teacher
+the course is for. Nothing is drafted on a source the owner has not seen.
+
+## What you receive
+
+A **sources packet**: one short document, sent as a PDF and an EPUB, with one entry per source:
+
+- the full reference (title, author or publisher, date, link);
+- what kind of document it is (a primary record, an official body, a peer-reviewed or edited
+  publication, an archive or dataset, a book, a news report);
+- what the course will use it for (which lessons, which claims);
+- whether a learner will be able to open it (a hosted copy, a link, or a book to obtain);
+- a one-line note on where it came from and the date it was opened;
+- the checks it passed (the eight below), with a note wherever one needs explaining.
+
+Answer each entry with **approve**, **request a change** (a better edition, a source you trust
+more, a source you want left out) or **drop**. Changes come back to you before writing starts. If a
+source turns up while the course is being written, it is added to the packet, marked as awaiting
+your answer, and the course stays in draft until you have given it.
+
+## How a source earns its place
+
+Every source in a packet is held to the same eight checks. One that fails is marked unverified: it
+is replaced, or the claim that needed it is cut.
+
+1. **Kind.** A primary document, an official body, a peer-reviewed or edited publication, an
+   archive or a dataset come first. A secondary account is fine when it says where it got the fact.
+   An encyclopedia entry or a listicle is a pointer to follow, not a source.
+2. **Author.** A named person or institution stands behind it.
+3. **Date.** The page or record carries a publication, revision or record date.
+4. **Stable link.** It opened on the date noted, at a link, DOI, handle or shelfmark that can be
+   opened again. A page that could move is saved to the Wayback Machine first.
+5. **Editorial process.** The publisher's about page or masthead was read: who runs it, whether
+   anyone edits before publishing, how errors are corrected.
+6. **Cross-checked.** Each fact the course leans on was confirmed in a second, independent source,
+   named in the note.
+7. **No content-farm signals.** No author, no date, generic stock images, every page the same
+   length, no sources of its own, a domain registered recently: one is a flag, two or more fail
+   the check.
+8. **Not an AI.** Not a chatbot transcript or a chat link, not an AI-written summary, and not a
+   page whose only source for the fact is an AI. An AI tool is never a source here.
+
+## "How do you test whether a source is AI generated?"
+
+Honestly: **no automated AI-text detector is used.** The largest independent test so far, of 12
+public tools and the two systems universities buy (Turnitin and PlagiarismCheck), found the tools
+"neither accurate nor reliable", biased toward calling text human-written, and worse still on
+paraphrased or translated text (Weber-Wulff et al., 2023). Vanderbilt University switched
+Turnitin's detector off on the same evidence: at the vendor's own claimed 1 percent false-positive
+rate, about 750 of the 75,000 papers it had submitted in a year would have been wrongly flagged,
+and detectors flag non-native English writers more often (Vanderbilt University, 2023). A
+detector's score would tell you nothing you could stand behind, in either direction.
+
+What is done instead is the provenance check above, which asks a better question: not "did a
+machine write this?" but "who stands behind this, and can it be checked?" A page an AI wrote and
+nobody checked fails the author, editorial and content-farm checks. So does a page a person wrote
+carelessly, and the course is no worse off for not knowing which.
+
+The tools behind the checks are ordinary ones: the source itself, read in full, never a search
+snippet; Crossref for a DOI's real record and Unpaywall for a free copy; library catalogs and
+official registers for books and law; the Wayback Machine for a page's history; a WHOIS lookup for
+a domain's age; the publisher's own about and corrections pages; and a second independent source
+for every fact that matters.
+
+## Where this sits in the process
+
+Brief approved, then sources approved, then writing, then the content guards, then review and
+vetting (see **Vetting a course, and the "Coming soon" page** and **Reviewer sign-off**). A
+reviewer can ask for the packet: it is the quickest way to see what a course rests on before
+reading a lesson.
+
+## References
+
+Vanderbilt University. (2023, August 16). *Guidance on AI detection and why we're disabling
+Turnitin's AI detector*. Brightspace.
+https://www.vanderbilt.edu/brightspace/2023/08/16/guidance-on-ai-detection-and-why-were-disabling-turnitins-ai-detector/
+
+Weber-Wulff, D., Anohina-Naumeca, A., Bjelobaba, S., Foltýnek, T., Guerrero-Dib, J., Popoola, O.,
+Šigut, P., & Waddington, L. (2023). Testing of detection tools for AI-generated text.
+*International Journal for Educational Integrity, 19*, Article 26.
+https://doi.org/10.1007/s40979-023-00146-z`,
   },
   {
     slug: "tours-from-field-log",
@@ -747,6 +869,10 @@ school.
 
 **Remove teacher** takes the role away. Classes they already teach stay theirs; they just can't
 create new classes or courses here. Admins are managed separately and can't be removed on this page.
+
+**Everyone, not just teachers:** **Admin → Users** (\`/admin/users\`) lists every member of the school
+(learners too) with name, username, email, role, when they joined and their last sign-in, with a search
+box. That page is also where you hand a course to a teacher and decide teachers' course requests.
 
 **Just one class?** You don't have to make someone a teacher of the whole school. Create the class
 yourself, then on the class page **add them as its teacher**; they run that class and nothing else.`,
@@ -1222,28 +1348,43 @@ message: nobody is notified, and nothing is sent.`,
   },
   {
     slug: "change-course-instructor",
-    title: "Change a course's instructor (fix wrong bylines)",
+    title: "Change a course's instructor (assign a teacher)",
     category: "Operator",
-    keywords: ["instructor", "owner", "byline", "reassign", "can't edit", "cannot edit", "record", "save", "witus-health", "trade-faculty", "permission", "403"],
+    keywords: ["instructor", "owner", "byline", "reassign", "assign", "teacher", "can't edit", "cannot edit", "record", "save", "witus-health", "trade-faculty", "permission", "403", "users"],
     body: `# Change a course's instructor
 
-Every course has one **instructor** (its owner). Only that instructor, plus brand admins and the
-platform owner, can edit, record, or save it. Some courses were seeded under placeholder instructors
-(\`@witus-health\`, \`@trade-faculty\`, or a \`bam\` seed id) that may not match the account you log in
-with, which is why they can feel read-only or "won't save".
+Every course has one **instructor**: the teacher who edits, records and is bylined on it. That teacher can
+be **any teacher or admin of the course's school**, or the platform owner. The owner and the teacher do not
+have to be the same person (BAM, 2026-11-10): a school's admin hands a course to one of the school's
+teachers, and the owner keeps every power on every school.
 
-## Fix one course (from the UI)
-As an **owner or brand admin**, open the course at \`/teach/<courseId>\` → **Course settings** →
-the **Instructor** dropdown → pick the right person → **Save settings**.
+Only the instructor, the school's admins and the platform owner can edit, record or save a course. Some
+courses were seeded under placeholder instructors (\`@witus-health\`, \`@trade-faculty\`, or a \`bam\` seed
+id) that may not match the account you log in with, which is why they can feel read-only or "won't save".
 
-- The course moves to that instructor's dashboard and its public URL changes to
-  \`/their-username/…\`. You keep access as an admin.
-- If you don't see the course under **Your courses**, admins see **every** course on the brand in
-  \`/teach\` (with an \`instructor:\` byline), so it's reachable there.
-- "That instructor already has a course at this URL" → two courses would share a slug; rename this
+## Assign a teacher (from the UI)
+Two places, same rule, as an **owner or school admin**:
+
+- **Admin → Users** (\`/admin/users\`) → **Assign a teacher to a course** → pick the teacher and the course
+  → **Assign this teacher**. The teacher list is the school's teachers and admins, named by name or email.
+- Or open the course at \`/teach/<course>\` → **Course settings** → the **Instructor** dropdown → pick the
+  person → **Save settings**.
+
+- The course moves to that teacher's Teach page and its public URL changes to \`/their-username/…\`.
+  You keep access as an admin; the previous instructor loses edit access.
+- Only a **teacher or admin of this school** can be picked ("isn't a teacher of this school" means make
+  them one on Admin → Teachers first). A teacher who has never signed in has no profile yet; ask them to
+  sign in once.
+- "That teacher already has a course at this URL" → two courses would share a slug; rename this
   course's slug first.
+- Every change is logged (who, in what role, from whom to whom, and from which page).
 
-## Fix them all at once (bulk)
+## Seeds keep your assignment
+A course that comes from a seed file used to go back to the owner on every re-seed. Since 2026-11-10 a
+re-seed leaves the instructor alone when they are a teacher or admin of the school (or the owner); it
+only replaces a stale seed account that has no role on the school, and logs that repair.
+
+## Fix them all at once (bulk, owner only)
 To make your account the instructor on **every** Learn.WitUS course, run the reassign script
 (dry-run first, then \`--apply\`):
 
@@ -1253,6 +1394,61 @@ pnpm reassign:instructor --apply
 \`\`\`
 
 See **user-task 42** in the repo for prod details.`,
+  },
+  {
+    slug: "school-users-and-course-requests",
+    title: "Your school's users, and teachers' course requests",
+    category: "Operator",
+    keywords: ["users", "members", "email", "username", "role", "last sign-in", "search", "course request", "approve", "decline", "admin"],
+    body: `# Your school's users, and course requests
+
+**Admin → Users** (\`/admin/users\`) is the school admin's list of everyone with a role at the school:
+**name, username, email, role** (admin, teacher or learner), **when they joined** and their **last
+sign-in**. Search by name, username or email. A school admin sees this school's members only.
+
+Below the list:
+
+- **Waiting for a first sign-in**: roles the platform owner granted to an address that has no account
+  yet. The role lands the moment that address signs in.
+- **Assign a teacher to a course**: pick a teacher (any teacher or admin of the school) and a course.
+  See "Change a course's instructor".
+- **Course requests**: teachers ask for a course from their Teach page. Each request shows the title,
+  what it covers, why, and a brief link if they gave one.
+  - **Approve and create the draft**: a **private, unpublished** draft course is created with that
+    teacher as its instructor. It appears under their **Your courses** on Teach; it goes public only
+    through the usual Make public switch after vetting.
+  - **Decline with note**: the teacher reads your note on Teach (at least 10 characters, so it says
+    something they can act on). A note is optional on an approval.
+  - A request is decided once. The teacher is emailed either way when the school's mail is set up; the
+    school's admins are emailed when a request comes in.
+
+To make someone a teacher in the first place, use **Admin → Teachers**.`,
+  },
+  {
+    slug: "request-a-course",
+    title: "Request a course from your school",
+    category: "Teaching",
+    keywords: ["request", "propose", "new course", "idea", "brief", "approve", "declined", "teacher"],
+    body: `# Request a course
+
+A teacher can propose a course and have the school approve it. On **Teach** (\`/teach\`), press
+**Request a course** and fill in:
+
+1. **Title**.
+2. **What it covers**, a sentence or two.
+3. **Why this course**, a sentence or two.
+4. An optional **link to a brief or outline** you already wrote.
+
+Press **Send the request**. The school's admins are told, and your request shows under **Your course
+requests** on Teach with its status:
+
+- **Waiting for the school**: not decided yet.
+- **Approved**: a private draft course was created with you as its instructor. Follow **Open the draft
+  course** and start adding lessons. It stays private and unpublished until the school opens it.
+- **Declined**: the school's note explains why. You can send a new request once you have addressed it.
+
+School admins and the platform owner do not need to request: they create courses directly with the
+**New course** form.`,
   },
   {
     slug: "api-keys-and-embedding",

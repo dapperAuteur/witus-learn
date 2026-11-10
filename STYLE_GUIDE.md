@@ -95,6 +95,18 @@ Every customer-facing surface must pass before it can merge:
   cited. A lesson about an AI tool may name it; a quoted example of a bad citation is a quotation.
   `pnpm check:no-ai-sources` (in `pnpm lint`) fails the shapes above; reviewed exceptions live in
   `scripts/lib/no-ai-sources-allowlist.ts`. Full rule: CLAUDE.md "No-AI-sources rule".
+- **The course owner approves the source list before a lesson is written** (BAM, 2026-11-10). Before
+  any lesson of a new course exists, every source it will cite goes to the owner (BAM, or the teacher
+  who owns the course) as a sources packet, `plans/sources-packets/<course-slug>.md` (gitignored;
+  template `00-template.md` beside it), rendered to PDF and EPUB with the witus library scripts and
+  handed over with an operator task. One entry per source: title, author or publisher, date, URL,
+  type, what it is for, a one-line provenance note, and the checks it passed (kind, author, date,
+  stable URL, editorial process, cross-check, no content-farm signals, not an AI). Building waits for
+  approval; changes come back before writing; a source added while writing is appended, flagged, and
+  approved before the course leaves draft. No automated AI-text detector is part of it (the rubric's
+  Part I.3 says why: the published tests find them neither accurate nor reliable). Rubric gate D5c;
+  full rule: CLAUDE.md "Sources-approval rule"; teachers read it as the help article "Sources
+  approval before writing".
 - **Lessons in the WELL program (and new courses going forward) carry a `## Vocabulary` block**
   above `## Sources` (or at the body's end when a lesson has no sources): 3-6 terms as
   `- **Term**: definition` bullets, each defined in the lesson's own voice and specific to what

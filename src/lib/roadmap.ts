@@ -5,6 +5,23 @@
 export const ROADMAP = `# Learn.WitUS, Roadmap
 
 ## Platform
+- 🔧 **School admins see their users, assign teachers to courses, and decide teachers' course requests; the owner
+  and a course's teacher no longer have to be the same account** (\`feat/school-admin-roles\`, migration
+  \`0081_course_requests\`, applied by \`migrate-production.yml\`). BAM, 2026-11-10, testing teacher@/admin@ on
+  ElementaryMBA: "owner and teacher do not need to be same user, it currently is mandatory", "admin should be able to
+  see list of users", "admin should be able to assign teachers to courses", "teachers should be able to submit or
+  request courses". What forced the coupling: every seeder wrote the seeding account (the owner) back onto a course on
+  each re-seed (\`seedAuthoredCourse\`), and \`seed:owner\` / \`reassign:instructor\` re-home everything to BAM; the
+  app's own gates already admitted a school's teacher. Now a re-seed keeps an instructor who is a teacher or admin of
+  the school (or an owner) and only repairs a stale seed account, logging the repair. New **/admin/users** (brand_admin
+  and owner): every member of THIS school with name, username, email, role, joined, last sign-in, search, pending
+  grants; **Assign a teacher to a course** (any teacher or admin of the school; the same rule as the course settings
+  picker, now in \`src/lib/course-instructor.ts\`, every change logged in \`course_instructor_changes\`); the picker
+  names teachers by name or email instead of a raw account id. **Request a course** on /teach for teachers who are
+  not admins (\`course_requests\`); the admin approves (a private draft is created with the requester as instructor) or
+  declines with a note; the teacher sees the status and note on /teach; Mailgun emails to the school's admins on a
+  request and to the teacher on the decision, best-effort. Every boundary tested: learner, another school's teacher
+  and another school's admin are refused; an owner-only course stays a 404 to a brand_admin.
 - 🔧 **Error pages keep the header and footer** (\`fix/test-users-exports-error-pages\`, no migration). BAM,
   2026-11-04: "404 page should still have header/footer. all apps should include header/footer on 400/500 error
   pages." The 404 and 403 render above the school layout, so they now bring the school's own header (with Sign in)
