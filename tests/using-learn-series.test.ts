@@ -36,6 +36,8 @@ const WAIVED: Record<string, string> = {
     "shipped with feat/course-export-buttons (two admin-only download links on the course manager); a Run Your School lesson that teaches it is the follow-up (delete this line then)",
   "school-users-and-course-requests":
     "shipped with feat/school-admin-roles (/admin/users: members, assign a teacher to a course, decide course requests); a Run Your School lesson that teaches it is the follow-up (delete this line then)",
+  "account-settings":
+    "shipped with feat/account-settings (/account: name, username, verified email change, sign out, ask to delete); a Learner lesson that teaches it is the follow-up (delete this line then)",
   "request-a-course":
     "shipped with feat/school-admin-roles (Request a course on /teach); a Build a Course lesson that teaches it is the follow-up (delete this line then)",
   "sources-approval-before-writing":
