@@ -141,7 +141,8 @@ describe("decideMemberEdit", () => {
   });
 
   it("mayEditMember offers the form on the same rows the rule admits", () => {
-    const { changes: _c, ...facts } = base();
+    const full = base();
+    const facts = { actor: full.actor, target: full.target };
     expect(mayEditMember(facts)).toBe(true);
     expect(mayEditMember({ ...facts, target: { ...facts.target, role: "brand_admin" } })).toBe(false);
   });
