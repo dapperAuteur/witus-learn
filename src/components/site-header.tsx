@@ -138,6 +138,8 @@ export async function SiteHeader({ tenant }: { tenant: TenantRecord }) {
         { href: "/my-courses", label: "My Courses" },
         { href: "/field-log", label: "My Field Log" },
         { href: "/downloads", label: "Downloads", hardNav: true },
+        // Name, username, email, sign out, ask to delete (BAM, 2026-11-10). Every signed-in person.
+        { href: "/account", label: "Account settings" },
       ]
     : [];
 

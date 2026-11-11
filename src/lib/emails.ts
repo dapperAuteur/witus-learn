@@ -326,3 +326,77 @@ export async function sendCourseRequestDecisionEmail(opts: {
     tenant: opts.tenant.slug,
   });
 }
+
+// Account settings (BAM, 2026-11-10: "users should be able to manage their accounts").
+
+// The link that moves an account to a new address, sent to the NEW address only (proving the person
+// reads that inbox). A bearer credential: its `token` query parameter is stripped from the Inbox mirror
+// by src/lib/email-redact.ts.
+export async function sendEmailChangeLinkEmail(opts: { tenant: TenantRecord; to: string; link: string; expiresMinutes: number }): Promise<void> {
+  const brand = brandName(opts.tenant);
+  const lines = [
+    `Someone signed in to ${brand} asked to use this address for their account.`,
+    "",
+    `To confirm, open this link and press Confirm (it works for ${opts.expiresMinutes} minutes):`,
+    opts.link,
+    "",
+    "If you didn't ask for this, ignore this email. Nothing changes until the link is used.",
+  ];
+  await sendEmail({
+    to: opts.to,
+    from: opts.tenant.email.from,
+    replyTo: opts.tenant.email.replyTo,
+    subject: `${brand}: confirm your new email address`,
+    text: lines.join("\n"),
+    kind: "email-change",
+    tenant: opts.tenant.slug,
+  });
+}
+
+// A plain notice to the OLD address once the account has moved, so a change the owner did not make is
+// noticed. No link: there is nothing to click, and the old address no longer signs in.
+export async function sendEmailChangedNoticeEmail(opts: {
+  tenant: TenantRecord;
+  to: string;
+  newEmailMasked: string;
+  /** Who made the change: the person themselves, or an admin of the school. */
+  by: "self" | "admin";
+}): Promise<void> {
+  const brand = brandName(opts.tenant);
+  const lines = [
+    opts.by === "self"
+      ? `The email address on your ${brand} account was changed to ${opts.newEmailMasked}.`
+      : `An admin of ${brand} changed the email address on your account to ${opts.newEmailMasked}.`,
+    "",
+    "Sign-in links now go to the new address, not this one.",
+    "",
+    "If you didn't expect this, reply to this email and say so.",
+  ];
+  await sendEmail({
+    to: opts.to,
+    from: opts.tenant.email.from,
+    replyTo: opts.tenant.email.replyTo,
+    subject: `${brand}: your account's email address was changed`,
+    text: lines.join("\n"),
+    kind: "email-change-notice",
+    tenant: opts.tenant.slug,
+  });
+}
+
+// Tell the platform owner that someone asked for their account to be deleted (there is no
+// self-service deletion; the owner handles it by hand and marks it on /admin/users).
+export async function sendAccountDeletionRequestEmail(opts: { tenant: TenantRecord; to: string; who: string; adminUrl: string }): Promise<void> {
+  const brand = brandName(opts.tenant);
+  await sendEmail({
+    to: opts.to,
+    from: opts.tenant.email.from,
+    subject: `${brand}: ${opts.who} asked to delete their account`,
+    text: [
+      `${opts.who} asked, from ${brand}, for their account to be deleted.`,
+      "",
+      `It is listed on the Users page until you mark it handled: ${opts.adminUrl}`,
+    ].join("\n"),
+    kind: "account-deletion-request",
+    tenant: opts.tenant.slug,
+  });
+}

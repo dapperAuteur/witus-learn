@@ -1,6 +1,7 @@
 import "server-only";
 import { and, desc, eq, ilike, isNull, or, sql } from "drizzle-orm";
 import { db } from "@/db/client";
+import { env } from "@/lib/env";
 import { pendingRoleGrants, sessions, tenantMemberships, userProfiles, users, type TenantRole } from "@/db/schema";
 
 // Everyone with a role on ONE school (tenant_memberships), for /admin/users (BAM, 2026-11-10: "admin
@@ -21,6 +22,14 @@ export interface SchoolMemberRow {
   joinedAt: Date;
   /** The newest session's start, or null when the account has never signed in. */
   lastSignInAt: Date | null;
+  /** Facts the admin edit decides on (src/lib/account-settings.ts decideMemberEdit). */
+  isPlatformOwner: boolean;
+  isManagedChild: boolean;
+  isAvatarPinLogin: boolean;
+  /** The shared "Try the demo" account. */
+  isDemoAccount: boolean;
+  /** How many OTHER schools this person holds a role on (an account is global). */
+  otherSchoolRoles: number;
 }
 
 /** Turn a search box value into the ILIKE pattern used against email, name and username. */
@@ -50,6 +59,10 @@ export async function listSchoolMembers(tenantId: string, q?: string | null, lim
       email: users.email,
       joinedAt: tenantMemberships.createdAt,
       lastSignInAt: lastSession.at,
+      isPlatformOwner: userProfiles.isPlatformOwner,
+      managedByUserId: userProfiles.managedByUserId,
+      loginMethod: userProfiles.loginMethod,
+      otherSchoolRoles: sql<number>`(select count(*)::int from tenant_memberships om where om.user_id = ${tenantMemberships.userId} and om.tenant_id <> ${tenantMemberships.tenantId})`,
     })
     .from(tenantMemberships)
     .innerJoin(users, eq(users.id, tenantMemberships.userId))
@@ -58,7 +71,17 @@ export async function listSchoolMembers(tenantId: string, q?: string | null, lim
     .where(and(...conds))
     .orderBy(desc(tenantMemberships.createdAt))
     .limit(limit);
-  return rows.map((r) => ({ ...r, role: r.role as TenantRole, lastSignInAt: r.lastSignInAt ?? null }));
+  const demoEmail = env.DEMO_VISITOR_USER_EMAIL?.toLowerCase();
+  return rows.map(({ managedByUserId, loginMethod, ...r }) => ({
+    ...r,
+    role: r.role as TenantRole,
+    lastSignInAt: r.lastSignInAt ?? null,
+    isPlatformOwner: r.isPlatformOwner ?? false,
+    isManagedChild: Boolean(managedByUserId),
+    isAvatarPinLogin: loginMethod === "avatar_pin",
+    isDemoAccount: Boolean(demoEmail && r.email.toLowerCase() === demoEmail),
+    otherSchoolRoles: Number(r.otherSchoolRoles ?? 0),
+  }));
 }
 
 /** Role grants on this school still waiting for a first sign-in (pnpm test-users:prod). */
