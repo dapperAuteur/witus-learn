@@ -259,28 +259,46 @@ export async function sendCourseRequestEmail(opts: {
   reason: string;
   briefUrl: string | null;
   adminUrl: string;
+  /** existing: the teacher asks to teach a course the school already has (no description, no brief). */
+  kind?: "new" | "existing";
+  /** Kind existing: who teaches the course now. */
+  currentInstructor?: string | null;
 }): Promise<void> {
   const brand = brandName(opts.tenant);
-  const lines = [
-    `${opts.teacherName} asked for a new course on ${brand}.`,
-    "",
-    `Title:   ${opts.title}`,
-    "",
-    "What it covers:",
-    opts.description,
-    "",
-    "Why:",
-    opts.reason,
-    ...(opts.briefUrl ? ["", `Brief: ${opts.briefUrl}`] : []),
-    "",
-    `Approve or decline it here: ${opts.adminUrl}`,
-    `Reply straight to this email to answer ${opts.teacherName}.`,
-  ];
+  const lines =
+    opts.kind === "existing"
+      ? [
+          `${opts.teacherName} asked to teach an existing course on ${brand}.`,
+          "",
+          `Course:  ${opts.title}`,
+          ...(opts.currentInstructor ? [`Taught now by: ${opts.currentInstructor}`] : []),
+          "",
+          "Why:",
+          opts.reason,
+          "",
+          `Approve (they become its instructor) or decline it here: ${opts.adminUrl}`,
+          `Reply straight to this email to answer ${opts.teacherName}.`,
+        ]
+      : [
+          `${opts.teacherName} asked for a new course on ${brand}.`,
+          "",
+          `Title:   ${opts.title}`,
+          "",
+          "What it covers:",
+          opts.description,
+          "",
+          "Why:",
+          opts.reason,
+          ...(opts.briefUrl ? ["", `Brief: ${opts.briefUrl}`] : []),
+          "",
+          `Approve or decline it here: ${opts.adminUrl}`,
+          `Reply straight to this email to answer ${opts.teacherName}.`,
+        ];
   await sendEmail({
     to: opts.to,
     from: opts.tenant.email.from,
     replyTo: opts.teacherEmail,
-    subject: `${brand}: course request from ${opts.teacherName}: ${opts.title}`,
+    subject: `${brand}: ${opts.kind === "existing" ? "request to teach" : "course request"} from ${opts.teacherName}: ${opts.title}`,
     text: lines.join("\n"),
     kind: "course-request",
     tenant: opts.tenant.slug,
@@ -297,10 +315,20 @@ export async function sendCourseRequestDecisionEmail(opts: {
   note: string | null;
   /** The new course's /teach page, on an approval. */
   courseUrl: string | null;
+  /** existing: the approval handed over a course the school already had. */
+  kind?: "new" | "existing";
 }): Promise<void> {
   const brand = brandName(opts.tenant);
   const approved = opts.decision === "approved";
-  const lines = approved
+  const lines = approved && opts.kind === "existing"
+    ? [
+        `Your request on ${brand} was approved: you now teach ${opts.title}.`,
+        "",
+        "It is on your Teach page. You edit, record and are bylined on it from now on.",
+        ...(opts.courseUrl ? ["", `Open it: ${opts.courseUrl}`] : []),
+        ...(opts.note ? ["", "Note from the school:", opts.note] : []),
+      ]
+    : approved
     ? [
         `Your course request on ${brand} was approved: ${opts.title}.`,
         "",
@@ -397,6 +425,65 @@ export async function sendAccountDeletionRequestEmail(opts: { tenant: TenantReco
       `It is listed on the Users page until you mark it handled: ${opts.adminUrl}`,
     ].join("\n"),
     kind: "account-deletion-request",
+    tenant: opts.tenant.slug,
+  });
+}
+
+// A school's admin offered a course to a teacher (BAM, 2026-11-10: "approve assigned courses"). The
+// course changes teacher only when they accept on Teach. Non-fatal for the caller.
+export async function sendCourseOfferEmail(opts: {
+  tenant: TenantRecord;
+  to: string;
+  courseTitle: string;
+  offeredBy: string;
+  teachUrl: string;
+  expiresAt: Date;
+}): Promise<void> {
+  const brand = brandName(opts.tenant);
+  const until = opts.expiresAt.toLocaleDateString("en-US", { year: "numeric", month: "long", day: "numeric" });
+  await sendEmail({
+    to: opts.to,
+    from: opts.tenant.email.from,
+    replyTo: opts.tenant.email.replyTo,
+    subject: `${brand}: you are offered a course to teach: ${opts.courseTitle}`,
+    text: [
+      `${opts.offeredBy} offered you a course to teach on ${brand}: ${opts.courseTitle}.`,
+      "",
+      "If you accept, you become its instructor: you edit, record and are bylined on it. If you decline, nothing changes.",
+      "",
+      `Accept or decline on your Teach page (the offer is open until ${until}): ${opts.teachUrl}`,
+    ].join("\n"),
+    kind: "course-offer",
+    tenant: opts.tenant.slug,
+  });
+}
+
+// The teacher answered an offer: tell the admin who made it. Non-fatal for the caller.
+export async function sendCourseOfferDecisionEmail(opts: {
+  tenant: TenantRecord;
+  to: string;
+  courseTitle: string;
+  teacherName: string;
+  decision: "accepted" | "declined";
+  note: string | null;
+  adminUrl: string;
+}): Promise<void> {
+  const brand = brandName(opts.tenant);
+  const accepted = opts.decision === "accepted";
+  await sendEmail({
+    to: opts.to,
+    from: opts.tenant.email.from,
+    replyTo: opts.tenant.email.replyTo,
+    subject: `${brand}: ${opts.teacherName} ${opts.decision} ${opts.courseTitle}`,
+    text: [
+      accepted
+        ? `${opts.teacherName} accepted ${opts.courseTitle} on ${brand} and is its instructor now.`
+        : `${opts.teacherName} declined ${opts.courseTitle} on ${brand}. Its instructor did not change.`,
+      ...(opts.note ? ["", `Their note: ${opts.note}`] : []),
+      "",
+      `Users page: ${opts.adminUrl}`,
+    ].join("\n"),
+    kind: "course-offer-decision",
     tenant: opts.tenant.slug,
   });
 }

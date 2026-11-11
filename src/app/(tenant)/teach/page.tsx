@@ -11,9 +11,11 @@ import { ownerOnlyBlocks } from "@/lib/course-visibility";
 import { createCourseAction } from "./actions";
 import { SeedDriftWarnings } from "@/components/seed-drift-warnings";
 import type { OpenSeedDrift } from "@/db/queries/seed-drift";
-import { CourseRequestForm } from "@/components/course-request-form";
+import { CourseRequestForm, type ExistingCourseOption } from "@/components/course-request-form";
 import { countOpenCourseRequests, listOwnCourseRequests, type CourseRequestRow } from "@/db/queries/course-requests";
-import { REQUEST_STATUS_LABELS } from "@/lib/course-requests";
+import { requestStatusLabel } from "@/lib/course-requests";
+import { listOffersForTeacher, type CourseOfferRow } from "@/db/queries/course-offers";
+import { CourseOfferResponse } from "@/components/course-offer-response";
 import type { CourseRequestStatus } from "@/db/schema";
 
 export const metadata: Metadata = { title: "Teach" };
@@ -109,6 +111,25 @@ export default async function TeachPage({
   } catch (err) {
     console.error("course requests unavailable", err);
   }
+  // Courses a school's admin offered this teacher (BAM 2026-11-10: "approve assigned courses"), and the
+  // school's courses a teacher could ask to teach. Off the critical path like the requests above: a
+  // deploy ahead of migration 0084 still renders Teach.
+  let offers: CourseOfferRow[] = [];
+  let existingCourses: ExistingCourseOption[] = [];
+  try {
+    offers = await listOffersForTeacher(tenant.id, session.user.id);
+    if (!isAdmin) {
+      existingCourses = (await listAllTenantCourses(tenant.id))
+        .filter((c) => c.instructorId !== session.user.id && (owner || !c.ownerOnly))
+        .map((c) => ({
+          id: c.id,
+          title: c.title,
+          instructorLabel: c.instructorDisplayName || (c.instructorUsername ? `@${c.instructorUsername}` : "unassigned"),
+        }));
+    }
+  } catch (err) {
+    console.error("course offers unavailable", err);
+  }
 
   const labelFor = (c: (typeof courses)[number]): string | null => {
     if (!isAdmin) return null;
@@ -184,8 +205,32 @@ export default async function TeachPage({
         </button>
       </form>
 
+      {offers.length > 0 ? (
+        <section id="course-offers" aria-labelledby="course-offers-h" className="mt-6 rounded-2xl border border-amber-300 bg-amber-50 p-5 dark:border-amber-800 dark:bg-amber-950">
+          <h2 id="course-offers-h" className="font-semibold">
+            Courses offered to you ({offers.length})
+          </h2>
+          <p className="mt-1 text-sm text-neutral-700 dark:text-neutral-300">
+            Your school offered you these courses to teach. Nothing changes until you accept; then the course is yours to edit, record
+            and teach.
+          </p>
+          <ul className="mt-3 space-y-4">
+            {offers.map((o) => (
+              <li key={o.id} className="rounded-lg border border-neutral-200 bg-white p-4 text-sm dark:border-neutral-800 dark:bg-neutral-900">
+                <p className="font-medium">{o.courseTitle}</p>
+                <p className="mt-0.5 text-xs text-neutral-600 dark:text-neutral-400">
+                  Offered by {o.offeredByLabel ?? "the school"} · open until{" "}
+                  {new Date(o.expiresAt).toLocaleDateString("en-US", { year: "numeric", month: "short", day: "numeric" })}
+                </p>
+                <CourseOfferResponse offerId={o.id} courseTitle={o.courseTitle} />
+              </li>
+            ))}
+          </ul>
+        </section>
+      ) : null}
+
       {/* A teacher who is not an admin asks the school for a course; an admin creates one above. */}
-      {!isAdmin ? <CourseRequestForm /> : null}
+      {!isAdmin ? <CourseRequestForm existingCourses={existingCourses} /> : null}
       {ownRequests.length > 0 ? (
         <section aria-labelledby="own-requests-h" className="mt-6">
           <h2 id="own-requests-h" className="font-semibold">
@@ -195,12 +240,13 @@ export default async function TeachPage({
             {ownRequests.map((r) => (
               <li key={r.id} className="py-3">
                 <p className="font-medium">
+                  {r.kind === "existing" ? "To teach: " : null}
                   {r.title}{" "}
-                  <span className="font-normal text-neutral-600 dark:text-neutral-400">({REQUEST_STATUS_LABELS[r.status as CourseRequestStatus]})</span>
+                  <span className="font-normal text-neutral-600 dark:text-neutral-400">({requestStatusLabel(r.status as CourseRequestStatus, r.kind)})</span>
                 </p>
                 {r.status === "approved" && r.courseId ? (
                   <Link href={`/teach/${r.courseSlug ?? r.courseId}`} className="underline" style={{ color: "var(--accent)" }}>
-                    Open the draft course →
+                    {r.kind === "existing" ? "Open the course →" : "Open the draft course →"}
                   </Link>
                 ) : null}
                 {r.decisionNote ? (

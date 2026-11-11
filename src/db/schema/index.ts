@@ -40,3 +40,4 @@ export * from "./contact";
 export * from "./pending-role-grants";
 export * from "./course-requests";
 export * from "./account-settings";
+export * from "./course-offers";

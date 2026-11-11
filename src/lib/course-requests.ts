@@ -9,8 +9,10 @@ import type { CourseRequestStatus } from "@/db/schema";
 
 export const COURSE_REQUEST_LIMITS = { title: 200, description: 2000, reason: 2000, briefUrl: 500, note: 1000 } as const;
 
-/** What a teacher sends. Trimmed; an empty optional link becomes null. */
+/** What a teacher sends for a NEW course. Trimmed; an empty optional link becomes null. A body with no
+ *  `kind` is this kind, as before existing-course requests existed. */
 export const CourseRequestInput = z.object({
+  kind: z.literal("new").optional(),
   title: z.string().trim().min(3, "Give the course a title (at least 3 characters).").max(COURSE_REQUEST_LIMITS.title),
   description: z.string().trim().min(10, "Describe the course in a sentence or two.").max(COURSE_REQUEST_LIMITS.description),
   reason: z.string().trim().min(10, "Say why this course, in a sentence or two.").max(COURSE_REQUEST_LIMITS.reason),
@@ -23,7 +25,23 @@ export const CourseRequestInput = z.object({
     .optional()
     .transform((v) => v ?? null),
 });
+
+/** What a teacher sends to ask for an EXISTING course of the school (BAM, 2026-11-10: "allow teacher to
+ *  choose from list of existing courses also"). The course is resolved on the server, in this school. */
+export const ExistingCourseRequestInput = z.object({
+  kind: z.literal("existing"),
+  courseId: z.uuid("Pick a course from the list."),
+  reason: z.string().trim().min(10, "Say why you want to teach it, in a sentence or two.").max(COURSE_REQUEST_LIMITS.reason),
+});
+
 export type CourseRequestInput = z.infer<typeof CourseRequestInput>;
+export type ExistingCourseRequestInput = z.infer<typeof ExistingCourseRequestInput>;
+
+/** Is this body an existing-course request? Decides which schema validates it, so each kind's own
+ *  message ("Pick a course", "Give the course a title") reaches the teacher. */
+export function isExistingCourseRequestBody(body: unknown): boolean {
+  return typeof body === "object" && body !== null && (body as { kind?: unknown }).kind === "existing";
+}
 
 /** What an admin sends on a decision. */
 export const CourseRequestDecisionInput = z.object({
@@ -37,6 +55,16 @@ export const REQUEST_STATUS_LABELS: Record<CourseRequestStatus, string> = {
   approved: "Approved: the draft course is yours",
   declined: "Declined",
 };
+
+/** The status label for a request of either kind: an approved existing-course request handed over a
+ *  course, it did not create a draft. */
+export function requestStatusLabel(status: CourseRequestStatus, kind: string): string {
+  if (status === "approved" && kind === "existing") return "Approved: you teach this course now";
+  return REQUEST_STATUS_LABELS[status];
+}
+
+export const COURSE_REQUEST_ALREADY_YOURS = "You already teach this course.";
+export const COURSE_REQUEST_DUPLICATE = "You already asked for this course; the school hasn't answered yet.";
 
 export const COURSE_REQUEST_FORBIDDEN = "Only a teacher of this school can request a course here.";
 export const COURSE_REQUEST_DECIDE_FORBIDDEN = "Only the platform owner or this school's admin can decide a course request.";

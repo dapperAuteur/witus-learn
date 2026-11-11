@@ -589,6 +589,13 @@
       "when": 1794362247624,
       "tag": "0083_awews_faculty_emails",
       "breakpoints": true
+    },
+    {
+      "idx": 84,
+      "version": "7",
+      "when": 1794363714878,
+      "tag": "0084_course_offers_and_existing_requests",
+      "breakpoints": true
     }
   ]
 }

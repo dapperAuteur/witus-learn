@@ -20,6 +20,8 @@ export type EmailKind =
   | "email-change"
   | "email-change-notice"
   | "account-deletion-request"
+  | "course-offer"
+  | "course-offer-decision"
   | "other";
 
 /**

@@ -5,6 +5,18 @@
 export const ROADMAP = `# Learn.WitUS, Roadmap
 
 ## Platform
+- 🔧 **Request an existing course; a school admin's assignment is an offer the teacher accepts**
+  (\`feat/course-requests-existing-and-accept\`, migration \`0084_course_offers_and_existing_requests\`, applied by
+  \`migrate-production.yml\`). BAM, 2026-11-10: "request a course should allow teacher to choose from list of
+  existing courses also, and approve assigned courses". **Request a course** on /teach now offers "a new course" or
+  "an existing course in this school" (a picker of the school's courses the teacher does not teach, never an
+  owner-only one); approving an existing-course request hands the course over through the one assignment rule
+  (logged as \`course-request\`) instead of creating a draft. Assigning a teacher from Admin → Users, or a brand_admin's
+  pick in a course's settings, makes a **course offer** (\`course_offers\`): the instructor changes only when the
+  teacher presses Accept under "Courses offered to you" on /teach (optional note); Decline leaves it and tells the
+  admin; offers expire after 14 days (marked lazily), a new offer replaces the open one, an admin can withdraw. The
+  owner's course-settings picker and assigning yourself stay immediate. Mailgun emails to the teacher on an offer and
+  to the offering admin on the answer, best-effort.
 - 🔧 **Account settings for everyone, admin edit of a member, role mailboxes for the faculty accounts**
   (\`feat/account-settings\`, migrations \`0082_account_settings\` and \`0083_awews_faculty_emails\`, applied by
   \`migrate-production.yml\`). BAM, 2026-11-10: "users should be able to manage their accounts", "change faculty email
