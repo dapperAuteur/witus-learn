@@ -1005,8 +1005,22 @@ sign-in. Two actions sit on the same page:
   at least 10 characters. The teacher sees the status and note under **Your course requests** on
   `/teach` and gets one email on the decision. Rules: [src/lib/course-requests.ts](src/lib/course-requests.ts).
 
+- **Course offers** (`course_offers`, migration `0084`; rules [src/lib/course-offers.ts](src/lib/course-offers.ts)).
+  Handing a course to SOMEONE ELSE from the Users page, or a brand_admin's pick in a course's settings, is
+  an offer: `checkInstructorAssignment` runs the same rule first, an offer row is written (any open offer
+  for the course is withdrawn) and the teacher is emailed. The teacher answers under **Courses offered to
+  you** on `/teach` → `POST /api/teach/course-offers/[id]` (`accept` re-runs the rule as the offering
+  admin and moves the course in one transaction, logged as `source: course-offer`; `decline` changes
+  nothing); the admin is emailed and sees answers on `/admin/users#course-offers`, where
+  `DELETE /api/admin/course-offers/[id]` withdraws. Offers expire after 14 days, marked lazily on read
+  and guarded on accept. The owner's course-settings picker and assigning yourself stay immediate.
+- **Requests for an existing course** (`course_requests.kind = 'existing'`, `requested_course_id`). The
+  request form offers a picker of the school's courses the teacher does not teach; approving one hands
+  the course over (`approveExistingCourseRequest`, logged as `source: course-request`) instead of creating
+  a draft.
+
 Every boundary is tested with the real route code (`tests/course-instructor-routes.test.ts`,
-`tests/course-requests-routes.test.ts`): a learner, a teacher of another school and a brand_admin of
+`tests/course-requests-routes.test.ts`, `tests/course-offers-routes.test.ts`): a learner, a teacher of another school and a brand_admin of
 another school are refused on every write; the owner keeps every power. The database half is
 `tests/isolation/school-members.db.test.ts`.
 
