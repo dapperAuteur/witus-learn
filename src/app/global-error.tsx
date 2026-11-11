@@ -5,6 +5,7 @@ import * as Sentry from "@sentry/nextjs";
 import { reportClientError } from "@/lib/client-error";
 import { NeutralChrome } from "@/components/neutral-chrome";
 import { ErrorContent } from "@/components/error-content";
+import { THEME_SCRIPT } from "@/lib/theme-script";
 import "./globals.css";
 
 // Root error boundary: catches errors thrown in the root layout itself. It replaces that layout, so it
@@ -22,6 +23,8 @@ export default function GlobalError({ error, reset }: { error: Error & { digest?
   return (
     <html lang="en">
       <body className="min-h-screen text-neutral-900 antialiased dark:text-neutral-100">
+        {/* Same no-FOUC theme script as the root layout, which this boundary replaces. */}
+        <script dangerouslySetInnerHTML={{ __html: THEME_SCRIPT }} />
         <NeutralChrome>
           <ErrorContent
             title="Service temporarily unavailable"

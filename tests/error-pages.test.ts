@@ -107,6 +107,27 @@ describe("NeutralChrome (root error boundaries)", () => {
   });
 });
 
+describe("error pages keep the saved theme", () => {
+  // BAM, 2026-11-11: a made-up URL flipped dark mode to light. An error page can be drawn by Next's
+  // error shell without the root layout's body, so the chrome carries the page colors and re-applies
+  // the saved theme itself.
+  it("the school chrome sets the page background and text, and re-applies the saved theme", async () => {
+    const html = await renderChrome();
+    expect(html).toContain("bg-[var(--page-bg)]");
+    expect(html).toContain("dark:text-neutral-100");
+  });
+  it("the neutral chrome does the same", () => {
+    const html = renderToStaticMarkup(createElement(NeutralChrome, null, body));
+    expect(html).toContain("bg-[var(--page-bg)]");
+    expect(html).toContain("dark:text-neutral-100");
+  });
+  it("both chromes mount the ThemeKeeper; global-error brings the no-FOUC script", () => {
+    expect(readFileSync("src/components/error-chrome.tsx", "utf8")).toContain("<ThemeKeeper />");
+    expect(readFileSync("src/components/neutral-chrome.tsx", "utf8")).toContain("<ThemeKeeper />");
+    expect(readFileSync("src/app/global-error.tsx", "utf8")).toContain("THEME_SCRIPT");
+  });
+});
+
 describe("every error page is wired to its chrome", () => {
   const src = (p: string) => readFileSync(p, "utf8");
   it("not-found and forbidden render inside ErrorChrome", () => {

@@ -9,6 +9,7 @@ import { OfflineBanner } from "@/components/offline-banner";
 import { OfflineLinkFallback } from "@/components/offline-link-fallback";
 import { Analytics } from "@vercel/analytics/next";
 import { PostHogProvider } from "@/lib/analytics/posthog-provider";
+import { THEME_SCRIPT } from "@/lib/theme-script";
 import "./globals.css";
 
 /**
@@ -51,8 +52,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         {/* No-FOUC: apply the saved (or system) theme before the page paints. */}
         <script
           dangerouslySetInnerHTML={{
-            __html:
-              "(function(){try{var t=localStorage.getItem('theme');var m=window.matchMedia('(prefers-color-scheme: dark)').matches;var d=t==='dark'||(t!=='light'&&m);var e=document.documentElement;e.classList.toggle('dark',d);e.style.colorScheme=d?'dark':'light';}catch(e){}})();",
+            __html: THEME_SCRIPT,
           }}
         />
         <a

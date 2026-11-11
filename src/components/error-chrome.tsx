@@ -7,7 +7,8 @@ import { usesEcosystemFooter } from "@/lib/witus-host";
 import { SiteHeader } from "@/components/site-header";
 import { SiteFooter } from "@/components/site-footer";
 import { EcosystemFooter } from "@/components/ecosystem-footer";
-import { NeutralChrome } from "@/components/neutral-chrome";
+import { NeutralChrome, PAGE_SURFACE } from "@/components/neutral-chrome";
+import { ThemeKeeper } from "@/components/theme-keeper";
 
 // The school's own header and footer around a server-rendered error page (app/not-found.tsx,
 // app/forbidden.tsx). Those two render OUTSIDE the (tenant) layout: an unmatched URL never enters it,
@@ -52,7 +53,8 @@ export async function ErrorChrome({ children }: { children: ReactNode }) {
   const accent = tenant.theme.colors?.accent ?? tenant.theme.themeColor ?? "#111111";
   const accentFg = tenant.theme.colors?.accentFg ?? "#ffffff";
   return (
-    <div style={{ "--accent": accent, "--accent-fg": accentFg } as CSSProperties} className="flex min-h-screen flex-col">
+    <div style={{ "--accent": accent, "--accent-fg": accentFg } as CSSProperties} className={`flex min-h-screen flex-col ${PAGE_SURFACE}`}>
+      <ThemeKeeper />
       {header}
       <div id="main-content" className="flex-1">
         {children}

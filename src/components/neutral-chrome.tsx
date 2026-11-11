@@ -1,4 +1,9 @@
 import type { ReactNode } from "react";
+import { ThemeKeeper } from "@/components/theme-keeper";
+
+// Page colors the root layout's body normally supplies. An error page can render without that body
+// (Next's error shell), so the chrome sets them itself; --page-bg follows the .dark class on <html>.
+export const PAGE_SURFACE = "bg-[var(--page-bg)] text-neutral-900 dark:text-neutral-100";
 
 // The header and footer an error page uses when the school's own cannot be drawn: an unknown host
 // (no school to brand), an error in the school layout itself (root error.tsx), the root layout
@@ -70,7 +75,8 @@ export function NeutralFooter() {
 /** Header, the page, footer: the same column the school layout lays out. */
 export function NeutralChrome({ children }: { children: ReactNode }) {
   return (
-    <div className="flex min-h-screen flex-col">
+    <div className={`flex min-h-screen flex-col ${PAGE_SURFACE}`}>
+      <ThemeKeeper />
       <NeutralHeader />
       <div id="main-content" className="flex-1">
         {children}
