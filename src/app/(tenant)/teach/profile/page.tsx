@@ -25,6 +25,10 @@ export default async function EditProfilePage() {
           ? <>This appears on your public instructor page (<code>/instructors/{profile.username}</code>).</>
           : "Your public instructor page activates once you create your first course."}
       </p>
+      <p className="mt-2 text-sm text-neutral-600">
+        Your username, sign-in email and account are on{" "}
+        <Link href="/account" className="underline">Account settings</Link>.
+      </p>
       <div className="mt-6">
         <ProfileEditForm initial={profile} publicUrl={publicUrl} />
       </div>

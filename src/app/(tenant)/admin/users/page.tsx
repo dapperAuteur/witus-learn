@@ -10,7 +10,9 @@ import { ownerOnlyBlocks } from "@/lib/course-visibility";
 import { personLabel } from "@/lib/course-instructor";
 import { REQUEST_STATUS_LABELS } from "@/lib/course-requests";
 import type { CourseRequestStatus, TenantRole } from "@/db/schema";
-import { AssignCourseTeacher, CourseRequestDecision, type CourseOption, type TeacherOption } from "@/components/school-users-admin";
+import { AssignCourseTeacher, CourseRequestDecision, MemberEditForm, ResolveDeletionRequest, type CourseOption, type TeacherOption } from "@/components/school-users-admin";
+import { listOpenDeletionRequests, type OpenDeletionRequestRow } from "@/db/queries/account-settings";
+import { accountLockReason, MEMBER_EDIT_OWN_EMAIL, mayEditMember } from "@/lib/account-settings";
 
 export const metadata: Metadata = { title: "Users" };
 
@@ -57,6 +59,18 @@ export default async function SchoolUsersPage({ searchParams }: { searchParams: 
     name: t.name,
     email: t.email,
   }));
+  // "Ask to delete my account" requests: the platform owner's to handle (accounts are global), so only
+  // the owner sees them. Off the critical path: a deploy ahead of migration 0082 still renders the page.
+  let deletionRequests: OpenDeletionRequestRow[] = [];
+  if (owner) {
+    try {
+      deletionRequests = await listOpenDeletionRequests();
+    } catch (err) {
+      console.error("deletion requests unavailable", err);
+    }
+  }
+  const askedToDelete = new Set(deletionRequests.map((d) => d.userId));
+  const actor = { userId: session?.user.id ?? "", isOwner: owner, isSchoolAdmin: true };
   const open = requests.filter((r) => r.status === "requested");
   const decided = requests.filter((r) => r.status !== "requested");
   const counts = members.reduce<Record<TenantRole, number>>(
@@ -112,6 +126,11 @@ export default async function SchoolUsersPage({ searchParams }: { searchParams: 
                 <span className="rounded-full border border-neutral-300 px-2 py-0.5 text-xs text-neutral-700 dark:border-neutral-700 dark:text-neutral-300">
                   {ROLE_LABELS[m.role]}
                 </span>
+                {askedToDelete.has(m.userId) ? (
+                  <a href="#deletion-requests" className="rounded-full border border-red-300 px-2 py-0.5 text-xs text-red-700 dark:border-red-800 dark:text-red-400">
+                    Asked to delete
+                  </a>
+                ) : null}
               </div>
               <dl className="mt-1 grid grid-cols-[auto_1fr] gap-x-3 gap-y-0.5 text-xs text-neutral-600 dark:text-neutral-400">
                 <dt>Email</dt>
@@ -123,6 +142,18 @@ export default async function SchoolUsersPage({ searchParams }: { searchParams: 
                 <dt>Last sign-in</dt>
                 <dd>{fmtDate(m.lastSignInAt)}</dd>
               </dl>
+              {mayEditMember({ actor, target: { ...m } }) ? (
+                <details className="mt-2">
+                  <summary className="inline-flex min-h-11 cursor-pointer items-center text-xs underline" style={{ color: "var(--accent)" }}>
+                    Edit name, username or email
+                  </summary>
+                  <MemberEditForm
+                    userId={m.userId}
+                    initial={{ displayName: m.displayName ?? m.name ?? "", username: m.username ?? "", email: m.email }}
+                    emailLocked={m.userId === actor.userId ? MEMBER_EDIT_OWN_EMAIL : accountLockReason(m)}
+                  />
+                </details>
+              ) : null}
             </li>
           ))}
           {members.length === 0 ? (
@@ -148,6 +179,32 @@ export default async function SchoolUsersPage({ searchParams }: { searchParams: 
                 </span>
               </li>
             ))}
+          </ul>
+        </section>
+      ) : null}
+
+      {owner ? (
+        <section id="deletion-requests" aria-labelledby="deletion-h" className="mt-8">
+          <h2 id="deletion-h" className="font-semibold">
+            Asked to delete their account ({deletionRequests.length})
+          </h2>
+          <p className="mt-1 text-xs text-neutral-600 dark:text-neutral-400">
+            From every school (an account is shared by all of them). Deletion is done by hand; mark each one handled when it is.
+          </p>
+          <ul className="mt-2 divide-y divide-neutral-200 text-sm dark:divide-neutral-800">
+            {deletionRequests.map((d) => (
+              <li key={d.id} className="flex flex-wrap items-center justify-between gap-2 py-2">
+                <span className="min-w-0 break-words">
+                  {personLabel({ displayName: d.displayName, name: d.name, username: d.username, email: d.email })}
+                  <span className="block text-xs text-neutral-600 dark:text-neutral-400">
+                    Asked {fmtDate(d.createdAt)}
+                    {d.schoolName ? ` on ${d.schoolName}` : ""}
+                  </span>
+                </span>
+                <ResolveDeletionRequest requestId={d.id} />
+              </li>
+            ))}
+            {deletionRequests.length === 0 ? <li className="py-2 text-neutral-600 dark:text-neutral-400">Nobody is waiting.</li> : null}
           </ul>
         </section>
       ) : null}

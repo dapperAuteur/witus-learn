@@ -5,6 +5,19 @@
 export const ROADMAP = `# Learn.WitUS, Roadmap
 
 ## Platform
+- 🔧 **Account settings for everyone, admin edit of a member, role mailboxes for the faculty accounts**
+  (\`feat/account-settings\`, migrations \`0082_account_settings\` and \`0083_awews_faculty_emails\`, applied by
+  \`migrate-production.yml\`). BAM, 2026-11-10: "users should be able to manage their accounts", "change faculty email
+  on ElementaryMBA", and role mailboxes on his domain for Learn.WitUS Faculty, WitUS Health Faculty, WitUS Languages
+  and WitUS Trade Faculty. New **/account** on every school (header Account menu, /teach/profile): display name and
+  username (format, reserved route words and uniqueness checked; logged), email change through a link mailed to the
+  NEW address that opens a Confirm page (60 minutes, hashed token, rate-limited per instance and durably per hour, the
+  old address gets a notice), sign out of this device, and "Ask to delete my account" (no self-service deletion
+  exists; the owner sees requests on /admin/users and marks them handled). **/admin/users** gets an edit form per
+  member: a school's admin may edit learners and teachers who belong to that school alone (never the owner, another
+  admin, or a multi-school account, since an account is global); an admin's email change takes effect at once, both
+  addresses get a notice, every change is in \`account_changes\`. Migration 0083 moves the five synthetic faculty
+  accounts (by username, idempotent, skipping any address another account holds, logged) to the role mailboxes.
 - 🔧 **School admins see their users, assign teachers to courses, and decide teachers' course requests; the owner
   and a course's teacher no longer have to be the same account** (\`feat/school-admin-roles\`, migration
   \`0081_course_requests\`, applied by \`migrate-production.yml\`). BAM, 2026-11-10, testing teacher@/admin@ on

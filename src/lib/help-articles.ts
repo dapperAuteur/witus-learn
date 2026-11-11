@@ -1422,7 +1422,65 @@ Below the list:
   - A request is decided once. The teacher is emailed either way when the school's mail is set up; the
     school's admins are emailed when a request comes in.
 
-To make someone a teacher in the first place, use **Admin → Teachers**.`,
+To make someone a teacher in the first place, use **Admin → Teachers**.
+
+## Edit a member's name, username or email
+Each member's row has **Edit name, username or email**. Same checks as the person's own Account
+settings (a username is 3 to 30 lowercase letters, numbers and single hyphens, not a reserved word, and
+not already taken; an email is a full address no other account uses).
+
+- An **email change you make takes effect at once**: the next sign-in link goes to the new address.
+  Both the old and the new address get a short notice. The person can change it back from their own
+  Account settings.
+- A **username change moves that person's course links** (\`/username/course\`) and instructor page.
+  Old links stop working.
+- Every change is logged: what changed, from what to what, who made it and in what role.
+- A school admin can edit learners and teachers **of this school only**. One account signs a person in
+  to every school, so someone who also belongs to another school, another admin, and the platform owner
+  can be edited only by the platform owner. Your own email changes from **Account settings**, which
+  checks the new address first. A child's profile keeps its email and username.
+
+## Asked to delete their account (platform owner)
+When someone presses **Ask to delete my account** on their Account settings, the platform owner sees
+them under **Asked to delete their account** on this page (from every school) and their member row is
+marked. Deletion is done by hand; press **Mark handled** when it is done or settled with the person.`,
+  },
+  {
+    slug: "account-settings",
+    title: "Your account: name, username, email, sign out",
+    category: "Basics",
+    keywords: ["account", "settings", "email", "change email", "username", "display name", "name", "sign out", "delete account", "profile"],
+    body: `# Your account settings
+
+Open **Account → Account settings** in the header (\`/account\`). One account signs you in to every
+school on this platform, so what you change here applies on all of them.
+
+## Name and username
+- **Display name** is how you are shown to teachers, classmates and, if you teach, learners.
+- **Username** is 3 to 30 lowercase letters, numbers and single hyphens. If you teach, your course links
+  (\`/your-username/course\`) and your instructor page use it, so changing it changes those links and old
+  ones stop working. Some words are reserved because the site uses them (for example \`teach\` or
+  \`admin\`).
+
+## Change your email
+1. Type the new address and press **Send a confirmation link**.
+2. Open the email at the **new** address and press **Confirm** on the page it opens. The link works for
+   60 minutes.
+3. Your account moves to the new address; sign-in links go there from now on. The old address gets a
+   short notice that it changed.
+
+Nothing changes until you confirm. You can cancel a waiting change, or send a new link, from the same
+page. If the link expired or was already used, ask for a new one. You can ask for a few changes an
+hour; after that, wait an hour. A child's profile is managed by their parent, so its email and username
+do not change here.
+
+## Sign out
+**Sign out** on this page (or in the Account menu) signs you out on this device only.
+
+## Delete your account
+Press **Ask to delete my account** and confirm. Deletion is done by the platform's owner, not
+instantly, because an account can hold certificates, course work and family links on several schools.
+You can withdraw the request until it is handled.`,
   },
   {
     slug: "request-a-course",

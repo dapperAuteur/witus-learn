@@ -165,6 +165,7 @@ export const TUTORIAL_SCRIPTS: TutorialScript[] = [
   placeholder("admin-home-and-brand-settings", "The admin home and brand settings"),
   placeholder("school-users-and-course-requests", "Your school's users and course requests"),
   placeholder("request-a-course", "Requesting a course from your school"),
+  placeholder("account-settings", "Your account settings"),
 ];
 
 export function tutorialScriptFor(helpSlug: string): TutorialScript | undefined {
