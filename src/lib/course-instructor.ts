@@ -15,7 +15,7 @@ import type { TenantRole } from "@/db/schema";
 export type InstructorActorRole = "platform_owner" | "brand_admin" | "seed";
 
 /** Where an assignment was made, as recorded in course_instructor_changes. */
-export type InstructorChangeSource = "course-settings" | "admin-users" | "course-request" | "seed";
+export type InstructorChangeSource = "course-settings" | "admin-users" | "course-request" | "course-offer" | "seed";
 
 /** Everything the decision needs, resolved on the server (never from the client). */
 export interface InstructorAssignmentFacts {

@@ -3,6 +3,7 @@ import { and, eq, inArray } from "drizzle-orm";
 import { db } from "@/db/client";
 import {
   courseInstructorChanges,
+  courseOffers,
   courses,
   tenantMemberships,
   userProfiles,
@@ -47,8 +48,35 @@ export async function schoolRoleOf(tenantId: string, userId: string): Promise<Te
 }
 
 /**
+ * Decide only (src/lib/course-instructor.ts): gather the target's facts on this school and run the rule,
+ * writing nothing. Used before an OFFER is made (src/lib/course-offers.ts), so the admin hears "isn't a
+ * teacher of this school" when they offer, not when the teacher accepts, and again at acceptance.
+ */
+export async function checkInstructorAssignment(input: Omit<AssignInstructorInput, "source">): Promise<InstructorAssignmentDecision> {
+  const { tenantId, course, newInstructorId, actor } = input;
+  const sameAsNow = newInstructorId === course.instructorId;
+  const mayAct = actor.isOwner || (actor.isSchoolAdmin && !course.ownerOnly);
+  const needsTarget = mayAct && !sameAsNow;
+  const [role, targetIsOwner, username, slugTaken] = needsTarget
+    ? await Promise.all([
+        schoolRoleOf(tenantId, newInstructorId),
+        isPlatformOwner(newInstructorId),
+        ensureUsernameById(newInstructorId),
+        course.slug ? instructorSlugTaken(tenantId, newInstructorId, course.slug, course.id) : Promise.resolve(false),
+      ])
+    : [null, false, null, false];
+  return decideInstructorAssignment({
+    actor: { isOwner: actor.isOwner, isSchoolAdmin: actor.isSchoolAdmin },
+    course: { instructorId: course.instructorId, ownerOnly: course.ownerOnly },
+    target: { userId: newInstructorId, role, isPlatformOwner: targetIsOwner, hasUsername: Boolean(username), slugTaken },
+  });
+}
+
+/**
  * Decide (src/lib/course-instructor.ts) and apply: update the course and write the
  * course_instructor_changes row in one transaction. A decision that changes nothing writes nothing.
+ * An open offer for the course (course_offers) is withdrawn in the same transaction: the course has
+ * a new teacher, so the offer no longer describes a change anyone can accept.
  */
 export async function assignCourseInstructor(input: AssignInstructorInput): Promise<AssignInstructorResult> {
   const { tenantId, course, newInstructorId, actor } = input;
@@ -90,6 +118,10 @@ export async function assignCourseInstructor(input: AssignInstructorInput): Prom
       actorRole: decision.actorRole,
       source: input.source,
     });
+    await tx
+      .update(courseOffers)
+      .set({ status: "withdrawn", decidedAt: new Date(), updatedAt: new Date() })
+      .where(and(eq(courseOffers.courseId, course.id), eq(courseOffers.tenantId, tenantId), eq(courseOffers.status, "offered")));
     return row;
   });
   if (!updated) return { ok: false, status: 404, error: "Not found" };

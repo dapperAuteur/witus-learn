@@ -8,7 +8,10 @@ import { listAllTenantCourses } from "@/db/queries/authoring";
 import { listCourseRequests } from "@/db/queries/course-requests";
 import { ownerOnlyBlocks } from "@/lib/course-visibility";
 import { personLabel } from "@/lib/course-instructor";
-import { REQUEST_STATUS_LABELS } from "@/lib/course-requests";
+import { requestStatusLabel } from "@/lib/course-requests";
+import { OFFER_STATUS_LABELS, type CourseOfferStatus } from "@/lib/course-offers";
+import { listOpenOffers, listRecentlyAnsweredOffers, type CourseOfferRow } from "@/db/queries/course-offers";
+import { WithdrawCourseOffer } from "@/components/course-offer-response";
 import type { CourseRequestStatus, TenantRole } from "@/db/schema";
 import { AssignCourseTeacher, CourseRequestDecision, MemberEditForm, ResolveDeletionRequest, type CourseOption, type TeacherOption } from "@/components/school-users-admin";
 import { listOpenDeletionRequests, type OpenDeletionRequestRow } from "@/db/queries/account-settings";
@@ -70,6 +73,15 @@ export default async function SchoolUsersPage({ searchParams }: { searchParams: 
     }
   }
   const askedToDelete = new Set(deletionRequests.map((d) => d.userId));
+  // Offers waiting for a teacher, and the last month's answers (BAM 2026-11-10: "approve assigned
+  // courses"). Off the critical path: a deploy ahead of migration 0084 still renders the page.
+  let openOffers: CourseOfferRow[] = [];
+  let answeredOffers: CourseOfferRow[] = [];
+  try {
+    [openOffers, answeredOffers] = await Promise.all([listOpenOffers(sdb.tenantId), listRecentlyAnsweredOffers(sdb.tenantId)]);
+  } catch (err) {
+    console.error("course offers unavailable", err);
+  }
   const actor = { userId: session?.user.id ?? "", isOwner: owner, isSchoolAdmin: true };
   const open = requests.filter((r) => r.status === "requested");
   const decided = requests.filter((r) => r.status !== "requested");
@@ -219,22 +231,67 @@ export default async function SchoolUsersPage({ searchParams }: { searchParams: 
         <AssignCourseTeacher teachers={teacherOptions} courses={courses} />
       </section>
 
+      <section id="course-offers" aria-labelledby="offers-h" className="mt-8">
+        <h2 id="offers-h" className="font-semibold">
+          Courses offered to teachers ({openOffers.length} waiting)
+        </h2>
+        <p className="mt-1 text-xs text-neutral-600 dark:text-neutral-400">
+          A course changes teacher only when the teacher accepts on their Teach page. Offers expire after 14 days.
+        </p>
+        <ul className="mt-2 divide-y divide-neutral-200 text-sm dark:divide-neutral-800">
+          {openOffers.map((o) => (
+            <li key={o.id} className="flex flex-wrap items-center justify-between gap-2 py-2">
+              <span className="min-w-0 break-words">
+                <span className="font-medium">{o.courseTitle}</span> to {o.teacherLabel}
+                <span className="block text-xs text-neutral-600 dark:text-neutral-400">
+                  Offered {fmtDate(o.createdAt)}
+                  {o.offeredByLabel ? ` by ${o.offeredByLabel}` : ""}, open until {fmtDate(o.expiresAt)}
+                </span>
+              </span>
+              <WithdrawCourseOffer offerId={o.id} />
+            </li>
+          ))}
+          {openOffers.length === 0 ? <li className="py-2 text-neutral-600 dark:text-neutral-400">No offers waiting.</li> : null}
+        </ul>
+        {answeredOffers.length > 0 ? (
+          <details className="mt-3 text-sm">
+            <summary className="inline-flex min-h-11 cursor-pointer items-center">Answered in the last 30 days ({answeredOffers.length})</summary>
+            <ul className="mt-2 divide-y divide-neutral-200 dark:divide-neutral-800">
+              {answeredOffers.map((o) => (
+                <li key={o.id} className="py-2">
+                  <p>
+                    <span className="font-medium">{o.courseTitle}</span> to {o.teacherLabel}{" "}
+                    <span className="text-neutral-600 dark:text-neutral-400">({OFFER_STATUS_LABELS[o.status as CourseOfferStatus]}, {fmtDate(o.decidedAt ?? o.updatedAt)})</span>
+                  </p>
+                  {o.decisionNote ? <p className="mt-1 whitespace-pre-wrap text-xs">{o.decisionNote}</p> : null}
+                </li>
+              ))}
+            </ul>
+          </details>
+        ) : null}
+      </section>
+
       <section id="course-requests" aria-labelledby="requests-h" className="mt-8">
         <h2 id="requests-h" className="font-semibold">
           Course requests ({open.length} waiting)
         </h2>
         <p className="mt-1 text-xs text-neutral-600 dark:text-neutral-400">
-          Teachers ask for a course from Teach. Approving creates a private, unpublished draft with that teacher as its instructor;
-          declining sends them your note.
+          Teachers ask from Teach for a new course or to teach one the school already has. Approving a new course creates a private,
+          unpublished draft with that teacher as its instructor; approving an existing one hands it to them. Declining sends them your
+          note.
         </p>
         <ul className="mt-2 space-y-3">
           {open.map((r) => (
             <li key={r.id} className="rounded-lg border border-neutral-200 p-4 text-sm dark:border-neutral-800">
-              <p className="font-medium">{r.title}</p>
+              <p className="font-medium">
+                {r.kind === "existing" ? "To teach an existing course: " : null}
+                {r.requestedCourseTitle ?? r.title}
+              </p>
               <p className="mt-0.5 text-xs text-neutral-600 dark:text-neutral-400">
                 Asked by {personLabel({ displayName: r.requesterName, username: r.requesterUsername, email: r.requesterEmail })} on {fmtDate(r.createdAt)}
+                {r.kind === "existing" && r.requestedCourseInstructorLabel ? ` · taught now by ${r.requestedCourseInstructorLabel}` : ""}
               </p>
-              <p className="mt-2 whitespace-pre-wrap">{r.description}</p>
+              {r.description ? <p className="mt-2 whitespace-pre-wrap">{r.description}</p> : null}
               <p className="mt-2 whitespace-pre-wrap">
                 <span className="font-medium">Why: </span>
                 {r.reason}
@@ -246,7 +303,7 @@ export default async function SchoolUsersPage({ searchParams }: { searchParams: 
                   </a>
                 </p>
               ) : null}
-              <CourseRequestDecision requestId={r.id} title={r.title} />
+              <CourseRequestDecision requestId={r.id} title={r.requestedCourseTitle ?? r.title} kind={r.kind === "existing" ? "existing" : "new"} />
             </li>
           ))}
           {open.length === 0 ? <li className="text-sm text-neutral-600 dark:text-neutral-400">No requests waiting.</li> : null}
@@ -258,7 +315,8 @@ export default async function SchoolUsersPage({ searchParams }: { searchParams: 
               {decided.map((r) => (
                 <li key={r.id} className="py-2">
                   <p className="font-medium">
-                    {r.title} <span className="font-normal text-neutral-600 dark:text-neutral-400">({REQUEST_STATUS_LABELS[r.status as CourseRequestStatus]})</span>
+                    {r.kind === "existing" ? "To teach: " : null}
+                    {r.title} <span className="font-normal text-neutral-600 dark:text-neutral-400">({r.status === "approved" && r.kind === "existing" ? "Approved: handed over" : requestStatusLabel(r.status as CourseRequestStatus, r.kind)})</span>
                   </p>
                   <p className="text-xs text-neutral-600 dark:text-neutral-400">
                     {personLabel({ displayName: r.requesterName, username: r.requesterUsername, email: r.requesterEmail })}, decided {fmtDate(r.decidedAt)}

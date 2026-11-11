@@ -52,7 +52,13 @@ export function AssignCourseTeacher({ teachers, courses }: { teachers: TeacherOp
     });
     const data = await res.json().catch(() => ({}));
     setBusy(false);
-    if (res.ok) {
+    if (res.ok && data.offered) {
+      setMsg({
+        ok: true,
+        text: `Offered. ${personLabel(teacher)} sees "${course.title}" on their Teach page and has 14 days to accept; the course changes teacher when they do. You are emailed their answer.`,
+      });
+      router.refresh();
+    } else if (res.ok) {
       setMsg({ ok: true, text: `Done. ${personLabel(teacher)} now teaches "${course.title}". The course moved to their Teach page.` });
       router.refresh();
     } else {
@@ -97,11 +103,13 @@ export function AssignCourseTeacher({ teachers, courses }: { teachers: TeacherOp
         className="min-h-11 rounded-md px-4 font-medium text-white disabled:opacity-60"
         style={{ backgroundColor: "var(--accent)" }}
       >
-        {busy ? "Assigning…" : sameAsNow ? "Already their course" : "Assign this teacher"}
+        {busy ? "Sending…" : sameAsNow ? "Already their course" : "Offer the course to this teacher"}
       </button>
       <p className="text-xs text-neutral-600 dark:text-neutral-400">
-        The teacher becomes the course&apos;s instructor: they edit, record and are bylined on it, and its URL moves to their
-        username. The previous instructor loses edit access; you keep yours as an admin. Every change is logged.
+        The teacher gets an offer on their Teach page and by email. When they accept, they become the course&apos;s instructor: they
+        edit, record and are bylined on it, and its URL moves to their username. The previous instructor loses edit access; you keep
+        yours as an admin. Offers expire after 14 days; a new offer for the same course replaces the old one. Picking yourself takes
+        effect at once. Every change is logged.
       </p>
       {msg ? (
         <p role={msg.ok ? "status" : "alert"} className={msg.ok ? "text-green-700 dark:text-green-400" : "text-red-600"}>
@@ -112,7 +120,7 @@ export function AssignCourseTeacher({ teachers, courses }: { teachers: TeacherOp
   );
 }
 
-export function CourseRequestDecision({ requestId, title }: { requestId: string; title: string }) {
+export function CourseRequestDecision({ requestId, title, kind = "new" }: { requestId: string; title: string; kind?: "new" | "existing" }) {
   const router = useRouter();
   const [note, setNote] = useState("");
   const [busy, setBusy] = useState<"approve" | "decline" | null>(null);
@@ -123,7 +131,11 @@ export function CourseRequestDecision({ requestId, title }: { requestId: string;
       setMsg({ ok: false, text: `Tell the teacher why (at least ${MIN_DECLINE_NOTE} characters) before declining.` });
       return;
     }
-    if (action === "approve" && !confirm(`Approve "${title}"? A draft course is created with the teacher as its instructor.`)) return;
+    const approveQuestion =
+      kind === "existing"
+        ? `Approve? The teacher becomes the instructor of "${title}" now, and its current instructor loses edit access.`
+        : `Approve "${title}"? A draft course is created with the teacher as its instructor.`;
+    if (action === "approve" && !confirm(approveQuestion)) return;
     setBusy(action);
     setMsg(null);
     const res = await fetch(`/api/admin/course-requests/${encodeURIComponent(requestId)}`, {
@@ -134,7 +146,15 @@ export function CourseRequestDecision({ requestId, title }: { requestId: string;
     const data = await res.json().catch(() => ({}));
     setBusy(null);
     if (res.ok) {
-      setMsg({ ok: true, text: action === "approve" ? "Approved. The draft course is on the teacher's Teach page." : "Declined. The teacher sees your note on Teach." });
+      setMsg({
+        ok: true,
+        text:
+          action === "decline"
+            ? "Declined. The teacher sees your note on Teach."
+            : kind === "existing"
+              ? "Approved. The course is on the teacher's Teach page now."
+              : "Approved. The draft course is on the teacher's Teach page.",
+      });
       router.refresh();
     } else {
       setMsg({ ok: false, text: data.error ?? "Couldn't do that. Try again." });
@@ -155,7 +175,7 @@ export function CourseRequestDecision({ requestId, title }: { requestId: string;
           className="min-h-11 rounded-md px-4 font-medium text-white disabled:opacity-60"
           style={{ backgroundColor: "var(--accent)" }}
         >
-          {busy === "approve" ? "Approving…" : "Approve and create the draft"}
+          {busy === "approve" ? "Approving…" : kind === "existing" ? "Approve and hand them the course" : "Approve and create the draft"}
         </button>
         <button
           type="button"

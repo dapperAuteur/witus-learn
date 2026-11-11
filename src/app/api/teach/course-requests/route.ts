@@ -1,7 +1,22 @@
 import { env } from "@/lib/env";
 import { apiContext, errorJson, isTenantInstructor, json } from "@/lib/api";
-import { CourseRequestInput, COURSE_REQUEST_FORBIDDEN } from "@/lib/course-requests";
-import { createCourseRequest, listOwnCourseRequests, listSchoolAdminEmails } from "@/db/queries/course-requests";
+import {
+  COURSE_REQUEST_ALREADY_YOURS,
+  COURSE_REQUEST_DUPLICATE,
+  COURSE_REQUEST_FORBIDDEN,
+  CourseRequestInput,
+  ExistingCourseRequestInput,
+  isExistingCourseRequestBody,
+} from "@/lib/course-requests";
+import {
+  createCourseRequest,
+  createExistingCourseRequest,
+  hasOpenExistingRequest,
+  listOwnCourseRequests,
+  listSchoolAdminEmails,
+} from "@/db/queries/course-requests";
+import { isPlatformOwner } from "@/lib/session";
+import { getUsername } from "@/db/queries/authoring";
 import { pricingInquiryRecipient, sendCourseRequestEmail } from "@/lib/emails";
 import { requestOrigin } from "@/lib/request-origin";
 
@@ -22,10 +37,27 @@ export async function POST(req: Request) {
   if (!session) return errorJson("Unauthorized", 401);
   if (!(await isTenantInstructor(session, sdb.tenantId))) return errorJson(COURSE_REQUEST_FORBIDDEN, 403);
 
-  const parsed = CourseRequestInput.safeParse(await req.json().catch(() => null));
-  if (!parsed.success) return errorJson(parsed.error.issues[0]?.message ?? "Check the form.", 400);
-
-  const request = await createCourseRequest(sdb.tenantId, session.user.id, parsed.data);
+  const body = await req.json().catch(() => null);
+  let request;
+  let currentInstructor: string | null = null;
+  if (isExistingCourseRequestBody(body)) {
+    // An EXISTING course of this school (BAM, 2026-11-10: "allow teacher to choose from list of existing
+    // courses also"). Read through the tenant-scoped DAL, so another school's course is a 404; an
+    // owner-only course is a 404 to anyone but the owner, as everywhere else.
+    const parsed = ExistingCourseRequestInput.safeParse(body);
+    if (!parsed.success) return errorJson(parsed.error.issues[0]?.message ?? "Check the form.", 400);
+    const course = await sdb.getCourseById(parsed.data.courseId);
+    if (!course || (course.ownerOnly && !(await isPlatformOwner(session.user.id)))) return errorJson("Not found", 404);
+    if (course.instructorId === session.user.id) return errorJson(COURSE_REQUEST_ALREADY_YOURS, 400);
+    if (await hasOpenExistingRequest(sdb.tenantId, session.user.id, course.id)) return errorJson(COURSE_REQUEST_DUPLICATE, 409);
+    request = await createExistingCourseRequest(sdb.tenantId, session.user.id, { course, reason: parsed.data.reason });
+    const u = await getUsername(course.instructorId).catch(() => null);
+    currentInstructor = u ? `@${u}` : null;
+  } else {
+    const parsed = CourseRequestInput.safeParse(body);
+    if (!parsed.success) return errorJson(parsed.error.issues[0]?.message ?? "Check the form.", 400);
+    request = await createCourseRequest(sdb.tenantId, session.user.id, parsed.data);
+  }
 
   let notified = 0;
   try {
@@ -45,6 +77,8 @@ export async function POST(req: Request) {
         reason: request.reason,
         briefUrl: request.briefUrl,
         adminUrl: `${origin}/admin/users#course-requests`,
+        kind: request.kind === "existing" ? "existing" : "new",
+        currentInstructor,
       });
       notified++;
     }
