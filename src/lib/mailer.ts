@@ -17,6 +17,11 @@ export type EmailKind =
   | "contact-ping"
   | "course-request"
   | "course-request-decision"
+  | "email-change"
+  | "email-change-notice"
+  | "account-deletion-request"
+  | "course-offer"
+  | "course-offer-decision"
   | "other";
 
 /**

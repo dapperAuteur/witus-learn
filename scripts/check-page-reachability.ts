@@ -43,7 +43,7 @@ const LINK_SURFACES = [
 
 /** Login-gated app sections: exempt from the OWN-CARD requirement (behind auth, not shared socially).
  *  They are still subject to the menu-reachability check. */
-const GATED_PREFIXES = ["dashboard", "cohorts", "family", "my-courses", "field-log", "teach", "admin"];
+const GATED_PREFIXES = ["dashboard", "cohorts", "family", "my-courses", "field-log", "teach", "admin", "account"];
 
 /** Public top-level pages NOT reachable from the header/footer/mobile menu, with the reason each is a
  *  legitimate exception. A page reached only from another page's body belongs here, not the menu. */

@@ -98,6 +98,8 @@ export function CourseSettingsForm({
   const [v, setV] = useState<CourseSettings>(initial);
   const [state, setState] = useState<"idle" | "saving" | "saved" | "error">("idle");
   const [errMsg, setErrMsg] = useState<string | null>(null);
+  // A school admin's instructor change is an offer the teacher accepts on Teach (src/lib/course-offers.ts).
+  const [offerNote, setOfferNote] = useState<string | null>(null);
   const [savedSnapshot, setSavedSnapshot] = useState(() => JSON.stringify(initial));
   const dirty = JSON.stringify(v) !== savedSnapshot;
   // The last SAVED pricing, which a proposed change is judged against, plus the change waiting on an
@@ -144,7 +146,18 @@ export function CourseSettingsForm({
     }
     if (r.ok) {
       setState("saved");
-      setSavedSnapshot(JSON.stringify(v)); // clears the unsaved-changes warning
+      const okBody = (await r.json().catch(() => null)) as { instructorOffer?: { teacherLabel: string } } | null;
+      if (okBody?.instructorOffer) {
+        // The instructor did not change yet: put the picker back on the current teacher, so a second save
+        // does not offer the course again, and say what happens next.
+        const kept = { ...v, instructorId: initial.instructorId };
+        setV(kept);
+        setSavedSnapshot(JSON.stringify(kept));
+        setOfferNote(`Offered to ${okBody.instructorOffer.teacherLabel}. The course changes teacher when they accept it on their Teach page (offers last 14 days).`);
+      } else {
+        setOfferNote(null);
+        setSavedSnapshot(JSON.stringify(v)); // clears the unsaved-changes warning
+      }
       setSavedPricing(pricingOf(v));
       setPending(null);
       router.refresh();
@@ -502,6 +515,11 @@ export function CourseSettingsForm({
         </button>
         <span role="status" aria-live="polite" className="text-sm">
           {state === "saved" ? <span className="text-green-700 dark:text-green-400">Saved.</span> : null}
+          {state === "saved" && offerNote ? (
+            <span className="ml-1 text-green-700 dark:text-green-400">
+              {offerNote}
+            </span>
+          ) : null}
           {state === "error" ? <span className="text-red-600">{errMsg ?? "Could not save."}</span> : null}
         </span>
       </div>

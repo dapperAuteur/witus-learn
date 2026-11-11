@@ -1366,12 +1366,21 @@ id) that may not match the account you log in with, which is why they can feel r
 Two places, same rule, as an **owner or school admin**:
 
 - **Admin → Users** (\`/admin/users\`) → **Assign a teacher to a course** → pick the teacher and the course
-  → **Assign this teacher**. The teacher list is the school's teachers and admins, named by name or email.
+  → **Offer the course to this teacher**. The teacher list is the school's teachers and admins, named by
+  name or email.
 - Or open the course at \`/teach/<course>\` → **Course settings** → the **Instructor** dropdown → pick the
   person → **Save settings**.
 
-- The course moves to that teacher's Teach page and its public URL changes to \`/their-username/…\`.
-  You keep access as an admin; the previous instructor loses edit access.
+**It is an offer the teacher accepts** (BAM, 2026-11-10). The teacher sees the course under **Courses
+offered to you** on their Teach page, and gets an email. Nothing changes until they press **Accept and
+teach it**; **Decline** leaves the course with its current teacher. Either way the admin who offered it is
+emailed, and the answer (with the teacher's optional note) is listed under **Courses offered to teachers**
+on Admin → Users. Offers expire after **14 days**; a new offer for the same course replaces the old one,
+and an admin can **Withdraw** an offer before it is answered. Two cases take effect at once: picking
+**yourself**, and the **platform owner's** pick in a course's settings.
+
+- Once accepted, the course moves to that teacher's Teach page and its public URL changes to
+  \`/their-username/…\`. You keep access as an admin; the previous instructor loses edit access.
 - Only a **teacher or admin of this school** can be picked ("isn't a teacher of this school" means make
   them one on Admin → Teachers first). A teacher who has never signed in has no profile yet; ask them to
   sign in once.
@@ -1411,44 +1420,120 @@ Below the list:
 - **Waiting for a first sign-in**: roles the platform owner granted to an address that has no account
   yet. The role lands the moment that address signs in.
 - **Assign a teacher to a course**: pick a teacher (any teacher or admin of the school) and a course.
+  This sends the teacher an **offer** they accept on Teach; the course changes teacher when they do.
   See "Change a course's instructor".
-- **Course requests**: teachers ask for a course from their Teach page. Each request shows the title,
-  what it covers, why, and a brief link if they gave one.
-  - **Approve and create the draft**: a **private, unpublished** draft course is created with that
-    teacher as its instructor. It appears under their **Your courses** on Teach; it goes public only
-    through the usual Make public switch after vetting.
+- **Courses offered to teachers**: the offers waiting for an answer (with **Withdraw**), and the last
+  month's answers with the teacher's note.
+- **Course requests**: teachers ask from their Teach page for a **new course** (title, what it covers,
+  why, a brief link if they gave one) or to **teach an existing course** of the school (which course,
+  who teaches it now, and why).
+  - **Approve and create the draft** (a new course): a **private, unpublished** draft course is created
+    with that teacher as its instructor. It appears under their **Your courses** on Teach; it goes public
+    only through the usual Make public switch after vetting.
+  - **Approve and hand them the course** (an existing course): the teacher becomes its instructor at
+    once, with the same checks and log as any hand-over; the previous instructor loses edit access.
   - **Decline with note**: the teacher reads your note on Teach (at least 10 characters, so it says
     something they can act on). A note is optional on an approval.
   - A request is decided once. The teacher is emailed either way when the school's mail is set up; the
     school's admins are emailed when a request comes in.
 
-To make someone a teacher in the first place, use **Admin → Teachers**.`,
+To make someone a teacher in the first place, use **Admin → Teachers**.
+
+## Edit a member's name, username or email
+Each member's row has **Edit name, username or email**. Same checks as the person's own Account
+settings (a username is 3 to 30 lowercase letters, numbers and single hyphens, not a reserved word, and
+not already taken; an email is a full address no other account uses).
+
+- An **email change you make takes effect at once**: the next sign-in link goes to the new address.
+  Both the old and the new address get a short notice. The person can change it back from their own
+  Account settings.
+- A **username change moves that person's course links** (\`/username/course\`) and instructor page.
+  Old links stop working.
+- Every change is logged: what changed, from what to what, who made it and in what role.
+- A school admin can edit learners and teachers **of this school only**. One account signs a person in
+  to every school, so someone who also belongs to another school, another admin, and the platform owner
+  can be edited only by the platform owner. Your own email changes from **Account settings**, which
+  checks the new address first. A child's profile keeps its email and username.
+
+## Asked to delete their account (platform owner)
+When someone presses **Ask to delete my account** on their Account settings, the platform owner sees
+them under **Asked to delete their account** on this page (from every school) and their member row is
+marked. Deletion is done by hand; press **Mark handled** when it is done or settled with the person.`,
+  },
+  {
+    slug: "account-settings",
+    title: "Your account: name, username, email, sign out",
+    category: "Basics",
+    keywords: ["account", "settings", "email", "change email", "username", "display name", "name", "sign out", "delete account", "profile"],
+    body: `# Your account settings
+
+Open **Account → Account settings** in the header (\`/account\`). One account signs you in to every
+school on this platform, so what you change here applies on all of them.
+
+## Name and username
+- **Display name** is how you are shown to teachers, classmates and, if you teach, learners.
+- **Username** is 3 to 30 lowercase letters, numbers and single hyphens. If you teach, your course links
+  (\`/your-username/course\`) and your instructor page use it, so changing it changes those links and old
+  ones stop working. Some words are reserved because the site uses them (for example \`teach\` or
+  \`admin\`).
+
+## Change your email
+1. Type the new address and press **Send a confirmation link**.
+2. Open the email at the **new** address and press **Confirm** on the page it opens. The link works for
+   60 minutes.
+3. Your account moves to the new address; sign-in links go there from now on. The old address gets a
+   short notice that it changed.
+
+Nothing changes until you confirm. You can cancel a waiting change, or send a new link, from the same
+page. If the link expired or was already used, ask for a new one. You can ask for a few changes an
+hour; after that, wait an hour. A child's profile is managed by their parent, so its email and username
+do not change here.
+
+## Sign out
+**Sign out** on this page (or in the Account menu) signs you out on this device only.
+
+## Delete your account
+Press **Ask to delete my account** and confirm. Deletion is done by the platform's owner, not
+instantly, because an account can hold certificates, course work and family links on several schools.
+You can withdraw the request until it is handled.`,
   },
   {
     slug: "request-a-course",
     title: "Request a course from your school",
     category: "Teaching",
-    keywords: ["request", "propose", "new course", "idea", "brief", "approve", "declined", "teacher"],
+    keywords: ["request", "propose", "new course", "existing course", "idea", "brief", "approve", "declined", "teacher", "offer", "offered", "accept"],
     body: `# Request a course
 
 A teacher can propose a course and have the school approve it. On **Teach** (\`/teach\`), press
-**Request a course** and fill in:
+**Request a course** and choose what you are asking for.
+
+**A new course**, then fill in:
 
 1. **Title**.
 2. **What it covers**, a sentence or two.
 3. **Why this course**, a sentence or two.
 4. An optional **link to a brief or outline** you already wrote.
 
+**An existing course in this school**: pick it from the list (each shows who teaches it now) and say
+why you want to teach it. If the school approves, you become its instructor.
+
 Press **Send the request**. The school's admins are told, and your request shows under **Your course
 requests** on Teach with its status:
 
 - **Waiting for the school**: not decided yet.
 - **Approved**: a private draft course was created with you as its instructor. Follow **Open the draft
-  course** and start adding lessons. It stays private and unpublished until the school opens it.
+  course** and start adding lessons. It stays private and unpublished until the school opens it. For an
+  existing course, it now reads "you teach this course now" with **Open the course**.
 - **Declined**: the school's note explains why. You can send a new request once you have addressed it.
 
 School admins and the platform owner do not need to request: they create courses directly with the
-**New course** form.`,
+**New course** form.
+
+## Courses offered to you
+When a school admin assigns you a course, it shows under **Courses offered to you** at the top of Teach
+(and you get an email). Press **Accept and teach it** to become its instructor, or **Decline** to leave
+it with its current teacher. You can add a short note either way; the admin is told your answer. An
+offer lasts 14 days.`,
   },
   {
     slug: "api-keys-and-embedding",

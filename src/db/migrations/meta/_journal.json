@@ -575,6 +575,27 @@
       "when": 1794339465494,
       "tag": "0081_course_requests",
       "breakpoints": true
+    },
+    {
+      "idx": 82,
+      "version": "7",
+      "when": 1794362236776,
+      "tag": "0082_account_settings",
+      "breakpoints": true
+    },
+    {
+      "idx": 83,
+      "version": "7",
+      "when": 1794362247624,
+      "tag": "0083_awews_faculty_emails",
+      "breakpoints": true
+    },
+    {
+      "idx": 84,
+      "version": "7",
+      "when": 1794363714878,
+      "tag": "0084_course_offers_and_existing_requests",
+      "breakpoints": true
     }
   ]
 }

@@ -54,14 +54,24 @@ describe("ownerEmail()", () => {
 });
 
 describe("the owner's address is in no tracked file", () => {
-  // Paths that may carry the owner's domain, each with its reason. Empty on purpose: a reason good
-  // enough to add a row here is a reason to put the address in an env var instead.
-  const ALLOWED = new Map<string, string>();
+  // Paths that may carry the owner's domain, each with its reason and the ONLY local parts allowed
+  // there. Widened deliberately on 2026-11-10: BAM chose role mailboxes on his domain for the five
+  // synthetic faculty accounts (migration 0083). A role mailbox is not the owner's personal address,
+  // so it may appear, but only in the file that sets it and only as one of the addresses he named.
+  // Any other address on the domain, in this file or any other, still fails.
+  const ALLOWED = new Map<string, { reason: string; localParts: readonly string[] }>([
+    [
+      "src/db/migrations/0083_awews_faculty_emails.sql",
+      {
+        reason: "Role mailboxes BAM chose for the synthetic faculty accounts (2026-11-10).",
+        localParts: ["faculty", "learn-faculty", "health-faculty", "languages", "trade-faculty"],
+      },
+    ],
+  ]);
 
-  it("git grep finds the owner's domain in no tracked text file", () => {
-    let hits: string[] = [];
+  function trackedHits(): string[] {
     try {
-      hits = execFileSync("git", ["grep", "-I", "-l", "-i", "--fixed-strings", "-e", OWNER_DOMAIN, "--", "."], {
+      return execFileSync("git", ["grep", "-I", "-l", "-i", "--fixed-strings", "-e", OWNER_DOMAIN, "--", "."], {
         cwd: ROOT,
         encoding: "utf8",
       })
@@ -70,8 +80,34 @@ describe("the owner's address is in no tracked file", () => {
     } catch (error) {
       // git grep exits 1 when nothing matches, which is the pass; anything else is a real failure.
       if ((error as { status?: number }).status !== 1) throw error;
+      return [];
     }
-    expect(hits.filter((path) => !ALLOWED.has(path))).toEqual([]);
+  }
+
+  it("git grep finds the owner's domain in no tracked text file outside the allowed list", () => {
+    expect(trackedHits().filter((path) => !ALLOWED.has(path))).toEqual([]);
+  });
+
+  it("an allowed file carries only its named role mailboxes on that domain, nothing else", () => {
+    const domain = OWNER_DOMAIN.replace(".", "\\.");
+    for (const path of trackedHits().filter((p) => ALLOWED.has(p))) {
+      const allowed = new Set(ALLOWED.get(path)!.localParts);
+      const text = readFileSync(join(ROOT, path), "utf8");
+      const mentions = text.match(new RegExp(`[^\\s'"(<]*${domain}`, "gi")) ?? [];
+      expect(mentions.length, path).toBeGreaterThan(0);
+      for (const m of mentions) {
+        const local = m.toLowerCase().split("@")[0];
+        expect(m.includes("@") && allowed.has(local), `${path}: an address on the owner's domain that is not an allowed role mailbox`).toBe(true);
+      }
+    }
+  });
+
+  it("no allowed role mailbox is the owner's own address", () => {
+    const owner = process.env[OWNER_EMAIL_VAR]?.trim().toLowerCase();
+    if (!owner) return; // CI has no owner address; the check runs wherever one is set.
+    for (const { localParts } of ALLOWED.values()) {
+      for (const lp of localParts) expect(`${lp}@${OWNER_DOMAIN}` === owner, "a role mailbox equals the owner's address").toBe(false);
+    }
   });
 
   it("every script that needs the owner reads it through the helper", () => {

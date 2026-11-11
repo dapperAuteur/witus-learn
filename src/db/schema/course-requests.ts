@@ -33,8 +33,15 @@ export const courseRequests = pgTable(
     decisionNote: text("decision_note"),
     decidedByUserId: text("decided_by_user_id").references(() => users.id, { onDelete: "set null" }),
     decidedAt: timestamp("decided_at", { withTimezone: true }),
-    /** The draft course an approval created. Null until approved; null again if that course is deleted. */
+    /** The draft course an approval created (kind new), or the course handed over (kind existing). Null
+     *  until approved; null again if that course is deleted. */
     courseId: uuid("course_id").references(() => courses.id, { onDelete: "set null" }),
+    /** new: a course that does not exist yet (title, description). existing: an existing course of this
+     *  school the teacher asks to teach (BAM, 2026-11-10: "allow teacher to choose from list of existing
+     *  courses also"). */
+    kind: text("kind").notNull().default("new"),
+    /** The existing course asked for (kind existing only). The request goes with the course. */
+    requestedCourseId: uuid("requested_course_id").references(() => courses.id, { onDelete: "cascade" }),
     createdAt: timestamp("created_at", { withTimezone: true }).notNull().defaultNow(),
     updatedAt: timestamp("updated_at", { withTimezone: true }).notNull().defaultNow(),
   },
@@ -42,11 +49,16 @@ export const courseRequests = pgTable(
     index("course_requests_tenant_status_idx").on(t.tenantId, t.status, t.createdAt),
     index("course_requests_requester_idx").on(t.requesterUserId, t.createdAt),
     check("course_requests_status_chk", sql`${t.status} in ('requested','approved','declined')`),
+    check(
+      "course_requests_kind_chk",
+      sql`(${t.kind} = 'new' and ${t.requestedCourseId} is null) or (${t.kind} = 'existing' and ${t.requestedCourseId} is not null)`,
+    ),
   ],
 );
 
 export type CourseRequest = typeof courseRequests.$inferSelect;
 export type CourseRequestStatus = "requested" | "approved" | "declined";
+export type CourseRequestKind = "new" | "existing";
 
 // The log of who handed a course to which teacher (BAM, 2026-11-10: "admin should be able to assign
 // teachers to courses"). One row per change that changed the instructor, from the course settings
@@ -70,7 +82,7 @@ export const courseInstructorChanges = pgTable(
     actorUserId: text("actor_user_id").references(() => users.id, { onDelete: "set null" }),
     /** The role they acted in: platform_owner | brand_admin | seed. */
     actorRole: text("actor_role").notNull(),
-    /** Where the change was made: course-settings | admin-users | course-request | seed. */
+    /** Where the change was made: course-settings | admin-users | course-request | course-offer | seed. */
     source: text("source").notNull(),
     createdAt: timestamp("created_at", { withTimezone: true }).notNull().defaultNow(),
   },

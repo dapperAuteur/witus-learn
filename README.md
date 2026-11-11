@@ -1005,10 +1005,56 @@ sign-in. Two actions sit on the same page:
   at least 10 characters. The teacher sees the status and note under **Your course requests** on
   `/teach` and gets one email on the decision. Rules: [src/lib/course-requests.ts](src/lib/course-requests.ts).
 
+- **Course offers** (`course_offers`, migration `0084`; rules [src/lib/course-offers.ts](src/lib/course-offers.ts)).
+  Handing a course to SOMEONE ELSE from the Users page, or a brand_admin's pick in a course's settings, is
+  an offer: `checkInstructorAssignment` runs the same rule first, an offer row is written (any open offer
+  for the course is withdrawn) and the teacher is emailed. The teacher answers under **Courses offered to
+  you** on `/teach` → `POST /api/teach/course-offers/[id]` (`accept` re-runs the rule as the offering
+  admin and moves the course in one transaction, logged as `source: course-offer`; `decline` changes
+  nothing); the admin is emailed and sees answers on `/admin/users#course-offers`, where
+  `DELETE /api/admin/course-offers/[id]` withdraws. Offers expire after 14 days, marked lazily on read
+  and guarded on accept. The owner's course-settings picker and assigning yourself stay immediate.
+- **Requests for an existing course** (`course_requests.kind = 'existing'`, `requested_course_id`). The
+  request form offers a picker of the school's courses the teacher does not teach; approving one hands
+  the course over (`approveExistingCourseRequest`, logged as `source: course-request`) instead of creating
+  a draft.
+
 Every boundary is tested with the real route code (`tests/course-instructor-routes.test.ts`,
-`tests/course-requests-routes.test.ts`): a learner, a teacher of another school and a brand_admin of
+`tests/course-requests-routes.test.ts`, `tests/course-offers-routes.test.ts`): a learner, a teacher of another school and a brand_admin of
 another school are refused on every write; the owner keeps every power. The database half is
 `tests/isolation/school-members.db.test.ts`.
+
+## Account settings, and editing a member
+
+Every signed-in person has **`/account`** on every school's host (header **Account → Account settings**,
+and a link from `/teach/profile`). An account is global, so changes apply on every school. Rules:
+[src/lib/account-settings.ts](src/lib/account-settings.ts); database half:
+[src/db/queries/account-settings.ts](src/db/queries/account-settings.ts); tables from migration `0082`.
+
+- **Name and username**: `PATCH /api/profile` (now partial: only the fields sent change). A username is
+  3 to 30 of `a-z 0-9 -`, never a top-level route word (`RESERVED_USERNAMES`, which a test keeps in step
+  with `src/app`), and unique. Changes are logged in `account_changes`.
+- **Email**: `POST /api/account/email` stores the SHA-256 of a random token in `email_change_requests` and
+  mails the link to the **new** address (Mailgun, kind `email-change`; the mirror strips the token). The
+  link opens `/account/email/confirm`, whose **Confirm** button posts to `/api/account/email/confirm`, so
+  a mail scanner fetching the link changes nothing. The link works for 60 minutes; requests are limited
+  per instance (3 per 10 minutes) and durably (5 per hour). Confirming moves `users.email`, marks it
+  verified, logs the change, drops magic links still addressed to the old address, and sends the old
+  address a notice. Children's profiles and the demo account are locked.
+- **Sign out of this device**, and **Ask to delete my account** (`account_deletion_requests`, no free
+  text; there is no self-service deletion). The owner is emailed and sees open requests on
+  `/admin/users#deletion-requests` (`POST /api/admin/deletion-requests/[id]` marks one handled).
+- **Admin edit of a member**: `PATCH /api/admin/users/[userId]` from each row on `/admin/users`. The
+  owner may edit any member; a school's brand_admin may edit learners and teachers who belong to that
+  school alone (never the owner, another admin, or a multi-school account). An admin's email change
+  takes effect at once (unverified until the next magic-link sign-in), both addresses get a notice, and
+  the change is logged with the admin as actor. Your own email always goes through the link.
+- **Role mailboxes** (migration `0083`): the five synthetic faculty accounts made by old seeds
+  (`emba-faculty`, `witus-faculty`, `witus-health`, `witus-languages`, `trade-faculty`) get the role
+  mailboxes BAM chose, keyed by username and idempotent. No seed creates these accounts any more.
+
+Tests: `tests/account-settings.test.ts` (rules), `tests/account-settings-routes.test.ts` (routes),
+`tests/awews-faculty-migration.test.ts` and `tests/isolation/account-settings.db.test.ts` (the SQL).
 
 ## Offline: what works without a connection
 

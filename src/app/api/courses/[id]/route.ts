@@ -2,6 +2,9 @@ import { after } from "next/server";
 import { z } from "zod";
 import { apiContext, courseActor, errorJson, isTenantAdmin, json, loadEditableCourse } from "@/lib/api";
 import { assignCourseInstructor } from "@/db/queries/course-instructor";
+import { assignmentIsOffer } from "@/lib/course-offers";
+import { makeCourseOffer } from "@/lib/course-offer-flow";
+import { requestOrigin } from "@/lib/request-origin";
 import { isPlatformOwner } from "@/lib/session";
 import { reindexCourseEmbeddings } from "@/lib/ai/reindex";
 import { countActiveEnrollments } from "@/db/queries/enrollment";
@@ -173,19 +176,40 @@ export async function PATCH(req: Request, { params }: Params) {
   // slug, then writes the course_instructor_changes row. Silently ignored for non-admins (mirrors
   // isFeatured). NOTE: after this, the OLD instructor loses edit access. Applied here, ahead of the
   // generic UPDATE, so a refused assignment refuses the whole save.
+  //
+  // A brand_admin handing the course to SOMEONE ELSE makes an offer instead (BAM, 2026-11-10: "approve
+  // assigned courses"; src/lib/course-offers.ts): the instructor changes when the teacher accepts on
+  // /teach, and the response carries `instructorOffer` so the form can say so. The platform owner's
+  // picker here stays immediate.
+  let instructorOffer: { teacherLabel: string; expiresAt: Date } | null = null;
   if ("instructorId" in patch) {
     const newInstructorId = patch.instructorId as string;
     delete patch.instructorId; // never part of the generic UPDATE below
     if (await isTenantAdmin(session, sdb.tenantId)) {
       const actor = await courseActor(session, sdb.tenantId, course);
-      const result = await assignCourseInstructor({
-        tenantId: sdb.tenantId,
-        course,
-        newInstructorId,
-        actor: { userId: session.user.id, isOwner: actor.isOwner, isSchoolAdmin: actor.isSchoolAdmin },
-        source: "course-settings",
-      });
-      if (!result.ok) return errorJson(result.error, result.status);
+      if (
+        newInstructorId !== course.instructorId &&
+        assignmentIsOffer({ actorUserId: session.user.id, targetUserId: newInstructorId, actorIsOwner: actor.isOwner, source: "course-settings" })
+      ) {
+        const offered = await makeCourseOffer({
+          tenant: sdb.tenant,
+          course,
+          teacherUserId: newInstructorId,
+          actor: { userId: session.user.id, isOwner: actor.isOwner, isSchoolAdmin: actor.isSchoolAdmin, label: session.user.name?.trim() || "Your school's admin" },
+          origin: requestOrigin(req.headers),
+        });
+        if (!offered.ok) return errorJson(offered.error, offered.status);
+        if (offered.changed) instructorOffer = { teacherLabel: offered.offer.teacherLabel, expiresAt: offered.offer.expiresAt };
+      } else {
+        const result = await assignCourseInstructor({
+          tenantId: sdb.tenantId,
+          course,
+          newInstructorId,
+          actor: { userId: session.user.id, isOwner: actor.isOwner, isSchoolAdmin: actor.isSchoolAdmin },
+          source: "course-settings",
+        });
+        if (!result.ok) return errorJson(result.error, result.status);
+      }
     }
   }
   // A PRIVATE course leaves "private" only through the Make public switch (POST
@@ -235,7 +259,7 @@ export async function PATCH(req: Request, { params }: Params) {
     });
   }
 
-  return json({ course: updated });
+  return json({ course: updated, ...(instructorOffer ? { instructorOffer } : {}) });
 }
 
 // DELETE /api/courses/[id]

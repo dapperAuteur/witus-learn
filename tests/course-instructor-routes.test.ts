@@ -7,15 +7,19 @@ import { beforeEach, describe, expect, it, vi } from "vitest";
  *   POST /api/admin/courses/[id]/instructor (the Users page)
  *     - signed out 401; another school's course 404 (it does not resolve in this tenant);
  *     - a learner, a plain teacher and a brand_admin of ANOTHER school 403, and none of them write;
- *     - this school's brand_admin and the owner hand the course to a teacher of the school: the course
- *       row is updated and a course_instructor_changes row names the actor, role and source;
+ *     - this school's brand_admin and the owner OFFER the course to a teacher of the school (BAM,
+ *       2026-11-10: "approve assigned courses"): an offer row is written and the teacher emailed, the
+ *       course itself is not touched and nothing is logged until the teacher accepts;
+ *     - handing it to yourself is immediate: the course row is updated and a course_instructor_changes
+ *       row names the actor, role and source;
  *     - a target with no role on the school is refused (400), nothing written;
- *     - an OWNER-ONLY course is a 404 to the brand_admin, and still assignable by the owner;
+ *     - an OWNER-ONLY course is a 404 to the brand_admin, and still the owner's to offer;
  *     - the current instructor again is a no-op (200, changed false, nothing written).
  *
  *   PATCH /api/courses/[id] with instructorId (the course settings picker)
  *     - a plain teacher's instructorId is dropped and the rest of the save goes through;
- *     - an admin's instructorId goes through the same shared rule (a non-teacher target refuses the save).
+ *     - a brand_admin's instructorId goes through the same shared rule (a non-teacher target refuses the
+ *       save) and becomes an offer; the platform owner's is immediate and logged as course-settings.
  *
  * The real route code and the real rule run; the session, membership, owner flag, the tenant-scoped
  * course read, the authoring helpers and the database client are mocked.
@@ -30,6 +34,9 @@ const mocks = vi.hoisted(() => ({
   instructorSlugTaken: vi.fn(),
   updateCourse: vi.fn(),
   after: vi.fn(),
+  createCourseOffer: vi.fn(),
+  getAccountFacts: vi.fn(),
+  sendCourseOfferEmail: vi.fn(),
   // The fake database: queued answers for db.select(), and a record of every write in a transaction.
   selectQueue: [] as unknown[][],
   updates: [] as unknown[],
@@ -53,6 +60,9 @@ vi.mock("@/db/queries/authoring", () => ({
   deleteCourse: vi.fn(),
 }));
 vi.mock("@/lib/ai/reindex", () => ({ reindexCourseEmbeddings: vi.fn() }));
+vi.mock("@/db/queries/course-offers", () => ({ createCourseOffer: mocks.createCourseOffer }));
+vi.mock("@/db/queries/account-settings", () => ({ getAccountFacts: mocks.getAccountFacts }));
+vi.mock("@/lib/emails", () => ({ sendCourseOfferEmail: mocks.sendCourseOfferEmail }));
 vi.mock("@/lib/cache-tags", () => ({ expireCourse: vi.fn(), expireCacheTags: vi.fn(), expireProfiles: vi.fn(), CACHE_TAGS: {} }));
 vi.mock("@/db/client", () => {
   // A chainable query stub: every builder method returns the chain; awaiting it yields the answer.
@@ -159,6 +169,8 @@ beforeEach(() => {
   mocks.ensureUsernameById.mockResolvedValue("teacher2");
   mocks.instructorSlugTaken.mockResolvedValue(false);
   mocks.updateCourse.mockImplementation(async (_t: string, _id: string, p: object) => ({ ...BASE, ...p }));
+  mocks.createCourseOffer.mockImplementation(async (input: { teacherUserId: string }) => ({ id: "offer-1", expiresAt: new Date("2026-11-24T00:00:00Z"), ...input }));
+  mocks.getAccountFacts.mockImplementation(async (uid: string) => ({ userId: uid, email: `${uid}@example.com`, displayName: "T Two", name: null, username: "teacher2" }));
 });
 
 describe("POST /api/admin/courses/[id]/instructor", () => {
@@ -182,33 +194,55 @@ describe("POST /api/admin/courses/[id]/instructor", () => {
     expect(mocks.inserts).toEqual([]);
   });
 
-  it("this school's brand_admin hands the course to a teacher of the school, and the change is logged", async () => {
+  it("this school's brand_admin OFFERS the course to a teacher of the school: the teacher is emailed, the course is untouched", async () => {
     targetRole("instructor");
     const res = await post({ instructorId: TEACHER });
+    expect(res.status).toBe(201);
+    expect(await res.json()).toMatchObject({ ok: true, changed: false, offered: true, offer: { id: "offer-1" }, course: { id: "course-1", instructorId: INSTRUCTOR } });
+    expect(mocks.createCourseOffer).toHaveBeenCalledWith(
+      expect.objectContaining({ tenantId: TENANT, teacherUserId: TEACHER, offeredBy: { userId: "brand_admin-1", role: "brand_admin" } }),
+    );
+    expect(mocks.sendCourseOfferEmail).toHaveBeenCalledWith(expect.objectContaining({ to: `${TEACHER}@example.com`, courseTitle: "Course" }));
+    // Nothing moves and nothing is logged until the teacher accepts.
+    expect(mocks.updates).toEqual([]);
+    expect(mocks.inserts).toEqual([]);
+    // The rule still ran in full: the username is made sure of and the slug collision checked.
+    expect(mocks.ensureUsernameById).toHaveBeenCalledWith(TEACHER);
+    expect(mocks.instructorSlugTaken).toHaveBeenCalledWith(TENANT, TEACHER, "course", "course-1");
+  });
+
+  it("the platform owner's offer from the Users page is made in the owner's role", async () => {
+    as("owner");
+    targetRole("instructor");
+    expect((await post({ instructorId: TEACHER })).status).toBe(201);
+    expect(mocks.createCourseOffer.mock.calls[0]![0]).toMatchObject({ offeredBy: { userId: OWNER, role: "platform_owner" } });
+  });
+
+  it("a failed offer email never fails the offer", async () => {
+    targetRole("instructor");
+    mocks.sendCourseOfferEmail.mockRejectedValueOnce(new Error("mailgun down"));
+    expect((await post({ instructorId: TEACHER })).status).toBe(201);
+  });
+
+  it("handing the course to yourself is immediate, and the change is logged", async () => {
+    targetRole("brand_admin");
+    mocks.updateReturns = [{ ...BASE, instructorId: "brand_admin-1" }];
+    const res = await post({ instructorId: "brand_admin-1" });
     expect(res.status).toBe(200);
-    expect(await res.json()).toMatchObject({ ok: true, changed: true, course: { id: "course-1", instructorId: TEACHER } });
-    expect(mocks.updates).toEqual([expect.objectContaining({ instructorId: TEACHER })]);
+    expect(await res.json()).toMatchObject({ ok: true, changed: true, offered: false, course: { instructorId: "brand_admin-1" } });
+    expect(mocks.createCourseOffer).not.toHaveBeenCalled();
+    expect(mocks.updates).toContainEqual(expect.objectContaining({ instructorId: "brand_admin-1" }));
     expect(mocks.inserts).toEqual([
       expect.objectContaining({
         tenantId: TENANT,
         courseId: "course-1",
         fromInstructorId: INSTRUCTOR,
-        toInstructorId: TEACHER,
+        toInstructorId: "brand_admin-1",
         actorUserId: "brand_admin-1",
         actorRole: "brand_admin",
         source: "admin-users",
       }),
     ]);
-    // The username is made sure of (course URLs are /username/slug) and the slug collision checked.
-    expect(mocks.ensureUsernameById).toHaveBeenCalledWith(TEACHER);
-    expect(mocks.instructorSlugTaken).toHaveBeenCalledWith(TENANT, TEACHER, "course", "course-1");
-  });
-
-  it("the platform owner does the same in the owner's role, on any school", async () => {
-    as("owner");
-    targetRole("instructor");
-    expect((await post({ instructorId: TEACHER })).status).toBe(200);
-    expect(mocks.inserts[0]).toMatchObject({ actorRole: "platform_owner", source: "admin-users" });
   });
 
   it("refuses a target with no teaching role on this school (400) and writes nothing", async () => {
@@ -228,13 +262,13 @@ describe("POST /api/admin/courses/[id]/instructor", () => {
     expect(mocks.updates).toEqual([]);
   });
 
-  it("an owner-only course is a 404 to the brand_admin and still the owner's to hand over", async () => {
+  it("an owner-only course is a 404 to the brand_admin and still the owner's to offer", async () => {
     mocks.getCourseById.mockResolvedValue({ ...BASE, ownerOnly: true });
     expect((await post({ instructorId: TEACHER })).status).toBe(404);
-    expect(mocks.updates).toEqual([]);
+    expect(mocks.createCourseOffer).not.toHaveBeenCalled();
     as("owner");
     targetRole("instructor");
-    expect((await post({ instructorId: TEACHER })).status).toBe(200);
+    expect((await post({ instructorId: TEACHER })).status).toBe(201);
   });
 
   it("the current instructor again is a no-op", async () => {
@@ -260,13 +294,28 @@ describe("PATCH /api/courses/[id] with instructorId", () => {
     expect(mocks.inserts).toEqual([]);
   });
 
-  it("an admin's instructorId goes through the shared rule and is logged as course-settings", async () => {
+  it("a brand_admin's instructorId becomes an offer; the rest of the save goes through", async () => {
     targetRole("instructor");
     const res = await patch({ title: "Renamed", instructorId: TEACHER });
     expect(res.status).toBe(200);
-    expect(mocks.updates).toEqual([expect.objectContaining({ instructorId: TEACHER })]);
-    expect(mocks.inserts[0]).toMatchObject({ source: "course-settings", actorRole: "brand_admin", toInstructorId: TEACHER });
+    expect((await res.json()).instructorOffer).toMatchObject({ teacherLabel: "T Two" });
+    expect(mocks.createCourseOffer).toHaveBeenCalledWith(expect.objectContaining({ teacherUserId: TEACHER, offeredBy: { userId: "brand_admin-1", role: "brand_admin" } }));
+    expect(mocks.updates).toEqual([]);
+    expect(mocks.inserts).toEqual([]);
     // The generic UPDATE never carries instructorId itself.
+    expect(mocks.updateCourse.mock.calls[0]![2]).not.toHaveProperty("instructorId");
+    expect(mocks.updateCourse.mock.calls[0]![2]).toMatchObject({ title: "Renamed" });
+  });
+
+  it("the platform owner's picker is immediate and logged as course-settings", async () => {
+    as("owner");
+    targetRole("instructor");
+    const res = await patch({ title: "Renamed", instructorId: TEACHER });
+    expect(res.status).toBe(200);
+    expect((await res.json()).instructorOffer).toBeUndefined();
+    expect(mocks.createCourseOffer).not.toHaveBeenCalled();
+    expect(mocks.updates).toContainEqual(expect.objectContaining({ instructorId: TEACHER }));
+    expect(mocks.inserts[0]).toMatchObject({ source: "course-settings", actorRole: "platform_owner", toInstructorId: TEACHER });
     expect(mocks.updateCourse.mock.calls[0]![2]).not.toHaveProperty("instructorId");
   });
 

@@ -1,7 +1,18 @@
 import "server-only";
 import { and, desc, eq } from "drizzle-orm";
+import { alias } from "drizzle-orm/pg-core";
 import { db } from "@/db/client";
-import { courseRequests, courses, tenantMemberships, userProfiles, users, type Course, type CourseRequest } from "@/db/schema";
+import {
+  courseInstructorChanges,
+  courseOffers,
+  courseRequests,
+  courses,
+  tenantMemberships,
+  userProfiles,
+  users,
+  type Course,
+  type CourseRequest,
+} from "@/db/schema";
 import { NEW_COURSE_STATE } from "@/lib/course-visibility";
 import { slugify } from "@/lib/slug";
 import { expireCourse } from "@/lib/cache-tags";
@@ -17,7 +28,15 @@ export interface CourseRequestRow extends CourseRequest {
   requesterUsername: string | null;
   /** The approved course's slug, when the course still exists. */
   courseSlug: string | null;
+  /** Kind existing: the requested course's title and who teaches it now, by name or username. */
+  requestedCourseTitle: string | null;
+  requestedCourseInstructorId: string | null;
+  requestedCourseInstructorLabel: string | null;
 }
+
+// The requested course (kind existing) and its current instructor's profile, joined under their own names.
+const requestedCourse = alias(courses, "requested_course");
+const requestedInstructor = alias(userProfiles, "requested_instructor");
 
 const withRequester = {
   request: courseRequests,
@@ -26,6 +45,10 @@ const withRequester = {
   requesterEmail: users.email,
   requesterUsername: userProfiles.username,
   courseSlug: courses.slug,
+  requestedCourseTitle: requestedCourse.title,
+  requestedCourseInstructorId: requestedCourse.instructorId,
+  requestedInstructorDisplayName: requestedInstructor.displayName,
+  requestedInstructorUsername: requestedInstructor.username,
 };
 
 function toRow(r: {
@@ -35,6 +58,10 @@ function toRow(r: {
   requesterEmail: string;
   requesterUsername: string | null;
   courseSlug: string | null;
+  requestedCourseTitle: string | null;
+  requestedCourseInstructorId: string | null;
+  requestedInstructorDisplayName: string | null;
+  requestedInstructorUsername: string | null;
 }): CourseRequestRow {
   return {
     ...r.request,
@@ -42,7 +69,23 @@ function toRow(r: {
     requesterEmail: r.requesterEmail,
     requesterUsername: r.requesterUsername,
     courseSlug: r.courseSlug,
+    requestedCourseTitle: r.requestedCourseTitle,
+    requestedCourseInstructorId: r.requestedCourseInstructorId,
+    requestedCourseInstructorLabel:
+      r.requestedInstructorDisplayName?.trim() || (r.requestedInstructorUsername ? `@${r.requestedInstructorUsername}` : r.requestedCourseInstructorId ? "unnamed" : null),
   };
+}
+
+/** Join the requester, the linked course and, for kind existing, the requested course and its teacher. */
+function selectRows() {
+  return db
+    .select(withRequester)
+    .from(courseRequests)
+    .innerJoin(users, eq(users.id, courseRequests.requesterUserId))
+    .leftJoin(userProfiles, eq(userProfiles.userId, courseRequests.requesterUserId))
+    .leftJoin(courses, eq(courses.id, courseRequests.courseId))
+    .leftJoin(requestedCourse, eq(requestedCourse.id, courseRequests.requestedCourseId))
+    .leftJoin(requestedInstructor, eq(requestedInstructor.userId, requestedCourse.instructorId));
 }
 
 export async function createCourseRequest(tenantId: string, requesterUserId: string, input: CourseRequestInput): Promise<CourseRequest> {
@@ -53,16 +96,53 @@ export async function createCourseRequest(tenantId: string, requesterUserId: str
   return row;
 }
 
+/**
+ * A request to teach an EXISTING course of this school. The caller resolved the course in this tenant
+ * (tenant-scoped DAL); the row keeps its title at the time of asking, so the request still reads right
+ * if the course is renamed, and points at it by id.
+ */
+export async function createExistingCourseRequest(
+  tenantId: string,
+  requesterUserId: string,
+  input: { course: Pick<Course, "id" | "title">; reason: string },
+): Promise<CourseRequest> {
+  const [row] = await db
+    .insert(courseRequests)
+    .values({
+      tenantId,
+      requesterUserId,
+      kind: "existing",
+      requestedCourseId: input.course.id,
+      title: input.course.title,
+      description: "",
+      reason: input.reason,
+    })
+    .returning();
+  return row;
+}
+
+/** Has this teacher already asked for this existing course, with no answer yet? */
+export async function hasOpenExistingRequest(tenantId: string, requesterUserId: string, courseId: string): Promise<boolean> {
+  const rows = await db
+    .select({ id: courseRequests.id })
+    .from(courseRequests)
+    .where(
+      and(
+        eq(courseRequests.tenantId, tenantId),
+        eq(courseRequests.requesterUserId, requesterUserId),
+        eq(courseRequests.requestedCourseId, courseId),
+        eq(courseRequests.status, "requested"),
+      ),
+    )
+    .limit(1);
+  return Boolean(rows[0]);
+}
+
 /** Every request on this school, newest first; `status` narrows it. */
 export async function listCourseRequests(tenantId: string, status?: "requested" | "approved" | "declined"): Promise<CourseRequestRow[]> {
   const conds = [eq(courseRequests.tenantId, tenantId)];
   if (status) conds.push(eq(courseRequests.status, status));
-  const rows = await db
-    .select(withRequester)
-    .from(courseRequests)
-    .innerJoin(users, eq(users.id, courseRequests.requesterUserId))
-    .leftJoin(userProfiles, eq(userProfiles.userId, courseRequests.requesterUserId))
-    .leftJoin(courses, eq(courses.id, courseRequests.courseId))
+  const rows = await selectRows()
     .where(and(...conds))
     .orderBy(desc(courseRequests.createdAt));
   return rows.map(toRow);
@@ -70,12 +150,7 @@ export async function listCourseRequests(tenantId: string, status?: "requested" 
 
 /** One teacher's own requests on this school, newest first. */
 export async function listOwnCourseRequests(tenantId: string, requesterUserId: string): Promise<CourseRequestRow[]> {
-  const rows = await db
-    .select(withRequester)
-    .from(courseRequests)
-    .innerJoin(users, eq(users.id, courseRequests.requesterUserId))
-    .leftJoin(userProfiles, eq(userProfiles.userId, courseRequests.requesterUserId))
-    .leftJoin(courses, eq(courses.id, courseRequests.courseId))
+  const rows = await selectRows()
     .where(and(eq(courseRequests.tenantId, tenantId), eq(courseRequests.requesterUserId, requesterUserId)))
     .orderBy(desc(courseRequests.createdAt));
   return rows.map(toRow);
@@ -83,12 +158,7 @@ export async function listOwnCourseRequests(tenantId: string, requesterUserId: s
 
 /** By id, on THIS school only: another school's request resolves to null (the route answers 404). */
 export async function getCourseRequest(tenantId: string, id: string): Promise<CourseRequestRow | null> {
-  const rows = await db
-    .select(withRequester)
-    .from(courseRequests)
-    .innerJoin(users, eq(users.id, courseRequests.requesterUserId))
-    .leftJoin(userProfiles, eq(userProfiles.userId, courseRequests.requesterUserId))
-    .leftJoin(courses, eq(courses.id, courseRequests.courseId))
+  const rows = await selectRows()
     .where(and(eq(courseRequests.id, id), eq(courseRequests.tenantId, tenantId)))
     .limit(1);
   return rows[0] ? toRow(rows[0]) : null;
@@ -155,6 +225,58 @@ export async function approveCourseRequest(input: {
     return { course, request: updated ?? claimed };
   });
   if (result) expireCourse(tenantId, result.course.id);
+  return result;
+}
+
+/**
+ * Approve an EXISTING-course request: hand the course to the requester instead of creating a draft. In
+ * one transaction: claim the request (guarded on its status), move the course's instructor, log the change
+ * in course_instructor_changes (source course-request, the decider as the actor), withdraw any open offer
+ * for the course, and link the course on the request. The caller has already run both rules
+ * (decideCourseRequestAction and, through checkInstructorAssignment, decideInstructorAssignment). Null
+ * when the request was decided meanwhile, so nothing changes.
+ */
+export async function approveExistingCourseRequest(input: {
+  tenantId: string;
+  request: CourseRequest;
+  course: Course;
+  deciderUserId: string;
+  deciderRole: "platform_owner" | "brand_admin";
+  note: string | null;
+}): Promise<{ course: Course; request: CourseRequest } | null> {
+  const { tenantId, request, course } = input;
+  const result = await db.transaction(async (tx) => {
+    const now = new Date();
+    const [claimed] = await tx
+      .update(courseRequests)
+      .set({ status: "approved", decisionNote: input.note, decidedByUserId: input.deciderUserId, decidedAt: now, updatedAt: now, courseId: course.id })
+      .where(and(eq(courseRequests.id, request.id), eq(courseRequests.tenantId, tenantId), eq(courseRequests.status, "requested")))
+      .returning();
+    if (!claimed) return null;
+    const [moved] = await tx
+      .update(courses)
+      .set({ instructorId: request.requesterUserId, updatedAt: now })
+      .where(and(eq(courses.id, course.id), eq(courses.tenantId, tenantId)))
+      .returning();
+    if (!moved) throw new Error("requested course vanished during approval");
+    if (course.instructorId !== request.requesterUserId) {
+      await tx.insert(courseInstructorChanges).values({
+        tenantId,
+        courseId: course.id,
+        fromInstructorId: course.instructorId,
+        toInstructorId: request.requesterUserId,
+        actorUserId: input.deciderUserId,
+        actorRole: input.deciderRole,
+        source: "course-request",
+      });
+    }
+    await tx
+      .update(courseOffers)
+      .set({ status: "withdrawn", decidedAt: now, updatedAt: now })
+      .where(and(eq(courseOffers.courseId, course.id), eq(courseOffers.tenantId, tenantId), eq(courseOffers.status, "offered")));
+    return { course: moved, request: claimed };
+  });
+  if (result) expireCourse(tenantId, course.id);
   return result;
 }
 
