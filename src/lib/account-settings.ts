@@ -11,6 +11,7 @@
 
 import { z } from "zod";
 import type { TenantRole } from "@/db/schema";
+import { slugify } from "@/lib/slug";
 
 export const ACCOUNT_LIMITS = { displayName: 120, usernameMin: 3, usernameMax: 30, email: 254 } as const;
 
@@ -51,6 +52,17 @@ export function validateUsername(raw: string): { ok: true; username: string } | 
     return { ok: false, error: "That username is reserved by the site. Pick another." };
   }
   return { ok: true, username };
+}
+
+/**
+ * The username Learn derives from an address the first time an account needs one (its first course).
+ * The address's local part, slugged and cut to 24 characters, unless that is a reserved word: admin@
+ * would otherwise become `admin`, and every course URL under it would open the admin page instead.
+ * Uniqueness is the caller's loop (ensureUsername appends -2, -3 ...).
+ */
+export function deriveUsernameBase(email: string): string {
+  const base = slugify(email.split("@")[0] ?? "user").slice(0, 24).replace(/-+$/g, "") || "user";
+  return RESERVED_USERNAMES.has(base) ? `${base}-user` : base;
 }
 
 /** Trim and lower-case an address, the form users.email is stored in (Better Auth signs in by it). */

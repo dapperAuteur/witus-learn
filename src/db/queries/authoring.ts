@@ -15,6 +15,7 @@ import {
   type ProfileLinks,
 } from "@/db/schema";
 import { slugify } from "@/lib/slug";
+import { deriveUsernameBase } from "@/lib/account-settings";
 import { expireCourse, expireCacheTags, CACHE_TAGS, expireProfiles } from "@/lib/cache-tags";
 
 // Tenant-scoped authoring writes + slug/instructor reads. Module/lesson writes are
@@ -474,7 +475,8 @@ export async function ensureUsername(userId: string, email: string): Promise<str
   const current = await getUsername(userId);
   if (current) return current;
 
-  const base = slugify(email.split("@")[0] ?? "user").slice(0, 24) || "user";
+  // Never a reserved route word (src/lib/account-settings.ts): admin@ becomes admin-user, not admin.
+  const base = deriveUsernameBase(email);
   let candidate = base;
   for (let i = 2; i < 100; i++) {
     const taken = await db

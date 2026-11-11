@@ -2,6 +2,7 @@ import { readdirSync, statSync } from "node:fs";
 import { join } from "node:path";
 import { describe, expect, it } from "vitest";
 import {
+  deriveUsernameBase,
   accountLockReason,
   ACCOUNT_LOCKED_CHILD,
   ACCOUNT_LOCKED_DEMO,
@@ -59,6 +60,18 @@ describe("validateUsername", () => {
     expect(segments.size).toBeGreaterThan(20);
     const missing = [...segments].filter((s) => !RESERVED_USERNAMES.has(s));
     expect(missing, "add the new top-level route to RESERVED_USERNAMES in src/lib/account-settings.ts").toEqual([]);
+  });
+});
+
+describe("deriveUsernameBase", () => {
+  it("uses the address's local part, but never a reserved route word", () => {
+    expect(deriveUsernameBase("Teacher@Example.com")).toBe("teacher");
+    expect(deriveUsernameBase("admin@example.com")).toBe("admin-user");
+    expect(deriveUsernameBase("teach@example.com")).toBe("teach-user");
+    expect(deriveUsernameBase("first.last@example.com")).toBe("first-last");
+    for (const e of ["admin@x.test", "help@x.test", "a.very.long.local.part.that.goes.on@x.test"]) {
+      expect(validateUsername(deriveUsernameBase(e)).ok, e).toBe(true);
+    }
   });
 });
 
