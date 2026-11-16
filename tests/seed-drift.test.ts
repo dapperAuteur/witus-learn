@@ -9,6 +9,7 @@ import {
   lineDiff,
   readSeedContent,
   seedContentHash,
+  SEED_CONTENT_FIELDS,
   type SeedContent,
 } from "@/lib/seed-drift";
 import { lessonSeedDrifts } from "@/db/schema/seed-drift";
@@ -88,7 +89,10 @@ describe("wiring", () => {
     const s = src("scripts/lib/seed-authored-course.ts");
     expect(s).toContain("decideSeedAction({");
     expect(s).toContain("seedHash: sql`excluded.seed_hash`");
-    expect(s).toContain(".set({ sortOrder: k.sortOrder, moduleId: k.moduleId })");
+    // A skipped lesson keeps its content; only order, section and the file-only objectives (rubric v1.7
+    // D10, never edited in the app, so never part of drift) follow the file.
+    expect(s).toContain(".set({ sortOrder: k.sortOrder, moduleId: k.moduleId, objectives: k.objectives })");
+    expect((SEED_CONTENT_FIELDS as readonly string[]).includes("objectives")).toBe(false);
     expect(src("scripts/seed-courses.ts")).toContain("await writeSeedReport(db, seedReport());");
   });
   it("every query is tenant-filtered and the drift table holds content, never a message", () => {
