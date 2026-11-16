@@ -21,6 +21,20 @@ const where = { course: "c", lesson: "l", field: "body" };
 const open = (text: string): AiSourceHit[] => scanText(text, where).filter((h) => h.protection === null);
 const ids = (text: string): string[] => open(text).map((h) => h.pattern);
 
+describe("AI-written reference sites fail", () => {
+  it("a Grokipedia reference entry, with and without scheme or www", () => {
+    expect(ids("- Speedway. (n.d.). Grokipedia. https://grokipedia.com/page/Indianapolis_Motor_Speedway")).toEqual(["ref-ai-site"]);
+    expect(ids("See www.grokipedia.com/page/Foo for the history.")).toEqual(["ref-ai-site"]);
+    expect(ids("Retrieved from grokipedia.com")).toEqual(["ref-ai-site"]);
+  });
+
+  it("leaves Wikipedia and look-alike hosts alone", () => {
+    expect(ids("- Speedway. (n.d.). https://en.wikipedia.org/wiki/Indianapolis_Motor_Speedway")).toEqual([]);
+    expect(ids("https://notgrokipedia.com.example.org/x")).toEqual([]);
+    expect(ids("See notgrokipedia.com for more.")).toEqual([]);
+  });
+});
+
 describe("citation and attribution shapes fail", () => {
   it("a parenthetical citation whose author is a chatbot or 'AI'", () => {
     expect(ids("The bridge opened in 1932 (ChatGPT, 2026).")).toEqual(["parenthetical"]);
