@@ -6,6 +6,7 @@ import { normalizeAdditionalCategories } from "../../src/lib/course-categories";
 import { parseReleaseMarkers } from "../../src/lib/lesson-review";
 import { NEW_COURSE_STATE } from "../../src/lib/course-visibility";
 import { keepsCurrentInstructor } from "../../src/lib/course-instructor";
+import { toLessonObjectives } from "../../src/lib/lesson-objectives";
 import { decideSeedAction, seedContentHash, seedContentOf, type SeedContent } from "../../src/lib/seed-drift";
 
 // ── Seed drift report (plans/97 Q5) ─────────────────────────────────────────
@@ -223,6 +224,8 @@ export async function seedAuthoredCourse(
       contentUrl: l.contentUrl ?? null,
       textContent: l.body == null ? null : parsed.body,
       reviewNeeds: needs.length > 0 ? needs : null,
+      // Rubric v1.7 gate D10 (migration 0085): written every seed, NULL when the lesson names none.
+      objectives: toLessonObjectives(l),
       quizContent: l.quiz ?? null,
       exerciseContent: l.exercise ?? null,
       mapContent: l.mapContent ?? null,
@@ -261,7 +264,7 @@ export async function seedAuthoredCourse(
   const driftByLesson = new Map(drifts.map((d) => [d.lessonId, d]));
 
   const toWrite: (typeof lessonRows[number] & { seedHash: string })[] = [];
-  const skipped: { id: string; sortOrder: number; moduleId: string | null }[] = [];
+  const skipped: { id: string; sortOrder: number; moduleId: string | null; objectives: (typeof lessonRows)[number]["objectives"] }[] = [];
   let contentChanged = false;
   for (const row of lessonRows) {
     const file: SeedContent = seedContentOf(row);
@@ -278,7 +281,8 @@ export async function seedAuthoredCourse(
       continue;
     }
     // Edited in the app: keep its content; still follow the file's order and sections.
-    skipped.push({ id: existing!.id, sortOrder: row.sortOrder, moduleId: row.moduleId });
+    // Objectives are authored only in the file (no app editor), so they follow the file even here.
+    skipped.push({ id: existing!.id, sortOrder: row.sortOrder, moduleId: row.moduleId, objectives: row.objectives });
     report.drifted.push({ courseSlug: slug, lessonSlug: row.slug, acknowledged: action === "skip_kept" });
     if (action === "skip_report") {
       const reopen = drift?.fileHash !== fileHash; // a newer file version reopens an acknowledged warning
@@ -301,7 +305,7 @@ export async function seedAuthoredCourse(
   for (const k of skipped) {
     await db
       .update(schema.lessons)
-      .set({ sortOrder: k.sortOrder, moduleId: k.moduleId })
+      .set({ sortOrder: k.sortOrder, moduleId: k.moduleId, objectives: k.objectives })
       .where(eq(schema.lessons.id, k.id));
   }
   if (contentChanged) report.changedCourses.push({ tenantId, courseId, courseSlug: slug });
@@ -324,6 +328,7 @@ export async function seedAuthoredCourse(
           // course file removes the need. Verdicts live in lesson_reviews and are never touched
           // here; a changed text resets them on read (src/lib/lesson-review.ts).
           reviewNeeds: sql`excluded.review_needs`,
+          objectives: sql`excluded.objectives`,
           sortOrder: sql`excluded.sort_order`,
           moduleId: sql`excluded.module_id`,
           isFreePreview: sql`excluded.is_free_preview`,

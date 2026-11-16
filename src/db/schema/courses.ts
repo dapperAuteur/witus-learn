@@ -15,6 +15,7 @@ import {
   uuid,
 } from "drizzle-orm/pg-core";
 import { citext } from "./_types";
+import type { LessonObjectives } from "../../lib/lesson-objectives";
 import { users } from "./auth";
 import { tenants } from "./tenancy";
 
@@ -242,6 +243,11 @@ export const lessons = pgTable(
     // row's current content no longer hashes to it, someone edited the lesson in the app, and the
     // seeder leaves the lesson alone and records a lesson_seed_drifts row instead of overwriting it.
     seedHash: text("seed_hash"),
+    // Objectives and success criteria (rubric v1.7 gate D10, migration 0085): what a learner can do
+    // after the lesson and how they will know, shown above the lesson. Written by the seeder from the
+    // course file on every run, like review_needs; NULL = the lesson names none. Shape and reader:
+    // src/lib/lesson-objectives.ts.
+    objectives: jsonb("objectives").$type<LessonObjectives>(),
     exerciseContent: jsonb("exercise_content"),
     audioChapters: jsonb("audio_chapters"),
     // Multi-part media: when a recording is too long for the upload cap, it's captured and stored

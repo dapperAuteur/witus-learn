@@ -6,6 +6,7 @@
 import type { QuizContent } from "../../src/lib/quiz";
 import type { ExerciseContent } from "../../src/lib/exercise";
 import type { ReviewNeed } from "../../src/lib/lesson-review";
+import type { LessonObjective } from "../../src/lib/lesson-objectives";
 
 export interface AuthoredLesson {
   slug: string;
@@ -90,6 +91,16 @@ export interface AuthoredLesson {
    * marker lines.
    */
   reviewNeeds?: ReviewNeed[];
+  /**
+   * One to three learning objectives (course-creation rubric v1.7, gate D10): each finishes the
+   * sentence "After this lesson you can ...", and names the standard code it serves (gate D6) when
+   * the course claims one. The lesson page shows them above the lesson. Required on every lesson of
+   * a course briefed on or after 2026-11-16 (`pnpm check:objectives`); optional on the earlier
+   * catalog until it is brought up to the gate. Stored in `lessons.objectives` (src/lib/lesson-objectives.ts).
+   */
+  objectives?: LessonObjective[];
+  /** What the lesson's quiz, exercise or project checks, so a learner knows when they have it (gate D10). */
+  successCriteria?: string[];
 }
 
 export interface AuthoredCourse {

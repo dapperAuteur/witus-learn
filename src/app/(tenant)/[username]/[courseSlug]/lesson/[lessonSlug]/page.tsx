@@ -40,6 +40,7 @@ import { isPlatformOwner } from "@/lib/session";
 import { VERDICT_BLOCK_SENTENCE, hasReviewerCredential, verdictBlockReason, type Verdict } from "@/lib/lesson-review";
 import { summarizeLessonReview, type LessonReviewSummary } from "@/lib/lesson-review-summary";
 import { ReleaseNeedsBox } from "@/components/release-needs-box";
+import { LessonObjectivesBox } from "@/components/lesson-objectives-box";
 import { LessonVerdictForm, type VerdictNeed } from "@/components/lesson-verdict-form";
 import { displayTourTitle, isEmptyTourSlot } from "@/lib/field-log-tour";
 import { liveToursForCourse } from "@/lib/lesson-tours";
@@ -418,6 +419,8 @@ export default async function LessonPage({ params }: Params) {
               />
             ) : null}
             {canRecord ? <LessonViewPing courseId={view.course.id} lessonId={lesson.id} /> : null}
+            {/* Rubric v1.7 gate D10: renders nothing unless the course file names objectives. */}
+            <LessonObjectivesBox value={lesson.objectives} />
             {/* Open with recall: quiz the PREVIOUS lesson before this one's content. */}
             {Array.isArray(lesson.recallContent) && lesson.recallContent.length > 0 && canRecord ? (
               <RecallPlayer courseId={view.course.id} lessonId={lesson.id} items={lesson.recallContent} />
