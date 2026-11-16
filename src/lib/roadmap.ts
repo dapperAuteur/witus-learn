@@ -2211,6 +2211,13 @@ export const ROADMAP = `# Learn.WitUS, Roadmap
   helpers \`standardsHref\` / \`courseJurisdictions\` plus 5 isolation tests. No migration.
 
 ## Content
+- 🔧 **Rubric v1.7 lint gates: AI tells, lesson objectives, standards per lesson** (\`feat/lint-rubric-v1-7\`,
+  migration \`0085_lesson_objectives\`, applied by \`migrate-production.yml\`). From the IMS review of the Speedway course
+  (2026-11-16). \`pnpm check:ai-tells\` (gate D4) ratchets the blog's stock-phrase list per course against a baseline
+  (629 hits in 140 courses that day). Lessons may carry objectives and success criteria (gate D10), shown above the
+  lesson as "After this lesson you can"; \`pnpm check:objectives\` requires them on every course added after the
+  2026-11-16 baseline. Standards claims may name lesson slugs per course (gate D6); \`pnpm check:standards --per-lesson\`
+  reports where every course stands and requires it of new courses. No existing course was remapped.
 - 🔧 **REST-05 Belmont Beach and the City's Water: Assigned, Claimed and Contested**
   (\`bundle/rest-05-belmont-2026-11-01\`, no migration; after merge run \`pnpm seed:courses:prod\`, after task 381's seed;
   the new course stays private and held). BAM approved plan 95 on 2026-11-01. A 26-lesson site course on the

@@ -159,6 +159,21 @@ Every customer-facing surface must pass before it can merge:
   Four things keep their dashes, because changing them would be an error, not a style fix:
   verbatim quotations, reference entries whose cited title contains a dash, verbatim
   state-standard text in `src/lib/standards/data/`, and code (comments, regex literals).
+- **No stock AI phrases either** (rubric v1.7 gate D4, 2026-11-16). `pnpm check:ai-tells` (in
+  `pnpm lint`) counts the blog's phrase list ("plays a crucial role", "a testament to", "let's
+  explore", "comprehensive", "leverage"; `scripts/lib/ai-writing-tells.ts`) in every lesson, quiz and
+  recall card, skipping quotations, blockquotes, code, URLs and the `## Sources` block. It is a
+  ratchet: each course may not go above its count in `scripts/lib/ai-tells-baseline.json`, and a new
+  course starts at zero. Say the specific thing instead. After fixing a course, the owner lowers the
+  baseline with `pnpm check:ai-tells --update-baseline`; never raise it to pass.
+- **Every lesson opens with what it is for** (rubric v1.7 gate D10). Give each lesson
+  `objectives` (one to three, each finishing "After this lesson you can ...", with the
+  `standardCode` it serves when the course claims one) and `successCriteria` (what its quiz or
+  project checks). The lesson page shows them above the lesson. `pnpm check:objectives` requires them
+  on every lesson of a course not in `scripts/lib/objectives-baseline.ts` (the 2026-11-16 catalog).
+- **Standards per lesson** (rubric v1.7 gate D6). A new course's claims in
+  `src/lib/standards/claims.ts` carry `lessonSlugs: { "<course>": ["<lesson-slug>"] }` naming the
+  lessons that teach each claim; `pnpm check:standards --per-lesson` shows where every course stands.
 - Age-gate + per-tenant legal pages where `tenants.requires_age_gate` is set.
 - **Quiz banks must not leak the answer by position.** Any bank of 8+ questions sets
   `shuffleOptions: true`, which makes the stored `correctIndex` unreachable as a fixed screen slot

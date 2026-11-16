@@ -390,6 +390,33 @@ cam-lok order was wrong, SEC football replay was misattributed. A fact only an A
 checked. The fetch-or-do-not-cite rules say where a fact must come from; this one closes the gap where
 the AI itself gets written down as the thing that was fetched.
 
+## Rubric v1.7 lint gates: AI tells, objectives, standards per lesson
+
+Course-creation rubric v1.7 (2026-11-16, from the IMS Director of Education's review of the Speedway
+course) made three build gates enforceable in `pnpm lint`. Each is a **ratchet** against the catalog as
+it stood on 2026-11-16, so new courses meet the gate and old ones are brought up one at a time.
+
+- **D4, AI tells** (`scripts/check-ai-tells.ts`, lists copied from bam-landing-page into
+  `scripts/lib/ai-writing-tells.ts`). Counts the blog's HIGH/MED/LOW phrases in every lesson text,
+  quiz and recall card of every registered course, skipping quotations, blockquotes, code, URLs and
+  the Sources block. Fails a course above its count in `scripts/lib/ai-tells-baseline.json` (629 hits
+  across 140 courses that day) and a new course on its first hit. `--list` ranks courses; only the
+  owner runs `--update-baseline`, after a fix, never to pass new text. A phrase count is a prompt to
+  read, not proof: the read-through D4 also asks for is the real gate.
+- **D10, objectives** (`scripts/check-objectives.ts`). `AuthoredLesson.objectives` (one to three,
+  `{ text, standardCode? }`) and `.successCriteria` are seeded into `lessons.objectives` (jsonb,
+  migration 0085) and shown above the lesson as "After this lesson you can". Required on every lesson
+  of a course not in `scripts/lib/objectives-baseline.ts`, or of a listed course whose header `Brief:`
+  line is dated 2026-11-16 or later; a `standardCode` must be one the course claims.
+- **D6, standards per lesson** (`scripts/check-standards-coverage.ts`). `CourseClaim.lessonSlugs`
+  (course slug to lesson slugs) is the checkable evidence; the prose `lessons` field stays for
+  readers. Every slug must resolve, and an aligned course not in
+  `scripts/lib/per-lesson-standards-baseline.ts` must name lessons on every claim it is on.
+  `pnpm standards:for <slug>` prints them beside each code.
+
+The two slug baselines fail on a course that has met the gate, until its line is deleted, so they only
+shrink. Never add a line to either, or raise the AI-tells baseline, to make a course pass.
+
 ## Release follow-ups rule: a blog post about a course names its gate in the app
 
 BAM, 2026-10-15: warn about the blog post (naming the blog) and any follow-up work when a course goes
