@@ -26,5 +26,5 @@
     ".next/dev/types/**/*.ts",
     "**/*.mts"
   ],
-  "exclude": ["node_modules", "scripts/seed-health.ts", "scripts/seed-speedway.ts"]
+  "exclude": ["node_modules", "scripts/seed-health.ts", "scripts/seed-speedway.ts", "scripts/data/speedway-course-corrected.ts"]
 }

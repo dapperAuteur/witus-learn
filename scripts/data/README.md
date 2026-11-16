@@ -476,7 +476,7 @@
 
 ### Docuseries
 
-- [`speedway`](./speedway-course.ts) speedway (course data not in git: generated, or kept outside the repository)
+- [`speedway`](./speedway-course-corrected.ts) speedway
 
 ### STEAM
 
