@@ -55,7 +55,12 @@ describe("speedway corrections", () => {
   });
 
   it.runIf(existsSync("scripts/data/speedway-course.ts"))("applies every correction to the generated course", async () => {
-    const { SPEEDWAY_COURSE } = await import("../scripts/data/speedway-course-corrected");
+    // Same pattern as loadCourse in scripts/lib/seed-registry.ts: an existsSync guard plus a
+    // non-literal import specifier. A string-literal import here makes tsc follow the corrected
+    // module into the gitignored generated file, so `pnpm typecheck` fails on any clone without it
+    // (CI). The variable keeps tsc out; Vitest still resolves it at run time.
+    const correctedModule = "../scripts/data/speedway-course-corrected";
+    const { SPEEDWAY_COURSE } = (await import(correctedModule)) as { SPEEDWAY_COURSE: AuthoredCourse };
     const e1 = SPEEDWAY_COURSE.lessons.find((l) => l.slug === "e1-the-race-that-started-it-all-1911")!;
     expect(e1.body).toContain("Say it right: Harroun is pronounced");
     expect(e1.body).toContain("363 days a year");
