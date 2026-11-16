@@ -10260,6 +10260,64 @@ export const RESEARCH_CHECKS: ResearchCheck[] = [
       "History Colorado",
     ],
   },
+  // ── Speedway (IMS Museum review, 2026-11-16; plans/100) ───────────────────────────────────────
+  {
+    key: "speedway-ims-museum-hours-yearly",
+    course: "speedway",
+    lesson: "e1-the-race-that-started-it-all-1911",
+    quote: "The museum is open 363 days a year and closes only on Thanksgiving and Christmas Day",
+    title: "Re-verify the IMS Museum's days open and rotating exhibits (yearly)",
+    severity: "low",
+    question:
+      "Does the IMS Museum's own site still say it is open 363 days a year, closed only on Thanksgiving and Christmas Day, and that its rotating exhibitions change every six to nine months? Re-check every November (rubric v1.7 gate D11).",
+    claim:
+      "Episode 1's 'Visiting the museum' section states the 363 days and the two closures (imsmuseum.org, opened 2026-11-16) and says exhibits rotate (imsmuseum.org/visit/current-exhibitions/, same date).",
+    stakes:
+      "Low, but it is the exact error the museum's Director of Education caught: the course and its teacher packet said the museum was open year-round and that named artifacts could be seen in person. A teacher who plans a field trip from the lesson trusts these lines.",
+    needs: [
+      "The current wording on https://imsmuseum.org/ about days open and closures, with the date checked",
+      "The current wording on https://imsmuseum.org/visit/current-exhibitions/ about how often exhibitions change",
+    ],
+    where: ["https://imsmuseum.org/", "https://imsmuseum.org/visit/plan-your-visit/", "https://imsmuseum.org/visit/current-exhibitions/"],
+  },
+  {
+    key: "speedway-harroun-mirror-useless-quote",
+    course: "speedway",
+    lesson: "e1-the-race-that-started-it-all-1911",
+    quote: "Harroun later admitted that the mirror barely worked",
+    title: "Where did Harroun say his mirror barely worked?",
+    severity: "medium",
+    question:
+      "What is the original, dated source for Harroun's statement that the mirror vibrated on the bricks and was close to useless (quoted in later articles as 'on the brick surface, I couldn't see a damn thing in it')?",
+    claim:
+      "Episode 1 says Harroun later admitted the mirror barely worked because the brick surface made it vibrate, and that it was almost useless during the race. No source is cited for it; the articles found on 2026-11-16 (Florida NewsLine, 2024; Jalopnik, 2026) give no original.",
+    stakes:
+      "Medium. It is a quoted admission put in a real person's mouth, and the revised Episode 1 now teaches students to check exactly this kind of claim.",
+    needs: [
+      "The interview, article or memoir where Harroun said it, with date and page",
+      "If none can be found: say so, and the lesson drops the sentence or marks it as a later retelling",
+    ],
+    where: [
+      "IMS Museum archives and the Speedway historian",
+      "Indianapolis Star archive (Harroun interviews on anniversaries, for example 1961 and 1968)",
+      "The Christchurch Press, 1968-05-17 (Papers Past), which a search snippet suggests discusses the story; blocked on 2026-11-16",
+    ],
+  },
+  {
+    key: "speedway-automobile-1906-mirror-page",
+    course: "speedway",
+    lesson: "e1-the-race-that-started-it-all-1911",
+    quote: "(\"Body Work at Paris Salon,\" 1906, pp. 910-911)",
+    title: "Page 910 or 911 for the 1906 car-mirror report?",
+    severity: "low",
+    question:
+      "On which printed page of The Automobile, December 27, 1906 (Vol. 15, No. 26), does the passage under the subhead 'Mirrors on Many Closed Bodies' appear?",
+    claim:
+      "Episode 1 cites the passage as pp. 910-911 because the Internet Archive OCR text places it between the page 910 and page 912 headers.",
+    stakes: "Low: a locator, not a fact. The source-hosting rule asks for the printed page.",
+    needs: ["The printed page number, read from the page image of the scan"],
+    where: ["https://archive.org/details/sim_automotive-industries_1906-12-27_15_26 (page images)"],
+  },
 ];
 
 export function getResearchCheck(key: string): ResearchCheck | undefined {
