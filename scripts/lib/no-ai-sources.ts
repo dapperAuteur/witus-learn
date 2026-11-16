@@ -54,6 +54,17 @@ const GENERIC =
  *  or a report title, not a chatbot. */
 const NOT_A_NAME = "(?!\\s+[A-Z][a-z])";
 
+/**
+ * AI-written reference sites: encyclopedias and answer sites whose text is machine-generated, so
+ * citing or linking one is citing an AI. Extend this list as new ones appear (hosts only, no scheme,
+ * no "www."). Wikipedia is NOT here: it is human-written, and rubric Part H handles it separately
+ * (a pointer, never a citation).
+ */
+export const AI_REFERENCE_SITES: readonly string[] = ["grokipedia.com"];
+
+const escapeRe = (h: string): string => h.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+const AI_SITE_ALT = AI_REFERENCE_SITES.map(escapeRe).join("|");
+
 export interface AiSourcePattern {
   id: string;
   /** What the shape means, for the report. */
@@ -120,6 +131,12 @@ export const AI_SOURCE_PATTERNS: readonly AiSourcePattern[] = [
     what: "link to a chat conversation",
     regex:
       /\b(?:(?:chat\.openai\.com|chatgpt\.com)\/(?:share|c|chat|g)\b|claude\.ai\/(?:share|chat|new)\b|gemini\.google\.com\/(?:share|app|u)\b|g\.co\/gemini\/share|copilot\.microsoft\.com\/(?:shares?|chats?)\b|perplexity\.ai\/(?:search|page)\b|grok\.com\/(?:share|c)\b|chat\.deepseek\.com|chat\.mistral\.ai|poe\.com\/s\/)/gi,
+  },
+  {
+    id: "ref-ai-site",
+    what: "link to an AI-written reference site",
+    // Any mention of the host, with or without a scheme or "www.", in a reference or in prose.
+    regex: new RegExp(`(?<![\\w-])(?:https?:\\/\\/)?(?:[\\w-]+\\.)*(?:${AI_SITE_ALT})(?![\\w.-]*\\w)(?:\\/[^\\s)\\]>"]*)?`, "gi"),
   },
   {
     id: "ref-chat-host",

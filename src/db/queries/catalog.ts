@@ -146,8 +146,16 @@ export function findCourseRoute(routes: readonly CourseRoute[], username: string
   return routes.find((r) => r.slug === slug && r.username.toLowerCase() === user) ?? null;
 }
 
-/** By-id read filtered to the tenant: a foreign id returns null → the caller 404s. */
+const UUID_RE = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i;
+
+/**
+ * By-id read filtered to the tenant: a foreign id returns null → the caller 404s.
+ * `courses.id` is a uuid column, so a value that is not a uuid (a slug typed into /course/<slug>)
+ * can never match; asking Postgres anyway throws "invalid input syntax for type uuid" and the
+ * page answers 500 (2026-11-16, /course/speedway). Return null without querying.
+ */
 export async function getCourseById(tenantId: string, id: string): Promise<Course | null> {
+  if (!UUID_RE.test(id)) return null;
   const rows = await db
     .select()
     .from(courses)
@@ -155,8 +163,6 @@ export async function getCourseById(tenantId: string, id: string): Promise<Cours
     .limit(1);
   return rows[0] ?? null;
 }
-
-const UUID_RE = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i;
 
 /**
  * Resolve a course from a URL segment that may be EITHER its uuid or its slug, so the authoring
