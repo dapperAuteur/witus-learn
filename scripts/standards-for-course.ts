@@ -45,13 +45,20 @@ console.log(`\n${wanted}: claims ${rows.length} standard(s) across ${byState.siz
 for (const [state, list] of [...byState].sort((x, y) => x[0].localeCompare(y[0]))) {
   console.log(`${state}  (${jurisOf(list[0].frameworkId)})`);
   for (const a of list.sort((x, y) => x.code.localeCompare(y.code))) {
+    // Per-lesson evidence (rubric v1.7 D6), when the backing claims name this course's lessons.
+    const taughtIn = a.lessonSlugs?.[wanted] ?? [];
     if (codesOnly) {
-      console.log(`  ${a.coverage === "partial" ? "~" : " "} ${a.code}`);
+      console.log(`  ${a.coverage === "partial" ? "~" : " "} ${a.code}${taughtIn.length ? `  (${taughtIn.join(", ")})` : ""}`);
     } else {
       console.log(`  ${a.coverage === "partial" ? "PARTIAL" : "full   "}  ${a.code}`);
       console.log(`           ${a.text.slice(0, 96)}${a.text.length > 96 ? "…" : ""}`);
+      if (taughtIn.length) console.log(`           taught in: ${taughtIn.join(", ")}`);
     }
   }
   console.log("");
 }
-console.log("Review: is every code above a standard THIS course, as it stands today, genuinely teaches?");
+if (!rows.some((a) => (a.lessonSlugs?.[wanted] ?? []).length > 0)) {
+  console.log("Mapped at course level: no claim names this course's lessons yet (lessonSlugs, rubric v1.7 gate D6).");
+}
+console.log("Review: is every code above a standard THIS course, as it stands today, genuinely teaches,");
+console.log("in the lesson named beside it? (rubric v1.7 gate D6)");

@@ -37,6 +37,17 @@ export interface CourseClaim {
   courseSlugs: string[];
   /** The specific lessons that do the teaching — this is the evidence. */
   lessons: string[];
+  /**
+   * The same evidence, machine-checkable (course-creation rubric v1.7, gate D6, 2026-11-16): for each
+   * course slug in `courseSlugs`, the slugs of the lessons in THAT course that teach this claim.
+   * `lessons` above is prose for a reader ("US Constitution 101, Lesson 2 · The Preamble"), pooled
+   * across every course on the claim, so it cannot say which lesson of which course teaches a code;
+   * this can, and `pnpm lint` checks every slug exists. Optional: a claim without it is mapped at
+   * course level, which is allowed only for the catalog as it stood on 2026-11-16
+   * (scripts/lib/per-lesson-standards-baseline.ts). `pnpm standards:for <slug>` prints the lessons
+   * beside each code.
+   */
+  lessonSlugs?: Record<string, string[]>;
 }
 
 // ── The state side (codes, verbatim text, coverage) ───────────────────────────
@@ -156,6 +167,8 @@ export interface StandardAlignment extends StandardRef {
   courseSlugs: string[];
   /** Derived: the union of the backing claims' lessons — the evidence for the claim. */
   lessons: string[];
+  /** Derived: the union of the backing claims' `lessonSlugs`, per course. Absent when no claim has any. */
+  lessonSlugs?: Record<string, string[]>;
 }
 
 /** A course as resolved from THIS tenant's catalog (mirrors db/queries/standards.AlignedCourse). */

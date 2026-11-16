@@ -1,11 +1,14 @@
-import { allSeedEntries } from "./lib/seed-registry";
-import { allAlignedCourseSlugs } from "../src/lib/standards/index";
+import { allSeedEntries, loadCourse } from "./lib/seed-registry";
+import { ALIGNMENTS, COURSE_CLAIMS, allAlignedCourseSlugs } from "../src/lib/standards/index";
+import { PER_LESSON_STANDARDS_BASELINE } from "./lib/per-lesson-standards-baseline";
+import { lessonSlugErrors, perLessonStatus } from "./lib/standards-per-lesson";
 
 /**
  * Guard: every registered course must either carry a standards alignment or be explicitly excused.
  *
- *   pnpm check:standards       # exit 1 if a NEW course has neither
- *   pnpm check:standards --list  # show the backlog and the excused list
+ *   pnpm check:standards              # exit 1 if a NEW course has neither, or misses the per-lesson rule
+ *   pnpm check:standards --list       # show the backlog and the excused list
+ *   pnpm check:standards --per-lesson # which aligned courses are mapped per lesson, partly, or at course level
  *
  * WHY THIS EXISTS
  * Standards coverage is the thing educators actually shop on, and it rots silently: courses get
@@ -23,6 +26,17 @@ import { allAlignedCourseSlugs } from "../src/lib/standards/index";
  * To clear an entry: map the course in src/lib/standards/ (add or extend a claim in claims.ts and
  * reference it from the jurisdiction files), then delete its line here. The list shrinking is the
  * progress bar.
+ *
+ * PER LESSON (rubric v1.7 gate D6, 2026-11-16). The IMS review of the Speedway course asked for
+ * specific, numbered standards per lesson, and a claim's prose `lessons` list cannot be checked
+ * against a lesson. So a claim may now carry `lessonSlugs` (course slug to the lesson slugs that teach
+ * it, src/lib/standards/types.ts). Three rules, on top of the ones above:
+ *   1. every `lessonSlugs` entry must name one of the claim's courses and a lesson that course has
+ *      (checked for every course readable on this machine);
+ *   2. an aligned course NOT in scripts/lib/per-lesson-standards-baseline.ts (the catalog as it stood
+ *      on 2026-11-16) must be mapped per lesson: every claim it is on names its lessons;
+ *   3. a baseline course that becomes fully per-lesson fails until its line is deleted there, so that
+ *      list only shrinks.
  */
 
 /** Courses with no academic-standards mapping, and why. Shrink this list; never grow it casually.
@@ -366,31 +380,100 @@ const unaligned = registered.filter((s) => !aligned.has(s));
 const newlyUnaligned = unaligned.filter((s) => !(s in BACKLOG));
 const staleBacklog = Object.keys(BACKLOG).filter((s) => aligned.has(s));
 
-if (process.argv.includes("--list")) {
-  console.log(`  aligned: ${registered.length - unaligned.length} of ${registered.length}`);
-  console.log(`  backlog (unmapped, known): ${unaligned.length - newlyUnaligned.length}`);
-  for (const s of unaligned.filter((x) => x in BACKLOG)) console.log(`    ${s}  (${BACKLOG[s]})`);
-}
+async function main(): Promise<number> {
+  if (process.argv.includes("--list")) {
+    console.log(`  aligned: ${registered.length - unaligned.length} of ${registered.length}`);
+    console.log(`  backlog (unmapped, known): ${unaligned.length - newlyUnaligned.length}`);
+    for (const s of unaligned.filter((x) => x in BACKLOG)) console.log(`    ${s}  (${BACKLOG[s]})`);
+  }
 
-console.log(
-  `Standards coverage: ${registered.length - unaligned.length}/${registered.length} courses aligned, ` +
-    `${unaligned.length} unmapped (${newlyUnaligned.length} unaccounted for).`,
-);
-
-if (staleBacklog.length > 0) {
   console.log(
-    `\nGood news: ${staleBacklog.length} course(s) in BACKLOG now have alignments. Delete them from the list:`,
+    `Standards coverage: ${registered.length - unaligned.length}/${registered.length} courses aligned, ` +
+      `${unaligned.length} unmapped (${newlyUnaligned.length} unaccounted for).`,
   );
-  for (const s of staleBacklog) console.log(`  ${s}`);
+
+  if (staleBacklog.length > 0) {
+    console.log(
+      `\nGood news: ${staleBacklog.length} course(s) in BACKLOG now have alignments. Delete them from the list:`,
+    );
+    for (const s of staleBacklog) console.log(`  ${s}`);
+  }
+
+  let failed = false;
+  if (newlyUnaligned.length > 0) {
+    failed = true;
+    console.error("\nThese registered courses have NO standards alignment and are not in the backlog list:");
+    for (const s of newlyUnaligned) console.error(`  ${s}`);
+    console.error(
+      "\nMap the course in src/lib/standards/ (a claim in claims.ts, referenced from the jurisdiction\n" +
+        "files), OR add it to BACKLOG in this file with a one-line reason. Educators shop on standards\n" +
+        "coverage, so a course shipping without either is a silent gap.",
+    );
+  }
+
+  // ── Per lesson (rubric v1.7 D6) ──────────────────────────────────────────────
+  // Only claims some standard references count: an orphan claim backs no code a teacher sees.
+  const referenced = new Set(ALIGNMENTS.flatMap((a) => a.claimIds));
+  const claims = COURSE_CLAIMS.filter((c) => referenced.has(c.id));
+  const lessonsOf = new Map<string, Set<string>>();
+  for (const entry of allSeedEntries()) {
+    if (lessonsOf.has(entry.slug)) continue;
+    const course = await loadCourse(entry);
+    if (course) lessonsOf.set(entry.slug, new Set(course.lessons.map((l) => l.slug)));
+  }
+  const excused = new Set(PER_LESSON_STANDARDS_BASELINE);
+  const reports = registered.filter((s) => aligned.has(s)).map((s) => perLessonStatus(s, claims));
+  const perLesson = reports.filter((r) => r.status === "per-lesson");
+  const mustBePerLesson = reports.filter((r) => !excused.has(r.slug) && r.status !== "per-lesson");
+  const staleExcuse = perLesson.filter((r) => excused.has(r.slug)).map((r) => r.slug);
+  const goneExcuse = PER_LESSON_STANDARDS_BASELINE.filter((s) => !registered.includes(s));
+  const slugErrors = lessonSlugErrors(COURSE_CLAIMS, lessonsOf);
+
+  console.log(
+    `Standards per lesson (rubric D6): ${perLesson.length}/${reports.length} aligned course(s) name their lessons on every claim; ` +
+      `${excused.size} excused by the baseline.`,
+  );
+
+  if (process.argv.includes("--per-lesson")) {
+    for (const status of ["course-level", "partial", "per-lesson"] as const) {
+      const list = reports.filter((r) => r.status === status);
+      const label =
+        status === "course-level" ? "Mapped at course level only (no claim names a lesson)" : status === "partial" ? "Partly per lesson" : "Per lesson";
+      console.log(`\n${label}: ${list.length}`);
+      for (const r of list) {
+        console.log(`  ${r.slug}  (${r.claimsWithLessons}/${r.claims} claim(s) name lessons)${excused.has(r.slug) ? "" : "  NOT EXCUSED"}`);
+      }
+    }
+  }
+
+  if (slugErrors.length) {
+    failed = true;
+    console.error("\nlessonSlugs entries in src/lib/standards/claims.ts that do not resolve:");
+    for (const e of slugErrors) console.error(`  ${e}`);
+  }
+  if (mustBePerLesson.length) {
+    failed = true;
+    console.error("\nThese courses claim standards at course level, and rubric v1.7 gate D6 wants them per lesson:");
+    for (const r of mustBePerLesson) console.error(`  ${r.slug}  (${r.claimsWithLessons}/${r.claims} claim(s) name lessons)`);
+    console.error(
+      "\nOn every claim the course is on, add `lessonSlugs: { \"<course-slug>\": [\"<lesson-slug>\", ...] }` naming the\n" +
+        "lessons that teach it, then check `pnpm standards:for <slug>` line by line. Never add the course to\n" +
+        "scripts/lib/per-lesson-standards-baseline.ts to make it pass.",
+    );
+  }
+  if (staleExcuse.length || goneExcuse.length) {
+    failed = true;
+    console.error("\nDelete these lines from scripts/lib/per-lesson-standards-baseline.ts (the list only shrinks):");
+    for (const s of staleExcuse) console.error(`  ${s}  (every claim now names its lessons)`);
+    for (const s of goneExcuse) console.error(`  ${s}  (no seed script registers it any more)`);
+  }
+  return failed ? 1 : 0;
 }
 
-if (newlyUnaligned.length > 0) {
-  console.error("\nThese registered courses have NO standards alignment and are not in the backlog list:");
-  for (const s of newlyUnaligned) console.error(`  ${s}`);
-  console.error(
-    "\nMap the course in src/lib/standards/ (a claim in claims.ts, referenced from the jurisdiction\n" +
-      "files), OR add it to BACKLOG in this file with a one-line reason. Educators shop on standards\n" +
-      "coverage, so a course shipping without either is a silent gap.",
-  );
-  process.exit(1);
-}
+main().then(
+  (code) => process.exit(code),
+  (err) => {
+    console.error(err);
+    process.exit(2);
+  },
+);

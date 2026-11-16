@@ -91,11 +91,22 @@ export type {
 
 function resolveStandard(frameworkId: string, s: StandardRef): StandardAlignment {
   const claims = s.claimIds.map(getClaim); // throws on a typo'd id — tests import this module
+  // Per-lesson evidence (rubric v1.7 D6): merged per course across the backing claims, and only set
+  // when some claim names lessons, so every alignment mapped before it is unchanged.
+  const perCourse = new Map<string, Set<string>>();
+  for (const c of claims) {
+    for (const [course, slugs] of Object.entries(c.lessonSlugs ?? {})) {
+      const set = perCourse.get(course) ?? new Set<string>();
+      for (const slug of slugs) set.add(slug);
+      perCourse.set(course, set);
+    }
+  }
   return {
     ...s,
     frameworkId,
     courseSlugs: [...new Set(claims.flatMap((c) => c.courseSlugs))],
     lessons: [...new Set(claims.flatMap((c) => c.lessons))],
+    ...(perCourse.size ? { lessonSlugs: Object.fromEntries([...perCourse].map(([k, v]) => [k, [...v]])) } : {}),
   };
 }
 
