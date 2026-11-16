@@ -6,7 +6,8 @@ import * as schema from "../src/db/schema";
 import { resolveDbUrl } from "./db-url";
 import { seedAuthoredCourse } from "./lib/seed-authored-course";
 import { ownerEmail } from "./lib/owner";
-import { SPEEDWAY_COURSE } from "./data/speedway-course";
+// The generated course plus the tracked IMS-review corrections (scripts/lib/speedway-corrections.ts).
+import { SPEEDWAY_COURSE } from "./data/speedway-course-corrected";
 import { ROBOTICS_STEAM_COURSE } from "./data/robotics-steam-course";
 import { AI_YOUNG_MAKERS_COURSE } from "./data/ai-young-makers-course";
 import { AI_ENTREPRENEURS_COURSE } from "./data/ai-entrepreneurs-course";
