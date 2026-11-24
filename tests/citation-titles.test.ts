@@ -251,6 +251,19 @@ describe("classify", () => {
     expect(classify(["Example"], "https://example.org/", rec({ url: "https://example.org/", finalUrl: "https://example.org/", title: "Example" }))).toBe("ok");
   });
 
+  it("a site root is judged strictly: the citation may not say more than the page (the Search Craft finding)", () => {
+    const home = (title: string, ogTitle: string | null = null) =>
+      rec({ url: "https://guides.loc.gov/", finalUrl: "https://guides.loc.gov/", title, ogTitle });
+    const loc = home("Home - Research Guides at Library of Congress", "Research Guides");
+    expect(classify(["Research guides: Getting started"], "https://guides.loc.gov/", loc)).toBe("title-mismatch");
+    expect(classify(["Research guides: Search strategies"], "https://guides.loc.gov/", loc)).toBe("title-mismatch");
+    expect(classify(["Research guides"], "https://guides.loc.gov/", loc)).toBe("ok");
+    expect(classify(["GovInfo"], "https://www.govinfo.gov/", rec({ url: "https://www.govinfo.gov/", finalUrl: "https://www.govinfo.gov/", title: "GovInfo" }))).toBe("ok");
+    expect(classify(["Data.gov"], "https://data.gov/", rec({ url: "https://data.gov/", finalUrl: "https://data.gov/", title: "Data.gov Home" }))).toBe("ok");
+    // The same shape on a deep product page is a description added to a correctly named page.
+    expect(classify(["BST-55: Digital triax base station"], "https://www.ikegami.com/product/detail/1058/", rec({ url: "https://www.ikegami.com/product/detail/1058/", finalUrl: "https://www.ikegami.com/product/detail/1058/", title: "BST-55｜Ikegami USA" }))).toBe("ok");
+  });
+
   it("titles: none, a match through <title>, a match through og:title, a mismatch", () => {
     expect(classify(cited, url, rec({}))).toBe("no-title");
     expect(classify(cited, url, rec({ title: "Search Tips for the National Archives Catalog | National Archives" }))).toBe("ok");

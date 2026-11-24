@@ -223,8 +223,14 @@ const MIN_SLUG = 20;
  * opposed to the page title being merely the site's name); the page's own title (before the site
  * name) is the first words of the cited title ("BST-55" for "BST-55: Digital triax base station");
  * or the page title is truncated with an ellipsis and is a prefix of the cited title.
+ *
+ * `strict` (used for a site root) drops the rules that let the cited title say MORE than the page:
+ * a home page cited as "Research guides: Getting started" when its title is "Research Guides" is the
+ * invented-subtitle pattern the Search Craft finding is about, while the same shape on a deep
+ * product page ("BST-55: Digital triax base station" for "BST-55") is a description added to a
+ * correctly named page.
  */
-export function titlesMatch(cited: string, pageTitle: string): boolean {
+export function titlesMatch(cited: string, pageTitle: string, strict = false): boolean {
   const c = normalizeTitle(cited);
   if (c.length < 3) return false;
   const full = normalizeTitle(pageTitle);
@@ -234,11 +240,12 @@ export function titlesMatch(cited: string, pageTitle: string): boolean {
   const { stripped, leading, segments } = titleVariants(pageTitle);
   for (const v of stripped) {
     if (v === c && v.length >= MIN_SEGMENT_EQUAL) return true;
-    if (v.length >= MIN_PAGE_IN_CITED && v.length >= c.length * MIN_PAGE_IN_CITED_COVER && c.includes(v)) return true;
+    if (!strict && v.length >= MIN_PAGE_IN_CITED && v.length >= c.length * MIN_PAGE_IN_CITED_COVER && c.includes(v)) return true;
   }
   for (const v of segments) {
     if (v === c && v.length >= MIN_SEGMENT_EQUAL) return true;
   }
+  if (strict) return false;
   for (const v of [full, leading]) {
     if (v && v.length >= MIN_SEGMENT_EQUAL && c.startsWith(`${v} `)) return true;
   }
@@ -276,10 +283,17 @@ export function slugMatches(cited: string, url: string | null): boolean {
   return c === slug || c.includes(slug) || slug.includes(c);
 }
 
-/** True when any candidate matches the page's <title> or og:title, or the slug of one of the URLs. */
-export function anyTitleMatches(candidates: string[], title: string | null, ogTitle: string | null, urls: (string | null)[] = []): boolean {
+/** True when any candidate matches the page's <title> or og:title, or the slug of one of the URLs.
+ *  `strict` is titlesMatch's: on for a site root. */
+export function anyTitleMatches(
+  candidates: string[],
+  title: string | null,
+  ogTitle: string | null,
+  urls: (string | null)[] = [],
+  strict = false,
+): boolean {
   const pages = [title, ogTitle].filter((t): t is string => !!t && t.trim().length > 0);
-  if (candidates.some((c) => pages.some((p) => titlesMatch(c, p)))) return true;
+  if (candidates.some((c) => pages.some((p) => titlesMatch(c, p, strict)))) return true;
   return candidates.some((c) => urls.some((u) => slugMatches(c, u)));
 }
 
@@ -457,5 +471,8 @@ export function classify(candidates: string[], citedUrl: string, rec: FetchRecor
   if (isPdfResponse(rec.contentType, rec.finalUrl ?? citedUrl)) return "ok";
   if (isRootUrl(rec.finalUrl) && !isRootUrl(citedUrl)) return "redirect-to-home";
   if (!rec.title && !rec.ogTitle) return "no-title";
-  return anyTitleMatches(candidates, rec.title, rec.ogTitle, [citedUrl, rec.finalUrl]) ? "ok" : "title-mismatch";
+  // A site root is judged strictly: the citation may not say more than the page does (a home page
+  // under an invented specific title is the finding this check exists for).
+  const strict = isRootUrl(rec.finalUrl ?? citedUrl);
+  return anyTitleMatches(candidates, rec.title, rec.ogTitle, [citedUrl, rec.finalUrl], strict) ? "ok" : "title-mismatch";
 }
