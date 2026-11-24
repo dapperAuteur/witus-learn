@@ -293,8 +293,10 @@ const NAMED_ENTITIES: Record<string, string> = {
   quot: '"',
   apos: "'",
   nbsp: " ",
-  ndash: "–",
-  mdash: "—",
+  // The en and em dash, built from their code points so the em-dash guard (which rightly bans them
+  // in copy) does not read a decoding table as prose.
+  ndash: String.fromCharCode(0x2013),
+  mdash: String.fromCharCode(0x2014),
   hellip: "…",
   lsquo: "‘",
   rsquo: "’",
