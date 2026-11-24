@@ -417,6 +417,16 @@ it stood on 2026-11-16, so new courses meet the gate and old ones are brought up
 The two slug baselines fail on a course that has met the gate, until its line is deleted, so they only
 shrink. Never add a line to either, or raise the AI-tells baseline, to make a course pass.
 
+**Citation titles, run by hand, not a lint gate** (`pnpm check:citation-titles`, `scripts/check-citation-titles.ts`).
+Fetches every staged citation's URL once (User-Agent "Learn.WitUS (https://learn.witus.online)", four at a time,
+one per second per host, cached in gitignored `plans/reports/citation-check-cache.json`), compares the page title
+with the cited title, and writes `plans/reports/YYYY-MM-DD-citation-check.md` plus JSON: per-course ok share worst
+first, dead links, title mismatches, blocked hosts. It is network-bound (an hour for the catalog), so it is NOT in
+`pnpm lint` or CI. `--course <slug>`, `--limit N`, `--offline`, `--max-age-days N`, `--retry-errors`. How to run it and
+read it: `docs/citation-verification-plan.md`, "How to run the citation check". Why: the Search Craft finding
+(`plans/bugs/2026-11-24-search-craft-sources-are-landing-pages.md`): home pages cited under invented titles and a
+dead link, which this check finds in one run for every course.
+
 ## Release follow-ups rule: a blog post about a course names its gate in the app
 
 BAM, 2026-10-15: warn about the blog post (naming the blog) and any follow-up work when a course goes

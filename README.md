@@ -1180,9 +1180,27 @@ pnpm check:series-codes    # course codes (STORY-00, STORY-TRU3) are legal and d
 pnpm check:page-reachability  # ratchet. No public page is a menu orphan or rides the default OG card.
 ```
 
-One check is deliberately **outside** that list: `pnpm verify:observability <url>` runs against a
-DEPLOYED url rather than the working tree, so it makes network calls and must never gate a commit.
-See [Verifying a deployment can actually report its errors](#verifying-a-deployment-can-actually-report-its-errors).
+Two checks are deliberately **outside** that list, because they make network calls and a guard that
+fails on bad wifi is a guard people learn to bypass:
+
+- `pnpm verify:observability <url>` runs against a DEPLOYED url rather than the working tree. See
+  [Verifying a deployment can actually report its errors](#verifying-a-deployment-can-actually-report-its-errors).
+- `pnpm check:citation-titles` (`scripts/check-citation-titles.ts`) is the catalog-wide citation check:
+  it fetches every staged citation's URL once (User-Agent "Learn.WitUS (https://learn.witus.online)", four
+  requests at once, one per second per host, 20 s deadline, results cached in gitignored
+  `plans/reports/citation-check-cache.json` so reruns fetch only what is missing or older than
+  `--max-age-days`, default 30), compares each page's `<title>` and `og:title` with the cited title, and
+  writes `plans/reports/YYYY-MM-DD-citation-check.md` plus the same data as JSON: a summary, a per-course
+  table worst first by the ok share of checkable citations, every dead and mismatched citation with the
+  page title beside the cited one, URLs cited under several titles, and the hosts that block automated
+  requests (`blocked`, never `dead`; loc.gov answers 403 to curl). Classes: `ok`, `title-mismatch`, `dead`,
+  `blocked`, `redirect-to-home`, `timeout`, `no-title`, `error`, `unchecked`; a PDF that answers 200 is `ok`.
+  `--course <slug>` limits to one course, `--limit N` is a smoke run, `--offline` reports from the cache,
+  `--retry-errors` refetches cached timeouts and errors. The whole catalog takes an hour or more. The
+  classifier is pure (`scripts/lib/citation-titles.ts`, pinned by `tests/citation-titles.test.ts`). A match
+  is not proof the source supports the lesson; a mismatch is a prompt to open the page. Why it exists:
+  `plans/bugs/2026-11-24-search-craft-sources-are-landing-pages.md` (home pages cited under invented titles
+  and a dead link), and the rebuild program in `plans/101` orders its waves from this report.
 
 The two quiz-integrity guards and the assessment-fit guard all cover the **deterministic** half of
 their question. Their semantic halves are advisory buttons on a course's instructor tools,

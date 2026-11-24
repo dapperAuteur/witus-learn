@@ -117,7 +117,9 @@ Every customer-facing surface must pass before it can merge:
   citations, which catches both "forgot to regenerate" and "the Sources block is in a shape the
   extractor does not read". The citations then appear at `/admin/citations` for BAM and at
   `/audit/citations` for invited reviewers, who verify that each source exists, still resolves, and
-  actually says what the lesson claims.
+  actually says what the lesson claims. `pnpm check:citation-titles` (run by hand, not in `pnpm lint`:
+  it is network-bound) does the first two halves for the whole catalog, fetching every staged URL and
+  reporting dead links and page titles that do not match the cited titles, per course.
 - **When you write a hedge you cannot resolve, file a source check.** A sentence like "verify the
   current text before relying on this" is honest and completely unactionable on its own: nobody has a
   list and nothing records whether it was ever done. Add an entry to

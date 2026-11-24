@@ -128,7 +128,8 @@
     "notes:show": "tsx --env-file=.env.local scripts/notes-show.ts",
     "notes:show:prod": "tsx --env-file=.env.prod scripts/notes-show.ts",
     "check:ai-tells": "tsx scripts/check-ai-tells.ts",
-    "check:objectives": "tsx scripts/check-objectives.ts"
+    "check:objectives": "tsx scripts/check-objectives.ts",
+    "check:citation-titles": "tsx scripts/check-citation-titles.ts"
   },
   "dependencies": {
     "@langchain/anthropic": "^1.4.0",
