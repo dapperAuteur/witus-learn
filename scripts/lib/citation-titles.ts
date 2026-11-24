@@ -41,8 +41,13 @@ export const CLASS_ORDER: readonly CitationClass[] = [
   "unchecked",
 ];
 
-/** Classes that mean "the page could not be judged from here", so they are left out of the ok share. */
-export const UNCHECKABLE: ReadonlySet<CitationClass> = new Set(["blocked", "timeout", "error", "unchecked"]);
+/** Classes that mean "the page could not be judged from here", so they are left out of the ok share.
+ *  `no-title` is among them: a page with no title of its own (or one site-wide generic title, see
+ *  classify's isGenericTitle) is no evidence either way about the citation. */
+export const UNCHECKABLE: ReadonlySet<CitationClass> = new Set(["blocked", "timeout", "error", "unchecked", "no-title"]);
+
+/** How an `ok` was reached, kept in the JSON so a reader can weigh it. */
+export type MatchedBy = "title" | "og" | "slug" | "near" | "pdf";
 
 /** One fetched URL, as stored in plans/reports/citation-check-cache.json. */
 export interface FetchRecord {
@@ -155,7 +160,7 @@ export function citedTitles(text: string): CitedTitles {
 // ---------------------------------------------------------------------------------------------
 // Normalising and comparing titles
 
-/** Lowercase, accents and punctuation gone, "&" read as "and", whitespace collapsed. */
+/** Lowercase, accents, possessives and punctuation gone, "&" read as "and", whitespace collapsed. */
 export function normalizeTitle(s: string): string {
   return s
     .normalize("NFKD")
@@ -163,6 +168,7 @@ export function normalizeTitle(s: string): string {
     .toLowerCase()
     .replace(/[‘’‚‛]/g, "'")
     .replace(/[“”„‟]/g, '"')
+    .replace(/'s\b/g, "")
     .replace(/&/g, " and ")
     .replace(/[^\p{L}\p{N}]+/gu, " ")
     .trim()
@@ -283,18 +289,41 @@ export function slugMatches(cited: string, url: string | null): boolean {
   return c === slug || c.includes(slug) || slug.includes(c);
 }
 
-/** True when any candidate matches the page's <title> or og:title, or the slug of one of the URLs.
- *  `strict` is titlesMatch's: on for a site root. */
+const NEAR_MIN_TOKENS = 6;
+const NEAR_SHARE = 0.85;
+
+/**
+ * A paraphrased or slightly misquoted title: the cited title has at least six words and at least
+ * 85 percent of them appear in the page title ("world's leading producing countries" for a page
+ * titled "world's leading producer countries, Ghana and Côte d'Ivoire"). The right page, cited a
+ * little wrong; worth knowing apart from an invented title, so it is reported as matchedBy "near".
+ */
+export function nearMatch(cited: string, pageTitle: string): boolean {
+  const c = normalizeTitle(cited).split(" ").filter(Boolean);
+  if (c.length < NEAR_MIN_TOKENS) return false;
+  const page = new Set(normalizeTitle(pageTitle).split(" ").filter(Boolean));
+  if (!page.size) return false;
+  const found = c.filter((t) => page.has(t)).length;
+  return found / c.length >= NEAR_SHARE;
+}
+
+/** How any candidate matches the page's <title> or og:title, the slug of one of the URLs, or nearly
+ *  matches a title; null when none does. `strict` is titlesMatch's: on for a site root, where the
+ *  near match is off too. */
 export function anyTitleMatches(
   candidates: string[],
   title: string | null,
   ogTitle: string | null,
   urls: (string | null)[] = [],
   strict = false,
-): boolean {
-  const pages = [title, ogTitle].filter((t): t is string => !!t && t.trim().length > 0);
-  if (candidates.some((c) => pages.some((p) => titlesMatch(c, p, strict)))) return true;
-  return candidates.some((c) => urls.some((u) => slugMatches(c, u)));
+): MatchedBy | null {
+  const t = title && title.trim() ? title : null;
+  const og = ogTitle && ogTitle.trim() ? ogTitle : null;
+  if (t && candidates.some((c) => titlesMatch(c, t, strict))) return "title";
+  if (og && candidates.some((c) => titlesMatch(c, og, strict))) return "og";
+  if (candidates.some((c) => urls.some((u) => slugMatches(c, u)))) return "slug";
+  if (!strict && [t, og].some((p) => p && candidates.some((c) => nearMatch(c, p)))) return "near";
+  return null;
 }
 
 // ---------------------------------------------------------------------------------------------
@@ -323,6 +352,9 @@ const NAMED_ENTITIES: Record<string, string> = {
   copy: "©",
   reg: "®",
   trade: "™",
+  sect: "§",
+  para: "¶",
+  deg: "°",
   eacute: "é",
   egrave: "è",
   aacute: "á",
@@ -384,8 +416,10 @@ export function detectCharset(contentType: string | null, head: string): string 
   return fromMeta ? fromMeta[1] : "utf-8";
 }
 
+/** Challenge pages, blocks, and JavaScript interstitials (Elsevier's "Redirecting", the Federal
+ *  Register's "Request Access"): none can be judged without a browser. */
 const BOT_WALL_TITLE_RE =
-  /just a moment|attention required|access denied|access to this page has been denied|are you a robot|robot or human|verify (?:that )?you are (?:a )?human|human verification|security check|checking your browser|pardon our interruption|request unsuccessful|bot verification|enable javascript and cookies|ddos-guard|unusual traffic|one more step|captcha|request blocked|you have been blocked|403 forbidden|^forbidden$|radware|incapsula|please wait\.\.\./i;
+  /just a moment|attention required|access denied|access to this page has been denied|are you a robot|robot or human|verify (?:that )?you are (?:a )?human|human verification|security check|checking your browser|pardon our interruption|request unsuccessful|bot verification|enable javascript and cookies|ddos-guard|unusual traffic|one more step|captcha|request blocked|you have been blocked|403 forbidden|^forbidden$|radware|incapsula|please wait\.\.\.|^redirecting\b|request access|client challenge/i;
 const BOT_WALL_BODY_RE =
   /cf-browser-verification|cf-chl-|challenge-platform|_Incapsula_Resource|px-captcha|Enable JavaScript and cookies to continue|Please enable JS and disable any ad blocker|Checking if the site connection is secure|verify you are human/i;
 
@@ -452,27 +486,72 @@ export function isRedirectStatus(status: number): boolean {
 // ---------------------------------------------------------------------------------------------
 // Classification
 
+export interface ClassifyOptions {
+  /**
+   * Is this title the host's one title for every page (PubMed's stub "pubmed.ncbi.nlm.nih.gov", the
+   * Library of Congress catalog's "Library of Congress Catalog", iga.in.gov's "Indiana General
+   * Assembly")? The caller knows, because it has seen every URL on the host; the check counts a
+   * title that five or more distinct URLs on one host share. A deep page with only such a title is
+   * `no-title`, not a mismatch: it says nothing about the citation. A site root keeps its title.
+   */
+  isGenericTitle?: (host: string, title: string) => boolean;
+}
+
+export interface Classified {
+  cls: CitationClass;
+  matchedBy?: MatchedBy;
+  /** The site-generic title that made a deep page `no-title`. */
+  genericTitle?: string;
+}
+
+/** A title that is just the host name is a stub, whatever else the site does. */
+function isHostnameTitle(title: string, url: string | null): boolean {
+  const host = hostOf(url ?? "");
+  if (!host) return false;
+  const t = normalizeTitle(title);
+  return t === normalizeTitle(host) || t === normalizeTitle(host.replace(/^www\./, ""));
+}
+
 /**
  * One citation against the fetch record for its URL. `candidates` is citedTitles(text).candidates;
  * `rec` is undefined when the URL was never fetched.
  */
-export function classify(candidates: string[], citedUrl: string, rec: FetchRecord | undefined): CitationClass {
-  if (!rec) return "unchecked";
-  if (rec.error === "timeout") return "timeout";
-  if (rec.error === "dns") return "dead";
-  if (rec.error === "network") return "error";
-  if (rec.status === null) return "error";
-  if (rec.botWall) return "blocked";
+export function classifyDetailed(candidates: string[], citedUrl: string, rec: FetchRecord | undefined, opts: ClassifyOptions = {}): Classified {
+  if (!rec) return { cls: "unchecked" };
+  if (rec.error === "timeout") return { cls: "timeout" };
+  if (rec.error === "dns") return { cls: "dead" };
+  if (rec.error === "network") return { cls: "error" };
+  if (rec.status === null) return { cls: "error" };
+  if (rec.botWall) return { cls: "blocked" };
   const s = rec.status;
-  if (s === 401 || s === 403 || s === 429) return "blocked";
-  if (s === 404 || s === 410) return "dead";
-  if (s >= 300) return "error";
-  if (rec.softNotFound) return "dead";
-  if (isPdfResponse(rec.contentType, rec.finalUrl ?? citedUrl)) return "ok";
-  if (isRootUrl(rec.finalUrl) && !isRootUrl(citedUrl)) return "redirect-to-home";
-  if (!rec.title && !rec.ogTitle) return "no-title";
+  if (s === 401 || s === 403 || s === 429) return { cls: "blocked" };
+  if (s === 404 || s === 410) return { cls: "dead" };
+  // The wall and not-found flags were set at fetch time; the title patterns are applied again here
+  // so a cached record is judged by today's patterns (the body markers cannot be, the body is gone).
+  // After the 404 check: a gone page titled "Redirecting" is dead, not blocked.
+  if (looksLikeBotWall(rec.title, "")) return { cls: "blocked" };
+  if (s >= 300) return { cls: "error" };
+  if (rec.softNotFound || looksLikeNotFound(rec.title)) return { cls: "dead" };
+  const finalUrl = rec.finalUrl ?? citedUrl;
+  if (isPdfResponse(rec.contentType, finalUrl)) return { cls: "ok", matchedBy: "pdf" };
+  if (isRootUrl(rec.finalUrl) && !isRootUrl(citedUrl)) return { cls: "redirect-to-home" };
+  if (!rec.title && !rec.ogTitle) return { cls: "no-title" };
   // A site root is judged strictly: the citation may not say more than the page does (a home page
   // under an invented specific title is the finding this check exists for).
-  const strict = isRootUrl(rec.finalUrl ?? citedUrl);
-  return anyTitleMatches(candidates, rec.title, rec.ogTitle, [citedUrl, rec.finalUrl], strict) ? "ok" : "title-mismatch";
+  const strict = isRootUrl(finalUrl);
+  const by = anyTitleMatches(candidates, rec.title, rec.ogTitle, [citedUrl, rec.finalUrl], strict);
+  if (by) return { cls: "ok", matchedBy: by };
+  if (!strict) {
+    const host = hostOf(finalUrl);
+    const generic = (t: string | null) => !!t && (isHostnameTitle(t, finalUrl) || !!opts.isGenericTitle?.(host, t));
+    const titleGeneric = !rec.title || generic(rec.title);
+    const ogGeneric = !rec.ogTitle || generic(rec.ogTitle);
+    if (titleGeneric && ogGeneric) return { cls: "no-title", genericTitle: rec.title ?? rec.ogTitle ?? undefined };
+  }
+  return { cls: "title-mismatch" };
+}
+
+/** classifyDetailed's class alone. */
+export function classify(candidates: string[], citedUrl: string, rec: FetchRecord | undefined, opts: ClassifyOptions = {}): CitationClass {
+  return classifyDetailed(candidates, citedUrl, rec, opts).cls;
 }

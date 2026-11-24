@@ -7,7 +7,7 @@ import {
   CLASS_ORDER,
   UNCHECKABLE,
   citedTitles,
-  classify,
+  classifyDetailed,
   cleanCitationUrl,
   detectCharset,
   extractPageTitles,
@@ -19,6 +19,7 @@ import {
   normalizeTitle,
   type CitationClass,
   type FetchRecord,
+  type MatchedBy,
 } from "./lib/citation-titles";
 
 /**
@@ -337,9 +338,35 @@ interface Row {
   ogTitle: string | null;
   detail: string | null;
   cls: CitationClass;
+  /** How an `ok` was reached: title, og, slug, near (a paraphrased title), pdf. */
+  matchedBy: MatchedBy | null;
+  /** For a `no-title` on a deep page: the host's one title for every page. */
+  genericTitle: string | null;
 }
 
 type Counts = Record<CitationClass, number>;
+
+const GENERIC_TITLE_MIN_URLS = 5;
+
+/**
+ * Titles a host gives to five or more distinct URLs (its catalog shell, its stub for non-browsers):
+ * no evidence about any one citation. Keyed `host|normalised title`.
+ */
+function genericTitlePredicate(cache: Cache): (host: string, title: string) => boolean {
+  const counts = new Map<string, Set<string>>();
+  for (const rec of Object.values(cache.entries)) {
+    if (!rec.finalUrl) continue;
+    const host = hostOf(rec.finalUrl);
+    for (const t of [rec.title, rec.ogTitle]) {
+      if (!t) continue;
+      const key = `${host}|${normalizeTitle(t)}`;
+      if (!counts.has(key)) counts.set(key, new Set());
+      counts.get(key)!.add(rec.finalUrl);
+    }
+  }
+  const generic = new Set([...counts].filter(([, urls]) => urls.size >= GENERIC_TITLE_MIN_URLS).map(([key]) => key));
+  return (host, title) => generic.has(`${host}|${normalizeTitle(title)}`);
+}
 
 const emptyCounts = (): Counts => Object.fromEntries(CLASS_ORDER.map((c) => [c, 0])) as Counts;
 
@@ -369,11 +396,15 @@ function tenantsByCourse(): Map<string, string[]> {
 }
 
 function buildRows(citations: Citation[], cache: Cache): Row[] {
+  const isGenericTitle = genericTitlePredicate(cache);
   return citations.map((c) => {
     const url = cleanCitationUrl(c.url)!;
     const rec = cache.entries[url];
     const { primary, candidates } = citedTitles(c.text);
-    const cls = classify(candidates, url, rec);
+    const { cls, matchedBy, genericTitle } = classifyDetailed(candidates, url, rec, { isGenericTitle });
+    const detail =
+      rec?.errorDetail ??
+      (rec?.botWall ? "bot wall or interstitial" : rec?.softNotFound ? "page says not found" : genericTitle ? `site-generic title: ${genericTitle}` : null);
     return {
       key: c.key,
       courseSlug: c.courseSlug,
@@ -386,8 +417,10 @@ function buildRows(citations: Citation[], cache: Cache): Row[] {
       status: rec?.status ?? null,
       pageTitle: rec?.title ?? null,
       ogTitle: rec?.ogTitle ?? null,
-      detail: rec?.errorDetail ?? (rec?.botWall ? "bot wall" : rec?.softNotFound ? "page says not found" : null),
+      detail,
       cls,
+      matchedBy: matchedBy ?? null,
+      genericTitle: genericTitle ?? null,
     };
   });
 }
@@ -514,12 +547,16 @@ function writeReport(
   L.push("");
   L.push(
     "**How to read it.** `ok` means the page answered and its title (or og:title) matches the cited title after lowercasing, " +
-      "dropping punctuation and the site name; a PDF that answers 200 is `ok` without a title comparison. `title-mismatch` means the page " +
-      "has a title and it is not the one cited: open the page before deciding (a paraphrased title is cheap to fix; a home page cited " +
-      "under an invented title is the Search Craft finding). `dead` is a 404, 410, DNS failure or a page that says \"not found\". " +
-      "`blocked` (401, 403, 429, bot walls) and `timeout`/`error` could not be judged from here and are left out of the ok share; " +
-      "the blocked hosts are listed at the end so they can be checked in a browser. `redirect-to-home` means a deep link now lands on " +
-      "a site root. A match is not proof the source supports the lesson. Dashes inside fetched titles are shown as hyphens here; the JSON beside this file keeps them.",
+      "dropping punctuation and the site name, or the URL's slug carries the cited title, or (off a site root) at least 85 percent of a " +
+      "cited title's six or more words appear in the page title (a paraphrase; the JSON marks these `matchedBy: \"near\"`); a PDF that " +
+      "answers 200 is `ok` without a title comparison. `title-mismatch` means the page has a title of its own and it is not the one cited: " +
+      "open the page before deciding (a misquoted title is cheap to fix; a home page cited under an invented specific title is the Search " +
+      "Craft finding, and a site root is judged strictly). `dead` is a 404, 410, DNS failure or a page that says \"not found\". " +
+      "`blocked` (401, 403, 429, bot walls, JavaScript interstitials such as Elsevier's \"Redirecting\"), `timeout`, `error` and `no-title` " +
+      "could not be judged from here and are left out of the ok share; `no-title` includes deep pages whose only title is the host's one " +
+      "title for every page (PubMed's stub for non-browsers, the Library of Congress catalog shell). The blocked hosts are listed at the end " +
+      "so they can be checked in a browser. `redirect-to-home` means a deep link now lands on a site root. A match is not proof the source " +
+      "supports the lesson. Dashes inside fetched titles are shown as hyphens here; the JSON beside this file keeps them.",
   );
   L.push("");
   L.push("## Summary");
@@ -532,6 +569,9 @@ function writeReport(
   L.push(`| Unique URLs | ${uniqueUrls.length} |`);
   L.push(`| Courses with checked citations | ${courses.length} |`);
   L.push(`| URLs cited under more than one title | ${duplicateTitles.length} |`);
+  L.push(`| ok reached by a near match (paraphrased title; \`matchedBy: "near"\` in the JSON) | ${rows.filter((r) => r.matchedBy === "near").length} |`);
+  L.push(`| ok reached through the URL slug (page retitled by its site) | ${rows.filter((r) => r.matchedBy === "slug").length} |`);
+  L.push(`| no-title because the host gives every page one title | ${rows.filter((r) => r.cls === "no-title" && r.genericTitle).length} |`);
   L.push("");
   L.push("| Class | Citations | Unique URLs |");
   L.push("|---|---:|---:|");
@@ -543,7 +583,7 @@ function writeReport(
 
   L.push("## Courses, worst first");
   L.push("");
-  L.push("Sorted by the ok share of checkable citations (blocked, timeout, error and unchecked left out), then by the number of dead, mismatched and home-redirected citations.");
+  L.push("Sorted by the ok share of checkable citations (blocked, timeout, error, no-title and unchecked left out), then by the number of dead, mismatched and home-redirected citations.");
   L.push("");
   L.push("| # | Course | Tenant | Citations | ok | mismatch | dead | blocked | home | timeout | no-title | error | unchecked | ok share |");
   L.push("|---:|---|---|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|---:|");
@@ -581,9 +621,27 @@ function writeReport(
   } else L.push("None.");
   L.push("");
 
+  const genericCounts = countBy(
+    rows.filter((r) => r.cls === "no-title" && r.genericTitle),
+    (r) => `${hostOf(r.finalUrl ?? r.url)}|${r.genericTitle}`,
+  );
+  L.push(`## Hosts that give every page one title (${genericCounts.size})`);
+  L.push("");
+  L.push("Deep pages here carry only the host's generic title (a stub served to non-browsers, or a catalog shell filled in by JavaScript), so their citations are `no-title` and not counted against any course. A browser shows the real title.");
+  L.push("");
+  if (genericCounts.size) {
+    L.push("| Host | Title served | Citations |");
+    L.push("|---|---|---:|");
+    for (const [key, n] of [...genericCounts].sort((a, b) => b[1] - a[1] || a[0].localeCompare(b[0]))) {
+      const [host, title] = key.split("|");
+      L.push(`| ${host} | ${cell(title, 80)} | ${n} |`);
+    }
+  } else L.push("None.");
+  L.push("");
+
   L.push(`## Blocked hosts (${blockedHosts.length})`);
   L.push("");
-  L.push("These hosts refuse automated requests from here; their citations could not be judged and are not counted against any course. Check a sample in a browser.");
+  L.push("These hosts refuse automated requests from here (or answer with a JavaScript interstitial); their citations could not be judged and are not counted against any course. Check a sample in a browser.");
   L.push("");
   if (blockedHosts.length) {
     L.push("| Host | Blocked URLs | Status |");

@@ -1,13 +1,17 @@
 import { describe, expect, it } from "vitest";
 import {
+  UNCHECKABLE,
   anyTitleMatches,
   citedTitles,
   classify,
+  classifyDetailed,
   cleanCitationUrl,
+  decodeEntities,
   extractPageTitles,
   isRootUrl,
   looksLikeBotWall,
   looksLikeNotFound,
+  nearMatch,
   normalizeTitle,
   slugMatches,
   titlesMatch,
@@ -88,12 +92,13 @@ describe("citedTitles reads the title out of an APA entry", () => {
 });
 
 describe("normalizeTitle", () => {
-  it("lowercases, drops punctuation and accents, reads & as and", () => {
+  it("lowercases, drops punctuation, accents and possessives, reads & as and", () => {
     expect(normalizeTitle("Netflix’s ‘The Queen’s Gambit’ drives major boom in chess sales, games")).toBe(
-      "netflix s the queen s gambit drives major boom in chess sales games",
+      "netflix the queen gambit drives major boom in chess sales games",
     );
     expect(normalizeTitle("Medicine & Science in Sports & Exercise")).toBe("medicine and science in sports and exercise");
     expect(normalizeTitle("  Café   du  Monde ")).toBe("cafe du monde");
+    expect(titlesMatch("SPJ code of ethics", "SPJ’s Code of Ethics | Society of Professional Journalists")).toBe(true);
   });
 });
 
@@ -136,8 +141,20 @@ describe("titlesMatch", () => {
     expect(slugMatches("Something else about cables", url)).toBe(false);
     expect(slugMatches("Help", "https://pubmed.ncbi.nlm.nih.gov/help/")).toBe(false);
     expect(slugMatches("Indianapolis Motor Speedway Radio Network", "https://www.ikegami.com/product/detail/1060/")).toBe(false);
-    expect(anyTitleMatches(["Understanding coaxial cable terms, specifications and applications"], "Understanding Coaxial Cables | Coaxicom", null, [url])).toBe(true);
-    expect(anyTitleMatches(["Understanding coaxial cable terms, specifications and applications"], "Understanding Coaxial Cables | Coaxicom", null, [])).toBe(false);
+    expect(anyTitleMatches(["Understanding coaxial cable terms, specifications and applications"], "Understanding Coaxial Cables | Coaxicom", null, [url])).toBe("slug");
+    expect(anyTitleMatches(["Understanding coaxial cable terms, specifications and applications"], "Understanding Coaxial Cables | Coaxicom", null, [])).toBeNull();
+  });
+
+  it("a paraphrased title of six or more words nearly matches, never on a site root", () => {
+    const cited = "Predicting the future climatic suitability for cocoa farming of the world's leading producing countries";
+    const page = "Predicting the future climatic suitability for cocoa farming of the world’s leading producer countries, Ghana and Côte d’Ivoire | Climatic Change";
+    expect(nearMatch(cited, page)).toBe(true);
+    expect(anyTitleMatches([cited], page, null)).toBe("near");
+    expect(anyTitleMatches([cited], page, null, [], true)).toBeNull();
+    expect(nearMatch("Research guides: Getting started", "Home - Research Guides at Library of Congress")).toBe(false);
+    expect(nearMatch("PubMed user guide: Search techniques and field tags", "Help - PubMed")).toBe(false);
+    expect(anyTitleMatches(["Muddy Waters"], "Muddy Waters | Biography, Songs, & Facts | Britannica", null)).toBe("title");
+    expect(anyTitleMatches(["Search tips"], "National Archives", "Search Tips | National Archives")).toBe("og");
   });
 
   it("either title inside the other, when long enough", () => {
@@ -269,5 +286,27 @@ describe("classify", () => {
     expect(classify(cited, url, rec({ title: "Search Tips for the National Archives Catalog | National Archives" }))).toBe("ok");
     expect(classify(cited, url, rec({ title: "National Archives", ogTitle: "Search tips for the National Archives Catalog" }))).toBe("ok");
     expect(classify(cited, url, rec({ title: "Research Our Records | National Archives" }))).toBe("title-mismatch");
+    expect(classifyDetailed(cited, url, rec({ title: "Search Tips for the National Archives Catalog | National Archives" }))).toEqual({ cls: "ok", matchedBy: "title" });
+  });
+
+  it("a deep page with only the host's one generic title, or a hostname for a title, is no-title and not counted", () => {
+    const generic = (host: string, title: string) => host === "search.catalog.loc.gov" && title === "Library of Congress Catalog";
+    const lccn = rec({ url: "https://lccn.loc.gov/76367365", finalUrl: "https://search.catalog.loc.gov/search?option=lccn&query=76367365", title: "Library of Congress Catalog" });
+    expect(classifyDetailed(["The empty space"], "https://lccn.loc.gov/76367365", lccn, { isGenericTitle: generic })).toEqual({ cls: "no-title", genericTitle: "Library of Congress Catalog" });
+    expect(classify(["The empty space"], "https://lccn.loc.gov/76367365", lccn)).toBe("title-mismatch");
+    expect(classify(["Library of Congress Catalog"], "https://lccn.loc.gov/76367365", lccn, { isGenericTitle: generic })).toBe("ok");
+    const pubmed = rec({ url: "https://pubmed.ncbi.nlm.nih.gov/9428819/", finalUrl: "https://pubmed.ncbi.nlm.nih.gov/9428819/", title: "pubmed.ncbi.nlm.nih.gov" });
+    expect(classify(["Protective and damaging effects of stress mediators"], "https://pubmed.ncbi.nlm.nih.gov/9428819/", pubmed)).toBe("no-title");
+    // A site root keeps its generic title: a home page cited for something specific is the finding.
+    const root = rec({ url: "https://law.lis.virginia.gov/", finalUrl: "https://law.lis.virginia.gov/", title: "Virginia Law" });
+    expect(classify(["Constitution of Virginia, Article V (Executive)"], "https://law.lis.virginia.gov/", root, { isGenericTitle: () => true })).toBe("title-mismatch");
+    expect(UNCHECKABLE.has("no-title")).toBe(true);
+    expect(UNCHECKABLE.has("title-mismatch")).toBe(false);
+  });
+
+  it("JavaScript interstitials are blocked, and the section sign decodes", () => {
+    expect(looksLikeBotWall("Redirecting", "")).toBe(true);
+    expect(looksLikeBotWall("Federal Register :: Request Access", "")).toBe(true);
+    expect(decodeEntities("18 U.S. Code &sect; 2511")).toBe("18 U.S. Code § 2511");
   });
 });
