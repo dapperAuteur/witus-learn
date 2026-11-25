@@ -603,6 +603,13 @@
       "when": 1794859688098,
       "tag": "0085_lesson_objectives",
       "breakpoints": true
+    },
+    {
+      "idx": 86,
+      "version": "7",
+      "when": 1795623578279,
+      "tag": "0086_archived_course_editions",
+      "breakpoints": true
     }
   ]
 }

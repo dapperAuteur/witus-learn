@@ -1,5 +1,6 @@
 import { sql } from "drizzle-orm";
 import {
+  type AnyPgColumn,
   boolean,
   check,
   integer,
@@ -171,6 +172,23 @@ export const courses = pgTable(
     // Deliberately NOT `updated_at`, which moves on any write at all (a price change, a publish
     // toggle, an announce stamp) and would cry wolf about content the learner already has.
     contentVersion: integer("content_version").notNull().default(1),
+
+    // Archived edition (plans/101 section 5, approved 2026-11-25; migration 0086). When a course is
+    // rebuilt under the course method, the OLD course stays readable for everyone who enrolled and
+    // is marked as what it is. archived_at set = archived: the course leaves the default catalog,
+    // the public counts and the sitemap, takes no new enrollments, shows archived_reason in a banner
+    // on its course and lesson pages, and sits under "Earlier edition" on its series page. Progress,
+    // quiz attempts, notes and submissions are untouched. The replacement takes the canonical slug
+    // and the archived course moves to `<slug>-archived-<year>` (src/lib/archive-course.ts, run by
+    // scripts/archive-course.ts or POST /api/courses/[id]/archive). The one reader of these fields
+    // is src/lib/archived-edition.ts. NULL on every course that is not archived.
+    archivedAt: timestamp("archived_at", { withTimezone: true }),
+    archivedReason: text("archived_reason"),
+    // The course that replaced this one, in the same tenant. SET NULL if the replacement is deleted,
+    // so the archived course keeps its banner but loses the dead link.
+    supersededByCourseId: uuid("superseded_by_course_id").references((): AnyPgColumn => courses.id, {
+      onDelete: "set null",
+    }),
 
     createdAt: timestamp("created_at", { withTimezone: true }).notNull().defaultNow(),
     updatedAt: timestamp("updated_at", { withTimezone: true }).notNull().defaultNow(),
