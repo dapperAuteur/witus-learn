@@ -1,5 +1,5 @@
 import "server-only";
-import { and, asc, count, eq, isNotNull } from "drizzle-orm";
+import { and, asc, count, eq, isNotNull, isNull } from "drizzle-orm";
 import { db } from "@/db/client";
 import { courses, lessons, userProfiles, type Lesson } from "@/db/schema";
 import { getLessonTourEmbed, listCourseTourEmbeds } from "@/db/queries/tour-embeds";
@@ -57,6 +57,10 @@ export async function listPublishedCourses(
     eq(courses.tenantId, tenantId),
     eq(courses.isPublished, true),
     eq(courses.visibility, "public"),
+    // An archived edition (plans/101 section 5) is out of the syndicated catalog: an external
+    // consumer should list the maintained replacement, not the course it superseded. The by-id
+    // reads below still answer for it, like our own pages do for the learners who enrolled.
+    isNull(courses.archivedAt),
   );
 
   const [rows, totalRows] = await Promise.all([

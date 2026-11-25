@@ -10,6 +10,8 @@ import {
 import {
   findCourseRoute,
   getCourseById,
+  hasArchivedCourses,
+  listArchivedEditionsOf,
   listCategories,
   listCourseRoutes,
   listCourses,
@@ -150,7 +152,8 @@ const cachedCatalogList = cachedRead(
  * inventing ?category= values) reads the database directly rather than adding a cache entry.
  */
 export async function cachedListCourses(tenantId: string, opts: CatalogQuery = {}): Promise<Course[]> {
-  if (opts.q?.trim() || opts.includeUnpublished || opts.seriesSlug) return listCourses(tenantId, opts);
+  // The archived filter is a rare view, so it reads the database directly rather than adding a key.
+  if (opts.q?.trim() || opts.includeUnpublished || opts.seriesSlug || opts.archived) return listCourses(tenantId, opts);
   if (opts.category && !(await cachedCategories(tenantId)).some((c) => c.name === opts.category)) {
     return listCourses(tenantId, opts);
   }
@@ -167,6 +170,20 @@ export const cachedPublishedCourseSlugs = cachedRead("catalog-published-slugs", 
 
 export const cachedSitemapCourses = cachedRead("sitemap-courses", listSitemapCourses, (tenantId) => [
   CACHE_TAGS.catalog(tenantId),
+]);
+
+// ── Archived editions (plans/101 section 5) ────────────────────────────────────────────────────
+
+/** Whether the catalog should offer its "Archived editions" filter at all. */
+export const cachedHasArchivedCourses = cachedRead("catalog-has-archived", hasArchivedCourses, (tenantId) => [
+  CACHE_TAGS.catalog(tenantId),
+]);
+
+/** The archived editions a maintained course replaced: read on every course page, so cached. The
+ *  archive operation changes both courses' rows and clears both tags. */
+export const cachedArchivedEditionsOf = cachedRead("archived-editions-of", listArchivedEditionsOf, (tenantId, courseId) => [
+  CACHE_TAGS.catalog(tenantId),
+  CACHE_TAGS.course(courseId),
 ]);
 
 /** Jurisdictions this tenant's catalog is aligned to, for the sitemap's standards URLs. */

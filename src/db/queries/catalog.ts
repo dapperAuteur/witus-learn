@@ -1,4 +1,4 @@
-import { and, asc, desc, eq, getTableColumns, ilike, inArray, isNotNull, or, sql, type SQL } from "drizzle-orm";
+import { and, asc, desc, eq, getTableColumns, ilike, inArray, isNotNull, isNull, or, sql, type SQL } from "drizzle-orm";
 import { db } from "@/db/client";
 import {
   courseCategories,
@@ -23,11 +23,27 @@ export interface CatalogQuery {
   sort?: "curriculum" | "newest" | "title" | "featured";
   /** Owner/instructor tooling only; the public catalog never sets this. */
   includeUnpublished?: boolean;
+  /** Archived editions (courses.archived_at set, src/lib/archived-edition.ts). "exclude" is the
+   *  default for the public catalog: an archived course leaves the listing and the counts and stays
+   *  reachable by its link. "only" is the catalog's archived filter. "include" is for owner and
+   *  instructor tooling that must see every course, and is what `includeUnpublished` implies when
+   *  this is unset, so the admin pages keep listing archived courses alongside drafts. */
+  archived?: "exclude" | "only" | "include";
+}
+
+/** The archived predicate for `opts`, or null when archived and current courses both qualify. */
+export function archivedCondition(opts: Pick<CatalogQuery, "archived" | "includeUnpublished">): SQL | null {
+  const mode = opts.archived ?? (opts.includeUnpublished ? "include" : "exclude");
+  if (mode === "exclude") return isNull(courses.archivedAt);
+  if (mode === "only") return isNotNull(courses.archivedAt);
+  return null;
 }
 
 export async function listCourses(tenantId: string, opts: CatalogQuery = {}): Promise<Course[]> {
   const conds: SQL[] = [eq(courses.tenantId, tenantId)];
   if (!opts.includeUnpublished) conds.push(eq(courses.isPublished, true));
+  const archived = archivedCondition(opts);
+  if (archived) conds.push(archived);
   // A course is listed under its primary category AND each of its additional ones
   // (src/lib/course-categories.ts). Still inside the tenant condition above, so an extra category
   // named on another brand's course can never pull that course onto this brand's page.
@@ -191,6 +207,8 @@ export interface SitemapCourse {
   slug: string | null;
   isPublished: boolean;
   visibility: string;
+  /** Set on an archived edition, which the sitemap leaves out (includeInSitemap). */
+  archivedAt: Date | null;
   /** The instructor's public username, half of the pretty URL /{username}/{slug}. */
   username: string | null;
   updatedAt: Date;
@@ -209,6 +227,7 @@ export async function listSitemapCourses(tenantId: string): Promise<SitemapCours
       slug: courses.slug,
       isPublished: courses.isPublished,
       visibility: courses.visibility,
+      archivedAt: courses.archivedAt,
       username: userProfiles.username,
       updatedAt: courses.updatedAt,
     })
@@ -238,6 +257,8 @@ export interface SeriesSummary {
  * Built from the same published-course rows the catalog uses, so an unpublished course cannot
  * inflate a count and a series that exists only on another brand is invisible here — the tenant
  * filter is the whole point, since a series NAME is itself information about another school.
+ * Archived editions are left out too: the series page shows them under "Earlier edition", but the
+ * index counts the courses a learner would take today.
  */
 export async function listSeries(tenantId: string): Promise<SeriesSummary[]> {
   const rows = await db
@@ -257,6 +278,7 @@ export async function listSeries(tenantId: string): Promise<SeriesSummary[]> {
         eq(courses.isPublished, true),
         eq(courses.visibility, "public"),
         isNotNull(courses.seriesSlug),
+        isNull(courses.archivedAt),
       ),
     )
     .orderBy(sql`${courses.seriesOrder} nulls last`, asc(courses.title));
@@ -322,4 +344,65 @@ export async function getContentVersions(
     .from(courses)
     .where(and(eq(courses.tenantId, tenantId), inArray(courses.id, ids)));
   return Object.fromEntries(rows.map((r) => [r.id, r.contentVersion]));
+}
+
+// ── Archived editions (plans/101 section 5; src/lib/archived-edition.ts) ──────────────────────────
+
+export interface EditionLink {
+  id: string;
+  title: string;
+  slug: string | null;
+  /** The instructor's username, for coursePagePath. Null when the instructor has no profile yet. */
+  username: string | null;
+}
+
+/**
+ * The course that replaced an archived edition, for its banner. Tenant-scoped like every by-id
+ * read: a `superseded_by_course_id` pointing at another brand's course (which the FK allows, the
+ * archive operation never writes, and the isolation suite must still assume) resolves to null.
+ */
+export async function getReplacementCourse(
+  tenantId: string,
+  course: { supersededByCourseId: string | null },
+): Promise<EditionLink | null> {
+  if (!course.supersededByCourseId || !UUID_RE.test(course.supersededByCourseId)) return null;
+  const rows = await db
+    .select({ id: courses.id, title: courses.title, slug: courses.slug, username: userProfiles.username })
+    .from(courses)
+    .leftJoin(userProfiles, eq(userProfiles.userId, courses.instructorId))
+    .where(and(eq(courses.id, course.supersededByCourseId), eq(courses.tenantId, tenantId)))
+    .limit(1);
+  return rows[0] ?? null;
+}
+
+/**
+ * The archived editions that name `courseId` as their replacement, for the one-line "an earlier
+ * edition is archived" note on the maintained course's page. Usually one row; a course rebuilt
+ * twice has two. Tenant-scoped, oldest archive first.
+ */
+export async function listArchivedEditionsOf(tenantId: string, courseId: string): Promise<EditionLink[]> {
+  if (!UUID_RE.test(courseId)) return [];
+  return db
+    .select({ id: courses.id, title: courses.title, slug: courses.slug, username: userProfiles.username })
+    .from(courses)
+    .leftJoin(userProfiles, eq(userProfiles.userId, courses.instructorId))
+    .where(
+      and(
+        eq(courses.tenantId, tenantId),
+        eq(courses.supersededByCourseId, courseId),
+        isNotNull(courses.archivedAt),
+      ),
+    )
+    .orderBy(asc(courses.archivedAt));
+}
+
+/** Whether this tenant has any published archived edition, so the catalog shows its "Archived
+ *  editions" filter only when the filter would list something. */
+export async function hasArchivedCourses(tenantId: string): Promise<boolean> {
+  const rows = await db
+    .select({ id: courses.id })
+    .from(courses)
+    .where(and(eq(courses.tenantId, tenantId), eq(courses.isPublished, true), isNotNull(courses.archivedAt)))
+    .limit(1);
+  return rows.length > 0;
 }

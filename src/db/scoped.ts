@@ -6,6 +6,9 @@ import {
   getContentVersions,
   getCourseById,
   getCourseByIdOrSlug,
+  getReplacementCourse,
+  hasArchivedCourses,
+  listArchivedEditionsOf,
   listCategories,
   listSeries,
   listCourses,
@@ -210,6 +213,22 @@ export class ScopedDb {
   /** Stamp `announced_at` on the given courses (tenant-scoped). Returns the ids updated. */
   markCoursesAnnounced(courseIds: string[], at: Date = new Date()) {
     return markCoursesAnnounced(this.tenantId, courseIds, at);
+  }
+
+  // ── Archived editions (plans/101 section 5; src/lib/archived-edition.ts) ──────────────────────
+  /** The course that replaced an archived edition, in THIS tenant (a foreign id resolves to null). */
+  getReplacementCourse(course: { supersededByCourseId: string | null }) {
+    return getReplacementCourse(this.tenantId, course);
+  }
+
+  /** The archived editions that name this course as their replacement, tenant-scoped. */
+  listArchivedEditionsOf(courseId: string) {
+    return listArchivedEditionsOf(this.tenantId, courseId);
+  }
+
+  /** Whether this tenant has any archived edition to list under the catalog's archived filter. */
+  hasArchivedCourses() {
+    return hasArchivedCourses(this.tenantId);
   }
 
   // ── Codeless promotions (the "Sales and promotions" panel) ─────────────────

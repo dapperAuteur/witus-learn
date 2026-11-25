@@ -1,5 +1,5 @@
 import "server-only";
-import { and, asc, eq } from "drizzle-orm";
+import { and, asc, eq, isNull } from "drizzle-orm";
 import { db } from "@/db/client";
 import { bundleCourses, bundles, type Bundle } from "@/db/schema/bundles";
 import { courses, type Course } from "@/db/schema/courses";
@@ -45,6 +45,9 @@ export async function getBundleBySlug(
         eq(bundleCourses.bundleId, b[0].id),
         eq(courses.tenantId, tenantId), // the join is the tenant boundary
         eq(courses.isPublished, true),
+        // An archived edition takes no new enrollments (plans/101 section 5), so a bundle neither
+        // lists it nor enrolls a buyer in it; the bundle's other courses still sell.
+        isNull(courses.archivedAt),
       ),
     )
     .orderBy(asc(bundleCourses.sortOrder));

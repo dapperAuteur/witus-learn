@@ -3,6 +3,8 @@ import type { Course } from "@/db/schema";
 import { formatCourseCode } from "@/lib/series-code";
 import type { PriceView } from "@/lib/sale-pricing";
 import { isVettingLocked } from "@/lib/vetting";
+import { isArchived } from "@/lib/archived-edition";
+import { ArchivedBadge } from "./archived-edition-banner";
 import { ComingSoonBadge } from "./coming-soon-course";
 import { PriceTag } from "./price-tag";
 import { ProgressBar } from "./progress-bits";
@@ -45,6 +47,11 @@ export function CourseCard({
   // series link therefore sits OUTSIDE the card link, above it, and the card is unchanged below.
   const seriesHref = course.seriesSlug ? `/series/${course.seriesSlug}` : null;
 
+  // An ARCHIVED edition (plans/101 section 5) is badged wherever courses are listed, and its card
+  // offers no price: it takes no new enrollments, and a price beside it would be an offer the enroll
+  // route refuses. A learner already enrolled is passed `progress` and keeps seeing their progress.
+  const archived = isArchived(course);
+
   return (
     <div className="flex flex-col">
       {seriesHref ? (
@@ -60,8 +67,9 @@ export function CourseCard({
         className="group flex flex-1 flex-col rounded-2xl border border-neutral-200 bg-white p-5 transition hover:border-neutral-300 hover:shadow-sm focus-visible:outline-2 focus-visible:outline-offset-2 dark:border-neutral-800 dark:bg-neutral-900 dark:hover:border-neutral-700"
       >
         <span className="mb-3 h-1.5 w-12 rounded" style={{ backgroundColor: "var(--accent)" }} />
-        {code || meta ? (
+        {code || meta || archived ? (
           <p className="flex flex-wrap items-center gap-2 text-xs uppercase tracking-wide text-neutral-600">
+            {archived ? <ArchivedBadge className="normal-case tracking-normal" /> : null}
             {code ? (
               <span className="rounded bg-neutral-100 px-1.5 py-0.5 font-mono font-semibold tracking-normal text-neutral-700 dark:bg-neutral-800 dark:text-neutral-300">
                 {code}
@@ -84,6 +92,10 @@ export function CourseCard({
               {progress >= 100 ? "Completed ✓" : `${progress}% complete`}
             </p>
           </div>
+        ) : archived ? (
+          <p className="text-xs font-medium text-neutral-600 dark:text-neutral-400">
+            Archived edition, no new enrollments
+          </p>
         ) : isVettingLocked(course) ? (
           <ComingSoonBadge />
         ) : price ? (

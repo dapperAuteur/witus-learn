@@ -18,6 +18,8 @@ import {
 import { coursePriceView } from "@/lib/sale-pricing";
 import { getSiteUrl } from "@/lib/site-url";
 import { getActiveLearner } from "@/lib/active-learner";
+import { archivedEnrollmentMessage, isArchived } from "@/lib/archived-edition";
+import { coursePagePath } from "@/lib/course-href";
 
 // POST /api/courses/[id]/enroll — free → insert directly; paid → return a Stripe
 // Checkout URL (with optional promo discount + Connect payout routing). 404s
@@ -42,6 +44,23 @@ export async function POST(req: Request, { params }: { params: Promise<{ id: str
 
   if (await isEnrolled(learner.id, id)) {
     return json({ enrolled: true });
+  }
+
+  // An ARCHIVED edition (plans/101 section 5) takes no new enrollments. Decided here on the stored
+  // row, so a stale tab, an old bookmark or a hand-made request cannot enroll either; the page only
+  // hides the button. Learners already enrolled were answered above and keep everything they had.
+  // 409 and not 404: the course exists and its page is readable, it just no longer takes learners.
+  if (isArchived(course)) {
+    const replacement = await sdb.getReplacementCourse(course);
+    return json(
+      {
+        error: archivedEnrollmentMessage(replacement?.title),
+        replacement: replacement
+          ? { id: replacement.id, title: replacement.title, href: coursePagePath(replacement, replacement.username) }
+          : null,
+      },
+      409,
+    );
   }
 
   // An invited auditor (plans/52 section 5) was asked to REVIEW this unvetted course, not to take

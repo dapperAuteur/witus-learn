@@ -111,12 +111,17 @@ export function courseViewGate(input: {
 /**
  * Does this course belong in the sitemap? Unvetted courses DO (their landing page is real,
  * indexable public content); drafts, private courses, and courses with no pretty URL do not,
- * because those URLs would 404 and a sitemap must never list a URL that 404s.
+ * because those URLs would 404 and a sitemap must never list a URL that 404s. An ARCHIVED edition
+ * (plans/101 section 5) is left out as well: its page still answers, for the learners who enrolled,
+ * but the maintained replacement is the one search should send people to.
  */
 export function includeInSitemap(course: {
   isPublished: boolean;
   visibility: string;
   slug: string | null;
+  archivedAt?: Date | null;
 }): boolean {
-  return course.isPublished && course.visibility !== "private" && Boolean(course.slug);
+  return (
+    course.isPublished && course.visibility !== "private" && Boolean(course.slug) && course.archivedAt == null
+  );
 }

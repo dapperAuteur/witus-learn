@@ -1,4 +1,4 @@
-import { and, countDistinct, eq, inArray, ne, sql, type SQL } from "drizzle-orm";
+import { and, countDistinct, eq, inArray, isNull, ne, sql, type SQL } from "drizzle-orm";
 import { db } from "@/db/client";
 import {
   courseClaims,
@@ -22,12 +22,15 @@ import { brandName } from "@/lib/branding";
 // and filters on courses.tenant_id — that join IS the tenant boundary here. Do not
 // "simplify" these by dropping the join.
 
-/** The public-catalog predicate: this tenant's published, non-private courses. */
+/** The public-catalog predicate: this tenant's published, non-private, non-archived courses. An
+ *  archived edition (plans/101 section 5) is still readable but no longer counts: the figures on
+ *  /explore describe the catalog a learner can enroll in today. */
 function publicCourseConds(tenantId: string): SQL[] {
   return [
     eq(courses.tenantId, tenantId),
     eq(courses.isPublished, true),
     ne(courses.visibility, "private"),
+    isNull(courses.archivedAt),
   ];
 }
 
