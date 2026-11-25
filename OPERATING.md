@@ -299,6 +299,57 @@ pnpm rag:index:prod --courses-file changed.json      # [{ "tenantSlug": "...", "
 
 ---
 
+## 5b. Archived course editions (plans/101 section 5, migration 0086)
+
+When a course is rebuilt under the course method, the old course is **archived**, not deleted: it
+keeps every learner's progress, quiz attempts, notes and submissions, shows a banner saying why it
+was replaced, leaves the default catalog, the public counts and the sitemap, takes no new
+enrollments (the enroll route answers 409 and names the replacement), and sits under "Earlier
+edition" on its series page. Slug rule (a): the replacement takes the canonical slug and the old
+course moves to `<slug>-archived-<year>`. Readers: `src/lib/archived-edition.ts`. Writer:
+`src/lib/archive-course.ts`, one transaction, two callers.
+
+**The migration (0086, `src/db/migrations/0086_archived_course_editions.sql`)** adds three nullable
+columns to `courses` (`archived_at`, `archived_reason`, `superseded_by_course_id`, a self FK with
+`ON DELETE SET NULL`). Additive and idempotent (`ADD COLUMN IF NOT EXISTS`, the FK guarded), so the
+code running before the deploy keeps working and a second run changes nothing. It applies itself
+through `.github/workflows/migrate-production.yml` on the merge to `main`. **Manual fallback:**
+`pnpm db:migrate:prod` from the laptop (section 3), then confirm with
+`select column_name from information_schema.columns where table_name = 'courses' and column_name like 'archived%' or column_name = 'superseded_by_course_id';`
+(three rows).
+
+**Archiving one course, from the laptop:**
+
+```
+pnpm archive:course:prod --old <old-slug> --new <new-slug> --dry-run
+pnpm archive:course:prod --old <old-slug> --new <new-slug> [--reason-file <path>] [--tenant <slug>]
+```
+
+`--old` is the course being retired, by its current (canonical) slug; `--new` is the replacement, by
+the slug it was seeded under. One transaction: the old course becomes `<old-slug>-archived-<year>`
+with `archived_at`, `archived_reason` and `superseded_by_course_id` set, and the new course takes
+`<old-slug>`. The reason is plan 101 section 5's label with the new course's title and today's date
+filled in, or the text of `--reason-file` as given. `--tenant` defaults to `learn-witus`. It refuses,
+writing nothing, when the new slug does not exist in the tenant, the old course is already archived,
+the target slug is taken, either slug names two courses, or both name one. `--dry-run` prints the
+plan. The connection string comes from `.env.prod` and is never printed.
+
+**Before the first run on a pair:** (1) the old course's file is out of the seed registry
+(`scripts/lib/seed-registry.ts` / `STAGED_COURSES`) or its slug is changed to the archived slug, and
+the new course's file uses the canonical slug. The seeder matches courses **by slug**, so a stale
+registry entry would write the old lessons onto the replacement on the next `seed-production.yml`
+run. (2) Approved cross-link decisions and other records keyed by course slug now point at the
+replacement; that is slug rule (a) working as approved.
+
+**From the site:** the platform owner has the same operation on `/teach/<course>` ("Archive this
+edition": pick the replacement, preview, archive). That path clears both courses' cache tags at
+once; after the CLI the public caches refresh within the hour (`PUBLIC_CACHE_SECONDS`), while the
+course pages themselves read the new rows immediately.
+
+**Verify:** the old URL `/<username>/<old-slug>` renders the replacement; `/<username>/<old-slug>-archived-<year>`
+renders the banner; `/courses` no longer lists the old course and `/courses?archived=1` does;
+`POST /api/courses/<old id>/enroll` answers 409 for a new learner.
+
 ## 6. Other operator tasks
 
 - **In-app bug reports / feedback:** `pnpm reports:list` prints what learners filed via the
