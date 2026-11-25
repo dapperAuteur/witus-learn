@@ -3,6 +3,8 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "archive:course": "tsx --env-file=.env.local scripts/archive-course.ts",
+    "archive:course:prod": "tsx --env-file=.env.prod scripts/archive-course.ts",
     "audit:course": "tsx scripts/audit-course.ts",
     "build": "NODE_OPTIONS=--max-old-space-size=6144 next build --webpack",
     "check:assessment-fit": "tsx scripts/check-assessment-fit.ts",

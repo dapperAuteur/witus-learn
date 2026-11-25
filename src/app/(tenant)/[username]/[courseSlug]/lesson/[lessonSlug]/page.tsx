@@ -28,6 +28,9 @@ import {
 } from "@/lib/cross-links";
 import { hasAgeConsentCookie } from "@/lib/age-gate";
 import { AgeGate } from "@/components/age-gate";
+import { isArchived } from "@/lib/archived-edition";
+import { getReplacementCourse } from "@/db/queries/catalog";
+import { ArchivedEditionBanner } from "@/components/archived-edition-banner";
 import { MetricsTrackerCta } from "@/components/metrics-tracker-cta";
 import { SaveOfflineButton } from "@/components/save-offline-button";
 import type { OfflineLessonMeta, SavableLesson } from "@/lib/offline";
@@ -94,6 +97,10 @@ export default async function LessonPage({ params }: Params) {
   if (!listed) notFound();
   const lesson = await cachedCourseLesson(view.course.id, listed.id);
   if (!lesson) notFound();
+
+  // Archived edition (plans/101 section 5): every lesson page of an archived course opens with the
+  // banner, so a learner deep in the course is told as plainly as one on its landing page.
+  const archivedReplacement = isArchived(view.course) ? await getReplacementCourse(view.tenant.id, view.course) : null;
 
   // Per-course (per-season) age gate. Editors bypass.
   if (view.course.requiresAgeGate && !view.isEditor && !(await hasAgeConsentCookie(view.tenant.slug))) {
@@ -395,6 +402,9 @@ export default async function LessonPage({ params }: Params) {
 
         {/* Main lesson column. */}
         <main className="min-w-0 flex-1">
+          {isArchived(view.course) ? (
+            <ArchivedEditionBanner compact reason={view.course.archivedReason} replacement={archivedReplacement} />
+          ) : null}
           <div className="flex items-start justify-between gap-3">
             <h1 className="text-2xl font-bold tracking-tight">{lessonTitle}</h1>
             {view.course.isPublished && view.course.visibility !== "private" ? (

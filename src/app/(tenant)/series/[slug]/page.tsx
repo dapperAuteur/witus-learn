@@ -6,6 +6,9 @@ import { getSession } from "@/lib/session";
 import { canAccessCourse } from "@/lib/api";
 import { ogImageUrl } from "@/lib/og";
 import { describePosition, formatCourseCode, groupSeries } from "@/lib/series-code";
+import { splitSeriesEditions } from "@/lib/archived-edition";
+import { ArchivedBadge } from "@/components/archived-edition-banner";
+import type { Course } from "@/db/schema";
 
 // A series landing page: the whole curriculum, in order, in one place.
 //
@@ -48,16 +51,21 @@ async function loadSeries(slug: string) {
     }
     if (await canAccessCourse(session, sdb.tenantId, c)) visible.push(c);
   }
-  const courses = visible;
-  if (courses.length === 0) return null;
-  const ordered = [...courses].sort((a, b) => {
+  // Archived editions (plans/101 section 5) leave the main groups and sit under "Earlier edition" at
+  // the end of the page: part of the series' history, not of the path a learner takes today.
+  const { current, earlier } = splitSeriesEditions(visible);
+  if (current.length === 0 && earlier.length === 0) return null;
+  const byOrder = (a: Course, b: Course) => {
     const ao = a.seriesOrder ?? Number.MAX_SAFE_INTEGER;
     const bo = b.seriesOrder ?? Number.MAX_SAFE_INTEGER;
     return ao !== bo ? ao - bo : a.title.localeCompare(b.title);
-  });
+  };
+  const ordered = [...current].sort(byOrder);
+  const earlierOrdered = [...earlier].sort(byOrder);
   const groups = groupSeries(ordered);
   const trackCount = groups.filter((g) => g.kind === "track").length;
-  return { title: ordered[0].seriesTitle ?? slug, courses: ordered, groups, trackCount };
+  const first = ordered[0] ?? earlierOrdered[0];
+  return { title: first.seriesTitle ?? slug, courses: ordered, earlier: earlierOrdered, groups, trackCount };
 }
 
 export async function generateMetadata({
@@ -69,7 +77,10 @@ export async function generateMetadata({
   const series = await loadSeries(slug);
   if (!series) return { title: "Series" };
   const title = series.title;
-  const description = `${series.courses.length} courses in order, from ${series.courses[0].title}.`;
+  const description =
+    series.courses.length > 0
+      ? `${series.courses.length} courses in order, from ${series.courses[0].title}.`
+      : `${series.earlier.length} archived ${series.earlier.length === 1 ? "edition" : "editions"}.`;
   const image = ogImageUrl({ title, subtitle: description });
   return {
     title,
@@ -88,9 +99,11 @@ export default async function SeriesPage({ params }: { params: Promise<{ slug: s
     <main className="mx-auto max-w-3xl px-4 py-8">
       <h1 className="text-2xl font-semibold tracking-tight">{series.title}</h1>
       <p className="mt-2 text-sm text-neutral-600 dark:text-neutral-400">
-        {series.trackCount > 1
-          ? `${series.courses.length} courses. Start with the first one, then take whichever of the ${series.trackCount} tracks you want: they run in parallel, and none of them needs another.`
-          : `${series.courses.length} courses, in the order they are meant to be taken. You can start anywhere, and they build.`}
+        {series.courses.length === 0
+          ? "Every course in this series has been replaced; the archived editions are listed below."
+          : series.trackCount > 1
+            ? `${series.courses.length} courses. Start with the first one, then take whichever of the ${series.trackCount} tracks you want: they run in parallel, and none of them needs another.`
+            : `${series.courses.length} courses, in the order they are meant to be taken. You can start anywhere, and they build.`}
       </p>
 
       {/* How to read a course code, stated once rather than assumed. It is two lines, and without
@@ -164,6 +177,36 @@ export default async function SeriesPage({ params }: { params: Promise<{ slug: s
           </ol>
         </section>
       ))}
+
+      {/* Archived editions (plans/101 section 5): listed, badged, linked, and kept out of the path. */}
+      {series.earlier.length > 0 ? (
+        <section className="mt-8" aria-labelledby="earlier-edition-heading">
+          <h2 id="earlier-edition-heading" className="text-sm font-semibold uppercase tracking-wide text-neutral-600">
+            {series.earlier.length === 1 ? "Earlier edition" : "Earlier editions"}
+          </h2>
+          <p className="mt-1 text-xs text-neutral-600 dark:text-neutral-400">
+            Replaced by the courses above. Still readable for everyone who enrolled; no new enrollments.
+          </p>
+          <ol className="mt-3 space-y-3">
+            {series.earlier.map((course) => (
+              <li
+                key={course.id}
+                className="relative rounded-lg border border-dashed border-neutral-300 p-4 dark:border-neutral-700"
+              >
+                <ArchivedBadge />
+                <h3 className="mt-2 text-base font-semibold">
+                  <Link
+                    href={`/course/${course.id}`}
+                    className="underline-offset-2 after:absolute after:inset-0 after:content-[''] hover:underline focus-visible:outline-2 focus-visible:outline-offset-2"
+                  >
+                    {course.title}
+                  </Link>
+                </h3>
+              </li>
+            ))}
+          </ol>
+        </section>
+      ) : null}
     </main>
   );
 }

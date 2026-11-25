@@ -60,6 +60,11 @@ import { VetCourseCta } from "@/components/vet-course-cta";
 import { displayTourTitle } from "@/lib/field-log-tour";
 import { liveToursForCourse } from "@/lib/lesson-tours";
 import { bibliographyAccess } from "@/lib/course-bibliography";
+import { archivedEnrollmentMessage, isArchived } from "@/lib/archived-edition";
+import { getReplacementCourse } from "@/db/queries/catalog";
+import { cachedArchivedEditionsOf } from "@/lib/public-cache";
+import { coursePagePath } from "@/lib/course-href";
+import { ArchivedEditionBanner } from "@/components/archived-edition-banner";
 
 type Params = { params: Promise<{ username: string; courseSlug: string }> };
 
@@ -125,6 +130,13 @@ export default async function CourseBySlugPage({ params }: Params) {
     isUnvetted(course) && view.session ? await isPlatformOwner(view.session.user.id) : false;
 
   const civicsBack = civicsBackLink(course);
+
+  // Archived edition (plans/101 section 5): on an archived course, the replacement its banner links
+  // to; on a maintained course, the earlier editions that name it as their replacement, for the
+  // one-line note under the description. Both reads are scoped to this tenant.
+  const archived = isArchived(course);
+  const replacement = archived ? await getReplacementCourse(view.tenant.id, course) : null;
+  const earlierEditions = archived ? [] : await cachedArchivedEditionsOf(view.tenant.id, course.id);
 
   const courseLives = await listLiveForCourse(course.tenantId, course.id);
 
@@ -387,6 +399,7 @@ export default async function CourseBySlugPage({ params }: Params) {
           </Link>
         ) : null}
       </div>
+      {archived ? <ArchivedEditionBanner reason={course.archivedReason} replacement={replacement} /> : null}
       {course.seriesTitle || seasonMeta ? (
         <p className="mt-6 text-xs uppercase tracking-wide text-neutral-600">
           {/* The series name LINKS to its page: a learner who reads "part of X" should be able to
@@ -435,6 +448,23 @@ export default async function CourseBySlugPage({ params }: Params) {
       ) : null}
       {course.description ? (
         <p className="mt-4 text-neutral-700 dark:text-neutral-300">{course.description}</p>
+      ) : null}
+      {/* This course replaced an archived edition (plans/101 section 5): say so in one line, with the
+          link, because a learner who enrolled in the old one may arrive here through its old slug. */}
+      {earlierEditions.length > 0 ? (
+        <p className="mt-2 text-sm text-neutral-600 dark:text-neutral-400">
+          An earlier edition of this course is archived and still readable:{" "}
+          {earlierEditions.map((e, i) => (
+            <span key={e.id}>
+              {i > 0 ? ", " : ""}
+              <Link href={coursePagePath(e, e.username)} className="underline underline-offset-2">
+                {e.title}
+                {e.slug ? <span className="font-mono text-xs"> ({e.slug})</span> : null}
+              </Link>
+            </span>
+          ))}
+          .
+        </p>
       ) : null}
 
       {isOpenWhileUnvetted(course) ? <UnvettedDisclosure /> : null}
@@ -589,6 +619,21 @@ export default async function CourseBySlugPage({ params }: Params) {
         <p className="mt-6 rounded-lg border border-sky-300 bg-sky-50 p-4 text-sm text-sky-900 dark:border-sky-800 dark:bg-sky-950/40 dark:text-sky-200">
           You are reviewing this course before it opens. You can read every lesson. Nothing you do is
           recorded: no progress, no quiz scores, no certificate.
+        </p>
+      ) : archived && !view.isEnrolled && course.isPublished ? (
+        // An archived edition takes no new enrollments: the enroll route refuses (409), so the page
+        // says so instead of offering a button that fails. Enrolled learners fall through to their
+        // usual actions and keep everything they had.
+        <p className="mt-6 rounded-lg border border-neutral-300 p-4 text-sm text-neutral-700 dark:border-neutral-700 dark:text-neutral-300">
+          {archivedEnrollmentMessage(replacement?.title)}
+          {replacement ? (
+            <>
+              {" "}
+              <Link href={coursePagePath(replacement, replacement.username)} className="underline underline-offset-2">
+                Go to {replacement.title}
+              </Link>
+            </>
+          ) : null}
         </p>
       ) : view.session && course.isPublished ? (
         <>

@@ -3,7 +3,7 @@ import { headers } from "next/headers";
 import type { Metadata } from "next";
 import { ogImageUrl } from "@/lib/og";
 import { getScopedDb } from "@/db/scoped";
-import { cachedCategories, cachedListCourses, cachedPublishedCourseSlugs } from "@/lib/public-cache";
+import { cachedCategories, cachedHasArchivedCourses, cachedListCourses, cachedPublishedCourseSlugs } from "@/lib/public-cache";
 import { getSession, getMembership, isPlatformOwner } from "@/lib/session";
 import { resolveTenant } from "@/lib/tenant";
 import { isWitusBrandedHost } from "@/lib/witus-host";
@@ -35,7 +35,7 @@ export const metadata: Metadata = {
   },
 };
 
-type SearchParams = Promise<{ q?: string; category?: string; sort?: string }>;
+type SearchParams = Promise<{ q?: string; category?: string; sort?: string; archived?: string }>;
 
 // The full, filterable catalog. Tenant-scoped via the DAL. Editors (owner/instructor/brand_admin)
 // also see their HIDDEN courses here — drafts, held, and their own private ones — badged, so the
@@ -55,14 +55,24 @@ export default async function CoursesPage({ searchParams }: { searchParams: Sear
   const owner = session ? await isPlatformOwner(session.user.id) : false;
   const membership = session ? ((await getMembership(session.user.id, sdb.tenantId)) ?? "") : "";
   const isEditor = owner || ["instructor", "brand_admin"].includes(membership);
+  // Archived editions (plans/101 section 5) leave the default listing; ?archived=1 lists only them.
+  // The filter chip is offered only when this tenant has something it would show.
+  const archivedOnly = sp.archived === "1";
 
-  const [rawCourses, categories, promotions] = await Promise.all([
+  const [rawCourses, categories, promotions, hasArchived] = await Promise.all([
     // Cached unless the shape is per-visitor (a search or an editor's unpublished view), in which case
     // cachedListCourses reads the database directly. See src/lib/public-cache.ts.
-    cachedListCourses(sdb.tenantId, { q: sp.q, category: sp.category, sort, includeUnpublished: isEditor }),
+    cachedListCourses(sdb.tenantId, {
+      q: sp.q,
+      category: sp.category,
+      sort,
+      includeUnpublished: isEditor,
+      archived: archivedOnly ? "only" : isEditor ? "include" : "exclude",
+    }),
     cachedCategories(sdb.tenantId),
     // Active codeless promotions for THIS tenant only; each card resolves its own price from them.
     sdb.listActivePromotions(),
+    archivedOnly ? Promise.resolve(true) : cachedHasArchivedCourses(sdb.tenantId),
   ]);
   // Cross-course entities that match the search (plans/45 Part 3): a person/case/law the query names
   // is its own result type ("Milliken v. Bradley, appears in 3 courses"), not scattered lesson hits.
@@ -114,6 +124,7 @@ export default async function CoursesPage({ searchParams }: { searchParams: Sear
           className="min-h-11 flex-1 rounded-md border border-neutral-300 px-3 dark:border-neutral-700 dark:bg-neutral-900"
         />
         {sp.category ? <input type="hidden" name="category" value={sp.category} /> : null}
+        {archivedOnly ? <input type="hidden" name="archived" value="1" /> : null}
         <label className="sr-only" htmlFor="sort">Sort courses</label>
         <select id="sort" name="sort" defaultValue={sort ?? "curriculum"} className="min-h-11 rounded-md border border-neutral-300 px-3 dark:border-neutral-700 dark:bg-neutral-900">
           <option value="curriculum">Course order</option>
@@ -126,19 +137,30 @@ export default async function CoursesPage({ searchParams }: { searchParams: Sear
         </button>
       </form>
 
-      {categories.length > 0 ? (
+      {categories.length > 0 || hasArchived ? (
         <nav className="mb-6 flex flex-wrap gap-2 text-sm" aria-label="Categories">
-          <Link href="/courses" className={`${chip} ${!sp.category ? "font-semibold" : ""}`} aria-current={!sp.category ? "true" : undefined}>All</Link>
+          <Link href="/courses" className={`${chip} ${!sp.category && !archivedOnly ? "font-semibold" : ""}`} aria-current={!sp.category && !archivedOnly ? "true" : undefined}>All</Link>
           {categories.map((c) => (
-            <Link key={c.id} href={`/courses?category=${encodeURIComponent(c.name)}`} className={`${chip} ${sp.category === c.name ? "font-semibold" : ""}`} aria-current={sp.category === c.name ? "true" : undefined}>
+            <Link key={c.id} href={`/courses?category=${encodeURIComponent(c.name)}`} className={`${chip} ${sp.category === c.name && !archivedOnly ? "font-semibold" : ""}`} aria-current={sp.category === c.name && !archivedOnly ? "true" : undefined}>
               {c.name}
             </Link>
           ))}
+          {hasArchived ? (
+            <Link href="/courses?archived=1" className={`${chip} ${archivedOnly ? "font-semibold" : ""}`} aria-current={archivedOnly ? "true" : undefined}>
+              Archived editions
+            </Link>
+          ) : null}
         </nav>
       ) : null}
 
+      {archivedOnly ? (
+        <p className="mb-3 rounded-lg border border-amber-400 bg-amber-50 p-3 text-sm text-amber-950 dark:border-amber-600 dark:bg-amber-950/40 dark:text-amber-100">
+          Archived editions were replaced by courses built under the course method. Each stays readable
+          for the learners who enrolled and takes no new enrollments; its page links the current edition.
+        </p>
+      ) : null}
       <p className="mb-3 text-sm text-neutral-600">
-        {courses.length} course{courses.length === 1 ? "" : "s"}
+        {courses.length} {archivedOnly ? "archived edition" : "course"}{courses.length === 1 ? "" : "s"}
         {sp.category ? ` in ${sp.category}` : ""}
         {sp.q ? ` matching “${sp.q}”` : ""}
       </p>

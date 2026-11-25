@@ -29,6 +29,8 @@ import { LaunchTodoList } from "@/components/launch-todo-list";
 import { TeachQuizChecks } from "@/components/teach-quiz-checks";
 import type { CourseQuizIntegrity, FailingQuizBank } from "@/lib/quiz-integrity";
 import { SeedDriftPanel, type DriftItem } from "@/components/seed-drift-panel";
+import { ArchiveEditionPanel } from "@/components/archive-edition-panel";
+import { coursePagePath } from "@/lib/course-href";
 import { diffSeedContent } from "@/lib/seed-drift";
 
 export const metadata: Metadata = { title: "Manage course" };
@@ -180,6 +182,17 @@ export default async function ManageCoursePage({ params }: { params: Promise<{ c
   // The Make public / Make private switch: the owner, or this school's brand_admin (null otherwise).
   const switchRole = visibilityActorRole(actor, course);
   const instructors = isAdmin ? await listTenantInstructors(sdb.tenantId) : [];
+  // The owner's archive control (plans/101 section 5): the courses this one could be archived in
+  // favour of (this school, not archived, with a slug, not itself) and, once archived, the
+  // replacement to link. Owner only, like POST /api/courses/[id]/archive behind it.
+  const archiveOptions =
+    owner && !course.archivedAt
+      ? (await sdb.listCourses({ includeUnpublished: true, archived: "exclude" }))
+          .filter((c) => c.id !== course.id && c.slug)
+          .map((c) => ({ id: c.id, title: c.title, slug: c.slug as string }))
+          .sort((a, b) => a.title.localeCompare(b.title))
+      : [];
+  const archivedReplacement = owner && course.archivedAt ? await sdb.getReplacementCourse(course) : null;
 
   return (
     <main className="mx-auto max-w-3xl px-4 py-10">
@@ -258,6 +271,20 @@ export default async function ManageCoursePage({ params }: { params: Promise<{ c
             ownerOnly={course.ownerOnly}
             readiness={publicReadiness(course, signoffReadiness)}
             failingQuizzes={failingQuizzes.length}
+          />
+        ) : null}
+
+        {owner ? (
+          <ArchiveEditionPanel
+            courseId={course.id}
+            courseSlug={course.slug}
+            archivedAt={course.archivedAt?.toISOString() ?? null}
+            replacement={
+              archivedReplacement
+                ? { title: archivedReplacement.title, href: coursePagePath(archivedReplacement, archivedReplacement.username) }
+                : null
+            }
+            options={archiveOptions}
           />
         ) : null}
 
